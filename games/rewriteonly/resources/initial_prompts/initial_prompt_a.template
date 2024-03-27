@@ -1,0 +1,7 @@
+Given a sequence of building instructions in a conversation, rewrite each instruction so that it can be understood and executed independently, without requiring the context of the previous messages. Ensure that the rewritten instruction is clear, concise, and includes all necessary details such as the position, orientation, and color of the blocks. The goal is to make each instruction standalone, providing enough information for someone to follow it without having read the earlier parts of the conversation.
+
+For each instruction labeled "Instruction" please respond with rewrite under the label "Rewrite" followed by a newline.
+
+Do not generate any other text/explanations. Do not generate the instructions on your own. Stick to the given format. Think step by step.
+
+Let's get started.

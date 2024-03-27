@@ -1,0 +1,74 @@
+{
+    "board": {
+        "rows": 8,
+        "cols": 8
+    },
+    "levels": ["level-1"],
+    "level-1": {
+        "variants": ["forder"],
+        "matching_combos": {
+            "washer": ["washer"],
+            "nut": ["nut"],
+            "screw": ["screw"],
+            "bridge-h": ["bridge-h"],
+            "bridge-v": ["bridge-v"]
+        },        
+        "forder": {
+            "TRAIN_DATA_FILE_NAME": "samples/level-1_forder_train.json",
+            "TEST_DATA_FILE_NAME": "samples/level-1_forder_val.json",
+            "STATIC_INCONTEXT_SAMPLES": "samples/level-1_forder_static_incontext.txt",
+            "NUM_INCONTEXT_SAMPLES": 2,
+            "fill_labels": {
+                "INSTRUCTION_LABEL": "Instruction",
+                "OUTPUT_LABEL": "Output",
+                "OUTPUT_LABEL_HORDER": "",
+                "OUTPUT_LABEL_HORDER_USAGE": "",
+                "INCONTEXT_SAMPLES": "To be filled during instance creation",
+                "TEST_INSTRUCTION": "To be filled during instance creation"
+            }
+        }
+    },
+    "level-2": {
+        "variants": ["forder", "horder"],
+        "matching_combos": {
+            "s_washer": ["k1_bridge", "k2_bridge", "p1_bridge", "p2_bridge", "n_washer", "s_washer", "w_nut", "s_nut"],
+            "n_washer": ["k1_bridge", "k2_bridge", "t1_bridge", "t2_bridge", "s_washer", "n_washer", "w_nut", "s_nut"],
+            "s_nut": ["t1_bridge", "t2_bridge", "p1_bridge", "p2_bridge", "s_washer", "n_washer", "w_nut", "s_nut"],
+            "w_nut": ["k1_bridge", "k2_bridge", "t1_bridge", "t2_bridge", "s_washer", "n_washer", "s_nut", "w_nut"],
+            "k1_bridge": ["k1_bridge", "k2_bridge", "t1_bridge", "t2_bridge", "p1_bridge", "p2_bridge", "n_washer", "s_washer"],
+            "k2_bridge": ["k1_bridge", "k2_bridge", "t1_bridge", "t2_bridge", "p1_bridge", "p2_bridge", "n_washer", "s_washer"],
+            "t1_bridge": ["t1_bridge", "t2_bridge", "k1_bridge", "k2_bridge", "p1_bridge", "p2_bridge", "w_nut", "s_nut"],
+            "t2_bridge": ["t1_bridge", "t2_bridge", "k1_bridge", "k2_bridge", "p1_bridge", "p2_bridge", "w_nut", "s_nut"],
+            "p1_bridge": ["p1_bridge", "p2_bridge", "t1_bridge", "t2_bridge", "k1_bridge", "k2_bridge", "s_washer", "s_nut"],
+            "p2_bridge": ["p1_bridge", "p2_bridge", "t1_bridge", "t2_bridge", "k1_bridge", "k2_bridge", "s_washer", "s_nut"]
+        },        
+        "forder": {
+            "TRAIN_DATA_FILE_NAME": "samples/level-2_forder_train.json",
+            "TEST_DATA_FILE_NAME": "samples/level-2_forder_val.json",
+            "STATIC_INCONTEXT_SAMPLES": "samples/level-2_forder_static_incontext.txt",
+            "NUM_INCONTEXT_SAMPLES": 2,
+            "fill_labels": {
+                "INSTRUCTION_LABEL": "Instruction",
+                "OUTPUT_LABEL": "Output",
+                "OUTPUT_LABEL_HORDER": "",
+                "OUTPUT_LABEL_HORDER_USAGE": "",
+                "INCONTEXT_SAMPLES": "To be filled during instance creation",
+                "TEST_INSTRUCTION": "To be filled during instance creation"
+            }
+        },
+        "horder": {
+            "TRAIN_DATA_FILE_NAME": "samples/level-2_horder_train.json",
+            "TEST_DATA_FILE_NAME": "samples/level-2_horder_val.json",
+            "STATIC_INCONTEXT_SAMPLES": "samples/level-2_horder_static_incontext.txt",
+            "NUM_INCONTEXT_SAMPLES": 2,
+            "fill_labels": {
+                "INSTRUCTION_LABEL": "Instruction",
+                "OUTPUT_LABEL": "",
+                "OUTPUT_LABEL_HORDER": "Function",
+                "OUTPUT_LABEL_HORDER_USAGE": "Usage",
+                "INCONTEXT_SAMPLES": "To be filled during instance creation",
+                "TEST_INSTRUCTION": "To be filled during instance creation"
+            }          
+        }
+    }
+}

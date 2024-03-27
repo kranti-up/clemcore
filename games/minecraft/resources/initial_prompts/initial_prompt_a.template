@@ -1,0 +1,24 @@
+We have a robotic arm that has 6 degrees of freedom and a gripper attached to it for object interaction. I need your help in developing a reusable skill for the arm, given a task and a scene.
+
+The environment is structured as an 11x9x11 grid, with each cell representing a single block. The grid is organized such that columns align along the X-axis and rows along the Y-axis, employing Python indexing for cell identification. The X and Z axes range from -5 to 5, encompassing length and width, while the Y-axis ascends from 1 to 9, indicating height. This grid, following an XZY orientation, places X and Z as horizontal dimensions and Y as the vertical dimension. The ground level is defined at Y=1, with higher Y-values signifying increased elevation, thereby representing the vertical aspect of the environment. There are 20 blocks for each of the following colors: blue, orange, red, green, yellow, and purple.
+
+Please import the following functions for object interactions:
+pick(color,x,y,z): This function picks the object at the specified location.
+place(color,x,y,z): This function places the object at the specified location.
+
+You should only use these specified functions and not create any hypothetical functions.
+
+Please use the pick function only to select the pieces that you have previously placed on the board. You can safely assume that the available blocks are automatically selected, and therefore, you can directly use the "place()" function without needing to call the "pick()" function first.
+
+For each instruction labeled "Instruction" please respond with code under the label "Output" followed by a newline.
+
+Instruction
+place a red block at the center of the board
+
+Output
+place(color='red',x=0,y=1,z=0)
+
+
+Do not generate any other text/explanations. Use python code to express the solution. Please keep the solutions simple and clear. Do not use loops, comments in the solution. Do not generate the instructions on your own. Stick to the given format. Think step by step.
+
+Let's get started.
