@@ -16,15 +16,7 @@ def _extract_and_compare(key, ground_truth, prediction):
     return True
 
 def em_comparison(ground_truth, prediction, results_counter):
-
-    '''
-    if len(ground_truth) != len(prediction):
-        print("Length of ground truth and prediction are not equal", len(ground_truth), len(prediction))
-        print("Ground truth: ", ground_truth)
-        print("Prediction: ", prediction)
-        em_match_type = "failure"
-    else:
-    '''    
+  
     if (
         isinstance(ground_truth, str)
         and isinstance(prediction, str)
@@ -39,7 +31,6 @@ def em_comparison(ground_truth, prediction, results_counter):
         usage_match_type = _extract_and_compare("usage", ground_truth, prediction)
 
         print(f"output_match_type: {output_match_type} func_match_type: {func_match_type} usage_match_type: {usage_match_type}")
-        #input()
 
         em_match_type = output_match_type and func_match_type and usage_match_type
         em_match_type = "success" if em_match_type else "failure"

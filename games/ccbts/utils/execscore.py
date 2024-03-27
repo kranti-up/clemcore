@@ -4,6 +4,8 @@ from collections import Counter
 import numpy as np
 import json
 
+from copy import deepcopy
+
 from games.ccbts.utils.coco import (
     init_board,
     put,
@@ -116,13 +118,72 @@ def update_overall_results(episode_path, gt_board, gen_board, status):
 
     #print("Saved to file")
     #input()        
+        
+def _element_mismatch(gt_board, gen_board):
+    gt_occupied_cells = _list_occupied_cells_with_details(gt_board)
+    gen_occupied_cells = _list_occupied_cells_with_details(gen_board)
+
+    print("GT Board Occupied Cells: ",gt_occupied_cells)
+    print("GEN Board Occupied Cells: ",gen_occupied_cells)
+    
+    gt_locations = set(gt_occupied_cells.keys())
+    gen_locations = set(gen_occupied_cells.keys())
+
+    for loc in gt_locations:
+        if loc in gen_locations:
+            if len(gt_occupied_cells[loc]) != len(gen_occupied_cells[loc]):
+                return "mismatch_count"
+            shapes_gt = [shape for shape, _ in gt_occupied_cells[loc]]
+            shapes_gen = [shape for shape, _ in gen_occupied_cells[loc]]
+
+            if set(shapes_gt) == set(shapes_gen):
+                if shapes_gt != shapes_gen:# and set(colors_gt) == set(colors_gen) and colors_gt != colors_gen:
+                    return "mismatch_order"
+            else:
+                return "mismatch_shape"
+
+
+            for index in range(len(gt_occupied_cells[loc])):
+                _, shape_color_gt = gt_occupied_cells[loc][index]
+                _, shape_color_gen = gen_occupied_cells[loc][index]
+                if shape_color_gt != shape_color_gen:
+                    return "mismatch_color"
+        else:
+            return "mismatch_location"
+
+
+
+    if len(gt_locations) != len(gen_locations):
+        missing_locations = gt_locations - gen_locations
+        return f"Missing Locations: {missing_locations}"
+
+    print(f"GT Locations: {gt_occupied_cells}, Gen Locations: {gen_occupied_cells}")
+    input()
+    #return gt_occupied_cells, gen_occupied_cells
+    return "some mismatch!"
+
+def handlerepeat(ground_truth, prediction):
+    if "output" in ground_truth and ground_truth["output"] and "function" in ground_truth and ground_truth["function"]:
+        gt_mod = deepcopy(ground_truth)
+        pred_mod = deepcopy(prediction)
+
+        gt_mod["output"] = gt_mod["function"] + "\n" + gt_mod["output"]
+        pred_mod["output"] = gt_mod["function"] + "\n" + pred_mod["output"]
+
+        gt_mod["function"] = None
+
+        return gt_mod, pred_mod
+
+    else:
+        return ground_truth, prediction
+
 
 def exec_comparison(rows, cols, ground_truth, prediction, results):
 
     def compare_boards(gt_code, gen_code):
         #episode_path = f"/home/admin/Desktop/codebase/cocobots/llm_gm/clembench/{episode_path}/"
         #os.makedirs(os.path.dirname(episode_path), exist_ok=True)
-
+      
         gt_board = init_board(rows, cols)
         gt_board, gt_exec = _execute_instructions(gt_code, gt_board)
 
@@ -144,7 +205,8 @@ def exec_comparison(rows, cols, ground_truth, prediction, results):
                 #plot_board(gt_board, f"{episode_path}gt_ele_mismatch.png")
                 #plot_board(gen_board, f"{episode_path}gen_ele_mismatch.png")
                 #update_overall_results(episode_path, gt_board, gen_board, "element_mismatch")
-                return "element_mismatch", None
+                elemt_error = _element_mismatch(gt_board, gen_board)
+                return "element_mismatch", elemt_error
 
 
         #plot_board(gt_board, f"{episode_path}gt_success.png")
@@ -155,17 +217,9 @@ def exec_comparison(rows, cols, ground_truth, prediction, results):
 
     def evaluate_item(gt_item, gen_item):
         exec_result = {}
-
         for key in gt_item:
             if not gt_item[key] or key not in gen_item or not gen_item[key] or key == "usage":
                 continue
-
-            #if ":" in gen_item[key][0]:
-            #    gen_item[key] = gen_item[key].split(":")[1]
-            #    print("split after :")
-
-            #print(gen_item[key])
-            #input()
 
             fail_reason, detail_error  = compare_boards(gt_item[key], gen_item[key])
             status = "success" if fail_reason == "no error" else "failure"
@@ -173,6 +227,11 @@ def exec_comparison(rows, cols, ground_truth, prediction, results):
             exec_result = {"status": status, "fail_reason": fail_reason, "detail_error": detail_error}
         return exec_result
 
+
+    print("Ground Truth: ", ground_truth)
+    print("Prediction: ", prediction)
+
+    ground_truth, prediction = handlerepeat(ground_truth, prediction)
 
     exec_result = evaluate_item(ground_truth, prediction)
 
@@ -190,16 +249,16 @@ if __name__=="__main__":
     ground_truth = {
         #'output': "put(board, shape='bridge-h', color='blue', x=5, y=3)",
         #'function': None, 'usage': None
-"output": "Function\ndef n_washer (board, colors, x, y):\n\n    put(board, \"washer\", colors[0], x, y)\n    put(board, \"nut\", colors[1], x, y)\n    \n\n    return board\n\nUsage\nboard = n_washer(board, ['red', 'yellow'], 7, 6)",
-                "function": "def n_washer (board, colors, x, y):\n\n    put(board, \"washer\", colors[0], x, y)\n    put(board, \"nut\", colors[1], x, y)\n    \n\n    return board",
-                "usage": "board = n_washer(board, ['red', 'yellow'], 7, 6)"        
+       'output': "Function\ndef bhs2(board, shapes, colors, x, y):\n\tput(board, shapes[0], colors[0], x, y)\n\tput(board, shapes[1], colors[1], x, y)\n\tput(board, shapes[2], colors[2], x, y+1)\n\nUsage\nbhs2(board, ['bridge-h', 'screw', 'screw'], ['yellow', 'green', 'green'], 5,4)",
+        'function': "def bhs2(board, shapes, colors, x, y):\n\tput(board, shapes[0], colors[0], x, y)\n\tput(board, shapes[1], colors[1], x, y)\n\tput(board, shapes[2], colors[2], x, y+1)\nbhs2(board, ['bridge-h', 'screw', 'screw'], ['yellow', 'green', 'green'], 5,4)",
+        'usage': "bhs2(board, ['bridge-h', 'screw', 'screw'], ['yellow', 'green', 'green'], 5,4)"     
     }
 
     prediction = {
         #'output': "put(board, shape='bridge-h', color='blue', x=5, y=3)",
         #'function': None, 'usage': None
-"function": "\ndef n_washer(board, colors, x, y):\n    put(board, \"washer\", colors[0], x, y)\n    put(board, \"nut\", colors[1], x, y)\n    return board\n\nUsage:\nboard = n_washer(board, ['red', 'yellow'], 7, 7)",
-                "usage": "\nboard = n_washer(board, ['red', 'yellow'], 7, 7)"        
+        'function': "def bhs2(board, shape, colors, x, y):\n    put(board, shape, colors[0], x, y)\n    put(board, 'washer', colors[1], x, y)\n    put(board, 'washer', colors[1], x, y+1)\n\n\n\n\nbhs2(board, 'bridge-h', ['yellow', 'green'], 5, 4)",
+         'usage': "bhs2(board, 'bridge-h', ['yellow', 'green'], 5, 4)"     
     }
 
     results = {

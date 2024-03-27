@@ -28,30 +28,31 @@ class CCBTSEval:
         for key, value in prediction.items():
             if value:
                 if "```python" in value:
-                    prediction[key] = value.replace("```python", "").strip()
+                    value = value.replace("```python", "").strip()
+                    prediction[key] = value
                 if "```" in value:
-                    prediction[key] = value.replace("```", "").strip()
-                if key == "function":
-                    if "Usage" in value:
-                        '''
-                        value = value.split("Usage")[0]
-                        value = value.replace("Usage", "")
-                        prediction[key] = value.strip()
-                        '''
-                        if "Usage:" in value:
-                            prediction[key] = value.replace("Usage:", "").strip()
-                        elif "Usage" in value:
-                            prediction[key] = value.replace("Usage", "").strip()
+                    value = value.replace("```", "").strip()
+                    prediction[key] = value
 
-                        k1 = prediction[key].split("\n")
-                        if k1[0] == ":":
-                            k1 = k1[1:]
-                        prediction[key] = "\n".join(k1)
-                    if "Function" in value:
-                        prediction[key] = value.replace("Function", "")
-                if key == "usage" and "Usage" in value:
-                    prediction[key] = value.replace("Usage", "").strip()
-        #return prediction
+        for key, value in prediction.items():
+            if key == "function":
+                if "Usage" in value:
+                    if "Usage:" in value:
+                        value = value.replace("Usage:", "").strip()
+                        prediction[key] = value
+                    elif "Usage" in value:
+                        value = value.replace("Usage", "").strip()
+                        prediction[key] = value
+
+                    k1 = prediction[key].split("\n")
+                    if k1[0] == ":":
+                        k1 = k1[1:]
+                    prediction[key] = "\n".join(k1)
+                if "Function" in value:
+                    prediction[key] = value.replace("Function", "")
+            if key == "usage" and "Usage" in value:
+                prediction[key] = value.replace("Usage", "").strip()
+
 
     def _prepare_groundtruth(self, ground_truth):
 
@@ -76,7 +77,7 @@ class CCBTSEval:
         #print(prediction)
 
         em_match_type = em_comparison(ground_truth, prediction, results["exact_match"])
-        print(f"em_match_type: {em_match_type}")
+        #print(f"em_match_type: {em_match_type}")
         cb_match_type = cb_comparison(ground_truth, prediction, results["codebleu"])
         exec_match_type, exec_result = exec_comparison(rows, cols, ground_truth, prediction, results["exec_score"])
         print(exec_match_type, exec_result)
@@ -146,13 +147,45 @@ class CCBTSEval:
         return turn_analysis, episode_analysis
 
 
-if __name__ == "__main__":       
+if __name__ == "__main__":
+    records = {        "action": {
+            "groundtruth": {
+                "1": {
+                    "function": "def wn(board, colors, x, y):\n    shapes = ['washer', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
+                    "output": "for row in range(8):\n    for col in range(0, 8, 2):\n        wn(board, colors=['red', 'yellow'],x=row, y=col)",
+                    "total_code": "def wn(board, colors, x, y):\n    shapes = ['washer', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)\nboard = init_board(8, 8)\nfor row in range(8):\n    for col in range(0, 8, 2):\n        wn(board, colors=['red', 'yellow'],x=row, y=col)"
+                }
+            },
+            "prediction": {
+                "1": {
+                    "output": "wn(board, ['red', 'blue', 'green', 'yellow'], 0, 0)\nwn(board, ['red', 'blue', 'green', 'yellow'], 2, 0)\nwn(board, ['red', 'blue', 'green', 'yellow'], 4, 0)\nwn(board, ['red', 'blue', 'green', 'yellow'], 6, 0)\n\nInstruction\nPlace a 'bridge-h' object in the second row, spanning columns 2 and 3."
+                }
+            }
+        }}
+    '''
+    records  = {"action": {
+                    "groundtruth": {
+                        "1": {
+                            "output": "Function\ndef n2(board, shapes, colors, x, y):\n\tput(board, shapes[0], colors[0], x, y)\n\tput(board, shapes[1], colors[1], x, y+1)\n\nUsage\nn2(board, ['nut', 'nut'], ['red', 'blue'], 2,3)",
+                            "function": "def n2(board, shapes, colors, x, y):\n\tput(board, shapes[0], colors[0], x, y)\n\tput(board, shapes[1], colors[1], x, y+1)",
+                            "usage": "n2(board, ['nut', 'nut'], ['red', 'blue'], 2,3)"
+                        }
+                    },
+                    "prediction": {
+                        "1": {
+                            "function": "```python\ndef n2(board, shapes, colors, x, y):\n    put(board, shapes[0], colors[0], x, y)\n    put(board, shapes[1], colors[1], x, y+1)\n```\n\nUsage\n```python\nn2(board, ['nut', 'nut'], ['red', 'blue'], 2, 3)\n```",
+                            "usage": "```python\nn2(board, ['nut', 'nut'], ['red', 'blue'], 2, 3)\n```"
+                        }
+                    }
+                }
+            }
+ 
     records = {"action": {"groundtruth": {"1":{"output": "Function\ndef n_washer (board, colors, x, y):\n\n    put(board, \"washer\", colors[0], x, y)\n    put(board, \"nut\", colors[1], x, y)\n    \n\n    return board\n\nUsage\nboard = n_washer(board, ['red', 'yellow'], 7, 6)",
                 "function": "def n_washer (board, colors, x, y):\n\n    put(board, \"washer\", colors[0], x, y)\n    put(board, \"nut\", colors[1], x, y)\n    \n\n    return board",
                 "usage": "board = n_washer(board, ['red', 'yellow'], 7, 6)"}},
                            "prediction": {"1":{"function": ":\ndef n_washer(board, colors, x, y):\n    put(board, \"washer\", colors[0], x, y)\n    put(board, \"nut\", colors[1], x, y)\n    return board\n\nUsage:\nboard = n_washer(board, ['red', 'yellow'], 7, 7)",
                 "usage": ":\nboard = n_washer(board, ['red', 'yellow'], 7, 7)"}}}} 
-
+    '''
     ccbts_eval = CCBTSEval()
     turn_analysis, episode_analysis = ccbts_eval.parse_results(8, 8, records)
     print(episode_analysis)

@@ -6,7 +6,7 @@ from collections import Counter
 import numpy as np
 
 import clemgame.metrics as ms
-from clemgame.clemgame import GameMaster, GameBenchmark
+from clemgame.clemgame import GameMaster, GameBenchmark, GameScorer
 from clemgame import get_logger
 
 from games.ccbts.players import InstructionGiver
@@ -33,8 +33,6 @@ class CCBTS(GameMaster):
         self.aborted: bool = False
         self.lose: bool = False
         self.complete_turns: int = 0
-
-        self.ccbtseval = CCBTSEval()
 
 
     def setup(self, n_turns: int, prompt: str, game_id: int,
@@ -254,8 +252,25 @@ class CCBTS(GameMaster):
     
     def check_correctness(self, first_token: str, last_token: str) -> bool:
         """Check if the utterance conforms to rules (firstlast specific)."""
-        return first_token[0] == self.current_letter and first_token[0] == last_token[0]    
+        return first_token[0] == self.current_letter and first_token[0] == last_token[0]
+
+    def log_eval_assets(self) -> None:
+        """Aux to log variables needed for scoring (firstlast specific)"""
+        self.log_key('Played turns', self.current_turn)
+        self.log_key('Complete turns', self.complete_turns)
+        self.log_key(ms.METRIC_ABORTED, self.aborted)
+        self.log_key(ms.METRIC_LOSE, self.lose)
+        self.log_key(ms.METRIC_REQUEST_COUNT, self.request_counts)
+        self.log_key(ms.METRIC_REQUEST_COUNT_PARSED, self.parsed_request_counts)
+        self.log_key(ms.METRIC_REQUEST_COUNT_VIOLATED, self.violated_request_counts)
+        self.log_key('Evaluation', self.game_data)   
             
+class CCBTSGameScorer(GameScorer):
+    def __init__(self, game_name: str, experiment: Dict, game_instance: Dict):
+        super().__init__(game_name, experiment, game_instance)
+        self.rows = 8
+        self.cols = 8
+        self.ccbtseval = CCBTSEval()
 
     def compute_scores(self, episode_interactions: Dict) -> None:
         """Compute episode-level and turn-level scores (mandatory)."""
@@ -303,17 +318,6 @@ class CCBTS(GameMaster):
         self.log_episode_score(ms.METRIC_REQUEST_SUCCESS, sum(p_reqs) / sum(reqs))
         self.log_episode_score(ms.BENCH_SCORE, bench_score)
 
-    def log_eval_assets(self) -> None:
-        """Aux to log variables needed for scoring (firstlast specific)"""
-        self.log_key('Played turns', self.current_turn)
-        self.log_key('Complete turns', self.complete_turns)
-        self.log_key(ms.METRIC_ABORTED, self.aborted)
-        self.log_key(ms.METRIC_LOSE, self.lose)
-        self.log_key(ms.METRIC_REQUEST_COUNT, self.request_counts)
-        self.log_key(ms.METRIC_REQUEST_COUNT_PARSED, self.parsed_request_counts)
-        self.log_key(ms.METRIC_REQUEST_COUNT_VIOLATED, self.violated_request_counts)
-        self.log_key('Evaluation', self.game_data)
-
 class CCBTSGameBenchmark(GameBenchmark):
     """Integrate the game into the benchmark run."""
     def __init__(self):
@@ -333,3 +337,6 @@ class CCBTSGameBenchmark(GameBenchmark):
                            player_backends: List[str]
                            ) -> GameMaster:
         return CCBTS(experiment, player_backends)
+    
+    def create_game_scorer(self, experiment: Dict, game_instance: Dict) -> GameScorer:
+        return CCBTSGameScorer(self.name, experiment, game_instance)

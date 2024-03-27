@@ -23,7 +23,6 @@ def _get_codebleu_score(ground_truth, generated_code):
 
 
 def cb_comparison(ground_truth, prediction, results):
-
     cb_result = {}
     for code_type in ground_truth:
         if code_type not in prediction:

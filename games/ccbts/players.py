@@ -30,5 +30,5 @@ class InstructionGiver(Player):
             if inst_type == "atomic":
                 return "Output\nput(board, shape='screw', color='yellow', x=1, y=5)"
             else:
-                data = "Function:\ndef place_shape(board, colors, x, y):\n\tput(board, 'screw', colors[0], x, y)\n\treturn board\n\nUsage:\nboard=place_shape(board, ['yellow'], 1, 5)"
+                data = "Function:\ndef place_shape(board, colors, x, y):\n\tput(board, 'screw', colors[0], x, y \n\nUsage:\nplace_shape(board, ['yellow'], 1, 5)"
             return data
