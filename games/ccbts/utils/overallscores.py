@@ -56,7 +56,7 @@ def _compute_metrics(results):
     _update_error_analysis(detail_error, model_results, "detail_error")
 
     #with open("overall_scores.json", "w") as f:
-    with open("/home/admin/Desktop/codebase/cocobots/clem_ccbts/clembench/results_99/overall_scores.json", "w") as f:
+    with open("/Users/kranti/Desktop/codebase/cocobots/clembench/results/overall_scores.json", "w") as f:
         json.dump(model_results, f, indent=4)
 
 
@@ -135,6 +135,6 @@ def compute_overall_scores(records_path):
     _compute_metrics(overall_scores)
 
 if __name__=="__main__":
-    compute_overall_scores(records_path="/home/admin/Desktop/codebase/cocobots/clem_ccbts/clembench/results_99/")
+    compute_overall_scores(records_path="/Users/kranti/Desktop/codebase/cocobots/clembench/results/")
     #compute_overall_scores(records_path="/project/kranti/llm_gm/clembench/results/ccbts/records/")
     

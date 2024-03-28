@@ -44,7 +44,12 @@ def get_incontext_samples(
     if board not in ["sb", "rb"] or board_object not in ["so", "ro"] or variant not in ["single_turn", "multi_turn", "regular"]:
         raise ValueError(f"Invalid board: {board} or board_object: {board_object} or variant:{variant}")
 
-    filtered_samples = {k: v for k, v in train_samples[total_shapes].items() if k != test_combo_name}
+    board_type = "simple" if board == "sb" else "regular"
+    board_object_type = "simple" if board_object == "so" else "complex"
+
+    train_shapes = train_samples[board_type][board_object_type]
+
+    filtered_samples = {k: v for k, v in train_shapes[total_shapes].items() if k != test_combo_name}
 
     incontext_samples = []
     for combo in filtered_samples:

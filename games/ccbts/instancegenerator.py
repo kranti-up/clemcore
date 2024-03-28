@@ -55,80 +55,82 @@ class CCBTSInstanceGenerator(GameInstanceGenerator):
 
                     #test_samples_combos = random.sample(list(test_samples.keys()), N_INSTANCES)
 
-                    for total_shapes in test_samples:
-                        for combo_name in test_samples[total_shapes]:
-                            #samples_test = random.sample(test_samples[total_shapes][combo_name], 1)
-                            for sample in test_samples[total_shapes][combo_name]:
-                            #for sample in samples_test:
-                                test_dialogues = sample["dialogues"][variant]["instructions"]
-                                n_turns = len(test_dialogues)
-                                    
-                                if SEED == "static":
-                                    incontext_samples = self.load_file(f'resources/{tests[board][board_object][variant]["STATIC_INCONTEXT_SAMPLES"]}')
-                                else:
-                                    incontext_samples = get_incontext_samples(
-                                                board,
-                                                board_object,
-                                                variant,
-                                                tests[board][board_object][variant]["NUM_INCONTEXT_SAMPLES"],
-                                                total_shapes,
-                                                combo_name,
-                                                self.train_samples,
-                                                incontext_labels,
-                                                SEED                                    
-                                            )
+                    for board_type, objs_type in test_samples.items():
+                        for obj, num_shapes in objs_type.items():
+                            for total_shapes, combo_names in num_shapes.items():
+                                for combo_name in num_shapes[total_shapes]:
+                                    #samples_test = random.sample(test_samples[total_shapes][combo_name], 1)
+                                    for sample in num_shapes[total_shapes][combo_name]:
+                                    #for sample in samples_test:
+                                        test_dialogues = sample["dialogues"][variant]["instructions"]
+                                        n_turns = len(test_dialogues)
+                                            
+                                        if SEED == "static":
+                                            incontext_samples = self.load_file(f'resources/{tests[board][board_object][variant]["STATIC_INCONTEXT_SAMPLES"]}')
+                                        else:
+                                            incontext_samples = get_incontext_samples(
+                                                        board,
+                                                        board_object,
+                                                        variant,
+                                                        tests[board][board_object][variant]["NUM_INCONTEXT_SAMPLES"],
+                                                        total_shapes,
+                                                        combo_name,
+                                                        self.train_samples,
+                                                        incontext_labels,
+                                                        SEED                                    
+                                                    )
 
-                                # set the parameters
-                                # create a game instance, using a game_id counter/index
-                                instance = self.add_game_instance(experiment, game_id)
+                                        # set the parameters
+                                        # create a game instance, using a game_id counter/index
+                                        instance = self.add_game_instance(experiment, game_id)
 
-                                # populate the game instance with its parameters
-                                instance["n_turns"] = n_turns
-                                instance["dialogues"] = test_dialogues                          
-                                if variant == "multi_turn":
-                                    instance["output_labels"] = {
-                                        "output": tests[board][board_object][variant]["fill_labels"][
-                                            "OUTPUT_LABEL"
-                                        ],
-                                        "function": None,
-                                        "usage": None,
-                                    }
+                                        # populate the game instance with its parameters
+                                        instance["n_turns"] = n_turns
+                                        instance["dialogues"] = test_dialogues                          
+                                        if variant == "multi_turn":
+                                            instance["output_labels"] = {
+                                                "output": tests[board][board_object][variant]["fill_labels"][
+                                                    "OUTPUT_LABEL"
+                                                ],
+                                                "function": None,
+                                                "usage": None,
+                                            }
 
-                                elif variant == "single_turn":
-                                    instance["output_labels"] = {
-                                        "output": None,
-                                        "function": tests[board][board_object][variant][
-                                            "fill_labels"
-                                        ]["OUTPUT_LABEL_HORDER"],
-                                        "usage": tests[board][board_object][variant]["fill_labels"][
-                                            "OUTPUT_LABEL_HORDER_USAGE"
-                                        ],
-                                    }
-                                elif variant == "regular":
-                                    instance["output_labels"] = {
-                                        "output": tests[board][board_object][variant]["fill_labels"][
-                                            "OUTPUT_LABEL"
-                                        ],
-                                        "function": None,
-                                        "usage": None,
-                                    }
+                                        elif variant == "single_turn":
+                                            instance["output_labels"] = {
+                                                "output": None,
+                                                "function": tests[board][board_object][variant][
+                                                    "fill_labels"
+                                                ]["OUTPUT_LABEL_HORDER"],
+                                                "usage": tests[board][board_object][variant]["fill_labels"][
+                                                    "OUTPUT_LABEL_HORDER_USAGE"
+                                                ],
+                                            }
+                                        elif variant == "regular":
+                                            instance["output_labels"] = {
+                                                "output": tests[board][board_object][variant]["fill_labels"][
+                                                    "OUTPUT_LABEL"
+                                                ],
+                                                "function": None,
+                                                "usage": None,
+                                            }
 
-                                tests[board][board_object][variant]["fill_labels"][
-                                    "INCONTEXT_SAMPLES"
-                                ] = incontext_samples
+                                        tests[board][board_object][variant]["fill_labels"][
+                                            "INCONTEXT_SAMPLES"
+                                        ] = incontext_samples
 
-                                tests[board][board_object][variant]["fill_labels"][
-                                    "COMBO_NAME"
-                                ] = combo_name
+                                        tests[board][board_object][variant]["fill_labels"][
+                                            "COMBO_NAME"
+                                        ] = combo_name
 
-                                instance["prompt"] = self.create_prompt(
-                                    prompt,
-                                    **tests[board][board_object][variant]["fill_labels"],
-                                )
-                                instance["rows"] = tests["board"]["rows"]
-                                instance["cols"] = tests["board"]["cols"]
-                                game_id += 1
-
+                                        instance["prompt"] = self.create_prompt(
+                                            prompt,
+                                            **tests[board][board_object][variant]["fill_labels"],
+                                        )
+                                        instance["rows"] = tests["board"]["rows"]
+                                        instance["cols"] = tests["board"]["cols"]
+                                        game_id += 1
+        print(f"Generated instances for CCBTS game - {game_id - 1} instances.")
 
     # an additional method, specific for our example
     def create_prompt(self, prompt: str, **kwargs) -> str:
