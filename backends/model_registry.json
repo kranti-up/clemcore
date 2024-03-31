@@ -263,6 +263,27 @@
     "eos_to_cull": "</s>"
   },
   {
+    "model_name": "CodeLlama-7b-Instruct-hf",
+    "backend": "huggingface_local",
+    "huggingface_id": "codellama/CodeLlama-7b-Instruct-hf",
+    "premade_chat_template": true,
+    "eos_to_cull": "</s>"
+  },
+  {
+    "model_name": "CodeLlama-13b-Instruct-hf",
+    "backend": "huggingface_local",
+    "huggingface_id": "codellama/CodeLlama-13b-Instruct-hf",
+    "premade_chat_template": true,
+    "eos_to_cull": "</s>"
+  },
+  {
+    "model_name": "stable-code-instruct-3b",
+    "backend": "huggingface_local",
+    "huggingface_id": "stabilityai/stable-code-instruct-3b",
+    "premade_chat_template": true,
+    "eos_to_cull": "</s>"
+  },      
+  {
     "model_name": "zephyr-7b-alpha",
     "backend": "huggingface_local",
     "huggingface_id": "HuggingFaceH4/zephyr-7b-alpha",
