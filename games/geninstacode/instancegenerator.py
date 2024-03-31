@@ -136,20 +136,20 @@ class GenInstaCodeInstanceGenerator(GameInstanceGenerator):
                                         )
 
                                         game_id += 1
-                                        if game_id > N_INSTANCES:
-                                            break
-                                    if game_id > N_INSTANCES:
-                                        break
-                                if game_id > N_INSTANCES:
-                                    break
-                            if game_id > N_INSTANCES:
-                                break    
-                    if game_id > N_INSTANCES:
-                        break
-                if game_id > N_INSTANCES:
-                    break
-            if game_id > N_INSTANCES:
-                break
+                                        #if game_id > N_INSTANCES:
+                                        #    break
+                                    #if game_id > N_INSTANCES:
+                                    #    break
+                                #if game_id > N_INSTANCES:
+                                #    break
+                            #if game_id > N_INSTANCES:
+                            #    break    
+                    #if game_id > N_INSTANCES:
+                    #    break
+                #if game_id > N_INSTANCES:
+                #    break
+            #if game_id > N_INSTANCES:
+            #    break
 
         print(f"Generated instances for GenInstaCode game - {game_id - 1} instances.")
 
