@@ -26,6 +26,13 @@ def format_incontext_samples(
             for ic_sample in incontext_samples
         )
         return result
+    
+    elif variant == "regular":
+        result = "\n".join(
+            f"{instruction_label}\n{ic_sample[0]}\n\n{output_label_forder}\n{ic_sample[1]}\n"
+            for ic_sample in incontext_samples
+        )
+        return result
 
 
 def get_incontext_samples(

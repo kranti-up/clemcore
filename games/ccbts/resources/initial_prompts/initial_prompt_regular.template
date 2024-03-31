@@ -14,6 +14,8 @@ The following functions are already defined; therefore, do not generate addition
 
 For each instruction labeled $INSTRUCTION_LABEL, please respond with code under the label $OUTPUT_LABEL followed by a newline.
 
+$INCONTEXT_SAMPLES
+
 Do not generate any other text/explanations.
 
 The order of colors, x, y matters, as these are assigned to the shapes in the same sequence.
