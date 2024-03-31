@@ -152,6 +152,13 @@
     "eos_to_cull": "</s>"
   },
   {
+    "model_name": "Mistral-7B-Instruct-v0.2",
+    "backend": "huggingface_local",
+    "huggingface_id": "mistralai/Mistral-7B-Instruct-v0.2",
+    "premade_chat_template": true,
+    "eos_to_cull": "</s>"
+  },  
+  {
     "model_name": "sheep-duck-llama-2-70b-v1.1",
     "backend": "huggingface_local",
     "huggingface_id": "Riiid/sheep-duck-llama-2-70b-v1.1",
