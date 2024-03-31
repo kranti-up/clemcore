@@ -66,7 +66,8 @@ class GenInstaInstanceGenerator(GameInstanceGenerator):
                                             "dialogues": test_dialogues,
                                             "rows": tests["board"]["rows"],
                                             "cols": tests["board"]["cols"],
-                                            "output_labels": ["Instructions"]
+                                            "output_labels": ["Instructions"],
+                                            "code": sample["code"],
                                         }
                                         # add the prompt to the game instance
                                         instance["prompt"] = prompt

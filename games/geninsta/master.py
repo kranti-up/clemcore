@@ -55,7 +55,8 @@ class GenInsta(GameMaster):
         self.parsed_request_counts = [0] * (n_turns + 1)
         self.violated_request_counts = [0] * (n_turns + 1)
 
-        self.game_data = {"board": {}, "instruction": {"groundtruth":{}, "prediction": {}}}
+        self.game_data = {"board": {}, "instruction": {"groundtruth":{}, "prediction": {}},
+                          "code": {}}
         self.rows = self.board_data["rows"]
         self.cols = self.board_data["cols"]
 
@@ -208,6 +209,7 @@ class GenInsta(GameMaster):
 
         self.game_data["board"][self.current_turn] = board_details
         self.game_data["instruction"]["groundtruth"][self.current_turn] = {"Instructions": groundtruth}
+        self.game_data["code"][self.current_turn] = {"groundtruth": self.board_data["code"]}
 
         action_content = content if self.current_turn != 1 else self.player_a.history[-1]["content"]
         action = {'type': 'send message', 'content': action_content}
