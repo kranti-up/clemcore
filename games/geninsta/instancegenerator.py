@@ -73,7 +73,7 @@ class GenInstaInstanceGenerator(GameInstanceGenerator):
                                         instance["prompt"] = prompt
 
                                         game_id += 1
-        print(f"Generated instances for CCBTS game - {game_id - 1} instances.")
+        print(f"Generated instances for GenInsta game - {game_id - 1} instances.")
 
 
 
