@@ -19,7 +19,7 @@ def _compute_average(metric_values):
         return 0.0
     return round(sum(metric_values) / len(metric_values), 3)
 
-def _compute_metrics(results):
+def _compute_metrics(filepath, results):
     model_results = {}
     fail_reason = {}
     detail_error = {}
@@ -56,7 +56,8 @@ def _compute_metrics(results):
     _update_error_analysis(detail_error, model_results, "detail_error")
 
     #with open("overall_scores.json", "w") as f:
-    with open("/Users/kranti/Desktop/codebase/cocobots/clembench/results/overall_scores.json", "w") as f:
+    #with open("/Users/kranti/Desktop/codebase/cocobots/clembench/results_ablation_cdlm7b_sb_so_ic_6/overall_scores.json", "w") as f:
+    with open(f"{filepath}/overall_scores.json", "w") as f:
         json.dump(model_results, f, indent=4)
 
 
@@ -128,13 +129,13 @@ def compute_overall_scores(records_path):
                     overall_scores[model_dir.name][exp_dir.name]["detail_error"].extend(detail_errors)
 
 
-    with open("overall_scores_1.json", "w") as f:
+    #with open("overall_scores_1.json", "w") as f:
     #with open("/project/kranti/llm_gm/clembench/results/ccbts/overall_scores.json", "w") as f:
-        json.dump(overall_scores, f, indent=4)
+    #    json.dump(overall_scores, f, indent=4)
 
-    _compute_metrics(overall_scores)
+    _compute_metrics(records_path, overall_scores)
 
 if __name__=="__main__":
-    compute_overall_scores(records_path="/Users/kranti/Desktop/codebase/cocobots/clembench/results/")
+    compute_overall_scores(records_path="/Users/kranti/Desktop/codebase/cocobots/clembench/results_ablation_stbl3b_sb_so_ic_6/")
     #compute_overall_scores(records_path="/project/kranti/llm_gm/clembench/results/ccbts/records/")
     

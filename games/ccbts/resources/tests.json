@@ -46,12 +46,11 @@
         "_objects": ["so", "co"],    
         "so": {
             "variants": ["regular"],
-            "_variants": ["regular"],
             "regular": {
                 "TRAIN_DATA_FILE_NAME": "samples/rb_so_train.json",
                 "TEST_DATA_FILE_NAME": "samples/rb_so_val.json",
                 "STATIC_INCONTEXT_SAMPLES": "samples/rb_so_rg_static_incontext.txt",
-                "NUM_INCONTEXT_SAMPLES": 3,
+                "NUM_INCONTEXT_SAMPLES": 0,
                 "fill_labels": {
                     "INSTRUCTION_LABEL": "Instruction",
                     "OUTPUT_LABEL": "Output",

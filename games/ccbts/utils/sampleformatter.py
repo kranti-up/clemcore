@@ -49,21 +49,35 @@ def get_incontext_samples(
 
     train_shapes = train_samples[board_type][board_object_type]
 
-    filtered_samples = {k: v for k, v in train_shapes[total_shapes].items() if k != test_combo_name}
+    if board_type == "simple":
+        filtered_samples = {k: v for k, v in train_shapes[total_shapes].items() if k != test_combo_name}
+    else:
+        test_reg_template = train_shapes[total_shapes][test_combo_name][0]["seed_template"]
+        filtered_samples = {}
+        for k, v in train_shapes[total_shapes].items():
+            if k != test_combo_name:
+                if k not in filtered_samples:
+                    filtered_samples[k] = []
+                for avail_sample in v:
+                    if avail_sample["seed_template"] == test_reg_template:
+                        continue
+                    else:
+                        filtered_samples[k].append(avail_sample)
+
 
     incontext_samples = []
     for combo in filtered_samples:
-        sample = random.choice(filtered_samples[combo])
-        #for sample in filtered_samples[combo]:
-        dialog = sample["dialogues"][variant]["instructions"]
+        sel_samples = random.sample(filtered_samples[combo], k=2)
+        for sample in sel_samples:
+            dialog = sample["dialogues"][variant]["instructions"]
 
-        for d_ in dialog:
-            if variant == "multi_turn":
-                incontext_samples.append((d_["<Programmer>"], d_["<Editor>"]))
-            elif variant == "single_turn":
-                incontext_samples.append((d_["<Programmer>"], {"function":d_["<Editor>"]["function"], "usage": d_["<Editor>"]["usage"]}))
-            elif variant == "regular":
-                incontext_samples.append((d_["<Programmer>"], d_["<Editor>"]["output"]))
+            for d_ in dialog:
+                if variant == "multi_turn":
+                    incontext_samples.append((d_["<Programmer>"], d_["<Editor>"]))
+                elif variant == "single_turn":
+                    incontext_samples.append((d_["<Programmer>"], {"function":d_["<Editor>"]["function"], "usage": d_["<Editor>"]["usage"]}))
+                elif variant == "regular":
+                    incontext_samples.append((d_["<Programmer>"], d_["<Editor>"]["output"]))
             #break
 
     random.seed(SEED)

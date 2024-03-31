@@ -239,10 +239,20 @@ class CCBTS(GameMaster):
             answer = {label: response.split(value)[1].strip() if value in response else None
                     for label, value in self.output_labels.items() if value is not None}
 
+            missing_labels = []
             if None in answer.values():
                 missing_labels = [label for label, result in answer.items() if result is None]
                 print(f"Labels {missing_labels} not found in response: {response}")
-                return None
+                #return None
+            
+            if missing_labels:
+                if "output" in missing_labels:
+                    answer["output"] = response.strip()
+                if "function" in missing_labels:
+                    answer["function"] = response.strip()
+                if "usage" in missing_labels:
+                    answer["usage"] = ""
+
 
             print(f"Inside parse: answer = {answer}")
             return answer
