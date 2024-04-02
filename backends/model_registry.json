@@ -291,6 +291,25 @@
     "eos_to_cull": "</s>"
   },      
   {
+    "model_name": "OpenCodeInterpreter-DS-33B",
+    "backend": "huggingface_local",
+    "huggingface_id": "m-a-p/OpenCodeInterpreter-DS-33B",
+    "premade_chat_template": true
+  }, 
+  {
+    "model_name": "CodeFuse-DeepSeek-33B",
+    "backend": "huggingface_local",
+    "huggingface_id": "codefuse-ai/CodeFuse-DeepSeek-33B",
+    "premade_chat_template": true,
+    "eos_to_cull": "<｜end▁of▁sentence｜>"
+  },
+  {
+    "model_name": "deepseek-coder-33b-instruct",
+    "backend": "huggingface_local",
+    "huggingface_id": "deepseek-ai/deepseek-coder-33b-instruct",
+    "premade_chat_template": true    
+  },
+  {
     "model_name": "zephyr-7b-alpha",
     "backend": "huggingface_local",
     "huggingface_id": "HuggingFaceH4/zephyr-7b-alpha",
