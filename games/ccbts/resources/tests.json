@@ -9,11 +9,11 @@
         "objects": ["so"],
         "_objects": ["so", "co"],    
         "so": {
-            "variants": ["single_turn", "multi_turn"],
+            "variants": ["single_turn", "single_turn_sc", "multi_turn"],
             "_variants": ["single_turn", "multi_turn"],
             "single_turn": {
                 "TRAIN_DATA_FILE_NAME": "samples/sb_so_train.json",
-                "TEST_DATA_FILE_NAME": "samples/sb_so_test.json",
+                "TEST_DATA_FILE_NAME": "samples/sb_so_val.json",
                 "STATIC_INCONTEXT_SAMPLES": "samples/sb_so_st_static_incontext.txt",
                 "NUM_INCONTEXT_SAMPLES": 3,
                 "fill_labels": {
@@ -25,9 +25,23 @@
                     "TEST_INSTRUCTION": "To be filled during instance creation"
                 }
             },
+            "single_turn_sc": {
+                "TRAIN_DATA_FILE_NAME": "samples/sb_so_train.json",
+                "TEST_DATA_FILE_NAME": "samples/sb_so_val.json",
+                "STATIC_INCONTEXT_SAMPLES": "samples/sb_so_st_static_incontext.txt",
+                "NUM_INCONTEXT_SAMPLES": 3,
+                "fill_labels": {
+                    "INSTRUCTION_LABEL": "Instruction",
+                    "OUTPUT_LABEL": "",
+                    "OUTPUT_LABEL_HORDER": "Function",
+                    "OUTPUT_LABEL_HORDER_USAGE": "Usage",
+                    "INCONTEXT_SAMPLES": "To be filled during instance creation",
+                    "TEST_INSTRUCTION": "To be filled during instance creation"
+                }
+            },            
             "multi_turn": {
                 "TRAIN_DATA_FILE_NAME": "samples/sb_so_train.json",
-                "TEST_DATA_FILE_NAME": "samples/sb_so_test.json",
+                "TEST_DATA_FILE_NAME": "samples/sb_so_val.json",
                 "STATIC_INCONTEXT_SAMPLES": "samples/sb_so_mt_static_incontext.txt",
                 "NUM_INCONTEXT_SAMPLES": 3,
                 "fill_labels": {

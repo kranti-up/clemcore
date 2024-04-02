@@ -38,16 +38,18 @@ class CCBTS(GameMaster):
     def setup(self, n_turns: int, prompt: str, game_id: int,
               dialogues: list,
               rows: int, cols: int,
-              output_labels: dict) -> None:
+              output_labels: dict,
+              test_variant: str) -> None:
         """Setup the episode (mandatory)."""
         self.n_turns = n_turns
         self.game_id = game_id
 
         self.dialogues = dialogues
         self.output_labels = output_labels
+        self.test_variant = test_variant
 
         # instantiate both players
-        self.player_a = InstructionGiver(self.model_a, "A")
+        self.player_a = InstructionGiver(self.model_a, "A", test_variant)
 
         # initialise game variables
         self.current_turn: int = 0

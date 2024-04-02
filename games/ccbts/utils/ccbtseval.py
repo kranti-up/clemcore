@@ -53,6 +53,10 @@ class CCBTSEval:
             if key == "usage" and "Usage" in value:
                 prediction[key] = value.replace("Usage", "").strip()
 
+            if key == "output":
+                value = value.replace(":","").strip()
+                prediction[key] = value
+
 
     def _prepare_groundtruth(self, ground_truth):
 

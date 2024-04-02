@@ -48,7 +48,7 @@ def get_incontext_samples(
 
 ):
     print(f"board: {board}, board_object: {board_object}, variant: {variant}, combo_name: {test_combo_name}")
-    if board not in ["sb", "rb"] or board_object not in ["so", "ro"] or variant not in ["single_turn", "multi_turn", "regular"]:
+    if board not in ["sb", "rb"] or board_object not in ["so", "ro"] or variant not in ["single_turn", "single_turn_sc", "multi_turn", "regular"]:
         raise ValueError(f"Invalid board: {board} or board_object: {board_object} or variant:{variant}")
 
     board_type = "simple" if board == "sb" else "regular"
@@ -81,7 +81,7 @@ def get_incontext_samples(
             for d_ in dialog:
                 if variant == "multi_turn":
                     incontext_samples.append((d_["<Programmer>"], d_["<Editor>"]))
-                elif variant == "single_turn":
+                elif variant in ["single_turn", "single_turn_sc"]:
                     incontext_samples.append((d_["<Programmer>"], {"function":d_["<Editor>"]["function"], "usage": d_["<Editor>"]["usage"]}))
                 elif variant == "regular":
                     incontext_samples.append((d_["<Programmer>"], d_["<Editor>"]["output"]))
