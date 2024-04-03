@@ -37,7 +37,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bw' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'bw' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['red', 'yellow'] for the 'bw' object.",
                                         "<Editor>": {
                                             "function": "def bw(board, colors, x, y):\n    shapes = ['bridge-h', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        bw(board, colors=['red', 'yellow'],x=row, y=col)",
@@ -82,7 +82,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bw' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'bw' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['red', 'blue'] for the 'bw' object.",
                                         "<Editor>": {
                                             "function": "def bw(board, colors, x, y):\n    shapes = ['bridge-v', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        bw(board, colors=['red', 'blue'],x=row, y=col)",
@@ -127,7 +127,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'green'] for the 'bw' object.",
                                         "<Editor>": {
                                             "function": "def bw(board, colors, x, y):\n    shapes = ['bridge-h', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bw(board, colors=['red', 'green'], x=row, y=col)",
@@ -174,7 +174,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bn' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'bn' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'green'] for the 'bn' object.",
                                         "<Editor>": {
                                             "function": "def bn(board, colors, x, y):\n    shapes = ['bridge-h', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        bn(board, colors=['yellow', 'green'],x=row, y=col)",
@@ -219,7 +219,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bn' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'bn' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['blue', 'green'] for the 'bn' object.",
                                         "<Editor>": {
                                             "function": "def bn(board, colors, x, y):\n    shapes = ['bridge-v', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        bn(board, colors=['blue', 'green'],x=row, y=col)",
@@ -264,7 +264,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['yellow', 'green'] for the 'bn' object.",
                                         "<Editor>": {
                                             "function": "def bn(board, colors, x, y):\n    shapes = ['bridge-h', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bn(board, colors=['yellow', 'green'], x=row, y=col)",
@@ -307,7 +307,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'ns' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'ns' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'green'] for the 'ns' object.",
                                         "<Editor>": {
                                             "function": "def ns(board, colors, x, y):\n    shapes = ['nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        ns(board, colors=['yellow', 'green'],x=row, y=col)",
@@ -348,7 +348,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'ns' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'ns' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['red', 'blue'] for the 'ns' object.",
                                         "<Editor>": {
                                             "function": "def ns(board, colors, x, y):\n    shapes = ['nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        ns(board, colors=['red', 'blue'],x=row, y=col)",
@@ -389,7 +389,7 @@
                                 "template": "templates/instructions/regular/regular_template14.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Starting from the top-left corner, fill the grid with 'ns' objects diagonally.",
+                                        "<Programmer>": "Starting from the top-left corner, fill the grid with 'ns' objects diagonally.  Use only these colors: ['blue', 'yellow'] for the 'ns' object.",
                                         "<Editor>": {
                                             "function": "def ns(board, colors, x, y):\n    shapes = ['nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in range(8):\n        if row == col:\n            ns(board, colors=['blue', 'yellow'],x=row, y=col)",
@@ -430,7 +430,7 @@
                                 "template": "templates/instructions/regular/regular_template15.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'ns' object at all the corners of the grid.",
+                                        "<Programmer>": "Place a 'ns' object at all the corners of the grid.  Use only these colors: ['red', 'yellow'] for the 'ns' object.",
                                         "<Editor>": {
                                             "function": "def ns(board, colors, x, y):\n    shapes = ['nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row, col in [[0,0], [0,7], [7, 0], [7, 7]]:\n    ns(board, colors=['red', 'yellow'], x=row, y=col)",
@@ -473,7 +473,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wn' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'wn' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['green', 'red'] for the 'wn' object.",
                                         "<Editor>": {
                                             "function": "def wn(board, colors, x, y):\n    shapes = ['washer', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        wn(board, colors=['green', 'red'],x=row, y=col)",
@@ -514,7 +514,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wn' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'wn' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['blue', 'yellow'] for the 'wn' object.",
                                         "<Editor>": {
                                             "function": "def wn(board, colors, x, y):\n    shapes = ['washer', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        wn(board, colors=['blue', 'yellow'],x=row, y=col)",
@@ -555,7 +555,7 @@
                                 "template": "templates/instructions/regular/regular_template14.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Starting from the top-left corner, fill the grid with 'wn' objects diagonally.",
+                                        "<Programmer>": "Starting from the top-left corner, fill the grid with 'wn' objects diagonally.  Use only these colors: ['green', 'yellow'] for the 'wn' object.",
                                         "<Editor>": {
                                             "function": "def wn(board, colors, x, y):\n    shapes = ['washer', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in range(8):\n        if row == col:\n            wn(board, colors=['green', 'yellow'],x=row, y=col)",
@@ -596,7 +596,7 @@
                                 "template": "templates/instructions/regular/regular_template15.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wn' object at all the corners of the grid.",
+                                        "<Programmer>": "Place a 'wn' object at all the corners of the grid.  Use only these colors: ['yellow', 'green'] for the 'wn' object.",
                                         "<Editor>": {
                                             "function": "def wn(board, colors, x, y):\n    shapes = ['washer', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row, col in [[0,0], [0,7], [7, 0], [7, 7]]:\n    wn(board, colors=['yellow', 'green'], x=row, y=col)",
@@ -643,7 +643,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bs' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'bs' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'red'] for the 'bs' object.",
                                         "<Editor>": {
                                             "function": "def bs(board, colors, x, y):\n    shapes = ['bridge-h', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        bs(board, colors=['yellow', 'red'],x=row, y=col)",
@@ -688,7 +688,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bs' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'bs' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['green', 'red'] for the 'bs' object.",
                                         "<Editor>": {
                                             "function": "def bs(board, colors, x, y):\n    shapes = ['bridge-v', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        bs(board, colors=['green', 'red'],x=row, y=col)",
@@ -731,7 +731,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'ws' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'ws' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['green', 'red'] for the 'ws' object.",
                                         "<Editor>": {
                                             "function": "def ws(board, colors, x, y):\n    shapes = ['washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        ws(board, colors=['green', 'red'],x=row, y=col)",
@@ -772,7 +772,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'ws' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'ws' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['yellow', 'green'] for the 'ws' object.",
                                         "<Editor>": {
                                             "function": "def ws(board, colors, x, y):\n    shapes = ['washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        ws(board, colors=['yellow', 'green'],x=row, y=col)",
@@ -813,7 +813,7 @@
                                 "template": "templates/instructions/regular/regular_template14.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Starting from the top-left corner, fill the grid with 'ws' objects diagonally.",
+                                        "<Programmer>": "Starting from the top-left corner, fill the grid with 'ws' objects diagonally.  Use only these colors: ['red', 'green'] for the 'ws' object.",
                                         "<Editor>": {
                                             "function": "def ws(board, colors, x, y):\n    shapes = ['washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in range(8):\n        if row == col:\n            ws(board, colors=['red', 'green'],x=row, y=col)",
@@ -854,7 +854,7 @@
                                 "template": "templates/instructions/regular/regular_template15.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'ws' object at all the corners of the grid.",
+                                        "<Programmer>": "Place a 'ws' object at all the corners of the grid.  Use only these colors: ['yellow', 'green'] for the 'ws' object.",
                                         "<Editor>": {
                                             "function": "def ws(board, colors, x, y):\n    shapes = ['washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row, col in [[0,0], [0,7], [7, 0], [7, 7]]:\n    ws(board, colors=['yellow', 'green'], x=row, y=col)",
@@ -897,7 +897,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nw' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'nw' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'red'] for the 'nw' object.",
                                         "<Editor>": {
                                             "function": "def nw(board, colors, x, y):\n    shapes = ['nut', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        nw(board, colors=['yellow', 'red'],x=row, y=col)",
@@ -938,7 +938,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nw' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'nw' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['green', 'red'] for the 'nw' object.",
                                         "<Editor>": {
                                             "function": "def nw(board, colors, x, y):\n    shapes = ['nut', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        nw(board, colors=['green', 'red'],x=row, y=col)",
@@ -979,7 +979,7 @@
                                 "template": "templates/instructions/regular/regular_template14.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Starting from the top-left corner, fill the grid with 'nw' objects diagonally.",
+                                        "<Programmer>": "Starting from the top-left corner, fill the grid with 'nw' objects diagonally.  Use only these colors: ['blue', 'yellow'] for the 'nw' object.",
                                         "<Editor>": {
                                             "function": "def nw(board, colors, x, y):\n    shapes = ['nut', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in range(8):\n        if row == col:\n            nw(board, colors=['blue', 'yellow'],x=row, y=col)",
@@ -1020,7 +1020,7 @@
                                 "template": "templates/instructions/regular/regular_template15.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nw' object at all the corners of the grid.",
+                                        "<Programmer>": "Place a 'nw' object at all the corners of the grid.  Use only these colors: ['red', 'green'] for the 'nw' object.",
                                         "<Editor>": {
                                             "function": "def nw(board, colors, x, y):\n    shapes = ['nut', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row, col in [[0,0], [0,7], [7, 0], [7, 7]]:\n    nw(board, colors=['red', 'green'], x=row, y=col)",
@@ -1061,7 +1061,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'red'] for the 'nw' object.",
                                         "<Editor>": {
                                             "function": "def nw(board, colors, x, y):\n    shapes = ['nut', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0], [0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nw(board, colors=['green', 'red'], x=row, y=col)",
@@ -1108,7 +1108,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nws' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'nws' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['red', 'blue', 'green'] for the 'nws' object.",
                                         "<Editor>": {
                                             "function": "def nws(board, colors, x, y):\n    shapes = ['nut', 'washer', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        nws(board, colors=['red', 'blue', 'green'],x=row, y=col)",
@@ -1151,7 +1151,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nws' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'nws' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['red', 'yellow', 'blue'] for the 'nws' object.",
                                         "<Editor>": {
                                             "function": "def nws(board, colors, x, y):\n    shapes = ['nut', 'washer', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        nws(board, colors=['red', 'yellow', 'blue'],x=row, y=col)",
@@ -1194,7 +1194,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['blue', 'yellow', 'green'] for the 'nws' object.",
                                         "<Editor>": {
                                             "function": "def nws(board, colors, x, y):\n    shapes = ['nut', 'washer', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nws(board, colors=['blue', 'yellow', 'green'], x=row, y=col)",
@@ -1243,7 +1243,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wnb' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'wnb' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['green', 'yellow', 'blue'] for the 'wnb' object.",
                                         "<Editor>": {
                                             "function": "def wnb(board, colors, x, y):\n    shapes = ['washer', 'nut', 'bridge-h']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0], [0, 1, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        wnb(board, colors=['green', 'yellow', 'blue'],x=row, y=col)",
@@ -1290,7 +1290,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wnb' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'wnb' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['green', 'blue', 'red'] for the 'wnb' object.",
                                         "<Editor>": {
                                             "function": "def wnb(board, colors, x, y):\n    shapes = ['washer', 'nut', 'bridge-v']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0], [0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        wnb(board, colors=['green', 'blue', 'red'],x=row, y=col)",
@@ -1337,7 +1337,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wnb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'wnb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'yellow', 'green'] for the 'wnb' object.",
                                         "<Editor>": {
                                             "function": "def wnb(board, colors, x, y):\n    shapes = ['washer', 'nut', 'bridge-h']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0], [0, 1, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        wnb(board, colors=['red', 'yellow', 'green'], x=row, y=col)",
@@ -1386,7 +1386,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wwb' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'wwb' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'green', 'red'] for the 'wwb' object.",
                                         "<Editor>": {
                                             "function": "def wwb(board, colors, x, y):\n    shapes = ['washer', 'washer', 'bridge-h']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0], [0, 1, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        wwb(board, colors=['yellow', 'green', 'red'],x=row, y=col)",
@@ -1433,7 +1433,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wwb' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'wwb' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['blue', 'red', 'green'] for the 'wwb' object.",
                                         "<Editor>": {
                                             "function": "def wwb(board, colors, x, y):\n    shapes = ['washer', 'washer', 'bridge-v']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0], [0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        wwb(board, colors=['blue', 'red', 'green'],x=row, y=col)",
@@ -1480,7 +1480,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wwb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'wwb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'blue', 'green'] for the 'wwb' object.",
                                         "<Editor>": {
                                             "function": "def wwb(board, colors, x, y):\n    shapes = ['washer', 'washer', 'bridge-h']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0], [0, 1, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        wwb(board, colors=['red', 'blue', 'green'], x=row, y=col)",
@@ -1525,7 +1525,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wns' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'wns' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'blue', 'green'] for the 'wns' object.",
                                         "<Editor>": {
                                             "function": "def wns(board, colors, x, y):\n    shapes = ['washer', 'nut', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        wns(board, colors=['yellow', 'blue', 'green'],x=row, y=col)",
@@ -1568,7 +1568,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wns' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'wns' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['red', 'green', 'red'] for the 'wns' object.",
                                         "<Editor>": {
                                             "function": "def wns(board, colors, x, y):\n    shapes = ['washer', 'nut', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        wns(board, colors=['red', 'green', 'red'],x=row, y=col)",
@@ -1611,7 +1611,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'wns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'blue', 'red'] for the 'wns' object.",
                                         "<Editor>": {
                                             "function": "def wns(board, colors, x, y):\n    shapes = ['washer', 'nut', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        wns(board, colors=['green', 'blue', 'red'], x=row, y=col)",
@@ -1660,7 +1660,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nwb' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'nwb' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['red', 'blue', 'green'] for the 'nwb' object.",
                                         "<Editor>": {
                                             "function": "def nwb(board, colors, x, y):\n    shapes = ['nut', 'washer', 'bridge-h']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0], [0, 1, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        nwb(board, colors=['red', 'blue', 'green'],x=row, y=col)",
@@ -1707,7 +1707,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nwb' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'nwb' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['blue', 'green', 'yellow'] for the 'nwb' object.",
                                         "<Editor>": {
                                             "function": "def nwb(board, colors, x, y):\n    shapes = ['nut', 'washer', 'bridge-v']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0], [0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        nwb(board, colors=['blue', 'green', 'yellow'],x=row, y=col)",
@@ -1754,7 +1754,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nwb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nwb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'green', 'yellow'] for the 'nwb' object.",
                                         "<Editor>": {
                                             "function": "def nwb(board, colors, x, y):\n    shapes = ['nut', 'washer', 'bridge-v']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0], [0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nwb(board, colors=['green', 'green', 'yellow'], x=row, y=col)",
@@ -1803,7 +1803,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bws' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'bws' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['green', 'red', 'blue'] for the 'bws' object.",
                                         "<Editor>": {
                                             "function": "def bws(board, colors, x, y):\n    shapes = ['bridge-h', 'washer', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        bws(board, colors=['green', 'red', 'blue'],x=row, y=col)",
@@ -1850,7 +1850,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bws' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'bws' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['green', 'blue', 'yellow'] for the 'bws' object.",
                                         "<Editor>": {
                                             "function": "def bws(board, colors, x, y):\n    shapes = ['bridge-v', 'washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 1], [0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        bws(board, colors=['green', 'blue', 'yellow'],x=row, y=col)",
@@ -1897,7 +1897,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['yellow', 'green', 'red'] for the 'bws' object.",
                                         "<Editor>": {
                                             "function": "def bws(board, colors, x, y):\n    shapes = ['bridge-h', 'washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0], [0, 1, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bws(board, colors=['yellow', 'green', 'red'], x=row, y=col)",
@@ -1946,7 +1946,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bns' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'bns' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'blue', 'green'] for the 'bns' object.",
                                         "<Editor>": {
                                             "function": "def bns(board, colors, x, y):\n    shapes = ['bridge-h', 'nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0], [0, 1, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        bns(board, colors=['yellow', 'blue', 'green'],x=row, y=col)",
@@ -1993,7 +1993,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bns' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'bns' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['yellow', 'blue', 'green'] for the 'bns' object.",
                                         "<Editor>": {
                                             "function": "def bns(board, colors, x, y):\n    shapes = ['bridge-v', 'nut', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        bns(board, colors=['yellow', 'blue', 'green'],x=row, y=col)",
@@ -2040,7 +2040,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['blue', 'green', 'blue'] for the 'bns' object.",
                                         "<Editor>": {
                                             "function": "def bns(board, colors, x, y):\n    shapes = ['bridge-v', 'nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 1], [0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bns(board, colors=['blue', 'green', 'blue'], x=row, y=col)",
@@ -2089,7 +2089,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwn' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'bwn' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['blue', 'red', 'green'] for the 'bwn' object.",
                                         "<Editor>": {
                                             "function": "def bwn(board, colors, x, y):\n    shapes = ['bridge-h', 'washer', 'nut']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        bwn(board, colors=['blue', 'red', 'green'],x=row, y=col)",
@@ -2136,7 +2136,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwn' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'bwn' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['yellow', 'red', 'blue'] for the 'bwn' object.",
                                         "<Editor>": {
                                             "function": "def bwn(board, colors, x, y):\n    shapes = ['bridge-v', 'washer', 'nut']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        bwn(board, colors=['yellow', 'red', 'blue'],x=row, y=col)",
@@ -2183,7 +2183,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bwn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'blue', 'red'] for the 'bwn' object.",
                                         "<Editor>": {
                                             "function": "def bwn(board, colors, x, y):\n    shapes = ['bridge-h', 'washer', 'nut']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bwn(board, colors=['green', 'blue', 'red'], x=row, y=col)",
@@ -2232,7 +2232,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nnb' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'nnb' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['red', 'red', 'green'] for the 'nnb' object.",
                                         "<Editor>": {
                                             "function": "def nnb(board, colors, x, y):\n    shapes = ['nut', 'nut', 'bridge-h']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0], [0, 1, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        nnb(board, colors=['red', 'red', 'green'],x=row, y=col)",
@@ -2279,7 +2279,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nnb' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'nnb' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['yellow', 'red', 'blue'] for the 'nnb' object.",
                                         "<Editor>": {
                                             "function": "def nnb(board, colors, x, y):\n    shapes = ['nut', 'nut', 'bridge-v']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0], [0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        nnb(board, colors=['yellow', 'red', 'blue'],x=row, y=col)",
@@ -2326,7 +2326,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nnb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nnb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'blue', 'yellow'] for the 'nnb' object.",
                                         "<Editor>": {
                                             "function": "def nnb(board, colors, x, y):\n    shapes = ['nut', 'nut', 'bridge-v']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0], [0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nnb(board, colors=['red', 'blue', 'yellow'], x=row, y=col)",
@@ -2375,7 +2375,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnw' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'bnw' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['blue', 'yellow', 'red'] for the 'bnw' object.",
                                         "<Editor>": {
                                             "function": "def bnw(board, colors, x, y):\n    shapes = ['bridge-h', 'nut', 'washer']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        bnw(board, colors=['blue', 'yellow', 'red'],x=row, y=col)",
@@ -2422,7 +2422,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnw' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'bnw' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['red', 'yellow', 'green'] for the 'bnw' object.",
                                         "<Editor>": {
                                             "function": "def bnw(board, colors, x, y):\n    shapes = ['bridge-v', 'nut', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 1], [0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        bnw(board, colors=['red', 'yellow', 'green'],x=row, y=col)",
@@ -2469,7 +2469,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bnw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'green', 'red'] for the 'bnw' object.",
                                         "<Editor>": {
                                             "function": "def bnw(board, colors, x, y):\n    shapes = ['bridge-h', 'nut', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0], [0, 1, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bnw(board, colors=['red', 'green', 'red'], x=row, y=col)",
@@ -2522,7 +2522,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bnb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'red', 'blue'] for the 'bnb' object.",
                                         "<Editor>": {
                                             "function": "def bnb(board, colors, x, y):\n    shapes = ['bridge-h', 'nut', 'bridge-v']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0], [0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bnb(board, colors=['red', 'red', 'blue'], x=row, y=col)",
@@ -2575,7 +2575,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wbb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'wbb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['yellow', 'red', 'green'] for the 'wbb' object.",
                                         "<Editor>": {
                                             "function": "def wbb(board, colors, x, y):\n    shapes = ['washer', 'bridge-h', 'bridge-h']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0], [0, 1, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        wbb(board, colors=['yellow', 'red', 'green'], x=row, y=col)",
@@ -2628,7 +2628,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bwb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'green', 'blue'] for the 'bwb' object.",
                                         "<Editor>": {
                                             "function": "def bwb(board, colors, x, y):\n    shapes = ['bridge-v', 'washer', 'bridge-h']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0], [0, 1, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bwb(board, colors=['green', 'green', 'blue'], x=row, y=col)",
@@ -2685,7 +2685,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bbb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bbb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'red', 'blue'] for the 'bbb' object.",
                                         "<Editor>": {
                                             "function": "def bbb(board, colors, x, y):\n    shapes = ['bridge-h', 'bridge-h', 'bridge-v']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0], [0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bbb(board, colors=['green', 'red', 'blue'], x=row, y=col)",
@@ -2738,7 +2738,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nbb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nbb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'blue', 'green'] for the 'nbb' object.",
                                         "<Editor>": {
                                             "function": "def nbb(board, colors, x, y):\n    shapes = ['nut', 'bridge-v', 'bridge-h']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0], [0, 1, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nbb(board, colors=['red', 'blue', 'green'], x=row, y=col)",
@@ -2791,7 +2791,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wnbs' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'wnbs' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'green', 'blue', 'yellow'] for the 'wnbs' object.",
                                         "<Editor>": {
                                             "function": "def wnbs(board, colors, x, y):\n    shapes = ['washer', 'nut', 'bridge-h', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        wnbs(board, colors=['yellow', 'green', 'blue', 'yellow'],x=row, y=col)",
@@ -2840,7 +2840,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wnbs' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'wnbs' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['blue', 'green', 'red', 'blue'] for the 'wnbs' object.",
                                         "<Editor>": {
                                             "function": "def wnbs(board, colors, x, y):\n    shapes = ['washer', 'nut', 'bridge-v', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        wnbs(board, colors=['blue', 'green', 'red', 'blue'],x=row, y=col)",
@@ -2889,7 +2889,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wnbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'wnbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'red', 'yellow', 'green'] for the 'wnbs' object.",
                                         "<Editor>": {
                                             "function": "def wnbs(board, colors, x, y):\n    shapes = ['washer', 'nut', 'bridge-h', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        wnbs(board, colors=['green', 'red', 'yellow', 'green'], x=row, y=col)",
@@ -2940,7 +2940,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nnbw' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'nnbw' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'red', 'blue', 'red'] for the 'nnbw' object.",
                                         "<Editor>": {
                                             "function": "def nnbw(board, colors, x, y):\n    shapes = ['nut', 'nut', 'bridge-h', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        nnbw(board, colors=['yellow', 'red', 'blue', 'red'],x=row, y=col)",
@@ -2989,7 +2989,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nnbw' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'nnbw' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['red', 'red', 'green', 'yellow'] for the 'nnbw' object.",
                                         "<Editor>": {
                                             "function": "def nnbw(board, colors, x, y):\n    shapes = ['nut', 'nut', 'bridge-v', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        nnbw(board, colors=['red', 'red', 'green', 'yellow'],x=row, y=col)",
@@ -3038,7 +3038,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nnbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nnbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['blue', 'green', 'red', 'green'] for the 'nnbw' object.",
                                         "<Editor>": {
                                             "function": "def nnbw(board, colors, x, y):\n    shapes = ['nut', 'nut', 'bridge-v', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 1], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nnbw(board, colors=['blue', 'green', 'red', 'green'], x=row, y=col)",
@@ -3089,7 +3089,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nnbs' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'nnbs' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['red', 'red', 'green', 'red'] for the 'nnbs' object.",
                                         "<Editor>": {
                                             "function": "def nnbs(board, colors, x, y):\n    shapes = ['nut', 'nut', 'bridge-h', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        nnbs(board, colors=['red', 'red', 'green', 'red'],x=row, y=col)",
@@ -3138,7 +3138,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nnbs' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'nnbs' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['red', 'red', 'yellow', 'red'] for the 'nnbs' object.",
                                         "<Editor>": {
                                             "function": "def nnbs(board, colors, x, y):\n    shapes = ['nut', 'nut', 'bridge-v', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        nnbs(board, colors=['red', 'red', 'yellow', 'red'],x=row, y=col)",
@@ -3187,7 +3187,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nnbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nnbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['yellow', 'green', 'red', 'yellow'] for the 'nnbs' object.",
                                         "<Editor>": {
                                             "function": "def nnbs(board, colors, x, y):\n    shapes = ['nut', 'nut', 'bridge-h', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nnbs(board, colors=['yellow', 'green', 'red', 'yellow'], x=row, y=col)",
@@ -3238,7 +3238,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwns' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'bwns' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'green', 'red', 'blue'] for the 'bwns' object.",
                                         "<Editor>": {
                                             "function": "def bwns(board, colors, x, y):\n    shapes = ['bridge-h', 'washer', 'nut', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        bwns(board, colors=['yellow', 'green', 'red', 'blue'],x=row, y=col)",
@@ -3287,7 +3287,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwns' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'bwns' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['green', 'red', 'yellow', 'red'] for the 'bwns' object.",
                                         "<Editor>": {
                                             "function": "def bwns(board, colors, x, y):\n    shapes = ['bridge-v', 'washer', 'nut', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        bwns(board, colors=['green', 'red', 'yellow', 'red'],x=row, y=col)",
@@ -3336,7 +3336,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bwns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'green', 'blue', 'green'] for the 'bwns' object.",
                                         "<Editor>": {
                                             "function": "def bwns(board, colors, x, y):\n    shapes = ['bridge-h', 'washer', 'nut', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bwns(board, colors=['red', 'green', 'blue', 'green'], x=row, y=col)",
@@ -3387,7 +3387,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wnbn' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'wnbn' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['red', 'yellow', 'green', 'blue'] for the 'wnbn' object.",
                                         "<Editor>": {
                                             "function": "def wnbn(board, colors, x, y):\n    shapes = ['washer', 'nut', 'bridge-h', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        wnbn(board, colors=['red', 'yellow', 'green', 'blue'],x=row, y=col)",
@@ -3436,7 +3436,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wnbn' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'wnbn' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['yellow', 'blue', 'red', 'green'] for the 'wnbn' object.",
                                         "<Editor>": {
                                             "function": "def wnbn(board, colors, x, y):\n    shapes = ['washer', 'nut', 'bridge-v', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        wnbn(board, colors=['yellow', 'blue', 'red', 'green'],x=row, y=col)",
@@ -3487,7 +3487,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wwbs' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'wwbs' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['green', 'yellow', 'red', 'blue'] for the 'wwbs' object.",
                                         "<Editor>": {
                                             "function": "def wwbs(board, colors, x, y):\n    shapes = ['washer', 'washer', 'bridge-h', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        wwbs(board, colors=['green', 'yellow', 'red', 'blue'],x=row, y=col)",
@@ -3536,7 +3536,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wwbs' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'wwbs' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['red', 'red', 'green', 'blue'] for the 'wwbs' object.",
                                         "<Editor>": {
                                             "function": "def wwbs(board, colors, x, y):\n    shapes = ['washer', 'washer', 'bridge-v', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        wwbs(board, colors=['red', 'red', 'green', 'blue'],x=row, y=col)",
@@ -3585,7 +3585,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wwbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'wwbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'green', 'yellow', 'blue'] for the 'wwbs' object.",
                                         "<Editor>": {
                                             "function": "def wwbs(board, colors, x, y):\n    shapes = ['washer', 'washer', 'bridge-h', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        wwbs(board, colors=['red', 'green', 'yellow', 'blue'], x=row, y=col)",
@@ -3636,7 +3636,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wwbn' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'wwbn' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'green', 'red', 'yellow'] for the 'wwbn' object.",
                                         "<Editor>": {
                                             "function": "def wwbn(board, colors, x, y):\n    shapes = ['washer', 'washer', 'bridge-h', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        wwbn(board, colors=['yellow', 'green', 'red', 'yellow'],x=row, y=col)",
@@ -3685,7 +3685,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wwbn' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'wwbn' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['red', 'green', 'blue', 'yellow'] for the 'wwbn' object.",
                                         "<Editor>": {
                                             "function": "def wwbn(board, colors, x, y):\n    shapes = ['washer', 'washer', 'bridge-v', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 1], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        wwbn(board, colors=['red', 'green', 'blue', 'yellow'],x=row, y=col)",
@@ -3736,7 +3736,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnws' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'bnws' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['blue', 'yellow', 'green', 'yellow'] for the 'bnws' object.",
                                         "<Editor>": {
                                             "function": "def bnws(board, colors, x, y):\n    shapes = ['bridge-h', 'nut', 'washer', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        bnws(board, colors=['blue', 'yellow', 'green', 'yellow'],x=row, y=col)",
@@ -3785,7 +3785,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnws' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'bnws' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['red', 'green', 'blue', 'green'] for the 'bnws' object.",
                                         "<Editor>": {
                                             "function": "def bnws(board, colors, x, y):\n    shapes = ['bridge-v', 'nut', 'washer', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        bnws(board, colors=['red', 'green', 'blue', 'green'],x=row, y=col)",
@@ -3834,7 +3834,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bnws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['blue', 'yellow', 'blue', 'yellow'] for the 'bnws' object.",
                                         "<Editor>": {
                                             "function": "def bnws(board, colors, x, y):\n    shapes = ['bridge-v', 'nut', 'washer', 'screw']\n    for shape, color in zip(shapes, colors):\n            put(board, shape, color, x, y)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bnws(board, colors=['blue', 'yellow', 'blue', 'yellow'], x=row, y=col)",
@@ -3885,7 +3885,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nwbw' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'nwbw' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['green', 'red', 'yellow', 'red'] for the 'nwbw' object.",
                                         "<Editor>": {
                                             "function": "def nwbw(board, colors, x, y):\n    shapes = ['nut', 'washer', 'bridge-h', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        nwbw(board, colors=['green', 'red', 'yellow', 'red'],x=row, y=col)",
@@ -3934,7 +3934,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nwbw' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'nwbw' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['red', 'blue', 'green', 'yellow'] for the 'nwbw' object.",
                                         "<Editor>": {
                                             "function": "def nwbw(board, colors, x, y):\n    shapes = ['nut', 'washer', 'bridge-v', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        nwbw(board, colors=['red', 'blue', 'green', 'yellow'],x=row, y=col)",
@@ -3985,7 +3985,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nwbs' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'nwbs' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'yellow', 'green', 'red'] for the 'nwbs' object.",
                                         "<Editor>": {
                                             "function": "def nwbs(board, colors, x, y):\n    shapes = ['nut', 'washer', 'bridge-h', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        nwbs(board, colors=['yellow', 'yellow', 'green', 'red'],x=row, y=col)",
@@ -4034,7 +4034,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nwbs' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'nwbs' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['green', 'green', 'red', 'green'] for the 'nwbs' object.",
                                         "<Editor>": {
                                             "function": "def nwbs(board, colors, x, y):\n    shapes = ['nut', 'washer', 'bridge-v', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 1], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        nwbs(board, colors=['green', 'green', 'red', 'green'],x=row, y=col)",
@@ -4083,7 +4083,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nwbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nwbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['blue', 'yellow', 'red', 'green'] for the 'nwbs' object.",
                                         "<Editor>": {
                                             "function": "def nwbs(board, colors, x, y):\n    shapes = ['nut', 'washer', 'bridge-h', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nwbs(board, colors=['blue', 'yellow', 'red', 'green'], x=row, y=col)",
@@ -4134,7 +4134,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nwbn' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'nwbn' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'green', 'blue', 'yellow'] for the 'nwbn' object.",
                                         "<Editor>": {
                                             "function": "def nwbn(board, colors, x, y):\n    shapes = ['nut', 'washer', 'bridge-h', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        nwbn(board, colors=['yellow', 'green', 'blue', 'yellow'],x=row, y=col)",
@@ -4183,7 +4183,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nwbn' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'nwbn' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['green', 'green', 'yellow', 'blue'] for the 'nwbn' object.",
                                         "<Editor>": {
                                             "function": "def nwbn(board, colors, x, y):\n    shapes = ['nut', 'washer', 'bridge-v', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 1], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        nwbn(board, colors=['green', 'green', 'yellow', 'blue'],x=row, y=col)",
@@ -4232,7 +4232,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nwbn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nwbn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'green', 'blue', 'green'] for the 'nwbn' object.",
                                         "<Editor>": {
                                             "function": "def nwbn(board, colors, x, y):\n    shapes = ['nut', 'washer', 'bridge-v', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 1], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nwbn(board, colors=['red', 'green', 'blue', 'green'], x=row, y=col)",
@@ -4283,7 +4283,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wnbw' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'wnbw' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['red', 'green', 'blue', 'yellow'] for the 'wnbw' object.",
                                         "<Editor>": {
                                             "function": "def wnbw(board, colors, x, y):\n    shapes = ['washer', 'nut', 'bridge-h', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        wnbw(board, colors=['red', 'green', 'blue', 'yellow'],x=row, y=col)",
@@ -4332,7 +4332,7 @@
                                 "template": "templates/instructions/regular/regular_template13.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wnbw' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.",
+                                        "<Programmer>": "Place a 'wnbw' object in the first, fourth, and seventh rows of the first column. Then, repeat this placement pattern in the remaining columns.  Use only these colors: ['green', 'red', 'yellow', 'red'] for the 'wnbw' object.",
                                         "<Editor>": {
                                             "function": "def wnbw(board, colors, x, y):\n    shapes = ['washer', 'nut', 'bridge-v', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 1], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 3, 6]:\n    for col in range(8):\n        wnbw(board, colors=['green', 'red', 'yellow', 'red'],x=row, y=col)",
@@ -4381,7 +4381,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wnbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'wnbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['yellow', 'blue', 'red', 'green'] for the 'wnbw' object.",
                                         "<Editor>": {
                                             "function": "def wnbw(board, colors, x, y):\n    shapes = ['washer', 'nut', 'bridge-h', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        wnbw(board, colors=['yellow', 'blue', 'red', 'green'], x=row, y=col)",
@@ -4436,7 +4436,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bwbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['blue', 'red', 'green', 'blue'] for the 'bwbs' object.",
                                         "<Editor>": {
                                             "function": "def bwbs(board, colors, x, y):\n    shapes = ['bridge-h', 'washer', 'bridge-v', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 1], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bwbs(board, colors=['blue', 'red', 'green', 'blue'], x=row, y=col)",
@@ -4491,7 +4491,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bnbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'green', 'yellow', 'red'] for the 'bnbs' object.",
                                         "<Editor>": {
                                             "function": "def bnbs(board, colors, x, y):\n    shapes = ['bridge-v', 'nut', 'bridge-h', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bnbs(board, colors=['green', 'green', 'yellow', 'red'], x=row, y=col)",
@@ -4550,7 +4550,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bbbb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bbbb' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['blue', 'blue', 'green', 'green'] for the 'bbbb' object.",
                                         "<Editor>": {
                                             "function": "def bbbb(board, colors, x, y):\n    shapes = ['bridge-h', 'bridge-h', 'bridge-v', 'bridge-v']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0], [0, 0, 0, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bbbb(board, colors=['blue', 'blue', 'green', 'green'], x=row, y=col)",
@@ -4609,7 +4609,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bbbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bbbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['blue', 'blue', 'green', 'red'] for the 'bbbs' object.",
                                         "<Editor>": {
                                             "function": "def bbbs(board, colors, x, y):\n    shapes = ['bridge-v', 'bridge-v', 'bridge-h', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bbbs(board, colors=['blue', 'blue', 'green', 'red'], x=row, y=col)",
@@ -4664,7 +4664,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wbbn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'wbbn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['yellow', 'red', 'green', 'yellow'] for the 'wbbn' object.",
                                         "<Editor>": {
                                             "function": "def wbbn(board, colors, x, y):\n    shapes = ['washer', 'bridge-h', 'bridge-h', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        wbbn(board, colors=['yellow', 'red', 'green', 'yellow'], x=row, y=col)",
@@ -4719,7 +4719,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nbbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nbbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'blue', 'red', 'yellow'] for the 'nbbw' object.",
                                         "<Editor>": {
                                             "function": "def nbbw(board, colors, x, y):\n    shapes = ['nut', 'bridge-h', 'bridge-v', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 1], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nbbw(board, colors=['green', 'blue', 'red', 'yellow'], x=row, y=col)",
@@ -4778,7 +4778,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bbbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bbbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['blue', 'blue', 'red', 'green'] for the 'bbbw' object.",
                                         "<Editor>": {
                                             "function": "def bbbw(board, colors, x, y):\n    shapes = ['bridge-v', 'bridge-h', 'bridge-h', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bbbw(board, colors=['blue', 'blue', 'red', 'green'], x=row, y=col)",
@@ -4833,7 +4833,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wbbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'wbbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'yellow', 'blue', 'yellow'] for the 'wbbs' object.",
                                         "<Editor>": {
                                             "function": "def wbbs(board, colors, x, y):\n    shapes = ['washer', 'bridge-v', 'bridge-h', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        wbbs(board, colors=['green', 'yellow', 'blue', 'yellow'], x=row, y=col)",
@@ -4888,7 +4888,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnbn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bnbn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'green', 'blue', 'green'] for the 'bnbn' object.",
                                         "<Editor>": {
                                             "function": "def bnbn(board, colors, x, y):\n    shapes = ['bridge-v', 'nut', 'bridge-h', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 1, 1], [0, 1, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bnbn(board, colors=['green', 'green', 'blue', 'green'], x=row, y=col)",
@@ -4943,7 +4943,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nbbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nbbs' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['yellow', 'red', 'blue', 'yellow'] for the 'nbbs' object.",
                                         "<Editor>": {
                                             "function": "def nbbs(board, colors, x, y):\n    shapes = ['nut', 'bridge-h', 'bridge-h', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nbbs(board, colors=['yellow', 'red', 'blue', 'yellow'], x=row, y=col)",
@@ -4998,7 +4998,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwbn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bwbn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['blue', 'yellow', 'red', 'blue'] for the 'bwbn' object.",
                                         "<Editor>": {
                                             "function": "def bwbn(board, colors, x, y):\n    shapes = ['bridge-v', 'washer', 'bridge-h', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bwbn(board, colors=['blue', 'yellow', 'red', 'blue'], x=row, y=col)",
@@ -5053,7 +5053,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bnbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['yellow', 'blue', 'green', 'red'] for the 'bnbw' object.",
                                         "<Editor>": {
                                             "function": "def bnbw(board, colors, x, y):\n    shapes = ['bridge-h', 'nut', 'bridge-v', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 1], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bnbw(board, colors=['yellow', 'blue', 'green', 'red'], x=row, y=col)",
@@ -5108,7 +5108,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wbbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'wbbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'red', 'blue', 'green'] for the 'wbbw' object.",
                                         "<Editor>": {
                                             "function": "def wbbw(board, colors, x, y):\n    shapes = ['washer', 'bridge-h', 'bridge-v', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 1], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        wbbw(board, colors=['green', 'red', 'blue', 'green'], x=row, y=col)",
@@ -5163,7 +5163,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bwbw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['yellow', 'yellow', 'red', 'yellow'] for the 'bwbw' object.",
                                         "<Editor>": {
                                             "function": "def bwbw(board, colors, x, y):\n    shapes = ['bridge-v', 'washer', 'bridge-h', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0], [0, 1, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bwbw(board, colors=['yellow', 'yellow', 'red', 'yellow'], x=row, y=col)",
@@ -5222,7 +5222,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bbbn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bbbn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'blue', 'red', 'green'] for the 'bbbn' object.",
                                         "<Editor>": {
                                             "function": "def bbbn(board, colors, x, y):\n    shapes = ['bridge-h', 'bridge-h', 'bridge-v', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0], [0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bbbn(board, colors=['green', 'blue', 'red', 'green'], x=row, y=col)",
@@ -5281,7 +5281,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwbws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bwbws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'red', 'green', 'blue', 'red'] for the 'bwbws' object.",
                                         "<Editor>": {
                                             "function": "def bwbws(board, colors, x, y):\n    shapes = ['bridge-h', 'washer', 'bridge-v', 'washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0, 0], [0, 1, 1, 1, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bwbws(board, colors=['red', 'red', 'green', 'blue', 'red'], x=row, y=col)",
@@ -5342,7 +5342,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bbbns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bbbns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'red', 'yellow', 'green', 'blue'] for the 'bbbns' object.",
                                         "<Editor>": {
                                             "function": "def bbbns(board, colors, x, y):\n    shapes = ['bridge-h', 'bridge-v', 'bridge-v', 'nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0, 0], [0, 1, 1, 1, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bbbns(board, colors=['green', 'red', 'yellow', 'green', 'blue'], x=row, y=col)",
@@ -5399,7 +5399,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwbwn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bwbwn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['yellow', 'red', 'green', 'blue', 'yellow'] for the 'bwbwn' object.",
                                         "<Editor>": {
                                             "function": "def bwbwn(board, colors, x, y):\n    shapes = ['bridge-h', 'washer', 'bridge-v', 'washer', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0, 0], [0, 1, 1, 1, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bwbwn(board, colors=['yellow', 'red', 'green', 'blue', 'yellow'], x=row, y=col)",
@@ -5452,7 +5452,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nnbws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nnbws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'green', 'blue', 'red', 'yellow'] for the 'nnbws' object.",
                                         "<Editor>": {
                                             "function": "def nnbws(board, colors, x, y):\n    shapes = ['nut', 'nut', 'bridge-h', 'washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0, 0], [0, 1, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nnbws(board, colors=['red', 'green', 'blue', 'red', 'yellow'], x=row, y=col)",
@@ -5503,7 +5503,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nnbws' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'nnbws' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['green', 'green', 'blue', 'yellow', 'blue'] for the 'nnbws' object.",
                                         "<Editor>": {
                                             "function": "def nnbws(board, colors, x, y):\n    shapes = ['nut', 'nut', 'bridge-h', 'washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0, 0], [0, 1, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        nnbws(board, colors=['green', 'green', 'blue', 'yellow', 'blue'],x=row, y=col)",
@@ -5556,7 +5556,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wnbns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'wnbns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['yellow', 'yellow', 'green', 'red', 'blue'] for the 'wnbns' object.",
                                         "<Editor>": {
                                             "function": "def wnbns(board, colors, x, y):\n    shapes = ['washer', 'nut', 'bridge-v', 'nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0, 0], [0, 0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        wnbns(board, colors=['yellow', 'yellow', 'green', 'red', 'blue'], x=row, y=col)",
@@ -5607,7 +5607,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wnbns' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'wnbns' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['red', 'yellow', 'green', 'yellow', 'blue'] for the 'wnbns' object.",
                                         "<Editor>": {
                                             "function": "def wnbns(board, colors, x, y):\n    shapes = ['washer', 'nut', 'bridge-h', 'nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0, 0], [0, 1, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        wnbns(board, colors=['red', 'yellow', 'green', 'yellow', 'blue'],x=row, y=col)",
@@ -5660,7 +5660,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wwbns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'wwbns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'blue', 'green', 'blue', 'green'] for the 'wwbns' object.",
                                         "<Editor>": {
                                             "function": "def wwbns(board, colors, x, y):\n    shapes = ['washer', 'washer', 'bridge-v', 'nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0, 0], [0, 0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        wwbns(board, colors=['red', 'blue', 'green', 'blue', 'green'], x=row, y=col)",
@@ -5711,7 +5711,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wwbns' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'wwbns' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['yellow', 'red', 'blue', 'red', 'green'] for the 'wwbns' object.",
                                         "<Editor>": {
                                             "function": "def wwbns(board, colors, x, y):\n    shapes = ['washer', 'washer', 'bridge-h', 'nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0, 0], [0, 1, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        wwbns(board, colors=['yellow', 'red', 'blue', 'red', 'green'],x=row, y=col)",
@@ -5768,7 +5768,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nbbws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nbbws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'blue', 'yellow', 'red', 'blue'] for the 'nbbws' object.",
                                         "<Editor>": {
                                             "function": "def nbbws(board, colors, x, y):\n    shapes = ['nut', 'bridge-v', 'bridge-v', 'washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0, 0], [0, 0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nbbws(board, colors=['green', 'blue', 'yellow', 'red', 'blue'], x=row, y=col)",
@@ -5825,7 +5825,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwbns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bwbns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'red', 'green', 'yellow', 'blue'] for the 'bwbns' object.",
                                         "<Editor>": {
                                             "function": "def bwbns(board, colors, x, y):\n    shapes = ['bridge-h', 'washer', 'bridge-v', 'nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0, 0], [0, 0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bwbns(board, colors=['red', 'red', 'green', 'yellow', 'blue'], x=row, y=col)",
@@ -5882,7 +5882,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bwbnw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bwbnw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'blue', 'red', 'yellow', 'blue'] for the 'bwbnw' object.",
                                         "<Editor>": {
                                             "function": "def bwbnw(board, colors, x, y):\n    shapes = ['bridge-v', 'washer', 'bridge-h', 'nut', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0, 0], [0, 1, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bwbnw(board, colors=['green', 'blue', 'red', 'yellow', 'blue'], x=row, y=col)",
@@ -5935,7 +5935,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nwbws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'nwbws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['green', 'red', 'yellow', 'red', 'blue'] for the 'nwbws' object.",
                                         "<Editor>": {
                                             "function": "def nwbws(board, colors, x, y):\n    shapes = ['nut', 'washer', 'bridge-v', 'washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0, 0], [0, 0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        nwbws(board, colors=['green', 'red', 'yellow', 'red', 'blue'], x=row, y=col)",
@@ -5986,7 +5986,7 @@
                                 "template": "templates/instructions/regular/regular_template12.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'nwbws' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows.",
+                                        "<Programmer>": "Place a 'nwbws' object in the first, fourth, and seventh columns of the first row. Then, repeat this pattern of placement in the remaining rows. Use only these colors: ['green', 'yellow', 'red', 'yellow', 'red'] for the 'nwbws' object.",
                                         "<Editor>": {
                                             "function": "def nwbws(board, colors, x, y):\n    shapes = ['nut', 'washer', 'bridge-h', 'washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0, 0], [0, 1, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in range(8):\n    for col in [0, 3, 6]:\n        nwbws(board, colors=['green', 'yellow', 'red', 'yellow', 'red'],x=row, y=col)",
@@ -6043,7 +6043,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnbws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bnbws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'red', 'yellow', 'blue', 'red'] for the 'bnbws' object.",
                                         "<Editor>": {
                                             "function": "def bnbws(board, colors, x, y):\n    shapes = ['bridge-h', 'nut', 'bridge-v', 'washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0, 0], [0, 1, 1, 1, 1]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bnbws(board, colors=['red', 'red', 'yellow', 'blue', 'red'], x=row, y=col)",
@@ -6104,7 +6104,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bbbws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bbbws' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['yellow', 'red', 'green', 'red', 'blue'] for the 'bbbws' object.",
                                         "<Editor>": {
                                             "function": "def bbbws(board, colors, x, y):\n    shapes = ['bridge-v', 'bridge-h', 'bridge-h', 'washer', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0, 0], [0, 1, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bbbws(board, colors=['yellow', 'red', 'green', 'red', 'blue'], x=row, y=col)",
@@ -6161,7 +6161,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnbwn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bnbwn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['blue', 'green', 'yellow', 'blue', 'green'] for the 'bnbwn' object.",
                                         "<Editor>": {
                                             "function": "def bnbwn(board, colors, x, y):\n    shapes = ['bridge-h', 'nut', 'bridge-v', 'washer', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0, 0], [0, 0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bnbwn(board, colors=['blue', 'green', 'yellow', 'blue', 'green'], x=row, y=col)",
@@ -6222,7 +6222,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bbbwn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bbbwn' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['blue', 'blue', 'green', 'red', 'green'] for the 'bbbwn' object.",
                                         "<Editor>": {
                                             "function": "def bbbwn(board, colors, x, y):\n    shapes = ['bridge-h', 'bridge-v', 'bridge-v', 'washer', 'nut']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0, 0], [0, 0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bbbwn(board, colors=['blue', 'blue', 'green', 'red', 'green'], x=row, y=col)",
@@ -6279,7 +6279,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnbnw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bnbnw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'blue', 'yellow', 'red', 'yellow'] for the 'bnbnw' object.",
                                         "<Editor>": {
                                             "function": "def bnbnw(board, colors, x, y):\n    shapes = ['bridge-v', 'nut', 'bridge-h', 'nut', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0, 0], [0, 1, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bnbnw(board, colors=['red', 'blue', 'yellow', 'red', 'yellow'], x=row, y=col)",
@@ -6336,7 +6336,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bnbns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bnbns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'yellow', 'blue', 'red', 'yellow'] for the 'bnbns' object.",
                                         "<Editor>": {
                                             "function": "def bnbns(board, colors, x, y):\n    shapes = ['bridge-h', 'nut', 'bridge-v', 'nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 1, 0, 0, 0], [0, 0, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bnbns(board, colors=['red', 'yellow', 'blue', 'red', 'yellow'], x=row, y=col)",
@@ -6397,7 +6397,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'bbbnw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'bbbnw' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['red', 'yellow', 'blue', 'red', 'yellow'] for the 'bbbnw' object.",
                                         "<Editor>": {
                                             "function": "def bbbnw(board, colors, x, y):\n    shapes = ['bridge-v', 'bridge-v', 'bridge-h', 'nut', 'washer']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0, 0], [0, 1, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        bbbnw(board, colors=['red', 'yellow', 'blue', 'red', 'yellow'], x=row, y=col)",
@@ -6454,7 +6454,7 @@
                                 "template": "templates/instructions/regular/regular_template16.j2",
                                 "instructions": [
                                     {
-                                        "<Programmer>": "Place a 'wbbns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.",
+                                        "<Programmer>": "Place a 'wbbns' object in the first, and fifth columns of the first row. Then, repeat this placement pattern in the fifth row.  Use only these colors: ['blue', 'red', 'yellow', 'red', 'yellow'] for the 'wbbns' object.",
                                         "<Editor>": {
                                             "function": "def wbbns(board, colors, x, y):\n    shapes = ['washer', 'bridge-v', 'bridge-h', 'nut', 'screw']\n    for shape, color, dx, dy in zip(shapes, colors, [0, 0, 0, 0, 0], [0, 1, 0, 0, 0]):\n            put(board, shape, color, x + dx, y + dy)",
                                             "output": "for row in [0, 4]:\n    for col in [0, 4]:\n        wbbns(board, colors=['blue', 'red', 'yellow', 'red', 'yellow'], x=row, y=col)",
