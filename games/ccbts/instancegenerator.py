@@ -64,6 +64,7 @@ class CCBTSInstanceGenerator(GameInstanceGenerator):
                                     #for sample in samples_test:
                                         test_dialogues = sample["dialogues"][variant]["instructions"]
                                         n_turns = len(test_dialogues)
+                                        seed_template_name = sample["seed_template"]
                                             
                                         if SEED == "static":
                                             incontext_samples = self.load_file(f'resources/{tests[board][board_object][variant]["STATIC_INCONTEXT_SAMPLES"]}')
@@ -77,6 +78,7 @@ class CCBTSInstanceGenerator(GameInstanceGenerator):
                                                         combo_name,
                                                         self.train_samples,
                                                         incontext_labels,
+                                                        seed_template_name,
                                                         SEED                                    
                                                     )
 

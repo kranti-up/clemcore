@@ -44,6 +44,7 @@ def get_incontext_samples(
     test_combo_name,
     train_samples,
     incontext_labels,
+    seed_template_name,
     SEED
 
 ):
@@ -59,23 +60,26 @@ def get_incontext_samples(
     if board_type == "simple":
         filtered_samples = {k: v for k, v in train_shapes[total_shapes].items() if k != test_combo_name}
     else:
-        test_reg_template = train_shapes[total_shapes][test_combo_name][0]["seed_template"]
         filtered_samples = {}
         for k, v in train_shapes[total_shapes].items():
             if k != test_combo_name:
-                if k not in filtered_samples:
-                    filtered_samples[k] = []
                 for avail_sample in v:
-                    if avail_sample["seed_template"] == test_reg_template:
+                    if avail_sample["seed_template"] == seed_template_name:
                         continue
                     else:
+                        if k not in filtered_samples:
+                            filtered_samples[k] = []
+
                         filtered_samples[k].append(avail_sample)
 
 
     incontext_samples = []
     for combo in filtered_samples:
-        sel_samples = random.sample(filtered_samples[combo], k=2)
-        for sample in sel_samples:
+        #samples_count = 3
+        #if len(filtered_samples[combo]) < samples_count:
+        #    samples_count = len(filtered_samples[combo])
+        #sel_samples = random.sample(filtered_samples[combo], k=samples_count)
+        for sample in filtered_samples[combo]:
             dialog = sample["dialogues"][variant]["instructions"]
 
             for d_ in dialog:

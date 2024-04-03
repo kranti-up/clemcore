@@ -9,7 +9,7 @@ In the grid, columns align with the x-axis and rows with the y-axis. Python inde
 
 The following functions are already defined; therefore, do not generate additional code for it
 - Use `put(board: np.ndarray, shape: string, color: string, x: int, y: int)` to place a shape on the board
-- Use `$COMBO_NAME(board: np.ndarray, color: List, x: int, y: int)` to place '$COMBO_NAME' on the board
+- Use `$COMBO_NAME(board: np.ndarray, color: List, x: int, y: int)` to place a '$COMBO_NAME' object on the board
 
 
 For each instruction labeled $INSTRUCTION_LABEL, please respond with code under the label $OUTPUT_LABEL followed by a newline.
