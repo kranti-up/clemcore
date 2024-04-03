@@ -115,9 +115,14 @@ class CCBTSInstanceGenerator(GameInstanceGenerator):
                                                 "usage": None,
                                             }
 
-                                        tests[board][board_object][variant]["fill_labels"][
-                                            "INCONTEXT_SAMPLES"
-                                        ] = incontext_samples
+                                        if incontext_samples:
+                                            tests[board][board_object][variant]["fill_labels"][
+                                                "INCONTEXT_SAMPLES"
+                                            ] = incontext_samples
+                                        else:
+                                            tests[board][board_object][variant]["fill_labels"][
+                                                "INCONTEXT_SAMPLES"
+                                            ] = ""
 
                                         tests[board][board_object][variant]["fill_labels"][
                                             "COMBO_NAME"
