@@ -20,7 +20,7 @@ def format_incontext_samples(
 
         return result
 
-    elif variant == "single_turn":
+    elif variant in ["single_turn", "single_turn_sc"]:
         result = "\n".join(
             f"{instruction_label}\n{ic_sample[0]}\n\n{output_label_horder}\n{ic_sample[1]['function']}\n\n{output_label_horder_usage}\n{ic_sample[1]['usage']}\n"
             for ic_sample in incontext_samples
