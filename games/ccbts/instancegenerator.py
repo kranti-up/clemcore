@@ -129,6 +129,7 @@ class CCBTSInstanceGenerator(GameInstanceGenerator):
                                         tests[board][board_object][variant]["fill_labels"][
                                             "COMBO_NAME"
                                         ] = combo_name
+                                        tests[board][board_object][variant]["fill_labels"]["COLORS"] = sample["colors"]
 
                                         instance["prompt"] = self.create_prompt(
                                             prompt,
