@@ -21,4 +21,4 @@ class InstructionGiver(Player):
         """Return a mock message with the suitable output format."""
 
         if self.player == 'A':
-            return "Instructions\nplace a red washer in the 3rd row, 4th column."
+            return "Instruction\nThese are are the instructions to build wn. Place a red washer in the 3rd row, 4th column. Place a blue nut in the 3rd row, 4th column."

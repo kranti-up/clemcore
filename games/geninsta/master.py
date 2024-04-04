@@ -12,7 +12,7 @@ from clemgame import get_logger
 from games.geninsta.players import InstructionGiver
 from games.geninsta.instancegenerator import GAME_NAME
 
-#from games.geninsta.utils.ccbtseval import CCBTSEval
+from games.ccbts.utils.ccbtseval import CCBTSEval
 
 
 # use the framework logger to log events relevant at runtime;
@@ -124,15 +124,28 @@ class GenInsta(GameMaster):
     def parse(self, response: str) -> dict:
         #print(f"Inside parse: response = {response}")
         """Check if utterance is valid and contains defined labels."""
+        lables_to_check = self.board_data["output_labels_a"]
         try:
-            answer = {label: response.split(label)[1].strip() if label in response else None
-                    for label in self.board_data["output_labels"]}
+            #answer = {label: response.split(label)[1].strip() if label in response else None
+            #        for label in lables_to_check}
+            answer = {label: response.split(value)[1].strip() if value in response else None
+                    for label, value in lables_to_check.items() if value is not None}
 
             missing_labels = []
             if None in answer.values():
                 missing_labels = [label for label, result in answer.items() if result is None]
                 print(f"Labels {missing_labels} not found in response: {response}")
-                return None
+                #return None
+            
+            if missing_labels:
+                if "output" in missing_labels:
+                    answer["output"] = response.strip()
+                if "function" in missing_labels:
+                    answer["function"] = response.strip()
+                if "usage" in missing_labels:
+                    answer["usage"] = ""
+                if 'instructions' in missing_labels:
+                    answer["instructions"] = response.strip()
 
             print(f"Inside parse: answer = {answer}")
             return answer
@@ -183,16 +196,16 @@ class GenInsta(GameMaster):
             x, y = board_data["x"][index], board_data["y"][index]
             color = board_data["colors"][index]
 
-            if board_details[y][x] == empty_cell:
-                board_details[y][x] = [(shape, color)]
+            if board_details[x][y] == empty_cell:
+                board_details[x][y] = [(shape, color)]
             else:
-                board_details[y][x].append((shape, color))        
+                board_details[x][y].append((shape, color))  
 
         return board_details
     
     def _add_instruction(self, board_data: dict, prompt: dict) -> None:
         board_details = self._get_board_details(board_data)
-        content = f"{board_data['combo_name']}\n{board_details}\n"
+        content = f"'{board_data['combo_name']}'\n{board_details}\n"
         if prompt[-1]["role"] == "user":
             prompt[-1]["content"] = prompt[-1]["content"] + "\n" + content
         else:
@@ -264,7 +277,7 @@ class GenInstaGameScorer(GameScorer):
         super().__init__(game_name, experiment, game_instance)
         self.rows = 8
         self.cols = 8
-        #self.ccbtseval = CCBTSEval()
+        self.ccbtseval = CCBTSEval()
 
     def compute_scores(self, episode_interactions: Dict) -> None:
         """Compute episode-level and turn-level scores (mandatory)."""

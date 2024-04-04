@@ -9,21 +9,61 @@
         "objects": ["so"],
         "_objects": ["so", "co"],    
         "so": {
-            "variants": ["single_turn"],
-            "single_turn": {
+            "variants": ["single_turn_gei", "single_turn_ge", "single_turn_gi"],
+            "single_turn_gei": {
                 "TRAIN_DATA_FILE_NAME": "samples/sb_so_train.json",
                 "TEST_DATA_FILE_NAME": "samples/sb_so_val.json",
                 "STATIC_INCONTEXT_SAMPLES": "samples/sb_so_st_static_incontext.txt",
-                "NUM_INCONTEXT_SAMPLES": 0,
+                "NUM_INCONTEXT_SAMPLES": {
+                    "player_a": 1
+                },
                 "fill_labels": {
                     "INSTRUCTION_LABEL": "Instruction",
                     "OUTPUT_LABEL": "",
                     "OUTPUT_LABEL_HORDER": "Function",
                     "OUTPUT_LABEL_HORDER_USAGE": "Usage",
+                    "GRID_EXPLANATION_BASE": "The elaboration about the grid is labeled under 'Grid Explanation'.",
+                    "GRID_EXPLANATION_IC": "Grid Explanation",
                     "INCONTEXT_SAMPLES": "To be filled during instance creation",
                     "TEST_INSTRUCTION": "To be filled during instance creation"
                 }
-            }         
+            },
+            "single_turn_ge": {
+                "TRAIN_DATA_FILE_NAME": "samples/sb_so_train.json",
+                "TEST_DATA_FILE_NAME": "samples/sb_so_val.json",
+                "STATIC_INCONTEXT_SAMPLES": "samples/sb_so_st_static_incontext.txt",
+                "NUM_INCONTEXT_SAMPLES": {
+                    "player_a": 5
+                },
+                "fill_labels": {
+                    "INSTRUCTION_LABEL": "Instruction",
+                    "OUTPUT_LABEL": "",
+                    "OUTPUT_LABEL_HORDER": "Function",
+                    "OUTPUT_LABEL_HORDER_USAGE": "Usage",
+                    "GRID_EXPLANATION_BASE": "The elaboration about the grid is labeled under 'Grid Explanation'.",
+                    "GRID_EXPLANATION_IC": "Grid Explanation",
+                    "INCONTEXT_SAMPLES": "To be filled during instance creation",
+                    "TEST_INSTRUCTION": "To be filled during instance creation"
+                }
+            },
+            "single_turn_gi": {
+                "TRAIN_DATA_FILE_NAME": "samples/sb_so_train.json",
+                "TEST_DATA_FILE_NAME": "samples/sb_so_val.json",
+                "STATIC_INCONTEXT_SAMPLES": "samples/sb_so_st_static_incontext.txt",
+                "NUM_INCONTEXT_SAMPLES": {
+                    "player_a": 5
+                },
+                "fill_labels": {
+                    "INSTRUCTION_LABEL": "Instruction",
+                    "OUTPUT_LABEL": "",
+                    "OUTPUT_LABEL_HORDER": "Function",
+                    "OUTPUT_LABEL_HORDER_USAGE": "Usage",
+                    "GRID_EXPLANATION_BASE": "",
+                    "GRID_EXPLANATION_IC": "",
+                    "INCONTEXT_SAMPLES": "To be filled during instance creation",
+                    "TEST_INSTRUCTION": "To be filled during instance creation"
+                }
+            }                                
         }
     },
     "rb": {
