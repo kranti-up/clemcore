@@ -1,0 +1,12 @@
+{
+    "experiments": {
+        "without_cr": {
+            "TRAIN_DATA_FILE_NAME": "",
+            "TEST_DATA_FILE_NAME": ""
+        },
+        "with_cr": {
+            "TRAIN_DATA_FILE_NAME": "",
+            "TEST_DATA_FILE_NAME": ""
+        }
+    }
+}
