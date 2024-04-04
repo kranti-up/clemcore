@@ -74,8 +74,10 @@ def get_incontext_samples(
 
 
     incontext_samples = []
-    if variant in ["single_turn_hai", "single_turn_hai_sc"]:
+    if variant == "single_turn_hai":
         use_train_dlg_variant = "single_turn"
+    elif variant == "single_turn_hai_sc":
+        use_train_dlg_variant = "single_turn_sc"
     else:
         use_train_dlg_variant = variant
 
