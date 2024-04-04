@@ -26,7 +26,6 @@ class GenInstaCodeInstanceGenerator(GameInstanceGenerator):
         # get the prompts for player a and player b
         # we'll keep the prompts fixed in all instances, replacing only the
         # necessary slots (but you can do it differently)
-
         game_id = 1
         for board in tests["boards"]:
             for board_object in tests[board]["objects"]:
@@ -47,7 +46,8 @@ class GenInstaCodeInstanceGenerator(GameInstanceGenerator):
                     incontext_labels = {"INSTRUCTION_LABEL": tests[board][board_object][variant]["fill_labels"]["INSTRUCTION_LABEL"],
                                         "OUTPUT_LABEL": tests[board][board_object][variant]["fill_labels"]["OUTPUT_LABEL"],
                                         "OUTPUT_LABEL_HORDER": tests[board][board_object][variant]["fill_labels"]["OUTPUT_LABEL_HORDER"],
-                                        "OUTPUT_LABEL_HORDER_USAGE": tests[board][board_object][variant]["fill_labels"]["OUTPUT_LABEL_HORDER_USAGE"]}
+                                        "OUTPUT_LABEL_HORDER_USAGE": tests[board][board_object][variant]["fill_labels"]["OUTPUT_LABEL_HORDER_USAGE"],
+                                        "GRID_EXPLANATION": tests[board][board_object][variant]["fill_labels"]["GRID_EXPLANATION_IC"]}
 
    
 
@@ -59,7 +59,9 @@ class GenInstaCodeInstanceGenerator(GameInstanceGenerator):
                                     #samples_test = random.sample(test_samples[total_shapes][combo_name], 1)
                                     for sample in num_shapes[total_shapes][combo_name]:
                                     #for sample in samples_test:
-                                        test_dialogues = sample["dialogues"][variant]["instructions"]
+                                        if variant in ["single_turn_gei", "single_turn_ge", "single_turn_gi"]:
+                                            use_variant_for_dialogue = "single_turn"
+                                        test_dialogues = sample["dialogues"][use_variant_for_dialogue]["instructions"]
                                         n_turns = len(test_dialogues)
 
                                         # set the parameters
@@ -67,6 +69,7 @@ class GenInstaCodeInstanceGenerator(GameInstanceGenerator):
                                         instance = self.add_game_instance(experiment, game_id)
                                         # populate the game instance with its parameters
                                         instance["n_turns"] = n_turns
+                                        seed_template_name = sample["seed_template"]
                                         instance["board_data"] = {
                                             "combo_name": sample["combo_name"],
                                             "shapes": sample["shapes"],
@@ -76,7 +79,7 @@ class GenInstaCodeInstanceGenerator(GameInstanceGenerator):
                                             "dialogues": test_dialogues,
                                             "rows": tests["board"]["rows"],
                                             "cols": tests["board"]["cols"],
-                                            "output_labels_a": {"instructions": "Instructions"},
+                                            "output_labels_a": {"instructions": "Instruction"},
                                             "code": sample["code"]["single_turn"],
                                         }
 
@@ -94,10 +97,13 @@ class GenInstaCodeInstanceGenerator(GameInstanceGenerator):
                                                             combo_name,
                                                             self.train_samples,
                                                             incontext_labels,
+															seed_template_name,
+                                                            player,
                                                             SEED                                    
                                                         )
-                                        if variant == "single_turn":
+                                        if variant == "single_turn" or use_variant_for_dialogue == "single_turn":
                                             instance["output_labels_player_b"] = {
+                                                "output": None,
                                                 "function": tests[board][board_object][variant][
                                                     "fill_labels"
                                                 ]["OUTPUT_LABEL_HORDER"],
@@ -108,17 +114,23 @@ class GenInstaCodeInstanceGenerator(GameInstanceGenerator):
                                         player_a_data = {"fill_labels": {"INCONTEXT_SAMPLES": [], "COMBO_NAME": ""}}
                                         player_b_data = {"fill_labels": {"INCONTEXT_SAMPLES": [], "COMBO_NAME": ""}}
 
-                                        player_a_data["fill_labels"][
-                                            "INCONTEXT_SAMPLES"
-                                        ] = incontext_samples["player_a"]
+                                        if incontext_samples["player_a"]:
+                                            player_a_data["fill_labels"][
+                                                "INCONTEXT_SAMPLES"
+                                            ] = incontext_samples["player_a"]
+                                        else:
+                                            incontext_samples["player_a"] = ""
 
                                         player_a_data["fill_labels"][
                                             "COMBO_NAME"
                                         ] = combo_name
 
-                                        player_b_data["fill_labels"][
-                                            "INCONTEXT_SAMPLES"
-                                        ] = incontext_samples["player_b"]
+                                        if incontext_samples["player_b"]:
+                                            player_b_data["fill_labels"][
+                                                "INCONTEXT_SAMPLES"
+                                            ] = incontext_samples["player_b"]
+                                        else:
+                                            incontext_samples["player_b"] = ""
 
                                         player_b_data["fill_labels"][
                                             "COMBO_NAME"
@@ -128,8 +140,15 @@ class GenInstaCodeInstanceGenerator(GameInstanceGenerator):
                                         player_b_data["fill_labels"]["OUTPUT_LABEL_HORDER"] = tests[board][board_object][variant]["fill_labels"]["OUTPUT_LABEL_HORDER"]
                                         player_b_data["fill_labels"]["OUTPUT_LABEL_HORDER_USAGE"] = tests[board][board_object][variant]["fill_labels"]["OUTPUT_LABEL_HORDER_USAGE"]
                                         
+                                        player_a_data["fill_labels"]["GRID_EXPLANATION_BASE"] = tests[board][board_object][variant]["fill_labels"]["GRID_EXPLANATION_BASE"]
+
+
+
                                         # add the prompt to the game instance
-                                        instance["prompt_a"] = prompt_a
+                                        instance["prompt_a"] = self.create_prompt(
+                                            prompt_a,
+                                            **player_a_data["fill_labels"],
+                                        )
                                         instance["prompt_b"] = self.create_prompt(
                                             prompt_b,
                                             **player_b_data["fill_labels"],
@@ -144,12 +163,8 @@ class GenInstaCodeInstanceGenerator(GameInstanceGenerator):
                                 #    break
                             #if game_id > N_INSTANCES:
                             #    break    
-                    #if game_id > N_INSTANCES:
-                    #    break
-                #if game_id > N_INSTANCES:
-                #    break
-            #if game_id > N_INSTANCES:
-            #    break
+                        #if game_id > N_INSTANCES:
+                        #    break
 
         print(f"Generated instances for GenInstaCode game - {game_id - 1} instances.")
 
