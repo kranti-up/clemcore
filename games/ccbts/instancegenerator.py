@@ -45,7 +45,7 @@ class CCBTSInstanceGenerator(GameInstanceGenerator):
                         prompt = self.load_template("resources/initial_prompts/initial_prompt_multiturn")
                     elif variant in ["single_turn", "single_turn_sc", "single_turn_hai", "single_turn_hai_sc"]:
                         prompt = self.load_template("resources/initial_prompts/initial_prompt_singleturn")
-                    elif variant == "regular":
+                    elif variant in ["regular", "regular_hai"]:
                         prompt = self.load_template("resources/initial_prompts/initial_prompt_regular")                        
 
                     incontext_labels = {"INSTRUCTION_LABEL": tests[board][board_object][variant]["fill_labels"]["INSTRUCTION_LABEL"],
@@ -108,7 +108,7 @@ class CCBTSInstanceGenerator(GameInstanceGenerator):
                                                     "OUTPUT_LABEL_HORDER_USAGE"
                                                 ],
                                             }
-                                        elif variant == "regular":
+                                        elif variant in ["regular", "regular_hai"]:
                                             instance["output_labels"] = {
                                                 "output": tests[board][board_object][variant]["fill_labels"][
                                                     "OUTPUT_LABEL"

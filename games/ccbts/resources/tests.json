@@ -101,7 +101,21 @@
                     "INCONTEXT_SAMPLES": "To be filled during instance creation",
                     "TEST_INSTRUCTION": "To be filled during instance creation"
                 }
-            }        
+            },
+            "regular_hai": {
+                "TRAIN_DATA_FILE_NAME": "samples/rb_so_train.json",
+                "TEST_DATA_FILE_NAME": "samples/rb_so_test_hc.json",
+                "STATIC_INCONTEXT_SAMPLES": "samples/rb_so_rg_static_incontext.txt",
+                "NUM_INCONTEXT_SAMPLES": 5,
+                "fill_labels": {
+                    "INSTRUCTION_LABEL": "Instruction",
+                    "OUTPUT_LABEL": "Output",
+                    "OUTPUT_LABEL_HORDER": "",
+                    "OUTPUT_LABEL_HORDER_USAGE": "",
+                    "INCONTEXT_SAMPLES": "To be filled during instance creation",
+                    "TEST_INSTRUCTION": "To be filled during instance creation"
+                }
+            }                      
         },
         "cho": {
             "variants": ["regular"],
@@ -119,6 +133,6 @@
                     "TEST_INSTRUCTION": "To be filled during instance creation"
                 }
             }        
-        }
+        }        
     }    
 }

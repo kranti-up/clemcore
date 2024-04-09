@@ -27,7 +27,7 @@ def format_incontext_samples(
         )
         return result
     
-    elif variant == "regular":
+    elif variant in ["regular", "regular_hai"]:
         result = "\n".join(
             f"{instruction_label}\n{ic_sample[0]}\n\n{output_label_forder}\n{ic_sample[1]}\n"
             for ic_sample in incontext_samples
@@ -49,7 +49,7 @@ def get_incontext_samples(
 
 ):
     print(f"board: {board}, board_object: {board_object}, variant: {variant}, combo_name: {test_combo_name}")
-    if board not in ["sb", "rb"] or board_object not in ["so", "ro", "cho"] or variant not in ["single_turn", "single_turn_sc", "multi_turn", "regular", "single_turn_hai", "single_turn_hai_sc"]:
+    if board not in ["sb", "rb"] or board_object not in ["so", "ro", "cho"] or variant not in ["single_turn", "single_turn_sc", "multi_turn", "regular", "single_turn_hai", "single_turn_hai_sc", "regular_hai"]:
         raise ValueError(f"Invalid board: {board} or board_object: {board_object} or variant:{variant}")
 
     board_type = "simple" if board == "sb" else "regular"
@@ -83,6 +83,8 @@ def get_incontext_samples(
         use_train_dlg_variant = "single_turn"
     elif variant == "single_turn_hai_sc":
         use_train_dlg_variant = "single_turn_sc"
+    elif variant == "regular_hai":
+        use_train_dlg_variant = "regular"
     else:
         use_train_dlg_variant = variant
 
@@ -99,7 +101,7 @@ def get_incontext_samples(
                     incontext_samples.append((d_["<Programmer>"], d_["<Editor>"]))
                 elif variant in ["single_turn", "single_turn_sc", "single_turn_hai", "single_turn_hai_sc"]:
                     incontext_samples.append((d_["<Programmer>"], {"function":d_["<Editor>"]["function"], "usage": d_["<Editor>"]["usage"]}))
-                elif variant == "regular":
+                elif variant in ["regular", "regular_hai"]:
                     incontext_samples.append((d_["<Programmer>"], d_["<Editor>"]["output"]))
             #break
 
