@@ -84,8 +84,8 @@
         }
     },
     "rb": {
-        "objects": ["so"],
-        "_objects": ["so", "co"],    
+        "objects": ["cho"],
+        "_objects": ["so", "cho", "co"],    
         "so": {
             "variants": ["regular"],
             "regular": {
@@ -93,6 +93,23 @@
                 "TEST_DATA_FILE_NAME": "samples/rb_so_val.json",
                 "STATIC_INCONTEXT_SAMPLES": "samples/rb_so_rg_static_incontext.txt",
                 "NUM_INCONTEXT_SAMPLES": 0,
+                "fill_labels": {
+                    "INSTRUCTION_LABEL": "Instruction",
+                    "OUTPUT_LABEL": "Output",
+                    "OUTPUT_LABEL_HORDER": "",
+                    "OUTPUT_LABEL_HORDER_USAGE": "",
+                    "INCONTEXT_SAMPLES": "To be filled during instance creation",
+                    "TEST_INSTRUCTION": "To be filled during instance creation"
+                }
+            }        
+        },
+        "cho": {
+            "variants": ["regular"],
+            "regular": {
+                "TRAIN_DATA_FILE_NAME": "samples/rb_cho_train.json",
+                "TEST_DATA_FILE_NAME": "samples/rb_cho_val.json",
+                "STATIC_INCONTEXT_SAMPLES": "samples/rb_cho_rg_static_incontext.txt",
+                "NUM_INCONTEXT_SAMPLES": 5,
                 "fill_labels": {
                     "INSTRUCTION_LABEL": "Instruction",
                     "OUTPUT_LABEL": "Output",
