@@ -188,6 +188,23 @@ class GenInsta(GameMaster):
 
         return True
     
+    def _get_board_explanation(self, board_details):
+        shape_names = {"washer": "washer", "nut": "nut", "screw": "screw", "bridge-v": "vertical bridge", "bridge-h": "horizontal bridge"}
+        explanation = []
+
+        for i in range(len(board_details)):
+            for j in range(len(board_details[i])):
+                if board_details[i][j] != "⬜️":
+                    cell_info = f"Row({i+1}), Col({j+1}) contains"
+                    for shape, color in board_details[i][j]:
+                        cell_info += f" {color} {shape_names[shape]},"
+                    cell_info = cell_info[:-1]
+                    explanation.append(cell_info+"."+ "\n")
+
+        explanation = "\n".join(explanation)
+        explanation = f"Name of the combination '{self.board_data['combo_name']}'. {explanation}"
+        return explanation
+    
     def _get_board_details(self, board_data):
         empty_cell = "⬜️"
         board_details = [[empty_cell for _ in range(8)] for _ in range(8)]
@@ -199,13 +216,20 @@ class GenInsta(GameMaster):
             if board_details[x][y] == empty_cell:
                 board_details[x][y] = [(shape, color)]
             else:
-                board_details[x][y].append((shape, color))  
+                board_details[x][y].append((shape, color))
 
-        return board_details
+        if board_data["variant"] in ["single_turn_ge", "single_turn_gei"]:
+            board_explanation = self._get_board_explanation(board_details)
+        else:
+            board_explanation = ""
+
+
+        return board_details, board_explanation
     
     def _add_instruction(self, board_data: dict, prompt: dict) -> None:
-        board_details = self._get_board_details(board_data)
-        content = f"'{board_data['combo_name']}'\n{board_details}\n"
+        board_details, board_explanation = self._get_board_details(board_data)
+        content = f"'{board_data['combo_name']}'\n{board_details}\n{board_explanation}"
+        content = content.strip()
         if prompt[-1]["role"] == "user":
             prompt[-1]["content"] = prompt[-1]["content"] + "\n" + content
         else:

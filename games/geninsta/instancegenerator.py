@@ -80,6 +80,7 @@ class GenInstaInstanceGenerator(GameInstanceGenerator):
                                             "cols": tests["board"]["cols"],
                                             "output_labels_a": {"instructions": "Instruction"},
                                             "code": sample["code"]["single_turn"],
+                                            "variant": variant,
                                         }
 
                                         incontext_samples = {"player_a": []}
@@ -137,7 +138,7 @@ class GenInstaInstanceGenerator(GameInstanceGenerator):
                         #if game_id > N_INSTANCES:
                         #    break
 
-        print(f"Generated instances for GenInstaCode game - {game_id - 1} instances.")
+        print(f"Generated instances for GenInsta game - {game_id - 1} instances.")
 
 
 
