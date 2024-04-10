@@ -37,7 +37,7 @@ def format_incontext_samples(
         )
         return result
     
-    elif variant == "single_turn_ge":
+    elif variant in ["single_turn_ge", "regular_ge"]:
         result = "\n".join(
             f"'{ic_sample[0]}'\n{ic_sample[1]}\n\n{grid_explanation}\n{ic_sample[2]}\n"
             for ic_sample in incontext_samples
@@ -59,6 +59,19 @@ def format_incontext_samples(
         return result      
     
 
+def get_board_ascii_details_regular(board):
+    empty_cell = "⬜️"
+    board_details = [[empty_cell for _ in range(board["rows"])] for _ in range(board["cols"])]
+
+    colors = board["colors"]
+    combo_name = board["combo_name"]
+
+    for row, col in board["repeat_loc"]:
+        board_details[row][col] = [(f'{combo_name}', colors)]
+
+    return board_details
+
+
 def get_board_ascii_details(board):
     empty_cell = "⬜️"
     board_details = [[empty_cell for _ in range(board["rows"])] for _ in range(board["cols"])]
@@ -77,20 +90,31 @@ def get_board_ascii_details(board):
 
     return board_details    
 
-def get_board_explanation(board, combo_name):
-    board_details = get_board_ascii_details(board)
+def get_board_explanation(variant, board, combo_name):
+    if variant != "regular_ge":
+        board_details = get_board_ascii_details(board)
+    else:
+        board_details = get_board_ascii_details_regular(board)
+
     shape_names = {"washer": "washer", "nut": "nut", "screw": "screw", "bridge-v": "vertical bridge", "bridge-h": "horizontal bridge"}
+
+
     explanation = []
     for i in range(len(board_details)):
         for j in range(len(board_details[i])):
             if board_details[i][j] != "⬜️":
                 cell_info = f"Row({i+1}), Col({j+1}) contains"
                 for shape, color in board_details[i][j]:
-                    cell_info += f" {color} {shape_names[shape]},"
+                    if variant != "regular_ge":                    
+                        cell_info += f" {color} {shape_names.get(shape, shape)},"
+                    else:
+                        cell_info += f" '{shape_names.get(shape, shape)}' in colors {color},"
                 cell_info = cell_info[:-1]
                 explanation.append(cell_info+"."+ "\n")
     explanation = "\n".join(explanation)
-    explanation = f"Name of the combination '{combo_name}'. {explanation}"
+    if variant != "regular_ge":
+        explanation = f"Name of the combination '{combo_name}'. {explanation}"
+
     return explanation, board_details
 
 
@@ -109,7 +133,7 @@ def get_incontext_samples(
 
 ):
     print(f"board: {board}, board_object: {board_object}, variant: {variant}, combo_name: {test_combo_name}")
-    if board not in ["sb", "rb"] or board_object not in ["so", "ro"] or variant not in ["single_turn", "single_turn_sc", "multi_turn", "regular", "single_turn_gei", "single_turn_ge", "single_turn_gi"]:
+    if board not in ["sb", "rb"] or board_object not in ["so", "ro"] or variant not in ["single_turn", "single_turn_sc", "multi_turn", "regular", "single_turn_gei", "single_turn_ge", "single_turn_gi", "regular_ge"]:
         raise ValueError(f"Invalid board: {board} or board_object: {board_object} or variant:{variant}")
 
     board_type = "simple" if board == "sb" else "regular"
@@ -134,6 +158,8 @@ def get_incontext_samples(
 
     if variant in ["single_turn_gei", "single_turn_ge", "single_turn_gi"]:
         use_variant_for_dialogue = "single_turn"  
+    elif variant in ["regular_ge"]:
+        use_variant_for_dialogue = "regular"
     incontext_samples = []
     for combo in filtered_samples:
         #samples_count = 3
@@ -149,7 +175,7 @@ def get_incontext_samples(
                         incontext_samples.append((d_["<Programmer>"], d_["<Editor>"]))
                     elif variant in ["single_turn", "single_turn_sc", "single_turn_gei", "single_turn_ge", "single_turn_gi"]:
                         incontext_samples.append((d_["<Programmer>"], {"function":d_["<Editor>"]["function"], "usage": d_["<Editor>"]["usage"]}))
-                    elif variant == "regular":
+                    elif variant in ["regular", "regular_ge"]:
                         incontext_samples.append((d_["<Programmer>"], d_["<Editor>"]["output"]))
                 #break
         else:
@@ -157,13 +183,13 @@ def get_incontext_samples(
                 dialog = sample["dialogues"][use_variant_for_dialogue]["instructions"]
 
                 for d_ in dialog:
-                    board_explanation, board_details = get_board_explanation(sample, sample["combo_name"])
+                    board_explanation, board_details = get_board_explanation(variant, sample, sample["combo_name"])
                     if variant == "single_turn_gei":
                         incontext_samples.append((sample["combo_name"], board_details, board_explanation, d_["<Programmer>"]))
-                    elif variant == "single_turn_ge":
+                    elif variant in ["single_turn_ge", "regular_ge"]:
                         incontext_samples.append((sample["combo_name"], board_details, board_explanation))
                     elif variant == "single_turn_gi":
-                        incontext_samples.append((sample["combo_name"], board_details, d_["<Programmer>"]))        
+                        incontext_samples.append((sample["combo_name"], board_details, d_["<Programmer>"]))
 
 
     random.seed(SEED)
