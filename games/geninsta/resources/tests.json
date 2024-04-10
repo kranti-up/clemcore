@@ -24,6 +24,7 @@
                     "OUTPUT_LABEL_HORDER": "Function",
                     "OUTPUT_LABEL_HORDER_USAGE": "Usage",
                     "GRID_EXPLANATION_BASE": "The elaboration about the grid is labeled under 'Grid Explanation'.",
+                    "GRID_WORLD_BASE": "The representation about the grid is labeled under 'Grid Status'.",
                     "GRID_EXPLANATION_IC": "Grid Explanation",
                     "INCONTEXT_SAMPLES": "To be filled during instance creation",
                     "TEST_INSTRUCTION": "To be filled during instance creation"
@@ -42,6 +43,8 @@
                     "OUTPUT_LABEL_HORDER": "Function",
                     "OUTPUT_LABEL_HORDER_USAGE": "Usage",
                     "GRID_EXPLANATION_BASE": "The elaboration about the grid is labeled under 'Grid Explanation'.",
+                    "GRID_WORLD_BASE": "Current Grid Status",
+                    "GRID_OBJECT_BASE": "Object Name",
                     "GRID_EXPLANATION_IC": "Grid Explanation",
                     "INCONTEXT_SAMPLES": "To be filled during instance creation",
                     "TEST_INSTRUCTION": "To be filled during instance creation"
@@ -100,6 +103,8 @@
                     "OUTPUT_LABEL_HORDER": "Function",
                     "OUTPUT_LABEL_HORDER_USAGE": "Usage",
                     "GRID_EXPLANATION_BASE": "The elaboration about the grid is labeled under 'Grid Explanation'.",
+                    "GRID_WORLD_BASE": "Current Grid Status",
+                    "GRID_OBJECT_BASE": "Object Name",
                     "GRID_EXPLANATION_IC": "",
                     "INCONTEXT_SAMPLES": "To be filled during instance creation",
                     "TEST_INSTRUCTION": "To be filled during instance creation"

@@ -4,13 +4,13 @@ The environment is an 8x8 grid allowing shape placement and stacking. A shape ca
 
 In the grid, columns align with the x-axis and rows with the y-axis. The cell in the top-left corner is the first row and first column, corresponding to row and column values of 1, 1. Similarly, the top-right corner cell is the first row and eighth column, with row and column values of 1, 8.
 
-Each location in the grid contains a list of tuples where each tuple indicates the name of the object and its colors. Empty locations are indicated as "⬜️".
+Some of the cells in the grid are filled with objects, and the current status of the grid is labeled under '$GRID_WORLD_BASE'. Each filled cell in the grid contains a list of tuples, where each tuple indicates the name of the object and its colors. Empty cells are indicated by "⬜️".
 
 $GRID_EXPLANATION_BASE
 
 Your task is to respond with the sequential instructions under the label Instruction followed by a newline.
 
-Generate the instructions to fill the grid with the given object, in a continuous format without numbering or bullet points. Assume the grid starts empty and only describe actions for placing shapes. The order of colors, x, y matters, as these are assigned to the shapes in the same sequence.
+Generate the instructions to fill the grid with the given object, in a continuous format without numbering or bullet points. Assume the grid starts empty and only describe actions for placing the object. The order of colors, x, y matters, as these are assigned to the object in the same sequence.
 
 Do not generate any other text/explanations.
 

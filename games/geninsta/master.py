@@ -239,7 +239,7 @@ class GenInsta(GameMaster):
         explanation = "\n".join(explanation)
         explanation = "Grid Explanation:\n" + explanation + "\n"
         if board["variant"] != "regular_ge":
-            explanation = f"Name of the grid '{board['combo_name']}'.\n\n{explanation}"
+            explanation = f"Object Name\n'{board['combo_name']}'.\n\n{explanation}"
 
         return board_details, explanation
     
@@ -285,7 +285,7 @@ class GenInsta(GameMaster):
         board_details, board_explanation = self._get_board_explanation(board_data)
 
         #content = f"'{board_data['combo_name']}'\n\n{board_details}\n{board_explanation}"
-        content = f"{board_details}\n\n{board_explanation}"
+        content = f"Current Grid Status\n{board_details}\n\n{board_explanation}"
         content = content.strip()
         if prompt[-1]["role"] == "user":
             prompt[-1]["content"] = prompt[-1]["content"] + "\n" + content

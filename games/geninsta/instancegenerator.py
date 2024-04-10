@@ -49,7 +49,9 @@ class GenInstaInstanceGenerator(GameInstanceGenerator):
                                         "OUTPUT_LABEL": tests[board][board_object][variant]["fill_labels"]["OUTPUT_LABEL"],
                                         "OUTPUT_LABEL_HORDER": tests[board][board_object][variant]["fill_labels"]["OUTPUT_LABEL_HORDER"],
                                         "OUTPUT_LABEL_HORDER_USAGE": tests[board][board_object][variant]["fill_labels"]["OUTPUT_LABEL_HORDER_USAGE"],
-                                        "GRID_EXPLANATION": tests[board][board_object][variant]["fill_labels"]["GRID_EXPLANATION_IC"]}
+                                        "GRID_EXPLANATION": tests[board][board_object][variant]["fill_labels"]["GRID_EXPLANATION_IC"],
+                                        "GRID_WORLD_BASE": tests[board][board_object][variant]["fill_labels"]["GRID_WORLD_BASE"],
+                                        "GRID_OBJECT_BASE": tests[board][board_object][variant]["fill_labels"]["GRID_OBJECT_BASE"],}
 
    
 
@@ -142,6 +144,8 @@ class GenInstaInstanceGenerator(GameInstanceGenerator):
 
                                         
                                         player_a_data["fill_labels"]["GRID_EXPLANATION_BASE"] = tests[board][board_object][variant]["fill_labels"]["GRID_EXPLANATION_BASE"]
+                                        player_a_data["fill_labels"]["GRID_WORLD_BASE"] = tests[board][board_object][variant]["fill_labels"]["GRID_WORLD_BASE"]
+                                        player_a_data["fill_labels"]["GRID_OBJECT_BASE"] = tests[board][board_object][variant]["fill_labels"]["GRID_OBJECT_BASE"]
 
 
 
