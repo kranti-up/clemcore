@@ -45,7 +45,7 @@ class CCBTSInstanceGenerator(GameInstanceGenerator):
                         prompt = self.load_template("resources/initial_prompts/initial_prompt_multiturn")
                     elif variant in ["single_turn", "single_turn_sc", "single_turn_hai", "single_turn_hai_sc", "single_turn_mg"]:
                         prompt = self.load_template("resources/initial_prompts/initial_prompt_singleturn")
-                    elif variant in ["regular", "regular_hai"]:
+                    elif variant in ["regular", "regular_hai", "regular_mg"]:
                         prompt = self.load_template("resources/initial_prompts/initial_prompt_regular")                        
 
                     incontext_labels = {"INSTRUCTION_LABEL": tests[board][board_object][variant]["fill_labels"]["INSTRUCTION_LABEL"],
@@ -98,7 +98,7 @@ class CCBTSInstanceGenerator(GameInstanceGenerator):
                                                 "usage": None,
                                             }
 
-                                        elif variant in ["single_turn", "single_turn_sc", "single_turn_hai", "single_turn_hai_sc"]:
+                                        elif variant in ["single_turn", "single_turn_sc", "single_turn_hai", "single_turn_hai_sc", "single_turn_mg"]:
                                             instance["output_labels"] = {
                                                 "output": None,
                                                 "function": tests[board][board_object][variant][
@@ -108,7 +108,7 @@ class CCBTSInstanceGenerator(GameInstanceGenerator):
                                                     "OUTPUT_LABEL_HORDER_USAGE"
                                                 ],
                                             }
-                                        elif variant in ["regular", "regular_hai"]:
+                                        elif variant in ["regular", "regular_hai", "regular_mg"]:
                                             instance["output_labels"] = {
                                                 "output": tests[board][board_object][variant]["fill_labels"][
                                                     "OUTPUT_LABEL"

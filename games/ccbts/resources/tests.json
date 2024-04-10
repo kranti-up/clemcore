@@ -69,7 +69,7 @@
             },
             "single_turn_mg": {
                 "TRAIN_DATA_FILE_NAME": "samples/sb_so_train.json",
-                "TEST_DATA_FILE_NAME": "samples/sb_so_val_mg.json",
+                "TEST_DATA_FILE_NAME": "samples/sb_so_test_mg.json",
                 "STATIC_INCONTEXT_SAMPLES": "samples/sb_so_st_static_incontext.txt",
                 "NUM_INCONTEXT_SAMPLES": 5,
                 "fill_labels": {
@@ -120,6 +120,20 @@
                 "TRAIN_DATA_FILE_NAME": "samples/rb_so_train.json",
                 "TEST_DATA_FILE_NAME": "samples/rb_so_test_hc.json",
                 "STATIC_INCONTEXT_SAMPLES": "samples/rb_so_rg_static_incontext.txt",
+                "NUM_INCONTEXT_SAMPLES": 5,
+                "fill_labels": {
+                    "INSTRUCTION_LABEL": "Instruction",
+                    "OUTPUT_LABEL": "Output",
+                    "OUTPUT_LABEL_HORDER": "",
+                    "OUTPUT_LABEL_HORDER_USAGE": "",
+                    "INCONTEXT_SAMPLES": "To be filled during instance creation",
+                    "TEST_INSTRUCTION": "To be filled during instance creation"
+                }
+            },
+            "regular_mg": {
+                "TRAIN_DATA_FILE_NAME": "samples/rb_so_train.json",
+                "TEST_DATA_FILE_NAME": "samples/rb_so_test_mg.json",
+                "STATIC_INCONTEXT_SAMPLES": "samples/rb_so_mg_static_incontext.txt",
                 "NUM_INCONTEXT_SAMPLES": 5,
                 "fill_labels": {
                     "INSTRUCTION_LABEL": "Instruction",
