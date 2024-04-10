@@ -9,13 +9,14 @@
         "objects": ["so"],
         "_objects": ["so", "co"],    
         "so": {
-            "variants": ["single_turn_gei", "single_turn_ge", "single_turn_gi"],
+            "variants": ["single_turn_ge"],
+            "_variants": ["single_turn_gei", "single_turn_ge", "single_turn_gi"],
             "single_turn_gei": {
                 "TRAIN_DATA_FILE_NAME": "samples/sb_so_train.json",
-                "TEST_DATA_FILE_NAME": "samples/sb_so_val.json",
+                "TEST_DATA_FILE_NAME": "samples/sb_so_test.json",
                 "STATIC_INCONTEXT_SAMPLES": "samples/sb_so_st_static_incontext.txt",
                 "NUM_INCONTEXT_SAMPLES": {
-                    "player_a": 1
+                    "player_a": 5
                 },
                 "fill_labels": {
                     "INSTRUCTION_LABEL": "Instruction",
@@ -30,7 +31,7 @@
             },
             "single_turn_ge": {
                 "TRAIN_DATA_FILE_NAME": "samples/sb_so_train.json",
-                "TEST_DATA_FILE_NAME": "samples/sb_so_val.json",
+                "TEST_DATA_FILE_NAME": "samples/sb_so_test.json",
                 "STATIC_INCONTEXT_SAMPLES": "samples/sb_so_st_static_incontext.txt",
                 "NUM_INCONTEXT_SAMPLES": {
                     "player_a": 5
@@ -48,7 +49,7 @@
             },
             "single_turn_gi": {
                 "TRAIN_DATA_FILE_NAME": "samples/sb_so_train.json",
-                "TEST_DATA_FILE_NAME": "samples/sb_so_val.json",
+                "TEST_DATA_FILE_NAME": "samples/sb_so_test.json",
                 "STATIC_INCONTEXT_SAMPLES": "samples/sb_so_st_static_incontext.txt",
                 "NUM_INCONTEXT_SAMPLES": {
                     "player_a": 5
