@@ -40,8 +40,11 @@ class GenInstaInstanceGenerator(GameInstanceGenerator):
                     test_samples = self.load_json(
                         f'resources/{tests[board][board_object][variant]["TEST_DATA_FILE_NAME"]}'
                     )
+                    if variant != "regular_ge":
+                        prompt = self.load_template("resources/initial_prompts/prompt_a")
+                    else:
+                        prompt = self.load_template("resources/initial_prompts/prompt_a_regular")
 
-                    prompt = self.load_template("resources/initial_prompts/prompt_a")
                     incontext_labels = {"INSTRUCTION_LABEL": tests[board][board_object][variant]["fill_labels"]["INSTRUCTION_LABEL"],
                                         "OUTPUT_LABEL": tests[board][board_object][variant]["fill_labels"]["OUTPUT_LABEL"],
                                         "OUTPUT_LABEL_HORDER": tests[board][board_object][variant]["fill_labels"]["OUTPUT_LABEL_HORDER"],
@@ -60,6 +63,10 @@ class GenInstaInstanceGenerator(GameInstanceGenerator):
                                     #for sample in samples_test:
                                         if variant in ["single_turn_gei", "single_turn_ge", "single_turn_gi"]:
                                             use_variant_for_dialogue = "single_turn"
+                                            use_code = sample["code"]["single_turn"]
+                                        elif variant in ["regular_ge"]:
+                                            use_variant_for_dialogue = "regular"
+                                            use_code = sample["code"]
                                         test_dialogues = sample["dialogues"][use_variant_for_dialogue]["instructions"]
                                         n_turns = len(test_dialogues)
 
@@ -69,19 +76,34 @@ class GenInstaInstanceGenerator(GameInstanceGenerator):
                                         # populate the game instance with its parameters
                                         instance["n_turns"] = n_turns
                                         seed_template_name = sample["seed_template"]
-                                        instance["board_data"] = {
-                                            "combo_name": sample["combo_name"],
-                                            "shapes": sample["shapes"],
-                                            "colors": sample["colors"],
-                                            "x": sample["x"],
-                                            "y": sample["y"],
-                                            "dialogues": test_dialogues,
-                                            "rows": tests["board"]["rows"],
-                                            "cols": tests["board"]["cols"],
-                                            "output_labels_a": {"instructions": "Instruction"},
-                                            "code": sample["code"]["single_turn"],
-                                            "variant": variant,
-                                        }
+
+                                        if variant != "regular_ge":
+                                            instance["board_data"] = {
+                                                "combo_name": sample["combo_name"],
+                                                "shapes": sample["shapes"],
+                                                "colors": sample["colors"],
+                                                "x": sample["x"],
+                                                "y": sample["y"],
+                                                "dialogues": test_dialogues,
+                                                "rows": tests["board"]["rows"],
+                                                "cols": tests["board"]["cols"],
+                                                "output_labels_a": {"instructions": "Instruction"},
+                                                "code": use_code,#sample["code"]["single_turn"],
+                                                "variant": variant,
+                                            }
+                                        else:
+                                            instance["board_data"] = {
+                                                "combo_name": sample["combo_name"],
+                                                "shapes": sample["shapes"],
+                                                "colors": sample["colors"],
+                                                "rows": sample["rows"],
+                                                "cols": sample["cols"],
+                                                "dialogues": test_dialogues,
+                                                "output_labels_a": {"instructions": "Instruction"},
+                                                "code": use_code,#sample["code"],
+                                                "variant": variant,
+                                                "repeat_loc": sample["repeat_loc"],
+                                            }
 
                                         incontext_samples = {"player_a": []}
                                         for player in ["player_a"]: 
@@ -109,7 +131,10 @@ class GenInstaInstanceGenerator(GameInstanceGenerator):
                                                 "INCONTEXT_SAMPLES"
                                             ] = incontext_samples["player_a"]
                                         else:
-                                            incontext_samples["player_a"] = ""
+                                            #incontext_samples["player_a"] = ""
+                                            player_a_data["fill_labels"][
+                                                "INCONTEXT_SAMPLES"
+                                            ] = ""
 
                                         player_a_data["fill_labels"][
                                             "COMBO_NAME"

@@ -10,9 +10,6 @@ $GRID_EXPLANATION_BASE
 
 Your task is to respond with the sequential instructions under the label Instruction followed by a newline.
 
-
-$INCONTEXT_SAMPLES
-
 Generate the instructions to fill the grid with given shapes, listing all steps in a continuous format without numbering or bullet points. Also ensure to mention the grid name in the instructions. Assume the grid starts empty and only describe actions for placing shapes. The order of colors, x, y matters, as these are assigned to the shapes in the same sequence.
 
 Do not generate any other text/explanations.

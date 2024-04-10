@@ -3,7 +3,7 @@
         "rows": 8,
         "cols": 8
     },
-    "boards": ["sb"],
+    "boards": ["sb", "rb"],
     "_boards": ["sb", "rb"],
     "sb": {
         "objects": ["so"],
@@ -34,7 +34,7 @@
                 "TEST_DATA_FILE_NAME": "samples/sb_so_test.json",
                 "STATIC_INCONTEXT_SAMPLES": "samples/sb_so_st_static_incontext.txt",
                 "NUM_INCONTEXT_SAMPLES": {
-                    "player_a": 5
+                    "player_a": 0
                 },
                 "fill_labels": {
                     "INSTRUCTION_LABEL": "Instruction",
@@ -71,7 +71,7 @@
         "objects": ["so"],
         "_objects": ["so", "co"],    
         "so": {
-            "variants": ["regular"],
+            "variants": ["regular_ge"],
             "_variants": ["regular"],
             "regular": {
                 "TRAIN_DATA_FILE_NAME": "samples/rb_so_train.json",
@@ -86,7 +86,25 @@
                     "INCONTEXT_SAMPLES": "To be filled during instance creation",
                     "TEST_INSTRUCTION": "To be filled during instance creation"
                 }
-            }        
+            },
+            "regular_ge": {
+                "TRAIN_DATA_FILE_NAME": "samples/rb_so_train_loc.json",
+                "TEST_DATA_FILE_NAME": "samples/rb_so_test_loc.json",
+                "STATIC_INCONTEXT_SAMPLES": "samples/rb_so_rg_static_incontext.txt",
+                "NUM_INCONTEXT_SAMPLES": {
+                    "player_a": 0
+                },
+                "fill_labels": {
+                    "INSTRUCTION_LABEL": "Instruction",
+                    "OUTPUT_LABEL": "",
+                    "OUTPUT_LABEL_HORDER": "Function",
+                    "OUTPUT_LABEL_HORDER_USAGE": "Usage",
+                    "GRID_EXPLANATION_BASE": "The elaboration about the grid is labeled under 'Grid Explanation'.",
+                    "GRID_EXPLANATION_IC": "",
+                    "INCONTEXT_SAMPLES": "To be filled during instance creation",
+                    "TEST_INSTRUCTION": "To be filled during instance creation"
+                }
+            }                   
         }
     }    
 }

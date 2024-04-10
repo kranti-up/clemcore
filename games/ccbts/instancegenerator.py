@@ -43,7 +43,7 @@ class CCBTSInstanceGenerator(GameInstanceGenerator):
 
                     if variant == "multi_turn":
                         prompt = self.load_template("resources/initial_prompts/initial_prompt_multiturn")
-                    elif variant in ["single_turn", "single_turn_sc", "single_turn_hai", "single_turn_hai_sc"]:
+                    elif variant in ["single_turn", "single_turn_sc", "single_turn_hai", "single_turn_hai_sc", "single_turn_mg"]:
                         prompt = self.load_template("resources/initial_prompts/initial_prompt_singleturn")
                     elif variant in ["regular", "regular_hai"]:
                         prompt = self.load_template("resources/initial_prompts/initial_prompt_regular")                        

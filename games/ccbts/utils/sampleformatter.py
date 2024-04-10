@@ -20,7 +20,7 @@ def format_incontext_samples(
 
         return result
 
-    elif variant in ["single_turn", "single_turn_sc", "single_turn_hai", "single_turn_hai_sc"]:
+    elif variant in ["single_turn", "single_turn_sc", "single_turn_hai", "single_turn_hai_sc", "single_turn_mg"]:
         result = "\n".join(
             f"{instruction_label}\n{ic_sample[0]}\n\n{output_label_horder}\n{ic_sample[1]['function']}\n\n{output_label_horder_usage}\n{ic_sample[1]['usage']}\n"
             for ic_sample in incontext_samples
@@ -49,7 +49,7 @@ def get_incontext_samples(
 
 ):
     print(f"board: {board}, board_object: {board_object}, variant: {variant}, combo_name: {test_combo_name}")
-    if board not in ["sb", "rb"] or board_object not in ["so", "ro", "cho"] or variant not in ["single_turn", "single_turn_sc", "multi_turn", "regular", "single_turn_hai", "single_turn_hai_sc", "regular_hai"]:
+    if board not in ["sb", "rb"] or board_object not in ["so", "ro", "cho"] or variant not in ["single_turn", "single_turn_sc", "multi_turn", "regular", "single_turn_hai", "single_turn_hai_sc", "regular_hai", "single_turn_mg"]:
         raise ValueError(f"Invalid board: {board} or board_object: {board_object} or variant:{variant}")
 
     board_type = "simple" if board == "sb" else "regular"
@@ -79,7 +79,7 @@ def get_incontext_samples(
 
 
     incontext_samples = []
-    if variant == "single_turn_hai":
+    if variant in ["single_turn_hai", "single_turn_mg"]:
         use_train_dlg_variant = "single_turn"
     elif variant == "single_turn_hai_sc":
         use_train_dlg_variant = "single_turn_sc"
@@ -99,7 +99,7 @@ def get_incontext_samples(
             for d_ in dialog:
                 if variant == "multi_turn":
                     incontext_samples.append((d_["<Programmer>"], d_["<Editor>"]))
-                elif variant in ["single_turn", "single_turn_sc", "single_turn_hai", "single_turn_hai_sc"]:
+                elif variant in ["single_turn", "single_turn_sc", "single_turn_hai", "single_turn_hai_sc", "single_turn_mg"]:
                     incontext_samples.append((d_["<Programmer>"], {"function":d_["<Editor>"]["function"], "usage": d_["<Editor>"]["usage"]}))
                 elif variant in ["regular", "regular_hai"]:
                     incontext_samples.append((d_["<Programmer>"], d_["<Editor>"]["output"]))
