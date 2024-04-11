@@ -3,7 +3,7 @@
         "rows": 8,
         "cols": 8
     },
-    "boards": ["sb"],
+    "boards": ["rb"],
     "_boards": ["sb", "rb"],
     "sb": {
         "objects": ["so"],
@@ -101,7 +101,7 @@
         "objects": ["cho"],
         "_objects": ["so", "cho", "co"],    
         "so": {
-            "variants": ["regular"],
+            "variants": ["regular_hai"],
             "regular": {
                 "TRAIN_DATA_FILE_NAME": "samples/rb_so_train.json",
                 "TEST_DATA_FILE_NAME": "samples/rb_so_val.json",
@@ -143,10 +143,10 @@
                     "INCONTEXT_SAMPLES": "To be filled during instance creation",
                     "TEST_INSTRUCTION": "To be filled during instance creation"
                 }
-            }                      
+            }                    
         },
         "cho": {
-            "variants": ["regular"],
+            "variants": ["regular_hai"],
             "regular": {
                 "TRAIN_DATA_FILE_NAME": "samples/rb_cho_train.json",
                 "TEST_DATA_FILE_NAME": "samples/rb_cho_val.json",
@@ -160,7 +160,21 @@
                     "INCONTEXT_SAMPLES": "To be filled during instance creation",
                     "TEST_INSTRUCTION": "To be filled during instance creation"
                 }
-            }        
+            },
+            "regular_hai": {
+                "TRAIN_DATA_FILE_NAME": "samples/rb_cho_train.json",
+                "TEST_DATA_FILE_NAME": "samples/rb_cho_test_hc.json",
+                "STATIC_INCONTEXT_SAMPLES": "samples/rb_cho_rg_static_incontext.txt",
+                "NUM_INCONTEXT_SAMPLES": 5,
+                "fill_labels": {
+                    "INSTRUCTION_LABEL": "Instruction",
+                    "OUTPUT_LABEL": "Output",
+                    "OUTPUT_LABEL_HORDER": "",
+                    "OUTPUT_LABEL_HORDER_USAGE": "",
+                    "INCONTEXT_SAMPLES": "To be filled during instance creation",
+                    "TEST_INSTRUCTION": "To be filled during instance creation"
+                }
+            }                    
         }        
     }    
 }
