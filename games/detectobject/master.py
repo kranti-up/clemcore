@@ -44,7 +44,7 @@ class DetectObject(GameMaster):
         self.dialogue_data = dialogue_data
 
         # instantiate both players
-        self.player_a = InstructionGiver(self.model_a, "A")
+        self.player_a = InstructionGiver(self.model_a)
 
         # initialise game variables
         self.current_turn: int = 0
@@ -94,6 +94,8 @@ class DetectObject(GameMaster):
         # always call log_next_turn what a turn starts
         self.log_next_turn()
 
+        self.dialogue_turns = self._yield_conversation()
+
         # append the initial message of each player to their history
         # the value user means the message is from an interlocutor of the model
         self.player_a.history.append({'role': 'user', 'content': prompt_player_a})
@@ -124,12 +126,13 @@ class DetectObject(GameMaster):
             return False
 
         #TODO: Save the model response for evaluation
-        #self.game_result
+        self.game_result[self.current_turn]["prediction"] = answer
 
         # increase the counter of requests that conform to form rules
         self.parsed_request_counts[self.current_turn] += 1
 
-        action = {'type': 'metadata', 'content': answer}
+        action = {'type': 'metadata', 'content': {"prediction": answer,
+                                                   "groundtruth": self.game_result[self.current_turn]["groundtruth"]}}
         self.log_event(from_='GM', to='GM', action=action)
 
 
@@ -140,9 +143,17 @@ class DetectObject(GameMaster):
         self.log_event(from_='GM', to='GM', action=action)
 
         return True
+    
+    def _yield_conversation(self):
+        for turn in self.dialogue_data["total_dialogues"]:
+            yield turn["uapairs"], turn["groundtruth"]
 
-    def _add_instruction(self, data_to_add: dict, prompt: dict) -> None:
-        content = "" #TODO: Add the content required
+
+    def _add_instruction(self, conversation: str, prompt: dict) -> None:
+        content = ""
+        for conv in conversation:
+            content += "\n".join(conv) + "\n"
+
         if prompt[-1]["role"] == "user":
             prompt[-1]["content"] = prompt[-1]["content"] + "\n" + content
         else:
@@ -154,11 +165,14 @@ class DetectObject(GameMaster):
         """Get utterance from a player and log it (firstlast specific)."""
         assert player in ('a')
 
+
+        dialogue, groundtruth = next(self.dialogue_turns)
+
         add_data = {} #TODO: Add the data to be added
-        content = self._add_instruction(add_data, self.player_a.history)
+        content = self._add_instruction(dialogue, self.player_a.history)
         
         #TODO: Add ground truth information to result for evaluation purposes
-        #self.game_result
+        self.game_result[self.current_turn] = {"groundtruth": groundtruth}
 
         action_content = content if self.current_turn != 1 else self.player_a.history[-1]["content"]
         action = {'type': 'send message', 'content': action_content}
@@ -168,7 +182,7 @@ class DetectObject(GameMaster):
         # make an API call (or get a programmatic response) from player a
         prompt, raw_answer, answer = self.player_a(self.player_a.history,
                                                 self.current_turn)
-
+        
         # add reply to its own memory
         #self._append_utterance(answer, 'a', 'assistant')
 

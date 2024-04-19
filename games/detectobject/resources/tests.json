@@ -1,12 +1,14 @@
 {
     "experiments": {
         "without_cr": {
-            "TRAIN_DATA_FILE_NAME": "",
-            "TEST_DATA_FILE_NAME": ""
+            "TEST_DATA_FILE_NAME": "",
+            "PROMPT_FILE_NAME": ""
         },
         "with_cr": {
-            "TRAIN_DATA_FILE_NAME": "",
-            "TEST_DATA_FILE_NAME": ""
+            "TEST_DATA_FILE_NAME": "clemtestdata.json",
+            "PROMPT_FILE_NAME": "prompt_a.template",
+            "SCENE_INFO_METADATA": "fashion_prefab_metadata_all.json",
+            "USE_DIALOGUE_CONTEXT": false
         }
     }
 }

@@ -18,4 +18,4 @@ class InstructionGiver(Player):
     # implement this method as you prefer, with these same arguments
     def _custom_response(self, messages, turn_idx) -> str:
         """Return a mock message with the suitable output format."""
-        return "Output\nput(board, shape='screw', color='yellow', x=1, y=5)"
+        return "ObjectID\n29"
