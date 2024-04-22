@@ -1,6 +1,7 @@
 import copy
 from typing import List, Dict, Tuple
 from string import ascii_lowercase as letters
+import re
 from collections import Counter
 
 import numpy as np
@@ -11,6 +12,7 @@ from clemgame import get_logger
 
 from games.detectobject.players import InstructionGiver
 from games.detectobject.instancegenerator import GAME_NAME
+from games.detectobject.utils.objdetecteval import ObjDetectEvaluator
 
 
 
@@ -107,9 +109,60 @@ class DetectObject(GameMaster):
                 and not self.lose)
     
     def parse(self, response: str) -> dict:
-        print(f"Inside parse: response = {response}")
-        #TODO: Add the logic to parse the response
-        return response
+        answer = re.findall(r'\d+', response)
+
+        # Convert the strings to integers
+        answer = [int(num) for num in answer]
+
+        print(f"Inside parse: answer = {answer}")
+        return answer     
+
+
+    def parse_old(self, response: str) -> dict:
+        """
+        Not doing strict label checking
+        The response is expected to be in the format:
+        ObjectID\n
+        <objectid 1>\n
+        <objectid 2>\n
+        ...
+
+        Strip the label and get the detected object ids
+        Sometimes model response may not have the label, in that case, return the response as it is
+        """
+        
+        def clean_id(obj_id):
+            return obj_id.translate(str.maketrans("", "", ": \t.")).strip()
+
+        response = response.strip().lower()
+        labels = ["objectid", "object id"]
+
+        for label in labels:
+            if label in response:
+                response = response.split(label)[1].strip()
+                response = response.split("\n")
+                if response[0] in ["", " ", ":", "\t", "\n", ".", ","]:
+                    response = response[1:]
+
+        cleaned_ids = []
+        for obj_id in response:
+            # Split on commas in case multiple IDs are on the same line
+            for sub_id in obj_id.split(','):
+                cleaned = clean_id(sub_id)
+                try:
+                    # Attempt to convert cleaned IDs to integers
+                    cleaned_ids.append(int(cleaned))
+                except ValueError:
+                    print(f"Warning: Unable to convert '{cleaned}' to integer.")
+
+        if cleaned_ids:  
+            answer = cleaned_ids
+
+        else:
+            answer = response
+
+        print(f"Inside parse: answer = {answer}")        
+        return answer
 
 
     def _check_validity(self, answer: str) -> bool:
@@ -224,6 +277,7 @@ class DetectObject(GameMaster):
 class DetectObjectGameScorer(GameScorer):
     def __init__(self, game_name: str, experiment: Dict, game_instance: Dict):
         super().__init__(game_name, experiment, game_instance)
+        self.dobjeval = ObjDetectEvaluator()
 
 
 
@@ -234,7 +288,7 @@ class DetectObjectGameScorer(GameScorer):
         results = episode_interactions["Evaluation"]
 
         #TODO: Add the logic to evaluate the results
-
+        turn_scores, episode_scores = self.dobjeval.run(results)
 
         played_turns = episode_interactions['Played turns']
         complete_turns = episode_interactions['Complete turns']
@@ -248,6 +302,9 @@ class DetectObjectGameScorer(GameScorer):
             self.log_turn_score(turn, ms.METRIC_REQUEST_COUNT, reqs[turn])
             self.log_turn_score(turn, ms.METRIC_REQUEST_COUNT_PARSED, p_reqs[turn])
             self.log_turn_score(turn, ms.METRIC_REQUEST_COUNT_VIOLATED, v_reqs[turn])
+            self.log_turn_score(turn, "tp", turn_scores[turn+1]["tp"])
+            self.log_turn_score(turn, "fp", turn_scores[turn+1]["fp"])
+            self.log_turn_score(turn, "fn", turn_scores[turn+1]["fn"])
 
         aborted = int(episode_interactions[ms.METRIC_ABORTED])
         lose = int(episode_interactions[ms.METRIC_LOSE]) if not aborted else 0
@@ -262,6 +319,11 @@ class DetectObjectGameScorer(GameScorer):
         self.log_episode_score(ms.METRIC_REQUEST_COUNT_VIOLATED, sum(v_reqs))
         self.log_episode_score(ms.METRIC_REQUEST_SUCCESS, sum(p_reqs) / sum(reqs))
         self.log_episode_score(ms.BENCH_SCORE, bench_score)
+
+        for key, value in episode_scores.items():
+            self.log_episode_score(key, value)
+
+
 
 class DetectObjectGameBenchmark(GameBenchmark):
     """Integrate the game into the benchmark run."""

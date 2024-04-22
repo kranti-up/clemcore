@@ -18,7 +18,9 @@
             * Can add new models by adding them to the model_registry.json file
      * Score the game
         * python scripts/cli.py score -g detectobject
-        * Evaluation is yet to be added
+        * For the overall scores
+          * python games/detectobject/utils/overallscores.py
+            * This stores the overall_scores.json in results/  
      * Transcribe the game
         * python scripts/cli.py transcribe -g detectobject
         * Transcripts for the current tests are available in results/<model_name>/episode_<num>/transcript.html
