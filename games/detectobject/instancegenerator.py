@@ -34,7 +34,8 @@ class DetectObjectInstanceGenerator(GameInstanceGenerator):
             #create an experiment
             experiment = self.add_experiment(f"{exp}")
 
-            ps = PrepareSampels(tests["experiments"][exp]["SCENE_INFO_METADATA"])
+            metadata = {"fashion": tests["experiments"][exp]["SCENE_INFO_METADATA_FASHION"], "furniture": tests["experiments"][exp]["SCENE_INFO_METADATA_FURNITURE"]}
+            ps = PrepareSampels(metadata)
             prompt = self.load_template(f"resources/initial_prompts/{tests['experiments'][exp]['PROMPT_FILE_NAME']}")
 
             dialogues = self.load_json(f"resources/data/{tests['experiments'][exp]['TEST_DATA_FILE_NAME']}")

@@ -63,10 +63,13 @@ class ProcessDialogueData:
             for ma in missing_annotations:
                 print(ma)
 
+
+        print("Saving clemtestdata.json")
         file_utils.store_game_file(self.clemtestdata, "clemtestdata.json", GAME_NAME, "resources/data/")
 
 
 
 if __name__ == "__main__":
-    pdd = ProcessDialogueData("simmc2.1_dials_dstc11_mini.json")
+    #pdd = ProcessDialogueData("simmc2.1_dials_dstc11_mini.json")
+    pdd = ProcessDialogueData("simmc2.1_dials_dstc11_devtest.json")
     pdd.run()

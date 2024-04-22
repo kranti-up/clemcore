@@ -7,7 +7,8 @@
         "with_cr": {
             "TEST_DATA_FILE_NAME": "clemtestdata.json",
             "PROMPT_FILE_NAME": "prompt_a.template",
-            "SCENE_INFO_METADATA": "fashion_prefab_metadata_all.json",
+            "SCENE_INFO_METADATA_FASHION": "fashion_prefab_metadata_all.json",
+            "SCENE_INFO_METADATA_FURNITURE": "furniture_prefab_metadata_all.json",
             "USE_DIALOGUE_CONTEXT": false
         }
     }

@@ -6,6 +6,8 @@
      * Generate game instances
         * python games/detectobject/instancegeneratory.py
         * Current test instances are available in detectobject/in/
+          * Prepare the clemtest data by running the following
+            * python games/detectobject/utils/processdialoguedata.py
      * Tweaks to the prompt
         * Current prompt is available in detectobject/resources/initial_prompts/
      * Run the game

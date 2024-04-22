@@ -26,8 +26,17 @@ class PrepareSampels:
         all_object_ids = self.getobjectids(dialogue)
         world_info = []
         for objid, objdetails in all_object_ids.items():
-            objinfo = self.pwd.getworldinfo(objdetails["prefab_path"])
-            world_info.append((objid, objinfo["type"], objinfo["color"], objinfo["size"]))
+            try:
+                objinfo = self.pwd.getworldinfo(objdetails["prefab_path"])
+            except ValueError as e:
+                print(e, objdetails)
+                continue
+
+            if "size" in objinfo:
+                world_info.append((objid, objinfo["type"], objinfo["color"], objinfo["size"]))
+            else:
+                #furniture data
+                world_info.append((objid, objinfo["type"], objinfo["color"], "NA"))
 
 
         world_info = self.convert_to_text(world_info)
