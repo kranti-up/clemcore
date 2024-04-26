@@ -53,7 +53,7 @@ class DetectObjectInstanceGenerator(GameInstanceGenerator):
                 instance["prompt"] = self.create_prompt(prompt, **scene_info)
                 game_id +=1
 
-        print(f"Generated instances for CCBTS game - {game_id - 1} instances.")
+        print(f"Generated instances for DetectObject game - {game_id - 1} instances.")
 
     # an additional method, specific for our example
     def create_prompt(self, prompt: str, **kwargs) -> str:
