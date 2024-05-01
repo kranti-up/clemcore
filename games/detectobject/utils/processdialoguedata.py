@@ -8,8 +8,9 @@ logger = clemgame.get_logger(__name__)
 GAME_NAME = "detectobject"
 
 class ProcessDialogueData:
-    def __init__(self, filename):
+    def __init__(self, filename, use_cr=True):
         self.filename = f"resources/data/{filename}"
+        self.use_cr = use_cr
 
 
     def getsceneinfo(self, scenedata, objects):
@@ -32,7 +33,7 @@ class ProcessDialogueData:
         return scenedata
 
 
-    def run(self):
+    def run(self, save_file_name="clemtestdata.json"):
         self.clemtestdata = []
         missing_annotations = []
         dialogues = file_utils.load_json(self.filename, GAME_NAME)
@@ -42,20 +43,50 @@ class ProcessDialogueData:
             testdialogue = {"uapairs": []}
             testdialogue["scene_ids"] = dialogue["scene_ids"]
             scenedata = self.preparesceneinfo(testdialogue["scene_ids"])
-            for turn in dialogue["dialogue"]:
+            skip_next_turn = False
+            for index, turn in enumerate(dialogue["dialogue"]):
+                if skip_next_turn:
+                    skip_next_turn = False
+                    continue
+
                 if "system_transcript_annotated" not in turn:
                     missing_annotations.append((dialogue_index, turn['turn_idx'], turn['transcript'], turn['system_transcript']))
                     continue
 
-                testdialogue["uapairs"].append((turn["transcript"], turn["system_transcript"]))
+                if not turn["transcript_annotated"]["disambiguation_label"]:
+                    testdialogue["uapairs"].append((turn["transcript"], turn["system_transcript"]))
+                    testdialogue["disambiguation_label"] = 0
+                    system_turn_to_use = turn
 
-                objects = turn["system_transcript_annotated"]["act_attributes"]["objects"]
+
+                else:
+                    if self.use_cr:
+                        testdialogue["uapairs"].append((turn["transcript"], turn["system_transcript"]))
+                        testdialogue["disambiguation_label"] = 1
+                        system_turn_to_use = turn
+
+                    else:
+                        if index + 1 < len(dialogue["dialogue"]):
+                            current_user_utterance = turn["transcript"]
+                            next_system_utterance = dialogue["dialogue"][index + 1]["system_transcript"]
+                            testdialogue["uapairs"].append((current_user_utterance, next_system_utterance))
+                            system_turn_to_use = dialogue["dialogue"][index + 1]
+                            testdialogue["disambiguation_label"] = 1
+                            skip_next_turn = True
+                        else:
+                            system_turn_to_use = None
+
+                if system_turn_to_use is None:
+                    continue
+
+                objects = system_turn_to_use["system_transcript_annotated"]["act_attributes"]["objects"]
                 if objects:
                     testdialogue["groundtruth"] = objects
                     testdialogue["details"] = self.getsceneinfo(scenedata, objects)
                     clemdialogue.append(testdialogue.copy())
                     testdialogue["uapairs"] = []
-                    testdialogue["groundtruth"] = []
+                    testdialogue["groundtruth"] = []                
+
             self.clemtestdata.append(clemdialogue)
   
         if missing_annotations:
@@ -64,12 +95,12 @@ class ProcessDialogueData:
                 print(ma)
 
 
-        print("Saving clemtestdata.json")
-        file_utils.store_game_file(self.clemtestdata, "clemtestdata.json", GAME_NAME, "resources/data/")
+        print(f"Saving {save_file_name}")
+        file_utils.store_game_file(self.clemtestdata, save_file_name, GAME_NAME, "resources/data/")
 
 
 
 if __name__ == "__main__":
     #pdd = ProcessDialogueData("simmc2.1_dials_dstc11_mini.json")
-    pdd = ProcessDialogueData("simmc2.1_dials_dstc11_devtest.json")
-    pdd.run()
+    pdd = ProcessDialogueData("simmc2.1_dials_dstc11_devtest.json", False)
+    pdd.run(save_file_name="clemtestdata_wocr.json")

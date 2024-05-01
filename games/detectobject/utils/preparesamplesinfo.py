@@ -47,3 +47,9 @@ class PrepareSampels:
             for index, uapair in enumerate(turn["uapairs"]):
                 uapair[0] = "User: " + uapair[0]
                 uapair[1] = "System: " + uapair[1]
+
+    def getdisambiguationlabel(self, dialogue):
+        for turn in dialogue:
+            if turn["disambiguation_label"]:
+                return 1
+        return 0

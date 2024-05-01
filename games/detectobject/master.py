@@ -82,7 +82,7 @@ class DetectObject(GameMaster):
 
         if self.complete_turns == self.n_turns:
             # log a message informing that the game was successfuly played
-            action = {'type': 'info', 'content': 'game successful'}
+            action = {'type': 'info', 'content': 'dialogue completed'}
             self.log_event(from_='GM', to='GM', action=action)
 
         # log a final message saying that the game did came to an end
@@ -190,10 +190,12 @@ class DetectObject(GameMaster):
 
 
         # log the fact that the answer was correct
+        '''
         action = {'type': 'parse',
                   #'content': f'{answer} confirms to rules'}
                   'content': 'answer confirms to rules'}
         self.log_event(from_='GM', to='GM', action=action)
+        '''
 
         return True
     
@@ -271,7 +273,8 @@ class DetectObject(GameMaster):
         self.log_key(ms.METRIC_REQUEST_COUNT, self.request_counts)
         self.log_key(ms.METRIC_REQUEST_COUNT_PARSED, self.parsed_request_counts)
         self.log_key(ms.METRIC_REQUEST_COUNT_VIOLATED, self.violated_request_counts)
-        self.log_key('Evaluation', self.game_result)          
+        self.log_key('Evaluation', self.game_result)
+        self.log_key('Dialogue', self.dialogue_data)   
         
 
 class DetectObjectGameScorer(GameScorer):

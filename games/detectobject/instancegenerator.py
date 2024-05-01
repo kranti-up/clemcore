@@ -43,11 +43,13 @@ class DetectObjectInstanceGenerator(GameInstanceGenerator):
                 ps.format_dialogue(dialogue)
                 scene_info = ps.getdialogue_scene(dialogue)
                 scene_info = {"SCENE_INFO":scene_info}
+                disambiguaion_label = ps.getdisambiguationlabel(dialogue)
 
                 instance = self.add_game_instance(experiment, game_id)
                 instance["dialogue_data"] = {"use_dialogue_context": tests["experiments"][exp]["USE_DIALOGUE_CONTEXT"],
                                              
-                                             "total_dialogues": dialogue}
+                                             "total_dialogues": dialogue,
+                                             "disambiguation_label": disambiguaion_label,}
 
                 instance["n_turns"] = len(dialogue)
                 instance["prompt"] = self.create_prompt(prompt, **scene_info)
