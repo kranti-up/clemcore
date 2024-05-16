@@ -68,21 +68,29 @@ class PrepareDataAsBaseline:
         dialogue_data = dialogues["dialogue_data"]
 
         clemtestdata = []
+        cur_dialogue_objects = {}
         for dialogue_index, dialogue in enumerate(dialogue_data):
             dialogue_history = []
             prev_turn_cr = False
             objects_from_last_turn = []
+            cur_dialogue_objects[dialogue_index] = {}
+
             for index, turn in enumerate(dialogue["dialogue"]):
                 testdialogue = {}                
                 testdialogue["utterance"] = turn["transcript"]
+                testdialogue["dialogue_index"] = dialogue_index
                 result_tags = self.tag_utterance(testdialogue["utterance"])
                 for group_name, value in result_tags.items():
                     testdialogue[group_name] = value
 
                 testdialogue["groundtruth"] = turn["transcript_annotated"]["act_attributes"]["objects"]
+                
                 testdialogue["scene_ids"] = dialogue["scene_ids"]
                 scenedata = self.preparesceneinfo(testdialogue["scene_ids"])
-                testdialogue["details"] = self.getsceneinfo(scenedata, testdialogue["groundtruth"])                
+                testdialogue["details"] = self.getsceneinfo(scenedata, testdialogue["groundtruth"])
+
+                for obj_id in testdialogue["groundtruth"]:
+                    cur_dialogue_objects[dialogue_index].update(testdialogue["details"])
 
                 if dialogue_history:
                     testdialogue["history"] = dialogue_history.copy()
@@ -115,6 +123,12 @@ class PrepareDataAsBaseline:
 
         print(f"Saving {save_file_name}, Total Turns {len(clemtestdata)}")
         file_utils.store_game_file(clemtestdata, save_file_name, GAME_NAME, "resources/data/")
+
+        for key, value in cur_dialogue_objects.items():
+            if isinstance(value, set):
+                cur_dialogue_objects[key] = list(value)
+
+        file_utils.store_game_file(cur_dialogue_objects, f"dialogue_objects_{save_file_name}", GAME_NAME, "resources/data/")
 
 
     def run_split(self, save_file_name):
@@ -230,8 +244,8 @@ class PrepareDataAsBaseline:
 
 
 if __name__ == "__main__":
-    #pdd = ProcessDialogueData("simmc2.1_dials_dstc11_mini.json")
-    pdd = PrepareDataAsBaseline("simmc2_dials_dstc10_devtest.json", False, "all")
-    pdd.run(save_file_name="clemtestdata_all_turn_all_dh.json")
+    #pdd = PrepareDataAsBaseline("simmc2.1_dials_dstc11_mini.json", False, "all")
+    pdd = PrepareDataAsBaseline("simmc2_dials_dstc10_devtest.json", False, "none")
+    pdd.run(save_file_name="clemtestdata_all_turn_no_dh.json")
     #print(pdd.count_turns_base_data())
 

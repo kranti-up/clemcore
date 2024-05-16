@@ -290,6 +290,7 @@ class DetectObjectGameScorer(GameScorer):
 
         #if not episode_interactions[ms.METRIC_ABORTED]:
         results = episode_interactions["Evaluation"]
+        dialogue_data = episode_interactions["Dialogue"]
 
         #TODO: Add the logic to evaluate the results
         turn_scores, episode_scores = self.dobjeval.run(results)
@@ -314,6 +315,11 @@ class DetectObjectGameScorer(GameScorer):
             self.log_turn_score(turn, "nc", turn_scores[turn+1]["nc"])
             self.log_turn_score(turn, "nt", turn_scores[turn+1]["nt"])
             self.log_turn_score(turn, "np", turn_scores[turn+1]["np"])
+
+            self.log_turn_score(turn, "is_cr_turn", turn_scores[turn+1]["is_cr_turn"])
+            self.log_turn_score(turn, "individual_property", turn_scores[turn+1]["individual_property"])
+            self.log_turn_score(turn, "dialogue_history", turn_scores[turn+1]["dialogue_history"])
+            self.log_turn_score(turn, "relational_context", turn_scores[turn+1]["relational_context"])
 
         aborted = int(episode_interactions[ms.METRIC_ABORTED])
         lose = int(episode_interactions[ms.METRIC_LOSE]) if not aborted else 0

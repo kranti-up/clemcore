@@ -95,7 +95,7 @@ def _compute_metrics_update(filepath, results):
 
     file_utils.store_game_file(model_results, f"{filepath}/overall_scores_new.json", GAME_NAME)
 
-def compute_overall_scores_update(records_path):
+def compute_overall_scores_update(records_path, filter, cr_turn):
     records_path = Path(records_path)
 
     overall_scores = {model_dir.name: {exp_dir.name: {"nc": [], "nt": [], "np": [], "aborted": []} 
@@ -125,6 +125,14 @@ def compute_overall_scores_update(records_path):
 
 
                 for turn in scores["turn scores"]:
+                    if not scores["turn scores"][turn][filter]:
+                        continue
+
+                    else:
+                        if cr_turn == "before" and cr_turn == scores["turn scores"][turn]["is_cr_turn"]:
+                            continue
+
+
                     if "Aborted" in scores["turn scores"][turn] and scores["turn scores"][turn]["Aborted"]:
                         overall_scores[model_dir.name][exp_dir.name]["aborted"].append(1)
                         break
@@ -137,4 +145,5 @@ def compute_overall_scores_update(records_path):
 
 if __name__=="__main__":
     #compute_overall_scores(records_path="/Users/kranti/Desktop/codebase/cocobots/clembench/results_abl_do_ic_0/")
-    compute_overall_scores_update(records_path="/Users/kranti/Desktop/codebase/cocobots/clembench/results/")
+    compute_overall_scores_update(records_path="/home/admin/Desktop/codebase/cocobots/detectobject_code/clembench/results/",
+                                  filter="individual_property", cr_turn="before")

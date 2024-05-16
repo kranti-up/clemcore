@@ -1,20 +1,20 @@
 import json
-
+from clemgame import file_utils
 
 from games.detectobject.utils.prepareworlddata import PrepareWorldData
 
+GAME_NAME = "detectobject"
+
 
 class PrepareSampels:
-    def __init__(self, world_filename):
+    def __init__(self, world_filename, scene_filename):
         self.pwd = PrepareWorldData(world_filename)
+        self.scenedetails = file_utils.load_json(f"resources/data/{scene_filename}", GAME_NAME)
 
     def getobjectids(self, turn):
-        all_object_ids = {}
-        #for turn in dialogue:
-        for objid in turn["groundtruth"]:
-            all_object_ids[objid] = turn["details"][str(objid)]
 
-        return all_object_ids
+        return self.scenedetails[str(turn["dialogue_index"])]
+
 
 
     def convert_to_text(self, worldinfo):
@@ -47,6 +47,14 @@ class PrepareSampels:
         for conv_pair in turn["history"]:
             conv_pair[0] = "User: " + conv_pair[0]
             conv_pair[1] = "System: " + conv_pair[1]
+
+    def format_history(self, history):
+        history_details = "Dilaogue History:\n"
+
+        for conv_pair in history:
+            history_details += conv_pair[0] + "\n" + conv_pair[1] + "\n"
+
+        return history_details
 
     def getdisambiguationlabel(self, dialogue):
         for turn in dialogue:
