@@ -47,7 +47,7 @@ class ObjDetectEvaluator:
 
 
 
-    def run(self, results, dialogue_data):
+    def run(self, results):
         turnscores, episodescores = {}, {}
         for turn, value in results.items():
             turnscores[int(turn)] = self._compute_fp_fn_tp(value['groundtruth'], value['prediction'])
