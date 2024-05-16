@@ -1,18 +1,22 @@
 {
     "experiments": {
-        "without_cr": {
-            "TEST_DATA_FILE_NAME": "clemtestdata_wocr.json",
+        "all_turns": {
+            "TEST_DATA_FILE_NAME": "clemtestdata_all_turn_all_dh.json",
             "PROMPT_FILE_NAME": "prompt_a.template",
             "SCENE_INFO_METADATA_FASHION": "fashion_prefab_metadata_all.json",
-            "SCENE_INFO_METADATA_FURNITURE": "furniture_prefab_metadata_all.json",
-            "USE_DIALOGUE_CONTEXT": true
+            "SCENE_INFO_METADATA_FURNITURE": "furniture_prefab_metadata_all.json"
         },
-        "with_cr": {
-            "TEST_DATA_FILE_NAME": "clemtestdata.json",
+        "last_turn": {
+            "TEST_DATA_FILE_NAME": "clemtestdata_all_turn_single_dh.json",
             "PROMPT_FILE_NAME": "prompt_a.template",
             "SCENE_INFO_METADATA_FASHION": "fashion_prefab_metadata_all.json",
-            "SCENE_INFO_METADATA_FURNITURE": "furniture_prefab_metadata_all.json",
-            "USE_DIALOGUE_CONTEXT": true
+            "SCENE_INFO_METADATA_FURNITURE": "furniture_prefab_metadata_all.json"
+        },
+        "no_turn": {
+            "TEST_DATA_FILE_NAME": "clemtestdata_all_turn_no_dh.json",
+            "PROMPT_FILE_NAME": "prompt_a.template",
+            "SCENE_INFO_METADATA_FASHION": "fashion_prefab_metadata_all.json",
+            "SCENE_INFO_METADATA_FURNITURE": "furniture_prefab_metadata_all.json"
         }
     }
 }

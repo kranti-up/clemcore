@@ -55,7 +55,9 @@ class ProcessDialogueData:
 
                 if not turn["transcript_annotated"]["disambiguation_label"]:
                     testdialogue["uapairs"].append((turn["transcript"], turn["system_transcript"]))
-                    testdialogue["disambiguation_label"] = 0
+                    #If the prev turn is ambiguous, it should not be overwritten
+                    if "disambiguation_label" not in testdialogue:
+                        testdialogue["disambiguation_label"] = 0
                     system_turn_to_use = turn
 
 
@@ -85,7 +87,23 @@ class ProcessDialogueData:
                     testdialogue["details"] = self.getsceneinfo(scenedata, objects)
                     clemdialogue.append(testdialogue.copy())
                     testdialogue["uapairs"] = []
-                    testdialogue["groundtruth"] = []                
+                    testdialogue["groundtruth"] = []      
+                    testdialogue["disambiguation_label"] = 0       
+
+            if testdialogue:
+                objects = system_turn_to_use["system_transcript_annotated"]["act_attributes"]["objects"]
+                if objects:
+                    testdialogue["groundtruth"] = objects
+                    testdialogue["details"] = self.getsceneinfo(scenedata, objects)
+                else:
+                    testdialogue["groundtruth"] = []                    
+                    testdialogue["details"] = None
+
+                clemdialogue.append(testdialogue.copy())
+                testdialogue["uapairs"] = []
+                testdialogue["groundtruth"] = []      
+                testdialogue["disambiguation_label"] = 0     
+                
 
             self.clemtestdata.append(clemdialogue)
   
@@ -102,5 +120,5 @@ class ProcessDialogueData:
 
 if __name__ == "__main__":
     #pdd = ProcessDialogueData("simmc2.1_dials_dstc11_mini.json")
-    pdd = ProcessDialogueData("simmc2.1_dials_dstc11_devtest.json", False)
-    pdd.run(save_file_name="clemtestdata_wocr.json")
+    pdd = ProcessDialogueData("simmc2.1_dials_dstc11_devtest.json", True)
+    pdd.run(save_file_name="clemtestdata_withcr_new.json")

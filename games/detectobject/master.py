@@ -96,7 +96,7 @@ class DetectObject(GameMaster):
         # always call log_next_turn what a turn starts
         self.log_next_turn()
 
-        self.dialogue_turns = self._yield_conversation()
+        #self.dialogue_turns = self._yield_conversation()
 
         # append the initial message of each player to their history
         # the value user means the message is from an interlocutor of the model
@@ -214,20 +214,21 @@ class DetectObject(GameMaster):
         else:
             self.player_a.history.append({'role': "user", 'content': content})  
 
-        return content   
+        return content
 
     def _get_instructions(self, player: str) -> str:
         """Get utterance from a player and log it (firstlast specific)."""
         assert player in ('a')
 
-
-        dialogue, groundtruth = next(self.dialogue_turns)
+        #dialogue, groundtruth = next(self.dialogue_turns)
+        utterance = self.dialogue_data["utterance"]
+        groundtruth = self.dialogue_data["groundtruth"]
 
         add_data = {} #TODO: Add the data to be added
-        content = self._add_instruction(dialogue, self.player_a.history)
+        content = self._add_instruction(utterance, self.player_a.history)
         
         #TODO: Add ground truth information to result for evaluation purposes
-        self.game_result[self.current_turn] = {"groundtruth": groundtruth}
+        self.game_result[self.current_turn] = {"utterance": utterance, "groundtruth": groundtruth}
 
         action_content = content if self.current_turn != 1 else self.player_a.history[-1]["content"]
         action = {'type': 'send message', 'content': action_content}
@@ -305,9 +306,14 @@ class DetectObjectGameScorer(GameScorer):
             self.log_turn_score(turn, ms.METRIC_REQUEST_COUNT, reqs[turn])
             self.log_turn_score(turn, ms.METRIC_REQUEST_COUNT_PARSED, p_reqs[turn])
             self.log_turn_score(turn, ms.METRIC_REQUEST_COUNT_VIOLATED, v_reqs[turn])
+            '''
             self.log_turn_score(turn, "tp", turn_scores[turn+1]["tp"])
             self.log_turn_score(turn, "fp", turn_scores[turn+1]["fp"])
             self.log_turn_score(turn, "fn", turn_scores[turn+1]["fn"])
+            '''
+            self.log_turn_score(turn, "nc", turn_scores[turn+1]["nc"])
+            self.log_turn_score(turn, "nt", turn_scores[turn+1]["nt"])
+            self.log_turn_score(turn, "np", turn_scores[turn+1]["np"])
 
         aborted = int(episode_interactions[ms.METRIC_ABORTED])
         lose = int(episode_interactions[ms.METRIC_LOSE]) if not aborted else 0

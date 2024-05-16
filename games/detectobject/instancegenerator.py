@@ -28,6 +28,8 @@ class DetectObjectInstanceGenerator(GameInstanceGenerator):
 
         game_id = 1
         for exp in tests["experiments"]:
+            if exp != "all_turns":
+                continue
             if not tests["experiments"][exp]["TEST_DATA_FILE_NAME"]:
                 continue
 
@@ -39,20 +41,27 @@ class DetectObjectInstanceGenerator(GameInstanceGenerator):
             prompt = self.load_template(f"resources/initial_prompts/{tests['experiments'][exp]['PROMPT_FILE_NAME']}")
 
             dialogues = self.load_json(f"resources/data/{tests['experiments'][exp]['TEST_DATA_FILE_NAME']}")
-            for dialogue in dialogues:
-                ps.format_dialogue(dialogue)
-                scene_info = ps.getdialogue_scene(dialogue)
-                scene_info = {"SCENE_INFO":scene_info}
-                disambiguaion_label = ps.getdisambiguationlabel(dialogue)
+            for turn in dialogues:
+                ps.format_dialogue(turn)
+                scene_info = ps.getdialogue_scene(turn)
+                if turn["history"]:
+                    details_to_fill = {"SCENE_INFO":scene_info, "DIALOGUE_HISTORY": turn["history"]}
+                else:
+                    details_to_fill = {"SCENE_INFO":scene_info}
+                #disambiguaion_label = ps.getdisambiguationlabel(dialogue)
 
                 instance = self.add_game_instance(experiment, game_id)
-                instance["dialogue_data"] = {"use_dialogue_context": tests["experiments"][exp]["USE_DIALOGUE_CONTEXT"],
-                                             
-                                             "total_dialogues": dialogue,
-                                             "disambiguation_label": disambiguaion_label,}
+                instance["dialogue_data"] = {"history": turn["history"],
+                                             "utterance": turn["utterance"],
+                                             "is_cr_turn": turn["is_cr_turn"],
+                                             "individual_property": turn["individual_property"],
+                                             "dialogue_history": turn["dialogue_history"],
+                                             "relational_context": turn["relational_context"],
+                                             "groundtruth": turn["groundtruth"],
+                                             "scene_ids": turn["scene_ids"]}
 
-                instance["n_turns"] = len(dialogue)
-                instance["prompt"] = self.create_prompt(prompt, **scene_info)
+                instance["n_turns"] = 1
+                instance["prompt"] = self.create_prompt(prompt, **details_to_fill)
                 game_id +=1
 
         print(f"Generated instances for DetectObject game - {game_id - 1} instances.")
