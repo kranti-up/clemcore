@@ -1,0 +1,84 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\twocolumn
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+
+    \# & $\;$A & \multicolumn{4}{c}{Game Master} & $\;\:$B\\
+    \hline 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.9,0.9,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\langle$GM]}  
+	 You are a helpful assistant tasked with identifying specific object IDs from references made in conversation snippets.\\ \tt \\ \tt The scene contains multiple objects, each identified by an ID and characterized by attributes including name, color, and size. Analyze the current utterance to determine which objects are being mentioned based on their described attributes. Match these details with the attributes of objects in the scene to accurately identify and return the corresponding object IDs. If an utterance refers to multiple objects, detect and respond with all relevant object IDs. To understand the context better, the dialogue history, if available, is shared under the label 'Dialogue History'.\\ \tt \\ \tt Dilaogue History:\\ \tt User: Whatâ€™s up! I need a blouse from HairDo.\\ \tt System: I found this black and white blouse from HairaDo.\\ \tt User: Are there any nice shirts with long sleeves?\\ \tt System: Here are some long sleeves I found.\\ \tt User: pull up prices and brand for the blue one. And the pink one too!\\ \tt System: The blue shirt costs 34.99 and comes from Uptown Studio. The pink shirt costs 54.99 and is made by Cats Are Great.\\ \tt User: I changed my mind, get me that purple one!\\ \tt System: I will add the violet shirt to your cart.\\ \tt User: Who makes it by the way? And how much is it gonna cost me?\\ \tt System: Which item are you referring to?\\ \tt User: I mean this purple shirt I just got.\\ \tt System: It costs 89.99 and is made by Uptown Studio.\\ \tt User: Do you have any long sleeve sweaters by any chance?\\ \tt System: I have two in pink.\\ \tt User: Pink's ugly. Any more youâ€™ve got?\\ \tt System: I donâ€™t have any more long sleeve sweaters.\\ \tt \\ \tt \\ \tt Below is the scene description. Each line contains a tuple with the format (object_id, type, color, size), describing each object in the scene.\\ \tt \\ \tt object_id, object_type, object_color, object_size\\ \tt 18, shirt, blue, black, XS\\ \tt 19, shirt, dark pink, white, S\\ \tt 8, shirt, violet, L\\ \tt 16, tshirt, violet, XXL\\ \tt \\ \tt \\ \tt Your response should list the matched object IDs under the label 'ObjectID', followed by a newline.\\ \tt \\ \tt Do not generate any other text or explanations.\\ \tt \\ \tt Let's begin\\ \tt User: OK, Iâ€™ll take another purple shirt and the blue one too. 
+	  } 
+	   } 
+	   } 
+	 & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.8,1,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\rangle$GM]}  
+	 ObjectID\\ \tt 8\\ \tt 18 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 {'prediction': [8, 18], 'groundtruth': [18, 8]} 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 dialogue completed 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 end game 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+\end{supertabular}
+}
+
+\end{document}

@@ -1,0 +1,84 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\twocolumn
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+
+    \# & $\;$A & \multicolumn{4}{c}{Game Master} & $\;\:$B\\
+    \hline 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.9,0.9,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\langle$GM]}  
+	 You are a helpful assistant tasked with identifying specific object IDs from references made in conversation snippets.\\ \tt \\ \tt The scene contains multiple objects, each identified by an ID and characterized by attributes including name, color, and size. Analyze the current utterance to determine which objects are being mentioned based on their described attributes. Match these details with the attributes of objects in the scene to accurately identify and return the corresponding object IDs. If an utterance refers to multiple objects, detect and respond with all relevant object IDs. To understand the context better, the dialogue history, if available, is shared under the label 'Dialogue History'.\\ \tt \\ \tt Dilaogue History:\\ \tt User: Do you have any North Lodge coats in an XS?\\ \tt System: Sure!  What do you think of the black coat in the back left corder?\\ \tt User: Can you actually get me the sizes of the two black hats on the counter?  I mean the second one from the front, and the one just past the white hat.\\ \tt System: They're both a size S.  The closer hat is rated just 2.6, while the one further away is rated at 4.4.\\ \tt User: Can I get the list of all available sizes?  And the brands too?\\ \tt System: Was that for the hats?\\ \tt \\ \tt \\ \tt Below is the scene description. Each line contains a tuple with the format (object_id, type, color, size), describing each object in the scene.\\ \tt \\ \tt object_id, object_type, object_color, object_size\\ \tt 65, hat, black, S\\ \tt 55, hat, black, S\\ \tt \\ \tt \\ \tt Your response should list the matched object IDs under the label 'ObjectID', followed by a newline.\\ \tt \\ \tt Do not generate any other text or explanations.\\ \tt \\ \tt Let's begin\\ \tt User: Yes please! 
+	  } 
+	   } 
+	   } 
+	 & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.8,1,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\rangle$GM]}  
+	 ObjectID\\ \tt 65\\ \tt 55 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 {'prediction': [65, 55], 'groundtruth': [65, 55]} 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 dialogue completed 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 end game 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+\end{supertabular}
+}
+
+\end{document}

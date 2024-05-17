@@ -1,0 +1,84 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\twocolumn
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+
+    \# & $\;$A & \multicolumn{4}{c}{Game Master} & $\;\:$B\\
+    \hline 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.9,0.9,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\langle$GM]}  
+	 You are a helpful assistant tasked with identifying specific object IDs from references made in conversation snippets.\\ \tt \\ \tt The scene contains multiple objects, each identified by an ID and characterized by attributes including name, color, and size. Analyze the current utterance to determine which objects are being mentioned based on their described attributes. Match these details with the attributes of objects in the scene to accurately identify and return the corresponding object IDs. If an utterance refers to multiple objects, detect and respond with all relevant object IDs. To understand the context better, the dialogue history, if available, is shared under the label 'Dialogue History'.\\ \tt \\ \tt Dilaogue History:\\ \tt User: Could you recommend a jacket?\\ \tt System: What do you think of the grey, white one on the center top rack of the right wardrobe? It is a nice jacket.\\ \tt User: What's the difference in customer review and available sizes of the grey coat on the floor rack and the light grey coat on the top center-right rack of the right wardrobe?\\ \tt System: The grey one is available in L, XS, XL, XXL, and M and has customer reviews of 2.7. The light grey one is available in M, XL, XXL, XS, L, and S, and has a customer review of 3.8.\\ \tt User: Anything else?\\ \tt System: Sorry, I don't see any other jackets.\\ \tt User: How about some jeans from Yogi Fit with good reviews?\\ \tt System: What do you think about this blue pair on the bottom shelf of the left wardrobe? They are well reviewed jeans from Yogi Fit.\\ \tt \\ \tt \\ \tt Below is the scene description. Each line contains a tuple with the format (object_id, type, color, size), describing each object in the scene.\\ \tt \\ \tt object_id, object_type, object_color, object_size\\ \tt 14, coat, grey, XXL\\ \tt 8, coat, light grey, XL\\ \tt 17, blouse, black, white, M\\ \tt \\ \tt \\ \tt Your response should list the matched object IDs under the label 'ObjectID', followed by a newline.\\ \tt \\ \tt Do not generate any other text or explanations.\\ \tt \\ \tt Let's begin\\ \tt User: Could you add the black, white blouse from the floor rack to my cart? 
+	  } 
+	   } 
+	   } 
+	 & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.8,1,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\rangle$GM]}  
+	 ObjectID\\ \tt 17 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 {'prediction': [17], 'groundtruth': [17]} 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 dialogue completed 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 end game 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+\end{supertabular}
+}
+
+\end{document}

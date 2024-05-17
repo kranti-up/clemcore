@@ -1,0 +1,84 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\twocolumn
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+
+    \# & $\;$A & \multicolumn{4}{c}{Game Master} & $\;\:$B\\
+    \hline 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.9,0.9,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\langle$GM]}  
+	 You are a helpful assistant tasked with identifying specific object IDs from references made in conversation snippets.\\ \tt \\ \tt The scene contains multiple objects, each identified by an ID and characterized by attributes including name, color, and size. Analyze the current utterance to determine which objects are being mentioned based on their described attributes. Match these details with the attributes of objects in the scene to accurately identify and return the corresponding object IDs. If an utterance refers to multiple objects, detect and respond with all relevant object IDs. To understand the context better, the dialogue history, if available, is shared under the label 'Dialogue History'.\\ \tt \\ \tt Dilaogue History:\\ \tt User: Do you have dresses you can show me?\\ \tt System: I can show you dresses. Do you like the black one hanging up on the top of the left wall?\\ \tt User: Can you show me cheap blouses with long sleeves?\\ \tt System: I can help you find blouses. I have the multi colored one on the top right of the wall, the brightly colored one below it in the back, and the red one on the bottom in the front.\\ \tt User: Do you have anything with a similar pattern in a similar sizes as the patterned one on the top row and in the back?\\ \tt System: I'm sorry, I don't have any like that.\\ \tt \\ \tt \\ \tt Below is the scene description. Each line contains a tuple with the format (object_id, type, color, size), describing each object in the scene.\\ \tt \\ \tt object_id, object_type, object_color, object_size\\ \tt 8, blouse, red, white, yellow, M\\ \tt 2, blouse, red, white, yellow, M\\ \tt 0, dress, black, M\\ \tt \\ \tt \\ \tt Your response should list the matched object IDs under the label 'ObjectID', followed by a newline.\\ \tt \\ \tt Do not generate any other text or explanations.\\ \tt \\ \tt Let's begin\\ \tt User: What else can you show me with long sleeves? 
+	  } 
+	   } 
+	   } 
+	 & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.8,1,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\rangle$GM]}  
+	 ObjectID\\ \tt 8\\ \tt 2 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 {'prediction': [8, 2], 'groundtruth': []} 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 dialogue completed 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 end game 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+\end{supertabular}
+}
+
+\end{document}

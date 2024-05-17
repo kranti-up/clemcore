@@ -1,0 +1,84 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\twocolumn
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+
+    \# & $\;$A & \multicolumn{4}{c}{Game Master} & $\;\:$B\\
+    \hline 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.9,0.9,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\langle$GM]}  
+	 You are a helpful assistant tasked with identifying specific object IDs from references made in conversation snippets.\\ \tt \\ \tt The scene contains multiple objects, each identified by an ID and characterized by attributes including name, color, and size. Analyze the current utterance to determine which objects are being mentioned based on their described attributes. Match these details with the attributes of objects in the scene to accurately identify and return the corresponding object IDs. If an utterance refers to multiple objects, detect and respond with all relevant object IDs. To understand the context better, the dialogue history, if available, is shared under the label 'Dialogue History'.\\ \tt \\ \tt Dilaogue History:\\ \tt User: I'd like to find a shirt made by Uptown Studio.\\ \tt System: I did find a couple of things by Uptown Studio. There's the blue and black shirt on the top row of the table, the third from the left, and the blue and black one on the bottom right side of the table.\\ \tt User: Which blouse would look best with my wardrobe?\\ \tt System: What about the second one on the right, hanging up against the windows? There's also the black one hanging on the rack just below that.\\ \tt User: I'd like to find something like the two blouses you just showed me.\\ \tt System: I only have these two items to show you.\\ \tt User: Please compare the available sizes for those blouses.\\ \tt System: The first one hanging up against the windows is available in XXL, S, XL, and L while the black one is available in XS, S, and XL.\\ \tt User: What shirt would match my wardrobe best?\\ \tt System: Consider these options. I have the grey shirt on the second table row from the front, third from the right, the blue and black one that's in the very center of the back row, and the grey and brown one on the far right side of the second row.\\ \tt User: Do you see any good tee shirts that are on the pricey side in size XXL?\\ \tt System: I'm sorry, but nothing came up like that. Can I look for something else?\\ \tt User: Do you have anything else that's in the expensive range?\\ \tt System: No, I didn't find an expensive shirt in XXL.\\ \tt User: What about a good shirt by Ocean Wears in light red?\\ \tt System: Take a look at this one. On the second row of the table, third from the left side, you'll a light red shirt by Ocean Wears.\\ \tt \\ \tt \\ \tt Below is the scene description. Each line contains a tuple with the format (object_id, type, color, size), describing each object in the scene.\\ \tt \\ \tt object_id, object_type, object_color, object_size\\ \tt 78, blouse, black, XL\\ \tt 55, blouse, maroon, white, blue, S\\ \tt 53, shirt, brown, M\\ \tt 75, shirt, violet, M\\ \tt \\ \tt \\ \tt Your response should list the matched object IDs under the label 'ObjectID', followed by a newline.\\ \tt \\ \tt Do not generate any other text or explanations.\\ \tt \\ \tt Let's begin\\ \tt User: What's the price and brand comparison between the brown shirt I see on the front row, the second from the left side, and the violet one that's on the extreme left side of the second tier of the table? 
+	  } 
+	   } 
+	   } 
+	 & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.8,1,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\rangle$GM]}  
+	 ObjectID: 53 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 {'prediction': [53], 'groundtruth': [53, 75]} 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 dialogue completed 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 end game 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+\end{supertabular}
+}
+
+\end{document}

@@ -70,6 +70,8 @@ class PrepareDataAsBaseline:
         clemtestdata = []
         cur_dialogue_objects = {}
         for dialogue_index, dialogue in enumerate(dialogue_data):
+            if dialogue_index == 10:
+                break
             dialogue_history = []
             prev_turn_cr = False
             objects_from_last_turn = []
@@ -106,6 +108,7 @@ class PrepareDataAsBaseline:
                 if "disambiguation_label" in turn and turn["disambiguation_label"]:
                     testdialogue["is_cr_turn"] = "before"
                     prev_turn_cr = True
+
                     objects_from_last_turn = turn["transcript_annotated"]["act_attributes"]["objects"]
                 
                 else:
@@ -113,6 +116,8 @@ class PrepareDataAsBaseline:
                         prev_turn_cr = False
                         testdialogue["is_cr_turn"] = "after"
                         if objects_from_last_turn != turn["transcript_annotated"]["act_attributes"]["objects"]:
+                            print(f"{testdialogue['utterance']}")
+                            print(f"{objects_from_last_turn}, {turn['transcript_annotated']['act_attributes']['objects']}")
                             raise Exception("Objects from last turn and current turn are different")
                         objects_from_last_turn = []
                     else:
@@ -244,8 +249,8 @@ class PrepareDataAsBaseline:
 
 
 if __name__ == "__main__":
-    #pdd = PrepareDataAsBaseline("simmc2.1_dials_dstc11_mini.json", False, "all")
-    pdd = PrepareDataAsBaseline("simmc2_dials_dstc10_devtest.json", False, "none")
-    pdd.run(save_file_name="clemtestdata_all_turn_no_dh.json")
+    pdd = PrepareDataAsBaseline("simmc2_dials_dstc10_dev.json", False, "all")
+    #pdd = PrepareDataAsBaseline("simmc2_dials_dstc10_devtest.json", False, "none")
+    pdd.run(save_file_name="clemtestdata_ablation_all_turn_all_dh.json")
     #print(pdd.count_turns_base_data())
 

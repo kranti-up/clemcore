@@ -205,9 +205,9 @@ class DetectObject(GameMaster):
 
 
     def _add_instruction(self, conversation: str, prompt: dict) -> None:
-        content = ""
-        for conv in conversation:
-            content += "\n".join(conv) + "\n"
+        content = conversation
+        #for conv in conversation:
+        #    content += "\n".join(conv) + "\n"
 
         if prompt[-1]["role"] == "user":
             prompt[-1]["content"] = prompt[-1]["content"] + "\n" + content
@@ -293,7 +293,7 @@ class DetectObjectGameScorer(GameScorer):
         dialogue_data = episode_interactions["Dialogue"]
 
         #TODO: Add the logic to evaluate the results
-        turn_scores, episode_scores = self.dobjeval.run(results)
+        turn_scores, episode_scores = self.dobjeval.run(results, dialogue_data)
 
         played_turns = episode_interactions['Played turns']
         complete_turns = episode_interactions['Complete turns']

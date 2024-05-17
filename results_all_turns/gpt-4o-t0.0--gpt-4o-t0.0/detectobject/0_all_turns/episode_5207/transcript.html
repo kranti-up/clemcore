@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* This CSS is an adaptation from the answer by Roko C. Buljan in https://stackoverflow.com/a/71155446 */ 
+
+* {margin: 0; box-sizing: border-box;}
+
+body {background-color: rgb(157, 152, 150);}
+
+  /* dialogue header */
+
+.top-info {
+  text-align: center;
+  --rad: 20px;
+  --rad-sm: 3px;
+  font: 20px/1.5 sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background: #3f3e3e;
+  color: #fff;
+}
+
+.chat {
+    --rad: 20px;
+    --rad-sm: 3px;
+    font: 16px/1.5 sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+  }
+  
+  .msg {
+    position: relative;
+    max-width: 75%;
+    padding: 7px 15px;
+    margin-bottom: 30px;
+  }
+  
+  /* 5 levels, two players to/from game master and meta messages form game master */
+
+  .msg.b-gm {
+    border-radius: var(--rad) var(--rad-sm) var(--rad-sm) var(--rad);
+    background: #874aaf;
+    color: #fff;
+    margin-left: 60%;
+  }
+
+  .msg.a-gm {
+    border-radius: var(--rad-sm) var(--rad) var(--rad) var(--rad-sm);
+    background: #f39109;
+    color: #fff;
+    margin-right: 60%;
+  }
+  
+  .msg.gm-a {
+    border-radius: var(--rad) var(--rad-sm) var(--rad-sm) var(--rad);
+    background: #c4c3c3;    
+    color: #0c0c0c;
+    margin-right: 40%;
+    margin-left: 20%;
+  }
+
+  .msg.gm-b {
+    border-radius: var(--rad-sm) var(--rad) var(--rad) var(--rad-sm);
+    background: #c4c3c3;
+    color: #0c0c0c;
+    margin-right: 20%;
+    margin-left: 40%;
+  }
+
+  .msg.gm-gm {
+    background: #f1f1f1;
+    color: #373636;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 0.8rem;
+
+  }
+  
+  /* speaker labels */
+  
+  .msg::before {
+    content: attr(speaker);
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 100%;
+    color: #888;
+    white-space: nowrap;
+
+  }
+  
+  .msg.b-gm::before {
+    right: 15px;
+  }
+
+  .msg.gm-a::before {
+    right: 15px;
+  }
+
+  .msg.a-gm::before {
+    left: 15px;
+  }
+
+  .msg.gm-b::before {
+    left: 15px;
+  }
+
+  .msg.gm-gm::before {
+    left: 0px;
+  }
+  
+
+    </style>
+</head>
+<body>
+
+<br/>
+
+<div class="top-info">
+    <p>Interaction Transcript for all_turns, episode 5208 with gpt-4o-t0.0--gpt-4o-t0.0.</p>
+</div>
+
+<br/>
+
+<div class="chat">
+
+    <div speaker="Game Master to Player 1" class="msg gm-a">
+        <p>You are a helpful assistant tasked with identifying specific object IDs from references made in conversation snippets.<br/><br/>The scene contains multiple objects, each identified by an ID and characterized by attributes including name, color, and size. Analyze the current utterance to determine which objects are being mentioned based on their described attributes. Match these details with the attributes of objects in the scene to accurately identify and return the corresponding object IDs. If an utterance refers to multiple objects, detect and respond with all relevant object IDs. To understand the context better, the dialogue history, if available, is shared under the label &#x27;Dialogue History&#x27;.<br/><br/>Dilaogue History:<br/>User: Do you have any hoodies to suggest?<br/>System: That blue one at the right end of that set of shelves in the back to the left is a great choice, as is the green hoodie hanging to the left of it. You also can&#x27;t go wrong with the blue one hanging on the rack to the right of the shelf with the hats on top.<br/>User: Well I just love the shade of those two blue hoodies, but I don&#x27;t suppose you could get it for me in denim?<br/>System: I&#x27;m sorry, but there are no denim hoodies in that color.<br/>User: Gotcha. Say, what&#x27;s the label on that blue hoodie on the shelf and the green one next to it?<br/>System: That blue hoodie is made by Global Voyager, while Downtown Consignment is the brand that makes the green one.<br/>User: Alright let&#x27;s forget about hoodies for the moment. I also would like to fill out my wardrobe with some basic trousers.<br/>System: What are your thoughts on that brown pair in the back?<br/><br/><br/>Below is the scene description. Each line contains a tuple with the format (object_id, type, color, size), describing each object in the scene.<br/><br/>object_id, object_type, object_color, object_size<br/>54, hoodie, blue, S<br/>6, hoodie, blue, S<br/>7, hoodie, green, S<br/>51, jacket, blue, S<br/>58, jacket, light grey, XL<br/><br/><br/>Your response should list the matched object IDs under the label &#x27;ObjectID&#x27;, followed by a newline.<br/><br/>Do not generate any other text or explanations.<br/><br/>Let&#x27;s begin<br/>User: Actually some of those jackets on the circle racks on either side of the shelf with the hats are really popping out at me. I especially like that blue one on the rack to the right and the light grey on the rack to the left. It would just make my day if you told me you&#x27;ve got a highly rated jacket with the same pattern and available sizes as those by the brand 212 Local.</p>
+    </div>
+
+    <div speaker="Player 1 to Game Master" class="msg a-gm">
+        <p>ObjectID<br/>51<br/>58</p>
+    </div>
+
+    <div speaker="Game Master: metadata" class="msg gm-gm">
+        <p>{&#x27;prediction&#x27;: [51, 58], &#x27;groundtruth&#x27;: [51, 58]}</p>
+    </div>
+
+    <div speaker="Game Master: info" class="msg gm-gm">
+        <p>dialogue completed</p>
+    </div>
+
+    <div speaker="Game Master: info" class="msg gm-gm">
+        <p>end game</p>
+    </div>
+
+</div>
+
+</body>
+</html>

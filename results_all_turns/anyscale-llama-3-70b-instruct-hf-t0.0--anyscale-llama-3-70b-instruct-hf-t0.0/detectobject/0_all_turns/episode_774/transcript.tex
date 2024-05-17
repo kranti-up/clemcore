@@ -1,0 +1,84 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\twocolumn
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+
+    \# & $\;$A & \multicolumn{4}{c}{Game Master} & $\;\:$B\\
+    \hline 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.9,0.9,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\langle$GM]}  
+	 You are a helpful assistant tasked with identifying specific object IDs from references made in conversation snippets.\\ \tt \\ \tt The scene contains multiple objects, each identified by an ID and characterized by attributes including name, color, and size. Analyze the current utterance to determine which objects are being mentioned based on their described attributes. Match these details with the attributes of objects in the scene to accurately identify and return the corresponding object IDs. If an utterance refers to multiple objects, detect and respond with all relevant object IDs. To understand the context better, the dialogue history, if available, is shared under the label 'Dialogue History'.\\ \tt \\ \tt Dilaogue History:\\ \tt User: I want some more jeans, could you pull up some that come well-reviewed?\\ \tt System: Yes, what are your thoughts on these? There's a pair of blue jeans on the bottom left, some dark blue jeans to the right of those, and some blue and black jeans next to those. All three come with high ratings.\\ \tt User: Are there any others you could show me?\\ \tt System: I'm afraid those are the only jeans with good ratings at the moment.\\ \tt User: Alright, what about a sweater, size S?\\ \tt System: Sure, check out this pink sweater above the blue jeans. That is shown in size S.\\ \tt User: Not bad. Going back to the jeans, do you have anything by StyleNow Feed in dark blue that's got similar sleeve lengths to those blue and dark blue jeans from ealier?\\ \tt System: I'm afraid I do not. Is there something else I could help you with?\\ \tt User: Yeah, I saw a few things I wanna buy. Go ahead and toss that black coat above the blue and black jeans in my cart, and also that white, black, and red blouse that's on the floor rack.\\ \tt System: Of course! I'll put those in your cart for you now.\\ \tt User: Great! Do you have any other blouses that are pretty inexpensive?\\ \tt System: I do! Take a look at these. I have a black blouse on the front left floor rack and on the middle wall display there's another black blouse and a white, red, and violet blouse next to it.\\ \tt User: I like that white, red, and violet one! Toss it in my cart too!\\ \tt System: Of course! I'll update your cart to include it.\\ \tt User: What's the pricing and display size on those two?\\ \tt System: Which two are you referring to?\\ \tt \\ \tt \\ \tt Below is the scene description. Each line contains a tuple with the format (object_id, type, color, size), describing each object in the scene.\\ \tt \\ \tt object_id, object_type, object_color, object_size\\ \tt 12, jeans, blue, M\\ \tt 13, jeans, dark blue, XS\\ \tt 79, blouse, white, black, red, XL\\ \tt 2, coat, black, L\\ \tt 57, blouse, white, red, violet, XL\\ \tt \\ \tt \\ \tt Your response should list the matched object IDs under the label 'ObjectID', followed by a newline.\\ \tt \\ \tt Do not generate any other text or explanations.\\ \tt \\ \tt Let's begin\\ \tt User: The white, red, and violet blouse and the white, black, and red blouse. 
+	  } 
+	   } 
+	   } 
+	 & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.8,1,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\rangle$GM]}  
+	 ObjectID\\ \tt 57, 79 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 {'prediction': [57, 79], 'groundtruth': [57, 79]} 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 dialogue completed 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 end game 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+\end{supertabular}
+}
+
+\end{document}

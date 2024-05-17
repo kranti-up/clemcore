@@ -29,7 +29,7 @@ class DetectObjectInstanceGenerator(GameInstanceGenerator):
 
         game_id = 1
         for exp in tests["experiments"]:
-            if exp == "ablation":
+            if exp != "ablation":
                 continue
             if not tests["experiments"][exp]["TEST_DATA_FILE_NAME"]:
                 continue

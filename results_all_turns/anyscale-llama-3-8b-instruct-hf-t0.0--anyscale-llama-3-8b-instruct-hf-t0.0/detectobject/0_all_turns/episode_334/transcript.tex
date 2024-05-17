@@ -1,0 +1,84 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\twocolumn
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+
+    \# & $\;$A & \multicolumn{4}{c}{Game Master} & $\;\:$B\\
+    \hline 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.9,0.9,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\langle$GM]}  
+	 You are a helpful assistant tasked with identifying specific object IDs from references made in conversation snippets.\\ \tt \\ \tt The scene contains multiple objects, each identified by an ID and characterized by attributes including name, color, and size. Analyze the current utterance to determine which objects are being mentioned based on their described attributes. Match these details with the attributes of objects in the scene to accurately identify and return the corresponding object IDs. If an utterance refers to multiple objects, detect and respond with all relevant object IDs. To understand the context better, the dialogue history, if available, is shared under the label 'Dialogue History'.\\ \tt \\ \tt Dilaogue History:\\ \tt User: Could you help me find a brown jacket from Downtown Stylists?\\ \tt System: Of course! I have a two brown coats from Downtown Stylists: the first one is on the right in the bottom row on the left wall. The other one is on the floor rack right in front of us.\\ \tt User: Can we change the color to include black?\\ \tt System: I have no brown  coats from Downtown Stylists , unfortunately.\\ \tt User: That's Ok, could you tell me what sizes are available for the brown coat on the left wall  and the one on this floor rack next to us?\\ \tt System: Of course! They are both available in S and XL.\\ \tt User: Thanks! How much is this brown coat here?\\ \tt System: I am sorry, could you help me find the coat you are looking at?\\ \tt User: Yeah, I am interested in the brown coat on the floor rack right next to us.\\ \tt System: Thanks! The price of that coat is 59.99.\\ \tt User: Thanks! I am interested in a jacket with positive customer reviews.\\ \tt System: I can offer you the two brown jackets you have just looked at and the light grey one in the top row on  the left wall.\\ \tt User: What jackets here do you think I would like?\\ \tt System: I think that you may like the black jacket and the light grey one on the floor rack closer to the entrance and the light grey one in the cupboard further away from us on the left, in the second compartment from the left . Does any of these look good?\\ \tt User: For now, can you tell me what sizes you have for the black and white blouse on the floor rack closer to the entrance and for the grey and white one in the first cupboard on our left?\\ \tt System: I am sorry, could you give me some details so I can find the blouses you are interested in?\\ \tt User: OK, so the black and white blouse is on the floor rack closer to the entrance; it is on our side of the rack and just a little to the left. The grey and white one is in the first cupboard on the left, in the  third compartment from the left.\\ \tt System: Thank you! The black and white blouse is in stock in XS, S, and L. The grey and white one is available in more sizes, XS, S, M, and XL.\\ \tt \\ \tt \\ \tt Below is the scene description. Each line contains a tuple with the format (object_id, type, color, size), describing each object in the scene.\\ \tt \\ \tt object_id, object_type, object_color, object_size\\ \tt 17, coat, brown, XL\\ \tt 50, coat, brown, XL\\ \tt 82, blouse, black, white, S\\ \tt 6, blouse, white, grey, S\\ \tt \\ \tt \\ \tt Your response should list the matched object IDs under the label 'ObjectID', followed by a newline.\\ \tt \\ \tt Do not generate any other text or explanations.\\ \tt \\ \tt Let's begin\\ \tt User: Can you show  me more? 
+	  } 
+	   } 
+	   } 
+	 & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & \multicolumn{4}{p{0.6\linewidth}}{\cellcolor[rgb]{0.8,1,0.9}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [A$\rangle$GM]}  
+	 ObjectID\\ \tt 17\\ \tt 50 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 {'prediction': [17, 50], 'groundtruth': []} 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 dialogue completed 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+    \theutterance \stepcounter{utterance}  
+
+    & & & \multicolumn{2}{p{0.3\linewidth}}{\cellcolor[rgb]{0.95,0.95,0.95}{%
+	\makecell[{{p{\linewidth}}}]{% 
+	  \tt {\tiny [GM$|$GM]}  
+	 end game 
+	  } 
+	   } 
+	   } 
+	 & & \\ 
+ 
+
+\end{supertabular}
+}
+
+\end{document}
