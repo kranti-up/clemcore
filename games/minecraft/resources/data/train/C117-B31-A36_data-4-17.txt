@@ -1,0 +1,169 @@
+B31-A36-C117-1524006144961
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hey
+<Architect> this one looks pretty nasty
+<Builder> noice
+<Architect> ok you're in the right starting place
+<Architect> now go 5 blocks into the space
+<Architect> ok put down 3 yellow blocks in a column
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+<Architect> then get rid of the bottom 2
+[Builder picks up a yellow block at X:0 Y:2 Z:-1]
+[Builder picks up a yellow block at X:0 Y:1 Z:-1]
+<Architect> then move 3 spaces forward and put a red block on the ground
+[Builder puts down a red block at X:0 Y:1 Z:2]
+<Architect> one more space sorry
+[Builder picks up a red block at X:0 Y:1 Z:2]
+[Builder puts down a red block at X:0 Y:1 Z:2]
+[Builder picks up a red block at X:0 Y:1 Z:2]
+[Builder puts down a red block at X:0 Y:1 Z:3]
+<Architect> oh i meant one more space closer to the yellow block sorry
+<Architect> now it's 2
+[Builder puts down a red block at X:0 Y:1 Z:1]
+<Builder> there?
+[Builder picks up a red block at X:0 Y:1 Z:3]
+<Architect> ya
+<Architect> then on either side of the red block, put down 2 red blocks
+[Builder puts down a red block at X:2 Y:1 Z:1]
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+[Builder puts down a red block at X:-2 Y:1 Z:1]
+<Architect> to the left and right
+<Architect> good
+<Architect> u see how it's a row of 5 right
+<Builder> yep
+<Architect> get rid of the 2nd the 4th blocks
+[Builder picks up a red block at X:1 Y:1 Z:1]
+[Builder picks up a red block at X:-1 Y:1 Z:1]
+<Architect> o wait can u move those 1 space closer to the yellow block sorry
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder picks up a red block at X:-2 Y:1 Z:1]
+[Builder picks up a red block at X:0 Y:1 Z:1]
+[Builder picks up a red block at X:2 Y:1 Z:1]
+<Builder> its all good
+<Architect> ok good
+<Architect> the bottom layer is a 5 x 5 square with spaces in between like the row you just put down
+<Architect> so it should only be 3 squares per row
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:2 Y:1 Z:-2]
+[Builder puts down a red block at X:2 Y:1 Z:-3]
+[Builder puts down a red block at X:2 Y:1 Z:-4]
+<Builder> like that for all three?
+<Architect> ya
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+[Builder puts down a red block at X:0 Y:1 Z:-3]
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+[Builder puts down a red block at X:-2 Y:1 Z:-2]
+[Builder puts down a red block at X:-2 Y:1 Z:-3]
+[Builder puts down a red block at X:-2 Y:1 Z:-4]
+[Builder puts down a red block at X:0 Y:1 Z:-4]
+<Architect> then get rid of the red square on the ground in front of you
+[Builder picks up a red block at X:0 Y:1 Z:-3]
+<Architect> and do that for the other columns
+[Builder picks up a red block at X:2 Y:1 Z:-3]
+[Builder picks up a red block at X:-2 Y:1 Z:-4]
+[Builder picks up a red block at X:-2 Y:1 Z:-3]
+[Builder puts down a red block at X:-2 Y:1 Z:-4]
+<Architect> and then do the same for the red squares 3 spaces in front of you
+[Builder picks up a red block at X:0 Y:1 Z:-1]
+[Builder picks up a red block at X:2 Y:1 Z:-1]
+[Builder picks up a red block at X:-2 Y:1 Z:-1]
+<Architect> oh the yellow block should be on top of the middle red one sorry
+[Builder puts down a yellow block at X:0 Y:3 Z:-2]
+[Builder picks up a yellow block at X:0 Y:3 Z:-1]
+<Architect> like floating
+<Architect> ya good
+<Architect> ok then for the layer in between the yellow and red is orange
+<Architect> so at the corners of the yellow there's an orange block
+[Builder puts down a orange block at X:0 Y:1 Z:-3]
+[Builder picks up a orange block at X:0 Y:1 Z:-3]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:-3]
+[Builder puts down a orange block at X:-1 Y:2 Z:-3]
+[Builder picks up a orange block at X:0 Y:2 Z:-2]
+[Builder picks up a orange block at X:0 Y:2 Z:-3]
+<Builder> like that?
+<Architect> ya like that
+[Builder puts down a orange block at X:-1 Y:2 Z:-2]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:-2]
+[Builder puts down a orange block at X:1 Y:2 Z:-3]
+[Builder picks up a orange block at X:1 Y:2 Z:-2]
+[Builder picks up a orange block at X:0 Y:2 Z:-1]
+[Builder picks up a orange block at X:-1 Y:2 Z:-2]
+<Architect> ok then the next layer on top of the yellow block is green
+[Builder puts down a green block at X:0 Y:4 Z:-2]
+[Builder puts down a green block at X:0 Y:4 Z:-1]
+[Builder puts down a green block at X:-1 Y:4 Z:-1]
+[Builder picks up a green block at X:0 Y:4 Z:-2]
+<Builder> do they go on the corners?
+<Architect> ya but only 2 blocks instead of 4
+[Builder puts down a green block at X:1 Y:4 Z:-1]
+[Builder picks up a green block at X:0 Y:4 Z:-1]
+<Builder> like that?
+<Architect> close, the green blocks should be diagonal sorry
+[Builder picks up a green block at X:-1 Y:4 Z:-1]
+[Builder puts down a green block at X:1 Y:5 Z:-1]
+[Builder puts down a green block at X:2 Y:5 Z:-1]
+[Builder puts down a green block at X:2 Y:5 Z:0]
+[Builder picks up a green block at X:2 Y:5 Z:-1]
+[Builder picks up a green block at X:1 Y:5 Z:-1]
+<Builder> like that diagonal?
+[Builder puts down a green block at X:0 Y:4 Z:-2]
+[Builder puts down a green block at X:0 Y:4 Z:-3]
+[Builder puts down a green block at X:-1 Y:4 Z:-2]
+[Builder puts down a green block at X:-1 Y:4 Z:-3]
+[Builder picks up a green block at X:-1 Y:4 Z:-2]
+[Builder picks up a green block at X:1 Y:4 Z:-1]
+[Builder picks up a green block at X:0 Y:4 Z:-2]
+[Builder picks up a green block at X:0 Y:4 Z:-3]
+[Builder puts down a green block at X:0 Y:4 Z:-2]
+[Builder puts down a green block at X:0 Y:4 Z:-1]
+[Builder puts down a green block at X:1 Y:4 Z:-1]
+[Builder picks up a green block at X:0 Y:4 Z:-1]
+[Builder picks up a green block at X:0 Y:4 Z:-2]
+<Architect> ya then you can add another diagonal block to that
+<Builder> or across like that
+<Architect> you
+<Architect> *you're on the right track
+<Architect> u know how u have the one green block right now
+<Builder> lol do i need to delete anything from this configuration?
+<Builder> yes
+<Architect> no you're good
+<Builder> okay
+<Architect> add another diagonal block to that
+[Builder puts down a green block at X:-1 Y:5 Z:-3]
+[Builder puts down a green block at X:-2 Y:5 Z:-3]
+[Builder puts down a green block at X:-2 Y:5 Z:-4]
+[Builder picks up a green block at X:-1 Y:5 Z:-3]
+[Builder picks up a green block at X:-2 Y:5 Z:-3]
+<Architect> ok then one more
+[Builder puts down a green block at X:-2 Y:6 Z:-4]
+[Builder puts down a green block at X:-2 Y:6 Z:-5]
+[Builder puts down a green block at X:-3 Y:6 Z:-5]
+[Builder picks up a green block at X:-2 Y:6 Z:-4]
+[Builder picks up a green block at X:-2 Y:6 Z:-5]
+<Builder> both side?
+<Architect> pmg wait oh no i think it's outside of the building space
+<Builder> the green one is still good
+<Architect> o wait it is
+<Architect> good lol
+<Architect> u know how the other green diagonal only has 2 blocks
+<Builder> yes, do i need to add another
+<Architect> ya
+[Builder puts down a green block at X:2 Y:6 Z:0]
+[Builder puts down a green block at X:3 Y:6 Z:0]
+[Builder puts down a green block at X:3 Y:6 Z:1]
+[Builder picks up a green block at X:2 Y:6 Z:0]
+[Builder picks up a green block at X:3 Y:6 Z:0]
+<Architect> ok let me check to see if we need anything else
+<Architect> ok i think we're good
+<Builder> perfect

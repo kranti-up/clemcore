@@ -1,0 +1,101 @@
+B4-A19-C21-1522883588233
+<Builder> Mission has started.
+<Builder> hi
+<Architect> hi
+<Architect> ok get some purple blocks
+<Architect> ok so lets think of this like a coordinate system
+<Architect> place a purple block in x = 3, y =4
+[Builder puts down a purple block at X:-3 Y:1 Z:2]
+<Architect> now x = 4, y=4
+[Builder puts down a purple block at X:-2 Y:1 Z:2]
+<Architect> x = 5, y = 4
+[Builder puts down a purple block at X:-1 Y:1 Z:2]
+<Architect> ok nvm can't use coordinates
+<Builder> you could just say a line too
+<Architect> place one to the right one spot of the block
+<Architect> you just placed
+[Builder puts down a purple block at X:1 Y:1 Z:2]
+[Builder picks up a purple block at X:1 Y:1 Z:2]
+[Builder puts down a purple block at X:0 Y:1 Z:2]
+<Architect> one space in between
+[Builder picks up a purple block at X:0 Y:1 Z:2]
+[Builder puts down a purple block at X:1 Y:1 Z:2]
+<Architect> ok now two blocks directly to the right of the one you just placed
+<Architect> in the same row
+<Builder> as in two spaces with one blank space or two blank spaces?
+<Architect> no spaces
+[Builder puts down a purple block at X:2 Y:1 Z:2]
+<Architect> yeah now anotehr block to the right
+[Builder puts down a purple block at X:3 Y:1 Z:2]
+<Builder> oh another line of three
+<Architect> ok yeah thats a better way to say it
+<Architect> ok so on top place purple blocks alternating
+<Architect> so one on each end of the line of 3
+<Architect> they are floating
+[Builder puts down a purple block at X:-3 Y:2 Z:2]
+[Builder puts down a purple block at X:-3 Y:3 Z:2]
+[Builder picks up a purple block at X:-3 Y:2 Z:2]
+<Architect> yeah like taht
+[Builder puts down a purple block at X:3 Y:2 Z:2]
+[Builder puts down a purple block at X:3 Y:3 Z:2]
+[Builder picks up a purple block at X:3 Y:2 Z:2]
+<Architect> oh no what you were doing before was right
+[Builder puts down a purple block at X:-3 Y:2 Z:2]
+[Builder picks up a purple block at X:-3 Y:3 Z:2]
+[Builder puts down a purple block at X:3 Y:2 Z:2]
+<Architect> i meant theyre just not on the ground
+<Builder> ok
+<Architect> like the side on your left
+[Builder picks up a purple block at X:3 Y:3 Z:2]
+<Architect> ok now the next row should be completely filled, 7 blocks
+[Builder puts down a purple block at X:-3 Y:3 Z:2]
+[Builder puts down a purple block at X:-2 Y:3 Z:2]
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+[Builder puts down a purple block at X:0 Y:3 Z:2]
+[Builder puts down a purple block at X:1 Y:3 Z:2]
+[Builder puts down a purple block at X:2 Y:3 Z:2]
+[Builder puts down a purple block at X:3 Y:3 Z:2]
+<Architect> ok now think of a window
+<Architect> youre missing a block in z = 1
+<Architect> on the 3rd block of each side
+[Builder puts down a purple block at X:1 Y:2 Z:2]
+[Builder puts down a purple block at X:-1 Y:2 Z:2]
+<Architect> yeah
+<Architect> ok now get some red blocks
+<Architect> so for the very top row
+<Architect> extend the blocks on each end
+<Architect> by adding 4 blocks in the air
+<Architect> extend them in the perpendicular direction
+<Builder> a floating line?
+<Architect> yeah
+<Builder> behind the purple structure
+<Architect> in the front
+<Architect> wherever there is more space
+<Builder> jutting out from the upper corner purple one
+<Architect> yea
+[Builder puts down a red block at X:3 Y:3 Z:1]
+[Builder puts down a red block at X:3 Y:3 Z:0]
+[Builder puts down a red block at X:3 Y:3 Z:-1]
+[Builder puts down a red block at X:3 Y:3 Z:-2]
+<Architect> yeah like that
+<Builder> both sides?
+<Architect> yep
+[Builder puts down a red block at X:-3 Y:3 Z:1]
+[Builder puts down a red block at X:-3 Y:3 Z:0]
+[Builder puts down a red block at X:-3 Y:3 Z:-1]
+[Builder puts down a red block at X:-3 Y:3 Z:-2]
+<Architect> ok now make a diagonal line from the last red blocks of each line to the ground
+[Builder puts down a red block at X:3 Y:2 Z:-2]
+[Builder puts down a red block at X:3 Y:2 Z:-3]
+[Builder puts down a red block at X:3 Y:1 Z:-3]
+[Builder puts down a red block at X:3 Y:1 Z:-4]
+[Builder picks up a red block at X:3 Y:1 Z:-3]
+[Builder picks up a red block at X:3 Y:2 Z:-2]
+<Architect> yeah like that
+<Architect> for the other side too
+[Builder puts down a red block at X:-3 Y:2 Z:-2]
+[Builder puts down a red block at X:-3 Y:2 Z:-3]
+[Builder puts down a red block at X:-3 Y:1 Z:-4]
+[Builder picks up a red block at X:-3 Y:2 Z:-2]
+<Architect> ok done
+<Builder> cool

@@ -1,0 +1,148 @@
+B35-A15-C154-1524245575016
+<Builder> Mission has started.
+<Architect> hello! ready?
+<Builder> yup!
+<Architect> alright. we're gonna start with two green blocks next to each other in the center
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+<Builder> like that?
+<Architect> actually, make that 4 in a 2x2 square
+[Builder puts down a green block at X:1 Y:2 Z:0]
+<Architect> yeah!
+[Builder puts down a green block at X:0 Y:2 Z:0]
+<Builder> or flat?
+<Architect> both! it should be like a staircase
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+<Architect> so two more on the ground
+<Builder> gotcha
+<Architect> okay, now, continue that staircase with a 2x3 stack in the back
+<Architect> but make the top row yellow
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:1 Y:2 Z:1]
+[Builder puts down a green block at X:0 Y:2 Z:1]
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:2]
+[Builder picks up a yellow block at X:0 Y:3 Z:2]
+<Builder> ok
+<Architect> okay, now, in front of the low end of the staircase, put a row of 4 orange blocks
+<Architect> it should be centered in front
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+[Builder puts down a orange block at X:0 Y:4 Z:-2]
+<Builder> 2 columns?
+<Architect> sorry, the 4 orange blocks should be lined up on the ground
+[Builder picks up a orange block at X:0 Y:2 Z:-2]
+[Builder picks up a orange block at X:0 Y:3 Z:-2]
+[Builder picks up a orange block at X:0 Y:4 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:-3]
+[Builder puts down a orange block at X:0 Y:1 Z:-4]
+[Builder puts down a orange block at X:0 Y:1 Z:-5]
+<Architect> the center two should be in front of the green staircase
+<Architect> so perpendicular to what you currently have
+[Builder picks up a orange block at X:0 Y:1 Z:-4]
+[Builder picks up a orange block at X:0 Y:1 Z:-5]
+[Builder picks up a orange block at X:0 Y:1 Z:-3]
+[Builder picks up a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:3 Y:1 Z:-2]
+[Builder picks up a orange block at X:3 Y:1 Z:-2]
+[Builder puts down a orange block at X:2 Y:1 Z:-2]
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:-1 Y:1 Z:-2]
+<Builder> gotcha
+<Architect> perfect! now delete the center two
+[Builder picks up a orange block at X:0 Y:1 Z:-2]
+[Builder picks up a orange block at X:1 Y:1 Z:-2]
+<Builder> ok
+<Architect> okay, now, stack another orange block on each existing orange block
+[Builder puts down a orange block at X:2 Y:2 Z:-2]
+[Builder puts down a orange block at X:-1 Y:2 Z:-2]
+<Architect> and a purple one on each of those
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder puts down a purple block at X:2 Y:3 Z:-2]
+<Architect> and then put another purple block next to the current purple ones, extending out to the sides
+[Builder puts down a purple block at X:-2 Y:3 Z:-2]
+[Builder puts down a purple block at X:3 Y:3 Z:-2]
+<Builder> this
+<Builder> ?
+<Architect> perfect! :)
+<Architect> okay, now, building towards you, put a stack of 3 orange blocks on each side, in front of the current orange ones
+[Builder puts down a orange block at X:2 Y:1 Z:-3]
+[Builder puts down a orange block at X:2 Y:2 Z:-3]
+[Builder puts down a orange block at X:2 Y:3 Z:-3]
+[Builder puts down a orange block at X:-1 Y:1 Z:-3]
+[Builder puts down a orange block at X:-1 Y:2 Z:-3]
+[Builder puts down a orange block at X:-1 Y:3 Z:-3]
+<Architect> yep! and then a purple block on each of those
+[Builder puts down a purple block at X:3 Y:3 Z:-3]
+[Builder puts down a purple block at X:-2 Y:3 Z:-3]
+<Architect> sorry, those should be on top
+[Builder picks up a purple block at X:3 Y:3 Z:-3]
+[Builder picks up a purple block at X:-2 Y:3 Z:-3]
+[Builder puts down a purple block at X:-1 Y:4 Z:-3]
+[Builder puts down a purple block at X:2 Y:4 Z:-3]
+<Architect> and then another purple block extending outwards on each side
+<Architect> so the purple blocks make staircases
+[Builder puts down a purple block at X:3 Y:4 Z:-3]
+[Builder puts down a purple block at X:-2 Y:4 Z:-3]
+<Builder> ok
+<Architect> okay, perfect! now make a row of 6 purple blocks in front of the current 4
+<Architect> so they should be attached to the current ones
+<Builder> a column going up
+<Builder> or a row on the ground?
+[Builder puts down a purple block at X:3 Y:4 Z:-4]
+[Builder puts down a purple block at X:2 Y:4 Z:-5]
+<Architect> no, a row going from left to right, attached to the current purpel blocks
+[Builder puts down a purple block at X:0 Y:4 Z:-4]
+[Builder puts down a purple block at X:-1 Y:4 Z:-4]
+[Builder puts down a purple block at X:-2 Y:4 Z:-4]
+<Architect> perfect!
+<Architect> and then a row of 4 purple in front of those, centered on the row of 6
+[Builder puts down a purple block at X:2 Y:4 Z:-5]
+[Builder puts down a purple block at X:1 Y:4 Z:-5]
+[Builder puts down a purple block at X:0 Y:5 Z:-5]
+[Builder puts down a purple block at X:0 Y:5 Z:-6]
+[Builder picks up a purple block at X:0 Y:5 Z:-6]
+[Builder picks up a purple block at X:0 Y:5 Z:-5]
+[Builder picks up a purple block at X:1 Y:5 Z:-5]
+[Builder puts down a purple block at X:0 Y:4 Z:-5]
+[Builder puts down a purple block at X:0 Y:4 Z:-6]
+[Builder picks up a purple block at X:0 Y:4 Z:-6]
+[Builder puts down a purple block at X:-1 Y:4 Z:-5]
+<Builder> did we run out of spacE?
+<Builder> I hope not lol
+<Architect> no, we're good :)
+<Builder> sweet
+<Architect> okay, now move down to the ground where you currently are
+<Architect> in front of both column of orange blocks, make a stack of 3 blue blocks
+[Builder puts down a blue block at X:2 Y:1 Z:-4]
+[Builder puts down a blue block at X:2 Y:2 Z:-4]
+[Builder puts down a blue block at X:2 Y:3 Z:-4]
+[Builder puts down a blue block at X:-1 Y:1 Z:-4]
+[Builder puts down a blue block at X:-1 Y:2 Z:-4]
+[Builder puts down a blue block at X:-1 Y:3 Z:-4]
+<Architect> and connect the top blue blocks using two more blue blocks
+[Builder puts down a blue block at X:0 Y:3 Z:-4]
+[Builder puts down a blue block at X:1 Y:3 Z:-4]
+<Architect> alright, almost done
+<Architect> underneath the right inner blue block, put two red ones
+[Builder puts down a red block at X:1 Y:1 Z:-4]
+[Builder puts down a red block at X:0 Y:1 Z:-4]
+<Architect> they should be stacked, underneath the rightmost inner blue block
+[Builder picks up a red block at X:1 Y:1 Z:-4]
+[Builder puts down a red block at X:0 Y:2 Z:-4]
+<Builder> that?
+<Architect> perfect!
+<Architect> last step
+<Architect> another stack of two red blocks in front of the left column of blue blocks
+[Builder puts down a red block at X:2 Y:2 Z:-5]
+[Builder puts down a red block at X:2 Y:1 Z:-5]
+<Builder> like a door?
+<Architect> yeah, like that!
+<Architect> this is the hardest first round i've ever had
+<Architect> good work!
+<Builder> same lol

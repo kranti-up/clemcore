@@ -1,0 +1,23 @@
+B21-A15-C3-1522881214767
+<Builder> Mission has started.
+<Architect> hello
+<Architect> can you see this okay?
+<Builder> hello!
+<Builder> yes
+<Architect> excellent!
+<Architect> aparently, this first structure is a warm up
+<Architect> it's just 3 blocks arranged in an L shape
+<Builder> oh cool
+<Architect> so two blocks next to each other on the ground
+<Builder> any color?
+<Architect> and then one more block on top of either
+<Architect> they are blue!
+<Architect> i didn't know color was important
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:2 Z:-2]
+<Architect> i'll assume it is :)
+<Builder> like that?
+<Architect> looks good to me!
+<Architect> are you ready for the next one?
+<Builder> yup

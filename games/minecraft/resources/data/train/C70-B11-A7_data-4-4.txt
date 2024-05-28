@@ -1,0 +1,76 @@
+B11-A7-C70-1522856162986
+<Builder> Mission has started.
+<Architect> this one doesn't really look like anything, it's just super snakey
+<Builder> ok. maybe back to coordinates?
+<Architect> put a yellow block in one corner of the square
+[Builder puts down a yellow block at X:5 Y:1 Z:-5]
+<Architect> okay let's call that square the bottom left corner
+<Builder> ok
+<Architect> (0,0)
+<Builder> does the whole thing stay on the ground/
+<Builder> ?
+<Architect> yellow blocks at (0,1), (1,1), and (2,1)
+[Builder puts down a yellow block at X:4 Y:1 Z:-4]
+[Builder puts down a yellow block at X:3 Y:1 Z:-4]
+[Builder puts down a yellow block at X:5 Y:1 Z:-4]
+<Architect> no unfortunately
+<Architect> on the right most block put a yellow block on top of that
+[Builder puts down a yellow block at X:3 Y:2 Z:-4]
+<Architect> and go right one more
+[Builder puts down a yellow block at X:2 Y:2 Z:-4]
+<Architect> now forward one
+<Builder> i'll face the same way as much as possible so relative directions work well
+[Builder puts down a yellow block at X:2 Y:2 Z:-3]
+<Architect> and two more in the same direction
+[Builder puts down a yellow block at X:2 Y:2 Z:-2]
+[Builder puts down a yellow block at X:2 Y:2 Z:-1]
+<Architect> put two blocks on top of the last block you built
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:2 Y:4 Z:-1]
+<Architect> one right
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+<Architect> one up
+[Builder puts down a yellow block at X:1 Y:5 Z:-1]
+<Architect> on right
+<Architect> one right from the last thing you built
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+<Architect> one up
+[Builder puts down a yellow block at X:0 Y:6 Z:-1]
+<Architect> now build two towards you
+[Builder puts down a yellow block at X:0 Y:6 Z:-2]
+[Builder puts down a yellow block at X:0 Y:6 Z:-3]
+<Architect> one to the right
+[Builder puts down a yellow block at X:-1 Y:6 Z:-3]
+<Architect> one up
+[Builder puts down a yellow block at X:-1 Y:7 Z:-3]
+<Architect> one away from you
+[Builder puts down a yellow block at X:-1 Y:7 Z:-2]
+<Builder> that's my last yellow
+<Architect> now we're going to switch to green
+<Builder> ready
+<Architect> i think something might be wrong, give me a second to check
+<Builder> ok.
+<Architect> okay never mind it's fine
+<Builder> great
+<Architect> build one block right of the last block you built
+[Builder puts down a green block at X:-2 Y:7 Z:-2]
+[Builder puts down a green block at X:-2 Y:8 Z:-2]
+[Builder picks up a green block at X:-2 Y:8 Z:-2]
+<Architect> another block right
+<Builder> feel free to give more than one direction at a time if you're comfortable
+[Builder puts down a green block at X:-3 Y:7 Z:-2]
+<Builder> e.g. one right, then one up
+<Architect> one down, and then i have to check to see whats going on
+[Builder puts down a green block at X:-3 Y:6 Z:-2]
+<Architect> one more down, then one away from you
+[Builder puts down a green block at X:-3 Y:5 Z:-2]
+[Builder puts down a green block at X:-3 Y:5 Z:-1]
+<Architect> down and away from you again
+[Builder puts down a green block at X:-3 Y:4 Z:-1]
+[Builder puts down a green block at X:-3 Y:4 Z:0]
+<Architect> then down and right
+[Builder puts down a green block at X:-3 Y:3 Z:0]
+[Builder puts down a green block at X:-4 Y:3 Z:0]
+<Architect> i think that's it, i'm going to check really quickly
+<Builder> sounds good
+<Architect> yeah look good

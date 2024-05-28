@@ -1,0 +1,82 @@
+B25-A10-C88-1523488530039
+<Builder> Mission has started.
+<Architect> okay, so here there are three separate structures. one is a floating 3 by 3 square.
+<Architect> it is a vertical 3 by 3 square
+<Builder> what color?
+<Architect> orange
+<Architect> and it's floating only one above the ground
+<Builder> how far from the edge should i build it?
+<Builder> is it the rightmost or leftmost part of the build
+<Architect> centering it should suffice
+<Builder> ok
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:-1 Y:4 Z:-1]
+[Builder picks up a orange block at X:1 Y:1 Z:-1]
+<Architect> cool. so the other two structures are the same, just repeated and translated.
+<Architect> all blue blocks
+<Builder> how far apart are they, and what colors?
+<Builder> ok
+<Builder> how many blocks forward or backward?
+<Architect> the left one is 4 down from the leftblocks in the square
+<Architect> the structures kind of look like diagonal ms
+<Architect> "M" s
+[Builder puts down a blue block at X:1 Y:1 Z:-5]
+[Builder puts down a blue block at X:1 Y:1 Z:-6]
+[Builder picks up a blue block at X:1 Y:3 Z:-6]
+[Builder picks up a blue block at X:1 Y:2 Z:-6]
+[Builder picks up a blue block at X:1 Y:1 Z:-6]
+[Builder puts down a blue block at X:1 Y:2 Z:-5]
+[Builder puts down a blue block at X:2 Y:2 Z:-5]
+[Builder puts down a blue block at X:3 Y:2 Z:-5]
+[Builder puts down a blue block at X:3 Y:3 Z:-5]
+[Builder puts down a blue block at X:1 Y:3 Z:-5]
+[Builder puts down a blue block at X:2 Y:3 Z:-5]
+[Builder puts down a blue block at X:3 Y:4 Z:-5]
+[Builder puts down a blue block at X:2 Y:4 Z:-5]
+[Builder puts down a blue block at X:1 Y:4 Z:-5]
+[Builder picks up a blue block at X:1 Y:1 Z:-5]
+<Builder> is it like that?
+<Architect> yeah, just go ahead and remove the lower triangle of the square and the top left corner
+[Builder picks up a blue block at X:3 Y:4 Z:-5]
+[Builder picks up a blue block at X:3 Y:2 Z:-5]
+[Builder picks up a blue block at X:2 Y:3 Z:-5]
+[Builder picks up a blue block at X:1 Y:2 Z:-5]
+[Builder picks up a blue block at X:2 Y:2 Z:-5]
+<Architect> not quite.
+[Builder puts down a blue block at X:2 Y:3 Z:-5]
+[Builder puts down a blue block at X:2 Y:2 Z:-5]
+[Builder picks up a blue block at X:2 Y:3 Z:-5]
+[Builder puts down a blue block at X:2 Y:3 Z:-5]
+[Builder puts down a blue block at X:3 Y:4 Z:-5]
+[Builder puts down a blue block at X:3 Y:2 Z:-5]
+[Builder puts down a blue block at X:1 Y:2 Z:-5]
+<Builder> which blocks should i take out?
+<Architect> remove the top left
+[Builder picks up a blue block at X:3 Y:4 Z:-5]
+<Builder> ok
+<Architect> remove the bottom right
+[Builder picks up a blue block at X:1 Y:2 Z:-5]
+<Architect> remove the blocks adjacent to the left and up of what you jsut removed
+[Builder picks up a blue block at X:1 Y:3 Z:-5]
+[Builder picks up a blue block at X:2 Y:2 Z:-5]
+<Builder> ah I see the M now
+<Builder> where is the other M?
+<Architect> yeah, then re-make that structure, translate it up one and right four
+[Builder puts down a blue block at X:-1 Y:1 Z:-4]
+[Builder puts down a blue block at X:-1 Y:2 Z:-4]
+<Architect> so the bottom left cube is up one and over 4
+[Builder picks up a blue block at X:-1 Y:1 Z:-4]
+[Builder puts down a blue block at X:-1 Y:3 Z:-4]
+[Builder puts down a blue block at X:-2 Y:3 Z:-4]
+[Builder puts down a blue block at X:-2 Y:4 Z:-4]
+[Builder puts down a blue block at X:-3 Y:4 Z:-4]
+<Architect> cool
+<Builder> ok

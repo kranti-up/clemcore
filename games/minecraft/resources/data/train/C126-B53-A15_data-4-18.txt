@@ -1,0 +1,48 @@
+B53-A15-C126-1524067174283
+<Builder> Mission has started.
+<Architect> alright, teapot take 2
+<Architect> start with a vertical 3x4 block of red squares
+<Architect> the short end should be on the ground
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:4 Z:0]
+[Builder puts down a red block at X:0 Y:4 Z:0]
+[Builder puts down a red block at X:-1 Y:4 Z:0]
+<Architect> cool! make a 2x3 rectangle of squares one side of the rectangle, like a handle
+<Architect> orange*
+<Builder> How high up should it be?
+<Architect> the top row should be flush with the top of the red rectangel
+<Architect> rectangle*
+<Architect> also this is all in one 2D plane
+<Builder> Is the short side on the top or the sides?
+<Architect> the short side is on top, sorry
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+[Builder puts down a orange block at X:-3 Y:4 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+<Architect> and then you'll want to remove the inner orange block
+[Builder puts down a orange block at X:-3 Y:2 Z:0]
+[Builder puts down a orange block at X:-3 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:-1]
+[Builder picks up a orange block at X:-2 Y:3 Z:-1]
+[Builder picks up a orange block at X:-2 Y:3 Z:0]
+<Builder> I see
+<Architect> cool! one orange block on top of the center red
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+<Architect> and one red block opposite the gap in the handle
+<Architect> on the other side
+[Builder puts down a red block at X:2 Y:3 Z:0]
+<Architect> and one more red block diagonally up, for the spout
+<Builder> Ok cool
+[Builder puts down a red block at X:2 Y:4 Z:0]
+[Builder puts down a red block at X:3 Y:4 Z:0]
+[Builder picks up a red block at X:2 Y:4 Z:0]
+<Builder> That's a fine kettle we've built
+<Architect> beautiful :o

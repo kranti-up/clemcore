@@ -1,0 +1,29 @@
+B29-A34-C46-1524259283909
+<Builder> Mission has started.
+<Architect> this is some abstract art
+<Architect> place a row of 4 blue blocks on the ground
+[Builder puts down a blue block at X:2 Y:1 Z:1]
+[Builder puts down a blue block at X:2 Y:1 Z:0]
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+<Architect> on the rightmost, place a red, orange, and yellow on top
+[Builder puts down a red block at X:2 Y:2 Z:1]
+[Builder puts down a orange block at X:2 Y:3 Z:1]
+[Builder picks up a orange block at X:2 Y:3 Z:1]
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:1 Y:4 Z:1]
+[Builder picks up a yellow block at X:1 Y:4 Z:1]
+[Builder picks up a yellow block at X:1 Y:3 Z:1]
+[Builder picks up a yellow block at X:2 Y:3 Z:1]
+[Builder puts down a orange block at X:2 Y:3 Z:1]
+[Builder puts down a yellow block at X:2 Y:4 Z:1]
+<Architect> on the one that is second from the left, place on top: green and purple
+[Builder puts down a green block at X:2 Y:2 Z:-1]
+[Builder puts down a purple block at X:2 Y:3 Z:-1]
+<Architect> ok and now go to the leftmost blue
+<Architect> on the ground 2 towards you and one to the left, place a orange block
+[Builder puts down a orange block at X:0 Y:1 Z:-3]
+<Architect> and place one red 1 towards you and 1 to the left
+[Builder puts down a red block at X:-1 Y:1 Z:-4]
+<Architect> yeah...
+<Architect> thats about it

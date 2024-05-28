@@ -1,0 +1,87 @@
+B31-A36-C121-1524008543272
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hey
+<Architect> i'm not sure what this one is but it's an animal with 2 legs lol
+<Builder> nice, lets do it
+<Architect> ok go to the 4th row and put down a red block
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+<Architect> then 2 rows in front of that put down another red block
+[Builder puts down a red block at X:1 Y:1 Z:0]
+<Architect> one space closer sorry
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder picks up a red block at X:1 Y:1 Z:0]
+<Architect> ok then put a red block on top of each
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+<Architect> those are the legs
+<Builder> nice
+<Architect> then put an orange block on top of each
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+<Architect> then connect the orange blocks with another orange block
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+<Architect> the body is a 3 x 3 square
+[Builder puts down a orange block at X:-2 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+[Builder puts down a orange block at X:-1 Y:3 Z:-2]
+<Architect> vertical sorry
+[Builder puts down a orange block at X:-2 Y:3 Z:-2]
+[Builder picks up a orange block at X:-2 Y:4 Z:-2]
+[Builder picks up a orange block at X:-2 Y:3 Z:-2]
+[Builder picks up a orange block at X:-1 Y:3 Z:-2]
+[Builder picks up a orange block at X:0 Y:3 Z:-2]
+[Builder picks up a orange block at X:0 Y:3 Z:-1]
+[Builder picks up a orange block at X:-1 Y:3 Z:-1]
+[Builder picks up a orange block at X:-2 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:-1 Y:5 Z:0]
+[Builder puts down a orange block at X:-2 Y:5 Z:0]
+[Builder picks up a orange block at X:-1 Y:6 Z:-1]
+[Builder picks up a orange block at X:-1 Y:6 Z:0]
+<Architect> ok to your right is the back side
+<Builder> got it
+<Architect> so at the top right corner put a block to the right of it
+[Builder puts down a orange block at X:-3 Y:5 Z:0]
+<Architect> and then underneath that put another orange block
+[Builder puts down a orange block at X:-3 Y:4 Z:0]
+<Architect> and then put an orange block to the right of that one
+[Builder puts down a orange block at X:-4 Y:4 Z:0]
+<Architect> ok then get rid of the middle orange block so it's just a diagonal line
+[Builder picks up a orange block at X:-3 Y:4 Z:0]
+<Architect> ok good that's the tail
+<Architect> then the other side is the neck
+<Architect> it's a diagonal line of 3 blocks
+<Architect> going up
+<Builder> what color
+<Architect> orange
+[Builder puts down a orange block at X:0 Y:6 Z:0]
+[Builder puts down a orange block at X:0 Y:7 Z:0]
+[Builder puts down a orange block at X:1 Y:7 Z:0]
+[Builder picks up a orange block at X:0 Y:6 Z:0]
+[Builder puts down a orange block at X:0 Y:6 Z:0]
+[Builder picks up a orange block at X:0 Y:7 Z:0]
+[Builder picks up a orange block at X:1 Y:7 Z:0]
+[Builder puts down a orange block at X:1 Y:6 Z:0]
+[Builder puts down a orange block at X:1 Y:7 Z:0]
+[Builder puts down a orange block at X:2 Y:7 Z:0]
+[Builder puts down a orange block at X:2 Y:8 Z:0]
+[Builder puts down a orange block at X:3 Y:8 Z:0]
+[Builder picks up a orange block at X:2 Y:8 Z:0]
+[Builder picks up a orange block at X:1 Y:7 Z:0]
+[Builder picks up a orange block at X:0 Y:6 Z:0]
+<Architect> ok good
+<Builder> looks like a giraffe
+<Architect> that's probably what it is lol
+<Architect> on the top orange block put a yellow block to the left of it
+[Builder puts down a yellow block at X:4 Y:8 Z:0]
+<Architect> ok let me check to see if we have anything else
+<Architect> ok i think we're good
+<Builder> nice
+<Architect> good job
+<Builder> you too

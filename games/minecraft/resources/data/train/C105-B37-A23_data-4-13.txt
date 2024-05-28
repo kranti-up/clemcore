@@ -1,0 +1,95 @@
+B37-A23-C105-1523630488223
+<Builder> Mission has started.
+<Architect> so this is a fancy wall we are making.
+<Architect> go to the middle of a side and place a yellow block
+[Builder puts down a yellow block at X:5 Y:1 Z:-1]
+<Architect> perfect. place another yellow block in the same row, inward
+[Builder puts down a yellow block at X:4 Y:1 Z:-1]
+<Architect> place one one top of each
+[Builder puts down a yellow block at X:5 Y:2 Z:-1]
+[Builder puts down a yellow block at X:4 Y:2 Z:-1]
+<Architect> the row these two blocks are in is the only row we are working in.
+<Builder> ok
+<Architect> across these, on the other side of the row, build the same
+[Builder puts down a yellow block at X:-5 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-4 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-5 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-4 Y:2 Z:-1]
+<Builder> ok
+<Architect> the middle part of the wall is floating one above plate
+<Architect> it is a red row
+<Architect> between the tops of the yellows.
+<Builder> so it's 7 blocks long?
+<Architect> yes
+[Builder puts down a red block at X:-3 Y:1 Z:-1]
+[Builder puts down a red block at X:-3 Y:2 Z:-1]
+[Builder picks up a red block at X:-3 Y:1 Z:-1]
+[Builder puts down a red block at X:-2 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:2 Y:2 Z:-1]
+[Builder puts down a red block at X:3 Y:2 Z:-1]
+<Architect> remvoe the middle three and make them orange
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder picks up a red block at X:1 Y:2 Z:0]
+[Builder picks up a red block at X:1 Y:2 Z:-1]
+[Builder picks up a red block at X:0 Y:2 Z:-1]
+[Builder picks up a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+<Architect> above the orange, stack two more oranges
+<Architect> each orange should have two on top of it
+<Builder> ok
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a orange block at X:-1 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+<Architect> place reds in the same fashion on the red blocks
+[Builder puts down a red block at X:-2 Y:3 Z:-1]
+[Builder puts down a red block at X:-3 Y:3 Z:-1]
+[Builder puts down a red block at X:-2 Y:4 Z:-1]
+[Builder puts down a red block at X:-3 Y:4 Z:-1]
+[Builder puts down a red block at X:2 Y:3 Z:-1]
+[Builder puts down a red block at X:3 Y:3 Z:-1]
+[Builder puts down a red block at X:3 Y:4 Z:-1]
+[Builder puts down a red block at X:2 Y:4 Z:-1]
+<Architect> remove the middle orange blocks.
+<Builder> the middle row?
+<Architect> yes. horizontal
+[Builder picks up a orange block at X:-1 Y:3 Z:-1]
+[Builder picks up a orange block at X:0 Y:3 Z:-1]
+[Builder picks up a orange block at X:1 Y:3 Z:-1]
+<Architect> alright last bit here. on each of the top corners, we need two more yellow squares.
+<Builder> on top of the red blocks?
+<Architect> above the yellow blocks.
+<Architect> place a stack of three yellow blocks above the most inward yellow block.
+<Builder> when you say square, is that four blocks?
+<Architect> yes.
+[Builder puts down a yellow block at X:4 Y:3 Z:-1]
+[Builder puts down a yellow block at X:4 Y:4 Z:-1]
+[Builder puts down a yellow block at X:4 Y:5 Z:-1]
+<Architect> perfect
+<Architect> remove the two red blocks on the bottom of that 3-stack. the ones ou just placed
+<Architect> yellow*
+[Builder puts down a yellow block at X:4 Y:3 Z:0]
+[Builder picks up a yellow block at X:4 Y:3 Z:0]
+[Builder picks up a yellow block at X:4 Y:3 Z:-1]
+[Builder picks up a yellow block at X:4 Y:4 Z:-1]
+<Architect> make that corner yellow block the bottom corner of a 2x2 yellow sqaure
+[Builder puts down a yellow block at X:4 Y:6 Z:-1]
+[Builder puts down a yellow block at X:5 Y:5 Z:-1]
+[Builder puts down a yellow block at X:5 Y:6 Z:-1]
+<Builder> like that?
+<Architect> just like that.
+[Builder puts down a yellow block at X:-4 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-4 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-5 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-5 Y:6 Z:-1]
+[Builder puts down a yellow block at X:-4 Y:6 Z:-1]
+[Builder picks up a yellow block at X:-4 Y:4 Z:-1]
+<Architect> done!
+<Builder> yay

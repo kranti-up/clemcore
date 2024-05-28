@@ -1,0 +1,137 @@
+B35-A34-C118-1524004322117
+<Builder> Mission has started.
+<Architect> ehllo
+<Builder> hi
+<Architect> hello
+<Architect> ok
+<Architect> so
+<Architect> everyting is one block off the ground
+<Builder> okay
+<Architect> we will start with orange
+<Builder> what do u mean we
+<Builder> okay
+<Architect> build an orange block one block off of the ground
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+<Architect> ok now build one orange block on either side of that block
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder picks up a orange block at X:0 Y:2 Z:1]
+[Builder picks up a orange block at X:1 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:2 Z:-1]
+<Architect> just 2
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+<Architect> sorry
+<Architect> there we go
+<Builder> bet
+<Architect> ok now off of one of the ends, build on ediagonally
+<Architect> diagonally
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder picks up a orange block at X:1 Y:3 Z:0]
+<Architect> at the same level
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder picks up a orange block at X:1 Y:2 Z:-1]
+[Builder picks up a orange block at X:2 Y:3 Z:0]
+<Architect> one more
+[Builder puts down a orange block at X:2 Y:2 Z:-2]
+[Builder puts down a orange block at X:3 Y:2 Z:-2]
+[Builder picks up a orange block at X:2 Y:2 Z:-2]
+<Architect> now the same thing on the other side
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:-2 Y:2 Z:1]
+[Builder puts down a orange block at X:-2 Y:2 Z:2]
+[Builder puts down a orange block at X:-3 Y:2 Z:2]
+[Builder picks up a orange block at X:-2 Y:2 Z:2]
+[Builder picks up a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-2]
+[Builder picks up a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+<Architect> that but on the other side
+[Builder picks up a orange block at X:-2 Y:2 Z:0]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder picks up a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:3 Z:-2]
+[Builder puts down a orange block at X:-3 Y:2 Z:-2]
+[Builder picks up a orange block at X:-3 Y:2 Z:-2]
+[Builder picks up a orange block at X:-2 Y:3 Z:-2]
+[Builder picks up a orange block at X:-2 Y:2 Z:-2]
+[Builder puts down a orange block at X:-2 Y:2 Z:-2]
+[Builder puts down a orange block at X:-3 Y:2 Z:-2]
+[Builder picks up a orange block at X:-2 Y:2 Z:-2]
+[Builder picks up a orange block at X:-2 Y:2 Z:1]
+[Builder picks up a orange block at X:-3 Y:2 Z:2]
+<Architect> there
+<Builder> u can use mirror and reflect
+<Architect> now those central 3 blocks
+<Builder> it'll be easier for me to understand
+<Architect> build 3 purple blocks parallel to those 3 on the other side of you
+<Architect> at the same level
+[Builder puts down a purple block at X:-1 Y:2 Z:1]
+[Builder puts down a purple block at X:0 Y:2 Z:1]
+[Builder puts down a purple block at X:1 Y:2 Z:1]
+[Builder picks up a purple block at X:0 Y:3 Z:1]
+<Architect> build 3 red on top of that
+[Builder puts down a red block at X:-1 Y:3 Z:1]
+[Builder puts down a red block at X:0 Y:3 Z:1]
+[Builder puts down a red block at X:1 Y:3 Z:1]
+<Architect> delete the purple
+[Builder picks up a purple block at X:1 Y:2 Z:1]
+[Builder picks up a purple block at X:0 Y:2 Z:1]
+[Builder picks up a purple block at X:-1 Y:2 Z:1]
+<Architect> stay with red
+<Architect> and now build one up and diagonal
+<Architect> um
+[Builder puts down a red block at X:1 Y:3 Z:2]
+[Builder puts down a red block at X:2 Y:3 Z:2]
+[Builder puts down a red block at X:2 Y:4 Z:2]
+[Builder picks up a red block at X:1 Y:3 Z:2]
+[Builder picks up a red block at X:2 Y:3 Z:2]
+<Builder> this?
+<Architect> stay there
+<Architect> tone block towards you
+<Architect> one
+[Builder puts down a red block at X:2 Y:4 Z:1]
+[Builder puts down a red block at X:3 Y:4 Z:1]
+[Builder picks up a red block at X:2 Y:4 Z:1]
+<Builder> this?
+<Architect> ok just remove those 2 blocks
+[Builder picks up a red block at X:3 Y:4 Z:1]
+[Builder picks up a red block at X:2 Y:4 Z:2]
+<Architect> ill make this better
+<Architect> add purple to ends of the red
+<Builder> okay so from my perspective
+<Builder> where do u want me to build
+<Builder> go block by block
+<Architect> one purple block towards you
+<Architect> touching the red
+[Builder puts down a purple block at X:2 Y:3 Z:1]
+[Builder picks up a purple block at X:2 Y:4 Z:1]
+<Architect> same on the other side
+[Builder puts down a purple block at X:-2 Y:3 Z:1]
+<Architect> add one red block on top of that
+[Builder puts down a red block at X:2 Y:4 Z:1]
+[Builder picks up a purple block at X:2 Y:3 Z:1]
+[Builder puts down a purple block at X:-2 Y:4 Z:1]
+[Builder picks up a purple block at X:-2 Y:4 Z:1]
+[Builder puts down a purple block at X:-2 Y:4 Z:1]
+[Builder picks up a purple block at X:-2 Y:4 Z:1]
+[Builder puts down a purple block at X:-2 Y:4 Z:1]
+[Builder picks up a purple block at X:-2 Y:4 Z:1]
+[Builder puts down a purple block at X:-2 Y:4 Z:1]
+[Builder picks up a purple block at X:-2 Y:4 Z:2]
+[Builder picks up a purple block at X:-2 Y:4 Z:1]
+[Builder puts down a red block at X:-2 Y:4 Z:1]
+[Builder picks up a purple block at X:-2 Y:3 Z:1]
+<Architect> gr8
+<Builder> now what
+<Architect> thats it
+<Builder> hit ctrl C

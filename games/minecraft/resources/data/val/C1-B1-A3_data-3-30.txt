@@ -1,0 +1,82 @@
+B1-A3-C1-1522435497386
+<Builder> Mission has started.
+<Builder> hello. what are we building this time?
+<Architect> hello builder, i will tell you this. it appears we are creating a belltower. but first i will start with step by step instructions. we will start with green blocks
+<Architect> please start with 8 green blocks extending straight up. this will need to be placed as far right as you can, preferably centered along the other axis
+[Builder puts down a green block at X:-5 Y:1 Z:0]
+<Builder> here?
+<Architect> yes
+<Builder> ok
+[Builder puts down a green block at X:-5 Y:2 Z:0]
+[Builder puts down a green block at X:-5 Y:3 Z:0]
+[Builder puts down a green block at X:-5 Y:4 Z:0]
+[Builder puts down a green block at X:-5 Y:5 Z:0]
+[Builder puts down a green block at X:-5 Y:6 Z:0]
+[Builder puts down a green block at X:-5 Y:7 Z:0]
+[Builder puts down a green block at X:-5 Y:8 Z:0]
+<Builder> is this good?
+<Architect> yes, one moment
+<Architect> on the 8th block to the left of the green block, please create the same structure with red blocks
+<Builder> on top the 8th block?
+<Architect> sorry, my mistake
+[Builder puts down a red block at X:-5 Y:9 Z:0]
+<Architect> it should start on the ground
+<Architect> i only meant 8 blocks away from the first green block, to the left
+[Builder puts down a red block at X:3 Y:1 Z:0]
+<Builder> here?
+<Architect> yes
+[Builder puts down a red block at X:3 Y:2 Z:0]
+[Builder puts down a red block at X:3 Y:3 Z:0]
+[Builder puts down a red block at X:3 Y:4 Z:0]
+[Builder puts down a red block at X:3 Y:5 Z:0]
+[Builder puts down a red block at X:3 Y:6 Z:0]
+[Builder puts down a red block at X:3 Y:7 Z:0]
+[Builder puts down a red block at X:3 Y:8 Z:0]
+<Builder> like this?
+<Architect> good job builder. if you can do this without a supporting structure then please do. we need yet another row of purple blocks that is 9 long so that it lays across the green and red, on top of them
+<Builder> starting and ending from the red and green?
+[Builder puts down a purple block at X:-5 Y:9 Z:0]
+<Architect> yes
+[Builder puts down a purple block at X:-4 Y:9 Z:0]
+[Builder puts down a purple block at X:-3 Y:9 Z:0]
+[Builder puts down a purple block at X:-2 Y:9 Z:0]
+[Builder puts down a purple block at X:-1 Y:9 Z:0]
+[Builder puts down a purple block at X:0 Y:9 Z:0]
+[Builder puts down a purple block at X:1 Y:9 Z:0]
+[Builder puts down a purple block at X:2 Y:9 Z:0]
+[Builder puts down a purple block at X:3 Y:9 Z:0]
+<Architect> excellent builder
+<Architect> now we must create the bell. please start by extending 4 orange blocks down from the middle purple block, as if it were hanging
+[Builder puts down a orange block at X:-1 Y:8 Z:0]
+[Builder puts down a orange block at X:-1 Y:7 Z:0]
+[Builder puts down a orange block at X:-1 Y:6 Z:0]
+[Builder puts down a orange block at X:-1 Y:5 Z:0]
+<Builder> like this?
+<Architect> yes. now we need 3 blocks on both sides of the bottom three blocks so that is looks like a 3x3 square hanging off of the purple row
+<Builder> okay
+<Builder> orange?
+[Builder puts down a orange block at X:-2 Y:7 Z:0]
+[Builder puts down a orange block at X:-2 Y:6 Z:0]
+[Builder puts down a orange block at X:-2 Y:5 Z:0]
+<Architect> yes, orange. sorry
+[Builder puts down a orange block at X:0 Y:7 Z:0]
+[Builder puts down a orange block at X:0 Y:6 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+<Builder> is this good?
+<Architect> great. now please place 1 orange block on the bottom corners of the 3x3 square so that it is shaped like a bell
+<Architect> yes that is good
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+<Builder> here?
+<Architect> not quite. they should be on the left and right sides, not the bottom side. my mistake
+[Builder picks up a orange block at X:-2 Y:4 Z:0]
+[Builder picks up a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:-3 Y:5 Z:0]
+[Builder puts down a orange block at X:1 Y:5 Z:0]
+<Builder> oh i see. my mistake
+<Architect> good job builder. we have 1 final piece
+<Architect> please place 1 yellow block on the bottom of the bell, in the middle
+[Builder puts down a yellow block at X:-1 Y:4 Z:0]
+<Architect> builder, we have done it
+<Builder> good job!
+<Architect> you too builder! you are a master craftsman/woman

@@ -1,0 +1,57 @@
+B37-A46-C62-1523308403242
+<Builder> Mission has started.
+<Architect> pur 2 red blocks in a line 2 blocks away from the right edge
+[Builder puts down a red block at X:-3 Y:1 Z:1]
+[Builder puts down a red block at X:-3 Y:1 Z:2]
+<Builder> ok
+<Architect> now put 6 more red blocks on top of those
+<Builder> making 2 towers?
+<Architect> yes
+[Builder puts down a red block at X:-3 Y:2 Z:1]
+[Builder puts down a red block at X:-3 Y:2 Z:2]
+[Builder puts down a red block at X:-3 Y:3 Z:2]
+[Builder puts down a red block at X:-3 Y:3 Z:1]
+[Builder puts down a red block at X:-3 Y:4 Z:1]
+[Builder puts down a red block at X:-3 Y:4 Z:2]
+<Architect> now connect 4 more red blocks to the second from the bottom coming out towards you
+[Builder puts down a red block at X:-2 Y:2 Z:2]
+[Builder puts down a red block at X:-2 Y:2 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:2]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+<Builder> ok
+<Architect> pur 2 red blocks on the ground under the red blocks closest to you making a chair shape
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:2]
+<Builder> ok
+<Architect> put 4 blue blocks touching the red ones closest to you
+[Builder puts down a blue block at X:0 Y:2 Z:2]
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+<Builder> ok
+<Architect> now put 4 more blue blocks directly under you
+<Builder> in the same configuration?
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+<Architect> yes. one square away from the others
+[Builder picks up a blue block at X:1 Y:1 Z:2]
+[Builder puts down a blue block at X:2 Y:1 Z:2]
+[Builder puts down a blue block at X:2 Y:1 Z:1]
+[Builder puts down a blue block at X:2 Y:2 Z:1]
+[Builder puts down a blue block at X:2 Y:2 Z:2]
+<Builder> like that?
+<Architect> yes. now put 2 purple blocks on top of the edge of the chair
+<Builder> on top of the red blocks?
+<Architect> yes
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+<Architect> now put 8 more purple blocks in the same configuration going towards the blue
+[Builder puts down a purple block at X:0 Y:3 Z:2]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:2]
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+[Builder puts down a purple block at X:2 Y:3 Z:2]
+[Builder puts down a purple block at X:2 Y:3 Z:1]
+[Builder puts down a purple block at X:3 Y:3 Z:2]
+[Builder puts down a purple block at X:3 Y:3 Z:1]
+<Builder> like that?
+<Architect> yes

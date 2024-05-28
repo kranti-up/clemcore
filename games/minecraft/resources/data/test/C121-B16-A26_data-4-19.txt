@@ -1,0 +1,46 @@
+B16-A26-C121-1524152237357
+<Builder> Mission has started.
+<Architect> All right, I believe we're about to build a giraffe
+<Builder> best animal, sounds great!
+<Architect> Please start with two columns of red bricks, one space apart
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+<Architect> the columns will be of height two
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+<Architect> Great! Now on top of the red bricks, add a 3x3 square of orange bricks
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+<Architect> Thsi will be hte body of the giraffe
+[Builder puts down a orange block at X:-1 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+[Builder puts down a orange block at X:1 Y:5 Z:-1]
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+[Builder puts down a orange block at X:-1 Y:5 Z:-1]
+<Architect> Now for the neck. Could you make a diagonal of orange bricks of length 3 starting from the upper right hand corner of the orange square?
+[Builder puts down a orange block at X:-2 Y:5 Z:-1]
+[Builder puts down a orange block at X:-2 Y:6 Z:-1]
+[Builder picks up a orange block at X:-2 Y:5 Z:-1]
+[Builder puts down a orange block at X:-3 Y:6 Z:-1]
+[Builder puts down a orange block at X:-3 Y:7 Z:-1]
+[Builder picks up a orange block at X:-3 Y:6 Z:-1]
+[Builder puts down a orange block at X:-4 Y:7 Z:-1]
+<Architect> Perfect!
+[Builder puts down a orange block at X:-4 Y:8 Z:-1]
+[Builder picks up a orange block at X:-4 Y:7 Z:-1]
+<Architect> Now add a yellow brick to the right of the top of the neck
+<Architect> That will be the head of the giraffe
+<Builder> diagonal or not?
+<Architect> Not diagonal
+[Builder puts down a yellow block at X:-5 Y:8 Z:-1]
+<Architect> Awesome. Now we need to add the tail
+<Architect> Please add an orange brick adjacent to the top left orange brick
+<Architect> to the left of the top left orange brick
+[Builder puts down a orange block at X:2 Y:5 Z:-1]
+<Architect> Perfect. Now add an orange brick diagonally down to the left of that one
+[Builder puts down a orange block at X:3 Y:5 Z:-1]
+[Builder puts down a orange block at X:3 Y:4 Z:-1]
+[Builder picks up a orange block at X:3 Y:5 Z:-1]
+<Architect> Great work!

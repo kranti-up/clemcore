@@ -1,0 +1,111 @@
+B52-A27-C44-1523661370022
+<Builder> Mission has started.
+<Architect> in the middle make a 3x2 wall of blue
+<Builder> 3 high or wide?
+<Architect> actually 3 high and 4 wide
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:-2 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+[Builder picks up a blue block at X:0 Y:3 Z:-1]
+[Builder puts down a blue block at X:-1 Y:3 Z:0]
+[Builder puts down a blue block at X:-2 Y:2 Z:0]
+[Builder puts down a blue block at X:-2 Y:3 Z:0]
+<Architect> break out the middle two
+[Builder picks up a blue block at X:0 Y:2 Z:0]
+[Builder picks up a blue block at X:-1 Y:2 Z:0]
+<Builder> in the future we can call these donuts or something
+<Builder> 4x3 donut
+<Architect> on the top left block place 3 green all coming towards you
+<Architect> yeah we can
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+[Builder puts down a green block at X:1 Y:3 Z:-2]
+[Builder puts down a green block at X:1 Y:3 Z:-3]
+<Architect> place a green on top of the end one
+[Builder puts down a green block at X:1 Y:4 Z:-3]
+<Architect> and break the one below that
+[Builder picks up a green block at X:1 Y:3 Z:-3]
+<Architect> now on the top right of the blue place two yellow going out
+<Builder> like, one hanging over?
+[Builder puts down a yellow block at X:-2 Y:4 Z:0]
+[Builder puts down a yellow block at X:-3 Y:4 Z:0]
+[Builder puts down a yellow block at X:-3 Y:3 Z:0]
+[Builder puts down a yellow block at X:-4 Y:3 Z:0]
+[Builder picks up a yellow block at X:-3 Y:4 Z:0]
+[Builder picks up a yellow block at X:-2 Y:4 Z:0]
+<Builder> no, like this
+<Builder> two out
+<Architect> the same as you did with the green
+[Builder puts down a yellow block at X:-4 Y:4 Z:0]
+[Builder puts down a yellow block at X:-5 Y:4 Z:0]
+[Builder picks up a yellow block at X:-4 Y:4 Z:0]
+<Architect> on the same side as the green
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:4 Z:-3]
+[Builder picks up a yellow block at X:-2 Y:3 Z:-3]
+[Builder picks up a yellow block at X:-4 Y:3 Z:0]
+[Builder picks up a yellow block at X:-3 Y:3 Z:0]
+[Builder picks up a yellow block at X:-5 Y:4 Z:0]
+<Builder> got it
+<Architect> so instead of that higher yellow coming off of that side of the other one it should come off of the side closest to the green
+[Builder picks up a yellow block at X:-2 Y:4 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:4 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-2]
+[Builder picks up a yellow block at X:-2 Y:4 Z:-2]
+[Builder picks up a yellow block at X:-2 Y:3 Z:-3]
+<Builder> like this?
+<Architect> yeah and break the one to right and below it
+[Builder picks up a yellow block at X:-2 Y:3 Z:-2]
+<Architect> youre gonna add another yellow in the same fashion to the corner of the highest yellow
+[Builder puts down a yellow block at X:-1 Y:5 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:5 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:5 Z:-3]
+[Builder picks up a yellow block at X:-2 Y:5 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:5 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:5 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:5 Z:-3]
+[Builder puts down a yellow block at X:0 Y:5 Z:-3]
+[Builder picks up a yellow block at X:-1 Y:5 Z:-3]
+[Builder picks up a yellow block at X:-1 Y:5 Z:-2]
+<Builder> toward the green?
+[Builder picks up a yellow block at X:-2 Y:5 Z:-3]
+<Architect> perfect
+<Builder> nice!
+<Architect> now the other side
+[Builder puts down a yellow block at X:-1 Y:5 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:5 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:5 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:5 Z:-2]
+[Builder picks up a yellow block at X:-2 Y:5 Z:-2]
+<Builder> i like this one
+<Architect> so remove that most recent yellow we need to go to the other side of the donut
+[Builder picks up a yellow block at X:-2 Y:5 Z:-1]
+<Builder> oh, sorry, misunderstood
+<Builder> haha
+<Architect> on that top row place a row of purple on the face closest to you
+[Builder puts down a purple block at X:-2 Y:3 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+<Architect> make it two deep
+[Builder puts down a purple block at X:-2 Y:3 Z:2]
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+[Builder puts down a purple block at X:0 Y:3 Z:2]
+[Builder picks up a purple block at X:-1 Y:3 Z:3]
+[Builder puts down a purple block at X:1 Y:3 Z:2]
+<Architect> break the left and right of the row closest to you
+[Builder picks up a purple block at X:-2 Y:3 Z:2]
+[Builder picks up a purple block at X:1 Y:3 Z:2]
+<Architect> and break the middle two of the row closest to the blue
+[Builder picks up a purple block at X:-1 Y:3 Z:1]
+[Builder picks up a purple block at X:0 Y:3 Z:1]
+<Architect> nice on to the next one
+<Builder> nice nice

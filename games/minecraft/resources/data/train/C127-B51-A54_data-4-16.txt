@@ -1,0 +1,58 @@
+B51-A54-C127-1523911449377
+<Builder> Mission has started.
+<Builder> nice
+<Architect> Okay this one's a bit larger and more complicated.
+<Builder> nice
+<Architect> Make a 3x3 yellow square, but it should be standing up so only three blocks are touching the ground
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:1]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+<Builder> gorgeous
+<Architect> Add one more layer of 3 on top. very :)
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+[Builder puts down a yellow block at X:0 Y:4 Z:1]
+<Architect> Now on each 1x4 side, build up one pillar of 2 orange blocks
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:2]
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+<Architect> Nice
+<Builder> nice
+<Architect> This is supposed to look like a backpack I think so
+<Builder> lol
+<Architect> Now we're doing the straps
+<Architect> Put red blocks on the top two corners
+<Architect> Facing you
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:1]
+<Architect> Now two more two blocks below them
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+<Architect> Break the bottom block tho sorry
+<Architect> the reds
+[Builder picks up a red block at X:-1 Y:1 Z:1]
+[Builder picks up a red block at X:-1 Y:1 Z:-1]
+<Architect> Now extend the reds each by one
+[Builder puts down a red block at X:-1 Y:3 Z:1]
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+<Architect> Outwards
+[Builder picks up a red block at X:-1 Y:3 Z:-1]
+[Builder picks up a red block at X:-1 Y:3 Z:1]
+[Builder puts down a red block at X:-2 Y:2 Z:-1]
+[Builder puts down a red block at X:-2 Y:4 Z:-1]
+[Builder puts down a red block at X:-2 Y:4 Z:1]
+[Builder puts down a red block at X:-2 Y:2 Z:1]
+<Architect> Connect the ones above with the ones below so it's like two handles
+[Builder puts down a red block at X:-2 Y:3 Z:-1]
+[Builder puts down a red block at X:-2 Y:3 Z:1]
+<Architect> Exactly
+<Builder> nice

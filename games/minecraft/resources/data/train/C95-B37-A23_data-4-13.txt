@@ -1,0 +1,79 @@
+B37-A23-C95-1523631151562
+<Builder> Mission has started.
+<Architect> i have no idea what this is.
+<Builder> haha oh well
+<Architect> place four red blocks in a sqaure on the plate
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+<Architect> orange
+<Architect> make a table
+<Builder> orange on top of red?
+<Architect> yes
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+<Architect> add one more layer around the outside
+<Builder> a layer of orange next to the existing orange?
+<Architect> just on the top, like a table
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+[Builder puts down a orange block at X:-2 Y:2 Z:1]
+[Builder puts down a orange block at X:-2 Y:2 Z:2]
+[Builder puts down a orange block at X:-1 Y:2 Z:2]
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+[Builder puts down a orange block at X:1 Y:2 Z:2]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+<Architect> perfect
+<Architect> remove the middle orange square of 4
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:2 Z:1]
+[Builder picks up a orange block at X:-1 Y:2 Z:0]
+[Builder picks up a orange block at X:-1 Y:2 Z:1]
+<Architect> floating one above the red sqaure, make a purple sqaure 2x2
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder picks up a purple block at X:1 Y:3 Z:0]
+<Builder> like that?
+<Architect> oops, place one on top of each of those, then remove the bottom purple layer.
+[Builder puts down a purple block at X:-1 Y:4 Z:1]
+[Builder puts down a purple block at X:0 Y:4 Z:1]
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+[Builder picks up a purple block at X:-1 Y:3 Z:0]
+[Builder picks up a purple block at X:-1 Y:3 Z:1]
+[Builder picks up a purple block at X:0 Y:3 Z:0]
+[Builder picks up a purple block at X:0 Y:3 Z:1]
+<Builder> ok
+<Architect> last part.
+<Architect> go above the purple sqare and place a block on the corner
+<Builder> purple blocks again?
+<Architect> only purple from noe on.
+<Architect> now
+[Builder puts down a purple block at X:-1 Y:5 Z:1]
+<Builder> not sure what you mean by corner
+<Architect> thats exactly it.
+<Builder> oh ok
+<Architect> place one more on the top of that
+[Builder puts down a purple block at X:-1 Y:6 Z:1]
+<Architect> remove the middle piece
+[Builder picks up a purple block at X:-1 Y:5 Z:1]
+<Architect> on your right, place a block on the side of the floating one
+[Builder puts down a purple block at X:-1 Y:6 Z:2]
+<Architect> place another on the right of that
+[Builder puts down a purple block at X:-1 Y:6 Z:3]
+<Architect> place one on either side of the middle purple block on that one, and one on the top of it.
+[Builder puts down a purple block at X:-2 Y:6 Z:2]
+[Builder puts down a purple block at X:0 Y:6 Z:2]
+[Builder puts down a purple block at X:-1 Y:7 Z:2]
+<Architect> we should be done!
+<Builder> weird shape :)

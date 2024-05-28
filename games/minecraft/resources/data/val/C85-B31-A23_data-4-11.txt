@@ -1,0 +1,36 @@
+B31-A23-C85-1523475031031
+<Builder> Mission has started.
+<Architect> Howdy!
+<Builder> Hello!
+<Architect> the first layer is a red tower, four blocks high, center of the map
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:3 Z:-1]
+[Builder puts down a red block at X:0 Y:4 Z:-1]
+<Builder> Is that right?
+<Architect> correct.
+<Architect> the thing is an arrow. the next thing you need to so is place a yellow block on top.
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+<Architect> d0*
+<Builder> What?
+<Builder> Is this right?
+<Architect> sorry. touchy key keyboard. correct
+<Builder> No problem
+<Architect> on two sides of the top red block, place another yellow block. opposite of each other
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]
+<Architect> perfect
+<Architect> add a yellow block to the underside of each of those
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+<Architect> now in the same plane, add a yellow block on the sides of those.
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+<Architect> it will look like an arrow
+<Builder> Like that?
+<Architect> now remove the yellow blocks you placed to put the blocks you jsut put on.
+[Builder puts down a yellow block at X:1 Y:3 Z:-2]
+[Builder picks up a yellow block at X:1 Y:3 Z:-2]
+[Builder picks up a yellow block at X:1 Y:3 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-1]
+<Architect> done

@@ -1,0 +1,88 @@
+B36-A25-C138-1524176612571
+<Builder> Mission has started.
+<Builder> hi
+<Architect> hey
+<Architect> on the 6th block from the bottom left, and 3 blocks up, put a blue block down
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+<Builder> here?
+<Architect> one block down
+[Builder picks up a blue block at X:0 Y:1 Z:-2]
+[Builder puts down a blue block at X:0 Y:1 Z:-3]
+<Architect> perfect, put two blocks on top of that
+[Builder puts down a blue block at X:0 Y:2 Z:-3]
+[Builder puts down a blue block at X:0 Y:3 Z:-3]
+<Architect> then two horizontally to the right of the top block
+[Builder puts down a blue block at X:-1 Y:3 Z:-3]
+[Builder puts down a blue block at X:-2 Y:3 Z:-3]
+<Architect> then two vertically below the rightmost block
+[Builder puts down a blue block at X:-2 Y:2 Z:-3]
+[Builder puts down a blue block at X:-2 Y:1 Z:-3]
+<Architect> ok go to the back side
+<Architect> bottom left and bottom right corner, put an orange block down on the side facing you
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:-2 Y:1 Z:-2]
+<Architect> put another one down facing you
+<Architect> on each
+[Builder puts down a orange block at X:-2 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+<Architect> ok, finish off the design to look the same as the blue
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+<Architect> nah my bad
+[Builder picks up a orange block at X:0 Y:2 Z:-1]
+<Builder> k lol
+<Architect> it's the same design but it's lying flat
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:-2 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+<Architect> now put 3 red blocks on top of the orange blocks you just put down
+<Architect> like a row or 3 red blocks
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+<Builder> ok
+<Architect> and then on the right and left block, put down 2 more blocks coming towards you
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:-2 Y:2 Z:1]
+<Architect> do that again
+[Builder puts down a red block at X:0 Y:2 Z:2]
+[Builder puts down a red block at X:-2 Y:2 Z:2]
+<Architect> perfect
+<Architect> now put a row of 3 purple blocks one block towards you
+[Builder puts down a purple block at X:0 Y:2 Z:3]
+[Builder puts down a purple block at X:-1 Y:2 Z:3]
+[Builder puts down a purple block at X:-2 Y:2 Z:3]
+<Architect> then on the right and left blocks, put a column of 2 purple blocks
+[Builder puts down a purple block at X:0 Y:3 Z:3]
+[Builder puts down a purple block at X:-2 Y:3 Z:3]
+[Builder puts down a purple block at X:0 Y:4 Z:3]
+[Builder puts down a purple block at X:-2 Y:4 Z:3]
+<Architect> put a row of green blocks on top of that
+[Builder puts down a green block at X:0 Y:5 Z:3]
+[Builder puts down a green block at X:-1 Y:5 Z:3]
+[Builder puts down a green block at X:-2 Y:5 Z:3]
+<Architect> then a green block on top of the rightmost block
+[Builder puts down a green block at X:0 Y:6 Z:3]
+<Architect> then a row of green blocks on top of that
+<Architect> from left to right
+[Builder puts down a green block at X:0 Y:7 Z:3]
+<Architect> sorry
+<Architect> i meant right to left
+[Builder puts down a green block at X:-1 Y:7 Z:3]
+[Builder puts down a green block at X:-2 Y:7 Z:3]
+<Builder> youre fine
+<Architect> perfect
+<Architect> on the leftmost blocks on the first and third row of the magnet shape
+<Architect> put a yellow block down on the face going away from you
+[Builder puts down a yellow block at X:-2 Y:7 Z:2]
+[Builder puts down a yellow block at X:-2 Y:5 Z:2]
+<Builder> ike this?
+<Builder> *like
+<Architect> yea, then one more block to the left of each of those
+<Builder> ok
+[Builder puts down a yellow block at X:-2 Y:7 Z:1]
+[Builder puts down a yellow block at X:-2 Y:5 Z:1]
+<Architect> and then a column of 3 yellow blocks connecting them
+[Builder puts down a yellow block at X:-2 Y:5 Z:0]
+[Builder puts down a yellow block at X:-2 Y:6 Z:0]
+[Builder puts down a yellow block at X:-2 Y:7 Z:0]
+<Architect> perfect

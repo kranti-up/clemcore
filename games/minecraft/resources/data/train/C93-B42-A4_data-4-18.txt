@@ -1,0 +1,31 @@
+B42-A4-C93-1524078776608
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hi, what you need me to do?
+<Architect> we're building two "L"s by each other
+<Architect> start with red
+<Architect> and in the middle
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> build an L
+<Architect> column of three
+<Architect> with one foot
+<Builder> ok
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Builder> like that?
+<Architect> great
+<Architect> now yellow
+<Architect> go to the other side of the L
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+<Architect> behind it
+[Builder picks up a yellow block at X:1 Y:1 Z:0]
+<Architect> this L is upside down
+<Architect> build the column in front of the single red block
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+<Architect> good
+<Architect> now a single block to the right
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+<Architect> that's it

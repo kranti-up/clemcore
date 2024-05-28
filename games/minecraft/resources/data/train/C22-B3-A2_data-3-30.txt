@@ -1,0 +1,37 @@
+B3-A2-C22-1522444708663
+<Builder> Mission has started.
+<Builder> hello again architect
+<Architect> you are going to be building a smiley face
+<Builder> ok
+<Architect> start with a yellow block
+<Builder> does it matter where?
+<Architect> no it does not
+[Builder puts down a yellow block at X:1 Y:1 Z:1]
+<Architect> now set a purple block to the right of the yellow one
+[Builder puts down a purple block at X:0 Y:1 Z:1]
+<Builder> like this?
+<Architect> yes
+<Architect> now take a red block
+<Architect> place it in the square diagonally to the right of the purple block
+[Builder puts down a red block at X:-1 Y:1 Z:2]
+<Architect> nice
+<Builder> thank you
+<Architect> now do the same thing on the other side but with an orange block
+<Builder> other side of the purple or yellow?
+<Architect> yellow
+[Builder puts down a orange block at X:2 Y:1 Z:2]
+<Architect> now you need to make the eyes with two blue blocks
+[Builder puts down a blue block at X:1 Y:1 Z:4]
+<Architect> they are directly above the orange and red blocks with two spaces in between them
+[Builder picks up a blue block at X:1 Y:1 Z:4]
+[Builder puts down a blue block at X:2 Y:1 Z:4]
+[Builder puts down a blue block at X:-1 Y:1 Z:4]
+<Builder> like this?
+<Architect> move them up one space
+[Builder picks up a blue block at X:2 Y:1 Z:4]
+[Builder puts down a blue block at X:2 Y:1 Z:5]
+[Builder picks up a blue block at X:-1 Y:1 Z:4]
+[Builder puts down a blue block at X:-1 Y:1 Z:5]
+<Builder> and now?
+<Architect> looks done
+<Builder> ok

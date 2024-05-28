@@ -1,0 +1,126 @@
+B52-A27-C102-1523662795472
+<Builder> Mission has started.
+<Builder> this must be the last one
+<Architect> this one is entirely off the ground so go 4 out from an edge and place an orange
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+<Builder> alright
+<Architect> place four more going away from you
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:2]
+<Builder> sorry i keep moving
+<Architect> and basically lift that one place off the ground
+<Builder> is this right?
+<Builder> gotcha
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder picks up a orange block at X:1 Y:1 Z:-1]
+[Builder picks up a orange block at X:0 Y:1 Z:-2]
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+[Builder picks up a orange block at X:0 Y:1 Z:1]
+[Builder picks up a orange block at X:0 Y:1 Z:2]
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+<Architect> on the side closest to you place three yellow on that closest face perpindicular
+[Builder puts down a yellow block at X:1 Y:2 Z:1]
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+[Builder picks up a yellow block at X:1 Y:2 Z:1]
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+[Builder puts down a yellow block at X:3 Y:2 Z:0]
+<Architect> other side
+<Builder> repeat on other side?
+<Architect> we're make a trident
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:-2 Y:2 Z:0]
+[Builder puts down a yellow block at X:-3 Y:2 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:2]
+[Builder puts down a yellow block at X:-2 Y:2 Z:2]
+[Builder puts down a yellow block at X:-3 Y:2 Z:2]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-3 Y:2 Z:-2]
+<Builder> like so?
+<Architect> so place it on the face closest to an edge
+<Architect> not on the long side
+<Builder> okay
+[Builder picks up a yellow block at X:-3 Y:2 Z:-2]
+[Builder picks up a yellow block at X:-2 Y:2 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:0 Y:2 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-3]
+[Builder picks up a yellow block at X:-3 Y:2 Z:2]
+[Builder picks up a yellow block at X:-2 Y:2 Z:2]
+[Builder picks up a yellow block at X:-1 Y:2 Z:2]
+[Builder puts down a yellow block at X:0 Y:2 Z:3]
+[Builder picks up a yellow block at X:-1 Y:2 Z:-3]
+<Builder> hot or cold?
+[Builder puts down a yellow block at X:-1 Y:2 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-3]
+[Builder puts down a yellow block at X:-3 Y:2 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:2 Z:3]
+[Builder puts down a yellow block at X:-2 Y:2 Z:3]
+[Builder puts down a yellow block at X:-3 Y:2 Z:3]
+<Architect> remove all of them except for the one farthest to your right
+[Builder picks up a yellow block at X:-3 Y:2 Z:0]
+[Builder picks up a yellow block at X:-2 Y:2 Z:0]
+[Builder picks up a yellow block at X:-1 Y:2 Z:0]
+<Architect> the left one too
+<Builder> okay
+[Builder picks up a yellow block at X:-3 Y:2 Z:-3]
+[Builder picks up a yellow block at X:-1 Y:2 Z:-3]
+[Builder picks up a yellow block at X:0 Y:2 Z:-3]
+[Builder picks up a yellow block at X:-2 Y:2 Z:-3]
+<Architect> the one in the middle
+<Builder> what
+<Builder> the first we placed/
+<Builder> ?
+<Architect> yeah
+[Builder picks up a yellow block at X:3 Y:2 Z:0]
+[Builder picks up a yellow block at X:2 Y:2 Z:0]
+[Builder picks up a yellow block at X:1 Y:2 Z:0]
+<Architect> and make that end have the middle touching the orange and one hanging off on each side
+[Builder picks up a yellow block at X:-2 Y:2 Z:3]
+[Builder picks up a yellow block at X:-3 Y:2 Z:3]
+[Builder puts down a yellow block at X:1 Y:2 Z:3]
+<Architect> nice
+<Builder> okay
+<Builder> thanks :)
+<Builder> you're doing great
+<Architect> now build a row of 4 on the face of the yellow
+<Builder> four across?
+<Builder> like, parallel to the yellow?
+[Builder puts down a yellow block at X:-1 Y:2 Z:4]
+[Builder puts down a yellow block at X:0 Y:2 Z:4]
+[Builder puts down a yellow block at X:1 Y:2 Z:4]
+<Architect> actually 5 we need to hang off on each side
+[Builder picks up a yellow block at X:1 Y:2 Z:4]
+[Builder picks up a yellow block at X:0 Y:2 Z:4]
+[Builder picks up a yellow block at X:-1 Y:2 Z:4]
+<Architect> yeah parallel
+[Builder puts down a yellow block at X:-1 Y:2 Z:4]
+[Builder puts down a yellow block at X:0 Y:2 Z:4]
+[Builder puts down a yellow block at X:1 Y:2 Z:4]
+[Builder puts down a yellow block at X:2 Y:2 Z:4]
+<Builder> what do you mean 5 to hang off
+<Architect> so just one more on that left side
+[Builder puts down a yellow block at X:-2 Y:2 Z:4]
+<Architect> and remove the second one to the left of the yellow
+[Builder picks up a yellow block at X:-1 Y:2 Z:4]
+<Builder> that one?
+<Architect> yeah and the right one
+[Builder picks up a yellow block at X:1 Y:2 Z:4]
+<Architect> now go to the middle orange block and stack 3 green
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:4 Z:0]
+[Builder puts down a green block at X:0 Y:5 Z:0]
+<Architect> make a T where the sides are going the same direct as the tridents' sides
+[Builder puts down a green block at X:1 Y:5 Z:0]
+[Builder puts down a green block at X:-1 Y:5 Z:0]
+<Architect> and one red on top
+[Builder puts down a red block at X:0 Y:6 Z:0]
+<Architect> done
+<Builder> whoo

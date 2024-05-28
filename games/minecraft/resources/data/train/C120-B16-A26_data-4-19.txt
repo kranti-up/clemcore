@@ -1,0 +1,43 @@
+B16-A26-C120-1524151897965
+<Builder> Mission has started.
+<Builder> good morning!
+<Architect> Hi! We'll be building a lowercase h out of green blocks that is floating a level above the gorund
+<Architect> ground*
+<Builder> great, sounds good
+<Architect> first start by putting two green blocks on the ground, one space apart
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+<Architect> Nice. The left column should be 4 green blocks high
+[Builder puts down a green block at X:1 Y:2 Z:1]
+[Builder puts down a green block at X:1 Y:3 Z:1]
+[Builder puts down a green block at X:1 Y:4 Z:1]
+<Architect> the right should be 3 blocks high
+[Builder puts down a green block at X:-1 Y:2 Z:1]
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+<Architect> my fault, the left should have one more block at the top
+[Builder puts down a green block at X:1 Y:5 Z:1]
+<Builder> no problem!
+<Architect> now please add a block to connect the two columns
+[Builder puts down a green block at X:0 Y:3 Z:1]
+<Architect> Perfect! Now remove the bottom row of blocks
+<Architect> (the bottom two)
+[Builder picks up a green block at X:1 Y:1 Z:1]
+[Builder picks up a green block at X:-1 Y:1 Z:1]
+<Architect> Great! we'll add a column of 6 yellow blocks to the right of the h
+<Architect> there will be a space between the column and the h
+[Builder puts down a yellow block at X:-3 Y:1 Z:1]
+[Builder puts down a yellow block at X:-3 Y:2 Z:1]
+[Builder puts down a yellow block at X:-3 Y:3 Z:1]
+[Builder puts down a yellow block at X:-3 Y:4 Z:1]
+[Builder puts down a yellow block at X:-3 Y:5 Z:1]
+[Builder puts down a yellow block at X:-3 Y:6 Z:1]
+<Architect> now add a brick to the left and right of the second to top block of the yellow column
+<Architect> it should sort of look like a plus sign at the top of the yellow column
+<Builder> also yellow?
+<Architect> Yes!
+[Builder puts down a yellow block at X:-4 Y:5 Z:1]
+[Builder puts down a yellow block at X:-2 Y:5 Z:1]
+<Builder> a cross!
+<Architect> Great! please remove the yellow block right under the plus sign
+[Builder picks up a yellow block at X:-3 Y:3 Z:1]
+<Architect> It indeed was a cross :)

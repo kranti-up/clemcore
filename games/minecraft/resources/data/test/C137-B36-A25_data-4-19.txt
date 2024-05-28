@@ -1,0 +1,98 @@
+B36-A25-C137-1524177508983
+<Builder> Mission has started.
+<Builder> hi
+<Architect> ok, from the bottom left corner, find the block that's 4 to the left and 3 up
+<Builder> here?
+<Architect> yea
+<Architect> build a hollow square that is 6 wide and 6 tall, bottom left corner should be floating one block above the ground
+<Builder> what color
+<Architect> red
+[Builder puts down a red block at X:2 Y:1 Z:-3]
+[Builder puts down a red block at X:2 Y:2 Z:-3]
+[Builder picks up a red block at X:2 Y:1 Z:-3]
+[Builder puts down a red block at X:1 Y:2 Z:-3]
+[Builder puts down a red block at X:0 Y:2 Z:-3]
+[Builder puts down a red block at X:-1 Y:2 Z:-3]
+[Builder puts down a red block at X:-2 Y:2 Z:-3]
+[Builder puts down a red block at X:-3 Y:2 Z:-3]
+[Builder puts down a red block at X:-3 Y:3 Z:-3]
+[Builder puts down a red block at X:-3 Y:4 Z:-3]
+[Builder puts down a red block at X:-3 Y:5 Z:-3]
+[Builder puts down a red block at X:-3 Y:6 Z:-3]
+[Builder puts down a red block at X:-3 Y:7 Z:-3]
+[Builder puts down a red block at X:-2 Y:7 Z:-3]
+[Builder puts down a red block at X:-1 Y:7 Z:-3]
+[Builder puts down a red block at X:0 Y:7 Z:-3]
+[Builder puts down a red block at X:1 Y:7 Z:-3]
+[Builder puts down a red block at X:2 Y:7 Z:-3]
+[Builder puts down a red block at X:2 Y:3 Z:-3]
+[Builder puts down a red block at X:2 Y:4 Z:-3]
+[Builder puts down a red block at X:2 Y:5 Z:-3]
+[Builder puts down a red block at X:2 Y:6 Z:-3]
+<Builder> like this?
+<Architect> yea
+<Architect> break all 4 corners
+[Builder picks up a red block at X:2 Y:7 Z:-3]
+[Builder picks up a red block at X:2 Y:2 Z:-3]
+[Builder picks up a red block at X:-3 Y:2 Z:-3]
+[Builder picks up a red block at X:-3 Y:7 Z:-3]
+<Architect> now one block down and to the left of where the top left corner was, put a red block
+<Architect> so essentially a red block in the inner top left corner
+[Builder puts down a red block at X:1 Y:6 Z:-3]
+<Builder> here?
+<Architect> yea
+<Architect> then 3 blocks that go diagonally down and to the right to the bottom right corner
+[Builder puts down a red block at X:1 Y:5 Z:-3]
+[Builder puts down a red block at X:0 Y:5 Z:-3]
+[Builder picks up a red block at X:1 Y:5 Z:-3]
+[Builder puts down a red block at X:0 Y:4 Z:-3]
+[Builder puts down a red block at X:-1 Y:4 Z:-3]
+[Builder picks up a red block at X:0 Y:4 Z:-3]
+[Builder puts down a red block at X:-2 Y:3 Z:-3]
+<Architect> perfect
+<Architect> to continue, it will be easier if you go ont he other side
+<Builder> ok
+<Architect> ok, locate the block below the leftmost edge of what we just built
+<Architect> two blocks towards you from that corner, put a floating purple block
+[Builder puts down a purple block at X:-3 Y:1 Z:-1]
+[Builder puts down a purple block at X:-3 Y:2 Z:-1]
+[Builder picks up a purple block at X:-3 Y:1 Z:-1]
+<Builder> here?
+<Architect> yea
+<Architect> then 5 blocks on top of that
+[Builder puts down a purple block at X:-3 Y:3 Z:-1]
+[Builder puts down a purple block at X:-3 Y:4 Z:-1]
+[Builder puts down a purple block at X:-3 Y:5 Z:-1]
+[Builder puts down a purple block at X:-3 Y:6 Z:-1]
+[Builder puts down a purple block at X:-3 Y:7 Z:-1]
+<Architect> then on the top block, put down a row of 4 purple blocks
+[Builder puts down a purple block at X:-2 Y:7 Z:-1]
+[Builder puts down a purple block at X:-1 Y:7 Z:-1]
+[Builder puts down a purple block at X:0 Y:7 Z:-1]
+[Builder puts down a purple block at X:1 Y:7 Z:-1]
+<Architect> one more
+[Builder puts down a purple block at X:2 Y:7 Z:-1]
+<Architect> now on the rightmost block, put a column of 5 more blocks below it
+[Builder puts down a purple block at X:2 Y:6 Z:-1]
+[Builder puts down a purple block at X:2 Y:5 Z:-1]
+[Builder puts down a purple block at X:2 Y:4 Z:-1]
+[Builder puts down a purple block at X:2 Y:3 Z:-1]
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+<Architect> 4 more blocks left, put two diagonally up and to the right and diagonally up and to the left of the last block you just put down
+[Builder puts down a purple block at X:3 Y:3 Z:-1]
+[Builder puts down a purple block at X:3 Y:4 Z:-1]
+[Builder puts down a purple block at X:4 Y:4 Z:-1]
+[Builder picks up a purple block at X:3 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+[Builder picks up a orange block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:1 Y:2 Z:-1]
+[Builder picks up a purple block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:0 Y:4 Z:-1]
+[Builder picks up a orange block at X:1 Y:4 Z:-1]
+<Architect> perfect

@@ -1,0 +1,49 @@
+B53-A15-C135-1524064004995
+<Builder> Mission has started.
+<Architect> alright, this is harder
+<Architect> start with a stack of 5 purple blocks in the middle
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+<Builder> Now what?
+<Architect> cool! extend the top purple block to a row of 5 purple blocks
+<Architect> so like an upside down "L"
+<Builder> So they should extend to one side, correct?
+<Architect> yep!
+[Builder picks up a purple block at X:-1 Y:5 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:1]
+[Builder puts down a purple block at X:-1 Y:5 Z:2]
+[Builder puts down a purple block at X:-1 Y:5 Z:3]
+[Builder puts down a purple block at X:-1 Y:5 Z:4]
+<Architect> nice! now, put a block above and below the second block from the right
+<Builder> What color should those blocks be?
+<Architect> also purple!
+[Builder puts down a purple block at X:-1 Y:6 Z:4]
+[Builder puts down a purple block at X:-1 Y:4 Z:4]
+<Architect> 2nd block from the right, so one more space over each
+<Builder> Oops, my mistake
+[Builder picks up a purple block at X:-1 Y:4 Z:4]
+[Builder picks up a purple block at X:-1 Y:6 Z:4]
+[Builder puts down a purple block at X:-1 Y:4 Z:3]
+[Builder puts down a purple block at X:-1 Y:6 Z:3]
+<Architect> okay, now you'll want to build the top stack up by one more block
+<Architect> sorry
+<Architect> the top block that you just built i meant
+[Builder puts down a purple block at X:-1 Y:7 Z:3]
+<Builder> Ok, so this?
+<Architect> yeah! and then a block to the left of that
+[Builder puts down a purple block at X:-1 Y:7 Z:2]
+<Architect> and remove the 2nd last block you just put down
+[Builder picks up a purple block at X:-1 Y:7 Z:3]
+<Architect> okay, now do the same thing upside down on the bottom, so it looks like an arrow head
+<Builder> Okay, makes sense
+[Builder picks up a purple block at X:-1 Y:5 Z:2]
+[Builder puts down a purple block at X:-1 Y:5 Z:2]
+[Builder puts down a purple block at X:-1 Y:4 Z:2]
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+[Builder picks up a purple block at X:-1 Y:4 Z:2]
+<Builder> Anything else?
+<Architect> perfect! i think we're done!

@@ -1,0 +1,92 @@
+B38-A21-C82-1523488754136
+<Builder> Mission has started.
+<Builder> Heyo
+<Architect> heyoo
+<Builder> So what's the first step?
+<Architect> to start off, we're gonna make a hollow square in the center
+<Builder> Ok, how big and what color?
+<Architect> the empty space should be 9 squares
+<Architect> yellow
+<Builder> Across?
+<Architect> nah nah in area
+[Builder puts down a yellow block at X:2 Y:1 Z:1]
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+[Builder puts down a yellow block at X:2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:2 Y:1 Z:-3]
+[Builder puts down a yellow block at X:1 Y:1 Z:-3]
+[Builder puts down a yellow block at X:0 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-2]
+<Architect> each side should be 5 squares
+[Builder puts down a yellow block at X:-2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:1 Z:0]
+[Builder puts down a yellow block at X:-2 Y:1 Z:1]
+[Builder puts down a yellow block at X:1 Y:1 Z:1]
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+<Architect> just like that
+<Builder> Ok
+<Architect> next, on each corner, place a purple block on top
+[Builder puts down a purple block at X:-2 Y:2 Z:1]
+[Builder puts down a purple block at X:2 Y:2 Z:1]
+[Builder puts down a purple block at X:2 Y:2 Z:-3]
+[Builder puts down a purple block at X:-2 Y:2 Z:-3]
+<Builder> Ok
+<Architect> now diagonally inwards from each purple block, place another one space up
+[Builder puts down a purple block at X:2 Y:3 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder picks up a purple block at X:2 Y:3 Z:1]
+[Builder picks up a purple block at X:1 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-2]
+[Builder picks up a purple block at X:1 Y:4 Z:-1]
+[Builder picks up a purple block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:0 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder picks up a purple block at X:-1 Y:3 Z:-1]
+<Builder> Ok
+<Architect> now do the same but outwards and one space down
+[Builder puts down a purple block at X:3 Y:1 Z:-4]
+<Builder> like that or on the inside?
+<Architect> just like that
+[Builder puts down a purple block at X:-3 Y:1 Z:-4]
+[Builder puts down a purple block at X:-3 Y:1 Z:2]
+[Builder puts down a purple block at X:3 Y:1 Z:2]
+<Builder> Should I get rid of the center blocks?
+<Architect> nope, they're good
+<Builder> Ok
+<Architect> on top of the center blocks, create a solid square of blue blocks
+<Builder> Same size as the base?
+[Builder puts down a blue block at X:1 Y:3 Z:-1]
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+[Builder puts down a blue block at X:0 Y:4 Z:-1]
+[Builder picks up a blue block at X:1 Y:3 Z:-1]
+[Builder picks up a blue block at X:0 Y:3 Z:-1]
+[Builder puts down a blue block at X:-1 Y:4 Z:-1]
+[Builder puts down a blue block at X:-1 Y:4 Z:0]
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+[Builder puts down a blue block at X:-1 Y:4 Z:-2]
+[Builder puts down a blue block at X:0 Y:4 Z:-2]
+[Builder puts down a blue block at X:1 Y:4 Z:-1]
+[Builder puts down a blue block at X:1 Y:4 Z:-2]
+<Builder> Or like this?
+<Architect> just like that
+<Builder> Ok
+<Architect> in the center of that square, create a column of 5 green squares
+[Builder puts down a green block at X:0 Y:5 Z:-1]
+[Builder puts down a green block at X:0 Y:6 Z:-1]
+[Builder puts down a green block at X:0 Y:7 Z:-1]
+[Builder puts down a green block at X:0 Y:8 Z:-1]
+[Builder puts down a green block at X:0 Y:9 Z:-1]
+<Builder> Ok
+<Architect> that should do it
+<Builder> Hmm, I don't have any comparisons. Maybe the eiffel tower?
+<Architect> lmao thats probably the best one

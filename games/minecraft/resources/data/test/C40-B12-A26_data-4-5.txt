@@ -1,0 +1,30 @@
+B12-A26-C40-1522939655941
+<Builder> Mission has started.
+<Builder> ready
+<Architect> We'll build something a little more interesting now
+<Architect> First make a line of three bricks, purple, red, purple
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:-2]
+[Builder picks up a red block at X:0 Y:1 Z:1]
+<Architect> Nice, now on top of that, make a blue-orange-blue line. The blue bricks won't be on top of the purple bricks.
+<Architect> They will be hanging in the air
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+[Builder picks up a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:-2]
+<Architect> If you looked at it from the sky, it would look like a plus sign
+[Builder puts down a blue block at X:0 Y:2 Z:-3]
+[Builder picks up a blue block at X:0 Y:2 Z:-2]
+[Builder picks up a blue block at X:0 Y:2 Z:-3]
+[Builder picks up a blue block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+[Builder puts down a blue block at X:-1 Y:2 Z:-1]
+<Architect> Awesome
+<Architect> Now we will do the same thing, but this time green-yellow-green
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:3 Z:-2]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+<Architect> Nice job!

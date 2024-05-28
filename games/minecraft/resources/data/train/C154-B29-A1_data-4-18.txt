@@ -1,0 +1,144 @@
+B29-A1-C154-1524080251258
+<Builder> Mission has started.
+<Architect> this one is like a throne room 3d
+<Architect> so place two red blocks in the form of a tower near the edge of the building area
+[Builder puts down a red block at X:4 Y:1 Z:4]
+[Builder puts down a red block at X:4 Y:2 Z:4]
+<Architect> sorry can you make it near the center edge
+[Builder picks up a red block at X:4 Y:2 Z:4]
+[Builder picks up a red block at X:4 Y:1 Z:4]
+[Builder puts down a red block at X:4 Y:1 Z:0]
+[Builder puts down a red block at X:4 Y:2 Z:0]
+[Builder puts down a red block at X:4 Y:3 Z:0]
+[Builder picks up a red block at X:4 Y:3 Z:0]
+[Builder picks up a red block at X:4 Y:2 Z:0]
+[Builder puts down a red block at X:4 Y:2 Z:0]
+<Architect> place three blue blocks (tower) behind this tower near the cneter of the building area
+<Builder> on the side I'm facing, you mean?
+[Builder puts down a blue block at X:3 Y:1 Z:0]
+[Builder puts down a blue block at X:3 Y:2 Z:0]
+[Builder puts down a blue block at X:3 Y:3 Z:0]
+<Architect> yeah there
+<Architect> now add two blocks to the left of the topmost block (jutting out)
+<Builder> in a line?
+[Builder puts down a blue block at X:3 Y:3 Z:-1]
+[Builder puts down a blue block at X:3 Y:3 Z:-2]
+<Architect> yes thats good
+<Architect> now make a tower of three essentially making a 4x3 type structure but with a gap
+<Builder> where does the tower of 3 go?
+[Builder puts down a blue block at X:3 Y:1 Z:-2]
+[Builder puts down a blue block at X:3 Y:2 Z:-2]
+[Builder picks up a blue block at X:3 Y:2 Z:-2]
+[Builder picks up a blue block at X:3 Y:1 Z:-2]
+[Builder puts down a blue block at X:3 Y:1 Z:-3]
+[Builder puts down a blue block at X:3 Y:2 Z:-3]
+[Builder puts down a blue block at X:3 Y:3 Z:-3]
+<Architect> yeah thats good
+<Architect> okay now add two reds where you previously placed the blues
+[Builder puts down a red block at X:3 Y:1 Z:-2]
+[Builder puts down a red block at X:3 Y:2 Z:-2]
+<Architect> great
+<Architect> now behind each of the edges of the blue door frame add a tower of three orange
+<Architect> imean same side you are standing on
+[Builder puts down a red block at X:2 Y:2 Z:-2]
+[Builder picks up a red block at X:2 Y:2 Z:-2]
+[Builder picks up a red block at X:3 Y:2 Z:-2]
+[Builder picks up a red block at X:3 Y:1 Z:-2]
+[Builder puts down a red block at X:2 Y:1 Z:-3]
+[Builder puts down a red block at X:2 Y:2 Z:-3]
+<Architect> no the red was correct
+[Builder puts down a red block at X:2 Y:2 Z:-2]
+[Builder picks up a red block at X:2 Y:2 Z:-2]
+[Builder picks up a red block at X:2 Y:2 Z:-3]
+[Builder picks up a red block at X:2 Y:1 Z:-3]
+[Builder puts down a red block at X:3 Y:1 Z:-2]
+[Builder puts down a red block at X:3 Y:2 Z:-2]
+<Builder> sorry missed a message
+[Builder puts down a orange block at X:2 Y:1 Z:-3]
+[Builder puts down a orange block at X:2 Y:2 Z:-3]
+[Builder puts down a orange block at X:2 Y:3 Z:-3]
+[Builder puts down a orange block at X:2 Y:1 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+<Architect> okay now behind those add a tower of two oranges
+<Builder> behind being on my side?
+[Builder puts down a orange block at X:1 Y:1 Z:-3]
+[Builder puts down a orange block at X:1 Y:2 Z:-3]
+<Architect> yeah you are in the throne room...
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+<Architect> okay place a purple block on top of each orange and blue block
+<Architect> roof type thing
+[Builder puts down a purple block at X:1 Y:3 Z:-3]
+[Builder puts down a purple block at X:2 Y:4 Z:-3]
+[Builder puts down a purple block at X:3 Y:4 Z:-3]
+[Builder puts down a purple block at X:3 Y:4 Z:-2]
+[Builder puts down a purple block at X:3 Y:4 Z:-1]
+[Builder puts down a purple block at X:3 Y:4 Z:0]
+[Builder puts down a purple block at X:2 Y:4 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+<Architect> so the roof extends alittle so we will add this now.
+<Architect> first on the right
+<Architect> place a block to the right of each purple block
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+[Builder puts down a purple block at X:2 Y:4 Z:1]
+[Builder puts down a purple block at X:3 Y:4 Z:1]
+[Builder puts down a purple block at X:4 Y:4 Z:0]
+[Builder picks up a purple block at X:4 Y:4 Z:0]
+<Builder> doyou mean place one on the outside of each purple block?
+<Architect> how you have it is good
+<Architect> now on the left side do the same
+[Builder puts down a purple block at X:1 Y:3 Z:-4]
+[Builder puts down a purple block at X:2 Y:4 Z:-4]
+[Builder puts down a purple block at X:3 Y:4 Z:-4]
+<Architect> now in the front of the enterence add four purple blocks to the roof
+[Builder puts down a purple block at X:1 Y:3 Z:-2]
+[Builder picks up a purple block at X:1 Y:3 Z:-2]
+[Builder puts down a purple block at X:1 Y:4 Z:-3]
+[Builder puts down a purple block at X:1 Y:4 Z:-2]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:0]
+<Architect> no sorry on the other side...
+[Builder picks up a purple block at X:1 Y:4 Z:0]
+[Builder picks up a purple block at X:1 Y:4 Z:-2]
+[Builder picks up a purple block at X:1 Y:4 Z:-3]
+[Builder picks up a purple block at X:1 Y:4 Z:-1]
+<Builder> other side being the side with the red?
+<Architect> stand on the opposite side of the structure, yes
+[Builder puts down a purple block at X:4 Y:4 Z:0]
+[Builder puts down a purple block at X:4 Y:4 Z:-1]
+[Builder puts down a purple block at X:4 Y:4 Z:-2]
+[Builder puts down a purple block at X:4 Y:4 Z:-3]
+<Architect> great
+<Architect> okay now we need some green steps inside the throne room
+<Architect> place two green blocks behind the orange blocks, all on the ground
+[Builder puts down a green block at X:1 Y:1 Z:-2]
+[Builder puts down a green block at X:2 Y:1 Z:-2]
+[Builder puts down a green block at X:2 Y:2 Z:-2]
+[Builder picks up a green block at X:2 Y:2 Z:-2]
+<Architect> almost... it should be connecting the two orange towers
+[Builder picks up a green block at X:2 Y:1 Z:-2]
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+<Builder> the 3 stacks or 2 stacks?
+<Architect> okay... move those two green blocks one block away from the current structure
+[Builder picks up a green block at X:1 Y:1 Z:-2]
+[Builder picks up a green block at X:1 Y:1 Z:-1]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+<Architect> great
+<Architect> okay, using 8 blocks make a 2x2x2 cube next to these two green blocks
+<Builder> next to them inside or outside?
+<Architect> outside
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+[Builder puts down a green block at X:-2 Y:1 Z:-1]
+[Builder puts down a green block at X:-2 Y:1 Z:-2]
+[Builder puts down a green block at X:-2 Y:2 Z:-2]
+[Builder puts down a green block at X:-2 Y:2 Z:-1]
+[Builder puts down a green block at X:-1 Y:2 Z:-2]
+[Builder puts down a green block at X:-1 Y:2 Z:-1]
+<Architect> add two yellow blocks making a stair case on top of this green cube
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-2]
+<Architect> great
+<Architect> done

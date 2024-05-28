@@ -1,0 +1,36 @@
+B42-A4-C96-1524080693968
+<Builder> Mission has started.
+<Architect> hey. this should be pretty easy
+<Builder> ok
+<Architect> start with red
+<Architect> and pick a corner
+[Builder puts down a red block at X:-5 Y:1 Z:-5]
+<Architect> build one on either side of that
+[Builder puts down a red block at X:-4 Y:1 Z:-5]
+[Builder puts down a red block at X:-5 Y:1 Z:-4]
+<Architect> now one on top of the original
+[Builder puts down a red block at X:-5 Y:2 Z:-5]
+<Architect> great. that's the whole structure
+<Builder> ok cool
+<Architect> you're duplicating this three times in different colors in all the corners
+<Architect> pick another corner and i'll tell you the color
+<Architect> yellow
+[Builder puts down a yellow block at X:5 Y:1 Z:-4]
+[Builder puts down a yellow block at X:4 Y:1 Z:-5]
+[Builder puts down a yellow block at X:5 Y:1 Z:-5]
+[Builder puts down a yellow block at X:5 Y:2 Z:-5]
+<Architect> green
+[Builder puts down a green block at X:4 Y:1 Z:5]
+[Builder puts down a green block at X:5 Y:1 Z:4]
+[Builder puts down a green block at X:5 Y:1 Z:5]
+[Builder puts down a green block at X:6 Y:1 Z:5]
+[Builder picks up a green block at X:6 Y:2 Z:5]
+[Builder picks up a green block at X:6 Y:1 Z:5]
+[Builder puts down a green block at X:5 Y:2 Z:5]
+<Architect> purple
+[Builder puts down a purple block at X:-5 Y:1 Z:5]
+[Builder puts down a purple block at X:-5 Y:1 Z:4]
+[Builder puts down a purple block at X:-4 Y:1 Z:5]
+[Builder puts down a purple block at X:-5 Y:2 Z:5]
+<Architect> awesome. that's the whole thing
+<Builder> cool

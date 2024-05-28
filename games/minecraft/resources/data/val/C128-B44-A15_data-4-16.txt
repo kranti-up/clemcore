@@ -1,0 +1,84 @@
+B44-A15-C128-1523894700099
+<Builder> Mission has started.
+<Builder> ready
+<Architect> okay, start with two green blocks next to each other near the center
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+<Architect> and put two more green blocks diagonally and away from each of those
+[Builder puts down a green block at X:1 Y:1 Z:-2]
+[Builder puts down a green block at X:-2 Y:1 Z:-2]
+[Builder picks up a green block at X:-2 Y:1 Z:-2]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+[Builder picks up a green block at X:1 Y:1 Z:-2]
+[Builder puts down a green block at X:2 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder picks up a green block at X:2 Y:1 Z:0]
+<Architect> perfect :)
+<Architect> put an orange block on top of the leftmost green one
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+<Architect> and make a frown using that orange block as the rightmost point
+<Architect> so the same shape as the green one, but mirrored
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:-2 Y:2 Z:1]
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+[Builder picks up a orange block at X:-2 Y:2 Z:1]
+<Architect> whoops, sorry
+<Architect> like that, but extending to your left
+[Builder picks up a orange block at X:0 Y:2 Z:1]
+[Builder picks up a orange block at X:-1 Y:2 Z:1]
+<Architect> so not above the green structure
+[Builder picks up a orange block at X:-2 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:1]
+[Builder puts down a orange block at X:3 Y:2 Z:1]
+[Builder picks up a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:4 Y:2 Z:1]
+[Builder puts down a orange block at X:4 Y:2 Z:0]
+[Builder picks up a orange block at X:4 Y:2 Z:1]
+<Architect> yep, perfect!
+<Architect> now, put a red block in a staircase next to the orange block, towards you
+<Architect> the leftmost orange block
+[Builder puts down a red block at X:4 Y:1 Z:-1]
+<Architect> sorry, upwards staircase, so two tiles above that
+[Builder puts down a red block at X:4 Y:2 Z:-1]
+[Builder puts down a red block at X:4 Y:3 Z:-1]
+[Builder picks up a red block at X:4 Y:2 Z:-1]
+[Builder picks up a red block at X:4 Y:1 Z:-1]
+<Architect> and extend that towards you to a row of 4 blocks total
+[Builder puts down a red block at X:4 Y:3 Z:-2]
+[Builder puts down a red block at X:4 Y:3 Z:-3]
+<Architect> stack another red block on top of both inner red ones
+[Builder puts down a red block at X:4 Y:4 Z:-2]
+[Builder puts down a red block at X:4 Y:4 Z:-3]
+<Architect> and remove the bottom two in the stacks
+[Builder picks up a red block at X:4 Y:3 Z:-3]
+[Builder picks up a red block at X:4 Y:3 Z:-2]
+<Architect> so it's another frown
+<Architect> yep! now, right where you're standing, place a yellow block on the ground
+[Builder puts down a yellow block at X:2 Y:1 Z:-5]
+<Architect> sorry, one space in front of that, so it's parallel to the last red one
+[Builder picks up a yellow block at X:2 Y:1 Z:-5]
+[Builder puts down a yellow block at X:2 Y:1 Z:-6]
+[Builder picks up a yellow block at X:2 Y:1 Z:-5]
+[Builder picks up a yellow block at X:2 Y:1 Z:-6]
+<Architect> sorry again :( it was right the first time
+[Builder puts down a yellow block at X:2 Y:1 Z:-5]
+[Builder picks up a yellow block at X:2 Y:1 Z:-4]
+<Architect> okay, another one to the right of it
+[Builder puts down a yellow block at X:1 Y:1 Z:-4]
+[Builder picks up a yellow block at X:1 Y:1 Z:-4]
+[Builder puts down a yellow block at X:1 Y:1 Z:-6]
+[Builder picks up a yellow block at X:1 Y:2 Z:-6]
+[Builder picks up a yellow block at X:1 Y:1 Z:-6]
+<Architect> and then make a vertical smile with two more yellow blocks
+[Builder puts down a yellow block at X:0 Y:1 Z:-5]
+[Builder puts down a yellow block at X:0 Y:2 Z:-5]
+[Builder picks up a yellow block at X:0 Y:2 Z:-5]
+[Builder puts down a yellow block at X:0 Y:2 Z:-5]
+[Builder picks up a yellow block at X:0 Y:1 Z:-5]
+[Builder puts down a yellow block at X:3 Y:1 Z:-5]
+[Builder puts down a yellow block at X:3 Y:2 Z:-5]
+[Builder picks up a yellow block at X:3 Y:1 Z:-5]
+<Architect> perfect! :)

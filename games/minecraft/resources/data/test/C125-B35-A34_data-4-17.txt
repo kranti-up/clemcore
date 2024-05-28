@@ -1,0 +1,93 @@
+B35-A34-C125-1524006909862
+<Builder> Mission has started.
+<Builder> THIS IS #4 RIGHT
+<Architect> idk
+<Architect> i think 5
+<Builder> ok
+<Architect> so this is going to be a speed round
+<Builder> okay
+<Architect> place one red block on the ground
+[Builder puts down a red block at X:-4 Y:1 Z:-2]
+[Builder picks up a red block at X:-4 Y:1 Z:-2]
+[Builder puts down a red block at X:-4 Y:1 Z:-2]
+[Builder picks up a red block at X:-4 Y:1 Z:-2]
+<Architect> then on top of that
+[Builder puts down a red block at X:-3 Y:2 Z:-2]
+<Architect> not red
+[Builder picks up a red block at X:-3 Y:2 Z:-2]
+<Architect> i will list off a sequence
+<Architect> follow that
+<Builder> ok
+<Architect> orange
+<Builder> its all vertical right
+<Architect> yellow
+[Builder puts down a orange block at X:-3 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-3 Y:3 Z:-2]
+<Architect> orange
+[Builder puts down a orange block at X:-3 Y:4 Z:-2]
+<Architect> orange
+[Builder puts down a orange block at X:-3 Y:5 Z:-2]
+<Architect> yellow
+[Builder puts down a yellow block at X:-3 Y:6 Z:-2]
+<Architect> red
+[Builder puts down a red block at X:-3 Y:7 Z:-2]
+<Architect> cool
+<Architect> now diagonally to that bottom red block, place another one
+[Builder puts down a red block at X:-2 Y:6 Z:-2]
+[Builder picks up a red block at X:-2 Y:6 Z:-2]
+[Builder puts down a red block at X:-2 Y:1 Z:-3]
+<Builder> here?
+<Architect> yeah
+<Architect> the sequence is
+<Architect> nothing
+<Architect> nothing
+<Architect> yellow
+[Builder puts down a orange block at X:-2 Y:2 Z:-3]
+[Builder puts down a orange block at X:-2 Y:3 Z:-3]
+<Architect> yellow
+[Builder puts down a yellow block at X:-2 Y:4 Z:-3]
+[Builder picks up a orange block at X:-2 Y:3 Z:-3]
+[Builder picks up a orange block at X:-2 Y:2 Z:-3]
+<Architect> nothing
+[Builder puts down a orange block at X:-2 Y:5 Z:-3]
+[Builder picks up a orange block at X:-2 Y:5 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:5 Z:-3]
+<Architect> red
+[Builder puts down a orange block at X:-2 Y:6 Z:-3]
+[Builder picks up a orange block at X:-2 Y:8 Z:-3]
+[Builder picks up a orange block at X:-2 Y:7 Z:-3]
+[Builder puts down a red block at X:-2 Y:7 Z:-3]
+[Builder picks up a orange block at X:-2 Y:6 Z:-3]
+<Builder> this
+<Architect> yeah
+<Architect> now do a reflection
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+<Architect> no
+[Builder picks up a red block at X:-2 Y:1 Z:-1]
+<Architect> yeah place the block going diagonally
+[Builder puts down a red block at X:-1 Y:1 Z:-4]
+<Architect> all 4 pillars are in a row diagonally
+[Builder puts down a red block at X:0 Y:1 Z:-5]
+<Architect> yeah that is correct
+<Builder> and now reflect
+<Architect> yeah
+[Builder puts down a orange block at X:0 Y:2 Z:-5]
+[Builder puts down a yellow block at X:0 Y:3 Z:-5]
+[Builder puts down a orange block at X:0 Y:4 Z:-5]
+[Builder puts down a orange block at X:0 Y:5 Z:-5]
+[Builder puts down a yellow block at X:0 Y:6 Z:-5]
+[Builder puts down a red block at X:0 Y:7 Z:-5]
+[Builder puts down a red block at X:0 Y:7 Z:-4]
+[Builder puts down a red block at X:0 Y:7 Z:-3]
+[Builder puts down a red block at X:-1 Y:7 Z:-4]
+[Builder picks up a red block at X:0 Y:7 Z:-3]
+[Builder picks up a red block at X:0 Y:7 Z:-4]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-4]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-4]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-4]
+[Builder puts down a yellow block at X:-1 Y:5 Z:-4]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-4]
+[Builder picks up a yellow block at X:-1 Y:2 Z:-4]
+<Builder> we done
+<Architect> gr8
+<Architect> mission complete

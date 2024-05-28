@@ -1,0 +1,161 @@
+B31-A36-C119-1524005147707
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hello
+<Builder> a new object?
+<Architect> nah it's the same
+<Architect> ok move 5 spaces to your right
+<Architect> ok this will be the reset position
+<Builder> got it
+<Architect> ok hold on
+<Builder> okie dokie
+<Architect> ok go to the 2nd column and move 2 spaces to the left
+<Architect> i mean row
+<Architect> sorry
+<Builder> here?
+<Architect> ya
+<Architect> now place a blue block directly underneath
+[Builder puts down a blue block at X:-2 Y:1 Z:4]
+<Architect> then move 2 spaces over to the right and put down a blue block
+[Builder puts down a blue block at X:0 Y:1 Z:4]
+<Architect> one more space over sorry
+[Builder puts down a blue block at X:1 Y:1 Z:4]
+[Builder picks up a blue block at X:0 Y:1 Z:4]
+<Architect> ok so we're going to make stairs going up
+<Architect> this is the bottom step
+<Builder> okay
+<Architect> it has 4 steps total
+<Builder> does each one touch the ground or are they floating
+<Architect> floating
+[Builder puts down a blue block at X:1 Y:1 Z:3]
+[Builder puts down a blue block at X:1 Y:2 Z:3]
+[Builder picks up a blue block at X:1 Y:1 Z:3]
+[Builder puts down a blue block at X:1 Y:3 Z:3]
+[Builder puts down a blue block at X:1 Y:3 Z:2]
+[Builder picks up a blue block at X:1 Y:3 Z:3]
+[Builder puts down a blue block at X:1 Y:4 Z:2]
+[Builder puts down a blue block at X:1 Y:4 Z:1]
+[Builder picks up a blue block at X:1 Y:4 Z:2]
+<Builder> like that for both?
+<Architect> ya
+[Builder puts down a blue block at X:-2 Y:2 Z:4]
+[Builder puts down a blue block at X:-2 Y:2 Z:3]
+[Builder picks up a blue block at X:-2 Y:2 Z:4]
+[Builder puts down a blue block at X:-2 Y:3 Z:3]
+[Builder puts down a blue block at X:-2 Y:3 Z:2]
+[Builder puts down a blue block at X:-2 Y:4 Z:2]
+[Builder puts down a blue block at X:-2 Y:4 Z:1]
+[Builder picks up a blue block at X:-2 Y:4 Z:2]
+[Builder picks up a blue block at X:-2 Y:3 Z:3]
+<Architect> good
+<Architect> conenct the two with 2 purple blocks
+[Builder puts down a purple block at X:-1 Y:1 Z:4]
+[Builder puts down a purple block at X:0 Y:1 Z:4]
+[Builder puts down a purple block at X:0 Y:2 Z:3]
+[Builder puts down a purple block at X:-1 Y:2 Z:3]
+[Builder puts down a purple block at X:-1 Y:4 Z:1]
+[Builder puts down a purple block at X:0 Y:4 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:2]
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+<Architect> oh only on the top step sorry
+<Builder> no worries
+[Builder picks up a purple block at X:0 Y:1 Z:4]
+[Builder picks up a purple block at X:-1 Y:1 Z:4]
+[Builder picks up a purple block at X:-1 Y:2 Z:3]
+[Builder picks up a purple block at X:0 Y:2 Z:3]
+[Builder picks up a purple block at X:0 Y:3 Z:2]
+[Builder picks up a purple block at X:-1 Y:3 Z:2]
+<Architect> ok now put 2 purple blocks behind the ones you just put down
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder picks up a purple block at X:0 Y:6 Z:-1]
+[Builder picks up a purple block at X:0 Y:5 Z:-1]
+[Builder picks up a purple block at X:0 Y:4 Z:0]
+[Builder picks up a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+<Builder> sorry, the program was glitching
+<Architect> its ok
+<Architect> then put a blue block on each side
+[Builder puts down a blue block at X:-2 Y:4 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+<Architect> then put a blue block on top of each one that you just put down
+[Builder puts down a blue block at X:1 Y:5 Z:0]
+[Builder puts down a blue block at X:-2 Y:5 Z:0]
+<Architect> ok going back to the purple blocks
+<Architect> put 2 purple blocks in front of each
+[Builder puts down a purple block at X:0 Y:4 Z:-1]
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+[Builder puts down a purple block at X:-1 Y:4 Z:-2]
+<Architect> and then on the bottom blue layer, put 2 purple blocks in front of each
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+<Builder> there?
+<Architect> ya
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+<Architect> one more on each side
+[Builder puts down a purple block at X:-2 Y:4 Z:-2]
+[Builder puts down a purple block at X:1 Y:4 Z:-2]
+<Architect> ok good
+<Architect> going back to the blue blocks that are sticking up
+<Architect> put a green block on top of each
+[Builder puts down a green block at X:1 Y:6 Z:0]
+[Builder puts down a green block at X:-2 Y:6 Z:0]
+<Architect> then put a blue block in front of each
+[Builder puts down a blue block at X:1 Y:6 Z:-1]
+[Builder puts down a blue block at X:-2 Y:6 Z:-1]
+<Architect> ok put 2 green blocks behind each of the top green blocks
+[Builder puts down a green block at X:1 Y:6 Z:1]
+[Builder puts down a green block at X:1 Y:6 Z:2]
+[Builder puts down a green block at X:-2 Y:6 Z:1]
+[Builder puts down a green block at X:-2 Y:6 Z:2]
+<Architect> ok then connect the 2 blocks you just put down with 2 green blocks
+[Builder puts down a green block at X:0 Y:6 Z:2]
+[Builder puts down a green block at X:-1 Y:6 Z:2]
+<Architect> ok nice
+<Architect> i'll check to see if there's anything else
+<Builder> sweet
+<Architect> o yes there is
+<Architect> at the purple corners put 3 blue blocks down
+[Builder puts down a blue block at X:-2 Y:3 Z:-2]
+[Builder puts down a blue block at X:-2 Y:2 Z:-2]
+[Builder puts down a blue block at X:-2 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:2 Z:-2]
+[Builder puts down a blue block at X:1 Y:3 Z:-2]
+<Architect> ok let me check again
+<Architect> o ok wait sorry
+<Architect> do u see the 2 blue blocks sticking out in the middle layer
+<Architect> underneath those the blocks are supposed to be purple
+[Builder puts down a purple block at X:-2 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+<Builder> there?
+<Architect> ya but instead of placing the purple block underneath replace the blue block
+[Builder picks up a purple block at X:1 Y:3 Z:0]
+[Builder picks up a blue block at X:1 Y:4 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+[Builder picks up a blue block at X:1 Y:4 Z:0]
+[Builder puts down a purple block at X:1 Y:4 Z:0]
+[Builder picks up a purple block at X:-2 Y:3 Z:0]
+[Builder picks up a blue block at X:-2 Y:4 Z:0]
+[Builder puts down a blue block at X:-2 Y:4 Z:0]
+[Builder picks up a blue block at X:-2 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:4 Z:0]
+<Architect> ok let me check again
+<Architect> ok one last thing i think
+<Architect> sorry
+<Builder> no worries
+<Architect> u know how the green blocks stick out by 3?
+<Builder> yep
+<Architect> it's only supposed to be 2
+[Builder picks up a green block at X:-2 Y:6 Z:2]
+[Builder picks up a green block at X:1 Y:6 Z:2]
+[Builder picks up a green block at X:0 Y:6 Z:2]
+[Builder picks up a green block at X:-1 Y:6 Z:2]
+[Builder puts down a green block at X:0 Y:6 Z:1]
+[Builder puts down a green block at X:-1 Y:6 Z:1]
+<Builder> like that?
+<Architect> ya
+<Architect> ok i think that's it
+<Architect> ok ya it's good
+<Builder> nice

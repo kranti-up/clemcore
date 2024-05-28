@@ -1,0 +1,21 @@
+B35-A55-C3-1524256220437
+<Builder> Mission has started.
+<Builder> hi
+<Architect> hello
+<Architect> Ready to start?
+<Builder> yup
+<Architect> Okay so i want you to go to a corner of the grid
+<Architect> place a blue block three spaces up and three spaces into the grid
+[Builder puts down a blue block at X:3 Y:1 Z:-3]
+<Builder> here?
+<Architect> yes
+<Architect> now place another blue block on top of this one
+[Builder puts down a blue block at X:2 Y:1 Z:-3]
+[Builder puts down a blue block at X:3 Y:2 Z:-3]
+[Builder picks up a blue block at X:2 Y:1 Z:-3]
+<Architect> place a blue block to the right of the bottom block
+[Builder puts down a blue block at X:4 Y:1 Z:-2]
+[Builder picks up a blue block at X:4 Y:1 Z:-2]
+[Builder puts down a blue block at X:3 Y:1 Z:-2]
+<Architect> from your current orientation
+<Architect> good

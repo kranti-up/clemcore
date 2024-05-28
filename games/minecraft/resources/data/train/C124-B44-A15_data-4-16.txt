@@ -1,0 +1,98 @@
+B44-A15-C124-1523894018669
+<Builder> Mission has started.
+<Builder> ready
+<Architect> okay, this one may take a bit. start by making a row of 4 yellow blocks on the ground, starting in the very center
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+<Builder> which direction do youw ant the row
+<Architect> and from the centermost yellow block, make another row of 4 perpendicular
+<Architect> any direction! it will ultimately be an L shape parallel to the ground
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+[Builder puts down a yellow block at X:0 Y:1 Z:-2]
+[Builder puts down a yellow block at X:0 Y:1 Z:-3]
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+[Builder puts down a yellow block at X:3 Y:1 Z:0]
+[Builder puts down a yellow block at X:4 Y:1 Z:0]
+[Builder picks up a yellow block at X:4 Y:1 Z:0]
+<Architect> and connect the endmost yellow blocks to make a triangle
+[Builder puts down a yellow block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:1 Y:1 Z:-3]
+<Architect> sorry, one more space inwards
+[Builder picks up a yellow block at X:1 Y:1 Z:-3]
+[Builder picks up a yellow block at X:2 Y:1 Z:-2]
+[Builder picks up a yellow block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:1 Y:1 Z:-2]
+<Architect> perfect! now, stack another layer of yellow blocks on top of that, then remove the bottom layer
+[Builder puts down a yellow block at X:3 Y:2 Z:0]
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:-3]
+[Builder puts down a yellow block at X:0 Y:2 Z:-2]
+<Architect> so it's the same structure, but one tile off the ground
+[Builder puts down a yellow block at X:1 Y:2 Z:-2]
+[Builder picks up a yellow block at X:2 Y:1 Z:-1]
+[Builder picks up a yellow block at X:2 Y:1 Z:0]
+[Builder picks up a yellow block at X:3 Y:1 Z:0]
+[Builder picks up a yellow block at X:1 Y:1 Z:0]
+[Builder picks up a yellow block at X:0 Y:1 Z:-3]
+[Builder picks up a yellow block at X:0 Y:1 Z:-2]
+[Builder picks up a yellow block at X:0 Y:1 Z:-1]
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+<Architect> okay, now, using the innermost corner of the triangle, make a 2x2 square of red blocks
+<Architect> but leave the yellow corner as is
+<Architect> whoops, sorry
+<Architect> okay, move to the corner of the L
+<Architect> and place a red block on both remaining sides of the corner
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+<Architect> yeah like that. sorry, didn't know how to phrase it
+<Architect> and connect those blocks with one more red block
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+<Architect> okay, now, hop off the structure to your righthand side
+<Architect> and extend the closest row of red blocks to you to a row of 5 red blocks
+<Architect> to the right
+[Builder puts down a red block at X:-1 Y:2 Z:2]
+[Builder puts down a red block at X:-1 Y:2 Z:3]
+[Builder puts down a red block at X:-1 Y:2 Z:4]
+<Architect> perfect! now, put another red block in front of the 2nd rightmost one, so the red structure is symmetrical
+[Builder puts down a red block at X:-2 Y:2 Z:3]
+<Architect> other side, sorry
+[Builder picks up a red block at X:-2 Y:2 Z:3]
+[Builder puts down a red block at X:0 Y:2 Z:3]
+<Architect> and one more red block to make a triangle
+[Builder puts down a red block at X:0 Y:2 Z:2]
+[Builder puts down a red block at X:1 Y:2 Z:2]
+[Builder picks up a red block at X:0 Y:2 Z:2]
+<Architect> great!
+<Architect> now, place a blue block under that last red one
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+<Architect> and directly to the left and to the right of that last red one, place another blue block
+[Builder puts down a blue block at X:0 Y:2 Z:2]
+[Builder puts down a blue block at X:2 Y:2 Z:2]
+<Architect> yep!
+<Architect> and then a row of 5 blue blocks on top of those two, to make another triangle
+[Builder puts down a blue block at X:-1 Y:3 Z:2]
+[Builder puts down a blue block at X:0 Y:3 Z:2]
+[Builder puts down a blue block at X:1 Y:3 Z:2]
+[Builder puts down a blue block at X:2 Y:3 Z:2]
+[Builder puts down a blue block at X:3 Y:3 Z:2]
+<Architect> whoops, hold on
+<Architect> okay, make a row of 7 red blocks next to the current row of 5, so it's a bigger triangle
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:-1]
+[Builder puts down a red block at X:-2 Y:2 Z:1]
+[Builder puts down a red block at X:-2 Y:2 Z:2]
+[Builder puts down a red block at X:-2 Y:2 Z:3]
+[Builder puts down a red block at X:-2 Y:2 Z:4]
+[Builder puts down a red block at X:-2 Y:2 Z:5]
+<Architect> and remove the innermost three red blocks on the row of 5, so it's hollow
+[Builder picks up a red block at X:-1 Y:2 Z:1]
+[Builder picks up a red block at X:-1 Y:2 Z:2]
+[Builder picks up a red block at X:-1 Y:2 Z:3]
+<Architect> alright, perfect! my bad
+<Architect> looks good now :)
+<Builder> nice

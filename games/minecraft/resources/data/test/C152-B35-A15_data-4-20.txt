@@ -1,0 +1,152 @@
+B35-A15-C152-1524246905435
+<Builder> Mission has started.
+<Architect> okay, another hard one
+<Architect> start with a stack of 4 orange blocks in the center
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+<Builder> ok
+<Architect> alright, now, put another orange block next to the top one, and next to the second one from the bottom
+<Architect> they should both be coming out of the same side
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+<Builder> ok
+<Architect> okay, now, you want another orange block between the two you just put down, but one space towards you
+<Architect> so there's a little hole
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder picks up a orange block at X:2 Y:2 Z:0]
+<Builder> okay
+<Architect> okay, now, you're gonna want a 3x3 square of purple blocks, parallel to the ground, and centered on top of the stack of orange blocks
+<Builder> so is the top of the stack the center of the 3x3 or is it floating above it?
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+<Architect> it's above it. start by putting a single purple block on top of the stack
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:2 Y:5 Z:-1]
+<Architect> and then build a square around it, like that, yeah!
+[Builder puts down a purple block at X:2 Y:5 Z:0]
+[Builder puts down a purple block at X:2 Y:5 Z:1]
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:5 Z:1]
+[Builder puts down a purple block at X:0 Y:5 Z:2]
+[Builder picks up a purple block at X:0 Y:5 Z:2]
+[Builder picks up a purple block at X:0 Y:5 Z:1]
+[Builder picks up a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:-1]
+[Builder puts down a purple block at X:-2 Y:5 Z:-1]
+[Builder puts down a purple block at X:-2 Y:5 Z:0]
+[Builder puts down a purple block at X:-2 Y:5 Z:1]
+<Builder> wait did I make a 5x5 on accident
+<Architect> sorry, that square is centerd right, but it's too big
+[Builder picks up a purple block at X:-2 Y:5 Z:0]
+[Builder picks up a purple block at X:-2 Y:5 Z:-1]
+[Builder picks up a purple block at X:-1 Y:5 Z:-1]
+[Builder picks up a purple block at X:0 Y:5 Z:-1]
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+<Architect> yeah lol
+[Builder picks up a purple block at X:1 Y:5 Z:-1]
+[Builder picks up a purple block at X:2 Y:5 Z:0]
+[Builder picks up a purple block at X:2 Y:5 Z:-1]
+[Builder picks up a purple block at X:2 Y:5 Z:1]
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+<Builder> so the block I just place down is the left edge
+[Builder puts down a purple block at X:1 Y:5 Z:1]
+[Builder puts down a purple block at X:1 Y:5 Z:-1]
+<Architect> yes :)
+[Builder puts down a purple block at X:2 Y:5 Z:-1]
+[Builder puts down a purple block at X:3 Y:5 Z:-1]
+[Builder puts down a purple block at X:3 Y:5 Z:0]
+[Builder puts down a purple block at X:3 Y:5 Z:1]
+[Builder puts down a purple block at X:2 Y:5 Z:1]
+<Builder> okay there we go
+<Architect> sory, that should be mirrored, so the hole is above the stack of 4 orange blocks
+<Architect> my bad :(
+[Builder puts down a purple block at X:0 Y:5 Z:1]
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+[Builder picks up a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder puts down a purple block at X:-1 Y:5 Z:-1]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:1]
+[Builder picks up a purple block at X:2 Y:5 Z:1]
+[Builder picks up a purple block at X:3 Y:5 Z:1]
+[Builder picks up a purple block at X:3 Y:5 Z:0]
+[Builder picks up a purple block at X:3 Y:5 Z:-1]
+[Builder picks up a purple block at X:2 Y:5 Z:-1]
+<Builder> there we go and no worries
+<Architect> alright, make a stack of 3 purple blocks in the center of the hole
+[Builder puts down a purple block at X:1 Y:6 Z:0]
+[Builder puts down a purple block at X:0 Y:6 Z:0]
+[Builder picks up a purple block at X:1 Y:6 Z:0]
+[Builder puts down a purple block at X:0 Y:7 Z:0]
+[Builder puts down a purple block at X:0 Y:8 Z:0]
+<Builder> this?
+<Architect> yep! :)
+<Builder> cool
+<Architect> now two purple blocks on either side of the top one, parallel to the orange blocks
+[Builder puts down a purple block at X:-1 Y:8 Z:0]
+[Builder puts down a purple block at X:-2 Y:8 Z:0]
+<Builder> like that?
+<Architect> that second block should be on the other side of the purple one, like a "T" shape
+[Builder puts down a purple block at X:0 Y:8 Z:1]
+[Builder picks up a purple block at X:0 Y:8 Z:1]
+[Builder puts down a purple block at X:1 Y:8 Z:0]
+[Builder picks up a purple block at X:-2 Y:8 Z:0]
+<Builder> gotcha
+<Architect> cool! now a yellow block on top of the middle of the purple row
+[Builder puts down a yellow block at X:0 Y:9 Z:0]
+<Architect> okay, now, an orange block one tile above and to the left of the orange one
+<Architect> and another orange one below and to the left of that
+[Builder puts down a orange block at X:-2 Y:9 Z:0]
+<Builder> this?
+<Architect> yep! :)
+<Architect> okay, put an orange block extending from the right edge of the purple row of blocks
+[Builder puts down a orange block at X:2 Y:8 Z:0]
+<Architect> and another orange block behind that
+<Architect> so on the side you can't see from there
+[Builder picks up a orange block at X:2 Y:8 Z:0]
+[Builder puts down a orange block at X:-1 Y:8 Z:-1]
+<Architect> sorry, the first one was good where you had it
+[Builder puts down a orange block at X:1 Y:8 Z:1]
+<Architect> sorry, we need to rebuilt part of this :(
+[Builder picks up a orange block at X:-1 Y:8 Z:-1]
+<Builder> okay. Tell me where to delete
+<Architect> take off all of the non-purple blocks on top
+[Builder picks up a orange block at X:1 Y:8 Z:1]
+[Builder picks up a orange block at X:-2 Y:9 Z:0]
+[Builder picks up a yellow block at X:0 Y:9 Z:0]
+<Architect> okay, now, the purple "T" should be one tile shorter
+<Architect> so delete the second block from the top
+<Architect> and move the row of 3 down one tile
+[Builder picks up a purple block at X:0 Y:8 Z:0]
+[Builder picks up a purple block at X:-1 Y:8 Z:0]
+[Builder picks up a purple block at X:1 Y:8 Z:0]
+[Builder puts down a purple block at X:1 Y:7 Z:0]
+[Builder puts down a purple block at X:-1 Y:7 Z:0]
+<Architect> okay, now, yellow block on top of the middle of the "T"
+[Builder puts down a yellow block at X:0 Y:8 Z:0]
+<Architect> orange block above and left of that
+<Architect> another orange below and left of that
+[Builder puts down a orange block at X:0 Y:9 Z:0]
+[Builder puts down a orange block at X:-1 Y:9 Z:0]
+[Builder picks up a orange block at X:-2 Y:9 Z:1]
+[Builder picks up a orange block at X:-1 Y:9 Z:1]
+[Builder picks up a orange block at X:0 Y:9 Z:0]
+[Builder puts down a orange block at X:-2 Y:9 Z:0]
+[Builder puts down a orange block at X:-2 Y:8 Z:0]
+[Builder picks up a orange block at X:-2 Y:9 Z:0]
+<Architect> okay, now, move to the other side of the structure
+<Builder> okay
+<Architect> okay, extending from the top left purple block towards you, build two orange blocks
+[Builder puts down a orange block at X:1 Y:7 Z:-1]
+[Builder puts down a orange block at X:1 Y:7 Z:-2]
+<Architect> and another orange block to the left of the middle one you just put down
+[Builder puts down a orange block at X:2 Y:7 Z:-2]
+[Builder picks up a orange block at X:2 Y:7 Z:-2]
+[Builder puts down a orange block at X:2 Y:7 Z:-1]
+<Architect> and delete the block that one is touching
+[Builder picks up a orange block at X:1 Y:7 Z:-1]
+<Architect> i think we're good :)
+<Builder> bett

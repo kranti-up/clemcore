@@ -1,0 +1,124 @@
+B35-A55-C1-1524259025186
+<Builder> Mission has started.
+<Architect> okay start with green
+<Builder> ok
+<Architect> place a green vertical line 8 blocks tall on any edge
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:4 Z:0]
+[Builder puts down a green block at X:0 Y:5 Z:0]
+[Builder puts down a green block at X:0 Y:6 Z:-1]
+[Builder picks up a green block at X:0 Y:7 Z:-1]
+[Builder picks up a green block at X:0 Y:6 Z:-1]
+[Builder puts down a green block at X:0 Y:7 Z:0]
+[Builder puts down a green block at X:0 Y:8 Z:0]
+<Architect> you gotta start on the edge of the grid
+[Builder puts down a green block at X:5 Y:1 Z:0]
+[Builder puts down a green block at X:5 Y:2 Z:0]
+[Builder puts down a green block at X:5 Y:3 Z:0]
+[Builder puts down a green block at X:5 Y:4 Z:0]
+[Builder puts down a green block at X:5 Y:5 Z:0]
+[Builder puts down a green block at X:5 Y:6 Z:0]
+[Builder puts down a green block at X:5 Y:7 Z:0]
+[Builder puts down a green block at X:5 Y:8 Z:0]
+[Builder picks up a green block at X:0 Y:8 Z:0]
+[Builder picks up a green block at X:0 Y:7 Z:0]
+[Builder picks up a green block at X:0 Y:4 Z:0]
+[Builder picks up a green block at X:0 Y:2 Z:0]
+[Builder picks up a green block at X:0 Y:1 Z:0]
+[Builder picks up a green block at X:0 Y:5 Z:0]
+[Builder picks up a green block at X:0 Y:6 Z:0]
+[Builder picks up a green block at X:0 Y:3 Z:0]
+<Builder> whoops didn't see that
+<Architect> place a purple horizontal line starting on top of the green 9 blocks long
+<Architect> so go towards the other edge
+[Builder puts down a green block at X:4 Y:8 Z:0]
+[Builder puts down a green block at X:3 Y:8 Z:0]
+[Builder puts down a green block at X:2 Y:8 Z:0]
+[Builder puts down a green block at X:1 Y:9 Z:0]
+[Builder picks up a green block at X:1 Y:9 Z:0]
+[Builder picks up a green block at X:2 Y:9 Z:0]
+[Builder puts down a green block at X:1 Y:8 Z:0]
+[Builder puts down a green block at X:0 Y:8 Z:0]
+[Builder puts down a green block at X:-1 Y:8 Z:0]
+[Builder puts down a green block at X:-2 Y:8 Z:0]
+[Builder puts down a green block at X:-3 Y:8 Z:0]
+<Architect> purple
+<Builder> lol sorry
+[Builder picks up a green block at X:-3 Y:8 Z:0]
+[Builder picks up a green block at X:-2 Y:8 Z:0]
+[Builder picks up a green block at X:-1 Y:8 Z:0]
+[Builder picks up a green block at X:0 Y:8 Z:0]
+[Builder picks up a green block at X:1 Y:8 Z:0]
+[Builder picks up a green block at X:2 Y:8 Z:0]
+[Builder picks up a green block at X:3 Y:8 Z:0]
+[Builder picks up a green block at X:4 Y:8 Z:0]
+<Architect> and it has to be on TOP of the green line
+[Builder puts down a green block at X:3 Y:8 Z:0]
+[Builder picks up a green block at X:3 Y:8 Z:0]
+[Builder picks up a green block at X:3 Y:8 Z:1]
+[Builder picks up a green block at X:4 Y:8 Z:0]
+[Builder puts down a purple block at X:5 Y:9 Z:0]
+[Builder puts down a purple block at X:4 Y:9 Z:0]
+[Builder puts down a purple block at X:3 Y:9 Z:0]
+[Builder puts down a purple block at X:2 Y:9 Z:0]
+[Builder puts down a purple block at X:1 Y:9 Z:0]
+[Builder puts down a purple block at X:0 Y:9 Z:0]
+[Builder puts down a purple block at X:-1 Y:9 Z:0]
+[Builder puts down a purple block at X:-2 Y:9 Z:0]
+[Builder puts down a purple block at X:-3 Y:9 Z:0]
+<Architect> good
+<Architect> now make a red vertical line starting from below the other end of the purple and going to the ground
+[Builder puts down a red block at X:-3 Y:8 Z:0]
+[Builder puts down a red block at X:-3 Y:7 Z:0]
+[Builder puts down a red block at X:-3 Y:6 Z:0]
+[Builder puts down a red block at X:-3 Y:5 Z:0]
+[Builder puts down a red block at X:-3 Y:4 Z:0]
+[Builder puts down a red block at X:-3 Y:3 Z:0]
+[Builder puts down a red block at X:-3 Y:2 Z:0]
+[Builder puts down a red block at X:-3 Y:1 Z:0]
+<Architect> good
+<Architect> make an orange vertical line 4 blocks long starting from below the middle of the purple line
+[Builder puts down a orange block at X:1 Y:8 Z:0]
+[Builder puts down a orange block at X:1 Y:7 Z:0]
+[Builder puts down a orange block at X:1 Y:6 Z:0]
+[Builder puts down a orange block at X:1 Y:5 Z:0]
+<Architect> extend that orange two spaces towards the red and two towards the green
+<Architect> in a horizontal line
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:-1 Y:5 Z:0]
+[Builder puts down a orange block at X:2 Y:5 Z:0]
+[Builder puts down a orange block at X:3 Y:5 Z:0]
+<Builder> this not right?
+<Architect> no its good
+<Builder> okay
+<Architect> place two vertical blocks on either side of the current vertical orange line
+<Architect> so on top of the 2nd and 4th blocks of the horizontal line
+[Builder puts down a orange block at X:2 Y:8 Z:0]
+[Builder puts down a orange block at X:1 Y:6 Z:-1]
+[Builder picks up a orange block at X:1 Y:6 Z:-1]
+[Builder puts down a orange block at X:3 Y:8 Z:0]
+[Builder puts down a orange block at X:0 Y:8 Z:0]
+[Builder puts down a orange block at X:-1 Y:8 Z:0]
+<Builder> wrong?
+<Architect> yes
+[Builder picks up a orange block at X:0 Y:8 Z:0]
+[Builder picks up a orange block at X:-1 Y:8 Z:0]
+[Builder picks up a orange block at X:2 Y:8 Z:0]
+[Builder picks up a orange block at X:3 Y:8 Z:0]
+[Builder puts down a orange block at X:2 Y:8 Z:0]
+[Builder puts down a orange block at X:2 Y:7 Z:0]
+[Builder puts down a orange block at X:0 Y:8 Z:0]
+[Builder puts down a orange block at X:0 Y:7 Z:0]
+<Architect> shift those 1 block down
+<Builder> iok
+[Builder puts down a orange block at X:2 Y:6 Z:0]
+[Builder picks up a orange block at X:2 Y:8 Z:0]
+[Builder picks up a orange block at X:0 Y:8 Z:0]
+[Builder puts down a orange block at X:0 Y:6 Z:0]
+<Builder> ok
+<Architect> place one yellow block below the middle of the bottom of the orange
+<Architect> so it will look like a bell
+[Builder puts down a yellow block at X:1 Y:4 Z:0]
+<Builder> oooO

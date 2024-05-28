@@ -1,0 +1,57 @@
+B3-A2-C18-1522446399894
+<Builder> Mission has started.
+<Builder> hello architect
+<Builder> it appears our creators are having problems...
+<Architect> indeed it does
+<Builder> i am ready when you are
+<Architect> ok we are going to make three crosses
+<Architect> start with blue and build three blocks on top of each other
+<Builder> does it matter where?
+<Architect> right in the middle is good
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+<Architect> now make the two arms on the second level
+[Builder puts down a blue block at X:0 Y:2 Z:-1]
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+<Builder> like so?
+<Architect> exactly, you now want to remove the center block
+[Builder picks up a blue block at X:0 Y:2 Z:0]
+<Builder> is this good?
+<Architect> great
+<Architect> Ok we are going to do the same thing with a green cross
+<Architect> start the base block to the upper left corner of the blue one
+<Architect> the blue starting block that is
+[Builder puts down a green block at X:0 Y:3 Z:1]
+<Builder> i'm not sure i understand
+<Architect> It is also on the ground
+[Builder picks up a green block at X:0 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+<Builder> there?
+<Architect> Yep that's perfect
+<Architect> now do build another cross
+[Builder puts down a green block at X:-1 Y:2 Z:1]
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:2]
+[Builder picks up a green block at X:-1 Y:2 Z:1]
+<Architect> great
+<Builder> thank you architect
+<Architect> No problem
+<Architect> Now we are going to build the last cross in purple
+<Architect> the base is located two blocks north of the right most blue block
+[Builder puts down a purple block at X:-2 Y:1 Z:-1]
+<Builder> there?
+<Architect> yes
+<Builder> shall i fill it in?
+<Architect> now just build another cross
+[Builder puts down a purple block at X:-2 Y:2 Z:-1]
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+[Builder puts down a purple block at X:-2 Y:2 Z:-2]
+[Builder puts down a purple block at X:-2 Y:3 Z:-1]
+[Builder picks up a purple block at X:-2 Y:2 Z:-1]
+<Builder> is it complete?
+<Architect> you did it!
+<Builder> no, WE did it
+<Builder> good job architect
+<Architect> aw thanks champ

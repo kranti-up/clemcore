@@ -1,0 +1,80 @@
+B27-A1-C125-1524163043611
+<Builder> Mission has started.
+<Architect> place four red blocks at the corner of a 4x4
+<Architect> flat on the ground
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-2 Y:1 Z:-2]
+<Architect> just the corners of the 4x4 no edges
+<Builder> got it
+[Builder picks up a red block at X:0 Y:1 Z:-2]
+[Builder picks up a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder puts down a red block at X:-2 Y:1 Z:1]
+<Architect> great
+<Architect> okay now delete two red blocks so that only two diagonally opposite red blocks remain
+[Builder picks up a red block at X:1 Y:1 Z:-2]
+[Builder picks up a red block at X:-2 Y:1 Z:1]
+<Architect> good
+<Architect> actually it might be easier if you deleted those ones instead of the other ones...
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+[Builder puts down a red block at X:-2 Y:1 Z:1]
+[Builder picks up a red block at X:-2 Y:1 Z:-2]
+[Builder picks up a red block at X:1 Y:1 Z:1]
+<Architect> thanks
+<Architect> now add two more blocks on the ground to connect these two blocks
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> okay on the middle blocks place two yellow blocks making two towers
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+<Architect> okay now place two more yellows and then delete these first four yellow blocks
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:0]
+[Builder picks up a yellow block at X:0 Y:3 Z:-1]
+[Builder picks up a yellow block at X:0 Y:2 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:0]
+[Builder picks up a yellow block at X:-1 Y:2 Z:0]
+<Architect> okay put two more yellow on top of these yellows
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:5 Z:0]
+<Architect> okay on to the edges
+<Builder> it looks like a face
+<Architect> right now yes. but the whole thing doesn't
+<Architect> place one orange block at each edge of the red
+<Architect> sorry ontop
+[Builder puts down a orange block at X:1 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder picks up a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:-2 Y:2 Z:1]
+<Architect> just two orange.. can you delete the middle ones?
+[Builder picks up a orange block at X:0 Y:2 Z:-1]
+[Builder picks up a orange block at X:-1 Y:2 Z:0]
+<Architect> now add one yellow to each of these orange blocks
+[Builder puts down a yellow block at X:1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:3 Z:1]
+<Architect> now add two oranges
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+[Builder puts down a orange block at X:1 Y:5 Z:-2]
+[Builder puts down a orange block at X:-2 Y:4 Z:1]
+[Builder puts down a orange block at X:-2 Y:5 Z:1]
+<Architect> add one yellow now
+[Builder puts down a yellow block at X:1 Y:6 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:6 Z:1]
+<Architect> now kinda like the bottom we want to make the top red
+[Builder puts down a red block at X:1 Y:7 Z:-2]
+[Builder puts down a red block at X:0 Y:6 Z:-1]
+[Builder puts down a red block at X:0 Y:7 Z:-1]
+[Builder puts down a red block at X:-1 Y:6 Z:0]
+[Builder puts down a red block at X:-2 Y:7 Z:1]
+[Builder puts down a red block at X:-1 Y:7 Z:0]
+[Builder picks up a red block at X:0 Y:6 Z:-1]
+[Builder picks up a red block at X:-1 Y:6 Z:0]
+<Architect> yeah thats it

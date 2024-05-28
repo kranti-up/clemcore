@@ -1,0 +1,95 @@
+B1-A4-C36-1522772574085
+<Builder> Mission has started.
+<Builder> hello
+<Architect> this is a demented playground
+<Builder> okay
+<Architect> start with green
+<Architect> close to one of the edges of the building surface
+<Architect> it's a tower 6 tall
+[Builder puts down a green block at X:-2 Y:1 Z:-5]
+[Builder puts down a green block at X:-2 Y:2 Z:-5]
+[Builder puts down a green block at X:-2 Y:3 Z:-5]
+[Builder puts down a green block at X:-2 Y:4 Z:-5]
+[Builder puts down a green block at X:-2 Y:5 Z:-5]
+[Builder puts down a green block at X:-2 Y:6 Z:-5]
+<Builder> is here fine?
+<Architect> yeah that's fine; now two blocks in towards the center
+<Architect> at the top of hte tower
+<Builder> ok
+[Builder puts down a green block at X:-1 Y:6 Z:-5]
+[Builder puts down a green block at X:0 Y:6 Z:-5]
+<Architect> towards the center of the build surface
+<Builder> i see
+[Builder picks up a green block at X:0 Y:6 Z:-5]
+[Builder picks up a green block at X:-1 Y:6 Z:-5]
+<Architect> rotate the top 90 degrees
+[Builder puts down a green block at X:-2 Y:6 Z:-4]
+[Builder puts down a green block at X:-2 Y:6 Z:-3]
+<Architect> good
+<Architect> now yellow
+<Architect> this is a2x3 rectangle hanging from that outcrop
+<Architect> build 2 yellow blocks down from the tip
+[Builder puts down a yellow block at X:-2 Y:5 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:4 Z:-3]
+<Architect> good
+<Builder> here?
+<Architect> now fill in two blocks on either side of hte yellows
+[Builder puts down a yellow block at X:-1 Y:5 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-3]
+[Builder puts down a yellow block at X:-3 Y:5 Z:-3]
+[Builder puts down a yellow block at X:-3 Y:4 Z:-3]
+<Architect> great
+<Architect> switch to blue
+<Architect> you're building another tower
+<Architect> i need to figure out how far
+<Builder> okay
+<Architect> 2 blocks right and 6 blocks down from the base of the green tower
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+<Builder> here?
+<Architect> yep
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+<Architect> 8 tall
+<Builder> the same looking tower thing?
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+[Builder puts down a blue block at X:0 Y:5 Z:0]
+[Builder puts down a blue block at X:0 Y:6 Z:0]
+[Builder puts down a blue block at X:0 Y:7 Z:0]
+[Builder puts down a blue block at X:0 Y:8 Z:0]
+<Architect> now an overhang three long
+[Builder puts down a blue block at X:0 Y:8 Z:1]
+[Builder puts down a blue block at X:0 Y:8 Z:2]
+[Builder puts down a blue block at X:0 Y:8 Z:3]
+<Builder> here?
+<Architect> rotate 90 degrees toward the green tower
+[Builder picks up a blue block at X:0 Y:8 Z:3]
+[Builder picks up a blue block at X:0 Y:8 Z:2]
+[Builder picks up a blue block at X:0 Y:8 Z:1]
+[Builder puts down a blue block at X:0 Y:8 Z:-1]
+[Builder puts down a blue block at X:0 Y:8 Z:-2]
+[Builder puts down a blue block at X:0 Y:8 Z:-3]
+<Architect> that's 180 degrees
+[Builder picks up a blue block at X:0 Y:8 Z:-3]
+[Builder picks up a blue block at X:0 Y:8 Z:-2]
+[Builder picks up a blue block at X:0 Y:8 Z:-1]
+[Builder puts down a blue block at X:-1 Y:8 Z:0]
+[Builder puts down a blue block at X:-2 Y:8 Z:0]
+[Builder puts down a blue block at X:-3 Y:8 Z:0]
+<Builder> is this good?
+<Architect> sorry delete one. total length is three
+<Builder> ok
+[Builder picks up a blue block at X:-3 Y:8 Z:0]
+<Architect> now build one block below the tip
+<Builder> still blue?
+<Architect> yes
+[Builder puts down a blue block at X:-2 Y:7 Z:0]
+<Architect> now switch to yellow
+<Architect> make the same structure
+[Builder puts down a yellow block at X:-2 Y:6 Z:0]
+[Builder puts down a yellow block at X:-2 Y:5 Z:0]
+[Builder puts down a yellow block at X:-2 Y:6 Z:1]
+[Builder puts down a yellow block at X:-2 Y:5 Z:1]
+[Builder puts down a yellow block at X:-2 Y:6 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:5 Z:-1]
+<Architect> great
+<Builder> cool

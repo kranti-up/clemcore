@@ -1,0 +1,84 @@
+B34-A31-C112-1523652785313
+<Builder> Mission has started.
+<Architect> This is abstract and very colorful
+<Architect> We will start with blue
+<Builder> great
+<Architect> Go to one of the edges of the white base
+<Architect> One block from the edge, place a blue block near the middle
+[Builder puts down a blue block at X:4 Y:1 Z:0]
+<Architect> Nice, now one more blue block on the backside of that
+[Builder puts down a blue block at X:3 Y:1 Z:0]
+<Architect> And then two more blue blocks on top of the back-most blue block
+[Builder puts down a blue block at X:3 Y:2 Z:0]
+[Builder puts down a blue block at X:3 Y:3 Z:0]
+<Architect> Yes, now we will use green
+<Architect> On the left side of the top-most blue block, place two green blockws
+[Builder puts down a green block at X:3 Y:3 Z:1]
+[Builder puts down a green block at X:3 Y:3 Z:2]
+<Builder> in a row like that?
+<Architect> Yep, like that
+<Architect> Now use green blocks to connect it to the ground. You should only need 2 green blocks to do that
+[Builder puts down a green block at X:3 Y:1 Z:2]
+[Builder puts down a green block at X:3 Y:2 Z:2]
+<Builder> this is funky
+<Architect> Lol, now move so the green portion is in front of the blue
+<Architect> On the ground, place two green blocks moving to the left of the bottom green block
+[Builder puts down a green block at X:2 Y:1 Z:2]
+[Builder puts down a green block at X:1 Y:1 Z:2]
+<Builder> um
+<Architect> yeah, that's right
+<Architect> Now two green blocks moving backwards from the left-most green block
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+<Builder> snek
+<Architect> Great, now we will use yellow blocks
+<Architect> On top of the green block farthest away from you, stack two yellow blocks
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+<Architect> Now two yellow blocks coming toward you from the top yellow blocks
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:1 Y:3 Z:2]
+<Builder> is this like a spiral of sorts?
+<Architect> yes, exactly like a spiral
+<Architect> Two yellow blocks to the left of the last one you placed
+[Builder puts down a yellow block at X:0 Y:3 Z:2]
+[Builder puts down a yellow block at X:-1 Y:3 Z:2]
+<Architect> And one yellow block moving down from that
+[Builder puts down a yellow block at X:-1 Y:2 Z:2]
+<Architect> Nice, we will use orange now
+<Builder> alright
+<Builder> do I put one under the yellow?
+<Architect> Yes
+[Builder puts down a orange block at X:-1 Y:1 Z:2]
+<Architect> Then two behind it
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+<Architect> And two up
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+<Architect> One to the left
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+<Architect> Awesome, now we will use red
+[Builder puts down a red block at X:-3 Y:3 Z:0]
+[Builder puts down a red block at X:-3 Y:3 Z:1]
+[Builder picks up a red block at X:-3 Y:3 Z:1]
+<Architect> Two red blocks coming forward from that red one
+<Builder> two in front now
+[Builder puts down a red block at X:-3 Y:3 Z:1]
+[Builder puts down a red block at X:-3 Y:3 Z:2]
+<Builder> down?
+<Architect> Down
+[Builder puts down a red block at X:-3 Y:2 Z:1]
+[Builder picks up a red block at X:-3 Y:2 Z:1]
+[Builder puts down a red block at X:-3 Y:2 Z:2]
+<Architect> And back
+[Builder puts down a red block at X:-3 Y:1 Z:1]
+[Builder puts down a red block at X:-3 Y:1 Z:0]
+<Architect> Nicee
+<Architect> Let me just double check it
+<Builder> abstract art
+<Architect> good thing I double-checked, we need one more red block going left off the last one
+[Builder puts down a red block at X:-4 Y:1 Z:0]
+<Builder> I think we are good
+<Builder> though I dont really know
+<Architect> Looks good to me

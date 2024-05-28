@@ -1,0 +1,55 @@
+B16-A1-C96-1523659861119
+<Builder> Mission has started.
+<Architect> hello
+<Builder> hi again!
+<Architect> so we are building a symetric structure
+<Architect> lets start with a red block at some corner
+<Architect> any corner is fine
+[Builder puts down a red block at X:5 Y:1 Z:5]
+<Architect> place three more blocks each touching a face of the block you just placed
+[Builder puts down a red block at X:5 Y:1 Z:4]
+[Builder puts down a red block at X:5 Y:1 Z:3]
+[Builder picks up a red block at X:5 Y:1 Z:3]
+[Builder puts down a red block at X:4 Y:1 Z:5]
+[Builder puts down a red block at X:5 Y:2 Z:5]
+<Architect> yeah that good
+<Builder> cool
+<Architect> no on the opposite side place the same thing with green blocks
+<Architect> now*
+[Builder puts down a green block at X:-5 Y:1 Z:5]
+[Builder puts down a green block at X:-5 Y:1 Z:4]
+[Builder puts down a green block at X:-4 Y:1 Z:5]
+<Architect> diagonally opposite sorry
+[Builder puts down a green block at X:-5 Y:2 Z:5]
+[Builder picks up a green block at X:-5 Y:2 Z:5]
+[Builder picks up a green block at X:-4 Y:1 Z:5]
+[Builder picks up a green block at X:-5 Y:1 Z:4]
+[Builder picks up a green block at X:-5 Y:1 Z:5]
+[Builder puts down a green block at X:-5 Y:1 Z:5]
+[Builder puts down a green block at X:-5 Y:2 Z:5]
+[Builder puts down a green block at X:-5 Y:1 Z:4]
+[Builder puts down a green block at X:-4 Y:1 Z:5]
+<Architect> hmm.. can you place those blocks on the diagonally opposite corner of the red blocks?
+<Builder> oh, wwo, sorry!
+[Builder picks up a green block at X:-4 Y:1 Z:5]
+[Builder picks up a green block at X:-5 Y:1 Z:4]
+[Builder picks up a green block at X:-5 Y:1 Z:5]
+[Builder picks up a green block at X:-5 Y:2 Z:5]
+<Builder> here?
+<Architect> yeah in that corner
+[Builder puts down a green block at X:-5 Y:1 Z:-5]
+[Builder puts down a green block at X:-5 Y:2 Z:-5]
+[Builder puts down a green block at X:-4 Y:1 Z:-5]
+[Builder puts down a green block at X:-5 Y:1 Z:-4]
+<Architect> okay now where you had the green blocks before build the same thing but with yellow blocks
+[Builder puts down a yellow block at X:-5 Y:1 Z:5]
+[Builder puts down a yellow block at X:-5 Y:1 Z:4]
+[Builder puts down a yellow block at X:-5 Y:2 Z:5]
+[Builder puts down a yellow block at X:-4 Y:1 Z:5]
+<Architect> and finally the opposite side with purple
+[Builder puts down a purple block at X:5 Y:1 Z:-5]
+[Builder puts down a purple block at X:5 Y:1 Z:-4]
+[Builder puts down a purple block at X:5 Y:2 Z:-5]
+[Builder puts down a purple block at X:4 Y:1 Z:-5]
+<Architect> yes thats it :-)
+<Builder> great! is it that the end? if you, you can quit if you'd like

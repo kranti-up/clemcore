@@ -1,0 +1,98 @@
+B11-A7-C65-1522855189755
+<Builder> Mission has started.
+<Architect> okay so this one is a person like shape?
+<Builder> ok. one color?
+<Architect> put a green block close to one side of the square
+<Architect> no
+[Builder puts down a green block at X:4 Y:1 Z:0]
+<Builder> is this a hand?
+<Architect> diagonal upwards put another gree block
+<Builder> or head?
+[Builder puts down a green block at X:5 Y:1 Z:1]
+<Architect> it's a foot
+<Architect> up like 3-d up
+<Builder> ok. similar foot?
+[Builder puts down a green block at X:5 Y:1 Z:0]
+[Builder picks up a green block at X:5 Y:1 Z:0]
+[Builder picks up a green block at X:5 Y:1 Z:1]
+[Builder puts down a green block at X:3 Y:1 Z:-1]
+[Builder puts down a green block at X:4 Y:1 Z:-1]
+[Builder puts down a green block at X:4 Y:2 Z:-1]
+[Builder picks up a green block at X:4 Y:1 Z:-1]
+[Builder picks up a green block at X:3 Y:1 Z:-1]
+<Builder> like this?
+<Architect> liek that but build towards the center otherwise it won't all fit
+[Builder picks up a green block at X:4 Y:2 Z:-1]
+<Builder> ok
+[Builder puts down a green block at X:3 Y:1 Z:0]
+[Builder puts down a green block at X:3 Y:2 Z:0]
+[Builder picks up a green block at X:3 Y:1 Z:0]
+<Architect> diagonal up one more
+<Architect> still green
+[Builder puts down a green block at X:2 Y:2 Z:0]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder picks up a green block at X:2 Y:2 Z:0]
+<Builder> ok. another foot on the other side?
+<Architect> yes, but we'll do the body first
+<Builder> k
+<Architect> put a red block next to the green block you just built
+[Builder puts down a red block at X:1 Y:3 Z:0]
+<Architect> three more red blocks on top of that one
+[Builder picks up a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:4 Z:0]
+[Builder puts down a red block at X:1 Y:5 Z:0]
+[Builder puts down a red block at X:1 Y:6 Z:0]
+<Architect> and orange on top of that
+[Builder puts down a orange block at X:1 Y:7 Z:0]
+<Architect> now build the leg on the other side of the red block, symmetric to the first leg
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder picks up a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:-2 Y:2 Z:0]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:2 Z:-1]
+[Builder picks up a green block at X:-2 Y:2 Z:-1]
+[Builder picks up a green block at X:-2 Y:2 Z:0]
+<Builder> arms?
+<Architect> yep! on the fourth red block put a gree block on the right
+<Architect> left
+<Architect> sorry
+<Builder> my left?
+[Builder puts down a green block at X:2 Y:6 Z:0]
+<Architect> yes
+<Architect> now one green block diagonal up
+[Builder puts down a green block at X:3 Y:6 Z:0]
+[Builder puts down a green block at X:3 Y:7 Z:0]
+[Builder picks up a green block at X:3 Y:6 Z:0]
+<Architect> now on the other side one green block next to the same red block
+[Builder puts down a green block at X:0 Y:6 Z:0]
+[Builder puts down a green block at X:-1 Y:6 Z:0]
+[Builder picks up a green block at X:-1 Y:6 Z:0]
+[Builder puts down a green block at X:-1 Y:6 Z:0]
+[Builder puts down a green block at X:-1 Y:7 Z:0]
+[Builder picks up a green block at X:-1 Y:6 Z:0]
+<Architect> not quite, the last one is diagonal towards you instead of diagonal up
+[Builder picks up a green block at X:-1 Y:7 Z:0]
+<Builder> tricky
+[Builder puts down a green block at X:0 Y:6 Z:-1]
+[Builder puts down a green block at X:-1 Y:6 Z:0]
+[Builder puts down a green block at X:-2 Y:6 Z:0]
+[Builder puts down a green block at X:-1 Y:6 Z:-1]
+[Builder picks up a green block at X:-2 Y:6 Z:0]
+[Builder picks up a green block at X:-1 Y:6 Z:0]
+[Builder puts down a green block at X:-1 Y:7 Z:-1]
+[Builder picks up a green block at X:-1 Y:6 Z:-1]
+[Builder picks up a green block at X:0 Y:6 Z:-1]
+<Architect> it's not up at all
+<Builder> oh, on same level
+[Builder puts down a green block at X:-1 Y:7 Z:-2]
+[Builder picks up a green block at X:-1 Y:7 Z:-2]
+[Builder picks up a green block at X:-1 Y:7 Z:-1]
+[Builder puts down a green block at X:0 Y:6 Z:-1]
+[Builder puts down a green block at X:-1 Y:6 Z:-1]
+[Builder picks up a green block at X:0 Y:6 Z:-1]
+<Builder> i see
+<Architect> yeah that's it!
+<Builder> cool

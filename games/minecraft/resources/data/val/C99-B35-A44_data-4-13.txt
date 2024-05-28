@@ -1,0 +1,93 @@
+B35-A44-C99-1523651769587
+<Builder> Mission has started.
+<Builder> I think I'm ready to go pro at this
+<Architect> haha
+<Architect> ok we're building a 2d vertical drawing. start at the left column and build 3 yellow blocks. begin the drawing all the way to the left of the platform, and near the center
+<Architect> instructions are kinda confusing I'll keep walking you through it
+<Builder> this perspective?
+<Architect> build a column of 3 yellow blocks. begin all the weay to left, center
+<Architect> no stand still and look forward on the ground. it is a 2d veritcal drawing
+[Builder puts down a yellow block at X:5 Y:1 Z:0]
+[Builder puts down a yellow block at X:5 Y:2 Z:0]
+[Builder puts down a yellow block at X:5 Y:3 Z:0]
+<Builder> this?
+<Architect> ok that's the first column. good. next column is to the right of it. its yellow, empty, yellow
+[Builder puts down a yellow block at X:4 Y:3 Z:0]
+[Builder puts down a yellow block at X:4 Y:1 Z:0]
+<Architect> so yellow on the ground, empty above, yellow above the emtpy
+<Architect> next column is 3 empty
+<Architect> sorry 3 yellow
+[Builder puts down a yellow block at X:3 Y:1 Z:0]
+[Builder puts down a yellow block at X:3 Y:2 Z:0]
+[Builder puts down a yellow block at X:3 Y:3 Z:0]
+<Builder> okay
+<Architect> next: empty, yellow,
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+<Architect> empty, yellow
+[Builder puts down a yellow block at X:2 Y:3 Z:0]
+[Builder puts down a yellow block at X:2 Y:4 Z:0]
+[Builder picks up a yellow block at X:2 Y:3 Z:0]
+<Builder> like this
+<Architect> sorry remove that last one.
+[Builder picks up a yellow block at X:2 Y:4 Z:0]
+<Architect> every time I type. I'm giving you instructions for the next column unless specified otherwise
+<Builder> okay
+<Architect> empty yellow
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+<Architect> empty 3 yellow
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+[Builder puts down a yellow block at X:0 Y:5 Z:0]
+<Architect> empty 2 yellow
+<Architect> empty 3 yellow
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:-2 Y:2 Z:0]
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+[Builder puts down a yellow block at X:-2 Y:4 Z:0]
+[Builder picks up a yellow block at X:0 Y:5 Z:0]
+<Architect> completely empty
+<Architect> empty blue
+[Builder puts down a blue block at X:-4 Y:1 Z:-1]
+[Builder picks up a blue block at X:-4 Y:1 Z:-1]
+[Builder puts down a blue block at X:-4 Y:1 Z:0]
+[Builder puts down a blue block at X:-4 Y:2 Z:0]
+[Builder picks up a blue block at X:-4 Y:1 Z:0]
+<Architect> ok now we're making a blue key so rotate your view 90 degrees
+<Architect> to the right
+<Builder> like this?
+<Architect> you rotated 90 to the left
+<Builder> same design? just blue?
+<Architect> not the same design
+<Builder> gotcha
+<Architect> next column: empty 2 blue
+[Builder puts down a blue block at X:-4 Y:2 Z:1]
+[Builder puts down a blue block at X:-5 Y:2 Z:1]
+[Builder picks up a blue block at X:-5 Y:2 Z:1]
+[Builder puts down a blue block at X:-4 Y:3 Z:1]
+<Architect> empty 3 blue
+<Architect> empty 2 blue
+[Builder puts down a blue block at X:-4 Y:2 Z:2]
+[Builder puts down a blue block at X:-4 Y:3 Z:2]
+[Builder puts down a blue block at X:-4 Y:4 Z:2]
+[Builder puts down a blue block at X:-4 Y:2 Z:3]
+[Builder puts down a blue block at X:-4 Y:3 Z:3]
+<Architect> now go back to the first blue block you placed. we're building left of it now
+<Architect> empty blue
+<Builder> okay
+[Builder puts down a blue block at X:-4 Y:2 Z:-1]
+<Architect> 3 blue
+[Builder puts down a blue block at X:-4 Y:1 Z:-2]
+[Builder puts down a blue block at X:-4 Y:2 Z:-2]
+[Builder puts down a blue block at X:-4 Y:3 Z:-2]
+<Architect> blue empty, blue
+[Builder puts down a blue block at X:-4 Y:1 Z:-3]
+[Builder puts down a blue block at X:-4 Y:3 Z:-3]
+<Architect> 3 blue
+[Builder puts down a blue block at X:-4 Y:1 Z:-4]
+[Builder puts down a blue block at X:-4 Y:2 Z:-4]
+[Builder puts down a blue block at X:-4 Y:3 Z:-4]
+<Architect> ok we're done good job
+<Builder> go team
+<Architect> I will use this format for communication on other 2d veritcal or horizontal drawings

@@ -1,0 +1,96 @@
+B16-A41-C24-1522945785686
+<Builder> Mission has started.
+<Architect> Okay. Make a 3x3 square of orange on the ground, in the middle of the environment.
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+<Architect> Okay, now make two 3x3 squares of yellow on top of that, but leave the middle square empty on both.
+[Builder picks up a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:0 Y:3 Z:-2]
+<Architect> Perfect. Now another layer of red in the same pattern as the yellow.
+<Architect> Oh no wait
+[Builder puts down a red block at X:-1 Y:4 Z:-2]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+<Architect> Orange, then red
+<Architect> Sorry!
+[Builder picks up a red block at X:-1 Y:4 Z:-1]
+[Builder picks up a red block at X:-1 Y:4 Z:-2]
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+[Builder puts down a orange block at X:-1 Y:4 Z:-1]
+[Builder puts down a orange block at X:-1 Y:4 Z:-2]
+[Builder puts down a orange block at X:0 Y:4 Z:-2]
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+[Builder puts down a red block at X:0 Y:5 Z:0]
+[Builder puts down a red block at X:1 Y:5 Z:0]
+[Builder puts down a red block at X:-1 Y:5 Z:-1]
+[Builder puts down a red block at X:-1 Y:5 Z:-2]
+[Builder puts down a red block at X:0 Y:5 Z:-2]
+[Builder puts down a red block at X:1 Y:5 Z:-1]
+[Builder puts down a red block at X:1 Y:5 Z:-2]
+<Architect> Okay great
+<Architect> Oh we are making a coffee cup haha.
+<Builder> Nice!
+<Architect> So now we have to make the handle. On one side, in the middle, lay down two purple bricks sticking out from the cup
+[Builder puts down a purple block at X:0 Y:1 Z:-3]
+[Builder puts down a purple block at X:0 Y:1 Z:-4]
+<Architect> Perfect. Now make three more purple layers like that.
+[Builder puts down a purple block at X:0 Y:2 Z:-4]
+[Builder puts down a purple block at X:0 Y:2 Z:-3]
+[Builder puts down a purple block at X:0 Y:3 Z:-3]
+[Builder puts down a purple block at X:0 Y:3 Z:-4]
+[Builder picks up a purple block at X:0 Y:2 Z:-3]
+<Architect> Almost, but it needs to be one unit higher
+[Builder puts down a purple block at X:0 Y:4 Z:-3]
+<Architect> So we will remove the bottom row when we're done
+[Builder puts down a purple block at X:0 Y:4 Z:-4]
+[Builder puts down a purple block at X:0 Y:2 Z:-3]
+[Builder picks up a purple block at X:0 Y:1 Z:-3]
+[Builder picks up a purple block at X:0 Y:1 Z:-4]
+[Builder picks up a purple block at X:0 Y:3 Z:-3]
+[Builder picks up a purple block at X:0 Y:2 Z:-3]
+<Architect> Oh, sorry, almost. You had the right shape before
+[Builder puts down a purple block at X:1 Y:1 Z:-3]
+[Builder puts down a purple block at X:1 Y:1 Z:-4]
+<Architect> It's a loop
+[Builder picks up a purple block at X:1 Y:1 Z:-3]
+[Builder picks up a purple block at X:1 Y:1 Z:-4]
+[Builder puts down a purple block at X:0 Y:1 Z:-3]
+[Builder puts down a purple block at X:0 Y:1 Z:-4]
+<Builder> like this or above?
+<Architect> But not touching the ground, with one square removed in the middle.
+[Builder puts down a purple block at X:0 Y:2 Z:-3]
+<Architect> Sorry haha
+[Builder picks up a purple block at X:0 Y:1 Z:-3]
+[Builder picks up a purple block at X:0 Y:1 Z:-4]
+[Builder picks up a purple block at X:0 Y:2 Z:-4]
+[Builder puts down a purple block at X:0 Y:1 Z:-4]
+[Builder puts down a purple block at X:0 Y:2 Z:-4]
+[Builder picks up a purple block at X:0 Y:1 Z:-4]
+<Builder> like this?
+<Architect> Perfect!

@@ -1,0 +1,100 @@
+B20-A30-C80-1523458941829
+<Builder> Mission has started.
+<Builder> Alright. How big?
+<Architect> it is 6 squares long and 3 squares wide
+<Architect> it looks like a man doing a lunge or running
+<Architect> start by building a stack of 3 blue blocks right where you're looking
+[Builder puts down a blue block at X:-1 Y:1 Z:-3]
+[Builder puts down a blue block at X:-1 Y:2 Z:-3]
+[Builder puts down a blue block at X:-1 Y:3 Z:-3]
+<Architect> and then from the top block towards the far end of the space, build 2 more blocks off the side
+<Builder> this side?
+<Architect> the other side
+<Builder> this one?
+<Architect> yes
+[Builder puts down a blue block at X:-1 Y:3 Z:-2]
+[Builder puts down a blue block at X:-1 Y:3 Z:-1]
+<Architect> from the farthest out block you just built, build one to the side that you are standing on
+[Builder puts down a blue block at X:-2 Y:3 Z:-1]
+<Architect> ok now think of that front upside down L as the front leg in a lunge and now we are building the back leg
+<Builder> am I just building an L?
+<Architect> so build an L down from the most recently placed blue block
+[Builder puts down a blue block at X:-1 Y:2 Z:-1]
+[Builder picks up a blue block at X:-1 Y:2 Z:-1]
+[Builder puts down a blue block at X:-2 Y:2 Z:-1]
+[Builder puts down a blue block at X:-2 Y:1 Z:-1]
+[Builder puts down a blue block at X:-2 Y:1 Z:0]
+[Builder puts down a blue block at X:-2 Y:1 Z:1]
+<Builder> this?
+<Architect> add one more to the bottom
+[Builder puts down a blue block at X:-2 Y:1 Z:2]
+<Architect> ok now delete the corner block of that L
+[Builder picks up a blue block at X:-2 Y:1 Z:-1]
+<Architect> in the inner corner of that L, build one blue block
+[Builder puts down a blue block at X:-2 Y:2 Z:0]
+<Architect> now delete the 2 blocks that it is touching
+[Builder picks up a blue block at X:-2 Y:2 Z:-1]
+[Builder picks up a blue block at X:-2 Y:1 Z:0]
+<Architect> ok now at the top of the legs, where the hips would be, place one red block
+[Builder puts down a red block at X:-2 Y:4 Z:-1]
+<Builder> here? for each leg?
+<Architect> on the other one at the hip area
+<Architect> just one
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder picks up a red block at X:-2 Y:4 Z:-1]
+<Architect> yes!
+<Architect> now add another red block on top of that
+[Builder puts down a red block at X:-1 Y:5 Z:-1]
+<Architect> now 2 yellow blocks on top of those
+[Builder puts down a yellow block at X:-1 Y:6 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:7 Z:-1]
+<Architect> and delete the lower yellow block
+[Builder picks up a yellow block at X:-1 Y:6 Z:-1]
+<Architect> ok that is the body now we need to build the arms
+<Architect> on the side with the upside down L, build an orange line out from the top red block that is 3 blocks long
+<Builder> this way?
+[Builder puts down a orange block at X:-1 Y:5 Z:-2]
+[Builder puts down a orange block at X:-1 Y:5 Z:-3]
+[Builder puts down a orange block at X:-1 Y:5 Z:-4]
+<Architect> sorry, start from the side of the red block, not the front
+[Builder puts down a orange block at X:-2 Y:5 Z:-1]
+[Builder puts down a orange block at X:-3 Y:5 Z:-1]
+[Builder puts down a orange block at X:-4 Y:5 Z:-1]
+[Builder picks up a orange block at X:-1 Y:5 Z:-3]
+[Builder picks up a orange block at X:-1 Y:5 Z:-4]
+[Builder picks up a orange block at X:-1 Y:5 Z:-2]
+<Architect> ok sorry this is confusing to explain. start from the side, keeping the inner most orange block that youve already places, but build out towards the front
+[Builder picks up a orange block at X:-3 Y:5 Z:-1]
+[Builder picks up a orange block at X:-4 Y:5 Z:-1]
+[Builder puts down a orange block at X:-2 Y:5 Z:-2]
+[Builder puts down a orange block at X:-2 Y:5 Z:-3]
+<Builder> this?
+<Architect> yes!
+<Architect> ok now at the furthest out orange block, place an orange block on top of it
+[Builder puts down a orange block at X:-2 Y:6 Z:-3]
+<Architect> now delete the one it is touching
+[Builder picks up a orange block at X:-2 Y:5 Z:-3]
+<Architect> good! one more arm to go
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+<Architect> build an upsisde down orange L
+[Builder puts down a orange block at X:0 Y:6 Z:-1]
+<Builder> how big?
+<Architect> delete the top orange block you just placed. begin from the bottom one going backwards. it will be 3x3
+[Builder picks up a orange block at X:0 Y:6 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+[Builder puts down a orange block at X:2 Y:4 Z:-2]
+[Builder picks up a orange block at X:2 Y:4 Z:-2]
+[Builder picks up a orange block at X:1 Y:4 Z:-2]
+[Builder picks up a orange block at X:1 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+<Architect> good! now place an orange block in the inner corner
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:4 Z:-1]
+[Builder picks up a orange block at X:0 Y:3 Z:-1]
+<Builder> this?
+<Architect> yep! thats it!

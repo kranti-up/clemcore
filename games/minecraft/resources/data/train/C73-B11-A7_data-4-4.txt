@@ -1,0 +1,79 @@
+B11-A7-C73-1522858191853
+<Builder> Mission has started.
+<Architect> so this one says x=y when you look at it straight on
+<Builder> ok. is it standing up then?
+<Architect> yes, we're going to start witht the purple x, which is floating one block in teh air
+<Builder> what color is each symbol?
+[Builder puts down a purple block at X:-2 Y:1 Z:-3]
+[Builder puts down a purple block at X:-2 Y:1 Z:-2]
+[Builder puts down a purple block at X:-2 Y:1 Z:-1]
+[Builder puts down a purple block at X:-2 Y:2 Z:-1]
+[Builder puts down a purple block at X:-2 Y:2 Z:-3]
+[Builder picks up a purple block at X:-2 Y:1 Z:-2]
+[Builder picks up a purple block at X:-2 Y:1 Z:-3]
+[Builder picks up a purple block at X:-2 Y:1 Z:-1]
+[Builder puts down a purple block at X:-2 Y:3 Z:-3]
+[Builder puts down a purple block at X:-2 Y:3 Z:-2]
+[Builder picks up a purple block at X:-2 Y:3 Z:-3]
+[Builder puts down a purple block at X:-2 Y:4 Z:-2]
+[Builder puts down a purple block at X:-2 Y:4 Z:-3]
+[Builder picks up a purple block at X:-2 Y:4 Z:-2]
+[Builder puts down a purple block at X:-2 Y:3 Z:-1]
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+[Builder picks up a purple block at X:-2 Y:3 Z:-1]
+<Architect> i think you're going to have to move the x one block left to fit it
+[Builder puts down a purple block at X:-2 Y:3 Z:-3]
+[Builder puts down a purple block at X:-2 Y:4 Z:-2]
+[Builder puts down a purple block at X:-2 Y:2 Z:-2]
+[Builder puts down a purple block at X:-2 Y:2 Z:-4]
+[Builder puts down a purple block at X:-2 Y:4 Z:-4]
+[Builder picks up a purple block at X:-2 Y:4 Z:-3]
+[Builder picks up a purple block at X:-2 Y:2 Z:-3]
+[Builder picks up a purple block at X:-2 Y:3 Z:-2]
+[Builder picks up a purple block at X:-2 Y:2 Z:-1]
+[Builder picks up a purple block at X:-2 Y:4 Z:-1]
+<Architect> okay the = sign is also floating one block in the air and it's yellow
+<Architect> it's two blocks long
+[Builder puts down a yellow block at X:-2 Y:2 Z:-1]
+<Architect> with one block betwee the top and bottom line
+[Builder puts down a yellow block at X:-2 Y:2 Z:0]
+[Builder puts down a yellow block at X:-2 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:4 Z:0]
+<Architect> one space between the x and =
+<Builder> directly touching the x?
+[Builder picks up a yellow block at X:-2 Y:4 Z:-1]
+[Builder picks up a yellow block at X:-2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:4 Z:1]
+[Builder puts down a yellow block at X:-2 Y:2 Z:1]
+<Architect> the y is green and sits on the ground
+<Builder> how many spaces is base from =?
+[Builder puts down a green block at X:-3 Y:1 Z:3]
+[Builder puts down a green block at X:-3 Y:1 Z:4]
+<Architect> one
+[Builder picks up a green block at X:-3 Y:1 Z:3]
+[Builder puts down a green block at X:-3 Y:1 Z:3]
+[Builder picks up a green block at X:-3 Y:1 Z:4]
+[Builder puts down a green block at X:-3 Y:2 Z:3]
+[Builder picks up a green block at X:-3 Y:1 Z:3]
+[Builder picks up a green block at X:-3 Y:2 Z:3]
+[Builder puts down a green block at X:-2 Y:1 Z:3]
+[Builder puts down a green block at X:-2 Y:2 Z:3]
+[Builder puts down a green block at X:-2 Y:3 Z:3]
+<Architect> hold on, three block on the ground for the loopy part of the tail
+[Builder puts down a green block at X:-3 Y:3 Z:3]
+[Builder picks up a green block at X:-3 Y:3 Z:3]
+[Builder picks up a green block at X:-2 Y:3 Z:3]
+[Builder picks up a green block at X:-2 Y:2 Z:3]
+[Builder puts down a green block at X:-2 Y:1 Z:4]
+[Builder puts down a green block at X:-2 Y:1 Z:5]
+<Architect> four blocks up
+<Builder> on right side?
+[Builder puts down a green block at X:-2 Y:2 Z:5]
+[Builder puts down a green block at X:-2 Y:3 Z:5]
+<Architect> well three up form the one you placed, and yes on the right
+[Builder puts down a green block at X:-2 Y:4 Z:5]
+<Architect> exactly like that
+[Builder puts down a green block at X:-2 Y:3 Z:4]
+[Builder puts down a green block at X:-2 Y:3 Z:3]
+[Builder puts down a green block at X:-2 Y:4 Z:3]
+<Architect> yep!

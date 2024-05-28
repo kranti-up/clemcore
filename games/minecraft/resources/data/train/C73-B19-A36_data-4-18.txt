@@ -1,0 +1,59 @@
+B19-A36-C73-1524094272202
+<Builder> Mission has started.
+<Builder> hi
+<Architect> hi
+<Architect> ok so this structure looks like an x = y standing up
+<Builder> ok
+<Architect> so go all the way to your right
+<Architect> and put down a green block
+[Builder puts down a green block at X:-5 Y:1 Z:-1]
+<Architect> then put down 2 green blocks to the left of that
+[Builder puts down a green block at X:-4 Y:1 Z:-1]
+[Builder puts down a green block at X:-3 Y:1 Z:-1]
+<Architect> this is the y btw
+<Architect> so to the green blocks that's all the way to the right, add 3 more green blocks on top of it
+<Builder> do you mean like a x=y curve
+[Builder puts down a green block at X:-5 Y:2 Z:-1]
+[Builder puts down a green block at X:-5 Y:3 Z:-1]
+[Builder puts down a green block at X:-5 Y:4 Z:-1]
+<Builder> i mean line
+<Architect> no it literally looks like the letters x = y
+<Builder> oh ok
+<Architect> so then at the 2nd top green block. put a green block to the left of it
+[Builder puts down a green block at X:-4 Y:3 Z:-1]
+[Builder puts down a green block at X:-3 Y:3 Z:-1]
+[Builder puts down a green block at X:-3 Y:4 Z:-1]
+<Architect> good u got it
+<Architect> then 2 spaces from the left of the top green block, put a floating yellow block
+[Builder puts down a yellow block at X:-2 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]
+[Builder picks up a yellow block at X:-2 Y:4 Z:-1]
+<Architect> then put another yellow block to the left of that
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+<Architect> then 2 spaces underneath put another 2 yellow blocks
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder picks up a yellow block at X:0 Y:3 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-1]
+<Architect> ok then 2 spaces to the left of the = put a floating purple block
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:2 Y:4 Z:-1]
+[Builder picks up a purple block at X:1 Y:4 Z:-1]
+<Architect> that's the top right of the x
+<Architect> the x is floating
+[Builder puts down a purple block at X:2 Y:3 Z:-1]
+[Builder puts down a purple block at X:3 Y:3 Z:-1]
+[Builder puts down a purple block at X:4 Y:3 Z:-1]
+[Builder puts down a purple block at X:4 Y:4 Z:-1]
+[Builder picks up a purple block at X:4 Y:3 Z:-1]
+[Builder picks up a purple block at X:2 Y:3 Z:-1]
+[Builder puts down a purple block at X:3 Y:2 Z:-1]
+[Builder puts down a purple block at X:4 Y:2 Z:-1]
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+[Builder picks up a purple block at X:3 Y:2 Z:-1]
+<Builder> is that it?
+<Architect> ya good u got it
+<Architect> we're done
+<Builder> cool

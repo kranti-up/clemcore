@@ -1,0 +1,129 @@
+B35-A34-C128-1524005064637
+<Builder> Mission has started.
+<Architect> this is a silly multicolored worm
+<Architect> so go to an edge
+<Architect> and one block towards the center, place one yellow block
+[Builder puts down a yellow block at X:4 Y:1 Z:0]
+[Builder puts down a yellow block at X:4 Y:1 Z:-1]
+[Builder puts down a yellow block at X:4 Y:2 Z:-1]
+[Builder picks up a yellow block at X:4 Y:2 Z:-1]
+[Builder picks up a yellow block at X:4 Y:1 Z:-1]
+<Architect> place one yellow on top of that
+[Builder puts down a yellow block at X:4 Y:2 Z:0]
+<Architect> do a 180 on the block
+<Architect> place 2 yellow coming towards you on the ground level
+[Builder puts down a yellow block at X:4 Y:1 Z:1]
+[Builder puts down a yellow block at X:4 Y:1 Z:2]
+<Architect> remove the first block you placed
+[Builder picks up a yellow block at X:4 Y:1 Z:1]
+<Architect> place that back
+[Builder puts down a yellow block at X:4 Y:1 Z:1]
+<Architect> sorry
+[Builder picks up a yellow block at X:4 Y:1 Z:0]
+<Architect> there
+<Architect> palce one purple coming towards you
+[Builder puts down a purple block at X:4 Y:1 Z:3]
+<Architect> yellow on top of that
+[Builder puts down a yellow block at X:4 Y:2 Z:3]
+<Architect> can you stop moving so much
+<Architect> remove that purple
+[Builder picks up a purple block at X:4 Y:1 Z:3]
+<Architect> place one purple coming towards you on that yellow block
+[Builder puts down a purple block at X:4 Y:2 Z:4]
+<Architect> one to the left of that one
+[Builder picks up a purple block at X:4 Y:2 Z:4]
+[Builder puts down a purple block at X:3 Y:2 Z:3]
+<Architect> red on top of that
+[Builder puts down a red block at X:3 Y:3 Z:3]
+[Builder picks up a purple block at X:3 Y:2 Z:3]
+<Architect> one red coming towards you
+[Builder puts down a red block at X:3 Y:3 Z:4]
+<Architect> remove that first red
+[Builder picks up a red block at X:3 Y:3 Z:3]
+<Architect> to the left of that red block, place 2 purples
+[Builder puts down a purple block at X:2 Y:3 Z:4]
+[Builder puts down a purple block at X:1 Y:3 Z:4]
+<Architect> place one red to the left of the purple
+[Builder puts down a red block at X:1 Y:4 Z:4]
+[Builder puts down a red block at X:0 Y:4 Z:4]
+[Builder picks up a red block at X:1 Y:4 Z:4]
+[Builder picks up a red block at X:0 Y:4 Z:4]
+[Builder puts down a red block at X:0 Y:3 Z:4]
+<Architect> 2 on top of the 2 purples
+[Builder puts down a red block at X:1 Y:4 Z:4]
+[Builder puts down a red block at X:2 Y:4 Z:4]
+[Builder picks up a purple block at X:1 Y:3 Z:4]
+[Builder picks up a purple block at X:2 Y:3 Z:4]
+<Architect> remove the purple
+<Architect> place one purple under that red block
+[Builder puts down a purple block at X:0 Y:2 Z:4]
+<Architect> one orange towards you
+[Builder puts down a orange block at X:-1 Y:2 Z:4]
+<Builder> or to the left
+<Architect> remove purple
+[Builder picks up a purple block at X:0 Y:2 Z:4]
+<Architect> that good
+<Architect> 2 purple to the left of that orange
+[Builder puts down a orange block at X:-2 Y:1 Z:4]
+[Builder puts down a orange block at X:-3 Y:1 Z:4]
+[Builder puts down a orange block at X:-4 Y:1 Z:4]
+[Builder puts down a orange block at X:-4 Y:2 Z:4]
+[Builder picks up a orange block at X:-4 Y:1 Z:4]
+<Architect> no
+<Builder> did u just want this?
+<Architect> no
+<Builder> or other way?
+[Builder puts down a orange block at X:-2 Y:2 Z:4]
+[Builder puts down a orange block at X:-3 Y:2 Z:4]
+[Builder puts down a orange block at X:-2 Y:3 Z:4]
+[Builder puts down a orange block at X:-3 Y:3 Z:4]
+[Builder picks up a orange block at X:-2 Y:2 Z:4]
+[Builder picks up a orange block at X:-2 Y:1 Z:4]
+[Builder picks up a orange block at X:-3 Y:2 Z:4]
+[Builder picks up a orange block at X:-3 Y:1 Z:4]
+[Builder picks up a orange block at X:-3 Y:3 Z:4]
+<Architect> omg you are going left now
+[Builder picks up a orange block at X:-2 Y:3 Z:4]
+[Builder picks up a orange block at X:-4 Y:2 Z:4]
+<Builder> is the orange going up or down?
+<Architect> please place thge 2 purple blocks to the left of that orange block
+[Builder puts down a purple block at X:-1 Y:2 Z:3]
+[Builder puts down a purple block at X:-1 Y:2 Z:2]
+<Architect> one orange on the end of that
+[Builder puts down a orange block at X:-1 Y:3 Z:2]
+<Architect> how about this
+<Architect> from your perspective, ou will be placing 2 orange blocks coming TOWARDS you on that purple block
+[Builder puts down a orange block at X:-2 Y:2 Z:2]
+[Builder puts down a orange block at X:-3 Y:2 Z:2]
+<Architect> on those purple blocks
+[Builder picks up a orange block at X:-3 Y:2 Z:2]
+[Builder picks up a orange block at X:-2 Y:2 Z:2]
+[Builder puts down a orange block at X:-2 Y:2 Z:2]
+[Builder puts down a orange block at X:-2 Y:2 Z:3]
+<Builder> this?
+<Architect> yes
+<Builder> del purple?
+<Architect> not yet
+<Architect> place one orange on the ends of that purple
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+<Architect> and remove the one orange on top
+[Builder picks up a orange block at X:-1 Y:3 Z:2]
+<Architect> now remove purple
+[Builder picks up a purple block at X:-1 Y:2 Z:2]
+[Builder picks up a purple block at X:-1 Y:2 Z:3]
+<Architect> now one green under that orange
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+<Architect> and standing there
+<Architect> place 2 purple blocks coming towards you on the ground
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+<Architect> place the 2 green on the left
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+<Architect> remove purple
+[Builder picks up a purple block at X:-1 Y:1 Z:-1]
+[Builder picks up a purple block at X:-1 Y:1 Z:0]
+<Architect> congrats
+<Architect> any questions comments or concerns?
+<Builder> nah

@@ -1,0 +1,37 @@
+B29-A8-C4-1522860364994
+<Builder> Mission has started.
+<Architect> we're building a flower
+<Architect> hing is on the ground
+<Architect> *everything
+<Architect> start with four green blocks in a line
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+<Architect> now on the second green block from your left add two green blkocks on either side
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:2]
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+<Architect> actually just one block on either side
+[Builder picks up a green block at X:-1 Y:1 Z:-2]
+[Builder picks up a green block at X:-1 Y:1 Z:2]
+<Architect> now one on a diagonal to the ones you just placed
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+<Architect> yeah
+[Builder puts down a green block at X:0 Y:1 Z:2]
+<Architect> okay now we'll do the flower
+<Architect> it's a 3X3 griod
+<Architect> grid*
+<Architect> with a red block in the center
+[Builder puts down a red block at X:3 Y:1 Z:0]
+<Architect> now yellow blocks on the sides and orange blocks on the diagonal
+[Builder puts down a yellow block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:4 Y:1 Z:0]
+[Builder puts down a yellow block at X:3 Y:1 Z:1]
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+[Builder puts down a orange block at X:2 Y:1 Z:1]
+[Builder puts down a orange block at X:4 Y:1 Z:1]
+[Builder puts down a orange block at X:4 Y:1 Z:-1]
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+<Architect> okay were done

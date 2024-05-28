@@ -1,0 +1,70 @@
+B37-A23-C110-1523634174791
+<Builder> Mission has started.
+<Architect> this one will be hard. yikes.
+<Builder> whooo
+<Builder> exciting
+<Architect> its all flaoting one above the plate
+<Builder> ok
+<Architect> somewhere in the middle, place a green
+[Builder puts down a green block at X:0 Y:1 Z:0]
+<Architect> maybe not there. closer to a corner
+[Builder picks up a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:2 Y:1 Z:-2]
+<Architect> that will work
+<Architect> stack one on top
+[Builder puts down a green block at X:2 Y:2 Z:-2]
+<Architect> remove bottom
+[Builder picks up a green block at X:2 Y:1 Z:-2]
+<Architect> on two sides of it, place another green.
+[Builder puts down a green block at X:1 Y:2 Z:-2]
+[Builder puts down a green block at X:3 Y:2 Z:-2]
+<Architect> change the left most to purple
+[Builder puts down a purple block at X:3 Y:2 Z:-3]
+[Builder picks up a purple block at X:3 Y:2 Z:-3]
+[Builder picks up a green block at X:3 Y:2 Z:-2]
+[Builder puts down a green block at X:3 Y:2 Z:-2]
+[Builder puts down a green block at X:3 Y:2 Z:-3]
+[Builder picks up a green block at X:3 Y:2 Z:-3]
+[Builder picks up a green block at X:3 Y:2 Z:-2]
+[Builder puts down a purple block at X:3 Y:2 Z:-2]
+<Architect> on the opposite side, on the right green, stick another gree
+[Builder puts down a green block at X:0 Y:2 Z:-2]
+<Architect> remove that. on the side opposite to you.
+[Builder puts down a green block at X:0 Y:2 Z:-3]
+[Builder picks up a green block at X:0 Y:2 Z:-3]
+[Builder picks up a green block at X:0 Y:2 Z:-2]
+[Builder puts down a green block at X:2 Y:2 Z:-1]
+<Builder> there?
+<Architect> one over
+[Builder picks up a green block at X:2 Y:2 Z:-1]
+[Builder puts down a green block at X:1 Y:2 Z:-1]
+<Architect> there. stack a green on that
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+<Architect> add a purple to the side of the purple, on your side.
+[Builder puts down a purple block at X:3 Y:2 Z:-1]
+<Builder> there?
+<Architect> yes. on the right side of that, purple.
+[Builder puts down a purple block at X:4 Y:2 Z:-1]
+<Architect> purple on that
+[Builder puts down a purple block at X:4 Y:3 Z:-1]
+<Architect> on your side, red on top purple.
+[Builder puts down a red block at X:4 Y:3 Z:0]
+<Architect> add one more red to that same side
+[Builder puts down a red block at X:4 Y:3 Z:1]
+<Architect> add red to top
+<Architect> of that one
+[Builder puts down a red block at X:4 Y:4 Z:1]
+<Architect> add a red to the side you are facing
+[Builder puts down a red block at X:3 Y:4 Z:1]
+<Architect> perfect
+<Architect> add blue same side
+[Builder puts down a blue block at X:2 Y:4 Z:1]
+<Architect> add a blue to the side of the blue facing the purple.
+[Builder puts down a blue block at X:2 Y:4 Z:0]
+<Architect> add one below that.
+[Builder puts down a blue block at X:2 Y:3 Z:0]
+<Architect> add a blue to the corner of green and blue\
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+<Architect> i think we are done!
+<Builder> yay, nice job!
+<Architect> you too!

@@ -1,0 +1,78 @@
+B31-A23-C87-1523478701662
+<Builder> Mission has started.
+<Architect> I
+<Architect> am back
+<Builder> hello
+<Architect> so this is only orange
+<Builder> got it
+<Architect> go to the middle of a side, and place a block one row inward
+[Builder puts down a orange block at X:0 Y:1 Z:-4]
+<Architect> place one inward on the side of that block.
+[Builder puts down a orange block at X:0 Y:1 Z:-3]
+<Architect> yes
+<Architect> place one on top of that,
+[Builder puts down a orange block at X:0 Y:2 Z:-3]
+<Architect> we are making another stair case
+<Architect> one on the side of that block
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+<Architect> one on top
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+<Architect> and one outward from that top block
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+<Architect> that part is done. three more blocks
+<Architect> 4 more
+<Builder> okay
+<Architect> so they are all floating.
+<Builder> where?
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder picks up a orange block at X:0 Y:4 Z:-1]
+<Builder> here?
+<Architect> no not quite theres none there. The keyboard on the laptop is slow so bear with me
+[Builder picks up a orange block at X:0 Y:4 Z:0]
+<Builder> okay, I'll wait
+<Architect> stand on the stair top and look foward
+<Builder> which way is forward?
+<Architect> if you were going up the stairs
+<Architect> yep!
+<Architect> so the first block will be floating one above the plate, and one away fron the stair case, in the same row as the staircase.
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+<Architect> this is the same row you are looking down
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+<Builder> there?
+<Architect> put on on the front of that block
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+<Architect> and remove the block in front of you
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+<Architect> yes
+<Architect> the next block is in the same row
+<Builder> this row?
+<Architect> yes
+<Builder> okay
+<Architect> it is two in the air, and two spaces in front of you.
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:2]
+[Builder picks up a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:3]
+<Builder> that?
+<Architect> yes, and remove the middle block
+[Builder picks up a orange block at X:0 Y:3 Z:2]
+<Architect> on that one you just placed, stack two blocks
+[Builder puts down a orange block at X:0 Y:4 Z:3]
+[Builder puts down a orange block at X:0 Y:5 Z:3]
+<Architect> remove the middle
+[Builder picks up a orange block at X:0 Y:4 Z:3]
+<Architect> on the other floating block you placed earlier, place three orange blocks
+<Builder> on top of it?
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:5 Z:1]
+<Architect> yes, one more
+[Builder puts down a orange block at X:0 Y:6 Z:1]
+<Architect> remove middle three
+[Builder picks up a orange block at X:0 Y:5 Z:1]
+[Builder picks up a orange block at X:0 Y:3 Z:1]
+[Builder picks up a orange block at X:0 Y:4 Z:1]
+<Architect> that should be good! let me check
+<Architect> done!

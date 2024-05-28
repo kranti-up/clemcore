@@ -1,0 +1,134 @@
+B1-A4-C55-1522775580387
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hi; this one is shitty
+<Architect> start with yellow
+<Architect> place one in the center of one of the lines near the edge
+[Builder puts down a yellow block at X:5 Y:1 Z:0]
+<Builder> here?
+<Architect> yep
+<Architect> now still on the flat surface place one above each of the diagonal corners
+[Builder puts down a yellow block at X:4 Y:1 Z:1]
+[Builder puts down a yellow block at X:4 Y:1 Z:-1]
+<Builder> like a c?
+<Architect> good; repeat to make a V
+[Builder puts down a yellow block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:3 Y:1 Z:1]
+<Architect> still diagonal from the previous squares
+<Builder> extended?
+<Builder> oh ok
+[Builder picks up a yellow block at X:3 Y:1 Z:1]
+[Builder puts down a yellow block at X:3 Y:1 Z:2]
+[Builder picks up a yellow block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:3 Y:1 Z:-2]
+<Architect> good
+<Architect> switch to orange
+<Architect> now you're building a 3d staircase from the top of one of the sides of the V
+<Architect> start on the flat surface
+<Architect> one above the outer yellow block
+<Architect> either side
+[Builder puts down a orange block at X:5 Y:1 Z:1]
+[Builder puts down a orange block at X:4 Y:1 Z:2]
+[Builder puts down a orange block at X:5 Y:2 Z:1]
+[Builder puts down a orange block at X:4 Y:2 Z:2]
+[Builder puts down a orange block at X:3 Y:1 Z:3]
+[Builder puts down a orange block at X:3 Y:2 Z:3]
+<Architect> no delete ththose
+[Builder picks up a orange block at X:3 Y:2 Z:3]
+[Builder picks up a orange block at X:4 Y:2 Z:2]
+[Builder picks up a orange block at X:4 Y:1 Z:2]
+[Builder picks up a orange block at X:5 Y:2 Z:1]
+[Builder picks up a orange block at X:5 Y:1 Z:1]
+[Builder picks up a orange block at X:3 Y:1 Z:3]
+<Architect> stand at one of teh outer blocks
+<Architect> put one in front of it
+[Builder puts down a orange block at X:2 Y:1 Z:2]
+<Architect> great
+<Architect> now build a 3d staircase
+[Builder puts down a orange block at X:2 Y:2 Z:2]
+<Architect> diagonal slope
+[Builder puts down a orange block at X:3 Y:1 Z:1]
+<Builder> here?
+<Architect> jutting away from the V
+<Builder> the first step is yellow right?
+[Builder puts down a orange block at X:3 Y:2 Z:1]
+<Architect> not really; the first step is orange, but it is in line with the yellow blocks
+[Builder picks up a orange block at X:3 Y:2 Z:1]
+[Builder picks up a orange block at X:3 Y:1 Z:1]
+[Builder picks up a orange block at X:2 Y:2 Z:2]
+<Architect> okay build one more orange in front of that orange
+[Builder puts down a orange block at X:1 Y:1 Z:2]
+<Architect> now one orange on top of teh second orange
+[Builder puts down a orange block at X:1 Y:2 Z:2]
+<Architect> now delete the second orange
+[Builder picks up a orange block at X:1 Y:1 Z:2]
+<Architect> good repeat to make a third step
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+[Builder puts down a orange block at X:0 Y:3 Z:2]
+[Builder picks up a orange block at X:0 Y:2 Z:2]
+<Builder> like this?
+<Architect> now build that same structure on the other side of the V
+[Builder puts down a orange block at X:2 Y:1 Z:-2]
+[Builder puts down a orange block at X:2 Y:2 Z:-2]
+[Builder puts down a orange block at X:1 Y:2 Z:-2]
+[Builder picks up a orange block at X:2 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+[Builder picks up a orange block at X:0 Y:2 Z:-2]
+<Architect> well done
+<Architect> switch to red
+<Builder> ok
+<Architect> you're making a diamond
+<Architect> put a red block in front of the final orange blocks
+[Builder puts down a red block at X:-1 Y:3 Z:-2]
+<Builder> here?
+<Architect> yep
+<Architect> same on other side
+[Builder puts down a red block at X:-1 Y:3 Z:2]
+<Architect> now one below the red block
+[Builder puts down a red block at X:-1 Y:2 Z:-2]
+<Architect> and to the right
+[Builder puts down a red block at X:-2 Y:2 Z:-2]
+<Builder> is it a bridge?
+<Architect> you're essentially making that V shape in red, but it's vertical
+<Architect> delete those
+[Builder picks up a red block at X:-1 Y:2 Z:-2]
+[Builder picks up a red block at X:-2 Y:2 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-2]
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-2 Y:1 Z:-2]
+[Builder picks up a red block at X:-1 Y:1 Z:-2]
+[Builder picks up a red block at X:-1 Y:2 Z:-2]
+<Builder> here?
+<Architect> no all the red blocks are in the same plane
+[Builder picks up a red block at X:-2 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+<Architect> yep one above that now
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+<Architect> one down and to the right
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> now one up and to the right
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+<Builder> like this?
+<Architect> good delete all but the middle base ones
+[Builder picks up a red block at X:-1 Y:1 Z:1]
+[Builder picks up a red block at X:-1 Y:1 Z:-1]
+<Architect> great
+<Architect> make that same shape above to make a diamond
+[Builder puts down a red block at X:-1 Y:4 Z:2]
+[Builder picks up a red block at X:-1 Y:4 Z:2]
+<Builder> above the red?
+<Architect> yep; it's an upside down V in red still
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder picks up a red block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:0]
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+[Builder picks up a red block at X:-1 Y:4 Z:0]
+[Builder puts down a red block at X:-1 Y:4 Z:2]
+[Builder puts down a red block at X:-1 Y:4 Z:1]
+[Builder picks up a red block at X:-1 Y:4 Z:2]
+<Architect> awesome
+<Builder> cool
+<Architect> all done

@@ -1,0 +1,100 @@
+B35-A55-C77-1524256909014
+<Builder> Mission has started.
+<Builder> Im ready
+<Architect> good
+<Architect> make a vertically placed L with height 9 blocks and width 9 blocks
+<Architect> green
+[Builder puts down a green block at X:3 Y:1 Z:1]
+[Builder picks up a green block at X:3 Y:1 Z:1]
+[Builder puts down a green block at X:4 Y:1 Z:1]
+[Builder puts down a green block at X:3 Y:1 Z:1]
+[Builder picks up a green block at X:3 Y:1 Z:1]
+[Builder picks up a green block at X:4 Y:1 Z:1]
+[Builder puts down a green block at X:4 Y:1 Z:0]
+[Builder puts down a green block at X:3 Y:1 Z:0]
+[Builder puts down a green block at X:2 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+[Builder puts down a green block at X:-3 Y:1 Z:0]
+[Builder puts down a green block at X:-4 Y:1 Z:0]
+[Builder puts down a green block at X:-4 Y:2 Z:0]
+[Builder puts down a green block at X:-4 Y:3 Z:0]
+[Builder puts down a green block at X:-4 Y:5 Z:0]
+[Builder puts down a green block at X:-4 Y:6 Z:0]
+[Builder puts down a green block at X:-4 Y:7 Z:0]
+[Builder puts down a green block at X:-4 Y:8 Z:0]
+[Builder puts down a green block at X:-4 Y:9 Z:0]
+<Builder> okay
+<Architect> go to the top block of the l
+<Architect> make a red line all the way to the other end of the l
+<Architect> so add 8 red blocks to the left
+[Builder puts down a red block at X:-3 Y:9 Z:0]
+[Builder puts down a red block at X:-2 Y:9 Z:0]
+[Builder puts down a red block at X:-1 Y:9 Z:0]
+[Builder puts down a red block at X:2 Y:9 Z:0]
+[Builder picks up a red block at X:2 Y:9 Z:1]
+[Builder puts down a red block at X:3 Y:9 Z:0]
+[Builder puts down a red block at X:4 Y:9 Z:0]
+[Builder puts down a red block at X:5 Y:9 Z:0]
+[Builder picks up a red block at X:5 Y:9 Z:0]
+<Builder> ok
+<Architect> now make a red line down to the green line
+[Builder puts down a red block at X:4 Y:2 Z:0]
+[Builder puts down a red block at X:4 Y:3 Z:0]
+[Builder puts down a red block at X:4 Y:4 Z:0]
+[Builder puts down a red block at X:4 Y:5 Z:0]
+[Builder puts down a red block at X:4 Y:8 Z:0]
+[Builder puts down a red block at X:4 Y:7 Z:0]
+[Builder puts down a red block at X:4 Y:6 Z:0]
+<Architect> delete the bottom red block
+[Builder picks up a red block at X:4 Y:2 Z:0]
+<Architect> make a purple line right to the green except leave 1 space
+<Architect> starting from the red
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+<Builder> start here?
+<Architect> one above
+[Builder picks up a purple block at X:2 Y:2 Z:0]
+[Builder puts down a purple block at X:3 Y:3 Z:0]
+<Architect> yes
+<Builder> so here?
+[Builder puts down a purple block at X:2 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:-2 Y:3 Z:0]
+[Builder puts down a purple block at X:-3 Y:3 Z:0]
+<Architect> delete the right most purple
+[Builder picks up a purple block at X:-3 Y:3 Z:0]
+<Builder> is this going to look like a mazE?
+<Architect> extend the purple line up to one block before the red
+<Architect> its like a spiral
+[Builder puts down a purple block at X:3 Y:7 Z:0]
+[Builder puts down a purple block at X:3 Y:6 Z:0]
+[Builder puts down a purple block at X:3 Y:5 Z:0]
+[Builder puts down a purple block at X:3 Y:4 Z:0]
+<Builder> gotcha
+<Architect> other end of the purple line sorry
+[Builder picks up a red block at X:4 Y:7 Z:0]
+[Builder puts down a red block at X:4 Y:7 Z:0]
+[Builder picks up a purple block at X:3 Y:7 Z:0]
+[Builder picks up a purple block at X:3 Y:6 Z:0]
+[Builder picks up a purple block at X:3 Y:5 Z:0]
+[Builder picks up a purple block at X:3 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:5 Z:0]
+[Builder puts down a purple block at X:-2 Y:7 Z:0]
+<Architect> place 4 yellow blocks to the left of the topmost purple
+[Builder puts down a yellow block at X:-1 Y:7 Z:0]
+[Builder puts down a yellow block at X:0 Y:7 Z:0]
+[Builder puts down a yellow block at X:1 Y:7 Z:0]
+[Builder puts down a yellow block at X:2 Y:7 Z:0]
+[Builder puts down a yellow block at X:2 Y:6 Z:0]
+[Builder puts down a yellow block at X:2 Y:5 Z:0]
+<Architect> good
+<Builder> 2 blue?
+<Architect> two orange lol
+[Builder puts down a orange block at X:1 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+<Builder> close enough lol

@@ -1,0 +1,15 @@
+B34-A31-C3-1523649983538
+<Builder> Mission has started.
+<Architect> Hello
+<Builder> hi
+<Architect> We will build something very simple. It looks like a small 'L'
+<Builder> alright
+<Architect> It will be made entirely out of blue blocks
+<Builder> do you want to do something like an x-y coordinate system?
+<Architect> Place two blocks next to one another on the ground
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+<Architect> No, no x-y coordinate system
+<Architect> Perfect, not on top of the left block, put another blue block
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+<Architect> Perfect! We're done with this warm up

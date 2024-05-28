@@ -1,0 +1,88 @@
+B20-A10-C6-1522941513644
+<Builder> Mission has started.
+<Architect> so this entire structure lays on/above a footprint of a 7 by 6 gird
+[Builder puts down a purple block at X:-1 Y:1 Z:-3]
+[Builder puts down a purple block at X:-1 Y:1 Z:2]
+<Builder> im just marking for myself
+<Architect> actually, that is a really good start
+<Architect> start from the top blck and make a row toward the other of four purple blocks
+[Builder puts down a purple block at X:-1 Y:2 Z:2]
+[Builder puts down a purple block at X:-1 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+[Builder picks up a purple block at X:-1 Y:1 Z:2]
+<Architect> fill in underthat as well.
+<Builder> tok
+[Builder puts down a purple block at X:-1 Y:1 Z:2]
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+<Architect> and another row on top of that of purple
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+<Architect> and you can remove taht other one
+[Builder picks up a purple block at X:-1 Y:1 Z:-3]
+<Architect> okay. so on right end of the strucure, on the second level, there are red blocks kind of making a ring off the end. So i would start with a red block second from the right on the second levle of this purple thing
+[Builder puts down a red block at X:0 Y:2 Z:0]
+<Architect> one more in the same direction
+[Builder puts down a red block at X:1 Y:2 Z:0]
+<Architect> lay two to the right of that
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+<Architect> now three going up from that
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-2]
+[Builder puts down a red block at X:-2 Y:2 Z:-2]
+<Architect> and two more wrapping around the purple
+[Builder puts down a red block at X:-2 Y:2 Z:-1]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+<Architect> yep! next lets do the green blocks.
+<Architect> okay, so basically the same thing happens on the second level with the green. except the ring is bigger on your side
+[Builder puts down a green block at X:-2 Y:2 Z:1]
+[Builder puts down a green block at X:-3 Y:2 Z:1]
+<Architect> yep!
+[Builder puts down a green block at X:-3 Y:2 Z:2]
+[Builder puts down a green block at X:-3 Y:2 Z:3]
+[Builder puts down a green block at X:-2 Y:2 Z:3]
+[Builder puts down a green block at X:-1 Y:2 Z:3]
+[Builder puts down a green block at X:0 Y:2 Z:1]
+[Builder puts down a green block at X:0 Y:2 Z:2]
+[Builder puts down a green block at X:0 Y:2 Z:3]
+<Architect> okay, quick change. the blocks you can't "see" in the original purple rectangle shouldnt be there.
+[Builder picks up a purple block at X:-1 Y:3 Z:1]
+[Builder picks up a purple block at X:-1 Y:3 Z:0]
+[Builder picks up a purple block at X:-1 Y:2 Z:0]
+[Builder picks up a purple block at X:-1 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+<Architect> or, morethey should be replaced with red and green to continue the rectangles youre building around them
+<Builder> ah okay
+[Builder picks up a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+<Architect> great!
+<Architect> the final is a blue rectangle, like the ones you just build
+<Architect> *built
+<Builder> where do I put it?
+<Architect> it is perpindicular to the purple and green
+<Architect> so start in the empty spot of the green rectangle,
+[Builder puts down a blue block at X:-2 Y:2 Z:2]
+<Architect> one blue on top of that
+[Builder puts down a blue block at X:-2 Y:3 Z:2]
+<Architect> three more toward you
+[Builder puts down a blue block at X:-3 Y:3 Z:2]
+[Builder puts down a blue block at X:-4 Y:3 Z:2]
+[Builder puts down a blue block at X:-5 Y:3 Z:2]
+<Architect> two down
+[Builder puts down a blue block at X:-5 Y:2 Z:2]
+[Builder puts down a blue block at X:-5 Y:1 Z:2]
+<Builder> fill in the rest? or is it a ring?
+<Architect> and then connect itwith three more back toward the start
+[Builder puts down a blue block at X:-2 Y:1 Z:2]
+[Builder puts down a blue block at X:-3 Y:1 Z:2]
+[Builder puts down a blue block at X:-4 Y:1 Z:2]
+<Builder> cool
+<Architect> done

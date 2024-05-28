@@ -1,0 +1,24 @@
+B36-A35-C17-1523916463263
+<Builder> Mission has started.
+<Builder> hi
+<Architect> hi
+<Architect> alright so for the warmup go to orange blocks
+<Architect> you're going to use 3 blocks
+<Architect> it'll look like an L
+<Builder> flat or standing?
+<Architect> flat
+[Builder puts down a orange block at X:-1 Y:1 Z:2]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder picks up a orange block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:-2 Y:1 Z:1]
+<Architect> put that last piece on the left side of the piece behind the one ur facing
+<Architect> so remove the last piece you placed
+[Builder puts down a orange block at X:-2 Y:1 Z:0]
+[Builder picks up a orange block at X:-2 Y:1 Z:0]
+[Builder picks up a orange block at X:-2 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:2]
+<Architect> that's it
+<Builder> ok
+<Architect> we're done
+<Builder> cool

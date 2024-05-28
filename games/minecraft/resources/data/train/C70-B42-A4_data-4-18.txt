@@ -1,0 +1,98 @@
+B42-A4-C70-1524082466217
+<Builder> Mission has started.
+<Builder> hi, what should i do?
+<Architect> oh hi
+<Architect> this one is bad
+<Architect> start with yellow
+<Architect> go to a corner
+<Architect> place two in a line flat
+[Builder puts down a yellow block at X:5 Y:1 Z:-4]
+[Builder puts down a yellow block at X:5 Y:1 Z:-5]
+<Architect> now two more perpendicular to the far one
+[Builder puts down a yellow block at X:4 Y:1 Z:-4]
+[Builder puts down a yellow block at X:3 Y:1 Z:-4]
+<Architect> now one above
+<Architect> the last one
+[Builder puts down a yellow block at X:3 Y:2 Z:-4]
+<Architect> now one next to that
+<Architect> along teh same line
+[Builder puts down a yellow block at X:2 Y:2 Z:-4]
+<Architect> now in the same plane a line of three more perpendicular to the last one
+<Architect> away from you
+[Builder puts down a yellow block at X:2 Y:2 Z:-3]
+[Builder puts down a yellow block at X:2 Y:2 Z:-2]
+[Builder puts down a yellow block at X:2 Y:2 Z:-1]
+<Architect> great. now a column of two on top of teh last one
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:2 Y:4 Z:-1]
+<Architect> now one to hte right of the top
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+<Architect> one above that
+[Builder puts down a yellow block at X:1 Y:5 Z:-1]
+<Architect> then one to the right of that
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+<Architect> now one on top of the last one
+[Builder puts down a yellow block at X:0 Y:6 Z:-1]
+<Architect> all right
+<Architect> now a line of two coming towards you
+[Builder puts down a yellow block at X:0 Y:6 Z:-2]
+[Builder puts down a yellow block at X:0 Y:6 Z:-3]
+<Architect> now one to the right
+[Builder puts down a yellow block at X:-1 Y:6 Z:-3]
+<Architect> then one above that
+[Builder puts down a yellow block at X:-1 Y:7 Z:-3]
+<Architect> then one behind that
+[Builder puts down a yellow block at X:-1 Y:7 Z:-2]
+<Builder> im out of yellow
+<Architect> lol good. that's the last one
+<Builder> ok yay!
+<Architect> sorry. last one of yellow
+<Builder> oh ok
+<Architect> lol. switch to green
+<Architect> sorry this is hard for me to spin around the real structure and see all the turns
+<Architect> so go to the last yellow
+<Architect> other side
+<Architect> and place one green toward you
+[Builder puts down a green block at X:-2 Y:7 Z:-2]
+<Architect> good now one more next to that
+[Builder puts down a green block at X:-3 Y:7 Z:-2]
+<Architect> now two greens directly below that
+[Builder puts down a green block at X:-3 Y:6 Z:-2]
+[Builder puts down a green block at X:-3 Y:5 Z:-2]
+<Architect> now one to the right of that
+[Builder puts down a green block at X:-4 Y:5 Z:-2]
+<Architect> er i guess behind it from your perspective
+[Builder puts down a green block at X:-4 Y:5 Z:-1]
+<Architect> delete teh last two you placed
+[Builder picks up a green block at X:-3 Y:5 Z:-2]
+[Builder picks up a green block at X:-4 Y:5 Z:-2]
+[Builder puts down a green block at X:-3 Y:5 Z:-2]
+[Builder picks up a green block at X:-4 Y:5 Z:-1]
+<Architect> now from where you're facing one block towards you
+[Builder puts down a green block at X:-3 Y:5 Z:-1]
+<Architect> now one below that
+[Builder puts down a green block at X:-3 Y:4 Z:-1]
+<Architect> one toward you again
+[Builder puts down a green block at X:-3 Y:4 Z:0]
+<Architect> one below that
+[Builder puts down a green block at X:-3 Y:3 Z:0]
+<Architect> now one to the left of that
+[Builder puts down a green block at X:-4 Y:4 Z:0]
+<Architect> one more down
+[Builder puts down a green block at X:-3 Y:2 Z:0]
+[Builder picks up a green block at X:-3 Y:2 Z:0]
+[Builder puts down a green block at X:-4 Y:3 Z:0]
+<Architect> that last block is next to the previous one
+[Builder picks up a green block at X:-4 Y:3 Z:0]
+[Builder puts down a green block at X:-5 Y:4 Z:0]
+<Architect> delete teh two blocks sticking to the left
+[Builder picks up a green block at X:-4 Y:4 Z:0]
+[Builder picks up a green block at X:-5 Y:4 Z:0]
+<Architect> and there's just a single block to the left of the bottom block
+[Builder puts down a green block at X:-4 Y:3 Z:0]
+<Builder> ok
+<Architect> great. let me check it
+<Builder> ok standing by
+<Architect> okay looks good. wtf is it?
+<Builder> its crazy stairs
+<Architect> lol

@@ -1,0 +1,64 @@
+B40-A14-C67-1523053894335
+<Builder> Mission has started.
+<Architect> Place two yellow blocks on the grid. This structure mostly goes upward so you don't need a lot of room. But don't go too close to the edges
+<Builder> sounds good
+<Builder> so a stack of yellow blocks?
+<Architect> Sorry two next to each other
+<Builder> cool
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+<Architect> Great. Now stack another yellow one on top of the right one, and place another yellow one to the right of the stacked block
+[Builder puts down a yellow block at X:-1 Y:2 Z:1]
+[Builder puts down a yellow block at X:-2 Y:2 Z:1]
+<Architect> Great! Now you're going to stack three yellow blocks in a row, top on top of these and then one jutting out
+<Builder> on top of which block?
+<Architect> Oh sorry the two blocks you just stacked
+<Builder> ah i see what you mean
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+[Builder puts down a yellow block at X:-2 Y:3 Z:1]
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+[Builder picks up a yellow block at X:-2 Y:3 Z:0]
+[Builder puts down a yellow block at X:-3 Y:3 Z:1]
+<Builder> i thought by stack you meant vertically stack
+<Builder> is this what you had in mind?
+<Architect> Sorry! I meant stack one on top of each
+<Architect> Yes this is perfect
+<Builder> ah!
+<Builder> gotcha
+<Architect> Now stack a yellow block each on top of the center block and the right block
+[Builder puts down a yellow block at X:-1 Y:4 Z:1]
+[Builder puts down a yellow block at X:-3 Y:4 Z:1]
+<Builder> just curious...what are we building?
+<Architect> You stacked on the left and right. Can you move the left block to the center?
+[Builder picks up a yellow block at X:-1 Y:4 Z:1]
+[Builder puts down a yellow block at X:-2 Y:4 Z:1]
+<Architect> I have no idea!
+<Builder> ah my bad
+<Builder> lol
+<Builder> okay
+<Architect> Great! Now we're going to place four purple blocks on a row on top of this. Two are stacked on the two blocks on top here
+[Builder puts down a purple block at X:-2 Y:5 Z:1]
+[Builder puts down a purple block at X:-3 Y:5 Z:1]
+<Architect> The other two jut out on either side
+[Builder puts down a purple block at X:-1 Y:5 Z:1]
+[Builder puts down a purple block at X:-4 Y:5 Z:1]
+<Architect> Great! Now stack four purple blocks in a row on top of this row
+[Builder puts down a purple block at X:-4 Y:6 Z:1]
+[Builder puts down a purple block at X:-3 Y:6 Z:1]
+[Builder puts down a purple block at X:-2 Y:6 Z:1]
+[Builder puts down a purple block at X:-1 Y:6 Z:1]
+<Architect> Now add a block to either side so it juts out. a row of six purple blocks total
+[Builder puts down a purple block at X:-5 Y:6 Z:1]
+[Builder puts down a purple block at X:-1 Y:6 Z:0]
+[Builder puts down a purple block at X:0 Y:6 Z:1]
+[Builder picks up a purple block at X:-1 Y:6 Z:0]
+<Architect> Nice! Now place four more purple blocks in a row on top of the four center blocks
+[Builder puts down a purple block at X:-1 Y:7 Z:1]
+[Builder puts down a purple block at X:-2 Y:7 Z:1]
+[Builder puts down a purple block at X:-3 Y:7 Z:1]
+[Builder puts down a purple block at X:-4 Y:7 Z:1]
+<Architect> Great! Last step. Stack a purple block on each of the middle two blocks
+[Builder puts down a purple block at X:-2 Y:8 Z:1]
+[Builder puts down a purple block at X:-3 Y:8 Z:1]
+<Architect> We're done!
+<Builder> gg

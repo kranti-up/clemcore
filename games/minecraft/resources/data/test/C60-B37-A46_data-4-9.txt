@@ -1,0 +1,45 @@
+B37-A46-C60-1523307045598
+<Builder> Mission has started.
+<Architect> stand in the bottom right corner of the square
+<Builder> ok
+<Architect> put a green block in front of you and a blue block to your left
+[Builder puts down a green block at X:-5 Y:1 Z:-4]
+[Builder puts down a blue block at X:-4 Y:1 Z:-5]
+<Builder> ok
+<Architect> now stand between the 2 blocks
+<Builder> ok
+<Architect> on the other side
+<Builder> ok
+<Architect> put a red block in front of you and a purple block to your left
+<Builder> in front of me like on top of the blue block?
+<Architect> on the ground
+<Builder> i'm facing the blue block
+<Builder> should I turn around?
+<Architect> yes
+[Builder puts down a red block at X:-4 Y:1 Z:-3]
+[Builder puts down a purple block at X:-3 Y:1 Z:-4]
+<Builder> ok
+<Architect> move up bewteen the red and purple with your back to the blocks
+<Builder> ok
+<Architect> put a yellow block in front of you and an orange block to your left
+[Builder puts down a yellow block at X:-3 Y:1 Z:-2]
+[Builder puts down a orange block at X:-2 Y:1 Z:-3]
+<Builder> ok
+<Architect> this pattern repeats diagonally across the square until you get to the far left corner
+[Builder puts down a green block at X:-2 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:-2]
+<Architect> it should repeat 3 times
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:-1]
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:2]
+[Builder puts down a blue block at X:2 Y:1 Z:1]
+[Builder puts down a red block at X:2 Y:1 Z:3]
+[Builder puts down a purple block at X:3 Y:1 Z:2]
+[Builder puts down a yellow block at X:3 Y:1 Z:4]
+[Builder puts down a orange block at X:4 Y:1 Z:3]
+[Builder puts down a green block at X:4 Y:1 Z:5]
+[Builder puts down a blue block at X:5 Y:1 Z:4]
+<Builder> ok, like that?
+<Architect> yes

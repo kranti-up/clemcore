@@ -1,0 +1,66 @@
+B44-A20-C26-1523283703891
+<Builder> Mission has started.
+<Architect> this is a bit more complicated
+<Architect> start with a diagonal on the ground of 4 yellow
+[Builder puts down a yellow block at X:2 Y:1 Z:3]
+[Builder puts down a yellow block at X:1 Y:1 Z:2]
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+<Builder> this good?
+<Architect> sorry can you move it towards you one block
+[Builder picks up a yellow block at X:2 Y:1 Z:3]
+[Builder picks up a yellow block at X:1 Y:1 Z:2]
+[Builder puts down a yellow block at X:2 Y:1 Z:2]
+[Builder puts down a yellow block at X:1 Y:1 Z:1]
+[Builder picks up a yellow block at X:0 Y:1 Z:1]
+[Builder picks up a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder picks up a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:1 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+<Architect> great!
+<Architect> so we'll start on the other side of the structure
+<Architect> one level vertically on yellow
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:1]
+[Builder puts down a yellow block at X:2 Y:2 Z:2]
+<Architect> so those will be a place holder. you'll delete those later
+<Builder> alright
+<Architect> put 3 green where two yellos connect
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder picks up a green block at X:0 Y:3 Z:0]
+<Architect> sorry on the same level
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:0 Y:2 Z:1]
+[Builder puts down a green block at X:1 Y:2 Z:2]
+<Architect> yeds!
+<Architect> now on the other side repeat that with red
+[Builder puts down a red block at X:2 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+<Architect> now on the ground you're going to place 2 blue where the greens touch
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+<Architect> perfect! also you can delete the second row of yellow now
+[Builder picks up a yellow block at X:2 Y:2 Z:2]
+[Builder picks up a yellow block at X:1 Y:2 Z:1]
+[Builder picks up a yellow block at X:0 Y:2 Z:0]
+[Builder picks up a yellow block at X:-1 Y:2 Z:-1]
+<Architect> now we'll place purple
+<Architect> it's two blocks on a level above red and forward
+<Architect> similar to the blue
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:2 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:2 Y:2 Z:0]
+[Builder picks up a purple block at X:1 Y:2 Z:-1]
+<Architect> yup! and now one orange block
+[Builder puts down a orange block at X:2 Y:3 Z:-1]
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+[Builder picks up a orange block at X:2 Y:3 Z:-1]
+<Architect> Perfect!
+<Builder> looks nice

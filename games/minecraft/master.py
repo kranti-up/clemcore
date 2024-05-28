@@ -6,7 +6,7 @@ from collections import Counter
 import numpy as np
 
 import clemgame.metrics as ms
-from clemgame.clemgame import GameMaster, GameBenchmark
+from clemgame.clemgame import GameMaster, GameBenchmark, GameScorer
 from clemgame import get_logger
 
 from games.minecraft.players import InstructionGiver
@@ -33,7 +33,7 @@ class Minecraft(GameMaster):
         self.lose: bool = False
         self.complete_turns: int = 0
 
-        self.meval = MinecraftEval()
+        #self.meval = MinecraftEval()
 
 
     def setup(self, n_turns: int, prompt: str, game_id: int, dialogue: List) -> None:
@@ -54,7 +54,7 @@ class Minecraft(GameMaster):
         self.parsed_request_counts = [0] * (n_turns + 1)
         self.violated_request_counts = [0] * (n_turns + 1)
 
-        self.game_data = {"utterance": [], "action": {"groundtruth": [], "prediction": []}}
+        self.game_data = {"game_id": self.game_id, "utterance": {}, "action": {"groundtruth": {}, "prediction": {}}}
 
         # add initial prompts to each player's messages
         self.initiate(prompt)
@@ -87,8 +87,8 @@ class Minecraft(GameMaster):
         self.log_event(from_='GM', to='GM', action=action)
 
 
-        action = {'type': 'resforeval', 'content': self.game_data}
-        self.log_event(from_='GM', to='GM', action=action)
+        #action = {'type': 'resforeval', 'content': self.game_data}
+        #self.log_event(from_='GM', to='GM', action=action)
 
 
         # log a final message saying that the game did came to an end
@@ -98,8 +98,8 @@ class Minecraft(GameMaster):
         self.log_eval_assets()
 
     def _yield_prompt(self, dialogues: List) -> Tuple[str, str]:
-        for dialogue in dialogues:
-            yield dialogue["utterance"], dialogue["action"]
+        for turn, data in dialogues.items():
+            yield data["utterance"], data["action"]
 
     def _add_instruction(self, utterance: str, prompt: dict) -> None:
         content = "Instruction\n" + utterance + "\n"
@@ -137,11 +137,14 @@ class Minecraft(GameMaster):
         answer = ""
         if "Output" in response:
             answer = response.split("Output")[1].strip()
-            answer = answer.split("\n")
-            answer = " ".join(answer)
         else:
             print(f"Label Output not found in response {response}")
-            return None
+            #return None
+            answer = response
+
+        answer = answer.split("\n")
+        answer = " ".join(answer)
+
         print(f"Inside parse: answer = {answer} turn = {self.current_turn}")
         return answer    
 
@@ -161,13 +164,13 @@ class Minecraft(GameMaster):
             self.violated_request_counts[self.current_turn] += 1
             return False
         
-        self.game_data["action"]["prediction"].append(answer)
+        self.game_data["action"]["prediction"][self.current_turn] = answer
 
         # increase the counter of requests that conform to form rules
         self.parsed_request_counts[self.current_turn] += 1
         # log the event that the string was valid (no strange characters)
-        action = {'type': 'metadata', 'content': 'valid string'}
-        self.log_event(from_='GM', to='GM', action=action)
+        #action = {'type': 'metadata', 'content': 'valid string'}
+        #self.log_event(from_='GM', to='GM', action=action)
 
         # if correct characters, check correctness wrt game rules
         is_correct_reply = self.check_correctness(answer)
@@ -183,8 +186,12 @@ class Minecraft(GameMaster):
             return False
 
         # log the fact that the answer was correct
+        gt = self.game_data["action"]["groundtruth"][self.current_turn]
+        pred = self.game_data["action"]["prediction"][self.current_turn]
+        to_log = f"Groundtruth: {gt}, Prediction: {pred}"
         action = {'type': 'parse',
-                  'content': f'{answer} conforms to rules'}
+                  #'content': f'{answer} conforms to rules'}
+                  'content': f'{to_log}'}
         self.log_event(from_='GM', to='GM', action=action)
 
         return True
@@ -200,11 +207,11 @@ class Minecraft(GameMaster):
         assert player in ('a', 'b')
         if player == 'a':
             #print("Inside _get_utterance, calling _yield_prompt")
-            utterance, action = next(self.dialogue_turns)
-            action = " ".join(action)
+            utterance, action_gt = next(self.dialogue_turns)
+            action_gt = " ".join(action_gt)
             #print("Got utterance and action from _yield_prompt")
-            self.game_data["utterance"].append(utterance)
-            self.game_data["action"]["groundtruth"].append(action)
+            self.game_data["utterance"][self.current_turn] = utterance
+            self.game_data["action"]["groundtruth"][self.current_turn] = action_gt
 
             content = self._add_instruction(utterance, self.player_a.history)
 
@@ -220,7 +227,11 @@ class Minecraft(GameMaster):
             prompt, raw_answer, answer = self.player_a(self.player_a.history,
                                                     self.current_turn)
             # add reply to its own memory
-            self._append_utterance(answer, 'a', 'assistant')
+            # Using model response in the history
+            #self._append_utterance(answer, 'a', 'assistant')
+            # Using ground truth in the history
+            self._append_utterance(action_gt, 'a', 'assistant')
+
             # also add reply to the records
             action = {'type': 'get message', 'content': answer}
             self.log_event(from_='Player 1', to='GM', action=action,
@@ -249,6 +260,22 @@ class Minecraft(GameMaster):
         #Check if the answer contains commands other than pick and place
         return True
     
+    def log_eval_assets(self) -> None:
+        """Aux to log variables needed for scoring (firstlast specific)"""
+        self.log_key('Played turns', self.current_turn)
+        self.log_key('Complete turns', self.complete_turns)
+        self.log_key(ms.METRIC_ABORTED, self.aborted)
+        self.log_key(ms.METRIC_LOSE, self.lose)
+        self.log_key(ms.METRIC_REQUEST_COUNT, self.request_counts)
+        self.log_key(ms.METRIC_REQUEST_COUNT_PARSED, self.parsed_request_counts)
+        self.log_key(ms.METRIC_REQUEST_COUNT_VIOLATED, self.violated_request_counts)
+        self.log_key('Evaluation', self.game_data)
+
+class MinecraftGameScorer(GameScorer):
+    def __init__(self, game_name: str, experiment: Dict, game_instance: Dict):
+        super().__init__(game_name, experiment, game_instance)
+        self.meval = MinecraftEval()
+
     def compute_scores(self, episode_interactions: Dict) -> None:
         """Compute episode-level and turn-level scores (mandatory)."""
         played_turns = episode_interactions['Played turns']
@@ -278,6 +305,7 @@ class Minecraft(GameMaster):
         self.log_episode_score(ms.METRIC_REQUEST_SUCCESS, sum(p_reqs) / sum(reqs))
         self.log_episode_score(ms.BENCH_SCORE, bench_score)
 
+        '''
         for turn_data in episode_interactions["turns"][-1]:
             if turn_data["action"]["type"] == "resforeval":
                 results = turn_data["action"]["content"]
@@ -285,10 +313,13 @@ class Minecraft(GameMaster):
 
         #print(results)
         #input()
+        '''
+        results = episode_interactions["Evaluation"]
         print(f"Number of turns {len(results['utterance'])}")
         metrics = {"TP": 0, "FP": 0, "FN": 0}
         for index in range(len(results["utterance"])):
-            fn, fp, tp = self.meval.compute_fn_fp_tp(results["action"]["groundtruth"][index], results["action"]["prediction"][index])
+            turn = str(index+1)
+            fn, fp, tp = self.meval.compute_fn_fp_tp(results["action"]["groundtruth"][turn], results["action"]["prediction"][turn])
             self.log_turn_score(index, "TP", tp)
             self.log_turn_score(index, "FP", fp)
             self.log_turn_score(index, "FN", fn)
@@ -298,18 +329,7 @@ class Minecraft(GameMaster):
             print("Logged the scores")
         self.log_episode_score("FN", metrics["FN"])
         self.log_episode_score("FP", metrics["FP"])
-        self.log_episode_score("TP", metrics["TP"])
-
-
-    def log_eval_assets(self) -> None:
-        """Aux to log variables needed for scoring (firstlast specific)"""
-        self.log_key('Played turns', self.current_turn)
-        self.log_key('Complete turns', self.complete_turns)
-        self.log_key(ms.METRIC_ABORTED, self.aborted)
-        self.log_key(ms.METRIC_LOSE, self.lose)
-        self.log_key(ms.METRIC_REQUEST_COUNT, self.request_counts)
-        self.log_key(ms.METRIC_REQUEST_COUNT_PARSED, self.parsed_request_counts)
-        self.log_key(ms.METRIC_REQUEST_COUNT_VIOLATED, self.violated_request_counts)          
+        self.log_episode_score("TP", metrics["TP"])             
 
 
 class MinecraftGameBenchmark(GameBenchmark):
@@ -331,3 +351,6 @@ class MinecraftGameBenchmark(GameBenchmark):
                            player_backends: List[str]
                            ) -> GameMaster:
         return Minecraft(experiment, player_backends)
+    
+    def create_game_scorer(self, experiment: Dict, game_instance: Dict) -> GameScorer:
+        return MinecraftGameScorer(self.name, experiment, game_instance)    

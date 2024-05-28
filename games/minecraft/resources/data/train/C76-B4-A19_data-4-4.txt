@@ -1,0 +1,83 @@
+B4-A19-C76-1522885674536
+<Builder> Mission has started.
+<Builder> hi
+<Architect> hi
+<Architect> can you get some red blocks
+<Architect> place one anywhere on the ground
+[Builder puts down a red block at X:2 Y:1 Z:-3]
+<Architect> place a yellow one three units to your right
+[Builder puts down a yellow block at X:-1 Y:1 Z:-3]
+<Architect> sorry mb actually one more unit over
+[Builder picks up a yellow block at X:-1 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-3]
+[Builder picks up a yellow block at X:-1 Y:1 Z:-3]
+<Architect> tthen four units up from the yellow and two units to the left of the yellow, place a green block
+[Builder puts down a green block at X:0 Y:1 Z:1]
+<Architect> get a red block
+<Architect> place it diagonal to the red block except it should be floating
+<Builder> towards which direction?
+<Architect> uh towards the center of the triangle that the three blocks make
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder picks up a red block at X:1 Y:1 Z:-2]
+<Builder> there?
+<Architect> yeah now do the same for the other two colored blocks
+<Builder> with red or their own colors?
+<Architect> their own colors and directed towards the center
+[Builder puts down a yellow block at X:-1 Y:1 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder picks up a green block at X:0 Y:1 Z:0]
+<Architect> now in the center and three units above, place a blue block
+[Builder puts down a blue block at X:1 Y:3 Z:-2]
+[Builder puts down a blue block at X:0 Y:3 Z:-2]
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+[Builder picks up a blue block at X:0 Y:4 Z:-1]
+[Builder picks up a blue block at X:0 Y:3 Z:-2]
+[Builder picks up a blue block at X:1 Y:3 Z:-2]
+<Architect> ok now stack two blue blocks on top of that blue one
+[Builder puts down a blue block at X:0 Y:4 Z:-1]
+[Builder puts down a blue block at X:0 Y:5 Z:-1]
+<Architect> ok get some purple blocks, we will make a Y shape
+<Architect> so the center of the yshape should be on top of blue
+<Architect> so just place one there for now
+[Builder puts down a purple block at X:0 Y:6 Z:-1]
+<Architect> extend that 2 blocks out toward the side with red and yellow
+[Builder puts down a purple block at X:0 Y:6 Z:-2]
+[Builder puts down a purple block at X:0 Y:6 Z:-3]
+<Architect> now diagonal to the center purple block place two purple blocks, one on each side
+[Builder puts down a purple block at X:-1 Y:6 Z:-2]
+<Architect> diagonally
+[Builder puts down a purple block at X:1 Y:6 Z:-2]
+<Builder> like that?
+<Architect> oh no i mean the purple block on top of the blue block
+<Architect> so basically diagonal to the purple on top of the blue
+<Builder> there are diagonal. which direction should they point?
+<Architect> toward the side with green
+[Builder puts down a purple block at X:1 Y:7 Z:-2]
+[Builder picks up a purple block at X:1 Y:7 Z:-2]
+[Builder picks up a purple block at X:1 Y:6 Z:-2]
+[Builder picks up a purple block at X:-1 Y:6 Z:-2]
+[Builder puts down a purple block at X:-1 Y:6 Z:-1]
+[Builder puts down a purple block at X:-1 Y:6 Z:0]
+[Builder picks up a purple block at X:-1 Y:6 Z:-1]
+<Architect> yeah like that
+[Builder puts down a purple block at X:1 Y:6 Z:-1]
+[Builder puts down a purple block at X:1 Y:6 Z:0]
+[Builder picks up a purple block at X:1 Y:6 Z:-1]
+<Architect> so make a Y shape
+<Builder> how many>
+<Builder> ?
+<Architect> just one more row
+[Builder puts down a purple block at X:1 Y:6 Z:1]
+[Builder puts down a purple block at X:2 Y:6 Z:1]
+[Builder picks up a purple block at X:1 Y:6 Z:1]
+[Builder puts down a purple block at X:-1 Y:6 Z:1]
+[Builder puts down a purple block at X:-2 Y:6 Z:1]
+[Builder picks up a purple block at X:-1 Y:6 Z:1]
+<Architect> ok done
+<Builder> phew
+<Architect> yep

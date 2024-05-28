@@ -1,0 +1,15 @@
+B3-A2-C17-1522444542447
+<Builder> Mission has started.
+<Builder> hello architect
+<Architect> Hi
+<Builder> what would you like me to build today?
+<Architect> Build a orange L
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+<Builder> like this?
+<Architect> turn it on its side
+[Builder picks up a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+<Architect> perfect
+<Builder> thank you architect

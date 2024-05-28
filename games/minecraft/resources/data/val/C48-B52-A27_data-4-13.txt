@@ -1,0 +1,141 @@
+B52-A27-C48-1523661970517
+<Builder> Mission has started.
+<Builder> lead the way boss
+<Architect> this one is hard and I need to look at it but place a stack of two purple in the middle
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:0 Y:2 Z:0]
+<Builder> take your time
+<Architect> make it three and put one on the ground to make an L
+[Builder puts down a purple block at X:0 Y:1 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+<Architect> 4 blue on the stack
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+[Builder puts down a blue block at X:0 Y:5 Z:0]
+[Builder puts down a blue block at X:0 Y:6 Z:0]
+[Builder puts down a blue block at X:0 Y:7 Z:0]
+<Builder> wow, tall
+<Architect> now 4 red on top
+[Builder puts down a red block at X:0 Y:8 Z:0]
+[Builder puts down a red block at X:0 Y:9 Z:0]
+<Architect> on the second from the top build two red out of the face
+<Builder> is the face the same direction as the L on teh bottom
+<Architect> it doesn't matter I think its an umbrella so its gonna have to be repeated on each side
+<Builder> that's fun!
+<Architect> on spot belowthos build 3 out
+[Builder puts down a red block at X:0 Y:9 Z:1]
+[Builder puts down a red block at X:0 Y:9 Z:2]
+[Builder puts down a red block at X:0 Y:9 Z:3]
+[Builder picks up a red block at X:0 Y:9 Z:1]
+[Builder picks up a red block at X:0 Y:9 Z:2]
+<Builder> yay or nay?
+<Architect> yeah make it 4 out
+[Builder puts down a red block at X:0 Y:9 Z:4]
+<Architect> on each side too
+[Builder puts down a red block at X:-2 Y:9 Z:0]
+[Builder puts down a red block at X:-3 Y:9 Z:0]
+[Builder puts down a red block at X:-4 Y:9 Z:0]
+[Builder picks up a red block at X:-2 Y:9 Z:0]
+[Builder puts down a red block at X:0 Y:9 Z:-2]
+[Builder puts down a red block at X:0 Y:9 Z:-3]
+[Builder puts down a red block at X:0 Y:9 Z:-4]
+[Builder picks up a red block at X:0 Y:9 Z:-2]
+[Builder puts down a red block at X:2 Y:9 Z:0]
+[Builder puts down a red block at X:3 Y:9 Z:0]
+[Builder picks up a red block at X:2 Y:9 Z:0]
+[Builder puts down a red block at X:4 Y:9 Z:0]
+<Architect> so youre gonna have to shift every down two blocks
+<Architect> so take two red out of the middle
+<Builder> lol, just the red parts sticking out?
+<Architect> yeah
+[Builder puts down a red block at X:-1 Y:8 Z:0]
+[Builder puts down a red block at X:-2 Y:8 Z:0]
+[Builder picks up a red block at X:-3 Y:9 Z:0]
+[Builder picks up a red block at X:-4 Y:9 Z:0]
+[Builder puts down a red block at X:0 Y:8 Z:-1]
+[Builder puts down a red block at X:0 Y:8 Z:-2]
+[Builder picks up a red block at X:0 Y:9 Z:-3]
+[Builder picks up a red block at X:0 Y:9 Z:-4]
+[Builder picks up a red block at X:3 Y:9 Z:0]
+[Builder picks up a red block at X:4 Y:9 Z:0]
+[Builder puts down a red block at X:1 Y:8 Z:0]
+[Builder puts down a red block at X:2 Y:8 Z:0]
+[Builder picks up a red block at X:0 Y:9 Z:3]
+[Builder picks up a red block at X:0 Y:9 Z:4]
+[Builder puts down a red block at X:0 Y:8 Z:1]
+[Builder puts down a red block at X:0 Y:8 Z:2]
+[Builder puts down a red block at X:0 Y:7 Z:2]
+[Builder puts down a red block at X:0 Y:7 Z:3]
+[Builder puts down a red block at X:0 Y:7 Z:4]
+[Builder picks up a red block at X:0 Y:7 Z:2]
+[Builder puts down a red block at X:-2 Y:7 Z:0]
+[Builder puts down a red block at X:-3 Y:7 Z:0]
+[Builder puts down a red block at X:-4 Y:7 Z:0]
+[Builder picks up a red block at X:-2 Y:7 Z:0]
+[Builder puts down a red block at X:1 Y:8 Z:-2]
+[Builder picks up a red block at X:1 Y:8 Z:-2]
+[Builder puts down a red block at X:0 Y:7 Z:-2]
+[Builder puts down a red block at X:0 Y:6 Z:-2]
+[Builder puts down a red block at X:0 Y:7 Z:-3]
+[Builder puts down a red block at X:0 Y:7 Z:-4]
+[Builder picks up a red block at X:0 Y:6 Z:-2]
+[Builder picks up a red block at X:0 Y:7 Z:-2]
+[Builder puts down a red block at X:2 Y:7 Z:0]
+[Builder puts down a red block at X:3 Y:7 Z:0]
+[Builder puts down a red block at X:4 Y:7 Z:0]
+[Builder picks up a red block at X:2 Y:7 Z:0]
+<Builder> i think i fixed it
+<Architect> so were going to fill in with orange so go to the top
+<Builder> connect the reds like a matt?
+[Builder puts down a orange block at X:-1 Y:8 Z:1]
+[Builder puts down a orange block at X:-2 Y:8 Z:1]
+[Builder puts down a orange block at X:-1 Y:8 Z:2]
+[Builder picks up a orange block at X:-2 Y:9 Z:1]
+[Builder puts down a orange block at X:-2 Y:8 Z:2]
+<Architect> but just one in the corner
+[Builder picks up a orange block at X:-2 Y:8 Z:2]
+[Builder picks up a orange block at X:-2 Y:8 Z:1]
+[Builder picks up a orange block at X:-1 Y:8 Z:2]
+[Builder puts down a orange block at X:-2 Y:8 Z:1]
+[Builder puts down a orange block at X:-2 Y:7 Z:1]
+[Builder picks up a orange block at X:-2 Y:8 Z:1]
+[Builder puts down a orange block at X:-1 Y:7 Z:1]
+[Builder puts down a orange block at X:-1 Y:7 Z:2]
+[Builder picks up a orange block at X:-1 Y:7 Z:1]
+<Architect> perfect
+<Builder> all sides?
+[Builder puts down a orange block at X:-1 Y:8 Z:-1]
+[Builder puts down a orange block at X:-1 Y:8 Z:-2]
+[Builder puts down a orange block at X:-1 Y:7 Z:-2]
+[Builder picks up a orange block at X:-1 Y:8 Z:-2]
+[Builder puts down a orange block at X:-2 Y:8 Z:-1]
+[Builder puts down a orange block at X:-2 Y:7 Z:-1]
+[Builder picks up a orange block at X:-2 Y:8 Z:-1]
+[Builder puts down a orange block at X:1 Y:8 Z:-1]
+[Builder puts down a orange block at X:1 Y:8 Z:1]
+[Builder puts down a orange block at X:1 Y:7 Z:1]
+[Builder puts down a orange block at X:1 Y:7 Z:2]
+[Builder puts down a orange block at X:2 Y:7 Z:1]
+[Builder picks up a orange block at X:1 Y:7 Z:1]
+[Builder puts down a orange block at X:2 Y:8 Z:-1]
+[Builder puts down a orange block at X:2 Y:7 Z:-1]
+[Builder puts down a orange block at X:1 Y:7 Z:-1]
+[Builder puts down a orange block at X:1 Y:8 Z:-2]
+[Builder puts down a orange block at X:1 Y:7 Z:-2]
+[Builder picks up a orange block at X:1 Y:8 Z:-2]
+[Builder picks up a orange block at X:1 Y:7 Z:-1]
+[Builder picks up a orange block at X:2 Y:8 Z:-1]
+<Architect> take off one red from each side
+[Builder picks up a red block at X:0 Y:7 Z:4]
+[Builder picks up a red block at X:4 Y:7 Z:0]
+[Builder picks up a red block at X:0 Y:7 Z:-4]
+[Builder picks up a red block at X:-4 Y:7 Z:0]
+<Builder> nice
+<Architect> go underneath the umbrella
+<Builder> is it gonna rain?
+<Architect> and if you look up put a red block on each side to fill in that outer part
+[Builder puts down a red block at X:-2 Y:7 Z:0]
+[Builder puts down a red block at X:0 Y:7 Z:2]
+[Builder puts down a red block at X:2 Y:7 Z:0]
+[Builder puts down a red block at X:0 Y:7 Z:-2]
+<Architect> perfect
+<Builder> sweet

@@ -1,0 +1,65 @@
+B1-A44-C16-1523036004645
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hello. ok same procedure as last time
+<Architect> purple, empty, orange
+<Architect> 2nd column: empty, orange, yellow
+[Builder puts down a purple block at X:5 Y:1 Z:-1]
+[Builder puts down a purple block at X:5 Y:2 Z:-1]
+[Builder puts down a orange block at X:5 Y:3 Z:-1]
+[Builder picks up a purple block at X:5 Y:2 Z:-1]
+<Architect> 3rd column: orange, 3 yellow
+[Builder puts down a orange block at X:4 Y:3 Z:-1]
+[Builder puts down a orange block at X:4 Y:2 Z:-1]
+[Builder picks up a orange block at X:4 Y:3 Z:-1]
+[Builder puts down a yellow block at X:4 Y:3 Z:-1]
+[Builder puts down a yellow block at X:4 Y:4 Z:-1]
+[Builder picks up a yellow block at X:4 Y:3 Z:-1]
+[Builder puts down a orange block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:3 Y:2 Z:-1]
+[Builder puts down a yellow block at X:3 Y:3 Z:-1]
+[Builder puts down a yellow block at X:3 Y:4 Z:-1]
+<Architect> 4th column: empty, red, 3 yellow
+[Builder puts down a red block at X:2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:2 Y:4 Z:-1]
+[Builder puts down a yellow block at X:2 Y:4 Z:-2]
+[Builder picks up a yellow block at X:2 Y:4 Z:-2]
+[Builder puts down a yellow block at X:2 Y:5 Z:-1]
+<Architect> ok on the second column the yellow and orange are touching, theres no space between them move the yellow down by 1
+<Builder> ok
+[Builder picks up a yellow block at X:4 Y:4 Z:-1]
+[Builder puts down a yellow block at X:4 Y:3 Z:-1]
+<Builder> here?
+<Architect> 5th column, red, empty, red, 3 yellow. yep you made the correction properly
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:1 Y:5 Z:-1]
+[Builder puts down a yellow block at X:1 Y:6 Z:-1]
+<Builder> is the yellow stairs continuing?
+<Architect> yeah sorta but we're done with the stair formation
+<Architect> anyways 6th column: red, 2 empty, red, 2 yellow
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+[Builder puts down a yellow block at X:0 Y:6 Z:-1]
+<Architect> last column: 1 red
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+<Architect> ok and we have more
+<Builder> ok
+<Architect> the second to last column red block has a block in front and behind it
+<Architect> the second to last column bottom red block*
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Builder> here?
+<Architect> no move those 2 red blocks left by 1
+[Builder picks up a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+<Architect> the 2 you just placed
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder picks up a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder picks up a red block at X:-1 Y:1 Z:0]
+<Architect> ok wer're done !
+<Builder> good job

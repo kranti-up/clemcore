@@ -1,0 +1,58 @@
+B44-A20-C51-1523283403369
+<Builder> Mission has started.
+<Builder> ready when you are
+<Architect> okay so let's start in the middle-ish
+<Architect> green
+<Architect> place a row of 3 on the ground
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+<Architect> break the middle
+[Builder picks up a green block at X:0 Y:1 Z:1]
+<Architect> switch to blue
+<Architect> one on top of each green
+[Builder puts down a blue block at X:1 Y:2 Z:1]
+[Builder puts down a blue block at X:-1 Y:2 Z:1]
+<Architect> then a row of 3 blue on top of that
+[Builder puts down a blue block at X:1 Y:3 Z:1]
+[Builder puts down a blue block at X:0 Y:3 Z:1]
+[Builder puts down a blue block at X:-1 Y:3 Z:1]
+<Architect> perfect! now to red
+<Architect> place it between the green
+[Builder puts down a red block at X:0 Y:1 Z:1]
+<Architect> and then one on the left of the left green
+[Builder puts down a red block at X:2 Y:1 Z:1]
+<Architect> a row of 3 red behind the two you placed
+[Builder puts down a red block at X:0 Y:1 Z:2]
+[Builder puts down a red block at X:1 Y:1 Z:2]
+[Builder puts down a red block at X:2 Y:1 Z:2]
+<Architect> now come back to the other side
+<Architect> one more red attached to those two
+[Builder puts down a red block at X:1 Y:1 Z:0]
+<Architect> the two reds you placed
+<Builder> here?
+<Architect> no
+[Builder picks up a red block at X:1 Y:1 Z:0]
+<Architect> sorry. one red attached to each red
+[Builder picks up a red block at X:2 Y:1 Z:1]
+[Builder puts down a red block at X:2 Y:1 Z:1]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> yup!
+<Architect> and repeat with orange
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+[Builder picks up a orange block at X:1 Y:1 Z:-1]
+[Builder picks up a orange block at X:1 Y:1 Z:0]
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+[Builder picks up a orange block at X:-1 Y:1 Z:-1]
+<Architect> oh sorry i just meant two orange
+[Builder picks up a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+<Architect> Yes!
+<Builder> lol my bad
+<Architect> we got it

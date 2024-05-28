@@ -1,0 +1,60 @@
+B27-A1-C123-1524162508090
+<Builder> Mission has started.
+<Architect> it looks like a soccer player, but with three legs...
+<Architect> okay lets build the man
+<Architect> place 2 tower of four orange these two towers are one space seperated
+<Builder> should it be towards one side?
+<Architect> make it kinda towards the middle
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+<Architect> okay add three red blocks on top of each of these towers
+[Builder puts down a red block at X:1 Y:5 Z:0]
+[Builder puts down a red block at X:1 Y:6 Z:0]
+[Builder puts down a red block at X:1 Y:7 Z:0]
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+[Builder puts down a red block at X:-1 Y:6 Z:0]
+[Builder puts down a red block at X:-1 Y:7 Z:0]
+<Architect> now connect these red blocks with three more red blocks making a 3x3
+[Builder puts down a red block at X:0 Y:7 Z:0]
+[Builder puts down a red block at X:0 Y:6 Z:0]
+[Builder puts down a red block at X:0 Y:5 Z:0]
+<Architect> so thats the body, we need one orange block for the head
+<Architect> place on top of the middle red block
+[Builder puts down a orange block at X:0 Y:8 Z:0]
+<Architect> great
+<Architect> now the man is making a T with the arms
+<Architect> add two orange blocks
+[Builder puts down a orange block at X:-2 Y:7 Z:0]
+[Builder puts down a orange block at X:-3 Y:7 Z:0]
+[Builder puts down a orange block at X:2 Y:7 Z:0]
+[Builder puts down a orange block at X:3 Y:7 Z:0]
+<Architect> awesome, now for the other leg thats kicking the ball..
+<Architect> place one orange block in front of the left-topmost orange block
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+<Architect> now we want to make a stair case structure with two more orange blocks going down
+<Architect> so like kicking
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:3 Z:-2]
+[Builder picks up a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:-2]
+[Builder puts down a orange block at X:1 Y:2 Z:-3]
+[Builder picks up a orange block at X:1 Y:2 Z:-2]
+<Architect> okay so the yellow ball is in front of this last orange block but three blocks floating
+<Builder> is it seperated by a space
+<Architect> no
+[Builder puts down a yellow block at X:1 Y:1 Z:-4]
+[Builder puts down a yellow block at X:1 Y:2 Z:-4]
+[Builder puts down a yellow block at X:1 Y:3 Z:-4]
+[Builder puts down a yellow block at X:1 Y:4 Z:-4]
+[Builder picks up a yellow block at X:1 Y:1 Z:-4]
+<Builder> like that?
+<Architect> sorta, its only one block delete the bottom two
+[Builder picks up a yellow block at X:1 Y:2 Z:-4]
+[Builder picks up a yellow block at X:1 Y:3 Z:-4]
+<Architect> great

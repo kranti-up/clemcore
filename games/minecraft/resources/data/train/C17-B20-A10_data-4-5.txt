@@ -1,0 +1,21 @@
+B20-A10-C17-1522939291290
+<Builder> Mission has started.
+<Builder> ready when you are
+<Architect> awesome. okay, start with an orange block
+<Architect> i think you can put it anywhere
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+<Architect> now put another orange block next to it
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+<Architect> now make an l with another orange block
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+<Builder> bigger?
+<Architect> sorry, make the l flush to the ground
+[Builder picks up a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:1 Z:0]
+[Builder picks up a orange block at X:2 Y:1 Z:0]
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:3 Y:1 Z:-1]
+<Architect> just the 3
+[Builder picks up a orange block at X:3 Y:1 Z:-1]
+<Builder> that it?
+<Architect> yep! it's done

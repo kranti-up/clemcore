@@ -1,0 +1,21 @@
+B35-A15-C40-1524246353413
+<Builder> Mission has started.
+<Architect> okay, way easier this time
+<Builder> I don't believe you
+<Builder> jk
+<Architect> make a stack of 3 blocks in the middle, first red on the bottom, then orange, then yellow
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+<Builder> okay
+<Architect> okay, now two green blocks on any two opposite sides of the yellow one
+[Builder puts down a green block at X:-1 Y:3 Z:-2]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+<Architect> two purple blocks on the ground underneath the green blocks
+[Builder puts down a purple block at X:-1 Y:1 Z:-2]
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+<Architect> and two blue blocks coming out of the orange ones, perpendicular to the others
+[Builder puts down a blue block at X:-2 Y:2 Z:-1]
+[Builder puts down a blue block at X:0 Y:2 Z:-1]
+<Architect> done :)
+<Builder> awesome!

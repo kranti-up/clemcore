@@ -1,0 +1,82 @@
+B12-A26-C2-1522942074039
+<Builder> Mission has started.
+<Architect> Okay, we'll start with a 2x2x2 cube of red bricks
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+<Architect> One the next level, we'll add a ring of red blocks, so that the 2nd layer is a 4x4 square of red bricks
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:2]
+[Builder puts down a red block at X:0 Y:2 Z:2]
+[Builder puts down a red block at X:-1 Y:2 Z:2]
+[Builder picks up a red block at X:-1 Y:2 Z:3]
+[Builder puts down a red block at X:2 Y:2 Z:-1]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:1 Z:2]
+[Builder picks up a red block at X:1 Y:1 Z:2]
+[Builder puts down a red block at X:2 Y:2 Z:2]
+<Architect> Now remove the corners of the 4x4 square
+<Architect> As well as the 2x2x2 cube
+[Builder picks up a red block at X:-1 Y:2 Z:2]
+[Builder picks up a red block at X:0 Y:2 Z:1]
+[Builder picks up a red block at X:1 Y:2 Z:1]
+[Builder picks up a red block at X:1 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:2 Z:0]
+<Architect> It will leave us with lines of two bricks hanging in the air, touching one another diagonally
+[Builder picks up a red block at X:-1 Y:2 Z:-1]
+[Builder picks up a red block at X:2 Y:2 Z:-1]
+[Builder picks up a red block at X:2 Y:2 Z:2]
+[Builder picks up a red block at X:1 Y:1 Z:1]
+[Builder picks up a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:1]
+[Builder picks up a red block at X:1 Y:1 Z:0]
+<Architect> Good work! now add purple bricks on top of each of the red bricks
+[Builder puts down a purple block at X:2 Y:3 Z:0]
+[Builder puts down a purple block at X:2 Y:3 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:2]
+[Builder puts down a purple block at X:0 Y:3 Z:2]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+<Architect> Complete the perimeter of the 4x4 square the purple blocks are almost making
+[Builder puts down a purple block at X:2 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+[Builder puts down a purple block at X:2 Y:3 Z:2]
+<Architect> Awesome! Now add two purple bricks to the side of each of the perimeter
+<Builder> I am not sure what you mean
+<Builder> make it into an octogon?
+[Builder puts down a purple block at X:3 Y:3 Z:0]
+[Builder puts down a purple block at X:3 Y:3 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:3]
+[Builder puts down a purple block at X:0 Y:3 Z:3]
+<Architect> So that we will have a blank-purple-purple-blank on each side of the square
+[Builder puts down a purple block at X:-2 Y:3 Z:1]
+[Builder picks up a purple block at X:-2 Y:3 Z:1]
+<Architect> Nice!
+[Builder puts down a purple block at X:-2 Y:3 Z:1]
+[Builder puts down a purple block at X:-2 Y:3 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:-2]
+[Builder puts down a purple block at X:1 Y:3 Z:-2]
+[Builder picks up a purple block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:0 Y:3 Z:-1]
+[Builder picks up a purple block at X:-1 Y:3 Z:0]
+[Builder picks up a purple block at X:-1 Y:3 Z:1]
+[Builder picks up a purple block at X:0 Y:3 Z:2]
+[Builder picks up a purple block at X:1 Y:3 Z:2]
+[Builder picks up a purple block at X:2 Y:3 Z:0]
+[Builder picks up a purple block at X:2 Y:3 Z:1]
+<Architect> The last step will be to remove the purples that are on top of the red, but you already did that

@@ -1,0 +1,52 @@
+B24-A25-C43-1523053331176
+<Builder> Mission has started.
+<Architect> kk, this one is a lil crazy
+<Builder> aright
+<Architect> you need 7 blocks worth of space
+<Architect> since thata's how big it is at its widest point
+<Architect> but start by putting two red blocks 1 block apart
+<Builder> k
+<Builder> what corner of the structure are we starting on
+<Architect> the middle
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+<Architect> it's symmetric from the center
+<Architect> then put a row of 7 green blocks down, 3 on top of the blocks you put down, and then 2 hanging off both sides
+<Architect> just as a single line of green blocks
+[Builder puts down a green block at X:-1 Y:2 Z:-1]
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:1]
+[Builder puts down a green block at X:-1 Y:2 Z:2]
+[Builder puts down a green block at X:-1 Y:2 Z:3]
+<Architect> yea like that
+[Builder puts down a green block at X:-1 Y:2 Z:-2]
+[Builder puts down a green block at X:-1 Y:2 Z:-3]
+<Architect> from here on out all the stuff you need to do is centered from the middle
+<Architect> put down 5 green blocks on top of these 7
+[Builder puts down a green block at X:-1 Y:3 Z:-2]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:3 Z:2]
+<Architect> then 3 blocks on top of these 5
+[Builder puts down a green block at X:-1 Y:4 Z:-1]
+[Builder puts down a green block at X:-1 Y:4 Z:0]
+[Builder puts down a green block at X:-1 Y:4 Z:1]
+[Builder puts down a green block at X:-1 Y:5 Z:0]
+<Architect> then 3 YELLOW blocks on top of these 3
+[Builder picks up a green block at X:-1 Y:5 Z:0]
+[Builder puts down a yellow block at X:-1 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:5 Z:0]
+[Builder puts down a yellow block at X:-1 Y:5 Z:1]
+<Architect> then 3 more yellow blocks on top
+[Builder puts down a yellow block at X:-1 Y:6 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:6 Z:0]
+[Builder puts down a yellow block at X:-1 Y:6 Z:1]
+<Architect> then 5 yellow blocks
+[Builder puts down a yellow block at X:-1 Y:7 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:7 Z:1]
+[Builder puts down a yellow block at X:-1 Y:7 Z:0]
+[Builder puts down a yellow block at X:-1 Y:7 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:7 Z:2]
+<Architect> then one red block, and we're done
+[Builder puts down a red block at X:-1 Y:8 Z:0]

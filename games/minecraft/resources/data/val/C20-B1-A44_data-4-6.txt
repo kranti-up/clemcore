@@ -1,0 +1,93 @@
+B1-A44-C20-1523036364610
+<Builder> Mission has started.
+<Builder> hello
+<Architect> ok this one is not 2 dimensional so its gonna be a bit challenging
+<Builder> got it
+<Architect> but lets start with a 2 dimensional 2 column drawing anyways
+<Architect> red, empty, yellow
+<Builder> anywhere?
+<Architect> anywhere
+[Builder puts down a red block at X:5 Y:1 Z:-5]
+[Builder puts down a yellow block at X:5 Y:2 Z:-5]
+[Builder puts down a yellow block at X:5 Y:3 Z:-5]
+[Builder picks up a yellow block at X:5 Y:2 Z:-5]
+<Architect> ok I take that back place it in the middle
+[Builder picks up a yellow block at X:5 Y:3 Z:-5]
+[Builder picks up a red block at X:5 Y:1 Z:-5]
+<Builder> ok
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder picks up a red block at X:1 Y:2 Z:-1]
+<Architect> 2nd column: empty, orange
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+<Architect> ok allow me some time to think of instructions
+<Builder> it might be easier to describe all one color?
+<Builder> then build from there?
+<Architect> ok lets finish up the yellows then
+<Architect> place one yellow a column to the right of the orange block, 1 space higher, and 1 space further back
+<Builder> back meaning away?
+<Builder> or towards me?
+<Architect> into the page
+<Architect> lol
+<Architect> away yes
+<Builder> away?
+<Builder> ok
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+[Builder picks up a yellow block at X:-2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+[Builder picks up a yellow block at X:0 Y:3 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:1]
+<Builder> here?
+<Architect> ok that's it
+<Architect> ok lets do greens now
+<Architect> place 1 green block a single space behind, and a single space above the yellow block you just placed
+[Builder puts down a green block at X:-1 Y:4 Z:0]
+[Builder puts down a green block at X:-1 Y:4 Z:1]
+[Builder picks up a green block at X:-1 Y:4 Z:0]
+<Architect> yep
+<Builder> here?
+<Architect> if you could return to the front of the structure every time, it wouldh elp with the instructions I think
+<Architect> the other green block is 3 spaces to the left and 1 space up of the last yellow block you placed
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:2 Y:4 Z:0]
+<Architect> yep
+[Builder picks up a green block at X:2 Y:3 Z:0]
+[Builder picks up a green block at X:1 Y:3 Z:0]
+[Builder picks up a green block at X:0 Y:3 Z:0]
+<Architect> ok we're done with greens lets do blue
+<Architect> thers a blue block 1 space above and 1 space away from the last green block you placed
+[Builder puts down a blue block at X:2 Y:5 Z:0]
+[Builder puts down a blue block at X:2 Y:5 Z:1]
+[Builder picks up a blue block at X:2 Y:5 Z:0]
+<Builder> here?
+<Architect> yes
+<Architect> the other blue block is 1 space to the left, 1 space up, 1 space behind the first green block you placed
+<Architect> the left green block*
+<Builder> diagonal step?
+[Builder puts down a blue block at X:-1 Y:5 Z:1]
+[Builder puts down a blue block at X:-1 Y:5 Z:2]
+[Builder puts down a blue block at X:0 Y:5 Z:2]
+[Builder picks up a blue block at X:-1 Y:5 Z:2]
+[Builder picks up a blue block at X:-1 Y:5 Z:1]
+[Builder puts down a blue block at X:0 Y:5 Z:1]
+<Architect> remove that last blue one
+[Builder picks up a blue block at X:0 Y:5 Z:1]
+<Architect> ok last is purple
+<Architect> place a purple 1 space left, 1 space up of the last blue block you placed
+[Builder puts down a purple block at X:1 Y:5 Z:2]
+[Builder puts down a purple block at X:1 Y:6 Z:2]
+[Builder picks up a purple block at X:1 Y:5 Z:2]
+<Architect> ok we're done
+<Builder> left step?
+<Architect> would you like for me to start using those terms?
+<Builder> just to confirm
+<Architect> ah ok

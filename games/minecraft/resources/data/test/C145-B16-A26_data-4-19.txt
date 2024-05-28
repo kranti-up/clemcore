@@ -1,0 +1,107 @@
+B16-A26-C145-1524156923760
+<Builder> Mission has started.
+<Architect> Great! this one will also take the whole map
+<Architect> so we will start with a column of 4 red bricks, 3 spots from the right hand side of the map
+<Architect> so there will be 2 spaces between the edge of the map and the column
+[Builder puts down a red block at X:-2 Y:1 Z:-3]
+[Builder puts down a red block at X:-2 Y:2 Z:-3]
+[Builder puts down a red block at X:-2 Y:3 Z:-3]
+<Architect> Sorry, one more spot to the right
+[Builder puts down a red block at X:-2 Y:4 Z:-3]
+[Builder picks up a red block at X:-2 Y:4 Z:-3]
+[Builder picks up a red block at X:-2 Y:3 Z:-3]
+[Builder picks up a red block at X:-2 Y:2 Z:-3]
+[Builder picks up a red block at X:-2 Y:1 Z:-3]
+[Builder puts down a red block at X:-1 Y:1 Z:-3]
+<Builder> here?
+[Builder puts down a red block at X:-1 Y:2 Z:-3]
+<Architect> that's perfect!
+[Builder puts down a red block at X:-1 Y:3 Z:-3]
+[Builder puts down a red block at X:-1 Y:4 Z:-3]
+<Architect> now remove the brick from the bottom of the column
+[Builder picks up a red block at X:-1 Y:1 Z:-3]
+<Architect> Great! we'll add a brick on the edge of the map on the same level as the top brick of the column
+<Builder> right edge?
+[Builder puts down a orange block at X:-2 Y:4 Z:-3]
+[Builder puts down a orange block at X:-3 Y:4 Z:-3]
+[Builder puts down a orange block at X:-4 Y:4 Z:-3]
+[Builder puts down a orange block at X:-5 Y:4 Z:-3]
+[Builder picks up a orange block at X:-4 Y:4 Z:-3]
+[Builder picks up a orange block at X:-3 Y:4 Z:-3]
+[Builder picks up a orange block at X:-2 Y:4 Z:-3]
+<Architect> Left edge
+[Builder picks up a orange block at X:-5 Y:4 Z:-3]
+[Builder puts down a orange block at X:0 Y:4 Z:-3]
+[Builder puts down a orange block at X:1 Y:4 Z:-3]
+[Builder puts down a orange block at X:2 Y:4 Z:-3]
+[Builder puts down a orange block at X:3 Y:4 Z:-3]
+[Builder puts down a orange block at X:4 Y:4 Z:-3]
+[Builder puts down a orange block at X:5 Y:4 Z:-3]
+<Architect> Sorry, I didn't describe that very well
+[Builder picks up a orange block at X:4 Y:4 Z:-3]
+[Builder picks up a orange block at X:2 Y:4 Z:-3]
+[Builder picks up a orange block at X:3 Y:4 Z:-3]
+[Builder picks up a orange block at X:1 Y:4 Z:-3]
+[Builder picks up a orange block at X:0 Y:4 Z:-3]
+<Builder> totally fine!
+<Architect> Perhaps in front of the brick is a better way to put it, so between your avatar and the brick
+<Architect> and it will still be red
+[Builder puts down a red block at X:5 Y:4 Z:-4]
+[Builder picks up a orange block at X:5 Y:4 Z:-3]
+<Architect> so if you turn 90 degrees to your right, that might help with the perspective
+<Architect> Can you remove the brick you just added?
+[Builder picks up a red block at X:5 Y:4 Z:-4]
+<Architect> Thanks!
+<Builder> yeah sorry! but confusing
+<Builder> bit*
+<Architect> Ok, so if you turn to your right, that will help with the perspective a bit
+<Architect> ok, so to the right of the top of that column, add two red bricks
+[Builder puts down a red block at X:5 Y:1 Z:-4]
+<Architect> the column of red bricks
+[Builder picks up a red block at X:5 Y:1 Z:-4]
+<Architect> don't worry too much about the edge of the map stuff
+<Builder> oh okay
+[Builder puts down a red block at X:-1 Y:4 Z:-4]
+[Builder puts down a red block at X:-1 Y:4 Z:-5]
+<Architect> great! now add a brick on top of the middle brick of that row
+[Builder puts down a red block at X:-1 Y:5 Z:-4]
+<Architect> cool! then remove the brick in the middle of that row
+[Builder picks up a red block at X:-1 Y:4 Z:-4]
+<Architect> Awesome! now on the ground, to the right of the red column, add one red brick
+<Architect> left, rather
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+<Architect> and on the left of that, add a column of 5 red bricks, floating a layer off the ground
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder picks up a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:5 Z:-1]
+[Builder puts down a red block at X:-1 Y:6 Z:-1]
+<Architect> great! now up and to the left of that column, add a red brick
+<Architect> it will be floating diagonally in the air
+[Builder puts down a red block at X:-1 Y:7 Z:-1]
+[Builder puts down a red block at X:-1 Y:7 Z:0]
+[Builder picks up a red block at X:-1 Y:7 Z:-1]
+<Architect> Excellent. now down and to the left of that brick, add another red brick
+[Builder puts down a red block at X:-1 Y:7 Z:1]
+[Builder puts down a red block at X:-1 Y:6 Z:1]
+[Builder picks up a red block at X:-1 Y:7 Z:1]
+<Architect> perfect. The brick you just added is the top of a column of 3 red bricks
+[Builder puts down a red block at X:-1 Y:5 Z:1]
+[Builder puts down a red block at X:-1 Y:4 Z:1]
+<Architect> Awesome! now down and to the left of that column, add another red brick
+[Builder puts down a red block at X:-1 Y:4 Z:2]
+[Builder puts down a red block at X:-1 Y:3 Z:2]
+[Builder picks up a red block at X:-1 Y:4 Z:2]
+<Architect> and up and to the left of that brick, add another brick
+[Builder puts down a red block at X:-1 Y:3 Z:3]
+[Builder puts down a red block at X:-1 Y:4 Z:3]
+[Builder picks up a red block at X:-1 Y:3 Z:3]
+<Architect> and down and to the left of that brick, add a red brick
+[Builder puts down a red block at X:-1 Y:4 Z:4]
+[Builder puts down a red block at X:-1 Y:3 Z:4]
+[Builder picks up a red block at X:-1 Y:4 Z:4]
+<Architect> Finally, to the left of that brick, add another red brick
+[Builder puts down a red block at X:-1 Y:3 Z:5]
+<Architect> perfect!

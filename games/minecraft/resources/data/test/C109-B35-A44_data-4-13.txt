@@ -1,0 +1,21 @@
+B35-A44-C109-1523652588144
+<Builder> Mission has started.
+<Architect> 5 yellow
+<Architect> 3 empty, 2 red
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+[Builder puts down a yellow block at X:0 Y:2 Z:1]
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+[Builder puts down a yellow block at X:0 Y:4 Z:1]
+[Builder puts down a yellow block at X:0 Y:5 Z:1]
+[Builder puts down a red block at X:-1 Y:5 Z:1]
+[Builder puts down a red block at X:-1 Y:4 Z:1]
+<Architect> ok roate 180 degrees
+<Builder> like this?
+<Architect> place 2 red blocks in front of the two red blocks you see.
+[Builder puts down a red block at X:-1 Y:4 Z:2]
+[Builder puts down a red block at X:-1 Y:5 Z:2]
+<Architect> then blocks to the left of the two oyu placed
+[Builder puts down a red block at X:-2 Y:5 Z:2]
+[Builder puts down a red block at X:-2 Y:4 Z:2]
+<Architect> ok we're done gj
+<Builder> def the hardest 1

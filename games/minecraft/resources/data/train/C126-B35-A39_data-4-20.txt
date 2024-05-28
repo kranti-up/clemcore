@@ -1,0 +1,49 @@
+B35-A39-C126-1524248479106
+<Builder> Mission has started.
+<Architect> hey
+<Builder> hi
+<Architect> this looks like a skinny teapot
+<Builder> okay
+<Architect> first, start off with a 3x4 red rectangle standing up
+<Architect> with the short end on the ground
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:4 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:4 Z:0]
+<Builder> oaky
+<Architect> on top of the middle red block, put an orange block
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+<Architect> on the top left corner red block, place an orange block to its left
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+<Architect> this is the top right corner of the handle for the pot, which will be 2x3 in size
+<Architect> so you can make a C shape starting with that block
+[Builder puts down a orange block at X:3 Y:4 Z:0]
+[Builder puts down a orange block at X:3 Y:5 Z:0]
+[Builder picks up a orange block at X:3 Y:5 Z:0]
+[Builder picks up a orange block at X:3 Y:4 Z:0]
+[Builder puts down a orange block at X:3 Y:4 Z:0]
+[Builder puts down a orange block at X:3 Y:3 Z:0]
+[Builder puts down a orange block at X:3 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+<Builder> like that?
+<Architect> yup!
+<Architect> finally, we have the spout
+<Architect> on the second to topmost red block on the right side, put another red block to its right
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+<Architect> that's the right location, but it should be red
+[Builder picks up a orange block at X:-2 Y:3 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+<Architect> finally, another red block diagonally up and right from that last block
+[Builder puts down a red block at X:-3 Y:3 Z:0]
+[Builder puts down a red block at X:-3 Y:4 Z:0]
+[Builder picks up a red block at X:-3 Y:3 Z:0]
+<Builder> alright
+<Architect> i think that's all
+<Builder> sweet

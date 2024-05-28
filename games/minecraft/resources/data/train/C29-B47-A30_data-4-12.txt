@@ -1,0 +1,112 @@
+B47-A30-C29-1523548488813
+<Builder> Mission has started.
+<Architect> ok place a red row of 3 in the center of the board
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+<Architect> on on end of that build a row of 2 green
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+[Builder picks up a green block at X:-1 Y:1 Z:0]
+[Builder picks up a green block at X:-1 Y:1 Z:1]
+[Builder puts down a green block at X:-2 Y:1 Z:-1]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+<Architect> in the same direction the red is going
+[Builder picks up a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder picks up a green block at X:-2 Y:1 Z:0]
+[Builder puts down a green block at X:-3 Y:1 Z:-1]
+<Architect> on the other end build a tower of 4 blue
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:2 Y:2 Z:-1]
+[Builder puts down a blue block at X:2 Y:3 Z:-1]
+[Builder puts down a blue block at X:2 Y:4 Z:-1]
+<Architect> on top of the red block touching the blue, build another red block and then 2 orange blocks
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+<Architect> then on top of the next red, build 2 orange blocks
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+<Architect> on top of the next red build 1 green
+[Builder puts down a green block at X:-1 Y:2 Z:-1]
+<Architect> and one green next to that one
+[Builder puts down a green block at X:-2 Y:2 Z:-1]
+<Builder> tetris!
+<Architect> yep thats what this build looks like
+<Architect> now on top of the end green, build 2 purples
+[Builder puts down a purple block at X:-3 Y:2 Z:-1]
+[Builder puts down a purple block at X:-3 Y:3 Z:-1]
+<Architect> delete the bottom one
+[Builder picks up a purple block at X:-3 Y:2 Z:-1]
+[Builder puts down a purple block at X:-3 Y:4 Z:-1]
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+<Architect> ok add one more on top of that
+[Builder picks up a purple block at X:-1 Y:4 Z:-1]
+[Builder picks up a purple block at X:-2 Y:4 Z:-1]
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+[Builder picks up a purple block at X:-2 Y:4 Z:-1]
+[Builder picks up a purple block at X:-1 Y:4 Z:-1]
+<Architect> delete the bottom again
+[Builder picks up a purple block at X:-3 Y:3 Z:-1]
+<Architect> now build a tower of 3 out to the far side
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+<Architect> to form a T
+[Builder puts down a purple block at X:-2 Y:5 Z:-1]
+[Builder picks up a purple block at X:-2 Y:5 Z:-1]
+<Architect> far side
+[Builder picks up a purple block at X:-2 Y:4 Z:-1]
+[Builder picks up a purple block at X:-1 Y:4 Z:-1]
+<Builder> ?
+<Architect> towards the edge
+[Builder puts down a purple block at X:-3 Y:4 Z:0]
+[Builder puts down a purple block at X:-3 Y:4 Z:1]
+<Architect> no keep it in line with the tetris line
+[Builder picks up a purple block at X:-3 Y:4 Z:0]
+[Builder picks up a purple block at X:-3 Y:4 Z:1]
+[Builder puts down a purple block at X:-3 Y:5 Z:-1]
+[Builder picks up a purple block at X:-3 Y:5 Z:-1]
+<Builder> I'm making the T shape, yeah?
+[Builder puts down a purple block at X:-3 Y:5 Z:-1]
+[Builder puts down a purple block at X:-3 Y:6 Z:-1]
+<Architect> build a purple block right next to the one thats placed but towards the edge
+[Builder picks up a purple block at X:-3 Y:6 Z:-1]
+[Builder picks up a purple block at X:-3 Y:5 Z:-1]
+<Builder> which edge?
+[Builder puts down a purple block at X:5 Y:1 Z:-2]
+[Builder puts down a purple block at X:5 Y:1 Z:-1]
+<Builder> this one?
+[Builder puts down a purple block at X:5 Y:1 Z:0]
+<Architect> the one closese to the floating purple block
+[Builder picks up a purple block at X:5 Y:1 Z:-1]
+[Builder picks up a purple block at X:5 Y:1 Z:0]
+[Builder picks up a purple block at X:5 Y:1 Z:-2]
+[Builder puts down a purple block at X:-4 Y:4 Z:-1]
+[Builder puts down a purple block at X:-5 Y:4 Z:-1]
+[Builder puts down a purple block at X:-4 Y:3 Z:-1]
+[Builder picks up a purple block at X:-4 Y:3 Z:-1]
+<Architect> now one on top and bottom of the one you placed
+[Builder puts down a purple block at X:-3 Y:3 Z:-1]
+[Builder puts down a purple block at X:-3 Y:5 Z:-1]
+[Builder picks up a purple block at X:-5 Y:4 Z:-1]
+<Architect> no the outside one. thats the right shape but opposite
+[Builder picks up a purple block at X:-4 Y:4 Z:-1]
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+<Architect> no shift it one space to the left
+[Builder puts down a purple block at X:-3 Y:3 Z:0]
+[Builder picks up a purple block at X:-3 Y:3 Z:0]
+[Builder picks up a purple block at X:-3 Y:3 Z:-1]
+[Builder picks up a purple block at X:-3 Y:4 Z:-1]
+[Builder picks up a purple block at X:-2 Y:4 Z:-1]
+[Builder picks up a purple block at X:-3 Y:5 Z:-1]
+[Builder puts down a purple block at X:-4 Y:1 Z:-1]
+[Builder puts down a purple block at X:-4 Y:2 Z:-1]
+[Builder puts down a purple block at X:-4 Y:3 Z:-1]
+[Builder puts down a purple block at X:-4 Y:4 Z:-1]
+[Builder puts down a purple block at X:-4 Y:5 Z:-1]
+[Builder puts down a purple block at X:-3 Y:4 Z:-1]
+[Builder picks up a purple block at X:-4 Y:2 Z:-1]
+[Builder picks up a purple block at X:-4 Y:1 Z:-1]

@@ -1,0 +1,88 @@
+B51-A54-C138-1523911921217
+<Builder> Mission has started.
+<Builder> wrow
+<Architect> Draw an orange 3x3 U on the ground
+[Builder puts down a orange block at X:5 Y:1 Z:2]
+[Builder puts down a orange block at X:5 Y:1 Z:1]
+[Builder puts down a orange block at X:5 Y:1 Z:0]
+[Builder puts down a orange block at X:4 Y:1 Z:0]
+[Builder puts down a orange block at X:3 Y:1 Z:0]
+[Builder puts down a orange block at X:3 Y:1 Z:2]
+[Builder puts down a orange block at X:3 Y:1 Z:1]
+<Architect> At the two ends, draw a 3x3 blue U standing up on the ground
+<Architect> So their ends should be touching
+[Builder puts down a blue block at X:3 Y:1 Z:3]
+[Builder puts down a blue block at X:4 Y:1 Z:3]
+[Builder puts down a blue block at X:5 Y:1 Z:3]
+[Builder puts down a blue block at X:5 Y:2 Z:3]
+[Builder puts down a blue block at X:5 Y:3 Z:3]
+[Builder puts down a blue block at X:3 Y:2 Z:3]
+[Builder puts down a blue block at X:3 Y:3 Z:3]
+<Builder> like this ?
+<Architect> The U is upside down here, I guess n would have been a better description sorry
+[Builder picks up a blue block at X:4 Y:1 Z:3]
+[Builder puts down a blue block at X:4 Y:3 Z:3]
+<Builder> ur good lol
+<Architect> Now at theother side of the orange, build 3 reds on top of it, so they don't touch the ground
+[Builder puts down a red block at X:5 Y:2 Z:0]
+[Builder puts down a red block at X:4 Y:2 Z:0]
+[Builder puts down a red block at X:3 Y:2 Z:0]
+<Architect> Make that into a horizontal 3x3U
+<Builder> which way is the bottom part going towards
+<Architect> the part you did is the bottom
+[Builder puts down a red block at X:5 Y:3 Z:0]
+[Builder puts down a red block at X:5 Y:4 Z:0]
+[Builder puts down a red block at X:3 Y:3 Z:0]
+[Builder puts down a red block at X:3 Y:4 Z:0]
+<Builder> gotcha
+<Architect> It's going to be parallel to the ground though
+[Builder picks up a red block at X:3 Y:4 Z:0]
+[Builder picks up a red block at X:3 Y:3 Z:0]
+[Builder picks up a red block at X:5 Y:3 Z:0]
+[Builder picks up a red block at X:5 Y:4 Z:0]
+[Builder puts down a red block at X:5 Y:2 Z:-1]
+[Builder puts down a red block at X:5 Y:2 Z:-2]
+[Builder puts down a red block at X:3 Y:2 Z:-1]
+[Builder puts down a red block at X:3 Y:2 Z:-2]
+<Builder> like this
+<Architect> Yup
+<Builder> nice
+<Architect> At the two ends, place three purple blocks to form the base of a U
+[Builder puts down a purple block at X:5 Y:2 Z:-3]
+[Builder puts down a purple block at X:4 Y:2 Z:-3]
+[Builder puts down a purple block at X:3 Y:2 Z:-3]
+<Architect> And a U that goes upward
+[Builder puts down a purple block at X:5 Y:3 Z:-3]
+[Builder puts down a purple block at X:5 Y:4 Z:-3]
+[Builder puts down a purple block at X:3 Y:3 Z:-3]
+[Builder puts down a purple block at X:3 Y:4 Z:-3]
+<Architect> Yup
+<Architect> Build three green blocks on the purple one
+[Builder puts down a green block at X:5 Y:5 Z:-3]
+[Builder puts down a green block at X:4 Y:5 Z:-3]
+[Builder puts down a green block at X:3 Y:5 Z:-3]
+<Architect> On top of the green, build a pillar of greens
+<Architect> This one's basically going to be a sideways U
+[Builder puts down a green block at X:3 Y:6 Z:-3]
+<Architect> Yup
+[Builder puts down a green block at X:3 Y:7 Z:-3]
+[Builder puts down a green block at X:4 Y:7 Z:-3]
+[Builder puts down a green block at X:5 Y:7 Z:-3]
+<Architect> And the last U, on the other side of the green
+<Architect> The edges touch the green's
+<Builder> which color
+<Architect> Oh yellow
+[Builder puts down a yellow block at X:5 Y:7 Z:-2]
+[Builder puts down a yellow block at X:5 Y:5 Z:-2]
+[Builder puts down a yellow block at X:5 Y:6 Z:-2]
+<Architect> The base is at the other end so it should be 2 this tiem
+[Builder puts down a yellow block at X:5 Y:6 Z:-1]
+[Builder picks up a yellow block at X:5 Y:6 Z:-1]
+[Builder picks up a yellow block at X:5 Y:6 Z:-2]
+[Builder puts down a yellow block at X:5 Y:7 Z:-1]
+[Builder puts down a yellow block at X:5 Y:7 Z:0]
+[Builder puts down a yellow block at X:5 Y:5 Z:-1]
+[Builder puts down a yellow block at X:5 Y:5 Z:0]
+[Builder puts down a yellow block at X:5 Y:6 Z:0]
+<Architect> Exactly
+<Builder> nice

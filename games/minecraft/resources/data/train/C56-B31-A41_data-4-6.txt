@@ -1,0 +1,83 @@
+B31-A41-C56-1523030750111
+<Builder> Mission has started.
+<Architect> Okay this is like a pretty flower one haha
+<Architect> Put a row of three purple blocks on the ground in the middle of the environment
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+<Architect> Now put a red block on top in the middle, then two purple blocks on either side so they are floating off the edge
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder picks up a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+[Builder picks up a purple block at X:-2 Y:2 Z:0]
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+[Builder picks up a purple block at X:-1 Y:2 Z:0]
+<Architect> Actually, we will need to stack stuff on top of this, so let's leave those purple blocks in the middle and we will remove them later
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+<Architect> Okay, now a row of orange on top of this, same size
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+<Architect> Okay now make two purple columns on both sides, starting on the ground, five blocks high
+[Builder puts down a purple block at X:3 Y:1 Z:0]
+[Builder puts down a purple block at X:3 Y:2 Z:0]
+[Builder puts down a purple block at X:3 Y:3 Z:0]
+[Builder puts down a purple block at X:3 Y:4 Z:0]
+[Builder puts down a purple block at X:3 Y:5 Z:0]
+[Builder puts down a purple block at X:-3 Y:1 Z:0]
+[Builder puts down a purple block at X:-3 Y:2 Z:0]
+[Builder puts down a purple block at X:-3 Y:3 Z:0]
+[Builder puts down a purple block at X:-3 Y:4 Z:0]
+[Builder puts down a purple block at X:-3 Y:5 Z:0]
+<Architect> Great. Now put a yellow block on top of the middle of the orange row, and red for the rest of that row
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+[Builder puts down a red block at X:2 Y:4 Z:0]
+[Builder puts down a red block at X:1 Y:4 Z:0]
+[Builder puts down a red block at X:-2 Y:4 Z:0]
+[Builder puts down a red block at X:-1 Y:4 Z:0]
+<Architect> Now a row of orange on top of that
+[Builder puts down a orange block at X:2 Y:5 Z:0]
+[Builder puts down a orange block at X:1 Y:5 Z:0]
+[Builder puts down a orange block at X:-2 Y:5 Z:0]
+[Builder puts down a orange block at X:-1 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+<Architect> Now a row with a red in the middle, and purple otherwise
+[Builder puts down a red block at X:0 Y:6 Z:0]
+[Builder puts down a purple block at X:3 Y:6 Z:0]
+[Builder puts down a purple block at X:2 Y:6 Z:0]
+[Builder puts down a purple block at X:1 Y:6 Z:0]
+[Builder picks up a purple block at X:3 Y:6 Z:0]
+[Builder picks up a purple block at X:1 Y:2 Z:0]
+[Builder picks up a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:6 Z:0]
+[Builder puts down a purple block at X:-2 Y:6 Z:0]
+<Architect> Perfect. Now a row of three purple, centered on the red
+[Builder picks up a purple block at X:3 Y:1 Z:0]
+[Builder picks up a purple block at X:-3 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:7 Z:0]
+[Builder puts down a purple block at X:0 Y:7 Z:0]
+[Builder puts down a purple block at X:-1 Y:7 Z:0]
+<Architect> Great now we will remove some. Remove the two purples on either side of the highest red block
+[Builder picks up a purple block at X:1 Y:6 Z:0]
+[Builder picks up a purple block at X:-1 Y:6 Z:0]
+<Architect> Now remove three oranges from the next row down, the left right and middle oranges
+[Builder picks up a orange block at X:2 Y:5 Z:0]
+[Builder picks up a orange block at X:0 Y:5 Z:0]
+[Builder picks up a orange block at X:-2 Y:5 Z:0]
+<Architect> Great. Now remove two red blocks from the next row down, so it forms a checkerboard pattern with the row above
+[Builder picks up a red block at X:1 Y:4 Z:0]
+[Builder picks up a red block at X:-1 Y:4 Z:0]
+<Architect> Cool, now three oranges from the next row down, so it continues the checkerboard pattern
+[Builder picks up a orange block at X:2 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+[Builder picks up a orange block at X:-2 Y:3 Z:0]
+<Architect> Okay now the two purples at the ends of the next row down. The whole shape should be symmetric
+[Builder picks up a purple block at X:3 Y:2 Z:0]
+[Builder picks up a purple block at X:-3 Y:2 Z:0]
+<Architect> Perfect, we are done!

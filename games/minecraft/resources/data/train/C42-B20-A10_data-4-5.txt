@@ -1,0 +1,53 @@
+B20-A10-C42-1522939494339
+<Builder> Mission has started.
+<Builder> how big is this?
+<Architect> So the base is a three by three square
+<Builder> colour?
+<Architect> one row is all blue blocks
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+<Architect> the next is three red blocks
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> the last is three purple blocks
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:0 Y:1 Z:-2]
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+[Builder picks up a purple block at X:0 Y:2 Z:-1]
+[Builder picks up a purple block at X:0 Y:1 Z:-2]
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+<Architect> The rest of the structure is just another grid on top of this one
+<Architect> The diagonal from one corner on the purple to one corner on the blue is all orange blocks
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+<Architect> The rest is the same color of the bottom row, just another layer
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a blue block at X:-1 Y:2 Z:1]
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+<Architect> yeah like that
+<Builder> cool
+<Architect> just kidding i flipped it
+[Builder picks up a purple block at X:1 Y:2 Z:-1]
+[Builder picks up a purple block at X:0 Y:2 Z:-1]
+[Builder picks up a orange block at X:1 Y:2 Z:1]
+[Builder picks up a red block at X:1 Y:2 Z:0]
+[Builder picks up a blue block at X:0 Y:2 Z:1]
+[Builder picks up a blue block at X:-1 Y:2 Z:1]
+[Builder picks up a red block at X:-1 Y:2 Z:0]
+[Builder picks up a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+<Architect> yeah
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:1]
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+<Builder> this?
+<Architect> sorry about that. we're good now.

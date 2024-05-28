@@ -1,0 +1,146 @@
+B19-A36-C80-1524094644710
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hi
+<Architect> ok so this structure looks like a person in a lunge
+<Builder> ok
+[Builder puts down a yellow block at X:-2 Y:1 Z:0]
+[Builder picks up a yellow block at X:-2 Y:1 Z:0]
+<Architect> so in front of you put down a blue block
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+<Architect> then put 2 blue blocks on top of it
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+[Builder puts down a blue block at X:-1 Y:3 Z:0]
+<Architect> then put a blue block in front of the top one
+[Builder puts down a blue block at X:-1 Y:3 Z:1]
+<Architect> o other side sorry
+[Builder puts down a blue block at X:-1 Y:4 Z:1]
+[Builder picks up a blue block at X:-1 Y:4 Z:1]
+[Builder picks up a blue block at X:-1 Y:3 Z:1]
+[Builder puts down a blue block at X:-1 Y:3 Z:-1]
+<Architect> ok then add on another one
+[Builder puts down a blue block at X:-1 Y:4 Z:-1]
+<Architect> then to the left of that put a blue block
+[Builder puts down a blue block at X:0 Y:4 Z:-1]
+<Architect> so then behind that one is a staircase down
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+[Builder picks up a blue block at X:0 Y:3 Z:0]
+<Architect> like on the side you were just on sorry
+[Builder puts down a blue block at X:0 Y:4 Z:-2]
+[Builder puts down a blue block at X:0 Y:3 Z:-2]
+[Builder picks up a blue block at X:0 Y:4 Z:-2]
+[Builder puts down a blue block at X:0 Y:3 Z:-3]
+[Builder puts down a blue block at X:0 Y:2 Z:-3]
+[Builder puts down a blue block at X:0 Y:2 Z:-4]
+[Builder picks up a blue block at X:0 Y:3 Z:-3]
+[Builder puts down a blue block at X:-1 Y:1 Z:-4]
+[Builder picks up a blue block at X:-1 Y:1 Z:-4]
+[Builder puts down a blue block at X:0 Y:1 Z:-4]
+[Builder picks up a blue block at X:0 Y:2 Z:-4]
+[Builder picks up a blue block at X:0 Y:1 Z:-4]
+[Builder puts down a blue block at X:-1 Y:1 Z:-4]
+[Builder picks up a blue block at X:-1 Y:1 Z:-4]
+[Builder puts down a blue block at X:0 Y:1 Z:-4]
+[Builder picks up a blue block at X:0 Y:1 Z:-4]
+[Builder puts down a blue block at X:0 Y:1 Z:-4]
+<Architect> o actually u can get rid of the 2 blue blocks sticking out from the top
+[Builder picks up a blue block at X:0 Y:4 Z:-1]
+[Builder picks up a blue block at X:-1 Y:4 Z:-1]
+<Architect> so then these are the legs right
+<Architect> put a blue block ini front of you to connect them
+<Architect> *in
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+<Builder> other corner?
+<Architect> no you're good
+<Architect> so the body is only attached to the right leg for some reason
+<Architect> it's a red column of 2 blocks
+[Builder puts down a red block at X:0 Y:4 Z:-1]
+[Builder puts down a red block at X:0 Y:5 Z:-1]
+[Builder picks up a red block at X:0 Y:5 Z:-1]
+[Builder puts down a red block at X:0 Y:5 Z:-1]
+[Builder picks up a red block at X:0 Y:5 Z:-1]
+[Builder puts down a red block at X:0 Y:5 Z:-1]
+<Architect> o other leg sorry
+[Builder picks up a red block at X:0 Y:5 Z:-1]
+[Builder picks up a red block at X:0 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:5 Z:-1]
+<Architect> ok then to the left and right of the top red block, put a orange block each
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+[Builder puts down a orange block at X:-2 Y:5 Z:-1]
+<Architect> then the right arm is a downwards staircase with 2 more steps
+[Builder puts down a orange block at X:-2 Y:5 Z:0]
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+[Builder picks up a orange block at X:-2 Y:5 Z:0]
+[Builder puts down a orange block at X:-2 Y:4 Z:1]
+[Builder puts down a orange block at X:-2 Y:3 Z:1]
+[Builder picks up a orange block at X:-2 Y:4 Z:1]
+<Architect> o other side sorry
+[Builder picks up a orange block at X:-2 Y:4 Z:0]
+[Builder picks up a orange block at X:-2 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder picks up a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+<Architect> like the arm goes behind and not forward, u had it on the right side before
+[Builder picks up a orange block at X:0 Y:4 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:-2 Y:4 Z:-1]
+[Builder puts down a orange block at X:-2 Y:4 Z:-2]
+[Builder puts down a orange block at X:-2 Y:3 Z:-2]
+[Builder puts down a orange block at X:-2 Y:3 Z:-3]
+[Builder picks up a orange block at X:-2 Y:3 Z:-2]
+[Builder picks up a orange block at X:-2 Y:4 Z:-1]
+<Architect> ok good
+<Architect> then for the other arm, add another step up in front of it
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:6 Z:0]
+[Builder picks up a orange block at X:0 Y:5 Z:0]
+<Builder> behind or like that
+<Architect> like that you're good
+<Architect> then the head is a floating yellow block 2 spaces above the red column
+[Builder puts down a yellow block at X:-1 Y:6 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:7 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:6 Z:-1]
+<Builder> is that good
+<Architect> o actually we need to fix the left leg sorry
+<Architect> get rid of the top step
+[Builder picks up a blue block at X:0 Y:3 Z:-2]
+<Builder> that one?
+<Architect> ya
+<Architect> and move the bottom 2 closer
+[Builder picks up a blue block at X:0 Y:2 Z:-3]
+[Builder picks up a blue block at X:0 Y:1 Z:-4]
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+[Builder puts down a blue block at X:0 Y:2 Z:-2]
+[Builder puts down a blue block at X:0 Y:1 Z:-3]
+[Builder picks up a blue block at X:0 Y:1 Z:-2]
+<Architect> then add another blue block behind the bottom blue one
+[Builder puts down a blue block at X:0 Y:1 Z:-4]
+<Architect> ya like that
+<Architect> o and then the left arm
+<Architect> add another orange block underneath the floating one
+[Builder puts down a orange block at X:-2 Y:2 Z:-3]
+<Architect> o other side sorry
+[Builder picks up a orange block at X:-2 Y:2 Z:-3]
+<Architect> like the arm thats raised
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+<Builder> like that or one space higher
+<Architect> the one to the left of it
+[Builder picks up a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+<Architect> ya and then move the top block out to the left 1
+[Builder picks up a orange block at X:0 Y:6 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:1]
+[Builder puts down a orange block at X:0 Y:6 Z:1]
+[Builder picks up a orange block at X:0 Y:5 Z:1]
+<Architect> ok i think we're good
+<Builder> cool
+<Architect> sorry for the confusion
+<Builder> np you did a good job
+<Architect> u too
+<Builder> thanks :)

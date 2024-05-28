@@ -1,0 +1,106 @@
+B1-A44-C48-1523037288443
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hello. ok start with 2 columns in the middle. 1st column: purple
+[Builder puts down a purple block at X:1 Y:1 Z:-2]
+<Architect> 2nd column: 3 purple, 4 blue, 2red
+<Builder> okay
+[Builder puts down a purple block at X:0 Y:1 Z:-2]
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder puts down a purple block at X:0 Y:3 Z:-2]
+[Builder puts down a blue block at X:0 Y:4 Z:-2]
+[Builder puts down a blue block at X:0 Y:5 Z:-2]
+[Builder puts down a blue block at X:0 Y:6 Z:-2]
+[Builder puts down a blue block at X:0 Y:7 Z:-2]
+[Builder puts down a red block at X:0 Y:8 Z:-2]
+[Builder puts down a red block at X:0 Y:9 Z:-2]
+<Architect> we're making an umbrella shape.
+<Architect> ok hold on
+<Builder> is it all 2d?
+<Architect> it is not 2 dimensional
+<Architect> ok we're gonna build 1 corner of the umbrella and then I need you to mirror it in 4 directions
+<Builder> got it
+<Architect> so start by placing 2 red blocks towards you on the second highest red block
+[Builder puts down a red block at X:0 Y:8 Z:-3]
+[Builder puts down a red block at X:0 Y:8 Z:-4]
+<Builder> like this?
+[Builder puts down a red block at X:-1 Y:8 Z:-2]
+[Builder puts down a red block at X:-2 Y:8 Z:-2]
+[Builder puts down a red block at X:0 Y:8 Z:-1]
+[Builder puts down a red block at X:0 Y:8 Z:0]
+[Builder puts down a red block at X:1 Y:8 Z:-2]
+[Builder puts down a red block at X:2 Y:8 Z:-2]
+<Architect> yeah that's perfect. now 2 more red blocks. 1 underneath the one you just placed
+[Builder puts down a red block at X:0 Y:7 Z:-4]
+<Architect> and one in front of that one that you juust placed
+<Architect> toward you*
+<Builder> the one on the bottom?
+[Builder puts down a red block at X:0 Y:7 Z:-5]
+<Architect> ok go ahead and mirror it
+<Builder> ok
+[Builder puts down a red block at X:2 Y:7 Z:-2]
+[Builder puts down a red block at X:3 Y:7 Z:-2]
+[Builder puts down a red block at X:0 Y:7 Z:0]
+[Builder puts down a red block at X:0 Y:7 Z:1]
+[Builder puts down a red block at X:-2 Y:7 Z:-2]
+[Builder puts down a red block at X:-3 Y:7 Z:-2]
+<Architect> ok in each corner of the 4 red branches we have 3 orange blocks. it makes a stair like pattern try placing 3 blocks in a corner in a stairlike pattern
+[Builder puts down a orange block at X:0 Y:6 Z:-5]
+[Builder puts down a orange block at X:0 Y:6 Z:-6]
+[Builder puts down a orange block at X:0 Y:7 Z:-6]
+<Architect> ok sorry those are not the right ones
+[Builder picks up a orange block at X:0 Y:6 Z:-5]
+[Builder picks up a orange block at X:0 Y:6 Z:-6]
+[Builder picks up a orange block at X:0 Y:7 Z:-6]
+[Builder puts down a orange block at X:0 Y:7 Z:-6]
+[Builder picks up a orange block at X:0 Y:7 Z:-6]
+<Architect> so you see how the red lines make 4 corners?
+<Builder> three blocks similar to the red?
+[Builder puts down a orange block at X:0 Y:7 Z:-6]
+[Builder puts down a orange block at X:0 Y:6 Z:-6]
+[Builder puts down a orange block at X:0 Y:6 Z:-7]
+<Architect> ok nevermind scrap that idea
+[Builder picks up a orange block at X:0 Y:6 Z:-7]
+[Builder picks up a orange block at X:0 Y:7 Z:-6]
+[Builder picks up a orange block at X:0 Y:6 Z:-6]
+<Builder> this is the edge of the building area...
+<Architect> facet he front of the drawing. then look at the red branch sticking out to the east
+<Architect> to your right
+<Architect> ok excellent. now place a red block where your head is
+<Architect> wait jk
+<Builder> where is the front?
+<Architect> where you are is the front.
+<Architect> approach the right red branch
+<Architect> like just look at it. fly up to it
+<Architect> ok so you see the 4 red blocks sticking out?
+<Builder> the arm?
+<Architect> put 1 orange block on the top left one. yes the arm
+[Builder puts down a orange block at X:3 Y:8 Z:-2]
+<Builder> here?
+<Architect> no the orange block needs to be 2 space to the left 1 space towards you
+<Architect> of where you put it
+[Builder puts down a orange block at X:1 Y:8 Z:-1]
+[Builder picks up a orange block at X:3 Y:8 Z:-2]
+<Builder> here?
+<Architect> great. now one more block 1 space below, 1 space to the right of the one you just placed
+[Builder puts down a orange block at X:2 Y:7 Z:-1]
+<Builder> here?
+<Architect> ok great now one more block 1 space toward you, 1 space to the left
+<Architect> and then mirorr it and then we're done
+[Builder puts down a orange block at X:2 Y:7 Z:0]
+[Builder puts down a orange block at X:1 Y:7 Z:0]
+[Builder picks up a orange block at X:2 Y:7 Z:0]
+<Builder> like this?
+<Architect> yep 3 orange blocks in each corner. mirror it
+[Builder puts down a orange block at X:-1 Y:8 Z:-1]
+[Builder puts down a orange block at X:-2 Y:7 Z:-1]
+[Builder puts down a orange block at X:-1 Y:7 Z:0]
+<Architect> t
+[Builder puts down a orange block at X:-1 Y:8 Z:-3]
+[Builder puts down a orange block at X:-2 Y:7 Z:-3]
+[Builder puts down a orange block at X:-1 Y:7 Z:-4]
+[Builder puts down a orange block at X:1 Y:8 Z:-3]
+[Builder puts down a orange block at X:2 Y:7 Z:-3]
+[Builder puts down a orange block at X:1 Y:7 Z:-4]
+<Architect> ok we're done nice job
+<Builder> good job

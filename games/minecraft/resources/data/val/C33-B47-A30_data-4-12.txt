@@ -1,0 +1,103 @@
+B47-A30-C33-1523547603957
+<Builder> Mission has started.
+<Architect> ok this one doesnt look like anything in particular so sorry in advance because it will be difficult to explain
+<Builder> dw about it
+<Architect> start from the center of one edge of the board and build up a tower of 3 green squares
+[Builder puts down a green block at X:0 Y:1 Z:-5]
+[Builder puts down a green block at X:0 Y:2 Z:-5]
+[Builder puts down a green block at X:0 Y:3 Z:-5]
+<Architect> now only keep the top one
+<Architect> delete the bottom 2
+[Builder picks up a green block at X:0 Y:2 Z:-5]
+[Builder picks up a green block at X:0 Y:1 Z:-5]
+<Architect> now build a 5x5 hollow diamond shaped platform towards the middle of the board with green
+<Builder> with the green block as one end?
+[Builder puts down a green block at X:0 Y:2 Z:-5]
+[Builder puts down a green block at X:0 Y:2 Z:-4]
+[Builder puts down a green block at X:0 Y:1 Z:-3]
+[Builder picks up a green block at X:0 Y:2 Z:-5]
+[Builder puts down a green block at X:0 Y:4 Z:-5]
+[Builder puts down a green block at X:0 Y:4 Z:-4]
+[Builder puts down a green block at X:0 Y:5 Z:-4]
+[Builder puts down a green block at X:0 Y:5 Z:-3]
+[Builder picks up a green block at X:0 Y:5 Z:-4]
+[Builder picks up a green block at X:0 Y:4 Z:-5]
+[Builder puts down a green block at X:0 Y:5 Z:-2]
+[Builder puts down a green block at X:0 Y:4 Z:-2]
+[Builder picks up a green block at X:0 Y:5 Z:-2]
+[Builder puts down a green block at X:0 Y:3 Z:-2]
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+<Architect> yes . make that except floating in line with that first green block you placed
+<Architect> it should be a platform not standing
+[Builder picks up a green block at X:0 Y:3 Z:-2]
+[Builder picks up a green block at X:0 Y:3 Z:-1]
+[Builder picks up a green block at X:0 Y:5 Z:-3]
+[Builder picks up a green block at X:0 Y:4 Z:-2]
+[Builder picks up a green block at X:0 Y:4 Z:-4]
+[Builder picks up a green block at X:0 Y:2 Z:-4]
+[Builder picks up a green block at X:0 Y:1 Z:-3]
+[Builder puts down a green block at X:0 Y:3 Z:-4]
+[Builder puts down a green block at X:-1 Y:3 Z:-4]
+[Builder puts down a green block at X:1 Y:3 Z:-4]
+[Builder puts down a green block at X:1 Y:3 Z:-3]
+[Builder puts down a green block at X:2 Y:3 Z:-3]
+[Builder puts down a green block at X:1 Y:3 Z:-2]
+[Builder puts down a green block at X:0 Y:3 Z:-2]
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:-2]
+[Builder puts down a green block at X:-1 Y:3 Z:-3]
+[Builder puts down a green block at X:-2 Y:3 Z:-3]
+[Builder picks up a green block at X:-1 Y:3 Z:-3]
+[Builder picks up a green block at X:0 Y:3 Z:-4]
+[Builder picks up a green block at X:1 Y:3 Z:-3]
+[Builder picks up a green block at X:0 Y:3 Z:-2]
+<Architect> good! now make a standing orange diamond of the same dimensions starting with one corner touching the centermost green corner
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder picks up a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:-2]
+[Builder puts down a orange block at X:-1 Y:4 Z:-1]
+[Builder puts down a orange block at X:-1 Y:5 Z:-1]
+[Builder picks up a orange block at X:0 Y:4 Z:-2]
+[Builder picks up a orange block at X:0 Y:5 Z:0]
+<Architect> build it in line not on top
+[Builder picks up a orange block at X:-1 Y:4 Z:-1]
+[Builder picks up a orange block at X:-1 Y:5 Z:-1]
+[Builder puts down a orange block at X:-1 Y:4 Z:-2]
+[Builder puts down a orange block at X:-2 Y:4 Z:-3]
+<Architect> no sorry
+[Builder picks up a orange block at X:-2 Y:4 Z:-3]
+[Builder picks up a orange block at X:-1 Y:4 Z:-2]
+[Builder picks up a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+<Builder> here?
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:2]
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+<Builder> or like this?
+<Architect> yes!
+[Builder puts down a orange block at X:0 Y:1 Z:3]
+[Builder puts down a orange block at X:0 Y:2 Z:3]
+[Builder puts down a orange block at X:0 Y:2 Z:4]
+[Builder puts down a orange block at X:0 Y:3 Z:4]
+[Builder picks up a orange block at X:0 Y:1 Z:3]
+[Builder picks up a orange block at X:0 Y:2 Z:4]
+[Builder puts down a orange block at X:0 Y:3 Z:3]
+[Builder puts down a orange block at X:0 Y:4 Z:3]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:2]
+[Builder puts down a orange block at X:0 Y:5 Z:2]
+[Builder picks up a orange block at X:0 Y:4 Z:2]
+[Builder picks up a orange block at X:0 Y:3 Z:1]
+[Builder picks up a orange block at X:0 Y:3 Z:3]
+<Architect> now delete the seond from the top row
+[Builder picks up a orange block at X:0 Y:4 Z:1]
+[Builder picks up a orange block at X:0 Y:4 Z:3]
+<Architect> thats it!

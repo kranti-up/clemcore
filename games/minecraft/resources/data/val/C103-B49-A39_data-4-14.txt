@@ -1,0 +1,55 @@
+B49-A39-C103-1523765212662
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hey
+<Architect> so we're going to make a green chair thing
+<Builder> ready
+<Architect> first, put two green blocks on the ground with a space between them
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+<Builder> one space?
+<Architect> yup, that looks good
+<Architect> behind them and in the middle of them, put another green block
+[Builder puts down a green block at X:0 Y:1 Z:1]
+<Architect> it should also have a blank space between these two and it though
+<Architect> sorry, wasn't fast enough
+<Architect> so move that one you placed backwards a space
+<Builder> one more over?
+<Architect> yeah
+[Builder picks up a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:2]
+<Architect> nice
+<Architect> in the middle of all three of these blocks, on the layer above them, place another green block
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:2 Z:1]
+[Builder picks up a green block at X:0 Y:1 Z:1]
+<Builder> like so?
+<Architect> yup, exactly
+<Architect> now make a 3x3 platform on top of that last block, centered at that block
+[Builder picks up a green block at X:0 Y:2 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:2 Z:1]
+[Builder picks up a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:3 Z:1]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:1]
+[Builder puts down a green block at X:1 Y:3 Z:2]
+[Builder puts down a green block at X:0 Y:3 Z:2]
+[Builder puts down a green block at X:-1 Y:3 Z:2]
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+<Builder> OK
+<Architect> cool, that's the seat of the chair
+<Architect> the back will be aligned with the row that is aligned with the one-block leg
+<Builder> OK
+<Architect> and it goes straight up by two blocks
+[Builder puts down a green block at X:1 Y:4 Z:2]
+[Builder puts down a green block at X:0 Y:4 Z:2]
+[Builder puts down a green block at X:-1 Y:4 Z:2]
+[Builder puts down a green block at X:1 Y:5 Z:2]
+[Builder puts down a green block at X:0 Y:5 Z:2]
+[Builder puts down a green block at X:-1 Y:5 Z:2]
+<Builder> OK
+<Architect> beautiful :)
+<Builder> THANKS

@@ -1,0 +1,31 @@
+B15-A38-C8-1523398549691
+<Builder> Mission has started.
+<Builder> hello! i'm ready
+<Architect> Hello, I want ti diuble check, you have all the block colors, right?
+<Builder> yep!
+<Architect> Sorry for mistyping. the keyboard has different spacing from what I am used to.
+<Architect> It looks like we a re building a 3 by 3 table
+<Builder> okay!
+<Architect> The legs are orange and in the corners
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:-1 Y:1 Z:-2]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+<Architect> Then there is a red ring on top of those legs
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder picks up a red block at X:0 Y:4 Z:-1]
+[Builder picks up a red block at X:0 Y:3 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:-2]
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+<Builder> like that?
+<Architect> Just punch out the middle red block.
+[Builder picks up a red block at X:0 Y:2 Z:-1]
+<Architect> Almost perfect though
+<Builder> got it!
+<Architect> Cool, we are golden

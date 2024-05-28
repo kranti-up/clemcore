@@ -1,0 +1,100 @@
+B53-A4-C88-1524152926999
+<Builder> Mission has started.
+<Architect> this one is a little more abstract
+<Builder> I'm ready
+<Architect> start with blue
+<Architect> you're making a sort of tilted M
+<Architect> go toward one edge
+<Architect> and build a floating column of 2
+[Builder puts down a blue block at X:5 Y:1 Z:-1]
+[Builder puts down a blue block at X:5 Y:2 Z:-1]
+<Builder> One block up?
+[Builder puts down a blue block at X:5 Y:3 Z:-1]
+[Builder picks up a blue block at X:5 Y:1 Z:-1]
+<Architect> yes
+<Architect> now one to the right
+<Builder> one what? column?
+<Architect> one block to the right of your top block
+[Builder puts down a blue block at X:4 Y:3 Z:-1]
+<Architect> now one above that
+[Builder puts down a blue block at X:4 Y:4 Z:-1]
+<Architect> then one to the right of that
+[Builder puts down a blue block at X:3 Y:4 Z:-1]
+<Architect> now you'll make this same structure again
+<Architect> look at the shadow of this shape
+<Architect> the shadow of the next one starts to the right two and back one
+<Builder> Okay I think I understand, let me try
+[Builder puts down a blue block at X:3 Y:1 Z:0]
+[Builder puts down a blue block at X:3 Y:2 Z:0]
+[Builder picks up a blue block at X:3 Y:1 Z:0]
+[Builder puts down a blue block at X:3 Y:3 Z:0]
+[Builder puts down a blue block at X:3 Y:3 Z:1]
+[Builder picks up a blue block at X:3 Y:3 Z:1]
+[Builder puts down a blue block at X:2 Y:3 Z:0]
+[Builder puts down a blue block at X:2 Y:4 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+<Architect> good, but it's to the right two of the edge of the first shadow
+<Builder> Alright, I'll fix it
+[Builder picks up a blue block at X:1 Y:4 Z:0]
+[Builder picks up a blue block at X:2 Y:4 Z:0]
+<Architect> the right edge
+[Builder picks up a blue block at X:3 Y:2 Z:0]
+[Builder picks up a blue block at X:2 Y:3 Z:0]
+[Builder picks up a blue block at X:5 Y:2 Z:-1]
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+<Builder> here, yes?
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+<Architect> one toward you
+<Builder> Just kidding, here
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder picks up a blue block at X:0 Y:1 Z:1]
+[Builder picks up a blue block at X:1 Y:1 Z:1]
+<Architect> yep
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder picks up a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:1]
+[Builder picks up a blue block at X:1 Y:2 Z:1]
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+[Builder puts down a blue block at X:-1 Y:4 Z:0]
+<Architect> great. nicely done
+<Architect> now an orange square
+<Architect> the edges of its shadow align with the right edge of the first and left of the second
+<Architect> it's a vertical 3x3
+<Architect> it's two blank spaces away from the second structure on the opposite side of you
+[Builder puts down a orange block at X:3 Y:1 Z:2]
+[Builder puts down a orange block at X:2 Y:1 Z:2]
+[Builder puts down a orange block at X:1 Y:1 Z:2]
+<Builder> Here?
+[Builder picks up a orange block at X:3 Y:1 Z:2]
+[Builder picks up a orange block at X:2 Y:1 Z:2]
+[Builder picks up a orange block at X:1 Y:1 Z:2]
+[Builder puts down a orange block at X:3 Y:1 Z:3]
+[Builder puts down a orange block at X:2 Y:1 Z:3]
+[Builder puts down a orange block at X:1 Y:1 Z:3]
+<Builder> Two blank spaces
+<Architect> great. now floating up one block
+[Builder puts down a orange block at X:3 Y:2 Z:3]
+[Builder puts down a orange block at X:2 Y:2 Z:2]
+[Builder puts down a orange block at X:2 Y:3 Z:2]
+[Builder picks up a orange block at X:3 Y:2 Z:2]
+[Builder picks up a orange block at X:2 Y:2 Z:2]
+<Architect> vertical 3x3
+[Builder picks up a orange block at X:2 Y:3 Z:2]
+[Builder puts down a orange block at X:2 Y:2 Z:3]
+[Builder puts down a orange block at X:1 Y:2 Z:3]
+[Builder picks up a orange block at X:1 Y:1 Z:3]
+[Builder picks up a orange block at X:2 Y:1 Z:3]
+[Builder picks up a orange block at X:3 Y:1 Z:3]
+[Builder puts down a orange block at X:3 Y:3 Z:3]
+[Builder puts down a orange block at X:2 Y:3 Z:3]
+[Builder puts down a orange block at X:1 Y:3 Z:3]
+[Builder puts down a orange block at X:3 Y:4 Z:3]
+[Builder puts down a orange block at X:2 Y:4 Z:3]
+[Builder puts down a orange block at X:1 Y:4 Z:3]
+<Architect> nice that's it
+<Builder> Birds flying during sunset
+<Architect> or tilted M's
+<Builder> No they're birds
+<Architect> artistic interpretation

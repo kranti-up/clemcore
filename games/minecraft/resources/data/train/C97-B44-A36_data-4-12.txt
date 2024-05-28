@@ -1,0 +1,67 @@
+B44-A36-C97-1523574614866
+<Builder> Mission has started.
+<Builder> hello. ready
+<Architect> hi
+<Architect> ok place a red block where you're standing
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+<Architect> then place a blue block on top of that
+[Builder puts down a blue block at X:0 Y:2 Z:-1]
+<Architect> then place a blue block to the left of that
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+<Architect> and underneath
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+<Architect> then place a blue block left of that one
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+<Architect> place another blue block left of that one
+[Builder puts down a blue block at X:3 Y:1 Z:-1]
+<Architect> place a blue block on top of that
+[Builder puts down a blue block at X:3 Y:2 Z:-1]
+<Architect> then place a blue block to the left of that
+[Builder puts down a blue block at X:4 Y:2 Z:-1]
+<Architect> ok then go to the red block and place a red block behind it
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> other side sorry
+[Builder picks up a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+<Architect> oh i meant the other side of where you are right now
+[Builder picks up a red block at X:0 Y:1 Z:-2]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Builder> I'm confused. I went to the red block and placed a red block behind it. what am I doing wrong?
+<Architect> you placed a red block in front of it not behind
+<Builder> the red block is behind the first red block from my perspective. I think it would be easier if you gave me instructions from my point of view
+<Architect> oh!! i'm so sorry i didn't see that :(
+<Architect> place a red block on top of the one you just put down
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+<Architect> then place a red block in front of that
+<Builder> there is already a blue block in front of the red block I just placed
+<Architect> oh i meant behind sorry :(
+[Builder puts down a red block at X:0 Y:2 Z:1]
+<Architect> ok then place another red block behind that
+<Builder> would you like me to shift points of views to this side?
+[Builder puts down a red block at X:0 Y:2 Z:2]
+<Architect> sure
+<Architect> place a red block underneath the one you just put down
+[Builder puts down a red block at X:0 Y:1 Z:2]
+<Architect> then place a red block in front of the one you just put down
+[Builder puts down a red block at X:0 Y:1 Z:3]
+<Architect> ok cool
+<Architect> ok wait no
+<Architect> you know how there's 4 red blocks on the top right now
+<Architect> i mean 3
+<Builder> should it be 2?
+<Architect> get rid of one
+[Builder picks up a red block at X:0 Y:2 Z:2]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder picks up a red block at X:0 Y:1 Z:3]
+<Builder> like this?
+<Architect> wait no it's 3 sorry
+[Builder picks up a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:2]
+[Builder puts down a red block at X:0 Y:1 Z:3]
+<Builder> ok I'm just restoring it to what it was like before you said wait no. what do I do to change this?
+<Architect> the first red block that you put down at the bottom corner
+<Architect> there should be a red block to the right of it
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Builder> is this good?
+<Architect> ok i think that's good

@@ -1,0 +1,48 @@
+B15-A38-C61-1523400898802
+<Builder> Mission has started.
+<Builder> ready!
+<Architect> Ok this one looks easy, it is a chair.
+<Architect> Put the four legs in the corners of a 3 by 3 square
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+<Architect> Sorry, they should be yellow and only one tall
+[Builder picks up a orange block at X:1 Y:2 Z:-1]
+[Builder picks up a orange block at X:1 Y:1 Z:-1]
+[Builder picks up a orange block at X:-1 Y:2 Z:-1]
+[Builder picks up a orange block at X:-1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:1 Y:1 Z:-1]
+[Builder picks up a orange block at X:1 Y:1 Z:1]
+[Builder picks up a orange block at X:1 Y:2 Z:1]
+[Builder picks up a orange block at X:-1 Y:1 Z:1]
+[Builder picks up a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+[Builder puts down a yellow block at X:1 Y:1 Z:1]
+<Builder> my bad! got it now
+<Architect> No worries, now make an orange seat on the four legs
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder picks up a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+<Architect> Great, now just add a yellow back.
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+[Builder puts down a yellow block at X:1 Y:4 Z:1]
+[Builder puts down a yellow block at X:0 Y:4 Z:1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:1]
+<Builder> like that?
+<Architect> Yup, perfect

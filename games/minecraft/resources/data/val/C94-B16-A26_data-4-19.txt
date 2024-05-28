@@ -1,0 +1,66 @@
+B16-A26-C94-1524155062504
+<Builder> Mission has started.
+<Builder> Welcome back!
+<Architect> Thanks! We're going to build the top of a skyscraper (if it was lying on its side)
+<Architect> So on the left side of the map, can you build the perimeter of a 5x5 red square?
+<Architect> The square will be standing upright
+[Builder puts down a red block at X:4 Y:1 Z:3]
+[Builder puts down a red block at X:4 Y:1 Z:2]
+[Builder puts down a red block at X:4 Y:1 Z:1]
+[Builder puts down a red block at X:4 Y:1 Z:0]
+[Builder puts down a red block at X:4 Y:1 Z:-1]
+[Builder puts down a red block at X:4 Y:2 Z:-1]
+[Builder puts down a red block at X:4 Y:3 Z:-1]
+[Builder puts down a red block at X:4 Y:4 Z:-1]
+[Builder puts down a red block at X:4 Y:5 Z:-1]
+<Architect> Perfect!
+[Builder puts down a red block at X:4 Y:5 Z:0]
+[Builder puts down a red block at X:4 Y:5 Z:1]
+[Builder puts down a red block at X:4 Y:5 Z:2]
+[Builder puts down a red block at X:4 Y:5 Z:3]
+[Builder puts down a red block at X:4 Y:4 Z:3]
+[Builder puts down a red block at X:4 Y:2 Z:3]
+[Builder puts down a red block at X:4 Y:3 Z:3]
+<Architect> Now we'll make a 3x3 perimeter of orange bricks. The perimeter will be floating to the right of the red square
+[Builder puts down a orange block at X:3 Y:1 Z:0]
+[Builder puts down a orange block at X:3 Y:2 Z:0]
+[Builder picks up a orange block at X:3 Y:1 Z:0]
+[Builder puts down a orange block at X:3 Y:3 Z:0]
+<Architect> You've got it!
+[Builder puts down a orange block at X:3 Y:4 Z:0]
+[Builder puts down a orange block at X:3 Y:4 Z:1]
+[Builder puts down a orange block at X:3 Y:4 Z:2]
+[Builder puts down a orange block at X:3 Y:3 Z:2]
+[Builder puts down a orange block at X:3 Y:2 Z:2]
+[Builder puts down a orange block at X:3 Y:2 Z:1]
+<Architect> Now we'll add another 3x3 perimeter of yellow bricks "on top" of that one
+[Builder puts down a yellow block at X:2 Y:4 Z:0]
+[Builder puts down a yellow block at X:2 Y:3 Z:0]
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+[Builder puts down a yellow block at X:2 Y:2 Z:1]
+[Builder puts down a yellow block at X:2 Y:2 Z:2]
+[Builder puts down a yellow block at X:2 Y:4 Z:2]
+<Builder> like this?
+[Builder puts down a yellow block at X:2 Y:3 Z:2]
+[Builder puts down a yellow block at X:2 Y:4 Z:1]
+<Architect> Great!
+<Architect> That's perfect
+<Architect> We'll add a spire too. So on top of the yellow brick, add one green brick
+[Builder puts down a green block at X:1 Y:2 Z:1]
+[Builder puts down a green block at X:1 Y:3 Z:1]
+[Builder picks up a green block at X:1 Y:2 Z:1]
+<Architect> Perfect
+<Architect> We'll add a blue brick on top of that one
+[Builder puts down a blue block at X:0 Y:3 Z:1]
+<Architect> and then a purple brick, floating two layers above the blue one
+[Builder puts down a blue block at X:-1 Y:3 Z:1]
+[Builder puts down a blue block at X:-2 Y:3 Z:1]
+[Builder puts down a purple block at X:-3 Y:3 Z:1]
+[Builder picks up a blue block at X:-2 Y:3 Z:1]
+[Builder picks up a blue block at X:-1 Y:3 Z:1]
+<Architect> Sorry, the purple brick should be one space closer to the blue one
+[Builder picks up a purple block at X:-3 Y:3 Z:1]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a purple block at X:-2 Y:3 Z:1]
+<Architect> great!
+[Builder picks up a purple block at X:-1 Y:3 Z:1]

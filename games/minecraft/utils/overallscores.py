@@ -3,29 +3,35 @@ import os
 
 import json
 
-
-def _compute_precision_recall(fn, fp, tp):
+def _compute_precision_recall(fn, fp, tp, base_dir):
     overall_results = {}
     for model in fn:
         overall_results[model] = {}
         precision = tp[model] / (tp[model] + fp[model])
         recall = tp[model] / (tp[model] + fn[model])
-        f1 = 2 * precision * recall / (precision + recall)
-        print("Model: {}, Precision: {}, Recall: {}, F1: {}".format(model, precision, recall, f1))
+        if precision + recall == 0:
+            f1 = 0
+        else:
+            f1 = 2 * precision * recall / (precision + recall)
+        print(f"Model: {model},\n Precision: {round(precision, 2)},\n Recall: {round(recall)},\n F1: {round(f1,2)}")
         overall_results[model]["precision"] = round(precision, 2)
         overall_results[model]["recall"] = round(recall)
         overall_results[model]["f1"] = round(f1)
-    with open("overall_results.json", "w") as f:
+
+    save_file = os.path.join(base_dir, "overall_results.json")
+    with open(save_file, "w") as f:
         json.dump(overall_results, f, indent=4)
 
 
-def compute_scores(base_dir="/home/admin/Desktop/codebase/cocobots/minecraft_clem/clembench/results_minecraft_lat/"):
+def compute_scores(base_dir):
 
     fn = {}
     fp = {}
     tp = {}
 
     for model in os.listdir(base_dir):
+        if model.endswith(".json"):
+            continue        
         fn[model] = 0
         fp[model] = 0
         tp[model] = 0
@@ -49,7 +55,7 @@ def compute_scores(base_dir="/home/admin/Desktop/codebase/cocobots/minecraft_cle
                             tp[model] += scores_data["episode scores"]["TP"]
                             
 
-    _compute_precision_recall(fn, fp, tp)
+    _compute_precision_recall(fn, fp, tp, base_dir)
 
 
-compute_scores()
+compute_scores(base_dir="/home/admin/Desktop/codebase/cocobots/detectobject_code/clembench/results_minecraft_test/")

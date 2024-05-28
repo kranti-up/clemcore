@@ -1,0 +1,106 @@
+B35-A44-C112-1523653368154
+<Builder> Mission has started.
+<Architect> ok 2d drawing
+<Architect> blue
+<Builder> hype
+[Builder puts down a blue block at X:5 Y:1 Z:0]
+<Architect> 3 blue
+[Builder puts down a blue block at X:4 Y:1 Z:0]
+[Builder puts down a blue block at X:4 Y:2 Z:0]
+<Architect> all empty
+[Builder puts down a blue block at X:4 Y:3 Z:0]
+<Architect> green, 2 yellow
+[Builder puts down a green block at X:2 Y:1 Z:0]
+<Architect> all empty
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder picks up a yellow block at X:2 Y:3 Z:-1]
+<Architect> 3 orange
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder picks up a orange block at X:0 Y:3 Z:-1]
+<Architect> 2empty, orange
+<Architect> red, empty, red
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder picks up a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+<Architect> red
+[Builder puts down a red block at X:-3 Y:1 Z:0]
+<Architect> rotate 180 degrees
+<Architect> we're doing another one in front of that one
+<Architect> 1 second
+<Builder> okay. But starting from this red block?
+<Architect> yes starting at the red block
+<Architect> all empty
+<Architect> red, empty, red
+[Builder puts down a red block at X:-3 Y:1 Z:2]
+[Builder puts down a red block at X:-3 Y:2 Z:2]
+[Builder puts down a red block at X:-3 Y:3 Z:2]
+[Builder picks up a red block at X:-3 Y:2 Z:2]
+<Architect> no the first column is all empty
+<Architect> oh
+<Architect> I said rotate 180 degrees
+[Builder picks up a red block at X:-3 Y:1 Z:2]
+[Builder picks up a red block at X:-3 Y:3 Z:2]
+<Builder> so still going left to Right
+[Builder puts down a red block at X:-2 Y:1 Z:1]
+[Builder puts down a red block at X:-2 Y:2 Z:1]
+[Builder puts down a red block at X:-2 Y:3 Z:1]
+[Builder picks up a red block at X:-2 Y:2 Z:1]
+<Architect> 3rd column: all empty
+<Builder> like this?
+<Builder> okay
+<Architect> orange
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+<Architect> all empty
+<Architect> green, empty, yellow
+[Builder puts down a green block at X:2 Y:1 Z:1]
+[Builder puts down a yellow block at X:2 Y:3 Z:1]
+<Architect> all empty
+<Architect> 2 empty green
+[Builder puts down a green block at X:4 Y:3 Z:1]
+<Architect> ok step back we're making another drawing
+<Architect> on top of this one
+<Architect> start on left
+<Architect> all empty
+<Architect> 3 red
+[Builder puts down a red block at X:-4 Y:1 Z:2]
+[Builder puts down a red block at X:-4 Y:2 Z:2]
+[Builder puts down a red block at X:-4 Y:3 Z:2]
+<Architect> no
+[Builder picks up a red block at X:-4 Y:1 Z:2]
+[Builder picks up a red block at X:-4 Y:2 Z:2]
+[Builder picks up a red block at X:-4 Y:3 Z:2]
+[Builder puts down a red block at X:-2 Y:1 Z:2]
+[Builder puts down a red block at X:-2 Y:2 Z:2]
+[Builder puts down a red block at X:-2 Y:3 Z:2]
+<Builder> this?
+<Architect> yes
+<Architect> all empty
+<Architect> orange, 2 yellow
+[Builder puts down a orange block at X:0 Y:1 Z:2]
+[Builder puts down a yellow block at X:0 Y:2 Z:2]
+[Builder puts down a yellow block at X:0 Y:3 Z:2]
+<Architect> 2 empty yellow
+[Builder puts down a yellow block at X:1 Y:3 Z:2]
+<Architect> green, empty, yellow
+[Builder puts down a yellow block at X:2 Y:3 Z:2]
+[Builder puts down a green block at X:2 Y:1 Z:2]
+<Architect> green
+[Builder puts down a green block at X:3 Y:1 Z:2]
+<Architect> 3 green
+[Builder puts down a green block at X:4 Y:1 Z:2]
+[Builder puts down a green block at X:4 Y:2 Z:2]
+[Builder puts down a green block at X:4 Y:3 Z:2]
+<Architect> checking
+<Builder> do u want a specific angle?
+<Architect> no I can fly around in this word and the world with the blueprint
+<Builder> gotcha
+<Architect> its' good. looks like a spiral huh? tough one but good job
+<Builder> I see it now
+<Architect> wait
+<Builder> yeah?
+<Architect> nvm its correct. I thought I missed 1 block

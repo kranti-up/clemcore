@@ -1,0 +1,108 @@
+B11-A7-C69-1522855627706
+<Builder> Mission has started.
+<Architect> so this one is kind of like a truck or a dog or something
+<Builder> ok. so four legs/wheels?
+<Architect> yes, put four blue blocks on the corners of a 4x3 rectangle
+[Builder puts down a blue block at X:2 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+[Builder picks up a blue block at X:2 Y:1 Z:-2]
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+<Architect> now we're going to put a 5x3 red rectangle on top of that
+<Architect> 6x3 actually
+<Builder> ok. sticking out one on each side?
+[Builder puts down a red block at X:2 Y:2 Z:1]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:-1]
+<Architect> yes
+[Builder puts down a red block at X:2 Y:2 Z:-2]
+[Builder picks up a red block at X:2 Y:2 Z:1]
+[Builder puts down a red block at X:2 Y:2 Z:1]
+[Builder puts down a red block at X:2 Y:2 Z:2]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:2]
+<Builder> filled in?
+[Builder puts down a red block at X:0 Y:2 Z:2]
+[Builder puts down a red block at X:-1 Y:2 Z:2]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:-2]
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+[Builder picks up a red block at X:-1 Y:2 Z:-2]
+[Builder picks up a red block at X:0 Y:2 Z:-2]
+[Builder picks up a red block at X:1 Y:2 Z:-2]
+[Builder picks up a red block at X:2 Y:2 Z:-2]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder picks up a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:2 Y:2 Z:-2]
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-2]
+<Architect> sticking out in the other dimension
+[Builder picks up a red block at X:-1 Y:2 Z:-2]
+[Builder picks up a red block at X:0 Y:2 Z:-2]
+[Builder picks up a red block at X:1 Y:2 Z:-2]
+[Builder picks up a red block at X:2 Y:2 Z:-2]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder picks up a red block at X:2 Y:2 Z:-1]
+[Builder puts down a red block at X:2 Y:2 Z:-1]
+[Builder puts down a red block at X:3 Y:2 Z:-1]
+<Architect> and yes, filled in
+[Builder puts down a red block at X:3 Y:2 Z:0]
+[Builder puts down a red block at X:3 Y:2 Z:1]
+[Builder picks up a red block at X:2 Y:2 Z:2]
+[Builder picks up a red block at X:1 Y:2 Z:2]
+[Builder picks up a red block at X:-1 Y:2 Z:2]
+[Builder picks up a red block at X:0 Y:2 Z:2]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:1]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:-1]
+<Builder> thanks
+<Architect> go to the left side and face the shape from there
+<Architect> put a yellow on the leftmost red block and the rightmost
+[Builder puts down a yellow block at X:4 Y:2 Z:1]
+[Builder puts down a yellow block at X:4 Y:2 Z:-1]
+<Architect> and a green in the middle
+[Builder puts down a green block at X:4 Y:2 Z:0]
+<Architect> now put 3 green blocks on top of those
+[Builder puts down a green block at X:4 Y:3 Z:1]
+[Builder puts down a green block at X:4 Y:3 Z:0]
+[Builder puts down a green block at X:4 Y:3 Z:-1]
+<Architect> those three green blocks are the side of a 3x3 square
+<Architect> that sits on top of the red blocks
+<Builder> that lays flat?
+<Architect> yes
+<Builder> filled in?
+[Builder puts down a green block at X:3 Y:3 Z:1]
+[Builder puts down a green block at X:2 Y:3 Z:1]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:3 Y:3 Z:-1]
+[Builder puts down a green block at X:2 Y:3 Z:-1]
+<Architect> yes
+<Architect> face the front of the truck again
+<Architect> and put three red blocks on top of the middle row
+<Builder> I'll assume all polygons are filled in from now on
+[Builder puts down a red block at X:3 Y:4 Z:1]
+[Builder puts down a red block at X:3 Y:4 Z:0]
+<Architect> sorry green
+<Builder> i'm out of red blocks
+[Builder picks up a red block at X:3 Y:4 Z:0]
+[Builder picks up a red block at X:3 Y:4 Z:1]
+[Builder puts down a green block at X:3 Y:4 Z:1]
+[Builder puts down a green block at X:3 Y:4 Z:0]
+[Builder puts down a green block at X:3 Y:4 Z:-1]
+<Architect> put orange behind the left and right of the blocks you just placed
+[Builder puts down a orange block at X:2 Y:4 Z:1]
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+<Builder> like that?
+<Architect> yes except i made a mistake. There's not green block between the two orange blocks on the bottom layer of the square
+[Builder picks up a green block at X:2 Y:3 Z:0]
+<Builder> ok, did I clean it up correctly?
+<Architect> yes, i think that's it

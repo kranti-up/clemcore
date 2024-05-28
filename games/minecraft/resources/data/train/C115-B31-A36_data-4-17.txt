@@ -1,0 +1,70 @@
+B31-A36-C115-1524004725879
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hello again
+<Architect> ok make a 3 x 3 floating red square
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+<Architect> ok remove the middle
+[Builder picks up a red block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:2 Z:-1]
+[Builder picks up a red block at X:0 Y:2 Z:1]
+<Architect> i meant only the middle cube sorry
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+<Builder> my bad
+<Architect> ok at each corner put a yellow block underneath
+<Architect> its ok
+[Builder puts down a yellow block at X:1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:1 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+<Architect> at the corner that you're in front of, replace the red block with a blue one
+[Builder picks up a red block at X:-1 Y:2 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+[Builder picks up a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a blue block at X:-1 Y:2 Z:-1]
+<Architect> ok then put a purple block on top of the blue
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+<Architect> then place 2 blocks in front of it
+[Builder puts down a purple block at X:-2 Y:3 Z:-1]
+[Builder puts down a purple block at X:-3 Y:3 Z:-1]
+<Architect> it's another 3 x 3 floating square
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a purple block at X:-2 Y:3 Z:0]
+[Builder puts down a purple block at X:-3 Y:3 Z:0]
+[Builder puts down a purple block at X:-2 Y:3 Z:1]
+[Builder puts down a purple block at X:-3 Y:3 Z:1]
+<Architect> oh other side sorry
+[Builder picks up a purple block at X:-3 Y:3 Z:1]
+[Builder picks up a purple block at X:-2 Y:3 Z:1]
+[Builder picks up a purple block at X:-2 Y:3 Z:0]
+[Builder picks up a purple block at X:-1 Y:3 Z:0]
+[Builder picks up a purple block at X:-1 Y:3 Z:1]
+[Builder picks up a purple block at X:-3 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-3]
+[Builder puts down a purple block at X:-2 Y:3 Z:-2]
+[Builder puts down a purple block at X:-3 Y:3 Z:-2]
+[Builder puts down a purple block at X:-2 Y:3 Z:-3]
+<Architect> only the corner should overlap the red one
+[Builder puts down a purple block at X:-3 Y:3 Z:-3]
+<Architect> ok good get rid of the middle square
+[Builder picks up a purple block at X:-2 Y:3 Z:-2]
+<Architect> then at each corner put a blue block underneath
+[Builder puts down a blue block at X:-1 Y:2 Z:-3]
+[Builder puts down a blue block at X:-3 Y:2 Z:-3]
+[Builder puts down a blue block at X:-3 Y:2 Z:-1]
+<Architect> ok i think we're good
+<Builder> nice

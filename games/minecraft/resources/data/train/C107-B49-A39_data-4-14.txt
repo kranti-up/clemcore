@@ -1,0 +1,75 @@
+B49-A39-C107-1523770013466
+<Builder> Mission has started.
+<Architect> this one kind of looks like a person standing up but also at the same time not exactly so
+<Builder> uh huh
+<Architect> also, everything stands up and lies on the same plane
+<Architect> start near the middle
+<Architect> place a two stack block of red and a two stack block of orange such that there is a 2-block gap between them
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:2]
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+<Architect> i totally meant "two block stack" not "two stack block"
+<Architect> i'm bad
+<Architect> but you got me
+<Builder> yeah
+<Builder> i didnt even notice
+<Architect> haha
+<Architect> alright, now diagonally up and right from the top red block, place another red
+[Builder puts down a red block at X:0 Y:3 Z:-1]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder picks up a red block at X:0 Y:3 Z:-1]
+<Architect> this red is the bottom left corner of a 2x2 square that follows a checkerboard pattern of red and orange blocks
+[Builder puts down a red block at X:0 Y:4 Z:0]
+[Builder puts down a red block at X:0 Y:4 Z:1]
+[Builder picks up a red block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+<Builder> cool
+<Architect> nice
+<Architect> diagonally up and left from that top orange block, place another orange
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+[Builder picks up a orange block at X:0 Y:4 Z:-1]
+<Architect> make it a 2-stack of orange
+[Builder puts down a orange block at X:0 Y:6 Z:-1]
+<Architect> do the same on the other side but with red
+[Builder puts down a red block at X:0 Y:4 Z:2]
+[Builder puts down a red block at X:-1 Y:5 Z:2]
+[Builder picks up a red block at X:-1 Y:5 Z:2]
+[Builder picks up a red block at X:0 Y:5 Z:2]
+[Builder picks up a red block at X:-1 Y:6 Z:2]
+[Builder puts down a red block at X:0 Y:5 Z:2]
+[Builder puts down a red block at X:0 Y:6 Z:2]
+[Builder picks up a red block at X:0 Y:4 Z:2]
+<Builder> ok
+<Architect> on the top orange block, place a row of 2 yellow blocks to its left
+[Builder puts down a yellow block at X:0 Y:7 Z:-1]
+[Builder puts down a yellow block at X:0 Y:7 Z:-2]
+<Architect> sorry, the yellow should be adjacent to the orange's left face
+<Builder> oh you said on
+[Builder puts down a yellow block at X:0 Y:6 Z:-2]
+[Builder puts down a yellow block at X:0 Y:6 Z:-3]
+[Builder picks up a yellow block at X:0 Y:7 Z:-2]
+<Architect> yeah, sorry
+[Builder picks up a yellow block at X:0 Y:7 Z:-1]
+<Architect> do the same again for the other side
+<Builder> yellow?
+<Architect> yup!
+[Builder puts down a yellow block at X:0 Y:6 Z:3]
+[Builder puts down a yellow block at X:0 Y:6 Z:4]
+<Architect> finally, we're going to make another of those checkerboard 2x2 things between the tops of the orange and red stacks
+<Architect> it will be one level up
+<Architect> and the checkerboard colors will be reversed
+[Builder puts down a orange block at X:0 Y:7 Z:-1]
+[Builder puts down a orange block at X:0 Y:7 Z:0]
+[Builder puts down a red block at X:0 Y:8 Z:0]
+[Builder puts down a red block at X:0 Y:7 Z:1]
+[Builder puts down a orange block at X:0 Y:8 Z:1]
+[Builder picks up a orange block at X:0 Y:7 Z:-1]
+<Builder> done
+<Architect> nice!
+<Architect> so is it a person?
+<Builder> oh yeah
+<Architect> but there's like a huge hole in him
+<Architect> oh well

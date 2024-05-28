@@ -1,0 +1,26 @@
+B20-A30-C84-1523457182003
+<Builder> Mission has started.
+<Builder> hello. how much space should I leave?
+<Architect> the build is 5 blocks wide so leave enought space for that
+<Architect> it looks like a candelabra (sp?)
+<Architect> so start with a stack of 3 blue blocks
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:0 Y:2 Z:-1]
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+<Architect> on either side of the top block place 2 more blue blocks
+[Builder puts down a blue block at X:-1 Y:3 Z:-1]
+[Builder puts down a blue block at X:-2 Y:3 Z:-1]
+[Builder puts down a blue block at X:1 Y:3 Z:-1]
+[Builder puts down a blue block at X:2 Y:3 Z:-1]
+<Builder> like this?
+<Architect> yes
+<Architect> and then on every other block place 2 yellow blocks
+<Architect> going upward
+[Builder puts down a yellow block at X:2 Y:4 Z:-1]
+[Builder puts down a yellow block at X:2 Y:5 Z:-1]
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:5 Z:-1]
+<Architect> thats it
+<Builder> great

@@ -1,0 +1,84 @@
+B37-A46-C33-1523305851116
+<Builder> Mission has started.
+<Architect> put an orange block 4 squares from the left edge
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+<Builder> there?
+<Architect> yes. now put 2 orange blocks up from the first block to make a Y
+<Builder> by up do you mean vertically?
+<Architect> put 3 blocks on top of the first then delete the one in the middle
+<Builder> ok
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder picks up a orange block at X:2 Y:2 Z:-1]
+<Architect> now put a tower of 3 orange blocks on the left side then delete the bottom 2
+[Builder puts down a orange block at X:4 Y:1 Z:-1]
+[Builder puts down a orange block at X:4 Y:2 Z:-1]
+[Builder puts down a orange block at X:4 Y:3 Z:-1]
+[Builder picks up a orange block at X:4 Y:2 Z:-1]
+[Builder picks up a orange block at X:4 Y:1 Z:-1]
+<Builder> ok
+<Architect> now do the same thing on the right side
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder picks up a orange block at X:0 Y:2 Z:-1]
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+<Architect> connect a line of 5 green blocks to the top orange block on the right side
+<Builder> a line going which direction? up? sideways?
+<Architect> yes. it should go to the right with only 1 green block touching the orange
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:-2 Y:3 Z:-1]
+[Builder puts down a green block at X:-3 Y:3 Z:-1]
+[Builder puts down a green block at X:-4 Y:3 Z:-1]
+[Builder puts down a green block at X:-5 Y:3 Z:-1]
+<Builder> ok
+<Architect> put 3 green blocks on the side of the green line closest to you
+<Builder> parallel to the current green line?
+<Architect> yes
+[Builder puts down a green block at X:-1 Y:3 Z:-2]
+[Builder puts down a green block at X:-2 Y:3 Z:-2]
+[Builder puts down a green block at X:-3 Y:3 Z:-2]
+<Builder> like that?
+<Architect> delete the first one you put and add another one on the 4th green block
+[Builder puts down a green block at X:-1 Y:3 Z:-3]
+[Builder picks up a green block at X:-1 Y:3 Z:-3]
+[Builder picks up a green block at X:-1 Y:3 Z:-2]
+[Builder puts down a green block at X:-4 Y:3 Z:-2]
+<Builder> ok
+<Architect> now put 1 green block one block over from where youre standing connected to the rest of the green blocks
+<Builder> I'm not sure what you mean
+<Architect> so connected to the second block in the row of 3 green
+<Builder> to the left of that block, or towards me?
+<Architect> towards you
+<Builder> oh I see
+[Builder puts down a green block at X:-3 Y:3 Z:-3]
+<Architect> now repeat the same thing on the other side of the 5 green blocks
+[Builder puts down a green block at X:-4 Y:3 Z:0]
+[Builder puts down a green block at X:-3 Y:3 Z:0]
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+[Builder puts down a green block at X:-3 Y:3 Z:1]
+<Builder> ok
+<Architect> now delete the green block in the center of the green shape
+[Builder puts down a green block at X:-3 Y:4 Z:-1]
+[Builder picks up a green block at X:-3 Y:4 Z:-1]
+[Builder picks up a green block at X:-3 Y:3 Z:-1]
+<Architect> and delete the 4 blocks touching the empty spot to make a +
+[Builder puts down a green block at X:-3 Y:4 Z:0]
+[Builder picks up a green block at X:-3 Y:4 Z:0]
+[Builder picks up a green block at X:-3 Y:3 Z:0]
+[Builder picks up a green block at X:-4 Y:3 Z:-1]
+[Builder picks up a green block at X:-3 Y:3 Z:-2]
+[Builder picks up a green block at X:-2 Y:3 Z:-1]
+<Builder> ok
+<Architect> now go back to the orange side and put 4 orane blocks on top of the one touching the ground
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:3 Z:-1]
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+[Builder puts down a orange block at X:2 Y:5 Z:-1]
+<Builder> like that?
+<Architect> yes. now delete the middle 3 so there is an orange block floating
+[Builder picks up a orange block at X:2 Y:4 Z:-1]
+[Builder picks up a orange block at X:2 Y:3 Z:-1]
+[Builder picks up a orange block at X:2 Y:2 Z:-1]
+<Builder> ok

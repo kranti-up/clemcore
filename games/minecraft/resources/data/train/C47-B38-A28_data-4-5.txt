@@ -1,0 +1,51 @@
+B38-A28-C47-1522948022670
+<Builder> Mission has started.
+<Architect> alright this ones easy
+<Builder> Heyo
+<Builder> Ooh
+<Architect> can you get blue red and purple blocks
+<Builder> Yup, You know I have them already, right
+<Builder> ?
+<Architect> oh
+<Architect> LOL
+<Architect> i thought you had to go into creative inventory and get them
+<Builder> Oh, lol
+<Architect> alright can you place three blue blocks horizontally
+[Builder puts down a blue block at X:1 Y:1 Z:-4]
+[Builder puts down a blue block at X:0 Y:1 Z:-4]
+[Builder puts down a blue block at X:-1 Y:1 Z:-4]
+<Builder> like this?
+<Architect> alright yeah
+<Architect> and then right in front of those put three red blocks
+[Builder puts down a red block at X:1 Y:1 Z:-5]
+[Builder puts down a red block at X:0 Y:1 Z:-5]
+[Builder puts down a red block at X:-1 Y:1 Z:-5]
+<Builder> ok
+<Architect> sorry on the other side i mean
+[Builder picks up a red block at X:0 Y:1 Z:-5]
+[Builder picks up a red block at X:-1 Y:1 Z:-5]
+[Builder picks up a red block at X:1 Y:1 Z:-5]
+[Builder puts down a red block at X:1 Y:1 Z:-3]
+[Builder puts down a red block at X:0 Y:1 Z:-3]
+[Builder puts down a red block at X:-1 Y:1 Z:-3]
+<Builder> ah, ok
+<Architect> alright can you put three red blocks on top of those three red blocks
+[Builder puts down a red block at X:-1 Y:2 Z:-3]
+[Builder puts down a red block at X:0 Y:2 Z:-3]
+[Builder puts down a red block at X:1 Y:2 Z:-3]
+<Architect> keep everything
+<Builder> ok
+<Architect> okay and then in front of that do purple blocks
+[Builder puts down a purple block at X:1 Y:1 Z:-2]
+[Builder puts down a purple block at X:1 Y:2 Z:-2]
+[Builder puts down a purple block at X:1 Y:3 Z:-2]
+<Builder> up another level?
+[Builder puts down a purple block at X:0 Y:1 Z:-2]
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder puts down a purple block at X:0 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:1 Z:-2]
+[Builder puts down a purple block at X:-1 Y:2 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+<Architect> yeah just like this
+<Architect> okay we're done lol
+<Builder> Ohm wow

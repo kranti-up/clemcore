@@ -1,0 +1,38 @@
+B29-A8-C14-1522863579292
+<Builder> Mission has started.
+<Architect> 2 block wide stairs
+<Architect> so start with a line of blue blocks
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+<Architect> length two
+<Architect> yeah
+<Architect> now another blue line on top of that
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+<Architect> above
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+[Builder picks up a blue block at X:-1 Y:1 Z:0]
+[Builder picks up a blue block at X:-1 Y:1 Z:1]
+<Architect> now another to the right of the last
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+[Builder puts down a blue block at X:-1 Y:2 Z:1]
+<Architect> yeah
+<Architect> now a red 2X2 square on top of the blue
+[Builder puts down a red block at X:-1 Y:3 Z:1]
+<Architect> but shifter
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+<Architect> shifted to hang over
+[Builder puts down a red block at X:-2 Y:3 Z:1]
+<Architect> yeah
+<Architect> now a purple square like that
+[Builder puts down a purple block at X:-2 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:4 Z:1]
+[Builder puts down a purple block at X:-3 Y:4 Z:1]
+[Builder puts down a purple block at X:-3 Y:4 Z:0]
+<Architect> and one more line on top of the purple square
+<Architect> in purple
+[Builder puts down a purple block at X:-3 Y:5 Z:0]
+[Builder puts down a purple block at X:-3 Y:5 Z:1]
+<Architect> yes

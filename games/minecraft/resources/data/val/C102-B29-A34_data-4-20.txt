@@ -1,0 +1,57 @@
+B29-A34-C102-1524255312019
+<Builder> Mission has started.
+<Architect> this kinda looks like a man riding a trident
+<Builder> wow
+<Architect> there is nothing on the ground
+<Architect> it's all floating
+<Architect> so one level above the ground, place a row of 4 orange blocks
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:2 Y:1 Z:0]
+[Builder puts down a orange block at X:2 Y:1 Z:1]
+[Builder puts down a orange block at X:2 Y:1 Z:2]
+[Builder puts down a orange block at X:2 Y:2 Z:2]
+[Builder puts down a orange block at X:2 Y:2 Z:1]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder picks up a orange block at X:2 Y:1 Z:-1]
+[Builder picks up a orange block at X:2 Y:1 Z:0]
+[Builder picks up a orange block at X:2 Y:1 Z:1]
+[Builder picks up a orange block at X:2 Y:1 Z:2]
+<Architect> one one end, place 2 yellow blocks
+[Builder puts down a yellow block at X:2 Y:2 Z:3]
+[Builder puts down a yellow block at X:2 Y:2 Z:4]
+<Architect> on the yellow block closest to the orange, place one yellow on either side, left and right
+[Builder puts down a yellow block at X:1 Y:2 Z:3]
+[Builder puts down a yellow block at X:3 Y:2 Z:3]
+<Architect> great
+<Architect> now palce 1 yellow block diagonal to the yellow blocks you just palced, at the same level as every other block
+<Builder> diagonal towards or away from the oragne?
+<Architect> away
+<Builder> orange blocks
+[Builder puts down a yellow block at X:2 Y:1 Z:3]
+[Builder puts down a yellow block at X:3 Y:2 Z:4]
+[Builder puts down a yellow block at X:4 Y:2 Z:4]
+[Builder picks up a yellow block at X:3 Y:2 Z:4]
+[Builder puts down a yellow block at X:1 Y:2 Z:4]
+[Builder puts down a yellow block at X:0 Y:2 Z:4]
+[Builder picks up a yellow block at X:1 Y:2 Z:4]
+<Architect> you have one extra yellow block on the ground
+[Builder picks up a yellow block at X:2 Y:1 Z:3]
+<Builder> thanks
+<Architect> this is the trident
+<Architect> now we will make the man
+<Architect> on the second orange block to your left
+<Architect> the other one
+<Architect> place 3 green blocks above that
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:2 Y:4 Z:0]
+[Builder puts down a green block at X:2 Y:5 Z:0]
+<Architect> place one green on eitherside of that, like arms if the person was facing towards the head of the tirdent
+<Architect> a T figure
+[Builder puts down a green block at X:1 Y:5 Z:0]
+[Builder puts down a green block at X:3 Y:5 Z:0]
+<Architect> great
+<Architect> and now the head is a red block
+[Builder puts down a red block at X:2 Y:6 Z:0]
+<Architect> i think that is it
+<Architect> excellent

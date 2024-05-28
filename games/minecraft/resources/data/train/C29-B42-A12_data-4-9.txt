@@ -1,0 +1,54 @@
+B42-A12-C29-1523307822416
+<Builder> Mission has started.
+<Architect> this is a 2D structure
+<Architect> it looks like a tetris game
+<Architect> red block in centere
+<Architect> then green on top
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:2 Z:0]
+<Architect> green tower to any side
+<Architect> 2 tall
+[Builder puts down a green block at X:1 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+<Architect> one more green on the floor in that direction
+[Builder puts down a green block at X:2 Y:1 Z:0]
+<Architect> two red on the floor to the right
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder picks up a red block at X:-1 Y:2 Z:0]
+<Architect> both on floor
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+<Architect> then one on top of the rightmost
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+<Architect> 4 tall blue pillar to the right
+[Builder puts down a blue block at X:-3 Y:1 Z:0]
+[Builder puts down a blue block at X:-3 Y:2 Z:0]
+[Builder puts down a blue block at X:-3 Y:3 Z:0]
+[Builder puts down a blue block at X:-3 Y:4 Z:0]
+<Architect> orange between the red and green
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+<Architect> another above
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+<Architect> another to the right
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder picks up a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+<Architect> another abover
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+<Architect> yes
+<Architect> now the hard part
+<Architect> a falling purple block in the tetris game
+<Architect> off to the left make a purple pillar 5 high
+[Builder puts down a purple block at X:3 Y:1 Z:0]
+[Builder puts down a purple block at X:3 Y:2 Z:0]
+[Builder puts down a purple block at X:3 Y:3 Z:0]
+[Builder puts down a purple block at X:3 Y:4 Z:0]
+<Architect> chop out the bottom 2
+[Builder puts down a purple block at X:3 Y:5 Z:0]
+[Builder picks up a purple block at X:3 Y:1 Z:0]
+[Builder picks up a purple block at X:3 Y:2 Z:0]
+<Architect> add one last purple
+<Architect> to make a t
+<Architect> on the side where all else is
+<Architect> the right
+[Builder puts down a purple block at X:2 Y:4 Z:0]

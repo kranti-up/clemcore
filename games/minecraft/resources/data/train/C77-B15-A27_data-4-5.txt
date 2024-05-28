@@ -1,0 +1,71 @@
+B15-A27-C77-1522968772777
+<Builder> Mission has started.
+<Architect> make a line of green blocks leaving one block free on each side
+<Builder> how long should the line be?
+<Architect> so it should be 9 blocks
+[Builder puts down a green block at X:0 Y:1 Z:-4]
+[Builder puts down a green block at X:0 Y:1 Z:-3]
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:2]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:3]
+[Builder puts down a green block at X:0 Y:1 Z:4]
+<Architect> now stack 8 blocks on one end of that line
+<Architect> still green
+[Builder puts down a green block at X:0 Y:2 Z:4]
+[Builder puts down a green block at X:0 Y:3 Z:4]
+[Builder puts down a green block at X:0 Y:4 Z:4]
+[Builder puts down a green block at X:0 Y:5 Z:4]
+[Builder puts down a green block at X:0 Y:6 Z:4]
+[Builder puts down a green block at X:0 Y:7 Z:4]
+[Builder puts down a green block at X:0 Y:8 Z:4]
+[Builder puts down a green block at X:0 Y:9 Z:4]
+<Builder> like that, or one shorter?
+<Architect> thats good
+<Architect> now build off of that stack with 8 red blocks
+<Architect> so it will be parallel with the origanl green line
+[Builder puts down a red block at X:0 Y:9 Z:3]
+[Builder puts down a red block at X:0 Y:9 Z:2]
+[Builder puts down a red block at X:0 Y:9 Z:1]
+[Builder puts down a red block at X:0 Y:9 Z:0]
+[Builder puts down a red block at X:0 Y:9 Z:-1]
+[Builder puts down a red block at X:0 Y:9 Z:-2]
+[Builder puts down a red block at X:0 Y:9 Z:-3]
+[Builder puts down a red block at X:0 Y:9 Z:-4]
+<Architect> good
+<Architect> build down from that still with red blocks with 7 blocks
+[Builder puts down a red block at X:0 Y:8 Z:-4]
+[Builder puts down a red block at X:0 Y:7 Z:-4]
+[Builder puts down a red block at X:0 Y:6 Z:-4]
+[Builder puts down a red block at X:0 Y:5 Z:-4]
+[Builder puts down a red block at X:0 Y:4 Z:-4]
+[Builder puts down a red block at X:0 Y:3 Z:-4]
+<Builder> one more?
+<Architect> keep the gap
+<Architect> now with purple blocks build off the red like you did with green
+<Architect> leaving a space between the green and purple
+[Builder puts down a purple block at X:0 Y:3 Z:-3]
+[Builder puts down a purple block at X:0 Y:3 Z:-2]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:2]
+<Architect> build up towards the red now
+[Builder puts down a purple block at X:0 Y:4 Z:2]
+[Builder puts down a purple block at X:0 Y:5 Z:2]
+[Builder puts down a purple block at X:0 Y:6 Z:2]
+[Builder puts down a purple block at X:0 Y:7 Z:2]
+<Architect> now use yellow and build towards the side
+[Builder puts down a yellow block at X:0 Y:7 Z:1]
+[Builder puts down a yellow block at X:0 Y:7 Z:0]
+[Builder puts down a yellow block at X:0 Y:7 Z:-1]
+[Builder puts down a yellow block at X:0 Y:7 Z:-2]
+<Architect> build down towards purple with yello
+[Builder puts down a yellow block at X:0 Y:6 Z:-2]
+[Builder puts down a yellow block at X:0 Y:5 Z:-2]
+<Architect> build towards purple with orange
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+<Architect> nice job

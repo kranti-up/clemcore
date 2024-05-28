@@ -1,0 +1,48 @@
+B44-A15-C125-1523895152753
+<Builder> Mission has started.
+<Architect> alright, so, make a diagonal row of 4 red blocks on the ground near the center
+[Builder puts down a red block at X:1 Y:1 Z:2]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+<Architect> on top of one of the corners, you're gonna make a stack of blocks
+<Architect> start with an orange one
+[Builder puts down a orange block at X:1 Y:2 Z:2]
+<Architect> then yellow
+[Builder puts down a yellow block at X:-2 Y:2 Z:-1]
+<Architect> just one corner for now!
+<Architect> the yellow should be on the orange
+[Builder picks up a yellow block at X:-2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:2]
+<Architect> two more orange on that
+[Builder puts down a orange block at X:1 Y:4 Z:2]
+[Builder puts down a orange block at X:1 Y:5 Z:2]
+<Architect> then a yellow, then a red
+[Builder puts down a yellow block at X:1 Y:6 Z:2]
+[Builder puts down a red block at X:1 Y:7 Z:2]
+<Architect> okay, same color scheme on the other side :)
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+[Builder puts down a orange block at X:-2 Y:4 Z:-1]
+[Builder puts down a orange block at X:-2 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:6 Z:-1]
+[Builder puts down a red block at X:-2 Y:7 Z:-1]
+<Architect> and connect the topmost row of red blocks with two more red blocks diagonally
+[Builder puts down a red block at X:1 Y:7 Z:1]
+[Builder puts down a red block at X:0 Y:7 Z:1]
+[Builder puts down a red block at X:0 Y:7 Z:0]
+[Builder puts down a red block at X:-1 Y:7 Z:0]
+[Builder picks up a red block at X:0 Y:7 Z:0]
+[Builder picks up a red block at X:1 Y:7 Z:1]
+<Architect> connect the two upper orange blocks in the center with two more yellow blocks
+[Builder puts down a yellow block at X:1 Y:5 Z:1]
+[Builder puts down a yellow block at X:0 Y:5 Z:1]
+[Builder picks up a yellow block at X:1 Y:5 Z:1]
+[Builder puts down a yellow block at X:0 Y:5 Z:0]
+[Builder puts down a yellow block at X:-1 Y:5 Z:0]
+[Builder picks up a yellow block at X:0 Y:5 Z:0]
+<Architect> and two more yellow blocks underneath those :)
+[Builder puts down a yellow block at X:0 Y:4 Z:1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:0]
+<Architect> perfect!
+<Builder> nice

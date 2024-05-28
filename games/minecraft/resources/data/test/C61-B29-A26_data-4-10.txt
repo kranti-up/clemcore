@@ -1,0 +1,28 @@
+B29-A26-C61-1523377446066
+<Builder> Mission has started.
+<Builder> ready
+<Architect> We're building a chair
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder picks up a red block at X:0 Y:1 Z:-1]
+<Architect> place the corners of a yellow 3x3 square on the ground
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:1 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+<Architect> add a 3x3 layer of orange bricks on top of the legs
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+<Architect> add a 3x2 rectangle of yellow bricks, they'll be back of the chair
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]

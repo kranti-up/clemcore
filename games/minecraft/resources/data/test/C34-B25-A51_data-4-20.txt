@@ -1,0 +1,32 @@
+B25-A51-C34-1524265307082
+<Builder> Mission has started.
+<Architect> okay so edge closest to you, form a 3x1 layer of red
+[Builder puts down a red block at X:1 Y:1 Z:-5]
+[Builder puts down a red block at X:0 Y:1 Z:-5]
+[Builder puts down a red block at X:-1 Y:1 Z:-5]
+<Architect> rightmost red block, place 3 additional red blocks (on the ground) on top
+[Builder puts down a red block at X:-1 Y:2 Z:-5]
+[Builder puts down a red block at X:-1 Y:3 Z:-5]
+[Builder puts down a red block at X:-1 Y:4 Z:-5]
+<Architect> it's going to be flat on the ground, so the additional 3 reds should be on the ground
+[Builder picks up a red block at X:-1 Y:3 Z:-5]
+[Builder picks up a red block at X:-1 Y:2 Z:-5]
+[Builder picks up a red block at X:-1 Y:4 Z:-5]
+[Builder puts down a red block at X:-1 Y:1 Z:-4]
+[Builder puts down a red block at X:-1 Y:1 Z:-3]
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+<Architect> great so the top red, place one yellow to its left
+[Builder puts down a yellow block at X:0 Y:1 Z:-2]
+<Architect> so to the left of the yellow, place one green block
+[Builder puts down a green block at X:1 Y:1 Z:-2]
+<Architect> place three additional green blocks on above the green block, but they're all be touching the ground
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:2]
+[Builder picks up a green block at X:1 Y:1 Z:2]
+[Builder puts down a green block at X:1 Y:1 Z:1]
+<Architect> great so on the top green now, place 2 additional greens to its right
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+<Architect> and its done :^)
+<Builder> yay

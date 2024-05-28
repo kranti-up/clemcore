@@ -1,0 +1,87 @@
+B42-A12-C27-1523307231495
+<Builder> Mission has started.
+<Architect> Sorry. Bugs over here
+<Builder> ok
+<Architect> Same blue T
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+<Architect> 4 tall 3 across the top
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+[Builder puts down a blue block at X:-1 Y:4 Z:0]
+<Architect> put a yellow under one wing
+<Architect> and a green under the other
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+<Architect> good
+<Builder> what now?
+<Architect> now extend each to a row of 3 blocks total of the same color
+<Architect> away from you
+<Builder> from the green and yellow ones?
+<Architect> exacltly
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:3 Z:2]
+<Architect> we are making a bunch of Ts
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:1 Y:3 Z:2]
+<Architect> make the yellow one a t into the grouond
+<Architect> good
+[Builder puts down a yellow block at X:1 Y:2 Z:2]
+[Builder puts down a yellow block at X:1 Y:1 Z:2]
+[Builder puts down a yellow block at X:0 Y:1 Z:2]
+[Builder puts down a yellow block at X:2 Y:1 Z:2]
+<Builder> like that?
+<Architect> except let the current yellow bar be the top
+[Builder picks up a yellow block at X:1 Y:2 Z:2]
+[Builder picks up a yellow block at X:0 Y:1 Z:2]
+[Builder picks up a yellow block at X:1 Y:1 Z:2]
+[Builder picks up a yellow block at X:2 Y:1 Z:2]
+<Architect> so not upside down
+<Architect> adding 2 block only
+[Builder puts down a yellow block at X:1 Y:2 Z:2]
+[Builder puts down a yellow block at X:1 Y:4 Z:2]
+<Builder> like that?
+<Architect> no
+[Builder picks up a yellow block at X:1 Y:4 Z:2]
+[Builder picks up a yellow block at X:1 Y:2 Z:2]
+<Architect> put 2 yellow blocks under the middle of the yellow bar
+[Builder puts down a yellow block at X:1 Y:2 Z:1]
+[Builder puts down a yellow block at X:1 Y:1 Z:1]
+<Architect> yes
+<Architect> good
+<Architect> add another green to the row
+<Architect> of green
+[Builder puts down a green block at X:-1 Y:3 Z:3]
+<Architect> from the second to last one make a green tower up
+<Architect> 3 more high
+<Architect> not the middle
+<Architect> this one is not a good T
+<Builder> is that green bar supposed to be 5 long?
+<Builder> or 4?
+<Architect> 5
+<Architect> go from the midle
+<Architect> my mistake
+[Builder puts down a green block at X:-1 Y:4 Z:2]
+<Architect> yes
+[Builder puts down a green block at X:-1 Y:5 Z:2]
+[Builder puts down a green block at X:-1 Y:6 Z:2]
+<Architect> one last red one
+<Builder> like that?
+<Builder> where?
+<Architect> add a red block to the end of the yellow row
+[Builder puts down a red block at X:1 Y:3 Z:3]
+<Architect> up 2 more
+[Builder puts down a red block at X:1 Y:4 Z:3]
+[Builder puts down a red block at X:1 Y:5 Z:3]
+<Architect> 2 more over onto the green T
+[Builder puts down a red block at X:0 Y:5 Z:3]
+[Builder puts down a red block at X:-1 Y:5 Z:3]
+<Architect> shift that row down 1
+[Builder picks up a red block at X:-1 Y:5 Z:3]
+[Builder picks up a red block at X:0 Y:5 Z:3]
+[Builder puts down a red block at X:0 Y:4 Z:3]
+[Builder puts down a red block at X:-1 Y:4 Z:3]
+<Architect> one longer
+[Builder puts down a red block at X:-2 Y:4 Z:3]
+<Architect> yes!

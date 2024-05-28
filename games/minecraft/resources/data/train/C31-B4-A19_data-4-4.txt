@@ -1,0 +1,133 @@
+B4-A19-C31-1522884235745
+<Builder> Mission has started.
+<Architect> ok we're creating shapes of the letters hot
+<Architect> and they're floating
+<Architect> so get some blue blocks
+<Architect> so one square from the edge
+<Architect> and three units up
+[Builder puts down a blue block at X:4 Y:1 Z:-2]
+[Builder puts down a blue block at X:4 Y:2 Z:-2]
+[Builder puts down a blue block at X:4 Y:3 Z:-2]
+[Builder picks up a blue block at X:4 Y:2 Z:-2]
+[Builder picks up a blue block at X:4 Y:1 Z:-2]
+<Builder> like that?
+<Architect> yeah so each letter is basically a 3 by 3 square with some squares missing
+[Builder puts down a blue block at X:4 Y:4 Z:-2]
+[Builder puts down a blue block at X:4 Y:5 Z:-2]
+[Builder puts down a blue block at X:3 Y:5 Z:-2]
+[Builder puts down a blue block at X:2 Y:5 Z:-2]
+<Architect> and they start one unit up, not two units up
+<Builder> there's only one blank space underneath?
+<Architect> so basically just move that one down one row
+[Builder puts down a blue block at X:4 Y:1 Z:-3]
+[Builder puts down a blue block at X:4 Y:2 Z:-3]
+<Architect> yeah sory
+[Builder picks up a blue block at X:4 Y:2 Z:-3]
+[Builder picks up a blue block at X:4 Y:1 Z:-3]
+[Builder puts down a blue block at X:4 Y:1 Z:-1]
+[Builder picks up a blue block at X:4 Y:1 Z:-1]
+[Builder puts down a blue block at X:4 Y:1 Z:-2]
+[Builder puts down a blue block at X:4 Y:2 Z:-2]
+[Builder picks up a blue block at X:4 Y:1 Z:-2]
+[Builder picks up a blue block at X:4 Y:5 Z:-2]
+[Builder picks up a blue block at X:3 Y:5 Z:-2]
+[Builder picks up a blue block at X:2 Y:5 Z:-2]
+<Architect> ok make this the letter H
+[Builder puts down a blue block at X:3 Y:3 Z:-2]
+[Builder puts down a blue block at X:2 Y:3 Z:-2]
+[Builder puts down a blue block at X:2 Y:4 Z:-2]
+[Builder puts down a blue block at X:2 Y:2 Z:-2]
+[Builder puts down a blue block at X:1 Y:1 Z:-6]
+[Builder picks up a blue block at X:1 Y:1 Z:-6]
+<Architect> ok now two rows down from the H
+<Architect> get some orange blocks
+<Builder> behind it from where i'm facing?
+<Architect> like behind the H
+<Architect> yea
+<Builder> one blank row?
+<Architect> yeah and start 4 squares in
+[Builder puts down a orange block at X:2 Y:1 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder picks up a orange block at X:2 Y:2 Z:0]
+<Architect> yea
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+<Architect> make an O
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder picks up a orange block at X:2 Y:1 Z:0]
+<Builder> good?
+<Architect> uh so this is actually the mirror image of the actual mission
+<Architect> so the H should be behind the O
+<Architect> from the direction you're facing
+<Builder> okay
+[Builder picks up a blue block at X:2 Y:2 Z:-2]
+[Builder picks up a blue block at X:2 Y:3 Z:-2]
+[Builder picks up a blue block at X:2 Y:4 Z:-2]
+[Builder picks up a blue block at X:3 Y:3 Z:-2]
+[Builder picks up a blue block at X:4 Y:3 Z:-2]
+[Builder picks up a blue block at X:4 Y:2 Z:-2]
+[Builder picks up a blue block at X:4 Y:4 Z:-2]
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+[Builder puts down a blue block at X:0 Y:2 Z:2]
+[Builder puts down a blue block at X:0 Y:3 Z:2]
+[Builder puts down a blue block at X:0 Y:4 Z:2]
+[Builder puts down a blue block at X:-1 Y:3 Z:2]
+[Builder puts down a blue block at X:-2 Y:3 Z:2]
+[Builder puts down a blue block at X:-2 Y:4 Z:2]
+<Architect> not directly behind
+[Builder puts down a blue block at X:-2 Y:2 Z:2]
+[Builder picks up a blue block at X:0 Y:1 Z:2]
+<Architect> it should be one square in
+<Architect> so form that side
+<Architect> your right
+[Builder puts down a blue block at X:2 Y:1 Z:2]
+[Builder puts down a blue block at X:2 Y:2 Z:2]
+<Builder> there?
+<Architect> uh you should start one from the right not 3 from the right
+[Builder puts down a blue block at X:4 Y:1 Z:2]
+[Builder puts down a blue block at X:4 Y:2 Z:2]
+[Builder picks up a blue block at X:0 Y:2 Z:2]
+[Builder picks up a blue block at X:0 Y:3 Z:2]
+[Builder picks up a blue block at X:0 Y:4 Z:2]
+<Builder> there?
+<Architect> yea
+[Builder picks up a blue block at X:-2 Y:4 Z:2]
+[Builder picks up a blue block at X:-1 Y:3 Z:2]
+[Builder picks up a blue block at X:-2 Y:3 Z:2]
+[Builder picks up a blue block at X:-2 Y:2 Z:2]
+[Builder puts down a blue block at X:4 Y:3 Z:2]
+[Builder puts down a blue block at X:2 Y:3 Z:2]
+[Builder puts down a blue block at X:2 Y:4 Z:2]
+[Builder puts down a blue block at X:4 Y:4 Z:2]
+[Builder puts down a blue block at X:3 Y:3 Z:2]
+[Builder picks up a blue block at X:4 Y:1 Z:2]
+[Builder picks up a blue block at X:2 Y:1 Z:2]
+<Architect> yep
+<Builder> good
+<Architect> ok now do the same thing for T
+<Architect> in front of hte O
+<Architect> green blocks
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:2 Z:-2]
+<Builder> there?
+<Architect> uh move it two squares to the right
+[Builder puts down a green block at X:-2 Y:1 Z:-2]
+[Builder picks up a green block at X:0 Y:1 Z:-2]
+[Builder picks up a green block at X:0 Y:2 Z:-2]
+<Builder> there?
+<Architect> uh actually one square to the left now
+[Builder picks up a green block at X:-2 Y:1 Z:-2]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+<Architect> yeah there
+[Builder puts down a green block at X:-1 Y:2 Z:-2]
+[Builder puts down a green block at X:-1 Y:3 Z:-2]
+[Builder puts down a green block at X:-1 Y:4 Z:-2]
+[Builder puts down a green block at X:0 Y:4 Z:-2]
+[Builder puts down a green block at X:-2 Y:4 Z:-2]
+[Builder picks up a green block at X:-1 Y:1 Z:-2]
+<Architect> ok done

@@ -1,0 +1,71 @@
+B53-A15-C136-1524067724687
+<Builder> Mission has started.
+<Architect> okay, we're making a man discoing it looks like
+<Builder> Excellent
+<Architect> start with two stacks of 3 purple blocks in the center, spaced one tile apart
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+<Architect> another purple on the ground in front of both stacks
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+<Builder> here?
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+<Architect> yep! and the right one should be one more tile over, away from the legs
+[Builder picks up a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-2 Y:1 Z:-1]
+<Architect> perfect! now, a floating stack of 3 orange blocks between the purple stacks, starting one tile up
+<Architect> up from the top of the purple*
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+<Architect> so three more blocks on top of those, then remove the bottom two
+<Builder> Oh starting above the purple
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:6 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+<Builder> Did I do it right?
+<Architect> perfect! a blue block to the left of the middle orange one
+[Builder puts down a blue block at X:1 Y:5 Z:0]
+<Architect> and to the left and above that, so diagonally away from the dancer
+[Builder puts down a blue block at X:2 Y:5 Z:0]
+[Builder puts down a blue block at X:2 Y:6 Z:0]
+[Builder picks up a blue block at X:2 Y:5 Z:0]
+<Architect> and another one diagonally up and inward, so two tiles above the first one
+[Builder puts down a blue block at X:2 Y:7 Z:0]
+[Builder puts down a blue block at X:1 Y:7 Z:0]
+[Builder picks up a blue block at X:2 Y:7 Z:0]
+<Architect> another one on the other side of the orange stack, mirroring that last one
+<Builder> aight
+<Architect> just the top block
+[Builder puts down a blue block at X:0 Y:7 Z:0]
+[Builder puts down a blue block at X:-1 Y:7 Z:0]
+[Builder picks up a blue block at X:0 Y:7 Z:0]
+<Architect> another one up and away from the dancer, like an arm
+[Builder puts down a blue block at X:-2 Y:7 Z:0]
+[Builder puts down a blue block at X:-2 Y:7 Z:-1]
+[Builder puts down a blue block at X:-2 Y:8 Z:-2]
+[Builder picks up a blue block at X:-2 Y:8 Z:-2]
+[Builder picks up a blue block at X:-2 Y:7 Z:-1]
+[Builder picks up a blue block at X:-2 Y:8 Z:-1]
+[Builder puts down a blue block at X:-2 Y:8 Z:0]
+[Builder picks up a blue block at X:-2 Y:7 Z:0]
+<Architect> and one more above that :)
+[Builder puts down a blue block at X:-2 Y:9 Z:0]
+<Architect> finally, a yellow block for the head, two tiles above the orange stack
+<Builder> i can do that
+[Builder puts down a yellow block at X:0 Y:7 Z:0]
+[Builder puts down a yellow block at X:0 Y:8 Z:0]
+[Builder puts down a yellow block at X:0 Y:9 Z:0]
+[Builder picks up a yellow block at X:0 Y:8 Z:0]
+[Builder picks up a yellow block at X:0 Y:7 Z:0]
+<Architect> one lower, sorry
+<Builder> my bad
+[Builder puts down a yellow block at X:0 Y:8 Z:0]
+[Builder picks up a yellow block at X:0 Y:9 Z:0]
+<Builder> No neck?
+<Architect> voila. disco man :o
+<Architect> no neck!

@@ -1,0 +1,74 @@
+B35-A15-C62-1524247870536
+<Builder> Mission has started.
+<Architect> alright, chair at a table
+<Architect> that's what this looks like
+<Architect> start with two red blocks next to each other on one of the edges of the building area
+[Builder puts down a red block at X:-5 Y:1 Z:-5]
+[Builder puts down a red block at X:-4 Y:1 Z:-5]
+<Builder> gotcha
+<Architect> alright, two more red blocks in front of those, with a one tile gap in between
+<Architect> these will be the chair lege
+[Builder puts down a red block at X:-5 Y:1 Z:-3]
+[Builder puts down a red block at X:-4 Y:1 Z:-3]
+<Architect> perfect! and connect those blocks with a 2x3 layer of red blocks on top
+[Builder puts down a red block at X:-3 Y:1 Z:-5]
+[Builder puts down a red block at X:-3 Y:1 Z:-4]
+[Builder puts down a red block at X:-3 Y:1 Z:-3]
+<Builder> this or on top of the legs?
+<Architect> on top of the legs, sorry
+[Builder picks up a red block at X:-3 Y:1 Z:-3]
+[Builder picks up a red block at X:-3 Y:1 Z:-4]
+[Builder picks up a red block at X:-3 Y:1 Z:-5]
+[Builder puts down a red block at X:-4 Y:2 Z:-5]
+[Builder puts down a red block at X:-4 Y:2 Z:-4]
+[Builder puts down a red block at X:-4 Y:2 Z:-3]
+<Builder> gotcha
+<Architect> another row of red blocks next to those, so it covers the legs completely
+[Builder puts down a red block at X:-5 Y:2 Z:-3]
+[Builder puts down a red block at X:-5 Y:2 Z:-5]
+<Builder> this?
+<Architect> one more red block to fill in the gap :)
+[Builder puts down a red block at X:-5 Y:2 Z:-4]
+<Architect> alright, now make a 2x2 vertical rectangle to make the back of the chair
+<Builder> in red?
+<Architect> yeah, in red
+<Builder> and where from this reference point do u want to place it?
+<Architect> very back, touching the gray area
+<Builder> should it be at the same height, on the ground
+[Builder puts down a red block at X:-5 Y:3 Z:-5]
+[Builder puts down a red block at X:-4 Y:3 Z:-5]
+[Builder puts down a red block at X:-4 Y:4 Z:-5]
+[Builder puts down a red block at X:-5 Y:4 Z:-5]
+<Builder> this?
+<Architect> yes! now, two purple blocks on top of the front of the chair
+[Builder puts down a purple block at X:-4 Y:3 Z:-3]
+[Builder puts down a purple block at X:-5 Y:3 Z:-3]
+<Builder> okay
+<Architect> alright, extend those blocks outwards to make the table
+<Architect> it should be 2x5
+<Builder> gotcha
+[Builder puts down a purple block at X:-5 Y:3 Z:-2]
+[Builder puts down a purple block at X:-5 Y:3 Z:-1]
+[Builder puts down a purple block at X:-5 Y:4 Z:-1]
+[Builder picks up a purple block at X:-5 Y:4 Z:-1]
+[Builder puts down a purple block at X:-5 Y:3 Z:0]
+[Builder puts down a purple block at X:-5 Y:3 Z:1]
+[Builder puts down a purple block at X:-4 Y:3 Z:-2]
+[Builder puts down a purple block at X:-4 Y:3 Z:-1]
+[Builder puts down a purple block at X:-4 Y:4 Z:-1]
+[Builder puts down a purple block at X:-4 Y:3 Z:0]
+[Builder puts down a purple block at X:-4 Y:3 Z:1]
+[Builder picks up a purple block at X:-4 Y:4 Z:-1]
+<Builder> okay
+<Architect> okay, now, a 2x2 vertical square of blue blocks against the front of the chair, to make a leg for the table
+[Builder puts down a blue block at X:-4 Y:1 Z:-2]
+[Builder puts down a blue block at X:-5 Y:1 Z:-2]
+[Builder puts down a blue block at X:-4 Y:2 Z:-2]
+[Builder puts down a blue block at X:-5 Y:2 Z:-2]
+<Architect> and another leg to the right, with a one tile gap in between
+[Builder puts down a blue block at X:-4 Y:1 Z:0]
+[Builder puts down a blue block at X:-4 Y:2 Z:0]
+[Builder puts down a blue block at X:-5 Y:1 Z:0]
+[Builder puts down a blue block at X:-5 Y:2 Z:0]
+<Architect> perfect! all done :)
+<Builder> sweet

@@ -1,0 +1,88 @@
+B29-A26-C70-1523378410093
+<Builder> Mission has started.
+<Architect> Start by making an L out of three bricks in the corner of the map
+<Architect> 4 yellow bricks rather
+[Builder puts down a yellow block at X:4 Y:1 Z:-5]
+[Builder puts down a yellow block at X:5 Y:1 Z:-5]
+[Builder puts down a yellow block at X:5 Y:1 Z:-4]
+[Builder puts down a yellow block at X:5 Y:1 Z:-3]
+<Architect> please rotate the L clockwise 90 degrees
+[Builder puts down a yellow block at X:3 Y:1 Z:-5]
+[Builder puts down a yellow block at X:3 Y:1 Z:-4]
+[Builder picks up a yellow block at X:5 Y:1 Z:-3]
+[Builder picks up a yellow block at X:5 Y:1 Z:-4]
+[Builder puts down a yellow block at X:5 Y:1 Z:-4]
+[Builder puts down a yellow block at X:5 Y:1 Z:-3]
+[Builder puts down a yellow block at X:4 Y:1 Z:-3]
+[Builder puts down a yellow block at X:3 Y:1 Z:-3]
+[Builder picks up a yellow block at X:3 Y:1 Z:-4]
+[Builder picks up a yellow block at X:3 Y:1 Z:-5]
+[Builder picks up a yellow block at X:4 Y:1 Z:-5]
+[Builder puts down a yellow block at X:4 Y:1 Z:-4]
+[Builder puts down a yellow block at X:3 Y:1 Z:-4]
+[Builder picks up a yellow block at X:3 Y:1 Z:-3]
+[Builder picks up a yellow block at X:4 Y:1 Z:-3]
+[Builder picks up a yellow block at X:5 Y:1 Z:-3]
+<Architect> great!
+<Architect> add another brick above the top of the L
+[Builder puts down a yellow block at X:3 Y:2 Z:-4]
+<Architect> to the left of that brick, add one more
+[Builder puts down a yellow block at X:2 Y:2 Z:-4]
+<Architect> nowadd three more yellow bricks, walking backward from that one
+[Builder puts down a yellow block at X:2 Y:2 Z:-3]
+[Builder puts down a yellow block at X:2 Y:2 Z:-2]
+[Builder puts down a yellow block at X:2 Y:2 Z:-1]
+<Architect> i'm going to rely on you keeping an this orientation
+<Architect> above that brick, add two more yellow bricks
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:2 Y:4 Z:-1]
+<Architect> then add a brick to the left
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+<Architect> add one above it
+[Builder puts down a yellow block at X:1 Y:5 Z:-1]
+<Architect> now one to the left
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+<Architect> and one above the most recently added brick
+[Builder puts down a yellow block at X:0 Y:6 Z:-1]
+<Architect> then add two bricks behind the most recently added brick
+<Architect> behind meaning you're walking forward
+[Builder puts down a yellow block at X:0 Y:6 Z:-2]
+[Builder puts down a yellow block at X:0 Y:6 Z:-3]
+<Architect> great, now add a two bricks to the right of those two bricks
+[Builder puts down a yellow block at X:-1 Y:6 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:6 Z:-3]
+<Architect> those bricks should have made a 2x2 square
+[Builder picks up a yellow block at X:-2 Y:6 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:6 Z:-2]
+<Architect> nice, now above the two bricks you just added, add two more bricks
+[Builder puts down a yellow block at X:-1 Y:7 Z:-3]
+<Builder> i'm out of yellow
+<Architect> remove the brick underneath the one you just added
+[Builder picks up a yellow block at X:-1 Y:6 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:7 Z:-2]
+<Architect> and remove the brick underneath the one you just added
+[Builder picks up a yellow block at X:-1 Y:6 Z:-2]
+<Architect> now add a green brick in front of the most recently added yellow brick
+<Architect> two of them actually
+[Builder puts down a green block at X:-2 Y:7 Z:-2]
+[Builder puts down a green block at X:-3 Y:7 Z:-2]
+<Architect> underneat the most recently added green brick, add two more green bricks
+[Builder puts down a green block at X:-3 Y:6 Z:-2]
+[Builder puts down a green block at X:-3 Y:5 Z:-2]
+<Architect> great! now add a brick to the right of the most recently added brick
+[Builder puts down a green block at X:-4 Y:5 Z:-2]
+<Architect> to the right of if based on your current orientation
+[Builder picks up a green block at X:-4 Y:5 Z:-2]
+[Builder puts down a green block at X:-3 Y:5 Z:-1]
+<Architect> cool, now add a brick below that one
+[Builder puts down a yellow block at X:-3 Y:4 Z:-1]
+<Architect> that brick should be green
+[Builder picks up a yellow block at X:-3 Y:4 Z:-1]
+[Builder puts down a green block at X:-3 Y:4 Z:-1]
+<Architect> then add a brick to the right of that one
+[Builder puts down a green block at X:-3 Y:4 Z:0]
+<Architect> then add a brick beneath that one
+[Builder puts down a green block at X:-3 Y:3 Z:0]
+<Architect> and a brick in front of it
+[Builder puts down a green block at X:-4 Y:3 Z:0]
+<Architect> good job!

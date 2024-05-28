@@ -1,0 +1,89 @@
+B25-A51-C123-1524264217499
+<Builder> Mission has started.
+<Architect> okay so this is gonna be a picture of a person kicking a ball
+<Architect> so the edge closest to you, make two orange blocks that's 1 block away from each other
+[Builder puts down a red block at X:1 Y:1 Z:-4]
+[Builder picks up a red block at X:1 Y:1 Z:-4]
+[Builder puts down a orange block at X:1 Y:1 Z:-5]
+[Builder picks up a orange block at X:1 Y:1 Z:-5]
+[Builder puts down a orange block at X:1 Y:1 Z:-5]
+[Builder puts down a orange block at X:-2 Y:1 Z:-5]
+[Builder picks up a orange block at X:-2 Y:1 Z:-5]
+[Builder puts down a orange block at X:-1 Y:1 Z:-5]
+<Architect> great, now stack 3 additional orange blocks on top of the current orang blocks
+[Builder puts down a orange block at X:-1 Y:2 Z:-5]
+[Builder puts down a orange block at X:-1 Y:3 Z:-5]
+[Builder puts down a orange block at X:-1 Y:4 Z:-5]
+[Builder puts down a orange block at X:2 Y:1 Z:-3]
+[Builder picks up a orange block at X:2 Y:1 Z:-3]
+[Builder puts down a orange block at X:1 Y:2 Z:-5]
+[Builder puts down a orange block at X:1 Y:3 Z:-5]
+[Builder puts down a orange block at X:1 Y:4 Z:-5]
+<Architect> okay so on top of those, make a 3x3x1 red square
+[Builder puts down a red block at X:1 Y:5 Z:-5]
+[Builder puts down a red block at X:0 Y:5 Z:-5]
+[Builder puts down a red block at X:-1 Y:5 Z:-5]
+[Builder puts down a red block at X:-1 Y:6 Z:-5]
+[Builder puts down a red block at X:0 Y:6 Z:-5]
+[Builder puts down a red block at X:1 Y:6 Z:-5]
+[Builder puts down a red block at X:1 Y:7 Z:-5]
+[Builder puts down a red block at X:0 Y:7 Z:-5]
+[Builder puts down a red block at X:-1 Y:7 Z:-5]
+<Architect> okay so on the top layer, on the left and right corners, place two orange blocks next to them
+[Builder puts down a orange block at X:2 Y:7 Z:-5]
+[Builder puts down a orange block at X:-2 Y:7 Z:-5]
+<Architect> perfect, so now add another block to each right next to each other, to form a horizonttal row of2 oranges touching
+[Builder puts down a orange block at X:3 Y:7 Z:-5]
+[Builder puts down a orange block at X:-3 Y:7 Z:-5]
+<Architect> great now in the middle red top layer, place one orange on top
+[Builder puts down a orange block at X:0 Y:8 Z:-5]
+<Architect> perfect
+<Builder> this guy has a small head
+<Architect> so now we're moving to the leg
+<Architect> lmao
+<Architect> okay so the left leg (left in your view), on the top orange (right under the red) put an orange block so that it's sticking towards you
+[Builder puts down a orange block at X:-1 Y:4 Z:-4]
+<Architect> great, so we'll be putting two orange blocks that's diagonal of the block you just placed
+<Builder> diagonal which way
+<Builder> from my orientation
+<Architect> it'll be pointing downwards
+[Builder puts down a orange block at X:-1 Y:3 Z:-4]
+[Builder puts down a orange block at X:0 Y:3 Z:-4]
+[Builder picks up a orange block at X:-1 Y:3 Z:-4]
+<Architect> stickign outwards
+[Builder puts down a orange block at X:0 Y:3 Z:-3]
+[Builder picks up a orange block at X:0 Y:3 Z:-4]
+<Architect> move that second floating block so that it's "under" the first orange block
+[Builder picks up a orange block at X:0 Y:3 Z:-3]
+[Builder puts down a orange block at X:-1 Y:4 Z:-3]
+[Builder puts down a orange block at X:-1 Y:3 Z:-3]
+[Builder picks up a orange block at X:-1 Y:4 Z:-3]
+<Architect> great, now do that one more time
+[Builder puts down a orange block at X:-1 Y:2 Z:-3]
+[Builder puts down a orange block at X:-1 Y:2 Z:-2]
+[Builder picks up a orange block at X:-1 Y:2 Z:-3]
+[Builder picks up a orange block at X:-1 Y:3 Z:-5]
+[Builder picks up a orange block at X:-1 Y:2 Z:-5]
+[Builder picks up a orange block at X:-1 Y:1 Z:-5]
+[Builder picks up a orange block at X:-1 Y:4 Z:-5]
+<Architect> no wait keep those two blocks you just got rid of
+[Builder puts down a orange block at X:-1 Y:4 Z:-5]
+[Builder puts down a orange block at X:-1 Y:3 Z:-5]
+<Architect> it's going to look like it has 3 legs
+[Builder puts down a orange block at X:-1 Y:2 Z:-5]
+[Builder puts down a orange block at X:-1 Y:1 Z:-5]
+<Architect> okay so onto the ball
+<Architect> the third diagonal block, make a yellow block that's directly to its left
+[Builder puts down a yellow block at X:-2 Y:2 Z:-2]
+<Architect> sorry, now in your view it should be sticking towards you
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder picks up a yellow block at X:-2 Y:2 Z:-2]
+<Architect> great so on top of that yellow, place two yellows
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]
+<Architect> now get rid of the bottom 2 yellows
+[Builder picks up a yellow block at X:-1 Y:2 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-1]
+<Architect> and that should be it!
+<Builder> kk
+<Architect> doing a T pose lol

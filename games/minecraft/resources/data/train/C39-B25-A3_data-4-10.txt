@@ -1,0 +1,51 @@
+B25-A3-C39-1523383312309
+<Builder> Mission has started.
+<Builder> whats poppin
+<Architect> hello builder one moment
+<Builder> aight
+<Architect> first lets start with a green upright window in the middle. it should be a 3x3 square with the middle open
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:2 Z:1]
+[Builder puts down a green block at X:0 Y:2 Z:1]
+[Builder puts down a green block at X:1 Y:2 Z:1]
+[Builder puts down a green block at X:1 Y:3 Z:1]
+[Builder puts down a green block at X:0 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+<Builder> like that?
+[Builder picks up a green block at X:0 Y:2 Z:1]
+[Builder picks up a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+<Architect> yes
+<Builder> kk
+<Architect> next we need the same figure in blue with the bottom left corner of the new figure attached to the top right corner of the green square
+<Builder> which face of the top right corner of the green figure?
+<Builder> top face or the face going outward to the right
+<Architect> the face thats closer to you
+[Builder puts down a blue block at X:-1 Y:3 Z:0]
+<Builder> that one?
+<Architect> yeah like that
+[Builder puts down a blue block at X:-1 Y:4 Z:0]
+[Builder puts down a blue block at X:-2 Y:3 Z:0]
+[Builder puts down a blue block at X:-3 Y:3 Z:0]
+[Builder puts down a blue block at X:-3 Y:4 Z:0]
+[Builder puts down a blue block at X:-3 Y:5 Z:0]
+[Builder puts down a blue block at X:-1 Y:5 Z:0]
+[Builder puts down a blue block at X:-2 Y:5 Z:0]
+<Architect> perfect
+<Builder> lit
+<Architect> 1 more
+<Architect> now we need a purple window, shifted 90 degrees so that its perpendicular to the green. it should be attached to the top left corner of the green on the back side and should be connected at the bottom right corner of the new purple window
+<Builder> as in the bottom right corner is connected to the back left face of the green window?
+[Builder puts down a purple block at X:1 Y:3 Z:2]
+[Builder puts down a purple block at X:1 Y:3 Z:3]
+[Builder puts down a purple block at X:1 Y:3 Z:4]
+[Builder puts down a purple block at X:1 Y:4 Z:4]
+[Builder puts down a purple block at X:1 Y:4 Z:2]
+[Builder puts down a purple block at X:1 Y:5 Z:2]
+[Builder puts down a purple block at X:1 Y:5 Z:3]
+[Builder puts down a purple block at X:1 Y:5 Z:4]
+<Architect> yep just like that
+<Builder> aight
+<Architect> all done

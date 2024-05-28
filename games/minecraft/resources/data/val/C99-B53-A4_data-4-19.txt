@@ -1,0 +1,87 @@
+B53-A4-C99-1524155387021
+<Builder> Mission has started.
+<Architect> hello. we'rebuilding two keys
+<Architect> start with yellow and go to an edge
+<Architect> build a vertical 3x3 square toward the middle missing hte center
+[Builder puts down a yellow block at X:5 Y:1 Z:-1]
+[Builder puts down a yellow block at X:4 Y:1 Z:-1]
+[Builder puts down a yellow block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:3 Y:2 Z:-1]
+[Builder puts down a yellow block at X:6 Y:1 Z:-1]
+[Builder picks up a yellow block at X:6 Y:1 Z:-1]
+[Builder puts down a yellow block at X:5 Y:2 Z:-1]
+[Builder puts down a yellow block at X:5 Y:3 Z:-1]
+[Builder puts down a yellow block at X:4 Y:3 Z:-1]
+[Builder puts down a yellow block at X:3 Y:3 Z:-1]
+<Architect> that's the handle. now the arm is a row of five
+<Architect> toward the center
+<Builder> Where does it start?
+<Architect> from the right middle yellow
+<Builder> Does the row of 5 include the block that's already there?
+<Architect> no
+[Builder puts down a yellow block at X:3 Y:2 Z:-2]
+[Builder picks up a yellow block at X:3 Y:2 Z:-2]
+[Builder puts down a yellow block at X:2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+<Architect> five add'l
+[Builder picks up a yellow block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:3 Y:1 Z:-1]
+[Builder picks up a yellow block at X:0 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-1]
+<Architect> great. now the "key" part is a small U on top of the end
+<Architect> so a column of two on top of the farthest right
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:4 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+<Architect> yep and one in the middle
+<Architect> one add'l
+<Builder> do you mean another block on top of the middle one?
+<Architect> yes
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+<Architect> sorry. unclear. delete that last one
+[Builder picks up a yellow block at X:0 Y:5 Z:-1]
+<Architect> add one block between the two columns
+<Builder> Ah okay
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+<Architect> great
+<Architect> now a blue key perpendicular to the yellow
+<Architect> come to the back right corner
+<Architect> go to the left now. you moved as i typed
+<Architect> i need to figure out where it is. gimme a sec
+<Builder> Alright, take your time
+<Architect> so one in from the right
+<Architect> just put a block and i'll tell you how to shift tit
+[Builder puts down a blue block at X:-4 Y:1 Z:-4]
+<Builder> here
+<Architect> one more to your left
+[Builder puts down a blue block at X:-4 Y:1 Z:-5]
+[Builder picks up a blue block at X:-4 Y:1 Z:-4]
+<Architect> great. build a vertical 3x3 square missing center
+<Builder> Am I building the same key as before?
+[Builder puts down a blue block at X:-4 Y:2 Z:-5]
+[Builder puts down a blue block at X:-4 Y:3 Z:-5]
+[Builder puts down a blue block at X:-4 Y:3 Z:-4]
+[Builder puts down a blue block at X:-4 Y:3 Z:-3]
+[Builder puts down a blue block at X:-4 Y:1 Z:-4]
+[Builder puts down a blue block at X:-4 Y:1 Z:-3]
+[Builder puts down a blue block at X:-4 Y:2 Z:-3]
+<Architect> basically. the end is different
+[Builder puts down a blue block at X:-4 Y:2 Z:-2]
+[Builder puts down a blue block at X:-4 Y:2 Z:-1]
+[Builder puts down a blue block at X:-4 Y:2 Z:0]
+[Builder puts down a blue block at X:-4 Y:2 Z:1]
+[Builder puts down a blue block at X:-4 Y:2 Z:2]
+<Builder> How so?
+<Architect> it looks like a middle finger
+<Architect> on the edge build a row of three
+[Builder puts down a blue block at X:-4 Y:3 Z:2]
+<Architect> along the arm
+[Builder puts down a blue block at X:-4 Y:3 Z:1]
+[Builder puts down a blue block at X:-4 Y:3 Z:0]
+<Architect> now one on top of the middle
+[Builder puts down a blue block at X:-4 Y:4 Z:1]
+<Architect> sweet
+<Builder> I see what you're saying
+<Architect> that's it

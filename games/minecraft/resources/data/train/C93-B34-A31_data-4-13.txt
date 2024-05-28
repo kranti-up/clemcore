@@ -1,0 +1,24 @@
+B34-A31-C93-1523653432956
+<Builder> Mission has started.
+<Architect> Back to basics, this one looks easy
+<Builder> nice
+<Architect> In the middle, build a tower of red blocks three high
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:3 Z:-1]
+<Architect> To the right of the bottom block, place another red block so it makes an 'L' shape
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+<Architect> Nice. Behind that red block, build a tower of yellow blocks three high
+<Builder> I think we are getting the hang of this
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+<Architect> Most definitely, this is running very smoothly
+<Architect> Now look so the yellow is in front of the red
+<Architect> Make an upside-down 'L' out of yellow
+<Builder> so do I put one on the left or the right?
+<Architect> Sorry, on the right. It will connect to the red block
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+<Architect> Great, let me just double check
+<Architect> Cool, looks all good to me
+<Builder> neat

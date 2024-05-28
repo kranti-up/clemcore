@@ -1,0 +1,41 @@
+B42-A12-C60-1523308886870
+<Builder> Mission has started.
+<Architect> choose your favorite corner
+<Architect> put a red block there
+[Builder puts down a red block at X:-5 Y:1 Z:-5]
+<Architect> and face the middle
+<Architect> touching to the left put a blue
+[Builder puts down a blue block at X:-4 Y:1 Z:-5]
+<Architect> touching to the right a green
+[Builder puts down a green block at X:-5 Y:1 Z:-4]
+<Architect> break the red block
+[Builder picks up a red block at X:-5 Y:1 Z:-5]
+<Architect> we will make 2 diagonal lines all the way across
+<Architect> that is all
+<Architect> but colors
+<Architect> matter
+<Builder> ok
+<Architect> starting from blue:
+<Architect> blue, purple, orange, blue purple orange... etc
+[Builder puts down a blue block at X:-3 Y:1 Z:-4]
+[Builder picks up a blue block at X:-3 Y:1 Z:-4]
+[Builder puts down a purple block at X:-3 Y:1 Z:-4]
+[Builder puts down a orange block at X:-2 Y:1 Z:-3]
+<Architect> yes
+[Builder puts down a blue block at X:-1 Y:1 Z:-2]
+[Builder puts down a purple block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:2 Y:1 Z:1]
+[Builder puts down a purple block at X:3 Y:1 Z:2]
+[Builder puts down a orange block at X:4 Y:1 Z:3]
+[Builder puts down a blue block at X:5 Y:1 Z:4]
+<Architect> the other one: green red yellow green red yellow...
+[Builder puts down a red block at X:-4 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-3 Y:1 Z:-2]
+[Builder puts down a green block at X:-2 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:1 Y:1 Z:2]
+[Builder puts down a red block at X:2 Y:1 Z:3]
+[Builder puts down a yellow block at X:3 Y:1 Z:4]
+[Builder puts down a green block at X:4 Y:1 Z:5]

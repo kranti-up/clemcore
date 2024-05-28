@@ -1,0 +1,82 @@
+B12-A26-C7-1522943263017
+<Builder> Mission has started.
+<Architect> This time, our object will start on the second level
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+<Architect> 3x7 block of orange bricks going from the 2nd to 4th level
+<Architect> 3x7 rectangle
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:-3]
+[Builder picks up a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder picks up a red block at X:-1 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+[Builder puts down a orange block at X:0 Y:2 Z:3]
+[Builder puts down a orange block at X:0 Y:3 Z:3]
+[Builder puts down a orange block at X:0 Y:4 Z:3]
+[Builder puts down a orange block at X:0 Y:3 Z:-3]
+[Builder puts down a orange block at X:0 Y:4 Z:-3]
+[Builder puts down a orange block at X:0 Y:4 Z:-2]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:2]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+<Architect> Nice, now we'll fill in the gaps in the rectangle so that the middle of the rectangle alternates between orange brick and space
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+<Architect> Great. Now on the top, we will build a V of red bricks
+<Architect> there will be one brick on the 5th level, in the middle
+<Architect> then two blocks on the sixth, each touching the 5th level brick once
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+<Builder> color?
+<Architect> red
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+[Builder picks up a red block at X:-1 Y:5 Z:0]
+[Builder picks up a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:-1 Y:5 Z:0]
+[Builder picks up a orange block at X:-1 Y:5 Z:0]
+[Builder picks up a orange block at X:0 Y:5 Z:0]
+[Builder puts down a red block at X:0 Y:5 Z:0]
+[Builder puts down a red block at X:0 Y:6 Z:0]
+[Builder puts down a red block at X:-1 Y:6 Z:0]
+[Builder puts down a red block at X:1 Y:6 Z:0]
+[Builder picks up a red block at X:1 Y:6 Z:0]
+<Architect> please rotate the v so that it lies above the orange rectangle
+[Builder picks up a red block at X:-1 Y:6 Z:0]
+[Builder picks up a red block at X:0 Y:6 Z:0]
+[Builder puts down a red block at X:0 Y:6 Z:0]
+[Builder puts down a red block at X:0 Y:6 Z:1]
+[Builder picks up a red block at X:0 Y:6 Z:0]
+[Builder puts down a red block at X:0 Y:6 Z:0]
+[Builder puts down a red block at X:0 Y:6 Z:-1]
+[Builder picks up a red block at X:0 Y:6 Z:0]
+<Architect> please add two more layers to the V
+[Builder puts down a red block at X:0 Y:7 Z:-1]
+[Builder puts down a red block at X:0 Y:7 Z:-2]
+[Builder puts down a red block at X:0 Y:8 Z:-2]
+[Builder puts down a red block at X:0 Y:8 Z:-3]
+[Builder picks up a red block at X:0 Y:8 Z:-2]
+[Builder picks up a red block at X:0 Y:7 Z:-1]
+[Builder puts down a red block at X:0 Y:7 Z:1]
+[Builder puts down a red block at X:0 Y:7 Z:2]
+[Builder puts down a red block at X:0 Y:8 Z:2]
+[Builder puts down a red block at X:0 Y:8 Z:3]
+[Builder picks up a red block at X:0 Y:8 Z:3]
+[Builder puts down a red block at X:-1 Y:8 Z:2]
+[Builder puts down a red block at X:0 Y:8 Z:3]
+[Builder picks up a red block at X:-1 Y:8 Z:2]
+[Builder picks up a red block at X:0 Y:7 Z:1]
+[Builder picks up a red block at X:0 Y:8 Z:2]
+<Architect> Now please remove the center orange brick from the bottom, and the one to its right
+<Architect> That will complete whatever structure this is
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:2 Z:1]
+<Architect> Nice!

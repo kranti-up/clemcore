@@ -1,0 +1,99 @@
+B34-A31-C100-1523653650559
+<Builder> Mission has started.
+<Architect> Ahh, another harder one
+<Builder> fun
+<Builder> does it look like anything in particular?
+<Architect> These will be 4x4 rings that interlock
+<Builder> oh my
+<Architect> One block away from the edge, place a green block
+[Builder puts down a green block at X:0 Y:1 Z:-4]
+<Architect> Nice, now look at it so the green block is on the right side of the white base
+<Architect> I'm sorry, I meant the left side
+<Builder> here?
+<Builder> there we go
+<Architect> Lol
+<Architect> Now build three more green blocks on top of that
+[Builder puts down a green block at X:0 Y:2 Z:-4]
+[Builder puts down a green block at X:0 Y:3 Z:-4]
+[Builder puts down a green block at X:0 Y:4 Z:-4]
+<Architect> On the ground, three more green blocks going to the right of the bottom block, so it looks like an 'L'
+[Builder puts down a green block at X:0 Y:1 Z:-3]
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+<Builder> will this form a square?
+<Architect> yes, but there will be some yellow in the middle
+<Builder> ok
+<Architect> On top of the right-most green block, put a yellow one
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+<Architect> And to the left of that, put another yellow one
+[Builder puts down a yellow block at X:0 Y:2 Z:-2]
+<Architect> Three more yellow on top of the left one
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+<Architect> Oops, on top of the other yellow block
+[Builder picks up a yellow block at X:0 Y:4 Z:-1]
+[Builder picks up a yellow block at X:0 Y:3 Z:-1]
+[Builder picks up a yellow block at X:0 Y:5 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:-2]
+[Builder puts down a yellow block at X:0 Y:4 Z:-2]
+[Builder puts down a yellow block at X:0 Y:5 Z:-2]
+<Builder> sorry
+<Architect> Perfect, now connect the green and yellow towers with a green blcok
+<Builder> my b
+<Architect> no worries
+<Builder> left of the highest green block?
+<Architect> To the right of the highest green
+[Builder puts down a green block at X:0 Y:4 Z:-3]
+<Builder> kk
+<Architect> On the right-most yellow block, stack two green blocks
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:4 Z:-1]
+<Architect> Cool
+<Architect> Now a yellow one on top of those green
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+<Architect> from the bottom row of yellow, place two more yellow blocks going to the right
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:1]
+<Architect> And place a yellow on top of the right-most
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+<Architect> On top of that, an orange
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+<Architect> to the left of that, another orange
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+<Architect> Three more oranges on top of that left-most orange block
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:6 Z:0]
+[Builder puts down a orange block at X:0 Y:7 Z:0]
+<Architect> Three more to the right
+[Builder puts down a orange block at X:0 Y:7 Z:1]
+[Builder puts down a orange block at X:0 Y:7 Z:2]
+[Builder puts down a orange block at X:0 Y:7 Z:3]
+<Architect> And one down
+[Builder puts down a orange block at X:0 Y:6 Z:3]
+<Architect> Place a red block on the bottom of the orange block
+[Builder puts down a red block at X:0 Y:5 Z:3]
+<Architect> And an orange below the red
+[Builder puts down a orange block at X:0 Y:4 Z:3]
+<Architect> to the left of the red, place another red
+[Builder puts down a red block at X:0 Y:5 Z:2]
+[Builder puts down a red block at X:0 Y:4 Z:2]
+[Builder puts down a red block at X:0 Y:3 Z:2]
+[Builder puts down a red block at X:0 Y:2 Z:2]
+<Builder> yes? no?
+<Architect> now make the 4x4 square of red blocks, it will be hollow
+[Builder puts down a red block at X:0 Y:5 Z:4]
+[Builder puts down a red block at X:0 Y:5 Z:5]
+[Builder puts down a red block at X:0 Y:4 Z:5]
+[Builder puts down a red block at X:0 Y:2 Z:3]
+[Builder puts down a red block at X:0 Y:2 Z:4]
+[Builder puts down a red block at X:0 Y:2 Z:5]
+[Builder puts down a red block at X:0 Y:3 Z:5]
+<Architect> Nice, now we need one more yellow
+[Builder puts down a yellow block at X:0 Y:5 Z:1]
+<Architect> It will go where the yellow corner fits
+<Architect> Yep, right there
+<Architect> Let me double check this
+<Builder> perfect
+<Architect> Looks great to me, nice job
+<Builder> :)

@@ -1,0 +1,62 @@
+B20-A10-C5-1522940932269
+<Builder> Mission has started.
+<Architect> Okay. This one can be described as two parts. i'll start with one part, which is entirely red blocks.
+<Architect> start with three red blocks next to one another
+<Builder> how much space do i need to leave on the whole grid
+<Architect> the whold thing is only two columns, 6 rows and then built vertically
+[Builder puts down a red block at X:3 Y:1 Z:-3]
+[Builder puts down a red block at X:2 Y:1 Z:-3]
+[Builder puts down a red block at X:1 Y:1 Z:-3]
+<Architect> cool.
+<Architect> now put a red block on top of each end
+[Builder puts down a red block at X:3 Y:2 Z:-3]
+[Builder puts down a red block at X:2 Y:2 Z:-3]
+[Builder puts down a red block at X:1 Y:2 Z:-3]
+[Builder picks up a red block at X:2 Y:2 Z:-3]
+<Architect> yep. now, adjacent to the left and right of the ones you just put down, attach a red
+[Builder puts down a red block at X:0 Y:2 Z:-3]
+[Builder puts down a red block at X:4 Y:2 Z:-3]
+<Architect> yep! now put a row of three red on the top and in the middle
+<Builder> on top and in the middle?
+[Builder puts down a red block at X:3 Y:3 Z:-3]
+[Builder puts down a red block at X:2 Y:3 Z:-3]
+[Builder puts down a red block at X:1 Y:3 Z:-3]
+<Builder> this?
+<Architect> yes, that's it
+<Architect> the second structure will be "behind" this one, with respect to you right now
+<Architect> this one is purple. Start with a purple right under you, but flush with the red strdcuture
+[Builder puts down a purple block at X:1 Y:1 Z:-2]
+<Architect> one to the left, my b
+[Builder picks up a purple block at X:1 Y:1 Z:-2]
+[Builder puts down a purple block at X:0 Y:1 Z:-2]
+<Architect> place a row of three purple on top of that, symmetrically
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder puts down a purple block at X:1 Y:1 Z:-2]
+[Builder picks up a purple block at X:1 Y:1 Z:-2]
+[Builder puts down a purple block at X:1 Y:2 Z:-2]
+[Builder puts down a purple block at X:-1 Y:2 Z:-3]
+[Builder puts down a purple block at X:-1 Y:2 Z:-2]
+[Builder picks up a purple block at X:-1 Y:2 Z:-3]
+<Architect> of wait shoot. shift all the purples up one unit vertically
+[Builder puts down a purple block at X:0 Y:3 Z:-2]
+[Builder puts down a purple block at X:1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder picks up a purple block at X:-1 Y:2 Z:-2]
+[Builder picks up a purple block at X:0 Y:1 Z:-2]
+[Builder picks up a purple block at X:1 Y:2 Z:-2]
+<Builder> this?
+<Architect> yep!
+<Architect> then blocks on top of each end
+[Builder puts down a purple block at X:-1 Y:4 Z:-2]
+[Builder puts down a purple block at X:1 Y:4 Z:-2]
+<Architect> a row of three on top of that
+[Builder puts down a purple block at X:1 Y:5 Z:-2]
+[Builder puts down a purple block at X:0 Y:5 Z:-2]
+[Builder puts down a purple block at X:-1 Y:5 Z:-2]
+[Builder puts down a purple block at X:0 Y:6 Z:-2]
+<Architect> and one in the middle
+<Architect> perfect
+<Builder> great
+<Builder> that it?
+<Architect> one sec. i'm checking to see if it's rotation invariant
+<Architect> okay its right

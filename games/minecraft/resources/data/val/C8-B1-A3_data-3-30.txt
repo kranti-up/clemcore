@@ -1,0 +1,29 @@
+B1-A3-C8-1522432497234
+<Builder> Mission has started.
+<Builder> hello. what are we building this time?
+<Architect> hello builder, one moment
+<Architect> ok, to get started we need to place 4 orange blocks as if they are the corners of a 3x3 square, all of them on the ground
+<Builder> can i put them anywhere?
+[Builder puts down a orange block at X:-5 Y:1 Z:-3]
+[Builder puts down a orange block at X:-3 Y:1 Z:-3]
+[Builder puts down a orange block at X:-5 Y:1 Z:-5]
+<Architect> yes, the rest of the structure extends upwards
+[Builder puts down a orange block at X:-3 Y:1 Z:-5]
+<Architect> perfect
+<Architect> one moment while i look at the structure
+<Architect> the second level of the structure consists wholly of red blocks. start by putting a red block on each orange block
+[Builder puts down a red block at X:-5 Y:2 Z:-5]
+[Builder puts down a red block at X:-5 Y:2 Z:-3]
+[Builder puts down a red block at X:-3 Y:2 Z:-3]
+[Builder puts down a red block at X:-3 Y:2 Z:-5]
+<Architect> good, now please fill in the outer sides of the second level 3x3 square but leave the middle open
+<Architect> using red blocks
+<Builder> okay
+[Builder puts down a red block at X:-3 Y:2 Z:-4]
+[Builder puts down a red block at X:-4 Y:2 Z:-3]
+[Builder puts down a red block at X:-4 Y:2 Z:-5]
+[Builder puts down a red block at X:-5 Y:2 Z:-4]
+<Architect> good job builder, we have completed yet another flawless structure!
+<Builder> its a table?
+<Builder> good job
+<Architect> i don't know what it is

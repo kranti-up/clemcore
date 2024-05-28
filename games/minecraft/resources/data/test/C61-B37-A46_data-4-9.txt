@@ -1,0 +1,36 @@
+B37-A46-C61-1523305429948
+<Builder> Mission has started.
+<Architect> put 1 yellow block down towards the middle
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+<Builder> ok
+<Architect> skip 1 square and put another yellow block
+[Builder puts down a yellow block at X:0 Y:1 Z:2]
+<Builder> ok
+<Architect> put 2 more to make a square
+[Builder puts down a yellow block at X:2 Y:1 Z:2]
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+<Architect> put one layer 9 orange blocks on top of the yellow layer
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:2]
+[Builder puts down a orange block at X:2 Y:2 Z:2]
+[Builder puts down a orange block at X:2 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+<Builder> like that?
+<Architect> yes. now put 3 yellow blocks in a line on top of the orange
+<Builder> in a line down the middle of the square?
+<Architect> no along the edge
+[Builder puts down a yellow block at X:2 Y:3 Z:2]
+[Builder puts down a yellow block at X:2 Y:3 Z:1]
+[Builder puts down a yellow block at X:2 Y:3 Z:0]
+<Builder> like that?
+<Architect> yes. now put 3 more yellow blocks on top of those
+[Builder puts down a yellow block at X:2 Y:4 Z:0]
+[Builder puts down a yellow block at X:2 Y:4 Z:1]
+[Builder puts down a yellow block at X:2 Y:4 Z:2]
+<Builder> ok

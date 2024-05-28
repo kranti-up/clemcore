@@ -1,0 +1,114 @@
+B13-A30-C44-1522969231926
+<Builder> Mission has started.
+<Architect> ok this one is complicated so im sorry in advance
+<Builder> that's ok.
+<Architect> ok in the middle of the board place four blue blocks in a row
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:-2 Y:1 Z:0]
+<Architect> ok now on the end blocks build two more blue blocks up
+[Builder puts down a blue block at X:-2 Y:2 Z:0]
+[Builder puts down a blue block at X:-2 Y:3 Z:0]
+<Architect> on both sides
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+<Architect> now connect those two towers to form a box
+[Builder puts down a blue block at X:-1 Y:3 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+<Architect> now along side that top row build a row of 4 purple blocks overhanging
+[Builder puts down a purple block at X:-2 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+<Architect> now overhanging those will be 2 more purple blocks in the center
+[Builder puts down a purple block at X:0 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+<Architect> ok now you will need to remove the 2 purple blocks attaching the outermost blocks to the blue square
+<Architect> so the middle 2 of the row of 4 purple
+[Builder puts down a purple block at X:0 Y:4 Z:-1]
+[Builder picks up a purple block at X:0 Y:4 Z:-1]
+[Builder picks up a purple block at X:0 Y:3 Z:-1]
+[Builder picks up a blue block at X:0 Y:3 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+[Builder picks up a purple block at X:-1 Y:3 Z:-1]
+<Architect> ok now on the other side from the purple build a row of 3 yellow blocks starting o nthe left
+<Builder> should I start them below where I am now, overhanging the blue structure?
+<Architect> yes they should overhang the blue structure
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+<Architect> now make 2 more rows of yellow blocks on top of that
+[Builder puts down a yellow block at X:1 Y:4 Z:1]
+[Builder puts down a yellow block at X:1 Y:5 Z:1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:1]
+[Builder puts down a yellow block at X:-1 Y:5 Z:1]
+[Builder puts down a yellow block at X:0 Y:4 Z:1]
+[Builder puts down a yellow block at X:0 Y:5 Z:1]
+<Architect> ok now overhanging those will be more yellow blocks
+<Builder> another grid of nine attached to the existing yellow grid?
+<Architect> yes
+[Builder puts down a yellow block at X:-1 Y:5 Z:2]
+[Builder puts down a yellow block at X:1 Y:5 Z:2]
+[Builder puts down a yellow block at X:0 Y:5 Z:2]
+[Builder puts down a yellow block at X:0 Y:4 Z:2]
+[Builder puts down a yellow block at X:1 Y:4 Z:2]
+[Builder puts down a yellow block at X:-1 Y:4 Z:2]
+[Builder puts down a yellow block at X:-1 Y:3 Z:2]
+[Builder puts down a yellow block at X:0 Y:3 Z:2]
+[Builder puts down a yellow block at X:1 Y:3 Z:2]
+<Architect> ok and then add one row of overhangin yellow blocks to the top row
+[Builder puts down a yellow block at X:-1 Y:5 Z:3]
+[Builder puts down a yellow block at X:1 Y:5 Z:3]
+<Builder> I'm missing another yellow block...
+<Architect> ok delete the furthest out bottom row of yellow
+[Builder picks up a yellow block at X:-1 Y:3 Z:2]
+[Builder picks up a yellow block at X:0 Y:3 Z:2]
+[Builder picks up a yellow block at X:1 Y:3 Z:2]
+[Builder puts down a yellow block at X:0 Y:5 Z:3]
+<Architect> and then also the left two on the bottom row
+[Builder puts down a yellow block at X:-1 Y:3 Z:2]
+[Builder picks up a yellow block at X:-1 Y:3 Z:2]
+[Builder picks up a yellow block at X:-1 Y:3 Z:1]
+[Builder picks up a yellow block at X:0 Y:3 Z:1]
+<Architect> now only keep the middle yellow block out of the next lowest row
+[Builder picks up a yellow block at X:-1 Y:4 Z:2]
+[Builder picks up a yellow block at X:1 Y:4 Z:2]
+<Architect> yes and delete all others in line with that one
+[Builder picks up a yellow block at X:-1 Y:4 Z:1]
+[Builder picks up a yellow block at X:1 Y:4 Z:1]
+<Architect> including the one behind it
+[Builder picks up a yellow block at X:0 Y:4 Z:1]
+<Architect> now delete the entire top tier except the furthest block in line diagonally with the others you have kept
+[Builder picks up a yellow block at X:0 Y:5 Z:3]
+[Builder picks up a yellow block at X:1 Y:5 Z:3]
+[Builder picks up a yellow block at X:1 Y:5 Z:2]
+[Builder picks up a yellow block at X:1 Y:5 Z:1]
+[Builder picks up a yellow block at X:0 Y:5 Z:1]
+[Builder picks up a yellow block at X:-1 Y:5 Z:1]
+[Builder picks up a yellow block at X:-1 Y:5 Z:2]
+[Builder picks up a yellow block at X:0 Y:5 Z:2]
+<Architect> yes and now you will need to replicate the lower 2 yellow blocks with green blocks
+<Architect> so build an overhanging green cube
+<Builder> here on the same side with the yellow blocks?
+<Architect> yes
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+[Builder puts down a green block at X:-2 Y:3 Z:1]
+[Builder puts down a green block at X:-2 Y:3 Z:2]
+[Builder puts down a green block at X:-1 Y:3 Z:2]
+[Builder puts down a green block at X:-1 Y:4 Z:2]
+[Builder puts down a green block at X:-2 Y:4 Z:2]
+[Builder picks up a green block at X:-2 Y:4 Z:2]
+[Builder picks up a green block at X:-2 Y:3 Z:2]
+[Builder picks up a green block at X:-1 Y:3 Z:1]
+[Builder picks up a green block at X:-1 Y:3 Z:2]
+<Architect> ok i made a mistake
+<Builder> no worries
+<Architect> the upper green block will need to be in line with the other green block, not diagonal
+[Builder puts down a green block at X:-2 Y:3 Z:2]
+[Builder puts down a green block at X:-2 Y:4 Z:2]
+[Builder puts down a green block at X:-1 Y:4 Z:3]
+[Builder picks up a green block at X:-1 Y:4 Z:3]
+[Builder picks up a green block at X:-1 Y:4 Z:2]
+[Builder picks up a green block at X:-2 Y:3 Z:2]
+<Architect> thats it!

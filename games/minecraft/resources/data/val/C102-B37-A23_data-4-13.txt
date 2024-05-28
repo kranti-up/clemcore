@@ -1,0 +1,55 @@
+B37-A23-C102-1523629957597
+<Builder> Mission has started.
+<Architect> so this shape will be entirely floating one block off the plate.
+<Builder> ok
+<Architect> it will look like a little red-head green bodied dude riding a orange and yellow pitchfork like a surfboard. bear with me
+<Builder> ha ok
+<Architect> floating one block above the plate, make a row of five orange blocks, somewhere near the center of the board.
+[Builder puts down a orange block at X:2 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+[Builder picks up a orange block at X:-1 Y:1 Z:0]
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+[Builder picks up a orange block at X:2 Y:1 Z:0]
+[Builder picks up a orange block at X:1 Y:1 Z:0]
+<Builder> ok
+<Architect> perfect1
+<Architect> on your right side, add two yellow blocks to the end
+[Builder puts down a yellow block at X:-3 Y:2 Z:0]
+[Builder puts down a yellow block at X:-4 Y:2 Z:0]
+<Architect> on the yellow block touching the orange, add two blocks to either side of it. making a t.
+<Builder> what color blocks?
+<Architect> yellow
+[Builder puts down a yellow block at X:-3 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-3 Y:2 Z:1]
+<Architect> great
+<Architect> the next two blocks will be off the corners of each of those, in the direction of the last yellow block.
+[Builder puts down a yellow block at X:-4 Y:2 Z:1]
+<Builder> like that, or somewhere else?
+<Architect> add one more block to the end of that on your side
+[Builder puts down a yellow block at X:-4 Y:2 Z:2]
+<Architect> and do the same on the other side
+[Builder puts down a yellow block at X:-4 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-4 Y:2 Z:-2]
+<Architect> so now remove the 2 and 4 block in the row of five you just made
+[Builder picks up a yellow block at X:-4 Y:2 Z:-1]
+[Builder picks up a yellow block at X:-4 Y:2 Z:1]
+<Builder> ah I see
+<Architect> so now the green dude
+<Architect> on the middle orange block, place a stack of three green blocks
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:4 Z:0]
+[Builder puts down a green block at X:0 Y:5 Z:0]
+<Architect> place a red block on top.
+[Builder puts down a red block at X:0 Y:6 Z:0]
+<Architect> place one green block on the top green block's side for an arm, and another opposite of it.
+[Builder puts down a green block at X:0 Y:5 Z:-1]
+[Builder puts down a green block at X:0 Y:5 Z:1]
+<Architect> done!
+<Builder> nice

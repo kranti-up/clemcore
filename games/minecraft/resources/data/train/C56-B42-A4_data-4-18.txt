@@ -1,0 +1,84 @@
+B42-A4-C56-1524079868047
+<Builder> Mission has started.
+<Builder> hi, what should i do?
+<Architect> hey we're building a sort of stained glass window
+<Architect> start with purple for the frame
+<Builder> ok
+<Architect> a line of three in the middle
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+<Architect> now one up and diagonal from each side
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder picks up a purple block at X:2 Y:3 Z:-1]
+[Builder picks up a purple block at X:2 Y:3 Z:0]
+[Builder picks up a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+[Builder picks up a purple block at X:-1 Y:2 Z:0]
+<Architect> great
+<Architect> now a column of three starting another space up and diagonal from those ones you just placed
+[Builder puts down a purple block at X:3 Y:2 Z:0]
+[Builder puts down a purple block at X:3 Y:3 Z:-1]
+[Builder picks up a purple block at X:3 Y:4 Z:-1]
+[Builder picks up a purple block at X:3 Y:3 Z:-1]
+[Builder picks up a purple block at X:3 Y:3 Z:0]
+[Builder puts down a purple block at X:3 Y:3 Z:0]
+[Builder picks up a purple block at X:3 Y:2 Z:0]
+[Builder puts down a purple block at X:-2 Y:3 Z:0]
+[Builder puts down a purple block at X:-3 Y:3 Z:0]
+[Builder picks up a purple block at X:-2 Y:3 Z:0]
+[Builder puts down a purple block at X:-3 Y:4 Z:0]
+[Builder puts down a purple block at X:-3 Y:5 Z:0]
+[Builder puts down a purple block at X:3 Y:4 Z:0]
+[Builder puts down a purple block at X:3 Y:5 Z:0]
+<Architect> nice
+<Architect> now close the circle following that pattern
+[Builder puts down a purple block at X:3 Y:6 Z:0]
+[Builder puts down a purple block at X:2 Y:6 Z:-1]
+[Builder puts down a purple block at X:1 Y:6 Z:-1]
+[Builder picks up a purple block at X:1 Y:6 Z:-1]
+[Builder picks up a purple block at X:2 Y:6 Z:-1]
+[Builder picks up a purple block at X:3 Y:6 Z:0]
+[Builder puts down a purple block at X:-3 Y:6 Z:0]
+[Builder puts down a purple block at X:-2 Y:6 Z:0]
+[Builder picks up a purple block at X:-3 Y:6 Z:0]
+[Builder puts down a purple block at X:1 Y:6 Z:0]
+[Builder puts down a purple block at X:1 Y:7 Z:0]
+[Builder picks up a purple block at X:1 Y:6 Z:0]
+[Builder puts down a purple block at X:0 Y:7 Z:0]
+[Builder puts down a purple block at X:-1 Y:7 Z:0]
+<Architect> well done
+<Builder> ok
+<Architect> now red
+<Architect> there are four red blocks inside the frame, touching the center block of each set of three
+[Builder puts down a red block at X:2 Y:4 Z:0]
+[Builder puts down a red block at X:0 Y:6 Z:0]
+[Builder puts down a red block at X:-2 Y:4 Z:0]
+<Architect> hopefully that was clear
+[Builder puts down a red block at X:0 Y:2 Z:0]
+<Architect> great
+<Architect> now orange
+<Builder> like that?
+<Builder> ok
+<Architect> four orange blocks making a diamond with the red pieces
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:1 Y:5 Z:0]
+[Builder picks up a orange block at X:0 Y:5 Z:0]
+<Architect> the orange blocks are diagonal from the tilted puples
+[Builder puts down a orange block at X:-1 Y:6 Z:0]
+[Builder puts down a orange block at X:-1 Y:5 Z:0]
+[Builder picks up a orange block at X:-1 Y:6 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+<Architect> awesome
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+<Builder> good?
+<Architect> great! now a yellow one right in the center
+[Builder puts down a yellow block at X:1 Y:4 Z:0]
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+[Builder picks up a yellow block at X:1 Y:4 Z:0]
+<Architect> super all done
+<Builder> woo

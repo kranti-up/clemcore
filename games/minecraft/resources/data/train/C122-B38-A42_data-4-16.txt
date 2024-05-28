@@ -1,0 +1,103 @@
+B38-A42-C122-1523910351534
+<Builder> Mission has started.
+<Builder> Hello
+<Architect> hey
+<Builder> What are we building today?
+<Architect> not sure i need to look at the plans for a second
+<Builder> Ok
+<Architect> ok first you need to make an upside down T out of blue blocks near the middle of the space
+<Architect> 3 across 1 tall
+<Builder> Ok
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+<Builder> What should I do next?
+<Architect> now make another one parallel to it one space away from the first
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+[Builder puts down a blue block at X:0 Y:2 Z:-2]
+[Builder puts down a blue block at X:-1 Y:1 Z:-2]
+<Builder> Like this?
+<Architect> yep
+<Builder> Ok
+<Architect> now build an orange bar on top of them connecting the 2
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+<Builder> Ok
+<Architect> now make that a 3x3 orange platform
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a orange block at X:-1 Y:3 Z:-2]
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:3 Z:-2]
+<Builder> Ok
+<Architect> now place 3 orange blocks on top of the side youre facing
+<Builder> Is everything ok
+<Builder> OK
+<Architect> yep
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+[Builder puts down a orange block at X:0 Y:4 Z:-2]
+[Builder puts down a orange block at X:-1 Y:4 Z:-2]
+<Builder> Like this?
+<Architect> now do 3 out but 1 edge is red the other 2 are orange
+<Builder> Is this another platform, and which of the 3 should be red?
+<Architect> this is just out 1 and it just has to be one of the outside ones
+<Architect> to be red
+[Builder puts down a orange block at X:1 Y:4 Z:-3]
+[Builder puts down a orange block at X:0 Y:4 Z:-3]
+[Builder puts down a red block at X:-1 Y:4 Z:-3]
+<Builder> Like this?
+<Architect> yep like that
+<Builder> Ok
+<Architect> now break the 3 orange ones so the thing you just made comes off the platform diagonally
+[Builder picks up a orange block at X:0 Y:4 Z:-3]
+[Builder picks up a orange block at X:-1 Y:4 Z:-2]
+[Builder picks up a orange block at X:1 Y:4 Z:-3]
+<Builder> Like this?
+<Architect> sorta just break the 2 oranges on top of the platform
+[Builder picks up a orange block at X:0 Y:4 Z:-2]
+[Builder picks up a orange block at X:1 Y:4 Z:-2]
+<Builder> Ok?
+<Architect> yeah
+<Builder> Cool, what's next?
+<Architect> now put 2 oranges on the far side of the red one so its 1x3
+[Builder puts down a orange block at X:-1 Y:4 Z:-4]
+[Builder puts down a orange block at X:-1 Y:4 Z:-5]
+<Builder> Like this?
+<Architect> no close just break those and make it so the oranges sort of run along the platform
+<Builder> Do you have any guesses about what we are building
+[Builder picks up a orange block at X:-1 Y:4 Z:-5]
+[Builder picks up a orange block at X:-1 Y:4 Z:-4]
+[Builder puts down a orange block at X:-2 Y:4 Z:-3]
+[Builder puts down a orange block at X:-3 Y:4 Z:-3]
+<Architect> kinda like a railing
+<Builder> Ah, ok
+[Builder picks up a orange block at X:-2 Y:4 Z:-3]
+[Builder picks up a orange block at X:-3 Y:4 Z:-3]
+[Builder puts down a orange block at X:0 Y:4 Z:-3]
+[Builder puts down a orange block at X:1 Y:4 Z:-3]
+<Builder> Like this?
+<Architect> it kinda looks like a weird bird
+<Architect> yeah like that
+<Builder> Ok
+<Architect> so repeat the railing thing on the other side
+<Builder> Ok
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+[Builder picks up a orange block at X:1 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a red block at X:-1 Y:4 Z:1]
+<Builder> Next up?
+<Architect> now on the opposide side in the middle place a yellow block
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+<Builder> Out by one, or there?
+<Architect> good now make it one more out then done
+[Builder puts down a yellow block at X:2 Y:4 Z:-1]
+<Architect> ok i think were done
+<Builder> Should it be connected diagonally, or like this?
+<Architect> nope thats good
+<Builder> Ok
+<Architect> ok were done

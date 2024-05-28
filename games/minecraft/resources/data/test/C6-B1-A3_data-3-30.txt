@@ -1,0 +1,122 @@
+B1-A3-C6-1522433587517
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hello builder, we have yet another complicated structure. i will need a moment to look it over
+<Builder> take your time. just give me instructions when you are ready.
+<Architect> ok, we will start by using blue blocks. please start 1 square from the left side. we need to make a U shaped structure, but as if it were turned 90 degrees to the right and laying on its side
+[Builder puts down a blue block at X:4 Y:1 Z:-1]
+<Builder> start here?
+[Builder puts down a blue block at X:3 Y:1 Z:-1]
+[Builder puts down a blue block at X:4 Y:2 Z:-1]
+[Builder puts down a blue block at X:4 Y:3 Z:-1]
+<Architect> yes
+[Builder puts down a blue block at X:3 Y:3 Z:-1]
+<Builder> a C?
+<Architect> i made a mistake, this will actually be a rectangle. you have started correctly. we need 2 more blue blocks going horizontally and finish it off by filling in the rectangle
+<Architect> 2 more on the upper and lower part, i mean
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:2 Y:3 Z:-1]
+<Builder> so the orientation is correct?
+<Architect> 1 more, so that it is 4 across please. yes this orientation is correct i believe
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+[Builder puts down a blue block at X:1 Y:3 Z:-1]
+<Builder> like this?
+<Architect> yes, now we just need to fill in that last piece to complete the blue rectangle
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:0 Y:2 Z:-1]
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+<Architect> actually that is a little too far. we just need that middle block shifted to the left and to remove the other 2 ones you just placed
+<Architect> it should be a 3x4 open rectangle
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+[Builder picks up a blue block at X:1 Y:2 Z:-1]
+[Builder picks up a blue block at X:0 Y:2 Z:-1]
+<Builder> what do you mean shifted to the left?
+<Architect> there should be 2 open spaces in this rectangle
+<Architect> it should end on the 4th block
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+<Architect> yes like that
+<Builder> go it
+<Builder> so re move the other 2 blue blocks at the end?
+<Architect> yes please
+[Builder picks up a blue block at X:0 Y:1 Z:-1]
+[Builder picks up a blue block at X:0 Y:3 Z:-1]
+<Architect> i will refer to this shape as r-windows from here on out. we need to make 3 more of them in different colors. the tricky part is they will all be interlinked. lets move on to the green one
+<Builder> okay
+<Architect> please place the first green block in the right open space of the blue r-window
+<Builder> they are connected and all look the same right?
+[Builder puts down a green block at X:2 Y:2 Z:-1]
+<Architect> some of them are oriented differently, flat instead of standing up
+<Builder> okay. here?
+<Architect> this one will be flat, but shifted up as if it were the second layer. yes that placement is corrent
+<Builder> let me try
+[Builder puts down a green block at X:2 Y:2 Z:-2]
+[Builder puts down a green block at X:2 Y:2 Z:0]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:2 Y:4 Z:0]
+[Builder puts down a green block at X:2 Y:5 Z:0]
+[Builder puts down a green block at X:2 Y:5 Z:-1]
+[Builder puts down a green block at X:2 Y:5 Z:-2]
+[Builder puts down a green block at X:2 Y:3 Z:-2]
+[Builder puts down a green block at X:2 Y:4 Z:-2]
+<Builder> like this?
+<Builder> is the orientation correct?
+<Architect> a good effort builder. we need this green one to be flat though. if you can shift it 90 degrees to the right then it will be perfect
+<Builder> so flat?
+[Builder picks up a green block at X:2 Y:3 Z:-2]
+[Builder picks up a green block at X:2 Y:4 Z:-2]
+[Builder picks up a green block at X:2 Y:5 Z:-2]
+[Builder picks up a green block at X:2 Y:5 Z:-1]
+[Builder picks up a green block at X:2 Y:5 Z:0]
+[Builder picks up a green block at X:2 Y:4 Z:0]
+[Builder picks up a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:2 Z:0]
+[Builder puts down a green block at X:0 Y:2 Z:0]
+<Architect> yes like that
+[Builder puts down a green block at X:1 Y:2 Z:-2]
+[Builder puts down a green block at X:0 Y:2 Z:-2]
+[Builder puts down a green block at X:-1 Y:2 Z:-2]
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:-1]
+<Architect> perfect. good job builder!
+<Architect> one moment while i examine the strcuture
+<Builder> okay
+<Architect> next we need a purple r-window. it should be interlinked with the green and extending away from you. this one is not flat, much like the blue one
+[Builder picks up a green block at X:0 Y:2 Z:-2]
+[Builder puts down a green block at X:0 Y:2 Z:-2]
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+<Architect> yes like that
+<Builder> extending like this?
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:2]
+[Builder puts down a purple block at X:0 Y:1 Z:2]
+[Builder puts down a purple block at X:0 Y:2 Z:2]
+[Builder puts down a purple block at X:0 Y:1 Z:1]
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:-1]
+[Builder picks up a purple block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+<Architect> very good builder
+<Builder> is that it?
+<Builder> it might have been easier to describe the two windows first
+<Builder> that are perpendicular
+<Builder> then the interlocking one..
+<Architect> a good point builder, i will try to do better in the future. our last r-window is red and oriented like the green one (flat). it should be interlinked with the purple r-window. it should extend to the left from where you are now
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:2]
+[Builder puts down a red block at X:1 Y:2 Z:3]
+[Builder puts down a red block at X:0 Y:2 Z:3]
+[Builder puts down a red block at X:-2 Y:2 Z:1]
+[Builder puts down a red block at X:-2 Y:2 Z:2]
+[Builder puts down a red block at X:-2 Y:2 Z:3]
+[Builder puts down a red block at X:-1 Y:2 Z:3]
+<Builder> like this?
+<Architect> good job builder, that looks correct. please allow a moment to inspect the full structure
+<Builder> okay
+<Architect> i do believe we have successfully completed our mission. good job builder!
+<Builder> good job
+[Builder picks up a red block at X:0 Y:2 Z:3]
+[Builder puts down a red block at X:0 Y:2 Z:3]

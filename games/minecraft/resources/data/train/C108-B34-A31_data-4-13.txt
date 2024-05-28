@@ -1,0 +1,59 @@
+B34-A31-C108-1523650132924
+<Builder> hello again
+<Builder> Mission has started.
+<Architect> How was that warm up
+<Builder> hi there again
+<Builder> that was fine
+<Architect> Good, we will be buildig the U of I Block "I"
+<Builder> what colors are required?
+<Architect> This first sequence will be made of blue blocks
+<Architect> In the middle of the white blocks, build a line of five blue blocks
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+<Architect> Perfect! Now build six more blocks on top of one of the end blocks
+<Builder> vertical or horizantal(flat)
+[Builder puts down a blue block at X:0 Y:2 Z:2]
+[Builder puts down a blue block at X:0 Y:3 Z:2]
+[Builder puts down a blue block at X:0 Y:4 Z:2]
+[Builder puts down a blue block at X:0 Y:5 Z:2]
+[Builder puts down a blue block at X:0 Y:6 Z:2]
+[Builder puts down a blue block at X:0 Y:7 Z:2]
+<Builder> that good?
+<Architect> That's right
+<Builder> egg-cellent
+<Architect> Now on the other end, build six more blocks on top so you have two towers on either side of the base
+[Builder puts down a blue block at X:0 Y:2 Z:-2]
+[Builder puts down a blue block at X:0 Y:3 Z:-2]
+[Builder puts down a blue block at X:0 Y:4 Z:-2]
+[Builder puts down a blue block at X:0 Y:5 Z:-2]
+[Builder puts down a blue block at X:0 Y:6 Z:-2]
+[Builder puts down a blue block at X:0 Y:7 Z:-2]
+<Builder> like that
+<Architect> Great! Now connect the two top blocks, you should only need three blue blocks to do this
+[Builder puts down a blue block at X:0 Y:7 Z:1]
+[Builder puts down a blue block at X:0 Y:7 Z:0]
+[Builder puts down a blue block at X:0 Y:7 Z:-1]
+<Builder> I'm guessing this is the frame?
+<Architect> Correct
+<Architect> We will build the "I" portion now with orange blocks
+<Architect> Put three orange blocks within the base of the frame so they are on top of the first layer of blue
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+<Builder> same thing on top?
+<Architect> Yes, now build upward from the middle orange block
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:6 Z:0]
+<Architect> Same thing on top to finish the
+[Builder puts down a orange block at X:0 Y:6 Z:-1]
+[Builder puts down a orange block at X:0 Y:6 Z:1]
+<Architect> "I"
+<Architect> Perfect!
+<Builder> do we need to fill that in?
+<Architect> Nope, it is correct
+<Builder> great

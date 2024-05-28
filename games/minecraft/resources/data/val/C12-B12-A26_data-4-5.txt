@@ -1,0 +1,34 @@
+B12-A26-C12-1522941391204
+<Builder> Mission has started.
+[Builder puts down a purple block at X:4 Y:1 Z:5]
+<Architect> Okay, this time we'll start with a diagonal line from the left corner to the center. It will be purple, blue, green, yellow, orange, and then red
+[Builder puts down a purple block at X:5 Y:1 Z:5]
+[Builder puts down a purple block at X:5 Y:2 Z:5]
+[Builder picks up a purple block at X:4 Y:1 Z:5]
+[Builder picks up a purple block at X:5 Y:1 Z:5]
+[Builder picks up a purple block at X:5 Y:2 Z:5]
+<Architect> You can actually keep the L you made
+<Builder> no more L's?
+[Builder puts down a purple block at X:4 Y:1 Z:5]
+[Builder puts down a purple block at X:5 Y:1 Z:5]
+[Builder puts down a purple block at X:5 Y:2 Z:5]
+[Builder puts down a blue block at X:4 Y:1 Z:4]
+[Builder puts down a green block at X:3 Y:1 Z:3]
+[Builder puts down a yellow block at X:2 Y:1 Z:2]
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+<Architect> So you make the diagonal starting from the corner of the purple L
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Builder> like that?
+<Architect> Good job. Now repeat the same thing on the second level
+[Builder puts down a blue block at X:4 Y:2 Z:4]
+[Builder puts down a green block at X:3 Y:2 Z:3]
+[Builder puts down a yellow block at X:2 Y:2 Z:2]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+<Architect> Great. Now make a diagonal eminating from the remaining purple block
+[Builder puts down a blue block at X:3 Y:1 Z:4]
+[Builder puts down a green block at X:2 Y:1 Z:3]
+[Builder puts down a yellow block at X:1 Y:1 Z:2]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> Good job!

@@ -1,0 +1,64 @@
+B38-A42-C126-1523909944246
+<Builder> Mission has started.
+<Builder> Hello
+<Architect> hello
+<Builder> So what are we building today?
+<Architect> first youre gonna need to build a red tower 3 wide and 4 blocks tall near the middle
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+<Builder> Ok
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:3 Z:-1]
+[Builder puts down a red block at X:0 Y:3 Z:-1]
+<Builder> Like this?
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:0 Y:4 Z:-1]
+[Builder puts down a red block at X:1 Y:4 Z:-1]
+<Architect> yep
+<Builder> Cool
+<Architect> now put an organge block on top of the middle red block
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+<Builder> Ok, what's next?
+<Architect> now build 2 orange blocks out from the left side
+<Architect> of the top red block
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+[Builder puts down a orange block at X:3 Y:4 Z:-1]
+<Builder> Like this?
+<Architect> yep
+<Builder> Ok, are we repeating that on the right?
+<Architect> no
+<Builder> Ok
+<Architect> from the orange thing on the left build 2 more down from the farthest orange one
+[Builder puts down a orange block at X:3 Y:3 Z:-1]
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+<Builder> Like that?
+<Architect> now connect the bottom one back to the red thing with another orange
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+<Architect> yep
+<Builder> Ok
+<Architect> now build 2 out on the right in red
+<Builder> Which red block?
+<Architect> the top one
+[Builder puts down a orange block at X:-2 Y:4 Z:-1]
+[Builder puts down a orange block at X:-3 Y:4 Z:-1]
+<Builder> Ok
+<Architect> make those orange ones red
+[Builder picks up a orange block at X:-3 Y:4 Z:-1]
+[Builder picks up a orange block at X:-2 Y:4 Z:-1]
+[Builder puts down a red block at X:-2 Y:4 Z:-1]
+[Builder puts down a red block at X:-3 Y:4 Z:-1]
+<Builder> Ok
+<Architect> now build 1 out in red from the level right below that
+[Builder puts down a red block at X:-2 Y:3 Z:-1]
+<Builder> Like that?
+<Architect> yep
+<Builder> Ok
+<Architect> now just break the block above the one you just placed
+[Builder picks up a red block at X:-2 Y:4 Z:-1]
+<Builder> Like a watering can?
+<Architect> yay were done
+<Builder> Ok

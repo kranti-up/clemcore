@@ -1,0 +1,30 @@
+B31-A41-C34-1523033220178
+<Builder> Mission has started.
+<Architect> Okay we're going to make an S shape on the ground. First put three red blocks in a row close to one of the edges
+[Builder puts down a red block at X:1 Y:1 Z:-3]
+[Builder puts down a red block at X:0 Y:1 Z:-3]
+[Builder puts down a red block at X:-1 Y:1 Z:-3]
+<Architect> Okay now three more red blocks on the ground, up from the right end of the row
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-2 Y:1 Z:-2]
+[Builder puts down a red block at X:-4 Y:1 Z:-2]
+[Builder picks up a red block at X:-4 Y:1 Z:-2]
+[Builder puts down a red block at X:-3 Y:1 Z:-2]
+[Builder picks up a red block at X:-2 Y:1 Z:-2]
+[Builder picks up a red block at X:-3 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder picks up a red block at X:-1 Y:2 Z:-1]
+<Architect> Whoops, should be perpendicular, yeah you got it
+<Builder> Okay
+<Architect> Okay now a yellow block to the left of the end of that row
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+<Architect> Now four green blocks going up from the side of that yellow block
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:1 Y:1 Z:2]
+[Builder puts down a green block at X:1 Y:1 Z:3]
+<Architect> And two more green to make the top of the S
+[Builder puts down a green block at X:0 Y:1 Z:3]
+[Builder puts down a green block at X:-1 Y:1 Z:3]
+<Architect> Perfect

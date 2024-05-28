@@ -1,0 +1,64 @@
+B15-A38-C12-1523399104809
+<Builder> Mission has started.
+<Builder> ready!
+<Architect> Ok, this one is sort of like a rainbow.
+<Architect> Grab a corner and make a short l of red blocks
+[Builder puts down a red block at X:5 Y:1 Z:-5]
+[Builder puts down a red block at X:5 Y:1 Z:-4]
+[Builder puts down a red block at X:4 Y:1 Z:-5]
+<Architect> Sorry, i mean't an upright L
+[Builder picks up a red block at X:5 Y:1 Z:-4]
+[Builder puts down a red block at X:5 Y:2 Z:-5]
+<Builder> like that?
+<Architect> Could you rotate it to the right? the tall part should be on the far side of the block.
+[Builder puts down a red block at X:4 Y:2 Z:-5]
+[Builder picks up a red block at X:5 Y:2 Z:-5]
+<Builder> like so?
+[Builder picks up a red block at X:4 Y:2 Z:-5]
+[Builder picks up a red block at X:4 Y:1 Z:-5]
+[Builder puts down a red block at X:5 Y:1 Z:-4]
+[Builder puts down a red block at X:5 Y:2 Z:-4]
+<Builder> or like that?
+<Architect> Yes
+<Builder> okay!
+<Architect> Sorry, for that. Now make another one with orange blocks.
+[Builder puts down a orange block at X:5 Y:1 Z:-3]
+[Builder puts down a orange block at X:5 Y:1 Z:-2]
+[Builder puts down a orange block at X:5 Y:2 Z:-2]
+<Builder> here?
+<Builder> or stacked on top of the red ones?
+[Builder puts down a orange block at X:4 Y:1 Z:-5]
+<Builder> or here?
+<Architect> Can you put the small block on the far side of the tall red block?
+[Builder picks up a orange block at X:4 Y:1 Z:-5]
+[Builder puts down a orange block at X:4 Y:1 Z:-4]
+[Builder puts down a orange block at X:4 Y:2 Z:-4]
+[Builder picks up a orange block at X:4 Y:2 Z:-4]
+[Builder picks up a orange block at X:5 Y:1 Z:-3]
+[Builder picks up a orange block at X:5 Y:1 Z:-2]
+[Builder picks up a orange block at X:5 Y:2 Z:-2]
+[Builder puts down a orange block at X:4 Y:1 Z:-3]
+[Builder puts down a orange block at X:4 Y:2 Z:-3]
+<Builder> like that?
+<Architect> Yup, we are going to repeat that pattern with yellow, green, blue and purple blocks
+<Builder> got it!
+[Builder puts down a yellow block at X:3 Y:1 Z:-3]
+[Builder puts down a yellow block at X:3 Y:1 Z:-2]
+[Builder puts down a yellow block at X:3 Y:2 Z:-2]
+[Builder puts down a green block at X:2 Y:1 Z:-2]
+[Builder puts down a green block at X:2 Y:1 Z:-1]
+[Builder puts down a green block at X:2 Y:2 Z:-1]
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:1]
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:0 Y:2 Z:1]
+<Builder> like that?
+<Architect> yup
+<Builder> there doesn't seem like there's enough space to mirror it
+<Architect> Perfect.
+<Builder> is that is, or should i mirror it?
+<Architect> This is it
+<Builder> that it*
+<Builder> okay cool!

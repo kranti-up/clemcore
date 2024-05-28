@@ -1,0 +1,101 @@
+B15-A27-C41-1522969861622
+<Builder> Mission has started.
+<Builder> all good!
+<Architect> this one is going to start on your left side
+<Architect> place a green block on the edge three spaces from the left side
+[Builder puts down a green block at X:5 Y:1 Z:3]
+<Builder> here?
+<Architect> move it two to the left and three up
+[Builder puts down a green block at X:6 Y:1 Z:3]
+[Builder picks up a green block at X:6 Y:1 Z:3]
+[Builder picks up a green block at X:5 Y:1 Z:3]
+[Builder puts down a green block at X:2 Y:1 Z:5]
+<Builder> here?
+[Builder puts down a green block at X:3 Y:1 Z:0]
+<Builder> or there?
+<Architect> first one
+[Builder picks up a green block at X:3 Y:1 Z:0]
+<Architect> now lay two in the spaces to the right of it green blocks
+[Builder puts down a green block at X:3 Y:1 Z:5]
+[Builder puts down a green block at X:3 Y:1 Z:6]
+[Builder puts down a green block at X:4 Y:1 Z:5]
+[Builder picks up a green block at X:3 Y:1 Z:6]
+<Builder> like that?
+[Builder puts down a green block at X:2 Y:1 Z:4]
+[Builder puts down a green block at X:2 Y:1 Z:3]
+<Builder> or there?
+<Architect> the side facing away from the edge
+[Builder picks up a green block at X:2 Y:1 Z:3]
+[Builder picks up a green block at X:2 Y:1 Z:4]
+[Builder picks up a green block at X:3 Y:1 Z:5]
+[Builder picks up a green block at X:4 Y:1 Z:5]
+[Builder puts down a green block at X:1 Y:1 Z:5]
+[Builder puts down a green block at X:0 Y:1 Z:5]
+<Builder> there?
+<Architect> the second option
+[Builder puts down a green block at X:2 Y:1 Z:4]
+[Builder puts down a green block at X:2 Y:1 Z:3]
+[Builder picks up a green block at X:0 Y:1 Z:5]
+[Builder picks up a green block at X:1 Y:1 Z:5]
+<Architect> perfect
+<Architect> now form an L with original green block so 4 green blocks going in front of you
+[Builder puts down a green block at X:1 Y:1 Z:5]
+[Builder puts down a green block at X:0 Y:1 Z:4]
+[Builder picks up a green block at X:0 Y:1 Z:4]
+[Builder puts down a green block at X:0 Y:1 Z:5]
+[Builder puts down a green block at X:-2 Y:1 Z:5]
+<Builder> like that?
+<Architect> yeah now stand next to the short end of the L
+<Architect> more forward one and right one
+[Builder puts down a yellow block at X:2 Y:1 Z:1]
+<Builder> on that yellow block?
+<Architect> yeah and then place a purple block in front of that
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+[Builder puts down a purple block at X:2 Y:1 Z:0]
+[Builder picks up a yellow block at X:2 Y:1 Z:1]
+[Builder picks up a purple block at X:2 Y:1 Z:0]
+[Builder puts down a blue block at X:2 Y:1 Z:0]
+<Builder> is the purple or blue one in the right place?
+<Architect> purple is right then place another purple on the right side of it
+[Builder picks up a blue block at X:2 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+<Builder> there?
+<Architect> thats it
+<Architect> we're make something that looks like = sign
+<Architect> so place two more purple with a block seperating the original purple line
+[Builder puts down a purple block at X:3 Y:1 Z:1]
+[Builder puts down a purple block at X:3 Y:1 Z:0]
+<Builder> like that, or above it?
+<Architect> on the other side on the ground towards the top of the L
+[Builder picks up a purple block at X:3 Y:1 Z:1]
+[Builder picks up a purple block at X:3 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+[Builder puts down a purple block at X:-2 Y:1 Z:0]
+[Builder picks up a purple block at X:-2 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+<Builder> got it!
+<Architect> the top right purple block place blue block to the right of it with an empty block inbetween
+[Builder puts down a blue block at X:-1 Y:1 Z:-2]
+<Architect> yep
+<Builder> okay!
+<Architect> now place a blue block on the far side of it
+[Builder puts down a blue block at X:-2 Y:1 Z:-2]
+<Builder> there?
+<Architect> and one to the right of that
+[Builder puts down a blue block at X:-2 Y:1 Z:-3]
+<Builder> ok!
+<Architect> from the one you just placed skip a block down and place three blue going down
+[Builder puts down a blue block at X:0 Y:1 Z:-3]
+[Builder puts down a blue block at X:1 Y:1 Z:-3]
+[Builder puts down a blue block at X:1 Y:2 Z:-3]
+[Builder picks up a blue block at X:1 Y:2 Z:-3]
+[Builder puts down a blue block at X:2 Y:1 Z:-3]
+<Architect> thats right now place one to the left of that last one
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+<Architect> and fill it in so there is only one empty block in the 5 shape
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+<Architect> remove the the second one up from the bottom
+[Builder picks up a blue block at X:1 Y:1 Z:-2]
+<Architect> thats it
+<Builder> cool!

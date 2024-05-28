@@ -1,0 +1,120 @@
+B16-A41-C31-1522946488538
+<Builder> Mission has started.
+<Architect> Okay, we are going to make the word HOT. First let's make the H. It is floating one square above the ground.
+<Builder> the entire H is floating?
+<Builder> Also color?
+<Architect> So first make a row of three blue squares, parallel to an edge of the map, a few blocks away from the corner
+[Builder puts down a blue block at X:4 Y:1 Z:3]
+[Builder puts down a blue block at X:3 Y:1 Z:3]
+[Builder puts down a blue block at X:2 Y:1 Z:3]
+[Builder puts down a blue block at X:4 Y:2 Z:3]
+[Builder picks up a blue block at X:4 Y:2 Z:3]
+<Architect> Perfect. Now make three more rows
+<Architect> On top of that row
+[Builder puts down a blue block at X:4 Y:2 Z:3]
+[Builder puts down a blue block at X:3 Y:2 Z:3]
+[Builder puts down a blue block at X:2 Y:2 Z:3]
+[Builder puts down a blue block at X:4 Y:3 Z:3]
+[Builder puts down a blue block at X:3 Y:3 Z:3]
+[Builder puts down a blue block at X:2 Y:3 Z:3]
+<Architect> One more row on top, then delete the bottom row
+[Builder puts down a blue block at X:4 Y:4 Z:3]
+[Builder puts down a blue block at X:3 Y:4 Z:3]
+[Builder puts down a blue block at X:2 Y:4 Z:3]
+[Builder picks up a blue block at X:4 Y:1 Z:3]
+[Builder picks up a blue block at X:3 Y:1 Z:3]
+[Builder picks up a blue block at X:2 Y:1 Z:3]
+[Builder picks up a blue block at X:3 Y:2 Z:3]
+[Builder picks up a blue block at X:3 Y:4 Z:3]
+<Architect> And delete the middle blocks on the top and bottom rows to make an H
+<Architect> Perfect
+<Architect> Okay now we will make an orange O. The left hand side of the O is in front of the right hand side of the H, with one space separating them.
+[Builder puts down a orange block at X:0 Y:1 Z:3]
+<Architect> No, it is in front of the H
+[Builder picks up a orange block at X:0 Y:1 Z:3]
+[Builder puts down a orange block at X:4 Y:1 Z:1]
+[Builder picks up a orange block at X:4 Y:1 Z:1]
+[Builder puts down a orange block at X:2 Y:1 Z:1]
+<Architect> Yes perfect. Now build to the right
+[Builder puts down a orange block at X:2 Y:1 Z:0]
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:2 Y:2 Z:1]
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:3 Z:1]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+<Architect> No wait!
+[Builder picks up a orange block at X:2 Y:3 Z:1]
+<Builder> Okay-- sorry!
+<Architect> The O is parallel to the H
+[Builder picks up a orange block at X:2 Y:2 Z:1]
+[Builder picks up a orange block at X:2 Y:2 Z:0]
+[Builder picks up a orange block at X:2 Y:1 Z:1]
+[Builder picks up a orange block at X:2 Y:1 Z:0]
+[Builder picks up a orange block at X:2 Y:2 Z:-1]
+[Builder picks up a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:2 Y:1 Z:1]
+[Builder puts down a orange block at X:3 Y:1 Z:1]
+[Builder puts down a orange block at X:4 Y:1 Z:1]
+<Architect> But in front and offset to the right.
+<Builder> like this?
+<Architect> Needs to be shifted two spaces right.
+[Builder picks up a orange block at X:4 Y:1 Z:1]
+[Builder picks up a orange block at X:3 Y:1 Z:1]
+[Builder picks up a orange block at X:2 Y:1 Z:1]
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:3 Y:1 Z:-1]
+[Builder puts down a orange block at X:4 Y:1 Z:-1]
+<Architect> Sorry, when I say "right" I mean relative to the H.
+[Builder picks up a orange block at X:4 Y:1 Z:-1]
+[Builder picks up a orange block at X:3 Y:1 Z:-1]
+[Builder picks up a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:2 Y:1 Z:1]
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+<Architect> Yes exactly!
+<Builder> this hopefully?
+<Architect> Sorry haha
+<Builder> nice! it's alright!
+<Architect> Okay, now build a 3x3 O on top, so it is floating at the same height as the H
+[Builder puts down a orange block at X:2 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:2 Y:3 Z:1]
+[Builder puts down a orange block at X:2 Y:4 Z:2]
+[Builder picks up a orange block at X:2 Y:4 Z:2]
+[Builder puts down a orange block at X:2 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+[Builder picks up a orange block at X:2 Y:1 Z:1]
+[Builder picks up a orange block at X:1 Y:1 Z:1]
+[Builder picks up a orange block at X:0 Y:1 Z:1]
+[Builder picks up a orange block at X:1 Y:3 Z:1]
+<Architect> Yay!
+<Builder> this?
+<Builder> nice!
+<Architect> Yes perfect. Now the T follows the same pattern - we need a row of three green blocks that starts one block in front of the right hand side of the O
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+[Builder puts down a green block at X:-2 Y:1 Z:-1]
+<Builder> here?
+<Architect> Yes exactly
+<Architect> Now make three more green rows and remove the bottom row, and two bottom blocks on each side to make a T
+[Builder puts down a green block at X:0 Y:2 Z:-1]
+[Builder puts down a green block at X:-1 Y:2 Z:-1]
+[Builder puts down a green block at X:-2 Y:2 Z:-1]
+[Builder puts down a green block at X:-2 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:4 Z:-1]
+[Builder puts down a green block at X:-1 Y:4 Z:-1]
+[Builder puts down a green block at X:-2 Y:4 Z:-1]
+[Builder picks up a green block at X:0 Y:3 Z:-1]
+[Builder picks up a green block at X:0 Y:2 Z:-1]
+[Builder picks up a green block at X:0 Y:1 Z:-1]
+[Builder picks up a green block at X:-2 Y:1 Z:-1]
+[Builder picks up a green block at X:-2 Y:2 Z:-1]
+[Builder picks up a green block at X:-2 Y:3 Z:-1]
+[Builder picks up a green block at X:-1 Y:1 Z:-1]
+<Architect> Perfect! That's the whole thing

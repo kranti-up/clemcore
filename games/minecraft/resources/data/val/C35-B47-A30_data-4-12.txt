@@ -1,0 +1,52 @@
+B47-A30-C35-1523548092310
+<Builder> Mission has started.
+<Architect> ok this will be a kind of 4x4 cube
+<Architect> but its weird and hollow in some places
+<Architect> so start towards the middle and build a row of 4 red blocks
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+<Architect> ok no on the end you are nearest to, build up 3 orange blocks
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:4 Z:1]
+<Architect> and a blue block on top
+[Builder puts down a blue block at X:-1 Y:5 Z:1]
+<Architect> ok no on the other end of the red row, build a yellow block on top
+[Builder puts down a yellow block at X:-1 Y:2 Z:-2]
+<Builder> a single block?
+<Architect> yes now build a diagonal yellow row to connect it to the top orange block
+[Builder puts down a yellow block at X:-1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:0]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:4 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-2]
+<Architect> now a green block on top of each yellow block
+[Builder puts down a green block at X:-1 Y:3 Z:-2]
+[Builder puts down a green block at X:-1 Y:4 Z:-1]
+[Builder puts down a green block at X:-1 Y:5 Z:0]
+<Architect> ok good! thats one side of the cube done
+<Architect> now building towards the center of the base, build a row of 4 total blue blocks starting from the blue one you already placed
+[Builder puts down a blue block at X:0 Y:5 Z:1]
+[Builder puts down a blue block at X:1 Y:5 Z:1]
+[Builder puts down a blue block at X:2 Y:5 Z:1]
+<Architect> now to the inside of the farthest out blue block place a purple block
+[Builder puts down a purple block at X:2 Y:5 Z:0]
+<Architect> now connect the purple block diagonally to the bottom green block
+[Builder puts down a purple block at X:2 Y:5 Z:-1]
+[Builder puts down a purple block at X:1 Y:5 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder picks up a purple block at X:2 Y:5 Z:-1]
+[Builder picks up a purple block at X:1 Y:5 Z:-1]
+[Builder puts down a purple block at X:0 Y:4 Z:-1]
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+[Builder puts down a purple block at X:0 Y:3 Z:-2]
+[Builder picks up a purple block at X:0 Y:4 Z:-2]
+[Builder picks up a purple block at X:0 Y:4 Z:-1]
+<Architect> thats it!

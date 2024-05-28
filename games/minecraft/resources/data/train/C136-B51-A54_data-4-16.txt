@@ -1,0 +1,78 @@
+B51-A54-C136-1523913632730
+<Builder> Mission has started.
+<Builder> nice
+<Architect> For this one, build two pillars of purple, with one gap between
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+[Builder puts down a purple block at X:-1 Y:1 Z:2]
+[Builder picks up a purple block at X:-1 Y:1 Z:2]
+[Builder puts down a purple block at X:-1 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+<Architect> height of 3
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+<Architect> put one block between them at the top for now
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+<Architect> On top of that, put a brown pillar of 3
+<Builder> brown ?
+<Builder> i dont have brown
+<Architect> The colour shades are a bit different
+<Architect> It's probably that orange
+<Builder> uhhhh do u mean orange then
+<Builder> gotcha
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+[Builder puts down a orange block at X:-1 Y:5 Z:0]
+[Builder puts down a orange block at X:-1 Y:6 Z:0]
+<Architect> You can break the purple now
+[Builder picks up a purple block at X:-1 Y:3 Z:0]
+<Architect> The one
+<Architect> Yup
+<Architect> Now on your side
+<Architect> Put one purple on the ground in front of the left leg
+[Builder puts down a purple block at X:-2 Y:1 Z:-1]
+<Architect> And one on the diagonal of the right leg
+<Architect> To the right
+[Builder puts down a purple block at X:-2 Y:1 Z:0]
+[Builder puts down a purple block at X:-2 Y:1 Z:2]
+[Builder picks up a purple block at X:-2 Y:1 Z:0]
+<Architect> Yup
+<Architect> Put a temporary block on top of the orange pillar
+[Builder puts down a blue block at X:-1 Y:7 Z:0]
+<Architect> Don't break it for now. On that, put a yellow block
+[Builder puts down a yellow block at X:-1 Y:8 Z:0]
+<Architect> And on each side of the blue block, put one blue block each
+[Builder puts down a blue block at X:-1 Y:7 Z:-1]
+<Architect> (each side meaning
+[Builder puts down a blue block at X:-1 Y:7 Z:1]
+<Architect> yup
+<Architect> Like that
+<Architect> You can break the temp now
+[Builder picks up a blue block at X:-1 Y:7 Z:0]
+<Architect> Put one next to the one on the right
+[Builder puts down a blue block at X:-1 Y:7 Z:2]
+<Architect> Put one on top of it, and then break the one you put just now
+[Builder puts down a blue block at X:-1 Y:8 Z:2]
+[Builder picks up a blue block at X:-1 Y:7 Z:2]
+<Architect> Now one more goes on that last one you put
+[Builder puts down a blue block at X:-1 Y:9 Z:2]
+<Architect> On the other side, put one below
+<Architect> the blue
+[Builder puts down a blue block at X:-1 Y:6 Z:-1]
+<Architect> Then put one next to it
+[Builder puts down a blue block at X:-1 Y:6 Z:-2]
+<Architect> and finally, you can break that one and put it below where it is now
+[Builder picks up a blue block at X:-1 Y:6 Z:-1]
+[Builder puts down a blue block at X:-1 Y:5 Z:-2]
+<Architect> It should be touching the body
+[Builder puts down a blue block at X:-1 Y:6 Z:-1]
+[Builder puts down a blue block at X:-1 Y:5 Z:-1]
+[Builder picks up a blue block at X:-1 Y:6 Z:-2]
+[Builder picks up a blue block at X:-1 Y:5 Z:-2]
+[Builder picks up a blue block at X:-1 Y:6 Z:-1]
+[Builder puts down a blue block at X:-1 Y:7 Z:-2]
+[Builder puts down a blue block at X:-1 Y:6 Z:-2]
+[Builder picks up a blue block at X:-1 Y:7 Z:-2]
+<Architect> Yup yup
+<Builder> nice
+<Architect> Good job :)
+<Builder> :-)

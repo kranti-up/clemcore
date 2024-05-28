@@ -1,0 +1,37 @@
+B44-A15-C120-1523893772816
+<Builder> Mission has started.
+<Builder> ready
+<Architect> alright, another easy one, also in a 2D plane
+<Architect> make a stack of 5 green blocks, and remove the bottommost one
+<Architect> near one of the edges
+[Builder puts down a green block at X:3 Y:1 Z:0]
+[Builder puts down a green block at X:3 Y:2 Z:0]
+[Builder puts down a green block at X:3 Y:3 Z:0]
+[Builder puts down a green block at X:3 Y:4 Z:0]
+[Builder puts down a green block at X:3 Y:5 Z:0]
+[Builder picks up a green block at X:3 Y:1 Z:0]
+<Architect> from the second green block from the bottom, extend it to a row of 3 to the right side
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:2 Y:3 Z:-1]
+[Builder picks up a green block at X:2 Y:3 Z:-1]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+<Architect> one shorter, sorry
+[Builder picks up a green block at X:0 Y:3 Z:0]
+<Architect> and another green block underneath the rightmost one
+[Builder puts down a green block at X:1 Y:2 Z:0]
+<Architect> okay, now, make a column of 6 yellow blocks to the right of the green ones, leaving a 1-tile gap
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:4 Z:0]
+[Builder puts down a yellow block at X:-1 Y:5 Z:0]
+[Builder puts down a yellow block at X:-1 Y:6 Z:0]
+<Architect> perfect! remove the third block from the bottom
+[Builder picks up a yellow block at X:-1 Y:3 Z:0]
+<Architect> and finally, make a + sign on the top portion of the yellow blocks
+[Builder puts down a yellow block at X:0 Y:5 Z:0]
+[Builder puts down a yellow block at X:-2 Y:5 Z:0]
+<Architect> looks good! :)
+<Builder> hi
+<Architect> hi indeed :o

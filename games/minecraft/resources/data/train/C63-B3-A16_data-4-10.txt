@@ -1,0 +1,35 @@
+B3-A16-C63-1523399116516
+<Builder> Mission has started.
+<Architect> okay, so this one is a little odd i think
+<Builder> no problem, if it's hard to describe we can just go step by step
+<Architect> so start by building an upright rectangle that is two block long and then 4 blocks high
+<Architect> it should be blue
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+<Builder> like that?
+<Architect> great!
+<Architect> now remove the bottom block on the righ t
+[Builder picks up a blue block at X:0 Y:1 Z:0]
+<Architect> and then both of the blocks on the second level
+[Builder picks up a blue block at X:1 Y:2 Z:0]
+[Builder picks up a blue block at X:0 Y:2 Z:0]
+<Architect> okay, i messed up a bit. build an additoional row at the top
+[Builder puts down a blue block at X:1 Y:5 Z:0]
+[Builder puts down a blue block at X:0 Y:5 Z:0]
+<Architect> everything is in blue btw
+<Builder> okay cool
+<Builder> is this good so far?
+<Architect> yep. doing great!
+<Architect> now we just have to remove the left block on the 2nd row from the top
+[Builder picks up a blue block at X:1 Y:4 Z:0]
+<Builder> ah like a question mark
+<Builder> sort of
+<Architect> wow i did not see that, but yep! that's it
+<Builder> awesome!
+<Architect> great! we're good

@@ -1,0 +1,99 @@
+B1-A44-C13-1523035422739
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hello. ok we're making a 2 d vertical drawing
+<Architect> so every block will be on the same plane
+<Builder> ok
+<Architect> its a 7x7 drawing
+<Architect> begin at the left column and build up
+<Builder> is it flat?
+<Architect> no it is vertical
+<Architect> ok so the left column goes (empty block), 3 purple blocks above it, 3 emepty blocks above that
+[Builder puts down a purple block at X:4 Y:1 Z:-2]
+[Builder puts down a purple block at X:3 Y:1 Z:-2]
+<Architect> we're only building a column right now the left most column of the 7x7 drawing
+<Builder> oh ok
+[Builder picks up a purple block at X:4 Y:1 Z:-2]
+[Builder picks up a purple block at X:3 Y:1 Z:-2]
+[Builder puts down a purple block at X:5 Y:1 Z:-2]
+[Builder puts down a purple block at X:5 Y:2 Z:-2]
+[Builder puts down a purple block at X:5 Y:3 Z:-2]
+[Builder picks up a purple block at X:5 Y:1 Z:-2]
+[Builder puts down a purple block at X:5 Y:4 Z:-2]
+<Architect> ok we're done with the first column excellent
+<Builder> like this?
+<Builder> ok
+<Architect> now for the columns. I'll be telling you them one column per message
+<Builder> okay
+<Architect> 2nd column. purple, empty, 2 purple, empty, red
+[Builder puts down a purple block at X:4 Y:1 Z:-2]
+[Builder puts down a purple block at X:4 Y:3 Z:-2]
+[Builder puts down a purple block at X:4 Y:4 Z:-2]
+<Architect> sorry, purple, 2 empty, 2 purple, empty, red* correction
+[Builder picks up a purple block at X:4 Y:3 Z:-2]
+[Builder puts down a purple block at X:4 Y:5 Z:-2]
+[Builder puts down a red block at X:4 Y:6 Z:-2]
+[Builder puts down a red block at X:4 Y:7 Z:-2]
+[Builder picks up a red block at X:4 Y:6 Z:-2]
+<Builder> like this?
+<Architect> yep! perfect
+<Architect> third column: purple, 3 blue, purple, empty, red
+[Builder puts down a blue block at X:3 Y:1 Z:-2]
+[Builder puts down a blue block at X:3 Y:2 Z:-2]
+[Builder puts down a blue block at X:3 Y:3 Z:-2]
+[Builder puts down a purple block at X:3 Y:4 Z:-2]
+[Builder puts down a red block at X:3 Y:7 Z:-2]
+<Architect> you forgot the purple at the very bottom of the third column
+[Builder picks up a purple block at X:3 Y:4 Z:-2]
+[Builder picks up a blue block at X:3 Y:3 Z:-2]
+[Builder picks up a blue block at X:3 Y:2 Z:-2]
+[Builder picks up a blue block at X:3 Y:1 Z:-2]
+[Builder puts down a purple block at X:3 Y:1 Z:-2]
+[Builder puts down a blue block at X:3 Y:2 Z:-2]
+[Builder puts down a blue block at X:3 Y:3 Z:-2]
+[Builder puts down a blue block at X:3 Y:4 Z:-2]
+[Builder puts down a purple block at X:3 Y:5 Z:-2]
+<Builder> ok
+<Architect> fourth column: purp, blue, purp, blue, purp, empty, red
+<Builder> purp = purple
+<Architect> yes
+[Builder puts down a purple block at X:2 Y:1 Z:-2]
+[Builder puts down a purple block at X:2 Y:3 Z:-2]
+[Builder puts down a purple block at X:2 Y:5 Z:-2]
+[Builder puts down a blue block at X:2 Y:2 Z:-2]
+[Builder puts down a blue block at X:2 Y:4 Z:-2]
+[Builder puts down a red block at X:2 Y:7 Z:-2]
+<Architect> 5 th column: purp, 2 blue, empty, purp, empty, red
+[Builder puts down a purple block at X:1 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:2 Z:-2]
+[Builder puts down a blue block at X:1 Y:3 Z:-2]
+[Builder puts down a purple block at X:1 Y:5 Z:-2]
+[Builder puts down a red block at X:1 Y:7 Z:-2]
+<Architect> 6th column, empty, purple, empty, purple, 2 empty, red
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder puts down a purple block at X:0 Y:3 Z:-2]
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+[Builder picks up a purple block at X:0 Y:3 Z:-2]
+[Builder puts down a red block at X:0 Y:7 Z:-2]
+<Architect> last column, 2 empty, purple, 2 empty red
+[Builder puts down a purple block at X:-1 Y:2 Z:-2]
+[Builder picks up a purple block at X:-1 Y:2 Z:-2]
+[Builder puts down a purple block at X:-1 Y:4 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder picks up a purple block at X:-1 Y:4 Z:-2]
+[Builder puts down a red block at X:-1 Y:7 Z:-2]
+<Architect> there are 3 empty space between the purple and red in the last column. it should be 2
+[Builder picks up a purple block at X:-1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:4 Z:-2]
+<Architect> oh sorry you were supposed to correct it by moving a red one down by 1
+<Builder> ok
+[Builder picks up a purple block at X:-1 Y:4 Z:-2]
+[Builder puts down a purple block at X:-1 Y:2 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder picks up a purple block at X:-1 Y:2 Z:-2]
+[Builder picks up a red block at X:-1 Y:7 Z:-2]
+[Builder puts down a red block at X:-1 Y:7 Z:-2]
+[Builder puts down a red block at X:-1 Y:6 Z:-2]
+[Builder picks up a red block at X:-1 Y:7 Z:-2]
+<Architect> ok we're doen
+<Builder> good job

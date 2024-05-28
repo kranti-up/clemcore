@@ -1,0 +1,150 @@
+B21-A15-C66-1522882961544
+<Builder> Mission has started.
+<Architect> ready?
+<Builder> good to go
+<Architect> okay, so, you're gonna want to start by placing 5 orange blocks in a row near the center
+[Builder puts down a orange block at X:2 Y:1 Z:-2]
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:-1 Y:1 Z:-2]
+[Builder puts down a orange block at X:-2 Y:1 Z:-2]
+<Architect> yep! now, you're gonna build a 2d pyramid
+<Builder> is that close enought
+<Architect> yeah, it's fine
+<Architect> so, two orange blocks on either end
+<Builder> on top?
+<Architect> yeah on top, sorry
+[Builder puts down a orange block at X:2 Y:2 Z:-2]
+[Builder puts down a orange block at X:-2 Y:2 Z:-2]
+<Architect> it'll be a vertical pyramid
+<Architect> and then two more blocks up and diagonally inwards from those two
+[Builder puts down a orange block at X:2 Y:3 Z:-2]
+[Builder puts down a orange block at X:1 Y:3 Z:-2]
+[Builder picks up a orange block at X:2 Y:3 Z:-2]
+[Builder puts down a orange block at X:-2 Y:3 Z:-2]
+[Builder puts down a orange block at X:-1 Y:3 Z:-2]
+[Builder picks up a orange block at X:-2 Y:3 Z:-2]
+<Architect> and one more to complete it!
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+[Builder puts down a orange block at X:0 Y:4 Z:-2]
+[Builder picks up a orange block at X:1 Y:4 Z:-2]
+<Architect> perfect
+<Architect> now move to the other side of the structure
+<Architect> sorry, trying to figure out how to explain this
+<Architect> okay, stand right there and face right
+<Architect> put a green block three spaces in front of you
+[Builder puts down a green block at X:2 Y:1 Z:2]
+<Builder> there?
+<Architect> now another on top of that
+[Builder puts down a green block at X:2 Y:2 Z:2]
+<Architect> now two green blocks on either side, paralell to the orange pyramid
+[Builder puts down a green block at X:1 Y:1 Z:2]
+[Builder puts down a green block at X:3 Y:1 Z:2]
+<Architect> whoops, my bad
+[Builder picks up a green block at X:1 Y:1 Z:2]
+[Builder picks up a green block at X:3 Y:1 Z:2]
+<Architect> those should both be connected to the top block
+[Builder puts down a green block at X:1 Y:2 Z:2]
+[Builder puts down a green block at X:3 Y:2 Z:2]
+<Architect> alright, now two more green blocks extending to the right of the top row
+[Builder puts down a green block at X:4 Y:2 Z:2]
+[Builder puts down a green block at X:5 Y:2 Z:2]
+<Builder> like that?
+<Architect> perfect!
+<Architect> now remove the bottom block
+[Builder picks up a green block at X:2 Y:1 Z:2]
+<Architect> and build the exact same pyramid structure on top of those green blocks
+<Architect> so it should look like the orange one
+[Builder puts down a orange block at X:-2 Y:1 Z:-2]
+[Builder puts down a green block at X:5 Y:4 Z:2]
+[Builder puts down a green block at X:4 Y:4 Z:2]
+[Builder picks up a green block at X:5 Y:4 Z:2]
+[Builder puts down a green block at X:1 Y:4 Z:2]
+[Builder puts down a green block at X:2 Y:4 Z:2]
+[Builder picks up a green block at X:1 Y:4 Z:2]
+[Builder puts down a green block at X:2 Y:5 Z:2]
+[Builder puts down a green block at X:3 Y:5 Z:2]
+[Builder picks up a green block at X:2 Y:5 Z:2]
+<Builder> is that good?
+<Architect> perfect!
+<Architect> okay, so now, place a red block on top and in front of the topmost green block, from your current perspective
+[Builder puts down a red block at X:1 Y:4 Z:2]
+[Builder puts down a red block at X:1 Y:4 Z:3]
+[Builder picks up a red block at X:1 Y:4 Z:2]
+<Builder> there?
+<Architect> no, sorry, the top of the pyramid
+[Builder picks up a red block at X:1 Y:4 Z:3]
+[Builder puts down a red block at X:3 Y:6 Z:2]
+[Builder puts down a red block at X:3 Y:6 Z:3]
+<Architect> start with a red block on top of the pyramid
+[Builder picks up a red block at X:3 Y:6 Z:2]
+<Architect> like that, but on the other side!
+[Builder picks up a red block at X:3 Y:6 Z:3]
+[Builder puts down a red block at X:3 Y:6 Z:2]
+[Builder puts down a red block at X:3 Y:6 Z:1]
+[Builder picks up a red block at X:3 Y:6 Z:2]
+<Architect> perfect!
+<Architect> now extend that to a row of 5 red blocks, making a line towards the orange pyramid
+[Builder puts down a red block at X:3 Y:6 Z:0]
+[Builder puts down a red block at X:3 Y:6 Z:-1]
+[Builder puts down a red block at X:3 Y:6 Z:-2]
+[Builder puts down a red block at X:3 Y:6 Z:-3]
+<Architect> okay, now, you're gonna want to build an UPSIDE DOWN pyramid structure
+<Architect> so just like the other two, but upside down
+[Builder puts down a red block at X:3 Y:5 Z:-3]
+[Builder puts down a red block at X:3 Y:5 Z:1]
+[Builder puts down a red block at X:3 Y:4 Z:-3]
+[Builder puts down a red block at X:3 Y:4 Z:-2]
+[Builder picks up a red block at X:3 Y:4 Z:-3]
+[Builder puts down a red block at X:3 Y:4 Z:1]
+[Builder picks up a red block at X:3 Y:4 Z:1]
+[Builder puts down a red block at X:3 Y:4 Z:1]
+[Builder puts down a red block at X:3 Y:4 Z:0]
+[Builder picks up a red block at X:3 Y:4 Z:1]
+[Builder puts down a red block at X:3 Y:3 Z:-2]
+[Builder puts down a red block at X:3 Y:3 Z:-1]
+[Builder picks up a red block at X:3 Y:3 Z:-2]
+<Builder> like that?
+<Architect> yes, perfect!
+<Builder> solid
+<Architect> i messed up though
+<Architect> i apologized
+<Architect> the orange pyramid should be one tile to the right of where it currently is, so it's directly underneath the red pyramid's ip
+<Architect> tip*
+<Builder> aight
+[Builder puts down a orange block at X:3 Y:1 Z:-2]
+[Builder puts down a orange block at X:3 Y:2 Z:-2]
+<Architect> no
+<Architect> sorry
+[Builder picks up a orange block at X:3 Y:2 Z:-2]
+[Builder picks up a orange block at X:3 Y:1 Z:-2]
+<Architect> move one space left
+<Architect> walk up against the orange pyramid
+<Architect> okay, place an orange block right in front of you
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+<Architect> and one space down
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+<Architect> so underneath that
+<Architect> yeah, that's the row you should rebuild the orange pyramid on
+<Builder> okie dokie
+[Builder picks up a orange block at X:2 Y:2 Z:-2]
+[Builder picks up a orange block at X:2 Y:1 Z:-2]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder picks up a orange block at X:1 Y:3 Z:-2]
+[Builder picks up a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder picks up a orange block at X:0 Y:4 Z:-2]
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder picks up a orange block at X:-1 Y:3 Z:-2]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder picks up a orange block at X:-2 Y:2 Z:-2]
+[Builder puts down a orange block at X:-2 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder picks up a orange block at X:-2 Y:1 Z:-2]
+[Builder picks up a orange block at X:-1 Y:1 Z:-2]
+[Builder picks up a orange block at X:0 Y:1 Z:-2]
+<Builder> is that good
+<Architect> alright, looks perfect! sorry about that :(
+<Builder> no problemo

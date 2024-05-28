@@ -1,0 +1,65 @@
+B35-A44-C114-1523650699269
+<Builder> Mission has started.
+<Builder> im ready
+<Architect> build a orange column that is 5 orange blocks tall
+<Architect> anywhere
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+<Builder> okay
+<Architect> place 2 blocks to the right of the highest block and lowest block of the pillar
+<Builder> any color or still orange?
+<Architect> unless I specify, keep same color
+<Builder> okay
+[Builder puts down a orange block at X:-1 Y:5 Z:0]
+[Builder puts down a orange block at X:-2 Y:5 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-2 Y:1 Z:0]
+<Architect> now placce 1 block next to the middle block of the column (to the right)
+<Architect> should look like letter E
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+<Builder> okay
+<Architect> now you will create the exact shape, but mirrored horizontally, (1 sppace forward) and in blue
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:2 Z:-1]
+[Builder picks up a blue block at X:-1 Y:2 Z:-1]
+[Builder puts down a blue block at X:0 Y:5 Z:-1]
+[Builder puts down a blue block at X:0 Y:4 Z:-1]
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+[Builder puts down a blue block at X:1 Y:5 Z:-1]
+[Builder puts down a blue block at X:2 Y:5 Z:-1]
+[Builder puts down a blue block at X:1 Y:3 Z:-1]
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+<Builder> okay
+<Architect> make the back of the blue lettere E line up with the tips of the orange letter E.
+<Architect> shift the whole blue thing 2 blocks to the right
+<Builder> oh so they look superimposed
+[Builder puts down a blue block at X:-2 Y:1 Z:-1]
+[Builder puts down a blue block at X:-2 Y:2 Z:-1]
+[Builder picks up a blue block at X:1 Y:1 Z:-1]
+[Builder picks up a blue block at X:2 Y:1 Z:-1]
+[Builder picks up a blue block at X:1 Y:3 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+<Architect> yes mb
+[Builder picks up a blue block at X:0 Y:2 Z:-1]
+[Builder picks up a blue block at X:0 Y:3 Z:-1]
+[Builder picks up a blue block at X:1 Y:5 Z:-1]
+[Builder picks up a blue block at X:0 Y:4 Z:-1]
+[Builder picks up a blue block at X:0 Y:5 Z:-1]
+[Builder picks up a blue block at X:2 Y:5 Z:-1]
+[Builder puts down a blue block at X:-1 Y:3 Z:-1]
+[Builder puts down a blue block at X:0 Y:5 Z:-1]
+[Builder puts down a blue block at X:-1 Y:5 Z:-1]
+[Builder puts down a blue block at X:-2 Y:5 Z:-1]
+[Builder puts down a blue block at X:-2 Y:4 Z:-1]
+[Builder puts down a blue block at X:-2 Y:3 Z:-1]
+<Builder> like that?
+<Architect> oh wait sorry i wasnt looking 100% correctly. make the blue things that stick out only 1 block. so just remove 2 blocks
+[Builder picks up a blue block at X:0 Y:1 Z:-1]
+[Builder picks up a blue block at X:0 Y:5 Z:-1]
+<Builder> like that?
+<Architect> ok. we're done sorry. gj
+<Builder> no worries

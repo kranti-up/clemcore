@@ -1,0 +1,41 @@
+B53-A4-C87-1524153344029
+<Builder> Mission has started.
+<Architect> start with orange
+<Architect> go to an edge and place a row of 2
+<Builder> Along the edge?
+<Architect> toward the middle
+[Builder puts down a orange block at X:5 Y:1 Z:0]
+[Builder puts down a orange block at X:4 Y:1 Z:0]
+<Architect> now stack another row of two in a stairstep fashion such that it overhangs by one block
+[Builder puts down a orange block at X:4 Y:2 Z:0]
+[Builder puts down a orange block at X:3 Y:2 Z:0]
+<Architect> great
+<Architect> do it again
+[Builder puts down a orange block at X:3 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+<Architect> okay now a single orange block one blank space away from that
+<Architect> still in line with the structure and floating up one space
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+<Architect> now another block three empty spaces above that
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:6 Z:0]
+[Builder picks up a orange block at X:0 Y:5 Z:0]
+[Builder picks up a orange block at X:0 Y:4 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+<Architect> now another lone block one blank space to the right
+<Architect> two floating spaces
+[Builder puts down a orange block at X:-2 Y:1 Z:0]
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder picks up a orange block at X:-2 Y:2 Z:0]
+[Builder picks up a orange block at X:-2 Y:1 Z:0]
+<Architect> and a final block one blank space above that one
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+[Builder puts down a orange block at X:-2 Y:5 Z:0]
+[Builder picks up a orange block at X:-2 Y:4 Z:0]
+<Architect> excellent
+<Builder> Nice

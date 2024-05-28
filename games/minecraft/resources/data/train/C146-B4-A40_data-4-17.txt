@@ -1,0 +1,73 @@
+B4-A40-C146-1523979178367
+<Builder> Mission has started.
+<Architect> hello
+<Builder> hello
+<Architect> put down a column of three orange blocks on one edge
+<Architect> vertical
+[Builder puts down a orange block at X:-1 Y:1 Z:5]
+[Builder puts down a orange block at X:-1 Y:2 Z:5]
+[Builder puts down a orange block at X:-1 Y:3 Z:5]
+<Architect> then two more blocks jutting out from the top and towards you
+[Builder picks up a orange block at X:-1 Y:3 Z:5]
+[Builder puts down a orange block at X:-1 Y:3 Z:5]
+[Builder puts down a orange block at X:-1 Y:3 Z:4]
+[Builder puts down a orange block at X:-1 Y:3 Z:3]
+<Architect> then one block below the one you just placed
+[Builder puts down a orange block at X:-1 Y:2 Z:3]
+<Architect> cool
+<Architect> then starting from underneath the last block build a row of three yellow blocks
+<Architect> same orientation as the orange structure
+[Builder puts down a yellow block at X:-1 Y:1 Z:3]
+[Builder puts down a yellow block at X:-1 Y:1 Z:2]
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+<Architect> nice
+<Architect> complete the yellow L with two more blocks
+<Architect> vertically
+[Builder puts down a yellow block at X:-1 Y:2 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+<Architect> now we are going to build a green staircase...
+<Architect> the first block should be jutting out from the top of the yellow and in the same orientaton as the current structure
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+<Builder> like that?
+<Architect> yes
+<Architect> then finish the staircase...
+<Architect> if that makes sense
+<Builder> do the stairs overlap at all or is it just diagonal?
+<Builder> like is there a three stack then two stack then one?
+<Architect> they can't as it's just one block per step
+<Architect> so the next block will be diagonally below and to the right of the green
+<Builder> okay, nothing stacked
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:-1]
+[Builder picks up a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+<Architect> yep
+<Builder> like that
+<Architect> now a similar staircase but going upwards. The first block is the last green you placed.
+[Builder puts down a green block at X:-1 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:2 Z:-3]
+[Builder picks up a green block at X:-1 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:2 Z:-4]
+[Builder puts down a green block at X:-1 Y:3 Z:-4]
+[Builder picks up a green block at X:-1 Y:2 Z:-4]
+<Architect> No
+[Builder picks up a green block at X:-1 Y:3 Z:-4]
+[Builder picks up a green block at X:-1 Y:2 Z:-3]
+<Architect> i meant only the last block
+<Architect> so now it's going to be blue, blue and then purple
+<Architect> total of three more blocks
+<Builder> got it
+[Builder puts down a blue block at X:-1 Y:2 Z:-2]
+[Builder puts down a blue block at X:-1 Y:2 Z:-3]
+[Builder picks up a blue block at X:-1 Y:2 Z:-2]
+[Builder puts down a blue block at X:-1 Y:3 Z:-3]
+[Builder puts down a blue block at X:-1 Y:3 Z:-4]
+[Builder picks up a blue block at X:-1 Y:3 Z:-3]
+[Builder puts down a purple block at X:-1 Y:3 Z:-5]
+[Builder puts down a purple block at X:-1 Y:4 Z:-5]
+[Builder picks up a purple block at X:-1 Y:3 Z:-5]
+<Builder> that?
+<Architect> perfect!
+<Architect> and we are done!
+<Architect> gg
+<Builder> sweet

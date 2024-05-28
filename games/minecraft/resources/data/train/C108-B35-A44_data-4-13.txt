@@ -1,0 +1,44 @@
+B35-A44-C108-1523652454518
+<Builder> Mission has started.
+<Architect> another 2d vertical drawing
+<Architect> 7 blue
+<Architect> blue, orange, 3 empty, orange, blue
+[Builder puts down a blue block at X:5 Y:1 Z:0]
+[Builder puts down a blue block at X:5 Y:2 Z:0]
+[Builder puts down a blue block at X:5 Y:3 Z:0]
+[Builder puts down a blue block at X:5 Y:4 Z:0]
+[Builder puts down a blue block at X:5 Y:5 Z:0]
+[Builder puts down a blue block at X:5 Y:6 Z:0]
+[Builder puts down a blue block at X:5 Y:7 Z:0]
+[Builder puts down a blue block at X:4 Y:1 Z:0]
+[Builder puts down a orange block at X:4 Y:2 Z:0]
+[Builder puts down a orange block at X:4 Y:6 Z:0]
+[Builder puts down a blue block at X:4 Y:7 Z:0]
+<Architect> blue, 5 orange, blue
+[Builder puts down a blue block at X:3 Y:1 Z:0]
+[Builder puts down a orange block at X:3 Y:2 Z:0]
+[Builder puts down a orange block at X:3 Y:3 Z:0]
+[Builder puts down a orange block at X:3 Y:4 Z:0]
+[Builder puts down a orange block at X:3 Y:5 Z:0]
+[Builder puts down a orange block at X:3 Y:6 Z:0]
+[Builder puts down a blue block at X:3 Y:7 Z:0]
+<Architect> blue, orange, 3 empty, orange, blue
+<Builder> is this a block I
+<Architect> yeah
+[Builder puts down a blue block at X:2 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder picks up a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+<Architect> its the illinois logo
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+[Builder puts down a blue block at X:1 Y:5 Z:0]
+[Builder puts down a blue block at X:1 Y:6 Z:0]
+[Builder puts down a blue block at X:2 Y:7 Z:0]
+[Builder puts down a blue block at X:1 Y:7 Z:0]
+<Architect> see if you can finish it
+[Builder puts down a orange block at X:2 Y:6 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+<Builder> that it?
+<Architect> yep. gj
+<Builder> bet

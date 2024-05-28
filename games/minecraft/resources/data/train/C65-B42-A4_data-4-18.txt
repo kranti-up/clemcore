@@ -1,0 +1,68 @@
+B42-A4-C65-1524082095697
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hi
+<Architect> this is a sort of action figure in a fighting stance
+<Architect> start with green
+<Architect> and the middle toward one of the edges
+<Architect> make a staircase three long
+[Builder puts down a green block at X:5 Y:1 Z:0]
+[Builder picks up a green block at X:5 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder picks up a green block at X:0 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:2 Z:0]
+[Builder picks up a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:2 Y:2 Z:0]
+[Builder picks up a green block at X:2 Y:2 Z:0]
+[Builder puts down a green block at X:2 Y:2 Z:0]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder picks up a green block at X:2 Y:2 Z:0]
+<Architect> like that, but that's one of the legs, so leave space for the rest of the body
+<Architect> move that whole structure to the right
+[Builder picks up a green block at X:0 Y:1 Z:0]
+[Builder picks up a green block at X:1 Y:2 Z:0]
+[Builder picks up a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:-4 Y:1 Z:0]
+[Builder puts down a green block at X:-3 Y:1 Z:0]
+[Builder puts down a green block at X:-3 Y:2 Z:0]
+[Builder puts down a green block at X:-2 Y:2 Z:0]
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+[Builder picks up a green block at X:-2 Y:2 Z:0]
+[Builder picks up a green block at X:-3 Y:1 Z:0]
+<Architect> good. now a red column four tall starting next to the top green
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder picks up a red block at X:0 Y:4 Z:-1]
+[Builder picks up a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder picks up a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+[Builder puts down a red block at X:-1 Y:6 Z:0]
+<Architect> great.
+<Architect> one orange block on the top
+[Builder puts down a orange block at X:-1 Y:7 Z:0]
+<Architect> now make a green leg the exact same way on the other side
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:2 Z:0]
+[Builder puts down a green block at X:2 Y:1 Z:0]
+[Builder picks up a green block at X:0 Y:2 Z:0]
+<Architect> great.
+<Architect> now the arms
+<Architect> also green
+<Architect> put one block on either side of the top red one
+[Builder puts down a green block at X:0 Y:6 Z:0]
+[Builder puts down a green block at X:-2 Y:6 Z:0]
+<Architect> now the left arm has one more block up and diagonal left of teh green
+[Builder puts down a green block at X:1 Y:6 Z:0]
+[Builder puts down a green block at X:1 Y:7 Z:0]
+[Builder picks up a green block at X:1 Y:6 Z:0]
+<Architect> good. the right arm has a block diagonal and curling toward you
+[Builder puts down a green block at X:-2 Y:6 Z:-1]
+[Builder puts down a green block at X:-3 Y:6 Z:-1]
+[Builder picks up a green block at X:-2 Y:6 Z:-1]
+<Architect> well done
+<Architect> that's it
+<Builder> yay

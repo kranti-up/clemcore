@@ -1,0 +1,49 @@
+B35-A44-C92-1523652214354
+<Builder> Mission has started.
+<Architect> ok another 2d vertical drawing
+<Builder> okay
+<Architect> empty, 2 red, 2 green. start anywhere moderately left
+[Builder puts down a red block at X:5 Y:1 Z:0]
+[Builder puts down a red block at X:5 Y:2 Z:0]
+[Builder picks up a red block at X:5 Y:1 Z:0]
+[Builder puts down a red block at X:5 Y:3 Z:0]
+[Builder puts down a green block at X:5 Y:4 Z:0]
+[Builder puts down a green block at X:5 Y:5 Z:0]
+<Builder> okay
+<Architect> empty 2 red, 2 empty, 1 green
+[Builder puts down a red block at X:4 Y:2 Z:0]
+[Builder puts down a red block at X:4 Y:3 Z:0]
+[Builder puts down a green block at X:4 Y:5 Z:0]
+<Architect> 2 empty on the not 1 empty. before the green
+[Builder puts down a green block at X:3 Y:1 Z:0]
+<Architect> 2 spaces between the red and green on the second column
+[Builder picks up a green block at X:3 Y:1 Z:0]
+<Architect> wait stop I'm making a correction
+<Builder> yeah I don't follow
+<Builder> can u rephrase?
+<Architect> on the second column. I said empty, 2 red, 2 empty, green
+[Builder picks up a green block at X:4 Y:5 Z:0]
+[Builder puts down a green block at X:4 Y:5 Z:0]
+[Builder puts down a green block at X:4 Y:6 Z:0]
+[Builder picks up a green block at X:4 Y:5 Z:0]
+<Builder> okay
+<Architect> 3rd column: 3 empty, 3 green
+[Builder puts down a green block at X:4 Y:4 Z:0]
+[Builder puts down a green block at X:3 Y:4 Z:0]
+[Builder picks up a green block at X:4 Y:4 Z:0]
+[Builder puts down a green block at X:3 Y:5 Z:0]
+[Builder puts down a green block at X:3 Y:6 Z:0]
+<Architect> 2red, 1 green, 3 empty, 1 green
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:3 Y:7 Z:0]
+[Builder puts down a green block at X:2 Y:7 Z:0]
+[Builder picks up a green block at X:2 Y:7 Z:0]
+[Builder puts down a green block at X:2 Y:7 Z:0]
+[Builder picks up a green block at X:3 Y:7 Z:0]
+<Architect> 2 red
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+<Architect> we're done. looks like a cherry goodj ob
+<Builder> ahh

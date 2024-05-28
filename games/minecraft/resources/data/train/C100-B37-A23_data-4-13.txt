@@ -1,0 +1,76 @@
+B37-A23-C100-1523632209802
+<Builder> Mission has started.
+<Architect> are my commands working well for you? anything you would like to recommend?
+<Builder> no, I think it's working well
+<Architect> we are making four interlocking rings, all in one row.
+<Architect> go to the middle of a side and place a green block
+[Builder puts down a green block at X:-5 Y:1 Z:0]
+<Architect> place three more inward on that row
+[Builder puts down a green block at X:-4 Y:1 Z:0]
+[Builder puts down a green block at X:-3 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+<Architect> on the far side block, stack three
+[Builder puts down a green block at X:-5 Y:2 Z:0]
+[Builder puts down a green block at X:-5 Y:3 Z:0]
+[Builder puts down a green block at X:-5 Y:4 Z:0]
+<Architect> and then bring one across, attached to the top block.
+[Builder puts down a green block at X:-4 Y:4 Z:0]
+<Architect> now a yellow block
+[Builder puts down a yellow block at X:-3 Y:4 Z:0]
+<Architect> below that yelow, place two more yellows
+[Builder puts down a yellow block at X:-3 Y:3 Z:0]
+[Builder puts down a yellow block at X:-3 Y:2 Z:0]
+<Architect> on the loner green, place a yellow
+[Builder puts down a yellow block at X:-2 Y:2 Z:0]
+<Architect> on top of that, place to greens.
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+[Builder puts down a green block at X:-2 Y:4 Z:0]
+<Architect> going outward from the yellow block placed above the loner green, put two yellow blocks.
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+<Architect> on the last of those, place a yellow, orange, then yellow stack.
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a yellow block at X:0 Y:5 Z:0]
+<Architect> on the yellow top block side facing green, place, an orange, a yellow, and a yellow
+[Builder puts down a orange block at X:-1 Y:5 Z:0]
+[Builder puts down a yellow block at X:-2 Y:5 Z:0]
+[Builder puts down a orange block at X:-3 Y:5 Z:0]
+<Architect> make that last one yellow
+<Builder> oops right
+[Builder picks up a orange block at X:-3 Y:5 Z:0]
+[Builder puts down a yellow block at X:-3 Y:5 Z:0]
+<Architect> in the orange corner, place an orange.
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+<Architect> on top of those oranges, place to more orange
+[Builder puts down a orange block at X:-1 Y:6 Z:0]
+[Builder puts down a orange block at X:-1 Y:7 Z:0]
+<Architect> and off the top side of that, going left, place three more orange.
+[Builder puts down a orange block at X:0 Y:7 Z:0]
+[Builder puts down a orange block at X:1 Y:7 Z:0]
+[Builder puts down a orange block at X:2 Y:7 Z:0]
+<Architect> go down one orange on the end
+[Builder puts down a orange block at X:2 Y:6 Z:0]
+<Architect> now place a red.
+[Builder puts down a red block at X:2 Y:5 Z:0]
+<Architect> on either side of the red, place aonther red
+[Builder puts down a red block at X:1 Y:5 Z:0]
+[Builder puts down a red block at X:3 Y:5 Z:0]
+<Architect> place one more red on that side.
+[Builder puts down a red block at X:4 Y:5 Z:0]
+<Architect> hang three red blocks from that one
+[Builder puts down a red block at X:4 Y:4 Z:0]
+[Builder puts down a red block at X:4 Y:3 Z:0]
+[Builder puts down a red block at X:4 Y:2 Z:0]
+<Architect> connect the bottom red to the yellow
+[Builder puts down a red block at X:3 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+<Architect> make that red a sqaure like the rest.
+[Builder puts down a red block at X:1 Y:4 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+<Architect> add the missing orange
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+<Architect> done!
+<Builder> nice! that went smoothly
+<Architect> I agree!

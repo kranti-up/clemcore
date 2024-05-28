@@ -1,0 +1,106 @@
+B53-A15-C140-1524066269052
+<Builder> Mission has started.
+<Architect> alright, start with a row of 5 orange ones on the ground
+<Architect> any direction
+<Architect> near the center preferably
+<Builder> I was just about to ask
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+<Builder> Is this good enough location-wise?
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+[Builder puts down a orange block at X:-2 Y:1 Z:-1]
+<Architect> yep!
+<Architect> okay, two more rows parallel to that one, but skipping a tile
+<Architect> so 5 orange, 5 blank, 5 orange, 5 blank, 5 orange
+<Builder> On the ground?
+<Architect> on the ground, yeah, sorry
+[Builder puts down a orange block at X:2 Y:1 Z:-3]
+[Builder puts down a orange block at X:1 Y:1 Z:-3]
+[Builder puts down a orange block at X:0 Y:1 Z:-3]
+[Builder puts down a orange block at X:-2 Y:1 Z:-3]
+[Builder puts down a orange block at X:-1 Y:1 Z:-3]
+[Builder puts down a orange block at X:-2 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+[Builder puts down a orange block at X:2 Y:1 Z:1]
+<Architect> okay, now, you'll want a row of 3 purple ones in each crevice, so that the middle purple one is between the end blocks of the orange rows
+<Builder> On both sides?
+<Architect> yeah, between the middle orange row and either side
+[Builder puts down a purple block at X:-2 Y:1 Z:0]
+[Builder puts down a purple block at X:-3 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:-3 Y:1 Z:-2]
+[Builder puts down a purple block at X:-2 Y:1 Z:-2]
+[Builder puts down a purple block at X:-1 Y:1 Z:-2]
+<Builder> Also on the right or no?
+<Architect> perfect! nope, just there
+<Builder> Ok
+<Architect> they should be floating one tile up though
+<Builder> I'll fix that
+<Architect> so same position, but one block higher
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+[Builder picks up a purple block at X:-1 Y:1 Z:0]
+[Builder picks up a purple block at X:-3 Y:1 Z:0]
+[Builder picks up a purple block at X:-2 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-3 Y:2 Z:0]
+[Builder picks up a purple block at X:-3 Y:1 Z:-2]
+[Builder picks up a purple block at X:-1 Y:1 Z:-2]
+[Builder puts down a purple block at X:-2 Y:2 Z:-2]
+[Builder picks up a purple block at X:-2 Y:1 Z:-2]
+[Builder puts down a purple block at X:-3 Y:2 Z:-2]
+[Builder puts down a purple block at X:-1 Y:2 Z:-2]
+<Architect> okay, cool!
+<Architect> you're gonna want a yellow block between the endpoints the two orange rows farthest from you
+[Builder puts down a yellow block at X:2 Y:1 Z:-2]
+<Architect> and another in front of it, away from the orange structure
+[Builder puts down a yellow block at X:3 Y:1 Z:-2]
+<Architect> okay, two more rows of yellow blocks just like that, with a 1 tile gap in between
+<Architect> it's gonna extend one tile into the gray area, i hope that's okay
+<Builder> Oh, so on the ground?
+<Architect> yeah, on the ground, parallel to the orange
+[Builder puts down a yellow block at X:5 Y:1 Z:-2]
+[Builder puts down a yellow block at X:7 Y:1 Z:-2]
+[Builder picks up a yellow block at X:7 Y:1 Z:-2]
+[Builder puts down a yellow block at X:6 Y:1 Z:-2]
+[Builder puts down a yellow block at X:9 Y:1 Z:-2]
+[Builder puts down a yellow block at X:8 Y:1 Z:-2]
+<Architect> sorry sorry
+<Architect> they should be laid out like the orange rows as well
+<Builder> Ah I see
+<Architect> so not in a line, but in 3 parallel lines
+<Builder> Moving towards the top?
+[Builder picks up a yellow block at X:5 Y:1 Z:-2]
+[Builder picks up a yellow block at X:6 Y:1 Z:-2]
+[Builder picks up a yellow block at X:9 Y:1 Z:-2]
+[Builder picks up a yellow block at X:8 Y:1 Z:-2]
+<Architect> towards the right
+<Architect> so away from the purple blocks
+<Builder> but the other two should both be to the top of the first one, right?
+[Builder puts down a yellow block at X:2 Y:1 Z:-4]
+[Builder puts down a yellow block at X:3 Y:1 Z:-4]
+[Builder puts down a yellow block at X:2 Y:1 Z:-6]
+[Builder puts down a yellow block at X:3 Y:1 Z:-6]
+<Architect> yeah, that's perfect right there
+<Builder> Like so
+<Builder> excellent
+<Architect> okay, now, a floating blue block between each yellow row
+<Builder> Right or left side?
+<Architect> right side, so not above the orange
+[Builder puts down a blue block at X:2 Y:2 Z:-3]
+[Builder puts down a blue block at X:3 Y:2 Z:-3]
+[Builder picks up a blue block at X:2 Y:2 Z:-3]
+[Builder puts down a blue block at X:3 Y:2 Z:-4]
+[Builder puts down a blue block at X:3 Y:2 Z:-5]
+[Builder picks up a blue block at X:3 Y:2 Z:-4]
+<Architect> and then extend those one more block away from the orange blocks
+[Builder puts down a blue block at X:4 Y:2 Z:-3]
+[Builder puts down a blue block at X:4 Y:2 Z:-5]
+<Architect> parallel to yellow
+<Architect> perfect! :)

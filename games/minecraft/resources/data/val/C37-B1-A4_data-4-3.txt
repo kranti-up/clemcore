@@ -1,0 +1,101 @@
+B1-A4-C37-1522773058751
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hi. this is probably a familiar structure
+<Architect> it's two towers of multicolored S's
+<Architect> start with a base of red
+<Architect> four long
+[Builder puts down a red block at X:3 Y:1 Z:1]
+[Builder puts down a red block at X:2 Y:1 Z:1]
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+<Builder> is this good?
+<Architect> yep; now a tower of five oranges
+<Architect> on top of the red end
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:5 Z:1]
+[Builder puts down a orange block at X:0 Y:6 Z:1]
+<Architect> same on other side
+[Builder puts down a orange block at X:3 Y:2 Z:1]
+[Builder puts down a orange block at X:3 Y:3 Z:1]
+[Builder puts down a orange block at X:3 Y:4 Z:1]
+[Builder puts down a orange block at X:3 Y:5 Z:1]
+[Builder puts down a orange block at X:3 Y:6 Z:1]
+<Architect> now a red roof
+[Builder puts down a red block at X:0 Y:7 Z:1]
+[Builder puts down a red block at X:1 Y:7 Z:1]
+[Builder puts down a red block at X:2 Y:7 Z:1]
+<Architect> good
+[Builder puts down a red block at X:3 Y:7 Z:1]
+<Architect> switch to yellow
+<Architect> go to other side
+<Architect> build an S
+<Builder> is that 5 or an S
+<Architect> same difference
+[Builder puts down a yellow block at X:1 Y:6 Z:1]
+[Builder puts down a yellow block at X:2 Y:5 Z:1]
+[Builder puts down a yellow block at X:1 Y:4 Z:1]
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:2 Y:2 Z:1]
+[Builder picks up a yellow block at X:2 Y:2 Z:1]
+[Builder puts down a yellow block at X:2 Y:3 Z:1]
+<Builder> thats an S
+<Architect> fine a 5
+[Builder puts down a yellow block at X:2 Y:6 Z:1]
+<Builder> is that okay?
+<Architect> like on a digital clock
+[Builder picks up a yellow block at X:1 Y:4 Z:1]
+[Builder picks up a yellow block at X:2 Y:3 Z:1]
+<Builder> so longer?
+[Builder puts down a yellow block at X:1 Y:4 Z:1]
+<Architect> yeah
+[Builder puts down a yellow block at X:2 Y:2 Z:1]
+[Builder puts down a yellow block at X:1 Y:2 Z:1]
+<Builder> like this?
+<Architect> one more yellow in that gap on the left
+[Builder puts down a yellow block at X:2 Y:4 Z:1]
+<Builder> go it
+<Architect> good; fill in reds in the gaps
+[Builder puts down a red block at X:2 Y:3 Z:1]
+[Builder puts down a red block at X:1 Y:5 Z:1]
+<Architect> great; now the same structure with different colors
+<Architect> switch to green
+<Architect> six squares away from the tower
+<Architect> build another line with green
+[Builder puts down a green block at X:1 Y:1 Z:-5]
+<Builder> is here good?
+<Architect> yeah
+[Builder puts down a green block at X:2 Y:1 Z:-5]
+[Builder puts down a green block at X:0 Y:1 Z:-5]
+[Builder puts down a green block at X:3 Y:1 Z:-5]
+<Architect> now towers of blue
+[Builder puts down a blue block at X:0 Y:2 Z:-5]
+[Builder puts down a blue block at X:0 Y:3 Z:-5]
+[Builder puts down a blue block at X:0 Y:4 Z:-5]
+[Builder puts down a blue block at X:0 Y:5 Z:-5]
+[Builder puts down a blue block at X:0 Y:6 Z:-5]
+[Builder puts down a blue block at X:3 Y:2 Z:-5]
+[Builder puts down a blue block at X:3 Y:3 Z:-5]
+[Builder puts down a blue block at X:3 Y:4 Z:-5]
+[Builder puts down a blue block at X:3 Y:5 Z:-5]
+[Builder puts down a blue block at X:3 Y:6 Z:-5]
+<Architect> green roof
+[Builder puts down a green block at X:0 Y:7 Z:-5]
+[Builder puts down a green block at X:1 Y:7 Z:-5]
+[Builder puts down a green block at X:2 Y:7 Z:-5]
+[Builder puts down a green block at X:3 Y:7 Z:-5]
+<Architect> purple 5 oriented the same way as the other
+[Builder puts down a purple block at X:1 Y:6 Z:-5]
+[Builder puts down a purple block at X:2 Y:6 Z:-5]
+[Builder puts down a purple block at X:2 Y:5 Z:-5]
+[Builder puts down a purple block at X:2 Y:4 Z:-5]
+[Builder puts down a purple block at X:1 Y:4 Z:-5]
+[Builder puts down a purple block at X:1 Y:3 Z:-5]
+[Builder puts down a purple block at X:1 Y:2 Z:-5]
+[Builder puts down a purple block at X:2 Y:2 Z:-5]
+[Builder puts down a green block at X:2 Y:3 Z:-5]
+[Builder puts down a green block at X:1 Y:5 Z:-5]
+<Architect> good
+<Builder> nice

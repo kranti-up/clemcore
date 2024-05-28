@@ -1,0 +1,100 @@
+B42-A4-C148-1524080165010
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hi, what should i do?
+<Architect> this is a big floating pair of over the ear headphones
+<Builder> ok
+<Architect> start with a red cable
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> go to an edge
+[Builder picks up a red block at X:0 Y:1 Z:0]
+<Architect> then three spaces in
+[Builder puts down a red block at X:-3 Y:1 Z:0]
+<Architect> now another red diagonal to that
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+[Builder picks up a red block at X:-2 Y:1 Z:0]
+<Architect> still flat on the surfce
+[Builder picks up a red block at X:-2 Y:2 Z:0]
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+[Builder picks up a red block at X:-2 Y:1 Z:-1]
+[Builder puts down a red block at X:-2 Y:1 Z:1]
+<Architect> closer to you
+[Builder picks up a red block at X:-2 Y:1 Z:1]
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+<Architect> cool
+<Architect> now another diagonal to that but in the opposite direction
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> so it's in line with the first
+<Architect> good
+<Architect> now keep going in that direction
+<Architect> another diagonal to that
+[Builder puts down a red block at X:0 Y:1 Z:1]
+<Architect> now one directly to the left of hte last one you placed
+[Builder puts down a red block at X:1 Y:1 Z:1]
+<Architect> cool now one more diagonal
+[Builder puts down a red block at X:2 Y:1 Z:2]
+<Architect> great
+<Architect> now purple
+<Architect> a 3x3 vertical square over the last red block you placed
+[Builder puts down a purple block at X:2 Y:2 Z:2]
+[Builder puts down a purple block at X:2 Y:3 Z:2]
+[Builder puts down a purple block at X:2 Y:4 Z:2]
+[Builder puts down a purple block at X:3 Y:4 Z:2]
+[Builder puts down a purple block at X:3 Y:3 Z:2]
+[Builder puts down a purple block at X:3 Y:2 Z:2]
+[Builder puts down a purple block at X:1 Y:2 Z:2]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder picks up a purple block at X:0 Y:3 Z:1]
+[Builder picks up a purple block at X:0 Y:3 Z:2]
+[Builder puts down a purple block at X:1 Y:4 Z:2]
+<Architect> great. delete the middle one
+[Builder picks up a purple block at X:2 Y:3 Z:2]
+<Architect> now orange
+<Architect> on the far side of the purple
+<Architect> a plus sign
+<Architect> also vertical
+[Builder puts down a orange block at X:1 Y:3 Z:3]
+[Builder puts down a orange block at X:2 Y:3 Z:3]
+[Builder puts down a orange block at X:3 Y:3 Z:3]
+[Builder puts down a orange block at X:2 Y:2 Z:3]
+[Builder puts down a orange block at X:2 Y:4 Z:3]
+<Architect> great. that's one ear
+<Architect> now the head part
+<Architect> is blue
+<Architect> on the middle top purple build a column of two blue
+[Builder puts down a blue block at X:2 Y:5 Z:2]
+[Builder puts down a blue block at X:2 Y:6 Z:2]
+<Architect> then a row of four starting one diagonal from the top blue
+[Builder puts down a blue block at X:2 Y:6 Z:1]
+[Builder puts down a blue block at X:2 Y:7 Z:1]
+[Builder picks up a blue block at X:2 Y:6 Z:1]
+[Builder puts down a blue block at X:2 Y:7 Z:0]
+[Builder puts down a blue block at X:2 Y:7 Z:-1]
+[Builder puts down a blue block at X:2 Y:7 Z:-2]
+<Architect> now two blue straight down. also starting diagonally
+[Builder puts down a blue block at X:2 Y:7 Z:-3]
+[Builder picks up a blue block at X:2 Y:7 Z:-3]
+[Builder puts down a blue block at X:2 Y:7 Z:-3]
+[Builder puts down a blue block at X:2 Y:6 Z:-3]
+[Builder picks up a blue block at X:2 Y:7 Z:-3]
+[Builder puts down a blue block at X:2 Y:5 Z:-3]
+<Architect> now make the same ear piece
+<Builder> should i just mirror the first one?
+<Builder> ok
+[Builder puts down a purple block at X:2 Y:4 Z:-3]
+[Builder puts down a purple block at X:3 Y:4 Z:-3]
+[Builder puts down a purple block at X:1 Y:4 Z:-3]
+[Builder puts down a purple block at X:1 Y:3 Z:-3]
+[Builder puts down a purple block at X:3 Y:3 Z:-3]
+[Builder puts down a purple block at X:3 Y:2 Z:-3]
+[Builder puts down a purple block at X:1 Y:2 Z:-3]
+[Builder puts down a purple block at X:2 Y:2 Z:-3]
+[Builder puts down a orange block at X:3 Y:3 Z:-4]
+[Builder puts down a orange block at X:2 Y:4 Z:-4]
+[Builder puts down a orange block at X:2 Y:3 Z:-4]
+[Builder puts down a orange block at X:1 Y:3 Z:-4]
+[Builder puts down a orange block at X:2 Y:2 Z:-4]
+<Architect> nice
+<Builder> all good?
+<Architect> yep

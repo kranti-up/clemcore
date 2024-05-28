@@ -1,0 +1,101 @@
+B49-A39-C106-1523768948389
+<Builder> Mission has started.
+<Architect> okay
+<Architect> sorry, hi, first of all
+<Architect> let's start near the center of the board
+<Builder> on the ground?
+<Architect> there's only going to be one block on the ground
+<Architect> everything else extends up from that
+<Architect> make it a red block
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> this is going to be the base of a T shape
+<Architect> three high, three wide
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder picks up a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+<Architect> let's start with the left side of this T since it's simpler
+<Architect> build another red block diagonally up and left from the left end of the T. it should lie on the same plane
+[Builder puts down a red block at X:1 Y:4 Z:0]
+[Builder puts down a red block at X:2 Y:4 Z:0]
+[Builder picks up a red block at X:1 Y:4 Z:0]
+<Architect> do this one more time but with a green block
+[Builder picks up a red block at X:2 Y:4 Z:0]
+[Builder puts down a red block at X:2 Y:3 Z:0]
+[Builder puts down a red block at X:2 Y:4 Z:0]
+[Builder picks up a red block at X:2 Y:3 Z:0]
+[Builder picks up a red block at X:2 Y:4 Z:0]
+[Builder puts down a red block at X:2 Y:3 Z:0]
+[Builder puts down a red block at X:2 Y:4 Z:0]
+[Builder picks up a red block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:3 Y:4 Z:0]
+[Builder puts down a green block at X:3 Y:5 Z:0]
+[Builder picks up a green block at X:3 Y:4 Z:0]
+<Architect> that looked rough but you got it
+<Architect> okay, now for the right side
+<Architect> on top of the right end of the T, place two more red blocks
+[Builder puts down a red block at X:-1 Y:4 Z:0]
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+<Architect> directly to the right of those two you just placed, place green blocks
+[Builder puts down a green block at X:-2 Y:4 Z:0]
+[Builder puts down a green block at X:-2 Y:5 Z:0]
+<Architect> place another red block on top of that top green block
+[Builder puts down a red block at X:-2 Y:6 Z:0]
+<Architect> diagonally up and right of that top red block, place a green block
+[Builder puts down a green block at X:-2 Y:7 Z:0]
+[Builder puts down a green block at X:-3 Y:7 Z:0]
+[Builder picks up a green block at X:-2 Y:7 Z:0]
+<Builder> ok
+<Architect> extending out from the bottom green block on the right, place two green blocks
+<Builder> this one?
+<Architect> i think so, it's a little hard for me to tell what you're exactly looking at
+[Builder puts down a green block at X:-2 Y:4 Z:-1]
+[Builder puts down a green block at X:-2 Y:4 Z:-2]
+<Architect> no no, to the right of it
+<Architect> still on the same plane as everything else
+[Builder puts down a green block at X:-2 Y:5 Z:-2]
+[Builder picks up a green block at X:-2 Y:5 Z:-2]
+[Builder picks up a green block at X:-2 Y:4 Z:-2]
+[Builder picks up a green block at X:-2 Y:4 Z:-1]
+[Builder puts down a green block at X:-3 Y:4 Z:0]
+[Builder puts down a green block at X:-4 Y:4 Z:0]
+<Architect> yup!
+<Architect> okay, we are done with this plane. there are a few more blocks on the planes directly in front of and behind all this stuff
+<Builder> ready
+<Architect> directly in front of the bottom left two green blocks, put green blocks
+[Builder puts down a green block at X:-2 Y:4 Z:-1]
+[Builder puts down a green block at X:-2 Y:5 Z:-1]
+<Builder> ok
+<Architect> oops
+<Architect> the second one isn't right
+[Builder puts down a green block at X:-2 Y:4 Z:-2]
+<Architect> put it along that bottom row
+[Builder picks up a green block at X:-2 Y:4 Z:-2]
+[Builder picks up a green block at X:-2 Y:4 Z:-1]
+<Architect> my bad
+<Architect> wait
+<Architect> you removed the one that was correct
+[Builder puts down a green block at X:-2 Y:4 Z:-1]
+[Builder picks up a green block at X:-2 Y:5 Z:-1]
+[Builder puts down a green block at X:-2 Y:4 Z:-2]
+<Builder> like this?
+<Architect> not quite
+[Builder puts down a green block at X:-2 Y:5 Z:-2]
+[Builder picks up a green block at X:-2 Y:5 Z:-2]
+[Builder picks up a green block at X:-2 Y:4 Z:-2]
+<Architect> it's to the right of that newest green block
+[Builder picks up a green block at X:-2 Y:4 Z:-1]
+[Builder puts down a green block at X:-2 Y:4 Z:-1]
+[Builder puts down a green block at X:-3 Y:4 Z:-1]
+<Architect> yeah!
+<Architect> okay now go over to the other side of this thing
+<Architect> you see how there's a row of three green blocks here on the left?
+<Builder> yeah
+<Architect> we're going to put one last green block on the middle of that row, towards you
+[Builder puts down a green block at X:-3 Y:4 Z:1]
+<Builder> got it
+<Architect> perfect
+<Architect> let me check that everything is right
+<Architect> cool looks good!

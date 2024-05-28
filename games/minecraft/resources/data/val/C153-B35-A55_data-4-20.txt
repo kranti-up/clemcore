@@ -1,0 +1,132 @@
+B35-A55-C153-1524257976842
+<Builder> Mission has started.
+<Architect> okay so this one is only made of blue and purple blocks
+<Builder> ok
+<Architect> place 3 blue blocks in a horizontal line 2 spacs from any edge
+[Builder puts down a blue block at X:0 Y:1 Z:-3]
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+<Builder> this good?
+<Architect> yes
+<Architect> now place two blue blocks on top of the edges of the line
+[Builder puts down a blue block at X:0 Y:2 Z:-3]
+[Builder puts down a blue block at X:0 Y:2 Z:-1]
+<Architect> do it one more time
+[Builder puts down a blue block at X:0 Y:3 Z:-3]
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+<Architect> fill in the top gap between the blue
+[Builder puts down a blue block at X:0 Y:3 Z:-2]
+[Builder puts down a blue block at X:-1 Y:3 Z:-2]
+[Builder picks up a blue block at X:-1 Y:3 Z:-2]
+[Builder picks up a blue block at X:0 Y:3 Z:-2]
+[Builder puts down a blue block at X:0 Y:3 Z:-2]
+<Architect> place one blue block vertically diagonal from the top right block
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+[Builder picks up a blue block at X:0 Y:3 Z:0]
+<Architect> place one block two spaces left from the top left block
+<Architect> blue
+[Builder puts down a blue block at X:0 Y:3 Z:-4]
+[Builder puts down a blue block at X:0 Y:3 Z:-5]
+[Builder picks up a blue block at X:0 Y:3 Z:-4]
+<Architect> now place a blue block below the one you just deleted
+<Builder> i didn't delete a block
+<Architect> place one blue block to the left of the middle left blue block
+[Builder puts down a blue block at X:0 Y:2 Z:-4]
+<Architect> if you look at the O
+<Architect> yes
+<Architect> blue is done
+<Architect> now purple
+<Builder> coool
+[Builder puts down a purple block at X:-4 Y:1 Z:-4]
+[Builder puts down a purple block at X:-4 Y:1 Z:-1]
+[Builder picks up a purple block at X:-4 Y:1 Z:-1]
+[Builder picks up a purple block at X:-4 Y:1 Z:-4]
+<Architect> make a vertical line of height 7 two blocks to the right of the bottom right blue block
+<Architect> so it will be touching that diagonal blue block
+[Builder puts down a purple block at X:0 Y:1 Z:1]
+[Builder puts down a purple block at X:0 Y:2 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:4 Z:1]
+[Builder puts down a purple block at X:0 Y:5 Z:1]
+[Builder puts down a purple block at X:0 Y:6 Z:1]
+[Builder puts down a purple block at X:0 Y:7 Z:1]
+[Builder puts down a purple block at X:0 Y:8 Z:1]
+<Builder> ok
+[Builder picks up a purple block at X:0 Y:8 Z:1]
+<Architect> remember that green cross that you made?
+<Builder> ye
+<Architect> remake that thing out of purple, but vertical so that it touches the right of the line
+[Builder puts down a purple block at X:0 Y:6 Z:2]
+[Builder puts down a purple block at X:0 Y:6 Z:3]
+[Builder puts down a purple block at X:0 Y:7 Z:3]
+[Builder picks up a purple block at X:0 Y:6 Z:3]
+<Architect> starting at the ground
+[Builder picks up a purple block at X:0 Y:6 Z:2]
+[Builder picks up a purple block at X:0 Y:7 Z:3]
+[Builder puts down a purple block at X:0 Y:2 Z:2]
+[Builder puts down a purple block at X:0 Y:2 Z:0]
+<Architect> delete that left block
+[Builder picks up a purple block at X:0 Y:2 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:3]
+[Builder puts down a purple block at X:0 Y:1 Z:4]
+[Builder puts down a purple block at X:-1 Y:1 Z:4]
+[Builder puts down a purple block at X:0 Y:2 Z:4]
+[Builder picks up a purple block at X:-1 Y:1 Z:4]
+[Builder picks up a purple block at X:0 Y:1 Z:4]
+[Builder puts down a purple block at X:0 Y:2 Z:3]
+[Builder puts down a purple block at X:0 Y:3 Z:3]
+<Architect> leave that middle block but delete the rest
+[Builder picks up a purple block at X:0 Y:2 Z:2]
+[Builder picks up a purple block at X:0 Y:1 Z:3]
+[Builder picks up a purple block at X:0 Y:2 Z:4]
+[Builder picks up a purple block at X:0 Y:3 Z:3]
+<Architect> place one purple block diagonally right and down from that block you just left
+[Builder puts down a purple block at X:0 Y:1 Z:4]
+[Builder puts down a purple block at X:-1 Y:2 Z:3]
+[Builder puts down a purple block at X:-2 Y:2 Z:3]
+[Builder picks up a purple block at X:-2 Y:2 Z:3]
+[Builder picks up a purple block at X:-1 Y:2 Z:3]
+[Builder puts down a purple block at X:-1 Y:1 Z:4]
+[Builder puts down a purple block at X:-1 Y:2 Z:4]
+[Builder picks up a purple block at X:-1 Y:2 Z:4]
+[Builder picks up a purple block at X:-1 Y:1 Z:4]
+<Architect> place one purple block diagonally right and up from that block you just placed
+[Builder puts down a purple block at X:0 Y:2 Z:4]
+[Builder puts down a purple block at X:0 Y:3 Z:4]
+[Builder picks up a purple block at X:0 Y:2 Z:4]
+[Builder puts down a purple block at X:0 Y:3 Z:2]
+[Builder puts down a purple block at X:0 Y:1 Z:2]
+<Builder> did u want this
+<Architect> leave the top left one you placed but delete the other two
+[Builder picks up a purple block at X:0 Y:1 Z:2]
+<Builder> which other 1?
+<Builder> top right
+<Builder> or bottom right?
+<Architect> yes
+[Builder picks up a purple block at X:0 Y:3 Z:4]
+<Architect> place two blocks diagonally up and right from the block just right of the line
+[Builder puts down a purple block at X:0 Y:3 Z:3]
+[Builder puts down a purple block at X:0 Y:4 Z:3]
+[Builder picks up a purple block at X:0 Y:3 Z:3]
+[Builder puts down a purple block at X:0 Y:4 Z:4]
+[Builder puts down a purple block at X:0 Y:5 Z:4]
+[Builder picks up a purple block at X:0 Y:4 Z:4]
+<Architect> now place one block at the far right of the grid except one above the ground
+[Builder puts down a purple block at X:0 Y:1 Z:5]
+[Builder puts down a purple block at X:0 Y:2 Z:5]
+[Builder picks up a purple block at X:0 Y:1 Z:5]
+<Architect> 3 blocks left
+<Builder> coool
+<Architect> place one block to the right of the 2nd highest block of the line
+[Builder puts down a purple block at X:0 Y:6 Z:2]
+<Architect> now place one block diagonally up and right from that one
+[Builder puts down a purple block at X:0 Y:6 Z:3]
+[Builder puts down a purple block at X:0 Y:7 Z:3]
+[Builder picks up a purple block at X:0 Y:6 Z:3]
+<Architect> now place one bllock diagonally up and right from the top block of the line
+[Builder puts down a purple block at X:0 Y:7 Z:4]
+[Builder picks up a purple block at X:0 Y:7 Z:4]
+[Builder puts down a purple block at X:0 Y:8 Z:1]
+[Builder puts down a purple block at X:0 Y:8 Z:2]
+[Builder picks up a purple block at X:0 Y:8 Z:1]

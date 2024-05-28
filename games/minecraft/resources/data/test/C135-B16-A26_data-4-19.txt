@@ -1,0 +1,44 @@
+B16-A26-C135-1524154538127
+<Builder> Mission has started.
+<Builder> hi again!
+<Architect> Hello! This structure will start with a column of 5 purple bricks
+<Architect> It's all purple
+[Builder puts down a purple block at X:2 Y:1 Z:0]
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder puts down a purple block at X:2 Y:3 Z:0]
+[Builder puts down a purple block at X:2 Y:4 Z:0]
+[Builder puts down a purple block at X:2 Y:5 Z:0]
+<Architect> To the right of the top brick, add 4 more purple bricks
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+<Architect> Please add one more
+[Builder puts down a purple block at X:-2 Y:5 Z:0]
+<Architect> Great! This will be the basis of a right-turn arrow
+<Builder> alright!
+<Architect> So we'll add a diagonal of two purple bricks above and to the left of the rightmost brick
+[Builder puts down a purple block at X:-2 Y:5 Z:-1]
+[Builder puts down a purple block at X:-2 Y:6 Z:-1]
+[Builder picks up a purple block at X:-2 Y:5 Z:-1]
+<Architect> Maybe a better way to put it is, if you look at the middle brick of the top row, we want it to be the middle of a column of 5 bricks
+[Builder picks up a purple block at X:-2 Y:6 Z:-1]
+[Builder puts down a purple block at X:0 Y:6 Z:0]
+[Builder puts down a purple block at X:0 Y:7 Z:0]
+<Architect> Great!
+[Builder puts down a purple block at X:0 Y:8 Z:0]
+<Architect> oops, hang on
+[Builder picks up a purple block at X:0 Y:8 Z:0]
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+<Builder> this?
+<Architect> Yes!
+<Architect> Now remove every other brick of the column you just added
+[Builder picks up a purple block at X:0 Y:4 Z:0]
+<Architect> so that there are 3 bricks left, one space apart
+[Builder picks up a purple block at X:0 Y:6 Z:0]
+<Architect> Nice!
+[Builder puts down a purple block at X:-1 Y:6 Z:0]
+<Architect> You completed my thought
+<Architect> :)
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+[Builder picks up a purple block at X:-1 Y:4 Z:-1]

@@ -1,0 +1,79 @@
+B31-A41-C49-1523030061094
+<Builder> Mission has started.
+<Architect> Okay. We are going to make a red capital A in the center of the map.
+<Architect> It is three blocks wide, and four blocks high
+<Architect> So first put two red blocks, separated by a space, in the center of the map
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+<Architect> Then three more red blocks on top of each of those
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:3 Z:-1]
+[Builder puts down a red block at X:1 Y:4 Z:-1]
+<Architect> Then connect the top blocks and the blocks one space above the bottom with red blocks
+[Builder puts down a red block at X:0 Y:4 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+<Architect> Perfect
+<Architect> Now make a column of four yellow blocks on the right side of the A, touching the side of it
+[Builder puts down a yellow block at X:2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:2 Y:4 Z:-1]
+<Architect> Okay, now on the side behind the A from where you are, make a "loop" of yellow blocks that is three blocks high, connected to the yellow column
+<Architect> So the yellow will make a lowercase b
+<Builder> A loop up or down?
+[Builder puts down a yellow block at X:3 Y:3 Z:-1]
+[Builder puts down a yellow block at X:4 Y:3 Z:-1]
+[Builder puts down a yellow block at X:4 Y:1 Z:-1]
+[Builder puts down a yellow block at X:4 Y:2 Z:-1]
+[Builder puts down a yellow block at X:3 Y:1 Z:-1]
+<Builder> Like that?
+<Architect> Yes that's right, but needs to be rotated so it's perpendicular to the A and behind it
+[Builder picks up a yellow block at X:3 Y:3 Z:-1]
+[Builder picks up a yellow block at X:4 Y:3 Z:-1]
+[Builder picks up a yellow block at X:4 Y:2 Z:-1]
+[Builder picks up a yellow block at X:4 Y:1 Z:-1]
+[Builder picks up a yellow block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:2 Y:1 Z:-3]
+[Builder puts down a yellow block at X:2 Y:2 Z:-3]
+[Builder puts down a yellow block at X:2 Y:3 Z:-3]
+[Builder puts down a yellow block at X:2 Y:3 Z:-2]
+<Architect> Perfect
+<Builder> This way?
+<Architect> Okay now make a column of four blue blocks on the side of the b that is not touching the red A
+[Builder puts down a blue block at X:2 Y:1 Z:-4]
+[Builder puts down a blue block at X:2 Y:2 Z:-4]
+[Builder puts down a blue block at X:2 Y:3 Z:-4]
+[Builder puts down a blue block at X:2 Y:4 Z:-4]
+<Builder> This side?
+<Architect> Yes perfect
+<Architect> Now build out rows of two blocks on the top and bottom of that column, so they are parallel to the A
+[Builder puts down a blue block at X:1 Y:4 Z:-4]
+[Builder puts down a blue block at X:0 Y:4 Z:-4]
+[Builder puts down a blue block at X:1 Y:1 Z:-4]
+[Builder puts down a blue block at X:0 Y:1 Z:-4]
+<Architect> Great. Now make a column of four purple blocks next to the red A, on the front face of the A, on the right.
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:3 Z:0]
+[Builder picks up a purple block at X:-2 Y:3 Z:0]
+<Architect> We're going to make a lowercase d that closes the cube.
+<Builder> This side?
+[Builder picks up a purple block at X:-1 Y:2 Z:0]
+[Builder picks up a purple block at X:-1 Y:3 Z:0]
+<Architect> Other side
+[Builder picks up a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:-2]
+[Builder puts down a purple block at X:-1 Y:4 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+<Architect> Yes perfect. Now a loop three blocks high on the bottom
+[Builder puts down a purple block at X:-1 Y:3 Z:-3]
+[Builder puts down a purple block at X:-1 Y:3 Z:-4]
+[Builder puts down a purple block at X:-1 Y:1 Z:-4]
+[Builder puts down a purple block at X:-1 Y:1 Z:-3]
+[Builder puts down a purple block at X:-1 Y:2 Z:-4]
+<Architect> Great! We're done

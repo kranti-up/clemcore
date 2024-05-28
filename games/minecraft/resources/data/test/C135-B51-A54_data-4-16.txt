@@ -1,0 +1,38 @@
+B51-A54-C135-1523911028014
+<Builder> Mission has started.
+<Builder> rip me lol
+<Architect> Now with purple blocks
+<Architect> Starting from the middle would be best to fit it all in
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+<Architect> Do you have one with a darker shade of purple?
+<Builder> nope :-(
+<Architect> Oh wait nvm
+<Builder> lmao
+<Architect> make a pillar of 5 purples there
+[Builder puts down a purple block at X:0 Y:2 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+<Architect> including the one yous et
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+<Builder> like this
+<Architect> Yup
+<Builder> nice
+<Architect> Now on one of the four sides of the block (doesn't matter which) place four blocks in a line
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:-2 Y:1 Z:0]
+[Builder puts down a purple block at X:-3 Y:1 Z:0]
+[Builder puts down a purple block at X:-4 Y:1 Z:0]
+<Architect> Sorry, the top block
+[Builder picks up a purple block at X:-4 Y:1 Z:0]
+[Builder picks up a purple block at X:-3 Y:1 Z:0]
+[Builder picks up a purple block at X:-1 Y:1 Z:0]
+[Builder picks up a purple block at X:-2 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+[Builder puts down a purple block at X:-2 Y:5 Z:0]
+[Builder puts down a purple block at X:-3 Y:5 Z:0]
+<Architect> One more and it'll be right
+[Builder puts down a purple block at X:-4 Y:5 Z:0]
+<Architect> Okay, now add one above and below to the second from last block
+[Builder puts down a purple block at X:-3 Y:4 Z:0]
+[Builder puts down a purple block at X:-3 Y:6 Z:0]
+<Builder> gorgeous lol

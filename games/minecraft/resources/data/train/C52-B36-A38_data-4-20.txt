@@ -1,0 +1,127 @@
+B36-A38-C52-1524266430224
+<Builder> Mission has started.
+<Builder> hi
+<Architect> Hello
+<Architect> It looks like we are going to be building a couple 'T's and a weird frame
+<Builder> ok
+<Architect> In one of the corners, we are going to need a 5 block by 5 block square
+<Architect> We will only need the corners of this square if you don't want to put down all of the blocks
+<Builder> o ok
+<Builder> what color?
+<Architect> Sorry, it will be blue
+<Builder> ok
+[Builder puts down a blue block at X:5 Y:1 Z:-5]
+[Builder puts down a blue block at X:1 Y:1 Z:-5]
+[Builder puts down a blue block at X:5 Y:2 Z:-5]
+[Builder puts down a blue block at X:5 Y:3 Z:-5]
+[Builder puts down a blue block at X:5 Y:4 Z:-5]
+[Builder puts down a blue block at X:5 Y:5 Z:-5]
+[Builder picks up a blue block at X:5 Y:4 Z:-5]
+[Builder picks up a blue block at X:5 Y:3 Z:-5]
+[Builder picks up a blue block at X:5 Y:2 Z:-5]
+[Builder puts down a blue block at X:4 Y:5 Z:-5]
+[Builder puts down a blue block at X:3 Y:5 Z:-5]
+[Builder puts down a blue block at X:2 Y:5 Z:-5]
+[Builder puts down a blue block at X:1 Y:5 Z:-5]
+[Builder picks up a blue block at X:2 Y:5 Z:-5]
+[Builder picks up a blue block at X:3 Y:5 Z:-5]
+[Builder picks up a blue block at X:4 Y:5 Z:-5]
+<Architect> Sorry, I shpould have said that the square was horizontal on the ground
+<Builder> o it's ok
+[Builder picks up a blue block at X:1 Y:5 Z:-5]
+[Builder picks up a blue block at X:5 Y:5 Z:-5]
+[Builder puts down a blue block at X:5 Y:1 Z:-1]
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+<Architect> Now we just need to make each of the blue blocks 2 blocks taller
+<Builder> ok
+[Builder puts down a blue block at X:5 Y:2 Z:-1]
+[Builder puts down a blue block at X:5 Y:3 Z:-1]
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+[Builder puts down a blue block at X:1 Y:3 Z:-1]
+[Builder puts down a blue block at X:1 Y:2 Z:-5]
+[Builder puts down a blue block at X:1 Y:3 Z:-5]
+[Builder puts down a blue block at X:5 Y:1 Z:-4]
+[Builder picks up a blue block at X:5 Y:1 Z:-4]
+[Builder puts down a blue block at X:5 Y:2 Z:-5]
+[Builder puts down a blue block at X:5 Y:3 Z:-5]
+<Architect> Great, now we are going to make a 5 by 5 square on top of them, we will only need the corners.
+<Architect> Sorry, they should be orang
+<Builder> ok
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+[Builder puts down a orange block at X:5 Y:4 Z:-1]
+[Builder puts down a orange block at X:5 Y:4 Z:-5]
+[Builder puts down a orange block at X:1 Y:4 Z:-5]
+<Builder> like this?
+<Architect> Yup, one block above that, we are going to make a 3 by 3 square, we will only need the corners again.
+<Builder> ok
+<Builder> is the 3 x 3 square in the middle of the orange ones?
+[Builder puts down a green block at X:5 Y:5 Z:-5]
+[Builder puts down a green block at X:5 Y:5 Z:-4]
+<Architect> Yup, it should be concentric
+[Builder puts down a green block at X:4 Y:5 Z:-4]
+[Builder picks up a green block at X:5 Y:5 Z:-4]
+[Builder picks up a green block at X:5 Y:5 Z:-5]
+[Builder puts down a green block at X:4 Y:5 Z:-3]
+[Builder puts down a green block at X:4 Y:5 Z:-2]
+[Builder picks up a green block at X:4 Y:5 Z:-3]
+[Builder puts down a green block at X:3 Y:5 Z:-2]
+<Architect> Sorry, it should use orange blocks
+<Builder> o ok
+<Builder> idk why i thought it was green sorry lol
+[Builder picks up a green block at X:3 Y:5 Z:-2]
+[Builder picks up a green block at X:4 Y:5 Z:-2]
+[Builder puts down a green block at X:5 Y:5 Z:-1]
+<Architect> No worries
+[Builder picks up a green block at X:5 Y:5 Z:-1]
+[Builder puts down a orange block at X:5 Y:5 Z:-1]
+[Builder puts down a orange block at X:4 Y:5 Z:-1]
+[Builder puts down a orange block at X:4 Y:5 Z:-2]
+[Builder picks up a orange block at X:4 Y:5 Z:-1]
+[Builder picks up a orange block at X:5 Y:5 Z:-1]
+[Builder picks up a green block at X:4 Y:5 Z:-4]
+[Builder puts down a orange block at X:4 Y:5 Z:-3]
+[Builder puts down a orange block at X:4 Y:5 Z:-4]
+[Builder picks up a orange block at X:4 Y:5 Z:-3]
+[Builder puts down a orange block at X:3 Y:5 Z:-4]
+[Builder puts down a orange block at X:2 Y:5 Z:-4]
+[Builder picks up a orange block at X:3 Y:5 Z:-4]
+[Builder puts down a orange block at X:3 Y:5 Z:-2]
+[Builder puts down a orange block at X:2 Y:5 Z:-2]
+[Builder picks up a orange block at X:3 Y:5 Z:-2]
+<Architect> Ok, we will need on more in the middle. One block taller again
+<Builder> ok
+[Builder puts down a orange block at X:4 Y:6 Z:-2]
+[Builder puts down a orange block at X:3 Y:6 Z:-2]
+[Builder puts down a orange block at X:3 Y:6 Z:-3]
+[Builder picks up a orange block at X:3 Y:6 Z:-2]
+[Builder picks up a orange block at X:4 Y:6 Z:-2]
+<Architect> Ok, now go float between the two blue pillars to your right
+<Architect> If you turn around, we will need one green block that is one block away from the blue pillars on the ground.
+[Builder puts down a green block at X:3 Y:1 Z:0]
+<Builder> here?
+<Architect> Sorry, one more block back
+<Builder> o ok
+[Builder picks up a green block at X:3 Y:1 Z:0]
+[Builder puts down a green block at X:3 Y:1 Z:1]
+<Architect> Perfect, now we are going to make the T. we will need two more green blocks on top of it
+[Builder puts down a green block at X:3 Y:2 Z:1]
+[Builder puts down a green block at X:3 Y:3 Z:1]
+<Architect> Now we just need to add green blocks to the left and right sides of the top one
+[Builder puts down a green block at X:2 Y:3 Z:1]
+[Builder puts down a green block at X:4 Y:3 Z:1]
+<Architect> Perfect, now just float to the other side and look right
+<Architect> Sorry, I mean't of the T
+<Architect> if you stand right next to the T and look left
+<Architect> 4 blocks away from you, make another T.
+[Builder puts down a green block at X:-1 Y:1 Z:2]
+<Builder> here?
+<Architect> Yup
+<Builder> ok
+[Builder puts down a green block at X:-1 Y:2 Z:2]
+[Builder puts down a green block at X:-1 Y:3 Z:2]
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:3 Z:3]
+<Builder> like this?
+<Architect> Exactly, that should be all for this
+<Builder> greata
+<Builder> *great

@@ -1,0 +1,71 @@
+B53-A4-C122-1524152034663
+<Builder> Mission has started.
+<Architect> hi
+<Builder> Hello
+<Architect> ready to go???
+<Builder> Yes I am!
+<Architect> this is either a chicken or a gun turret
+<Architect> start with blue
+<Builder> Excellent
+<Architect> put a line of three down
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+<Architect> now parallel to that with one blank space add another line
+<Builder> Same color?
+<Architect> yep
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+<Architect> now put a single block on each middle one
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+<Architect> good. that's the feet/legs
+<Architect> now orange
+<Builder> Okay
+<Architect> a flat 3x3 square centered over the blue parts
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+<Builder> Like this?
+<Architect> great
+<Architect> now wings. two orange blocks in a row up and diagonal aaway from the body
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+[Builder picks up a orange block at X:1 Y:4 Z:0]
+<Builder> Is this the right place?
+<Architect> yep. now one more closer to you
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+[Builder picks up a orange block at X:1 Y:4 Z:-2]
+[Builder picks up a orange block at X:1 Y:4 Z:-1]
+<Architect> great now mirror it
+<Builder> Copy that
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+[Builder puts down a orange block at X:-1 Y:4 Z:-1]
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+[Builder puts down a orange block at X:-2 Y:4 Z:-1]
+[Builder picks up a orange block at X:-1 Y:4 Z:-1]
+[Builder picks up a orange block at X:-1 Y:4 Z:0]
+<Architect> now a single red block behind each of the wings. still in line with the oranges
+[Builder puts down a red block at X:-2 Y:4 Z:1]
+[Builder puts down a red block at X:2 Y:4 Z:1]
+<Architect> then a row of two yellow blocks on the orange side of the wings for the neck/head
+<Architect> juts out over the edge
+<Architect> parallel to the wings
+<Builder> Should they be right next to the wings?
+<Architect> centered. one block in the middle edge orange
+<Architect> then another block coming away from the body
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:0 Y:4 Z:-2]
+<Builder> Here?
+<Architect> awesome
+<Builder> Cool
+<Architect> that's it

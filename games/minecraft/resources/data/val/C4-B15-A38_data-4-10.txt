@@ -1,0 +1,42 @@
+B15-A38-C4-1523398777481
+<Builder> Mission has started.
+<Builder> ready!
+<Architect> Ok, this one looks sort of like a flower.
+<Architect> We are going to start with the stalk if that's good with you?
+<Builder> got it :)
+<Architect> We are going to need some space so head to the middle of one of the edges
+<Architect> Ok, make a v shape with 2 blocks from the point
+[Builder puts down a green block at X:-5 Y:1 Z:0]
+[Builder puts down a green block at X:-4 Y:1 Z:1]
+[Builder puts down a green block at X:-4 Y:1 Z:-1]
+[Builder puts down a green block at X:-3 Y:1 Z:-2]
+[Builder puts down a green block at X:-3 Y:1 Z:2]
+<Builder> like that?
+<Architect> Yup
+<Builder> okay!
+<Architect> Now make a 3 block long line going away from you
+[Builder puts down a green block at X:-4 Y:1 Z:0]
+[Builder puts down a green block at X:-3 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+<Builder> like that, or one shorter?
+<Architect> Thats good
+<Architect> Now we are going to have a + sign made of yellow blocks on the end of the line
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+<Builder> like that?
+<Architect> Yup, now punch out the middle block and put down a red one
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Builder> got it!
+<Architect> Cool, now add orange blocks to the corners to make a square
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+<Builder> ok!
+<Architect> Perfect!

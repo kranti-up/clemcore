@@ -1,0 +1,64 @@
+B44-A15-C130-1523895772697
+<Builder> Mission has started.
+<Architect> alright, start with a 3x3 hollow square of green blocks near the center
+[Builder puts down a green block at X:1 Y:1 Z:2]
+[Builder puts down a green block at X:0 Y:1 Z:2]
+[Builder picks up a green block at X:0 Y:1 Z:2]
+[Builder picks up a green block at X:1 Y:1 Z:2]
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+[Builder picks up a green block at X:-1 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+<Architect> now, a row of 3 green blocks above and to the right of the square, like a 3-wide staircase
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-2 Y:2 Z:0]
+[Builder picks up a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-2 Y:2 Z:-1]
+[Builder puts down a green block at X:-2 Y:2 Z:1]
+<Architect> continue that staircase with two more rows of green blocks
+[Builder puts down a green block at X:-3 Y:2 Z:0]
+[Builder puts down a green block at X:-3 Y:3 Z:0]
+[Builder puts down a green block at X:-4 Y:3 Z:0]
+[Builder puts down a green block at X:-4 Y:4 Z:0]
+[Builder picks up a green block at X:-3 Y:2 Z:0]
+[Builder picks up a green block at X:-4 Y:3 Z:0]
+[Builder puts down a green block at X:-3 Y:3 Z:-1]
+[Builder puts down a green block at X:-4 Y:4 Z:-1]
+[Builder puts down a green block at X:-3 Y:3 Z:1]
+[Builder puts down a green block at X:-4 Y:4 Z:1]
+<Architect> remove the center of the 2nd highest step
+[Builder picks up a green block at X:-3 Y:3 Z:0]
+<Architect> okay, good! diagonally from the closest left corner of the original square, place a blue block
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+[Builder puts down a blue block at X:2 Y:2 Z:-1]
+[Builder picks up a blue block at X:1 Y:2 Z:-1]
+<Architect> whoops, sorry, it should be on the ground
+[Builder picks up a blue block at X:2 Y:2 Z:-1]
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+<Architect> perfect! stack two more blue blocks on top of it
+[Builder puts down a blue block at X:2 Y:2 Z:-2]
+[Builder puts down a blue block at X:2 Y:3 Z:-2]
+<Architect> place another blue block on the ground in front of you, so it's diagonal from the other blue blocks, with a one tile gap
+[Builder puts down a blue block at X:1 Y:1 Z:-3]
+<Architect> yep! and extend that bottom row with one more block
+[Builder puts down a blue block at X:0 Y:1 Z:-3]
+<Architect> sorry, that should be one space closer to you
+[Builder picks up a blue block at X:0 Y:1 Z:-3]
+[Builder puts down a blue block at X:1 Y:1 Z:-4]
+<Architect> and diagonal, so one space to the right of that
+[Builder picks up a blue block at X:1 Y:1 Z:-4]
+[Builder puts down a blue block at X:0 Y:1 Z:-4]
+<Architect> yep!
+<Architect> make that last blue block a pillar of 3
+[Builder puts down a blue block at X:0 Y:2 Z:-4]
+[Builder puts down a blue block at X:0 Y:3 Z:-4]
+[Builder puts down a blue block at X:2 Y:3 Z:-3]
+[Builder puts down a blue block at X:1 Y:3 Z:-3]
+[Builder picks up a blue block at X:2 Y:3 Z:-3]
+<Architect> looks perfect! all done with this one
+<Builder> nice

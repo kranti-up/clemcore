@@ -1,0 +1,103 @@
+B29-A1-C152-1524081781433
+<Builder> Mission has started.
+<Architect> we are building a ballerina
+<Architect> near the center make a tower of four orange
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+<Architect> okay now add three more purple to the tower
+[Builder puts down a purple block at X:0 Y:5 Z:1]
+[Builder puts down a purple block at X:0 Y:6 Z:1]
+[Builder puts down a purple block at X:0 Y:7 Z:1]
+<Architect> finally add one yellow
+[Builder puts down a yellow block at X:0 Y:8 Z:1]
+<Architect> okay on the bottom most purple we will make a 3x3 parallel to the ground, this is the tutu
+<Architect> all purple
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+[Builder puts down a purple block at X:1 Y:5 Z:1]
+[Builder puts down a purple block at X:1 Y:5 Z:2]
+[Builder puts down a purple block at X:0 Y:5 Z:2]
+[Builder puts down a purple block at X:-1 Y:5 Z:2]
+[Builder puts down a purple block at X:-1 Y:5 Z:1]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+<Architect> add two blocks one on each side of the top most purple block, this is the shoulder
+[Builder puts down a purple block at X:0 Y:7 Z:0]
+[Builder puts down a purple block at X:0 Y:7 Z:2]
+<Architect> to add the right arm, we will use two orange blocks
+<Architect> it makes a cross with the head and the right shoulder
+[Builder puts down a orange block at X:0 Y:7 Z:-1]
+[Builder puts down a orange block at X:0 Y:7 Z:-2]
+<Architect> hm.. okay delete the right most orange block and place it on top of the first orange block you placed
+[Builder picks up a orange block at X:0 Y:7 Z:-2]
+[Builder puts down a orange block at X:0 Y:8 Z:-1]
+<Architect> okay making a left step add an orange block on the top most orange block
+<Architect> it kinda makes a bridge
+[Builder puts down a orange block at X:0 Y:9 Z:-1]
+[Builder picks up a orange block at X:0 Y:9 Z:-1]
+<Architect> yes
+<Architect> now delete the first orange block placed
+[Builder picks up a orange block at X:0 Y:7 Z:-1]
+<Architect> great
+[Builder picks up a purple block at X:0 Y:7 Z:2]
+[Builder puts down a purple block at X:0 Y:7 Z:2]
+<Architect> okay under the tutu place an orange block the opposite side from the arm you just made
+[Builder puts down a purple block at X:-1 Y:4 Z:1]
+[Builder picks up a purple block at X:-1 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:2]
+<Architect> yes the ballerina is dancing so her leg is bent
+[Builder puts down a orange block at X:0 Y:3 Z:2]
+[Builder puts down a orange block at X:0 Y:3 Z:3]
+[Builder picks up a orange block at X:0 Y:3 Z:2]
+[Builder puts down a orange block at X:0 Y:3 Z:2]
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+[Builder picks up a orange block at X:0 Y:3 Z:2]
+<Architect> yes like that
+<Architect> okay the other arm is parallel to the ground its also just two blocks
+[Builder puts down a orange block at X:0 Y:7 Z:3]
+[Builder puts down a orange block at X:0 Y:7 Z:4]
+<Architect> imagine the right arm but roated 90
+[Builder picks up a orange block at X:0 Y:7 Z:3]
+[Builder picks up a orange block at X:0 Y:7 Z:4]
+[Builder puts down a orange block at X:1 Y:7 Z:2]
+[Builder puts down a orange block at X:2 Y:7 Z:2]
+<Architect> almost
+[Builder picks up a orange block at X:2 Y:7 Z:2]
+[Builder picks up a orange block at X:1 Y:7 Z:2]
+<Architect> delete the second orange block
+[Builder puts down a orange block at X:1 Y:7 Z:2]
+[Builder puts down a orange block at X:1 Y:7 Z:3]
+[Builder puts down a orange block at X:2 Y:7 Z:3]
+[Builder picks up a orange block at X:1 Y:7 Z:3]
+<Architect> thats the correct shape but its oriented differently. rotate that clockwise
+[Builder picks up a orange block at X:2 Y:7 Z:3]
+[Builder puts down a orange block at X:2 Y:7 Z:2]
+[Builder picks up a orange block at X:2 Y:7 Z:2]
+[Builder picks up a orange block at X:1 Y:7 Z:2]
+[Builder puts down a orange block at X:0 Y:7 Z:3]
+[Builder picks up a orange block at X:0 Y:7 Z:3]
+[Builder puts down a orange block at X:0 Y:7 Z:3]
+[Builder puts down a orange block at X:0 Y:7 Z:4]
+[Builder puts down a orange block at X:-1 Y:7 Z:4]
+[Builder picks up a orange block at X:0 Y:7 Z:4]
+<Architect> okay lets go step by step. delete the second orange block
+[Builder puts down a orange block at X:0 Y:7 Z:4]
+[Builder picks up a orange block at X:0 Y:7 Z:4]
+[Builder picks up a orange block at X:-1 Y:7 Z:4]
+[Builder puts down a orange block at X:1 Y:7 Z:2]
+[Builder picks up a orange block at X:1 Y:7 Z:2]
+<Architect> place one more orange block towards you connecting with the one already placed
+[Builder puts down a orange block at X:1 Y:7 Z:3]
+<Architect> now delete the first block
+[Builder picks up a orange block at X:0 Y:7 Z:3]
+<Architect> now add one block connected to this orange block towards you
+[Builder puts down a orange block at X:1 Y:7 Z:2]
+[Builder puts down a orange block at X:1 Y:7 Z:3]
+[Builder picks up a orange block at X:1 Y:7 Z:2]
+[Builder puts down a orange block at X:2 Y:7 Z:3]
+[Builder puts down a orange block at X:2 Y:7 Z:2]
+[Builder picks up a orange block at X:2 Y:7 Z:3]
+<Architect> yes thats it

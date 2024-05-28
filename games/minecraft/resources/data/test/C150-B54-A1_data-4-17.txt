@@ -1,0 +1,94 @@
+B54-A1-C150-1523982123854
+<Builder> Mission has started.
+<Architect> his one is a mess.. its like a connect 4 game but only 4 wide 2 in leght and 4 in height
+[Builder puts down a blue block at X:3 Y:1 Z:0]
+[Builder puts down a blue block at X:3 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:2 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder picks up a blue block at X:1 Y:2 Z:-1]
+<Builder> Is the base solid like this?
+<Architect> thats 4 but yeah
+[Builder picks up a blue block at X:-1 Y:1 Z:0]
+[Builder picks up a blue block at X:-1 Y:1 Z:-1]
+<Architect> okay some rules about the blocks
+<Architect> at each level there are only four blocks
+<Architect> no two blocks are touching
+<Architect> two blocks are the same color
+<Architect> so there are two colors each level and on one side its one color and the other its another
+<Architect> the first two are red and yello
+[Builder puts down a red block at X:2 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+[Builder puts down a yellow block at X:3 Y:2 Z:0]
+<Architect> can you delete the blues?
+[Builder picks up a blue block at X:2 Y:1 Z:-1]
+[Builder picks up a blue block at X:3 Y:1 Z:-1]
+[Builder picks up a blue block at X:3 Y:1 Z:0]
+[Builder picks up a blue block at X:2 Y:1 Z:0]
+[Builder picks up a blue block at X:1 Y:1 Z:-1]
+[Builder picks up a blue block at X:1 Y:1 Z:0]
+[Builder picks up a blue block at X:0 Y:1 Z:-1]
+[Builder picks up a blue block at X:0 Y:1 Z:0]
+<Builder> Are they on the ground?
+<Architect> yes
+[Builder picks up a red block at X:0 Y:2 Z:-1]
+[Builder picks up a red block at X:2 Y:2 Z:-1]
+[Builder picks up a yellow block at X:1 Y:2 Z:0]
+[Builder picks up a yellow block at X:3 Y:2 Z:0]
+[Builder puts down a yellow block at X:3 Y:1 Z:-2]
+[Builder puts down a yellow block at X:1 Y:1 Z:-2]
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+<Architect> okay now its orange and green, the orange is on the same side of the red
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder picks up a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:3 Y:1 Z:-1]
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+[Builder picks up a orange block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:2 Y:2 Z:-2]
+[Builder picks up a yellow block at X:2 Y:1 Z:-2]
+[Builder puts down a green block at X:3 Y:2 Z:-2]
+[Builder picks up a green block at X:3 Y:2 Z:-2]
+[Builder picks up a yellow block at X:2 Y:2 Z:-2]
+[Builder puts down a yellow block at X:2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:2 Y:2 Z:-2]
+[Builder puts down a yellow block at X:2 Y:2 Z:-3]
+[Builder picks up a yellow block at X:2 Y:2 Z:-3]
+[Builder picks up a yellow block at X:2 Y:2 Z:-2]
+[Builder picks up a yellow block at X:2 Y:1 Z:-2]
+[Builder puts down a green block at X:2 Y:1 Z:-2]
+[Builder puts down a green block at X:2 Y:2 Z:-3]
+[Builder picks up a green block at X:2 Y:2 Z:-3]
+[Builder picks up a green block at X:2 Y:1 Z:-2]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:2 Z:-2]
+[Builder picks up a green block at X:0 Y:1 Z:-2]
+[Builder picks up a green block at X:-1 Y:1 Z:-2]
+<Architect> okay now its yellow and blue, yellow same side as the orange
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder puts down a blue block at X:1 Y:3 Z:-2]
+[Builder picks up a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:2 Y:3 Z:-2]
+[Builder puts down a blue block at X:3 Y:3 Z:-2]
+[Builder picks up a yellow block at X:2 Y:3 Z:-2]
+<Architect> finally its green and pruple. green is on the same side of the yellow
+[Builder puts down a green block at X:2 Y:4 Z:-1]
+[Builder puts down a green block at X:1 Y:4 Z:-1]
+[Builder puts down a green block at X:3 Y:4 Z:-1]
+[Builder picks up a green block at X:2 Y:4 Z:-1]
+[Builder puts down a green block at X:1 Y:4 Z:-2]
+[Builder puts down a purple block at X:2 Y:4 Z:-2]
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+[Builder picks up a green block at X:1 Y:4 Z:-2]
+<Architect> that looks correct

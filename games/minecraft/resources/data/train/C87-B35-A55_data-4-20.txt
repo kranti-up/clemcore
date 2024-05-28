@@ -1,0 +1,61 @@
+B35-A55-C87-1524258705962
+<Builder> Mission has started.
+<Architect> okay this one is only orange
+<Architect> place two orange blocks in a vertical line one spacde from any edge
+[Builder puts down a orange block at X:4 Y:1 Z:0]
+[Builder puts down a orange block at X:3 Y:1 Z:0]
+[Builder puts down a orange block at X:4 Y:2 Z:0]
+[Builder picks up a orange block at X:4 Y:2 Z:0]
+[Builder picks up a orange block at X:3 Y:1 Z:0]
+[Builder puts down a orange block at X:4 Y:2 Z:0]
+<Architect> oh sorry i meant horizontal
+[Builder picks up a orange block at X:4 Y:2 Z:0]
+[Builder puts down a orange block at X:3 Y:1 Z:0]
+<Architect> place one block on top of the right orange block
+[Builder puts down a orange block at X:3 Y:2 Z:0]
+<Architect> one block to the right of that one
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder picks up a orange block at X:3 Y:2 Z:-1]
+<Architect> one on top of that one
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+<Architect> and one to the right of that one
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+<Architect> now place a block 4 spaces to the right of the top right block
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder puts down a orange block at X:-3 Y:3 Z:0]
+[Builder picks up a orange block at X:-2 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+[Builder picks up a orange block at X:-1 Y:3 Z:0]
+<Builder> 1 more space?
+<Architect> no thats good
+<Architect> are there 3 blocks open inbetween?
+<Builder> yeah
+<Architect> good
+<Architect> now place one block in the middle of those two but one space vertically down
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder picks up a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder picks up a orange block at X:-1 Y:1 Z:0]
+<Architect> good
+<Architect> place one block 4 spaces above that one
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+[Builder puts down a orange block at X:-1 Y:5 Z:0]
+[Builder puts down a orange block at X:-1 Y:6 Z:0]
+[Builder picks up a orange block at X:-1 Y:5 Z:0]
+[Builder picks up a orange block at X:-1 Y:4 Z:0]
+[Builder picks up a orange block at X:-1 Y:3 Z:0]
+<Architect> good
+<Architect> place one block two spaces above the right most block
+[Builder puts down a orange block at X:-1 Y:6 Z:-1]
+[Builder puts down a orange block at X:-2 Y:6 Z:0]
+[Builder puts down a orange block at X:-3 Y:6 Z:0]
+[Builder picks up a orange block at X:-2 Y:6 Z:0]
+[Builder picks up a orange block at X:-1 Y:6 Z:-1]
+<Architect> one space lower please
+[Builder puts down a orange block at X:-3 Y:5 Z:0]
+[Builder picks up a orange block at X:-3 Y:6 Z:0]

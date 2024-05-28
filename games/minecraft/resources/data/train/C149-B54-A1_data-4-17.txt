@@ -1,0 +1,123 @@
+B54-A1-C149-1523980449895
+<Builder> Mission has started.
+<Architect> this one is like a flower in a small vase
+<Architect> start with the vase, the bottom is all red
+<Architect> make a 4x4 on the ground
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:-3]
+[Builder puts down a red block at X:0 Y:1 Z:-4]
+[Builder picks up a red block at X:0 Y:1 Z:-4]
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+[Builder puts down a red block at X:1 Y:1 Z:-3]
+[Builder puts down a red block at X:1 Y:2 Z:-3]
+[Builder picks up a red block at X:1 Y:2 Z:-3]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:1 Z:-3]
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+[Builder puts down a red block at X:-2 Y:1 Z:-2]
+[Builder puts down a red block at X:-2 Y:1 Z:-3]
+<Builder> Like this?
+<Architect> yes thats great
+<Architect> we are going to delete the red corners, but we are going to use them right now. place two purple blocks on top of each of the corners
+[Builder picks up a red block at X:-2 Y:1 Z:-3]
+[Builder picks up a red block at X:1 Y:1 Z:-3]
+[Builder picks up a red block at X:1 Y:1 Z:0]
+[Builder picks up a red block at X:-2 Y:1 Z:0]
+<Builder> On top of where the corners were or on top of the current 8 corners?
+[Builder puts down a purple block at X:0 Y:2 Z:0]
+[Builder picks up a purple block at X:0 Y:2 Z:0]
+<Architect> no i mean you could use the previous 4 corners
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder picks up a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:-2 Y:1 Z:0]
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+[Builder picks up a purple block at X:-2 Y:1 Z:0]
+<Builder> So kind of like this?
+<Architect> add one more
+<Architect> on top
+[Builder puts down a purple block at X:-2 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder picks up a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:-3]
+[Builder puts down a purple block at X:1 Y:2 Z:-3]
+[Builder puts down a purple block at X:1 Y:3 Z:-3]
+[Builder picks up a purple block at X:1 Y:1 Z:-3]
+[Builder puts down a purple block at X:-2 Y:1 Z:-3]
+[Builder puts down a purple block at X:-2 Y:2 Z:-3]
+[Builder puts down a purple block at X:-2 Y:3 Z:-3]
+[Builder picks up a purple block at X:-2 Y:1 Z:-3]
+<Architect> great
+<Architect> okay now we are going to connect the tops by two more purple blocks. each bridge should not be a 4x1
+[Builder puts down a purple block at X:0 Y:3 Z:-3]
+[Builder puts down a purple block at X:-1 Y:3 Z:-3]
+[Builder puts down a purple block at X:-2 Y:3 Z:-1]
+[Builder puts down a purple block at X:-2 Y:3 Z:-2]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+<Architect> almost... those are 4x1s...
+<Builder> Oh, sorry, I read that as should be...
+<Builder> So are they diagonal to the top purples?
+[Builder picks up a purple block at X:0 Y:3 Z:-3]
+[Builder picks up a purple block at X:-1 Y:3 Z:-3]
+[Builder picks up a purple block at X:-2 Y:3 Z:-2]
+[Builder picks up a purple block at X:-2 Y:3 Z:-1]
+[Builder picks up a purple block at X:-1 Y:3 Z:0]
+[Builder picks up a purple block at X:0 Y:3 Z:0]
+[Builder picks up a purple block at X:1 Y:3 Z:-1]
+<Architect> wait
+[Builder picks up a purple block at X:1 Y:3 Z:-2]
+<Architect> if you make that same bridge you could just place two more blocks one top of each bridge
+[Builder puts down a purple block at X:0 Y:3 Z:-3]
+[Builder puts down a purple block at X:-1 Y:3 Z:-3]
+[Builder puts down a purple block at X:0 Y:4 Z:-3]
+[Builder puts down a purple block at X:-1 Y:4 Z:-3]
+[Builder picks up a purple block at X:-1 Y:3 Z:-3]
+[Builder picks up a purple block at X:0 Y:3 Z:-3]
+<Builder> Like this?
+<Architect> yes thats great
+[Builder puts down a purple block at X:-2 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+[Builder puts down a purple block at X:-2 Y:4 Z:-2]
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+[Builder picks up a purple block at X:-2 Y:4 Z:0]
+[Builder puts down a purple block at X:1 Y:4 Z:-3]
+[Builder puts down a purple block at X:1 Y:4 Z:-2]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder picks up a purple block at X:1 Y:4 Z:-3]
+<Architect> okay now we are going to make the flower
+<Architect> starting with green
+<Architect> the bottom of the flower is not quite touching the bottom so place one green block anywhere in the vase
+[Builder puts down a green block at X:-1 Y:2 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder picks up a green block at X:-1 Y:2 Z:-1]
+<Architect> great
+<Architect> so now the flower is slanted so we will add steps to the right of the one you just placed
+[Builder picks up a purple block at X:-2 Y:4 Z:-1]
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+[Builder puts down a green block at X:-1 Y:4 Z:-2]
+[Builder puts down a green block at X:-1 Y:5 Z:-3]
+<Builder> Like this?
+<Architect> yes one more step
+[Builder puts down a green block at X:-1 Y:5 Z:-4]
+[Builder puts down a green block at X:-1 Y:6 Z:-4]
+[Builder picks up a green block at X:-1 Y:5 Z:-4]
+<Architect> okay on top of the last step make a t with five blue blocks
+<Builder> A vertical t, right? If so, should the horizontal line of the t be in the same plane as the body of the flower?
+<Architect> the t is horizontal
+[Builder puts down a blue block at X:-1 Y:7 Z:-4]
+[Builder puts down a blue block at X:0 Y:7 Z:-4]
+[Builder puts down a blue block at X:-1 Y:7 Z:-3]
+[Builder puts down a blue block at X:-2 Y:7 Z:-4]
+[Builder puts down a blue block at X:-1 Y:7 Z:-5]
+<Architect> awesome

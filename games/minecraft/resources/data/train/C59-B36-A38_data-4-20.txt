@@ -1,0 +1,43 @@
+B36-A38-C59-1524265213722
+<Builder> Mission has started.
+<Builder> hi
+<Architect> Hello
+<Architect> This is going to be a couple of hurdles.
+<Builder> that's fine
+<Architect> Ok, parrallel to this edge, we are going to have two red blocks, with 3 empty blocks between them
+<Builder> ok
+[Builder puts down a red block at X:3 Y:1 Z:-5]
+[Builder puts down a red block at X:-1 Y:1 Z:-5]
+<Architect> great, we just need to add a red block, then an orange block to each of them
+<Builder> on top?
+<Architect> On top, sorry.
+<Builder> ok sounds good
+[Builder puts down a red block at X:3 Y:2 Z:-5]
+[Builder puts down a red block at X:-1 Y:2 Z:-5]
+[Builder puts down a orange block at X:-1 Y:3 Z:-5]
+[Builder puts down a orange block at X:3 Y:3 Z:-5]
+<Architect> Now we just need 3 green blocks between them
+<Builder> ok
+[Builder puts down a green block at X:2 Y:3 Z:-5]
+[Builder puts down a green block at X:1 Y:3 Z:-5]
+[Builder puts down a green block at X:0 Y:3 Z:-5]
+<Architect> Good, lets start on the second hurdle
+<Builder> ok
+<Architect> It is going to be 3 empty blocks behind this one
+<Builder> does it look the same as the first one?
+<Architect> It is one block taller, and we replace the green blocks with yellow blocks
+<Builder> ok
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:3 Y:1 Z:-1]
+[Builder puts down a red block at X:3 Y:2 Z:-1]
+[Builder puts down a red block at X:3 Y:3 Z:-1]
+[Builder puts down a orange block at X:3 Y:4 Z:-1]
+[Builder puts down a orange block at X:-1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:2 Y:4 Z:-1]
+<Builder> like this?
+<Architect> Perfect, that should be everything for this one
+<Builder> great

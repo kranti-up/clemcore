@@ -1,0 +1,99 @@
+B53-A4-C90-1524153553448
+<Builder> Mission has started.
+<Architect> hi
+<Builder> yo
+<Architect> these are flowers/those windmill toys
+<Architect> start with orange stem
+<Builder> how tall?
+<Architect> pick that far left corner from you and 3 spaces in in both directions
+<Architect> five tall
+[Builder puts down a orange block at X:3 Y:1 Z:3]
+<Builder> So here?
+<Architect> yep
+[Builder puts down a orange block at X:3 Y:2 Z:3]
+[Builder puts down a orange block at X:3 Y:3 Z:3]
+[Builder puts down a orange block at X:3 Y:4 Z:3]
+[Builder puts down a orange block at X:3 Y:5 Z:3]
+<Architect> now a yellow on top
+[Builder puts down a yellow block at X:3 Y:6 Z:3]
+<Architect> now one block toward you put another yellow next to the top yellow
+[Builder puts down a yellow block at X:3 Y:6 Z:2]
+<Architect> good this is the "hub"
+<Architect> you're making a big X
+<Architect> two diagonal blocks in all directions
+<Builder> Also yellow?
+<Architect> yes
+<Builder> Alright, gimme a moment
+[Builder puts down a yellow block at X:3 Y:7 Z:2]
+[Builder puts down a yellow block at X:2 Y:7 Z:2]
+[Builder puts down a yellow block at X:4 Y:7 Z:2]
+[Builder picks up a yellow block at X:3 Y:7 Z:2]
+[Builder puts down a yellow block at X:2 Y:8 Z:2]
+[Builder puts down a yellow block at X:1 Y:8 Z:2]
+[Builder picks up a yellow block at X:2 Y:8 Z:2]
+[Builder puts down a yellow block at X:4 Y:8 Z:2]
+[Builder puts down a yellow block at X:5 Y:8 Z:2]
+[Builder picks up a yellow block at X:4 Y:8 Z:2]
+[Builder puts down a yellow block at X:3 Y:5 Z:2]
+[Builder puts down a yellow block at X:4 Y:5 Z:2]
+[Builder puts down a yellow block at X:2 Y:5 Z:2]
+[Builder picks up a yellow block at X:3 Y:5 Z:2]
+[Builder puts down a yellow block at X:5 Y:5 Z:2]
+[Builder puts down a yellow block at X:5 Y:4 Z:2]
+[Builder picks up a yellow block at X:5 Y:5 Z:2]
+[Builder puts down a yellow block at X:1 Y:5 Z:2]
+[Builder puts down a yellow block at X:1 Y:4 Z:2]
+[Builder picks up a yellow block at X:1 Y:5 Z:2]
+<Architect> well done
+<Builder> Thanks bud
+<Architect> now we're making the same structure with green and purple
+<Builder> Green for the step, purple for the flower?
+<Builder> Stem I mean
+<Architect> yep. the green column starts
+<Architect> four spaces toward you and four spaces to the right
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+<Builder> Here?
+<Architect> sorry three spaces to the right
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder picks up a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder picks up a green block at X:-1 Y:1 Z:-2]
+[Builder picks up a green block at X:-1 Y:1 Z:-1]
+<Builder> So then here
+<Architect> yes
+<Builder> Flower facing the same way?
+<Architect> five tall again
+[Builder puts down a green block at X:0 Y:2 Z:-1]
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+<Architect> yes
+[Builder puts down a green block at X:0 Y:4 Z:-1]
+[Builder puts down a green block at X:0 Y:5 Z:-1]
+[Builder puts down a purple block at X:0 Y:6 Z:-1]
+[Builder puts down a purple block at X:0 Y:6 Z:-2]
+[Builder puts down a purple block at X:0 Y:7 Z:-2]
+[Builder puts down a purple block at X:-1 Y:7 Z:-2]
+[Builder puts down a purple block at X:1 Y:7 Z:-2]
+[Builder picks up a purple block at X:0 Y:7 Z:-2]
+[Builder puts down a purple block at X:-2 Y:7 Z:-2]
+[Builder puts down a purple block at X:-2 Y:8 Z:-2]
+[Builder picks up a purple block at X:-2 Y:7 Z:-2]
+[Builder puts down a purple block at X:2 Y:7 Z:-2]
+[Builder puts down a purple block at X:2 Y:8 Z:-2]
+[Builder picks up a purple block at X:2 Y:7 Z:-2]
+[Builder puts down a purple block at X:0 Y:5 Z:-2]
+[Builder puts down a purple block at X:1 Y:5 Z:-2]
+[Builder picks up a purple block at X:0 Y:5 Z:-2]
+[Builder puts down a purple block at X:1 Y:4 Z:-2]
+[Builder puts down a purple block at X:2 Y:4 Z:-2]
+[Builder picks up a purple block at X:1 Y:4 Z:-2]
+[Builder puts down a purple block at X:0 Y:5 Z:-2]
+[Builder puts down a purple block at X:-1 Y:5 Z:-2]
+[Builder picks up a purple block at X:0 Y:5 Z:-2]
+[Builder puts down a purple block at X:-1 Y:4 Z:-2]
+[Builder puts down a purple block at X:-2 Y:4 Z:-2]
+[Builder picks up a green block at X:0 Y:4 Z:-1]
+[Builder puts down a green block at X:0 Y:4 Z:-1]
+[Builder picks up a purple block at X:-1 Y:4 Z:-2]
+<Architect> looks good
+<Builder> Excellent

@@ -1,0 +1,61 @@
+B38-A28-C45-1522944467345
+<Builder> Mission has started.
+<Builder> So what do we do?
+<Architect> alright
+<Architect> this ones for real
+<Builder> Ok
+<Architect> get green blocks and blue blocks
+<Builder> Yup
+<Architect> can you put 3 blue blocks in a row
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+[Builder puts down a blue block at X:-1 Y:1 Z:2]
+[Builder puts down a blue block at X:-2 Y:1 Z:2]
+<Builder> Ok
+<Architect> okay and put two blocks down from the first blue block you put down
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+<Architect> oh sorry i meant blue instead of creen
+<Builder> So what do we do?
+[Builder picks up a green block at X:0 Y:1 Z:0]
+[Builder picks up a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder picks up a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder picks up a green block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+<Architect> okay and then two blue blocks across from those
+<Builder> Sorry, the block swutches to whitchever one we removed
+[Builder puts down a blue block at X:-2 Y:1 Z:1]
+[Builder puts down a blue block at X:-2 Y:1 Z:0]
+<Architect> wait go back
+[Builder picks up a blue block at X:-2 Y:1 Z:0]
+[Builder picks up a blue block at X:-2 Y:1 Z:1]
+<Builder> here?
+[Builder puts down a blue block at X:-3 Y:1 Z:1]
+[Builder puts down a blue block at X:-3 Y:1 Z:0]
+<Architect> soryr no
+[Builder picks up a blue block at X:-3 Y:1 Z:1]
+[Builder picks up a blue block at X:-3 Y:1 Z:0]
+<Architect> actually yeah two blue blocks from originally where you put them
+<Architect> you were right
+[Builder puts down a blue block at X:-2 Y:1 Z:1]
+[Builder puts down a blue block at X:-2 Y:1 Z:-1]
+[Builder picks up a blue block at X:-2 Y:1 Z:-1]
+<Architect> yeah perfect
+<Architect> okay
+<Architect> and then
+<Builder> Ok, whats next?
+<Architect> put two green blocks in the middle of that c
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+<Architect> and then one more coming out
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+<Architect> and then one going up
+[Builder puts down a green block at X:-2 Y:1 Z:-1]
+<Architect> one more going up
+[Builder puts down a green block at X:-3 Y:1 Z:-1]
+<Architect> and then two to the left
+[Builder puts down a green block at X:-3 Y:1 Z:0]
+[Builder puts down a green block at X:-3 Y:1 Z:1]
+<Architect> NICE!

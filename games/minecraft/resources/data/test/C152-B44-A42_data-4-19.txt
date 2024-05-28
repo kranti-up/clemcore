@@ -1,0 +1,57 @@
+B44-A42-C152-1524178385730
+<Builder> Mission has started.
+<Builder> ready
+<Architect> ok looking over design
+<Architect> first build a 4x1orange column in the middle
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+<Architect> now place 1 orange block to the left of the 2nd and top blocks
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+<Architect> yep
+<Architect> now connect them with a block diagonally to the left
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder picks up a orange block at X:1 Y:3 Z:0]
+<Architect> yep
+<Architect> now build a 3x3 purple platform centered on top of the 4x1 column
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:5 Z:-2]
+[Builder picks up a purple block at X:1 Y:5 Z:-2]
+[Builder picks up a purple block at X:0 Y:5 Z:-2]
+[Builder puts down a purple block at X:1 Y:5 Z:-1]
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+[Builder puts down a purple block at X:1 Y:5 Z:1]
+[Builder puts down a purple block at X:0 Y:5 Z:1]
+[Builder puts down a purple block at X:-1 Y:5 Z:-1]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:1]
+<Architect> now build a 2x1 purple column in the center of the platform
+[Builder puts down a purple block at X:0 Y:6 Z:0]
+[Builder puts down a purple block at X:0 Y:7 Z:0]
+<Architect> now place a purple block on either side of the column so it looks like a T
+[Builder puts down a purple block at X:1 Y:7 Z:0]
+[Builder puts down a purple block at X:-1 Y:7 Z:0]
+<Architect> now place a yellow block on top of the T
+[Builder puts down a yellow block at X:0 Y:8 Z:0]
+<Architect> now place an orange block going diagonally up and to the right from the yellow block
+[Builder puts down a orange block at X:0 Y:9 Z:0]
+[Builder puts down a orange block at X:-1 Y:9 Z:0]
+[Builder picks up a orange block at X:0 Y:9 Z:0]
+<Architect> now place another orange going diagonally down and to the right from the 1 you just placed
+[Builder puts down a orange block at X:-2 Y:9 Z:0]
+[Builder puts down a orange block at X:-2 Y:8 Z:0]
+[Builder picks up a orange block at X:-2 Y:9 Z:0]
+<Architect> now place an orange going diagonally to the left and towrds you from the leftmost block on the T
+[Builder puts down a orange block at X:2 Y:7 Z:0]
+[Builder puts down a orange block at X:2 Y:7 Z:-1]
+[Builder picks up a orange block at X:2 Y:7 Z:0]
+<Architect> now place another orange going diagonally towrds you and to the right from the 1 you just placed
+[Builder puts down a orange block at X:2 Y:7 Z:-2]
+[Builder puts down a orange block at X:1 Y:7 Z:-2]
+[Builder picks up a orange block at X:2 Y:7 Z:-2]
+<Architect> yay were done!
+<Builder> looks crazy
+<Architect> yeah is easier when they resemble something

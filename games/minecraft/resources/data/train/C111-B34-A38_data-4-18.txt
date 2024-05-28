@@ -1,0 +1,95 @@
+B34-A38-C111-1524088829947
+<Builder> Mission has started.
+<Architect> Hello, do you have your blocks on hand?
+<Builder> yeah
+<Builder> how should we begin
+<Architect> Ok, we are building something that is going to look like a 3x3 rectangle.
+<Builder> ok
+<Architect> Can you make an elbow with 3 red blocks?
+<Builder> vertical, horizantal?
+<Builder> flat on the ground?
+<Architect> Lying flat on the ground
+<Architect> Yup
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+<Builder> like that?
+<Architect> Perfect, now just add a red block on top of the elbow's corner
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder picks up a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+<Architect> Sorry, can you shift the whole thing up by one block. I think the height matters.
+[Builder picks up a red block at X:0 Y:2 Z:-1]
+[Builder picks up a red block at X:0 Y:1 Z:-1]
+[Builder picks up a red block at X:0 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder picks up a red block at X:1 Y:2 Z:-2]
+[Builder puts down a red block at X:0 Y:3 Z:-1]
+[Builder picks up a red block at X:-1 Y:1 Z:-1]
+<Builder> height does matter
+<Architect> Ok, to the right of that, can you make the same design, except upside down and in yellow?
+<Builder> what direction
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+[Builder puts down a yellow block at X:0 Y:5 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:5 Z:-1]
+<Builder> like that?
+<Architect> Sort of, it should have the block nearest to you rest on the right block of the red one
+<Builder> which red block?
+<Architect> The red block just to the right of where you are looking
+[Builder picks up a yellow block at X:0 Y:4 Z:-1]
+[Builder picks up a yellow block at X:0 Y:5 Z:-2]
+[Builder picks up a yellow block at X:0 Y:5 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+<Builder> so like that?
+<Architect> Sorry, can you rotate it 90 degrees, so that it is 3 blocks wide, and flush on the far side?
+[Builder picks up a yellow block at X:-1 Y:3 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:0]
+[Builder picks up a yellow block at X:-1 Y:2 Z:0]
+[Builder picks up a yellow block at X:-2 Y:3 Z:0]
+<Builder> how about this
+<Builder> tell me one block at a time
+<Builder> and what direction
+<Architect> Ok, there should be a yellow block in the elbow you see on the left.
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+<Builder> there?
+<Architect> Yup,
+<Builder> ok, now direct me using my perspective
+<Builder> I wont move
+<Builder> off of that yellow block, where should I build?
+<Architect> Ok, can you add a yellow block to the left of that one
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+<Architect> And one more beneath it
+[Builder puts down a yellow block at X:-2 Y:2 Z:-1]
+<Architect> And finally, on the other side. add another yellow block to the corner of the elbow
+[Builder puts down a yellow block at X:-2 Y:3 Z:-2]
+<Architect> Perfect, can you go to other side?
+<Architect> Under the closest yellow block, can you put a green block
+[Builder puts down a green block at X:-2 Y:2 Z:-2]
+<Builder> in front of and behind work as commands too
+[Builder picks up a green block at X:-2 Y:2 Z:-2]
+[Builder puts down a green block at X:-2 Y:2 Z:-2]
+[Builder puts down a green block at X:-2 Y:2 Z:-3]
+[Builder picks up a green block at X:-2 Y:2 Z:-3]
+<Architect> Can you add a green block to the green and yellow blocks
+[Builder puts down a green block at X:-2 Y:3 Z:-3]
+[Builder puts down a green block at X:-2 Y:2 Z:-3]
+<Builder> like that?
+[Builder puts down a green block at X:-1 Y:2 Z:-3]
+<Architect> Yup, just like that
+<Builder> what is the last color?
+<Architect> Now we just need to use orange
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:-3]
+[Builder puts down a orange block at X:-1 Y:3 Z:-3]
+[Builder puts down a orange block at X:0 Y:3 Z:-3]
+<Builder> yes?
+<Architect> Perfect
+<Builder> great

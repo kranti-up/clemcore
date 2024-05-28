@@ -1,0 +1,36 @@
+B20-A30-C64-1523460019668
+<Builder> Mission has started.
+<Architect> this looks like a torch
+<Builder> how big
+<Architect> 5x1
+<Architect> in the very middle, build a tower of 6 red blocks
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+[Builder puts down a red block at X:0 Y:3 Z:-2]
+[Builder puts down a red block at X:0 Y:4 Z:-2]
+[Builder puts down a red block at X:0 Y:5 Z:-2]
+[Builder puts down a red block at X:0 Y:6 Z:-2]
+<Architect> now make it into a T by adding 2 block on either side of the top
+[Builder puts down a red block at X:-1 Y:6 Z:-2]
+[Builder puts down a red block at X:1 Y:6 Z:-2]
+<Architect> add another on either side
+[Builder puts down a red block at X:-2 Y:6 Z:-2]
+[Builder puts down a red block at X:2 Y:6 Z:-2]
+<Architect> now add one red block at the inner corners
+[Builder puts down a red block at X:1 Y:5 Z:-2]
+[Builder puts down a red block at X:-1 Y:5 Z:-2]
+<Architect> good! now we will make the flame
+<Architect> on the top of the base, build a line of 3 orange blocks
+[Builder puts down a orange block at X:1 Y:7 Z:-2]
+[Builder puts down a orange block at X:0 Y:7 Z:-2]
+[Builder puts down a orange block at X:-1 Y:7 Z:-2]
+<Architect> and on top of that build 2 orange blocks off to the right side
+[Builder puts down a orange block at X:-1 Y:8 Z:-2]
+[Builder puts down a orange block at X:-2 Y:8 Z:-2]
+<Builder> like this?
+<Architect> move the outermost orange block to the inside, sorry
+[Builder picks up a orange block at X:-2 Y:8 Z:-2]
+[Builder puts down a orange block at X:0 Y:8 Z:-2]
+<Architect> yes! now add onr orange block to the outermmost ornage block so it builds a stack of 3
+[Builder puts down a orange block at X:-1 Y:9 Z:-2]
+<Architect> thats it!

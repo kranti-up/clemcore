@@ -1,0 +1,85 @@
+B44-A42-C141-1524175959273
+<Builder> Mission has started.
+<Builder> ready
+<Architect> ok i need to look at this thing for a second
+<Architect> first build a yellow column 6 blocks tall near the middle
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+[Builder puts down a yellow block at X:0 Y:5 Z:0]
+[Builder puts down a yellow block at X:0 Y:6 Z:0]
+<Architect> yep
+<Architect> now build a 2 block tall column on the left side
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+<Architect> now add 1 more yellow block to the left of that on the ground
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+<Architect> break the first block on the 6 tall column
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+<Architect> on the 3rd block from the ground add a yellow block on the right side of the column
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder picks up a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:4 Z:0]
+<Builder> there?
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder picks up a yellow block at X:-1 Y:4 Z:0]
+[Builder puts down a yellow block at X:-1 Y:4 Z:0]
+[Builder picks up a yellow block at X:-1 Y:3 Z:0]
+<Architect> yeah now place 2 more yellow on top of that
+[Builder puts down a yellow block at X:-1 Y:5 Z:0]
+[Builder puts down a yellow block at X:-1 Y:6 Z:0]
+<Architect> actually break the top block and put it on the bottom of the stack you just made
+[Builder picks up a yellow block at X:-1 Y:6 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+<Architect> yep
+<Architect> now place a blue block on the lowest block of the main column
+[Builder puts down a blue block at X:0 Y:2 Z:-1]
+<Architect> yep
+<Architect> now place 1 more on the ground away from it so it makes a staircase
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+<Architect> now mirror that on the other side
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+<Builder> mirror both blue blocks on the other side?
+<Architect> yep
+[Builder picks up a yellow block at X:1 Y:1 Z:0]
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+[Builder picks up a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+<Builder> ok
+<Architect> now place a purple block on your side top block of the 3x1 stack
+[Builder puts down a purple block at X:-1 Y:5 Z:-1]
+<Architect> yep same on other side
+[Builder puts down a purple block at X:-1 Y:5 Z:1]
+<Architect> now 1 purple going up and to the right away from the purple block on your side
+<Architect> so that only the corners touch
+[Builder puts down a purple block at X:-2 Y:5 Z:0]
+[Builder puts down a purple block at X:-2 Y:6 Z:0]
+[Builder picks up a purple block at X:-2 Y:5 Z:0]
+<Architect> close
+[Builder puts down a purple block at X:-2 Y:6 Z:-1]
+[Builder puts down a purple block at X:-2 Y:6 Z:-2]
+[Builder picks up a purple block at X:-2 Y:6 Z:-1]
+[Builder picks up a purple block at X:-2 Y:6 Z:0]
+<Architect> yep
+<Builder> that would be 1 up, right, toward, not away from me
+<Builder> do you want me to mirror that block too?
+<Architect> yeah but going to the left so itd be behind that yellow block
+[Builder puts down a purple block at X:-1 Y:5 Z:2]
+[Builder puts down a purple block at X:0 Y:5 Z:2]
+[Builder puts down a purple block at X:0 Y:6 Z:2]
+[Builder picks up a purple block at X:0 Y:5 Z:2]
+[Builder picks up a purple block at X:-1 Y:5 Z:2]
+<Architect> yep
+<Builder> that was a bit unclear
+<Architect> sorry
+<Builder> like if you could say behidn which yellow block
+<Builder> like the top most yellow block in the main column
+<Architect> ok will do that
+<Architect> from the top most block in the main column place 1 red block going diagonally up and to the left
+[Builder puts down a red block at X:1 Y:6 Z:0]
+[Builder puts down a red block at X:1 Y:7 Z:0]
+[Builder picks up a red block at X:1 Y:6 Z:0]
+<Architect> all done
+<Builder> nice

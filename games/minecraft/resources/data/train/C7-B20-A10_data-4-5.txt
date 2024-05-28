@@ -1,0 +1,69 @@
+B20-A10-C7-1522942426640
+<Builder> Mission has started.
+<Architect> okay, so the footprint of this is just 1 by 7
+<Architect> then it is built vertically from there
+<Architect> it is floating, so you'll need to put some blocks down to have a starting point
+[Builder puts down a red block at X:1 Y:1 Z:-3]
+<Architect> put a row of three orange blocks down
+[Builder puts down a orange block at X:1 Y:2 Z:-3]
+[Builder puts down a orange block at X:0 Y:2 Z:-3]
+[Builder puts down a orange block at X:2 Y:2 Z:-3]
+[Builder picks up a red block at X:1 Y:1 Z:-3]
+<Architect> orange again on top of either end
+[Builder puts down a orange block at X:0 Y:3 Z:-3]
+[Builder puts down a orange block at X:2 Y:3 Z:-3]
+<Architect> then a row of seven on top of that, but starting from the left of this structure
+[Builder puts down a orange block at X:2 Y:4 Z:-3]
+[Builder puts down a orange block at X:1 Y:4 Z:-3]
+[Builder puts down a orange block at X:0 Y:4 Z:-3]
+<Architect> yep!
+[Builder puts down a orange block at X:-1 Y:4 Z:-3]
+[Builder puts down a orange block at X:-2 Y:4 Z:-3]
+[Builder puts down a orange block at X:-3 Y:4 Z:-3]
+[Builder puts down a orange block at X:-4 Y:4 Z:-3]
+<Builder> will there be enough room?
+<Architect> now, recreate the hollow square on the other side. and yes!
+[Builder puts down a orange block at X:0 Y:5 Z:-3]
+<Architect> oh sorry the right
+[Builder picks up a orange block at X:0 Y:5 Z:-3]
+<Architect> not the top
+[Builder puts down a orange block at X:-4 Y:5 Z:-3]
+<Builder> here?
+<Architect> down
+[Builder picks up a orange block at X:-4 Y:5 Z:-3]
+[Builder puts down a orange block at X:-2 Y:3 Z:-3]
+[Builder puts down a orange block at X:-2 Y:2 Z:-3]
+[Builder puts down a orange block at X:-4 Y:3 Z:-3]
+[Builder puts down a orange block at X:-4 Y:2 Z:-3]
+[Builder puts down a orange block at X:-3 Y:2 Z:-3]
+<Architect> and remove the inner corner of the square you just built
+[Builder picks up a orange block at X:-2 Y:4 Z:-3]
+<Architect> so the bottom left of the one you just built
+[Builder picks up a orange block at X:-2 Y:2 Z:-3]
+[Builder puts down a orange block at X:-2 Y:4 Z:-3]
+<Architect> yeah! now going up, you're making a v of red blocks.
+[Builder puts down a red block at X:-1 Y:5 Z:-3]
+<Architect> so put a red block on top in the center. and put reds on each edge, in the same plane as teh orange blocks
+[Builder puts down a red block at X:-2 Y:5 Z:-3]
+[Builder puts down a red block at X:0 Y:5 Z:-3]
+<Builder> up one? or there?
+<Architect> building upward. so yes, up one.
+[Builder puts down a red block at X:0 Y:6 Z:-3]
+[Builder picks up a red block at X:0 Y:5 Z:-3]
+[Builder puts down a red block at X:-2 Y:6 Z:-3]
+[Builder picks up a red block at X:-2 Y:5 Z:-3]
+<Architect> and then repeat that outward twice more
+[Builder puts down a red block at X:-2 Y:7 Z:-3]
+[Builder puts down a red block at X:-3 Y:7 Z:-3]
+[Builder picks up a red block at X:-2 Y:7 Z:-3]
+[Builder puts down a red block at X:-3 Y:8 Z:-3]
+[Builder puts down a red block at X:-4 Y:8 Z:-3]
+[Builder picks up a red block at X:-3 Y:8 Z:-3]
+<Architect> yep!
+[Builder puts down a red block at X:0 Y:7 Z:-3]
+[Builder puts down a red block at X:1 Y:7 Z:-3]
+[Builder picks up a red block at X:0 Y:7 Z:-3]
+[Builder puts down a red block at X:1 Y:8 Z:-3]
+[Builder puts down a red block at X:2 Y:8 Z:-3]
+[Builder picks up a red block at X:1 Y:8 Z:-3]
+<Architect> cool cool

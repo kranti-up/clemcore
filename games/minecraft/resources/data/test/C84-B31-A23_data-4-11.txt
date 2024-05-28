@@ -1,0 +1,29 @@
+B31-A23-C84-1523475405450
+<Builder> Mission has started.
+<Architect> how were those instructions?
+<Builder> Good
+<Architect> sweet. we are building a blue and yellow trident.
+<Architect> first, you need three blue block stacked in the center
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:0 Y:2 Z:-1]
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+<Architect> then off the the top block, stack two on opposite sides.
+<Builder> what color?
+<Architect> so the top row will have a total of five blue blocks across
+[Builder puts down a blue block at X:-1 Y:3 Z:-1]
+[Builder puts down a blue block at X:-2 Y:3 Z:-1]
+[Builder puts down a blue block at X:1 Y:3 Z:-1]
+[Builder puts down a blue block at X:2 Y:3 Z:-1]
+<Architect> perfect
+<Architect> color-yellow next
+<Builder> got it
+<Architect> two yellow stacked on the center, and two stacked on the ends.
+[Builder puts down a yellow block at X:0 Y:3 Z:-2]
+[Builder picks up a yellow block at X:0 Y:3 Z:-2]
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+[Builder puts down a yellow block at X:2 Y:4 Z:-1]
+[Builder puts down a yellow block at X:2 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:5 Z:-1]
+<Architect> done!

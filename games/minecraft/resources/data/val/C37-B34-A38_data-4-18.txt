@@ -1,0 +1,95 @@
+B34-A38-C37-1524090913676
+<Builder> Mission has started.
+<Architect> It looks like we are making two walls, with an s in them. They are facing each other
+<Architect> Can you make a line of 4 red blocks?
+<Builder> on the ground?
+<Architect> Yes
+<Builder> right in the middle or somewhat close to an edge?
+<Architect> Close to an edge, sorry
+[Builder puts down a red block at X:4 Y:1 Z:1]
+[Builder puts down a red block at X:4 Y:1 Z:0]
+[Builder puts down a red block at X:4 Y:1 Z:-1]
+[Builder puts down a red block at X:4 Y:1 Z:-2]
+<Builder> like that?
+<Architect> Yup, on top of the two ends, can you make two orange pillars that are 5 blocks tall
+[Builder puts down a orange block at X:4 Y:2 Z:-2]
+[Builder puts down a orange block at X:4 Y:3 Z:-2]
+[Builder puts down a orange block at X:4 Y:4 Z:-2]
+[Builder puts down a orange block at X:4 Y:5 Z:-2]
+[Builder puts down a orange block at X:4 Y:6 Z:-2]
+[Builder puts down a orange block at X:4 Y:2 Z:1]
+[Builder puts down a orange block at X:4 Y:3 Z:1]
+[Builder puts down a orange block at X:4 Y:4 Z:1]
+[Builder puts down a orange block at X:4 Y:5 Z:1]
+[Builder puts down a orange block at X:4 Y:6 Z:1]
+<Architect> Cool, can you make a red bar like the one on the bottom, on top of the orange pilalrs.
+[Builder puts down a red block at X:4 Y:7 Z:1]
+[Builder puts down a red block at X:4 Y:7 Z:-2]
+[Builder puts down a red block at X:4 Y:7 Z:-1]
+[Builder puts down a red block at X:4 Y:7 Z:0]
+<Builder> is it filled in?
+<Architect> Yes, it should have a s made of yellow blocks inside of it
+[Builder puts down a yellow block at X:4 Y:6 Z:0]
+[Builder puts down a yellow block at X:4 Y:4 Z:0]
+[Builder puts down a yellow block at X:4 Y:2 Z:0]
+[Builder puts down a yellow block at X:4 Y:4 Z:-1]
+[Builder puts down a yellow block at X:4 Y:6 Z:-1]
+[Builder puts down a yellow block at X:4 Y:2 Z:-1]
+[Builder puts down a yellow block at X:4 Y:5 Z:-1]
+[Builder puts down a yellow block at X:4 Y:3 Z:0]
+<Architect> Yup
+<Architect> Just put a red block in the empty space
+[Builder puts down a red block at X:4 Y:5 Z:0]
+[Builder puts down a red block at X:4 Y:3 Z:-1]
+<Architect> 6 blocks away from that, can you make a line of 4 green blocks, parrallel to the wall
+<Architect> On the ground, sorry
+[Builder puts down a green block at X:-2 Y:1 Z:-2]
+[Builder puts down a green block at X:-3 Y:1 Z:-2]
+[Builder picks up a green block at X:-3 Y:1 Z:-2]
+[Builder puts down a green block at X:-3 Y:1 Z:-2]
+[Builder picks up a green block at X:-2 Y:1 Z:-2]
+[Builder puts down a green block at X:-3 Y:1 Z:-1]
+[Builder puts down a green block at X:-3 Y:1 Z:0]
+<Architect> Sorry, one block closer.
+[Builder puts down a green block at X:-2 Y:1 Z:-3]
+[Builder puts down a green block at X:-2 Y:1 Z:-2]
+[Builder picks up a green block at X:-2 Y:1 Z:-3]
+[Builder puts down a green block at X:-2 Y:1 Z:1]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:1 Z:-1]
+[Builder picks up a green block at X:-3 Y:1 Z:-2]
+[Builder picks up a green block at X:-3 Y:1 Z:-1]
+[Builder picks up a green block at X:-3 Y:1 Z:0]
+[Builder picks up a green block at X:-3 Y:1 Z:1]
+<Builder> is it symmetric?
+<Architect> It should look like a copy, except the yellow is purple, the red is green, and the orange is blue
+[Builder puts down a blue block at X:-2 Y:2 Z:1]
+[Builder puts down a blue block at X:-2 Y:2 Z:-2]
+[Builder puts down a blue block at X:-2 Y:3 Z:-2]
+<Builder> lmk the orientation of the S from my perspective
+[Builder puts down a blue block at X:-2 Y:4 Z:-2]
+[Builder puts down a blue block at X:-2 Y:3 Z:1]
+[Builder puts down a blue block at X:-2 Y:4 Z:1]
+[Builder puts down a blue block at X:-2 Y:5 Z:1]
+[Builder puts down a blue block at X:-2 Y:6 Z:1]
+[Builder puts down a blue block at X:-2 Y:5 Z:-2]
+[Builder puts down a blue block at X:-2 Y:6 Z:-2]
+[Builder puts down a green block at X:-2 Y:7 Z:-2]
+[Builder puts down a green block at X:-2 Y:7 Z:-1]
+[Builder puts down a green block at X:-2 Y:7 Z:0]
+[Builder puts down a green block at X:-2 Y:7 Z:1]
+[Builder puts down a purple block at X:-2 Y:6 Z:0]
+[Builder puts down a purple block at X:-2 Y:6 Z:-1]
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+[Builder puts down a purple block at X:-2 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+[Builder puts down a purple block at X:-2 Y:2 Z:-1]
+<Architect> the empty top should be in the upper left
+<Builder> should it look like an S or a 2 from my view?
+<Architect> like a 2
+[Builder puts down a green block at X:-2 Y:5 Z:0]
+[Builder puts down a green block at X:-2 Y:3 Z:-1]
+[Builder puts down a purple block at X:-2 Y:5 Z:-1]
+[Builder puts down a purple block at X:-2 Y:3 Z:0]
+<Builder> like that?
+<Architect> Yup, perfect.

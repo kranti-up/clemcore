@@ -1,0 +1,114 @@
+B38-A28-C24-1522948212262
+<Builder> Mission has started.
+<Builder> Hello
+<Architect> hey
+<Architect> alright can you go into the center
+<Architect> can you make a 3x3 red square
+<Builder> this looks center-ish, right?
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder picks up a red block at X:1 Y:2 Z:-1]
+<Builder> yyp
+<Architect> yeah
+<Architect> can you punch out the center
+[Builder picks up a red block at X:0 Y:1 Z:0]
+<Builder> ok
+<Architect> okay so what we're doing is just building rings on top of this red one
+<Builder> Cool, which colors?
+<Architect> so can you build a yellow ring on top of this
+[Builder puts down a yellow block at X:1 Y:2 Z:1]
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+<Architect> and then anothre layer of yellow
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+<Architect> and then orange and then red
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-2]
+[Builder puts down a orange block at X:-1 Y:4 Z:1]
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+[Builder puts down a orange block at X:-1 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+[Builder picks up a orange block at X:2 Y:4 Z:1]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:5 Z:1]
+[Builder puts down a red block at X:0 Y:5 Z:1]
+[Builder puts down a red block at X:1 Y:5 Z:1]
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+[Builder puts down a red block at X:-1 Y:5 Z:-1]
+[Builder puts down a red block at X:0 Y:5 Z:-1]
+[Builder puts down a red block at X:1 Y:5 Z:0]
+[Builder puts down a red block at X:1 Y:5 Z:-1]
+<Builder> Nifty, anything else?
+<Architect> oh it's a orange ring at the the bottom not red
+[Builder picks up a red block at X:1 Y:1 Z:-1]
+[Builder picks up a red block at X:1 Y:1 Z:0]
+[Builder picks up a red block at X:1 Y:1 Z:1]
+[Builder picks up a red block at X:0 Y:1 Z:1]
+[Builder picks up a red block at X:-1 Y:1 Z:1]
+[Builder picks up a red block at X:-1 Y:1 Z:0]
+[Builder picks up a red block at X:-1 Y:1 Z:-1]
+[Builder picks up a red block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+<Builder> Should there be a red ring below that?
+<Architect> and there's a center orange block on the bottom too
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+<Architect> nah that's good
+<Builder> Ok
+<Architect> alright
+<Architect> can you put a purple block coming out of the center yellow ring
+<Architect> the one two blocks up from the ground
+<Builder> there are two rings in the center?
+<Builder> or from both rings?
+<Architect> the center is good
+<Architect> i just meant from the outside
+<Builder> Sorry, I was asking if the two blocks extend from the yellow rings
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+<Builder> Oh wait,
+<Architect> this is good
+<Builder> My bad, I misread that
+<Architect> all good
+<Architect> put a purple block in front of that one too
+[Builder puts down a purple block at X:0 Y:2 Z:-3]
+<Architect> okay and then go up one
+[Builder puts down a purple block at X:0 Y:3 Z:-3]
+<Architect> and then up again
+[Builder puts down a purple block at X:0 Y:4 Z:-3]
+<Builder> any more up?
+<Architect> and then one last one to make it like a handle
+[Builder puts down a purple block at X:0 Y:5 Z:-3]
+<Architect> (across)
+[Builder picks up a purple block at X:0 Y:5 Z:-3]
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+<Builder> Sorry
+<Architect> yeah we're good
+<Builder> Cool, its a mug
+<Architect> nah my bad i kinda gave confusing directions
+<Architect> and i gave you the wrong colors too haha

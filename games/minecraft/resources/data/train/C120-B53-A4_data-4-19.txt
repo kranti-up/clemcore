@@ -1,0 +1,50 @@
+B53-A4-C120-1524154056804
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hello
+<Architect> no. that's your mission
+<Architect> we're righting 'hi'
+<Builder> You should have been more specific
+<Architect> writing*
+<Architect> start with a green h
+[Builder puts down a green block at X:3 Y:1 Z:-1]
+<Architect> it's a column of four floating one block up
+[Builder puts down a green block at X:3 Y:2 Z:-1]
+[Builder puts down a green block at X:3 Y:3 Z:-1]
+[Builder puts down a green block at X:3 Y:4 Z:-1]
+[Builder puts down a green block at X:3 Y:5 Z:-1]
+[Builder picks up a green block at X:3 Y:1 Z:-1]
+<Architect> now to the right of the second block from bottom
+[Builder puts down a green block at X:2 Y:3 Z:-1]
+<Architect> good one more. then one below it
+[Builder puts down a green block at X:2 Y:4 Z:-1]
+[Builder picks up a green block at X:2 Y:4 Z:-1]
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+[Builder puts down a green block at X:1 Y:2 Z:-1]
+<Architect> great. now a yellow i
+[Builder puts down a green block at X:1 Y:2 Z:-2]
+[Builder puts down a green block at X:1 Y:2 Z:-3]
+[Builder puts down a green block at X:1 Y:2 Z:-4]
+[Builder picks up a green block at X:1 Y:2 Z:-4]
+[Builder picks up a green block at X:1 Y:2 Z:-3]
+[Builder picks up a green block at X:1 Y:2 Z:-2]
+<Architect> the dot is a little star
+<Architect> like how i imagine you wrote it in middle school
+<Architect> leave one blank space from the h
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:1 Z:-1]
+<Architect> base of the i is on the ground. two tall
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+<Architect> now one blank space then a floating plus sign
+[Builder picks up a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:5 Z:-1]
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:6 Z:-1]
+<Architect> great
+<Architect> all done

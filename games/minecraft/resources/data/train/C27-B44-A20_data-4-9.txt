@@ -1,0 +1,55 @@
+B44-A20-C27-1523284130013
+<Builder> Mission has started.
+<Architect> alright so leave room for a 5x5
+<Architect> this build consists of various "T" shapes
+<Architect> start with blue
+<Architect> it's a 3 long, 4 tall T that is upright
+<Builder> do you want me to put one down?
+<Architect> it's vertical
+<Architect> you can build and I can tell you if it's correct?
+[Builder puts down a blue block at X:2 Y:1 Z:3]
+[Builder puts down a blue block at X:2 Y:2 Z:3]
+[Builder puts down a blue block at X:2 Y:3 Z:3]
+[Builder puts down a blue block at X:3 Y:3 Z:3]
+[Builder picks up a blue block at X:3 Y:3 Z:3]
+[Builder puts down a blue block at X:2 Y:4 Z:3]
+<Architect> yup like that
+[Builder puts down a blue block at X:3 Y:4 Z:3]
+[Builder puts down a blue block at X:1 Y:4 Z:3]
+<Architect> now we'll swtich to yellow
+<Architect> put one yellow block under the top right blue one
+[Builder puts down a yellow block at X:1 Y:3 Z:3]
+<Architect> build two towards you
+[Builder puts down a yellow block at X:1 Y:3 Z:2]
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+<Architect> then two yellow under the middle yellow block
+[Builder puts down a yellow block at X:1 Y:2 Z:2]
+[Builder puts down a yellow block at X:1 Y:1 Z:2]
+<Architect> now we'll do red
+<Architect> one red on the end of the top yellow towards you
+[Builder puts down a red block at X:1 Y:3 Z:0]
+<Architect> then two reds on a level above that
+[Builder puts down a red block at X:1 Y:4 Z:0]
+[Builder puts down a red block at X:1 Y:5 Z:0]
+<Architect> now 3 reds to the left of the middle red
+[Builder puts down a red block at X:2 Y:4 Z:0]
+[Builder puts down a red block at X:3 Y:4 Z:0]
+[Builder puts down a red block at X:4 Y:4 Z:0]
+<Architect> great! now we'll do green
+<Architect> put one green under the 2nd red from the left
+[Builder puts down a green block at X:3 Y:3 Z:0]
+<Architect> now one towards you
+[Builder puts down a green block at X:3 Y:3 Z:-1]
+<Architect> great! now you'll need to move to the left side of the structure
+<Architect> place greens on that same row until they are under the blue
+[Builder puts down a green block at X:3 Y:3 Z:1]
+[Builder puts down a green block at X:3 Y:3 Z:2]
+[Builder puts down a green block at X:3 Y:3 Z:3]
+<Architect> and now 3 greens on the middle green
+<Builder> which direction?
+<Architect> above
+[Builder puts down a green block at X:3 Y:4 Z:1]
+[Builder puts down a green block at X:3 Y:5 Z:1]
+[Builder puts down a green block at X:3 Y:6 Z:1]
+<Architect> Let me double check it's all in order
+<Architect> alright it's all good!

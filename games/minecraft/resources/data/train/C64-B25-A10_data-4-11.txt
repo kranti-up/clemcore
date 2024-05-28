@@ -1,0 +1,32 @@
+B25-A10-C64-1523490174850
+<Builder> Mission has started.
+<Architect> okey doke. so this one is built upward over a footprint of 5 by 1
+<Architect> start with a vertical red column of 6
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:4 Z:0]
+[Builder puts down a red block at X:1 Y:5 Z:0]
+[Builder puts down a red block at X:1 Y:6 Z:0]
+<Architect> now make it a T with two red on either side of the top most blcok
+[Builder puts down a red block at X:0 Y:6 Z:0]
+[Builder puts down a red block at X:-1 Y:6 Z:0]
+[Builder puts down a red block at X:2 Y:6 Z:0]
+[Builder puts down a red block at X:3 Y:6 Z:0]
+<Architect> then put one red on either side of the second to the top
+[Builder puts down a red block at X:0 Y:5 Z:0]
+[Builder puts down a red block at X:2 Y:5 Z:0]
+<Architect> yup!
+<Builder> yay
+<Architect> put three orange, centered, on top of that
+[Builder puts down a orange block at X:1 Y:7 Z:0]
+[Builder puts down a orange block at X:0 Y:7 Z:0]
+[Builder puts down a orange block at X:2 Y:7 Z:0]
+<Architect> and two orange on top of that (the right two)
+[Builder puts down a orange block at X:1 Y:8 Z:0]
+[Builder puts down a orange block at X:0 Y:8 Z:0]
+<Architect> and then one orange on top (the right)
+[Builder puts down a orange block at X:0 Y:9 Z:0]
+<Builder> looks like a torch
+<Builder> is that it?
+<Architect> yeah, you're right it does. and yup that's it

@@ -1,0 +1,113 @@
+B38-A42-C133-1523913662360
+<Builder> Mission has started.
+<Architect> hey
+<Builder> Hwllo
+<Builder> What are we building today?
+<Architect> to start build an orange archway that is 4 tall and 4 across
+<Builder> Ok
+[Builder puts down a orange block at X:3 Y:1 Z:1]
+[Builder puts down a orange block at X:2 Y:1 Z:1]
+[Builder puts down a orange block at X:2 Y:2 Z:1]
+[Builder picks up a orange block at X:2 Y:1 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+<Builder> Like this, or taller?
+<Architect> taller side ones should be 3 tall but otherwise exactly like that
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder picks up a orange block at X:2 Y:2 Z:0]
+[Builder picks up a orange block at X:2 Y:2 Z:1]
+[Builder picks up a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:3 Y:2 Z:1]
+[Builder puts down a orange block at X:3 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+[Builder picks up a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:2 Y:4 Z:1]
+<Builder> Ok
+<Architect> yep
+<Architect> go to the opposite side of the arch
+<Builder> Ok
+<Builder> What are we doing over here
+<Architect> build a 3 tall yellow column 1 towards you and 1 to the left of the arch so that it touches it diagonally
+[Builder puts down a yellow block at X:-1 Y:1 Z:2]
+[Builder puts down a yellow block at X:-1 Y:2 Z:2]
+[Builder puts down a yellow block at X:-1 Y:3 Z:2]
+<Builder> Ok
+<Architect> yep
+<Architect> now 3 blocks to the left and 3 blocks towrds you build another yellow column
+[Builder puts down a yellow block at X:-4 Y:1 Z:5]
+<Builder> Here?
+<Architect> yep
+[Builder puts down a yellow block at X:-4 Y:2 Z:5]
+[Builder puts down a yellow block at X:-4 Y:3 Z:5]
+<Builder> Ok
+<Builder> Do they get an arch?
+<Architect> now have 2 blocks going between them diagonally
+[Builder puts down a yellow block at X:-4 Y:4 Z:5]
+[Builder puts down a yellow block at X:-3 Y:4 Z:5]
+[Builder puts down a yellow block at X:-3 Y:4 Z:4]
+[Builder picks up a yellow block at X:-3 Y:4 Z:5]
+[Builder picks up a yellow block at X:-4 Y:4 Z:5]
+[Builder puts down a yellow block at X:-2 Y:4 Z:4]
+[Builder puts down a yellow block at X:-2 Y:4 Z:3]
+[Builder picks up a yellow block at X:-2 Y:4 Z:4]
+<Architect> yeah
+<Builder> Ok
+<Architect> now place 1 block on either side of that so its a 2x2 platform
+[Builder puts down a yellow block at X:-3 Y:4 Z:3]
+[Builder puts down a yellow block at X:-2 Y:4 Z:4]
+<Builder> Ok
+<Architect> yep
+<Architect> now build a 4 tall red tower on the orange block to your left
+<Builder> Ok
+[Builder puts down a red block at X:1 Y:5 Z:1]
+[Builder puts down a red block at X:1 Y:6 Z:1]
+[Builder puts down a red block at X:1 Y:7 Z:1]
+[Builder puts down a red block at X:1 Y:8 Z:1]
+<Builder> Like this?
+<Architect> yep now build the same thing on the furthest edge of the yellow platform
+[Builder puts down a red block at X:-2 Y:5 Z:3]
+[Builder picks up a red block at X:-2 Y:5 Z:3]
+[Builder puts down a red block at X:-3 Y:5 Z:4]
+[Builder puts down a red block at X:-3 Y:6 Z:4]
+[Builder puts down a red block at X:-3 Y:7 Z:4]
+[Builder puts down a red block at X:-3 Y:8 Z:4]
+<Architect> move that 1 to the left
+[Builder puts down a red block at X:-2 Y:5 Z:3]
+[Builder picks up a red block at X:-2 Y:5 Z:3]
+[Builder puts down a red block at X:-2 Y:5 Z:4]
+[Builder picks up a red block at X:-3 Y:8 Z:4]
+[Builder picks up a red block at X:-3 Y:7 Z:4]
+[Builder picks up a red block at X:-3 Y:6 Z:4]
+[Builder picks up a red block at X:-3 Y:5 Z:4]
+[Builder puts down a red block at X:-2 Y:6 Z:4]
+[Builder puts down a red block at X:-2 Y:6 Z:3]
+[Builder puts down a red block at X:-2 Y:7 Z:4]
+[Builder picks up a red block at X:-2 Y:6 Z:3]
+[Builder puts down a red block at X:-2 Y:8 Z:4]
+<Builder> There?
+<Builder> Or once closer?
+<Architect> good
+<Builder> Ok
+<Builder> Do these get an arch?
+<Architect> now just connect the 2 red towers
+[Builder puts down a red block at X:1 Y:9 Z:1]
+[Builder puts down a red block at X:-1 Y:9 Z:2]
+[Builder picks up a red block at X:-1 Y:9 Z:2]
+[Builder picks up a red block at X:1 Y:9 Z:1]
+[Builder picks up a red block at X:1 Y:9 Z:2]
+[Builder puts down a red block at X:-1 Y:9 Z:2]
+[Builder puts down a red block at X:-2 Y:9 Z:3]
+[Builder picks up a red block at X:-2 Y:9 Z:3]
+[Builder picks up a red block at X:-1 Y:9 Z:2]
+<Builder> Like that?
+<Architect> move the diagonal 1 down so its in betweem the 2 towers
+[Builder puts down a red block at X:0 Y:8 Z:2]
+[Builder puts down a red block at X:-1 Y:8 Z:3]
+[Builder picks up a red block at X:-1 Y:9 Z:3]
+[Builder picks up a red block at X:0 Y:9 Z:2]
+<Builder> Ok
+<Architect> yay all done
+<Builder> Cool

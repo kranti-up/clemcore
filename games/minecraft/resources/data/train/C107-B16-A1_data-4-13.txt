@@ -1,0 +1,71 @@
+B16-A1-C107-1523662556468
+<Builder> Mission has started.
+<Architect> hello
+<Builder> hi!
+<Architect> this one is a man missing an upper torso
+<Architect> lets start with the legs each a different color
+<Architect> the right leg is two red going up
+<Architect> leaving two spaces add the left leg orange two going up
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+<Architect> can you put the other leg one more space away
+[Builder picks up a orange block at X:-1 Y:2 Z:1]
+[Builder picks up a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:-2 Y:1 Z:1]
+[Builder puts down a orange block at X:-2 Y:2 Z:1]
+<Builder> sorry about that~
+<Architect> its okay
+<Builder> *!
+<Architect> now add three steps of the red toward the orange leg
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:3 Z:1]
+[Builder picks up a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:-1 Y:3 Z:1]
+[Builder puts down a red block at X:-1 Y:4 Z:1]
+[Builder picks up a red block at X:-1 Y:3 Z:1]
+<Architect> one more
+[Builder puts down a red block at X:-2 Y:4 Z:1]
+[Builder puts down a red block at X:-2 Y:5 Z:1]
+[Builder picks up a red block at X:-2 Y:4 Z:1]
+<Architect> great
+<Architect> do the same but the the orange going towards the red
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+[Builder picks up a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+[Builder puts down a orange block at X:1 Y:5 Z:1]
+[Builder picks up a orange block at X:1 Y:4 Z:1]
+<Architect> okay now put one more orange on top of that last step
+[Builder puts down a orange block at X:1 Y:6 Z:1]
+<Architect> same with red
+[Builder puts down a red block at X:-2 Y:6 Z:1]
+<Architect> okay now lets do the step thing again this time only two steps
+[Builder puts down a red block at X:-1 Y:6 Z:1]
+[Builder puts down a red block at X:-1 Y:7 Z:1]
+[Builder picks up a red block at X:-1 Y:6 Z:1]
+[Builder puts down a red block at X:0 Y:7 Z:1]
+[Builder puts down a red block at X:0 Y:8 Z:1]
+[Builder picks up a red block at X:0 Y:7 Z:1]
+[Builder puts down a orange block at X:0 Y:6 Z:1]
+[Builder puts down a orange block at X:0 Y:7 Z:1]
+[Builder picks up a orange block at X:0 Y:6 Z:1]
+[Builder puts down a orange block at X:-1 Y:8 Z:1]
+<Architect> great thats the head
+<Architect> now to add the yellow arms
+<Architect> on the top of the orange add two blocks to the side of the man
+<Architect> like the guy is doing a T type stretch
+[Builder puts down a yellow block at X:1 Y:7 Z:1]
+[Builder puts down a yellow block at X:2 Y:7 Z:1]
+<Architect> sorry not on the head it should be on the upper part of the torso
+[Builder picks up a yellow block at X:1 Y:7 Z:1]
+[Builder picks up a yellow block at X:2 Y:7 Z:1]
+[Builder puts down a yellow block at X:2 Y:6 Z:1]
+<Builder> here?
+<Architect> yes
+[Builder puts down a yellow block at X:3 Y:6 Z:1]
+[Builder puts down a yellow block at X:-3 Y:6 Z:1]
+[Builder puts down a yellow block at X:-4 Y:6 Z:1]
+<Architect> thats it

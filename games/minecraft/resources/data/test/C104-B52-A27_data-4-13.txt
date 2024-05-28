@@ -1,0 +1,94 @@
+B52-A27-C104-1523659334243
+<Builder> Mission has started.
+<Builder> want me to set something down for reference?
+[Builder puts down a red block at X:0 Y:1 Z:-5]
+<Architect> yeah move that red block one spot toward the center
+[Builder picks up a red block at X:0 Y:1 Z:-5]
+[Builder puts down a red block at X:0 Y:1 Z:-4]
+<Architect> stack 4 more red on top of it
+[Builder puts down a red block at X:0 Y:2 Z:-4]
+[Builder puts down a red block at X:0 Y:3 Z:-4]
+[Builder puts down a red block at X:0 Y:4 Z:-4]
+[Builder puts down a red block at X:0 Y:5 Z:-4]
+<Architect> put a red block one spot from the edge on the opposite side
+[Builder puts down a red block at X:0 Y:1 Z:4]
+<Architect> and four on top of that
+[Builder puts down a red block at X:0 Y:2 Z:4]
+[Builder puts down a red block at X:0 Y:3 Z:4]
+[Builder puts down a red block at X:0 Y:4 Z:4]
+[Builder puts down a red block at X:0 Y:5 Z:4]
+<Builder> easy enough
+<Architect> and connect the two towers
+[Builder puts down a red block at X:0 Y:5 Z:-3]
+[Builder puts down a red block at X:0 Y:5 Z:-2]
+[Builder puts down a red block at X:0 Y:5 Z:-1]
+[Builder puts down a red block at X:0 Y:5 Z:0]
+[Builder puts down a red block at X:0 Y:5 Z:3]
+[Builder puts down a red block at X:0 Y:5 Z:2]
+[Builder puts down a red block at X:0 Y:5 Z:1]
+<Builder> nice arch
+<Builder> any more?
+<Architect> place 3 orange on the three middle red
+<Architect> on the top
+[Builder puts down a orange block at X:0 Y:6 Z:0]
+[Builder puts down a orange block at X:0 Y:7 Z:0]
+[Builder puts down a orange block at X:0 Y:8 Z:0]
+<Architect> one orange tall on the three middle red
+<Architect> so dont stack them
+<Builder> oh, got you
+<Builder> horizontal?
+[Builder picks up a orange block at X:0 Y:7 Z:0]
+[Builder picks up a orange block at X:0 Y:8 Z:0]
+[Builder puts down a orange block at X:0 Y:6 Z:-1]
+[Builder puts down a orange block at X:0 Y:6 Z:1]
+<Architect> then put three orange on the side of the red
+[Builder puts down a orange block at X:0 Y:5 Z:-5]
+<Architect> so just below those orange you placed
+[Builder puts down a orange block at X:0 Y:4 Z:-5]
+[Builder picks up a orange block at X:0 Y:5 Z:-5]
+[Builder picks up a orange block at X:0 Y:4 Z:-5]
+<Builder> i'm not sure i follow
+<Builder> on the side of what red?
+<Architect> on the middle of the arch
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+<Architect> but one space up
+<Architect> so not below
+<Builder> OH i got you
+<Builder> sorry i am thinking in two dimensions
+[Builder puts down a orange block at X:1 Y:5 Z:1]
+[Builder puts down a orange block at X:1 Y:5 Z:0]
+[Builder puts down a orange block at X:1 Y:5 Z:-1]
+[Builder picks up a orange block at X:0 Y:4 Z:-1]
+[Builder picks up a orange block at X:0 Y:4 Z:1]
+[Builder picks up a orange block at X:0 Y:4 Z:0]
+<Architect> place three orange on top of the ones you just placed
+[Builder puts down a orange block at X:1 Y:6 Z:1]
+[Builder puts down a orange block at X:1 Y:6 Z:0]
+[Builder puts down a orange block at X:1 Y:6 Z:-1]
+<Architect> and one below the far left orange and far right orange
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+<Builder> yeah?
+<Architect> place another one below those as well
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+<Architect> and place another on the outer sides of those blocks
+[Builder puts down a orange block at X:1 Y:3 Z:2]
+[Builder puts down a orange block at X:1 Y:3 Z:-2]
+<Architect> and break the bottom middle orange
+<Architect> on both sides
+[Builder picks up a orange block at X:1 Y:3 Z:1]
+[Builder picks up a orange block at X:1 Y:3 Z:-1]
+<Builder> is this your first time?
+<Architect> on the other side of the structure youre going to place orange to cover the middle of the red arch
+[Builder puts down a orange block at X:-1 Y:5 Z:-1]
+[Builder puts down a orange block at X:-1 Y:5 Z:0]
+[Builder puts down a orange block at X:-1 Y:5 Z:1]
+<Architect> and three on top of those
+[Builder puts down a orange block at X:-1 Y:6 Z:0]
+[Builder puts down a orange block at X:-1 Y:6 Z:1]
+[Builder puts down a orange block at X:-1 Y:6 Z:-1]
+<Builder> three high? or like that?
+<Architect> just like that we're done with this one

@@ -1,0 +1,66 @@
+B11-A7-C46-1522854350889
+<Builder> Mission has started.
+<Architect> okay so start by putting a red block down, close to the bottom left corner
+[Builder puts down a red block at X:4 Y:1 Z:4]
+<Builder> like that?
+<Architect> yeah, now put an orange one adjacent on a diagonal, towards teh center
+[Builder puts down a orange block at X:3 Y:1 Z:3]
+<Builder> then yellow?
+<Architect> nope, blue
+[Builder puts down a blue block at X:2 Y:1 Z:2]
+[Builder picks up a blue block at X:2 Y:1 Z:2]
+[Builder puts down a blue block at X:2 Y:1 Z:2]
+<Architect> go up two squares and then right
+<Architect> so not where you just put it
+[Builder picks up a blue block at X:2 Y:1 Z:2]
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+<Architect> left one square
+<Builder> ok
+[Builder picks up a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+<Architect> oh sorry wrong way
+[Builder picks up a blue block at X:0 Y:1 Z:2]
+[Builder puts down a blue block at X:2 Y:1 Z:0]
+<Architect> yes
+<Builder> great. what's next?
+<Architect> not quite sorry we need to mvoe the blue block again
+[Builder picks up a blue block at X:2 Y:1 Z:0]
+<Architect> from the direction your facing now, two square forward
+<Architect> and one right
+[Builder puts down a blue block at X:4 Y:1 Z:1]
+<Builder> if red is (0,0) and orange is (1,1), what is blue?
+<Architect> okay not quite
+[Builder picks up a blue block at X:4 Y:1 Z:1]
+<Architect> (2,3)
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+<Builder> got it
+<Architect> try (3,2) my bad
+[Builder puts down a blue block at X:2 Y:1 Z:2]
+[Builder picks up a blue block at X:2 Y:1 Z:2]
+[Builder picks up a blue block at X:1 Y:1 Z:2]
+[Builder puts down a blue block at X:2 Y:1 Z:1]
+<Architect> did you move it?
+<Builder> ywa
+<Builder> yes
+<Builder> it's one unit to my right from the diagonal
+<Architect> go back to (2,3)
+[Builder picks up a blue block at X:2 Y:1 Z:1]
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+<Architect> yeah okay now blue at (3,3), (4,3), and (5,3) as well
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+<Builder> got it
+<Architect> now put green on top of the (3,3) blue
+[Builder puts down a green block at X:1 Y:2 Z:1]
+<Architect> and purple on top of that
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+<Architect> and red on top of the (5,3) blue
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+<Architect> then orange on top of that
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+<Architect> then yellow on top of that
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+<Builder> is that it?
+<Architect> yep!
+<Builder> cool!

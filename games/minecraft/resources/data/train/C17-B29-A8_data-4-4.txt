@@ -1,0 +1,35 @@
+B29-A8-C17-1522860199086
+<Builder> Mission has started.
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder picks up a red block at X:1 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder picks up a orange block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder picks up a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+<Architect> okay
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-4]
+[Builder picks up a yellow block at X:-1 Y:2 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:2 Z:0]
+[Builder picks up a orange block at X:-1 Y:1 Z:0]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-3]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-4]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-1]
+<Architect> we want to build a right angle in orange blocks
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+<Architect> yeah and then one more
+<Builder> up?
+[Builder picks up a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+<Architect> on the ground
+[Builder picks up a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+<Architect> yes

@@ -1,0 +1,73 @@
+B35-A39-C122-1524248727636
+<Builder> Mission has started.
+<Architect> so this one looks like a little bird standing up, sort of
+<Builder> okay
+<Architect> let's start with the feet
+<Architect> first, make an upside-down T shape in blue blocks
+<Builder> how high?
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+<Architect> that's high enough
+<Architect> oh wait
+<Architect> remove the last one
+[Builder picks up a blue block at X:0 Y:3 Z:0]
+<Builder> gotcha
+<Architect> cool, now make the same shape parallel to it, one space away and aligned with it
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+[Builder puts down a blue block at X:-1 Y:1 Z:-2]
+[Builder puts down a blue block at X:0 Y:2 Z:-2]
+<Builder> done
+<Architect> next, a 3x3 orange square sits on top of these and is centered
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+[Builder puts down a orange block at X:-1 Y:3 Z:-2]
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:3 Z:-2]
+<Builder> done
+<Architect> now we'll make small wings
+<Architect> on one side aligned with either foot, we need blocks coming out diagonally and up from that side
+[Builder puts down a orange block at X:0 Y:3 Z:-3]
+[Builder puts down a orange block at X:0 Y:4 Z:-3]
+<Builder> how many?
+[Builder puts down a orange block at X:0 Y:4 Z:-4]
+[Builder puts down a orange block at X:0 Y:5 Z:-4]
+[Builder picks up a orange block at X:0 Y:4 Z:-4]
+[Builder picks up a orange block at X:0 Y:3 Z:-3]
+<Architect> it's just one for now
+<Architect> it's a very small wing
+[Builder picks up a orange block at X:0 Y:5 Z:-4]
+<Builder> gotcha
+<Builder> is this good?
+<Architect> yeah!
+<Builder> cool
+<Builder> same thing on other side?
+<Architect> behind that one put an orange, and in front of it put a red
+[Builder puts down a orange block at X:1 Y:4 Z:-3]
+<Architect> then you can do the same thing on the other side
+[Builder puts down a red block at X:-1 Y:4 Z:-3]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+[Builder picks up a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a red block at X:-1 Y:4 Z:1]
+<Builder> done
+<Architect> cool
+<Architect> last thing is a yellow head
+<Architect> it will be coming off the square from the other side
+<Architect> on top of the middle orange block on that side of the square, put a yellow block
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+<Architect> then one more hanging off the side
+[Builder puts down a yellow block at X:2 Y:4 Z:-1]
+<Architect> cool, i think that's it, let me check
+<Builder> sounds good
+<Architect> all good
+<Architect> nice work
+<Builder> thanks! you too

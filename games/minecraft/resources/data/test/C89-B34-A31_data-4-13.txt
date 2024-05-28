@@ -1,0 +1,92 @@
+B34-A31-C89-1523652062789
+<Builder> Mission has started.
+<Architect> Hmm, not sure what these are. We will figure it out along the way
+<Builder> alright sure
+<Architect> This first object will be made of red blocks
+<Architect> About one block in from a corner, place a red block
+[Builder puts down a red block at X:2 Y:1 Z:0]
+<Builder> one block in is towards me?
+<Builder> so like there?
+<Architect> Sorry, one block away from a corner. That needs to be a little closer to an edge
+[Builder picks up a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:4 Y:1 Z:-4]
+<Architect> That's perfect
+<Builder> oh from a corner. I read center
+<Architect> Lol, no worries
+<Architect> Now look at it so the red block is in the bottom left corner of the large white base
+<Architect> Stack three more red blocks on top of the existing red block.
+[Builder puts down a red block at X:4 Y:2 Z:-4]
+[Builder puts down a red block at X:4 Y:3 Z:-4]
+[Builder puts down a red block at X:4 Y:4 Z:-4]
+<Builder> just like that
+<Architect> Great, now off of the top red block, build four more blocks going toward the right edge of the white base
+<Builder> in red?
+<Architect> Yes, red
+[Builder puts down a red block at X:3 Y:4 Z:-4]
+[Builder puts down a red block at X:2 Y:4 Z:-4]
+[Builder puts down a red block at X:1 Y:4 Z:-4]
+[Builder puts down a red block at X:0 Y:4 Z:-4]
+<Architect> Just like that
+<Architect> Connect the top right block to the ground. It should be just like the other end of the red structure
+[Builder puts down a red block at X:0 Y:1 Z:-4]
+[Builder puts down a red block at X:0 Y:2 Z:-4]
+[Builder puts down a red block at X:0 Y:3 Z:-4]
+<Builder> perfect
+<Architect> Cool, now build two red blocks downward from the middle red block
+[Builder puts down a red block at X:2 Y:1 Z:-4]
+[Builder picks up a red block at X:2 Y:1 Z:-4]
+[Builder puts down a red block at X:2 Y:3 Z:-4]
+<Architect> It should look like an 'm'
+[Builder puts down a red block at X:2 Y:2 Z:-4]
+<Builder> like that?
+<Architect> Awesome. Like that
+<Architect> Now we will be working in yellow for the rest of the object
+<Architect> Go to the bottom right corner of the 'm'
+<Architect> Behind the 'm' place a yellow block so there is one block space between it and the bottom right red block
+[Builder puts down a yellow block at X:0 Y:1 Z:-2]
+<Architect> Great
+<Builder> ;)
+<Architect> Place another yellow block on top of that. We will delete this block later
+[Builder puts down a yellow block at X:0 Y:2 Z:-2]
+<Builder> I'm going to make it purple so I remember to delete it
+[Builder picks up a yellow block at X:0 Y:2 Z:-2]
+[Builder puts down a yellow block at X:0 Y:2 Z:-3]
+<Architect> Place a yellow block of the left side of that block you just put down
+[Builder picks up a yellow block at X:0 Y:2 Z:-3]
+[Builder picks up a yellow block at X:0 Y:2 Z:-2]
+<Architect> Good idea
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder puts down a yellow block at X:1 Y:2 Z:-2]
+<Architect> You can delete the purple block now
+[Builder picks up a purple block at X:0 Y:2 Z:-2]
+<Architect> Build another yellow block on top of the one you just put down
+[Builder puts down a yellow block at X:1 Y:3 Z:-2]
+<Architect> And put one purple block on top of that (to delete later)
+[Builder puts down a purple block at X:1 Y:4 Z:-2]
+<Architect> On the right side of that purple block, place a yellow block
+[Builder puts down a yellow block at X:0 Y:4 Z:-2]
+<Builder> I'ts hard to find a good perspective for you
+<Builder> *It's
+<Architect> It's okay, we're doing good
+<Architect> You can delete the purple block
+[Builder picks up a purple block at X:1 Y:4 Z:-2]
+<Architect> Build two more yellow blocks going to the right off that top yellow block
+[Builder puts down a yellow block at X:-1 Y:4 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:4 Z:-2]
+<Architect> Awesome, now place one yellow block on the underside of the middle block
+[Builder puts down a yellow block at X:-1 Y:3 Z:-2]
+<Architect> Great. Now place a purple block on the right side of the top yellow row
+[Builder puts down a purple block at X:-3 Y:4 Z:-2]
+<Builder> is this symmetrical?
+<Architect> Two yellow blocks coming down from that purple one
+[Builder puts down a yellow block at X:-3 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-3 Y:2 Z:-2]
+<Architect> Yep, it's symmetrical
+[Builder picks up a purple block at X:-3 Y:4 Z:-2]
+[Builder puts down a purple block at X:-2 Y:1 Z:-2]
+[Builder picks up a purple block at X:-2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-2]
+<Builder> ??
+<Architect> Not sure what they are, but that's complete
+<Builder> yeah idk
+<Architect> nice work

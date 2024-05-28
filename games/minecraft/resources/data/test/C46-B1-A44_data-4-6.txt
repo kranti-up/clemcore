@@ -1,0 +1,39 @@
+B1-A44-C46-1523039009498
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hello
+<Architect> ok lets begin with a 2d drawing
+<Architect> 1st column: blue
+[Builder puts down a blue block at X:3 Y:1 Z:-2]
+<Architect> 2nd: blue, green, purple,
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+[Builder puts down a green block at X:2 Y:2 Z:-2]
+[Builder puts down a purple block at X:2 Y:3 Z:-2]
+<Architect> 3rd column: blue
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+<Architect> 4th: blue, red, orange, yellow
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+[Builder puts down a yellow block at X:0 Y:4 Z:-2]
+<Architect> ok we're not quite done yet
+<Builder> its all 2d right?
+<Architect> lets look at the left most blue block. place an orange block 2 spaces towards you and 1 space to the right
+[Builder puts down a orange block at X:2 Y:1 Z:-5]
+<Builder> here?
+<Architect> mb I meant to say 1 space to the left
+[Builder picks up a orange block at X:2 Y:1 Z:-5]
+[Builder puts down a orange block at X:4 Y:1 Z:-5]
+<Architect> so like chess but the horse goes in the other direction. yep
+<Builder> here?
+[Builder picks up a orange block at X:4 Y:1 Z:-5]
+[Builder puts down a orange block at X:4 Y:1 Z:-4]
+<Builder> here?
+<Architect> ok yeah you have it
+<Architect> now 1 red block 1 toward you 1 to the left
+<Architect> of the orange
+[Builder puts down a red block at X:5 Y:1 Z:-5]
+<Builder> at the corner?
+<Architect> ok we are done
+<Builder> good job
+<Architect> gj

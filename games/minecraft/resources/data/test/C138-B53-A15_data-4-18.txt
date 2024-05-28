@@ -1,0 +1,83 @@
+B53-A15-C138-1524065266218
+<Builder> Mission has started.
+<Architect> alright, we're building a rainbow of concentric horseshoes
+<Builder> Sounds easy enough
+<Architect> you'd think!
+<Builder> Which color is first?
+<Architect> alright, make a hollow 3x3 square of orange blocks in the center
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+<Architect> and then delete one of the middle blocks on any edge
+<Builder> Vertical or horizontal?
+<Architect> so it's a horseshoe
+<Architect> horizontal, parallel to the ground
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+<Builder> Like this?
+<Architect> yep!
+<Architect> okay, now, in front of the open end, make a vertical blue horeshoe oriented like an "n"
+<Architect> all horseshoes are the same size
+<Architect> different colors and orientations
+<Builder> Should it be perpendicular to the existing one?
+<Architect> yes, sorry
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+[Builder puts down a blue block at X:-1 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:2 Z:-2]
+[Builder puts down a blue block at X:-1 Y:2 Z:-2]
+[Builder puts down a blue block at X:1 Y:3 Z:-2]
+[Builder puts down a blue block at X:0 Y:3 Z:-2]
+[Builder puts down a blue block at X:-1 Y:3 Z:-2]
+<Architect> alright, row of 3 red blocks on top of the row of 3 oranges ones opposite the blue blocks
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+<Builder> I believe this is what you meant
+<Architect> yes! extend that to a horseshoe facing the opposite direction of the orange one
+[Builder puts down a red block at X:-1 Y:2 Z:2]
+[Builder puts down a red block at X:-1 Y:2 Z:3]
+[Builder puts down a red block at X:1 Y:2 Z:2]
+[Builder puts down a red block at X:1 Y:2 Z:3]
+<Builder> It is done
+<Architect> perfect! now a row of purple blocks in front of the open end of the red one
+[Builder puts down a purple block at X:-1 Y:2 Z:4]
+[Builder puts down a purple block at X:0 Y:2 Z:4]
+[Builder puts down a purple block at X:1 Y:2 Z:4]
+<Architect> make that into a vertical "u"
+<Builder> Gotcha
+[Builder puts down a purple block at X:-1 Y:3 Z:4]
+[Builder puts down a purple block at X:-1 Y:4 Z:4]
+[Builder puts down a purple block at X:1 Y:3 Z:4]
+[Builder puts down a purple block at X:1 Y:4 Z:4]
+<Architect> row of green on top of that
+[Builder puts down a green block at X:-1 Y:5 Z:4]
+[Builder puts down a green block at X:0 Y:5 Z:4]
+[Builder puts down a green block at X:1 Y:5 Z:4]
+<Architect> make that into a "c"
+<Builder> Facing towards the middle?
+<Architect> parallel to the purple one, facing away from you
+<Architect> so it should be in the same plane as the purple horeshoe
+<Architect> and the open end should be on the opposite end you're currently on
+<Builder> Oh I see
+[Builder puts down a green block at X:1 Y:6 Z:4]
+[Builder puts down a green block at X:1 Y:7 Z:4]
+[Builder puts down a green block at X:0 Y:7 Z:4]
+[Builder puts down a green block at X:-1 Y:7 Z:4]
+<Architect> alright, now, in front of the tips of the green horseshoe, put two yellow blocks
+<Builder> I hope there's also a yellow one
+<Builder> GOod
+<Architect> in front as in towards the blue blocks
+<Architect> so perpendicular
+<Builder> And then make a "c" from those?
+[Builder puts down a yellow block at X:-1 Y:7 Z:3]
+[Builder puts down a yellow block at X:-1 Y:5 Z:3]
+<Architect> yeah, that's the tip of the horeshoe
+[Builder puts down a yellow block at X:-1 Y:7 Z:2]
+[Builder puts down a yellow block at X:-1 Y:7 Z:1]
+[Builder puts down a yellow block at X:-1 Y:5 Z:2]
+[Builder puts down a yellow block at X:-1 Y:5 Z:1]
+[Builder puts down a yellow block at X:-1 Y:6 Z:1]
+<Architect> perfect! easier than i thought it would be
+<Architect> good job!

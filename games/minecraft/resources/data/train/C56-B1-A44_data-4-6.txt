@@ -1,0 +1,106 @@
+B1-A44-C56-1523038570819
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hello. ok this is a 2d drawing start a bit to the left center
+<Architect> 1st column: 2 empty, 3 purple
+[Builder puts down a purple block at X:4 Y:1 Z:-1]
+[Builder puts down a purple block at X:4 Y:2 Z:-1]
+[Builder puts down a purple block at X:4 Y:2 Z:-2]
+[Builder picks up a purple block at X:4 Y:2 Z:-2]
+[Builder puts down a purple block at X:4 Y:3 Z:-1]
+[Builder puts down a purple block at X:4 Y:4 Z:-1]
+[Builder puts down a purple block at X:4 Y:5 Z:-1]
+[Builder picks up a purple block at X:4 Y:1 Z:-1]
+[Builder picks up a purple block at X:4 Y:2 Z:-1]
+<Architect> 2nd column: empty, purple, empty, red, empty, purple
+[Builder puts down a purple block at X:3 Y:1 Z:-1]
+[Builder puts down a purple block at X:3 Y:2 Z:-1]
+[Builder picks up a purple block at X:3 Y:1 Z:-1]
+<Architect> 3rd column: purple, empty, orange, empty, orange, empty, purple
+[Builder puts down a red block at X:3 Y:4 Z:-1]
+[Builder puts down a purple block at X:3 Y:5 Z:-1]
+[Builder puts down a purple block at X:3 Y:6 Z:-1]
+[Builder picks up a purple block at X:3 Y:5 Z:-1]
+<Architect> everything is correct so far
+[Builder puts down a purple block at X:2 Y:1 Z:-1]
+[Builder puts down a purple block at X:2 Y:6 Z:-1]
+[Builder picks up a purple block at X:2 Y:6 Z:-1]
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:3 Z:-1]
+[Builder picks up a orange block at X:2 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+[Builder puts down a orange block at X:2 Y:5 Z:-1]
+[Builder picks up a orange block at X:2 Y:4 Z:-1]
+[Builder puts down a orange block at X:2 Y:6 Z:-1]
+[Builder puts down a purple block at X:2 Y:7 Z:-1]
+[Builder picks up a orange block at X:2 Y:6 Z:-1]
+<Architect> 4th: purple, red, empty, yellow, empty, red, purple
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+<Architect> 5th: the same as the 3rd
+<Builder> its symmetric?
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+[Builder picks up a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a red block at X:1 Y:5 Z:-1]
+[Builder puts down a red block at X:1 Y:6 Z:-1]
+[Builder picks up a red block at X:1 Y:5 Z:-1]
+<Architect> yeah its symetrical so yeah I guess you can just mirror it on the 4th column
+[Builder puts down a purple block at X:1 Y:7 Z:-1]
+[Builder puts down a purple block at X:1 Y:8 Z:-1]
+[Builder picks up a purple block at X:1 Y:7 Z:-1]
+<Builder> is this correct?
+[Builder puts down a purple block at X:0 Y:1 Z:-1]
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-2 Y:1 Z:-1]
+[Builder puts down a purple block at X:-2 Y:2 Z:-1]
+[Builder picks up a purple block at X:-2 Y:1 Z:-1]
+[Builder puts down a purple block at X:-3 Y:2 Z:-1]
+<Architect> no, the last purple you placed needs to be touching the red
+[Builder picks up a purple block at X:1 Y:8 Z:-1]
+[Builder puts down a purple block at X:1 Y:7 Z:-1]
+<Builder> everything else?
+[Builder puts down a purple block at X:-3 Y:3 Z:-1]
+[Builder picks up a purple block at X:-3 Y:2 Z:-1]
+[Builder puts down a purple block at X:-3 Y:4 Z:-1]
+[Builder puts down a purple block at X:-3 Y:5 Z:-1]
+[Builder puts down a purple block at X:-3 Y:6 Z:-1]
+<Architect> no
+[Builder puts down a purple block at X:-2 Y:6 Z:-1]
+[Builder puts down a purple block at X:-1 Y:6 Z:-1]
+[Builder puts down a purple block at X:-1 Y:7 Z:-1]
+[Builder puts down a purple block at X:0 Y:7 Z:-1]
+[Builder picks up a purple block at X:-1 Y:6 Z:-1]
+[Builder picks up a purple block at X:-3 Y:6 Z:-1]
+<Architect> the way you built it, there would be 2 4th columns
+<Architect> after the 4th column is a copy of the 3rd column
+<Architect> so your purple ring is 1 too far to the right
+<Builder> oh so its the center?
+[Builder picks up a purple block at X:-2 Y:2 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+[Builder picks up a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-2 Y:3 Z:-1]
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+<Architect> yes the 4th column with the yellow block is the center
+[Builder puts down a purple block at X:-2 Y:5 Z:-1]
+[Builder picks up a purple block at X:-3 Y:5 Z:-1]
+[Builder picks up a purple block at X:-3 Y:4 Z:-1]
+[Builder picks up a purple block at X:-3 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:6 Z:-1]
+[Builder picks up a purple block at X:-2 Y:6 Z:-1]
+[Builder puts down a purple block at X:-1 Y:7 Z:-2]
+[Builder picks up a purple block at X:-1 Y:7 Z:-2]
+[Builder picks up a purple block at X:-1 Y:7 Z:-1]
+<Builder> like this?
+<Architect> yes
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder picks up a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:-1 Y:5 Z:-1]
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+[Builder picks up a orange block at X:-1 Y:5 Z:-1]
+[Builder picks up a orange block at X:-1 Y:3 Z:-1]
+<Architect> ok and we're done good job
+<Builder> good job

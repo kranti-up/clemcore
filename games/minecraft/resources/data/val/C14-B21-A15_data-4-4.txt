@@ -1,0 +1,35 @@
+B21-A15-C14-1522881524871
+<Builder> Mission has started.
+<Architect> all good?
+<Builder> we are good to go
+<Architect> alright, so, two blue blocks next to each other, like last time
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+<Architect> and then you'll want to put two more blue blocks on top of those
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+<Architect> okay, now put two more blue blocks on in front of the top two ones
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+[Builder puts down a blue block at X:0 Y:2 Z:-1]
+<Architect> good!
+<Architect> now two red blocks on top of the two you just put down
+[Builder picks up a blue block at X:1 Y:2 Z:-1]
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:3 Z:-1]
+[Builder puts down a red block at X:0 Y:3 Z:-1]
+<Architect> and two red blocks in front of those in a staircase shape
+[Builder puts down a red block at X:0 Y:3 Z:-2]
+[Builder puts down a red block at X:1 Y:3 Z:-2]
+<Architect> good!
+<Architect> okay, now two purple ones on top of those
+[Builder puts down a purple block at X:1 Y:4 Z:-2]
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+<Architect> and two more purple ones in front of the others
+[Builder puts down a purple block at X:0 Y:4 Z:-3]
+[Builder puts down a purple block at X:1 Y:4 Z:-3]
+<Architect> last up, two more purple ones on top
+[Builder puts down a purple block at X:0 Y:5 Z:-3]
+[Builder puts down a purple block at X:1 Y:5 Z:-3]
+<Architect> alright, looks good! :P)
+<Architect> :) *
+<Builder> solid!

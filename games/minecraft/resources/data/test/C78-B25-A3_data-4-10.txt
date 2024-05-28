@@ -1,0 +1,80 @@
+B25-A3-C78-1523385918318
+<Builder> Mission has started.
+<Architect> ok this one is weird
+<Architect> easy part is a big yellow arch. we'll start with that
+<Builder> ok, where should i start?
+<Architect> like 1 or 2 blocks to the left of center place 6 yellow blocks straight up
+[Builder puts down a yellow block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:3 Y:2 Z:-1]
+[Builder puts down a yellow block at X:3 Y:3 Z:-1]
+[Builder puts down a yellow block at X:3 Y:4 Z:-1]
+[Builder puts down a yellow block at X:3 Y:5 Z:-1]
+[Builder puts down a yellow block at X:3 Y:6 Z:-1]
+<Architect> yeah like that. then put 4 more across the top going to the right
+[Builder puts down a yellow block at X:2 Y:6 Z:-1]
+[Builder puts down a yellow block at X:1 Y:6 Z:-1]
+<Builder> sounds good
+<Architect> need 2 more to go across the top
+[Builder puts down a yellow block at X:0 Y:6 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:6 Z:-1]
+<Architect> nice
+[Builder puts down a yellow block at X:-1 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+<Architect> yeah like that
+<Builder> ok, what else are we looking at?
+<Architect> ok the rest of the figure uses red and orange blocks in a random pattern
+<Builder> on the ground, on the arch, in the air, or both?
+<Architect> we'll just go 1 at a time its pretty weird
+<Builder> ok
+<Architect> place the first red block on the inner left side of the arch, 1 space toward you
+<Builder> i'll stay in a fixed position so it's easier to give me directions with respect to what i'm looking at
+[Builder puts down a red block at X:2 Y:1 Z:-2]
+<Builder> like that?
+<Architect> right sounds good. ok then place 1 to the right of that new red block
+<Architect> yeah perfect
+<Builder> another red block?
+<Architect> yeah anothe rred
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+<Architect> then 1 red on top of the right red
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+<Architect> then another red to the bottom right of the right ground red block. so its connected but diagonal on the ground
+[Builder puts down a red block at X:0 Y:1 Z:-3]
+<Architect> yeah
+<Architect> same thing to the new red block
+[Builder puts down a red block at X:-1 Y:1 Z:-4]
+<Architect> then 1 more on the side toward you of that new red block
+[Builder puts down a red block at X:0 Y:1 Z:-5]
+<Architect> not diagonal though, just straight
+<Builder> oh o
+<Builder> ok*
+[Builder picks up a red block at X:0 Y:1 Z:-5]
+<Architect> my bad
+[Builder puts down a red block at X:-1 Y:1 Z:-5]
+[Builder picks up a red block at X:-1 Y:2 Z:-5]
+<Builder> no problem
+<Architect> ok thats it for red. now we do orange which all look to be in the air
+<Architect> come around to the other side pls
+<Architect> ok first orange block goes inside the arch connected to the topmost red block so that it comes toward you
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+<Architect> then there are 2 more orange blocks that go diagonally the the left of that one while raising up in the air 1 space each time. so we need placeholders
+<Builder> wait i think I got this
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder picks up a orange block at X:1 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:-1 Y:4 Z:1]
+[Builder picks up a orange block at X:0 Y:4 Z:0]
+[Builder picks up a orange block at X:0 Y:4 Z:1]
+<Builder> like that?
+<Architect> yeah just like that. let me take a look and make sure it's all right
+<Architect> awesome i think we did it
+<Builder> is this ketchup and cheddar take mcdonalds or something
+<Architect> could be
+<Architect> golden arch :)
+<Builder> next one?

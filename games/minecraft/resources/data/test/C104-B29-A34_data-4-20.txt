@@ -1,0 +1,77 @@
+B29-A34-C104-1524257022549
+<Builder> Mission has started.
+<Architect> ummm
+<Architect> ok
+<Architect> idk what this is
+<Architect> whatever just place a stack of 5 red blocks one blokc away from an edge
+[Builder puts down a red block at X:4 Y:1 Z:-1]
+[Builder puts down a red block at X:4 Y:2 Z:-1]
+[Builder puts down a red block at X:4 Y:3 Z:-1]
+[Builder puts down a red block at X:4 Y:4 Z:-1]
+[Builder puts down a red block at X:4 Y:5 Z:-1]
+<Architect> do the same thing on the other edge
+[Builder puts down a red block at X:-4 Y:1 Z:-1]
+[Builder puts down a red block at X:-4 Y:2 Z:-1]
+[Builder puts down a red block at X:-4 Y:3 Z:-1]
+[Builder puts down a red block at X:-4 Y:4 Z:-1]
+[Builder puts down a red block at X:-4 Y:5 Z:-1]
+<Architect> connect the 2 topmost blocks with red blocks
+[Builder puts down a red block at X:-3 Y:5 Z:-1]
+[Builder picks up a red block at X:-3 Y:5 Z:-1]
+[Builder puts down a red block at X:-3 Y:5 Z:-1]
+[Builder picks up a red block at X:-3 Y:5 Z:-1]
+<Builder> across you mean?
+<Architect> yeah
+<Builder> but only the top on each stack?
+<Architect> to form a garage of sorts
+<Architect> yeah
+<Builder> or the two topmost?
+<Builder> ok
+[Builder puts down a red block at X:-3 Y:5 Z:-1]
+[Builder puts down a red block at X:-2 Y:5 Z:-1]
+[Builder puts down a red block at X:-1 Y:5 Z:-1]
+[Builder puts down a red block at X:0 Y:5 Z:-1]
+[Builder puts down a red block at X:1 Y:5 Z:-1]
+[Builder puts down a red block at X:2 Y:5 Z:-1]
+[Builder puts down a red block at X:3 Y:5 Z:-1]
+<Architect> now we will work only in orange
+<Architect> on top of the structure, place a filled in 3x3 orange square parallel to the ground
+<Architect> and maintain symmetry
+[Builder puts down a orange block at X:1 Y:6 Z:-1]
+[Builder puts down a orange block at X:0 Y:6 Z:-1]
+[Builder puts down a orange block at X:-1 Y:6 Z:-1]
+[Builder puts down a orange block at X:-1 Y:6 Z:-2]
+[Builder puts down a orange block at X:0 Y:6 Z:-2]
+[Builder puts down a orange block at X:1 Y:6 Z:-2]
+[Builder puts down a orange block at X:1 Y:6 Z:0]
+[Builder puts down a orange block at X:0 Y:6 Z:0]
+[Builder puts down a orange block at X:-1 Y:6 Z:0]
+<Architect> under the blocks that are hanging off of the edges, place one orange block under each of those, a total of 6 orange blocks
+[Builder puts down a orange block at X:-1 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:1 Y:5 Z:0]
+[Builder puts down a orange block at X:-1 Y:5 Z:-2]
+[Builder puts down a orange block at X:0 Y:5 Z:-2]
+[Builder puts down a orange block at X:1 Y:5 Z:-2]
+<Architect> now stay on one side
+<Architect> underneath the left and right orange blocks, place another block, a total of 2 blocks
+[Builder puts down a orange block at X:-1 Y:4 Z:-2]
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+<Architect> place one purple block under each of those
+[Builder puts down a purple block at X:1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:4 Z:-3]
+[Builder picks up a purple block at X:-1 Y:4 Z:-3]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+<Architect> now place one orange block to the right of the rightmost one and to the left of the leftmost one
+[Builder puts down a orange block at X:-2 Y:6 Z:-2]
+[Builder puts down a orange block at X:2 Y:6 Z:-2]
+<Architect> from the purple blocks
+[Builder picks up a orange block at X:-2 Y:6 Z:-2]
+[Builder picks up a orange block at X:2 Y:6 Z:-2]
+<Architect> not up there sorry
+[Builder puts down a orange block at X:2 Y:3 Z:-2]
+[Builder puts down a orange block at X:-2 Y:3 Z:-2]
+<Architect> now you can remove the purple blocks
+[Builder picks up a purple block at X:-1 Y:3 Z:-2]
+[Builder picks up a purple block at X:1 Y:3 Z:-2]
+<Architect> perfect

@@ -1,0 +1,75 @@
+B44-A15-C117-1523892469087
+<Builder> Mission has started.
+<Builder> ready
+<Architect> okay, this time, put 4 red blocks on the ground as the corners of a 5x5 square
+[Builder puts down a red block at X:2 Y:1 Z:2]
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:2]
+[Builder picks up a red block at X:-1 Y:1 Z:2]
+[Builder puts down a red block at X:-2 Y:1 Z:2]
+[Builder picks up a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:2 Y:1 Z:-2]
+[Builder puts down a red block at X:-2 Y:1 Z:-2]
+[Builder picks up a red block at X:-2 Y:1 Z:-1]
+<Architect> and then put an additional red block at the midpoints of each of those corners
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:2]
+<Architect> and one more red block in the center
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> perfect! now, put a stack of two orange blocks between the center of the red square and each of the corners
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+<Architect> and when you're done, remove the bottom block from each of the stacks!
+[Builder picks up a orange block at X:1 Y:1 Z:-1]
+[Builder picks up a orange block at X:-1 Y:1 Z:-1]
+[Builder picks up a orange block at X:-1 Y:1 Z:1]
+[Builder picks up a orange block at X:1 Y:1 Z:1]
+<Architect> now put a stack of two yellow blocks on top of the center red one, and remove the bottom yellow block
+<Architect> so it's a pyramid
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder picks up a yellow block at X:0 Y:2 Z:0]
+<Architect> yep! now, stack two green blocks on top of one of the orange ones
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+[Builder puts down a green block at X:1 Y:4 Z:-1]
+<Architect> and remove the bottom green block when you're done
+[Builder picks up a green block at X:1 Y:3 Z:-1]
+<Architect> okay, if you can follow the trajectory of the yellow and green block, make two more green blocks in that trajectory
+[Builder puts down a green block at X:1 Y:4 Z:-2]
+[Builder puts down a green block at X:2 Y:4 Z:-2]
+[Builder puts down a green block at X:2 Y:5 Z:-2]
+[Builder picks up a green block at X:2 Y:4 Z:-2]
+[Builder picks up a green block at X:1 Y:4 Z:-2]
+[Builder puts down a green block at X:2 Y:5 Z:-3]
+[Builder puts down a green block at X:3 Y:5 Z:-3]
+[Builder puts down a green block at X:3 Y:6 Z:-3]
+[Builder picks up a green block at X:2 Y:5 Z:-3]
+[Builder picks up a green block at X:3 Y:5 Z:-3]
+<Architect> perfect! now, on the opposite corner of the yellow square, put three more green blocks in the exact same trajectory
+<Architect> like antennae
+[Builder puts down a green block at X:0 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:4 Z:1]
+[Builder picks up a green block at X:-1 Y:3 Z:1]
+[Builder picks up a green block at X:0 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:4 Z:2]
+[Builder puts down a green block at X:-2 Y:4 Z:2]
+[Builder puts down a green block at X:-2 Y:5 Z:2]
+[Builder picks up a green block at X:-2 Y:4 Z:2]
+[Builder picks up a green block at X:-1 Y:4 Z:2]
+[Builder puts down a green block at X:-2 Y:5 Z:3]
+[Builder puts down a green block at X:-3 Y:5 Z:3]
+[Builder puts down a green block at X:-3 Y:6 Z:3]
+[Builder picks up a green block at X:-3 Y:5 Z:3]
+[Builder picks up a green block at X:-2 Y:5 Z:3]
+<Architect> looks perfect! nice work
+<Builder> ince

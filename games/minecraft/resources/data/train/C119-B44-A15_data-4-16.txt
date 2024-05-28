@@ -1,0 +1,117 @@
+B44-A15-C119-1523892860815
+<Builder> Mission has started.
+<Builder> ready
+<Architect> okay, so, start with two pillars of 3 blue blocks each, spaced with a two tile gap
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+<Architect> near the center
+[Builder picks up a blue block at X:1 Y:1 Z:2]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+[Builder puts down a blue block at X:-2 Y:1 Z:0]
+[Builder puts down a blue block at X:-2 Y:2 Z:0]
+[Builder puts down a blue block at X:-2 Y:3 Z:0]
+<Architect> ah, sorry, maybe move those closer to the edge
+<Architect> we'll need more room
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:2 Z:-2]
+[Builder puts down a blue block at X:1 Y:3 Z:-2]
+[Builder puts down a blue block at X:-2 Y:1 Z:-2]
+[Builder puts down a blue block at X:-2 Y:2 Z:-2]
+[Builder puts down a blue block at X:-2 Y:3 Z:-2]
+[Builder picks up a blue block at X:1 Y:3 Z:0]
+[Builder picks up a blue block at X:1 Y:2 Z:0]
+[Builder picks up a blue block at X:1 Y:1 Z:0]
+[Builder picks up a blue block at X:-2 Y:3 Z:0]
+[Builder picks up a blue block at X:-2 Y:2 Z:0]
+[Builder picks up a blue block at X:-2 Y:1 Z:0]
+<Architect> alright, perfect! build a row of purple blocks on top of the pillars to connect them
+[Builder puts down a purple block at X:1 Y:4 Z:-2]
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+[Builder puts down a purple block at X:-1 Y:4 Z:-2]
+[Builder puts down a purple block at X:-2 Y:4 Z:-2]
+<Architect> and extend that row outwards to build a 4x4 square parallel to the ground, on the opposite side you're currently standing
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+[Builder puts down a purple block at X:-2 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:4 Z:1]
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:1]
+[Builder puts down a purple block at X:0 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:1 Y:4 Z:0]
+[Builder puts down a purple block at X:0 Y:4 Z:1]
+[Builder puts down a purple block at X:1 Y:4 Z:1]
+<Architect> okay, good! go back over to the other side
+<Architect> and remove the two purple blocks on the corners
+[Builder picks up a purple block at X:-2 Y:4 Z:1]
+[Builder picks up a purple block at X:1 Y:4 Z:1]
+<Architect> and replace them with blue blocks
+[Builder puts down a blue block at X:-2 Y:4 Z:1]
+[Builder puts down a blue block at X:1 Y:4 Z:1]
+[Builder puts down a blue block at X:-2 Y:3 Z:1]
+[Builder puts down a blue block at X:-2 Y:2 Z:1]
+[Builder picks up a blue block at X:-2 Y:2 Z:1]
+[Builder picks up a blue block at X:-2 Y:3 Z:1]
+<Architect> build a diagonal staircase on both sides, extending from the blue blocks towards the ground
+[Builder puts down a blue block at X:-2 Y:3 Z:1]
+[Builder puts down a blue block at X:-2 Y:3 Z:2]
+[Builder picks up a blue block at X:-2 Y:3 Z:1]
+[Builder puts down a blue block at X:-2 Y:2 Z:2]
+[Builder puts down a blue block at X:-2 Y:2 Z:3]
+[Builder picks up a blue block at X:-2 Y:2 Z:2]
+[Builder puts down a blue block at X:-2 Y:1 Z:4]
+[Builder puts down a blue block at X:1 Y:3 Z:1]
+[Builder puts down a blue block at X:1 Y:3 Z:2]
+[Builder picks up a blue block at X:1 Y:3 Z:1]
+[Builder puts down a blue block at X:1 Y:2 Z:2]
+[Builder puts down a blue block at X:1 Y:2 Z:3]
+[Builder picks up a blue block at X:1 Y:2 Z:2]
+[Builder puts down a blue block at X:1 Y:1 Z:4]
+<Architect> perfect! extend those staircases in the other direction by two blocks on each side, so on top of the purple square
+<Builder> I'm confused
+<Architect> my bad D: so, get on top of the structure
+<Architect> place a blue block on top of the purple blocks on the sides
+[Builder puts down a blue block at X:-2 Y:5 Z:-2]
+[Builder puts down a blue block at X:-2 Y:5 Z:-1]
+[Builder puts down a blue block at X:-2 Y:5 Z:0]
+[Builder puts down a blue block at X:1 Y:5 Z:-2]
+[Builder puts down a blue block at X:1 Y:5 Z:-1]
+[Builder puts down a blue block at X:1 Y:5 Z:0]
+<Architect> like that, but without the backmost two blue blocks on each side
+[Builder picks up a blue block at X:-2 Y:5 Z:-1]
+[Builder picks up a blue block at X:-2 Y:5 Z:-2]
+[Builder picks up a blue block at X:1 Y:5 Z:-1]
+[Builder picks up a blue block at X:1 Y:5 Z:-2]
+<Architect> and then one more blue block on each side, one tile above and behind the current two
+<Architect> so it's a 6-block staircase
+[Builder puts down a blue block at X:-2 Y:5 Z:-1]
+[Builder puts down a blue block at X:-2 Y:6 Z:-1]
+[Builder picks up a blue block at X:-2 Y:5 Z:-1]
+[Builder puts down a blue block at X:1 Y:5 Z:-1]
+[Builder puts down a blue block at X:0 Y:5 Z:-1]
+[Builder picks up a blue block at X:0 Y:6 Z:-1]
+[Builder picks up a blue block at X:1 Y:5 Z:-1]
+[Builder picks up a blue block at X:0 Y:5 Z:-1]
+[Builder puts down a blue block at X:1 Y:5 Z:-1]
+[Builder puts down a blue block at X:1 Y:6 Z:-1]
+[Builder picks up a blue block at X:1 Y:5 Z:-1]
+<Architect> perfect!
+<Architect> now, put a green block on top of the second highest blue stair on either side
+[Builder puts down a green block at X:-2 Y:6 Z:0]
+[Builder puts down a green block at X:1 Y:6 Z:0]
+<Architect> and extend those one more green block on either side, so they're above the 3rd highest blue blocks
+[Builder puts down a green block at X:-2 Y:5 Z:1]
+[Builder puts down a green block at X:1 Y:5 Z:1]
+<Architect> and stack a green block on top of those last two
+[Builder puts down a green block at X:1 Y:6 Z:1]
+[Builder puts down a green block at X:-2 Y:6 Z:1]
+<Architect> and remove the bottom two green blocks
+[Builder picks up a green block at X:1 Y:5 Z:1]
+[Builder picks up a green block at X:-2 Y:5 Z:1]
+<Architect> and finally, connect the outermost green blocks with two more green blocks
+[Builder puts down a green block at X:0 Y:6 Z:1]
+[Builder puts down a green block at X:-1 Y:6 Z:1]
+<Architect> perfect! sorry for the confusion
+<Builder> nice

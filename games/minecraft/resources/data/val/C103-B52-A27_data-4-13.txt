@@ -1,0 +1,62 @@
+B52-A27-C103-1523660020610
+<Builder> Mission has started.
+[Builder puts down a red block at X:-5 Y:1 Z:-1]
+<Builder> whoops! i got in trouble
+<Architect> we're gonna need to make a 3x3 green square in the middle
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder picks up a red block at X:-5 Y:1 Z:-1]
+<Architect> break the bottom middle top left and top right middle left and middle right
+[Builder picks up a green block at X:0 Y:1 Z:-1]
+[Builder picks up a green block at X:1 Y:1 Z:1]
+[Builder picks up a green block at X:1 Y:1 Z:0]
+[Builder picks up a green block at X:-1 Y:1 Z:1]
+[Builder picks up a green block at X:-1 Y:1 Z:0]
+<Builder> crude
+<Architect> ha
+<Architect> place one on top of the middle then break the bottom one
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder picks up a green block at X:0 Y:1 Z:0]
+<Architect> on top of that top black make a 3x3 matt
+<Builder> 3x3 like what we started with?
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:1]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:1]
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+<Architect> but on top of that block
+<Builder> think i got it
+<Architect> so don't include that block in the 3 x3 it should be resting on it
+<Builder> i think it is
+<Architect> go to the other side of the structure
+<Builder> okay
+<Architect> on that right row stack two on top
+[Builder puts down a green block at X:-1 Y:4 Z:0]
+[Builder puts down a green block at X:-1 Y:4 Z:1]
+[Builder puts down a green block at X:-1 Y:4 Z:-1]
+<Builder> hot or cold?
+<Architect> remove the two left ones
+[Builder picks up a green block at X:-1 Y:4 Z:0]
+[Builder picks up a green block at X:-1 Y:4 Z:-1]
+<Architect> then put two on the other side of that green
+[Builder puts down a green block at X:-1 Y:5 Z:1]
+[Builder picks up a green block at X:-1 Y:5 Z:1]
+[Builder puts down a green block at X:0 Y:4 Z:1]
+[Builder puts down a green block at X:1 Y:4 Z:1]
+[Builder puts down a green block at X:1 Y:5 Z:1]
+[Builder puts down a green block at X:0 Y:5 Z:1]
+[Builder puts down a green block at X:-1 Y:5 Z:1]
+<Architect> perfect
+<Builder> is this what you mean?
+<Builder> yay!

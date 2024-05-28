@@ -1,0 +1,116 @@
+B36-A38-C49-1524263765934
+<Builder> Mission has started.
+<Builder> hi
+<Architect> hello, it looks like we are building a cube where the sides are made of the letters 'a', 'b', 'c', 'd'
+<Builder> sounds cool
+<Architect> First, we will need to make a red A, make a 3 block long red bar somewhere near the middle
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+<Architect> Perfect, can you make it 3 blocks taller
+<Builder> sure
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-2]
+[Builder puts down a red block at X:-1 Y:3 Z:-2]
+[Builder puts down a red block at X:0 Y:3 Z:-2]
+[Builder puts down a red block at X:1 Y:3 Z:-2]
+<Architect> Sorry, can you add another row.
+<Builder> sure
+[Builder puts down a red block at X:-1 Y:4 Z:-2]
+[Builder puts down a red block at X:0 Y:4 Z:-2]
+[Builder puts down a red block at X:1 Y:4 Z:-2]
+<Architect> k you
+<Builder> no prob
+<Architect> Thank you*
+<Architect> Can you punch out the 1 and 3rd blocks from the bottom in the middle to finish the 'A'
+[Builder picks up a red block at X:0 Y:3 Z:-2]
+[Builder picks up a red block at X:0 Y:1 Z:-2]
+<Builder> like this?
+<Architect> Yes, that is perfect.
+<Builder> ok
+<Architect> On the right side of the 'A', lets start the b. We will need a 4 block pillar of yellow blocks
+<Builder> ok
+[Builder puts down a yellow block at X:-2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:4 Z:-2]
+<Architect> great, now we just need to use the bottom 3 blocks to make a ring. They will be the left side.
+[Builder puts down a yellow block at X:-2 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-5]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-5]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-5]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-3]
+[Builder picks up a yellow block at X:-2 Y:3 Z:-5]
+[Builder picks up a yellow block at X:-2 Y:2 Z:-5]
+[Builder picks up a yellow block at X:-2 Y:1 Z:-5]
+[Builder puts down a yellow block at X:-3 Y:2 Z:-4]
+[Builder picks up a yellow block at X:-3 Y:2 Z:-4]
+<Builder> like this?
+<Architect> Sorry, they ring should go to the right.
+<Builder> o ok
+[Builder puts down a yellow block at X:-2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:1 Z:0]
+[Builder puts down a yellow block at X:-2 Y:1 Z:1]
+[Builder puts down a yellow block at X:-2 Y:2 Z:1]
+[Builder puts down a yellow block at X:-2 Y:3 Z:1]
+[Builder picks up a yellow block at X:-2 Y:2 Z:1]
+[Builder picks up a yellow block at X:-2 Y:3 Z:1]
+[Builder puts down a yellow block at X:-2 Y:2 Z:0]
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+[Builder picks up a yellow block at X:-2 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+[Builder picks up a yellow block at X:-2 Y:1 Z:1]
+[Builder puts down a yellow block at X:-3 Y:3 Z:-3]
+[Builder picks up a yellow block at X:-3 Y:3 Z:-3]
+[Builder picks up a yellow block at X:-2 Y:3 Z:-3]
+[Builder picks up a yellow block at X:-2 Y:3 Z:-4]
+[Builder picks up a yellow block at X:-2 Y:2 Z:-4]
+[Builder picks up a yellow block at X:-2 Y:1 Z:-3]
+[Builder picks up a yellow block at X:-2 Y:1 Z:-4]
+<Builder> like this?
+<Architect> Exactly!
+<Builder> ok cool
+<Architect> Next up is the c, we are going to need another 4 block pillar of blue blocks on the right side of the b
+[Builder puts down a blue block at X:-2 Y:1 Z:1]
+[Builder puts down a blue block at X:-2 Y:2 Z:1]
+[Builder puts down a blue block at X:-2 Y:3 Z:1]
+[Builder puts down a blue block at X:-2 Y:4 Z:1]
+<Architect> On the top and bottom, we are going to add 2 block extensions, parrallel to the a. and going to the right
+[Builder puts down a blue block at X:-1 Y:4 Z:1]
+[Builder puts down a blue block at X:0 Y:4 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+<Architect> Great, next we just need to finish the d.
+<Builder> ok
+<Architect> Perpendicular to the c, can you make a ring of purple blocks going towards the a?
+<Builder> sure, what color
+<Builder> o sorry
+<Builder> purple lol
+<Architect> No worries
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:2 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+[Builder puts down a purple block at X:1 Y:4 Z:1]
+[Builder puts down a purple block at X:1 Y:4 Z:0]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+<Builder> like this?
+<Architect> Close, we just need to make it one shorter
+<Builder> ok
+[Builder picks up a purple block at X:1 Y:4 Z:1]
+[Builder picks up a purple block at X:1 Y:4 Z:0]
+[Builder picks up a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+<Builder> like this?
+<Architect> Yup, now we just need to add a block to the upper right, next to the A.
+<Builder> ok
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+<Architect> Perfect, that's it for this one.
+<Builder> great

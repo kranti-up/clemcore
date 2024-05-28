@@ -1,0 +1,50 @@
+B1-A3-C4-1522432009099
+<Builder> Mission has started.
+<Architect> hello again builder
+<Builder> hello
+<Architect> we will start using green blocks
+<Architect> i need you to build 4 green blocks straight from where you are standing, all on the ground
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:2 Y:1 Z:1]
+<Builder> like this?
+<Architect> yes
+<Architect> now i need you to put a green block on either side of the second existing block, on the ground
+<Builder> so on the middle blocks?
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:2]
+<Architect> they need to be attached to the same block, preferable to the one closer to you
+<Architect> so it looks like a cross
+[Builder picks up a green block at X:0 Y:1 Z:2]
+[Builder puts down a green block at X:1 Y:1 Z:2]
+<Builder> like this?
+<Architect> perfect
+<Architect> now, i need you to place a block diagonal from one of those new blocks, in the forward direction
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:0 Y:1 Z:3]
+<Builder> like a cactus?
+<Architect> yes perfect
+<Architect> now we are done with the green
+<Architect> can you place a red block above the 4 greens with a space in between the green line and the new block?
+[Builder puts down a red block at X:-5 Y:1 Z:1]
+<Builder> here?
+<Architect> just need 1 block space in between the green and the new red block
+<Builder> oh i see
+[Builder picks up a red block at X:-5 Y:1 Z:1]
+[Builder puts down a red block at X:-3 Y:1 Z:1]
+<Architect> yes like that
+<Architect> now can you place 4 yellow blocks on each flat side of the red block?
+[Builder puts down a yellow block at X:-3 Y:1 Z:0]
+[Builder puts down a yellow block at X:-4 Y:1 Z:1]
+[Builder puts down a yellow block at X:-3 Y:1 Z:2]
+[Builder puts down a yellow block at X:-2 Y:1 Z:1]
+<Builder> its a flower!
+<Architect> yes it is, you are very observant builder
+<Architect> to finish, we need 4 orange blocks to fill in the corners of the 3x3 head of the flower
+[Builder puts down a orange block at X:-2 Y:1 Z:2]
+[Builder puts down a orange block at X:-4 Y:1 Z:2]
+[Builder puts down a orange block at X:-4 Y:1 Z:0]
+[Builder puts down a orange block at X:-2 Y:1 Z:0]
+<Architect> good job builder, we have successfully completed our mission!
+<Builder> good job!

@@ -1,0 +1,24 @@
+B21-A15-C22-1522881735199
+<Builder> Mission has started.
+<Architect> all good?
+<Builder> ye
+<Architect> okay, cool!
+<Architect> so we're building a smiley face
+<Architect> you're gonna want to put a single blue block down near the middle of the grid
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+<Architect> then another blue block 3 spaces away in any direction
+<Builder> is there good
+<Architect> yep!
+[Builder puts down a blue block at X:-3 Y:1 Z:-2]
+<Architect> okay, now put an orange block three spaces in front of the blue block, on the opposite side you're standing on now
+[Builder puts down a orange block at X:-3 Y:1 Z:1]
+<Architect> good!
+<Architect> now complete the square you're making with a red block
+[Builder puts down a red block at X:0 Y:1 Z:1]
+<Architect> cool!
+<Architect> from your current position, put a purple block down one space forward and to the right of the red block
+[Builder puts down a purple block at X:-1 Y:1 Z:2]
+<Architect> and a yellow block next to that to complete the face :)
+[Builder puts down a yellow block at X:-2 Y:1 Z:2]
+<Architect> looks good! :)
+<Builder> :)

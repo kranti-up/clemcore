@@ -1,0 +1,113 @@
+B25-A3-C72-1523385295902
+<Builder> Mission has started.
+<Builder> x = y more like x = bye
+<Architect> right
+<Architect> ok this one is weird
+<Builder> kk pitch it to me
+<Builder> we got this
+<Architect> hmm i'd say 9x3x4 hard to tell. anyway we'll start with purple. these make the legs of the base figure
+<Architect> place 1 purple block a little down to the left of the center
+[Builder puts down a purple block at X:-4 Y:1 Z:2]
+<Architect> a little more toward the middle we need room to the right and left of it
+[Builder picks up a purple block at X:-4 Y:1 Z:2]
+[Builder puts down a purple block at X:-1 Y:1 Z:2]
+[Builder puts down a purple block at X:-2 Y:1 Z:2]
+<Builder> left or right one
+<Builder> which should i go with
+<Architect> yeah looks good. lets go with right
+[Builder picks up a purple block at X:-2 Y:1 Z:2]
+<Architect> ok then place 2 purple blocks to the right with 1 space in between the old and new ones
+[Builder puts down a purple block at X:1 Y:1 Z:2]
+[Builder puts down a purple block at X:3 Y:1 Z:2]
+<Builder> like that?
+<Architect> the right two should be connected, phrased that wrong
+[Builder picks up a purple block at X:3 Y:1 Z:2]
+[Builder puts down a purple block at X:2 Y:1 Z:2]
+<Builder> no prob
+<Architect> nice now mirror that forward 1 space of whatever that is
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:3 Y:1 Z:0]
+[Builder picks up a purple block at X:3 Y:1 Z:0]
+[Builder puts down a purple block at X:2 Y:1 Z:0]
+<Builder> like that?
+<Architect> yeah
+<Architect> it looks like it could be an animal kneeling
+<Architect> next the body is red. let me get a good look at it
+<Architect> its not quite a perfect cube. its 3x3x2 on top of those purple legs so the right most purple blocks should be sticking out the back
+<Builder> what color?
+<Architect> red
+[Builder puts down a red block at X:1 Y:2 Z:2]
+[Builder puts down a red block at X:0 Y:2 Z:2]
+[Builder puts down a red block at X:-1 Y:2 Z:2]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:1]
+[Builder puts down a red block at X:0 Y:3 Z:1]
+[Builder puts down a red block at X:-1 Y:3 Z:1]
+[Builder puts down a red block at X:-1 Y:3 Z:2]
+[Builder puts down a red block at X:0 Y:3 Z:2]
+[Builder puts down a red block at X:1 Y:3 Z:2]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+<Architect> yeah like that
+<Builder> damn we're nailin it
+<Architect> its got an orange head not connected to the body and a blue tail that is connected. the head is to the right of where you are now
+[Builder puts down a orange block at X:-2 Y:3 Z:1]
+[Builder puts down a orange block at X:-3 Y:3 Z:1]
+[Builder picks up a orange block at X:-2 Y:3 Z:1]
+[Builder puts down a blue block at X:2 Y:2 Z:1]
+<Architect> yeah nice
+<Builder> are we givin this fool a neck or nah
+<Architect> so put 1 orange block on either side of that one. nah it has no neck
+<Architect> poor guy got beheaded
+[Builder puts down a orange block at X:-3 Y:3 Z:0]
+<Builder> :'(
+[Builder puts down a orange block at X:-3 Y:3 Z:2]
+<Builder> on both sides or only one?
+<Architect> ok then put 3 orange blocks in a row underneath that orange row
+[Builder puts down a orange block at X:-3 Y:2 Z:0]
+[Builder puts down a orange block at X:-3 Y:2 Z:1]
+[Builder puts down a orange block at X:-3 Y:2 Z:2]
+<Architect> then put 1 on top of the left and right top orange blocks so it has ears
+[Builder puts down a orange block at X:-3 Y:4 Z:0]
+[Builder puts down a orange block at X:-3 Y:4 Z:2]
+<Architect> ok now the tail
+<Builder> this is some demon bunny fr fr
+<Architect> agreed
+<Architect> lil bunny foo foo
+<Builder> is that all for the tail?
+<Architect> nah its long. move that blue block up 1 space
+[Builder picks up a blue block at X:2 Y:2 Z:1]
+[Builder puts down a blue block at X:2 Y:3 Z:1]
+[Builder puts down a blue block at X:3 Y:3 Z:1]
+[Builder picks up a blue block at X:3 Y:3 Z:1]
+<Architect> then 1 on top of that
+[Builder puts down a blue block at X:2 Y:4 Z:1]
+<Architect> and one out towards the back
+[Builder puts down a blue block at X:3 Y:4 Z:1]
+<Architect> then one that goes to the bunnies left
+[Builder puts down a blue block at X:3 Y:4 Z:2]
+<Architect> the last one is suspended in the air so put 1 placeholder on the back of the last piece
+[Builder puts down a purple block at X:4 Y:4 Z:2]
+[Builder puts down a blue block at X:5 Y:4 Z:2]
+[Builder picks up a purple block at X:4 Y:4 Z:2]
+<Architect> it should be on top of the placeholder
+[Builder puts down a blue block at X:4 Y:4 Z:2]
+[Builder puts down a blue block at X:4 Y:5 Z:2]
+[Builder picks up a blue block at X:5 Y:4 Z:2]
+[Builder picks up a blue block at X:4 Y:4 Z:2]
+<Architect> yeah like that
+<Architect> lemme check it
+<Builder> p majestic tbh
+<Architect> think we did it
+<Architect> we should name it
+<Builder> im down
+<Architect> looks like a ralph to me. ralph the rabbit
+<Builder> im all in
+<Architect> old yeller this fool

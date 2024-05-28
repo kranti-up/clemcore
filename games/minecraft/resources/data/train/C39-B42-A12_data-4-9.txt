@@ -1,0 +1,60 @@
+B42-A12-C39-1523305086735
+<Builder> Mission has started.
+<Builder> standing by
+<Architect> I need to look at this...
+<Builder> for instructions
+<Builder> ok
+<Architect> use 8 green blocks to make a vertical square
+<Architect> near the middle
+<Builder> how long is each side of the square
+<Architect> 3 blocks
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+<Builder> that good?
+<Architect> good
+<Architect> put a purple one in front of the top right block
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+<Architect> right
+<Builder> like that?
+<Architect> make a similar square with that as the bottom left corner
+<Architect> perpendicular
+<Architect> to the other onte
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-3]
+<Architect> right
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+[Builder puts down a purple block at X:-1 Y:4 Z:-3]
+[Builder puts down a purple block at X:-1 Y:5 Z:-3]
+[Builder puts down a purple block at X:-1 Y:5 Z:-2]
+[Builder puts down a purple block at X:-1 Y:5 Z:-1]
+<Builder> that good?
+<Architect> right
+<Architect> now we will add a blue square
+<Architect> it is touching the opposite side of the green square
+[Builder puts down a blue block at X:1 Y:3 Z:-1]
+<Architect> on the other side
+[Builder picks up a blue block at X:1 Y:3 Z:-1]
+[Builder puts down a blue block at X:1 Y:3 Z:1]
+<Architect> yes
+<Architect> parallel to the green square this time
+[Builder puts down a blue block at X:0 Y:3 Z:1]
+<Architect> extending off to the side
+<Builder> like that or othwr wAY?
+<Builder> ok
+[Builder picks up a blue block at X:0 Y:3 Z:1]
+[Builder puts down a blue block at X:2 Y:3 Z:1]
+[Builder puts down a blue block at X:3 Y:3 Z:1]
+[Builder puts down a blue block at X:3 Y:4 Z:1]
+[Builder puts down a blue block at X:3 Y:5 Z:1]
+[Builder puts down a blue block at X:1 Y:4 Z:1]
+[Builder puts down a blue block at X:1 Y:5 Z:1]
+[Builder puts down a blue block at X:2 Y:5 Z:1]
+<Architect> sorry thislags a lot
+<Builder> ok
+<Builder> is that one good?

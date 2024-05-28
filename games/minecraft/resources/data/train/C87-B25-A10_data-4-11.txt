@@ -1,0 +1,92 @@
+B25-A10-C87-1523487347683
+<Builder> Mission has started.
+<Architect> so this one doesn't really have an overall shape but there are four floating blocks. I will get to those later.
+<Architect> start at the left edge with two orange blocks
+[Builder puts down a orange block at X:5 Y:1 Z:-1]
+<Builder> vertical or horizontal?
+<Architect> horizontally placed toward the middle
+[Builder puts down a orange block at X:4 Y:1 Z:-1]
+<Architect> cool. now, make a stair case of height three with orange. like put two more down, on top of the current, but shifted one to the right
+<Architect> headed the same direction as the first
+[Builder puts down a orange block at X:4 Y:2 Z:-1]
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+[Builder puts down a orange block at X:3 Y:2 Z:0]
+[Builder picks up a orange block at X:3 Y:2 Z:-1]
+<Builder> like that?
+<Architect> what you had initially before you added the third block was the right structure
+[Builder picks up a orange block at X:3 Y:2 Z:0]
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+<Architect> yes
+<Builder> oh like the tetris piece
+<Architect> yes! now there is another "stair step" on top of that
+<Builder> should I just build the same thing I just did?
+[Builder puts down a orange block at X:3 Y:3 Z:-1]
+[Builder puts down a orange block at X:2 Y:3 Z:-1]
+<Architect> yep! that completes the first structure.
+<Builder> ok
+<Architect> now on to the four floating blocks. they are all separate.
+<Architect> place a block down two spaces right of the edge of the first structure
+<Builder> what color
+<Architect> oh, all orange from here on out
+<Builder> ok
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder picks up a orange block at X:0 Y:3 Z:-1]
+[Builder picks up a orange block at X:1 Y:3 Z:-1]
+<Builder> like that or on the ground?
+<Architect> on the ground, and one less far away
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder picks up a orange block at X:-1 Y:3 Z:-1]
+<Architect> in the vertical direction above the block you just placed, there are two floating orange blocks. one is right on top of what you just placed. the other is 4 above that.
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder picks up a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+[Builder puts down a orange block at X:0 Y:6 Z:-1]
+[Builder puts down a orange block at X:0 Y:7 Z:-1]
+[Builder picks up a orange block at X:0 Y:6 Z:-1]
+[Builder picks up a orange block at X:0 Y:5 Z:-1]
+[Builder picks up a orange block at X:0 Y:4 Z:-1]
+<Builder> like that?
+<Builder> i can use green to make it easier to check
+[Builder puts down a green block at X:0 Y:3 Z:-2]
+[Builder picks up a green block at X:0 Y:3 Z:-2]
+[Builder puts down a green block at X:0 Y:4 Z:-1]
+[Builder puts down a green block at X:0 Y:5 Z:-1]
+[Builder puts down a green block at X:0 Y:6 Z:-1]
+[Builder puts down a green block at X:0 Y:2 Z:-1]
+<Architect> not quite. shift all that down vertically by one (which gets rid of the bottom orange)
+[Builder picks up a orange block at X:0 Y:3 Z:-1]
+[Builder picks up a green block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder picks up a green block at X:0 Y:6 Z:-1]
+[Builder puts down a green block at X:0 Y:6 Z:-1]
+[Builder picks up a green block at X:0 Y:6 Z:-1]
+[Builder puts down a green block at X:0 Y:6 Z:-1]
+[Builder picks up a green block at X:0 Y:6 Z:-1]
+[Builder puts down a orange block at X:0 Y:6 Z:-1]
+[Builder picks up a orange block at X:0 Y:7 Z:-1]
+[Builder picks up a green block at X:0 Y:5 Z:-1]
+[Builder picks up a green block at X:0 Y:4 Z:-1]
+<Builder> like that?
+<Architect> get rid of the very bottom orange
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+<Builder> ok
+<Architect> okay. now move to the grid space on the ground that is two to the right of that.
+<Architect> you can create a similar stack where the floating blocks are 3 above the ground and 5 above the ground
+[Builder puts down a orange block at X:-2 Y:1 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:3 Z:-1]
+[Builder picks up a orange block at X:-2 Y:2 Z:-1]
+[Builder picks up a orange block at X:-2 Y:1 Z:-1]
+[Builder puts down a orange block at X:-2 Y:4 Z:-1]
+[Builder puts down a orange block at X:-2 Y:5 Z:-1]
+[Builder picks up a orange block at X:-2 Y:4 Z:-1]
+<Builder> like that?
+<Architect> yea
+<Builder> is this the stack overflow logo
+<Architect> idk i haven't seen it
+<Builder> oh ok, is that it?
+<Architect> yee

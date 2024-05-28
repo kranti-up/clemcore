@@ -1,0 +1,59 @@
+B20-A30-C18-1523461994171
+<Builder> Mission has started.
+<Architect> this looks like 3 plus signs
+<Builder> how big
+<Architect> 5x3
+<Architect> begin by building a 3x3 purple plus sign
+[Builder puts down a purple block at X:0 Y:1 Z:-2]
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder puts down a purple block at X:0 Y:3 Z:-2]
+[Builder puts down a purple block at X:1 Y:2 Z:-2]
+[Builder puts down a purple block at X:-1 Y:2 Z:-2]
+<Architect> delete the middle
+[Builder picks up a purple block at X:0 Y:2 Z:-2]
+<Architect> now repeat in green but the middle of the green plus sign should be one space behind and to the right of the purple one
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+[Builder puts down a green block at X:-1 Y:2 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:2 Z:-1]
+[Builder picks up a green block at X:-1 Y:2 Z:-1]
+[Builder puts down a green block at X:-2 Y:1 Z:-1]
+[Builder puts down a green block at X:-2 Y:2 Z:-1]
+[Builder picks up a green block at X:-2 Y:1 Z:-1]
+<Builder> this?
+<Architect> you will need to move that one more space to the right
+[Builder puts down a green block at X:-2 Y:3 Z:-1]
+[Builder puts down a green block at X:-3 Y:2 Z:-1]
+[Builder puts down a green block at X:-2 Y:1 Z:-1]
+[Builder picks up a green block at X:-2 Y:2 Z:-1]
+[Builder puts down a green block at X:-1 Y:2 Z:-1]
+[Builder picks up a green block at X:-1 Y:1 Z:-1]
+[Builder picks up a green block at X:0 Y:2 Z:-1]
+[Builder picks up a green block at X:-1 Y:3 Z:-1]
+<Architect> now repeat in blue and the middle of the blue one should be in line with the left end of the green
+[Builder puts down a blue block at X:-1 Y:1 Z:-3]
+[Builder puts down a blue block at X:-1 Y:3 Z:-2]
+[Builder puts down a blue block at X:-1 Y:3 Z:-3]
+[Builder picks up a blue block at X:-1 Y:3 Z:-2]
+[Builder puts down a blue block at X:-1 Y:2 Z:-3]
+[Builder puts down a blue block at X:-2 Y:2 Z:-4]
+[Builder picks up a blue block at X:-2 Y:2 Z:-4]
+[Builder puts down a blue block at X:0 Y:2 Z:-3]
+[Builder picks up a blue block at X:-1 Y:2 Z:-3]
+<Architect> no sorry build behind the green one
+[Builder picks up a blue block at X:-1 Y:3 Z:-3]
+[Builder picks up a blue block at X:-2 Y:2 Z:-3]
+[Builder picks up a blue block at X:-1 Y:1 Z:-3]
+[Builder picks up a blue block at X:0 Y:2 Z:-3]
+[Builder puts down a blue block at X:-1 Y:3 Z:-1]
+[Builder puts down a blue block at X:-1 Y:3 Z:0]
+[Builder picks up a blue block at X:-1 Y:3 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:-2 Y:2 Z:-1]
+[Builder puts down a blue block at X:-2 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder picks up a blue block at X:0 Y:1 Z:0]
+[Builder picks up a blue block at X:-2 Y:2 Z:-1]
+<Builder> this?
+<Architect> yes we are done

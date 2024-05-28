@@ -1,0 +1,25 @@
+B1-A44-C40-1523038017799
+<Builder> Mission has started.
+<Architect> hello
+<Builder> hello
+<Architect> pretty simple drawing 2 dimensional vertical with some 3d stuff. lets do the 2d first
+<Architect> 1st column: purple, empty, green
+[Builder puts down a purple block at X:3 Y:1 Z:-2]
+<Architect> 2nd column: red, orange, yellow
+[Builder puts down a purple block at X:3 Y:2 Z:-2]
+[Builder puts down a green block at X:3 Y:3 Z:-2]
+[Builder picks up a purple block at X:3 Y:2 Z:-2]
+[Builder puts down a red block at X:2 Y:1 Z:-2]
+<Architect> 3rd column, purple, empty, green
+[Builder puts down a orange block at X:2 Y:2 Z:-2]
+[Builder puts down a yellow block at X:2 Y:3 Z:-2]
+[Builder puts down a purple block at X:1 Y:1 Z:-2]
+[Builder puts down a green block at X:1 Y:3 Z:-2]
+<Architect> finally, on the yellow block, place 1 blue block towards you and one blue block behind the yellow
+[Builder puts down a blue block at X:2 Y:3 Z:-3]
+<Architect> orange*****
+<Architect> sorry I meant orange
+[Builder picks up a blue block at X:2 Y:3 Z:-3]
+[Builder puts down a blue block at X:2 Y:2 Z:-3]
+[Builder puts down a blue block at X:2 Y:2 Z:-1]
+<Architect> ok good job

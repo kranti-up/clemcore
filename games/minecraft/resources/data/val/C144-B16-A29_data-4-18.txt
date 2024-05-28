@@ -1,0 +1,116 @@
+B16-A29-C144-1524067263550
+<Builder> Mission has started.
+<Builder> hi again!
+<Architect> hola
+<Architect> this one is the letter P then a bunch of random blocks
+<Architect> we'll start with the P
+<Builder> sick
+<Architect> it's purple
+[Builder puts down a purple block at X:2 Y:1 Z:0]
+<Architect> 5 blocks tall
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder puts down a purple block at X:2 Y:3 Z:0]
+[Builder puts down a purple block at X:2 Y:4 Z:0]
+[Builder puts down a purple block at X:2 Y:5 Z:0]
+<Architect> the top is two out
+<Architect> to your right
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+<Architect> yea
+<Architect> two donw
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+<Architect> now place a red block below the last purple block you placed
+[Builder puts down a red block at X:1 Y:2 Z:0]
+<Architect> now along the line that the P faces
+<Architect> two more red blocks
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder picks up a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+<Builder> here?
+<Architect> on the ground
+[Builder picks up a red block at X:-1 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> shift it over one more
+[Builder picks up a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> righto
+<Architect> still along the line
+<Architect> 2 red up along the diagonal
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+[Builder picks up a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-3 Y:2 Z:0]
+[Builder puts down a red block at X:-3 Y:3 Z:0]
+[Builder picks up a red block at X:-3 Y:2 Z:0]
+<Architect> excellent
+<Architect> now we're going to build along the perpendicular line
+<Architect> in the direction you're facint
+<Architect> facing
+<Architect> one more up along the diagonal
+[Builder puts down a red block at X:-4 Y:3 Z:0]
+[Builder puts down a red block at X:-4 Y:4 Z:0]
+[Builder picks up a red block at X:-4 Y:3 Z:0]
+<Builder> this?
+<Architect> not quite
+[Builder picks up a red block at X:-4 Y:4 Z:0]
+[Builder puts down a red block at X:-3 Y:3 Z:-1]
+[Builder puts down a red block at X:-3 Y:4 Z:-1]
+[Builder picks up a red block at X:-3 Y:3 Z:-1]
+<Architect> yes but flip it over the axis
+[Builder picks up a red block at X:-3 Y:4 Z:-1]
+[Builder puts down a red block at X:-3 Y:3 Z:1]
+[Builder puts down a red block at X:-3 Y:4 Z:1]
+[Builder picks up a red block at X:-2 Y:4 Z:2]
+[Builder picks up a red block at X:-2 Y:4 Z:1]
+[Builder picks up a red block at X:-3 Y:3 Z:1]
+<Architect> precisely
+<Builder> great
+<Architect> now one red block down along the diagonal
+<Architect> from the last one
+[Builder puts down a red block at X:-3 Y:4 Z:2]
+[Builder puts down a red block at X:-3 Y:3 Z:2]
+[Builder picks up a red block at X:-3 Y:4 Z:2]
+<Architect> great now one orange below that one
+<Builder> diagonally or nah?
+[Builder puts down a orange block at X:-3 Y:2 Z:2]
+<Architect> no, just right below it
+<Architect> ok
+<Architect> two more orange blocks to go
+<Architect> these are on the ground
+<Architect> on the diagonal back toward the line we started on
+[Builder puts down a orange block at X:-3 Y:1 Z:1]
+[Builder puts down a orange block at X:-2 Y:1 Z:0]
+<Architect> almost
+<Architect> but the other way
+[Builder picks up a orange block at X:-3 Y:1 Z:1]
+[Builder picks up a orange block at X:-2 Y:1 Z:0]
+<Architect> and shifted one block away from the structure
+[Builder puts down a orange block at X:-3 Y:1 Z:-1]
+[Builder puts down a orange block at X:-2 Y:1 Z:0]
+<Builder> here?
+<Architect> not quite
+<Builder> grr, okay
+[Builder picks up a orange block at X:-2 Y:1 Z:0]
+[Builder picks up a orange block at X:-3 Y:1 Z:-1]
+<Architect> one is on the original line, the last block on the ground
+<Architect> on the line the Pis on
+[Builder puts down a orange block at X:-3 Y:1 Z:0]
+<Builder> a block here?
+<Architect> yes, but the very last space on the ground before going out of bounds
+[Builder picks up a orange block at X:-3 Y:1 Z:0]
+[Builder puts down a orange block at X:-5 Y:1 Z:0]
+<Architect> perfect
+[Builder puts down a orange block at X:-5 Y:2 Z:0]
+[Builder puts down a orange block at X:-4 Y:2 Z:0]
+[Builder picks up a orange block at X:-5 Y:2 Z:0]
+<Architect> remove that last one
+[Builder picks up a orange block at X:-4 Y:2 Z:0]
+<Architect> ok one more on the ground
+[Builder puts down a orange block at X:-4 Y:1 Z:0]
+[Builder picks up a orange block at X:-4 Y:1 Z:0]
+<Architect> on the diagonal toward the other orange block
+[Builder puts down a orange block at X:-4 Y:1 Z:1]

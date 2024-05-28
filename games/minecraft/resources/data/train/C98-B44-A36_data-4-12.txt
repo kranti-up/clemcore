@@ -1,0 +1,93 @@
+B44-A36-C98-1523575432575
+<Builder> Mission has started.
+<Builder> hello. ready
+<Architect> ok move so that you're on the 2nd row from the bottom of the space
+<Architect> place a yellow block to your right
+[Builder puts down a yellow block at X:-1 Y:1 Z:-4]
+<Architect> then place a yellow block on top of that
+[Builder puts down a yellow block at X:-1 Y:2 Z:-4]
+<Architect> ok get rid of the first block you put down
+[Builder picks up a yellow block at X:-1 Y:1 Z:-4]
+<Architect> then place 3 yellow blocks in front
+<Architect> ugh i mean behind sorry
+[Builder puts down a yellow block at X:-1 Y:2 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+<Architect> i alwauys made that mistake :((
+<Architect> ok good
+<Builder> its ok
+<Architect> on the third block of the row place a yellow block on each side
+[Builder puts down a yellow block at X:0 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-2]
+<Architect> it should look like a cross when you're done
+<Architect> nice
+<Architect> then at the top of the cross, put another yellow block behind it
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+<Architect> then put a green block on each side
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder puts down a green block at X:-2 Y:2 Z:0]
+<Architect> then get rid of the yellow block that you put down last
+[Builder picks up a yellow block at X:-1 Y:2 Z:0]
+<Architect> ok then at the top of the cross, move 3 spaces left
+<Architect> then place a red block on the ground
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+<Architect> then place another red block on top of it
+[Builder puts down a red block at X:2 Y:2 Z:-1]
+<Architect> then get rid of the bottom red block
+[Builder picks up a red block at X:2 Y:1 Z:-1]
+<Architect> this is like the yellow cross but in a different color
+<Builder> so you want me to build a red cross? same orientation?
+<Architect> ya
+[Builder puts down a red block at X:2 Y:2 Z:-2]
+[Builder puts down a red block at X:2 Y:2 Z:-3]
+[Builder puts down a red block at X:3 Y:2 Z:-2]
+[Builder puts down a red block at X:2 Y:2 Z:-4]
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+<Architect> oh sorry wait
+<Architect> get rid of the blocks you just put down sorry :(
+[Builder picks up a red block at X:2 Y:2 Z:-4]
+[Builder picks up a red block at X:2 Y:2 Z:-3]
+[Builder picks up a red block at X:3 Y:2 Z:-2]
+[Builder picks up a red block at X:2 Y:2 Z:-2]
+[Builder picks up a red block at X:1 Y:2 Z:-2]
+<Architect> it's like the yellow cross but shifted
+<Builder> shifted backwards by 1?
+<Architect> so the floating red block is the bottom of the cross right now
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:1]
+[Builder puts down a red block at X:2 Y:2 Z:2]
+[Builder puts down a red block at X:3 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+<Architect> ok good
+<Architect> instead of the green blocks make them orange
+[Builder puts down a orange block at X:2 Y:2 Z:3]
+[Builder puts down a orange block at X:1 Y:2 Z:3]
+[Builder picks up a orange block at X:1 Y:2 Z:4]
+[Builder puts down a orange block at X:3 Y:2 Z:3]
+[Builder picks up a orange block at X:2 Y:2 Z:3]
+<Architect> ok now at the right orange block move to the right 3 spaces
+<Architect> and then place a purple block on the ground
+[Builder puts down a purple block at X:-2 Y:1 Z:3]
+<Architect> then place a purple block on top of it
+[Builder puts down a purple block at X:-2 Y:1 Z:2]
+[Builder picks up a purple block at X:-2 Y:1 Z:2]
+[Builder puts down a purple block at X:-2 Y:2 Z:3]
+<Architect> and get rid of the bottom purple block after you do that
+[Builder picks up a purple block at X:-2 Y:1 Z:3]
+<Architect> then place 3 purple blocks to the right of the floating one
+[Builder puts down a purple block at X:-3 Y:2 Z:3]
+[Builder puts down a purple block at X:-4 Y:2 Z:3]
+[Builder puts down a purple block at X:-5 Y:2 Z:3]
+<Architect> then at the 2nd block put a purple block in front and behind it
+<Architect> so it's another cross
+[Builder puts down a purple block at X:-3 Y:2 Z:2]
+[Builder puts down a purple block at X:-3 Y:2 Z:4]
+<Architect> then make the 2 blocks sticking out blue
+[Builder puts down a blue block at X:-1 Y:2 Z:3]
+[Builder puts down a blue block at X:-1 Y:2 Z:4]
+[Builder puts down a blue block at X:-1 Y:2 Z:2]
+[Builder picks up a blue block at X:-1 Y:2 Z:2]
+[Builder puts down a blue block at X:-1 Y:2 Z:2]
+[Builder picks up a blue block at X:-1 Y:2 Z:3]
+<Architect> ok i think that's good
+<Builder> nice!

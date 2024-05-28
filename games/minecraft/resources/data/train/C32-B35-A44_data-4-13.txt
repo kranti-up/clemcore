@@ -1,0 +1,19 @@
+B35-A44-C32-1523650068421
+<Builder> Mission has started.
+<Architect> hello I'm ready
+<Builder> same
+<Architect> I mean are you ready? lol mb
+<Architect> please don't move at the beginning of the missions
+<Builder> sorry
+<Architect> place 3 blue blocks horizontally anywhere you want
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:2 Y:1 Z:0]
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+<Builder> like that?
+<Architect> place 2 blue blocks on top of the left most blue block
+<Builder> relative to my position correct?
+[Builder puts down a blue block at X:2 Y:2 Z:-1]
+[Builder puts down a blue block at X:2 Y:2 Z:-2]
+[Builder picks up a blue block at X:2 Y:2 Z:-1]
+[Builder puts down a blue block at X:2 Y:3 Z:-2]
+<Architect> that's good

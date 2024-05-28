@@ -1,0 +1,64 @@
+B44-A20-C39-1523283069379
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hello
+<Architect> leave room for a 5x5 structure
+<Architect> start with green
+<Architect> make a line of 3 green
+[Builder puts down a green block at X:3 Y:1 Z:3]
+[Builder puts down a green block at X:2 Y:1 Z:3]
+[Builder puts down a green block at X:1 Y:1 Z:3]
+<Builder> is this good?
+<Architect> can you move it two to your right
+[Builder picks up a green block at X:3 Y:1 Z:3]
+[Builder picks up a green block at X:2 Y:1 Z:3]
+[Builder puts down a green block at X:0 Y:1 Z:3]
+[Builder puts down a green block at X:-1 Y:1 Z:3]
+<Builder> how about now?
+<Architect> great
+<Architect> now make it into a 3x3 wall
+[Builder puts down a green block at X:1 Y:1 Z:2]
+[Builder picks up a green block at X:1 Y:1 Z:2]
+[Builder puts down a green block at X:1 Y:2 Z:3]
+[Builder puts down a green block at X:0 Y:2 Z:3]
+[Builder puts down a green block at X:-1 Y:2 Z:3]
+[Builder puts down a green block at X:1 Y:3 Z:3]
+[Builder puts down a green block at X:0 Y:3 Z:3]
+[Builder puts down a green block at X:-1 Y:3 Z:3]
+<Architect> punch out the middle
+[Builder picks up a green block at X:0 Y:2 Z:3]
+<Architect> so we're going to do the same shape but in blue
+<Architect> let me just double check where it is
+<Architect> place one block behind the top left corner of the green from your perspective
+[Builder puts down a blue block at X:1 Y:3 Z:4]
+<Architect> perfect
+<Architect> now two to your right
+[Builder puts down a blue block at X:2 Y:3 Z:4]
+[Builder puts down a blue block at X:3 Y:3 Z:4]
+<Architect> rest is built up from that
+[Builder puts down a blue block at X:1 Y:1 Z:4]
+[Builder puts down a blue block at X:1 Y:2 Z:4]
+[Builder picks up a blue block at X:1 Y:2 Z:4]
+[Builder picks up a blue block at X:1 Y:1 Z:4]
+[Builder puts down a blue block at X:1 Y:4 Z:4]
+[Builder puts down a blue block at X:3 Y:4 Z:4]
+[Builder puts down a blue block at X:3 Y:5 Z:4]
+[Builder puts down a blue block at X:2 Y:5 Z:4]
+[Builder puts down a blue block at X:1 Y:5 Z:4]
+<Architect> perfect
+<Architect> now purple
+<Architect> place it behind the top left of the green
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+<Architect> build two towards you
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+<Architect> now build upwards
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:2]
+[Builder puts down a purple block at X:-1 Y:4 Z:1]
+[Builder picks up a purple block at X:-1 Y:4 Z:1]
+[Builder puts down a purple block at X:-1 Y:5 Z:2]
+[Builder puts down a purple block at X:-1 Y:5 Z:1]
+<Architect> that's it!
+<Builder> nice!

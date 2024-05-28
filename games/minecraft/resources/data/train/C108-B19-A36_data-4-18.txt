@@ -1,0 +1,48 @@
+B19-A36-C108-1524090972847
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hi
+<Architect> ok make a horizontal row of 5 on the ground
+<Architect> blue
+<Builder> ok
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+[Builder puts down a blue block at X:-2 Y:1 Z:-1]
+<Architect> then at the ends of the row put 6 blocks on top of them
+<Architect> so they're columns
+<Builder> what color?
+<Architect> blue
+[Builder puts down a blue block at X:-2 Y:2 Z:-1]
+[Builder puts down a blue block at X:-2 Y:3 Z:-1]
+[Builder puts down a blue block at X:-2 Y:4 Z:-1]
+[Builder puts down a blue block at X:-2 Y:5 Z:-1]
+[Builder puts down a blue block at X:-2 Y:6 Z:-1]
+[Builder puts down a blue block at X:-2 Y:7 Z:-1]
+[Builder puts down a blue block at X:2 Y:2 Z:-1]
+[Builder puts down a blue block at X:2 Y:3 Z:-1]
+[Builder puts down a blue block at X:2 Y:4 Z:-1]
+[Builder puts down a blue block at X:2 Y:5 Z:-1]
+[Builder puts down a blue block at X:2 Y:6 Z:-1]
+[Builder puts down a blue block at X:2 Y:7 Z:-1]
+<Architect> ok then connect the top layer together
+<Builder> with blue?
+<Architect> ya
+[Builder puts down a green block at X:1 Y:7 Z:-1]
+[Builder picks up a green block at X:1 Y:7 Z:-1]
+[Builder puts down a blue block at X:1 Y:7 Z:-1]
+[Builder puts down a blue block at X:0 Y:7 Z:-1]
+[Builder puts down a blue block at X:-1 Y:7 Z:-1]
+<Architect> ok in the middle is an orange I
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+[Builder puts down a orange block at X:1 Y:6 Z:-1]
+[Builder puts down a orange block at X:0 Y:6 Z:-1]
+[Builder puts down a orange block at X:-1 Y:6 Z:-1]
+<Architect> ok i think we're good
+<Builder> cool

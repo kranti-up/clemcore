@@ -1,0 +1,41 @@
+B52-A27-C53-1523660483558
+<Builder> Mission has started.
+<Builder> where should we start?
+<Architect> in the middle build a 3x3 wall of red
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+<Architect> and remove the middle block
+[Builder picks up a red block at X:0 Y:2 Z:0]
+<Architect> leaving one space inbetween make another 3x3 wall parallel to the red of blue
+<Builder> also with a hole?
+[Builder puts down a blue block at X:-1 Y:1 Z:2]
+<Architect> yes
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+[Builder puts down a blue block at X:-1 Y:2 Z:2]
+[Builder puts down a blue block at X:1 Y:2 Z:2]
+[Builder puts down a blue block at X:-1 Y:3 Z:2]
+[Builder puts down a blue block at X:1 Y:3 Z:2]
+[Builder puts down a blue block at X:0 Y:3 Z:2]
+<Architect> connect them at the bottom with an orange block on both sides
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+<Builder> cozy
+<Architect> sorry one side should be purple
+[Builder picks up a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder picks up a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+<Builder> no biggie
+<Architect> then connect at the top with the same colors
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+<Architect> done
+<Builder> :)

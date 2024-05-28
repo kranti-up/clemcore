@@ -1,0 +1,63 @@
+B16-A26-C139-1524156601735
+<Builder> Mission has started.
+<Architect> Okiedokie, we'll start with a 3x3 square of purple bricks, going up, and floating a layer above the ground
+[Builder puts down a purple block at X:0 Y:1 Z:2]
+[Builder puts down a purple block at X:0 Y:2 Z:2]
+[Builder picks up a purple block at X:0 Y:1 Z:2]
+[Builder puts down a purple block at X:0 Y:2 Z:1]
+[Builder picks up a purple block at X:0 Y:2 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:2]
+[Builder puts down a purple block at X:0 Y:4 Z:2]
+[Builder puts down a purple block at X:-1 Y:4 Z:2]
+[Builder puts down a purple block at X:-2 Y:4 Z:2]
+[Builder puts down a purple block at X:-1 Y:2 Z:2]
+[Builder puts down a purple block at X:-2 Y:2 Z:2]
+[Builder puts down a purple block at X:-2 Y:3 Z:2]
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+<Architect> Great! We're making something that looks suspiciously like mickey mouse
+<Architect> So let's add ears
+<Builder> haha, nice!
+<Architect> The ears will be blue, and consist of 3 bricks
+<Architect> making a little L on top of the corners of the purple square
+[Builder puts down a blue block at X:1 Y:4 Z:2]
+[Builder puts down a blue block at X:1 Y:5 Z:2]
+[Builder puts down a blue block at X:1 Y:6 Z:2]
+[Builder picks up a blue block at X:1 Y:6 Z:2]
+[Builder picks up a blue block at X:1 Y:4 Z:2]
+[Builder puts down a blue block at X:1 Y:5 Z:1]
+[Builder picks up a blue block at X:1 Y:5 Z:1]
+[Builder picks up a blue block at X:1 Y:5 Z:2]
+[Builder puts down a blue block at X:0 Y:5 Z:2]
+<Architect> the last brick will be to the right of the most recently added brick
+[Builder puts down a blue block at X:1 Y:5 Z:2]
+[Builder puts down a blue block at X:0 Y:6 Z:2]
+<Architect> Ah sorry, I'm lagging a bit. All of the blue bricks will touch the purple bricks
+<Architect> you have the L shape though!
+[Builder picks up a blue block at X:1 Y:5 Z:2]
+[Builder picks up a blue block at X:0 Y:5 Z:2]
+[Builder picks up a blue block at X:0 Y:6 Z:2]
+[Builder puts down a blue block at X:-1 Y:5 Z:2]
+[Builder puts down a blue block at X:0 Y:5 Z:2]
+[Builder puts down a blue block at X:-1 Y:6 Z:2]
+<Builder> this?
+<Builder> sorry, i am a bit confused
+<Architect> One of the bricks will be on the same layer as the top purple layer
+[Builder picks up a blue block at X:-1 Y:6 Z:2]
+[Builder picks up a blue block at X:-1 Y:5 Z:2]
+[Builder picks up a blue block at X:0 Y:5 Z:2]
+[Builder puts down a blue block at X:1 Y:4 Z:2]
+<Architect> Great!
+<Architect> Now add a brick on top of that one
+[Builder puts down a blue block at X:1 Y:5 Z:2]
+<Architect> and to the right of that one
+[Builder puts down a blue block at X:0 Y:5 Z:2]
+<Architect> Nice!
+[Builder puts down a blue block at X:-2 Y:5 Z:2]
+[Builder puts down a blue block at X:-3 Y:5 Z:2]
+[Builder puts down a blue block at X:-3 Y:4 Z:2]
+<Architect> Ok! now we will add a red brick for the nose
+[Builder puts down a red block at X:-1 Y:3 Z:1]
+<Architect> it will be one more spot down
+[Builder picks up a red block at X:-1 Y:3 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+<Architect> Great!

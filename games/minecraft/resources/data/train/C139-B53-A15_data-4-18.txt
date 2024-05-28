@@ -1,0 +1,45 @@
+B53-A15-C139-1524064322102
+<Builder> Mission has started.
+<Architect> alright, this one looks kind of like a clown head
+<Architect> start by making a stack of 4 purple blocks in the center
+<Builder> You have piqued my interest
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+<Builder> Stack complete
+<Architect> cool :) on both sides of that, make two more stacks of purple blocks, same height
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+[Builder puts down a purple block at X:-1 Y:1 Z:2]
+[Builder picks up a purple block at X:-1 Y:1 Z:2]
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+[Builder puts down a purple block at X:-1 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a purple block at X:-1 Y:4 Z:1]
+<Architect> yep! remove the bottom row
+<Builder> In the future, you can just tell me to build a rectangle
+[Builder picks up a purple block at X:-1 Y:1 Z:-1]
+[Builder picks up a purple block at X:-1 Y:1 Z:0]
+[Builder picks up a purple block at X:-1 Y:1 Z:1]
+<Architect> sure thing :)
+<Architect> put a red block in front of the bottom middle one
+<Architect> like a nose
+[Builder picks up a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+<Architect> and now blue blocks on top of the top corner purple blocks
+[Builder puts down a blue block at X:-1 Y:5 Z:-1]
+[Builder puts down a blue block at X:-1 Y:5 Z:1]
+<Builder> I think this is what you memant
+<Builder> Meant*
+<Architect> yeah!
+<Architect> and now, two more blue blocks on each side, adjacent to the blue and top purple block on each side
+[Builder puts down a blue block at X:-1 Y:5 Z:-2]
+[Builder puts down a blue block at X:-1 Y:4 Z:-2]
+[Builder puts down a blue block at X:-1 Y:4 Z:2]
+[Builder puts down a blue block at X:-1 Y:5 Z:2]
+<Architect> perfect!
+<Architect> all done

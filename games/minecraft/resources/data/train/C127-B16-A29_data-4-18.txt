@@ -1,0 +1,62 @@
+B16-A29-C127-1524064198121
+<Builder> Mission has started.
+<Builder> hi again!
+<Architect> hello
+<Architect> we're going to make a shape that is sort of like a backpack
+<Builder> alright
+<Architect> first we need a rectangle that is 4 high and 3 wide
+<Architect> in yello
+[Builder puts down a yellow block at X:1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+<Architect> great
+<Architect> now put two orange blocks on each side
+<Architect> from the bottom, adjacent to rectangle
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+<Builder> here?
+[Builder puts down a orange block at X:-2 Y:1 Z:-1]
+<Architect> yes
+<Architect> two high
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+<Architect> now we're going to add the straps to the backpack
+<Architect> on each side
+<Architect> starting from the top
+<Architect> they extend two out, two down
+<Architect> and 1 to connect back in red
+<Builder> both of the straps are in red or the connector is just in red?
+<Architect> all read
+<Architect> red*
+[Builder puts down a red block at X:1 Y:4 Z:-2]
+[Builder puts down a red block at X:1 Y:4 Z:-3]
+[Builder puts down a red block at X:-1 Y:4 Z:-2]
+[Builder puts down a red block at X:-1 Y:4 Z:-3]
+[Builder puts down a red block at X:1 Y:3 Z:-3]
+[Builder puts down a red block at X:1 Y:2 Z:-3]
+[Builder puts down a red block at X:-1 Y:3 Z:-3]
+[Builder picks up a red block at X:1 Y:2 Z:-3]
+[Builder puts down a red block at X:0 Y:3 Z:-3]
+<Builder> like this?
+<Architect> not exactly
+<Architect> remove the block in the middle
+[Builder puts down a red block at X:0 Y:3 Z:-4]
+[Builder picks up a red block at X:0 Y:3 Z:-4]
+[Builder picks up a red block at X:0 Y:3 Z:-3]
+<Architect> now add another block down on each side
+[Builder puts down a red block at X:1 Y:2 Z:-3]
+[Builder puts down a red block at X:-1 Y:3 Z:-4]
+[Builder picks up a red block at X:-1 Y:3 Z:-4]
+[Builder puts down a red block at X:-1 Y:2 Z:-3]
+<Architect> now one block on each side connecting back
+<Architect> to the yellow part
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-2]

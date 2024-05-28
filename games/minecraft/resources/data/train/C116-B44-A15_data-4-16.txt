@@ -1,0 +1,44 @@
+B44-A15-C116-1523892176572
+<Builder> Mission has started.
+<Builder> ready
+<Architect> okay, this one's tricky, so bear with me
+<Architect> start with a column of 4 blue blocks near one of the corners
+[Builder puts down a blue block at X:4 Y:1 Z:4]
+[Builder puts down a blue block at X:4 Y:2 Z:4]
+[Builder puts down a blue block at X:4 Y:3 Z:4]
+[Builder puts down a blue block at X:4 Y:4 Z:4]
+<Architect> yep! now, 4 spaces diagonally from that, put another column of 4 blue blocks
+<Architect> so it should be the corners of an imaginary 5x5 square
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+<Architect> great! make a diagonal line of blue blocks connecting the tops of the pillars
+[Builder puts down a blue block at X:4 Y:4 Z:3]
+[Builder puts down a blue block at X:3 Y:4 Z:3]
+[Builder puts down a blue block at X:3 Y:4 Z:2]
+[Builder puts down a blue block at X:2 Y:4 Z:2]
+[Builder puts down a blue block at X:2 Y:4 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:1]
+[Builder picks up a blue block at X:2 Y:4 Z:0]
+[Builder picks up a blue block at X:2 Y:4 Z:1]
+[Builder picks up a blue block at X:3 Y:4 Z:2]
+[Builder picks up a blue block at X:4 Y:4 Z:3]
+<Architect> right underneath the middle blue block, put a red block
+[Builder puts down a red block at X:2 Y:3 Z:2]
+<Architect> on the ground underneath that, put a green block
+[Builder puts down a green block at X:2 Y:1 Z:2]
+<Architect> okay, make a line of 5 green blocks on the ground perpendicular to the blue ones above
+[Builder puts down a green block at X:3 Y:1 Z:1]
+[Builder puts down a green block at X:4 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:3]
+[Builder puts down a green block at X:0 Y:1 Z:4]
+<Architect> yep!
+<Architect> now, put an orange block on top of the 2nd green block from either side
+[Builder puts down a orange block at X:3 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:3]
+<Architect> and finally, remove the green blocks under the orange ones
+[Builder picks up a green block at X:3 Y:1 Z:1]
+[Builder picks up a green block at X:1 Y:1 Z:3]
+<Architect> looks perfect! :)
+<Builder> nice

@@ -1,0 +1,84 @@
+B29-A26-C51-1523374483230
+<Builder> Mission has started.
+<Architect> We'll be making a pair of horseshoes
+<Architect> First, start by making a 3x3 square of red bricks on the ground
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:1 Z:2]
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder picks up a red block at X:2 Y:1 Z:2]
+[Builder puts down a red block at X:2 Y:1 Z:1]
+<Architect> Nice! Now remove the middle brick, and one brick on the edge
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder picks up a red block at X:1 Y:2 Z:0]
+[Builder picks up a red block at X:1 Y:1 Z:0]
+[Builder picks up a red block at X:2 Y:1 Z:1]
+<Architect> Edge rather than corner
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder picks up a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:1 Z:1]
+[Builder picks up a red block at X:1 Y:1 Z:1]
+<Architect> Awesome, you should see a magnet shape. On the ends, please place an orange brick
+[Builder puts down a orange block at X:2 Y:1 Z:2]
+[Builder puts down a orange block at X:0 Y:1 Z:2]
+<Architect> Great! We'll move on to the other horseshoe shape
+<Architect> In the middle of the horseshoe, place a green brick
+<Architect> It should touch 3 red bricks
+<Builder> which square in the middle?
+[Builder puts down a green block at X:1 Y:1 Z:0]
+<Architect> Awesome, now two squares to the left of the green brick, place another green brick
+<Architect> Your left
+<Architect> Perfect
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+<Architect> Oops, not quite the right square
+[Builder picks up a green block at X:-2 Y:1 Z:0]
+<Architect> It will touch the red brick
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+<Architect> Great! Now we will build an arch with 5 blue bricks connecting the two green bricks
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:2]
+[Builder puts down a blue block at X:-1 Y:1 Z:3]
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+[Builder puts down a blue block at X:1 Y:1 Z:3]
+[Builder puts down a blue block at X:0 Y:1 Z:3]
+<Architect> Not quite! we'll actually be building the blue-green horseshoe to be vertical
+[Builder picks up a blue block at X:-1 Y:1 Z:1]
+[Builder picks up a blue block at X:1 Y:1 Z:1]
+[Builder picks up a blue block at X:1 Y:1 Z:2]
+[Builder picks up a blue block at X:0 Y:1 Z:3]
+[Builder picks up a blue block at X:1 Y:1 Z:3]
+[Builder picks up a blue block at X:-1 Y:1 Z:3]
+[Builder picks up a blue block at X:-1 Y:1 Z:2]
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+<Architect> So the first blue brick will be on top of the green bricks
+[Builder puts down a blue block at X:-1 Y:3 Z:0]
+[Builder puts down a blue block at X:-1 Y:4 Z:0]
+<Builder> height?
+<Architect> The blue arch only will have 5 bricks total
+<Builder> total height
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+[Builder picks up a blue block at X:0 Y:4 Z:0]
+[Builder picks up a blue block at X:-1 Y:4 Z:0]
+[Builder picks up a blue block at X:1 Y:4 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+<Architect> perfect
+<Architect> My fault, the green brick should be on the otehr side of the horseshoe
+<Builder> to my left?
+<Architect> yes
+[Builder puts down a green block at X:3 Y:1 Z:0]
+[Builder puts down a blue block at X:3 Y:2 Z:0]
+[Builder puts down a blue block at X:3 Y:3 Z:0]
+[Builder puts down a blue block at X:2 Y:3 Z:0]
+[Builder picks up a blue block at X:-1 Y:3 Z:0]
+[Builder picks up a blue block at X:0 Y:3 Z:0]
+[Builder picks up a blue block at X:-1 Y:2 Z:0]
+[Builder picks up a green block at X:-1 Y:1 Z:0]

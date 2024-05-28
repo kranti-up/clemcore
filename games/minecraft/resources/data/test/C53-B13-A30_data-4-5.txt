@@ -1,0 +1,123 @@
+B13-A30-C53-1522970675355
+<Builder> Mission has started.
+<Architect> build a 3 row high squre of blue blocks
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+<Architect> oh no a cube
+<Architect> sorry
+<Architect> a 3 cube long line
+<Builder> ok, no worries
+[Builder picks up a blue block at X:0 Y:2 Z:1]
+[Builder picks up a blue block at X:0 Y:2 Z:0]
+[Builder picks up a blue block at X:-1 Y:2 Z:0]
+[Builder picks up a blue block at X:-1 Y:1 Z:1]
+[Builder picks up a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+[Builder puts down a blue block at X:-1 Y:1 Z:2]
+[Builder puts down a blue block at X:-2 Y:1 Z:2]
+[Builder puts down a blue block at X:-2 Y:1 Z:0]
+[Builder puts down a blue block at X:-2 Y:1 Z:1]
+[Builder puts down a blue block at X:-2 Y:2 Z:0]
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+[Builder puts down a blue block at X:0 Y:2 Z:2]
+[Builder puts down a blue block at X:-1 Y:2 Z:2]
+[Builder puts down a blue block at X:-2 Y:2 Z:2]
+[Builder puts down a blue block at X:-2 Y:2 Z:1]
+<Builder> like so, with another row atop this one?
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:1]
+[Builder puts down a blue block at X:0 Y:3 Z:2]
+<Architect> ok can i start over
+<Builder> certainly.
+[Builder picks up a blue block at X:0 Y:3 Z:1]
+[Builder picks up a blue block at X:0 Y:3 Z:0]
+<Architect> sorry my instructions were horrible
+[Builder picks up a blue block at X:0 Y:2 Z:0]
+[Builder picks up a blue block at X:-1 Y:2 Z:0]
+[Builder picks up a blue block at X:-1 Y:1 Z:0]
+[Builder picks up a blue block at X:-2 Y:2 Z:0]
+[Builder picks up a blue block at X:-2 Y:2 Z:1]
+[Builder picks up a blue block at X:-2 Y:1 Z:1]
+[Builder picks up a blue block at X:-2 Y:1 Z:0]
+[Builder picks up a blue block at X:0 Y:1 Z:0]
+[Builder picks up a blue block at X:0 Y:3 Z:2]
+[Builder picks up a blue block at X:0 Y:2 Z:2]
+<Architect> build a line of 3 blue blocks
+[Builder picks up a blue block at X:0 Y:2 Z:1]
+[Builder picks up a blue block at X:-1 Y:1 Z:2]
+[Builder picks up a blue block at X:-2 Y:2 Z:2]
+[Builder picks up a blue block at X:-2 Y:1 Z:2]
+[Builder picks up a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+<Architect> with 2 more rows on top of that
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+[Builder puts down a blue block at X:0 Y:2 Z:2]
+[Builder puts down a blue block at X:0 Y:3 Z:2]
+[Builder puts down a blue block at X:0 Y:3 Z:1]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+<Architect> now delete the very center one
+[Builder picks up a blue block at X:0 Y:2 Z:1]
+<Builder> a vertical cube? good.
+<Architect> yes
+<Architect> now one row away from that build the same structure but in red
+<Architect> one row between
+[Builder puts down a red block at X:-2 Y:1 Z:2]
+[Builder puts down a red block at X:-2 Y:2 Z:2]
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:1 Z:1]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:2]
+[Builder puts down a red block at X:-2 Y:3 Z:1]
+<Architect> now on one of the open sides between the 2 structures put orange blocks to create the same effect
+<Architect> with one open square in the middle
+<Builder> so, just build the same structure with orange blocks in between these two?
+<Architect> no sorry
+<Architect> in between the two one only one side build orange blocks leaving a blank space in the middle
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+[Builder puts down a orange block at X:-2 Y:1 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+<Builder> like so?
+<Architect> no the orange blocks will need to be actually between the red and blue structures
+[Builder picks up a orange block at X:0 Y:3 Z:-1]
+[Builder picks up a orange block at X:-1 Y:3 Z:-1]
+[Builder picks up a orange block at X:0 Y:2 Z:-1]
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+[Builder picks up a orange block at X:-1 Y:1 Z:-1]
+[Builder picks up a orange block at X:-2 Y:2 Z:-1]
+[Builder picks up a orange block at X:-2 Y:3 Z:-1]
+[Builder picks up a orange block at X:-2 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+<Architect> yes! sorry about that!
+<Architect> no do the same thing on the other side with purple
+<Builder> sounds good
+[Builder puts down a purple block at X:-1 Y:1 Z:2]
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+<Architect> ok you are going to hate me but i didnt realize i was doing this wrong. the purple and orange sides will need to be switched
+[Builder picks up a purple block at X:-1 Y:3 Z:2]
+[Builder picks up a purple block at X:-1 Y:1 Z:2]
+[Builder picks up a orange block at X:-1 Y:3 Z:0]
+[Builder picks up a orange block at X:-1 Y:1 Z:0]
+<Architect> everything else is correct
+<Builder> I just forgot. Haha, am I on the purple side right now?
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+<Architect> yep!
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:2]
+[Builder puts down a orange block at X:-1 Y:3 Z:2]
+<Architect> ok thats it!

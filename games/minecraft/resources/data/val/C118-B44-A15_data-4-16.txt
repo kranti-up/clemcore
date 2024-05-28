@@ -1,0 +1,73 @@
+B44-A15-C118-1523891056167
+<Builder> Mission has started.
+<Builder> hello. ready
+<Architect> hello!
+<Architect> okay, so it looks like we're building an X shaped thing
+<Architect> start by putting an orange block near the middle of the grid
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+<Architect> and stack another one on top
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+<Architect> then remove the bottom one
+[Builder picks up a orange block at X:0 Y:1 Z:1]
+<Architect> alright, put one orange block on both sides of the current one
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+<Architect> then extend each side by one orange block towards you
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+<Architect> yep! now from each of those, build outward again
+<Architect> to the sides
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+<Architect> and repeat that pattern again on each side
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+<Architect> and one more off each side
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+[Builder puts down a orange block at X:3 Y:2 Z:-2]
+[Builder puts down a orange block at X:-3 Y:2 Z:-1]
+[Builder puts down a orange block at X:-3 Y:2 Z:-2]
+<Architect> oops, one block too many. get rid of the last one you put down on each side
+[Builder picks up a orange block at X:3 Y:2 Z:-2]
+[Builder picks up a orange block at X:-3 Y:2 Z:-2]
+<Architect> okay, now, delete the second block from the left on the left side
+[Builder picks up a orange block at X:2 Y:2 Z:-1]
+<Architect> yep! and delete the third block from the left on the left side, so you have a diagonal line from the row of 3
+[Builder picks up a orange block at X:1 Y:2 Z:0]
+<Architect> perfect!
+<Architect> now make the right side mirror the left. so delete the same two blocks
+[Builder picks up a orange block at X:-1 Y:2 Z:0]
+[Builder picks up a orange block at X:-2 Y:2 Z:-1]
+<Architect> okay, cool! now stack a row of 3 red blocks on top of the row of 3 orange
+[Builder puts down a red block at X:1 Y:3 Z:1]
+[Builder puts down a red block at X:0 Y:3 Z:1]
+[Builder puts down a red block at X:-1 Y:3 Z:1]
+<Architect> and put 3 more red blocks directly behind those 3
+[Builder puts down a red block at X:-1 Y:3 Z:2]
+[Builder puts down a red block at X:0 Y:3 Z:2]
+[Builder puts down a red block at X:1 Y:3 Z:2]
+<Architect> and now delete the first row of red that you put down
+[Builder picks up a red block at X:-1 Y:3 Z:1]
+[Builder picks up a red block at X:0 Y:3 Z:1]
+[Builder picks up a red block at X:1 Y:3 Z:1]
+<Architect> good! almost done!
+<Architect> on top of the ends of the row of red blocks, place one more red block each
+<Builder> do I repeat the thing I did with orange but on red?
+<Architect> no, it's a little different
+[Builder puts down a red block at X:1 Y:3 Z:3]
+[Builder puts down a red block at X:-1 Y:3 Z:3]
+<Architect> sorry, i meant on top, so stack them
+[Builder picks up a red block at X:1 Y:3 Z:3]
+[Builder picks up a red block at X:-1 Y:3 Z:3]
+[Builder puts down a red block at X:-1 Y:4 Z:2]
+[Builder puts down a red block at X:1 Y:4 Z:2]
+<Architect> good! and now extend those one block outwards on either side
+[Builder puts down a red block at X:-2 Y:4 Z:2]
+[Builder puts down a red block at X:2 Y:4 Z:2]
+<Architect> okay, now delete the two on top of the bottom row
+[Builder picks up a red block at X:-1 Y:4 Z:2]
+[Builder picks up a red block at X:1 Y:4 Z:2]
+<Architect> perfect! i think we're done! :)
+<Builder> nice

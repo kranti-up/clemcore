@@ -1,0 +1,67 @@
+B35-A44-C89-1523654130378
+<Builder> Mission has started.
+<Architect> 4 red
+<Architect> anywhere
+[Builder puts down a red block at X:2 Y:1 Z:1]
+[Builder puts down a red block at X:2 Y:2 Z:1]
+[Builder puts down a red block at X:2 Y:3 Z:1]
+[Builder puts down a red block at X:2 Y:4 Z:1]
+<Architect> 3 empty 1 red
+[Builder puts down a red block at X:1 Y:4 Z:1]
+<Architect> 1 empty 3 red
+[Builder puts down a red block at X:0 Y:4 Z:1]
+[Builder puts down a red block at X:0 Y:3 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+<Architect> 3 empty 1 red
+[Builder puts down a red block at X:-1 Y:4 Z:1]
+<Architect> 4 red
+[Builder puts down a red block at X:-2 Y:1 Z:1]
+[Builder puts down a red block at X:-2 Y:2 Z:1]
+[Builder puts down a red block at X:-2 Y:4 Z:1]
+[Builder puts down a red block at X:-2 Y:3 Z:1]
+<Architect> ok now 2 spaces behind the right most red column, place a yellow block on the ground
+[Builder puts down a yellow block at X:-2 Y:1 Z:-2]
+<Builder> here or 1 back
+<Architect> you have placed a yellow block 3 spaces in front. it's 2 spaces behind
+[Builder picks up a yellow block at X:-2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-1]
+<Builder> okay
+<Architect> it needs to be on the other side. behind
+<Builder> sorry I've been thinking about it as 2 empty spaces. my B
+<Architect> yes, you need to move the yellow block behind the red. not in front
+[Builder picks up a yellow block at X:-2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:1 Z:3]
+<Architect> ok rotate 90 degrees to the right
+<Architect> place a yellow block 3 spaces above that yellow
+<Architect> (2 empty between)
+[Builder puts down a yellow block at X:-2 Y:4 Z:2]
+[Builder puts down a yellow block at X:-2 Y:4 Z:3]
+[Builder picks up a yellow block at X:-2 Y:4 Z:2]
+<Architect> ok so this is another 2d drawing. you currentl have the 4th column done
+<Architect> the 5th column (to the right) is emepty 2 yellow
+[Builder puts down a yellow block at X:-1 Y:4 Z:3]
+[Builder puts down a yellow block at X:-1 Y:3 Z:3]
+<Architect> 1st column: empty 2 yellow
+[Builder puts down a yellow block at X:-5 Y:1 Z:3]
+[Builder puts down a yellow block at X:-5 Y:2 Z:3]
+[Builder puts down a yellow block at X:-5 Y:3 Z:3]
+[Builder picks up a yellow block at X:-5 Y:1 Z:3]
+<Architect> the 5th column is also empty 2 yellow
+[Builder picks up a yellow block at X:-1 Y:4 Z:3]
+[Builder puts down a yellow block at X:-1 Y:2 Z:3]
+<Architect> 3rd is yellow, 2 empty, yellow
+[Builder puts down a yellow block at X:-3 Y:1 Z:3]
+[Builder puts down a yellow block at X:-3 Y:4 Z:3]
+<Architect> my bad I meant second
+[Builder picks up a yellow block at X:-3 Y:4 Z:3]
+[Builder puts down a yellow block at X:-4 Y:1 Z:3]
+[Builder picks up a yellow block at X:-3 Y:1 Z:3]
+[Builder puts down a yellow block at X:-4 Y:3 Z:3]
+[Builder puts down a yellow block at X:-4 Y:4 Z:3]
+[Builder picks up a yellow block at X:-4 Y:4 Z:3]
+[Builder puts down a yellow block at X:-4 Y:4 Z:3]
+[Builder picks up a yellow block at X:-4 Y:3 Z:3]
+<Architect> third is 2 empty 2 yellow
+[Builder puts down a yellow block at X:-3 Y:4 Z:3]
+[Builder puts down a yellow block at X:-3 Y:3 Z:3]
+<Architect> ok that's it good job

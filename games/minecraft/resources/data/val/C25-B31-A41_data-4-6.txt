@@ -1,0 +1,52 @@
+B31-A41-C25-1523029167770
+<Builder> Mission has started.
+<Architect> Okay, first make two purple blocks next to each other on the ground, in the middle of the environment.
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:1]
+<Builder> like this?
+<Architect> Yes looks good. Now stack blocks so it's a tower seven blocks high.
+<Builder> Purple blocks?
+[Builder puts down a purple block at X:0 Y:2 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:6 Z:0]
+<Architect> Yep, purple. So a tower 2 blocks wide and seven tall
+[Builder puts down a purple block at X:0 Y:7 Z:0]
+[Builder puts down a purple block at X:0 Y:2 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:4 Z:1]
+[Builder puts down a purple block at X:0 Y:5 Z:1]
+[Builder puts down a purple block at X:0 Y:7 Z:1]
+[Builder puts down a purple block at X:0 Y:6 Z:1]
+[Builder picks up a purple block at X:0 Y:6 Z:2]
+<Architect> Okay great. And actually remove the bottom row of blocks.
+[Builder picks up a purple block at X:0 Y:1 Z:1]
+[Builder picks up a purple block at X:0 Y:1 Z:0]
+<Architect> And now remove the three blocks below the top block on one side.
+[Builder picks up a purple block at X:0 Y:6 Z:0]
+[Builder picks up a purple block at X:0 Y:5 Z:0]
+[Builder picks up a purple block at X:0 Y:4 Z:0]
+<Architect> Great!
+<Architect> Now put down two blue blocks on the ground, parallel to this purple structure, on the side with the gap. There should be a one block gap between the blue and purple.
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+[Builder puts down a blue block at X:-1 Y:1 Z:-2]
+<Architect> Hmm, should move the blue block closest to you so it is on the left side, away from the purple structure
+[Builder picks up a blue block at X:-1 Y:1 Z:-2]
+[Builder puts down a blue block at X:0 Y:1 Z:-3]
+<Builder> Like this?
+<Architect> Perfect
+<Architect> Okay now another row of two blue on top of that one
+[Builder puts down a blue block at X:0 Y:2 Z:-2]
+[Builder puts down a blue block at X:0 Y:2 Z:-3]
+<Architect> Now a stack of four blue blocks on the side closer to the purple
+[Builder puts down a blue block at X:0 Y:3 Z:-2]
+[Builder puts down a blue block at X:0 Y:4 Z:-2]
+[Builder puts down a blue block at X:0 Y:5 Z:-2]
+[Builder puts down a blue block at X:0 Y:6 Z:-2]
+<Architect> Great. Now one block on the same level as the top blue block, on the side toward the purple structure
+[Builder puts down a blue block at X:0 Y:6 Z:-3]
+[Builder picks up a blue block at X:0 Y:6 Z:-3]
+<Architect> Also blue
+[Builder puts down a blue block at X:0 Y:6 Z:-1]
+<Architect> Perfect, that's it!

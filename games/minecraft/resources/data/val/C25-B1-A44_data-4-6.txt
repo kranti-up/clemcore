@@ -1,0 +1,55 @@
+B1-A44-C25-1523034179049
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hello
+<Architect> we first begin with the color blue
+<Architect> make a vertical 2x2 square on the platform
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+<Builder> anywhere?
+[Builder picks up a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:5 Y:1 Z:-1]
+<Architect> perferably more left of
+[Builder puts down a blue block at X:5 Y:1 Z:0]
+[Builder puts down a blue block at X:5 Y:2 Z:-1]
+[Builder puts down a blue block at X:5 Y:2 Z:0]
+<Architect> thats fine
+<Architect> ok now look at the blue square from the center of the platform
+<Architect> place 4 blocks directly vertical of the top right blue block. these blocks are also blue
+<Builder> ok so looks like a d?
+[Builder puts down a blue block at X:5 Y:3 Z:0]
+[Builder puts down a blue block at X:5 Y:4 Z:0]
+[Builder puts down a blue block at X:5 Y:5 Z:0]
+[Builder puts down a blue block at X:5 Y:6 Z:0]
+<Architect> yes like a d. place a block to the right of the highest blue block
+[Builder puts down a blue block at X:5 Y:6 Z:1]
+<Builder> here?
+<Architect> yes. ok now make an exact copy of this except in purple. Additionally, the exact copy needs to be one block higher than the blue.
+<Builder> where?
+<Architect> the exact copy is right next to the blue one on the right
+[Builder puts down a purple block at X:5 Y:1 Z:2]
+<Builder> here?
+[Builder puts down a purple block at X:5 Y:1 Z:3]
+[Builder puts down a purple block at X:5 Y:2 Z:2]
+[Builder puts down a purple block at X:5 Y:2 Z:3]
+<Architect> yes, but remember to move the copy up by one block
+<Builder> so its a longer tail in the d?
+[Builder puts down a purple block at X:5 Y:3 Z:3]
+[Builder puts down a purple block at X:5 Y:4 Z:3]
+[Builder puts down a purple block at X:5 Y:5 Z:3]
+[Builder puts down a purple block at X:5 Y:6 Z:3]
+[Builder puts down a purple block at X:5 Y:7 Z:3]
+[Builder puts down a purple block at X:5 Y:7 Z:4]
+<Builder> oh is the purple floating?
+<Architect> yes the purple is floating
+[Builder puts down a purple block at X:5 Y:3 Z:2]
+[Builder picks up a purple block at X:5 Y:1 Z:2]
+[Builder picks up a purple block at X:5 Y:1 Z:3]
+<Architect> so remove the bottom 2 purple blocks
+<Architect> ok remove the thing sticking out on the right of the purple one. my bad
+[Builder picks up a purple block at X:5 Y:7 Z:4]
+<Architect> and just move it to the left of the highest purple block
+<Builder> on the opposite side?
+[Builder puts down a purple block at X:5 Y:7 Z:2]
+<Builder> here?
+<Architect> ok what you have is perfect. we're done
+<Builder> good

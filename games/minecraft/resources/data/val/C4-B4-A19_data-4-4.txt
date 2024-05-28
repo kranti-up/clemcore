@@ -1,0 +1,73 @@
+B4-A19-C4-1522882189483
+<Builder> Mission has started.
+<Architect> ok now the mission has started
+<Architect> get some green blocks
+<Architect> place one two blocks up from the bottom
+[Builder puts down a green block at X:-4 Y:1 Z:0]
+<Builder> floating?
+<Architect> ok now place one one square up
+<Architect> none of them float
+[Builder puts down a green block at X:-3 Y:1 Z:0]
+<Architect> ok now place two on each side
+[Builder puts down a green block at X:-3 Y:1 Z:-1]
+[Builder puts down a green block at X:-3 Y:1 Z:1]
+<Architect> of the one you just placed
+[Builder puts down a green block at X:-3 Y:1 Z:2]
+[Builder puts down a green block at X:-3 Y:1 Z:-2]
+<Architect> oh i meant one on each side sorry
+[Builder picks up a green block at X:-3 Y:1 Z:-2]
+[Builder picks up a green block at X:-3 Y:1 Z:2]
+<Builder> np
+<Architect> now place one up
+<Builder> above the original line?
+<Architect> yea
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+<Architect> place another one up
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+<Architect> ok then place one on each side of the previous one
+<Architect> not the one you just placed
+[Builder puts down a green block at X:-2 Y:1 Z:-1]
+[Builder puts down a green block at X:-2 Y:1 Z:1]
+<Builder> like that?
+<Architect> uh there should be a one block space between the ones on the side and the one in the middle
+<Architect> so like removve the two blocks you placed
+[Builder picks up a green block at X:-2 Y:1 Z:1]
+[Builder picks up a green block at X:-2 Y:1 Z:-1]
+[Builder puts down a green block at X:-2 Y:1 Z:-2]
+[Builder puts down a green block at X:-2 Y:1 Z:2]
+<Builder> ?
+<Architect> yea
+<Architect> like that
+<Architect> then get some yellow blocks
+<Builder> is it a flower?
+<Architect> yea
+<Architect> a 3 by 3 square on top
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+[Builder puts down a yellow block at X:1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+[Builder picks up a yellow block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+[Builder puts down a yellow block at X:2 Y:1 Z:1]
+[Builder puts down a yellow block at X:1 Y:1 Z:1]
+<Architect> yellow on the sides
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+<Architect> orange in the corners
+[Builder picks up a yellow block at X:0 Y:1 Z:1]
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+<Architect> and red in the middle
+[Builder picks up a yellow block at X:0 Y:1 Z:1]
+[Builder picks up a yellow block at X:0 Y:1 Z:-1]
+[Builder picks up a yellow block at X:2 Y:1 Z:-1]
+[Builder picks up a yellow block at X:2 Y:1 Z:1]
+[Builder picks up a yellow block at X:1 Y:1 Z:0]
+<Architect> in the very center
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:2 Y:1 Z:1]
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+<Architect> yea
+<Builder> cool

@@ -1,0 +1,104 @@
+B24-A25-C13-1523053997650
+<Builder> Mission has started.
+<Architect> aight we're live again
+<Builder> lit
+<Architect> this is a 2d build again, at its widest point it's gonna be 7 blocks
+<Architect> first, put down 4 purple blocks in a line
+[Builder puts down a purple block at X:2 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+<Architect> on the 3 rightmost blocks, put down 3 blue blocks
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+<Architect> then on the rightmost blue block, add a purple block to the right side of it
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+<Architect> ok, on the left of the blue block, put a floating purple block one block apart from it
+<Architect> if that doesn't make sense lmk
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder puts down a purple block at X:2 Y:3 Z:0]
+[Builder picks up a purple block at X:2 Y:2 Z:0]
+<Architect> oh my bad, it should've been on the same row as the blue block
+[Builder picks up a purple block at X:2 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+<Builder> like that?
+<Architect> put one block apart from it, which would make it floating
+<Architect> nah like in line with the blue blocks
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder puts down a purple block at X:3 Y:2 Z:0]
+[Builder picks up a purple block at X:2 Y:2 Z:0]
+[Builder picks up a purple block at X:1 Y:3 Z:0]
+<Architect> yea like that
+<Builder> kool
+<Architect> put two more purple blocks ontop of the leftmost purple block
+[Builder puts down a purple block at X:3 Y:3 Z:0]
+[Builder puts down a purple block at X:3 Y:4 Z:0]
+<Architect> put two more blue blocks on top of the leftmost blue block
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+<Architect> put a purple block on the middle blue block
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+<Architect> and a blue block next to that one
+<Architect> next to the purple block u just put down
+[Builder puts down a blue block at X:-1 Y:3 Z:0]
+<Architect> then one space apart, put another purple block to the right of the block you just put down
+[Builder puts down a purple block at X:-2 Y:3 Z:0]
+[Builder puts down a purple block at X:-3 Y:3 Z:0]
+[Builder picks up a purple block at X:-2 Y:3 Z:0]
+<Architect> aight this is gonna get tricky, so i think from here on out we should just go row by row
+<Architect> so u dont lose your mind lol
+<Builder> k
+<Architect> on the topmost row, the final product should be purple, purple, blue, space, purple
+[Builder puts down a purple block at X:3 Y:5 Z:0]
+[Builder puts down a purple block at X:2 Y:5 Z:0]
+[Builder puts down a blue block at X:1 Y:5 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+<Architect> nah nah on the current top row
+<Architect> my bad
+[Builder picks up a purple block at X:-1 Y:5 Z:0]
+[Builder picks up a purple block at X:-1 Y:4 Z:0]
+[Builder picks up a purple block at X:3 Y:5 Z:0]
+[Builder picks up a purple block at X:2 Y:5 Z:0]
+[Builder picks up a blue block at X:1 Y:5 Z:0]
+<Architect> purple, purple, blue, blue, space, purple
+[Builder puts down a purple block at X:2 Y:4 Z:0]
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:3 Z:0]
+[Builder puts down a purple block at X:-2 Y:4 Z:0]
+[Builder picks up a purple block at X:-2 Y:3 Z:0]
+<Architect> kk, row done
+<Architect> next row, put two purple blocks down on top of the blue blocks
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+<Architect> then one on both sides
+[Builder puts down a purple block at X:2 Y:5 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+<Architect> aight that row is also done
+<Architect> next row only has one block, and it floats above the purple block all the way to the right of row 3
+[Builder puts down a purple block at X:-3 Y:4 Z:0]
+[Builder puts down a purple block at X:-3 Y:5 Z:0]
+[Builder puts down a purple block at X:-3 Y:6 Z:0]
+[Builder picks up a purple block at X:-3 Y:5 Z:0]
+[Builder picks up a purple block at X:-3 Y:4 Z:0]
+<Architect> my bad, the floating block should be red
+[Builder puts down a red block at X:-3 Y:5 Z:0]
+[Builder picks up a purple block at X:-3 Y:6 Z:0]
+[Builder puts down a purple block at X:-3 Y:6 Z:0]
+[Builder picks up a purple block at X:-3 Y:6 Z:0]
+[Builder puts down a red block at X:-3 Y:6 Z:0]
+[Builder picks up a red block at X:-3 Y:5 Z:0]
+<Architect> and the final row is on top of that one
+<Architect> it's red blocks from right to left, ending one column before that floating red block
+[Builder puts down a red block at X:-3 Y:7 Z:0]
+[Builder puts down a red block at X:-2 Y:7 Z:0]
+[Builder puts down a red block at X:-1 Y:7 Z:0]
+[Builder puts down a red block at X:0 Y:7 Z:0]
+[Builder puts down a red block at X:1 Y:7 Z:0]
+[Builder picks up a red block at X:1 Y:8 Z:0]
+[Builder puts down a red block at X:2 Y:7 Z:0]
+[Builder puts down a red block at X:3 Y:7 Z:0]
+[Builder picks up a red block at X:-3 Y:7 Z:0]
+<Architect> yup, we're done
+<Builder> dope

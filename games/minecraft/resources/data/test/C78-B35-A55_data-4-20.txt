@@ -1,0 +1,107 @@
+B35-A55-C78-1524260291965
+<Builder> Mission has started.
+<Architect> start two spaces from any edge
+<Architect> put two red blocks in a horizontal line towards the middle
+[Builder puts down a red block at X:3 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+<Architect> place one block diagonally up from that last one
+<Architect> right sorry
+[Builder puts down a red block at X:1 Y:1 Z:1]
+<Architect> and again
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder picks up a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:2]
+<Architect> put one on in front of that one and one on top
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:3]
+<Architect> delete the one behind it
+[Builder picks up a red block at X:0 Y:1 Z:3]
+<Architect> wait i meant the other one sorry
+[Builder puts down a red block at X:0 Y:1 Z:3]
+[Builder picks up a red block at X:0 Y:1 Z:1]
+<Builder> this?
+<Architect> yes
+<Architect> place one block vertically on top of the last block in the line
+[Builder puts down a red block at X:0 Y:2 Z:3]
+<Architect> sorry i meant the one it was attached to
+[Builder picks up a red block at X:0 Y:2 Z:3]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+<Architect> other side of the diagonal
+[Builder picks up a red block at X:2 Y:2 Z:0]
+<Architect> see the W?
+<Architect> place it on the 4th block from the left
+<Builder> suppose this is a 4 x4 shape the top right is the red block furthest to the top
+<Builder> where do you want me to place a block
+<Architect> place the block on the 2nd most north block you have rn
+[Builder puts down a red block at X:0 Y:2 Z:2]
+<Architect> if north is the direction to the top of the monitor
+<Architect> yes
+<Architect> sorry about that
+<Builder> awesome. No worries. It can get can get confusing
+<Architect> now orange
+<Builder> ok
+<Architect> place one block to the right of the last block you placed
+[Builder puts down a orange block at X:-1 Y:2 Z:2]
+<Architect> now this is a tricky diagonal
+<Builder> oka
+<Builder> okay*
+<Architect> place one block diagonally in front,left,and up from the last one you placed
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder picks up a orange block at X:0 Y:2 Z:1]
+<Architect> wait i meant right sorry but you had the right idea
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:-2 Y:2 Z:1]
+[Builder puts down a orange block at X:-2 Y:3 Z:1]
+[Builder picks up a orange block at X:-2 Y:2 Z:1]
+[Builder picks up a orange block at X:-1 Y:2 Z:1]
+[Builder picks up a orange block at X:0 Y:3 Z:1]
+<Builder> gotcha
+<Architect> now do it again
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+[Builder puts down a orange block at X:-3 Y:3 Z:0]
+[Builder picks up a orange block at X:-2 Y:4 Z:0]
+[Builder picks up a orange block at X:-2 Y:3 Z:0]
+[Builder puts down a orange block at X:-3 Y:4 Z:0]
+[Builder picks up a orange block at X:-3 Y:3 Z:0]
+<Architect> now yellow
+<Builder> ok\
+<Architect> place one block to the left of the last orange but leave one space in between
+[Builder puts down a yellow block at X:-2 Y:4 Z:0]
+[Builder puts down a yellow block at X:-1 Y:4 Z:0]
+[Builder picks up a yellow block at X:-2 Y:4 Z:0]
+<Architect> good
+<Architect> place 2 above that
+[Builder puts down a yellow block at X:-1 Y:5 Z:0]
+[Builder puts down a yellow block at X:-1 Y:6 Z:0]
+<Architect> extend the yellow line to the ground
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+<Architect> place 4 yellow blocks in a horizontal line going back from the topmost yellow
+<Architect> so towards the red
+[Builder puts down a yellow block at X:0 Y:6 Z:0]
+[Builder puts down a yellow block at X:1 Y:6 Z:0]
+[Builder puts down a yellow block at X:2 Y:6 Z:0]
+[Builder puts down a yellow block at X:3 Y:6 Z:0]
+<Architect> towards the red and orange blocks touching each other
+<Architect> sorry
+[Builder picks up a yellow block at X:3 Y:6 Z:0]
+[Builder picks up a yellow block at X:2 Y:6 Z:0]
+[Builder picks up a yellow block at X:1 Y:6 Z:0]
+[Builder picks up a yellow block at X:0 Y:6 Z:0]
+[Builder puts down a yellow block at X:-1 Y:6 Z:1]
+[Builder puts down a yellow block at X:-1 Y:6 Z:2]
+[Builder puts down a yellow block at X:-1 Y:6 Z:3]
+[Builder puts down a yellow block at X:-1 Y:6 Z:4]
+<Architect> see the shadow of the last block you placed
+<Builder> ye
+<Architect> make a line from the ground their up to the line you just made
+[Builder puts down a yellow block at X:-2 Y:1 Z:4]
+[Builder picks up a yellow block at X:-2 Y:1 Z:4]
+[Builder puts down a yellow block at X:-1 Y:1 Z:4]
+[Builder puts down a yellow block at X:-1 Y:2 Z:4]
+[Builder puts down a yellow block at X:-1 Y:3 Z:4]
+[Builder puts down a yellow block at X:-1 Y:4 Z:4]
+[Builder puts down a yellow block at X:-1 Y:5 Z:4]

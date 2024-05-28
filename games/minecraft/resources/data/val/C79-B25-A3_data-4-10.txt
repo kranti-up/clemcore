@@ -1,0 +1,125 @@
+B25-A3-C79-1523384030017
+<Builder> Mission has started.
+<Architect> ok this next one is a bunch of crosses of varying shapes. the whole figure is off the ground so we need placeholders
+<Architect> 1 sec while i figure it out
+<Builder> for sure
+<Architect> ok there are 2 flat crosses and 2 upright crosses. lets start with the upright ones. and lets use purple blocks as placeholders
+<Builder> ok
+<Architect> in the back leftish corner of the space place 1 purple block 3 spaces in from the side
+[Builder puts down a purple block at X:3 Y:1 Z:-3]
+[Builder picks up a purple block at X:3 Y:1 Z:-3]
+[Builder puts down a purple block at X:3 Y:1 Z:-4]
+[Builder picks up a purple block at X:3 Y:1 Z:-4]
+[Builder puts down a purple block at X:2 Y:1 Z:-4]
+<Builder> is that good enough?
+<Architect> yes
+<Architect> now place 3 blue blocks in a straight line above that purple block
+[Builder puts down a blue block at X:2 Y:1 Z:-3]
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+<Architect> whoops, i mean above the purple one, extending into the air
+<Builder> ohhh ok
+[Builder picks up a blue block at X:2 Y:1 Z:-2]
+[Builder picks up a blue block at X:2 Y:1 Z:-1]
+[Builder picks up a blue block at X:2 Y:1 Z:-3]
+[Builder puts down a blue block at X:2 Y:2 Z:-4]
+[Builder puts down a blue block at X:2 Y:3 Z:-4]
+[Builder puts down a blue block at X:2 Y:4 Z:-4]
+<Builder> no prob
+<Architect> ok nice
+<Architect> now place 1 blue block on either side of the middle blue block to make a cross like a plus sign
+[Builder puts down a blue block at X:1 Y:3 Z:-4]
+[Builder puts down a blue block at X:3 Y:3 Z:-4]
+<Builder> amen brother
+<Architect> great you can remove that purple block now
+[Builder picks up a purple block at X:2 Y:1 Z:-4]
+<Architect> ok the next cross is orange and flat. place 4 orange blocks extending to the right of the rightmost blue block
+<Builder> like flat on the ground?
+[Builder puts down a orange block at X:0 Y:1 Z:-4]
+[Builder puts down a orange block at X:-1 Y:1 Z:-4]
+[Builder puts down a orange block at X:-2 Y:1 Z:-4]
+[Builder puts down a orange block at X:-3 Y:1 Z:-4]
+<Architect> nah it should be in the air
+[Builder picks up a orange block at X:0 Y:1 Z:-4]
+[Builder picks up a orange block at X:-1 Y:1 Z:-4]
+[Builder picks up a orange block at X:-2 Y:1 Z:-4]
+[Builder picks up a orange block at X:-3 Y:1 Z:-4]
+[Builder puts down a orange block at X:0 Y:3 Z:-4]
+[Builder puts down a orange block at X:-1 Y:3 Z:-4]
+[Builder puts down a orange block at X:-2 Y:3 Z:-4]
+[Builder puts down a orange block at X:-3 Y:3 Z:-4]
+<Architect> yeah like that
+<Builder> kk
+<Architect> then place 1 orange block on the middle right orange block, on your side so that it comes toward you
+[Builder puts down a orange block at X:-2 Y:3 Z:-5]
+[Builder puts down a orange block at X:-2 Y:3 Z:-3]
+[Builder picks up a orange block at X:0 Y:3 Z:-4]
+<Builder> we good?
+<Architect> nice just like that. 2 more crosses
+<Architect> oh put that orange one back, this one is supposed to be longer
+<Architect> the whole figure is connected
+<Builder> im getting positive vibes from this build
+[Builder puts down a orange block at X:-4 Y:3 Z:-4]
+[Builder puts down a orange block at X:0 Y:3 Z:-4]
+[Builder picks up a orange block at X:-4 Y:3 Z:-4]
+<Builder> like that?
+<Architect> ok next is yellow and it looks like the blue cross only with 1 more piece on each side and its flat. put the first block on the rightmost orange block from your view right now
+<Architect> yup all good so far
+<Builder> which face on the rightmost orange block does it go on?
+<Builder> facing up, facing me, facing down
+<Architect> facing you, it should be flat like the orange
+[Builder puts down a yellow block at X:0 Y:3 Z:-3]
+<Architect> yup there
+[Builder puts down a yellow block at X:0 Y:3 Z:-2]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+<Architect> should be 2 more in that line and we can make the cross section
+<Builder> can you explain what you meant by one more piece on each side?
+<Builder> did you mean the middle piece?
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+<Architect> right like that. then put 2 more on either side of the middle piece
+<Builder> kk
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+<Architect> there thats good. now we have 1 more and its green
+<Architect> its upright like the blue and the middle piece is attached to the leftmost yellowpiece
+[Builder puts down a green block at X:-2 Y:4 Z:-1]
+[Builder picks up a green block at X:-2 Y:4 Z:-1]
+[Builder puts down a green block at X:-3 Y:3 Z:-1]
+[Builder puts down a green block at X:-3 Y:2 Z:-1]
+[Builder puts down a green block at X:-3 Y:4 Z:-1]
+[Builder puts down a green block at X:-3 Y:3 Z:0]
+[Builder puts down a green block at X:-3 Y:3 Z:-2]
+<Builder> like that?
+<Architect> not there, like 1 rotations to the right
+<Architect> my bad, i try to describe it from where you were standing earlier
+<Builder> oh ok lemme go back
+[Builder picks up a green block at X:-3 Y:4 Z:-1]
+[Builder picks up a green block at X:-3 Y:3 Z:-1]
+[Builder picks up a green block at X:-3 Y:3 Z:0]
+[Builder picks up a green block at X:-3 Y:2 Z:-1]
+[Builder picks up a green block at X:-3 Y:3 Z:-2]
+<Builder> how would you describe it from here?
+<Architect> its should be directly across from the orange piece, that side. you had the shape and orientation right though. so on the right side from where you are
+<Builder> on this block?
+<Architect> yeah looks like it
+[Builder puts down a green block at X:0 Y:3 Z:2]
+[Builder puts down a green block at X:-1 Y:3 Z:2]
+[Builder puts down a green block at X:-2 Y:3 Z:2]
+[Builder puts down a green block at X:-1 Y:3 Z:3]
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+<Builder> like that?
+<Architect> should be upright like the blue cross and attached at the middle of the new cross
+<Builder> middle of the yellow cross?
+[Builder picks up a green block at X:-1 Y:3 Z:1]
+[Builder picks up a green block at X:-1 Y:3 Z:3]
+[Builder picks up a green block at X:-2 Y:3 Z:2]
+[Builder puts down a green block at X:1 Y:3 Z:2]
+[Builder puts down a green block at X:0 Y:4 Z:2]
+[Builder puts down a green block at X:0 Y:2 Z:2]
+<Architect> yeah like that
+<Builder> or like that
+<Builder> kk
+<Architect> nice all done

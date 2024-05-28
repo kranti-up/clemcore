@@ -1,0 +1,91 @@
+B16-A29-C136-1524064631721
+<Builder> Mission has started.
+<Builder> hello!
+<Architect> good morning, robot
+<Architect> :)
+<Architect> this one is a stick figure
+<Builder> nice
+<Architect> of a person with one hand on their waist and one hand in the air
+<Builder> funky
+<Architect> we will start witht the legs
+<Architect> which are purple
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+<Architect> each leg is 3 high
+[Builder picks up a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:1 Z:-2]
+[Builder puts down a purple block at X:1 Y:2 Z:-2]
+[Builder puts down a purple block at X:1 Y:3 Z:-2]
+<Architect> and there's one space between them
+[Builder puts down a purple block at X:-1 Y:1 Z:-2]
+[Builder puts down a purple block at X:-1 Y:2 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+<Architect> perfect
+<Architect> now the feet
+<Architect> the one on the left is facing front
+<Architect> one purple block
+[Builder puts down a purple block at X:1 Y:1 Z:-3]
+<Architect> the one on the right is facing out
+[Builder puts down a purple block at X:-2 Y:1 Z:-2]
+<Architect> yas
+<Architect> now the torso
+<Architect> it is 3 brown blocks
+<Architect> between the legs
+<Builder> brown? or orange?
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+<Architect> but one up from the top leg blocks
+[Builder puts down a orange block at X:0 Y:4 Z:-2]
+[Builder picks up a orange block at X:0 Y:4 Z:-2]
+[Builder picks up a orange block at X:1 Y:4 Z:-2]
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+[Builder puts down a orange block at X:1 Y:5 Z:-2]
+[Builder puts down a orange block at X:0 Y:5 Z:-2]
+[Builder puts down a orange block at X:-1 Y:5 Z:-2]
+[Builder picks up a orange block at X:1 Y:4 Z:-2]
+<Architect> not quite
+<Architect> the torso is tall not long
+[Builder picks up a orange block at X:1 Y:5 Z:-2]
+[Builder picks up a orange block at X:-1 Y:5 Z:-2]
+<Architect> so vertical
+[Builder puts down a orange block at X:0 Y:6 Z:-2]
+[Builder puts down a orange block at X:0 Y:4 Z:-2]
+[Builder picks up a orange block at X:0 Y:4 Z:-2]
+<Architect> perfect
+[Builder puts down a orange block at X:0 Y:4 Z:-2]
+<Architect> the head is one yellow block
+[Builder puts down a yellow block at X:0 Y:7 Z:-2]
+<Architect> floating one block up from the top of the torso
+[Builder puts down a yellow block at X:0 Y:8 Z:-2]
+[Builder picks up a yellow block at X:0 Y:7 Z:-2]
+<Architect> right
+<Architect> the arms are blus
+<Architect> blue even
+<Architect> they are each 3 blocks
+[Builder puts down a blue block at X:1 Y:6 Z:-2]
+[Builder puts down a blue block at X:2 Y:6 Z:-2]
+[Builder puts down a blue block at X:3 Y:6 Z:-2]
+<Architect> the one on the left is the one that touches the waist
+[Builder picks up a blue block at X:3 Y:6 Z:-2]
+[Builder picks up a blue block at X:2 Y:6 Z:-2]
+[Builder puts down a blue block at X:1 Y:5 Z:-2]
+[Builder puts down a blue block at X:1 Y:4 Z:-2]
+<Architect> it starts one block up from there
+<Builder> at the invisible neck?
+<Architect> yes
+[Builder picks up a blue block at X:1 Y:4 Z:-2]
+[Builder puts down a blue block at X:1 Y:7 Z:-2]
+<Architect> and the arm rests at an angle
+<Architect> so move the middle block out by one
+[Builder puts down a blue block at X:2 Y:6 Z:-2]
+[Builder picks up a blue block at X:1 Y:6 Z:-2]
+<Architect> excellent
+<Architect> the other arm is raised
+[Builder puts down a blue block at X:-1 Y:6 Z:-2]
+[Builder puts down a blue block at X:-1 Y:7 Z:-2]
+[Builder picks up a blue block at X:-1 Y:6 Z:-2]
+<Architect> now one at an angle up
+[Builder puts down a blue block at X:-2 Y:7 Z:-2]
+[Builder puts down a blue block at X:-2 Y:8 Z:-2]
+[Builder picks up a blue block at X:-2 Y:7 Z:-2]
+<Architect> and one more on top
+[Builder puts down a blue block at X:-2 Y:9 Z:-2]
+<Architect> now admire our great work

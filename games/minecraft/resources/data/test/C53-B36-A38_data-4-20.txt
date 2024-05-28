@@ -1,0 +1,69 @@
+B36-A38-C53-1524262591934
+<Builder> Mission has started.
+<Builder> hi
+<Architect> Hello, we are going to be making a cube with the center removed.
+<Builder> ok cool
+<Architect> Can you start by making a red ring, it should be 3 blocks wide
+<Architect> Sorry, vertically
+<Builder> sure
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+<Architect> Thank you
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-2]
+[Builder puts down a red block at X:-1 Y:3 Z:-2]
+[Builder puts down a red block at X:-1 Y:4 Z:-2]
+[Builder puts down a red block at X:0 Y:4 Z:-2]
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder puts down a red block at X:1 Y:3 Z:-2]
+[Builder puts down a red block at X:1 Y:4 Z:-2]
+[Builder picks up a red block at X:-1 Y:4 Z:-2]
+[Builder picks up a red block at X:0 Y:4 Z:-2]
+[Builder picks up a red block at X:1 Y:4 Z:-2]
+[Builder puts down a red block at X:0 Y:3 Z:-2]
+<Builder> like this?
+<Architect> Perfect
+<Builder> ok
+<Architect> We are going to make another one behind it, so that there is an empty block between them, except the new one should be blue.
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+[Builder puts down a blue block at X:-1 Y:3 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+<Builder> like this?
+<Architect> Yup,
+<Builder> ok
+<Architect> Next, on the left side, we are going to connect them with purple blocks on the top and bottom
+<Architect> Sorry, orange blocks
+<Architect> My bad.
+<Builder> it's ok
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+<Builder> like this?
+<Architect> Close, it should look like a ring
+<Builder> o ok
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+<Builder> like this?
+<Architect> Sorry, I mean't that the left side should have the middle block removed. My bad,
+<Builder> ooo it's all good
+[Builder picks up a orange block at X:0 Y:3 Z:-1]
+[Builder picks up a orange block at X:1 Y:3 Z:-1]
+[Builder picks up a orange block at X:1 Y:2 Z:-1]
+[Builder picks up a orange block at X:1 Y:1 Z:-1]
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+[Builder picks up a orange block at X:-1 Y:2 Z:-1]
+<Builder> like this?
+<Architect> Yup, now we are going to do the same on the other side using purple blocks
+<Builder> ok
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+<Architect> Perfect, we are done here.
+<Builder> sounds good

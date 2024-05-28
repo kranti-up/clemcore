@@ -1,0 +1,105 @@
+B47-A30-C27-1523546055656
+<Builder> Mission has started.
+<Architect> ok this one is a bunch of interlocking T shapes
+<Architect> start in the center of the board and build a standing T that is 3 blocks tall and 3 blocks wide
+<Architect> in yellow
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder picks up a yellow block at X:-1 Y:2 Z:0]
+[Builder picks up a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+<Architect> ok good
+<Architect> now on the left end of the top of the T, build a tower of 3 red blocks, starting from the side of the T and going up
+[Builder puts down a red block at X:2 Y:3 Z:0]
+<Builder> here?
+[Builder puts down a red block at X:2 Y:4 Z:0]
+<Architect> yes
+[Builder puts down a red block at X:2 Y:5 Z:0]
+[Builder puts down a red block at X:1 Y:5 Z:0]
+[Builder puts down a red block at X:3 Y:5 Z:0]
+<Architect> delete those end pieces
+[Builder picks up a red block at X:3 Y:5 Z:0]
+<Builder> of he red t?
+[Builder picks up a red block at X:1 Y:5 Z:0]
+<Architect> yes
+<Architect> those will serve as the top of the T
+<Architect> now from where you are standing, build a row of 4 red squares to finsih the red T, but have it go towards the end of the board you are looking towards
+<Builder> 4 squares?
+[Builder puts down a red block at X:2 Y:6 Z:0]
+[Builder puts down a red block at X:2 Y:6 Z:-1]
+[Builder picks up a red block at X:2 Y:6 Z:0]
+[Builder picks up a red block at X:2 Y:6 Z:-1]
+[Builder puts down a red block at X:2 Y:5 Z:-1]
+[Builder puts down a red block at X:2 Y:5 Z:1]
+[Builder puts down a red block at X:2 Y:5 Z:2]
+<Architect> no sorry. wrong way
+[Builder picks up a red block at X:2 Y:5 Z:2]
+<Architect> have the middle of that row of 3 that you built be the center
+<Builder> parallel, or perpendicular to the yellow?
+[Builder picks up a red block at X:2 Y:5 Z:-1]
+[Builder picks up a red block at X:2 Y:5 Z:1]
+[Builder puts down a red block at X:0 Y:4 Z:0]
+[Builder puts down a red block at X:0 Y:5 Z:0]
+[Builder puts down a red block at X:0 Y:5 Z:1]
+<Architect> perpendicular
+[Builder puts down a red block at X:0 Y:5 Z:-1]
+[Builder puts down a red block at X:0 Y:5 Z:-2]
+[Builder picks up a red block at X:0 Y:4 Z:0]
+<Builder> this?
+[Builder picks up a red block at X:0 Y:5 Z:-2]
+<Architect> yes but connect it to the middle of the red tower you built
+[Builder puts down a red block at X:1 Y:5 Z:0]
+<Architect> no. delete all of the red besides that tower of 3
+[Builder picks up a red block at X:1 Y:5 Z:0]
+[Builder picks up a red block at X:0 Y:5 Z:0]
+[Builder picks up a red block at X:0 Y:5 Z:-1]
+[Builder picks up a red block at X:0 Y:5 Z:1]
+<Architect> sorry this is confusing to explain
+<Builder> do it block by block
+<Architect> ok so the middle of the red row will serve as the middle of the top of the T
+<Architect> so on the opposite side of where you are, build a row of 4 out
+[Builder puts down a red block at X:2 Y:5 Z:1]
+[Builder puts down a red block at X:2 Y:5 Z:2]
+[Builder puts down a red block at X:2 Y:5 Z:3]
+<Builder> here?
+<Architect> one row down but yes
+[Builder picks up a red block at X:2 Y:5 Z:1]
+[Builder picks up a red block at X:2 Y:5 Z:2]
+[Builder picks up a red block at X:2 Y:5 Z:3]
+[Builder puts down a red block at X:2 Y:4 Z:1]
+[Builder puts down a red block at X:2 Y:4 Z:2]
+[Builder puts down a red block at X:2 Y:4 Z:3]
+<Architect> yes! ok now to the next one
+<Architect> now from the opposite side of the yellow T from the red, build one blue square on top of the end yellow
+[Builder puts down a blue block at X:-1 Y:4 Z:0]
+<Architect> yes now in the same direction the red is going, build a row of 3 blue
+[Builder puts down a blue block at X:-1 Y:4 Z:1]
+[Builder puts down a blue block at X:-1 Y:4 Z:2]
+[Builder puts down a blue block at X:-1 Y:4 Z:3]
+<Architect> delete the end. the one you already built was included. sorry
+[Builder picks up a blue block at X:-1 Y:4 Z:3]
+<Architect> now from the middle of that blue row, build it to the ground
+[Builder puts down a blue block at X:-1 Y:3 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:2 Z:1]
+<Architect> ok now place on green square on the right inside corner of the blue T
+[Builder puts down a green block at X:-1 Y:3 Z:2]
+<Architect> yes now build it so its a row of 5 connecting towards the red
+[Builder puts down a green block at X:0 Y:3 Z:2]
+[Builder puts down a green block at X:1 Y:3 Z:2]
+[Builder puts down a green block at X:2 Y:3 Z:2]
+[Builder puts down a green block at X:3 Y:3 Z:2]
+<Architect> now build it so its an upside down T
+[Builder puts down a green block at X:3 Y:3 Z:3]
+<Builder> from this end?
+<Builder> and 3 wide, like the rest?
+<Architect> no start from the middle of the green row and build upwards
+[Builder picks up a green block at X:3 Y:3 Z:3]
+[Builder puts down a green block at X:1 Y:4 Z:2]
+[Builder puts down a green block at X:1 Y:5 Z:2]
+[Builder puts down a green block at X:1 Y:6 Z:2]
+<Architect> thats it!

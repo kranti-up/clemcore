@@ -1,0 +1,133 @@
+B35-A34-C124-1524006274673
+<Builder> Mission has started.
+<Architect> hi there
+<Architect> so these are triangels in many forms
+<Builder> okay
+<Architect> place on eblue block 2 away from the center diagonally
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+[Builder picks up a blue block at X:1 Y:1 Z:-1]
+<Architect> there
+<Architect> now do a 90 and look at the left side
+<Architect> build that V structure,
+[Builder puts down a blue block at X:2 Y:1 Z:-3]
+[Builder puts down a blue block at X:2 Y:2 Z:-3]
+[Builder puts down a blue block at X:2 Y:2 Z:-4]
+[Builder puts down a blue block at X:2 Y:3 Z:-4]
+[Builder picks up a blue block at X:2 Y:2 Z:-4]
+[Builder picks up a blue block at X:2 Y:1 Z:-3]
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:2 Y:2 Z:-1]
+[Builder picks up a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:2 Y:2 Z:0]
+[Builder puts down a blue block at X:2 Y:3 Z:0]
+[Builder picks up a blue block at X:2 Y:2 Z:0]
+<Architect> connect the top to blue blocks with 3 blue blocks
+[Builder puts down a blue block at X:2 Y:4 Z:-4]
+[Builder puts down a blue block at X:3 Y:4 Z:-4]
+[Builder puts down a blue block at X:2 Y:4 Z:-3]
+[Builder picks up a blue block at X:3 Y:4 Z:-4]
+[Builder picks up a blue block at X:2 Y:4 Z:-4]
+[Builder puts down a blue block at X:2 Y:4 Z:-2]
+[Builder puts down a blue block at X:2 Y:5 Z:-2]
+[Builder puts down a blue block at X:2 Y:4 Z:-1]
+[Builder picks up a blue block at X:2 Y:4 Z:-2]
+<Architect> it sould be a vertical line
+<Architect> only 3 high
+<Builder> ?
+<Builder> what
+<Architect> yeah so the 2 edges of the V are the 2 sides of the triangle
+<Architect> the third side is just the top
+<Builder> ohhh
+[Builder picks up a blue block at X:2 Y:4 Z:-1]
+[Builder picks up a blue block at X:2 Y:5 Z:-2]
+[Builder picks up a blue block at X:2 Y:4 Z:-3]
+[Builder puts down a blue block at X:2 Y:3 Z:-3]
+[Builder puts down a blue block at X:2 Y:3 Z:-2]
+[Builder puts down a blue block at X:2 Y:3 Z:-1]
+[Builder picks up a blue block at X:3 Y:3 Z:-2]
+<Architect> perf
+<Architect> switch to red
+<Builder> ok
+<Architect> place that red in that hole
+[Builder puts down a red block at X:2 Y:2 Z:-2]
+<Architect> that is one verticie of the triangle
+<Builder> okay
+<Architect> place one purple coming towards you on the red
+<Builder> same size?
+[Builder puts down a purple block at X:3 Y:2 Z:-2]
+<Architect> place a red to the left
+[Builder puts down a red block at X:3 Y:2 Z:-1]
+[Builder picks up a purple block at X:3 Y:2 Z:-2]
+[Builder puts down a purple block at X:3 Y:2 Z:0]
+[Builder puts down a red block at X:4 Y:2 Z:0]
+[Builder picks up a purple block at X:3 Y:2 Z:0]
+<Architect> do 2 more red going the same direction
+[Builder puts down a purple block at X:5 Y:2 Z:0]
+[Builder puts down a red block at X:5 Y:2 Z:1]
+[Builder picks up a purple block at X:5 Y:2 Z:0]
+<Builder> this?
+<Architect> yeah
+<Architect> that is one edge
+<Architect> now
+[Builder puts down a red block at X:5 Y:2 Z:0]
+[Builder puts down a red block at X:5 Y:2 Z:-1]
+[Builder puts down a red block at X:5 Y:2 Z:-2]
+[Builder puts down a red block at X:5 Y:2 Z:-3]
+<Architect> no
+[Builder puts down a red block at X:3 Y:2 Z:-3]
+<Architect> no
+[Builder picks up a red block at X:3 Y:2 Z:-3]
+[Builder picks up a red block at X:5 Y:2 Z:-3]
+[Builder picks up a red block at X:5 Y:2 Z:-2]
+[Builder picks up a red block at X:5 Y:2 Z:-1]
+[Builder picks up a red block at X:5 Y:2 Z:0]
+<Architect> look at the blue
+<Architect> move left 3 blocks
+<Architect> place 6 blocks of red behind that one
+[Builder puts down a red block at X:4 Y:2 Z:1]
+[Builder puts down a red block at X:3 Y:2 Z:1]
+[Builder puts down a red block at X:2 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+<Architect> that is another edge
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:1 Y:2 Z:0]
+<Architect> great
+<Architect> red triangle done
+<Architect> now the yellow triangle
+<Builder> ok
+<Architect> so go to that last block of 6 that you made
+<Architect> good stay with that perspective
+<Architect> place one yellow to the left of that block
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+<Architect> that is the right angle edge
+<Architect> verticie
+<Builder> ok
+<Architect> place 3 yellow towards you and 3 to the left of that block
+[Builder puts down a yellow block at X:-2 Y:2 Z:0]
+[Builder puts down a yellow block at X:-3 Y:2 Z:0]
+[Builder puts down a yellow block at X:-4 Y:2 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-3]
+[Builder puts down a yellow block at X:-4 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-3 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-3 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-3]
+<Architect> connect them
+[Builder picks up a yellow block at X:-2 Y:2 Z:-2]
+[Builder picks up a yellow block at X:-3 Y:2 Z:-1]
+<Builder> this?
+[Builder puts down a yellow block at X:-3 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-2]
+[Builder picks up a yellow block at X:-3 Y:2 Z:-2]
+[Builder picks up a yellow block at X:-4 Y:2 Z:-1]
+<Architect> there
+[Builder picks up a yellow block at X:-2 Y:2 Z:-3]
+<Architect> let me check
+<Architect> yeah this looks good

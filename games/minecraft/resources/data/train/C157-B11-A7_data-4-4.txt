@@ -1,0 +1,130 @@
+B11-A7-C157-1522857006209
+<Builder> Mission has started.
+<Architect> this one's like a butterfly when you look at it form the top
+<Builder> ok, thanks
+<Architect> but it's going to be built in the air
+<Builder> so all on one horizontal plane, but floating?
+<Architect> not quite all in one horizontal plane but more or less
+<Builder> ok.
+<Architect> the first purple block is going to be closer to your side of the box and about cells up?
+[Builder puts down a purple block at X:-3 Y:1 Z:0]
+[Builder picks up a purple block at X:-3 Y:1 Z:0]
+[Builder puts down a purple block at X:-4 Y:1 Z:0]
+[Builder puts down a purple block at X:-4 Y:2 Z:0]
+[Builder puts down a purple block at X:-4 Y:3 Z:0]
+<Builder> how many cells up?
+[Builder picks up a purple block at X:-4 Y:1 Z:0]
+[Builder picks up a purple block at X:-4 Y:2 Z:0]
+[Builder puts down a purple block at X:-4 Y:1 Z:0]
+[Builder puts down a purple block at X:-4 Y:2 Z:0]
+<Architect> yes, but get rid of the bottom two blocks
+[Builder picks up a purple block at X:-4 Y:2 Z:0]
+[Builder picks up a purple block at X:-4 Y:1 Z:0]
+<Architect> and i think maybe go one more up?
+[Builder puts down a purple block at X:-4 Y:4 Z:0]
+[Builder picks up a purple block at X:-4 Y:3 Z:0]
+<Architect> cool that's right
+<Builder> great. Should we maybe build the others on this "floor" next?
+<Architect> now that's the bottom of a line of four blocks going away from you
+<Architect> and yes, sounds good
+[Builder puts down a purple block at X:-3 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:4 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+<Architect> now there's a blue block one up and to the left
+<Architect> not up, away from you
+<Builder> floating?
+[Builder puts down a blue block at X:-1 Y:4 Z:-1]
+[Builder puts down a blue block at X:0 Y:4 Z:-1]
+[Builder picks up a blue block at X:-1 Y:4 Z:-1]
+<Architect> and one more in teh same direction
+[Builder picks up a blue block at X:0 Y:4 Z:-1]
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+[Builder puts down a blue block at X:0 Y:4 Z:-1]
+[Builder puts down a blue block at X:1 Y:4 Z:-1]
+[Builder puts down a blue block at X:1 Y:4 Z:-2]
+[Builder picks up a blue block at X:0 Y:4 Z:0]
+[Builder picks up a blue block at X:1 Y:4 Z:-1]
+<Architect> okay apparently we should shift this all down by one
+[Builder puts down a blue block at X:1 Y:3 Z:-2]
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:-2 Y:3 Z:0]
+[Builder puts down a purple block at X:-3 Y:3 Z:0]
+[Builder puts down a purple block at X:-4 Y:3 Z:0]
+[Builder picks up a purple block at X:-4 Y:4 Z:0]
+[Builder picks up a purple block at X:-3 Y:4 Z:0]
+[Builder picks up a purple block at X:-2 Y:4 Z:0]
+[Builder picks up a purple block at X:-1 Y:4 Z:0]
+[Builder picks up a blue block at X:0 Y:4 Z:-1]
+[Builder picks up a blue block at X:1 Y:4 Z:-2]
+<Builder> ok, that should be it. Everything's on the third level now
+[Builder puts down a purple block at X:-4 Y:1 Z:0]
+[Builder puts down a purple block at X:-4 Y:2 Z:0]
+[Builder picks up a purple block at X:-4 Y:2 Z:0]
+[Builder picks up a purple block at X:-4 Y:1 Z:0]
+<Architect> yep!
+<Architect> now a symmetric blue antenna on the other side
+[Builder puts down a blue block at X:-1 Y:3 Z:1]
+[Builder puts down a blue block at X:0 Y:3 Z:1]
+[Builder puts down a blue block at X:0 Y:3 Z:2]
+[Builder puts down a blue block at X:1 Y:3 Z:2]
+[Builder picks up a blue block at X:0 Y:3 Z:2]
+[Builder picks up a blue block at X:-1 Y:3 Z:1]
+<Architect> now on either side of the third purple block away from you, put an orange block
+[Builder puts down a orange block at X:-2 Y:3 Z:-1]
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+[Builder picks up a orange block at X:-2 Y:4 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:1]
+<Architect> that's everything on this level
+<Architect> one level up, we're going to have an orange block twoards you and right from the last block you placed
+[Builder puts down a orange block at X:-2 Y:4 Z:1]
+[Builder puts down a orange block at X:-3 Y:4 Z:1]
+[Builder puts down a orange block at X:-3 Y:4 Z:2]
+[Builder picks up a orange block at X:-2 Y:4 Z:1]
+[Builder picks up a orange block at X:-3 Y:4 Z:1]
+<Builder> like that?
+<Architect> yes, and then the same thing but away from you on the same side
+<Architect> and then symmetric on the left
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a orange block at X:-1 Y:3 Z:-2]
+[Builder puts down a orange block at X:-1 Y:4 Z:-2]
+[Builder picks up a orange block at X:-1 Y:3 Z:-2]
+[Builder picks up a orange block at X:-1 Y:3 Z:-1]
+[Builder picks up a orange block at X:-2 Y:3 Z:1]
+[Builder puts down a orange block at X:-2 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:2]
+[Builder puts down a orange block at X:-1 Y:4 Z:2]
+[Builder puts down a orange block at X:-1 Y:4 Z:3]
+[Builder picks up a orange block at X:-1 Y:4 Z:3]
+[Builder picks up a orange block at X:-1 Y:4 Z:2]
+[Builder picks up a orange block at X:-1 Y:5 Z:3]
+[Builder puts down a orange block at X:-1 Y:4 Z:2]
+[Builder picks up a orange block at X:-1 Y:3 Z:1]
+[Builder picks up a orange block at X:-1 Y:3 Z:2]
+[Builder puts down a orange block at X:-3 Y:3 Z:-1]
+[Builder puts down a orange block at X:-3 Y:3 Z:-2]
+[Builder puts down a orange block at X:-3 Y:4 Z:-2]
+[Builder picks up a orange block at X:-3 Y:3 Z:-1]
+[Builder picks up a orange block at X:-3 Y:3 Z:-2]
+<Architect> now up one more level
+<Architect> on the left side, you're going to build a line of five blocks to the left of the blocks you just built
+<Builder> also orange?
+[Builder puts down a orange block at X:-1 Y:5 Z:-2]
+[Builder puts down a orange block at X:-1 Y:5 Z:-3]
+[Builder puts down a orange block at X:-2 Y:5 Z:-3]
+[Builder puts down a orange block at X:-3 Y:5 Z:-3]
+[Builder puts down a orange block at X:-4 Y:5 Z:-3]
+[Builder picks up a orange block at X:-1 Y:5 Z:-2]
+[Builder puts down a orange block at X:-1 Y:5 Z:-2]
+[Builder puts down a orange block at X:0 Y:5 Z:-3]
+[Builder picks up a orange block at X:-1 Y:5 Z:-2]
+<Architect> liek that, and then symmetric on the other side
+[Builder puts down a orange block at X:-1 Y:4 Z:3]
+[Builder puts down a orange block at X:-1 Y:5 Z:3]
+[Builder picks up a orange block at X:-1 Y:4 Z:3]
+[Builder puts down a orange block at X:-2 Y:5 Z:3]
+[Builder puts down a orange block at X:-3 Y:5 Z:3]
+[Builder puts down a orange block at X:-4 Y:5 Z:3]
+[Builder puts down a orange block at X:0 Y:5 Z:3]
+<Architect> that's it!

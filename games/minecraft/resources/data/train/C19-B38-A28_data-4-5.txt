@@ -1,0 +1,163 @@
+B38-A28-C19-1522945842080
+<Builder> Mission has started.
+<Architect> alright we're good to start sorry there were some tech issues
+<Architect> alright can you get purple, green and red blocks
+<Builder> Ok
+<Architect> and move a little back so we have some space
+<Builder> around here
+<Architect> yeah
+<Architect> can you place three purple blocks in a row
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:-1]
+[Builder puts down a purple block at X:0 Y:1 Z:-2]
+<Architect> horizontally sorry
+<Builder> towards me or parallel
+[Builder picks up a purple block at X:0 Y:1 Z:-2]
+[Builder puts down a purple block at X:0 Y:1 Z:-2]
+[Builder puts down a purple block at X:-1 Y:1 Z:-2]
+[Builder puts down a purple block at X:1 Y:1 Z:-2]
+[Builder picks up a purple block at X:0 Y:1 Z:-1]
+[Builder picks up a purple block at X:0 Y:1 Z:0]
+<Builder> ok
+<Architect> yeah alright and then can you make a staircase of purple blocks up
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder puts down a purple block at X:-1 Y:2 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+<Builder> like this?
+<Architect> nah
+[Builder picks up a purple block at X:-1 Y:3 Z:-2]
+[Builder picks up a purple block at X:-1 Y:2 Z:-2]
+[Builder picks up a purple block at X:0 Y:2 Z:-2]
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+<Builder> like this?
+<Architect> yeah like this
+[Builder puts down a purple block at X:0 Y:1 Z:-1]
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+<Builder> how many steps?
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+<Architect> do it three more times
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:2 Z:1]
+<Builder> I ean out of blocks
+<Builder> should I use a different collor?
+<Architect> nah can you take out all of them that aren't the actual stairs
+[Builder picks up a purple block at X:1 Y:2 Z:1]
+[Builder picks up a purple block at X:-1 Y:2 Z:0]
+[Builder picks up a purple block at X:-1 Y:1 Z:0]
+[Builder picks up a purple block at X:-1 Y:1 Z:-1]
+[Builder picks up a purple block at X:0 Y:1 Z:0]
+[Builder picks up a purple block at X:0 Y:1 Z:-1]
+[Builder picks up a purple block at X:0 Y:2 Z:0]
+[Builder picks up a purple block at X:1 Y:2 Z:0]
+[Builder picks up a purple block at X:1 Y:1 Z:0]
+[Builder picks up a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+[Builder puts down a purple block at X:1 Y:4 Z:1]
+[Builder puts down a purple block at X:0 Y:4 Z:1]
+[Builder puts down a purple block at X:-1 Y:4 Z:1]
+[Builder puts down a purple block at X:-2 Y:4 Z:1]
+[Builder picks up a purple block at X:-2 Y:4 Z:1]
+[Builder puts down a purple block at X:-1 Y:5 Z:2]
+[Builder puts down a purple block at X:0 Y:5 Z:2]
+[Builder puts down a purple block at X:1 Y:5 Z:2]
+[Builder picks up a purple block at X:1 Y:2 Z:1]
+[Builder picks up a purple block at X:1 Y:1 Z:1]
+[Builder picks up a purple block at X:1 Y:3 Z:1]
+[Builder picks up a purple block at X:-1 Y:4 Z:2]
+<Architect> nice
+<Builder> is this good?
+<Builder> ok
+<Architect> yeah
+<Architect> alright and can you make one more staircase step with red this time
+[Builder puts down a red block at X:1 Y:5 Z:3]
+[Builder puts down a red block at X:1 Y:6 Z:3]
+[Builder puts down a red block at X:0 Y:6 Z:3]
+[Builder puts down a red block at X:-1 Y:6 Z:3]
+[Builder picks up a red block at X:-1 Y:6 Z:4]
+[Builder picks up a red block at X:1 Y:5 Z:3]
+<Builder> are you sure we are going to have enough space?
+<Architect> yeah we'll have enough space
+<Builder> Ok
+<Architect> and then can you put three red blocks across from the other red blocks
+<Architect> touching them
+[Builder puts down a red block at X:-1 Y:6 Z:4]
+[Builder puts down a red block at X:0 Y:6 Z:4]
+[Builder puts down a red block at X:1 Y:6 Z:4]
+<Builder> like a platform?
+<Architect> yeah good
+<Architect> alright and can you put red blocks down from the one you're staring at until it touches the ground
+[Builder puts down a red block at X:1 Y:5 Z:4]
+[Builder puts down a red block at X:1 Y:4 Z:4]
+[Builder puts down a red block at X:1 Y:3 Z:4]
+[Builder puts down a red block at X:1 Y:1 Z:4]
+[Builder puts down a red block at X:1 Y:2 Z:4]
+<Builder> should I make a second pillar?
+<Architect> and same with the other side
+<Architect> yea
+[Builder puts down a red block at X:-1 Y:5 Z:4]
+[Builder puts down a red block at X:-1 Y:4 Z:4]
+[Builder puts down a red block at X:-1 Y:3 Z:4]
+[Builder puts down a red block at X:-1 Y:1 Z:4]
+[Builder puts down a red block at X:-1 Y:2 Z:4]
+<Builder> Ok, whats next?
+<Architect> alright go on the other side of the red
+<Architect> yea
+<Builder> this side?
+<Architect> yea
+<Architect> can you put a red block in the center of the hole
+<Builder> what hole? The space between the pillars?
+<Architect> yeah
+[Builder puts down a red block at X:0 Y:5 Z:4]
+<Builder> like that?
+<Architect> one down from that
+[Builder puts down a red block at X:0 Y:4 Z:4]
+<Builder> should the first one be there?
+<Architect> no can you get rid of that one
+[Builder picks up a red block at X:0 Y:5 Z:4]
+<Builder> should I repeat that?
+<Architect> alright and then two blocks down from that put one more
+[Builder puts down a red block at X:0 Y:2 Z:4]
+<Architect> yeah
+<Builder> ok
+<Architect> okay can you come back around to the purple
+<Builder> yup
+<Architect> can you put green blocks to the left and right of the third step
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+<Builder> more pillars?
+<Architect> and then build down from those
+[Builder puts down a green block at X:2 Y:1 Z:0]
+[Builder puts down a green block at X:2 Y:2 Z:0]
+<Architect> yea
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:2 Z:0]
+<Builder> ok
+<Architect> and then put 3 blocks up on each side
+[Builder puts down a green block at X:2 Y:4 Z:0]
+[Builder puts down a green block at X:2 Y:5 Z:0]
+[Builder puts down a green block at X:2 Y:6 Z:0]
+[Builder puts down a green block at X:-2 Y:4 Z:0]
+[Builder puts down a green block at X:-2 Y:5 Z:0]
+[Builder puts down a green block at X:-2 Y:6 Z:0]
+<Builder> should i connect them?
+<Architect> and then connect them
+[Builder puts down a green block at X:1 Y:6 Z:0]
+[Builder puts down a green block at X:0 Y:6 Z:0]
+<Architect> yea
+[Builder puts down a green block at X:-1 Y:6 Z:0]
+<Builder> ok
+<Architect> okay one sec let me check to see if it's right
+<Builder> should people be able to walk up the stairs?
+<Architect> nah we did it
+<Builder> ok
+<Architect> high five!
+<Builder> Turrah

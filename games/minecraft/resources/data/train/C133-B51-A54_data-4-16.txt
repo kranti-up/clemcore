@@ -1,0 +1,121 @@
+B51-A54-C133-1523915495911
+<Builder> Mission has started.
+<Builder> nice
+<Architect> Ok start from a corner this time
+<Architect> Build a 4x4 orange gate
+[Builder puts down a blue block at X:5 Y:1 Z:-5]
+[Builder picks up a blue block at X:5 Y:1 Z:-5]
+[Builder puts down a blue block at X:5 Y:1 Z:-5]
+[Builder puts down a orange block at X:5 Y:2 Z:-5]
+[Builder puts down a orange block at X:5 Y:1 Z:-6]
+[Builder picks up a orange block at X:5 Y:1 Z:-6]
+[Builder picks up a blue block at X:5 Y:1 Z:-5]
+[Builder puts down a blue block at X:5 Y:1 Z:-6]
+[Builder picks up a blue block at X:5 Y:2 Z:-6]
+[Builder picks up a blue block at X:5 Y:1 Z:-6]
+[Builder picks up a blue block at X:5 Y:1 Z:-5]
+[Builder puts down a orange block at X:5 Y:1 Z:-5]
+[Builder puts down a orange block at X:5 Y:3 Z:-5]
+[Builder puts down a orange block at X:5 Y:4 Z:-5]
+[Builder puts down a orange block at X:4 Y:4 Z:-5]
+[Builder puts down a orange block at X:3 Y:4 Z:-5]
+[Builder puts down a orange block at X:2 Y:4 Z:-5]
+[Builder puts down a orange block at X:2 Y:3 Z:-5]
+[Builder puts down a orange block at X:1 Y:3 Z:-5]
+[Builder puts down a orange block at X:2 Y:2 Z:-5]
+[Builder picks up a orange block at X:2 Y:2 Z:-5]
+[Builder picks up a orange block at X:1 Y:3 Z:-5]
+[Builder puts down a orange block at X:2 Y:2 Z:-5]
+[Builder puts down a orange block at X:2 Y:1 Z:-5]
+<Architect> Nice. You can break the top corners
+[Builder puts down a orange block at X:5 Y:4 Z:-6]
+[Builder picks up a orange block at X:5 Y:4 Z:-6]
+[Builder picks up a orange block at X:5 Y:4 Z:-5]
+[Builder picks up a orange block at X:2 Y:4 Z:-5]
+<Architect> Fly up top of the gate
+<Architect> On the right block of those two, build a pillar of four reds.
+[Builder picks up a orange block at X:3 Y:4 Z:-5]
+[Builder puts down a orange block at X:3 Y:4 Z:-5]
+[Builder puts down a red block at X:3 Y:5 Z:-5]
+[Builder puts down a red block at X:3 Y:6 Z:-5]
+[Builder puts down a red block at X:3 Y:7 Z:-5]
+[Builder puts down a red block at X:3 Y:8 Z:-5]
+<Architect> Now make a diagonal line of four reds from the top. basically what you did with the red line in one of the earlier ones.
+[Builder puts down a red block at X:2 Y:7 Z:-5]
+<Architect> towards the right diagonal
+<Architect> Oh no I mean
+[Builder picks up a red block at X:2 Y:7 Z:-5]
+<Architect> Paralel to the ground
+<Architect> It's like a crane
+<Builder> wait so
+<Builder> ohh
+[Builder puts down a red block at X:3 Y:8 Z:-6]
+[Builder puts down a red block at X:2 Y:8 Z:-6]
+[Builder picks up a red block at X:3 Y:8 Z:-6]
+[Builder puts down a red block at X:2 Y:8 Z:-7]
+[Builder puts down a red block at X:1 Y:8 Z:-7]
+[Builder picks up a red block at X:2 Y:8 Z:-7]
+[Builder puts down a red block at X:1 Y:8 Z:-8]
+[Builder puts down a red block at X:0 Y:8 Z:-8]
+[Builder picks up a red block at X:1 Y:8 Z:-8]
+[Builder picks up a red block at X:0 Y:8 Z:-8]
+[Builder picks up a red block at X:1 Y:8 Z:-7]
+[Builder picks up a red block at X:2 Y:8 Z:-6]
+[Builder puts down a red block at X:3 Y:8 Z:-4]
+[Builder puts down a red block at X:2 Y:8 Z:-4]
+[Builder picks up a red block at X:3 Y:8 Z:-4]
+[Builder puts down a red block at X:2 Y:8 Z:-3]
+[Builder puts down a red block at X:1 Y:8 Z:-3]
+[Builder picks up a red block at X:2 Y:8 Z:-3]
+[Builder puts down a red block at X:1 Y:8 Z:-2]
+[Builder puts down a red block at X:0 Y:8 Z:-2]
+[Builder picks up a red block at X:1 Y:8 Z:-2]
+<Architect> Go down three from that with red
+[Builder puts down a red block at X:0 Y:7 Z:-2]
+[Builder puts down a red block at X:0 Y:6 Z:-2]
+[Builder puts down a red block at X:0 Y:5 Z:-2]
+<Architect> Build one yellow under it
+[Builder puts down a yellow block at X:0 Y:4 Z:-2]
+<Architect> Build one yellow to the left and right of that yellow block
+[Builder puts down a yellow block at X:0 Y:4 Z:-3]
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+<Architect> Break the one on the right and build one towards you
+[Builder picks up a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-2]
+<Architect> Complete that into 2x2 square
+[Builder puts down a yellow block at X:-1 Y:4 Z:-3]
+<Architect> Get a bird-eye view of that from up top
+<Architect> On the right and left corners, build one diagonal yellow on the ground.
+[Builder puts down a yellow block at X:-5 Y:1 Z:-5]
+[Builder puts down a yellow block at X:-5 Y:1 Z:5]
+<Architect> Sorry I meant the corners of the yellow square
+[Builder puts down a yellow block at X:-5 Y:1 Z:-4]
+[Builder picks up a yellow block at X:-5 Y:1 Z:-4]
+[Builder picks up a yellow block at X:-5 Y:1 Z:-5]
+[Builder picks up a yellow block at X:-5 Y:1 Z:5]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:4 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:4 Z:-4]
+[Builder picks up a yellow block at X:-1 Y:4 Z:-4]
+<Architect> The one on the right is correct, the one on the left should be on the next corner clockwise
+[Builder puts down a yellow block at X:0 Y:4 Z:-4]
+[Builder puts down a yellow block at X:1 Y:4 Z:-4]
+[Builder picks up a yellow block at X:0 Y:4 Z:-4]
+<Architect> Yup
+[Builder picks up a yellow block at X:-2 Y:4 Z:-4]
+<Architect> Build down from those two
+[Builder puts down a yellow block at X:1 Y:3 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+<Architect> Down to the ground
+[Builder puts down a yellow block at X:1 Y:2 Z:-4]
+[Builder puts down a yellow block at X:1 Y:1 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-1]
+<Builder> look at this beautiful architecture
+<Architect> Now all that's left is breaking the top of the yellow pillars
+[Builder picks up a yellow block at X:1 Y:4 Z:-4]
+[Builder picks up a yellow block at X:-2 Y:4 Z:-1]
+<Architect> Nice
+<Builder> nice

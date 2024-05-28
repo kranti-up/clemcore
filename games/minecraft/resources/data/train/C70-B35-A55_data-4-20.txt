@@ -1,0 +1,74 @@
+B35-A55-C70-1524259800701
+<Builder> Mission has started.
+<Architect> okay start with yellow
+<Architect> place one block one space diagonally from any corner
+[Builder puts down a yellow block at X:5 Y:1 Z:5]
+<Architect> not on the corner but one space diagonal from that
+[Builder puts down a yellow block at X:4 Y:1 Z:4]
+[Builder picks up a yellow block at X:5 Y:1 Z:5]
+<Architect> plae one block to the right of that
+[Builder puts down a yellow block at X:3 Y:1 Z:4]
+<Architect> two in front
+[Builder puts down a yellow block at X:3 Y:1 Z:3]
+[Builder puts down a yellow block at X:3 Y:1 Z:2]
+<Architect> one on top of that
+[Builder puts down a yellow block at X:3 Y:2 Z:2]
+<Architect> one in front of that one
+[Builder puts down a yellow block at X:3 Y:2 Z:1]
+<Architect> three to the right of that
+[Builder puts down a yellow block at X:2 Y:2 Z:1]
+[Builder puts down a yellow block at X:1 Y:2 Z:1]
+[Builder puts down a yellow block at X:0 Y:2 Z:1]
+<Builder> ok
+<Architect> place 2 on top of the rightmost block
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+[Builder puts down a yellow block at X:0 Y:4 Z:1]
+<Architect> one in front of the top one
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+<Architect> one on top of that
+[Builder puts down a yellow block at X:0 Y:5 Z:0]
+<Architect> one in front of that
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+<Architect> one on top of that
+[Builder puts down a yellow block at X:0 Y:6 Z:-1]
+<Architect> two to the left of that
+[Builder puts down a yellow block at X:1 Y:6 Z:-1]
+[Builder puts down a yellow block at X:2 Y:6 Z:-1]
+<Architect> one in front of the left most
+[Builder puts down a yellow block at X:2 Y:6 Z:-2]
+<Architect> one on top of that
+[Builder puts down a yellow block at X:2 Y:7 Z:-2]
+<Architect> and one to the right of that
+[Builder puts down a yellow block at X:2 Y:7 Z:-3]
+<Builder> thats all my yellow
+<Architect> you gotta redo that last one
+[Builder picks up a yellow block at X:2 Y:7 Z:-3]
+<Architect> it has to be to the right
+[Builder puts down a yellow block at X:1 Y:7 Z:-2]
+<Architect> of the topmost
+<Builder> oops
+<Architect> yes good
+<Architect> now green
+<Builder> ok
+<Architect> place one block in front of the last one
+[Builder puts down a green block at X:1 Y:7 Z:-3]
+<Architect> another one in front
+[Builder puts down a green block at X:1 Y:7 Z:-4]
+[Builder puts down a green block at X:1 Y:7 Z:-5]
+<Architect> delete one
+[Builder picks up a green block at X:1 Y:7 Z:-5]
+<Architect> good
+<Architect> two down from that last one
+[Builder puts down a green block at X:1 Y:6 Z:-4]
+[Builder puts down a green block at X:1 Y:5 Z:-4]
+<Architect> one to the right of that last one
+[Builder puts down a green block at X:0 Y:5 Z:-4]
+<Architect> one on the bottom of that last one
+[Builder puts down a green block at X:0 Y:4 Z:-4]
+<Architect> one to the right of that last one
+[Builder puts down a green block at X:-1 Y:4 Z:-4]
+<Architect> one down from that last one
+[Builder puts down a green block at X:-1 Y:3 Z:-4]
+<Architect> and one in front of that one
+[Builder puts down a green block at X:-1 Y:3 Z:-5]
+<Architect> good

@@ -1,0 +1,96 @@
+B12-A26-C11-1522940682033
+<Builder> Mission has started.
+<Builder> ready
+<Architect> Sorry, there were some technical difficulties so we restarted
+<Builder> no problem
+<Architect> Now we'll be building broken heart object
+<Builder> red?
+<Architect> And so we'll start with a red brick in the middle of the ground
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> Now on the next level we want red-blackspace-red
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:2 Z:0]
+<Builder> what is a blackspace?
+<Architect> Oh oops i meant blank space
+<Builder> ok
+<Architect> You did the right thing
+<Architect> We'll do the same thing on the third level, so three blank spaces this time
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:2 Y:3 Z:0]
+[Builder picks up a red block at X:1 Y:3 Z:0]
+[Builder picks up a red block at X:0 Y:3 Z:0]
+[Builder picks up a red block at X:-1 Y:3 Z:0]
+<Architect> Cool, and again on the fourth
+[Builder puts down a red block at X:-2 Y:4 Z:0]
+[Builder puts down a red block at X:-3 Y:4 Z:0]
+[Builder picks up a red block at X:-2 Y:4 Z:0]
+[Builder puts down a red block at X:2 Y:3 Z:-1]
+[Builder puts down a red block at X:2 Y:4 Z:0]
+[Builder puts down a red block at X:3 Y:4 Z:0]
+[Builder picks up a red block at X:2 Y:3 Z:-1]
+[Builder picks up a red block at X:2 Y:4 Z:0]
+<Architect> On the fifth level, we will make a line of seven red bricks
+[Builder puts down a red block at X:3 Y:5 Z:0]
+[Builder puts down a red block at X:2 Y:5 Z:0]
+[Builder puts down a red block at X:1 Y:5 Z:0]
+[Builder puts down a red block at X:0 Y:5 Z:0]
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+[Builder puts down a red block at X:-2 Y:5 Z:0]
+[Builder puts down a red block at X:-3 Y:5 Z:0]
+<Architect> Cool, now add a brick under the middle brick on the fifth level
+[Builder puts down a red block at X:0 Y:4 Z:0]
+<Architect> Then remove the brick above the one just added
+[Builder picks up a red block at X:0 Y:5 Z:0]
+<Architect> Great! We have a heart. Now let's add a broken symbol
+<Architect> First, we will add three brown bricks
+<Builder> will orange do?
+<Builder> I have no brown
+<Architect> They will be diagonal down right through the heart
+<Architect> That might do, let me ask
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+<Architect> It is orange
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:6 Z:0]
+[Builder picks up a orange block at X:2 Y:6 Z:0]
+[Builder puts down a orange block at X:3 Y:6 Z:0]
+[Builder puts down a orange block at X:-2 Y:1 Z:0]
+<Architect> You're close. Move the brick on the bottom right to the right one square
+[Builder picks up a orange block at X:-2 Y:1 Z:0]
+[Builder puts down a orange block at X:-3 Y:1 Z:0]
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+[Builder picks up a orange block at X:1 Y:4 Z:0]
+<Architect> Nice!
+[Builder puts down a orange block at X:2 Y:6 Z:0]
+[Builder picks up a orange block at X:3 Y:6 Z:0]
+<Builder> what else?
+<Architect> We will now make a small L-shape with three orange bricks on the top
+[Builder puts down a orange block at X:1 Y:6 Z:0]
+[Builder puts down a orange block at X:2 Y:7 Z:0]
+<Architect> The L will be oriented so that the right angle is facing the diagonal of orange blocks
+[Builder picks up a orange block at X:1 Y:6 Z:0]
+[Builder puts down a orange block at X:1 Y:7 Z:0]
+[Builder picks up a orange block at X:2 Y:7 Z:0]
+[Builder puts down a orange block at X:3 Y:6 Z:0]
+[Builder puts down a orange block at X:3 Y:7 Z:0]
+[Builder puts down a orange block at X:2 Y:7 Z:0]
+[Builder picks up a orange block at X:2 Y:6 Z:0]
+[Builder picks up a orange block at X:1 Y:7 Z:0]
+<Architect> Nice! you have the right structure and orientation, but the L should float one more level up and to the left
+[Builder puts down a orange block at X:2 Y:8 Z:0]
+[Builder puts down a orange block at X:3 Y:8 Z:0]
+[Builder puts down a orange block at X:4 Y:8 Z:0]
+[Builder puts down a orange block at X:4 Y:7 Z:0]
+[Builder picks up a orange block at X:2 Y:8 Z:0]
+[Builder picks up a orange block at X:3 Y:7 Z:0]
+[Builder picks up a orange block at X:3 Y:6 Z:0]
+[Builder picks up a orange block at X:2 Y:7 Z:0]
+<Architect> Great we only need one more brick
+<Architect> Place the brick right where you're standing
+[Builder puts down a orange block at X:2 Y:6 Z:0]

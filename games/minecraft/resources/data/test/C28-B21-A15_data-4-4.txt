@@ -1,0 +1,43 @@
+B21-A15-C28-1522884965167
+<Builder> Mission has started.
+<Architect> ready?
+<Builder> yee
+<Architect> okay, so, place 4 purple blocks in a 4 x 3 rectangle on the ground
+<Architect> so just the corner blocks
+[Builder puts down a purple block at X:2 Y:1 Z:-3]
+[Builder puts down a purple block at X:-1 Y:1 Z:-3]
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:2 Y:1 Z:-1]
+<Builder> like that?
+<Architect> yep!
+<Architect> now, make a full rectangle of yellow blocks on top of those
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:2 Y:2 Z:-2]
+[Builder puts down a yellow block at X:2 Y:2 Z:-3]
+[Builder puts down a yellow block at X:1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:1 Y:2 Z:-3]
+[Builder puts down a yellow block at X:0 Y:2 Z:-2]
+[Builder puts down a yellow block at X:0 Y:2 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-3]
+<Architect> good!
+<Architect> now, on the middle block of one of the short ends, stack two more yellow blocks
+[Builder puts down a yellow block at X:2 Y:3 Z:-2]
+[Builder puts down a yellow block at X:2 Y:4 Z:-2]
+<Architect> and put another yellow block in front to make a head
+[Builder puts down a yellow block at X:3 Y:4 Z:-2]
+<Architect> yep!
+<Builder> is this a camel
+<Architect> i think so!
+<Architect> actually, it has arms
+<Architect> put a block for an arm on both long sides
+<Architect> one space back from the head
+[Builder puts down a yellow block at X:1 Y:2 Z:-4]
+<Architect> yep!
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+<Architect> looks good! :D
+<Builder> strange camel
+<Architect> yeah haha

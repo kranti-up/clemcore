@@ -1,0 +1,47 @@
+B29-A34-C28-1524254993132
+<Builder> Mission has started.
+<Architect> this is kinda like an animal
+<Builder> what sort?
+<Architect> so on the ground, place the corners of a 4x3 purple square
+[Builder puts down a purple block at X:2 Y:1 Z:2]
+[Builder puts down a purple block at X:2 Y:1 Z:-1]
+[Builder puts down a purple block at X:0 Y:1 Z:-1]
+[Builder puts down a purple block at X:0 Y:1 Z:2]
+<Architect> plaec a 4x3 yellow rectange on top of that
+<Builder> solid?
+<Architect> yes
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:1]
+[Builder puts down a yellow block at X:1 Y:2 Z:1]
+[Builder puts down a yellow block at X:2 Y:2 Z:1]
+[Builder puts down a yellow block at X:2 Y:2 Z:2]
+[Builder puts down a yellow block at X:1 Y:2 Z:2]
+[Builder puts down a yellow block at X:0 Y:2 Z:2]
+<Architect> ok great
+<Architect> stay right there
+<Architect> everything else is in yellow
+<Architect> so on the 2nd yellow block from your side
+<Architect> place one yellow on top of that
+[Builder puts down a yellow block at X:1 Y:3 Z:2]
+<Architect> place another yellow
+[Builder puts down a yellow block at X:1 Y:4 Z:2]
+<Architect> and place one coming out of the figure towards the edge
+[Builder puts down a yellow block at X:1 Y:4 Z:3]
+<Architect> gr8
+<Architect> that is the head
+<Architect> next are teh arms
+<Architect> stand on the side of the figure
+<Architect> which block are you looking at
+<Builder> 2nd back from the head
+<Architect> ok place one yellow block protruding out, going towards the edge
+[Builder puts down a yellow block at X:3 Y:2 Z:1]
+<Architect> same thing on the other side
+<Architect> symmetrical
+[Builder puts down a yellow block at X:-1 Y:2 Z:1]
+<Architect> ok I think that is it
+<Architect> :)

@@ -1,0 +1,29 @@
+B4-A20-C40-1522767438166
+<Builder> Mission has started.
+<Architect> this one is more complicated
+<Architect> start with one red block
+<Architect> place it down
+[Builder puts down a red block at X:0 Y:1 Z:1]
+<Architect> orange on top
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+<Architect> delete that
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+<Architect> literally on top of red
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+<Architect> now yellow on top of that
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+<Architect> put one green on one side of yellow
+[Builder puts down a green block at X:1 Y:3 Z:1]
+<Architect> one on opposite side of yellow
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+<Architect> okay, now a blue block will be attached to orange
+<Architect> NOT under green
+[Builder puts down a blue block at X:0 Y:2 Z:2]
+<Architect> one on the other side
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+<Architect> purple attached to red
+<Architect> NOT under blue
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+<Architect> we got it
+<Builder> nice

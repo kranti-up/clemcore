@@ -1,0 +1,90 @@
+B4-A19-C10-1522883113537
+<Builder> Mission has started.
+<Architect> ok get some yellow blocks
+<Architect> in the center of the row, there's a floating block with z=1
+<Architect> like in the xyz coordinate plane
+<Builder> center of which row?
+<Architect> we only need one entire row for this
+<Architect> so it doesn't matter which row
+[Builder puts down a yellow block at X:0 Y:1 Z:4]
+[Builder puts down a yellow block at X:0 Y:2 Z:4]
+[Builder picks up a yellow block at X:0 Y:1 Z:4]
+<Architect> yeah now place two on the sides except they're on the ground, z = 0
+[Builder puts down a yellow block at X:-1 Y:1 Z:4]
+[Builder puts down a yellow block at X:1 Y:1 Z:4]
+<Architect> ok so now two units from each yellow block on the ground, place a purple block
+[Builder puts down a purple block at X:3 Y:1 Z:4]
+[Builder puts down a purple block at X:-3 Y:1 Z:4]
+<Architect> now place two purple blocks like before, except two units away from the yellow floating block
+<Architect> meaning z =1
+[Builder puts down a purple block at X:-3 Y:2 Z:4]
+[Builder puts down a purple block at X:3 Y:2 Z:4]
+<Builder> on top of the other purples?
+<Architect> uh no right next to the ones you just placed, one horizontal space
+<Builder> so connecting the purple and yellow diagonally?
+<Architect> yea
+[Builder picks up a purple block at X:3 Y:2 Z:4]
+[Builder puts down a purple block at X:2 Y:1 Z:4]
+[Builder puts down a purple block at X:2 Y:2 Z:4]
+[Builder picks up a purple block at X:2 Y:1 Z:4]
+[Builder picks up a purple block at X:-3 Y:2 Z:4]
+[Builder puts down a purple block at X:-2 Y:1 Z:4]
+[Builder picks up a purple block at X:-2 Y:1 Z:4]
+<Architect> yeah like that
+[Builder puts down a purple block at X:-2 Y:1 Z:4]
+[Builder puts down a purple block at X:-2 Y:2 Z:4]
+[Builder picks up a purple block at X:-2 Y:1 Z:4]
+<Architect> then 3 purple stacked horizontally on top of the yellow floating block
+[Builder puts down a purple block at X:0 Y:3 Z:4]
+[Builder puts down a purple block at X:-1 Y:3 Z:4]
+[Builder puts down a purple block at X:1 Y:3 Z:4]
+<Architect> the on the very ends place red blocks
+<Architect> the row ends
+<Builder> of which row?
+<Architect> the same row
+[Builder puts down a red block at X:2 Y:3 Z:4]
+[Builder puts down a red block at X:-2 Y:3 Z:4]
+<Architect> oh sorry i meant on the ground
+[Builder picks up a red block at X:-2 Y:3 Z:4]
+[Builder picks up a red block at X:2 Y:3 Z:4]
+[Builder puts down a red block at X:4 Y:1 Z:4]
+[Builder puts down a red block at X:-5 Y:1 Z:4]
+[Builder picks up a red block at X:-5 Y:1 Z:4]
+<Architect> not conected to the other blocks
+[Builder puts down a red block at X:-4 Y:1 Z:4]
+[Builder picks up a red block at X:4 Y:1 Z:4]
+[Builder puts down a red block at X:5 Y:1 Z:4]
+[Builder picks up a red block at X:-4 Y:1 Z:4]
+[Builder puts down a red block at X:-5 Y:1 Z:4]
+<Architect> yeah
+<Architect> so like the yellow and the purple stack diagonally
+<Architect> stack the red ones diagonally in the air
+<Builder> okay how many?
+<Architect> till z = 4
+[Builder puts down a red block at X:4 Y:1 Z:5]
+[Builder picks up a red block at X:4 Y:1 Z:5]
+[Builder puts down a red block at X:4 Y:1 Z:4]
+[Builder puts down a red block at X:4 Y:2 Z:4]
+[Builder picks up a red block at X:4 Y:1 Z:4]
+[Builder puts down a red block at X:2 Y:3 Z:4]
+[Builder puts down a red block at X:3 Y:3 Z:4]
+<Architect> yeah like that
+[Builder puts down a red block at X:2 Y:4 Z:4]
+[Builder picks up a red block at X:2 Y:3 Z:4]
+[Builder puts down a red block at X:-4 Y:1 Z:4]
+[Builder puts down a red block at X:-4 Y:2 Z:4]
+[Builder puts down a red block at X:-3 Y:2 Z:4]
+[Builder puts down a red block at X:-3 Y:3 Z:4]
+[Builder puts down a red block at X:-2 Y:3 Z:4]
+[Builder puts down a red block at X:-2 Y:4 Z:4]
+[Builder picks up a red block at X:-2 Y:3 Z:4]
+[Builder picks up a red block at X:-3 Y:2 Z:4]
+[Builder picks up a purple block at X:-3 Y:1 Z:4]
+[Builder picks up a red block at X:-4 Y:1 Z:4]
+[Builder puts down a purple block at X:-3 Y:1 Z:4]
+<Architect> then place 3 red ones directly on top ot the purple ones directly on top
+[Builder puts down a red block at X:-1 Y:4 Z:4]
+[Builder puts down a red block at X:0 Y:4 Z:4]
+[Builder puts down a red block at X:1 Y:4 Z:4]
+<Architect> ok we're done
+<Builder> nice

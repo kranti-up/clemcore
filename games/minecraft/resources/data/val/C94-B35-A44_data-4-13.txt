@@ -1,0 +1,88 @@
+B35-A44-C94-1523650963951
+<Builder> Mission has started.
+<Builder> im ready
+<Architect> how many have we done so far again?
+<Builder> 3
+<Architect> ok near the bottom of the building platform, build a 5x5 hollow red square that is vertical
+<Builder> 1 level tall?
+<Builder> bottom left or right?
+<Architect> no it is vertical so it is 5 blocks tall and 5 blocks wide. 1 block depth
+<Architect> center bottom
+<Architect> and it is hollow
+[Builder puts down a red block at X:0 Y:1 Z:-5]
+[Builder puts down a red block at X:1 Y:1 Z:-5]
+[Builder puts down a red block at X:2 Y:1 Z:-5]
+[Builder puts down a red block at X:2 Y:2 Z:-5]
+[Builder puts down a red block at X:2 Y:3 Z:-5]
+[Builder puts down a red block at X:2 Y:4 Z:-5]
+[Builder puts down a red block at X:2 Y:5 Z:-5]
+<Builder> is this looking like what you want it to?
+<Architect> you're done fine keep going
+[Builder puts down a red block at X:1 Y:2 Z:-5]
+[Builder puts down a red block at X:0 Y:2 Z:-5]
+[Builder puts down a red block at X:1 Y:3 Z:-5]
+[Builder puts down a red block at X:1 Y:4 Z:-5]
+[Builder puts down a red block at X:1 Y:5 Z:-5]
+[Builder puts down a red block at X:0 Y:3 Z:-5]
+[Builder puts down a red block at X:0 Y:4 Z:-5]
+[Builder puts down a red block at X:0 Y:5 Z:-5]
+[Builder puts down a red block at X:-1 Y:1 Z:-5]
+[Builder puts down a red block at X:-2 Y:1 Z:-5]
+[Builder puts down a red block at X:-1 Y:2 Z:-5]
+[Builder puts down a red block at X:-1 Y:3 Z:-5]
+<Builder> i dont have enought blocks
+<Architect> the center is hollow. there is a 3x3 space in the imddle that is hollow
+<Builder> gotcha
+[Builder picks up a red block at X:1 Y:3 Z:-5]
+[Builder picks up a red block at X:0 Y:3 Z:-5]
+[Builder picks up a red block at X:-1 Y:3 Z:-5]
+[Builder picks up a red block at X:0 Y:4 Z:-5]
+[Builder picks up a red block at X:1 Y:4 Z:-5]
+[Builder puts down a red block at X:-2 Y:3 Z:-5]
+[Builder picks up a red block at X:-1 Y:2 Z:-5]
+[Builder picks up a red block at X:0 Y:2 Z:-5]
+[Builder picks up a red block at X:1 Y:2 Z:-5]
+[Builder puts down a red block at X:-1 Y:5 Z:-5]
+[Builder puts down a red block at X:-2 Y:5 Z:-5]
+[Builder puts down a red block at X:-2 Y:4 Z:-5]
+<Builder> oaky
+<Builder> okay*
+<Architect> ok now place an orange block anywhere in the red ring
+[Builder puts down a orange block at X:-1 Y:2 Z:-5]
+<Architect> and keep this point of view that you have
+<Builder> okay
+<Architect> ok now place an orange block in front of that one
+[Builder puts down a orange block at X:-1 Y:2 Z:-4]
+<Architect> remove the first orange block and turn the second orange block into a 3x3 square with a hollow center. the second orange block is the bottom left of the hollow 3x3 orange square
+[Builder picks up a orange block at X:-1 Y:2 Z:-5]
+[Builder puts down a orange block at X:-1 Y:3 Z:-4]
+[Builder puts down a orange block at X:-1 Y:4 Z:-4]
+[Builder puts down a orange block at X:0 Y:4 Z:-4]
+[Builder puts down a orange block at X:1 Y:4 Z:-4]
+[Builder puts down a orange block at X:0 Y:2 Z:-4]
+[Builder puts down a orange block at X:1 Y:2 Z:-4]
+[Builder puts down a orange block at X:1 Y:3 Z:-4]
+<Builder> okay
+<Architect> create the orange shape except its yellow. right in front of the orange
+[Builder puts down a yellow block at X:-1 Y:4 Z:-3]
+[Builder puts down a yellow block at X:0 Y:4 Z:-3]
+[Builder puts down a yellow block at X:1 Y:4 Z:-3]
+[Builder puts down a yellow block at X:1 Y:3 Z:-3]
+[Builder puts down a yellow block at X:1 Y:2 Z:-3]
+[Builder puts down a yellow block at X:0 Y:2 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-3]
+<Builder> okay
+<Architect> next place 1 green block 1 space forward of the empty space that the yellow hollow square has
+[Builder puts down a green block at X:1 Y:3 Z:-2]
+[Builder puts down a green block at X:0 Y:3 Z:-2]
+[Builder picks up a green block at X:1 Y:3 Z:-2]
+<Architect> then blue in front
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+<Architect> then an empty space, then a purple
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder picks up a blue block at X:0 Y:3 Z:0]
+<Architect> ok good job
+<Builder> that it?
+<Architect> yes

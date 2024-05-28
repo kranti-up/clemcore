@@ -1,0 +1,51 @@
+B4-A40-C151-1523979790452
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hey
+<Architect> put down a row of 7 red blocks
+[Builder puts down a red block at X:3 Y:1 Z:-1]
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+[Builder puts down a red block at X:-3 Y:1 Z:-1]
+[Builder picks up a red block at X:-1 Y:2 Z:-1]
+<Architect> then an orange on one end
+[Builder puts down a orange block at X:-3 Y:2 Z:-1]
+<Architect> on top of one end
+<Architect> ya
+<Architect> then another one diagonally upwards and to the left
+<Builder> orange still?
+<Architect> yea
+[Builder puts down a orange block at X:-3 Y:3 Z:-1]
+[Builder puts down a orange block at X:-2 Y:3 Z:-1]
+[Builder picks up a orange block at X:-3 Y:3 Z:-1]
+<Architect> do the same again to build a staircase
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a orange block at X:-1 Y:4 Z:-1]
+[Builder picks up a orange block at X:-1 Y:3 Z:-1]
+<Architect> now do that on the other end of the red row as well
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+<Architect> so another staircase
+[Builder puts down a orange block at X:2 Y:3 Z:-1]
+[Builder picks up a orange block at X:2 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+[Builder picks up a orange block at X:2 Y:4 Z:-1]
+<Architect> nice
+<Architect> now one purple between the two top orange blocks but one layer above them
+[Builder puts down a purple block at X:1 Y:5 Z:-1]
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder picks up a purple block at X:1 Y:5 Z:-1]
+<Architect> nice
+<Architect> then a row of two purple blocks going left and starting from the top of the block you just placed
+<Builder> to make a corner?
+<Architect> yes
+[Builder puts down a purple block at X:0 Y:6 Z:-1]
+[Builder puts down a purple block at X:1 Y:6 Z:-1]
+<Architect> and we are done!
+<Architect> gg
+<Builder> easy

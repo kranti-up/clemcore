@@ -1,0 +1,60 @@
+B44-A42-C140-1524176978338
+<Builder> Mission has started.
+<Builder> ready
+<Architect> ok this looks like a bunch of rows
+<Architect> ok first start with an orange 1x4 row in the middle
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-2 Y:1 Z:0]
+<Architect> now build another paralell to it but 1 space away
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:-1 Y:1 Z:-2]
+[Builder puts down a orange block at X:-2 Y:1 Z:-2]
+<Architect> yep now do that 1 more time
+[Builder puts down a orange block at X:1 Y:1 Z:-4]
+[Builder puts down a orange block at X:0 Y:1 Z:-4]
+[Builder puts down a orange block at X:-1 Y:1 Z:-4]
+[Builder puts down a orange block at X:-2 Y:1 Z:-4]
+<Architect> now place a purple block so its floating between the 2 rows closest to you on the left side
+[Builder puts down a purple block at X:1 Y:1 Z:-3]
+[Builder puts down a purple block at X:1 Y:2 Z:-3]
+[Builder picks up a purple block at X:1 Y:1 Z:-3]
+<Architect> yep
+<Architect> now place a purple block on the left and right side of that
+[Builder puts down a purple block at X:0 Y:2 Z:-3]
+[Builder puts down a purple block at X:2 Y:2 Z:-3]
+<Architect> repeat that for the other gap as well
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder picks up a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+<Architect> yep
+<Architect> now in the gap furthest from you place a yellow block on the right side on the ground
+[Builder puts down a yellow block at X:-2 Y:1 Z:-1]
+<Architect> place another to the right of that one
+[Builder puts down a yellow block at X:-3 Y:1 Z:-1]
+<Architect> repeat on the other side of the orange row as well
+<Builder> which orange row
+<Architect> the 1 farthest from you
+[Builder puts down a yellow block at X:-2 Y:1 Z:1]
+[Builder puts down a yellow block at X:-3 Y:1 Z:1]
+<Architect> yep
+<Architect> now make another yellow row a space away and paralell from the most recent yellow row
+[Builder puts down a yellow block at X:-2 Y:1 Z:3]
+[Builder puts down a yellow block at X:-3 Y:1 Z:3]
+<Architect> now make 2 blue 2x1 rows in a similar fashion to how the purple run bewteen the orange
+[Builder puts down a blue block at X:-3 Y:1 Z:2]
+[Builder puts down a blue block at X:-3 Y:2 Z:2]
+[Builder picks up a blue block at X:-3 Y:1 Z:2]
+[Builder puts down a blue block at X:-4 Y:2 Z:2]
+[Builder puts down a blue block at X:-3 Y:1 Z:0]
+[Builder puts down a blue block at X:-3 Y:2 Z:0]
+[Builder picks up a blue block at X:-3 Y:1 Z:0]
+[Builder puts down a blue block at X:-4 Y:2 Z:0]
+<Architect> yep
+<Builder> you forgot to specify that it was between the yellows
+<Builder> but thats ok
+<Architect> sorry

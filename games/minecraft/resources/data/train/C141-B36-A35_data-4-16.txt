@@ -1,0 +1,172 @@
+B36-A35-C141-1523919296154
+<Builder> Mission has started.
+<Builder> hi
+<Architect> lol this is gonna be pretty hard
+<Builder> :((((( okkk
+<Architect> start in the center
+<Architect> move likr 4 blocks back
+<Builder> here?
+<Architect> yeah
+<Architect> now for all intents and purposes, if I tell you to reset your view, come to this spot
+<Architect> the angles on this 1 are weird
+<Builder> ok
+<Architect> place 1 yellow block infront of you
+[Builder puts down a yellow block at X:-1 Y:1 Z:2]
+<Architect> and then 2 more vertically behind that
+[Builder puts down a yellow block at X:-1 Y:1 Z:3]
+[Builder puts down a yellow block at X:-1 Y:1 Z:4]
+<Architect> that was in front of you
+<Builder> o sorry
+[Builder picks up a yellow block at X:-1 Y:1 Z:4]
+[Builder picks up a yellow block at X:-1 Y:1 Z:3]
+<Architect> other way
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+<Builder> here?
+<Architect> delete that last block, and place it ontop of the 2nd block
+[Builder picks up a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:1]
+<Architect> the second yellow column should be 2 high
+<Architect> yeah
+<Builder> ok
+<Architect> now move to the empty space infront of the yellow thing u just built
+<Architect> get on the ground
+<Architect> to your immediate right, imitate what you just built but in blue
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:0 Y:2 Z:-1]
+<Builder> like this?
+<Architect> close, delete the 2 block high column
+[Builder picks up a blue block at X:0 Y:2 Z:-1]
+[Builder picks up a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+<Builder> like this?
+<Architect> closer, but move the 2nd block to the other 1
+[Builder picks up a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+<Builder> good?
+<Architect> now mirror that to the left of the yellow 1 u built
+<Builder> in yellow?
+<Architect> in blue
+<Builder> ok
+[Builder puts down a blue block at X:-2 Y:1 Z:0]
+[Builder puts down a blue block at X:-2 Y:2 Z:0]
+[Builder puts down a blue block at X:-3 Y:1 Z:0]
+<Builder> like this?
+<Architect> yeah
+<Architect> now get on the ground and delete the bottom block of tall column of the blue things u built
+<Architect> it should look like floating stairs
+[Builder picks up a blue block at X:0 Y:1 Z:0]
+[Builder picks up a blue block at X:-2 Y:1 Z:0]
+<Architect> good
+<Builder> ok
+<Architect> okay now go back to reference
+<Architect> it should look like legs and the bottom of a banana
+<Architect> to build the body, go to the empty space between the yellow and blue
+<Architect> and build 4 high.
+<Architect> in yellow
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:4 Z:0]
+<Builder> like this?
+<Architect> place 2 more blocks
+[Builder puts down a yellow block at X:-1 Y:5 Z:0]
+[Builder puts down a yellow block at X:-1 Y:6 Z:0]
+<Architect> delete the bottom 2 on the ground
+[Builder picks up a yellow block at X:-1 Y:1 Z:0]
+[Builder picks up a yellow block at X:-1 Y:2 Z:0]
+<Architect> okay so from your view point right now, add 3 yellow blocks to the first 3 yellow blocks of the yellow column you're facing
+<Architect> add another column of yellow at the same height of the other yellow column u made
+<Architect> then delete the topmost block you placed
+<Builder> add 3 yellow blocks in which direction?
+<Architect> so you're facing the yellow column
+<Builder> ok
+<Architect> place in front of that yellow
+<Architect> should be building toward u
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:5 Z:-1]
+<Architect> yeah
+<Architect> now to the right of the last yellow block you placed, put a purple block
+[Builder puts down a purple block at X:-1 Y:5 Z:-2]
+[Builder picks up a purple block at X:-1 Y:5 Z:-2]
+[Builder puts down a purple block at X:-2 Y:5 Z:-1]
+<Builder> like this?
+<Architect> yeah, basically mimic the blue stairs thing you did except now its flipped
+<Architect> does that make sense?
+<Architect> so you should place a purple block on top of the 1 you just placed
+<Architect> and then 1 to the right of that
+<Builder> ooooh
+[Builder puts down a purple block at X:-2 Y:6 Z:-1]
+[Builder puts down a purple block at X:-3 Y:6 Z:-1]
+[Builder picks up a purple block at X:-2 Y:6 Z:-1]
+<Builder> like this?
+<Architect> do the same thing on the other side
+<Builder> ok
+<Architect> yeah
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder puts down a purple block at X:0 Y:6 Z:-1]
+[Builder puts down a purple block at X:1 Y:6 Z:-1]
+[Builder picks up a purple block at X:0 Y:6 Z:-1]
+<Builder> like this?
+<Architect> I was wrong
+<Architect> keep what u have
+<Builder> ok
+<Architect> okay add a block to the front of the 1 u just placed. it should be building toward u
+[Builder puts down a purple block at X:1 Y:6 Z:-2]
+<Builder> like this?
+<Architect> delete the old block u built from, should look diagonal
+<Builder> ok
+[Builder picks up a purple block at X:1 Y:6 Z:-1]
+<Architect> rotate 180 degrees
+<Architect> move back
+<Architect> and then go left towards the other purple leg
+<Architect> do the same thing you just did, but from this reference
+<Architect> place the block in front of the old 1
+<Architect> then delete
+[Builder puts down a purple block at X:-3 Y:6 Z:-2]
+[Builder picks up a purple block at X:-3 Y:6 Z:-1]
+<Architect> other way
+[Builder picks up a purple block at X:-3 Y:6 Z:-2]
+<Architect> same idea, but other direction
+[Builder puts down a purple block at X:-2 Y:6 Z:-1]
+[Builder puts down a purple block at X:-2 Y:6 Z:-2]
+[Builder picks up a purple block at X:-2 Y:6 Z:-1]
+[Builder puts down a purple block at X:-1 Y:6 Z:-2]
+[Builder picks up a purple block at X:-2 Y:6 Z:-2]
+<Architect> nope, reset it to what it was,
+[Builder picks up a purple block at X:-1 Y:6 Z:-2]
+[Builder puts down a purple block at X:-2 Y:5 Z:-2]
+[Builder picks up a purple block at X:-2 Y:5 Z:-2]
+[Builder puts down a purple block at X:-2 Y:5 Z:-2]
+[Builder puts down a purple block at X:-2 Y:6 Z:-2]
+[Builder picks up a purple block at X:-2 Y:5 Z:-2]
+<Architect> go back to reference
+<Architect> float back to the top
+<Architect> see how the 1 leg we finished goes diagonal back
+<Builder> ya
+<Architect> make the other 1 go diagonal forward
+<Builder> ooooo
+[Builder picks up a purple block at X:-2 Y:6 Z:-2]
+[Builder puts down a purple block at X:-2 Y:6 Z:-1]
+[Builder puts down a purple block at X:-2 Y:6 Z:0]
+[Builder puts down a purple block at X:-3 Y:6 Z:0]
+[Builder picks up a purple block at X:-2 Y:6 Z:0]
+[Builder picks up a purple block at X:-2 Y:6 Z:-1]
+<Builder> like this?
+<Architect> okay last step
+<Builder> ok
+<Architect> use red
+<Architect> go to reference but floating at the top
+<Architect> on the tallest yellow column, place a red block above it, but in front of it
+<Architect> so it's like floating
+[Builder puts down a red block at X:-1 Y:7 Z:0]
+[Builder puts down a red block at X:-1 Y:7 Z:1]
+[Builder picks up a red block at X:-1 Y:7 Z:0]
+<Architect> yeah
+<Builder> ok
+<Architect> loks like a banana doing a handstand
+<Builder> omg
+<Architect> we're done

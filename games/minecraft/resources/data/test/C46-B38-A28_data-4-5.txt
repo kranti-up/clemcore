@@ -1,0 +1,34 @@
+B38-A28-C46-1522944686754
+<Builder> Mission has started.
+<Architect> alright
+<Builder> ok
+<Architect> can you get red, orange, blue, green, purple, and yellow
+<Builder> Ok
+<Architect> okay now move a little down and to the left
+<Architect> so you have enough space
+<Architect> yeah
+<Architect> okay place a red block
+[Builder puts down a red block at X:3 Y:1 Z:-2]
+<Builder> Ok
+<Architect> and then place an orange block to the diagonal top right of it
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+<Architect> great
+<Architect> okay and then two blocks up and one to the right put a blue block
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+<Architect> to the left of that one as well
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+<Architect> okay and then to the right of that one
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+<Architect> and then one more on the right
+[Builder puts down a blue block at X:-2 Y:1 Z:1]
+<Architect> okay and put a green block on the second blue block from the left
+[Builder puts down a green block at X:0 Y:2 Z:1]
+<Architect> and then put a purple block on top of the green one
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+<Architect> and then put a red block on the fourth blue block
+[Builder puts down a red block at X:-2 Y:2 Z:1]
+<Architect> and an orange one on top of that
+[Builder puts down a orange block at X:-2 Y:3 Z:1]
+<Architect> and then a yellow one on top of that one
+[Builder puts down a yellow block at X:-2 Y:4 Z:1]
+<Architect> perfect!

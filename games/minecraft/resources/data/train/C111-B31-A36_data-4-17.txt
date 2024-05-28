@@ -1,0 +1,58 @@
+B31-A36-C111-1524004314239
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hello
+<Architect> ok first go to the middle
+<Architect> we're going to be making a 3 x 3 square
+<Builder> okay, what color
+<Architect> first lay down 3 red blocks flat in an L
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Builder> like that?
+<Architect> yes
+<Architect> then repeat the same for another layer
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+<Architect> then delete the blocks from the bottom so that it's floating
+[Builder picks up a red block at X:0 Y:1 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:1]
+[Builder picks up a red block at X:-1 Y:1 Z:0]
+<Architect> then at the corner red block, put one red block on top of it
+[Builder puts down a red block at X:0 Y:3 Z:0]
+<Architect> next to it to your right put an orange block
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+<Architect> then put an orange block to the right of the bottom red layer
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+<Builder> like that?
+<Architect> ya
+<Architect> then put an orange block on top of that
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+<Architect> ok then put an orange block behind the one you just placed
+[Builder puts down a orange block at X:-2 Y:3 Z:1]
+<Architect> underneath that put a green block
+[Builder picks up a orange block at X:-2 Y:3 Z:1]
+[Builder puts down a orange block at X:-2 Y:2 Z:1]
+[Builder picks up a orange block at X:-2 Y:2 Z:1]
+[Builder puts down a orange block at X:-2 Y:2 Z:1]
+[Builder picks up a orange block at X:-2 Y:2 Z:1]
+[Builder puts down a orange block at X:-2 Y:3 Z:1]
+[Builder puts down a green block at X:-2 Y:2 Z:1]
+<Builder> is this right?
+<Architect> ya
+<Architect> then next to the one you just placed out a green block in front of it
+[Builder puts down a green block at X:-2 Y:2 Z:2]
+<Architect> then put a green block on top of it
+[Builder puts down a green block at X:-2 Y:3 Z:2]
+<Architect> then on the bottom green layer put a green block to your right
+[Builder puts down a green block at X:-1 Y:2 Z:2]
+<Architect> ok last corner
+<Architect> is yellow
+[Builder puts down a yellow block at X:-1 Y:3 Z:2]
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+[Builder puts down a yellow block at X:0 Y:3 Z:2]
+[Builder puts down a yellow block at X:0 Y:2 Z:2]
+<Architect> nice
+<Architect> i think we're good
+<Builder> awesome

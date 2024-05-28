@@ -1,0 +1,76 @@
+B25-A3-C73-1523384830418
+<Builder> Mission has started.
+<Architect> so this looks like someone tried to spell with blocks and failed
+<Builder> LOL
+<Builder> aight
+<Builder> dimensions?
+<Builder> WxLxH
+<Builder> just so we develop a convention
+<Architect> anyway all the letters go straight up so we just need to start at one side and go across. i'd say like 11x1x4
+<Builder> kk
+<Architect> lets start at the left. we need placeholder blocks to get it off the ground so use red
+[Builder puts down a red block at X:-5 Y:1 Z:1]
+<Architect> ok put 1 purple block on top of that
+[Builder puts down a purple block at X:-5 Y:2 Z:1]
+<Architect> then a red to the right of it
+[Builder puts down a red block at X:-5 Y:3 Z:1]
+<Architect> that works too. put 1 purple block to the right of the top red block
+[Builder puts down a purple block at X:-4 Y:3 Z:1]
+[Builder puts down a red block at X:-4 Y:2 Z:1]
+<Builder> my bad i misread that, but that still works?
+<Architect> yeah. and 1 purple block on top of the top red block too
+[Builder puts down a purple block at X:-5 Y:4 Z:1]
+<Architect> yeah that works. we will remove red later
+<Builder> oh ok
+<Architect> so this purple is kind of like an x if that helps. we need to put purple blocks in the top right and lower right of that center purple block
+[Builder puts down a blue block at X:-3 Y:3 Z:1]
+[Builder puts down a purple block at X:-3 Y:4 Z:1]
+[Builder puts down a purple block at X:-3 Y:2 Z:1]
+[Builder picks up a blue block at X:-3 Y:3 Z:1]
+<Architect> yeah buddy
+<Architect> now you can remove placeholders. the letters aren't connected
+<Builder> k
+[Builder picks up a red block at X:-5 Y:3 Z:1]
+[Builder picks up a red block at X:-4 Y:2 Z:1]
+[Builder picks up a red block at X:-5 Y:1 Z:1]
+<Architect> ok next is yellow. it is also off the ground. place 2 reds on the ground 1 space awaay from the purple
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+<Architect> i mean two reds side by side, then you can place 2 yellows on top of each
+[Builder picks up a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a yellow block at X:0 Y:2 Z:1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:1]
+<Builder> gotchu
+[Builder picks up a red block at X:-1 Y:1 Z:1]
+[Builder picks up a red block at X:0 Y:1 Z:1]
+<Architect> nice. then put 2 more reds on top of the yellow and 2 yellows on top of the new reds
+[Builder puts down a red block at X:0 Y:3 Z:1]
+[Builder puts down a red block at X:-1 Y:3 Z:1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:1]
+[Builder puts down a yellow block at X:0 Y:4 Z:1]
+[Builder picks up a red block at X:0 Y:3 Z:1]
+[Builder picks up a red block at X:-1 Y:3 Z:1]
+<Architect> yup like that
+<Architect> last is a green y shape. this one starts on the ground
+<Architect> place 3 green blocks 1 space away from the yellows flat on the ground
+[Builder puts down a green block at X:3 Y:1 Z:1]
+[Builder puts down a green block at X:2 Y:1 Z:1]
+[Builder puts down a green block at X:4 Y:1 Z:1]
+<Architect> then 3 on top of the rightmost green block so its upright
+[Builder puts down a green block at X:4 Y:1 Z:2]
+[Builder picks up a green block at X:4 Y:1 Z:2]
+[Builder puts down a green block at X:4 Y:2 Z:1]
+[Builder puts down a green block at X:4 Y:3 Z:1]
+[Builder puts down a green block at X:4 Y:4 Z:1]
+[Builder puts down a green block at X:3 Y:3 Z:1]
+[Builder puts down a green block at X:2 Y:3 Z:1]
+[Builder puts down a green block at X:2 Y:4 Z:1]
+<Architect> yeah like that
+<Builder> yay
+<Architect> what does it say though
+<Builder> yex
+<Builder> or gex
+<Architect> more like yikes
+<Builder> with the g cut off
+<Architect> alright on to the next one

@@ -1,0 +1,146 @@
+B27-A25-C101-1523575684618
+<Builder> Mission has started.
+<Architect> ok, we're going to start building this from the edge of this grid that you're at
+<Architect> build a rectangular prism that is 4 wide, 2 long, and 3 tall outward from where you are looking right now
+<Architect> with orange blocks
+[Builder puts down a orange block at X:1 Y:1 Z:-5]
+[Builder puts down a orange block at X:0 Y:1 Z:-5]
+[Builder puts down a orange block at X:-1 Y:1 Z:-5]
+[Builder puts down a orange block at X:-2 Y:1 Z:-5]
+[Builder puts down a orange block at X:-2 Y:1 Z:-4]
+[Builder puts down a orange block at X:-1 Y:1 Z:-4]
+[Builder puts down a orange block at X:0 Y:1 Z:-4]
+[Builder puts down a orange block at X:1 Y:1 Z:-4]
+[Builder puts down a orange block at X:-2 Y:2 Z:-5]
+[Builder puts down a orange block at X:-2 Y:2 Z:-4]
+[Builder puts down a orange block at X:-1 Y:2 Z:-4]
+[Builder puts down a orange block at X:0 Y:2 Z:-4]
+[Builder puts down a orange block at X:1 Y:2 Z:-4]
+[Builder puts down a orange block at X:1 Y:2 Z:-5]
+[Builder puts down a orange block at X:-1 Y:2 Z:-5]
+[Builder puts down a orange block at X:0 Y:2 Z:-5]
+[Builder puts down a orange block at X:1 Y:3 Z:-4]
+[Builder puts down a orange block at X:0 Y:3 Z:-4]
+[Builder puts down a orange block at X:-1 Y:3 Z:-4]
+[Builder puts down a orange block at X:-2 Y:3 Z:-4]
+<Architect> did you run out of orange
+<Builder> yeah we have 20 of each
+<Architect> ok, we'll hollow out the walkway and then you can finish the structure
+<Architect> break a 2x2 cube from the bottom middle
+[Builder picks up a orange block at X:0 Y:1 Z:-5]
+[Builder picks up a orange block at X:-1 Y:1 Z:-5]
+[Builder picks up a orange block at X:-1 Y:2 Z:-5]
+[Builder picks up a orange block at X:0 Y:2 Z:-5]
+[Builder picks up a orange block at X:0 Y:2 Z:-4]
+[Builder picks up a orange block at X:-1 Y:2 Z:-4]
+[Builder picks up a orange block at X:-1 Y:1 Z:-4]
+[Builder picks up a orange block at X:0 Y:1 Z:-4]
+[Builder puts down a orange block at X:1 Y:3 Z:-5]
+[Builder puts down a orange block at X:-2 Y:3 Z:-5]
+[Builder puts down a orange block at X:-1 Y:3 Z:-5]
+[Builder puts down a orange block at X:0 Y:3 Z:-5]
+<Architect> perfect
+<Architect> now on the top row of the orange
+<Architect> build a flat 4x4 horizontal wall
+<Builder> color?
+<Architect> towards you
+<Architect> green
+<Architect> my bad
+[Builder puts down a green block at X:-2 Y:3 Z:-3]
+[Builder puts down a green block at X:-1 Y:3 Z:-3]
+[Builder puts down a green block at X:0 Y:3 Z:-3]
+[Builder puts down a green block at X:1 Y:3 Z:-3]
+[Builder puts down a green block at X:1 Y:3 Z:-2]
+[Builder puts down a green block at X:0 Y:3 Z:-2]
+[Builder puts down a green block at X:-1 Y:3 Z:-2]
+[Builder puts down a green block at X:-2 Y:3 Z:-2]
+[Builder puts down a green block at X:-2 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+<Architect> ok, break the top right corner, the block to the left of it and the block below it
+<Builder> this one?
+<Architect> yup
+[Builder picks up a green block at X:1 Y:3 Z:-3]
+[Builder picks up a green block at X:0 Y:3 Z:-3]
+[Builder picks up a green block at X:1 Y:3 Z:-2]
+<Architect> then break the bottom left corner, the two blocks above it and the two blocks to the right of it
+[Builder picks up a green block at X:-2 Y:3 Z:0]
+[Builder picks up a green block at X:-2 Y:3 Z:-1]
+[Builder picks up a green block at X:-2 Y:3 Z:-2]
+[Builder picks up a green block at X:-1 Y:3 Z:0]
+[Builder picks up a green block at X:0 Y:3 Z:0]
+<Architect> in the middle 2x2 that's left, break the bottom left corner
+[Builder picks up a green block at X:-1 Y:3 Z:-1]
+<Architect> perfect
+<Architect> wait, i flipped this by accident
+<Architect> can you replace every orange block with a yellow block
+<Architect> in the structure you built
+[Builder picks up a orange block at X:1 Y:3 Z:-5]
+[Builder picks up a orange block at X:1 Y:3 Z:-4]
+[Builder picks up a orange block at X:1 Y:2 Z:-5]
+[Builder picks up a orange block at X:1 Y:1 Z:-5]
+[Builder picks up a orange block at X:1 Y:2 Z:-4]
+[Builder picks up a orange block at X:1 Y:1 Z:-4]
+[Builder puts down a yellow block at X:1 Y:1 Z:-4]
+[Builder puts down a yellow block at X:1 Y:1 Z:-5]
+[Builder puts down a yellow block at X:1 Y:2 Z:-5]
+[Builder puts down a yellow block at X:1 Y:2 Z:-4]
+[Builder puts down a yellow block at X:1 Y:3 Z:-4]
+[Builder puts down a yellow block at X:1 Y:3 Z:-5]
+[Builder picks up a orange block at X:0 Y:3 Z:-5]
+[Builder picks up a orange block at X:0 Y:3 Z:-4]
+[Builder picks up a orange block at X:-1 Y:3 Z:-5]
+[Builder picks up a orange block at X:-1 Y:3 Z:-4]
+[Builder picks up a orange block at X:-2 Y:2 Z:-5]
+[Builder picks up a orange block at X:-2 Y:3 Z:-5]
+[Builder picks up a orange block at X:-2 Y:3 Z:-4]
+[Builder picks up a orange block at X:-2 Y:2 Z:-4]
+[Builder picks up a orange block at X:-2 Y:1 Z:-5]
+[Builder picks up a orange block at X:-2 Y:1 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-5]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-5]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-5]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-5]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-4]
+[Builder puts down a yellow block at X:0 Y:3 Z:-4]
+[Builder puts down a yellow block at X:0 Y:3 Z:-5]
+<Builder> orange on this side?
+<Architect> yup
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:1 Y:1 Z:2]
+[Builder puts down a orange block at X:1 Y:2 Z:2]
+[Builder puts down a orange block at X:1 Y:3 Z:2]
+<Architect> and then we're done
+[Builder puts down a orange block at X:0 Y:3 Z:2]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:2]
+[Builder puts down a orange block at X:-1 Y:1 Z:2]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:2]
+[Builder picks up a orange block at X:-1 Y:3 Z:2]
+[Builder picks up a orange block at X:-1 Y:3 Z:1]
+[Builder picks up a orange block at X:-1 Y:2 Z:1]
+[Builder picks up a orange block at X:-1 Y:2 Z:2]
+[Builder picks up a orange block at X:-1 Y:1 Z:2]
+[Builder picks up a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:-2 Y:1 Z:1]
+[Builder puts down a orange block at X:-2 Y:1 Z:2]
+[Builder puts down a orange block at X:-2 Y:2 Z:2]
+[Builder puts down a orange block at X:-2 Y:2 Z:1]
+[Builder puts down a orange block at X:-2 Y:3 Z:2]
+[Builder puts down a orange block at X:-2 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:2]
+<Architect> ok we're done

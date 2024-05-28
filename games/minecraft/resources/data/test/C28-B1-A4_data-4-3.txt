@@ -1,0 +1,74 @@
+B1-A4-C28-1522771744116
+<Builder> Mission has started.
+<Architect> hi there
+<Architect> can you see this?
+<Builder> hello
+<Architect> hi
+<Architect> you're building like duck thing
+<Builder> okay
+<Architect> start with purple
+<Architect> four blocks in the corners of a 4x3 square
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:1 Z:-3]
+[Builder puts down a purple block at X:-1 Y:1 Z:-3]
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+<Architect> good now yellow
+<Builder> okay
+<Builder> same place?
+<Architect> build a flat platform on top of the purple base
+[Builder puts down a yellow block at X:-1 Y:2 Z:1]
+[Builder puts down a yellow block at X:1 Y:2 Z:1]
+[Builder puts down a yellow block at X:0 Y:2 Z:1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+<Architect> it's a filled in slab 4x3
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-3]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-3]
+[Builder puts down a yellow block at X:0 Y:2 Z:-2]
+[Builder puts down a yellow block at X:0 Y:2 Z:-3]
+[Builder puts down a yellow block at X:1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:1 Y:2 Z:-3]
+<Architect> now pick a short end for the neck/head
+<Architect> build two blocks up
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+[Builder puts down a yellow block at X:0 Y:4 Z:1]
+<Architect> one head outward
+<Builder> the whole edge?
+<Architect> no that's good
+[Builder puts down a yellow block at X:0 Y:4 Z:2]
+<Architect> good
+<Architect> now wings
+<Architect> on the long side two blocks back from the neck
+<Architect> one yellow block outward
+[Builder puts down a yellow block at X:-2 Y:2 Z:-2]
+<Builder> towards me?
+<Architect> closer to the neck
+[Builder picks up a yellow block at X:-2 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-1]
+<Architect> but yes, towards you
+<Architect> one more closer to the neck
+[Builder picks up a yellow block at X:-2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:2 Z:0]
+<Builder> same on the other side?
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+<Architect> good but you made your body too long
+<Architect> it's 4x3 not 5x3
+<Builder> oh ok
+[Builder picks up a yellow block at X:1 Y:2 Z:-3]
+[Builder picks up a yellow block at X:0 Y:2 Z:-3]
+[Builder picks up a yellow block at X:-1 Y:2 Z:-3]
+[Builder picks up a purple block at X:1 Y:1 Z:-3]
+[Builder picks up a purple block at X:-1 Y:1 Z:-3]
+[Builder puts down a purple block at X:-1 Y:1 Z:-2]
+[Builder puts down a purple block at X:1 Y:1 Z:-2]
+<Architect> great
+<Builder> is this it?
+<Architect> yep great

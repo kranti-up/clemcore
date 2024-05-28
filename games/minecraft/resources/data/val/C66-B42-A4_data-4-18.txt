@@ -1,0 +1,127 @@
+B42-A4-C66-1524081116735
+<Builder> Mission has started.
+<Architect> hey
+<Builder> hi, what should i do?
+<Architect> start with orange
+<Architect> and two rows in from an edge
+[Builder puts down a orange block at X:3 Y:1 Z:0]
+<Architect> now more towards the center of that row
+<Architect> yeah good
+<Builder> ok
+<Architect> build a row of five
+<Architect> towards the middle
+[Builder puts down a orange block at X:2 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-2 Y:1 Z:0]
+[Builder picks up a orange block at X:-2 Y:1 Z:0]
+<Architect> now one on top of each end blocks
+[Builder puts down a orange block at X:3 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+<Architect> then one up and in from each
+[Builder puts down a orange block at X:3 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder picks up a orange block at X:3 Y:3 Z:0]
+<Architect> to make sort of an arch
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder picks up a orange block at X:-1 Y:3 Z:0]
+<Architect> good then one to connect above
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder picks up a orange block at X:0 Y:4 Z:0]
+<Architect> now you're making this same structure out of green
+<Builder> what orientation from the 1st
+<Architect> start on the far side from where you're standing
+<Architect> first green block is two in from the right
+<Architect> and two blank spaces away
+[Builder puts down a green block at X:3 Y:1 Z:-3]
+<Architect> so look at the right end of hte ornge one
+[Builder picks up a green block at X:3 Y:1 Z:-3]
+<Architect> then second block in from that direction
+[Builder puts down a green block at X:0 Y:1 Z:-3]
+<Builder> there?
+<Architect> yeah greate
+<Architect> now one above that green
+[Builder puts down a green block at X:0 Y:2 Z:-3]
+<Architect> then build your row of five going to the right
+[Builder puts down a green block at X:-1 Y:1 Z:-3]
+[Builder puts down a green block at X:-2 Y:1 Z:-3]
+[Builder puts down a green block at X:-3 Y:1 Z:-3]
+<Architect> so it's floating up one
+[Builder puts down a green block at X:-4 Y:1 Z:-3]
+[Builder picks up a green block at X:-1 Y:1 Z:-3]
+[Builder picks up a green block at X:-2 Y:1 Z:-3]
+[Builder picks up a green block at X:-3 Y:1 Z:-3]
+[Builder picks up a green block at X:-4 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:2 Z:-3]
+[Builder puts down a green block at X:-2 Y:2 Z:-3]
+[Builder puts down a green block at X:-3 Y:2 Z:-3]
+[Builder puts down a green block at X:-4 Y:2 Z:-3]
+<Architect> yeah. you can now delete that bottom green
+[Builder picks up a green block at X:0 Y:1 Z:-3]
+<Architect> build teh same structure now as orange
+[Builder puts down a green block at X:0 Y:3 Z:-3]
+[Builder puts down a green block at X:-4 Y:3 Z:-3]
+[Builder puts down a green block at X:-4 Y:4 Z:-3]
+[Builder puts down a green block at X:0 Y:4 Z:-3]
+[Builder puts down a green block at X:-1 Y:4 Z:-4]
+[Builder puts down a green block at X:-1 Y:5 Z:-4]
+[Builder picks up a green block at X:-1 Y:5 Z:-4]
+[Builder picks up a green block at X:-1 Y:4 Z:-4]
+[Builder picks up a green block at X:-1 Y:4 Z:-3]
+[Builder puts down a green block at X:-1 Y:4 Z:-3]
+[Builder picks up a green block at X:0 Y:4 Z:-3]
+[Builder puts down a green block at X:-3 Y:4 Z:-3]
+[Builder picks up a green block at X:-4 Y:4 Z:-3]
+[Builder puts down a green block at X:-3 Y:5 Z:-3]
+[Builder puts down a green block at X:-2 Y:5 Z:-3]
+[Builder picks up a green block at X:-3 Y:5 Z:-3]
+<Architect> great
+<Architect> now red
+<Architect> this is the same structure but upside down
+<Builder> ok where do i start
+<Architect> the "top" block of the arch is diagonal from the orange blocks
+<Architect> to to one of the columns of two oranges
+<Architect> yep that one
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+[Builder picks up a red block at X:-1 Y:3 Z:0]
+<Architect> great
+[Builder puts down a red block at X:-2 Y:4 Z:0]
+[Builder puts down a red block at X:-1 Y:4 Z:0]
+[Builder picks up a red block at X:-2 Y:4 Z:0]
+[Builder puts down a red block at X:-3 Y:3 Z:0]
+[Builder puts down a red block at X:-3 Y:4 Z:0]
+[Builder picks up a red block at X:-3 Y:3 Z:0]
+[Builder puts down a red block at X:-4 Y:4 Z:0]
+[Builder puts down a red block at X:-4 Y:5 Z:0]
+[Builder picks up a red block at X:-4 Y:4 Z:0]
+[Builder puts down a red block at X:0 Y:4 Z:0]
+[Builder puts down a red block at X:0 Y:5 Z:0]
+<Architect> perpendicular to orange, though
+[Builder picks up a red block at X:0 Y:4 Z:0]
+[Builder picks up a red block at X:0 Y:5 Z:0]
+[Builder picks up a red block at X:-1 Y:4 Z:0]
+[Builder picks up a red block at X:-3 Y:4 Z:0]
+[Builder picks up a red block at X:-4 Y:5 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:-1]
+[Builder puts down a red block at X:-2 Y:4 Z:-1]
+[Builder picks up a red block at X:-2 Y:3 Z:-1]
+[Builder puts down a red block at X:-2 Y:5 Z:-1]
+[Builder puts down a red block at X:-2 Y:5 Z:-2]
+[Builder picks up a red block at X:-2 Y:5 Z:-1]
+[Builder puts down a red block at X:-2 Y:4 Z:0]
+[Builder puts down a red block at X:-2 Y:4 Z:1]
+[Builder picks up a red block at X:-2 Y:4 Z:0]
+[Builder puts down a red block at X:-2 Y:5 Z:1]
+[Builder puts down a red block at X:-2 Y:5 Z:2]
+[Builder picks up a red block at X:-2 Y:5 Z:1]
+[Builder puts down a red block at X:-2 Y:6 Z:2]
+[Builder puts down a red block at X:-2 Y:6 Z:-2]
+[Builder puts down a red block at X:-2 Y:6 Z:1]
+[Builder puts down a red block at X:-2 Y:6 Z:0]
+[Builder puts down a red block at X:-2 Y:6 Z:-1]
+<Architect> well done.that's it
+<Builder> yay!

@@ -1,0 +1,65 @@
+B36-A35-C135-1523916971245
+<Builder> Mission has started.
+<Builder> hi
+<Architect> okay we'll be using only purple
+<Builder> ok
+<Architect> start in the centerish
+<Architect> and start 4 blocks from the left
+<Architect> okay on that spot build 5 blocks high
+<Builder> the spot where i'm standing?
+[Builder puts down a purple block at X:2 Y:1 Z:-1]
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+[Builder puts down a purple block at X:2 Y:3 Z:-1]
+<Architect> yeah it should be the fifth space to the left
+[Builder picks up a purple block at X:2 Y:3 Z:-1]
+[Builder picks up a purple block at X:2 Y:2 Z:-1]
+[Builder picks up a purple block at X:2 Y:1 Z:-1]
+<Architect> 1 more over
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:5 Z:-1]
+<Builder> like this?
+<Architect> yup
+<Architect> now on the topmost block
+<Architect> add 4 blocks to the right of it
+<Builder> my right?
+<Architect> opposite side of the side we specified 4 blocks to the left
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder puts down a purple block at X:0 Y:6 Z:-1]
+[Builder picks up a purple block at X:0 Y:6 Z:-1]
+<Architect> yeah that side
+[Builder puts down a purple block at X:-1 Y:5 Z:-1]
+[Builder puts down a purple block at X:-2 Y:5 Z:-1]
+[Builder puts down a purple block at X:-3 Y:5 Z:-1]
+<Builder> like this?
+<Architect> yeah
+<Builder> ok
+<Architect> now go to the block left of you
+<Architect> 1 block to the left
+<Architect> add a block on top and 1 on bottom of that block
+[Builder puts down a purple block at X:-2 Y:6 Z:-1]
+<Architect> yup
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+<Architect> now go 1 block to the left
+<Architect> of that
+<Architect> starting from the center block
+<Architect> we have an empty space, then a block going down
+<Architect> should look like the bottom of an arrow
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder picks up a purple block at X:-1 Y:4 Z:-1]
+<Architect> yup
+<Builder> ok
+<Architect> now mirror that on the top
+<Builder> oooh
+[Builder puts down a purple block at X:-1 Y:6 Z:-1]
+[Builder puts down a purple block at X:-1 Y:7 Z:-1]
+[Builder picks up a purple block at X:-1 Y:6 Z:-1]
+<Builder> like this?
+<Architect> okay we're done
+<Architect> yup
+<Builder> cool
+<Architect> i'm just doublechecking
+<Builder> sounds good

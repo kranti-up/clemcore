@@ -1,0 +1,161 @@
+B1-A3-C2-1522434666266
+<Builder> Mission has started.
+<Builder> hello. What are we building this time?
+<Architect> hello builder. we will start with red blocks. please build a 4x4 open window so that a 2x2 space is open in the middle
+<Builder> flat on the ground?
+<Builder> anywhere?
+<Architect> yes flat on the ground, preferably centered in the middle
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:1 Z:1]
+[Builder puts down a red block at X:-2 Y:1 Z:2]
+[Builder puts down a red block at X:-1 Y:1 Z:2]
+[Builder puts down a red block at X:1 Y:1 Z:2]
+[Builder puts down a red block at X:0 Y:1 Z:2]
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+<Builder> go it
+<Architect> good job builder. i need a moment to inspect the structure.
+<Architect> we will be removing this first layer in the future, but we need to build on top of it first.
+<Architect> please place 2 red blocks on top of each side of the square, leaving the corners empty
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:2]
+[Builder puts down a red block at X:0 Y:2 Z:2]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+<Architect> perfect.
+<Builder> okay
+<Architect> there is a 3rd layer that is floating, so please made a 6x6 square that extends upwards of 2 blocks to support the 3rd layer
+<Architect> these will use purple blocks
+<Builder> can you give me an instruction for a single purple block first?
+<Architect> how about this, please make a 6x6 purple ring around the first layer of the red square
+<Builder> okay
+[Builder puts down a purple block at X:1 Y:1 Z:-2]
+[Builder puts down a purple block at X:0 Y:1 Z:-2]
+[Builder puts down a purple block at X:-1 Y:1 Z:-2]
+[Builder puts down a purple block at X:-2 Y:1 Z:-2]
+[Builder puts down a purple block at X:-3 Y:1 Z:-2]
+[Builder puts down a purple block at X:2 Y:1 Z:-2]
+[Builder puts down a purple block at X:2 Y:1 Z:-1]
+[Builder puts down a purple block at X:2 Y:1 Z:0]
+[Builder puts down a purple block at X:2 Y:1 Z:1]
+[Builder puts down a purple block at X:2 Y:1 Z:2]
+[Builder puts down a purple block at X:2 Y:1 Z:3]
+[Builder puts down a purple block at X:1 Y:1 Z:3]
+[Builder puts down a purple block at X:0 Y:1 Z:3]
+[Builder puts down a purple block at X:-1 Y:1 Z:3]
+[Builder puts down a purple block at X:-3 Y:1 Z:3]
+[Builder puts down a purple block at X:-2 Y:1 Z:3]
+[Builder puts down a purple block at X:-3 Y:1 Z:2]
+[Builder puts down a purple block at X:-3 Y:1 Z:1]
+[Builder puts down a purple block at X:-3 Y:1 Z:0]
+[Builder puts down a purple block at X:-3 Y:1 Z:-1]
+<Architect> yes, awesome. now place add another layer to that ring
+<Architect> please*
+<Builder> purple?
+<Builder> i am out of blocks
+<Architect> oh, do you have any colors that are not purple or red?
+<Builder> yes
+<Architect> ok, my mistake. i am a failure of an architect
+<Architect> we will use other colors to support the final structure
+<Builder> is the purple supposed to be on the third level?
+<Builder> i think i could make it float..
+<Architect> let's use blue to replace the purple ring. yes purple is supposed to be the final structure
+<Builder> okay
+<Builder> let me try it
+[Builder picks up a purple block at X:-1 Y:1 Z:-2]
+[Builder picks up a purple block at X:-2 Y:1 Z:-2]
+[Builder picks up a purple block at X:-3 Y:1 Z:-2]
+[Builder picks up a purple block at X:-3 Y:1 Z:-1]
+[Builder picks up a purple block at X:-3 Y:1 Z:0]
+[Builder picks up a purple block at X:-3 Y:1 Z:1]
+[Builder picks up a purple block at X:-3 Y:1 Z:2]
+[Builder picks up a purple block at X:-2 Y:1 Z:3]
+[Builder picks up a purple block at X:-3 Y:1 Z:3]
+[Builder picks up a purple block at X:-1 Y:1 Z:3]
+[Builder picks up a purple block at X:0 Y:1 Z:3]
+[Builder picks up a purple block at X:1 Y:1 Z:3]
+[Builder picks up a purple block at X:2 Y:1 Z:3]
+[Builder picks up a purple block at X:2 Y:1 Z:2]
+[Builder picks up a purple block at X:2 Y:1 Z:1]
+[Builder picks up a purple block at X:2 Y:1 Z:0]
+[Builder picks up a purple block at X:2 Y:1 Z:-1]
+[Builder picks up a purple block at X:2 Y:1 Z:-2]
+[Builder picks up a purple block at X:1 Y:1 Z:-2]
+[Builder picks up a purple block at X:0 Y:1 Z:-2]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:-2]
+[Builder picks up a purple block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-2 Y:3 Z:-2]
+[Builder puts down a purple block at X:-3 Y:3 Z:-2]
+[Builder puts down a purple block at X:-3 Y:3 Z:-1]
+[Builder puts down a purple block at X:-3 Y:3 Z:0]
+[Builder puts down a purple block at X:-3 Y:3 Z:1]
+[Builder puts down a purple block at X:-3 Y:3 Z:2]
+<Architect> oh that is magnificent builder
+[Builder puts down a purple block at X:-3 Y:3 Z:3]
+[Builder puts down a purple block at X:-2 Y:3 Z:3]
+[Builder puts down a purple block at X:-1 Y:3 Z:3]
+[Builder puts down a purple block at X:0 Y:3 Z:3]
+[Builder puts down a purple block at X:1 Y:3 Z:3]
+[Builder puts down a purple block at X:2 Y:3 Z:3]
+[Builder puts down a purple block at X:2 Y:3 Z:2]
+[Builder puts down a purple block at X:2 Y:3 Z:1]
+[Builder puts down a purple block at X:2 Y:3 Z:0]
+[Builder puts down a purple block at X:2 Y:3 Z:-1]
+<Architect> i am not familiar with minecraft, so my understanding is not as great as your own
+[Builder puts down a purple block at X:2 Y:3 Z:-2]
+[Builder puts down a purple block at X:1 Y:3 Z:-2]
+<Builder> like this?
+<Architect> yes, we will need to cut some pieces form that and add a few but that is great.
+<Architect> can you add purple blocks at each inner corner of that structure?
+<Architect> if not, please remove the corner pieces of the purple ring
+<Builder> i only have 20 blocks of each color. i used them up. okay i will remove some
+[Builder picks up a purple block at X:2 Y:3 Z:-2]
+[Builder picks up a purple block at X:-3 Y:3 Z:-2]
+[Builder picks up a purple block at X:-3 Y:3 Z:3]
+[Builder picks up a purple block at X:2 Y:3 Z:3]
+[Builder puts down a purple block at X:1 Y:3 Z:2]
+[Builder puts down a purple block at X:-2 Y:3 Z:2]
+[Builder puts down a purple block at X:-2 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+<Builder> like this?
+<Architect> yes, all that's left now is removing
+<Architect> we need to remove the pieces that were directly next to the old corners you just removed
+<Builder> the purple ones?
+<Architect> while leaving the new inner corners intact
+<Architect> yes
+[Builder picks up a purple block at X:1 Y:3 Z:-2]
+[Builder picks up a purple block at X:2 Y:3 Z:-1]
+[Builder picks up a purple block at X:-2 Y:3 Z:-2]
+[Builder picks up a purple block at X:-3 Y:3 Z:-1]
+[Builder picks up a purple block at X:-3 Y:3 Z:2]
+[Builder picks up a purple block at X:-2 Y:3 Z:3]
+[Builder picks up a purple block at X:1 Y:3 Z:3]
+[Builder picks up a purple block at X:2 Y:3 Z:2]
+<Architect> builder, you are awesome. now all we need to do is remove the first red layer and the structure should be complete. please standby for me to inspect at the end
+<Builder> okay
+<Builder> all of the first red layer?
+[Builder picks up a red block at X:1 Y:1 Z:-1]
+[Builder picks up a red block at X:0 Y:1 Z:-1]
+[Builder picks up a red block at X:-1 Y:1 Z:-1]
+[Builder picks up a red block at X:-2 Y:1 Z:-1]
+[Builder picks up a red block at X:-2 Y:1 Z:0]
+[Builder picks up a red block at X:-2 Y:1 Z:1]
+[Builder picks up a red block at X:-2 Y:1 Z:2]
+<Architect> yes all of it
+[Builder picks up a red block at X:-1 Y:1 Z:2]
+[Builder picks up a red block at X:0 Y:1 Z:2]
+[Builder picks up a red block at X:1 Y:1 Z:2]
+[Builder picks up a red block at X:1 Y:1 Z:1]
+[Builder picks up a red block at X:1 Y:1 Z:0]
+<Builder> is this it?
+<Architect> yes, we've done it builder!
+<Builder> good job!

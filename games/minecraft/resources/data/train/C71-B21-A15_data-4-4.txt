@@ -1,0 +1,82 @@
+B21-A15-C71-1522883831670
+<Builder> Mission has started.
+<Architect> ready?
+<Builder> ye
+<Architect> alright, so, place a row of 5 green blocks near the edge of the platform, but separate the blocks with a 1 space gap
+<Architect> so block space block space block space block space block
+[Builder puts down a green block at X:4 Y:1 Z:4]
+[Builder puts down a green block at X:2 Y:1 Z:4]
+[Builder puts down a green block at X:0 Y:1 Z:4]
+[Builder puts down a green block at X:-2 Y:1 Z:4]
+[Builder puts down a green block at X:-4 Y:1 Z:4]
+<Architect> and put another green block on top of each of those!
+[Builder puts down a green block at X:3 Y:1 Z:4]
+[Builder picks up a green block at X:3 Y:1 Z:4]
+[Builder puts down a green block at X:4 Y:2 Z:4]
+[Builder puts down a green block at X:2 Y:2 Z:4]
+[Builder puts down a green block at X:0 Y:2 Z:4]
+[Builder puts down a green block at X:-2 Y:2 Z:4]
+[Builder puts down a green block at X:-4 Y:2 Z:4]
+<Architect> now remove all the bottom blocks
+[Builder picks up a green block at X:0 Y:1 Z:4]
+[Builder picks up a green block at X:2 Y:1 Z:4]
+[Builder picks up a green block at X:4 Y:1 Z:4]
+[Builder picks up a green block at X:-2 Y:1 Z:4]
+[Builder picks up a green block at X:-4 Y:1 Z:4]
+<Architect> alright, now, put a yellow block above the second green block from your left
+[Builder puts down a yellow block at X:2 Y:3 Z:4]
+<Architect> and put another yellow block in front of it, towards your current position
+[Builder puts down a yellow block at X:2 Y:3 Z:3]
+<Architect> and delete the first yellow block
+[Builder picks up a yellow block at X:2 Y:3 Z:4]
+<Architect> okay, now, make a row of 4 yellow blocks, with 1-space gaps in between, towards you
+<Architect> so perpendicular to the green blocks :)
+<Builder> where's the starting point for the row
+<Architect> the first yellow block, sorry
+[Builder puts down a yellow block at X:2 Y:3 Z:2]
+[Builder puts down a yellow block at X:2 Y:3 Z:1]
+[Builder picks up a yellow block at X:2 Y:3 Z:2]
+[Builder puts down a yellow block at X:2 Y:3 Z:0]
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder picks up a yellow block at X:2 Y:3 Z:0]
+[Builder puts down a yellow block at X:2 Y:3 Z:-2]
+[Builder puts down a yellow block at X:2 Y:3 Z:-3]
+[Builder picks up a yellow block at X:2 Y:3 Z:-2]
+[Builder puts down a yellow block at X:2 Y:3 Z:-4]
+[Builder puts down a yellow block at X:2 Y:3 Z:-5]
+[Builder picks up a yellow block at X:2 Y:3 Z:-4]
+<Architect> looks good! it only needs 4 blocks though, so delete that last one
+[Builder picks up a yellow block at X:2 Y:3 Z:-5]
+<Architect> perfect!
+<Architect> now, on top of the 2nd closest yellow block to the green ones, put an orange block
+[Builder puts down a orange block at X:2 Y:4 Z:1]
+<Builder> there?
+<Architect> yep!
+<Architect> and make a 1-gap row of three orange blocks, perpendicular to the green ones
+<Architect> on the side you're currently on
+<Architect> yeah, that side
+<Builder> on top of the yellow blocks?
+<Architect> no, parallel to the green ones
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder picks up a orange block at X:1 Y:4 Z:1]
+<Architect> yeah like that!
+[Builder puts down a orange block at X:-1 Y:4 Z:1]
+[Builder puts down a orange block at X:-2 Y:4 Z:1]
+[Builder picks up a orange block at X:-1 Y:4 Z:1]
+<Architect> perfect!
+<Architect> now put a red block right next to the last orange one, in the same direction
+[Builder puts down a red block at X:-3 Y:4 Z:1]
+<Architect> put another red one on top of that
+[Builder puts down a red block at X:-3 Y:5 Z:1]
+<Architect> and three more below it so it touches the ground
+[Builder puts down a red block at X:-3 Y:3 Z:1]
+[Builder puts down a red block at X:-3 Y:2 Z:1]
+[Builder puts down a red block at X:-3 Y:1 Z:1]
+<Architect> now remove the 2nd block from the bottom
+<Architect> and the 2nd from the top
+[Builder picks up a red block at X:-3 Y:2 Z:1]
+[Builder picks up a red block at X:-3 Y:4 Z:1]
+<Architect> so it's also 1-gap
+<Architect> i think it's good! :)
+<Builder> sweet!

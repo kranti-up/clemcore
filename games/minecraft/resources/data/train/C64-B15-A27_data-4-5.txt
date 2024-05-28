@@ -1,0 +1,48 @@
+B15-A27-C64-1522968427200
+<Builder> Mission has started.
+<Builder> start the same structure as before?
+<Architect> yeah the T
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:3 Z:1]
+[Builder puts down a red block at X:0 Y:4 Z:1]
+[Builder puts down a red block at X:0 Y:5 Z:1]
+[Builder puts down a red block at X:1 Y:5 Z:1]
+[Builder puts down a red block at X:-1 Y:5 Z:1]
+<Builder> like this?
+<Architect> yeah now 5 red blocks on top
+[Builder puts down a red block at X:0 Y:6 Z:1]
+[Builder puts down a red block at X:1 Y:6 Z:1]
+[Builder puts down a red block at X:2 Y:6 Z:1]
+[Builder puts down a red block at X:-1 Y:6 Z:1]
+[Builder puts down a red block at X:-2 Y:6 Z:1]
+<Architect> perfect
+<Architect> now 3 orange blocks on top
+<Architect> in a row
+[Builder puts down a orange block at X:-1 Y:7 Z:1]
+[Builder puts down a orange block at X:0 Y:7 Z:1]
+[Builder puts down a orange block at X:1 Y:7 Z:1]
+<Architect> now 2 orange blocks on top of that orange line
+<Architect> like stairs
+[Builder puts down a orange block at X:0 Y:8 Z:1]
+<Architect> one block in the middle
+[Builder puts down a orange block at X:0 Y:8 Z:0]
+[Builder puts down a orange block at X:0 Y:9 Z:0]
+[Builder picks up a orange block at X:0 Y:8 Z:0]
+<Builder> like that?
+<Architect> the highest block should be removed
+[Builder picks up a orange block at X:0 Y:9 Z:0]
+<Architect> and placed next to it
+[Builder picks up a orange block at X:-1 Y:7 Z:1]
+[Builder puts down a orange block at X:-1 Y:7 Z:1]
+[Builder puts down a orange block at X:-1 Y:8 Z:0]
+[Builder picks up a orange block at X:-1 Y:8 Z:0]
+[Builder puts down a orange block at X:-1 Y:9 Z:1]
+[Builder picks up a orange block at X:-1 Y:8 Z:1]
+<Builder> like that?
+<Architect> and put one in the middle so theres no gap
+[Builder puts down a orange block at X:0 Y:9 Z:1]
+[Builder picks up a orange block at X:0 Y:9 Z:1]
+[Builder puts down a orange block at X:-1 Y:8 Z:1]
+<Architect> done
+<Builder> cool!

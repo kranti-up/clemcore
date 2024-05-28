@@ -1,0 +1,90 @@
+B25-A51-C31-1524262757582
+<Builder> Mission has started.
+<Architect> as a heads up this will all be floating
+<Builder> ok
+<Architect> lets start with the upper left corner
+<Architect> make a blue "H" that's floating by 1 layer
+<Builder> what color
+<Builder> oh my bad
+<Builder> haha
+<Builder> just read the color
+[Builder puts down a blue block at X:3 Y:1 Z:4]
+[Builder puts down a blue block at X:3 Y:2 Z:4]
+[Builder picks up a blue block at X:3 Y:1 Z:4]
+[Builder puts down a blue block at X:3 Y:2 Z:3]
+[Builder puts down a blue block at X:3 Y:2 Z:2]
+[Builder puts down a blue block at X:2 Y:2 Z:3]
+[Builder puts down a blue block at X:1 Y:2 Z:3]
+<Architect> the vetical parts of the H should be 3 blocks and separated by 1 block with 1 blue block in teh middle
+[Builder puts down a blue block at X:1 Y:2 Z:4]
+[Builder puts down a blue block at X:1 Y:2 Z:2]
+<Architect> sorry, it should be vertical, my bad
+[Builder picks up a blue block at X:1 Y:2 Z:2]
+[Builder picks up a blue block at X:2 Y:2 Z:3]
+[Builder picks up a blue block at X:1 Y:2 Z:3]
+[Builder picks up a blue block at X:1 Y:2 Z:4]
+[Builder picks up a blue block at X:3 Y:2 Z:3]
+[Builder picks up a blue block at X:3 Y:2 Z:2]
+[Builder puts down a blue block at X:2 Y:2 Z:4]
+[Builder puts down a blue block at X:1 Y:2 Z:4]
+[Builder picks up a blue block at X:2 Y:2 Z:4]
+[Builder puts down a blue block at X:3 Y:3 Z:4]
+[Builder puts down a blue block at X:3 Y:4 Z:4]
+[Builder puts down a blue block at X:1 Y:3 Z:4]
+[Builder puts down a blue block at X:1 Y:4 Z:4]
+[Builder puts down a blue block at X:2 Y:3 Z:4]
+<Builder> like that?
+<Architect> yes! perfect
+<Architect> okay so in front of the right vertical part of the H, make an orange "O" with that's separated by one block
+<Architect> it'll be a 3x3 orange O
+[Builder puts down a orange block at X:1 Y:1 Z:2]
+[Builder puts down a orange block at X:1 Y:2 Z:2]
+[Builder picks up a orange block at X:1 Y:2 Z:2]
+[Builder picks up a orange block at X:1 Y:1 Z:2]
+[Builder puts down a orange block at X:1 Y:1 Z:2]
+[Builder puts down a orange block at X:1 Y:2 Z:2]
+[Builder picks up a orange block at X:1 Y:1 Z:2]
+[Builder puts down a orange block at X:1 Y:3 Z:2]
+[Builder puts down a orange block at X:1 Y:4 Z:2]
+[Builder puts down a orange block at X:0 Y:4 Z:2]
+[Builder puts down a orange block at X:-1 Y:4 Z:2]
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+[Builder puts down a orange block at X:-1 Y:2 Z:2]
+[Builder puts down a orange block at X:-1 Y:3 Z:2]
+<Builder> like that
+<Architect> yes, very good
+<Architect> okay so it's gonna spell out "HOT" and so the last letter will be "T"
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder picks up a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:4 Z:0]
+[Builder puts down a red block at X:0 Y:4 Z:0]
+[Builder puts down a red block at X:-2 Y:4 Z:0]
+<Builder> my gut is telling me it's supposed to be red
+<Architect> this time, the middle of the "T" (green) will be one block to the right
+<Architect> to the right of where it is right now
+[Builder picks up a red block at X:0 Y:4 Z:0]
+[Builder picks up a red block at X:-1 Y:3 Z:0]
+[Builder picks up a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-3 Y:4 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+<Architect> so shift the T right by one and it'll be in green
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+[Builder picks up a red block at X:-2 Y:2 Z:0]
+[Builder puts down a green block at X:-2 Y:2 Z:0]
+[Builder picks up a red block at X:-2 Y:3 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+[Builder picks up a red block at X:-2 Y:3 Z:0]
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+[Builder picks up a red block at X:-2 Y:4 Z:0]
+[Builder picks up a red block at X:-1 Y:3 Z:1]
+[Builder picks up a red block at X:-1 Y:2 Z:1]
+[Builder picks up a red block at X:-1 Y:4 Z:0]
+[Builder picks up a red block at X:-3 Y:4 Z:0]
+[Builder puts down a green block at X:-2 Y:4 Z:0]
+[Builder puts down a green block at X:-3 Y:4 Z:0]
+[Builder puts down a green block at X:-1 Y:4 Z:0]
+<Architect> great!!
+<Builder> yay

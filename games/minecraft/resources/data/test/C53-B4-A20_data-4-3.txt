@@ -1,0 +1,44 @@
+B4-A20-C53-1522770353289
+<Builder> Mission has started.
+<Architect> think of this as a multi colour 3x3 cube
+<Architect> start with red
+[Builder puts down a red block at X:-1 Y:1 Z:2]
+<Architect> build 2 red up
+[Builder puts down a red block at X:-1 Y:2 Z:2]
+[Builder puts down a red block at X:-1 Y:3 Z:2]
+<Architect> perfect starting shapr
+<Architect> shape*
+<Architect> so it's a 3x3x1 red wall
+<Architect> middle is cut out
+[Builder puts down a red block at X:0 Y:1 Z:2]
+[Builder puts down a red block at X:1 Y:1 Z:2]
+[Builder puts down a red block at X:1 Y:2 Z:2]
+[Builder puts down a red block at X:1 Y:3 Z:2]
+[Builder puts down a red block at X:0 Y:3 Z:2]
+<Architect> great
+<Architect> pick a side of the red wall
+<Architect> here you'll switch to orange
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+<Architect> and one block on the top
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+<Architect> sorry one higher
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+<Architect> punch out the mid
+[Builder picks up a orange block at X:1 Y:2 Z:1]
+<Architect> switch to blue
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+<Architect> fiyup
+<Architect> so blue looks like red
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+<Architect> copy the structure for red but in blue
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+[Builder puts down a blue block at X:-1 Y:3 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+<Architect> switch to purple
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+<Architect> yup
+<Architect> all good

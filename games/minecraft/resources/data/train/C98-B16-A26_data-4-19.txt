@@ -1,0 +1,117 @@
+B16-A26-C98-1524155903266
+<Builder> Mission has started.
+<Architect> Ok, this structure will take some space, so I would back up a few steps
+<Architect> We'll start with a yellow row of length 4
+[Builder puts down a yellow block at X:2 Y:1 Z:-3]
+[Builder picks up a yellow block at X:2 Y:1 Z:-3]
+[Builder puts down a yellow block at X:2 Y:1 Z:-3]
+[Builder puts down a yellow block at X:1 Y:1 Z:-3]
+[Builder puts down a yellow block at X:0 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-3]
+<Architect> actually, could you rotate the row?
+[Builder puts down a red block at X:2 Y:1 Z:-4]
+[Builder picks up a red block at X:2 Y:1 Z:-4]
+[Builder picks up a yellow block at X:2 Y:1 Z:-3]
+[Builder picks up a yellow block at X:-1 Y:1 Z:-3]
+[Builder picks up a yellow block at X:0 Y:1 Z:-3]
+[Builder puts down a yellow block at X:1 Y:1 Z:-4]
+[Builder puts down a yellow block at X:1 Y:1 Z:-5]
+[Builder puts down a yellow block at X:1 Y:1 Z:-2]
+<Architect> Awesome! Now in front and behind the block you are looking at, add a yellow brick
+[Builder puts down a yellow block at X:2 Y:1 Z:-3]
+[Builder puts down a yellow block at X:0 Y:1 Z:-2]
+[Builder picks up a yellow block at X:0 Y:1 Z:-2]
+[Builder puts down a yellow block at X:0 Y:1 Z:-3]
+<Architect> Nice! now we'll add two green bricks diagonal to the top of the cross
+<Architect> So that there is a yello-yellow-green diagonal
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:2 Y:1 Z:-1]
+<Architect> Perfect!
+<Architect> Now we'll move to the second layer
+<Architect> We'll actually make the same cross plus two diagonals twice, but in different places with different colors
+<Builder> okay!
+<Architect> The first one will be red and orange, where the bottom of the crossis three to the left and one above the top of the yellow cross
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-2]
+[Builder picks up a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder picks up a red block at X:-1 Y:2 Z:-1]
+[Builder picks up a red block at X:-1 Y:2 Z:-2]
+[Builder puts down a red block at X:-2 Y:1 Z:-2]
+[Builder puts down a red block at X:-2 Y:2 Z:-2]
+[Builder picks up a red block at X:-2 Y:1 Z:-2]
+[Builder puts down a red block at X:-2 Y:2 Z:-1]
+<Architect> Sorry, other side of the cross!
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+[Builder picks up a red block at X:-2 Y:2 Z:0]
+[Builder picks up a red block at X:-2 Y:2 Z:-1]
+[Builder picks up a red block at X:-2 Y:2 Z:-2]
+[Builder puts down a red block at X:5 Y:1 Z:-2]
+<Architect> You have the right idea
+[Builder puts down a red block at X:5 Y:1 Z:-1]
+[Builder picks up a red block at X:5 Y:1 Z:-1]
+[Builder puts down a red block at X:5 Y:2 Z:-2]
+[Builder picks up a red block at X:5 Y:1 Z:-2]
+[Builder puts down a red block at X:5 Y:2 Z:-1]
+[Builder puts down a red block at X:5 Y:2 Z:0]
+<Architect> That brick should be one spot to your left
+[Builder picks up a red block at X:5 Y:2 Z:0]
+[Builder picks up a red block at X:5 Y:2 Z:-1]
+[Builder picks up a red block at X:5 Y:2 Z:-2]
+[Builder puts down a red block at X:4 Y:1 Z:-1]
+[Builder puts down a red block at X:4 Y:1 Z:0]
+[Builder puts down a red block at X:4 Y:2 Z:-2]
+[Builder picks up a red block at X:4 Y:1 Z:0]
+[Builder picks up a red block at X:4 Y:1 Z:-2]
+[Builder puts down a red block at X:4 Y:2 Z:0]
+[Builder puts down a red block at X:4 Y:2 Z:1]
+<Architect> You've got it!
+[Builder puts down a red block at X:3 Y:2 Z:0]
+<Architect> So as a reminder, you'll make the same structure, but with red and orange
+[Builder puts down a red block at X:5 Y:2 Z:0]
+[Builder puts down a orange block at X:5 Y:1 Z:2]
+<Architect> You've got it
+[Builder puts down a orange block at X:5 Y:2 Z:2]
+[Builder picks up a orange block at X:5 Y:1 Z:2]
+[Builder puts down a orange block at X:3 Y:1 Z:2]
+[Builder puts down a orange block at X:3 Y:2 Z:2]
+[Builder picks up a orange block at X:3 Y:1 Z:2]
+<Architect> The next shape we'll make will be purple and blue
+<Architect> It will also be on the second layer
+<Architect> The blue bricks will 3 in front of and 5 in front of the top of the yellow cross
+[Builder puts down a blue block at X:-5 Y:1 Z:1]
+<Architect> Not quite
+<Builder> here?
+[Builder picks up a blue block at X:-5 Y:1 Z:1]
+[Builder puts down a blue block at X:-4 Y:1 Z:2]
+<Architect> You were actually just there
+<Architect> Perfect
+<Architect> Ah wait, ok, that was bad on my part
+<Builder> no problem!
+<Architect> So the blue bricks will be on the same line as the yellow bricks
+[Builder picks up a blue block at X:-4 Y:1 Z:2]
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+<Builder> here?
+<Architect> one to the left and one to the right of there!
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+[Builder puts down a blue block at X:1 Y:1 Z:3]
+[Builder picks up a blue block at X:1 Y:1 Z:2]
+[Builder puts down a purple block at X:0 Y:1 Z:2]
+<Architect> As well as up a layer
+[Builder puts down a purple block at X:-1 Y:1 Z:2]
+[Builder picks up a purple block at X:-1 Y:1 Z:2]
+[Builder picks up a purple block at X:0 Y:1 Z:2]
+[Builder puts down a blue block at X:1 Y:2 Z:1]
+[Builder picks up a blue block at X:1 Y:1 Z:1]
+[Builder puts down a blue block at X:1 Y:2 Z:3]
+[Builder picks up a blue block at X:1 Y:1 Z:3]
+[Builder puts down a purple block at X:0 Y:1 Z:2]
+[Builder puts down a purple block at X:0 Y:2 Z:2]
+[Builder picks up a purple block at X:0 Y:1 Z:2]
+[Builder puts down a purple block at X:-1 Y:2 Z:2]
+[Builder puts down a purple block at X:-2 Y:2 Z:2]
+<Architect> You got it! positioning these without using xyz coordinates can be tricky
+[Builder puts down a purple block at X:-3 Y:2 Z:2]
+<Builder> true! no problem though
+[Builder puts down a purple block at X:-1 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:2 Z:3]

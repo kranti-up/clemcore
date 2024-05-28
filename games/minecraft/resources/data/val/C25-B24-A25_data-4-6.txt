@@ -1,0 +1,47 @@
+B24-A25-C25-1523053026688
+<Builder> Mission has started.
+<Architect> aight first real one
+<Builder> kool
+<Architect> you're gonna want some room
+<Architect> the base of this build is 5 blocks
+<Architect> so first put two blue blocks next to each other
+[Builder puts down a blue block at X:0 Y:1 Z:-3]
+[Builder puts down a blue block at X:1 Y:1 Z:-3]
+<Architect> ok, then put two more on top
+[Builder puts down a blue block at X:0 Y:2 Z:-3]
+[Builder puts down a blue block at X:1 Y:2 Z:-3]
+<Architect> then on the right block, put 4 more in a single pillar
+[Builder puts down a blue block at X:0 Y:3 Z:-3]
+[Builder puts down a blue block at X:0 Y:4 Z:-3]
+[Builder puts down a blue block at X:0 Y:5 Z:-3]
+[Builder puts down a blue block at X:0 Y:6 Z:-3]
+[Builder puts down a blue block at X:0 Y:5 Z:-4]
+[Builder picks up a blue block at X:0 Y:5 Z:-4]
+<Architect> then one sticking out on the right side
+[Builder puts down a blue block at X:-1 Y:6 Z:-3]
+<Architect> perfect
+<Architect> now for the second half
+<Architect> the base of the next one is elevated one block off the ground
+[Builder puts down a purple block at X:-3 Y:1 Z:-3]
+<Architect> put two purple blocks down, one on top of the one you put down, and one to the left of it
+[Builder puts down a purple block at X:-3 Y:2 Z:-3]
+[Builder puts down a purple block at X:-2 Y:2 Z:-3]
+<Architect> then put two more on top
+[Builder puts down a purple block at X:-2 Y:3 Z:-3]
+[Builder puts down a purple block at X:-3 Y:3 Z:-3]
+<Architect> then on the block on the right, put 4 stacked in a single column
+[Builder picks up a purple block at X:-3 Y:1 Z:-3]
+<Builder> is it two music notes?
+[Builder puts down a purple block at X:-3 Y:4 Z:-3]
+[Builder puts down a purple block at X:-3 Y:5 Z:-3]
+[Builder puts down a purple block at X:-3 Y:6 Z:-3]
+[Builder puts down a purple block at X:-3 Y:7 Z:-3]
+[Builder puts down a purple block at X:-4 Y:7 Z:-3]
+<Builder> like that?
+<Architect> no idea lol, just looks arbitrary
+<Architect> nah, the hanging block should be the other way
+[Builder picks up a purple block at X:-4 Y:7 Z:-3]
+<Architect> facing the first structure
+[Builder puts down a purple block at X:-2 Y:7 Z:-3]
+<Architect> yup
+<Builder> kool

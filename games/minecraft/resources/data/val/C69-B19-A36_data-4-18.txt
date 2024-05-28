@@ -1,0 +1,77 @@
+B19-A36-C69-1524092240889
+<Builder> Mission has started.
+<Builder> hi
+<Architect> hi
+<Architect> ok put a blue block down where you are
+[Builder puts down a blue block at X:-1 Y:1 Z:-3]
+<Architect> can you stop moving please?? :')
+<Architect> thanks
+<Builder> oh sorry
+<Architect> it's ok
+<Architect> then 2 spaces in front of you, put down a blue block
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+<Architect> and then 3 spaces to your left, put down a blue block
+[Builder puts down a blue block at X:2 Y:1 Z:-3]
+<Architect> and then do the same for the top corner
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+<Architect> then on top of it make a 4 x 4 red sqaure
+<Architect> i mean 4 x 3 sorry
+<Builder> uh should the red square hang over the blue blocks
+<Builder> ok
+[Builder puts down a red block at X:2 Y:2 Z:-3]
+[Builder puts down a red block at X:1 Y:2 Z:-3]
+[Builder puts down a red block at X:0 Y:2 Z:-3]
+[Builder puts down a red block at X:-1 Y:2 Z:-3]
+[Builder picks up a red block at X:-1 Y:3 Z:-3]
+[Builder puts down a red block at X:-1 Y:2 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder puts down a red block at X:2 Y:2 Z:-2]
+[Builder puts down a red block at X:2 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+<Architect> then to the right , add 3 blocks to that it hangs over
+[Builder puts down a red block at X:-2 Y:2 Z:-3]
+[Builder puts down a red block at X:-2 Y:2 Z:-2]
+[Builder puts down a red block at X:-2 Y:2 Z:-1]
+<Architect> then do the same for the other side
+[Builder puts down a red block at X:3 Y:2 Z:-3]
+[Builder puts down a red block at X:3 Y:2 Z:-2]
+[Builder puts down a red block at X:3 Y:2 Z:-1]
+<Architect> ok then place a green block in front of you
+[Builder puts down a green block at X:-2 Y:3 Z:-2]
+<Builder> right in front?
+<Architect> ya you're good
+<Architect> then place a green block in front and behind it
+[Builder puts down a green block at X:-2 Y:3 Z:-3]
+[Builder puts down a green block at X:-2 Y:3 Z:-1]
+<Architect> then at the first and thirs blocks, place a green block to the left
+<Architect> *third
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:-3]
+<Architect> then at the top of the ones you just put down place an orange block each
+[Builder puts down a orange block at X:-1 Y:4 Z:-3]
+[Builder puts down a orange block at X:-2 Y:4 Z:-3]
+[Builder picks up a orange block at X:-2 Y:4 Z:-3]
+[Builder puts down a orange block at X:-1 Y:4 Z:-1]
+<Architect> ok then to the right of the green blocks put down another row of 3 green blocks
+[Builder puts down a green block at X:-3 Y:3 Z:-3]
+[Builder puts down a green block at X:-3 Y:3 Z:-2]
+[Builder puts down a green block at X:-3 Y:3 Z:-1]
+<Architect> where you're standing right now
+<Architect> make a 2nd layer of green blocks
+[Builder puts down a green block at X:-2 Y:4 Z:-3]
+[Builder puts down a green block at X:-2 Y:4 Z:-2]
+[Builder puts down a green block at X:-2 Y:4 Z:-1]
+<Builder> for the other row too?
+<Architect> no just this row
+<Architect> for the other row
+<Architect> underneath the first and third green blocks place a yellow block each
+[Builder puts down a yellow block at X:-3 Y:2 Z:-3]
+[Builder puts down a yellow block at X:-3 Y:2 Z:-1]
+<Builder> neat
+<Architect> and then in the middle of those put a green block
+[Builder puts down a green block at X:-3 Y:2 Z:-2]
+<Architect> ok i think we're good
+<Builder> cool

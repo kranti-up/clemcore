@@ -1,0 +1,99 @@
+B29-A34-C99-1524258300702
+<Builder> Mission has started.
+<Architect> we are building 2 keys
+<Architect> first, place one yellow block on the edge in the center of the edge
+[Builder puts down a yellow block at X:5 Y:1 Z:-1]
+[Builder picks up a yellow block at X:5 Y:1 Z:-1]
+[Builder puts down a yellow block at X:5 Y:1 Z:0]
+<Architect> that is the corner of a 3x3 vertical donut
+[Builder puts down a yellow block at X:5 Y:1 Z:1]
+[Builder puts down a yellow block at X:5 Y:1 Z:-1]
+[Builder puts down a yellow block at X:5 Y:2 Z:-1]
+[Builder puts down a yellow block at X:5 Y:3 Z:-1]
+[Builder puts down a yellow block at X:5 Y:3 Z:0]
+[Builder puts down a yellow block at X:5 Y:3 Z:1]
+[Builder puts down a yellow block at X:5 Y:2 Z:1]
+<Architect> other direction, sorry
+[Builder picks up a yellow block at X:5 Y:2 Z:1]
+[Builder picks up a yellow block at X:5 Y:3 Z:1]
+[Builder picks up a yellow block at X:5 Y:3 Z:0]
+[Builder picks up a yellow block at X:5 Y:3 Z:-1]
+<Architect> towards the center
+[Builder picks up a yellow block at X:5 Y:2 Z:-1]
+[Builder picks up a yellow block at X:5 Y:1 Z:1]
+[Builder picks up a yellow block at X:5 Y:1 Z:-1]
+[Builder puts down a yellow block at X:4 Y:1 Z:0]
+[Builder puts down a yellow block at X:5 Y:2 Z:0]
+[Builder puts down a yellow block at X:5 Y:3 Z:0]
+[Builder puts down a yellow block at X:4 Y:3 Z:0]
+[Builder puts down a yellow block at X:3 Y:3 Z:0]
+[Builder puts down a yellow block at X:3 Y:1 Z:0]
+[Builder puts down a yellow block at X:3 Y:2 Z:0]
+<Architect> now from the block that is in the middle of the right side, place 5 blocks going to the left
+<Architect> right
+<Architect> to the right
+[Builder puts down a yellow block at X:3 Y:2 Z:-1]
+[Builder picks up a yellow block at X:3 Y:2 Z:-1]
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:-2 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:-2 Y:1 Z:0]
+<Architect> on the right most block, place 2 yllow going up
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+[Builder picks up a yellow block at X:-2 Y:1 Z:0]
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+[Builder puts down a yellow block at X:-2 Y:4 Z:0]
+<Architect> on the one to the left of that, place one yellow block on top
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+<Architect> and to the left again, place 2
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+<Architect> first key done
+<Architect> second key is located at the corner to your right
+[Builder puts down a yellow block at X:-5 Y:1 Z:-5]
+<Architect> place one blue block 1 away from the corner
+[Builder picks up a yellow block at X:-5 Y:1 Z:-5]
+[Builder puts down a blue block at X:-4 Y:1 Z:-5]
+<Architect> towards the center
+[Builder picks up a blue block at X:-4 Y:1 Z:-5]
+[Builder puts down a blue block at X:-4 Y:1 Z:-4]
+<Architect> yeah
+<Architect> now stand to the right of that block
+<Architect> and look at that block
+<Architect> build the same structure as the yellow key, but now in blue
+<Architect> with that blue block being the cornet of the 3x3 ring
+[Builder puts down a blue block at X:-4 Y:2 Z:-4]
+[Builder picks up a blue block at X:-4 Y:2 Z:-4]
+<Builder> is the blue key parallel or orthogonal?
+<Architect> orthogonal
+[Builder puts down a blue block at X:-4 Y:1 Z:-3]
+[Builder puts down a blue block at X:-4 Y:1 Z:-2]
+[Builder puts down a blue block at X:-4 Y:2 Z:-2]
+[Builder puts down a blue block at X:-4 Y:3 Z:-2]
+[Builder puts down a blue block at X:-4 Y:3 Z:-3]
+[Builder puts down a blue block at X:-4 Y:3 Z:-4]
+[Builder puts down a blue block at X:-4 Y:2 Z:-4]
+[Builder puts down a blue block at X:-4 Y:2 Z:-1]
+[Builder puts down a blue block at X:-4 Y:2 Z:0]
+[Builder puts down a blue block at X:-4 Y:2 Z:1]
+[Builder puts down a blue block at X:-4 Y:2 Z:2]
+[Builder puts down a blue block at X:-4 Y:2 Z:3]
+[Builder puts down a blue block at X:-4 Y:3 Z:3]
+[Builder puts down a blue block at X:-4 Y:4 Z:3]
+[Builder puts down a blue block at X:-4 Y:3 Z:2]
+[Builder puts down a blue block at X:-3 Y:2 Z:0]
+[Builder picks up a blue block at X:-3 Y:2 Z:0]
+[Builder puts down a blue block at X:-4 Y:3 Z:1]
+[Builder puts down a blue block at X:-4 Y:4 Z:1]
+<Architect> now instead of it being 2,1,2
+[Builder puts down a blue block at X:-5 Y:3 Z:1]
+[Builder picks up a blue block at X:-5 Y:3 Z:1]
+<Architect> it should be 1,2,1
+[Builder picks up a blue block at X:-4 Y:4 Z:1]
+[Builder puts down a blue block at X:-4 Y:4 Z:2]
+[Builder picks up a blue block at X:-4 Y:4 Z:3]
+<Architect> perfect
+<Architect> :)

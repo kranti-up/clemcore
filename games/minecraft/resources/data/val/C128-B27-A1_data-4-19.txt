@@ -1,0 +1,120 @@
+B27-A1-C128-1524163632822
+<Builder> Mission has started.
+<Architect> lets start with green
+<Architect> place two blocks flat on the floor towards the middle
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+<Architect> can you stand on the wide side? or roate it 90
+<Architect> okay add two blocks on the for but diagonally connected making a smiling mouth from where you are
+<Builder> how close to the original two?
+[Builder puts down a green block at X:1 Y:1 Z:2]
+<Architect> touching the original two
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+<Architect> thats good
+<Architect> okay we are going to repeat this same structure a bunch of times, but with different colors, lets start with orange
+<Architect> place one orange block on top of the right most green block
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+<Architect> so thats the left side of the smile structure
+[Builder puts down a orange block at X:2 Y:1 Z:-2]
+[Builder puts down a orange block at X:3 Y:1 Z:-2]
+[Builder puts down a orange block at X:2 Y:2 Z:-2]
+[Builder puts down a orange block at X:3 Y:2 Z:-2]
+[Builder puts down a orange block at X:4 Y:1 Z:-1]
+[Builder puts down a orange block at X:4 Y:2 Z:-1]
+[Builder picks up a orange block at X:3 Y:1 Z:-2]
+[Builder picks up a orange block at X:2 Y:1 Z:-2]
+[Builder picks up a orange block at X:4 Y:1 Z:-1]
+<Architect> almost, so it should look like a smile and frown
+[Builder picks up a orange block at X:2 Y:2 Z:-2]
+[Builder picks up a orange block at X:3 Y:2 Z:-2]
+[Builder picks up a orange block at X:4 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:1 Z:0]
+[Builder puts down a orange block at X:3 Y:1 Z:0]
+[Builder puts down a orange block at X:4 Y:1 Z:0]
+[Builder picks up a orange block at X:4 Y:1 Z:0]
+[Builder puts down a orange block at X:4 Y:1 Z:-1]
+[Builder puts down a orange block at X:4 Y:2 Z:-1]
+[Builder puts down a orange block at X:3 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder picks up a orange block at X:2 Y:1 Z:0]
+[Builder picks up a orange block at X:3 Y:1 Z:0]
+[Builder picks up a orange block at X:4 Y:1 Z:-1]
+<Architect> not quite lets go step by step
+[Builder picks up a orange block at X:2 Y:2 Z:0]
+[Builder picks up a orange block at X:3 Y:2 Z:0]
+[Builder picks up a orange block at X:4 Y:2 Z:-1]
+<Architect> place an orange block touching the green block to the right and down
+<Builder> i think i got it
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+[Builder picks up a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:2 Y:1 Z:-2]
+[Builder puts down a orange block at X:2 Y:1 Z:-3]
+<Architect> lets go slowly
+[Builder puts down a orange block at X:1 Y:1 Z:-4]
+<Architect> okay thats right
+[Builder puts down a orange block at X:2 Y:2 Z:-2]
+[Builder puts down a orange block at X:2 Y:2 Z:-3]
+[Builder puts down a orange block at X:1 Y:2 Z:-4]
+<Builder> raised?
+<Architect> yes
+[Builder picks up a orange block at X:2 Y:1 Z:-2]
+[Builder picks up a orange block at X:2 Y:1 Z:-3]
+[Builder picks up a orange block at X:1 Y:1 Z:-4]
+<Architect> okay now on the right most orange block we are making two red steps going away from where you are
+[Builder puts down a red block at X:0 Y:1 Z:-4]
+<Architect> going up
+[Builder puts down a red block at X:0 Y:2 Z:-4]
+[Builder puts down a red block at X:0 Y:3 Z:-4]
+[Builder puts down a red block at X:-1 Y:3 Z:-4]
+[Builder puts down a red block at X:-1 Y:4 Z:-4]
+[Builder picks up a red block at X:-1 Y:3 Z:-4]
+[Builder picks up a red block at X:0 Y:2 Z:-4]
+[Builder picks up a red block at X:0 Y:1 Z:-4]
+<Architect> okay now add one more block touching the top most block
+[Builder puts down a red block at X:-1 Y:5 Z:-4]
+<Architect> not on top
+[Builder picks up a red block at X:-1 Y:5 Z:-4]
+[Builder puts down a red block at X:-2 Y:4 Z:-4]
+<Architect> yes
+<Architect> now complete the smile structure
+<Builder> is that the leftmost block
+<Architect> yeah so a step down
+[Builder puts down a red block at X:-2 Y:4 Z:-3]
+[Builder puts down a red block at X:-3 Y:4 Z:-3]
+[Builder picks up a red block at X:-2 Y:4 Z:-3]
+<Builder> this direction?
+[Builder puts down a red block at X:-3 Y:4 Z:-2]
+[Builder puts down a red block at X:-2 Y:4 Z:-2]
+[Builder puts down a red block at X:-2 Y:4 Z:-1]
+[Builder picks up a red block at X:-2 Y:4 Z:-2]
+<Architect> no sorry you just needed one block to complete it
+[Builder picks up a red block at X:-2 Y:4 Z:-1]
+[Builder picks up a red block at X:-3 Y:4 Z:-2]
+[Builder picks up a red block at X:-3 Y:4 Z:-3]
+<Builder> gotcha
+[Builder picks up a red block at X:-2 Y:4 Z:-4]
+[Builder puts down a red block at X:-2 Y:4 Z:-4]
+[Builder puts down a red block at X:-2 Y:3 Z:-4]
+[Builder puts down a red block at X:-3 Y:3 Z:-4]
+[Builder picks up a red block at X:-2 Y:3 Z:-4]
+<Architect> great
+<Architect> okay so for the yellow add one diagonal step towards you going down from the red
+[Builder puts down a yellow block at X:-3 Y:2 Z:-4]
+[Builder puts down a yellow block at X:-3 Y:2 Z:-3]
+[Builder picks up a yellow block at X:-3 Y:2 Z:-4]
+<Builder> is this one touching the ground?
+<Architect> yeah but the step is closer to you, like only one pixel is touching the red
+[Builder picks up a yellow block at X:-3 Y:2 Z:-3]
+[Builder puts down a yellow block at X:-3 Y:2 Z:-4]
+[Builder puts down a yellow block at X:-4 Y:2 Z:-4]
+[Builder puts down a yellow block at X:-4 Y:2 Z:-3]
+[Builder picks up a yellow block at X:-4 Y:2 Z:-4]
+[Builder picks up a yellow block at X:-3 Y:2 Z:-4]
+[Builder puts down a yellow block at X:-4 Y:1 Z:-2]
+[Builder puts down a yellow block at X:-4 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-4 Y:1 Z:0]
+[Builder puts down a yellow block at X:-4 Y:2 Z:0]
+[Builder picks up a yellow block at X:-4 Y:1 Z:0]
+<Builder> ?
+<Architect> thats good
+<Architect> nice

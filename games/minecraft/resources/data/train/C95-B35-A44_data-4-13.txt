@@ -1,0 +1,89 @@
+B35-A44-C95-1523651338167
+<Builder> Mission has started.
+<Architect> sorry for cutting you off near the end.
+<Builder> no worries
+<Architect> place a 2x2 red square on the ground near center
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Builder> okay
+<Architect> place an orange block anywhere on that red thing
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+<Architect> place 1 orange block in front of that one
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+<Architect> and remove the initial orange block. turn the second orange block into a rim around the red thing.
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+[Builder puts down a orange block at X:-2 Y:2 Z:1]
+[Builder puts down a orange block at X:-2 Y:2 Z:2]
+[Builder puts down a orange block at X:-1 Y:2 Z:2]
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+[Builder puts down a orange block at X:1 Y:2 Z:2]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+<Builder> okay
+<Architect> ok now place a 2x2 purple block flat setup 3 spaces above the red 2x2
+<Architect> it should be floating
+[Builder puts down a green block at X:0 Y:2 Z:1]
+[Builder puts down a green block at X:0 Y:3 Z:1]
+[Builder puts down a green block at X:0 Y:4 Z:1]
+[Builder puts down a purple block at X:0 Y:5 Z:1]
+[Builder puts down a purple block at X:-1 Y:5 Z:1]
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+[Builder picks up a green block at X:0 Y:4 Z:1]
+[Builder picks up a green block at X:0 Y:3 Z:1]
+[Builder picks up a green block at X:0 Y:2 Z:1]
+<Architect> 3 spaces means 2 empty spaces between the purple and red.
+<Architect> sorry
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:1]
+[Builder puts down a purple block at X:0 Y:4 Z:1]
+[Builder picks up a purple block at X:0 Y:5 Z:1]
+[Builder picks up a purple block at X:0 Y:5 Z:0]
+[Builder picks up a purple block at X:-1 Y:5 Z:0]
+[Builder picks up a purple block at X:-1 Y:5 Z:1]
+<Builder> okay
+<Architect> pick any corner of the purple shape and place 1 purple block 2 spaces above it. (1 empty space between)
+[Builder puts down a purple block at X:0 Y:5 Z:1]
+[Builder puts down a purple block at X:0 Y:6 Z:1]
+[Builder picks up a purple block at X:0 Y:5 Z:1]
+<Architect> turn that purple block into a tetris t shape. the singlular purple floating block is the center of the t. The t is upside down
+[Builder puts down a purple block at X:0 Y:6 Z:0]
+[Builder puts down a purple block at X:0 Y:6 Z:2]
+[Builder puts down a purple block at X:0 Y:7 Z:1]
+[Builder puts down a purple block at X:0 Y:8 Z:1]
+<Architect> oh wait nevermind sorry
+[Builder picks up a purple block at X:0 Y:7 Z:1]
+[Builder picks up a purple block at X:0 Y:8 Z:1]
+[Builder picks up a purple block at X:0 Y:6 Z:2]
+[Builder picks up a purple block at X:0 Y:6 Z:0]
+<Architect> undo all those steps. just keep the single purple block
+<Builder> okay
+<Architect> lemme think a bit
+<Builder> if its easier we can build relative to my direction around this block
+<Architect> ok place 2 blocks in front of the floating singular purple block
+[Builder puts down a purple block at X:1 Y:6 Z:1]
+[Builder puts down a purple block at X:2 Y:6 Z:1]
+<Builder> okay
+<Architect> of the three floating blocks. focus on the center block. place 3 blocks around the center. 1 to the left, 1 to the right, 1 above
+[Builder puts down a purple block at X:1 Y:7 Z:1]
+[Builder puts down a purple block at X:0 Y:7 Z:1]
+[Builder picks up a purple block at X:0 Y:7 Z:1]
+[Builder puts down a purple block at X:1 Y:7 Z:0]
+[Builder puts down a purple block at X:1 Y:7 Z:2]
+<Builder> okay
+<Architect> the left and right block need to be to the eleft and right of the center block
+<Architect> so move them down 1
+[Builder picks up a purple block at X:1 Y:7 Z:2]
+[Builder puts down a purple block at X:1 Y:6 Z:2]
+[Builder picks up a purple block at X:1 Y:7 Z:0]
+[Builder puts down a purple block at X:1 Y:6 Z:0]
+<Architect> ok we're done good job
+<Builder> gotcha
+<Builder> littttttt

@@ -1,0 +1,85 @@
+B1-A44-C67-1523034590730
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hello
+<Architect> begin by placing 2 yellow blocks flat on the ground. place them near the center
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+<Builder> is this ok?
+<Architect> yes
+<Architect> now place 2 more blocks vertically on top of the yellow block on the right
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+<Builder> inverse L?
+<Architect> yeah it's an inverse L. perfect. Now 2 more blocks to the right of the 2 blocks you just placed
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+[Builder puts down a yellow block at X:-3 Y:3 Z:0]
+<Builder> like this?
+<Architect> yeah that's fine. place 1 block in the corner
+<Architect> the corner that isn't the L
+<Architect> this structure is completely 2 dimensional
+<Builder> oh in the intersection..
+[Builder puts down a yellow block at X:-2 Y:2 Z:0]
+<Builder> here?
+<Architect> place 2 more blocks. 1 above the middle highest yellow, one above the right highest yellow
+[Builder puts down a yellow block at X:-2 Y:4 Z:0]
+[Builder puts down a yellow block at X:-2 Y:1 Z:0]
+<Builder> like this?
+<Architect> remove that last block
+[Builder puts down a yellow block at X:-2 Y:1 Z:-1]
+[Builder picks up a yellow block at X:-2 Y:1 Z:-1]
+[Builder picks up a yellow block at X:-2 Y:1 Z:0]
+<Architect> so you see that yellow block that's the highest? place a block to the right of it
+[Builder puts down a yellow block at X:-3 Y:4 Z:0]
+<Architect> we're only building up from this point so don't worry about blocks undernearth
+<Builder> here?
+<Builder> ok
+<Architect> now switch to purple.
+<Architect> looking at the structure, place 4 purple blocks each above the two highest yellow blocks. 8 purple blocks total
+<Builder> two towers?
+<Architect> yes
+<Builder> of four blocks?
+[Builder puts down a purple block at X:-2 Y:5 Z:0]
+[Builder puts down a purple block at X:-2 Y:6 Z:0]
+[Builder puts down a purple block at X:-2 Y:7 Z:0]
+[Builder puts down a purple block at X:-2 Y:8 Z:0]
+[Builder puts down a purple block at X:-3 Y:5 Z:0]
+[Builder puts down a purple block at X:-3 Y:6 Z:0]
+[Builder puts down a purple block at X:-3 Y:7 Z:0]
+[Builder puts down a purple block at X:-3 Y:8 Z:0]
+<Builder> like this?
+<Architect> place 2 more towers at the same elevation of the purple structure. 3 blocks tall this time instead of 2
+<Architect> on the side
+<Builder> which side?
+<Architect> the sides of the purple structure
+<Builder> oh so 4x4?
+<Architect> yeah so like make a 4 by 4 but without the top left and top right corner blocks
+[Builder puts down a purple block at X:-4 Y:5 Z:0]
+[Builder puts down a purple block at X:-4 Y:6 Z:0]
+[Builder puts down a purple block at X:-4 Y:7 Z:0]
+[Builder puts down a purple block at X:-1 Y:7 Z:0]
+[Builder puts down a purple block at X:-1 Y:6 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+<Builder> here?
+<Architect> yeah it works.
+<Architect> 2 more purple blocks left place 1 5 spaces above the left most yellow blocks
+<Architect> left-most yellow block*
+[Builder picks up a purple block at X:-1 Y:5 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+<Builder> here?
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder picks up a purple block at X:0 Y:5 Z:-1]
+[Builder picks up a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:6 Z:0]
+[Builder picks up a purple block at X:1 Y:5 Z:0]
+<Architect> that last block you placed is perfect
+[Builder picks up a purple block at X:0 Y:6 Z:0]
+[Builder puts down a purple block at X:0 Y:6 Z:0]
+<Builder> ok
+<Architect> now make the purple structure symetrical
+[Builder puts down a purple block at X:-5 Y:6 Z:0]
+<Architect> ok we're done. sorry for the god awful instructions
+<Builder> no worries
+<Builder> good job

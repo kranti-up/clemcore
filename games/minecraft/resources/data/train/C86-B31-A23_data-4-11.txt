@@ -1,0 +1,114 @@
+B31-A23-C86-1523475614952
+<Builder> Mission has started.
+<Architect> this is an elaborate one.
+<Builder> let's do it
+<Architect> start with four blocks laid in a row in the center
+<Builder> does it matter what color?
+<Architect> sorry purple
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:0 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:2 Y:1 Z:-1]
+<Architect> the final product will look like a butterfly. this is its body
+<Architect> next, blue blocks
+<Builder> got it
+<Architect> we are making antennae. from on of the end purple blocks, place a blue block on the corner.
+[Builder puts down a blue block at X:-1 Y:2 Z:-1]
+[Builder puts down a blue block at X:-2 Y:2 Z:-1]
+[Builder picks up a blue block at X:-1 Y:2 Z:-1]
+<Builder> like that?
+<Architect> not quite
+[Builder puts down a blue block at X:-2 Y:2 Z:-2]
+[Builder picks up a blue block at X:-2 Y:2 Z:-1]
+<Builder> this?
+<Architect> sorry. it should be flat
+[Builder picks up a blue block at X:-2 Y:2 Z:-2]
+[Builder puts down a blue block at X:-2 Y:1 Z:-1]
+<Builder> there?
+<Architect> one closer to you
+[Builder puts down a blue block at X:-2 Y:1 Z:-2]
+[Builder picks up a blue block at X:-2 Y:1 Z:-1]
+<Architect> perfect
+<Architect> on that same diagonal, place another blue block
+[Builder puts down a blue block at X:-3 Y:1 Z:-3]
+<Architect> perfect. now do that on the other side.
+[Builder puts down a blue block at X:-3 Y:1 Z:1]
+[Builder puts down a blue block at X:-2 Y:1 Z:0]
+<Architect> nailed it
+<Architect> so the rest of the blocks are orange.
+<Builder> okay
+<Architect> one second
+<Architect> so this is our base. i didn't realize it was floating. copy each block up one, and then remove the ones on the plate
+<Architect> aka shift the design up into the air.
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+[Builder picks up a purple block at X:-1 Y:1 Z:-1]
+[Builder picks up a purple block at X:0 Y:1 Z:-1]
+[Builder picks up a purple block at X:1 Y:1 Z:-1]
+[Builder picks up a purple block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:-3 Y:2 Z:1]
+[Builder puts down a blue block at X:-2 Y:2 Z:0]
+[Builder picks up a blue block at X:-2 Y:1 Z:0]
+[Builder picks up a blue block at X:-3 Y:1 Z:1]
+<Architect> perfect
+[Builder puts down a blue block at X:-2 Y:2 Z:-2]
+[Builder puts down a blue block at X:-3 Y:2 Z:-3]
+[Builder picks up a blue block at X:-3 Y:1 Z:-3]
+[Builder picks up a blue block at X:-2 Y:1 Z:-2]
+<Builder> done
+<Architect> okay. orange blocks next
+<Builder> got it
+<Architect> the blue is the head of the butterfly
+<Builder> okay
+<Architect> so on block down from the purple head, place two orange blocks on the sides of the butterfly body
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+<Builder> here?
+<Architect> yes
+<Architect> we are going up at an angle. so bear with me.
+<Architect> on a side of it, place another orange block going outward
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+[Builder puts down a orange block at X:0 Y:3 Z:-3]
+[Builder picks up a orange block at X:0 Y:3 Z:-2]
+<Architect> perfect!
+<Builder> same on the other one?
+<Architect> yes
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+<Builder> if its mirrored you could describe one side and I'll fill in the other
+<Architect> so add one block on both sides of the upper orange block along the same direction as the body.
+[Builder puts down a orange block at X:1 Y:3 Z:-3]
+<Architect> it is mirrored
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+<Builder> is that right?
+<Architect> add another block same row, towards the head as well. yes that is correct
+[Builder puts down a orange block at X:-1 Y:3 Z:-3]
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+<Architect> perfect.
+<Architect> you will be doing the same thing but instead of a row of three, a row of five. one diagonal upwards like before
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:2]
+[Builder picks up a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:-1 Y:4 Z:2]
+[Builder puts down a orange block at X:-2 Y:4 Z:2]
+[Builder puts down a orange block at X:1 Y:4 Z:2]
+[Builder puts down a orange block at X:2 Y:4 Z:2]
+<Builder> like that?
+<Architect> yes!
+[Builder puts down a orange block at X:-1 Y:4 Z:-3]
+[Builder puts down a orange block at X:-1 Y:4 Z:-4]
+[Builder picks up a orange block at X:-1 Y:4 Z:-3]
+[Builder puts down a orange block at X:0 Y:4 Z:-4]
+[Builder puts down a orange block at X:1 Y:4 Z:-4]
+[Builder puts down a orange block at X:2 Y:4 Z:-4]
+[Builder puts down a orange block at X:-2 Y:4 Z:-4]
+<Architect> almost done. we will need to remove the middle block of the orange row with three in it.
+[Builder picks up a orange block at X:0 Y:3 Z:1]
+[Builder picks up a orange block at X:0 Y:3 Z:-3]
+<Architect> yes
+<Architect> let me check the design to make sure we have this right
+<Builder> okay
+<Architect> done!

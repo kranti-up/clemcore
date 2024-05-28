@@ -1,0 +1,29 @@
+B16-A41-C47-1522944514490
+<Builder> Mission has started.
+<Builder> Hi again!
+<Architect> hi! First build three blue blocks in a line on the ground
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+[Builder puts down a blue block at X:0 Y:1 Z:-3]
+[Builder puts down a blue block at X:0 Y:1 Z:-4]
+<Architect> Great! Now three red blocks parallel to the blue blocks, touching the blue blocks
+[Builder puts down a red block at X:-1 Y:1 Z:-4]
+[Builder puts down a red block at X:-1 Y:1 Z:-3]
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+<Architect> Nice. Now three more red blocks on top of the existing red blocks
+[Builder picks up a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-3]
+[Builder puts down a red block at X:-1 Y:2 Z:-4]
+<Architect> Perfect. Now three layers of three purple blocks next to the red blocks.
+<Architect> Like we are building a staircase.
+[Builder puts down a purple block at X:-2 Y:1 Z:-2]
+[Builder puts down a purple block at X:-2 Y:1 Z:-3]
+[Builder puts down a purple block at X:-2 Y:1 Z:-4]
+[Builder puts down a purple block at X:-2 Y:2 Z:-4]
+[Builder puts down a purple block at X:-2 Y:2 Z:-3]
+[Builder puts down a purple block at X:-2 Y:2 Z:-2]
+[Builder puts down a purple block at X:-2 Y:3 Z:-2]
+[Builder puts down a purple block at X:-2 Y:3 Z:-3]
+[Builder puts down a purple block at X:-2 Y:3 Z:-4]
+<Architect> Perfect, that's it, we're done!

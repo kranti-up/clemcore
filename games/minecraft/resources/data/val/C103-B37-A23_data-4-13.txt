@@ -1,0 +1,51 @@
+B37-A23-C103-1523629505941
+<Builder> Mission has started.
+<Architect> Howdy!
+<Builder> hi!
+<Architect> you'll need only green blocks. we are making a chair
+<Builder> ok, sounds good
+<Architect> okay, go ahead and place a green block down in teh cetner of the palte
+[Builder puts down a green block at X:0 Y:1 Z:0]
+<Architect> whoa sorry bad typing.
+<Builder> ha no worries
+<Architect> okay, now leaving a gap space, place another block in the row you are standing in.
+[Builder puts down a green block at X:2 Y:1 Z:0]
+<Architect> perfect
+<Architect> so you are going to move two rows over
+<Builder> ok
+<Architect> and place a block on the same row as the gap. Kind of making a triangle
+[Builder puts down a green block at X:1 Y:1 Z:2]
+<Architect> place a stack of two in the middle
+<Builder> the middle of all 3 blocks?
+<Architect> yes.
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:1 Y:2 Z:1]
+<Architect> remove the bottom block of the stack
+[Builder picks up a green block at X:1 Y:1 Z:1]
+<Architect> perfect!
+<Architect> add another block to the top of the highest block
+[Builder puts down a green block at X:1 Y:3 Z:1]
+<Architect> then, add one block to every side of that block, not including the top side
+[Builder puts down a green block at X:2 Y:3 Z:1]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:1]
+[Builder puts down a green block at X:1 Y:3 Z:2]
+<Builder> like that?
+<Architect> yes!
+<Architect> So finish off by making that cross a sqaure by filling in the corners. like the seat of a chair
+[Builder puts down a green block at X:0 Y:3 Z:2]
+[Builder puts down a green block at X:2 Y:3 Z:2]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+<Builder> ok
+<Architect> go to the side of the chair where the top iof the triangle base is.
+<Architect> yes
+<Architect> on that side, on top of the chair seat, build a chair back two blocks tall.
+[Builder puts down a green block at X:0 Y:4 Z:2]
+[Builder puts down a green block at X:1 Y:4 Z:2]
+[Builder puts down a green block at X:2 Y:4 Z:2]
+[Builder puts down a green block at X:2 Y:5 Z:2]
+[Builder puts down a green block at X:1 Y:5 Z:2]
+[Builder puts down a green block at X:0 Y:5 Z:2]
+<Architect> Done!
+<Builder> great!

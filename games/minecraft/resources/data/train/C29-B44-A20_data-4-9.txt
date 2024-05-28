@@ -1,0 +1,47 @@
+B44-A20-C29-1523284643015
+<Builder> Mission has started.
+<Architect> leave room for a tow of 7 blocks
+<Architect> row*
+<Architect> we'll start with blue
+<Architect> a stack of 4 high blue
+[Builder puts down a blue block at X:3 Y:1 Z:3]
+[Builder puts down a blue block at X:3 Y:2 Z:3]
+[Builder puts down a blue block at X:3 Y:3 Z:3]
+[Builder puts down a blue block at X:3 Y:4 Z:3]
+<Architect> great! now we'll switch to red
+<Architect> two red vertically on the right side of blue
+[Builder puts down a red block at X:2 Y:1 Z:3]
+[Builder puts down a red block at X:2 Y:2 Z:3]
+<Architect> now two red to the right of the bottom red
+[Builder puts down a red block at X:1 Y:1 Z:3]
+[Builder puts down a red block at X:0 Y:1 Z:3]
+<Architect> great! now let's do orange
+<Architect> two orange on top of the first two red
+[Builder puts down a orange block at X:2 Y:3 Z:3]
+[Builder puts down a orange block at X:2 Y:4 Z:3]
+<Architect> and now two orange on top of the second red
+[Builder puts down a orange block at X:1 Y:2 Z:3]
+[Builder puts down a orange block at X:1 Y:3 Z:3]
+<Architect> this is basically Tetris
+<Architect> now we'll do green
+<Architect> one green on top of the last red
+[Builder puts down a green block at X:0 Y:2 Z:3]
+<Architect> now two green vertically in the next column
+[Builder puts down a green block at X:-1 Y:1 Z:3]
+[Builder puts down a green block at X:-1 Y:2 Z:3]
+<Architect> and one green on the bottome next to that
+[Builder puts down a green block at X:-2 Y:1 Z:3]
+<Architect> now we'll do purple. it is floating
+<Architect> in the last column it starts 2 above the ground
+[Builder puts down a purple block at X:-2 Y:2 Z:3]
+[Builder puts down a purple block at X:-2 Y:3 Z:3]
+[Builder picks up a purple block at X:-2 Y:2 Z:3]
+<Architect> sorry i miscounted. it's one higher
+[Builder puts down a purple block at X:-2 Y:4 Z:3]
+[Builder picks up a purple block at X:-2 Y:3 Z:3]
+<Architect> great! now attach one purple to the right of that one
+[Builder puts down a purple block at X:-3 Y:4 Z:3]
+<Architect> and now two blocks of purple, one above and below the one you placed
+[Builder puts down a purple block at X:-3 Y:3 Z:3]
+[Builder puts down a purple block at X:-3 Y:5 Z:3]
+<Architect> that's great! we're all good

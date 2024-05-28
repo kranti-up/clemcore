@@ -1,0 +1,77 @@
+B35-A44-C111-1523650278312
+<Builder> Mission has started.
+<Builder> let me know when/where to begin
+<Architect> hello ok we're building a 3x3 tower that is 3 blocks tall and has a hollow center column
+<Architect> start by placing a 3x3 purple square flat on the ground
+<Builder> all three levels are hallow in the center?
+<Builder> IE I use 8 block per level
+<Architect> these blocks are for scafolding. we will delete them later. yes all 3 levels are hollow I'll explain if you do anything wrong
+[Builder puts down a purple block at X:2 Y:1 Z:-1]
+[Builder puts down a purple block at X:2 Y:1 Z:0]
+[Builder puts down a purple block at X:2 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+[Builder puts down a purple block at X:0 Y:1 Z:1]
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:0 Y:1 Z:-1]
+<Builder> okay
+<Architect> ok now step off it
+<Architect> please don't move the camera
+<Architect> 2 red blocks above the two left purple blocks in front of you
+<Builder> oh sorry. are you getting my feed?
+<Builder> so the back 2 blocks or the front 2?
+<Architect> yes I see your camera so I need you to not move it so I can give accurate instructions
+<Architect> left 2 purple blocks. 2 red blocks on top
+<Builder> in the first row with 3 blocks, the 2nd row with 2 blocks or the third row?
+<Builder> Could you rephrase it
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:3 Z:-1]
+<Architect> place 2 red blocks in front of the two purple blocks left most of the set of 3 purple blocks directly in front of you
+<Builder> so was that a correct spot?
+<Builder> or the 2 behind the placement I just made
+<Architect> ok nevermind different strategy. what you have down isn't what I wanted but it is correct anyways
+<Architect> ok the column to the right of the column you just built is red, then orange on top
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+<Builder> correct?
+<Architect> red then orange on top
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:3 Z:0]
+<Architect> flip them
+[Builder picks up a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+<Builder> whoops
+<Builder> okay whats next
+<Architect> next is 2 orange to the right of that
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+<Builder> okay
+<Architect> green orange Next: green green
+[Builder puts down a green block at X:1 Y:2 Z:1]
+[Builder puts down a green block at X:2 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+[Builder puts down a green block at X:2 Y:3 Z:1]
+<Builder> okay
+<Architect> green yellow
+[Builder puts down a green block at X:2 Y:2 Z:0]
+<Architect> yellow yellow
+[Builder puts down a yellow block at X:2 Y:3 Z:0]
+[Builder puts down a yellow block at X:2 Y:2 Z:-1]
+<Architect> red yellow
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+<Architect> now remove all the puprple blocks
+[Builder picks up a purple block at X:1 Y:1 Z:-1]
+[Builder picks up a purple block at X:2 Y:1 Z:-1]
+[Builder picks up a purple block at X:0 Y:1 Z:-1]
+[Builder picks up a purple block at X:0 Y:1 Z:0]
+[Builder picks up a purple block at X:0 Y:1 Z:1]
+[Builder picks up a purple block at X:1 Y:1 Z:1]
+[Builder picks up a purple block at X:2 Y:1 Z:1]
+[Builder picks up a purple block at X:2 Y:1 Z:0]
+<Builder> okay
+<Architect> ok we're done good job
+<Builder> litttttttttt

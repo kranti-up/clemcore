@@ -1,0 +1,51 @@
+B53-A4-C127-1524152409467
+<Builder> Mission has started.
+<Architect> this is maybe a backpack
+<Architect> start with a vertical 3x4 rectangle of yellow
+<Architect> short side on the surface
+<Builder> Alright
+[Builder puts down a yellow block at X:1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:2 Z:-2]
+[Builder picks up a yellow block at X:1 Y:3 Z:-2]
+[Builder picks up a yellow block at X:1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:-2]
+[Builder picks up a yellow block at X:1 Y:4 Z:-2]
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]
+<Architect> good. now on either side put a small stack of two oranges
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:1 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+<Architect> great
+<Architect> now red for the straps
+<Architect> it looks like a C sticking out from the back
+<Architect> in the top corner put a row of two reds coming toward you
+<Builder> Top corner of the yellow rectangle?
+<Architect> yep
+[Builder puts down a red block at X:-1 Y:4 Z:0]
+[Builder puts down a red block at X:-1 Y:4 Z:1]
+<Architect> now two below that
+[Builder puts down a red block at X:-1 Y:3 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+<Builder> I'm guessing here then?
+<Architect> great.
+<Architect> same on other side
+[Builder puts down a red block at X:1 Y:4 Z:0]
+[Builder puts down a red block at X:1 Y:4 Z:1]
+[Builder puts down a red block at X:1 Y:3 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+<Architect> well done
+<Builder> Thanks
+<Architect> now death

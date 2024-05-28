@@ -1,0 +1,73 @@
+B16-A1-C114-1523663178897
+<Builder> Mission has started.
+<Architect> hello
+<Builder> hi again!
+<Architect> this one is two threes back to back
+<Builder> okay, fun
+<Architect> so lets make the first 3 all orange
+[Builder puts down a orange block at X:0 Y:1 Z:2]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+<Architect> the long side of the 3 is 5 blocks long
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:1 Z:2]
+<Architect> they are standing up
+[Builder picks up a orange block at X:1 Y:1 Z:-2]
+[Builder picks up a orange block at X:1 Y:1 Z:0]
+[Builder picks up a orange block at X:1 Y:1 Z:2]
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+<Builder> like this?
+<Architect> no like the long side is a tower of five
+[Builder picks up a orange block at X:0 Y:2 Z:-2]
+[Builder picks up a orange block at X:0 Y:1 Z:-2]
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:2 Z:2]
+[Builder picks up a orange block at X:0 Y:1 Z:1]
+[Builder picks up a orange block at X:0 Y:1 Z:2]
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:5 Z:1]
+[Builder puts down a orange block at X:0 Y:5 Z:2]
+[Builder puts down a orange block at X:0 Y:3 Z:2]
+[Builder puts down a orange block at X:0 Y:1 Z:2]
+<Architect> add one more for the top and bottom of the three
+[Builder puts down a orange block at X:0 Y:1 Z:3]
+[Builder puts down a orange block at X:0 Y:5 Z:3]
+<Architect> right
+<Architect> okay so for the blue one its one the back of this one so it looks like an E
+<Architect> its starts from the left most orange block
+<Builder> here?
+<Architect> can you stand on the opposite side of the 3?
+<Architect> yes now make a tower of five blue from the left most orange block
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+<Builder> here?
+<Architect> sorry i meant the right most
+[Builder picks up a blue block at X:-1 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:3]
+[Builder puts down a blue block at X:-1 Y:2 Z:3]
+[Builder puts down a blue block at X:-1 Y:3 Z:3]
+[Builder puts down a blue block at X:-1 Y:4 Z:3]
+[Builder puts down a blue block at X:-1 Y:5 Z:3]
+<Builder> this?
+<Architect> yes
+<Architect> now make it a backwards E
+[Builder puts down a blue block at X:-1 Y:5 Z:2]
+[Builder puts down a blue block at X:-1 Y:5 Z:1]
+[Builder puts down a blue block at X:-1 Y:3 Z:2]
+[Builder puts down a blue block at X:-1 Y:3 Z:1]
+[Builder picks up a blue block at X:-1 Y:3 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:2]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+<Architect> sorry this one is only two blocks width
+[Builder picks up a blue block at X:-1 Y:5 Z:1]
+[Builder picks up a blue block at X:-1 Y:1 Z:1]
+<Architect> thats it

@@ -1,0 +1,45 @@
+B25-A10-C85-1523487049531
+<Builder> Mission has started.
+<Architect> So this one is all vertical again
+<Architect> the footprint is 5x1
+<Builder> 2d?
+<Architect> 5x1 by 5up
+<Builder> ok
+<Architect> start with 4 red blocks
+<Architect> stacked vertically
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:2 Y:2 Z:-1]
+[Builder puts down a red block at X:2 Y:3 Z:-1]
+[Builder puts down a red block at X:2 Y:4 Z:-1]
+[Builder puts down a red block at X:2 Y:5 Z:-1]
+<Architect> 4 red blocks
+[Builder picks up a red block at X:2 Y:5 Z:-1]
+<Builder> oops
+<Architect> then put one yellow on top of that
+[Builder puts down a yellow block at X:2 Y:5 Z:-1]
+<Architect> then put two yellows on each side of the topmost red block
+[Builder puts down a yellow block at X:3 Y:4 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+<Architect> yep
+<Architect> finally, to complete the arrow shape, place a yellow on each edge of the yellow you just put down
+<Builder> hmmm how do you mean
+[Builder puts down a yellow block at X:1 Y:5 Z:-1]
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+[Builder picks up a yellow block at X:1 Y:5 Z:-1]
+<Builder> like that?
+[Builder puts down a yellow block at X:3 Y:5 Z:-1]
+[Builder puts down a yellow block at X:4 Y:5 Z:-1]
+[Builder picks up a yellow block at X:3 Y:5 Z:-1]
+[Builder puts down a yellow block at X:3 Y:3 Z:-1]
+[Builder puts down a yellow block at X:4 Y:3 Z:-1]
+[Builder picks up a yellow block at X:3 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+<Architect> yeah, like that, but the other direction. like the down edge
+[Builder puts down a yellow block at X:0 Y:3 Z:-2]
+[Builder picks up a yellow block at X:0 Y:3 Z:-2]
+[Builder picks up a yellow block at X:1 Y:3 Z:-1]
+[Builder picks up a yellow block at X:0 Y:5 Z:-1]
+[Builder picks up a yellow block at X:4 Y:5 Z:-1]
+<Builder> like that?
+<Architect> yeah, thats right!
+<Builder> nice

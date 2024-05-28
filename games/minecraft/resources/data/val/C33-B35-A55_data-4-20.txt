@@ -1,0 +1,139 @@
+B35-A55-C33-1524257297071
+<Builder> Mission has started.
+<Architect> go to the middle and place an orange block two spaces to the left
+[Builder puts down a orange block at X:2 Y:1 Z:0]
+<Architect> now make a staircase with 2 stairs left and 2 right with orange
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+<Architect> so it will look like a v
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:3 Y:1 Z:0]
+[Builder puts down a orange block at X:3 Y:2 Z:0]
+[Builder puts down a orange block at X:4 Y:2 Z:0]
+[Builder picks up a orange block at X:3 Y:1 Z:0]
+[Builder puts down a orange block at X:4 Y:3 Z:0]
+[Builder picks up a orange block at X:4 Y:2 Z:0]
+[Builder picks up a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+<Builder> this?
+<Architect> yes
+<Architect> place a green block to the right of the top right stair
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder picks up a green block at X:0 Y:3 Z:-1]
+<Architect> now make a diagonal line to the top right and bottom right with green from there
+<Architect> two blocks long for each
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+[Builder puts down a green block at X:-2 Y:4 Z:0]
+[Builder picks up a green block at X:-2 Y:3 Z:0]
+[Builder puts down a green block at X:-3 Y:4 Z:0]
+[Builder puts down a green block at X:-3 Y:5 Z:0]
+[Builder picks up a green block at X:-3 Y:4 Z:0]
+<Builder> this?
+<Architect> horizontally not vertically sorry
+[Builder picks up a green block at X:-3 Y:5 Z:0]
+[Builder picks up a green block at X:-2 Y:4 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:-2 Y:3 Z:-1]
+[Builder puts down a green block at X:-2 Y:3 Z:-2]
+[Builder puts down a green block at X:-3 Y:3 Z:-2]
+[Builder picks up a green block at X:-2 Y:3 Z:-2]
+[Builder picks up a green block at X:-1 Y:3 Z:-1]
+<Builder> this?
+<Architect> yes
+[Builder puts down a green block at X:-3 Y:3 Z:-3]
+[Builder puts down a green block at X:-2 Y:3 Z:-3]
+[Builder picks up a green block at X:-3 Y:3 Z:-3]
+[Builder puts down a green block at X:-2 Y:3 Z:-4]
+[Builder puts down a green block at X:-1 Y:3 Z:-4]
+[Builder picks up a green block at X:-1 Y:3 Z:-4]
+[Builder puts down a green block at X:-1 Y:3 Z:-4]
+[Builder picks up a green block at X:-1 Y:4 Z:-5]
+[Builder picks up a green block at X:-1 Y:4 Z:-4]
+[Builder picks up a green block at X:-2 Y:3 Z:-4]
+<Builder> this it?
+<Architect> delete the last two blocks and start at the first green
+[Builder picks up a green block at X:-2 Y:3 Z:-3]
+[Builder picks up a green block at X:-1 Y:3 Z:-4]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder picks up a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:3 Z:-2]
+[Builder puts down a green block at X:1 Y:3 Z:-2]
+[Builder picks up a green block at X:0 Y:3 Z:-2]
+<Builder> this?
+<Architect> do it rotated 180 degrees from where you have now
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+[Builder puts down a green block at X:-2 Y:3 Z:1]
+[Builder puts down a green block at X:-2 Y:3 Z:2]
+[Builder puts down a green block at X:-3 Y:3 Z:2]
+[Builder picks up a green block at X:-2 Y:3 Z:2]
+[Builder picks up a green block at X:-1 Y:3 Z:1]
+[Builder picks up a green block at X:0 Y:3 Z:-1]
+[Builder picks up a green block at X:1 Y:3 Z:-2]
+<Builder> or the other side lol
+<Architect> now place 3 diagonal blocks to link the two green lines
+[Builder puts down a green block at X:-3 Y:3 Z:1]
+[Builder puts down a green block at X:-3 Y:3 Z:0]
+[Builder puts down a green block at X:-3 Y:3 Z:-1]
+<Architect> delete those 3
+[Builder picks up a green block at X:-3 Y:3 Z:-1]
+[Builder picks up a green block at X:-3 Y:3 Z:0]
+[Builder picks up a green block at X:-3 Y:3 Z:1]
+<Architect> imagine that the green has to trace out a cross
+<Architect> you see part of it is already sor of traced out with the spaces?
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+[Builder puts down a green block at X:-3 Y:3 Z:0]
+[Builder puts down a green block at X:-4 Y:3 Z:0]
+<Builder> this?
+<Architect> place one green block to the left of the one closest to you
+<Architect> and one to the right
+[Builder puts down a green block at X:-4 Y:3 Z:-1]
+[Builder puts down a green block at X:-4 Y:3 Z:1]
+<Architect> now place one block on the middle one
+[Builder puts down a green block at X:-3 Y:4 Z:0]
+[Builder picks up a green block at X:-3 Y:4 Z:0]
+[Builder puts down a green block at X:-4 Y:4 Z:0]
+<Architect> horizontally tho
+[Builder picks up a green block at X:-4 Y:4 Z:0]
+<Builder> just to clarify
+<Builder> everything so far is what you've wanted correct?
+<Architect> i will make corrections once you do this
+[Builder puts down a green block at X:-5 Y:3 Z:0]
+<Builder> ok
+<Architect> delete the 3 blocks in a horizontal line starting from the block you just placed
+[Builder picks up a green block at X:-5 Y:3 Z:0]
+[Builder picks up a green block at X:-4 Y:3 Z:0]
+[Builder picks up a green block at X:-3 Y:3 Z:0]
+<Architect> but leave the block that you just placed
+[Builder puts down a green block at X:-4 Y:3 Z:0]
+[Builder puts down a green block at X:-5 Y:3 Z:0]
+[Builder picks up a green block at X:-5 Y:4 Z:0]
+[Builder picks up a green block at X:-4 Y:3 Z:0]
+<Architect> so there should be an empty space in the middle
+<Architect> of the green
+[Builder puts down a green block at X:-4 Y:3 Z:0]
+<Architect> that looks like a cross
+<Architect> the blank space in the middle of the green should look like a cross
+<Builder> okay, from this perspective, tell me what blocks I need to add or delete
+<Architect> the one below you
+[Builder picks up a green block at X:-4 Y:3 Z:0]
+[Builder picks up a green block at X:-2 Y:3 Z:0]
+<Architect> yes
+<Builder> is this the cross you wanted?
+<Architect> yes
+<Builder> is that it?
+<Architect> one more block
+<Builder> looks like a carrot
+<Builder> ok
+<Architect> place an orange block 4 spaces above the bottom orange block
+<Architect> so that there are 3 empty spaces in between
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+[Builder puts down a orange block at X:2 Y:5 Z:0]
+[Builder picks up a orange block at X:2 Y:4 Z:0]
+[Builder picks up a orange block at X:2 Y:3 Z:0]
+[Builder picks up a orange block at X:2 Y:2 Z:0]
+<Builder> that it?

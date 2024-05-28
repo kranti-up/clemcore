@@ -1,0 +1,23 @@
+B1-A44-C17-1523034060175
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hello
+<Builder> what are we building?
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+[Builder picks up a blue block at X:-1 Y:1 Z:1]
+[Builder picks up a blue block at X:0 Y:1 Z:1]
+<Architect> we are building a thing with 3 blocks. they are orange
+<Architect> make a square with four orange blocks and remove one of them
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder picks up a orange block at X:-1 Y:1 Z:0]
+<Builder> flat?
+<Architect> yes flat
+<Builder> ok
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+<Architect> perfect
+<Builder> cool

@@ -1,0 +1,140 @@
+B38-A28-C31-1522948589166
+<Builder> Mission has started.
+<Builder> Heyo
+<Architect> hey
+<Architect> alright it seems like this is the last one
+<Builder> Ok
+<Architect> can you go top left
+<Builder> yup
+<Architect> yeah
+<Architect> so the jist of what we're making
+<Builder> all the way in the corner
+<Architect> nah where you are is good
+<Builder> ooh, what are we building?
+<Architect> we're making three separate letters that are suspended in the air
+<Architect> so we have to build up first
+<Builder> How far above the ground?
+<Builder> Wait... is it cwc?
+<Architect> okay so just put three blue blocks in a line
+[Builder puts down a yellow block at X:4 Y:1 Z:4]
+[Builder puts down a yellow block at X:4 Y:2 Z:4]
+[Builder puts down a yellow block at X:4 Y:3 Z:4]
+[Builder picks up a yellow block at X:4 Y:3 Z:4]
+[Builder picks up a yellow block at X:4 Y:2 Z:4]
+[Builder picks up a yellow block at X:4 Y:1 Z:4]
+<Architect> nah it's H O T
+[Builder puts down a blue block at X:4 Y:1 Z:4]
+[Builder puts down a blue block at X:4 Y:2 Z:4]
+[Builder puts down a blue block at X:4 Y:3 Z:4]
+<Builder> Ok
+<Architect> can you make it across
+<Builder> How tall is the H?
+[Builder puts down a blue block at X:3 Y:3 Z:4]
+[Builder puts down a blue block at X:1 Y:3 Z:4]
+<Architect> oh i meant on the ground
+[Builder picks up a blue block at X:1 Y:3 Z:4]
+[Builder picks up a blue block at X:2 Y:3 Z:4]
+[Builder picks up a blue block at X:3 Y:3 Z:4]
+[Builder puts down a blue block at X:3 Y:1 Z:4]
+[Builder puts down a blue block at X:2 Y:1 Z:4]
+[Builder puts down a blue block at X:1 Y:1 Z:4]
+<Architect> alright can you take out the bottom 4 blue blocks
+[Builder picks up a blue block at X:1 Y:1 Z:4]
+[Builder picks up a blue block at X:2 Y:1 Z:4]
+[Builder picks up a blue block at X:3 Y:1 Z:4]
+[Builder picks up a blue block at X:4 Y:1 Z:4]
+<Builder> Ok...
+<Architect> and put one more blue block on top
+[Builder puts down a blue block at X:4 Y:4 Z:4]
+<Architect> okay and put a blue block on the right of the center one
+[Builder puts down a blue block at X:3 Y:4 Z:4]
+[Builder puts down a blue block at X:2 Y:4 Z:4]
+[Builder puts down a blue block at X:1 Y:4 Z:4]
+<Builder> 3 across, right?
+<Architect> no not that one the one below it
+[Builder puts down a blue block at X:3 Y:3 Z:4]
+[Builder picks up a blue block at X:3 Y:3 Z:4]
+[Builder picks up a blue block at X:2 Y:4 Z:4]
+[Builder picks up a blue block at X:1 Y:4 Z:4]
+[Builder picks up a blue block at X:3 Y:4 Z:4]
+[Builder puts down a blue block at X:3 Y:3 Z:4]
+<Builder> Ok
+<Architect> okay put one more
+<Builder> should I repeat the left side?
+[Builder puts down a blue block at X:2 Y:3 Z:4]
+<Architect> yea
+[Builder puts down a blue block at X:2 Y:4 Z:4]
+[Builder puts down a blue block at X:2 Y:2 Z:4]
+<Architect> okay nice
+[Builder puts down a yellow block at X:0 Y:1 Z:4]
+[Builder puts down a yellow block at X:0 Y:2 Z:4]
+[Builder picks up a yellow block at X:0 Y:1 Z:4]
+<Builder> The o now?
+<Builder> What color should I use?
+<Architect> alright two blocks down from the second pillar of the h
+<Architect> move to the left two spaces
+<Builder> right here?
+<Architect> okay move back two spaces
+<Builder> ok
+[Builder picks up a yellow block at X:0 Y:2 Z:4]
+<Architect> put an orange block right in front of you
+[Builder puts down a orange block at X:2 Y:1 Z:2]
+<Builder> Ok
+<Architect> okay put another one on top
+[Builder puts down a orange block at X:2 Y:2 Z:2]
+<Builder> is it a punched out cross?
+<Architect> put another two on top
+[Builder puts down a orange block at X:2 Y:3 Z:2]
+[Builder puts down a orange block at X:2 Y:4 Z:2]
+<Builder> ok
+<Architect> okay can you punch out the bottom orange one
+[Builder picks up a orange block at X:2 Y:1 Z:2]
+<Builder> is it a ring?
+<Architect> alright put two across from the bottom orange one
+[Builder puts down a orange block at X:1 Y:2 Z:2]
+<Architect> yeah
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+[Builder puts down a orange block at X:2 Y:4 Z:1]
+[Builder picks up a orange block at X:2 Y:4 Z:1]
+[Builder puts down a orange block at X:1 Y:4 Z:2]
+[Builder puts down a orange block at X:0 Y:4 Z:2]
+[Builder puts down a orange block at X:0 Y:3 Z:2]
+<Architect> nice
+<Builder> cool
+<Builder> should we do a t in the same way?
+<Architect> okay two blocks down from the orange again
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+[Builder picks up a red block at X:-2 Y:1 Z:0]
+<Builder> is it following the same spacing as the other letters?
+<Architect> put a green block where you have the red one
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+[Builder picks up a red block at X:-2 Y:2 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+[Builder picks up a red block at X:-2 Y:2 Z:0]
+[Builder puts down a green block at X:-2 Y:2 Z:0]
+<Builder> cool, and just a row on the top to finish the T?
+<Architect> yeah and then put one green on top
+[Builder puts down a green block at X:-2 Y:4 Z:0]
+<Architect> yeah i think
+[Builder puts down a green block at X:-1 Y:4 Z:0]
+[Builder puts down a green block at X:-3 Y:4 Z:0]
+<Builder> Do you want to double check?
+<Architect> yeah im checking
+<Builder> The T might be oneoff
+<Architect> yeah can you move the entire t to the left one
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:4 Z:-1]
+[Builder puts down a green block at X:0 Y:4 Z:0]
+[Builder picks up a green block at X:-1 Y:4 Z:-1]
+[Builder picks up a green block at X:-2 Y:3 Z:0]
+[Builder picks up a green block at X:-2 Y:2 Z:0]
+[Builder picks up a green block at X:-3 Y:4 Z:0]
+<Builder> ok
+<Architect> looks great!
+<Architect> good stuff
+<Builder> Cool, it was nice working with you
+<Architect> nice working with you
+<Architect> :)
+<Builder> :)

@@ -1,0 +1,139 @@
+B25-A51-C154-1524263241350
+<Builder> Mission has started.
+<Builder> and we're back
+<Architect> this is gonna be a difficult one lol
+<Builder> we got this
+<Architect> okay so let's start on the edge closest to you
+<Architect> make a 1x2 column of red
+[Builder puts down a red block at X:2 Y:1 Z:-3]
+[Builder puts down a red block at X:1 Y:1 Z:-3]
+[Builder puts down a red block at X:2 Y:2 Z:-3]
+[Builder puts down a red block at X:1 Y:2 Z:-3]
+[Builder picks up a red block at X:1 Y:2 Z:-3]
+[Builder picks up a red block at X:2 Y:2 Z:-3]
+[Builder picks up a red block at X:2 Y:1 Z:-3]
+[Builder picks up a red block at X:1 Y:1 Z:-3]
+[Builder puts down a red block at X:2 Y:1 Z:-5]
+[Builder puts down a red block at X:1 Y:1 Z:-5]
+[Builder puts down a red block at X:1 Y:2 Z:-5]
+[Builder puts down a red block at X:2 Y:2 Z:-5]
+[Builder picks up a red block at X:1 Y:2 Z:-5]
+[Builder picks up a red block at X:1 Y:1 Z:-5]
+<Architect> okay so right behind that column, make a 1x3 column of blue
+[Builder puts down a blue block at X:2 Y:1 Z:-4]
+[Builder puts down a blue block at X:2 Y:2 Z:-4]
+[Builder puts down a blue block at X:2 Y:3 Z:-4]
+<Architect> so on the top blue block, make 3 additional blocks to the right of it (in blue)
+[Builder puts down a blue block at X:1 Y:3 Z:-4]
+[Builder puts down a blue block at X:0 Y:3 Z:-4]
+[Builder puts down a blue block at X:-1 Y:3 Z:-4]
+<Builder> like this?
+<Architect> yep
+<Architect> so under the most right blue block (that you just made), put 2 additional blocks under it so it makes a column and touches the ground
+[Builder puts down a blue block at X:-1 Y:2 Z:-4]
+[Builder puts down a blue block at X:-1 Y:1 Z:-4]
+<Architect> perfect, so to the left of that newly made column, make a column of 2 reds
+[Builder puts down a red block at X:-2 Y:1 Z:-4]
+[Builder puts down a red block at X:-2 Y:2 Z:-4]
+<Architect> other side, so that it's under the little doorframe thing of blue
+[Builder puts down a red block at X:0 Y:1 Z:-4]
+[Builder puts down a red block at X:0 Y:2 Z:-4]
+[Builder picks up a red block at X:-2 Y:2 Z:-4]
+[Builder picks up a red block at X:-2 Y:1 Z:-4]
+<Architect> great, so move to the right so that the new blue colum is facing you
+<Architect> okay so make a 1x3 colum of orange on the right side of the blue column
+[Builder puts down a orange block at X:-1 Y:1 Z:-3]
+[Builder puts down a orange block at X:-1 Y:2 Z:-3]
+[Builder puts down a orange block at X:-1 Y:3 Z:-3]
+<Architect> okay good, now to the right of that orange column, make a 1x2 orange column
+[Builder puts down a orange block at X:-1 Y:1 Z:-2]
+[Builder puts down a orange block at X:-1 Y:2 Z:-2]
+<Architect> okay good, so on top of the blue and 2 orange columns, place 1 purple column on top of each column respectively
+<Builder> how tall
+<Architect> just one purple block
+[Builder puts down a purple block at X:-1 Y:4 Z:-4]
+[Builder puts down a purple block at X:-1 Y:4 Z:-3]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+<Architect> great, now can you put 1 layer of purple block sticking out towards you? so that they're branching off
+<Architect> just one layer
+[Builder puts down a purple block at X:-2 Y:4 Z:-4]
+[Builder puts down a purple block at X:-2 Y:4 Z:-3]
+[Builder puts down a purple block at X:-2 Y:3 Z:-2]
+<Architect> great
+<Architect> we'll do the same with the side to the left, with the red columns
+[Builder puts down a purple block at X:2 Y:4 Z:-4]
+[Builder puts down a purple block at X:2 Y:3 Z:-5]
+<Architect> so make an additional layer of purple on top of the blue
+[Builder puts down a purple block at X:3 Y:3 Z:-5]
+[Builder puts down a purple block at X:3 Y:4 Z:-4]
+<Builder> like that?
+<Architect> okay so go back to that view
+<Architect> can you get rid of the purple on the 1x2 red column and the purple block to the left of it?
+[Builder picks up a purple block at X:2 Y:3 Z:-5]
+[Builder picks up a purple block at X:3 Y:3 Z:-5]
+<Architect> good, now fill the space between the 2 purples (on top of the blue) with purple
+[Builder puts down a purple block at X:0 Y:4 Z:-4]
+[Builder puts down a purple block at X:1 Y:4 Z:-4]
+<Architect> okay so on that top layer of purple, stick 1 additional layer of purple so it's sticking out towards you
+[Builder puts down a purple block at X:3 Y:4 Z:-5]
+[Builder puts down a purple block at X:2 Y:4 Z:-5]
+[Builder puts down a purple block at X:1 Y:4 Z:-5]
+[Builder puts down a purple block at X:-1 Y:4 Z:-5]
+[Builder puts down a purple block at X:-1 Y:4 Z:-6]
+[Builder picks up a purple block at X:-1 Y:4 Z:-6]
+[Builder puts down a purple block at X:-2 Y:4 Z:-5]
+[Builder puts down a purple block at X:0 Y:4 Z:-5]
+<Architect> great, now get rid of the left and right corner blocks
+[Builder picks up a purple block at X:3 Y:4 Z:-5]
+[Builder picks up a purple block at X:-2 Y:4 Z:-5]
+<Architect> nice, now let's move to the left side
+<Architect> so to the left of that blue column, make a 1x3 orange column
+[Builder puts down a orange block at X:2 Y:1 Z:-3]
+[Builder puts down a orange block at X:2 Y:2 Z:-3]
+[Builder puts down a orange block at X:2 Y:3 Z:-3]
+[Builder puts down a orange block at X:2 Y:1 Z:-2]
+[Builder puts down a orange block at X:2 Y:2 Z:-2]
+[Builder puts down a purple block at X:2 Y:3 Z:-2]
+[Builder puts down a purple block at X:2 Y:4 Z:-3]
+[Builder puts down a purple block at X:3 Y:4 Z:-3]
+[Builder puts down a purple block at X:3 Y:3 Z:-2]
+<Architect> great, thanks
+<Builder> yea no problem
+<Architect> okay so in this view, we'll make a 2x1 layer of green that's connecting the 2 orange columns
+<Builder> is it floating
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:1 Y:1 Z:-2]
+<Architect> nope
+<Architect> great so then on the bottom of that green, make another 2x1
+[Builder puts down a green block at X:0 Y:1 Z:-3]
+[Builder puts down a green block at X:1 Y:1 Z:-3]
+<Builder> like that?
+<Architect> sorry, other isde
+[Builder picks up a green block at X:0 Y:1 Z:-3]
+[Builder picks up a green block at X:1 Y:1 Z:-3]
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+<Architect> great, now do another one
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+<Architect> one more
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+<Architect> okay so then get rid of the the 2x1 layer that's directly toucing the orange columns
+[Builder picks up a green block at X:0 Y:1 Z:-2]
+[Builder picks up a green block at X:1 Y:1 Z:-2]
+<Architect> great so then on the 2nd row, put another layer of 2x1 green
+[Builder puts down a green block at X:0 Y:2 Z:-1]
+[Builder puts down a green block at X:1 Y:2 Z:-1]
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:2 Z:1]
+[Builder puts down a green block at X:0 Y:2 Z:1]
+<Architect> okay so now get rid of the 2nd layer that's farthest away from you
+[Builder picks up a green block at X:1 Y:2 Z:-1]
+[Builder picks up a green block at X:0 Y:2 Z:-1]
+<Architect> and now on the row closest to you, put a 2x1 layer of yellow
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+<Architect> and that should be it!
+<Builder> yay

@@ -1,0 +1,44 @@
+B37-A46-C59-1523304919107
+<Builder> Mission has started.
+<Architect> make a tower of 3 red blocks toward the middle of the square
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:3 Z:-1]
+<Builder> ok
+<Architect> now go over 3 squares and put 3 more red blocks
+<Builder> are there 3 empty squares between the towers or 2 empty squares?
+<Architect> 3
+[Builder puts down a red block at X:1 Y:1 Z:3]
+[Builder puts down a red block at X:1 Y:2 Z:3]
+[Builder puts down a red block at X:1 Y:3 Z:3]
+<Builder> ok
+<Architect> repeat that 2 more times to make a square
+[Builder puts down a red block at X:-3 Y:1 Z:-1]
+[Builder puts down a red block at X:-3 Y:2 Z:-1]
+[Builder puts down a red block at X:-3 Y:3 Z:-1]
+[Builder puts down a red block at X:-3 Y:1 Z:3]
+[Builder puts down a red block at X:-3 Y:2 Z:3]
+[Builder puts down a red block at X:-3 Y:3 Z:3]
+<Builder> like that?
+<Architect> actually the 2 in the back only need 2 red blocks
+[Builder puts down a red block at X:-3 Y:3 Z:0]
+[Builder picks up a red block at X:-3 Y:3 Z:0]
+[Builder picks up a red block at X:-3 Y:3 Z:-1]
+[Builder picks up a red block at X:1 Y:3 Z:-1]
+<Builder> like that?
+<Architect> yes. now put an orange block on top of each tower
+[Builder puts down a orange block at X:-3 Y:4 Z:3]
+[Builder puts down a orange block at X:1 Y:4 Z:3]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:-3 Y:3 Z:-1]
+<Builder> ok
+<Architect> connect the taller towers with 3 yellow blocks between the orange
+[Builder puts down a yellow block at X:0 Y:4 Z:3]
+[Builder puts down a yellow block at X:-1 Y:4 Z:3]
+[Builder puts down a yellow block at X:-2 Y:4 Z:3]
+<Builder> ok
+<Architect> do the same thing with green blocks for the shorter tower
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:-2 Y:3 Z:-1]
+<Builder> ok

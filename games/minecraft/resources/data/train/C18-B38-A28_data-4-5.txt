@@ -1,0 +1,99 @@
+B38-A28-C18-1522945320714
+<Builder> Mission has started.
+<Architect> hey
+<Builder> Hello
+<Architect> alright
+<Architect> can you get blue green and purple blocks
+<Builder> Yup
+<Architect> alright can you go a little bit to the right so we have space
+<Builder> Did you get the technical issues fixed on your end?
+<Architect> yeah sorry
+<Builder> Ok, is around here god?
+<Builder> good*
+<Architect> yeah
+<Architect> can you put a blue block down
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+<Architect> and then one on top of that
+[Builder puts down a blue block at X:1 Y:2 Z:-2]
+<Builder> ok
+<Architect> and then one to the left of the top blue block
+[Builder puts down a blue block at X:1 Y:3 Z:-2]
+[Builder puts down a blue block at X:2 Y:3 Z:-2]
+[Builder picks up a blue block at X:1 Y:3 Z:-2]
+[Builder picks up a blue block at X:2 Y:3 Z:-2]
+[Builder puts down a blue block at X:2 Y:2 Z:-2]
+[Builder picks up a blue block at X:2 Y:3 Z:-2]
+<Builder> sorry about that
+<Architect> and then one to the right of it
+[Builder puts down a blue block at X:0 Y:2 Z:-2]
+<Architect> and then one on top of 2 blue blocks
+[Builder puts down a blue block at X:1 Y:3 Z:-2]
+<Architect> alright
+<Builder> like a plus?
+<Architect> and then can you go on the other side
+<Architect> yeah you're doing perfect
+<Builder> yup
+<Architect> can you put a green block on the center of the blue block
+[Builder puts down a green block at X:1 Y:2 Z:-1]
+<Builder> Yup
+<Architect> one to the right of that one
+[Builder puts down a green block at X:2 Y:2 Z:-1]
+<Builder> are we repeating the pattern?
+<Architect> yea
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:2 Z:-1]
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+<Builder> again with purple?
+<Architect> oh wait not exactly
+[Builder picks up a green block at X:1 Y:1 Z:-1]
+[Builder picks up a green block at X:2 Y:2 Z:-1]
+[Builder picks up a green block at X:0 Y:2 Z:-1]
+[Builder picks up a green block at X:1 Y:2 Z:-1]
+[Builder puts down a green block at X:2 Y:2 Z:-1]
+[Builder puts down a green block at X:1 Y:2 Z:-1]
+[Builder picks up a green block at X:1 Y:3 Z:-1]
+<Builder> sorry
+<Architect> shifted to the right one
+[Builder puts down a green block at X:2 Y:1 Z:-1]
+[Builder puts down a green block at X:2 Y:3 Z:-1]
+[Builder puts down a green block at X:3 Y:2 Z:-1]
+<Architect> yeah great
+<Builder> Ok,
+<Architect> okay now take purple and put it on the left most green block
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+<Builder> to the side or above?
+<Architect> alright one more purple block to the left
+[Builder puts down a purple block at X:0 Y:2 Z:0]
+<Builder> is it another +
+<Builder> ?
+<Architect> yes except shifted to the left one
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+<Builder> ok
+<Architect> uhh
+<Builder> Are we goint to repeat this pattern?
+<Architect> can you shift the purple cross to the left
+<Builder> How many blocks?
+[Builder picks up a purple block at X:1 Y:3 Z:0]
+[Builder picks up a purple block at X:2 Y:2 Z:0]
+<Architect> just one
+[Builder picks up a purple block at X:1 Y:1 Z:0]
+[Builder picks up a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+<Builder> like that?
+<Architect> yeah! and then can you punch out the middle blocks of all of the three crosses
+[Builder picks up a purple block at X:1 Y:2 Z:0]
+[Builder picks up a green block at X:1 Y:2 Z:-1]
+[Builder picks up a blue block at X:1 Y:2 Z:-2]
+<Builder> ok
+<Builder> is that it?
+[Builder puts down a green block at X:1 Y:2 Z:-1]
+[Builder picks up a green block at X:2 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder picks up a purple block at X:0 Y:2 Z:0]
+<Architect> yeah!
+<Architect> great job

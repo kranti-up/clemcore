@@ -1,0 +1,70 @@
+B54-A1-C145-1523979969324
+<Builder> Mission has started.
+<Architect> hello
+<Architect> this one takes the whole width of the board
+<Architect> its all red
+<Architect> start on the left side
+[Builder puts down a red block at X:5 Y:1 Z:-2]
+<Architect> place one block floating above two invisible blocks
+<Builder> On top of the red one I placed?
+<Architect> no remove the red one
+[Builder picks up a red block at X:5 Y:1 Z:-2]
+[Builder puts down a red block at X:5 Y:1 Z:-2]
+[Builder puts down a red block at X:5 Y:2 Z:-2]
+[Builder puts down a red block at X:5 Y:3 Z:-2]
+[Builder picks up a red block at X:5 Y:2 Z:-2]
+[Builder picks up a red block at X:5 Y:1 Z:-2]
+<Architect> the whole structure is one the same plane
+<Architect> do the same thing next to it
+[Builder puts down a red block at X:4 Y:3 Z:-2]
+<Architect> now as if standing on that last block add a step goind towards the right
+[Builder puts down a red block at X:4 Y:3 Z:-1]
+[Builder puts down a red block at X:4 Y:4 Z:-1]
+[Builder picks up a red block at X:4 Y:3 Z:-1]
+<Architect> remember its all in the same plane
+[Builder picks up a red block at X:4 Y:4 Z:-1]
+[Builder puts down a red block at X:3 Y:3 Z:-2]
+[Builder puts down a red block at X:3 Y:4 Z:-2]
+[Builder picks up a red block at X:3 Y:3 Z:-2]
+<Architect> great
+<Architect> now add a step down
+[Builder puts down a red block at X:3 Y:3 Z:-2]
+[Builder puts down a red block at X:2 Y:3 Z:-2]
+[Builder picks up a red block at X:3 Y:3 Z:-2]
+<Architect> now a step up again
+[Builder puts down a red block at X:2 Y:4 Z:-2]
+[Builder puts down a red block at X:1 Y:4 Z:-2]
+[Builder picks up a red block at X:2 Y:4 Z:-2]
+<Architect> okay so now add two blocks on top of the last step forming a tower of three
+[Builder puts down a red block at X:1 Y:5 Z:-2]
+[Builder puts down a red block at X:1 Y:6 Z:-2]
+<Architect> great
+<Architect> okay another step up from the tallest block
+[Builder puts down a red block at X:1 Y:7 Z:-2]
+[Builder puts down a red block at X:0 Y:7 Z:-2]
+[Builder picks up a red block at X:1 Y:7 Z:-2]
+<Architect> great,
+<Architect> add another step down
+[Builder puts down a red block at X:0 Y:6 Z:-2]
+[Builder puts down a red block at X:-1 Y:6 Z:-2]
+[Builder picks up a red block at X:0 Y:6 Z:-2]
+<Architect> using the last block as the top of the tower, add four more blocks making a tower of 5
+[Builder puts down a red block at X:-1 Y:5 Z:-2]
+[Builder puts down a red block at X:-1 Y:4 Z:-2]
+[Builder puts down a red block at X:-1 Y:3 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-2]
+<Architect> great
+<Architect> now a step down followed by a step up
+[Builder puts down a red block at X:-2 Y:1 Z:-2]
+[Builder puts down a red block at X:-3 Y:1 Z:-2]
+[Builder puts down a red block at X:-3 Y:2 Z:-2]
+[Builder picks up a red block at X:-3 Y:1 Z:-2]
+<Architect> now make that last step a tower of 3
+[Builder puts down a red block at X:-3 Y:3 Z:-2]
+[Builder puts down a red block at X:-3 Y:4 Z:-2]
+<Architect> and finally a step up and step down
+[Builder puts down a red block at X:-4 Y:4 Z:-2]
+[Builder puts down a red block at X:-5 Y:4 Z:-2]
+[Builder puts down a red block at X:-4 Y:5 Z:-2]
+[Builder picks up a red block at X:-4 Y:4 Z:-2]
+<Architect> awesome

@@ -1,0 +1,88 @@
+B3-A2-C11-1522448586382
+<Builder> Mission has started.
+<Builder> hello once again architect, my only friend and parent
+<Builder> what are we building today?
+<Architect> we are building a heart
+<Builder> anatomical or figurative?
+<Architect> figurative, it looks diseased as well
+<Builder> oh my, well let's see what we can do about that
+<Architect> ok start in the very center with one red block
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder picks up a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> heart is perpendicular to the ground
+[Builder puts down a red block at X:0 Y:2 Z:0]
+<Architect> so we are going to need blue placeholders to the left and right of the base block
+[Builder picks up a red block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+<Builder> like that?
+<Architect> you got it
+<Architect> do that twice more
+[Builder puts down a blue block at X:-2 Y:2 Z:0]
+[Builder puts down a blue block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:3 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+[Builder puts down a blue block at X:-3 Y:3 Z:0]
+[Builder puts down a blue block at X:3 Y:3 Z:0]
+[Builder puts down a red block at X:3 Y:4 Z:0]
+[Builder puts down a red block at X:-3 Y:4 Z:0]
+<Architect> ok now you can get rid of the blue blocks
+[Builder picks up a blue block at X:3 Y:3 Z:0]
+[Builder picks up a blue block at X:2 Y:2 Z:0]
+[Builder picks up a blue block at X:1 Y:1 Z:0]
+[Builder picks up a blue block at X:-1 Y:1 Z:0]
+[Builder picks up a blue block at X:-2 Y:2 Z:0]
+[Builder picks up a blue block at X:-3 Y:3 Z:0]
+<Builder> ok
+<Architect> build a red block on top of each of the top red blocks
+[Builder puts down a red block at X:3 Y:5 Z:0]
+[Builder puts down a red block at X:-3 Y:5 Z:0]
+<Architect> now build towards the center with two more red blocks per side
+[Builder puts down a red block at X:2 Y:5 Z:0]
+[Builder puts down a red block at X:1 Y:5 Z:0]
+[Builder puts down a red block at X:-2 Y:5 Z:0]
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+<Architect> put a placeholder block in between
+[Builder puts down a blue block at X:0 Y:5 Z:0]
+[Builder puts down a red block at X:0 Y:4 Z:0]
+<Architect> and then another red one below that
+[Builder picks up a blue block at X:0 Y:5 Z:0]
+<Architect> yep
+<Architect> ok time to build the disease
+<Builder> i am ready
+<Architect> switch to orange
+[Builder puts down a orange block at X:-2 Y:5 Z:-1]
+[Builder puts down a orange block at X:-3 Y:5 Z:-1]
+[Builder puts down a orange block at X:-3 Y:4 Z:-1]
+[Builder picks up a orange block at X:-2 Y:5 Z:-1]
+[Builder picks up a orange block at X:-3 Y:5 Z:-1]
+[Builder picks up a orange block at X:-3 Y:4 Z:-1]
+<Architect> place an orange block to the right of the base red block with two spaces in between
+[Builder puts down a orange block at X:-3 Y:1 Z:0]
+<Architect> nice
+<Architect> now put one diagonally above to the left of that orange block
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+<Architect> and then do it again
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:6 Z:0]
+<Architect> yes actually
+<Architect> ok there is like a floating l to the upper left so now we are going to build that
+[Builder puts down a orange block at X:3 Y:6 Z:0]
+[Builder picks up a orange block at X:3 Y:6 Z:0]
+<Builder> ok
+<Architect> put two blue blocks on top of the upper left orange block
+[Builder puts down a blue block at X:2 Y:7 Z:0]
+[Builder puts down a blue block at X:2 Y:8 Z:0]
+<Architect> now put two orange blocks to the left
+[Builder puts down a orange block at X:3 Y:8 Z:0]
+[Builder puts down a orange block at X:4 Y:8 Z:0]
+<Architect> and one under the second one
+[Builder puts down a orange block at X:4 Y:7 Z:0]
+<Architect> now you can get rid of blue
+[Builder picks up a blue block at X:2 Y:7 Z:0]
+[Builder picks up a blue block at X:2 Y:8 Z:0]
+<Architect> nice, that's it
+<Builder> awesome

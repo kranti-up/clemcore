@@ -1,0 +1,60 @@
+B42-A4-C97-1524080857312
+<Builder> Mission has started.
+<Architect> ready?
+<Architect> start with red
+<Builder> yep yep
+<Architect> in the middle
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> build a small 2x3 rectangle vertically
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+<Architect> long edge flat on the surface
+[Builder puts down a red block at X:1 Y:3 Z:-2]
+[Builder picks up a red block at X:1 Y:3 Z:-2]
+[Builder picks up a red block at X:1 Y:3 Z:-1]
+[Builder picks up a red block at X:1 Y:3 Z:0]
+[Builder picks up a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+<Architect> cool. now one red next to each bottom one
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+<Architect> good. now delete the middle one
+[Builder picks up a red block at X:0 Y:1 Z:0]
+<Builder> both?
+<Architect> nope. just the one
+<Architect> switch to blue
+<Architect> put a blue block on the single red to your left
+[Builder puts down a blue block at X:2 Y:2 Z:0]
+<Architect> now you're making the same structure upside down and perpendicular to the red one
+[Builder puts down a blue block at X:2 Y:2 Z:-1]
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+[Builder puts down a blue block at X:2 Y:1 Z:-3]
+[Builder puts down a blue block at X:2 Y:2 Z:-3]
+[Builder puts down a blue block at X:2 Y:2 Z:-4]
+<Architect> going toward teh other side
+[Builder picks up a blue block at X:2 Y:2 Z:-4]
+[Builder picks up a blue block at X:2 Y:2 Z:-3]
+[Builder picks up a blue block at X:2 Y:1 Z:-3]
+[Builder picks up a blue block at X:2 Y:1 Z:-2]
+[Builder picks up a blue block at X:2 Y:1 Z:-1]
+[Builder picks up a blue block at X:2 Y:2 Z:-1]
+<Builder> ok
+[Builder puts down a blue block at X:2 Y:1 Z:1]
+[Builder puts down a blue block at X:2 Y:2 Z:1]
+[Builder puts down a blue block at X:2 Y:2 Z:2]
+[Builder puts down a blue block at X:2 Y:2 Z:3]
+[Builder puts down a blue block at X:2 Y:1 Z:3]
+[Builder puts down a blue block at X:2 Y:1 Z:4]
+[Builder puts down a blue block at X:2 Y:1 Z:2]
+[Builder picks up a blue block at X:2 Y:2 Z:2]
+<Architect> you should make a "u" shape out of the blue
+[Builder picks up a blue block at X:2 Y:1 Z:4]
+[Builder puts down a blue block at X:2 Y:2 Z:4]
+<Builder> ok
+<Architect> yeah you got it
+<Architect> perfect. all done
+<Builder> yay

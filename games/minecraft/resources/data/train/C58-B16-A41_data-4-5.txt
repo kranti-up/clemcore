@@ -1,0 +1,112 @@
+B16-A41-C58-1522944764224
+<Builder> Mission has started.
+<Architect> Okay. Put down a line of five blue blocks close a few square away from the corner of the environment.
+<Builder> here? the outlined area?
+[Builder puts down a blue block at X:3 Y:1 Z:2]
+<Architect> Sorry, typo lol. Yeah that's good. Parallel to the edge of the environment
+[Builder puts down a blue block at X:2 Y:1 Z:2]
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+[Builder puts down a blue block at X:-1 Y:1 Z:2]
+[Builder puts down a blue block at X:-2 Y:1 Z:2]
+[Builder picks up a blue block at X:-2 Y:1 Z:2]
+<Architect> Okay. Now two yellow blocks, parallel to the blue blocks. on the side closest to you and closest to the edge of the environment.
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+[Builder puts down a yellow block at X:1 Y:1 Z:1]
+[Builder picks up a yellow block at X:1 Y:1 Z:1]
+<Builder> this?
+<Architect> Should be on the left side, sorry.
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+[Builder picks up a yellow block at X:0 Y:1 Z:1]
+[Builder picks up a yellow block at X:-1 Y:1 Z:1]
+[Builder puts down a yellow block at X:3 Y:1 Z:1]
+[Builder puts down a yellow block at X:2 Y:1 Z:1]
+<Architect> cool. Now one more yellow block to the left of those two
+[Builder puts down a yellow block at X:4 Y:1 Z:1]
+<Architect> Perfect. Now a row of two yellow blocks, one on top of the yellow block that's sticking out, and one next to that one.
+[Builder puts down a yellow block at X:4 Y:2 Z:1]
+[Builder puts down a yellow block at X:3 Y:2 Z:1]
+<Builder> this?
+<Architect> yep perfect
+<Architect> now delete the yellow block on the bottom, closest to the edge of the environment
+[Builder picks up a yellow block at X:4 Y:1 Z:1]
+<Architect> cool. now fill in the rest of that row with three blue blocks on the ground, parallel to the other blue blocks
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+<Architect> Great!
+<Builder> sorry, that took a minute!
+<Architect> Yeah sorry my instruction was ambiguous haha
+<Architect> Okay, now adjacent to the middle blue block that you just laid down
+<Architect> You are going to build the same yellow structure that you did before
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+<Architect> It will be perpendicular to the other yellow structure
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder picks up a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:-2]
+<Architect> And the dangling part faces away from the blue blocks
+[Builder puts down a yellow block at X:0 Y:2 Z:-2]
+[Builder picks up a yellow block at X:0 Y:1 Z:-2]
+<Architect> Perfect!
+<Architect> Okay now fill in blue blocks on the ground so that the blocks on the ground form a rectangle. It will be 4 blocks by 5 blocks.
+[Builder puts down a blue block at X:4 Y:1 Z:1]
+[Builder puts down a blue block at X:4 Y:1 Z:0]
+[Builder puts down a blue block at X:4 Y:1 Z:-1]
+[Builder puts down a blue block at X:4 Y:1 Z:-2]
+[Builder puts down a blue block at X:4 Y:1 Z:-3]
+[Builder puts down a blue block at X:3 Y:1 Z:-3]
+[Builder puts down a blue block at X:2 Y:1 Z:-3]
+[Builder picks up a blue block at X:4 Y:1 Z:-3]
+[Builder picks up a blue block at X:3 Y:1 Z:-3]
+[Builder picks up a blue block at X:2 Y:1 Z:-3]
+<Architect> Sorry, the dangling bits will hang over the edges of the rectangle
+[Builder puts down a blue block at X:4 Y:1 Z:-3]
+[Builder picks up a blue block at X:4 Y:1 Z:-3]
+[Builder puts down a blue block at X:3 Y:1 Z:-2]
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+[Builder picks up a blue block at X:1 Y:1 Z:-2]
+[Builder picks up a blue block at X:2 Y:1 Z:-2]
+[Builder picks up a blue block at X:3 Y:1 Z:-2]
+[Builder picks up a blue block at X:4 Y:1 Z:-2]
+[Builder picks up a blue block at X:4 Y:1 Z:-1]
+[Builder picks up a blue block at X:4 Y:1 Z:0]
+[Builder picks up a blue block at X:4 Y:1 Z:1]
+[Builder puts down a blue block at X:3 Y:1 Z:0]
+[Builder puts down a blue block at X:3 Y:1 Z:-1]
+[Builder puts down a blue block at X:3 Y:1 Z:-2]
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+[Builder puts down a blue block at X:4 Y:1 Z:1]
+[Builder puts down a blue block at X:4 Y:1 Z:0]
+[Builder puts down a blue block at X:4 Y:1 Z:-1]
+[Builder puts down a blue block at X:4 Y:1 Z:-2]
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+<Architect> So fill in the space between the two yellow shapes first
+[Builder puts down a blue block at X:2 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+<Architect> Fill in that gap with blue
+<Builder> I can't? It doesn't seem like there is anymore blue. Do I remove a portion already built?
+<Architect> Oh yeah. Remove the rows that go underneath the dangling yellow parts
+[Builder picks up a blue block at X:0 Y:1 Z:-2]
+[Builder picks up a blue block at X:1 Y:1 Z:-2]
+[Builder picks up a blue block at X:2 Y:1 Z:-2]
+[Builder picks up a blue block at X:3 Y:1 Z:-2]
+[Builder picks up a blue block at X:4 Y:1 Z:-2]
+[Builder picks up a blue block at X:4 Y:1 Z:0]
+[Builder picks up a blue block at X:4 Y:1 Z:-1]
+[Builder picks up a blue block at X:4 Y:1 Z:1]
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+<Architect> Okay great
+<Builder> That was rough, sorry
+<Architect> Now just fill in two blocks next to the yellow thing
+<Architect> So the whole base forms a rectangle
+<Architect> No worries, this is a weird one
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+<Architect> Yay we did it!!

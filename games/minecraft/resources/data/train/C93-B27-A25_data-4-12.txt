@@ -1,0 +1,26 @@
+B27-A25-C93-1523572845054
+<Builder> Mission has started.
+<Architect> hey
+<Architect> we ready to build?
+<Builder> lets go
+<Architect> ok, first place down 2 red blocks towards the middle of the grid
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+<Architect> then put two more stacked on top of the left red
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder puts down a red block at X:1 Y:3 Z:-2]
+<Architect> then one behind the topmost red block
+<Architect> a yellow block*
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+<Builder> like that?
+<Architect> and then a yellow block to the left of that one
+[Builder puts down a yellow block at X:0 Y:2 Z:-2]
+[Builder picks up a yellow block at X:0 Y:2 Z:-2]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+<Architect> and then two below that one
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+<Architect> looks like we're done!
+<Builder> nice

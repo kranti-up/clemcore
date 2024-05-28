@@ -1,0 +1,86 @@
+B34-A31-C91-1523650839792
+<Builder> Mission has started.
+<Architect> This one is a very colorful castle
+<Architect> Ready for it?
+<Builder> of course
+<Architect> About four blocks from an edge, put down an orange block
+[Builder puts down a orange block at X:-2 Y:1 Z:-2]
+<Builder> ??
+<Architect> That is good
+<Architect> To the left of the orange block, place two more orange blocks
+[Builder puts down a orange block at X:-1 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+<Architect> Great
+<Architect> Put another layer of orange blocks on top of that
+[Builder puts down a orange block at X:-2 Y:2 Z:-2]
+[Builder puts down a orange block at X:-1 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+<Builder> lmk if you want me to move
+<Architect> Perfect! Now we will use blue. Next to one end of that orange wall, building a blue pillar three blocks high
+[Builder puts down a blue block at X:-3 Y:1 Z:-2]
+[Builder puts down a blue block at X:-3 Y:2 Z:-2]
+[Builder puts down a blue block at X:-3 Y:3 Z:-2]
+<Architect> Okay, I will let you know if I need you to move, thanks
+<Builder> is this 2D or 3D?
+<Architect> It will be 3D
+<Architect> On top of the blue pillar, place one yellow block
+[Builder puts down a yellow block at X:-3 Y:4 Z:-2]
+<Architect> Great, do that same blue pillar and yellow block, but on the other edge of the orange wall
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:2 Z:-2]
+[Builder puts down a blue block at X:1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:1 Y:4 Z:-2]
+<Builder> is this one face?
+<Architect> Yes, we will begin to make it 3D
+<Architect> We will use purple blocks now
+<Architect> If you could, move to the other side of the wall
+<Architect> Right there
+<Builder> left or right side?
+<Architect> Coming off the blue pillar on the right, place three purple blocks moving away from the structure
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+<Architect> Just like that
+<Builder> one more layer?
+<Architect> Building one more layer
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder picks up a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:2 Z:1]
+[Builder picks up a purple block at X:1 Y:3 Z:1]
+<Architect> Perfect, you can make another one of those coming off the other blue pillar
+<Builder> blue pillar with yellow block?
+[Builder puts down a purple block at X:-3 Y:1 Z:-1]
+[Builder puts down a purple block at X:-3 Y:2 Z:-1]
+<Architect> yes
+[Builder puts down a purple block at X:-3 Y:1 Z:0]
+[Builder puts down a purple block at X:-3 Y:2 Z:0]
+[Builder puts down a purple block at X:-3 Y:1 Z:1]
+[Builder puts down a purple block at X:-3 Y:2 Z:1]
+[Builder puts down a blue block at X:-3 Y:1 Z:2]
+[Builder puts down a blue block at X:-3 Y:2 Z:2]
+[Builder puts down a blue block at X:-3 Y:3 Z:2]
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+[Builder puts down a blue block at X:1 Y:2 Z:2]
+[Builder puts down a blue block at X:1 Y:3 Z:2]
+[Builder puts down a yellow block at X:1 Y:4 Z:2]
+[Builder puts down a yellow block at X:-3 Y:4 Z:2]
+<Architect> Nice
+<Builder> what color?
+<Builder> for the last wall?
+<Architect> Now we will build the gate; it will be red
+<Builder> oh a gate
+<Builder> fancy
+<Architect> Build a tower of red blocks three high next to one of the blue pillars
+[Builder puts down a red block at X:-2 Y:1 Z:2]
+[Builder puts down a red block at X:-2 Y:2 Z:2]
+[Builder puts down a red block at X:-2 Y:3 Z:2]
+<Architect> Do the same on the other side
+[Builder puts down a red block at X:0 Y:1 Z:2]
+[Builder puts down a red block at X:0 Y:2 Z:2]
+[Builder puts down a red block at X:0 Y:3 Z:2]
+<Architect> Perfect, now one red block connecting the two top red blocks
+[Builder puts down a red block at X:-1 Y:3 Z:2]
+<Architect> Awesome, let me just double check to make sure it's complete
+<Builder> alright
+<Architect> Looks good to me

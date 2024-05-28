@@ -1,0 +1,45 @@
+B40-A14-C45-1523053306494
+<Builder> Mission has started.
+<Builder> hi
+<Architect> Place three blue blocks in the center of a row
+<Builder> anywhere?
+<Architect> You can start about three rows down from top
+<Builder> sure
+<Builder> exact center?
+<Builder> or roughly?
+[Builder puts down a blue block at X:1 Y:1 Z:3]
+[Builder puts down a blue block at X:-1 Y:1 Z:3]
+[Builder puts down a blue block at X:0 Y:1 Z:3]
+<Architect> No it doesn't really matter there should just be enough space to build a few blocks on on all sides
+<Builder> cool
+<Architect> Now place two more blue blocks one below the other in front of the left one
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+[Builder puts down a blue block at X:1 Y:2 Z:2]
+<Builder> like this?
+<Architect> Oh sorry I didn't mean on top
+<Architect> I meant next to the left one
+[Builder picks up a blue block at X:1 Y:2 Z:2]
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+<Builder> here?
+<Architect> Yeah that's right!
+<Architect> This entire structure is flat so there is no stacking at all
+<Builder> cool
+<Architect> Now place two more blue blocks on the right of the block you're standing right in front
+<Architect> right in front of
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+<Architect> Great!
+<Architect> Now put two green blocks in the center to form a 3X3 square
+[Builder puts down a green block at X:0 Y:1 Z:2]
+[Builder puts down a green block at X:-1 Y:1 Z:2]
+<Architect> Cool. Now place another green block next to the green one on the right so that it juts out of the square
+[Builder puts down a green block at X:-2 Y:1 Z:2]
+<Architect> Perfect. Now place two green blocks behind it
+[Builder puts down a green block at X:-2 Y:1 Z:3]
+[Builder puts down a green block at X:-2 Y:1 Z:4]
+<Architect> Great, this is the last step. Place two green blocks right next to the one jutting out
+[Builder puts down a green block at X:-1 Y:1 Z:4]
+[Builder puts down a green block at X:0 Y:1 Z:4]
+<Builder> done?
+<Architect> yes done!
+<Builder> :)

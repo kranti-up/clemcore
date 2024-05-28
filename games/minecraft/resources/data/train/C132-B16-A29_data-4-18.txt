@@ -1,0 +1,68 @@
+B16-A29-C132-1524065152523
+<Builder> Mission has started.
+<Builder> welcome back!
+<Architect> thank you, you too, robot friend
+<Architect> this one is just a geometric shape
+<Builder> beep boop, okay
+<Architect> its a mostly purple wall that is suspended one block in the air
+<Architect> it runs along the diagonal
+<Architect> it's 4 blocks high
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+<Architect> and 4 blocks along the diagonal
+[Builder puts down a purple block at X:0 Y:1 Z:1]
+[Builder puts down a purple block at X:-1 Y:1 Z:2]
+[Builder puts down a purple block at X:-2 Y:1 Z:3]
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:0 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:2 Z:2]
+<Architect> you got it!
+[Builder puts down a purple block at X:-2 Y:2 Z:3]
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+[Builder puts down a purple block at X:-2 Y:3 Z:3]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:4 Z:0]
+[Builder puts down a purple block at X:0 Y:4 Z:1]
+[Builder puts down a purple block at X:-1 Y:4 Z:2]
+[Builder puts down a purple block at X:-2 Y:4 Z:3]
+<Builder> fun shape
+<Architect> yes
+<Architect> one more on top of each then remove the bottom blocks
+<Architect> so it is suspended in air
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:5 Z:1]
+[Builder puts down a purple block at X:-1 Y:5 Z:2]
+[Builder puts down a purple block at X:-2 Y:5 Z:3]
+[Builder picks up a purple block at X:-2 Y:1 Z:3]
+[Builder picks up a purple block at X:-1 Y:1 Z:2]
+[Builder picks up a purple block at X:0 Y:1 Z:1]
+[Builder picks up a purple block at X:1 Y:1 Z:0]
+<Architect> now we need to replace 4 of these blocks with red blocks
+<Architect> starting from the left
+<Architect> oops
+<Architect> it's 5 high
+[Builder puts down a purple block at X:1 Y:6 Z:0]
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+<Architect> so we need one more on top
+[Builder picks up a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:6 Z:1]
+[Builder puts down a purple block at X:-1 Y:6 Z:2]
+[Builder puts down a purple block at X:-2 Y:6 Z:3]
+<Builder> no problem!
+<Architect> thank you
+<Architect> ok so replacing with red blocks:
+<Architect> 2nd from top
+[Builder picks up a purple block at X:1 Y:5 Z:0]
+[Builder puts down a red block at X:1 Y:5 Z:0]
+<Architect> middle
+[Builder picks up a purple block at X:0 Y:4 Z:1]
+[Builder puts down a red block at X:0 Y:4 Z:1]
+<Architect> 2nd from top
+[Builder picks up a purple block at X:-1 Y:5 Z:2]
+[Builder puts down a red block at X:-1 Y:5 Z:2]
+<Architect> middle
+[Builder puts down a red block at X:-3 Y:4 Z:3]
+[Builder picks up a red block at X:-3 Y:4 Z:3]
+[Builder picks up a purple block at X:-2 Y:4 Z:3]
+[Builder puts down a red block at X:-2 Y:4 Z:3]
+<Architect> greeeeeat!

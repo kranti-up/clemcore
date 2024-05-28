@@ -1,0 +1,72 @@
+B42-A12-C79-1523305466875
+<Builder> Mission has started.
+<Builder> ready to go
+<Architect> start with a yellow tower 3 high in the center
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+<Builder> good
+<Architect> make a flat plus sign
+<Builder> on top?
+<Builder> and what color?
+<Architect> at the 3rd level
+<Architect> yellow
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+<Builder> good?
+<Architect> good. One bieeger on each side
+[Builder puts down a yellow block at X:0 Y:3 Z:2]
+[Builder puts down a yellow block at X:2 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:-2]
+<Architect> r
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+<Architect> good
+<Architect> cut the 2 supporting blocks
+[Builder picks up a yellow block at X:0 Y:2 Z:0]
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+<Architect> add and orange block to any side
+[Builder puts down a orange block at X:-3 Y:3 Z:0]
+<Builder> like so?
+<Architect> good
+<Architect> and a green one on the opposite end
+[Builder puts down a green block at X:3 Y:3 Z:0]
+<Architect> make that green one into a plus
+<Architect> a small one
+[Builder puts down a green block at X:3 Y:3 Z:1]
+[Builder puts down a green block at X:4 Y:3 Z:0]
+[Builder puts down a green block at X:3 Y:3 Z:-1]
+<Architect> vertical
+<Builder> ok
+[Builder picks up a green block at X:3 Y:3 Z:-1]
+[Builder picks up a green block at X:4 Y:3 Z:0]
+[Builder picks up a green block at X:3 Y:3 Z:1]
+[Builder puts down a green block at X:3 Y:4 Z:0]
+[Builder puts down a green block at X:3 Y:3 Z:1]
+[Builder puts down a green block at X:3 Y:3 Z:-1]
+[Builder puts down a green block at X:3 Y:2 Z:0]
+<Architect> good
+<Architect> add 3 more orange blocks to the left of the one over there
+<Builder> you mean the other orange one?
+<Architect> yes
+<Builder> what configuration just a line?
+[Builder puts down a orange block at X:-3 Y:3 Z:1]
+[Builder puts down a orange block at X:-3 Y:3 Z:2]
+[Builder puts down a orange block at X:-3 Y:3 Z:3]
+<Architect> roght
+<Architect> make that into a flat plus by adding 2 more orange blocks
+[Builder puts down a orange block at X:-2 Y:3 Z:2]
+[Builder puts down a orange block at X:-4 Y:3 Z:2]
+<Architect> not touching andy yellow
+<Builder> that good?
+<Architect> rght
+<Architect> extend the orange line by 3 blue blocks in the opposite direction
+[Builder puts down a blue block at X:-3 Y:3 Z:-1]
+[Builder puts down a blue block at X:-3 Y:3 Z:-2]
+[Builder puts down a blue block at X:-3 Y:3 Z:-3]
+<Architect> and then turn it into a vertical plus
+[Builder puts down a blue block at X:-3 Y:4 Z:-2]
+[Builder puts down a blue block at X:-3 Y:2 Z:-2]
+<Architect> and you win
+<Architect> !

@@ -1,0 +1,161 @@
+B16-A29-C134-1524066361355
+<Builder> Mission has started.
+<Builder> hi again! more building
+<Architect> hello
+<Architect> this one is like a very colorful parachute
+<Builder> exciting!
+<Architect> so, 8 up in the air
+<Architect> we need a 3x3 square that lies flat
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:1 Y:2 Z:1]
+[Builder puts down a green block at X:1 Y:3 Z:1]
+[Builder puts down a green block at X:1 Y:4 Z:1]
+<Architect> the middle column will be purple
+[Builder puts down a green block at X:1 Y:5 Z:1]
+<Architect> the two outside columns are blue
+[Builder puts down a green block at X:1 Y:6 Z:1]
+[Builder puts down a green block at X:1 Y:7 Z:1]
+[Builder puts down a green block at X:1 Y:8 Z:1]
+[Builder puts down a green block at X:1 Y:9 Z:1]
+[Builder picks up a green block at X:1 Y:9 Z:1]
+[Builder puts down a blue block at X:1 Y:9 Z:1]
+[Builder puts down a purple block at X:0 Y:9 Z:1]
+<Architect> it needs to lie flat
+[Builder puts down a blue block at X:-1 Y:9 Z:1]
+[Builder puts down a blue block at X:-1 Y:9 Z:0]
+[Builder puts down a blue block at X:-1 Y:9 Z:-1]
+<Architect> there you go
+[Builder puts down a green block at X:0 Y:9 Z:0]
+[Builder picks up a green block at X:0 Y:9 Z:0]
+[Builder puts down a purple block at X:0 Y:9 Z:0]
+[Builder puts down a purple block at X:0 Y:9 Z:-1]
+[Builder puts down a blue block at X:1 Y:9 Z:0]
+[Builder puts down a blue block at X:1 Y:9 Z:-2]
+[Builder picks up a blue block at X:2 Y:9 Z:-2]
+[Builder picks up a blue block at X:1 Y:9 Z:-2]
+[Builder picks up a green block at X:1 Y:8 Z:1]
+[Builder picks up a green block at X:1 Y:7 Z:1]
+[Builder picks up a green block at X:1 Y:6 Z:1]
+[Builder picks up a green block at X:1 Y:5 Z:1]
+[Builder picks up a green block at X:1 Y:4 Z:1]
+[Builder picks up a green block at X:1 Y:3 Z:1]
+[Builder picks up a green block at X:1 Y:2 Z:1]
+[Builder picks up a green block at X:1 Y:1 Z:1]
+<Architect> now on each blue side
+<Architect> one block down
+<Architect> make a column of 3 green blocks at an angle to the blue ones
+[Builder puts down a green block at X:1 Y:8 Z:1]
+[Builder puts down a green block at X:1 Y:8 Z:0]
+[Builder puts down a green block at X:1 Y:7 Z:0]
+[Builder puts down a green block at X:1 Y:7 Z:-1]
+[Builder puts down a green block at X:1 Y:6 Z:-1]
+[Builder picks up a green block at X:1 Y:7 Z:-1]
+[Builder picks up a green block at X:1 Y:7 Z:0]
+[Builder puts down a green block at X:1 Y:7 Z:0]
+[Builder picks up a green block at X:1 Y:8 Z:0]
+<Builder> like this?
+<Architect> not quite
+<Architect> as if you make 3 green blocks adjacent to the blue
+<Architect> but shifted down a block
+[Builder puts down a green block at X:1 Y:7 Z:1]
+[Builder picks up a green block at X:1 Y:7 Z:0]
+[Builder picks up a green block at X:1 Y:6 Z:-1]
+[Builder picks up a green block at X:1 Y:8 Z:1]
+[Builder puts down a green block at X:1 Y:6 Z:1]
+[Builder puts down a green block at X:1 Y:5 Z:1]
+<Architect> let's try this a different way
+<Builder> alright, sorry!
+<Architect> build 3 green blocks adjacent to the blue blocks
+[Builder picks up a green block at X:1 Y:7 Z:1]
+[Builder picks up a green block at X:1 Y:6 Z:1]
+[Builder picks up a green block at X:1 Y:5 Z:1]
+[Builder puts down a green block at X:2 Y:9 Z:1]
+[Builder puts down a green block at X:3 Y:9 Z:1]
+[Builder puts down a green block at X:4 Y:9 Z:1]
+<Architect> we want them exactly adjacent
+[Builder picks up a green block at X:2 Y:9 Z:1]
+[Builder picks up a green block at X:4 Y:9 Z:1]
+[Builder picks up a green block at X:3 Y:9 Z:1]
+[Builder puts down a green block at X:2 Y:9 Z:1]
+[Builder puts down a green block at X:2 Y:9 Z:0]
+[Builder puts down a green block at X:2 Y:9 Z:-1]
+<Architect> so add another
+<Architect> right
+<Architect> now make 3 green blocks exactly below those
+[Builder puts down a green block at X:2 Y:8 Z:1]
+[Builder puts down a green block at X:2 Y:8 Z:0]
+[Builder puts down a green block at X:2 Y:8 Z:-1]
+[Builder picks up a green block at X:2 Y:9 Z:-1]
+[Builder picks up a green block at X:2 Y:9 Z:0]
+[Builder picks up a green block at X:2 Y:9 Z:1]
+<Architect> now remove the green blocks on top
+<Architect> perfect
+<Architect> now perform the same operation
+<Architect> with yellow blocks
+<Architect> with respect to the green ones
+[Builder puts down a yellow block at X:3 Y:8 Z:-1]
+[Builder puts down a yellow block at X:3 Y:8 Z:0]
+[Builder puts down a yellow block at X:3 Y:8 Z:1]
+[Builder puts down a yellow block at X:3 Y:7 Z:1]
+[Builder puts down a yellow block at X:3 Y:7 Z:0]
+[Builder puts down a yellow block at X:3 Y:7 Z:-1]
+[Builder picks up a yellow block at X:3 Y:8 Z:-1]
+[Builder picks up a yellow block at X:3 Y:8 Z:0]
+[Builder picks up a yellow block at X:3 Y:8 Z:1]
+<Architect> now do the same thing on the other side
+[Builder puts down a green block at X:-2 Y:9 Z:-1]
+[Builder puts down a green block at X:-2 Y:9 Z:0]
+<Architect> for both green and yellow so there is symmetry
+[Builder puts down a green block at X:-3 Y:9 Z:1]
+[Builder picks up a green block at X:-3 Y:9 Z:1]
+[Builder puts down a green block at X:-2 Y:8 Z:-1]
+[Builder picks up a green block at X:-2 Y:8 Z:-1]
+[Builder puts down a green block at X:-2 Y:8 Z:-1]
+[Builder puts down a green block at X:-2 Y:8 Z:0]
+[Builder puts down a green block at X:-2 Y:8 Z:1]
+[Builder picks up a green block at X:-2 Y:9 Z:1]
+[Builder picks up a green block at X:-2 Y:9 Z:0]
+[Builder picks up a green block at X:-2 Y:9 Z:-1]
+[Builder puts down a green block at X:-2 Y:7 Z:-1]
+[Builder puts down a green block at X:-2 Y:7 Z:1]
+[Builder puts down a green block at X:-2 Y:7 Z:0]
+[Builder picks up a green block at X:-2 Y:7 Z:-1]
+[Builder puts down a green block at X:-2 Y:7 Z:-1]
+[Builder puts down a yellow block at X:-3 Y:7 Z:-1]
+[Builder puts down a yellow block at X:-3 Y:7 Z:0]
+[Builder puts down a yellow block at X:-3 Y:7 Z:1]
+[Builder picks up a green block at X:-2 Y:7 Z:1]
+[Builder picks up a green block at X:-2 Y:7 Z:0]
+[Builder picks up a green block at X:-2 Y:7 Z:-1]
+<Architect> so that's the parachute
+<Architect> now we need the lines that one would be suspended from
+<Architect> they are brown
+<Architect> and begin from the middle yellow block on each side
+[Builder puts down a orange block at X:3 Y:6 Z:0]
+<Architect> they are 3 blocks on the diagonal toward the middle of the chute
+[Builder puts down a orange block at X:3 Y:5 Z:0]
+[Builder puts down a orange block at X:2 Y:5 Z:0]
+[Builder picks up a orange block at X:3 Y:5 Z:0]
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder picks up a orange block at X:2 Y:4 Z:0]
+[Builder puts down a orange block at X:-3 Y:6 Z:0]
+<Builder> like this?
+<Architect> yes
+[Builder puts down a orange block at X:-2 Y:6 Z:0]
+[Builder puts down a orange block at X:-2 Y:5 Z:0]
+<Architect> sorry i didn't see your question
+[Builder picks up a orange block at X:-2 Y:6 Z:0]
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+[Builder picks up a orange block at X:-2 Y:4 Z:0]
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+[Builder picks up a orange block at X:-2 Y:4 Z:0]
+<Architect> now one red one
+<Architect> between the bottom 2 and down one
+[Builder puts down a red block at X:0 Y:4 Z:0]
+<Architect> down one
+[Builder picks up a red block at X:0 Y:4 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder picks up a red block at X:1 Y:3 Z:0]

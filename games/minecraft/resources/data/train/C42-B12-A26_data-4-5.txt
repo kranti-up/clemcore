@@ -1,0 +1,37 @@
+B12-A26-C42-1522941761985
+<Builder> Mission has started.
+<Architect> We'll start on the base
+<Architect> First, we'll make a line of three blue bricks
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+[Builder picks up a blue block at X:1 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:2]
+[Builder picks up a blue block at X:0 Y:1 Z:1]
+<Architect> Then in front of them, make a line of three red bricks
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+<Architect> Last, a line of three purple bricks
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+<Architect> Going from the bottom left to the top right on the next level, make a diagonal of three orange bricks
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:2]
+<Architect> On the left and right of the center brick, add red bricks
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:2]
+<Architect> The red bricks should be on top of other red bricks, on the second level
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder picks up a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder picks up a red block at X:-1 Y:3 Z:2]
+<Architect> Nice! Now ad dpurple bricks on top of the two purple bricks
+[Builder puts down a purple block at X:0 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+<Architect> add purple*
+<Architect> And blue on top of the two blue bricks
+[Builder puts down a blue block at X:0 Y:2 Z:2]
+[Builder puts down a blue block at X:1 Y:2 Z:2]

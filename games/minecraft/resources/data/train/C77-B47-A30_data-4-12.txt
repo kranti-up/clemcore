@@ -1,0 +1,71 @@
+B47-A30-C77-1523543724130
+<Builder> Mission has started.
+[Builder puts down a purple block at X:0 Y:1 Z:5]
+<Architect> this one is a giant swirl
+[Builder picks up a purple block at X:0 Y:1 Z:5]
+<Builder> any color?
+<Architect> start with green and build a line on the ground 9 squares long
+[Builder puts down a green block at X:-2 Y:1 Z:3]
+[Builder puts down a green block at X:-1 Y:1 Z:3]
+[Builder puts down a green block at X:-1 Y:1 Z:2]
+[Builder picks up a green block at X:-1 Y:1 Z:2]
+[Builder puts down a green block at X:0 Y:1 Z:3]
+[Builder puts down a green block at X:1 Y:1 Z:3]
+[Builder puts down a green block at X:2 Y:1 Z:3]
+[Builder puts down a green block at X:3 Y:1 Z:3]
+[Builder puts down a green block at X:4 Y:1 Z:3]
+[Builder puts down a green block at X:-4 Y:1 Z:3]
+[Builder puts down a green block at X:-3 Y:1 Z:3]
+<Architect> now build 8 squares up on top of one end
+<Architect> with green
+[Builder puts down a green block at X:4 Y:2 Z:3]
+[Builder puts down a green block at X:4 Y:3 Z:3]
+[Builder puts down a green block at X:4 Y:4 Z:3]
+[Builder puts down a green block at X:4 Y:5 Z:3]
+[Builder puts down a green block at X:4 Y:6 Z:3]
+[Builder puts down a green block at X:4 Y:7 Z:3]
+[Builder puts down a green block at X:4 Y:8 Z:3]
+[Builder puts down a green block at X:4 Y:9 Z:3]
+<Architect> now starting to the side of the top square, build a downward facing red L
+[Builder puts down a red block at X:3 Y:9 Z:3]
+[Builder puts down a red block at X:2 Y:9 Z:3]
+[Builder puts down a red block at X:2 Y:8 Z:3]
+<Architect> make it so that is will go to the end of where the green starts on the other side
+[Builder picks up a red block at X:2 Y:8 Z:3]
+[Builder puts down a red block at X:1 Y:9 Z:3]
+[Builder puts down a red block at X:0 Y:9 Z:3]
+[Builder puts down a red block at X:-1 Y:9 Z:3]
+[Builder puts down a red block at X:-2 Y:9 Z:3]
+[Builder puts down a red block at X:-3 Y:9 Z:3]
+[Builder puts down a red block at X:-4 Y:9 Z:3]
+[Builder puts down a red block at X:-4 Y:8 Z:3]
+<Builder> here?
+<Architect> all the way down to the green minus one block
+[Builder puts down a red block at X:-4 Y:7 Z:3]
+[Builder puts down a red block at X:-4 Y:6 Z:3]
+[Builder puts down a red block at X:-4 Y:5 Z:3]
+[Builder puts down a red block at X:-4 Y:4 Z:3]
+[Builder puts down a red block at X:-4 Y:3 Z:3]
+<Builder> across, I presume?
+<Architect> ok now continue the same pattern but this time the L will be purple
+[Builder puts down a purple block at X:-3 Y:3 Z:3]
+[Builder puts down a purple block at X:-2 Y:3 Z:3]
+[Builder puts down a purple block at X:-1 Y:3 Z:3]
+[Builder puts down a purple block at X:0 Y:3 Z:3]
+[Builder puts down a purple block at X:1 Y:3 Z:3]
+[Builder puts down a purple block at X:2 Y:3 Z:3]
+[Builder puts down a purple block at X:2 Y:4 Z:3]
+[Builder puts down a purple block at X:2 Y:5 Z:3]
+[Builder puts down a purple block at X:2 Y:6 Z:3]
+[Builder puts down a purple block at X:2 Y:7 Z:3]
+<Builder> what color next?
+<Architect> ok now yellow
+[Builder puts down a yellow block at X:1 Y:7 Z:3]
+[Builder puts down a yellow block at X:0 Y:7 Z:3]
+[Builder puts down a yellow block at X:-1 Y:7 Z:3]
+[Builder puts down a yellow block at X:-2 Y:7 Z:3]
+[Builder puts down a yellow block at X:-2 Y:6 Z:3]
+[Builder puts down a yellow block at X:-2 Y:5 Z:3]
+<Architect> now 2 squares of orange to finish
+[Builder puts down a orange block at X:-1 Y:5 Z:3]
+[Builder puts down a orange block at X:0 Y:5 Z:3]

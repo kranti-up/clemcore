@@ -1,0 +1,17 @@
+B23-A29-C3-1522766721058
+<Builder> Mission has started.
+<Architect> Test chat.
+<Architect> Ready?
+<Builder> ready
+<Architect> ok. first let's orient ourselves.
+<Builder> Lets first lay some bricks for a grid system.
+<Builder> how about we set this up like a cartesian plane and you just give me (x,Y)
+<Architect> Can we agree that you are facing north?
+<Architect> x,y is ok
+[Builder puts down a purple block at X:-5 Y:1 Z:5]
+<Builder> purple is the origin
+[Builder puts down a green block at X:5 Y:1 Z:5]
+<Builder> green is x
+[Builder puts down a yellow block at X:-5 Y:1 Z:-5]
+<Builder> yellow is y
+<Builder> lets do this!

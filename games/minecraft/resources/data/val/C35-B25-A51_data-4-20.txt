@@ -1,0 +1,112 @@
+B25-A51-C35-1524266643412
+<Builder> Mission has started.
+<Architect> okay so edge closest to you, make a 4x1 row of red
+[Builder puts down a red block at X:1 Y:1 Z:-5]
+[Builder puts down a red block at X:-2 Y:1 Z:-5]
+[Builder puts down a red block at X:-1 Y:1 Z:-5]
+[Builder puts down a red block at X:0 Y:1 Z:-5]
+<Architect> on the right most red, create a 3x1 orange column on top of that red
+[Builder puts down a orange block at X:-2 Y:2 Z:-5]
+[Builder puts down a orange block at X:-2 Y:3 Z:-5]
+[Builder puts down a orange block at X:-2 Y:4 Z:-5]
+<Architect> place 1 blue on top of the top orange
+[Builder puts down a blue block at X:-2 Y:5 Z:-5]
+<Architect> now, moving onto the leftmost red on the row, place one yellow on top of it
+[Builder puts down a yellow block at X:1 Y:2 Z:-5]
+<Architect> now place a green on top of the yellow
+[Builder puts down a green block at X:1 Y:3 Z:-5]
+<Architect> so to the right of the green, place one yellow
+[Builder puts down a yellow block at X:0 Y:3 Z:-5]
+<Architect> on top of that yellow, place one green
+[Builder puts down a green block at X:0 Y:4 Z:-5]
+<Architect> now do the same for that green; place a yellow to its right
+[Builder puts down a green block at X:-1 Y:3 Z:-5]
+[Builder picks up a green block at X:-1 Y:3 Z:-5]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-5]
+<Architect> now, place one green on top of that yellow
+[Builder puts down a green block at X:-1 Y:5 Z:-5]
+<Architect> lets move to the right view now
+<Architect> add 3 additional blue blocks going to the right of the current blue block to form a 3x1 row
+[Builder puts down a blue block at X:-2 Y:5 Z:-4]
+[Builder puts down a blue block at X:-2 Y:5 Z:-3]
+[Builder puts down a blue block at X:-3 Y:5 Z:-2]
+[Builder picks up a blue block at X:-3 Y:5 Z:-2]
+<Architect> now lets move onto the right view again
+<Architect> place a purple on the right of the blue block sticking out towards you
+[Builder puts down a purple block at X:-2 Y:5 Z:-1]
+<Architect> okay so now place a purple under that purple
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+<Architect> now move to the right again
+<Architect> place a purple to the right of the bottom purple
+[Builder puts down a purple block at X:-2 Y:4 Z:-2]
+<Architect> now place one purple block sticking out towards you
+[Builder puts down a purple block at X:-1 Y:4 Z:-2]
+<Architect> now get rid of the purple under the blue
+[Builder picks up a purple block at X:-2 Y:4 Z:-2]
+<Architect> and then get rid of the purple that was to the left of the block you just got rid of
+[Builder picks up a purple block at X:-2 Y:4 Z:-1]
+<Architect> perfect, so place a purple under the purple block on your right
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+<Architect> okay so place another purple to its right
+[Builder puts down a purple block at X:-1 Y:3 Z:-3]
+<Architect> okay hold on
+<Architect> okay okay so place a purple sticking out twoards you on the one that's touching the blue
+[Builder puts down a green block at X:-1 Y:5 Z:-1]
+[Builder picks up a green block at X:-1 Y:5 Z:-1]
+[Builder puts down a purple block at X:-1 Y:5 Z:-1]
+<Architect> now place a purple that's diagonal of that block
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder puts down a purple block at X:0 Y:6 Z:-1]
+[Builder picks up a purple block at X:0 Y:5 Z:-1]
+<Architect> right view
+[Builder picks up a purple block at X:0 Y:6 Z:-1]
+[Builder puts down a purple block at X:-1 Y:6 Z:-1]
+[Builder puts down a purple block at X:-1 Y:6 Z:-2]
+[Builder picks up a purple block at X:-1 Y:6 Z:-1]
+<Architect> sorry, it's pointing downards
+[Builder picks up a purple block at X:-1 Y:6 Z:-2]
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+[Builder puts down a purple block at X:0 Y:4 Z:-1]
+[Builder picks up a purple block at X:-1 Y:4 Z:-1]
+<Builder> like that?
+<Architect> okay so go to the right view again
+<Architect> now in between the two purples (with the block you just put), place one purple in between
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+<Architect> great, now get rid of the blocks (in that layer) surrounding that block you just placed
+[Builder picks up a purple block at X:0 Y:4 Z:-1]
+[Builder picks up a purple block at X:-1 Y:4 Z:-2]
+<Architect> hmm so there should only be 3 blues total
+<Architect> can you shift the purples to the right one?
+<Builder> yea
+[Builder picks up a blue block at X:-2 Y:5 Z:-2]
+[Builder puts down a purple block at X:-2 Y:5 Z:-2]
+[Builder puts down a purple block at X:-1 Y:5 Z:-2]
+[Builder picks up a purple block at X:-1 Y:5 Z:-1]
+[Builder picks up a purple block at X:-2 Y:5 Z:-1]
+[Builder puts down a purple block at X:-1 Y:5 Z:-3]
+[Builder picks up a purple block at X:-1 Y:5 Z:-3]
+[Builder puts down a purple block at X:0 Y:4 Z:-3]
+[Builder picks up a purple block at X:0 Y:4 Z:-2]
+[Builder picks up a purple block at X:-1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-4]
+<Builder> is that right
+<Architect> great, so the bottom most two purple blocks, can you get rid of them?
+[Builder picks up a purple block at X:-1 Y:3 Z:-4]
+[Builder picks up a purple block at X:-1 Y:3 Z:-3]
+<Builder> yea
+<Architect> okay, so you see how the purples now are sort of diagonal? can you make one more block like that in continuation
+[Builder puts down a purple block at X:0 Y:3 Z:-3]
+[Builder puts down a purple block at X:0 Y:3 Z:-4]
+[Builder puts down a purple block at X:1 Y:3 Z:-4]
+[Builder picks up a purple block at X:0 Y:3 Z:-3]
+[Builder picks up a purple block at X:0 Y:3 Z:-4]
+<Architect> okay so going back to the blue
+<Architect> the right most purple, replace it with blue
+[Builder picks up a purple block at X:-2 Y:5 Z:-2]
+[Builder puts down a purple block at X:-2 Y:5 Z:-2]
+[Builder picks up a purple block at X:-2 Y:5 Z:-2]
+[Builder puts down a purple block at X:-2 Y:5 Z:-2]
+[Builder picks up a purple block at X:-2 Y:5 Z:-2]
+[Builder puts down a blue block at X:-2 Y:5 Z:-2]
+<Architect> and its done :^) thanks for bearing with me
+<Builder> lol no prob

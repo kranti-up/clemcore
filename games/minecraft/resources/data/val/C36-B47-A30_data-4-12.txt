@@ -1,0 +1,94 @@
+B47-A30-C36-1523546973724
+<Builder> Mission has started.
+<Architect> ok leave enough room for 7x4
+<Architect> start by building a tower of 6 green squares 3 spaces from teh edge of the board in the middle
+<Builder> 3x2?
+[Builder puts down a green block at X:0 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:1 Z:-3]
+<Architect> no just a tower of 6
+<Builder> stupid question
+[Builder picks up a green block at X:-1 Y:1 Z:-3]
+[Builder puts down a green block at X:0 Y:2 Z:-3]
+[Builder puts down a green block at X:0 Y:3 Z:-3]
+[Builder puts down a green block at X:0 Y:4 Z:-3]
+[Builder puts down a green block at X:0 Y:5 Z:-3]
+[Builder puts down a green block at X:0 Y:6 Z:-3]
+<Architect> now towards the middle of the board place 2 more green blocks overhanging the top so that the top has a row of 3
+[Builder puts down a green block at X:0 Y:6 Z:-2]
+[Builder puts down a green block at X:0 Y:6 Z:-1]
+<Architect> good! now under the farthest out green block, build down 2 yellow blocks
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+<Architect> and then make that into a 2x3 rectangle perpendicular with the way the green L is facing
+[Builder puts down a yellow block at X:-1 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:1 Y:5 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+<Architect> good!
+<Architect> now from the base of the green L, build a blue tower that is 8 blocks tall but start 5 spaces forward and 2 spaces to the left
+[Builder puts down a blue block at X:2 Y:1 Z:3]
+<Builder> here?
+[Builder puts down a blue block at X:2 Y:1 Z:2]
+[Builder picks up a blue block at X:2 Y:1 Z:3]
+[Builder puts down a blue block at X:2 Y:2 Z:2]
+[Builder puts down a blue block at X:2 Y:3 Z:2]
+[Builder puts down a blue block at X:2 Y:4 Z:2]
+[Builder puts down a blue block at X:2 Y:5 Z:2]
+[Builder puts down a blue block at X:2 Y:6 Z:2]
+[Builder puts down a blue block at X:2 Y:7 Z:2]
+[Builder puts down a blue block at X:2 Y:8 Z:2]
+[Builder picks up a blue block at X:2 Y:8 Z:2]
+[Builder picks up a blue block at X:2 Y:7 Z:2]
+[Builder picks up a blue block at X:2 Y:4 Z:2]
+[Builder picks up a blue block at X:2 Y:2 Z:2]
+[Builder picks up a blue block at X:2 Y:1 Z:2]
+[Builder picks up a blue block at X:2 Y:3 Z:2]
+[Builder picks up a blue block at X:2 Y:5 Z:2]
+[Builder picks up a blue block at X:2 Y:6 Z:2]
+<Architect> yes
+<Builder> that was my right
+[Builder puts down a blue block at X:-2 Y:1 Z:2]
+[Builder picks up a blue block at X:-2 Y:1 Z:2]
+[Builder puts down a blue block at X:-2 Y:1 Z:2]
+[Builder puts down a blue block at X:2 Y:1 Z:2]
+<Architect> it was correct
+[Builder picks up a blue block at X:-2 Y:1 Z:2]
+[Builder puts down a blue block at X:2 Y:2 Z:2]
+[Builder puts down a blue block at X:2 Y:3 Z:2]
+[Builder puts down a blue block at X:2 Y:4 Z:2]
+[Builder puts down a blue block at X:2 Y:5 Z:2]
+[Builder puts down a blue block at X:2 Y:6 Z:2]
+[Builder puts down a blue block at X:2 Y:7 Z:2]
+[Builder puts down a blue block at X:2 Y:8 Z:2]
+<Builder> premature demolition
+<Architect> lol
+<Architect> now build right towards the green L from the top of the blue making a row of 3 blue
+[Builder puts down a blue block at X:2 Y:8 Z:1]
+[Builder puts down a blue block at X:2 Y:8 Z:0]
+<Architect> other way , kinda to the right i guess
+[Builder picks up a blue block at X:2 Y:8 Z:1]
+[Builder picks up a blue block at X:2 Y:8 Z:0]
+[Builder puts down a blue block at X:1 Y:8 Z:2]
+[Builder puts down a blue block at X:0 Y:8 Z:2]
+<Architect> yes! now one underneath the farthest out blue
+[Builder puts down a blue block at X:0 Y:7 Z:2]
+<Architect> and then build the yellow structure again. same dimensions
+[Builder puts down a yellow block at X:0 Y:6 Z:2]
+[Builder puts down a yellow block at X:1 Y:6 Z:2]
+[Builder puts down a yellow block at X:-1 Y:6 Z:2]
+[Builder puts down a yellow block at X:-1 Y:5 Z:2]
+[Builder puts down a yellow block at X:1 Y:5 Z:2]
+[Builder puts down a yellow block at X:0 Y:5 Z:2]
+<Architect> other way
+[Builder picks up a yellow block at X:-1 Y:6 Z:2]
+[Builder picks up a yellow block at X:0 Y:6 Z:2]
+[Builder picks up a yellow block at X:1 Y:6 Z:2]
+[Builder picks up a yellow block at X:1 Y:5 Z:2]
+[Builder picks up a yellow block at X:0 Y:5 Z:2]
+[Builder picks up a yellow block at X:-1 Y:5 Z:2]
+[Builder puts down a yellow block at X:0 Y:6 Z:2]
+[Builder puts down a yellow block at X:0 Y:6 Z:3]
+[Builder puts down a yellow block at X:0 Y:5 Z:3]
+[Builder puts down a yellow block at X:0 Y:6 Z:1]
+[Builder puts down a yellow block at X:0 Y:5 Z:1]
+[Builder puts down a yellow block at X:0 Y:5 Z:2]

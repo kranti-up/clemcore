@@ -1,0 +1,60 @@
+B34-A38-C54-1524093620446
+<Builder> Mission has started.
+<Architect> Ok, this looks like a bunch of diagonal lines
+<Builder> :|
+<Architect> Going up, sorry.
+<Architect> One block to your left, start a yellow stair case like line. It is going to be 3 blocks long
+[Builder puts down a yellow block at X:0 Y:1 Z:-5]
+<Builder> um
+<Builder> like there?
+<Architect> Yep, it should be going perpendicular to the side
+[Builder puts down a yellow block at X:0 Y:1 Z:-4]
+[Builder puts down a yellow block at X:0 Y:2 Z:-4]
+[Builder picks up a yellow block at X:0 Y:1 Z:-4]
+[Builder puts down a yellow block at X:0 Y:1 Z:-3]
+[Builder picks up a yellow block at X:0 Y:1 Z:-3]
+[Builder puts down a yellow block at X:0 Y:1 Z:-3]
+[Builder puts down a yellow block at X:0 Y:2 Z:-3]
+[Builder puts down a yellow block at X:0 Y:3 Z:-3]
+[Builder picks up a yellow block at X:0 Y:2 Z:-3]
+[Builder picks up a yellow block at X:0 Y:1 Z:-3]
+<Builder> yes?
+<Architect> If you go to the other side,
+<Architect> 4 blocks away, on the ground. We will need a red block
+[Builder puts down a red block at X:4 Y:1 Z:-3]
+<Architect> Perfect
+<Architect> This one is going to be 4 blocks long and go diagonally towards the center
+[Builder puts down a red block at X:3 Y:1 Z:-2]
+[Builder puts down a red block at X:3 Y:2 Z:-2]
+[Builder picks up a red block at X:3 Y:1 Z:-2]
+<Builder> going up?
+<Architect> Yup
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:2 Y:2 Z:-1]
+[Builder puts down a red block at X:2 Y:3 Z:-1]
+[Builder picks up a red block at X:2 Y:2 Z:-1]
+[Builder picks up a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:2 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:4 Z:0]
+[Builder picks up a red block at X:2 Y:3 Z:0]
+[Builder picks up a red block at X:1 Y:3 Z:0]
+<Builder> ok
+<Architect> At the second block from the end,
+<Architect> 5 blocks towards the other side, we will need and orange block floating 1 off the ground
+[Builder puts down a orange block at X:-3 Y:1 Z:-1]
+[Builder puts down a orange block at X:-3 Y:2 Z:-1]
+[Builder picks up a orange block at X:-3 Y:1 Z:-1]
+<Architect> Perfect, this is the start for another line going towards the center, this one goes up and is 3 blocks long
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder picks up a orange block at X:-2 Y:2 Z:-1]
+[Builder picks up a orange block at X:-2 Y:2 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:4 Z:1]
+[Builder picks up a orange block at X:-2 Y:3 Z:1]
+[Builder picks up a orange block at X:-1 Y:3 Z:1]
+<Builder> ??
+<Architect> Yup, that is it

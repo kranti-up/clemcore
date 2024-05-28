@@ -1,0 +1,63 @@
+B25-A3-C21-1523387042769
+<Builder> Mission has started.
+<Architect> ok these looks like giant glasses with purple frames and red legs
+<Architect> lets start with the purple frame
+<Builder> ok
+<Architect> we need 2 3x3 purple windows (with the center open) next to each other but with 1 space in between the squares. they should be upright
+[Builder puts down a purple block at X:-4 Y:1 Z:1]
+[Builder puts down a purple block at X:-3 Y:1 Z:1]
+[Builder picks up a purple block at X:-3 Y:1 Z:2]
+[Builder picks up a purple block at X:-3 Y:1 Z:1]
+[Builder picks up a purple block at X:-4 Y:1 Z:1]
+[Builder puts down a purple block at X:-3 Y:1 Z:1]
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+[Builder puts down a purple block at X:-2 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+[Builder puts down a purple block at X:3 Y:1 Z:1]
+[Builder puts down a purple block at X:2 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:2 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+[Builder puts down a purple block at X:2 Y:3 Z:1]
+[Builder puts down a purple block at X:3 Y:3 Z:1]
+[Builder puts down a purple block at X:3 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a purple block at X:-2 Y:3 Z:1]
+[Builder puts down a purple block at X:-3 Y:2 Z:1]
+[Builder puts down a purple block at X:-3 Y:3 Z:1]
+<Builder> is that good?
+<Architect> nice just like that then connect them at the top in the middle
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+<Architect> perfect
+<Architect> now the red legs. we need the longer side with 6 blocks and we'll just make it
+[Builder puts down a red block at X:-3 Y:3 Z:0]
+[Builder picks up a red block at X:-3 Y:3 Z:0]
+[Builder puts down a red block at X:-3 Y:3 Z:0]
+[Builder puts down a red block at X:-3 Y:3 Z:-1]
+[Builder puts down a red block at X:-3 Y:3 Z:-2]
+[Builder puts down a red block at X:-3 Y:3 Z:-3]
+[Builder puts down a red block at X:-3 Y:3 Z:-4]
+[Builder puts down a red block at X:-3 Y:3 Z:-5]
+<Architect> so on the outer top corner of each frame place 4 red blocks extending out
+[Builder picks up a red block at X:-3 Y:3 Z:-4]
+<Architect> yeah like that but only 4
+[Builder puts down a red block at X:3 Y:3 Z:-1]
+[Builder puts down a red block at X:3 Y:3 Z:-2]
+[Builder puts down a red block at X:3 Y:3 Z:-3]
+<Builder> ok
+<Builder> do they go down diagnonally?
+<Architect> then if you can just stairstep it to the ground it should be done
+<Architect> yes
+<Builder> do I fill the lenses?
+[Builder puts down a red block at X:3 Y:2 Z:-3]
+[Builder puts down a red block at X:3 Y:2 Z:-4]
+[Builder picks up a red block at X:3 Y:2 Z:-3]
+[Builder puts down a red block at X:3 Y:1 Z:-5]
+[Builder puts down a red block at X:-3 Y:1 Z:-4]
+<Architect> nope
+[Builder puts down a red block at X:-3 Y:1 Z:-5]
+[Builder puts down a red block at X:-3 Y:2 Z:-4]
+[Builder picks up a red block at X:-3 Y:1 Z:-4]
+<Architect> looks good
+<Builder> yay
+<Architect> good job :-)

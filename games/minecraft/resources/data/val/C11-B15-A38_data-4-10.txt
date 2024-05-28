@@ -1,0 +1,84 @@
+B15-A38-C11-1523400016265
+<Builder> Mission has started.
+<Builder> ready!
+<Architect> Ok.
+<Architect> This one looks like a mess. It's going to sort of resemble a heart being shot with an arrow
+<Builder> interesting :o
+<Architect> Go ahead and start with a v in the middle the sides are going to be 3 long from the point
+<Architect> err, vertically
+[Builder puts down a red block at X:0 Y:1 Z:-5]
+[Builder puts down a red block at X:1 Y:1 Z:-4]
+[Builder puts down a red block at X:2 Y:1 Z:-3]
+[Builder puts down a red block at X:3 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:1 Z:-4]
+[Builder puts down a red block at X:-2 Y:1 Z:-3]
+[Builder puts down a red block at X:-3 Y:1 Z:-2]
+<Architect> Sorry, this is going to look sort of like the bell with a vertical design
+<Builder> oh, ok!
+[Builder picks up a red block at X:2 Y:1 Z:-3]
+[Builder picks up a red block at X:3 Y:1 Z:-2]
+[Builder picks up a red block at X:1 Y:1 Z:-4]
+[Builder picks up a red block at X:-2 Y:1 Z:-3]
+[Builder picks up a red block at X:-3 Y:1 Z:-2]
+<Architect> No worries
+[Builder picks up a red block at X:-1 Y:1 Z:-4]
+[Builder puts down a red block at X:0 Y:2 Z:-5]
+[Builder puts down a red block at X:-1 Y:2 Z:-5]
+[Builder puts down a red block at X:1 Y:2 Z:-5]
+[Builder picks up a red block at X:0 Y:2 Z:-5]
+[Builder puts down a red block at X:1 Y:3 Z:-5]
+[Builder puts down a red block at X:2 Y:3 Z:-5]
+[Builder picks up a red block at X:1 Y:3 Z:-5]
+[Builder puts down a red block at X:2 Y:4 Z:-5]
+[Builder puts down a red block at X:3 Y:4 Z:-5]
+[Builder picks up a red block at X:2 Y:4 Z:-5]
+[Builder puts down a red block at X:-1 Y:3 Z:-5]
+[Builder puts down a red block at X:-2 Y:3 Z:-5]
+[Builder puts down a red block at X:-2 Y:4 Z:-6]
+[Builder picks up a red block at X:-2 Y:4 Z:-6]
+[Builder picks up a red block at X:-1 Y:3 Z:-5]
+[Builder puts down a red block at X:-3 Y:4 Z:-5]
+[Builder picks up a red block at X:-2 Y:4 Z:-5]
+<Builder> like that?
+<Architect> Yup,
+<Architect> now lay a bar across the top
+[Builder puts down a red block at X:3 Y:5 Z:-5]
+[Builder puts down a red block at X:2 Y:5 Z:-5]
+[Builder puts down a red block at X:1 Y:5 Z:-5]
+[Builder puts down a red block at X:0 Y:5 Z:-5]
+[Builder puts down a red block at X:-1 Y:5 Z:-5]
+[Builder puts down a red block at X:-2 Y:5 Z:-5]
+[Builder puts down a red block at X:-3 Y:5 Z:-5]
+<Builder> ok!
+<Architect> Can you shift the block in middle of the bar down one?
+[Builder puts down a red block at X:0 Y:4 Z:-5]
+[Builder picks up a red block at X:0 Y:5 Z:-5]
+<Builder> kk
+<Architect> Now we are going to build the arrow. Under the furthest right block, start a diagonal line of orange blocks.
+<Builder> under it?
+[Builder puts down a orange block at X:-3 Y:3 Z:-5]
+<Builder> here?
+<Architect> Sorry, from the ground
+[Builder puts down a orange block at X:-2 Y:4 Z:-5]
+[Builder picks up a orange block at X:-2 Y:4 Z:-5]
+[Builder picks up a orange block at X:-3 Y:3 Z:-5]
+[Builder puts down a orange block at X:-3 Y:1 Z:-5]
+[Builder puts down a orange block at X:-2 Y:1 Z:-5]
+[Builder puts down a orange block at X:-2 Y:2 Z:-5]
+[Builder picks up a orange block at X:-2 Y:1 Z:-5]
+[Builder puts down a orange block at X:-1 Y:3 Z:-5]
+[Builder puts down a orange block at X:2 Y:6 Z:-5]
+<Builder> like that?
+<Architect> Yup
+<Architect> Now make a 2 by 2 square where the next block would have gone
+[Builder puts down a orange block at X:2 Y:7 Z:-5]
+[Builder puts down a orange block at X:3 Y:7 Z:-5]
+[Builder picks up a orange block at X:2 Y:7 Z:-5]
+[Builder puts down a orange block at X:4 Y:7 Z:-5]
+[Builder puts down a orange block at X:4 Y:8 Z:-5]
+[Builder puts down a orange block at X:3 Y:8 Z:-5]
+<Builder> like that?
+<Architect> Yup, now punch out the bottom right bluck from the square
+[Builder picks up a orange block at X:3 Y:7 Z:-5]
+<Architect> Perfect
+<Builder> cool

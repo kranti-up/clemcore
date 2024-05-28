@@ -1,0 +1,72 @@
+B1-A4-C42-1522772175511
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hello
+<Architect> your shape is a weird multicolored block
+<Architect> start with blue
+<Architect> build a line three long
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+[Builder puts down a blue block at X:-2 Y:1 Z:-1]
+<Architect> put two blocks on top of that
+<Builder> anywhere is fine?
+<Architect> anywhere is fine
+[Builder puts down a purple block at X:-2 Y:2 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+<Architect> still blue
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder picks up a purple block at X:-1 Y:3 Z:-1]
+[Builder picks up a purple block at X:-1 Y:2 Z:-1]
+[Builder picks up a purple block at X:-2 Y:2 Z:-1]
+[Builder puts down a blue block at X:-2 Y:2 Z:-1]
+[Builder puts down a blue block at X:-1 Y:2 Z:-1]
+<Architect> good
+<Architect> now put an orange block in that empty space
+<Builder> got it
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+<Architect> now opposite side that you're standing on
+<Architect> build a line of three reds next to the three blues
+<Builder> a tower?
+[Builder puts down a red block at X:-3 Y:1 Z:-1]
+[Builder puts down a red block at X:-4 Y:1 Z:-1]
+[Builder puts down a red block at X:-5 Y:1 Z:-1]
+<Architect> no like you're making a cube
+<Builder> like this?
+<Architect> they need to be flush with the blues
+[Builder picks up a red block at X:-4 Y:1 Z:-1]
+[Builder picks up a red block at X:-5 Y:1 Z:-1]
+[Builder puts down a red block at X:-3 Y:2 Z:-1]
+[Builder puts down a red block at X:-3 Y:3 Z:-1]
+<Builder> what do you mean?
+<Architect> the goal is to make a 3x3 square on the base
+<Builder> oh let me try
+[Builder picks up a red block at X:-3 Y:3 Z:-1]
+<Architect> the reds are teh second column in the square
+[Builder picks up a red block at X:-3 Y:2 Z:-1]
+[Builder picks up a red block at X:-3 Y:1 Z:-1]
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> good
+<Builder> okay
+<Architect> now build one red block on top of the two ends of hte red line
+<Architect> like a small U shape
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+<Architect> good
+<Architect> now an orange block in that gap
+[Builder picks up a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+<Architect> now switch to purple
+<Builder> oh is it going to be similar to the blue
+<Architect> you're mirroring the blue shape
+<Builder> except the opposite orange?
+<Architect> exactly
+[Builder puts down a purple block at X:0 Y:1 Z:1]
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+[Builder puts down a purple block at X:-2 Y:1 Z:1]
+[Builder puts down a purple block at X:0 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:-2 Y:2 Z:1]
+<Architect> awesome

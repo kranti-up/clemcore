@@ -1,0 +1,103 @@
+B4-A19-C7-1522882673164
+<Builder> Mission has started.
+<Architect> ok get some blocks
+<Architect> doesnt mamtter which
+<Architect> cause this structure floats
+<Architect> so as a base put a line of 7 blocks
+[Builder puts down a red block at X:2 Y:1 Z:3]
+[Builder puts down a red block at X:1 Y:1 Z:3]
+[Builder puts down a red block at X:0 Y:1 Z:3]
+[Builder puts down a red block at X:-1 Y:1 Z:3]
+[Builder puts down a red block at X:-3 Y:1 Z:3]
+[Builder puts down a red block at X:-2 Y:1 Z:3]
+[Builder puts down a red block at X:-4 Y:1 Z:3]
+[Builder picks up a red block at X:-4 Y:1 Z:3]
+[Builder puts down a red block at X:3 Y:1 Z:3]
+<Architect> then get some orange blocks, these will be in the actual structure
+<Architect> put three on one end
+<Architect> two on the other end
+<Builder> stacked vertically?
+<Architect> horizontally
+[Builder puts down a orange block at X:3 Y:2 Z:3]
+[Builder puts down a orange block at X:2 Y:2 Z:3]
+[Builder puts down a orange block at X:1 Y:2 Z:3]
+[Builder puts down a orange block at X:-2 Y:2 Z:3]
+[Builder puts down a orange block at X:-3 Y:2 Z:3]
+<Architect> then put a block every other square on top of this row, starting from each end
+<Architect> so the next row should have 4 blocks in alternating spots
+<Builder> are some of them floating?
+[Builder puts down a yellow block at X:-3 Y:3 Z:3]
+[Builder puts down a yellow block at X:-1 Y:2 Z:3]
+[Builder puts down a yellow block at X:-1 Y:3 Z:3]
+[Builder puts down a yellow block at X:1 Y:3 Z:3]
+[Builder puts down a yellow block at X:3 Y:3 Z:3]
+<Architect> uhyeah one of them floats
+[Builder picks up a yellow block at X:-1 Y:2 Z:3]
+<Builder> like that?
+<Architect> yep
+<Architect> then the next row, fill the entire row with blocks
+<Architect> so 7 blocks
+<Builder> color?
+<Architect> oh yeah all should be orange, including the row you just made
+[Builder puts down a orange block at X:-3 Y:3 Z:4]
+[Builder picks up a orange block at X:-3 Y:3 Z:4]
+[Builder picks up a yellow block at X:-3 Y:3 Z:3]
+[Builder puts down a yellow block at X:-3 Y:3 Z:3]
+[Builder picks up a yellow block at X:-3 Y:3 Z:3]
+[Builder picks up a yellow block at X:-1 Y:3 Z:3]
+[Builder picks up a yellow block at X:1 Y:3 Z:3]
+[Builder picks up a yellow block at X:3 Y:3 Z:3]
+[Builder puts down a orange block at X:3 Y:3 Z:3]
+[Builder puts down a orange block at X:1 Y:3 Z:3]
+[Builder puts down a orange block at X:-1 Y:2 Z:3]
+[Builder puts down a orange block at X:-1 Y:3 Z:3]
+[Builder picks up a orange block at X:-1 Y:2 Z:3]
+[Builder puts down a orange block at X:-3 Y:3 Z:3]
+[Builder puts down a orange block at X:-3 Y:4 Z:3]
+[Builder puts down a orange block at X:-2 Y:4 Z:3]
+[Builder puts down a orange block at X:-1 Y:4 Z:3]
+[Builder puts down a orange block at X:0 Y:4 Z:3]
+<Architect> yeah
+[Builder puts down a orange block at X:1 Y:4 Z:3]
+[Builder puts down a orange block at X:2 Y:4 Z:3]
+[Builder puts down a orange block at X:3 Y:4 Z:3]
+[Builder picks up a orange block at X:3 Y:4 Z:4]
+<Architect> then the very last row has a red block in the very center
+[Builder puts down a red block at X:0 Y:5 Z:3]
+<Architect> then delete the base
+[Builder picks up a red block at X:-3 Y:1 Z:3]
+[Builder picks up a red block at X:-2 Y:1 Z:3]
+[Builder picks up a red block at X:-1 Y:1 Z:3]
+[Builder picks up a red block at X:0 Y:1 Z:3]
+[Builder picks up a red block at X:1 Y:1 Z:3]
+[Builder picks up a red block at X:2 Y:1 Z:3]
+[Builder picks up a red block at X:3 Y:1 Z:3]
+<Architect> nvm sorry that wasnt the last thing
+<Architect> the red top is a v shape
+<Architect> so the next row on top of the red block
+<Architect> should have two blocks
+<Architect> with one horizontal space between them
+[Builder puts down a red block at X:1 Y:5 Z:3]
+[Builder puts down a red block at X:1 Y:6 Z:3]
+[Builder puts down a red block at X:-1 Y:5 Z:3]
+[Builder puts down a red block at X:-1 Y:6 Z:3]
+[Builder picks up a red block at X:-1 Y:5 Z:3]
+[Builder picks up a red block at X:1 Y:5 Z:3]
+<Architect> yeah like that
+<Architect> now another row except with three horizontal spaces
+<Builder> got it
+[Builder puts down a red block at X:1 Y:7 Z:3]
+[Builder puts down a red block at X:2 Y:7 Z:3]
+[Builder picks up a red block at X:1 Y:7 Z:3]
+[Builder puts down a red block at X:-1 Y:7 Z:3]
+[Builder puts down a red block at X:-2 Y:7 Z:3]
+[Builder picks up a red block at X:-1 Y:7 Z:3]
+<Architect> ok now this is the last row, same thing except with 5 horizontal spaces
+[Builder puts down a red block at X:2 Y:8 Z:3]
+[Builder puts down a red block at X:3 Y:8 Z:3]
+[Builder picks up a red block at X:2 Y:8 Z:3]
+[Builder puts down a red block at X:-2 Y:8 Z:3]
+[Builder puts down a red block at X:-3 Y:8 Z:3]
+[Builder picks up a red block at X:-2 Y:8 Z:3]
+<Architect> ok now we're done
+<Builder> great

@@ -1,0 +1,58 @@
+B25-A3-C51-1523383729614
+<Builder> Mission has started.
+<Architect> ok it looks like 2 magnets interlinked sort of. first we'll start with a red U shape in the middle
+<Architect> the U should be 3 across and 3 up on each side
+<Builder> how many blocks wide is the whole figure?
+<Builder> just so i can gauge where to start
+<Architect> we will need a 4x4 space it looks like
+<Builder> ok
+<Architect> in total
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:3 Z:-1]
+[Builder puts down a red block at X:2 Y:2 Z:-1]
+[Builder puts down a red block at X:2 Y:3 Z:-1]
+<Architect> forgot to mention this first U should be flat
+<Builder> is that right?
+[Builder picks up a red block at X:0 Y:3 Z:-1]
+[Builder picks up a red block at X:0 Y:2 Z:-1]
+[Builder picks up a red block at X:2 Y:3 Z:-1]
+<Architect> but the shape is right
+[Builder picks up a red block at X:2 Y:2 Z:-1]
+[Builder puts down a red block at X:2 Y:1 Z:1]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Builder> kk
+<Architect> then place 1 orange block on the tip of each part of the U
+[Builder puts down a orange block at X:2 Y:1 Z:2]
+[Builder puts down a orange block at X:0 Y:1 Z:2]
+<Architect> great thats the first magnet. the next one is upright and we will start with the tips on the ground
+<Architect> place 1 green block on the innermost part of the U
+[Builder puts down a green block at X:1 Y:1 Z:0]
+<Architect> good now place another on the left side of the U directly across
+[Builder puts down a green block at X:3 Y:1 Z:0]
+<Builder> like that?
+<Architect> yes
+<Builder> ok
+<Architect> now if you could fill in the rest with blue blocks it should be finished
+[Builder puts down a blue block at X:3 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+[Builder puts down a blue block at X:3 Y:3 Z:0]
+[Builder puts down a blue block at X:3 Y:4 Z:0]
+[Builder puts down a blue block at X:2 Y:4 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+<Builder> like that?
+<Architect> nice let me check the orientation
+<Architect> yep
+<Builder> nice nice
+<Architect> whoops the second magnet is one shorter than that. my bad
+[Builder picks up a blue block at X:1 Y:4 Z:0]
+[Builder picks up a blue block at X:2 Y:4 Z:0]
+[Builder picks up a blue block at X:3 Y:4 Z:0]
+[Builder puts down a blue block at X:2 Y:3 Z:0]
+<Architect> ok looks good
+<Builder> lit

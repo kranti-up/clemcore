@@ -1,0 +1,119 @@
+B47-A30-C23-1523544822631
+<Builder> Mission has started.
+<Architect> this one looks like a bridge
+<Architect> it will be 10 block long and 4 blocks wide so make sure to leave enough space
+<Architect> start by building a row of 2 red blocks even with the edge at one edge of the base
+[Builder puts down a red block at X:-5 Y:1 Z:1]
+[Builder puts down a red block at X:-5 Y:1 Z:0]
+<Architect> yes now repeat so that they will have 8 spaces between them. this will be the base of the bridge
+<Builder> so make a second row 8 spaces ahead?
+[Builder puts down a red block at X:4 Y:1 Z:1]
+[Builder puts down a red block at X:4 Y:1 Z:0]
+<Architect> yes! now build a connecting purple platform on top of those
+[Builder puts down a red block at X:-4 Y:1 Z:1]
+[Builder puts down a purple block at X:-4 Y:2 Z:1]
+[Builder puts down a purple block at X:-4 Y:2 Z:0]
+[Builder picks up a red block at X:-4 Y:1 Z:1]
+[Builder puts down a red block at X:-3 Y:2 Z:1]
+[Builder picks up a red block at X:-3 Y:2 Z:1]
+[Builder puts down a purple block at X:-3 Y:2 Z:1]
+[Builder puts down a purple block at X:-3 Y:2 Z:0]
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+[Builder puts down a purple block at X:-2 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:0 Y:2 Z:0]
+[Builder puts down a purple block at X:0 Y:2 Z:1]
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:1 Y:2 Z:1]
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder puts down a purple block at X:2 Y:2 Z:1]
+[Builder puts down a purple block at X:3 Y:2 Z:0]
+[Builder puts down a purple block at X:3 Y:2 Z:1]
+<Architect> make sure to also place purple blocks on top of the red
+[Builder puts down a purple block at X:4 Y:2 Z:1]
+[Builder puts down a purple block at X:4 Y:2 Z:0]
+[Builder puts down a purple block at X:-5 Y:2 Z:0]
+[Builder puts down a purple block at X:-5 Y:2 Z:1]
+<Architect> good! now on the side of the second purple block from the end, build a tower of 4 orange squares
+[Builder puts down a orange block at X:-4 Y:2 Z:2]
+[Builder puts down a orange block at X:-4 Y:3 Z:2]
+[Builder puts down a orange block at X:-4 Y:4 Z:2]
+[Builder puts down a orange block at X:-4 Y:5 Z:2]
+<Architect> start from the ground
+[Builder puts down a orange block at X:-4 Y:1 Z:2]
+[Builder picks up a orange block at X:-4 Y:5 Z:2]
+<Builder> repeat?
+<Architect> yes now repeat on all 4 corners
+[Builder puts down a orange block at X:-4 Y:1 Z:-1]
+[Builder puts down a orange block at X:-4 Y:2 Z:-1]
+[Builder puts down a orange block at X:-4 Y:3 Z:-1]
+[Builder puts down a orange block at X:-4 Y:4 Z:-1]
+[Builder puts down a orange block at X:3 Y:1 Z:-1]
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+[Builder puts down a orange block at X:3 Y:3 Z:-1]
+[Builder puts down a orange block at X:3 Y:4 Z:-1]
+[Builder puts down a orange block at X:3 Y:1 Z:2]
+[Builder puts down a orange block at X:3 Y:2 Z:2]
+[Builder puts down a orange block at X:3 Y:3 Z:2]
+[Builder puts down a orange block at X:3 Y:4 Z:2]
+<Architect> now add 2 yellow blocks on top of all of those
+[Builder puts down a yellow block at X:-4 Y:5 Z:2]
+[Builder puts down a yellow block at X:-4 Y:6 Z:2]
+[Builder puts down a yellow block at X:-4 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-4 Y:6 Z:-1]
+[Builder puts down a yellow block at X:3 Y:5 Z:-1]
+[Builder puts down a yellow block at X:3 Y:6 Z:-1]
+[Builder puts down a yellow block at X:3 Y:5 Z:2]
+[Builder puts down a yellow block at X:3 Y:6 Z:2]
+<Architect> ok good. now build a red connection between the top yellow blocks that is in line with them
+<Builder> all 4 sides?
+<Builder> or only two?
+<Architect> just on the longest edges
+[Builder puts down a red block at X:2 Y:6 Z:-1]
+[Builder puts down a red block at X:1 Y:6 Z:-1]
+[Builder puts down a red block at X:0 Y:6 Z:-1]
+[Builder puts down a red block at X:-1 Y:6 Z:-1]
+[Builder puts down a red block at X:-2 Y:6 Z:-1]
+[Builder puts down a red block at X:-3 Y:6 Z:-1]
+[Builder puts down a red block at X:2 Y:6 Z:2]
+[Builder puts down a red block at X:1 Y:6 Z:2]
+[Builder puts down a red block at X:0 Y:6 Z:2]
+[Builder puts down a red block at X:-1 Y:6 Z:2]
+[Builder puts down a red block at X:-3 Y:6 Z:2]
+[Builder puts down a red block at X:-2 Y:6 Z:2]
+<Architect> good. now under that build 4 red blocks in the center
+<Builder> the center of the bridge? on the purple?
+<Architect> no underneath the red you just placed
+[Builder puts down a red block at X:-1 Y:5 Z:-1]
+[Builder puts down a red block at X:0 Y:5 Z:-1]
+[Builder puts down a red block at X:0 Y:5 Z:2]
+[Builder puts down a red block at X:-1 Y:5 Z:2]
+<Builder> like that?
+<Architect> yes but with 1 more on each side
+<Builder> I'm out of red
+<Architect> ok delete all of the red blocks from the top row except the very ends
+[Builder picks up a red block at X:0 Y:6 Z:-1]
+[Builder picks up a red block at X:1 Y:6 Z:-1]
+[Builder picks up a red block at X:-1 Y:6 Z:-1]
+[Builder picks up a red block at X:-2 Y:6 Z:-1]
+[Builder picks up a red block at X:1 Y:6 Z:2]
+[Builder picks up a red block at X:0 Y:6 Z:2]
+[Builder picks up a red block at X:-1 Y:6 Z:2]
+[Builder picks up a red block at X:-2 Y:6 Z:2]
+<Architect> ok then make it so that second row is 4 wide
+[Builder puts down a red block at X:-2 Y:5 Z:-1]
+[Builder puts down a red block at X:1 Y:5 Z:-1]
+[Builder puts down a red block at X:1 Y:5 Z:2]
+[Builder puts down a red block at X:-2 Y:5 Z:2]
+<Architect> and add 2 beneath it in the middle
+[Builder puts down a red block at X:0 Y:4 Z:2]
+[Builder puts down a red block at X:-1 Y:4 Z:2]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:0 Y:4 Z:-1]
+<Architect> you can delete the middle of the second row as well leaving the end peices
+[Builder picks up a red block at X:-1 Y:5 Z:2]
+[Builder picks up a red block at X:0 Y:5 Z:2]
+[Builder picks up a red block at X:0 Y:5 Z:-1]
+[Builder picks up a red block at X:-1 Y:5 Z:-1]
+<Architect> thats it!

@@ -1,0 +1,73 @@
+B29-A26-C26-1523375180553
+<Builder> Mission has started.
+<Architect> We'll start with a diagonal on the ground of 4 yellow bricks
+[Builder puts down a yellow block at X:-2 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+[Builder puts down a yellow block at X:1 Y:1 Z:-2]
+<Architect> Now add 3 red bricks on the diagonal adjacent to the yellow bricks
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+<Architect> Then add one more layer of red bricks
+<Builder> above?
+<Architect> On top of the red ones
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+<Architect> Great! Proceed to do the same thing with green bricks on the other side of the diagonal
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:-1]
+[Builder puts down a green block at X:0 Y:2 Z:-2]
+<Architect> Now remove all of the red and green bricks on the first level
+[Builder picks up a green block at X:0 Y:1 Z:-2]
+[Builder picks up a green block at X:-1 Y:1 Z:-1]
+[Builder picks up a green block at X:-2 Y:1 Z:0]
+[Builder picks up a red block at X:-1 Y:1 Z:1]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+[Builder picks up a red block at X:1 Y:1 Z:-1]
+<Architect> please put a purple brick on top of the middle red brick
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+<Architect> Add a purple bricks adjacent to the purple bricks, away from the center of the object
+[Builder picks up a purple block at X:0 Y:3 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+<Builder> on a diagonal or line?
+<Architect> the last brick wil be in a diagonal
+[Builder picks up a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+<Architect> So from the side of the object, you should see two yellow-red-purple diagonals
+<Architect> The most recently placed brick is out of place
+[Builder picks up a purple block at X:1 Y:3 Z:1]
+<Architect> it should be shifted one to its left
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+<Architect> Perfect!
+<Architect> There are now two yellow-red-purple diagonals. Add an orange brick to make them meet
+<Architect> So there will be a yellow-red-purple-orange diagonal
+<Architect> You'll have to add and remove a brick to get the orange brick to float
+<Architect> the orange brick will be one level above the purple layer, and lie in the empty space between the three purple bricks
+<Builder> please tell me where the orange brick should be floating
+<Builder> where I'm standing
+<Architect> Yes
+<Builder> or floating
+[Builder puts down a purple block at X:1 Y:4 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+[Builder picks up a purple block at X:1 Y:4 Z:0]
+<Architect> Awesome! now remove the purple brick that is in the middle of the little L of purple bricks
+[Builder picks up a purple block at X:0 Y:3 Z:0]
+<Architect> We'll cap off the object by adding two bricks on the ground, touching the green bricks diagonally
+[Builder puts down a orange block at X:-1 Y:1 Z:-2]
+[Builder puts down a orange block at X:-2 Y:1 Z:-1]
+<Architect> blue bricks
+<Builder> like that?
+[Builder picks up a orange block at X:-1 Y:1 Z:-2]
+[Builder picks up a orange block at X:-2 Y:1 Z:-1]
+<Architect> yes!
+[Builder puts down a blue block at X:-1 Y:1 Z:-2]
+[Builder puts down a blue block at X:-2 Y:1 Z:-1]
+<Architect> Great work
+<Builder> thank you

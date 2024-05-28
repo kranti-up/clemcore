@@ -1,0 +1,54 @@
+B25-A10-C83-1523488152700
+<Builder> Mission has started.
+<Architect> okay, so the overall shape kind of looks like a weird table.
+<Architect> the shape is over a 2d 5 by 5 grid
+<Architect> start with purple blocks in the corners of the 5 by 5 grid
+[Builder puts down a purple block at X:3 Y:1 Z:2]
+[Builder puts down a purple block at X:3 Y:1 Z:-2]
+[Builder puts down a purple block at X:-2 Y:1 Z:-2]
+[Builder picks up a purple block at X:-2 Y:1 Z:-2]
+[Builder puts down a purple block at X:-1 Y:1 Z:-2]
+[Builder puts down a purple block at X:-1 Y:1 Z:2]
+<Builder> ok
+<Architect> okay, put another purple on top of each of those
+[Builder puts down a purple block at X:3 Y:2 Z:2]
+[Builder puts down a purple block at X:-1 Y:2 Z:2]
+[Builder puts down a purple block at X:-1 Y:1 Z:-3]
+[Builder picks up a purple block at X:-1 Y:1 Z:-3]
+[Builder puts down a purple block at X:-1 Y:2 Z:-2]
+[Builder puts down a purple block at X:3 Y:2 Z:-2]
+<Architect> now in the center of the grid, put one yellow block
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+<Architect> put a 3 by 3 square of orange blocks horizontally on top of that.
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+<Architect> now remove the middle block of that orange square
+[Builder picks up a orange block at X:1 Y:2 Z:0]
+<Architect> cool. now the next horizontal layer is a hollow 5 by 5 red square
+[Builder puts down a red block at X:3 Y:3 Z:-2]
+[Builder puts down a red block at X:3 Y:3 Z:-1]
+[Builder puts down a red block at X:3 Y:3 Z:0]
+[Builder puts down a red block at X:3 Y:3 Z:1]
+[Builder puts down a red block at X:3 Y:3 Z:2]
+[Builder puts down a red block at X:2 Y:3 Z:2]
+[Builder puts down a red block at X:1 Y:3 Z:2]
+[Builder puts down a red block at X:0 Y:3 Z:2]
+[Builder puts down a red block at X:-1 Y:3 Z:2]
+[Builder puts down a red block at X:-1 Y:3 Z:1]
+[Builder puts down a red block at X:-1 Y:3 Z:-2]
+[Builder puts down a red block at X:2 Y:3 Z:-2]
+<Architect> so similar to the hollow orange square, but 5 by 5 a
+[Builder puts down a red block at X:1 Y:3 Z:-2]
+[Builder puts down a red block at X:0 Y:3 Z:-2]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+<Builder> like that?
+<Architect> yes
+<Builder> ok

@@ -1,0 +1,76 @@
+B1-A44-C49-1523038152406
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hello. do you always just say hello? lol. anyways try to make a letter A in red. capital. veritcal drawing near the center.
+<Architect> 3 by 4
+<Builder> all red?
+<Architect> veritcal drawing capital letter A all red
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:3 Z:-1]
+[Builder puts down a red block at X:0 Y:3 Z:-1]
+[Builder picks up a red block at X:1 Y:3 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:0 Y:4 Z:-1]
+[Builder puts down a red block at X:1 Y:3 Z:-1]
+[Builder picks up a red block at X:0 Y:3 Z:-1]
+<Builder> like this?
+<Architect> ok almost. put 2 red blocks in the top right and top left corner
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:1 Y:4 Z:-1]
+<Architect> lets pretend this was a drawing. column 4: 4 yellow
+[Builder puts down a yellow block at X:-2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:4 Z:-1]
+<Builder> here?
+<Architect> yep, that's perfect. now can you rotate 90 degrees to the right
+<Architect> and face the structure
+<Architect> yep that's great. ok now make a letter b. lower case all yellow
+<Architect> also 3x4
+[Builder puts down a yellow block at X:-2 Y:2 Z:0]
+[Builder puts down a yellow block at X:-2 Y:1 Z:1]
+[Builder picks up a yellow block at X:-2 Y:2 Z:0]
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+[Builder puts down a yellow block at X:-2 Y:2 Z:1]
+[Builder puts down a yellow block at X:-2 Y:1 Z:0]
+<Builder> like this?
+<Architect> almost. 1 block in the corner
+[Builder puts down a yellow block at X:-2 Y:3 Z:1]
+<Architect> the letters are all kinda blocky
+<Builder> ok
+<Architect> ok now pretend this was a drawing. column 4: 4 blue
+[Builder puts down a blue block at X:-2 Y:1 Z:2]
+[Builder puts down a blue block at X:-2 Y:2 Z:2]
+[Builder puts down a blue block at X:-2 Y:3 Z:2]
+[Builder puts down a blue block at X:-2 Y:4 Z:2]
+<Architect> ok now rotate 90 degrees to the right again
+<Architect> can you guess what letter we're gonna make now? 3x4 all blue?
+[Builder puts down a blue block at X:-1 Y:1 Z:2]
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+[Builder puts down a blue block at X:-1 Y:4 Z:2]
+[Builder puts down a blue block at X:0 Y:4 Z:2]
+<Architect> excellent. ok now 4th column: 3 purple
+<Builder> uppercase right?
+<Architect> yeah
+[Builder puts down a purple block at X:1 Y:1 Z:2]
+[Builder puts down a purple block at X:1 Y:2 Z:2]
+[Builder puts down a purple block at X:1 Y:3 Z:2]
+<Architect> and rotate 90 degrees
+<Architect> letter d lowercase
+<Builder> how much space?
+<Architect> it looks just like the letter b
+<Architect> 3x4 all purple.
+<Builder> towards A?
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+<Architect> yep
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+[Builder puts down a purple block at X:1 Y:4 Z:0]
+<Architect> ok we're done goodj ob
+<Builder> cool

@@ -1,0 +1,80 @@
+B29-A1-C146-1524078716057
+<Builder> Mission has started.
+<Architect> hello
+<Builder> hi
+<Architect> this one takes the whole width of the board. lets start on the left side
+<Architect> it looks like a cammel sitting down, so we are going to make two humps and then the head
+<Architect> its multicolor first is orange
+<Architect> start with three blocks forming a tower
+[Builder puts down a orange block at X:-1 Y:1 Z:5]
+[Builder puts down a orange block at X:-1 Y:2 Z:5]
+[Builder puts down a orange block at X:-1 Y:3 Z:5]
+<Architect> the whole camel is in the same plane, so this is the left side of the hump
+<Architect> connect two more to the top of the orange block
+<Architect> on the right side
+[Builder puts down a orange block at X:-1 Y:3 Z:4]
+[Builder puts down a orange block at X:-1 Y:4 Z:4]
+[Builder puts down a orange block at X:-1 Y:5 Z:4]
+[Builder picks up a orange block at X:-1 Y:3 Z:4]
+<Architect> sorry its kinda jutting out..
+[Builder puts down a orange block at X:0 Y:5 Z:4]
+[Builder picks up a orange block at X:0 Y:5 Z:4]
+[Builder picks up a orange block at X:-1 Y:5 Z:4]
+[Builder puts down a orange block at X:-1 Y:3 Z:4]
+<Architect> delete the top most orange block and place an orange block on the right side of the one thats its sitting on
+[Builder picks up a orange block at X:-1 Y:4 Z:4]
+[Builder puts down a orange block at X:-1 Y:3 Z:3]
+<Architect> great
+<Architect> now place one orange block under this orange block
+<Builder> the last one I placed?
+<Architect> yes
+[Builder puts down a orange block at X:0 Y:3 Z:3]
+[Builder picks up a orange block at X:0 Y:3 Z:3]
+[Builder puts down a orange block at X:-1 Y:2 Z:3]
+<Architect> okay thats the first hump. the second hump is yellow, now place one yellow block beneath the last orange block placed
+[Builder puts down a yellow block at X:-1 Y:1 Z:3]
+<Architect> now add two more yellow blocks on the rigth of this one
+[Builder puts down a yellow block at X:-1 Y:1 Z:2]
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+<Architect> now make a tower of three with the last yellow block placed
+[Builder puts down a yellow block at X:-1 Y:2 Z:1]
+[Builder puts down a yellow block at X:0 Y:2 Z:1]
+[Builder picks up a yellow block at X:0 Y:3 Z:1]
+[Builder picks up a yellow block at X:0 Y:2 Z:1]
+<Builder> 4 high total?
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:1]
+<Architect> 3 high
+[Builder picks up a yellow block at X:-1 Y:4 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder picks up a yellow block at X:-1 Y:3 Z:0]
+<Architect> okay now make a stair case of three going down all green, using three blocks total
+[Builder puts down a green block at X:0 Y:3 Z:1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:1]
+[Builder picks up a green block at X:0 Y:3 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:2 Z:-1]
+[Builder picks up a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:2 Z:-2]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder picks up a green block at X:-1 Y:2 Z:-2]
+<Architect> okay now using blue make two steps from the green, going up
+[Builder puts down a blue block at X:-1 Y:1 Z:-3]
+[Builder puts down a blue block at X:-1 Y:1 Z:-4]
+[Builder puts down a blue block at X:-1 Y:2 Z:-4]
+[Builder picks up a blue block at X:-1 Y:1 Z:-4]
+<Architect> almost lift everything by one block
+<Architect> i mean the blue
+[Builder picks up a blue block at X:-1 Y:1 Z:-3]
+[Builder puts down a blue block at X:-1 Y:1 Z:-3]
+[Builder puts down a blue block at X:-1 Y:2 Z:-3]
+[Builder picks up a blue block at X:-1 Y:1 Z:-3]
+[Builder puts down a blue block at X:-1 Y:3 Z:-4]
+[Builder picks up a blue block at X:-1 Y:2 Z:-4]
+<Architect> one more step going up and its purple
+[Builder puts down a purple block at X:-1 Y:3 Z:-5]
+[Builder puts down a purple block at X:-1 Y:4 Z:-5]
+[Builder picks up a purple block at X:-1 Y:3 Z:-5]
+<Architect> awesome

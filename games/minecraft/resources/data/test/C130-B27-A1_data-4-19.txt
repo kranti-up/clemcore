@@ -1,0 +1,86 @@
+B27-A1-C130-1524161803977
+<Builder> Mission has started.
+<Architect> this one looks like a toilet bowl
+<Architect> start with green.
+<Architect> make a 3x3 with the middle missing, build towards the center
+<Builder> wall or flat?
+<Architect> flat its the bowl part of the toilet
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:1 Y:1 Z:-2]
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+<Builder> should i move it towards the middle more?
+<Architect> no thats good
+<Architect> okay now we are going to make a stair case using one any of the edges is fine
+<Architect> make three steps using 9 blocks
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+[Builder puts down a green block at X:1 Y:2 Z:1]
+[Builder puts down a green block at X:0 Y:2 Z:1]
+[Builder puts down a green block at X:-1 Y:2 Z:1]
+[Builder picks up a green block at X:-1 Y:1 Z:1]
+[Builder picks up a green block at X:0 Y:1 Z:1]
+[Builder picks up a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:2 Z:2]
+[Builder puts down a green block at X:0 Y:2 Z:2]
+[Builder puts down a green block at X:1 Y:2 Z:2]
+[Builder puts down a green block at X:1 Y:3 Z:2]
+[Builder puts down a green block at X:0 Y:3 Z:2]
+[Builder puts down a green block at X:-1 Y:3 Z:2]
+[Builder picks up a green block at X:-1 Y:2 Z:2]
+[Builder picks up a green block at X:0 Y:2 Z:2]
+[Builder picks up a green block at X:1 Y:2 Z:2]
+[Builder puts down a green block at X:1 Y:3 Z:3]
+[Builder puts down a green block at X:0 Y:3 Z:3]
+[Builder puts down a green block at X:-1 Y:3 Z:3]
+[Builder puts down a green block at X:-1 Y:4 Z:3]
+[Builder puts down a green block at X:0 Y:4 Z:3]
+[Builder puts down a green block at X:1 Y:4 Z:3]
+[Builder picks up a green block at X:1 Y:3 Z:3]
+[Builder picks up a green block at X:0 Y:3 Z:3]
+[Builder picks up a green block at X:-1 Y:3 Z:3]
+<Architect> great.. now delete the middle block in the stair case
+[Builder picks up a green block at X:0 Y:3 Z:2]
+<Architect> okay on to blue
+<Architect> place a blue block one block to the right and under the right most and bottom most green block
+[Builder puts down a blue block at X:-2 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+<Builder> like that?
+<Architect> not quite, put it on the other side, so in front of the toilet bowl
+[Builder picks up a blue block at X:-1 Y:1 Z:1]
+[Builder picks up a blue block at X:-2 Y:1 Z:1]
+[Builder puts down a blue block at X:-2 Y:1 Z:-2]
+[Builder puts down a blue block at X:-1 Y:1 Z:-3]
+<Architect> okay place a block connecting those two blocks
+[Builder puts down a blue block at X:-2 Y:1 Z:-3]
+<Architect> now delete the earlier two blocks
+[Builder picks up a blue block at X:-1 Y:1 Z:-3]
+[Builder picks up a blue block at X:-2 Y:1 Z:-2]
+<Architect> now from where you are standing add two blocks on the floor diagonally away from the toilet bowl all on the floor
+<Architect> so the edges of the blue blocks are touching
+[Builder puts down a blue block at X:-3 Y:1 Z:-4]
+[Builder puts down a blue block at X:-4 Y:1 Z:-5]
+<Architect> thats the correct shape, but can you mirror it away from you?
+[Builder picks up a blue block at X:-3 Y:1 Z:-4]
+[Builder picks up a blue block at X:-4 Y:1 Z:-5]
+[Builder puts down a blue block at X:-3 Y:1 Z:-2]
+[Builder puts down a blue block at X:-4 Y:1 Z:-1]
+<Architect> great
+<Architect> now add two blocks to each of these blue blocks
+<Architect> making a tower
+<Builder> still blue?
+<Architect> yeah
+[Builder puts down a blue block at X:-2 Y:2 Z:-3]
+[Builder puts down a blue block at X:-2 Y:3 Z:-3]
+[Builder puts down a blue block at X:-3 Y:2 Z:-2]
+[Builder puts down a blue block at X:-4 Y:2 Z:-1]
+[Builder puts down a blue block at X:-4 Y:3 Z:-1]
+[Builder puts down a blue block at X:-3 Y:3 Z:-2]
+<Architect> okay now delete the middle most blue block
+[Builder picks up a blue block at X:-3 Y:2 Z:-2]
+<Architect> great

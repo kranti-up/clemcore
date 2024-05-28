@@ -1,0 +1,100 @@
+B35-A34-C119-1524008747817
+<Builder> Mission has started.
+<Architect> hiii
+<Builder> hi
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+[Builder picks up a orange block at X:1 Y:1 Z:-2]
+<Architect> 3 blocks away from an edge, place a blue block near the center
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+<Architect> place 2 more blue blocks on top of that
+[Builder puts down a blue block at X:0 Y:2 Z:-2]
+[Builder puts down a blue block at X:0 Y:3 Z:-2]
+<Architect> stay still
+<Architect> look down
+<Architect> place 3 blue blocks where you are standing
+[Builder puts down a blue block at X:-3 Y:1 Z:-2]
+[Builder puts down a blue block at X:-3 Y:2 Z:-2]
+[Builder puts down a blue block at X:-3 Y:3 Z:-2]
+<Architect> place a purple block on top of each pillar
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+[Builder puts down a purple block at X:-3 Y:4 Z:-2]
+<Architect> connect the 2 pillars with 2 purple blocks
+[Builder puts down a purple block at X:-1 Y:4 Z:-2]
+[Builder puts down a purple block at X:-1 Y:5 Z:-2]
+[Builder picks up a purple block at X:-1 Y:5 Z:-2]
+[Builder puts down a purple block at X:-2 Y:4 Z:-2]
+<Architect> build a 4x4 square of purple blocks, where those 4 blocks you have placed are one edge
+[Builder puts down a purple block at X:-3 Y:4 Z:-1]
+[Builder puts down a purple block at X:-3 Y:4 Z:0]
+[Builder puts down a purple block at X:-3 Y:4 Z:1]
+[Builder puts down a purple block at X:-2 Y:4 Z:1]
+[Builder puts down a purple block at X:-1 Y:4 Z:1]
+[Builder puts down a purple block at X:0 Y:4 Z:1]
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:0 Y:4 Z:-1]
+<Builder> okay
+<Architect> fill it in with purple
+[Builder puts down a purple block at X:-2 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+<Architect> stand so that the 2 legs are away from ou
+<Architect> you
+<Architect> remove the 2 far end corners of the purple square
+[Builder picks up a purple block at X:0 Y:4 Z:1]
+[Builder picks up a purple block at X:-3 Y:4 Z:1]
+<Architect> fill them in with blue
+[Builder puts down a blue block at X:-3 Y:4 Z:1]
+[Builder puts down a blue block at X:0 Y:4 Z:1]
+<Architect> place one blue underneath each of those blue blocks
+[Builder puts down a blue block at X:-3 Y:3 Z:1]
+[Builder puts down a blue block at X:0 Y:3 Z:1]
+<Architect> one plue coming towards you
+[Builder puts down a blue block at X:0 Y:3 Z:2]
+[Builder puts down a blue block at X:-3 Y:3 Z:2]
+<Architect> remove those so that we have a diagonal line
+[Builder picks up a blue block at X:-3 Y:3 Z:1]
+[Builder picks up a blue block at X:0 Y:3 Z:1]
+<Architect> continue till we hit the ground
+[Builder puts down a blue block at X:-3 Y:1 Z:3]
+[Builder puts down a blue block at X:-3 Y:1 Z:4]
+[Builder puts down a blue block at X:-3 Y:2 Z:3]
+[Builder picks up a blue block at X:-3 Y:1 Z:3]
+[Builder puts down a blue block at X:0 Y:1 Z:3]
+[Builder puts down a blue block at X:0 Y:1 Z:4]
+[Builder puts down a blue block at X:0 Y:2 Z:3]
+[Builder picks up a blue block at X:0 Y:1 Z:3]
+<Builder> okay
+<Architect> now go stand on the purple structure with the diagonal legs facing away from you
+<Architect> look towards the diagonal legs
+<Architect> place a blue block diagonal to those legs, so basically continue those diagonal lines for one more block
+[Builder puts down a blue block at X:-1 Y:5 Z:0]
+[Builder puts down a blue block at X:-2 Y:5 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+[Builder picks up a blue block at X:1 Y:4 Z:0]
+<Builder> this
+<Architect> no separate them
+[Builder puts down a blue block at X:0 Y:5 Z:0]
+[Builder picks up a blue block at X:-1 Y:5 Z:0]
+[Builder picks up a blue block at X:-2 Y:5 Z:0]
+[Builder puts down a blue block at X:-3 Y:5 Z:0]
+<Architect> now place one green on each of those
+[Builder puts down a green block at X:0 Y:6 Z:0]
+[Builder puts down a green block at X:-3 Y:6 Z:0]
+<Architect> continue those blue lines so that we have 6 in a row going diagonally
+[Builder puts down a blue block at X:0 Y:6 Z:-1]
+[Builder puts down a blue block at X:-3 Y:6 Z:-1]
+<Architect> go to the other side
+<Architect> 180
+<Architect> on the green, place one green coming towards you
+[Builder puts down a green block at X:-3 Y:6 Z:1]
+[Builder puts down a green block at X:0 Y:6 Z:1]
+<Architect> connect them with 2 green blocks
+[Builder puts down a green block at X:-1 Y:6 Z:1]
+[Builder puts down a green block at X:-2 Y:6 Z:1]
+<Architect> i think we are good
+<Architect> do you have a purple
+<Builder> yeah
+<Architect> those blocks look pink
+<Builder> they're purple
+<Architect> k

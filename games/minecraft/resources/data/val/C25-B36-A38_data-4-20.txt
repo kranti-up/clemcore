@@ -1,0 +1,54 @@
+B36-A38-C25-1524262247384
+<Builder> Mission has started.
+<Builder> hi
+<Architect> Hello, this next one is going to looks sort of like two musical notes
+<Builder> ok
+<Architect> First, somewhere close to the middle, make a vertical 2 by 2 square
+[Builder puts down a blue block at X:3 Y:1 Z:-2]
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+[Builder picks up a blue block at X:3 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:2 Z:-2]
+[Builder puts down a blue block at X:2 Y:2 Z:-2]
+<Builder> here?
+<Architect> Yup, that works.
+<Builder> ok
+<Architect> Can you add 4 blocks on top of the upper right one?
+<Builder> sure
+[Builder puts down a blue block at X:1 Y:3 Z:-2]
+<Architect> Thanks
+[Builder puts down a blue block at X:1 Y:4 Z:-2]
+[Builder puts down a blue block at X:1 Y:5 Z:-2]
+[Builder puts down a blue block at X:1 Y:6 Z:-2]
+<Builder> no prob
+<Architect> Perfect. now just put a block on the right side of the top blue block
+[Builder puts down a blue block at X:0 Y:6 Z:-2]
+<Architect> Now we are going to get started on the purple note.
+<Builder> ok
+<Architect> One block off the ground, to the right of the furthest right blue block, we will make another 2 by 2 saquare
+<Builder> to the right by how many spaces?
+<Builder> and is it floating?
+<Architect> Just by 1, It is floating
+<Builder> ok
+[Builder puts down a purple block at X:-1 Y:1 Z:-2]
+[Builder puts down a purple block at X:-1 Y:2 Z:-2]
+[Builder picks up a purple block at X:-1 Y:1 Z:-2]
+<Builder> here?
+<Architect> Yup, that should be the lower left corner of the square
+<Builder> ok
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-2 Y:3 Z:-2]
+[Builder puts down a purple block at X:-2 Y:2 Z:-2]
+<Architect> Great, can you extend the top right block by 4 blocks, just like the first one?
+<Builder> sure
+[Builder puts down a purple block at X:-2 Y:4 Z:-2]
+[Builder puts down a purple block at X:-2 Y:5 Z:-2]
+[Builder puts down a purple block at X:-2 Y:6 Z:-2]
+[Builder puts down a purple block at X:-2 Y:7 Z:-2]
+[Builder puts down a purple block at X:-3 Y:7 Z:-2]
+<Architect> Thanks, we will just need to move the block you placed to the other side
+<Builder> sounds good
+[Builder picks up a purple block at X:-3 Y:7 Z:-2]
+[Builder puts down a purple block at X:-1 Y:7 Z:-2]
+<Architect> Perfect, we are done here
+<Builder> nice

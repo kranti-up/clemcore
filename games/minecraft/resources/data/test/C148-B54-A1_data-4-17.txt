@@ -1,0 +1,100 @@
+B54-A1-C148-1523981264573
+<Builder> Mission has started.
+<Architect> okay we are making some sort of headphones with a mic
+<Architect> lets start with purple
+<Builder> Where on the table should I start?
+<Architect> its pretty wide so maybe towards the edge but not all the way
+[Builder puts down a purple block at X:3 Y:1 Z:-3]
+<Architect> make a vertical 3x3 floating one block from the ground
+[Builder puts down a purple block at X:3 Y:2 Z:-3]
+[Builder puts down a purple block at X:3 Y:3 Z:-3]
+[Builder puts down a purple block at X:3 Y:4 Z:-3]
+[Builder picks up a purple block at X:3 Y:1 Z:-3]
+[Builder puts down a purple block at X:2 Y:2 Z:-3]
+[Builder puts down a purple block at X:1 Y:2 Z:-3]
+[Builder puts down a purple block at X:2 Y:3 Z:-3]
+[Builder puts down a purple block at X:2 Y:4 Z:-3]
+[Builder puts down a purple block at X:1 Y:3 Z:-3]
+[Builder puts down a purple block at X:1 Y:4 Z:-3]
+<Architect> great, now remove the middle piece
+[Builder picks up a purple block at X:2 Y:3 Z:-3]
+<Architect> okay 4 spaces away make the same structure
+<Builder> So here?
+<Architect> place something..
+[Builder puts down a purple block at X:2 Y:1 Z:2]
+<Architect> yeah
+<Architect> make the same thing there?
+[Builder puts down a purple block at X:2 Y:2 Z:2]
+[Builder puts down a purple block at X:1 Y:2 Z:2]
+[Builder picks up a purple block at X:2 Y:1 Z:2]
+[Builder puts down a purple block at X:3 Y:2 Z:2]
+[Builder puts down a purple block at X:3 Y:3 Z:2]
+[Builder puts down a purple block at X:3 Y:4 Z:2]
+[Builder puts down a purple block at X:1 Y:3 Z:2]
+[Builder puts down a purple block at X:1 Y:4 Z:2]
+[Builder puts down a purple block at X:1 Y:4 Z:3]
+[Builder picks up a purple block at X:2 Y:4 Z:3]
+[Builder picks up a purple block at X:1 Y:4 Z:3]
+[Builder puts down a purple block at X:2 Y:4 Z:2]
+<Architect> great
+<Architect> remember the t from last time. we need one vertical t behind each ear piece of the headphone
+<Architect> its orange
+[Builder puts down a orange block at X:2 Y:4 Z:3]
+[Builder puts down a orange block at X:3 Y:3 Z:3]
+[Builder puts down a orange block at X:2 Y:2 Z:3]
+[Builder puts down a orange block at X:1 Y:3 Z:3]
+[Builder puts down a orange block at X:2 Y:3 Z:3]
+[Builder puts down a orange block at X:2 Y:4 Z:-4]
+[Builder puts down a orange block at X:3 Y:3 Z:-4]
+[Builder puts down a orange block at X:2 Y:2 Z:-4]
+[Builder puts down a orange block at X:1 Y:3 Z:-4]
+[Builder puts down a orange block at X:2 Y:3 Z:-4]
+<Builder> So like this?
+<Architect> yes
+<Architect> okay now we are making the blue headrest thing.
+<Architect> place two blue blocks on top of the middle purple block
+[Builder puts down a blue block at X:2 Y:5 Z:2]
+[Builder puts down a blue block at X:2 Y:6 Z:2]
+[Builder puts down a blue block at X:2 Y:5 Z:-3]
+[Builder puts down a blue block at X:2 Y:6 Z:-3]
+<Architect> great
+<Builder> And just bridge them?
+<Architect> yes, but its sorta like the vase
+[Builder puts down a blue block at X:2 Y:6 Z:1]
+[Builder puts down a blue block at X:2 Y:7 Z:1]
+[Builder picks up a blue block at X:2 Y:6 Z:1]
+<Builder> Like this, then?
+<Architect> yes
+[Builder puts down a blue block at X:2 Y:7 Z:0]
+[Builder puts down a blue block at X:2 Y:7 Z:-1]
+[Builder puts down a blue block at X:2 Y:7 Z:-2]
+<Architect> great now we just need the red mic
+<Architect> on the right ear piece add a red block under the middle purple block
+[Builder puts down a red block at X:2 Y:1 Z:-3]
+[Builder picks up a red block at X:2 Y:1 Z:-3]
+[Builder puts down a red block at X:2 Y:1 Z:2]
+<Architect> yes there
+<Architect> okay everything is on the ground
+[Builder puts down a red block at X:1 Y:1 Z:2]
+[Builder picks up a red block at X:1 Y:1 Z:2]
+<Architect> add one red block diagonaly towards the middle of the building area
+[Builder puts down a red block at X:2 Y:1 Z:1]
+[Builder picks up a red block at X:2 Y:1 Z:1]
+[Builder puts down a red block at X:1 Y:1 Z:1]
+<Architect> okay now extend that column by one
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder picks up a red block at X:0 Y:1 Z:1]
+<Builder> Diagonally?
+<Architect> no how you had it before is good
+[Builder puts down a red block at X:0 Y:1 Z:1]
+<Architect> now another diagonal block
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> one more
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+<Architect> now the last diagonal block is not on the same line
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+<Architect> almost
+[Builder picks up a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-3 Y:1 Z:0]
+<Architect> great
+<Architect> thats the headphones

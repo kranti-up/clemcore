@@ -1,0 +1,104 @@
+B29-A26-C69-1523377912426
+<Builder> Mission has started.
+<Architect> Start with the corners of a 4x3 blue rectangle on the ground
+[Builder puts down a blue block at X:2 Y:1 Z:1]
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+<Architect> On top of it, we'll add a 6x3 layer of red bricks.
+<Architect> making a table shape
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder picks up a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder picks up a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:1]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+<Builder> does it matter which side overhangs?
+<Builder> oh wait
+<Architect> symmetry should exist
+<Builder> yes
+<Architect> since it is 6x3
+<Builder> bad robot
+[Builder puts down a red block at X:-2 Y:2 Z:-1]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+<Architect> no worries my robot friend
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:3 Y:2 Z:0]
+[Builder puts down a red block at X:3 Y:2 Z:1]
+<Architect> Now on one corner of the table, add a row of three green bricks
+<Architect> we'll transform this table into an ugly pickup truck
+[Builder puts down a green block at X:3 Y:2 Z:2]
+[Builder puts down a green block at X:2 Y:1 Z:2]
+[Builder picks up a green block at X:2 Y:1 Z:2]
+[Builder puts down a green block at X:3 Y:2 Z:3]
+[Builder puts down a green block at X:3 Y:2 Z:4]
+<Architect> sorry, i meant on top of the edge of the table
+[Builder picks up a green block at X:3 Y:2 Z:4]
+[Builder picks up a green block at X:3 Y:2 Z:3]
+[Builder picks up a green block at X:3 Y:2 Z:2]
+[Builder puts down a green block at X:4 Y:2 Z:1]
+[Builder puts down a green block at X:4 Y:2 Z:2]
+[Builder puts down a green block at X:4 Y:2 Z:3]
+<Architect> the green bricks will be directly above the 3 red bricks
+[Builder picks up a green block at X:4 Y:2 Z:3]
+[Builder picks up a green block at X:4 Y:2 Z:2]
+[Builder picks up a green block at X:4 Y:2 Z:1]
+[Builder puts down a green block at X:3 Y:3 Z:1]
+[Builder puts down a green block at X:3 Y:3 Z:0]
+[Builder puts down a green block at X:3 Y:3 Z:-1]
+<Architect> then add three green bricks in front of and behind the 3 green bricks, making a 3x3 square
+[Builder picks up a green block at X:3 Y:3 Z:-1]
+[Builder puts down a green block at X:3 Y:3 Z:-1]
+[Builder puts down a green block at X:4 Y:3 Z:-1]
+[Builder puts down a green block at X:4 Y:3 Z:1]
+[Builder puts down a green block at X:4 Y:2 Z:0]
+[Builder picks up a green block at X:4 Y:3 Z:1]
+[Builder picks up a green block at X:4 Y:2 Z:0]
+[Builder puts down a green block at X:4 Y:3 Z:0]
+[Builder puts down a green block at X:4 Y:3 Z:1]
+[Builder puts down a green block at X:2 Y:3 Z:-1]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:2 Y:3 Z:1]
+<Architect> under the middle green brick hanging off the edge, add another green brick
+[Builder puts down a green block at X:4 Y:2 Z:0]
+[Builder puts down a green block at X:5 Y:2 Z:0]
+[Builder picks up a green block at X:4 Y:2 Z:0]
+[Builder puts down a green block at X:4 Y:2 Z:0]
+<Architect> on the left and right of that brick, add yellow bricks
+[Builder picks up a green block at X:5 Y:2 Z:0]
+[Builder puts down a yellow block at X:4 Y:2 Z:1]
+[Builder puts down a yellow block at X:4 Y:2 Z:-1]
+<Architect> representing headlights
+<Architect> on top of the 3 green bricks you first added, add three more green bricks
+<Architect> represening the cab of the truck
+[Builder puts down a green block at X:2 Y:4 Z:1]
+[Builder picks up a green block at X:2 Y:4 Z:1]
+[Builder puts down a green block at X:3 Y:4 Z:1]
+[Builder puts down a green block at X:3 Y:4 Z:0]
+[Builder puts down a green block at X:3 Y:4 Z:-1]
+<Architect> remove the green brick in the middle of the bed of the truck
+<Architect> if that makes sense
+[Builder puts down a green block at X:2 Y:4 Z:0]
+[Builder picks up a green block at X:2 Y:3 Z:-1]
+[Builder puts down a green block at X:2 Y:3 Z:-1]
+[Builder picks up a green block at X:2 Y:4 Z:0]
+[Builder picks up a green block at X:2 Y:3 Z:0]
+<Architect> Perfect! now add orange bricks above the two green bricks in the bed of the truck
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+[Builder puts down a orange block at X:2 Y:4 Z:1]
+<Architect> remove the middle orange brick please
+[Builder picks up a orange block at X:2 Y:4 Z:0]
+<Architect> then it's perfect!

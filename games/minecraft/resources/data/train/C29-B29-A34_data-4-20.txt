@@ -1,0 +1,64 @@
+B29-A34-C29-1524255983414
+<Builder> Mission has started.
+<Architect> this is tetris
+<Architect> all in 2D
+<Builder> on the plane?
+<Architect> no it is vertical
+<Builder> or into the air?
+<Builder> ok
+<Architect> so maybe like 2 blocks away from the edge, place a tower of 4 blue blocks
+[Builder puts down a blue block at X:3 Y:1 Z:-3]
+[Builder puts down a blue block at X:3 Y:2 Z:-3]
+[Builder puts down a blue block at X:3 Y:3 Z:-3]
+[Builder puts down a blue block at X:3 Y:4 Z:-3]
+<Architect> the next piece is a RED L
+<Architect> on the ground, place a row of 3 red blocks
+<Builder> adjacent to the blue?
+<Architect> yes
+[Builder puts down a red block at X:3 Y:1 Z:-2]
+[Builder puts down a red block at X:3 Y:1 Z:-1]
+[Builder puts down a red block at X:3 Y:1 Z:0]
+<Architect> and now the last red block is on the second level adjacent to the blue
+[Builder puts down a red block at X:3 Y:2 Z:0]
+[Builder picks up a red block at X:3 Y:2 Z:0]
+[Builder puts down a red block at X:3 Y:2 Z:-2]
+<Architect> great
+<Architect> next is an orange zig zag piece
+<Architect> place 2 orange blocks above the last red piece you placed
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+[Builder picks up a orange block at X:3 Y:2 Z:-1]
+[Builder puts down a orange block at X:3 Y:2 Z:0]
+[Builder puts down a orange block at X:3 Y:3 Z:0]
+<Architect> the other one
+<Architect> the one that is closest to the blue
+[Builder picks up a orange block at X:3 Y:3 Z:0]
+[Builder picks up a orange block at X:3 Y:2 Z:0]
+[Builder puts down a orange block at X:3 Y:3 Z:-2]
+[Builder puts down a orange block at X:3 Y:4 Z:-2]
+<Architect> and the last 2 are vertical on the red block in the middle
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+[Builder puts down a orange block at X:3 Y:3 Z:-1]
+<Architect> great
+<Architect> next is a green zig zag piece
+<Architect> place 2 on the ground in line with the red
+[Builder puts down a green block at X:3 Y:1 Z:1]
+[Builder puts down a green block at X:3 Y:1 Z:2]
+<Architect> and place 2 one layer above adjacent to the orange
+[Builder puts down a green block at X:3 Y:2 Z:0]
+[Builder puts down a green block at X:3 Y:2 Z:1]
+<Architect> ok great
+<Architect> the last one is a purple T piece that is not connected to this figure at all
+<Architect> the T is sideways so it looks liek "-|"
+<Architect> keep 2 blocks of space above that last green block and place a purple block
+[Builder puts down a purple block at X:3 Y:2 Z:2]
+[Builder puts down a purple block at X:3 Y:3 Z:2]
+[Builder puts down a purple block at X:3 Y:4 Z:2]
+[Builder picks up a purple block at X:3 Y:3 Z:2]
+[Builder picks up a purple block at X:3 Y:2 Z:2]
+<Architect> place one to the right of that
+[Builder puts down a purple block at X:3 Y:4 Z:3]
+<Architect> and one above and below that
+[Builder puts down a purple block at X:3 Y:5 Z:3]
+[Builder puts down a purple block at X:3 Y:3 Z:3]
+<Architect> yeha that looks good
+<Builder> yeehaw

@@ -1,0 +1,152 @@
+B36-A25-C147-1524175913340
+<Builder> Mission has started.
+<Builder> hi
+<Architect> ok
+<Architect> this is a complex build
+<Architect> but we can do this
+<Builder> nice
+<Architect> start at the bottom left corner
+<Architect> one block up and to the right of the bottom left corner
+<Architect> should be the bottom corner of a 4 wide and 5 tall orange wall
+<Architect> bottom left corner
+<Builder> floating?
+<Builder> o nvm
+<Builder> what color
+<Architect> nah not floating
+<Architect> just the bottom left corner of the wall should be on the block that's up and to the right of the bottom left corner of the white grid
+<Architect> and then build it form left to right
+<Builder> here?
+<Architect> yea
+<Builder> what color
+<Architect> orange
+<Builder> ok
+<Architect> 4 wide and 5 tall
+[Builder puts down a orange block at X:4 Y:1 Z:-4]
+[Builder puts down a orange block at X:3 Y:1 Z:-4]
+[Builder puts down a orange block at X:2 Y:1 Z:-4]
+[Builder puts down a orange block at X:1 Y:1 Z:-4]
+[Builder puts down a orange block at X:1 Y:2 Z:-4]
+[Builder puts down a orange block at X:2 Y:2 Z:-4]
+[Builder puts down a orange block at X:3 Y:2 Z:-4]
+[Builder puts down a orange block at X:4 Y:2 Z:-4]
+[Builder puts down a orange block at X:4 Y:3 Z:-4]
+[Builder puts down a orange block at X:3 Y:3 Z:-4]
+[Builder puts down a orange block at X:2 Y:3 Z:-4]
+[Builder puts down a orange block at X:1 Y:3 Z:-4]
+[Builder puts down a orange block at X:1 Y:4 Z:-4]
+[Builder puts down a orange block at X:2 Y:4 Z:-4]
+[Builder puts down a orange block at X:3 Y:4 Z:-4]
+[Builder puts down a orange block at X:4 Y:4 Z:-4]
+[Builder puts down a orange block at X:4 Y:5 Z:-4]
+[Builder puts down a orange block at X:3 Y:5 Z:-4]
+[Builder puts down a orange block at X:2 Y:5 Z:-4]
+[Builder puts down a orange block at X:1 Y:5 Z:-4]
+<Builder> like this?
+<Architect> yea
+<Architect> now we're gonna take blocks off
+<Builder> ok
+<Architect> from the top row, break the top right and top left corner
+[Builder picks up a orange block at X:1 Y:5 Z:-4]
+[Builder picks up a orange block at X:4 Y:5 Z:-4]
+<Architect> row below that break the three leftmost blocks
+[Builder picks up a orange block at X:4 Y:4 Z:-4]
+[Builder picks up a orange block at X:3 Y:4 Z:-4]
+[Builder picks up a orange block at X:2 Y:4 Z:-4]
+<Architect> row below that break the two leftmost blocks and the rightmost block
+[Builder picks up a orange block at X:4 Y:3 Z:-4]
+[Builder picks up a orange block at X:3 Y:3 Z:-4]
+[Builder picks up a orange block at X:1 Y:3 Z:-4]
+<Architect> row below that break the two middle most blocks
+[Builder picks up a orange block at X:3 Y:2 Z:-4]
+[Builder picks up a orange block at X:2 Y:2 Z:-4]
+<Architect> and then the bottom row break the right and left corner
+[Builder picks up a orange block at X:1 Y:1 Z:-4]
+[Builder picks up a orange block at X:4 Y:1 Z:-4]
+<Architect> ayy it's a 3
+<Builder> nice
+<Architect> ok, now from the block below the rightmost edge
+<Architect> find the block that's up 2 and to the right 1
+<Architect> yea, put a yellow block that's floating 1 block above the ground
+[Builder puts down a yellow block at X:0 Y:1 Z:-2]
+[Builder puts down a yellow block at X:0 Y:2 Z:-2]
+[Builder picks up a yellow block at X:0 Y:1 Z:-2]
+<Builder> here?
+<Architect> ya
+<Architect> then from that block, move up 2 more and to the right 1
+<Architect> build a 4x4 green wall, where the bottom left corner of the wall starts on that block
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+[Builder puts down a green block at X:-3 Y:1 Z:0]
+[Builder puts down a green block at X:-4 Y:1 Z:0]
+[Builder puts down a green block at X:-4 Y:2 Z:0]
+[Builder puts down a green block at X:-3 Y:2 Z:0]
+[Builder puts down a green block at X:-2 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+[Builder puts down a green block at X:-3 Y:3 Z:0]
+[Builder puts down a green block at X:-4 Y:3 Z:0]
+[Builder puts down a green block at X:-4 Y:4 Z:0]
+[Builder puts down a green block at X:-3 Y:4 Z:0]
+[Builder puts down a green block at X:-2 Y:4 Z:0]
+[Builder puts down a green block at X:-1 Y:4 Z:0]
+<Architect> yea, now we'll break blocks again
+<Builder> ok
+<Architect> top row, rightmost two blocks
+[Builder picks up a green block at X:-4 Y:4 Z:0]
+[Builder picks up a green block at X:-3 Y:4 Z:0]
+<Architect> next row, rightmost two and leftmost block
+[Builder picks up a green block at X:-4 Y:3 Z:0]
+[Builder picks up a green block at X:-3 Y:3 Z:0]
+[Builder picks up a green block at X:-1 Y:3 Z:0]
+<Architect> same with the row below it
+[Builder picks up a green block at X:-3 Y:2 Z:0]
+[Builder picks up a green block at X:-4 Y:2 Z:0]
+[Builder picks up a green block at X:-1 Y:2 Z:0]
+<Architect> perfect
+<Builder> ooooo
+<Architect> almost done, i'm sure you can tell what the last number is going to be
+<Architect> ok from the block the rightmost wall was built on
+<Architect> move up 2 and to the right 1
+<Architect> one block lower
+<Builder> here?
+<Architect> one lower
+<Architect> yea there
+<Builder> ok
+<Architect> the rightmost block of a 3 wide and 6 tall blue wall goes there
+[Builder puts down a blue block at X:-5 Y:1 Z:2]
+[Builder puts down a blue block at X:-4 Y:1 Z:2]
+[Builder puts down a blue block at X:-3 Y:1 Z:2]
+[Builder puts down a blue block at X:-3 Y:2 Z:2]
+[Builder puts down a blue block at X:-4 Y:2 Z:2]
+[Builder puts down a blue block at X:-5 Y:2 Z:2]
+[Builder puts down a blue block at X:-5 Y:3 Z:2]
+[Builder puts down a blue block at X:-4 Y:3 Z:2]
+[Builder puts down a blue block at X:-3 Y:3 Z:2]
+[Builder puts down a blue block at X:-5 Y:4 Z:2]
+[Builder puts down a blue block at X:-3 Y:4 Z:2]
+[Builder puts down a blue block at X:-4 Y:4 Z:2]
+[Builder puts down a blue block at X:-5 Y:5 Z:2]
+[Builder puts down a blue block at X:-3 Y:5 Z:2]
+[Builder puts down a blue block at X:-4 Y:5 Z:2]
+[Builder puts down a blue block at X:-3 Y:6 Z:2]
+[Builder puts down a blue block at X:-4 Y:6 Z:2]
+[Builder puts down a blue block at X:-5 Y:6 Z:2]
+<Architect> ok, top row down againw we'll remove blocks
+<Builder> ok
+<Architect> right 2 blocks
+[Builder picks up a blue block at X:-5 Y:6 Z:2]
+[Builder picks up a blue block at X:-4 Y:6 Z:2]
+<Architect> same for the row below it
+[Builder picks up a blue block at X:-5 Y:5 Z:2]
+[Builder picks up a blue block at X:-4 Y:5 Z:2]
+<Architect> middle block
+[Builder picks up a blue block at X:-4 Y:4 Z:2]
+<Architect> none on that row
+<Architect> on the bottom two rows the leftmost two blocks
+[Builder picks up a blue block at X:-4 Y:2 Z:2]
+[Builder picks up a blue block at X:-4 Y:1 Z:2]
+[Builder picks up a blue block at X:-3 Y:2 Z:2]
+[Builder picks up a blue block at X:-3 Y:1 Z:2]
+<Architect> yea we're done
+<Builder> cool

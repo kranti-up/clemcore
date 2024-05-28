@@ -1,0 +1,120 @@
+B25-A51-C111-1524261941627
+<Builder> Mission has started.
+<Builder> hi
+<Architect> howdy
+<Builder> where are we starting?
+<Architect> so it's gonna be a 3x3 square
+<Builder> what color
+<Architect> lets start with green
+<Architect> a 3x3x3
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:2 Y:1 Z:-2]
+[Builder puts down a green block at X:1 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:3 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:2]
+[Builder picks up a green block at X:1 Y:1 Z:2]
+[Builder puts down a green block at X:2 Y:1 Z:1]
+[Builder puts down a green block at X:3 Y:1 Z:1]
+[Builder picks up a green block at X:0 Y:1 Z:1]
+[Builder picks up a green block at X:1 Y:1 Z:1]
+[Builder picks up a green block at X:2 Y:1 Z:1]
+[Builder picks up a green block at X:3 Y:1 Z:1]
+[Builder picks up a green block at X:3 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+[Builder puts down a green block at X:2 Y:1 Z:-1]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:2 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:2 Z:-2]
+[Builder puts down a green block at X:0 Y:2 Z:-1]
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:2 Z:-2]
+[Builder puts down a green block at X:1 Y:2 Z:-1]
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:1 Y:2 Z:0]
+[Builder puts down a green block at X:2 Y:2 Z:0]
+[Builder puts down a green block at X:2 Y:2 Z:-1]
+[Builder puts down a green block at X:2 Y:2 Z:-2]
+[Builder puts down a green block at X:0 Y:3 Z:-2]
+[Builder puts down a green block at X:1 Y:3 Z:-2]
+<Architect> okay so
+<Builder> ran out of green
+<Architect> the corner to the right of you, take out the bottom corner
+[Builder picks up a green block at X:2 Y:1 Z:-2]
+<Architect> replace it with yellow
+[Builder puts down a yellow block at X:2 Y:1 Z:-2]
+<Architect> do the same for the second layer
+[Builder puts down a yellow block at X:2 Y:2 Z:-2]
+<Architect> and for the cubes to the left and right of the 2nd layer yellow, replace with yellow
+[Builder picks up a green block at X:2 Y:2 Z:-1]
+[Builder picks up a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder puts down a yellow block at X:2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:2 Z:-2]
+<Architect> okay so moving to the right of the yellow corner
+<Architect> wait its supposed to be floating, can you shift everything (currently) upwards?
+<Architect> by one layer, i mean
+[Builder picks up a yellow block at X:2 Y:2 Z:-2]
+[Builder picks up a yellow block at X:1 Y:2 Z:-2]
+[Builder picks up a yellow block at X:2 Y:2 Z:-1]
+[Builder picks up a green block at X:2 Y:1 Z:-1]
+[Builder picks up a green block at X:2 Y:2 Z:0]
+[Builder picks up a green block at X:2 Y:1 Z:0]
+[Builder picks up a green block at X:1 Y:2 Z:0]
+[Builder picks up a green block at X:1 Y:1 Z:0]
+[Builder picks up a green block at X:1 Y:2 Z:-1]
+[Builder picks up a green block at X:1 Y:1 Z:-1]
+[Builder picks up a green block at X:1 Y:1 Z:-2]
+[Builder picks up a green block at X:0 Y:1 Z:-2]
+[Builder picks up a green block at X:0 Y:1 Z:-1]
+[Builder picks up a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:2 Z:-1]
+[Builder puts down a green block at X:1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:2 Y:2 Z:-2]
+[Builder puts down a green block at X:2 Y:2 Z:-1]
+[Builder puts down a green block at X:2 Y:2 Z:0]
+[Builder picks up a green block at X:1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:2 Y:3 Z:-2]
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+<Architect> perfect, so then to the right of the yellow corner, can you take out the corner and replace it with red
+[Builder picks up a green block at X:0 Y:2 Z:-2]
+[Builder puts down a green block at X:0 Y:2 Z:-2]
+[Builder picks up a green block at X:0 Y:3 Z:-2]
+[Builder puts down a red block at X:0 Y:3 Z:-2]
+<Architect> okay, now do the same for the bottom layer
+[Builder picks up a green block at X:0 Y:2 Z:-2]
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+<Architect> to the left and right of the bottom layer (red corner), replace the green blocks with red
+[Builder picks up a green block at X:1 Y:2 Z:-2]
+[Builder puts down a green block at X:1 Y:2 Z:-2]
+[Builder picks up a green block at X:1 Y:2 Z:-2]
+[Builder picks up a green block at X:1 Y:2 Z:-1]
+[Builder puts down a green block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder picks up a green block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+<Architect> okay so to the right of the red, replace both top and bottom corners of green with orange
+[Builder picks up a green block at X:0 Y:3 Z:0]
+[Builder picks up a green block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder picks up a green block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder picks up a green block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+<Builder> am i doing that
+<Architect> great, now in the very middle, get rid of all the green
+[Builder picks up a green block at X:1 Y:3 Z:-1]
+[Builder picks up a green block at X:1 Y:2 Z:-1]
+<Architect> that should be it
+<Builder> yay

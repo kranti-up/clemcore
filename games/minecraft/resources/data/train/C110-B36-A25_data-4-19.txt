@@ -1,0 +1,41 @@
+B36-A25-C110-1524177194497
+<Builder> Mission has started.
+<Builder> hi
+<Architect> ok, so we'll start 5 to the right and 3 up from the bottom left corner
+<Architect> put a purple block floating one block above the ground
+[Builder puts down a purple block at X:1 Y:1 Z:-3]
+[Builder puts down a purple block at X:1 Y:2 Z:-3]
+[Builder picks up a purple block at X:1 Y:1 Z:-3]
+<Architect> put another one on the face of that block facing away from you
+[Builder puts down a purple block at X:1 Y:2 Z:-2]
+<Architect> then a block to the left of the one you just put down
+[Builder puts down a purple block at X:2 Y:2 Z:-2]
+<Architect> and then another one above it
+[Builder puts down a purple block at X:2 Y:3 Z:-2]
+<Architect> put a red block on the face facing away from you
+[Builder puts down a red block at X:2 Y:3 Z:-1]
+<Architect> and then another one
+[Builder puts down a red block at X:2 Y:3 Z:0]
+<Architect> then a red block on top of it
+[Builder puts down a red block at X:2 Y:4 Z:0]
+<Architect> and then to the left of it
+[Builder puts down a red block at X:1 Y:4 Z:0]
+<Architect> perfect
+<Architect> then a blue block to the left of that one
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+<Architect> then a blue block on the face facing away from you
+[Builder puts down a blue block at X:0 Y:4 Z:-1]
+<Architect> then a block below it
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+<Architect> then a block to the right of it
+[Builder puts down a blue block at X:-1 Y:3 Z:-1]
+<Architect> then put a green down on the side facing you
+[Builder puts down a green block at X:-1 Y:3 Z:-2]
+<Architect> then a block below that one
+[Builder puts down a green block at X:-1 Y:2 Z:-2]
+<Architect> then a block on the side facing you of the one you just put down
+<Builder> green?
+<Architect> yea
+[Builder puts down a green block at X:-1 Y:2 Z:-3]
+<Architect> and then a green to the left of that one
+[Builder puts down a green block at X:0 Y:2 Z:-3]

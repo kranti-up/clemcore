@@ -1,0 +1,46 @@
+B1-A44-C58-1523039254701
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hello. this time we're making a 2d drawing flush with the floor
+<Builder> all flat?
+<Architect> start anywhere and build away from you
+<Architect> all flat. 1st column: 5 blue
+[Builder puts down a blue block at X:3 Y:1 Z:-3]
+[Builder puts down a blue block at X:3 Y:1 Z:-2]
+[Builder puts down a blue block at X:3 Y:1 Z:-1]
+[Builder puts down a blue block at X:3 Y:1 Z:0]
+[Builder puts down a blue block at X:3 Y:1 Z:1]
+<Architect> 2nd: 2 yellow, 3 blue
+[Builder puts down a yellow block at X:2 Y:1 Z:-3]
+[Builder puts down a yellow block at X:2 Y:1 Z:-2]
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:2 Y:1 Z:0]
+[Builder puts down a blue block at X:2 Y:1 Z:1]
+<Architect> 3rd: 3 blue, 1 yellow, 1 blue
+[Builder puts down a blue block at X:1 Y:1 Z:-3]
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+<Architect> 4th same as 3rd
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:-3]
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+<Architect> ok there are 2 groups of yellow blocks. approach any one of them and look at the yellow block at the endge
+<Architect> edge*
+<Builder> here?
+<Architect> place 1 yellow block above that block
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+<Builder> like this?
+<Architect> and place another toward you on the block you just placed
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+<Architect> ok approach the other yellow group
+<Architect> and put a yellow block on the one on the edge
+[Builder puts down a yellow block at X:2 Y:2 Z:-3]
+<Architect> and one towards you
+<Builder> step?
+[Builder puts down a yellow block at X:2 Y:2 Z:-4]
+<Architect> ok we're done goodj ob
+<Builder> good job

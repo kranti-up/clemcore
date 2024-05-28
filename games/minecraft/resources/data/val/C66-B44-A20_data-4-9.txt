@@ -1,0 +1,76 @@
+B44-A20-C66-1523287015423
+<Builder> Mission has started.
+<Architect> leave room for an 8x6
+<Architect> we'll start in the middle-ish
+<Architect> place a row of 5 orange
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+[Builder puts down a orange block at X:1 Y:1 Z:2]
+<Architect> now place one orange on top of the orange on each end
+[Builder puts down a orange block at X:1 Y:2 Z:2]
+[Builder puts down a orange block at X:1 Y:2 Z:-2]
+<Architect> now make an upside down "v" of 3 orange so the whole thing makes a house shape
+[Builder puts down a orange block at X:1 Y:3 Z:-2]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder picks up a orange block at X:1 Y:3 Z:-2]
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:4 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+[Builder picks up a orange block at X:1 Y:3 Z:0]
+<Architect> great
+<Architect> we'll be repeating this shape in various rotations
+<Architect> switch to red and go to the left face please
+<Architect> place one red on top of the oranges closest to you
+[Builder puts down a red block at X:1 Y:3 Z:-2]
+<Architect> then one red towards you
+[Builder puts down a red block at X:1 Y:3 Z:-3]
+<Architect> delete the first red
+[Builder picks up a red block at X:1 Y:3 Z:-2]
+<Architect> this is the point of the house
+<Architect> it's upside down
+[Builder puts down a red block at X:1 Y:4 Z:-3]
+[Builder puts down a red block at X:0 Y:4 Z:-3]
+[Builder picks up a red block at X:1 Y:4 Z:-3]
+[Builder puts down a red block at X:1 Y:4 Z:-3]
+[Builder puts down a red block at X:2 Y:4 Z:-3]
+[Builder picks up a red block at X:1 Y:4 Z:-3]
+[Builder puts down a red block at X:3 Y:4 Z:-3]
+[Builder puts down a red block at X:3 Y:5 Z:-3]
+[Builder picks up a red block at X:3 Y:4 Z:-3]
+[Builder puts down a red block at X:3 Y:6 Z:-3]
+<Architect> doing great (:
+[Builder puts down a red block at X:2 Y:6 Z:-3]
+[Builder puts down a red block at X:1 Y:6 Z:-3]
+[Builder puts down a red block at X:0 Y:6 Z:-3]
+[Builder puts down a red block at X:-1 Y:6 Z:-3]
+[Builder puts down a red block at X:-1 Y:5 Z:-3]
+<Architect> now we'll switch to green and the left face
+<Architect> green is floating
+<Architect> place one green towards you on the bottom red closest to you
+[Builder puts down a green block at X:3 Y:4 Z:-3]
+<Builder> here?
+[Builder puts down a green block at X:4 Y:5 Z:-3]
+<Architect> one up and one closer
+[Builder picks up a green block at X:3 Y:4 Z:-3]
+<Architect> yeah there
+<Architect> that's the point of the house and it's upright like the orange one
+[Builder puts down a green block at X:4 Y:4 Z:-3]
+[Builder puts down a green block at X:4 Y:4 Z:-2]
+[Builder puts down a green block at X:4 Y:4 Z:-4]
+[Builder puts down a green block at X:4 Y:3 Z:-4]
+[Builder puts down a green block at X:4 Y:3 Z:-5]
+[Builder puts down a green block at X:4 Y:2 Z:-5]
+[Builder puts down a green block at X:4 Y:2 Z:-4]
+[Builder picks up a green block at X:4 Y:3 Z:-4]
+[Builder picks up a green block at X:4 Y:4 Z:-3]
+[Builder puts down a green block at X:4 Y:2 Z:-3]
+[Builder puts down a green block at X:4 Y:2 Z:-2]
+[Builder puts down a green block at X:4 Y:2 Z:-1]
+[Builder puts down a green block at X:4 Y:3 Z:-1]
+<Architect> that's all!
+<Builder> woo

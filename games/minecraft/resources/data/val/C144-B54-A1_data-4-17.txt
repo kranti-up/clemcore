@@ -1,0 +1,114 @@
+B54-A1-C144-1523979171030
+<Builder> Mission has started.
+<Architect> Hello
+<Builder> Hey there
+<Architect> it looks like a purple P and then something else
+<Architect> the P is 5 by 3
+[Builder puts down a purple block at X:0 Y:1 Z:-3]
+<Builder> Horizontal or vertical?
+<Architect> vertical
+[Builder puts down a purple block at X:0 Y:2 Z:-3]
+[Builder puts down a purple block at X:0 Y:3 Z:-3]
+[Builder puts down a purple block at X:0 Y:4 Z:-3]
+[Builder puts down a purple block at X:0 Y:5 Z:-3]
+[Builder puts down a purple block at X:-1 Y:5 Z:-3]
+[Builder puts down a purple block at X:-2 Y:5 Z:-3]
+[Builder puts down a purple block at X:-1 Y:3 Z:-3]
+[Builder puts down a purple block at X:-2 Y:3 Z:-3]
+[Builder puts down a purple block at X:-2 Y:4 Z:-3]
+<Architect> thats perfect, but can you build a bit to the left?
+[Builder picks up a purple block at X:0 Y:1 Z:-3]
+[Builder picks up a purple block at X:0 Y:2 Z:-3]
+[Builder picks up a purple block at X:0 Y:3 Z:-3]
+[Builder picks up a purple block at X:0 Y:4 Z:-3]
+[Builder picks up a purple block at X:0 Y:5 Z:-3]
+[Builder picks up a purple block at X:-2 Y:4 Z:-3]
+[Builder picks up a purple block at X:-2 Y:5 Z:-3]
+[Builder picks up a purple block at X:-1 Y:5 Z:-3]
+[Builder picks up a purple block at X:-1 Y:3 Z:-3]
+[Builder picks up a purple block at X:-2 Y:3 Z:-3]
+[Builder puts down a purple block at X:4 Y:1 Z:-3]
+[Builder puts down a purple block at X:4 Y:2 Z:-3]
+[Builder puts down a purple block at X:4 Y:3 Z:-3]
+[Builder puts down a purple block at X:4 Y:4 Z:-3]
+[Builder puts down a purple block at X:4 Y:5 Z:-3]
+[Builder puts down a purple block at X:3 Y:5 Z:-3]
+[Builder puts down a purple block at X:1 Y:5 Z:-3]
+[Builder puts down a purple block at X:3 Y:3 Z:-3]
+[Builder puts down a purple block at X:2 Y:3 Z:-3]
+[Builder puts down a purple block at X:2 Y:4 Z:-3]
+[Builder picks up a purple block at X:2 Y:4 Z:-3]
+[Builder picks up a purple block at X:1 Y:5 Z:-3]
+[Builder puts down a purple block at X:2 Y:4 Z:-3]
+<Architect> awesome
+<Architect> now with 2 red blocks make it look like an R
+[Builder puts down a red block at X:3 Y:2 Z:-3]
+[Builder puts down a red block at X:2 Y:1 Z:-3]
+<Architect> great
+<Architect> okay can you put one more red block right next to the last one you placed
+[Builder puts down a red block at X:1 Y:1 Z:-3]
+<Builder> Like this?
+<Architect> yes
+<Architect> we are building steps here. kinda like a staircase
+<Architect> thats the first step we need two more
+<Builder> Which way is it ascending?
+<Architect> towards the right
+[Builder puts down a red block at X:0 Y:1 Z:-3]
+[Builder puts down a red block at X:0 Y:2 Z:-3]
+[Builder picks up a red block at X:0 Y:1 Z:-3]
+[Builder puts down a red block at X:-1 Y:2 Z:-3]
+[Builder puts down a red block at X:-1 Y:3 Z:-3]
+[Builder picks up a red block at X:-1 Y:2 Z:-3]
+<Architect> great
+<Architect> now one more step going back (away from you)
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder picks up a red block at X:1 Y:1 Z:-2]
+<Architect> sorry from the last step you placed
+[Builder picks up a red block at X:1 Y:2 Z:-2]
+[Builder puts down a red block at X:-1 Y:3 Z:-2]
+[Builder puts down a red block at X:-1 Y:4 Z:-2]
+[Builder picks up a red block at X:-1 Y:3 Z:-2]
+<Architect> ok.
+<Architect> now another step going down from the last step you placed in the same orientation
+[Builder puts down a red block at X:-1 Y:3 Z:-2]
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+[Builder picks up a red block at X:-1 Y:3 Z:-1]
+[Builder picks up a red block at X:-1 Y:3 Z:-3]
+[Builder puts down a red block at X:-1 Y:3 Z:-3]
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+[Builder picks up a red block at X:-1 Y:3 Z:-2]
+<Architect> great now just three orange blocks left
+<Builder> Left of the last block?
+<Architect> i mean its not steps any more its something else
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder puts down a orange block at X:2 Y:3 Z:-1]
+<Architect> can you remove those orange blocks?
+[Builder picks up a orange block at X:1 Y:3 Z:-1]
+[Builder picks up a orange block at X:2 Y:3 Z:-1]
+[Builder picks up a orange block at X:0 Y:3 Z:-1]
+<Architect> place one orange block under the last red step
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+<Architect> place one orange block one block away and to the right of that one
+<Architect> it should be on the floor
+[Builder puts down a orange block at X:-1 Y:1 Z:-3]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+<Builder> Which one?
+<Architect> hmm.. can you remove those two blocks
+[Builder picks up a orange block at X:-1 Y:1 Z:-3]
+[Builder picks up a orange block at X:1 Y:1 Z:-1]
+<Builder> Should it be diagonally touching it?
+<Architect> yes
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+<Architect> its not a step..
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+<Architect> on the other side
+[Builder picks up a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:-2 Y:1 Z:-2]
+<Architect> yes
+<Architect> the last orange one is also diagonaly touching this last orange block you just placed
+<Architect> forming a line
+[Builder puts down a orange block at X:-3 Y:1 Z:-3]
+<Architect> great

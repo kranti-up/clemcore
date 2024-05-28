@@ -1,0 +1,61 @@
+B31-A41-C68-1523031374960
+<Builder> Mission has started.
+<Architect> Okay. Make a line of three orange in the middle of the map
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+<Architect> Okay, then two more orange on the ground next to the middle block, so it forms an X
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+<Architect> Cool. Now stack four more orange on top of the middle block
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+<Architect> Now make a platform of green squares, 3 by 3, centered around the third block from the top
+[Builder puts down a green block at X:0 Y:3 Z:-2]
+[Builder puts down a green block at X:1 Y:3 Z:-2]
+<Builder> Is this the right height?
+<Architect> Yes!
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:-2]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+<Architect> Okay, now a X shape of green squares centered around the top block
+[Builder puts down a green block at X:-1 Y:5 Z:-1]
+[Builder puts down a green block at X:0 Y:5 Z:0]
+[Builder puts down a green block at X:1 Y:5 Z:-1]
+<Architect> Made of four green blocks
+[Builder puts down a green block at X:0 Y:5 Z:-2]
+<Architect> Perfect
+<Architect> Now we add ornaments to our tree. They are floating.
+<Architect> First add two yellow blocks to the top orange block, then remove the bottom yellow block
+[Builder puts down a yellow block at X:0 Y:6 Z:-1]
+[Builder puts down a yellow block at X:0 Y:7 Z:-1]
+[Builder picks up a yellow block at X:0 Y:6 Z:-1]
+<Architect> Okay. Now on one side, in the middle, next to one of the arms of the bottom orange X, stack two purple blocks and remove the bottom block
+[Builder puts down a purple block at X:2 Y:1 Z:-1]
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+[Builder picks up a purple block at X:2 Y:1 Z:-1]
+<Builder> Is that right?
+<Architect> Yes perfect
+<Architect> Okay now on the other side of the tree from the purple block, add a blue block so that it makes a diagonal line with the shadow on the ground
+[Builder puts down a blue block at X:-2 Y:1 Z:-1]
+[Builder puts down a blue block at X:-2 Y:2 Z:-1]
+[Builder picks up a blue block at X:-2 Y:1 Z:-1]
+<Builder> There?
+<Architect> Needs to be two spaces closer to you
+[Builder puts down a blue block at X:-2 Y:2 Z:-2]
+[Builder puts down a blue block at X:-2 Y:2 Z:-3]
+[Builder picks up a blue block at X:-2 Y:2 Z:-2]
+[Builder picks up a blue block at X:-2 Y:2 Z:-1]
+<Architect> Perfect
+<Architect> Okay now on the side of the tree with the blue block, we need a red block to be floating in the middle of the two green layers
+<Architect> It will be in the center
+[Builder puts down a red block at X:-2 Y:3 Z:-1]
+[Builder puts down a red block at X:-2 Y:4 Z:-1]
+[Builder picks up a red block at X:-2 Y:3 Z:-1]
+<Builder> Is this right?
+<Architect> Yes perfect! I think we are done

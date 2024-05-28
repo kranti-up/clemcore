@@ -1,0 +1,49 @@
+B35-A34-C120-1524004797173
+<Builder> Mission has started.
+<Architect> this is 2D
+<Builder> okay
+<Architect> it says hi
+<Builder> hi, HI, hI, or Hi
+<Architect> so place one yellow block on the ground
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+<Architect> move to the other side of the block
+<Builder> give me a direction
+<Builder> that's not specific enough
+<Architect> you are now looking at the back face
+<Architect> great
+<Builder> u can say rotate 180 around the block
+<Architect> now place one yellow on top of that
+<Builder> it'll be easier for me
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+<Architect> place one purple on top of that
+[Builder puts down a purple block at X:2 Y:3 Z:0]
+<Architect> now place 3 yellow on top of that
+[Builder puts down a yellow block at X:2 Y:4 Z:0]
+[Builder puts down a yellow block at X:2 Y:5 Z:0]
+[Builder puts down a yellow block at X:2 Y:6 Z:0]
+<Architect> remove the purple
+[Builder picks up a purple block at X:2 Y:3 Z:0]
+<Architect> and now make a plus with the top 3 yellow blocks
+[Builder puts down a yellow block at X:1 Y:5 Z:0]
+[Builder puts down a yellow block at X:3 Y:5 Z:0]
+<Architect> there
+<Architect> now on that second yellow block from the bottom
+<Architect> place a purple block to the left of it
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+<Architect> now one green left of that
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder picks up a purple block at X:1 Y:2 Z:0]
+<Architect> remove the purple
+<Architect> place one green on that green block
+[Builder puts down a green block at X:0 Y:3 Z:0]
+<Architect> 2 to the left
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+<Architect> green
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+<Architect> one down and 2 up
+[Builder puts down a green block at X:-2 Y:2 Z:0]
+[Builder puts down a green block at X:-2 Y:4 Z:0]
+[Builder puts down a green block at X:-2 Y:5 Z:0]
+<Architect> perfect

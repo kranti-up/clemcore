@@ -1,0 +1,65 @@
+B44-A20-C35-1523285026757
+<Builder> Mission has started.
+<Architect> we'll need area for a 4x4
+<Architect> start with a row of 4 red
+[Builder puts down a red block at X:2 Y:1 Z:3]
+[Builder puts down a red block at X:1 Y:1 Z:3]
+[Builder puts down a red block at X:0 Y:1 Z:3]
+[Builder puts down a red block at X:-1 Y:1 Z:3]
+<Architect> no we'll build vertically
+<Architect> now*
+<Architect> switch to orange
+<Architect> place 3 on top of the left red block
+[Builder puts down a orange block at X:2 Y:2 Z:3]
+[Builder puts down a orange block at X:2 Y:3 Z:3]
+[Builder puts down a orange block at X:2 Y:4 Z:3]
+<Architect> now we'll do yellow
+<Architect> it'll make a diagonal connectin the top orange to the right-most red
+<Architect> 3 yellow in total
+[Builder puts down a yellow block at X:1 Y:4 Z:3]
+[Builder puts down a yellow block at X:1 Y:5 Z:3]
+[Builder picks up a yellow block at X:1 Y:4 Z:3]
+[Builder puts down a yellow block at X:0 Y:5 Z:3]
+[Builder puts down a yellow block at X:0 Y:6 Z:3]
+[Builder picks up a yellow block at X:0 Y:5 Z:3]
+[Builder puts down a yellow block at X:-1 Y:6 Z:3]
+[Builder puts down a yellow block at X:-1 Y:7 Z:3]
+[Builder picks up a yellow block at X:-1 Y:6 Z:3]
+<Architect> sorry. I meant it goes downward to the red block
+[Builder picks up a yellow block at X:0 Y:6 Z:3]
+[Builder picks up a yellow block at X:-1 Y:7 Z:3]
+[Builder puts down a yellow block at X:-1 Y:2 Z:3]
+[Builder puts down a yellow block at X:0 Y:2 Z:3]
+[Builder puts down a yellow block at X:0 Y:3 Z:3]
+[Builder picks up a yellow block at X:0 Y:2 Z:3]
+[Builder puts down a yellow block at X:1 Y:4 Z:3]
+[Builder picks up a yellow block at X:1 Y:5 Z:3]
+<Architect> perfect!
+<Architect> now we'll switch to green
+<Architect> place one block of green on top of each yellow
+[Builder puts down a green block at X:1 Y:5 Z:3]
+[Builder puts down a green block at X:0 Y:4 Z:3]
+[Builder puts down a green block at X:-1 Y:3 Z:3]
+<Architect> great! now we'll do blue
+<Architect> put one blut on top of orange
+[Builder puts down a blue block at X:2 Y:4 Z:2]
+[Builder picks up a blue block at X:2 Y:4 Z:2]
+[Builder puts down a blue block at X:2 Y:5 Z:3]
+<Architect> now three blue towards you
+[Builder puts down a blue block at X:2 Y:5 Z:2]
+[Builder puts down a blue block at X:2 Y:5 Z:0]
+[Builder puts down a blue block at X:2 Y:5 Z:-1]
+[Builder picks up a blue block at X:2 Y:5 Z:-1]
+<Architect> great! now let's do purple
+<Architect> place one purple attached to the right most green
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+<Architect> great!
+<Architect> now place one purple to the right of the blue that's closest to you
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+<Architect> two purple toward you coming from the middle green
+[Builder puts down a purple block at X:0 Y:4 Z:2]
+[Builder puts down a purple block at X:0 Y:4 Z:1]
+<Architect> now delete the first purple you place
+[Builder picks up a purple block at X:0 Y:4 Z:2]
+<Architect> we got it!
+<Builder> nice

@@ -1,0 +1,53 @@
+B36-A38-C151-1524261931033
+<Builder> Mission has started.
+<Builder> hi
+<Architect> Hello, We are going to be building a coat hangar today
+<Builder> sounds good
+<Architect> It is going to be 2 dimensional and vertical, First. we will need a 7 block long red bar on the ground
+[Builder puts down a red block at X:3 Y:1 Z:-2]
+[Builder puts down a red block at X:2 Y:1 Z:-2]
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-2 Y:1 Z:-2]
+[Builder puts down a red block at X:-3 Y:1 Z:-2]
+<Builder> like this?
+<Architect> Perfect, next. On top of the two ends, place an orange block
+[Builder puts down a orange block at X:-3 Y:2 Z:-2]
+[Builder puts down a orange block at X:3 Y:2 Z:-2]
+<Architect> Great. Can you build a set of stairs going up between the two blocks?
+<Builder> sure
+<Architect> Thanks
+[Builder puts down a orange block at X:3 Y:3 Z:-2]
+[Builder puts down a orange block at X:2 Y:3 Z:-2]
+[Builder picks up a orange block at X:3 Y:3 Z:-2]
+[Builder puts down a orange block at X:-3 Y:3 Z:-2]
+[Builder puts down a orange block at X:-2 Y:3 Z:-2]
+[Builder picks up a orange block at X:-3 Y:3 Z:-2]
+[Builder puts down a orange block at X:-2 Y:4 Z:-2]
+[Builder puts down a orange block at X:-1 Y:4 Z:-2]
+[Builder picks up a orange block at X:-2 Y:4 Z:-2]
+[Builder puts down a orange block at X:2 Y:4 Z:-2]
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+[Builder picks up a orange block at X:2 Y:4 Z:-2]
+[Builder puts down a orange block at X:-1 Y:5 Z:-2]
+[Builder puts down a orange block at X:0 Y:5 Z:-2]
+[Builder picks up a orange block at X:-1 Y:5 Z:-2]
+<Builder> like this?
+<Architect> on top of the center orange block, can you add 2 purple blocks going off to a side
+<Builder> ok
+[Builder puts down a purple block at X:0 Y:6 Z:-2]
+<Architect> Thank you
+[Builder puts down a purple block at X:-1 Y:6 Z:-2]
+<Builder> no prob
+<Builder> like this??
+<Architect> Yup, now just swap the center orange block for a purple block
+<Builder> ok
+[Builder picks up a orange block at X:0 Y:5 Z:-2]
+[Builder puts down a orange block at X:0 Y:5 Z:-2]
+[Builder puts down a orange block at X:0 Y:5 Z:-3]
+[Builder picks up a orange block at X:0 Y:5 Z:-3]
+[Builder picks up a orange block at X:0 Y:5 Z:-2]
+[Builder puts down a purple block at X:0 Y:5 Z:-2]
+<Architect> Great, this looks right
+<Builder> cool

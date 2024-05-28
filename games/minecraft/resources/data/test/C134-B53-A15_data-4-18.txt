@@ -1,0 +1,129 @@
+B53-A15-C134-1524068085178
+<Builder> Mission has started.
+<Architect> this one's a rainbow ring
+<Architect> start with a floating red block one tile above the center
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+<Architect> now, an orange block one tile above and away from that
+<Architect> any direction is fine, just not directly above
+<Builder> gotcha
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder picks up a red block at X:0 Y:3 Z:0]
+<Architect> the position is good, but it should be orange
+<Builder> Oops
+[Builder picks up a red block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder picks up a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder picks up a orange block at X:0 Y:4 Z:-1]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+<Architect> two more orange blocks in the same trajectory :)
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+[Builder puts down a orange block at X:0 Y:4 Z:-2]
+[Builder puts down a orange block at X:0 Y:4 Z:-3]
+[Builder puts down a orange block at X:0 Y:5 Z:-3]
+[Builder picks up a orange block at X:0 Y:4 Z:-3]
+[Builder picks up a orange block at X:0 Y:3 Z:-2]
+<Architect> cool. now make a row of 3 yellow blocks on top of that, perpendicular
+<Architect> to the rest of them*
+<Builder> Centered?
+<Architect> centered, yeah
+[Builder puts down a yellow block at X:0 Y:6 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:6 Z:-3]
+[Builder puts down a yellow block at X:1 Y:6 Z:-3]
+<Architect> now a row of 3 green bending upwards and back towards the red block in a staircase
+<Builder> Should they mirror the orange blocks?
+[Builder puts down a green block at X:0 Y:7 Z:-3]
+[Builder puts down a green block at X:0 Y:7 Z:-2]
+[Builder puts down a green block at X:0 Y:8 Z:-2]
+[Builder picks up a green block at X:0 Y:7 Z:-2]
+[Builder puts down a green block at X:0 Y:9 Z:-2]
+[Builder puts down a green block at X:0 Y:9 Z:-1]
+[Builder picks up a green block at X:0 Y:9 Z:-2]
+<Architect> no, sorry, the row of green should be parallel to the ywellow
+<Architect> it's a weird ring
+<Builder> I don't think I understand
+[Builder picks up a green block at X:0 Y:9 Z:-1]
+[Builder picks up a green block at X:0 Y:8 Z:-2]
+<Architect> okay, start with 3 green blocks directly on top of the 3 yellow ones
+[Builder puts down a green block at X:-1 Y:7 Z:-3]
+[Builder puts down a green block at X:1 Y:7 Z:-3]
+<Architect> put another row next to them, above the 2nd highest orange block
+<Builder> Oh, so now we're building a staircase out of rows?
+[Builder puts down a green block at X:1 Y:7 Z:-2]
+[Builder puts down a green block at X:1 Y:8 Z:-2]
+[Builder picks up a green block at X:1 Y:7 Z:-2]
+[Builder puts down a green block at X:0 Y:8 Z:-3]
+[Builder puts down a green block at X:0 Y:8 Z:-2]
+[Builder puts down a green block at X:-1 Y:8 Z:-2]
+[Builder picks up a green block at X:0 Y:8 Z:-3]
+<Architect> precisely!
+<Builder> one more, yes?
+[Builder puts down a green block at X:-1 Y:8 Z:-1]
+<Architect> no not yet
+[Builder picks up a green block at X:-1 Y:8 Z:-1]
+[Builder picks up a red block at X:0 Y:2 Z:0]
+<Builder> Now what?
+<Architect> the 2nd row should be one tile down
+<Architect> at the same height as the first noe
+<Architect> one*
+[Builder puts down a green block at X:2 Y:8 Z:-2]
+[Builder picks up a green block at X:2 Y:8 Z:-2]
+[Builder picks up a green block at X:1 Y:8 Z:-2]
+[Builder picks up a green block at X:0 Y:8 Z:-2]
+[Builder picks up a green block at X:-1 Y:8 Z:-2]
+[Builder puts down a green block at X:1 Y:7 Z:-2]
+[Builder puts down a green block at X:0 Y:7 Z:-2]
+[Builder puts down a green block at X:-1 Y:7 Z:-2]
+<Architect> and now delete the first row of green
+[Builder puts down a green block at X:1 Y:8 Z:-3]
+[Builder picks up a green block at X:1 Y:8 Z:-3]
+[Builder picks up a green block at X:1 Y:7 Z:-3]
+[Builder picks up a green block at X:0 Y:7 Z:-3]
+[Builder picks up a green block at X:-1 Y:7 Z:-3]
+<Architect> good! now make a row of blue in the same trajectory as the yellow and green
+[Builder puts down a blue block at X:1 Y:8 Z:-2]
+[Builder puts down a blue block at X:1 Y:8 Z:-1]
+[Builder picks up a blue block at X:1 Y:8 Z:-1]
+[Builder puts down a blue block at X:1 Y:8 Z:-1]
+[Builder picks up a blue block at X:1 Y:8 Z:-2]
+[Builder puts down a blue block at X:0 Y:8 Z:-1]
+[Builder puts down a blue block at X:-1 Y:8 Z:-1]
+<Builder> Hopefully I understood that time
+<Architect> perfect! and a row of purple directly adjacent, at the same height
+<Builder> Adjacecnt to the left?
+[Builder puts down a purple block at X:1 Y:8 Z:0]
+[Builder puts down a purple block at X:0 Y:8 Z:0]
+[Builder puts down a purple block at X:-1 Y:8 Z:0]
+<Architect> yes, perfect!
+<Architect> now that structure should be mirrored, starting with a row of blue next to the purple
+<Builder> Ok, are all of the colors the same on the other side?
+<Architect> so no more red or purple blocks
+<Architect> yes :)
+[Builder puts down a blue block at X:-1 Y:8 Z:1]
+[Builder puts down a blue block at X:0 Y:8 Z:1]
+[Builder picks up a blue block at X:0 Y:9 Z:1]
+[Builder puts down a blue block at X:1 Y:8 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder picks up a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:2]
+[Builder picks up a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:3]
+[Builder puts down a orange block at X:0 Y:5 Z:3]
+[Builder picks up a orange block at X:0 Y:4 Z:3]
+[Builder puts down a yellow block at X:0 Y:6 Z:3]
+[Builder puts down a yellow block at X:-1 Y:6 Z:3]
+[Builder puts down a yellow block at X:1 Y:6 Z:3]
+[Builder puts down a green block at X:1 Y:7 Z:3]
+[Builder puts down a green block at X:1 Y:7 Z:2]
+[Builder picks up a green block at X:1 Y:7 Z:3]
+[Builder puts down a green block at X:0 Y:7 Z:2]
+[Builder puts down a green block at X:-1 Y:7 Z:2]
+<Architect> looks perfect! :)
+<Builder> Cool!

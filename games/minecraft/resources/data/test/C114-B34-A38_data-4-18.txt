@@ -1,0 +1,46 @@
+B34-A38-C114-1524089643644
+<Builder> Mission has started.
+<Builder> what does this on elook like?
+<Builder> look
+<Architect> It is two Es
+<Builder> in 2D
+<Builder> ?
+<Architect> They are standing up, they bothe face inwards, so they are in a 2x3 pillar
+<Architect> Can you make 5 bock tall pillar of blue blocks?
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+[Builder puts down a blue block at X:1 Y:3 Z:-1]
+[Builder puts down a blue block at X:1 Y:4 Z:-1]
+[Builder puts down a blue block at X:1 Y:5 Z:-1]
+<Architect> The middle block should have 1 block
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+[Builder puts down a blue block at X:1 Y:5 Z:0]
+[Builder puts down a blue block at X:1 Y:5 Z:1]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+<Architect> sorry, extending from it
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+<Architect> Perfect
+<Architect> We are going to use orange blocks for the next E.
+<Architect> on the side closest to you, can you make a pillar of
+<Architect> Right there actually
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:5 Z:1]
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+<Builder> yeah?
+<Architect> Perfect
+<Architect> Wait, sorry. the extending parts on tyhe blue e
+<Architect> should only be 1 long. That was my bad.
+[Builder picks up a blue block at X:1 Y:5 Z:1]
+[Builder picks up a blue block at X:1 Y:1 Z:1]
+<Builder> like that
+<Architect> Yup, sorry about that
+<Builder> and the orange is fine?
+<Architect> Yes, ther orange is good
+<Builder> gr8

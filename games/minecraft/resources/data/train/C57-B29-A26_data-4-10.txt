@@ -1,0 +1,43 @@
+B29-A26-C57-1523374876610
+<Builder> Mission has started.
+<Architect> We'l start with two green bricks horizontal to one another on the ground
+[Builder puts down a green block at X:0 Y:1 Z:2]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+<Architect> On top of the right brick, add two more green bricks
+[Builder puts down a green block at X:0 Y:2 Z:1]
+[Builder puts down a green block at X:0 Y:3 Z:1]
+<Architect> To the left of the top brick, add a green brick
+[Builder puts down a green block at X:0 Y:3 Z:2]
+<Architect> Add one more green brick on top of that one
+[Builder puts down a green block at X:0 Y:4 Z:2]
+<Architect> and one to the left of the most recently placed brick
+[Builder puts down a green block at X:0 Y:4 Z:3]
+<Architect> Great! now place a blue brick underneat that brick
+[Builder puts down a blue block at X:0 Y:3 Z:3]
+<Architect> turn 90 degrees to your left please
+<Architect> nice, now next to the blue brick add a column of 5 more blue bricks
+<Builder> next too meaning?
+[Builder puts down a blue block at X:-1 Y:1 Z:3]
+<Architect> the column will touch the blue brick
+<Builder> here?
+<Architect> Yes
+[Builder puts down a blue block at X:-1 Y:2 Z:3]
+[Builder puts down a blue block at X:-1 Y:3 Z:3]
+[Builder puts down a blue block at X:-1 Y:4 Z:3]
+[Builder puts down a blue block at X:-1 Y:5 Z:3]
+[Builder picks up a blue block at X:-1 Y:5 Z:3]
+[Builder puts down a blue block at X:-1 Y:5 Z:3]
+<Architect> Perfect, now add an L, that uses three blue bricks. It will make the blue bricks look like the number 4
+[Builder puts down a blue block at X:-2 Y:3 Z:3]
+[Builder puts down a blue block at X:-3 Y:3 Z:3]
+[Builder puts down a blue block at X:-3 Y:4 Z:3]
+[Builder picks up a blue block at X:-3 Y:4 Z:3]
+[Builder picks up a blue block at X:-3 Y:3 Z:3]
+[Builder picks up a blue block at X:-2 Y:3 Z:3]
+[Builder puts down a blue block at X:-2 Y:4 Z:3]
+[Builder puts down a blue block at X:-3 Y:4 Z:3]
+[Builder puts down a blue block at X:-3 Y:5 Z:3]
+<Architect> My mistake, the L should use 4 bricks
+[Builder picks up a blue block at X:-2 Y:4 Z:3]
+[Builder puts down a blue block at X:-3 Y:3 Z:3]
+[Builder puts down a blue block at X:-2 Y:3 Z:3]

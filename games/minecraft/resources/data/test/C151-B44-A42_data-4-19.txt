@@ -1,0 +1,63 @@
+B44-A42-C151-1524175485455
+<Builder> Mission has started.
+<Builder> hello. ready
+<Architect> ok first i need you to build a row of red blocks 1 wide 7 long near the middle
+[Builder puts down a red block at X:2 Y:1 Z:3]
+[Builder puts down a red block at X:1 Y:1 Z:3]
+[Builder picks up a red block at X:1 Y:1 Z:3]
+[Builder picks up a red block at X:2 Y:1 Z:3]
+[Builder puts down a red block at X:3 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+[Builder picks up a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-3 Y:1 Z:0]
+<Architect> good
+<Architect> now place an orange block on top of the red blocks on either end of the row
+[Builder puts down a orange block at X:3 Y:2 Z:0]
+[Builder puts down a orange block at X:-3 Y:2 Z:0]
+<Architect> good
+<Architect> now you need to build a sort of diagonal staircase up from each of those blocks that goes up and towards the middle
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder picks up a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder picks up a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder picks up a orange block at X:-2 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+[Builder picks up a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder picks up a orange block at X:0 Y:4 Z:0]
+<Architect> yep now replace the top most block with a purple one
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+[Builder picks up a purple block at X:1 Y:5 Z:0]
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+[Builder picks up a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder picks up a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder picks up a orange block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+[Builder picks up a purple block at X:1 Y:5 Z:0]
+<Builder> sorry some technical difficulties
+<Architect> no problem
+<Architect> now just build a row of 2 blocks going to the left starting on top of the purple block you just placed so it makes an upside down L shape
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+[Builder puts down a purple block at X:2 Y:5 Z:0]
+<Builder> what?
+[Builder picks up a purple block at X:2 Y:5 Z:0]
+[Builder picks up a purple block at X:1 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:6 Z:0]
+[Builder puts down a purple block at X:1 Y:6 Z:0]
+<Builder> ok got it
+<Architect> yep all done
+<Builder> If its ok, could you
+<Builder> give me shorter, less wordy instructions
+<Architect> yeah sorry

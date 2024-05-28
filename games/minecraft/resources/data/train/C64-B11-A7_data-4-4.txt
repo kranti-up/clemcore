@@ -1,0 +1,32 @@
+B11-A7-C64-1522858581349
+<Builder> Mission has started.
+<Architect> i can't easily describe this shape
+<Architect> start int he middle of the square
+<Builder> ok, no worries.
+<Architect> and build six red blocks in a line upwards
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:4 Z:0]
+[Builder puts down a red block at X:0 Y:5 Z:0]
+[Builder puts down a red block at X:0 Y:6 Z:0]
+<Architect> the top block is the middle of a five cube line that extends to your right and left
+[Builder puts down a red block at X:-1 Y:6 Z:0]
+[Builder puts down a red block at X:-2 Y:6 Z:0]
+[Builder puts down a red block at X:1 Y:6 Z:0]
+[Builder puts down a red block at X:2 Y:6 Z:0]
+<Architect> second to top is the same but a 3 cube line
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+[Builder puts down a red block at X:0 Y:5 Z:1]
+[Builder picks up a red block at X:0 Y:5 Z:1]
+[Builder puts down a red block at X:1 Y:5 Z:0]
+<Architect> now there's a three cube orange line on top of the long red line, centered the same
+[Builder puts down a orange block at X:-1 Y:7 Z:0]
+[Builder puts down a orange block at X:0 Y:7 Z:0]
+[Builder puts down a orange block at X:1 Y:7 Z:0]
+<Architect> on the right two blocks build two more orange blocks up
+[Builder puts down a orange block at X:0 Y:8 Z:0]
+[Builder puts down a orange block at X:1 Y:8 Z:0]
+<Architect> and then one more orange block on the top right
+[Builder puts down a orange block at X:1 Y:9 Z:0]
+<Architect> yep! that's it!

@@ -1,0 +1,78 @@
+B27-A25-C92-1523574663577
+<Builder> Mission has started.
+<Architect> ok, this is a 2d drawing
+<Architect> put down a 3 tall and 5 wide wall of red blocks
+<Builder> does it matter where?
+<Architect> nope
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+<Architect> perfect
+<Architect> now break the 3 leftmost blocks on the bottom row
+[Builder picks up a red block at X:2 Y:1 Z:0]
+[Builder picks up a red block at X:1 Y:1 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+<Architect> and then the two blocks in the 3rd column
+[Builder picks up a red block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:3 Z:0]
+<Architect> and then the top two blocks on the top right
+[Builder picks up a red block at X:-2 Y:3 Z:0]
+[Builder picks up a red block at X:-1 Y:3 Z:0]
+<Architect> on the right structure, put a green block on top of the top left red block
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+<Architect> on the left structure, build a 4x4 green wall, where the left most column of the wall is on top of the top left block
+[Builder puts down a green block at X:2 Y:4 Z:0]
+[Builder puts down a green block at X:1 Y:4 Z:0]
+[Builder puts down a green block at X:0 Y:4 Z:0]
+[Builder puts down a green block at X:-1 Y:4 Z:0]
+[Builder puts down a green block at X:2 Y:5 Z:0]
+[Builder puts down a green block at X:2 Y:6 Z:0]
+[Builder puts down a green block at X:2 Y:7 Z:0]
+[Builder puts down a green block at X:1 Y:5 Z:0]
+[Builder puts down a green block at X:0 Y:5 Z:0]
+[Builder puts down a green block at X:-1 Y:5 Z:0]
+[Builder puts down a green block at X:-1 Y:6 Z:0]
+[Builder puts down a green block at X:0 Y:6 Z:0]
+[Builder puts down a green block at X:1 Y:6 Z:0]
+[Builder puts down a green block at X:1 Y:7 Z:0]
+[Builder puts down a green block at X:0 Y:7 Z:0]
+[Builder puts down a green block at X:-1 Y:7 Z:0]
+<Architect> time to break some blocks
+<Architect> break the bottom right block of the 4x4
+[Builder picks up a red block at X:-2 Y:1 Z:0]
+<Architect> not that one, that's the 2x2
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder picks up a green block at X:-1 Y:3 Z:0]
+<Architect> bottom right of the green 4x4 my bad
+<Architect> the block above that one, put that green block back
+<Builder> got it
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder picks up a green block at X:-1 Y:4 Z:0]
+<Architect> sorry again
+<Architect> then the two blocks above the block you just broke
+[Builder picks up a green block at X:-1 Y:5 Z:0]
+[Builder picks up a green block at X:-1 Y:6 Z:0]
+<Architect> then in the second column from the left, the bottom two blocks in that column
+[Builder picks up a green block at X:1 Y:4 Z:0]
+[Builder picks up a green block at X:1 Y:5 Z:0]
+<Architect> then the top left corner block and the block below it
+[Builder picks up a green block at X:2 Y:7 Z:0]
+[Builder picks up a green block at X:2 Y:6 Z:0]
+<Architect> and the two blocks to the right of the leftmost corner block you just broke
+[Builder picks up a green block at X:1 Y:7 Z:0]
+[Builder picks up a green block at X:0 Y:7 Z:0]
+<Architect> perfect
+<Builder> cherries?
+<Architect> oh snap, I think you're right

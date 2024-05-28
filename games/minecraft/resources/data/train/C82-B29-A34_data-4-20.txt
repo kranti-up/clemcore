@@ -1,0 +1,78 @@
+B29-A34-C82-1524257452758
+<Builder> Mission has started.
+<Architect> this kinda looks like a colorful eiffel tower
+<Architect> place the 4 corners of a 7x7 purple square on the ground
+[Builder puts down a purple block at X:3 Y:1 Z:-3]
+[Builder puts down a purple block at X:3 Y:1 Z:3]
+[Builder puts down a purple block at X:-3 Y:1 Z:3]
+[Builder puts down a purple block at X:-3 Y:1 Z:-3]
+<Architect> within that, place a 5x5 yellow ring
+<Architect> on the ground
+[Builder puts down a yellow block at X:-2 Y:1 Z:2]
+[Builder puts down a yellow block at X:-1 Y:1 Z:2]
+[Builder puts down a yellow block at X:0 Y:1 Z:2]
+[Builder puts down a yellow block at X:1 Y:1 Z:2]
+[Builder puts down a yellow block at X:2 Y:1 Z:2]
+[Builder puts down a yellow block at X:2 Y:1 Z:1]
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+[Builder puts down a yellow block at X:2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:1 Y:1 Z:-2]
+[Builder puts down a yellow block at X:0 Y:1 Z:-3]
+[Builder picks up a yellow block at X:0 Y:1 Z:-3]
+[Builder puts down a yellow block at X:0 Y:1 Z:-3]
+[Builder picks up a yellow block at X:0 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:1 Z:0]
+[Builder puts down a yellow block at X:-2 Y:1 Z:1]
+<Architect> on each corner of the yellow ring, place a purple block
+[Builder puts down a purple block at X:-2 Y:2 Z:-2]
+[Builder puts down a purple block at X:-2 Y:1 Z:3]
+[Builder picks up a purple block at X:-2 Y:1 Z:3]
+[Builder puts down a purple block at X:-2 Y:2 Z:2]
+[Builder puts down a purple block at X:2 Y:2 Z:2]
+[Builder puts down a purple block at X:2 Y:2 Z:-2]
+<Architect> continue the pattern the purple blocks are making for one more layer
+[Builder puts down a purple block at X:2 Y:3 Z:2]
+[Builder picks up a purple block at X:2 Y:3 Z:2]
+<Architect> so they will be going up and towards the center
+[Builder puts down a purple block at X:-1 Y:2 Z:2]
+[Builder picks up a purple block at X:-1 Y:2 Z:2]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder picks up a purple block at X:-1 Y:3 Z:2]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+<Architect> perfect
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder picks up a purple block at X:1 Y:3 Z:0]
+[Builder picks up a purple block at X:0 Y:3 Z:1]
+[Builder picks up a purple block at X:0 Y:3 Z:-1]
+<Architect> on top of that, place a 3x3 blue ring
+[Builder puts down a blue block at X:-1 Y:4 Z:-1]
+[Builder puts down a blue block at X:-1 Y:4 Z:0]
+[Builder puts down a blue block at X:-1 Y:4 Z:1]
+[Builder puts down a blue block at X:0 Y:4 Z:1]
+[Builder puts down a blue block at X:1 Y:4 Z:1]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:-1]
+[Builder puts down a blue block at X:0 Y:4 Z:-1]
+<Architect> lastly we have a stack of 5 green blocks.
+<Architect> not inside of the hole though
+<Architect> it starts one block above the hole
+[Builder puts down a green block at X:1 Y:5 Z:0]
+[Builder puts down a green block at X:0 Y:5 Z:0]
+[Builder picks up a green block at X:1 Y:5 Z:0]
+[Builder puts down a green block at X:0 Y:6 Z:0]
+[Builder picks up a green block at X:0 Y:5 Z:0]
+[Builder puts down a green block at X:0 Y:7 Z:0]
+[Builder puts down a green block at X:0 Y:8 Z:0]
+[Builder puts down a green block at X:0 Y:9 Z:0]
+<Architect> shifted one lower
+<Architect> sorry
+[Builder puts down a green block at X:0 Y:5 Z:0]
+<Architect> prefect

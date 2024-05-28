@@ -1,0 +1,68 @@
+B16-A26-C95-1524155482707
+<Builder> Mission has started.
+<Architect> We'll start with a 2x2 square of red bricks
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+<Architect> Then one layer up, we'll add the perimeter of a 4x4 orange square
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:1 Y:2 Z:-2]
+[Builder picks up a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:-1 Y:2 Z:-2]
+[Builder puts down a orange block at X:2 Y:2 Z:-2]
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:1]
+[Builder puts down a orange block at X:2 Y:2 Z:2]
+[Builder puts down a orange block at X:1 Y:2 Z:2]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder picks up a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+[Builder puts down a orange block at X:-1 Y:2 Z:2]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+<Architect> Then on the 4th layer, we'll have another 2x2 square of purple bricks
+<Builder> whoops
+[Builder picks up a orange block at X:-1 Y:2 Z:2]
+[Builder picks up a orange block at X:0 Y:2 Z:2]
+<Architect> haha no worries
+[Builder picks up a orange block at X:1 Y:2 Z:2]
+[Builder picks up a orange block at X:2 Y:2 Z:2]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+<Architect> The purple layer will be one layer higher
+<Builder> oh yes, sorry
+[Builder picks up a purple block at X:1 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:0]
+[Builder picks up a purple block at X:0 Y:3 Z:-1]
+[Builder picks up a purple block at X:0 Y:3 Z:0]
+[Builder picks up a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+<Architect> No problem
+[Builder puts down a purple block at X:0 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+<Architect> Now floating above the the back right corner of the purple square, add another purple brick
+<Architect> So there will be a space between this brick and the purple square
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+[Builder puts down a purple block at X:1 Y:6 Z:0]
+[Builder picks up a purple block at X:1 Y:5 Z:0]
+<Architect> Cool Now behind the brick (relative to your perspective, add another purple brick
+[Builder puts down a purple block at X:2 Y:6 Z:0]
+<Architect> Great! Now add another brick on top of that one
+[Builder puts down a purple block at X:2 Y:7 Z:0]
+<Architect> So if you look at the 6th layer of the structure (the one that currently has two bricks)
+<Architect> We are going to make it into a plus sign
+<Architect> where the middle brick of the plus is the one directly underneat the brick you just added
+[Builder puts down a purple block at X:2 Y:6 Z:1]
+[Builder puts down a purple block at X:2 Y:6 Z:-1]
+[Builder puts down a purple block at X:3 Y:6 Z:0]
+<Architect> That's perfect!

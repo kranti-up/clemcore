@@ -1,0 +1,122 @@
+B38-A42-C131-1523912688617
+<Builder> Mission has started.
+<Builder> Hello
+<Builder> What are we building today?
+<Architect> so this looks like a table with tetris pieces on it
+<Builder> Ok, what are the table legs?
+<Architect> first make 2 red columns 2 tall with a space in between them
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+<Builder> Ok
+<Architect> now place another set so that theres a 4 block gap between the 2 sets of legs
+[Builder puts down a red block at X:-1 Y:1 Z:-5]
+[Builder puts down a red block at X:-1 Y:2 Z:-5]
+[Builder puts down a red block at X:1 Y:1 Z:-5]
+[Builder puts down a red block at X:1 Y:2 Z:-5]
+<Builder> Will there be enough space?
+<Architect> yeah thats how it looks on the plans
+<Builder> Ok
+<Architect> now place a yellow 3x6 platform on top for the table
+<Builder> Ok
+[Builder puts down a yellow block at X:-1 Y:3 Z:-5]
+[Builder puts down a yellow block at X:0 Y:3 Z:-5]
+[Builder puts down a yellow block at X:1 Y:3 Z:-5]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-4]
+[Builder puts down a yellow block at X:0 Y:3 Z:-4]
+[Builder puts down a yellow block at X:1 Y:3 Z:-4]
+[Builder puts down a yellow block at X:1 Y:3 Z:-3]
+[Builder puts down a yellow block at X:1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:0 Y:3 Z:-2]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:1 Y:4 Z:1]
+[Builder picks up a yellow block at X:1 Y:4 Z:1]
+[Builder picks up a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder picks up a yellow block at X:0 Y:3 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+<Builder> What's NExt
+<Architect> yep
+<Architect> on the opposite corner from you place a green block
+[Builder puts down a green block at X:1 Y:4 Z:-5]
+<Builder> right there?
+<Architect> yep
+<Architect> now make a 1x2 green tower right next to it on the side of it thats facing you
+[Builder puts down a green block at X:1 Y:4 Z:-4]
+[Builder puts down a green block at X:1 Y:5 Z:-4]
+<Architect> yep
+<Builder> Cool
+<Architect> now break the bottom one so the green block is floating
+<Builder> Ok
+[Builder picks up a green block at X:1 Y:4 Z:-4]
+<Architect> yep
+<Builder> Next?
+<Architect> now place 1 blue block 1 block in from the left side
+[Builder puts down a blue block at X:0 Y:4 Z:-5]
+<Builder> Like this?
+<Architect> move it 1 to the left and towards you 1 so that its even with the floating green one
+[Builder puts down a blue block at X:-1 Y:4 Z:-4]
+[Builder picks up a blue block at X:0 Y:4 Z:-5]
+<Architect> yep
+<Builder> Ok
+<Architect> now place an orange block in the corner behind you and to the right
+[Builder puts down a orange block at X:0 Y:4 Z:-3]
+<Builder> There?
+<Architect> no corner of the table behind your character
+[Builder picks up a orange block at X:0 Y:4 Z:-3]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+<Builder> Ok
+<Architect> yep
+<Architect> now go 1 up in orange and 1 out so its making an upside down L
+[Builder puts down a orange block at X:1 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+<Builder> Like that, or a different direction?
+<Architect> opposite direction sorry
+[Builder picks up a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:2 Y:5 Z:0]
+<Builder> No worries
+<Architect> now from the orange sticking out place 1 towards your guy
+[Builder puts down a orange block at X:1 Y:5 Z:1]
+[Builder picks up a orange block at X:1 Y:5 Z:1]
+[Builder puts down a orange block at X:2 Y:5 Z:1]
+<Builder> Like this?
+<Architect> yep
+<Builder> Cool, what's next
+<Architect> break the 2 orange pieces so that the newest piece is floating and only touching at 1 corner with the first orange one you placed
+[Builder picks up a orange block at X:1 Y:5 Z:0]
+[Builder picks up a orange block at X:2 Y:5 Z:0]
+<Builder> Ok
+<Architect> yep
+<Builder> Is there more?
+<Architect> yep 1 last thing
+<Builder> OK
+<Architect> from the side youre on go 3 in and place a 2 tall purple tower
+[Builder puts down a purple block at X:-1 Y:4 Z:-2]
+[Builder puts down a purple block at X:-1 Y:5 Z:-2]
+<Architect> in the center
+<Builder> Ok
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+[Builder puts down a purple block at X:0 Y:5 Z:-2]
+[Builder picks up a purple block at X:-1 Y:5 Z:-2]
+[Builder picks up a purple block at X:-1 Y:4 Z:-2]
+<Builder> Like that?
+<Architect> yep
+<Builder> Ok
+<Architect> now from the top block place 1 purple on the side facing orange and 1 on the side with the blue block
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder puts down a purple block at X:0 Y:5 Z:-3]
+<Builder> Ok
+<Builder> Like this?
+<Architect> break that last 1 needs to make an L shape
+[Builder picks up a purple block at X:0 Y:5 Z:-3]
+[Builder puts down a purple block at X:-1 Y:5 Z:-2]
+<Builder> Like this?
+<Architect> yay we did it!
+<Builder> Cool

@@ -1,0 +1,99 @@
+B27-A25-C94-1523573532771
+<Builder> Mission has started.
+<Builder> Ready!
+<Architect> ok, we'll need a 7x5 area for this build
+<Architect> so we might want to build symmetrically fromt the center
+<Architect> first let's build a hollowed out 5x5 red wall
+<Architect> as in, a 5x5 wall of red blocks with only the outer rim
+<Builder> got it
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:3 Z:0]
+[Builder puts down a red block at X:2 Y:4 Z:0]
+[Builder puts down a red block at X:2 Y:5 Z:0]
+<Architect> can you build this structure like 3 blocks back
+<Builder> towards the edge im facing?
+<Architect> yes
+[Builder picks up a red block at X:-2 Y:1 Z:0]
+[Builder picks up a red block at X:-1 Y:1 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+<Architect> sorry, I shouldn't have been ambiguous
+[Builder picks up a red block at X:1 Y:1 Z:0]
+[Builder picks up a red block at X:2 Y:2 Z:0]
+[Builder picks up a red block at X:2 Y:1 Z:0]
+[Builder picks up a red block at X:2 Y:3 Z:0]
+[Builder picks up a red block at X:2 Y:4 Z:0]
+[Builder picks up a red block at X:2 Y:5 Z:0]
+[Builder puts down a red block at X:3 Y:1 Z:-2]
+[Builder puts down a red block at X:3 Y:2 Z:-2]
+[Builder puts down a red block at X:3 Y:3 Z:-2]
+[Builder puts down a red block at X:3 Y:4 Z:-2]
+[Builder puts down a red block at X:3 Y:5 Z:-2]
+[Builder puts down a red block at X:3 Y:5 Z:-1]
+[Builder puts down a red block at X:3 Y:5 Z:0]
+[Builder puts down a red block at X:3 Y:5 Z:1]
+[Builder puts down a red block at X:3 Y:5 Z:2]
+[Builder puts down a red block at X:3 Y:4 Z:2]
+[Builder puts down a red block at X:3 Y:3 Z:2]
+[Builder puts down a red block at X:3 Y:2 Z:2]
+[Builder puts down a red block at X:3 Y:1 Z:2]
+<Builder> like that?
+<Architect> yea, just connect the base also
+[Builder puts down a red block at X:3 Y:1 Z:-1]
+[Builder puts down a red block at X:3 Y:1 Z:0]
+[Builder puts down a red block at X:3 Y:1 Z:1]
+<Architect> perfect
+<Architect> now put down a placeholder block in the top right corner inside the structure you just built
+[Builder puts down a orange block at X:3 Y:4 Z:1]
+<Architect> and now build a 3x3 orange square, where the rightmost corner of the 3x3 square touches that placeholder
+<Architect> and when you're done you can break the placeholder block
+[Builder puts down a orange block at X:3 Y:4 Z:0]
+[Builder picks up a orange block at X:3 Y:4 Z:0]
+[Builder puts down a orange block at X:3 Y:4 Z:0]
+[Builder puts down a orange block at X:3 Y:3 Z:0]
+[Builder picks up a orange block at X:3 Y:4 Z:0]
+<Architect> sorry, built that 3x3 one more block towards you
+<Builder> got it
+[Builder picks up a orange block at X:3 Y:3 Z:0]
+<Architect> my bad
+[Builder puts down a orange block at X:2 Y:4 Z:1]
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+[Builder puts down a orange block at X:2 Y:3 Z:-1]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:1]
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:1]
+[Builder picks up a orange block at X:3 Y:4 Z:1]
+<Architect> perfect, now break the middle block of the 3x3
+[Builder picks up a orange block at X:2 Y:3 Z:0]
+<Architect> now build a yellow 3x3 towards you again, breaking the middle block on that as well
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:0]
+[Builder puts down a yellow block at X:1 Y:4 Z:1]
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:1 Y:2 Z:1]
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+<Architect> now put down a green block one block towards you again, hovering over the gap in the yellow 3x3
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder picks up a yellow block at X:0 Y:2 Z:0]
+<Architect> perfect
+<Builder> cool
+<Architect> and put a blue block on top of the green block, one block towards you
+[Builder puts down a blue block at X:-1 Y:3 Z:0]
+<Architect> yup
+<Architect> and two blocks towards you put a purple block that's linear with the green and blue blocks
+[Builder puts down a purple block at X:-2 Y:3 Z:0]
+<Builder> like that?
+<Architect> one more towards you, it should be hovering
+[Builder puts down a purple block at X:-3 Y:3 Z:0]
+[Builder picks up a purple block at X:-2 Y:3 Z:0]
+<Architect> perfect

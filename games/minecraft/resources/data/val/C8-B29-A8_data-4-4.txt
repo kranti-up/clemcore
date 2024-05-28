@@ -1,0 +1,29 @@
+B29-A8-C8-1522860695010
+<Builder> Mission has started.
+<Architect> okay, place four orange blocks at the corners of a 3X3 grid
+[Builder puts down a orange block at X:1 Y:1 Z:2]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+<Architect> on the ground
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:2]
+<Architect> now above that place red blocks on the grid
+<Builder> above?
+<Architect> yeah, like a line
+<Architect> above the orange blocks you just placed
+[Builder picks up a orange block at X:-1 Y:1 Z:2]
+[Builder puts down a orange block at X:-1 Y:1 Z:2]
+[Builder picks up a orange block at X:-1 Y:1 Z:2]
+[Builder puts down a orange block at X:-1 Y:1 Z:2]
+[Builder puts down a red block at X:-1 Y:2 Z:2]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+<Architect> yes
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:2]
+[Builder puts down a red block at X:1 Y:2 Z:2]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+<Architect> no center block sorry
+[Builder picks up a red block at X:0 Y:2 Z:1]
+<Architect> yes

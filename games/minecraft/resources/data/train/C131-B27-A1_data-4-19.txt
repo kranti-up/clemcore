@@ -1,0 +1,89 @@
+B27-A1-C131-1524165101109
+<Builder> Mission has started.
+<Architect> its a science experiment table...
+<Architect> lets start with red
+<Architect> place four blocks at the corner of a 3x6 flat on the ground
+[Builder puts down a red block at X:2 Y:1 Z:-3]
+[Builder puts down a red block at X:0 Y:1 Z:-3]
+[Builder puts down a red block at X:0 Y:1 Z:2]
+[Builder puts down a red block at X:2 Y:1 Z:2]
+<Architect> great
+<Architect> add one more red on top of these
+[Builder puts down a red block at X:0 Y:2 Z:-3]
+[Builder puts down a red block at X:2 Y:2 Z:-3]
+[Builder puts down a red block at X:2 Y:2 Z:2]
+[Builder puts down a red block at X:0 Y:2 Z:2]
+<Architect> now the table top is yellow
+<Architect> make the 3x6
+[Builder puts down a yellow block at X:0 Y:3 Z:-3]
+[Builder puts down a yellow block at X:2 Y:3 Z:-3]
+[Builder puts down a yellow block at X:1 Y:3 Z:-3]
+[Builder puts down a yellow block at X:0 Y:3 Z:-2]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+[Builder puts down a yellow block at X:0 Y:3 Z:2]
+[Builder puts down a yellow block at X:2 Y:3 Z:2]
+[Builder puts down a yellow block at X:1 Y:3 Z:2]
+[Builder puts down a yellow block at X:2 Y:3 Z:-2]
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:2 Y:3 Z:0]
+[Builder puts down a yellow block at X:2 Y:3 Z:1]
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:-2]
+<Architect> great
+<Architect> we will build on top of this table now
+<Architect> place one blue block, one block left of the edge and on the side closest to you
+<Builder> is it floating?
+<Architect> its one the table
+<Architect> on*
+[Builder puts down a blue block at X:0 Y:4 Z:-3]
+<Architect> its next to that
+[Builder puts down a blue block at X:0 Y:4 Z:-2]
+[Builder picks up a blue block at X:0 Y:4 Z:-3]
+<Architect> great
+<Architect> now on the second corner closest to this blue block place a green block
+<Builder> this corner?
+[Builder puts down a green block at X:0 Y:4 Z:-3]
+<Architect> thats the first closest corner
+[Builder picks up a green block at X:0 Y:4 Z:-3]
+[Builder puts down a green block at X:2 Y:4 Z:-3]
+<Architect> yes there
+<Architect> now make a step with a green block towards the right from where you are
+<Architect> add a green step
+<Builder> off of the blue?
+<Architect> of the last block you placed, green
+[Builder puts down a green block at X:2 Y:4 Z:-2]
+[Builder puts down a green block at X:2 Y:5 Z:-2]
+[Builder picks up a green block at X:2 Y:4 Z:-2]
+<Architect> perfect
+<Architect> place two purple blocks one he middle of the table
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:0]
+<Architect> good now delete the one closest to the blue
+[Builder picks up a purple block at X:1 Y:4 Z:-1]
+<Architect> place a purple block on top of this one
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+<Architect> good now add a puple block going towards you
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+<Architect> another puple going away from the blue and green, attached to the second purple block you added
+[Builder puts down a purple block at X:0 Y:5 Z:1]
+<Architect> not that one the one before it
+[Builder picks up a purple block at X:0 Y:5 Z:1]
+[Builder puts down a purple block at X:1 Y:5 Z:1]
+<Architect> good
+<Architect> add one orange block at the corner farthest from the blue
+[Builder puts down a orange block at X:2 Y:4 Z:2]
+<Architect> good
+<Architect> okay, one more orange block and we are done,
+<Architect> its not above the table
+<Architect> though it a diagonal step connected to the last orange block you placed
+<Architect> its*
+[Builder puts down a orange block at X:2 Y:5 Z:2]
+[Builder puts down a orange block at X:2 Y:5 Z:3]
+[Builder puts down a orange block at X:3 Y:5 Z:3]
+[Builder picks up a orange block at X:2 Y:5 Z:2]
+[Builder picks up a orange block at X:2 Y:5 Z:3]
+<Architect> yeah thats it

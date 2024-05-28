@@ -1,0 +1,86 @@
+B52-A27-C105-1523663458446
+<Builder> Mission has started.
+<Architect> go to the middle of a edge and make a 2x2 wall of yellow perpindicular to that edge
+[Builder puts down a yellow block at X:0 Y:1 Z:-5]
+[Builder puts down a yellow block at X:0 Y:1 Z:-4]
+[Builder puts down a yellow block at X:0 Y:2 Z:-5]
+[Builder puts down a yellow block at X:0 Y:2 Z:-4]
+<Architect> actually make that six tall
+<Builder> lol
+[Builder puts down a yellow block at X:0 Y:3 Z:-5]
+[Builder puts down a yellow block at X:0 Y:4 Z:-5]
+[Builder puts down a yellow block at X:0 Y:5 Z:-5]
+[Builder puts down a yellow block at X:0 Y:6 Z:-5]
+[Builder puts down a yellow block at X:0 Y:3 Z:-4]
+[Builder puts down a yellow block at X:0 Y:6 Z:-4]
+[Builder puts down a yellow block at X:0 Y:5 Z:-4]
+[Builder puts down a yellow block at X:0 Y:4 Z:-4]
+<Architect> then bust out the middle 2x2
+[Builder picks up a yellow block at X:0 Y:4 Z:-5]
+[Builder picks up a yellow block at X:0 Y:4 Z:-4]
+[Builder picks up a yellow block at X:0 Y:3 Z:-4]
+[Builder picks up a yellow block at X:0 Y:3 Z:-5]
+<Architect> do the same on the opposite edge
+[Builder puts down a yellow block at X:0 Y:1 Z:4]
+[Builder puts down a yellow block at X:0 Y:1 Z:5]
+[Builder puts down a yellow block at X:0 Y:2 Z:5]
+[Builder puts down a yellow block at X:0 Y:2 Z:4]
+[Builder puts down a yellow block at X:0 Y:3 Z:4]
+[Builder puts down a yellow block at X:0 Y:4 Z:4]
+[Builder puts down a yellow block at X:0 Y:5 Z:4]
+<Architect> make sure to line it up
+[Builder puts down a yellow block at X:0 Y:5 Z:5]
+[Builder puts down a yellow block at X:0 Y:6 Z:4]
+[Builder puts down a yellow block at X:0 Y:6 Z:5]
+[Builder picks up a yellow block at X:0 Y:4 Z:4]
+[Builder picks up a yellow block at X:0 Y:3 Z:4]
+<Architect> now build a 2 wide 3 high red wall where the bottom right block starts on the right bottom yellow 2x2
+<Architect> so it shouldn't be on the ground
+[Builder puts down a red block at X:0 Y:2 Z:3]
+[Builder puts down a red block at X:-1 Y:2 Z:3]
+[Builder puts down a red block at X:1 Y:2 Z:3]
+[Builder puts down a red block at X:1 Y:3 Z:3]
+[Builder puts down a red block at X:0 Y:3 Z:3]
+[Builder puts down a red block at X:-1 Y:3 Z:3]
+<Architect> but make it parallel
+<Builder> this, or one higher?
+[Builder picks up a red block at X:-1 Y:3 Z:3]
+[Builder picks up a red block at X:-1 Y:2 Z:3]
+[Builder picks up a red block at X:1 Y:3 Z:3]
+[Builder picks up a red block at X:1 Y:2 Z:3]
+[Builder puts down a red block at X:0 Y:3 Z:2]
+[Builder puts down a red block at X:0 Y:2 Z:2]
+[Builder puts down a red block at X:0 Y:3 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+<Architect> two wide 3 high
+<Builder> gotcha
+[Builder picks up a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:4 Z:3]
+[Builder puts down a red block at X:0 Y:4 Z:2]
+[Builder picks up a red block at X:0 Y:3 Z:1]
+[Builder picks up a red block at X:1 Y:5 Z:2]
+[Builder picks up a red block at X:1 Y:4 Z:2]
+<Architect> and do the same on the other 2x2 of yellow
+[Builder puts down a red block at X:0 Y:2 Z:-3]
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+[Builder puts down a red block at X:0 Y:3 Z:-2]
+[Builder puts down a red block at X:0 Y:3 Z:-3]
+[Builder puts down a red block at X:0 Y:4 Z:-3]
+[Builder puts down a red block at X:0 Y:4 Z:-2]
+<Architect> now connect those reds with orange blocks but leave the middle hollow
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+<Builder> just one across
+<Builder> or up and down too?
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+<Builder> a donut?
+<Architect> so take out the middle orange as well
+[Builder picks up a orange block at X:0 Y:3 Z:1]
+[Builder picks up a orange block at X:0 Y:3 Z:-1]
+<Architect> thats it
+<Builder> booyah

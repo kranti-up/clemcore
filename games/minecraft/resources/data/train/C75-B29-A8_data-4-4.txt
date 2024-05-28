@@ -1,0 +1,32 @@
+B29-A8-C75-1522861975747
+<Builder> Mission has started.
+<Architect> start with a green block on the ground
+[Builder puts down a green block at X:0 Y:1 Z:0]
+<Architect> now a blue block next to it
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+<Architect> now a tower of three purple blocks to the left of the blue block
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:2 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+<Architect> now a yellow block to the right of the top purple
+[Builder puts down a yellow block at X:1 Y:1 Z:2]
+<Architect> the highest purple
+[Builder puts down a yellow block at X:1 Y:3 Z:2]
+[Builder picks up a yellow block at X:1 Y:1 Z:2]
+<Architect> above the blue
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+[Builder picks up a yellow block at X:1 Y:3 Z:2]
+<Architect> now a tower of orange starting to the right of the yellow
+<Architect> above the greean
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+<Architect> yes
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:6 Z:0]
+<Architect> one less orange
+[Builder picks up a orange block at X:0 Y:6 Z:0]
+<Architect> now a blue from there
+<Architect> above the yellow
+[Builder puts down a blue block at X:0 Y:5 Z:1]
+<Architect> and a red above the puple
+[Builder puts down a red block at X:1 Y:5 Z:1]

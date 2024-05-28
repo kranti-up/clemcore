@@ -1,0 +1,30 @@
+B15-A38-C63-1523401110738
+<Builder> Mission has started.
+<Builder> ready!
+<Architect> Ok, this one is a vertical question mark.
+<Architect> Go ahead and put down a single blue block
+[Builder puts down a blue block at X:0 Y:1 Z:-5]
+[Builder puts down a blue block at X:0 Y:2 Z:-5]
+[Builder puts down a blue block at X:0 Y:3 Z:-5]
+[Builder picks up a blue block at X:0 Y:2 Z:-5]
+[Builder picks up a blue block at X:0 Y:3 Z:-5]
+<Architect> You had it right
+[Builder puts down a blue block at X:0 Y:2 Z:-5]
+[Builder puts down a blue block at X:0 Y:3 Z:-5]
+[Builder picks up a blue block at X:0 Y:2 Z:-5]
+<Builder> okay!
+<Architect> Now just make a 3 block tall c facing the wrong way. It should only be two blocks wide
+[Builder puts down a blue block at X:0 Y:4 Z:-5]
+[Builder puts down a blue block at X:-1 Y:4 Z:-5]
+[Builder puts down a blue block at X:-1 Y:5 Z:-5]
+[Builder puts down a blue block at X:-1 Y:6 Z:-5]
+[Builder puts down a blue block at X:0 Y:6 Z:-5]
+<Builder> like so?
+<Architect> Sorry, you should use the first block as part of the c
+[Builder picks up a blue block at X:0 Y:6 Z:-5]
+[Builder picks up a blue block at X:-1 Y:6 Z:-5]
+[Builder puts down a blue block at X:0 Y:5 Z:-5]
+[Builder picks up a blue block at X:0 Y:4 Z:-5]
+[Builder puts down a blue block at X:-1 Y:3 Z:-5]
+<Builder> like that?
+<Architect> Yup, perfect

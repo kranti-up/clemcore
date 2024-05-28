@@ -1,0 +1,31 @@
+B29-A34-C64-1524256800743
+<Builder> Mission has started.
+<Architect> this is a 2D vertical drawing of an olympic torch
+<Architect> so place a stack of 5 yed blocks
+<Architect> red
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:3 Z:0]
+[Builder puts down a red block at X:2 Y:4 Z:0]
+[Builder puts down a red block at X:2 Y:5 Z:0]
+<Architect> place one red on either side of the top red block
+[Builder puts down a red block at X:1 Y:5 Z:0]
+[Builder puts down a red block at X:3 Y:5 Z:0]
+<Architect> place a row of 5 red blocks above that row
+[Builder puts down a red block at X:3 Y:6 Z:0]
+[Builder puts down a red block at X:2 Y:6 Z:0]
+<Architect> so that it is symmetrical
+[Builder puts down a red block at X:1 Y:6 Z:0]
+[Builder puts down a red block at X:4 Y:6 Z:0]
+[Builder puts down a red block at X:0 Y:6 Z:0]
+<Architect> now place 3 orange blocks above that keeping symmetry
+[Builder puts down a orange block at X:3 Y:7 Z:0]
+[Builder puts down a orange block at X:2 Y:7 Z:0]
+[Builder puts down a orange block at X:1 Y:7 Z:0]
+<Architect> place one orange block on the 2 orange blokcs on the right side
+[Builder puts down a orange block at X:1 Y:8 Z:0]
+[Builder puts down a orange block at X:2 Y:8 Z:0]
+<Architect> and one last orange block on the orange on the very right
+[Builder puts down a orange block at X:1 Y:9 Z:0]
+<Architect> to form a tirange
+<Architect> perfect

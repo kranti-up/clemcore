@@ -1,0 +1,67 @@
+B4-A20-C34-1522766997770
+<Builder> Mission has started.
+<Builder> hello
+<Architect> so 3 colours
+<Architect> 7 blocks long so leave space for that
+<Architect> start with green
+[Builder puts down a green block at X:1 Y:1 Z:-3]
+<Architect> three across
+[Builder puts down a green block at X:1 Y:1 Z:-2]
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+<Architect> add one more sorry
+[Builder puts down a green block at X:1 Y:1 Z:0]
+<Architect> so from the first green you placed add two 90 degrees to what you just made
+[Builder puts down a green block at X:0 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:1 Z:-3]
+<Architect> other side sorry
+[Builder picks up a green block at X:-1 Y:1 Z:-3]
+[Builder picks up a green block at X:0 Y:1 Z:-3]
+[Builder puts down a green block at X:2 Y:1 Z:-3]
+[Builder puts down a green block at X:3 Y:1 Z:-3]
+<Architect> add one yellow block to the other end of what you first made
+<Architect> same side as the two green you just added
+<Builder> 90 degrees to the first line?
+<Architect> yeah so how you did those two green
+[Builder puts down a yellow block at X:0 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-3]
+<Architect> delete that
+[Builder picks up a yellow block at X:-1 Y:1 Z:-3]
+[Builder picks up a yellow block at X:0 Y:1 Z:-3]
+<Architect> see the 90 degree joint made by the green?
+<Builder> yep
+<Architect> count 3 below that and place the yellow
+<Builder> three blank spaces or two blank spaces?
+<Architect> 3 blank
+[Builder puts down a yellow block at X:-3 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-4 Y:1 Z:-3]
+<Builder> here?
+<Architect> it's attached to the green
+<Architect> uhm, attached to the 4th green block
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder picks up a yellow block at X:-3 Y:1 Z:-3]
+[Builder picks up a yellow block at X:-4 Y:1 Z:-3]
+<Architect> other side
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+[Builder picks up a yellow block at X:-1 Y:1 Z:0]
+<Architect> and just one yello
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+[Builder puts down a yellow block at X:3 Y:1 Z:0]
+[Builder picks up a yellow block at X:3 Y:1 Z:0]
+<Architect> nice, now red
+[Builder puts down a red block at X:3 Y:1 Z:0]
+<Architect> red blocks look like green but rotated 180 degrees
+[Builder picks up a red block at X:3 Y:1 Z:0]
+<Architect> the entire shape looks like an S
+<Builder> i don't know where to put the red blocks
+<Architect> one red next to the yellow
+<Builder> just hte L shape again?
+[Builder puts down a red block at X:3 Y:1 Z:0]
+<Architect> yes the L shape
+[Builder puts down a red block at X:3 Y:1 Z:1]
+[Builder puts down a red block at X:3 Y:1 Z:2]
+[Builder puts down a red block at X:3 Y:1 Z:3]
+[Builder puts down a red block at X:2 Y:1 Z:3]
+[Builder puts down a red block at X:1 Y:1 Z:3]
+<Architect> that's it
+<Builder> sweet

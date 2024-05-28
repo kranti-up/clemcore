@@ -1,0 +1,23 @@
+B24-A25-C3-1523052747464
+<Builder> Mission has started.
+<Architect> hey homie
+<Builder> yo
+<Architect> ok so first you're gonna want to put down two blue blocks next to each other
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:2 Y:1 Z:0]
+<Architect> nice
+<Architect> now ontop of the left block, put another blue block
+[Builder puts down a blue block at X:2 Y:2 Z:-1]
+<Architect> that's it for now
+<Architect> guess this was just a warmup
+<Builder> lol
+<Architect> i dont think ive played minecraft for like 5-6 years tbh
+<Architect> except i did a study like this 2 weeks ago also
+<Architect> im diggin them
+<Builder> study lmao
+<Architect> lmaooo
+<Builder> i got my first job from minecraft
+<Builder> at a library
+<Builder> i was like "i know how to code"
+<Builder> and they werent interested
+<Builder> till i said i could play minecraft

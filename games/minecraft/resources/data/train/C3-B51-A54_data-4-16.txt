@@ -1,0 +1,32 @@
+B51-A54-C3-1523910811543
+<Builder> Mission has started.
+<Builder> howdy
+<Architect> Near the top left side
+<Architect> One block to your right
+[Builder puts down a green block at X:3 Y:1 Z:4]
+<Architect> Yup
+<Architect> To the right of that, place one block
+[Builder puts down a green block at X:2 Y:1 Z:4]
+<Architect> Do you have blue wool instead?
+<Builder> ye
+<Architect> Make the same but with blue instead of green
+[Builder puts down a blue block at X:3 Y:2 Z:4]
+[Builder picks up a blue block at X:3 Y:2 Z:4]
+[Builder picks up a green block at X:3 Y:1 Z:4]
+[Builder puts down a blue block at X:3 Y:1 Z:4]
+[Builder picks up a green block at X:2 Y:1 Z:4]
+[Builder puts down a green block at X:2 Y:1 Z:4]
+[Builder puts down a blue block at X:2 Y:2 Z:4]
+[Builder picks up a blue block at X:2 Y:2 Z:4]
+[Builder picks up a green block at X:2 Y:1 Z:4]
+[Builder puts down a blue block at X:2 Y:1 Z:4]
+<Architect> And then add another blue wool over the wool bloock on your left
+[Builder puts down a blue block at X:4 Y:1 Z:4]
+<Builder> like this lol
+<Architect> Oh, no I meant on top of it
+[Builder puts down a blue block at X:4 Y:2 Z:4]
+[Builder picks up a blue block at X:4 Y:2 Z:4]
+[Builder picks up a blue block at X:4 Y:1 Z:4]
+[Builder puts down a blue block at X:3 Y:2 Z:4]
+<Builder> ?
+<Architect> Yes

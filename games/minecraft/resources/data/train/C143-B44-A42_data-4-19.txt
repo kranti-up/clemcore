@@ -1,0 +1,78 @@
+B44-A42-C143-1524177733041
+<Builder> Mission has started.
+<Builder> ready
+<Architect> ok this thing kind of looks like a weird flower
+<Architect> first make a 4x1 green column
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:4 Z:0]
+<Architect> now break the bottom green block and move it 1 space towrds you
+[Builder picks up a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+<Architect> yep
+<Architect> now place a purple block going diagonally up and towrds you from the top green block
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder picks up a purple block at X:0 Y:5 Z:0]
+<Architect> yep
+<Builder> is the flower symetrical 4 way?
+<Builder> because if it is, you could just tell me to build 1/4th of it and mirror it 4 ways
+<Architect> yeah looks like it ill do that
+<Architect> first though make a 3x3 vertical red plus coming off the purple block towrds you
+[Builder puts down a red block at X:0 Y:5 Z:-2]
+[Builder puts down a red block at X:1 Y:5 Z:-2]
+[Builder puts down a red block at X:0 Y:5 Z:-3]
+[Builder picks up a red block at X:0 Y:5 Z:-3]
+[Builder puts down a red block at X:0 Y:4 Z:-2]
+[Builder puts down a red block at X:-1 Y:5 Z:-2]
+[Builder puts down a red block at X:0 Y:6 Z:-2]
+<Architect> yep
+<Architect> now break the center red block
+[Builder picks up a red block at X:0 Y:5 Z:-2]
+<Architect> now place an orage block in the bottom right corner of the plus
+[Builder puts down a orange block at X:-1 Y:4 Z:-2]
+<Architect> now place a red block going diagonally down and towards you from the lowest red block
+[Builder puts down a red block at X:0 Y:4 Z:-3]
+[Builder puts down a red block at X:0 Y:3 Z:-3]
+[Builder picks up a red block at X:0 Y:4 Z:-3]
+<Architect> yep now make a red block going diagonally to the right and towards you on the furthest right red block
+[Builder puts down a red block at X:-1 Y:5 Z:-3]
+[Builder puts down a red block at X:-2 Y:5 Z:-3]
+[Builder picks up a red block at X:-1 Y:5 Z:-3]
+<Architect> now place a yellow block going diagonally down and to the right as well as towrds you from the orange block
+[Builder puts down a yellow block at X:-1 Y:4 Z:-3]
+[Builder picks up a yellow block at X:-1 Y:4 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-3]
+[Builder picks up a yellow block at X:-2 Y:3 Z:-2]
+<Architect> yep
+<Architect> now just repeat that for the other 3 sides
+[Builder puts down a red block at X:1 Y:5 Z:-3]
+[Builder puts down a red block at X:2 Y:5 Z:-3]
+[Builder picks up a red block at X:1 Y:5 Z:-3]
+[Builder puts down a red block at X:0 Y:6 Z:-3]
+[Builder puts down a red block at X:0 Y:7 Z:-3]
+[Builder picks up a red block at X:0 Y:6 Z:-3]
+[Builder puts down a orange block at X:1 Y:6 Z:-2]
+[Builder puts down a orange block at X:-1 Y:6 Z:-2]
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+[Builder puts down a yellow block at X:2 Y:4 Z:-2]
+[Builder puts down a yellow block at X:2 Y:4 Z:-3]
+[Builder puts down a yellow block at X:2 Y:3 Z:-3]
+[Builder picks up a yellow block at X:2 Y:4 Z:-2]
+[Builder picks up a yellow block at X:2 Y:4 Z:-3]
+[Builder puts down a yellow block at X:1 Y:7 Z:-2]
+[Builder puts down a yellow block at X:1 Y:7 Z:-3]
+[Builder puts down a yellow block at X:2 Y:7 Z:-3]
+[Builder picks up a yellow block at X:1 Y:7 Z:-3]
+[Builder picks up a yellow block at X:1 Y:7 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:7 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:7 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:7 Z:-3]
+[Builder picks up a yellow block at X:-1 Y:7 Z:-3]
+[Builder picks up a yellow block at X:-1 Y:7 Z:-2]
+<Builder> this good?
+<Architect> yep yay we did it!

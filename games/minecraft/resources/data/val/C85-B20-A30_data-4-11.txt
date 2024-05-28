@@ -1,0 +1,33 @@
+B20-A30-C85-1523457382936
+<Builder> Mission has started.
+<Builder> how much space for this one?
+<Architect> build a stack of 4 red blocks leaving 5 spaces of room
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder puts down a red block at X:1 Y:3 Z:-2]
+[Builder puts down a red block at X:1 Y:4 Z:-2]
+[Builder puts down a red block at X:1 Y:5 Z:-2]
+<Architect> thats 5 red blocks. delete the top one
+[Builder picks up a red block at X:1 Y:5 Z:-2]
+<Builder> alrighty
+<Architect> ok now add a yellow block on top
+[Builder puts down a yellow block at X:1 Y:5 Z:-2]
+<Architect> on the top red block, build 2 yello block out from the sides
+[Builder puts down a yellow block at X:0 Y:4 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-2]
+[Builder puts down a yellow block at X:2 Y:4 Z:-2]
+[Builder puts down a yellow block at X:3 Y:4 Z:-2]
+<Builder> is this any particular shape?
+<Architect> not really that i can think of
+<Architect> now add one yello block to the bottom of the furthest out yellow block
+<Builder> furthest out?
+<Builder> on both sides?
+<Architect> yes
+[Builder puts down a yellow block at X:3 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-2]
+<Architect> ok now delete the one that is on top of the blocks you just placed. so the furthest ones out on top
+[Builder picks up a yellow block at X:3 Y:4 Z:-2]
+<Builder> like this?
+<Architect> yes
+[Builder picks up a yellow block at X:-1 Y:4 Z:-2]
+<Architect> thats it

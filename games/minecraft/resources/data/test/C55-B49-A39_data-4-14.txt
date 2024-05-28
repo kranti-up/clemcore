@@ -1,0 +1,87 @@
+B49-A39-C55-1523767968053
+<Builder> Mission has started.
+<Architect> hello again
+<Builder> ready
+<Architect> this one has a lot of diagonals again
+<Architect> go to the center of an edge
+<Builder> on the ground?
+<Architect> yeah
+<Architect> we'll first make a yellow v-shape on the ground
+<Architect> start by placing a yellow block where you are
+[Builder puts down a yellow block at X:0 Y:1 Z:-4]
+[Builder picks up a yellow block at X:0 Y:1 Z:-4]
+[Builder puts down a yellow block at X:0 Y:1 Z:-5]
+<Architect> then, diagonally left and right but staying on the ground, place two more yellow blocks on each side to make a V
+[Builder puts down a yellow block at X:-1 Y:1 Z:-4]
+[Builder puts down a yellow block at X:1 Y:1 Z:-4]
+<Builder> like this?
+<Architect> yes, but once more
+[Builder puts down a yellow block at X:0 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-2]
+[Builder puts down a yellow block at X:1 Y:1 Z:-1]
+[Builder picks up a yellow block at X:1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:1 Y:1 Z:-2]
+<Architect> no, sorry
+<Architect> the thing makes a large V
+[Builder picks up a yellow block at X:0 Y:1 Z:-3]
+[Builder picks up a yellow block at X:1 Y:1 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:1 Z:-2]
+[Builder puts down a yellow block at X:2 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-3]
+<Builder> ok
+<Architect> okay, on the ground in front of each of the tips of the V, place an orange block
+[Builder puts down a orange block at X:2 Y:1 Z:-4]
+[Builder puts down a orange block at X:-2 Y:1 Z:-4]
+<Architect> oops sorry, I meant behind :)
+[Builder picks up a orange block at X:2 Y:1 Z:-4]
+[Builder picks up a orange block at X:-2 Y:1 Z:-4]
+[Builder puts down a orange block at X:-2 Y:1 Z:-2]
+[Builder puts down a orange block at X:2 Y:1 Z:-2]
+<Builder> ok
+<Architect> so these are each going to be the starting step of a staircase going upwards
+<Architect> we can just start on the left side for now, and you can do the same on the right side
+<Architect> so you'll want two more orange blocks going diagonally up and away from the first orange block
+[Builder puts down a orange block at X:2 Y:2 Z:-2]
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:3 Z:-1]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder picks up a orange block at X:2 Y:3 Z:-1]
+[Builder picks up a orange block at X:2 Y:2 Z:-2]
+<Architect> looks good. do the same for the other side
+<Builder> more on the left?
+<Architect> nope, that's it
+[Builder puts down a orange block at X:-2 Y:2 Z:-2]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:3 Z:-1]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder picks up a orange block at X:-2 Y:3 Z:-1]
+[Builder picks up a orange block at X:-2 Y:2 Z:-2]
+<Architect> okay, on the ends of those top orange blocks, facing away from you, put a red block on each
+[Builder picks up a orange block at X:2 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder picks up a orange block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:3 Z:1]
+[Builder puts down a red block at X:-2 Y:3 Z:1]
+<Builder> ok
+<Architect> now, we're going to make the same V-shape that's on the ground in yellow, but using red and it will be standing up to meet those two red blocks we placed
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder picks up a red block at X:0 Y:2 Z:1]
+<Builder> cool shape
+<Architect> yup! and lastly, make an upside-down V in red that also uses those blocks as the ends
+[Builder puts down a red block at X:2 Y:4 Z:1]
+[Builder puts down a red block at X:1 Y:4 Z:1]
+[Builder puts down a red block at X:1 Y:5 Z:1]
+[Builder puts down a red block at X:0 Y:5 Z:1]
+[Builder puts down a red block at X:-1 Y:5 Z:1]
+[Builder puts down a red block at X:-2 Y:4 Z:1]
+[Builder puts down a red block at X:-1 Y:4 Z:1]
+[Builder picks up a red block at X:-2 Y:4 Z:1]
+[Builder picks up a red block at X:-1 Y:5 Z:1]
+[Builder picks up a red block at X:1 Y:5 Z:1]
+[Builder picks up a red block at X:2 Y:4 Z:1]
+<Builder> done i think
+<Architect> we did it!

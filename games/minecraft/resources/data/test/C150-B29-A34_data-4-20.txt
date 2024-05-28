@@ -1,0 +1,89 @@
+B29-A34-C150-1524254489431
+<Builder> Mission has started.
+<Architect> hello
+<Builder> hi
+<Architect> ok so this figure is encased in a 4*4*2 block
+<Architect> start with a yellow block on the ground
+[Builder puts down a yellow block at X:2 Y:1 Z:2]
+<Architect> one space in the middle and place another yellow to the left
+<Architect> right
+[Builder puts down a yellow block at X:0 Y:1 Z:2]
+<Architect> there
+<Architect> now in that gap, place a green one above the ground
+[Builder puts down a green block at X:2 Y:2 Z:2]
+[Builder puts down a green block at X:1 Y:2 Z:2]
+[Builder picks up a green block at X:2 Y:2 Z:2]
+<Architect> up and left of that yellow block on the right, place a green
+<Builder> up and left?
+<Builder> isn't there already a block there?
+<Architect> sorry let me rephrase that
+<Architect> 2 left from that green block, place another green
+[Builder puts down a green block at X:2 Y:2 Z:2]
+<Architect> right
+[Builder puts down a green block at X:3 Y:2 Z:2]
+[Builder picks up a green block at X:2 Y:2 Z:2]
+<Architect> sorry
+<Architect> to the right
+[Builder picks up a green block at X:3 Y:2 Z:2]
+[Builder puts down a green block at X:0 Y:2 Z:2]
+[Builder puts down a green block at X:-1 Y:2 Z:2]
+[Builder picks up a green block at X:0 Y:2 Z:2]
+<Architect> perfect
+<Architect> now kep one space above both yellow blocks and place 1 blue block above each yellow block
+[Builder puts down a blue block at X:1 Y:3 Z:2]
+[Builder puts down a blue block at X:2 Y:3 Z:2]
+<Architect> like a checkered pattern
+[Builder puts down a blue block at X:1 Y:3 Z:1]
+[Builder puts down a blue block at X:0 Y:3 Z:2]
+[Builder picks up a blue block at X:1 Y:3 Z:1]
+[Builder picks up a blue block at X:1 Y:3 Z:2]
+<Architect> perfect
+<Architect> 2 above the green, place purple
+[Builder puts down a purple block at X:1 Y:3 Z:2]
+[Builder puts down a purple block at X:1 Y:4 Z:2]
+[Builder puts down a purple block at X:1 Y:5 Z:2]
+[Builder picks up a purple block at X:1 Y:4 Z:2]
+[Builder picks up a purple block at X:1 Y:3 Z:2]
+<Architect> one lower
+[Builder picks up a purple block at X:1 Y:5 Z:2]
+[Builder puts down a purple block at X:1 Y:3 Z:2]
+[Builder puts down a purple block at X:1 Y:4 Z:2]
+[Builder picks up a purple block at X:1 Y:3 Z:2]
+<Architect> same thing on the other one
+<Builder> each green?
+<Builder> ok
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+[Builder puts down a purple block at X:-1 Y:4 Z:2]
+[Builder picks up a purple block at X:-1 Y:3 Z:2]
+<Architect> now move to the other side
+<Builder> other side from where I'm facing?
+<Architect> 180 the figure
+<Architect> yes
+<Architect> perfect
+<Architect> place a block of red one infront and left of both yellow blocks
+[Builder puts down a red block at X:-1 Y:1 Z:3]
+[Builder puts down a red block at X:1 Y:1 Z:3]
+<Architect> yes
+<Architect> now orange on the next level up
+<Architect> the same pattern as the other sided
+[Builder puts down a orange block at X:0 Y:1 Z:3]
+[Builder puts down a orange block at X:0 Y:2 Z:3]
+[Builder picks up a orange block at X:0 Y:1 Z:3]
+[Builder puts down a orange block at X:2 Y:1 Z:3]
+[Builder puts down a orange block at X:2 Y:2 Z:3]
+[Builder picks up a orange block at X:2 Y:1 Z:3]
+<Architect> now yellow
+[Builder puts down a yellow block at X:-1 Y:2 Z:3]
+[Builder puts down a yellow block at X:-1 Y:3 Z:3]
+[Builder picks up a yellow block at X:-1 Y:2 Z:3]
+[Builder puts down a yellow block at X:1 Y:2 Z:3]
+[Builder puts down a yellow block at X:1 Y:3 Z:3]
+[Builder picks up a yellow block at X:1 Y:2 Z:3]
+<Architect> and finally green
+[Builder puts down a green block at X:0 Y:3 Z:3]
+[Builder puts down a green block at X:0 Y:4 Z:3]
+[Builder picks up a green block at X:0 Y:3 Z:3]
+[Builder puts down a green block at X:2 Y:3 Z:3]
+[Builder puts down a green block at X:2 Y:4 Z:3]
+[Builder picks up a green block at X:2 Y:3 Z:3]
+<Architect> ok I think we are good

@@ -1,0 +1,103 @@
+B35-A39-C134-1524249833923
+<Builder> Mission has started.
+<Architect> this one is a colorful parachute
+<Builder> oooh
+<Architect> start by putting a red block in the middle, floating one off the ground
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+<Architect> now we're going to make the straps of the chute in orange
+<Architect> there's probably a better term for those but idk them
+<Builder> lol
+<Architect> to the left and right of the red, we're going to make diagonal lines of orange such that they make a V shape
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder picks up a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder picks up a orange block at X:-1 Y:2 Z:0]
+<Builder> to the edge?
+<Architect> make it so that there are 3 orange blocks on each side
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+[Builder picks up a orange block at X:-2 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:5 Z:0]
+[Builder puts down a orange block at X:-3 Y:4 Z:0]
+[Builder picks up a orange block at X:-2 Y:5 Z:0]
+[Builder puts down a orange block at X:-3 Y:5 Z:0]
+[Builder picks up a orange block at X:-3 Y:4 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+[Builder puts down a orange block at X:2 Y:5 Z:0]
+[Builder picks up a orange block at X:2 Y:4 Z:0]
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+[Builder puts down a orange block at X:3 Y:5 Z:0]
+[Builder picks up a orange block at X:2 Y:5 Z:0]
+[Builder picks up a orange block at X:1 Y:4 Z:0]
+<Builder> okay
+<Architect> ok, the top of the parachute is symmetrical down the middle, so we will focus on one side then you can fill in the other
+[Builder puts down a orange block at X:2 Y:5 Z:0]
+[Builder puts down a orange block at X:2 Y:6 Z:0]
+[Builder picks up a orange block at X:2 Y:5 Z:0]
+[Builder puts down a orange block at X:1 Y:6 Z:0]
+[Builder puts down a orange block at X:1 Y:7 Z:0]
+[Builder picks up a orange block at X:1 Y:6 Z:0]
+[Builder puts down a orange block at X:0 Y:7 Z:0]
+[Builder puts down a orange block at X:0 Y:8 Z:0]
+[Builder picks up a orange block at X:0 Y:7 Z:0]
+<Architect> wait
+<Architect> there are no more straps haha
+<Builder> ohhh okay sorry I thought you asked me to mirror what I just did
+[Builder picks up a orange block at X:0 Y:8 Z:0]
+[Builder picks up a orange block at X:1 Y:7 Z:0]
+[Builder picks up a orange block at X:2 Y:6 Z:0]
+<Architect> i will eventually, but we have to make one of the sides first
+<Builder> gotcha
+<Architect> so pick a side, then put 3 yellow blocks on top of an orange, centered and perpendicular to the rest of the structure
+[Builder puts down a yellow block at X:3 Y:6 Z:0]
+[Builder puts down a yellow block at X:3 Y:6 Z:-2]
+[Builder picks up a yellow block at X:3 Y:7 Z:-2]
+[Builder picks up a yellow block at X:3 Y:6 Z:-1]
+[Builder picks up a yellow block at X:3 Y:6 Z:-2]
+[Builder puts down a yellow block at X:3 Y:6 Z:1]
+[Builder puts down a yellow block at X:3 Y:6 Z:-1]
+<Architect> cool
+<Architect> then a green stair step going inwards of the same width
+[Builder puts down a green block at X:2 Y:5 Z:0]
+[Builder puts down a green block at X:2 Y:5 Z:-1]
+[Builder puts down a green block at X:2 Y:5 Z:1]
+<Architect> oops, sorry, going up
+[Builder picks up a green block at X:2 Y:5 Z:-1]
+[Builder picks up a green block at X:2 Y:5 Z:0]
+[Builder picks up a green block at X:2 Y:5 Z:1]
+[Builder puts down a green block at X:2 Y:6 Z:1]
+[Builder puts down a green block at X:2 Y:7 Z:1]
+[Builder puts down a green block at X:1 Y:7 Z:0]
+[Builder puts down a green block at X:1 Y:7 Z:-1]
+[Builder picks up a green block at X:1 Y:7 Z:-1]
+[Builder picks up a green block at X:1 Y:7 Z:0]
+[Builder puts down a green block at X:2 Y:7 Z:-1]
+[Builder picks up a green block at X:2 Y:6 Z:1]
+<Architect> then a blue stair step
+[Builder puts down a blue block at X:1 Y:7 Z:1]
+[Builder puts down a blue block at X:1 Y:8 Z:1]
+[Builder puts down a blue block at X:1 Y:8 Z:0]
+[Builder puts down a blue block at X:1 Y:8 Z:-1]
+[Builder picks up a blue block at X:1 Y:7 Z:1]
+<Architect> then no more stairs -- a purple row directly adjacent to the blue
+[Builder puts down a purple block at X:0 Y:8 Z:1]
+[Builder puts down a purple block at X:0 Y:8 Z:-1]
+<Architect> cool. now you can mirror the yellow/green/blue
+[Builder puts down a blue block at X:-1 Y:8 Z:1]
+[Builder puts down a blue block at X:-1 Y:8 Z:-1]
+[Builder puts down a green block at X:-1 Y:7 Z:1]
+[Builder puts down a green block at X:-2 Y:7 Z:1]
+[Builder picks up a green block at X:-1 Y:7 Z:1]
+[Builder puts down a green block at X:-2 Y:7 Z:0]
+[Builder puts down a green block at X:-2 Y:7 Z:-1]
+[Builder puts down a yellow block at X:-3 Y:6 Z:0]
+[Builder puts down a yellow block at X:-3 Y:6 Z:-1]
+[Builder puts down a yellow block at X:-3 Y:6 Z:1]
+<Builder> that it?
+<Architect> yup!
+<Builder> cool

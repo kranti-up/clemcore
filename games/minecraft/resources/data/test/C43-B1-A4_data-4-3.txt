@@ -1,0 +1,67 @@
+B1-A4-C43-1522775315173
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hi
+<Architect> this looks like a woman wearing a dress
+<Architect> start with red
+<Architect> two feet in the center of the board
+<Architect> one blank space apart
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> good now green
+<Builder> are those the shoes?
+<Architect> the bottom of the dress is 7 long
+<Architect> yeah those are shoes
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+<Builder> on top?
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:2 Z:0]
+<Architect> a flat line centered over teh feet
+[Builder puts down a green block at X:-2 Y:2 Z:0]
+[Builder puts down a green block at X:2 Y:2 Z:0]
+[Builder puts down a green block at X:3 Y:2 Z:0]
+[Builder puts down a green block at X:-3 Y:2 Z:0]
+<Architect> now five centered above that
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:4 Z:0]
+[Builder puts down a green block at X:0 Y:5 Z:0]
+[Builder puts down a green block at X:0 Y:6 Z:0]
+<Architect> nah a flat line still
+[Builder picks up a green block at X:0 Y:6 Z:0]
+[Builder picks up a green block at X:0 Y:5 Z:0]
+[Builder picks up a green block at X:0 Y:3 Z:0]
+[Builder picks up a green block at X:0 Y:4 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+<Architect> like a pyramid
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+<Builder> got it
+<Architect> now three above that
+[Builder puts down a green block at X:-1 Y:4 Z:0]
+[Builder puts down a green block at X:0 Y:4 Z:0]
+[Builder puts down a green block at X:1 Y:4 Z:0]
+<Architect> now the shirt is yellow
+<Architect> 3x3 square starting from the top of the dress
+[Builder puts down a yellow block at X:0 Y:5 Z:0]
+[Builder puts down a yellow block at X:-1 Y:5 Z:0]
+[Builder puts down a yellow block at X:1 Y:5 Z:0]
+[Builder puts down a yellow block at X:1 Y:6 Z:0]
+[Builder puts down a yellow block at X:0 Y:6 Z:0]
+[Builder puts down a yellow block at X:-1 Y:6 Z:0]
+<Builder> one more?
+[Builder puts down a yellow block at X:-1 Y:7 Z:0]
+[Builder puts down a yellow block at X:0 Y:7 Z:0]
+[Builder puts down a yellow block at X:1 Y:7 Z:0]
+<Architect> good now the yellow arms
+<Architect> from the top of the dress
+<Architect> sorry shirt
+<Builder> ok
+[Builder puts down a yellow block at X:-2 Y:7 Z:0]
+[Builder puts down a yellow block at X:2 Y:7 Z:0]
+<Architect> good; now a red head on top of all that
+<Architect> one block
+[Builder puts down a red block at X:0 Y:8 Z:0]
+<Architect> super
+<Builder> awesome

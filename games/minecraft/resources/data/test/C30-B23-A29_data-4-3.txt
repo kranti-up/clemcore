@@ -1,0 +1,81 @@
+B23-A29-C30-1522767512742
+<Builder> Mission has started.
+<Architect> please place reference blocks
+<Builder> okay
+<Architect> one is enough
+<Builder> sorry talking to aid
+[Builder puts down a purple block at X:5 Y:1 Z:5]
+<Architect> okay here we go
+<Builder> lets do this
+<Architect> walk forward 3 steps
+<Architect> place a yellow block
+[Builder puts down a yellow block at X:2 Y:1 Z:2]
+<Architect> place another yellow block next to it but away from the purple block
+<Builder> north or east?
+[Builder puts down a yellow block at X:2 Y:1 Z:1]
+<Architect> either is ok
+<Architect> place 3 more yellow blocks along that line
+<Architect> away from the purple block
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+[Builder puts down a yellow block at X:2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:3 Y:1 Z:-3]
+[Builder picks up a yellow block at X:3 Y:1 Z:-3]
+[Builder puts down a yellow block at X:2 Y:1 Z:-2]
+<Builder> good?
+<Architect> yes
+<Architect> place a green block on each of the yellow blocks
+[Builder picks up a yellow block at X:2 Y:1 Z:2]
+[Builder puts down a yellow block at X:2 Y:1 Z:2]
+[Builder puts down a green block at X:2 Y:2 Z:2]
+[Builder puts down a green block at X:2 Y:2 Z:1]
+[Builder puts down a green block at X:2 Y:2 Z:0]
+[Builder puts down a green block at X:2 Y:2 Z:-1]
+[Builder puts down a green block at X:2 Y:2 Z:-2]
+<Architect> place a red block on the side opposite the purple block
+<Architect> by the furthest yellow block
+[Builder puts down a red block at X:2 Y:1 Z:-3]
+<Architect> not there
+[Builder picks up a red block at X:2 Y:1 Z:-3]
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+<Architect> on the other opposite side
+<Architect> exactly
+<Architect> now place a purple block on top of that one
+[Builder puts down a red block at X:-5 Y:1 Z:0]
+[Builder picks up a red block at X:1 Y:1 Z:-2]
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+[Builder puts down a purple block at X:1 Y:2 Z:-2]
+<Architect> place another red block along the diagonal toward the purple block
+<Builder> red for reference
+<Architect> understood
+[Builder puts down a red block at X:3 Y:1 Z:3]
+<Architect> not there
+[Builder puts down a red block at X:3 Y:2 Z:3]
+[Builder picks up a red block at X:3 Y:2 Z:3]
+[Builder picks up a red block at X:3 Y:1 Z:3]
+<Builder> where?
+<Architect> along the diagonal from the blocks we were working on
+<Architect> the red and purple blocks
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+<Architect> perfect
+<Architect> now place a purple block on top of that one
+<Builder> I wil stay right over the blocks if needed. left right work for me too
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+<Architect> got it
+<Architect> continuing along this same diagonal
+<Architect> place a blue block
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+<Architect> now move along the diagonal away from red and toward the purple block
+<Architect> placing two more blue blocks
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+<Architect> now place an orange block on each blue block
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:2]
+<Architect> now remove the reference blocks
+[Builder puts down a orange block at X:5 Y:2 Z:5]
+[Builder picks up a orange block at X:5 Y:2 Z:5]
+[Builder picks up a purple block at X:5 Y:1 Z:5]
+[Builder picks up a red block at X:-5 Y:1 Z:0]
+<Architect> going to next one
+<Builder> okay

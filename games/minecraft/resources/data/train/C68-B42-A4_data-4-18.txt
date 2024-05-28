@@ -1,0 +1,78 @@
+B42-A4-C68-1524081621571
+<Builder> Mission has started.
+<Architect> this one is sort of obnoxious
+<Builder> ok
+<Architect> it's a christmas tree with three ornaments
+<Architect> start with brown?
+<Architect> do you have a brown
+<Builder> nope I have red, orange, yellow, green, blue, and purple
+<Architect> then it's orange
+<Builder> ok
+<Architect> start in the middle of the surface
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+<Architect> build a plus sign flat
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+<Architect> now a column four tall from the center
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+<Architect> one more
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+<Architect> now directly above that but with one blank space is a yellow block
+[Builder puts down a yellow block at X:0 Y:6 Z:0]
+[Builder puts down a yellow block at X:0 Y:7 Z:0]
+[Builder picks up a yellow block at X:0 Y:6 Z:0]
+<Architect> good
+<Architect> now green
+<Architect> it's a plus sign centered around the top orange
+[Builder puts down a green block at X:0 Y:5 Z:-1]
+[Builder puts down a green block at X:-1 Y:5 Z:0]
+[Builder puts down a green block at X:0 Y:5 Z:1]
+[Builder puts down a green block at X:1 Y:5 Z:0]
+<Architect> great
+<Architect> now a 3x3 square around the middle orange
+<Architect> one blank space below the leaves you just made
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:1]
+[Builder puts down a green block at X:0 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+<Architect> great
+<Architect> now stay the way you're facing
+<Architect> put a red block diagonal up and to the right of the bottom leaves
+[Builder puts down a red block at X:0 Y:3 Z:2]
+[Builder puts down a red block at X:0 Y:4 Z:2]
+[Builder picks up a red block at X:0 Y:3 Z:2]
+<Architect> yeah great!
+<Architect> now a blue ornament goes diagonal and down from the the corner of hte bottom leaves
+<Architect> out toward you
+[Builder puts down a blue block at X:-2 Y:3 Z:0]
+[Builder puts down a blue block at X:-2 Y:2 Z:0]
+[Builder picks up a blue block at X:-2 Y:3 Z:0]
+<Architect> away ffrom the rest of the tree
+<Architect> only touches the corner block
+[Builder picks up a blue block at X:-2 Y:2 Z:0]
+[Builder puts down a blue block at X:-1 Y:2 Z:1]
+[Builder puts down a blue block at X:-2 Y:2 Z:1]
+[Builder puts down a blue block at X:-2 Y:2 Z:2]
+[Builder picks up a blue block at X:-2 Y:2 Z:1]
+[Builder picks up a blue block at X:-1 Y:2 Z:1]
+<Builder> like that or one to the left
+<Architect> nope that's perfect
+<Architect> now on the left side of the tree
+<Architect> a purple block
+<Architect> also down and diagonal away from the tree, but touching the middle block
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder picks up a purple block at X:0 Y:2 Z:-1]
+<Architect> great
+<Architect> that wasn't as bad as i thought it would be
+<Builder> done?
+<Architect> all done
+<Builder> yay

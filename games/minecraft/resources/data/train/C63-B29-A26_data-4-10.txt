@@ -1,0 +1,27 @@
+B29-A26-C63-1523377699628
+<Builder> Mission has started.
+<Architect> We'll make a blue question mark. First start with a brick on the bottom,
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+<Architect> floating above the blue brick, we'll make a blue C shape
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+[Builder picks up a blue block at X:1 Y:2 Z:-1]
+[Builder picks up a blue block at X:1 Y:2 Z:0]
+<Architect> the c shape will have 5 bricks
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+[Builder picks up a blue block at X:1 Y:2 Z:-1]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:2 Y:2 Z:0]
+[Builder puts down a blue block at X:2 Y:3 Z:0]
+[Builder puts down a blue block at X:2 Y:4 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+[Builder picks up a blue block at X:0 Y:2 Z:0]
+<Architect> You're close, the C should be one level higher than it is now
+[Builder picks up a blue block at X:2 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+[Builder picks up a blue block at X:1 Y:4 Z:0]
+[Builder puts down a blue block at X:2 Y:5 Z:0]
+[Builder puts down a blue block at X:1 Y:5 Z:0]
+<Architect> Perfect!
+<Architect> remove the brick in between the C and the bottom brick
+[Builder picks up a blue block at X:1 Y:2 Z:0]

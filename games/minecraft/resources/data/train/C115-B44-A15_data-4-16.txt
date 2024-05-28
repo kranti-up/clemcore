@@ -1,0 +1,46 @@
+B44-A15-C115-1523891547014
+<Builder> Mission has started.
+<Builder> ready
+<Architect> okay, this looks easy enough
+<Architect> put 4 yellow blocks down in the center in a 3x3 square
+<Architect> like legs of a table
+[Builder puts down a yellow block at X:1 Y:1 Z:1]
+[Builder puts down a yellow block at X:1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+<Architect> yep! now you're gonna want 8 red blocks on top of those 4, to make a hollow square
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+<Architect> okay! now replace one corner with a blue block
+[Builder picks up a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a blue block at X:-1 Y:2 Z:-1]
+<Architect> okay. using that blue block as the top left corner, you're gonna want to put 3 more blue legs in the same 3x3 grid as the yellow ones
+<Architect> so four blue legs one tile off the gruond
+<Architect> ground*
+[Builder puts down a blue block at X:-1 Y:2 Z:-2]
+[Builder puts down a blue block at X:-1 Y:2 Z:-3]
+[Builder puts down a blue block at X:-2 Y:2 Z:-3]
+[Builder puts down a blue block at X:-3 Y:2 Z:-3]
+[Builder picks up a blue block at X:-1 Y:2 Z:-2]
+[Builder picks up a blue block at X:-2 Y:2 Z:-3]
+[Builder puts down a blue block at X:-3 Y:2 Z:-2]
+[Builder puts down a blue block at X:-3 Y:2 Z:-1]
+[Builder picks up a blue block at X:-3 Y:2 Z:-2]
+<Architect> perfect!
+<Architect> now a layer of purple blocks on top of the blue ones, same as the red on the yellow
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-3]
+[Builder puts down a purple block at X:-2 Y:3 Z:-3]
+[Builder puts down a purple block at X:-3 Y:3 Z:-3]
+[Builder puts down a purple block at X:-2 Y:3 Z:-1]
+[Builder puts down a purple block at X:-3 Y:3 Z:-1]
+[Builder puts down a purple block at X:-3 Y:3 Z:-2]
+<Architect> looks perfect! i think that's good :)
+<Builder> ncie

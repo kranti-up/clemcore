@@ -1,0 +1,100 @@
+B49-A39-C71-1523766649650
+<Builder> Mission has started.
+<Architect> hello again :)
+<Builder> ready player one
+<Architect> this one looks annoying
+<Architect> it's a bunch of dotted lines
+<Architect> going from one edge to the other, make a floating row of green blocks, except that they have one-block gaps in between them
+<Architect> it will have 5 blocks total
+[Builder puts down a green block at X:5 Y:1 Z:0]
+[Builder puts down a green block at X:5 Y:2 Z:0]
+[Builder puts down a green block at X:3 Y:1 Z:0]
+[Builder puts down a green block at X:3 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-3 Y:1 Z:0]
+[Builder puts down a green block at X:-3 Y:2 Z:0]
+<Builder> are the outer blocks each on an edge?
+[Builder picks up a green block at X:5 Y:1 Z:0]
+[Builder picks up a green block at X:3 Y:1 Z:0]
+[Builder picks up a green block at X:1 Y:1 Z:0]
+[Builder picks up a green block at X:-1 Y:1 Z:0]
+[Builder picks up a green block at X:-3 Y:1 Z:0]
+<Architect> no, i don't think it matters, as long as there are 5
+<Architect> though i need to make sure we left enough space for everything else, one sec
+<Architect> we're maybe okay
+<Builder> if you say so
+<Architect> can you position yourself so that you're at the end of that line, but with the larger amount of blank space to your right?
+<Architect> wait jk, you put it in the middle
+<Architect> let's shift it all over so that they're three blocks away from the left edge
+[Builder puts down a green block at X:-3 Y:1 Z:-3]
+[Builder puts down a green block at X:-3 Y:2 Z:-3]
+[Builder puts down a green block at X:-1 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:2 Z:-3]
+[Builder puts down a green block at X:1 Y:1 Z:-3]
+[Builder puts down a green block at X:1 Y:2 Z:-3]
+[Builder puts down a green block at X:3 Y:1 Z:-3]
+[Builder puts down a green block at X:3 Y:2 Z:-3]
+[Builder puts down a green block at X:5 Y:1 Z:-3]
+[Builder puts down a green block at X:5 Y:2 Z:-3]
+[Builder picks up a green block at X:5 Y:1 Z:-3]
+[Builder picks up a green block at X:3 Y:1 Z:-3]
+[Builder picks up a green block at X:1 Y:1 Z:-3]
+[Builder picks up a green block at X:-1 Y:1 Z:-3]
+[Builder picks up a green block at X:-3 Y:1 Z:-3]
+[Builder puts down a green block at X:4 Y:2 Z:0]
+[Builder picks up a green block at X:4 Y:2 Z:0]
+[Builder picks up a green block at X:5 Y:2 Z:0]
+[Builder picks up a green block at X:3 Y:2 Z:0]
+[Builder picks up a green block at X:1 Y:2 Z:0]
+[Builder picks up a green block at X:-1 Y:2 Z:0]
+[Builder picks up a green block at X:-3 Y:2 Z:0]
+<Architect> cool, sorry that was tedious
+<Builder> np
+<Architect> from the second green block from the end that's close to you, we'll place a yellow block diagonally on top of and to the right of that block
+[Builder picks up a green block at X:-1 Y:2 Z:-3]
+[Builder puts down a green block at X:-1 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:2 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-3]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-3]
+[Builder picks up a green block at X:-1 Y:1 Z:-3]
+<Builder> like so?
+<Architect> yes!
+<Architect> that's the end of a yellow dotted line consisting of four blocks extending to the right
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:2]
+[Builder puts down a yellow block at X:-1 Y:3 Z:3]
+[Builder puts down a yellow block at X:-1 Y:3 Z:4]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:3]
+<Architect> very nice
+<Architect> directly on top of the second yellow block from the left, put an orange block
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+<Builder> ok
+<Architect> that is the bottom end of an orange dotted line extending away from you, consisting of 3 blocks
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+[Builder puts down a orange block at X:3 Y:4 Z:0]
+[Builder picks up a orange block at X:0 Y:4 Z:0]
+[Builder picks up a orange block at X:2 Y:4 Z:0]
+<Architect> okay, there's one last dotted line in red made of 3 blocks
+<Architect> it starts on the ground and extends up vertically, and starts in the space in front of the end of the orange line
+[Builder puts down a red block at X:4 Y:1 Z:0]
+[Builder puts down a red block at X:4 Y:2 Z:0]
+[Builder puts down a red block at X:4 Y:3 Z:0]
+[Builder puts down a red block at X:4 Y:4 Z:0]
+[Builder picks up a red block at X:4 Y:3 Z:0]
+[Builder puts down a red block at X:4 Y:3 Z:0]
+[Builder picks up a red block at X:4 Y:2 Z:0]
+[Builder puts down a red block at X:4 Y:5 Z:0]
+[Builder picks up a red block at X:4 Y:4 Z:0]
+<Builder> done!
+<Architect> niceee
+<Architect> looks good

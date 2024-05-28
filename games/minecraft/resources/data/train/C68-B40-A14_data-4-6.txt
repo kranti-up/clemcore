@@ -1,0 +1,139 @@
+B40-A14-C68-1523054593793
+<Builder> Mission has started.
+<Builder> hi
+<Architect> You can start this one somewhat in the center, but it goes mostly upwards. Place a red block first
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> Sorry I meant orange. It looked more like red at first!
+<Builder> np
+[Builder picks up a red block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+<Architect> Now place one diagonally below it
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+<Architect> Great! Now place another one diagonal to the first one, on the right
+<Builder> again below it right?
+<Architect> Yup!
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+<Architect> Great. Now place an orange block in the middle of those two blocks
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+<Architect> And then place one right below the one you just placed
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+<Builder> you could've said a plus sign ;)
+<Architect> Great, now stack an orange block on top of the center one
+<Builder> but no problem
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+<Architect> Haha I didn't realize there was a center block until she pointed it out
+<Architect> You can't really see it here
+<Builder> ah i see!
+<Builder> true
+<Architect> Okay now put another orange block on top of that
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+<Architect> We're going to build a square around this block using green blocks
+[Builder puts down a green block at X:0 Y:3 Z:-2]
+[Builder puts down a green block at X:-1 Y:3 Z:-2]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+[Builder puts down a green block at X:1 Y:3 Z:-2]
+<Builder> like this?
+<Architect> yes, great!
+<Architect> now place another orange block on top of the center one
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+<Architect> Sorry place another orange block on top of this one
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+<Builder> another square around this one?
+<Architect> Great, now we're going to make a plus sign with green blocks
+<Architect> plus sign this time!
+<Builder> cool
+<Builder> center of the plus on top of the last orange block i placed?
+<Architect> The orange block is the center sorry
+<Builder> ah got it
+[Builder puts down a green block at X:0 Y:5 Z:-2]
+[Builder puts down a green block at X:-1 Y:5 Z:-1]
+[Builder puts down a green block at X:0 Y:5 Z:0]
+[Builder puts down a green block at X:1 Y:5 Z:-1]
+<Builder> like this?
+<Builder> or is the plus bigger?
+<Architect> Yes perfect! now stack two yellow blocks on top of the orange one in the center, but remove the first one so there's just one floating on top
+[Builder puts down a yellow block at X:0 Y:6 Z:-1]
+[Builder puts down a yellow block at X:0 Y:7 Z:-1]
+[Builder picks up a yellow block at X:0 Y:6 Z:-1]
+<Architect> Awesome! Ok there are a few random blocks left to place here and there
+<Architect> There is a red block jutting out on the left side next to the orange block standing by itself
+<Builder> which orange block?
+<Architect> I think it's the third one from down
+<Architect> wait fourth one
+[Builder puts down a red block at X:1 Y:4 Z:-1]
+<Builder> like this?
+<Architect> Yes except it's right next to that one. So place another one to the left and then remove this one
+<Builder> gotcha
+<Builder> ya that's why i was a bit confused
+[Builder puts down a red block at X:2 Y:4 Z:-1]
+[Builder picks up a red block at X:1 Y:4 Z:-1]
+<Architect> yeah sorry! Ok now we're going to do the same thing with a purple block
+<Builder> np
+<Architect> Place one above the orange block on the right side of the plus sign at the bottom
+<Architect> You're standing in the right spot
+<Builder> ya not sure which place you mean
+<Architect> Sorry so the base of the structure is a plus right. Place a purple block on top of the right orange block of the plus sign
+<Architect> Stack it, I mean
+<Builder> right orange block of the pus sign?
+<Builder> plus*
+[Builder puts down a purple block at X:-1 Y:6 Z:-1]
+<Builder> you mean here?
+<Architect> No you have to go all the way to the bottom
+[Builder picks up a purple block at X:-1 Y:6 Z:-1]
+<Builder> oh this plus sign!!
+<Builder> i thought the green one!
+<Builder> lol
+<Builder> forgot there were two plus signs
+<Architect> No worries!
+<Builder> ya that's why i didn't understand when you said base of the structure
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+<Builder> here?
+<Architect> Yeah sorry i may have forgotton to say orange plus
+<Architect> yes. Now place a purple one to the right of this one and then remove this one
+[Builder puts down a purple block at X:-2 Y:2 Z:-1]
+[Builder picks up a purple block at X:-2 Y:2 Z:-1]
+[Builder puts down a purple block at X:-2 Y:2 Z:-1]
+[Builder picks up a purple block at X:-1 Y:2 Z:-1]
+<Architect> Great! now go the left side of the plus sign.
+<Architect> And place a blue block two squares above the one directly next to the orange block
+<Architect> sorry that was confusing
+<Builder> haha
+<Builder> np
+<Architect> so on the left side of the plus, instead of placing the blue block directly next to the orange one, place it two squares above,
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder picks up a blue block at X:0 Y:1 Z:1]
+<Architect> I don't know if that helps either lol
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+[Builder puts down a blue block at X:0 Y:3 Z:1]
+[Builder picks up a blue block at X:0 Y:1 Z:1]
+[Builder picks up a orange block at X:0 Y:1 Z:-2]
+<Builder> like this?
+<Builder> not sure if that's right
+<Architect> It has to be down next to the base structure
+[Builder picks up a blue block at X:0 Y:3 Z:1]
+<Architect> like on the ground
+[Builder puts down a blue block at X:-2 Y:1 Z:1]
+<Builder> here?
+<Architect> Yes that's right, but it's on the wrong side sorry. We want it on the side opposite the random purple block
+[Builder picks up a blue block at X:-2 Y:1 Z:1]
+<Builder> so this side...
+<Architect> yes
+<Builder> now two squares above which block exactly?
+<Architect> So maybe it's easier if I tell you to place it somewhere first and then move it. Place it on the ground next to the orange block
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+<Architect> Yes now move it to the left by two squares
+[Builder puts down a blue block at X:2 Y:1 Z:1]
+[Builder picks up a blue block at X:2 Y:1 Z:-1]
+<Builder> here?
+<Architect> yes, great! now place another blue block on top of it
+[Builder puts down a blue block at X:2 Y:2 Z:1]
+<Builder> phew :)
+<Architect> Now remove the bottom blue one
+[Builder picks up a blue block at X:2 Y:1 Z:1]
+<Architect> and we're done! phew
+<Builder> haha
+<Builder> cool

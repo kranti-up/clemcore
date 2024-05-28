@@ -1,0 +1,84 @@
+B15-A27-C52-1522971732942
+<Builder> Mission has started.
+<Builder> ready!
+<Architect> go to a corner and go to the second spot on the diagonal
+[Builder puts down a red block at X:4 Y:1 Z:-4]
+<Architect> there and make it blue
+[Builder picks up a red block at X:4 Y:1 Z:-4]
+[Builder puts down a blue block at X:4 Y:1 Z:-4]
+<Architect> we want a tower of three blue blocks
+[Builder puts down a blue block at X:4 Y:2 Z:-4]
+[Builder puts down a blue block at X:4 Y:3 Z:-4]
+<Architect> with an orange on top
+[Builder puts down a orange block at X:4 Y:4 Z:-4]
+<Architect> there are going to be 3 more pillars like this in a square so two of those will be 4 spaces to the right and 4 up
+[Builder puts down a blue block at X:-1 Y:1 Z:-4]
+[Builder picks up a blue block at X:-1 Y:1 Z:-4]
+[Builder puts down a blue block at X:0 Y:1 Z:-4]
+[Builder puts down a blue block at X:4 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+<Architect> one twon many
+[Builder puts down a blue block at X:0 Y:2 Z:-4]
+[Builder puts down a blue block at X:0 Y:3 Z:-4]
+<Architect> thats good
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+[Builder puts down a blue block at X:4 Y:2 Z:0]
+[Builder puts down a blue block at X:4 Y:3 Z:0]
+[Builder puts down a orange block at X:4 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:-4]
+<Architect> the middle is going to have 5 orange blocks they will be floating
+<Architect> the 4 will be one space above the tower
+[Builder puts down a orange block at X:0 Y:5 Z:-4]
+[Builder puts down a orange block at X:0 Y:5 Z:-3]
+[Builder puts down a orange block at X:0 Y:4 Z:-3]
+[Builder picks up a orange block at X:0 Y:4 Z:-3]
+[Builder puts down a orange block at X:1 Y:5 Z:-3]
+[Builder picks up a orange block at X:0 Y:5 Z:-3]
+[Builder picks up a orange block at X:0 Y:5 Z:-4]
+[Builder puts down a orange block at X:2 Y:5 Z:-3]
+[Builder puts down a orange block at X:3 Y:5 Z:-3]
+[Builder puts down a orange block at X:3 Y:5 Z:-2]
+[Builder puts down a orange block at X:3 Y:5 Z:-1]
+[Builder puts down a orange block at X:2 Y:5 Z:-1]
+[Builder puts down a orange block at X:1 Y:5 Z:-1]
+[Builder puts down a orange block at X:1 Y:5 Z:-2]
+[Builder picks up a orange block at X:2 Y:5 Z:-3]
+[Builder picks up a orange block at X:3 Y:5 Z:-2]
+[Builder picks up a orange block at X:2 Y:5 Z:-1]
+[Builder picks up a orange block at X:1 Y:5 Z:-2]
+<Builder> like that?
+<Architect> now one needs to go in the middle just one spot above those four
+[Builder puts down a orange block at X:1 Y:6 Z:-1]
+[Builder puts down a orange block at X:1 Y:6 Z:-2]
+[Builder puts down a orange block at X:2 Y:6 Z:-2]
+[Builder picks up a orange block at X:1 Y:6 Z:-2]
+[Builder picks up a orange block at X:1 Y:6 Z:-1]
+<Architect> thats it
+<Architect> go on the ground to the right side of the structure
+<Architect> in the middle and two spaces out from the pillars
+[Builder puts down a orange block at X:2 Y:1 Z:2]
+<Builder> there?
+<Architect> yeah stack three green blocks there
+[Builder picks up a orange block at X:2 Y:1 Z:2]
+[Builder puts down a orange block at X:2 Y:1 Z:2]
+[Builder picks up a orange block at X:2 Y:1 Z:2]
+[Builder puts down a green block at X:2 Y:1 Z:2]
+[Builder puts down a green block at X:2 Y:2 Z:2]
+[Builder puts down a green block at X:2 Y:3 Z:2]
+<Architect> and make a t so how your're facing now place green on the left and right
+[Builder puts down a green block at X:3 Y:3 Z:2]
+[Builder puts down a green block at X:1 Y:3 Z:2]
+<Architect> go to the spot directly in front of the t
+<Builder> this side or the other side?
+<Architect> now place a block on the ground 4 spaces to the left
+[Builder puts down a green block at X:-2 Y:1 Z:3]
+<Builder> there?
+<Architect> and make another t but have the sides on the opposite of the first t
+[Builder puts down a green block at X:-2 Y:2 Z:3]
+[Builder puts down a green block at X:-2 Y:3 Z:3]
+[Builder puts down a green block at X:-2 Y:3 Z:4]
+[Builder puts down a green block at X:-2 Y:3 Z:2]
+<Builder> like that?
+<Architect> perfect

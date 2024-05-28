@@ -1,0 +1,65 @@
+B21-A15-C74-1522884356798
+<Builder> Mission has started.
+<Architect> alright, last one i think. ready?
+<Builder> yee
+<Architect> alright, we'll start with an orange block on the ground
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+<Architect> alright, now place another one 4 spaces to the right of the orange block
+[Builder puts down a orange block at X:-4 Y:1 Z:0]
+<Architect> now place two more orange blocks up and inwards of those two
+<Architect> so it's almost a pyramid
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:-4 Y:2 Z:0]
+[Builder puts down a orange block at X:-3 Y:2 Z:0]
+[Builder picks up a orange block at X:-4 Y:2 Z:0]
+<Architect> alright, now move to the other side
+<Architect> and put two more orange blocks in front of the top two
+[Builder puts down a orange block at X:-3 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+<Architect> and connect them with one more orange block
+[Builder puts down a orange block at X:-2 Y:2 Z:1]
+<Architect> now, in front of the middle block, put a green block
+[Builder puts down a green block at X:-2 Y:2 Z:2]
+<Architect> and another green block up and forward, like a staircase
+[Builder puts down a green block at X:-2 Y:3 Z:2]
+[Builder puts down a green block at X:-2 Y:3 Z:3]
+[Builder picks up a green block at X:-2 Y:3 Z:2]
+<Architect> and one more up and forward
+[Builder puts down a green block at X:-2 Y:4 Z:3]
+[Builder puts down a green block at X:-2 Y:4 Z:4]
+[Builder picks up a green block at X:-2 Y:4 Z:3]
+<Architect> okay, now, put a red block on the ground two spaces left and one space forward from the last green block
+[Builder puts down a red block at X:-4 Y:1 Z:5]
+<Builder> there?
+<Architect> whoops, sorry, i meant your right
+[Builder picks up a red block at X:-4 Y:1 Z:5]
+[Builder puts down a red block at X:0 Y:1 Z:5]
+<Architect> yep!
+<Architect> now another one in a staircase to the right
+[Builder puts down a red block at X:0 Y:2 Z:5]
+[Builder puts down a red block at X:1 Y:2 Z:5]
+[Builder picks up a red block at X:0 Y:2 Z:5]
+<Architect> okay, now, put a purple block two spaces right and forward from the red block on the ground
+[Builder puts down a purple block at X:3 Y:1 Z:4]
+<Builder> there or one more forward?
+<Architect> one more space diagonally towards the orange blocks
+[Builder puts down a purple block at X:4 Y:1 Z:3]
+[Builder picks up a purple block at X:3 Y:1 Z:4]
+<Builder> there?
+[Builder picks up a purple block at X:4 Y:1 Z:3]
+[Builder puts down a purple block at X:2 Y:1 Z:3]
+<Architect> there!
+<Architect> and one more purple block to make a staircase in the opposite direction of the red staircase
+[Builder puts down a purple block at X:2 Y:2 Z:3]
+[Builder puts down a purple block at X:1 Y:2 Z:3]
+[Builder picks up a purple block at X:2 Y:2 Z:3]
+<Architect> i think that's good! :)
+<Builder> sweet
+<Architect> good work! and sorry for the confusion
+<Builder> yeah no prob
+<Architect> oh
+<Architect> we're getting more
+<Architect> apparently
+<Builder> o

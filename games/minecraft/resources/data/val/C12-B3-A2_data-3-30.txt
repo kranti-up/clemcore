@@ -1,0 +1,45 @@
+B3-A2-C12-1522445699382
+<Builder> Mission has started.
+<Builder> hello architect
+<Architect> hello, are you ready to build a rainbow
+<Builder> i am ready architect, please show me the way
+<Architect> Alrighty
+<Architect> In the upper left corner place a purple block
+[Builder puts down a purple block at X:5 Y:1 Z:5]
+<Builder> there?
+<Architect> sure thing
+<Architect> now place a block to the right and on top
+[Builder puts down a purple block at X:4 Y:1 Z:5]
+[Builder puts down a purple block at X:5 Y:2 Z:5]
+<Architect> ok now repeat that shape but in blue and offset the starting block one space to the right and one space down
+<Architect> from the original block
+[Builder puts down a purple block at X:4 Y:1 Z:3]
+[Builder picks up a purple block at X:4 Y:1 Z:3]
+[Builder puts down a blue block at X:4 Y:1 Z:3]
+[Builder puts down a blue block at X:3 Y:1 Z:3]
+[Builder puts down a blue block at X:4 Y:2 Z:3]
+<Builder> like that?
+<Architect> close, move the structure up one space
+<Builder> so they are touching?
+[Builder picks up a blue block at X:4 Y:2 Z:3]
+[Builder picks up a blue block at X:4 Y:1 Z:3]
+[Builder picks up a blue block at X:3 Y:1 Z:3]
+[Builder puts down a blue block at X:4 Y:1 Z:4]
+[Builder puts down a blue block at X:3 Y:1 Z:4]
+[Builder puts down a blue block at X:4 Y:2 Z:4]
+<Architect> yes
+<Architect> now do that four more times in the order green, yellow, orange, and red
+[Builder puts down a green block at X:3 Y:1 Z:3]
+[Builder puts down a green block at X:2 Y:1 Z:3]
+[Builder puts down a green block at X:3 Y:2 Z:3]
+[Builder puts down a yellow block at X:2 Y:1 Z:2]
+[Builder puts down a yellow block at X:1 Y:1 Z:2]
+[Builder puts down a yellow block at X:2 Y:2 Z:2]
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+<Builder> like that?
+<Architect> excellent

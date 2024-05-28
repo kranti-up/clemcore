@@ -1,0 +1,62 @@
+B16-A26-C83-1524153180717
+<Builder> Mission has started.
+<Architect> Hi! I think we should start by adding the corners of a purple 5x5 square
+[Builder puts down a purple block at X:2 Y:1 Z:1]
+[Builder puts down a purple block at X:2 Y:1 Z:-4]
+<Architect> The corners will be part of columns of height 2
+[Builder puts down a purple block at X:-3 Y:1 Z:-4]
+<Architect> Oops, I think you have too many spaces between the corners
+[Builder picks up a purple block at X:2 Y:1 Z:-4]
+[Builder puts down a purple block at X:1 Y:1 Z:-4]
+[Builder picks up a purple block at X:2 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:-3 Y:1 Z:0]
+<Architect> Great!
+[Builder puts down a purple block at X:-3 Y:2 Z:0]
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:-3]
+[Builder picks up a purple block at X:1 Y:1 Z:-3]
+[Builder puts down a purple block at X:1 Y:2 Z:-4]
+[Builder puts down a purple block at X:-3 Y:2 Z:-4]
+<Architect> Then above the purple columns, add the perimeter of a 5x5 red square
+[Builder puts down a red block at X:-3 Y:3 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:-1]
+[Builder puts down a red block at X:1 Y:3 Z:-2]
+[Builder puts down a red block at X:1 Y:3 Z:-3]
+[Builder puts down a red block at X:1 Y:3 Z:-4]
+[Builder puts down a red block at X:0 Y:3 Z:-4]
+[Builder puts down a red block at X:0 Y:4 Z:-4]
+[Builder picks up a red block at X:0 Y:4 Z:-4]
+[Builder puts down a red block at X:-1 Y:3 Z:-4]
+[Builder puts down a red block at X:-2 Y:3 Z:-4]
+[Builder puts down a red block at X:-3 Y:3 Z:-4]
+[Builder puts down a red block at X:-3 Y:3 Z:-1]
+[Builder puts down a red block at X:-3 Y:3 Z:-2]
+[Builder puts down a red block at X:-3 Y:3 Z:-3]
+<Architect> On the layer beneath the red square, we'll also add a 3x3 perimeter of a square of orange bricks
+<Architect> Does that make sense?
+<Builder> yep!
+<Architect> Great!
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:-3]
+[Builder puts down a orange block at X:-1 Y:2 Z:-3]
+[Builder puts down a orange block at X:-2 Y:2 Z:-3]
+[Builder puts down a orange block at X:-2 Y:2 Z:-2]
+<Architect> Good stuff! Now in the middle of the bottom layer, add a yellow brick
+<Architect> We made some kind of mix of concentric squares and a table
+[Builder puts down a yellow block at X:-1 Y:2 Z:-2]
+<Architect> I think the yellow brick should be touching the ground
+<Builder> oh okay!
+<Architect> Sorry, I didn't clarify that
+[Builder picks up a yellow block at X:-1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-2]
+<Architect> Perfect!

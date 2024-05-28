@@ -1,0 +1,106 @@
+B34-A31-C98-1523654279329
+<Builder> Mission has started.
+<Builder> how complex?
+<Architect> Some of these objects will be floating
+<Builder> is there any oclor we are not using>
+<Architect> This first one we make will not be. This one will be built on the ground
+<Architect> No, we will be using all six colors. We will use yellow first. After we finish this first one, we can use yellow as the 'delete' blockss
+<Builder> ok
+<Architect> So we will need yellow first. One block away from an edge, put a yellow block near the center
+[Builder puts down a yellow block at X:0 Y:1 Z:-3]
+[Builder picks up a yellow block at X:0 Y:1 Z:-3]
+[Builder puts down a yellow block at X:0 Y:1 Z:-4]
+<Builder> like that?
+<Architect> There ya go, that's good
+<Architect> Moving toward the center, place three more yellow blocks
+[Builder puts down a yellow block at X:0 Y:1 Z:-3]
+[Builder puts down a yellow block at X:0 Y:1 Z:-2]
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+<Architect> On either side of the third yellow block, place another yellow so it looks like a cross
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-2]
+[Builder puts down a yellow block at X:1 Y:1 Z:-2]
+<Architect> Perfect
+<Architect> no more yellow will be needed
+<Builder> ok
+<Builder> very religious
+<Architect> Using green, place two blocks diagonal from the top yellow block
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+<Builder> ??
+<Architect> Perfect
+<Architect> There will be two other shapes like this, but they will be floating
+<Builder> exactly the same?
+<Architect> yes, just oriented differently and using different colors
+<Builder> ok
+<Architect> Place a yellow block diagonal to the left green block
+<Builder> on which side?
+<Architect> top left diagonal of the left green block
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+[Builder picks up a yellow block at X:0 Y:1 Z:1]
+[Builder puts down a yellow block at X:2 Y:1 Z:1]
+<Architect> Perfect
+<Architect> Place a red block on top
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder picks up a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder picks up a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:1]
+[Builder picks up a yellow block at X:2 Y:1 Z:1]
+<Architect> You can delete the yellow
+<Architect> Now two reds to the right of the current red
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+<Architect> I apologize, to the left of the curent red
+[Builder picks up a red block at X:1 Y:2 Z:1]
+[Builder picks up a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:3 Y:2 Z:1]
+[Builder puts down a red block at X:4 Y:2 Z:1]
+<Architect> Perfect, now make a cross in the same direction of the yellow one
+[Builder puts down a red block at X:3 Y:2 Z:0]
+[Builder puts down a red block at X:3 Y:2 Z:-1]
+[Builder puts down a red block at X:3 Y:2 Z:2]
+<Architect> The green blocks will be orange for this one
+<Builder> what color are the ear things?
+<Architect> They will also be floating
+[Builder puts down a orange block at X:3 Y:2 Z:3]
+[Builder puts down a orange block at X:2 Y:2 Z:3]
+[Builder puts down a orange block at X:4 Y:2 Z:3]
+[Builder picks up a orange block at X:3 Y:2 Z:3]
+<Architect> Perfect, now move to the top right corner of the white base
+<Architect> Right on the edge, in line with the orange ears, place a yellow block
+[Builder puts down a yellow block at X:-5 Y:1 Z:3]
+<Builder> like that
+<Architect> Perfect
+<Architect> On top, place a purple block
+[Builder puts down a purple block at X:-5 Y:2 Z:3]
+[Builder picks up a yellow block at X:-5 Y:1 Z:3]
+<Architect> Purple will be thecross
+[Builder puts down a purple block at X:-4 Y:2 Z:3]
+[Builder puts down a purple block at X:-3 Y:2 Z:3]
+[Builder puts down a purple block at X:-2 Y:2 Z:3]
+[Builder puts down a purple block at X:-3 Y:2 Z:2]
+<Architect> And blue ears
+[Builder puts down a purple block at X:-3 Y:2 Z:4]
+[Builder puts down a blue block at X:-1 Y:2 Z:3]
+[Builder puts down a blue block at X:-1 Y:2 Z:4]
+[Builder puts down a blue block at X:-1 Y:2 Z:2]
+[Builder picks up a blue block at X:-1 Y:2 Z:3]
+<Architect> I made a mistake, the whole purple and blue figure should be one block to the left, toward the red one
+[Builder picks up a purple block at X:-3 Y:2 Z:2]
+[Builder picks up a purple block at X:-3 Y:2 Z:4]
+[Builder picks up a purple block at X:-5 Y:2 Z:3]
+[Builder puts down a purple block at X:-1 Y:2 Z:3]
+[Builder puts down a purple block at X:-2 Y:2 Z:4]
+[Builder puts down a purple block at X:-2 Y:2 Z:2]
+[Builder picks up a blue block at X:-1 Y:2 Z:2]
+[Builder picks up a blue block at X:-1 Y:2 Z:4]
+[Builder puts down a blue block at X:0 Y:2 Z:3]
+[Builder puts down a blue block at X:0 Y:2 Z:2]
+[Builder puts down a blue block at X:0 Y:2 Z:4]
+[Builder picks up a blue block at X:0 Y:2 Z:3]
+<Architect> yep, you got it
+<Builder> great
+<Architect> And let me just double check these
+<Architect> Nice

@@ -1,0 +1,17 @@
+B44-A36-C3-1523573135199
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hi
+<Builder> are you there?
+<Architect> ya sorry
+<Architect> uh can you get a blue block
+<Architect> ok cool
+<Architect> go to the top left of the box
+<Architect> place 2 blocks next to each other
+[Builder puts down a blue block at X:4 Y:1 Z:4]
+[Builder puts down a blue block at X:3 Y:1 Z:4]
+<Architect> and then one on top of one of them
+<Builder> which one?
+<Architect> so it should look like an L
+<Architect> oh the left one sorry
+[Builder puts down a blue block at X:4 Y:2 Z:4]

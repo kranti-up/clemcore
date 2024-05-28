@@ -1,0 +1,79 @@
+B27-A25-C99-1523576318491
+<Builder> Mission has started.
+<Architect> ok, this is an intense build
+<Architect> so we'll need to be really careful about where we start
+<Architect> build a yellow 3x3 wall 6 blocks up from the bottom leftmost corner of this white grid
+[Builder puts down a yellow block at X:5 Y:1 Z:0]
+[Builder puts down a yellow block at X:4 Y:1 Z:0]
+[Builder puts down a yellow block at X:3 Y:1 Z:0]
+[Builder puts down a yellow block at X:3 Y:2 Z:0]
+[Builder puts down a yellow block at X:4 Y:2 Z:0]
+[Builder puts down a yellow block at X:5 Y:2 Z:0]
+[Builder puts down a yellow block at X:5 Y:3 Z:0]
+[Builder puts down a yellow block at X:4 Y:3 Z:0]
+[Builder puts down a yellow block at X:3 Y:3 Z:0]
+<Architect> hollow out the middle block
+[Builder picks up a yellow block at X:4 Y:2 Z:0]
+<Architect> build out 2 more yellow blocks to the right of the middle row
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+<Architect> then to the right of those, 3 more yellow blocks
+[Builder puts down a yellow block at X:1 Y:2 Z:1]
+[Builder puts down a yellow block at X:1 Y:2 Z:2]
+[Builder puts down a yellow block at X:1 Y:2 Z:3]
+<Architect> my bad, linear with the ones you just put down
+[Builder picks up a yellow block at X:1 Y:2 Z:1]
+[Builder picks up a yellow block at X:1 Y:2 Z:2]
+[Builder picks up a yellow block at X:1 Y:2 Z:3]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:-2 Y:2 Z:0]
+<Architect> and then 3 on top of the 3 you just put down
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+<Builder> three on allthree?
+<Architect> and then one on top of the left and right block you just down
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+[Builder puts down a yellow block at X:-2 Y:4 Z:0]
+<Architect> perfect
+<Architect> ok, now go to the bottom right corner
+<Architect> place a single blue block on the block that's one up and one to the left of the bottom right block of the white grid
+[Builder puts down a blue block at X:-3 Y:1 Z:1]
+<Architect> sorry, I meant of the entire white grid
+[Builder picks up a blue block at X:-3 Y:1 Z:1]
+[Builder puts down a blue block at X:-4 Y:1 Z:-4]
+<Builder> there?
+<Architect> yup, now build a 3x3 wall again going away from you
+<Architect> perpendicular with the first key
+[Builder puts down a blue block at X:-4 Y:1 Z:-3]
+[Builder puts down a blue block at X:-4 Y:1 Z:-1]
+[Builder picks up a blue block at X:-4 Y:1 Z:-1]
+[Builder puts down a blue block at X:-4 Y:1 Z:-2]
+[Builder puts down a blue block at X:-4 Y:2 Z:-4]
+[Builder puts down a blue block at X:-4 Y:2 Z:-3]
+[Builder puts down a blue block at X:-4 Y:2 Z:-2]
+[Builder puts down a blue block at X:-4 Y:3 Z:-4]
+[Builder puts down a blue block at X:-4 Y:3 Z:-3]
+[Builder puts down a blue block at X:-4 Y:3 Z:-2]
+<Architect> hollow out the middle, and replicate the yellow sculpture from there
+[Builder picks up a blue block at X:-4 Y:2 Z:-3]
+<Architect> except the teeth are different but we'll change them in the end
+[Builder picks up a blue block at X:-4 Y:2 Z:-2]
+[Builder puts down a blue block at X:-4 Y:2 Z:-2]
+[Builder puts down a blue block at X:-4 Y:2 Z:-1]
+[Builder puts down a blue block at X:-4 Y:2 Z:0]
+[Builder puts down a blue block at X:-4 Y:2 Z:1]
+[Builder puts down a blue block at X:-4 Y:2 Z:2]
+[Builder puts down a blue block at X:-4 Y:2 Z:3]
+[Builder puts down a blue block at X:-4 Y:3 Z:3]
+[Builder puts down a blue block at X:-4 Y:3 Z:2]
+[Builder puts down a blue block at X:-4 Y:3 Z:1]
+[Builder puts down a blue block at X:-4 Y:4 Z:3]
+[Builder puts down a blue block at X:-4 Y:4 Z:1]
+<Architect> ok, top row on the key should be hollow, blue, hollow
+[Builder picks up a blue block at X:-4 Y:4 Z:1]
+[Builder picks up a blue block at X:-4 Y:4 Z:3]
+[Builder puts down a blue block at X:-4 Y:4 Z:2]
+<Architect> instead of block, hollow, block
+<Architect> perfect

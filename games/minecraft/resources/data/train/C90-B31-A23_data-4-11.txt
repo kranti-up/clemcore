@@ -1,0 +1,142 @@
+B31-A23-C90-1523479524099
+<Builder> Mission has started.
+<Architect> last puzzle!
+<Architect> we are making flowers with diagonal petals. green stack, center, three high
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+<Architect> purple on top
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+<Architect> on the side you are on
+<Architect> place another purple off of that one
+[Builder puts down a purple block at X:0 Y:4 Z:-1]
+<Architect> perfect
+<Architect> can you make that the center of a purple 'x'?
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder puts down a purple block at X:1 Y:5 Z:-1]
+[Builder picks up a purple block at X:0 Y:5 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder picks up a purple block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+[Builder puts down a purple block at X:-1 Y:5 Z:-1]
+[Builder picks up a purple block at X:-1 Y:5 Z:-1]
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder puts down a purple block at X:-1 Y:5 Z:-1]
+[Builder picks up a purple block at X:-1 Y:4 Z:-1]
+[Builder picks up a purple block at X:0 Y:5 Z:-1]
+<Architect> and make them all one diagonal longer
+[Builder puts down a purple block at X:1 Y:6 Z:-1]
+[Builder puts down a purple block at X:2 Y:6 Z:-1]
+<Architect> stop
+[Builder picks up a purple block at X:2 Y:6 Z:-1]
+[Builder picks up a green block at X:0 Y:1 Z:0]
+<Builder> okay
+<Builder> not one diagonal longer?
+<Architect> no that is perfect, but i make the green too short.
+<Architect> the green need five, not three.
+[Builder picks up a purple block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder picks up a purple block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:4 Z:0]
+[Builder puts down a green block at X:0 Y:5 Z:0]
+<Builder> like that?
+<Architect> yes, and the purpe x on top, still with the longer diagonals.
+<Builder> move the purple up two blocks as well?
+<Architect> yes. sorry.
+<Architect> looking at it at the wrong angle
+<Builder> is the purple sitting on top of the top green block or is it in front, on a different plane?
+[Builder picks up a purple block at X:1 Y:5 Z:-1]
+[Builder picks up a purple block at X:-1 Y:5 Z:-1]
+[Builder picks up a purple block at X:-1 Y:3 Z:-1]
+[Builder picks up a purple block at X:0 Y:4 Z:-1]
+[Builder picks up a purple block at X:1 Y:3 Z:-1]
+<Architect> purple on top, and one purple outward. it kind of looks like a windmill
+[Builder puts down a purple block at X:0 Y:6 Z:0]
+[Builder puts down a purple block at X:0 Y:6 Z:-1]
+[Builder puts down a purple block at X:0 Y:7 Z:-1]
+[Builder puts down a purple block at X:-1 Y:7 Z:-1]
+[Builder picks up a purple block at X:0 Y:7 Z:-1]
+<Builder> am i doing this right?
+<Architect> like that
+[Builder puts down a purple block at X:-1 Y:8 Z:-1]
+[Builder puts down a purple block at X:-2 Y:8 Z:-1]
+[Builder picks up a purple block at X:-1 Y:8 Z:-1]
+[Builder puts down a purple block at X:0 Y:7 Z:-1]
+[Builder puts down a purple block at X:1 Y:7 Z:-1]
+[Builder picks up a purple block at X:0 Y:7 Z:-1]
+[Builder puts down a purple block at X:1 Y:8 Z:-1]
+[Builder picks up a purple block at X:1 Y:8 Z:-1]
+[Builder puts down a purple block at X:1 Y:8 Z:-1]
+[Builder puts down a purple block at X:2 Y:8 Z:-1]
+[Builder picks up a purple block at X:1 Y:8 Z:-1]
+[Builder puts down a purple block at X:-1 Y:6 Z:-1]
+[Builder puts down a purple block at X:-1 Y:5 Z:-1]
+[Builder puts down a purple block at X:-2 Y:5 Z:-1]
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+[Builder picks up a purple block at X:-2 Y:5 Z:-1]
+[Builder picks up a purple block at X:-1 Y:6 Z:-1]
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder puts down a purple block at X:1 Y:5 Z:-1]
+[Builder puts down a purple block at X:2 Y:5 Z:-1]
+[Builder puts down a purple block at X:2 Y:4 Z:-1]
+[Builder picks up a purple block at X:2 Y:5 Z:-1]
+[Builder picks up a purple block at X:0 Y:5 Z:-1]
+<Architect> done with the first one!
+<Architect> there is one more windmill. orange and yellow, behind and to the left of this one.
+<Builder> how far behind and to the left, does it matter/
+<Architect> i think it does.
+<Architect> so from the top of the first windmill pole
+<Builder> the green top or the purple top
+<Architect> go three over.
+[Builder puts down a orange block at X:0 Y:5 Z:1]
+[Builder puts down a orange block at X:0 Y:5 Z:2]
+[Builder puts down a orange block at X:0 Y:5 Z:3]
+[Builder picks up a orange block at X:0 Y:5 Z:1]
+[Builder picks up a orange block at X:0 Y:5 Z:2]
+<Architect> on farther
+[Builder puts down a orange block at X:0 Y:5 Z:4]
+[Builder picks up a orange block at X:0 Y:5 Z:3]
+<Architect> yes
+<Builder> okay
+<Architect> so go three more to the side of that one.
+[Builder puts down a orange block at X:1 Y:5 Z:4]
+[Builder puts down a orange block at X:2 Y:5 Z:4]
+[Builder puts down a orange block at X:3 Y:5 Z:4]
+[Builder picks up a orange block at X:2 Y:5 Z:4]
+[Builder picks up a orange block at X:1 Y:5 Z:4]
+[Builder picks up a orange block at X:0 Y:5 Z:4]
+<Architect> Ill double check that and make sure we have it correct. one second
+<Architect> perfect!
+<Architect> build orange from that block downward
+[Builder puts down a orange block at X:3 Y:1 Z:4]
+[Builder puts down a orange block at X:3 Y:2 Z:4]
+[Builder puts down a orange block at X:3 Y:3 Z:4]
+[Builder puts down a orange block at X:3 Y:4 Z:4]
+<Architect> and make a yellow part on this one like you did the purple. same fashion.
+[Builder puts down a yellow block at X:3 Y:6 Z:4]
+[Builder puts down a yellow block at X:3 Y:6 Z:3]
+[Builder puts down a yellow block at X:3 Y:7 Z:3]
+[Builder puts down a yellow block at X:4 Y:7 Z:3]
+[Builder puts down a yellow block at X:4 Y:8 Z:3]
+[Builder puts down a yellow block at X:5 Y:8 Z:3]
+[Builder picks up a yellow block at X:4 Y:8 Z:3]
+[Builder puts down a yellow block at X:2 Y:7 Z:3]
+[Builder puts down a yellow block at X:2 Y:8 Z:3]
+[Builder puts down a yellow block at X:1 Y:8 Z:3]
+[Builder picks up a yellow block at X:2 Y:8 Z:3]
+[Builder picks up a yellow block at X:3 Y:7 Z:3]
+[Builder puts down a yellow block at X:3 Y:5 Z:3]
+[Builder puts down a yellow block at X:2 Y:5 Z:3]
+[Builder puts down a yellow block at X:1 Y:5 Z:3]
+[Builder puts down a yellow block at X:1 Y:4 Z:3]
+[Builder picks up a yellow block at X:1 Y:5 Z:3]
+[Builder puts down a yellow block at X:4 Y:5 Z:3]
+[Builder puts down a yellow block at X:5 Y:5 Z:3]
+[Builder puts down a yellow block at X:5 Y:4 Z:3]
+[Builder picks up a yellow block at X:5 Y:5 Z:3]
+[Builder picks up a yellow block at X:3 Y:5 Z:3]
+<Architect> We are done!

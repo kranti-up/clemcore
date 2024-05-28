@@ -1,0 +1,21 @@
+B4-A19-C17-1522881920236
+<Builder> Mission has started.
+<Builder> hello
+[Builder puts down a green block at X:-3 Y:1 Z:-4]
+[Builder puts down a green block at X:-3 Y:1 Z:-3]
+[Builder picks up a green block at X:-3 Y:1 Z:-3]
+[Builder picks up a green block at X:-3 Y:1 Z:-4]
+[Builder puts down a blue block at X:-2 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:-2]
+[Builder picks up a blue block at X:-1 Y:1 Z:-2]
+[Builder picks up a blue block at X:-2 Y:1 Z:-1]
+<Architect> t
+<Architect> hi
+[Builder puts down a blue block at X:-1 Y:1 Z:-6]
+[Builder puts down a blue block at X:-1 Y:2 Z:-6]
+[Builder picks up a blue block at X:-1 Y:2 Z:-6]
+[Builder puts down a blue block at X:-1 Y:2 Z:-6]
+[Builder picks up a blue block at X:-1 Y:2 Z:-6]
+[Builder picks up a blue block at X:-1 Y:1 Z:-6]
+<Builder> what's our mission?
+<Architect> im not sure yet

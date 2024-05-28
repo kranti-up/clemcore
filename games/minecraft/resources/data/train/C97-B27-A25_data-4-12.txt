@@ -1,0 +1,39 @@
+B27-A25-C97-1523575407320
+<Builder> Mission has started.
+<Architect> ok near them middle and two blocks to the right of the left edge, build a 2 tall and 4 wide red wall
+<Architect> yea right there is fine
+[Builder puts down a red block at X:3 Y:1 Z:0]
+[Builder puts down a red block at X:3 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+<Architect> break the top left corner and the 2nd bottom block from the right
+[Builder picks up a red block at X:3 Y:2 Z:0]
+[Builder picks up a red block at X:1 Y:1 Z:0]
+<Architect> then put a column of two blue blocks next to the right side of the wall
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+<Architect> then build a 2 tall and 4 wide wall of blue blocks towards you
+<Architect> not including the two you just put down
+<Architect> put connected to them
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:-2]
+[Builder puts down a blue block at X:-1 Y:1 Z:-3]
+[Builder puts down a blue block at X:-1 Y:1 Z:-4]
+<Architect> yea like that
+[Builder puts down a blue block at X:-1 Y:2 Z:-1]
+[Builder puts down a blue block at X:-1 Y:2 Z:-2]
+[Builder puts down a blue block at X:-1 Y:2 Z:-3]
+[Builder puts down a blue block at X:-1 Y:2 Z:-4]
+<Architect> now go on the other side of the blue wall
+<Architect> replace the bottom right block of the wall with a red block
+[Builder picks up a blue block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> break the bottom leftmost block
+[Builder picks up a blue block at X:-1 Y:1 Z:-4]
+<Architect> break the top block on the 3rd column
+[Builder picks up a blue block at X:-1 Y:2 Z:-2]
+<Architect> perfect

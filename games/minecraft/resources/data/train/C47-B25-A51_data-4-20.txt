@@ -1,0 +1,58 @@
+B25-A51-C47-1524262518407
+<Builder> Mission has started.
+<Architect> okay so we're gonna make a single line of 3 blue blocks
+<Builder> where should i star
+<Builder> start
+<Architect> middle is fine
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+[Builder puts down a blue block at X:1 Y:3 Z:-1]
+<Architect> sorry, it should be lying down
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+[Builder picks up a blue block at X:1 Y:2 Z:-1]
+[Builder picks up a blue block at X:1 Y:3 Z:-1]
+<Architect> thanks, so then next to the line, make another line of 3 reds
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+[Builder puts down a red block at X:-3 Y:1 Z:-1]
+[Builder puts down a red block at X:-4 Y:1 Z:-1]
+<Architect> sorry, the 3 red should be touching the 3 blue
+<Builder> above or below
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> next to it
+[Builder picks up a red block at X:-3 Y:1 Z:-1]
+[Builder picks up a red block at X:-4 Y:1 Z:-1]
+<Architect> like that
+<Architect> so on top of the red, make another layer of 3 red
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+<Architect> on top, so it'll form a staircase
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder picks up a red block at X:-1 Y:1 Z:1]
+[Builder picks up a red block at X:1 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+<Architect> no on top of the red
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:2 Z:1]
+[Builder picks up a red block at X:-1 Y:2 Z:1]
+<Builder> my bad
+<Architect> okay good, so next to the bottom layer of red, we're gonna do a layer of purple
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+[Builder puts down a purple block at X:0 Y:1 Z:1]
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+<Architect> you're good haha
+<Architect> so do another purple layer on top of that purple
+[Builder puts down a purple block at X:1 Y:2 Z:1]
+[Builder puts down a purple block at X:0 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:2 Z:1]
+<Architect> one more layer
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+<Architect> nice

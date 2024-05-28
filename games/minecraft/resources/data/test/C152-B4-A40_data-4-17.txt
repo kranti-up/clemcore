@@ -1,0 +1,114 @@
+B4-A40-C152-1523980103101
+<Builder> Mission has started.
+<Builder> hi
+<Architect> hello
+<Architect> this one is probably not that easy
+<Architect> lol
+<Builder> thats okay we're experts
+<Architect> haha
+<Architect> so this one looks like a person trying to dance?
+<Builder> but there are no white blocks?
+<Architect> lol
+<Architect> put down a column of 4 orange blocks in the center
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+<Architect> that's the first leg i guess
+<Architect> the other one is bent
+<Architect> so place an orange to the left of the topmost block
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+<Architect> now another one diagonally below and to the left
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder picks up a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder picks up a orange block at X:-2 Y:2 Z:0]
+<Architect> you got it!
+<Builder> nice
+<Architect> good gues
+<Architect> guess*
+<Architect> that's the bent leg i guess
+<Builder> cool
+<Builder> makes sense so far
+<Architect> place a 3X3 purple square on top
+<Architect> centered over the top of the vertical column
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+<Builder> there?
+<Architect> yep
+[Builder puts down a purple block at X:1 Y:6 Z:0]
+[Builder puts down a purple block at X:0 Y:6 Z:0]
+[Builder puts down a purple block at X:-1 Y:6 Z:0]
+[Builder puts down a purple block at X:-1 Y:7 Z:0]
+[Builder puts down a purple block at X:0 Y:7 Z:0]
+[Builder picks up a purple block at X:0 Y:7 Z:1]
+[Builder puts down a purple block at X:1 Y:7 Z:0]
+<Architect> no so it's going to be horizontal
+<Builder> ah
+[Builder picks up a purple block at X:-1 Y:6 Z:0]
+[Builder picks up a purple block at X:0 Y:6 Z:0]
+[Builder picks up a purple block at X:1 Y:6 Z:0]
+[Builder picks up a purple block at X:1 Y:7 Z:0]
+[Builder picks up a purple block at X:0 Y:7 Z:0]
+[Builder picks up a purple block at X:-1 Y:7 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:1]
+[Builder puts down a purple block at X:0 Y:5 Z:1]
+[Builder puts down a purple block at X:1 Y:5 Z:1]
+<Architect> center of the square on top of the vertical column
+[Builder puts down a purple block at X:1 Y:5 Z:-1]
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder puts down a purple block at X:-1 Y:5 Z:-1]
+<Architect> ya that's right
+<Architect> sorry it got stuck
+<Architect> am back
+<Builder> i thought you were just so disappointed you had to step away
+<Architect> lol
+[Builder puts down a purple block at X:1 Y:1 Z:4]
+[Builder picks up a purple block at X:1 Y:1 Z:4]
+<Architect> now place a column of 2 purples and one yellow on top of the center of that square
+[Builder puts down a purple block at X:0 Y:6 Z:0]
+[Builder puts down a purple block at X:0 Y:7 Z:0]
+[Builder puts down a yellow block at X:0 Y:8 Z:0]
+<Architect> now the 2 hands on either side of the middle purple of that column...
+<Architect> start with one purple on either side
+[Builder puts down a purple block at X:1 Y:7 Z:0]
+[Builder puts down a purple block at X:-1 Y:7 Z:0]
+<Architect> now one orange diagonally upwards and to the right of the purple block
+<Architect> the one on the right
+[Builder puts down a orange block at X:1 Y:8 Z:0]
+[Builder puts down a orange block at X:2 Y:8 Z:0]
+[Builder picks up a orange block at X:1 Y:8 Z:0]
+<Architect> now the hand comes back to touch the yellow head...
+<Architect> make sense?
+<Builder> up and around?
+[Builder puts down a orange block at X:2 Y:9 Z:0]
+[Builder puts down a orange block at X:1 Y:9 Z:0]
+[Builder picks up a orange block at X:2 Y:9 Z:0]
+<Architect> yes!
+<Architect> nice!
+<Builder> thanks lol
+<Architect> now for the other hand....
+<Architect> place and orange block diagonally to the left of the purple
+<Architect> and towards you
+[Builder puts down a orange block at X:-1 Y:6 Z:1]
+[Builder puts down a orange block at X:-2 Y:6 Z:1]
+[Builder picks up a orange block at X:-1 Y:6 Z:1]
+<Builder> there?
+<Architect> nah
+<Architect> one above that instead
+[Builder puts down a orange block at X:-2 Y:7 Z:1]
+[Builder picks up a orange block at X:-2 Y:6 Z:1]
+<Architect> yes
+<Architect> now extend the hand further...diagonally
+<Architect> but inwards
+[Builder puts down a orange block at X:-2 Y:7 Z:2]
+[Builder puts down a orange block at X:-1 Y:7 Z:2]
+[Builder picks up a orange block at X:-2 Y:7 Z:2]
+<Architect> yeah
+<Architect> let me check if we got this right
+<Architect> looks like we did!
+<Architect> gg
+<Builder> great.

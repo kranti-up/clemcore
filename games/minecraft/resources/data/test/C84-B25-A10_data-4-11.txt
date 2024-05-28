@@ -1,0 +1,41 @@
+B25-A10-C84-1523486756992
+<Builder> Mission has started.
+<Architect> So the overall structure looks liek a trident.
+<Architect> the base starts with two blocks on top of each other
+<Builder> which color?
+<Architect> blue
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder picks up a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+<Builder> like this?
+<Architect> yep! then on that, a line of 5 blue blocks
+[Builder puts down a blue block at X:1 Y:3 Z:-1]
+[Builder puts down a blue block at X:1 Y:4 Z:-1]
+[Builder puts down a blue block at X:1 Y:5 Z:-1]
+[Builder puts down a blue block at X:1 Y:6 Z:-1]
+[Builder puts down a blue block at X:1 Y:7 Z:-1]
+<Builder> ok
+<Architect> sorry, a horizontal line of 5 blue blocks, centered on what you originally put down
+[Builder picks up a blue block at X:1 Y:7 Z:-1]
+[Builder picks up a blue block at X:1 Y:6 Z:-1]
+[Builder picks up a blue block at X:1 Y:5 Z:-1]
+[Builder picks up a blue block at X:1 Y:4 Z:-1]
+[Builder picks up a blue block at X:1 Y:3 Z:-1]
+[Builder puts down a blue block at X:1 Y:3 Z:-1]
+[Builder puts down a blue block at X:2 Y:3 Z:-1]
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+[Builder puts down a blue block at X:-1 Y:3 Z:-1]
+[Builder puts down a blue block at X:3 Y:3 Z:-1]
+<Builder> there we go
+<Architect> yep! and now the three prongs of the pitchfork are two yellow blocks each.
+[Builder puts down a yellow block at X:3 Y:4 Z:-1]
+[Builder puts down a yellow block at X:3 Y:5 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:1 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:5 Z:-1]
+<Architect> yep!
+<Builder> is that it?
+<Architect> cool we're done
+<Builder> kk kill me

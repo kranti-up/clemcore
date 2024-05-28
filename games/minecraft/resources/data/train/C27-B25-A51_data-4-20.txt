@@ -1,0 +1,97 @@
+B25-A51-C27-1524265565282
+<Builder> Mission has started.
+<Architect> okay so edge closest to you, make a yellow "T" that's standing up
+[Builder puts down a yellow block at X:0 Y:1 Z:-5]
+[Builder puts down a yellow block at X:0 Y:1 Z:-6]
+[Builder picks up a yellow block at X:0 Y:1 Z:-6]
+[Builder puts down a yellow block at X:0 Y:2 Z:-5]
+[Builder puts down a yellow block at X:0 Y:3 Z:-5]
+[Builder puts down a yellow block at X:0 Y:3 Z:-6]
+[Builder picks up a yellow block at X:0 Y:3 Z:-6]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-5]
+[Builder puts down a yellow block at X:1 Y:3 Z:-5]
+<Architect> okay so move to the right view
+<Architect> on top of that single yellow, make a 3x1 layer of blue that's going to the right
+[Builder puts down a blue block at X:-1 Y:3 Z:-4]
+[Builder picks up a blue block at X:-1 Y:3 Z:-4]
+[Builder puts down a blue block at X:-1 Y:4 Z:-5]
+[Builder puts down a blue block at X:-1 Y:4 Z:-4]
+[Builder puts down a blue block at X:-1 Y:4 Z:-3]
+<Architect> great, now attach 3 additional blue blocks frorm the middle to make a long T
+[Builder puts down a blue block at X:-1 Y:3 Z:-4]
+[Builder puts down a blue block at X:-1 Y:1 Z:-4]
+[Builder puts down a blue block at X:-1 Y:2 Z:-4]
+<Architect> great now move to the right view
+<Architect> this one will be an upside down "T", make a 5x1 layer of green directly under the blue that's sticking out towards you
+[Builder puts down a green block at X:-1 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:2 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:4 Z:-1]
+<Architect> like that T, but move to the right view and place it under the edge of the 3x1 blue (that's the top of the "T")
+<Architect> so shift your view to the right once more
+[Builder picks up a green block at X:-1 Y:4 Z:-1]
+[Builder picks up a green block at X:-1 Y:3 Z:-1]
+[Builder picks up a green block at X:-1 Y:2 Z:-1]
+[Builder picks up a green block at X:-1 Y:1 Z:-1]
+[Builder picks up a green block at X:-1 Y:1 Z:0]
+[Builder picks up a green block at X:-1 Y:1 Z:1]
+[Builder picks up a green block at X:-1 Y:1 Z:-2]
+[Builder picks up a green block at X:-1 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:2 Z:-3]
+[Builder puts down a green block at X:-1 Y:3 Z:-3]
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder picks up a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-3]
+[Builder puts down a green block at X:1 Y:1 Z:-3]
+[Builder puts down a green block at X:-2 Y:1 Z:-3]
+[Builder puts down a green block at X:-3 Y:1 Z:-3]
+<Builder> like that?
+<Architect> close, but the left most block of the upside down "T" should be touching the blue block that's sticking outwards towards you currently
+<Architect> the leftmost green block should be directly under the blue block, hovering
+[Builder picks up a green block at X:-1 Y:3 Z:-3]
+[Builder picks up a green block at X:-1 Y:2 Z:-3]
+[Builder picks up a green block at X:-1 Y:1 Z:-3]
+[Builder picks up a green block at X:-2 Y:1 Z:-3]
+[Builder picks up a green block at X:-3 Y:1 Z:-3]
+[Builder picks up a green block at X:0 Y:1 Z:-3]
+[Builder picks up a green block at X:1 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:3 Z:-3]
+[Builder puts down a green block at X:0 Y:3 Z:-3]
+[Builder puts down a green block at X:1 Y:3 Z:-3]
+[Builder puts down a green block at X:2 Y:3 Z:-3]
+[Builder puts down a green block at X:3 Y:3 Z:-3]
+[Builder puts down a green block at X:1 Y:4 Z:-3]
+[Builder puts down a green block at X:2 Y:4 Z:-3]
+[Builder picks up a green block at X:1 Y:5 Z:-2]
+[Builder picks up a green block at X:2 Y:4 Z:-3]
+<Architect> great, now put one more green on the part that's sticking upwards (to the sky)
+[Builder puts down a green block at X:1 Y:6 Z:-3]
+<Architect> fantastic, now move to the right (view) again
+[Builder puts down a red block at X:2 Y:3 Z:-5]
+[Builder puts down a red block at X:3 Y:3 Z:-5]
+[Builder picks up a red block at X:4 Y:3 Z:-5]
+[Builder picks up a red block at X:3 Y:3 Z:-5]
+[Builder picks up a red block at X:2 Y:3 Z:-5]
+<Architect> okay so see that yellow block that's sticking out? put a red block so that it's connecting the yellow and pointing out at you
+[Builder puts down a red block at X:2 Y:3 Z:-5]
+<Architect> just like that, now put 2 additional red blocks on top of that red block
+[Builder puts down a red block at X:2 Y:4 Z:-5]
+[Builder puts down a red block at X:2 Y:5 Z:-5]
+<Architect> so put 3 additional red blocks to the right of the middle red block
+[Builder puts down a red block at X:3 Y:4 Z:-5]
+[Builder puts down a red block at X:4 Y:4 Z:-5]
+[Builder puts down a red block at X:5 Y:4 Z:-5]
+<Architect> sorry, it should be touching the green
+[Builder picks up a red block at X:3 Y:4 Z:-5]
+[Builder picks up a red block at X:4 Y:4 Z:-5]
+[Builder picks up a red block at X:5 Y:4 Z:-5]
+[Builder puts down a red block at X:2 Y:4 Z:-4]
+[Builder puts down a red block at X:2 Y:4 Z:-3]
+[Builder puts down a red block at X:2 Y:4 Z:-2]
+<Architect> nice, and its done!
+<Builder> yay

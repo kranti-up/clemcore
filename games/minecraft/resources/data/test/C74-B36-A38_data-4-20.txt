@@ -1,0 +1,104 @@
+B36-A38-C74-1524264430406
+<Builder> Mission has started.
+<Builder> hi
+<Architect> Hello,
+<Architect> This one is a little weird, so bear with me. It's going to be a bunch of blocks scattered around
+<Builder> let's do it
+<Architect> Ok, along this edge place two orange blocks with 3 empty space between them
+[Builder puts down a orange block at X:2 Y:1 Z:-5]
+[Builder puts down a orange block at X:-2 Y:1 Z:-5]
+<Architect> Perfect. next, build stairways between them until they meet.
+[Builder puts down a orange block at X:2 Y:2 Z:-5]
+[Builder puts down a orange block at X:1 Y:2 Z:-5]
+[Builder picks up a orange block at X:2 Y:2 Z:-5]
+[Builder puts down a orange block at X:-2 Y:2 Z:-5]
+[Builder picks up a orange block at X:-2 Y:2 Z:-5]
+[Builder puts down a orange block at X:-2 Y:2 Z:-5]
+[Builder puts down a orange block at X:-1 Y:2 Z:-5]
+[Builder picks up a orange block at X:-2 Y:2 Z:-5]
+[Builder puts down a orange block at X:-1 Y:3 Z:-5]
+[Builder puts down a orange block at X:0 Y:3 Z:-5]
+[Builder picks up a orange block at X:-1 Y:3 Z:-5]
+<Architect> Great, can you go around to the other side
+<Builder> sure
+<Architect> Thank you, can you break the top orange block>?
+<Builder> sure
+[Builder puts down a orange block at X:0 Y:3 Z:-4]
+[Builder picks up a orange block at X:0 Y:3 Z:-4]
+[Builder picks up a orange block at X:0 Y:3 Z:-5]
+<Architect> Perfect, now we just need to add a bar of orange blocks on this side of the two orange blocks at eye level
+<Builder> ok
+[Builder puts down a orange block at X:-1 Y:2 Z:-4]
+[Builder puts down a orange block at X:0 Y:2 Z:-4]
+[Builder puts down a orange block at X:1 Y:2 Z:-4]
+<Builder> like this?
+<Architect> Exactly!
+<Builder> ok
+<Architect> Now we are going to need to put a green block on the middle of the bar we just made
+[Builder puts down a green block at X:0 Y:3 Z:-4]
+<Architect> Sorry, I should have said on the side facing you.
+<Builder> o it's ok
+[Builder picks up a green block at X:0 Y:3 Z:-4]
+[Builder puts down a green block at X:0 Y:2 Z:-3]
+<Architect> Now, can you build a 2 block long stairway towards you?
+<Builder> up or down?
+<Architect> Going up, sorry.
+<Builder> got it
+[Builder puts down a green block at X:0 Y:3 Z:-3]
+[Builder puts down a green block at X:0 Y:3 Z:-2]
+[Builder picks up a green block at X:0 Y:3 Z:-3]
+[Builder puts down a green block at X:0 Y:4 Z:-2]
+[Builder puts down a green block at X:0 Y:4 Z:-1]
+[Builder picks up a green block at X:0 Y:4 Z:-2]
+<Builder> like this?
+<Architect> yup.
+<Builder> ok
+<Architect> Can yo fly next to the second green block on the other side?
+<Builder> here?
+<Architect> Yup, if you turn around, we are going to need a purple block one off of the ground
+<Builder> ok
+[Builder puts down a purple block at X:2 Y:1 Z:-2]
+[Builder puts down a purple block at X:2 Y:2 Z:-2]
+[Builder picks up a purple block at X:2 Y:1 Z:-2]
+<Builder> here?
+<Architect> Sorry, one more block away
+<Builder> ok
+[Builder puts down a purple block at X:3 Y:2 Z:-2]
+[Builder picks up a purple block at X:2 Y:2 Z:-2]
+<Builder> here/
+<Builder> *?
+<Architect> yup, and one more on the ground to the right
+[Builder puts down a purple block at X:4 Y:1 Z:-2]
+<Architect> Now, we are going to make one last thing, if you float right next the the floating purple block.
+<Builder> ok
+<Architect> If you turn around, to your right, we will need a red block on the ground.
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+<Builder> here?
+<Architect> Sorry, one block away from the purple
+<Builder> ok
+[Builder picks up a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder picks up a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:3 Y:1 Z:0]
+[Builder picks up a red block at X:3 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+<Builder> here?
+<Architect> Exactly, sorry. That might have been a bit vague
+<Builder> dw it's all good
+<Architect> Ok, we will need another block like the floating purple block to your left. It should make the red blocks look like a stairway
+<Builder> ok
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder picks up a red block at X:2 Y:2 Z:0]
+<Builder> like this?
+<Architect> Sorry, it should be on the other side.
+<Builder> o ok
+[Builder picks up a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:3 Y:2 Z:0]
+[Builder picks up a red block at X:2 Y:2 Z:0]
+<Builder> here?
+<Architect> Yup, that's perfect.
+<Builder> ok
+<Architect> That should be all for this.
+<Builder> cool

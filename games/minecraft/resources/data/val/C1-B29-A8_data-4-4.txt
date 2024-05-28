@@ -1,0 +1,79 @@
+B29-A8-C1-1522863856364
+<Builder> Mission has started.
+<Architect> okay we are making a gate with a bell all on one vertical plane
+<Architect> so place an 8-tower
+<Architect> on an edge
+<Architect> in green
+[Builder puts down a green block at X:1 Y:1 Z:-5]
+[Builder puts down a green block at X:1 Y:2 Z:-5]
+[Builder puts down a green block at X:1 Y:3 Z:-5]
+[Builder puts down a green block at X:1 Y:4 Z:-5]
+[Builder puts down a green block at X:1 Y:5 Z:-5]
+[Builder puts down a green block at X:1 Y:6 Z:-5]
+[Builder puts down a green block at X:1 Y:7 Z:-5]
+[Builder puts down a green block at X:1 Y:8 Z:-5]
+<Architect> now an 8-line above that tower to the right
+<Architect> in purple
+[Builder puts down a purple block at X:1 Y:9 Z:-5]
+[Builder puts down a purple block at X:1 Y:9 Z:-4]
+[Builder picks up a purple block at X:1 Y:9 Z:-5]
+<Architect> 9-line actually
+[Builder puts down a purple block at X:1 Y:9 Z:-3]
+[Builder puts down a purple block at X:1 Y:9 Z:-2]
+[Builder puts down a purple block at X:1 Y:9 Z:-1]
+[Builder puts down a purple block at X:1 Y:9 Z:0]
+[Builder puts down a purple block at X:1 Y:9 Z:1]
+[Builder puts down a purple block at X:1 Y:9 Z:2]
+[Builder puts down a purple block at X:1 Y:9 Z:3]
+[Builder puts down a purple block at X:1 Y:9 Z:4]
+<Architect> but on top of the green tower
+[Builder puts down a purple block at X:1 Y:9 Z:-5]
+[Builder picks up a purple block at X:1 Y:9 Z:4]
+<Architect> and a red tower below the other side
+[Builder puts down a red block at X:1 Y:8 Z:3]
+[Builder puts down a red block at X:1 Y:7 Z:3]
+[Builder puts down a red block at X:1 Y:6 Z:3]
+[Builder puts down a red block at X:1 Y:5 Z:3]
+[Builder puts down a red block at X:1 Y:4 Z:3]
+[Builder puts down a red block at X:1 Y:3 Z:3]
+[Builder puts down a red block at X:0 Y:3 Z:3]
+[Builder picks up a red block at X:0 Y:3 Z:3]
+[Builder puts down a red block at X:1 Y:2 Z:3]
+[Builder puts down a red block at X:0 Y:1 Z:3]
+[Builder puts down a red block at X:1 Y:1 Z:3]
+[Builder picks up a red block at X:0 Y:1 Z:3]
+<Architect> now using orange
+<Architect> from below the midpoint of the purple
+<Architect> a row of 1 orange
+[Builder puts down a orange block at X:1 Y:8 Z:-1]
+<Architect> then 3
+<Architect> hen three
+<Architect> then five
+[Builder puts down a orange block at X:1 Y:7 Z:-1]
+[Builder puts down a orange block at X:1 Y:7 Z:0]
+[Builder puts down a orange block at X:1 Y:7 Z:-2]
+[Builder puts down a orange block at X:1 Y:6 Z:-2]
+[Builder puts down a orange block at X:1 Y:6 Z:-3]
+[Builder puts down a orange block at X:1 Y:6 Z:-1]
+[Builder puts down a orange block at X:1 Y:6 Z:0]
+[Builder puts down a orange block at X:1 Y:6 Z:1]
+<Architect> two rows of three
+[Builder puts down a orange block at X:0 Y:7 Z:-1]
+[Builder puts down a orange block at X:2 Y:7 Z:-1]
+<Architect> nope
+[Builder picks up a orange block at X:2 Y:7 Z:-1]
+[Builder picks up a orange block at X:0 Y:7 Z:-1]
+<Architect> another row of three below that first line of three orange
+[Builder picks up a orange block at X:1 Y:6 Z:-3]
+[Builder picks up a orange block at X:1 Y:6 Z:1]
+<Architect> THEN the row of five
+<Architect> yeah
+[Builder puts down a orange block at X:1 Y:5 Z:-2]
+[Builder puts down a orange block at X:1 Y:5 Z:-1]
+[Builder puts down a orange block at X:1 Y:5 Z:0]
+[Builder puts down a orange block at X:1 Y:5 Z:1]
+[Builder puts down a orange block at X:1 Y:5 Z:-3]
+<Architect> and one final yellow block
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+<Architect> the bell thingy
+<Architect> yeah

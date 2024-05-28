@@ -1,0 +1,80 @@
+B31-A36-C123-1524007209793
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hey
+<Architect> ok so move back like 2 rows
+<Architect> ok good
+<Architect> now put an orange block to the left and right of you
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:-1 Y:1 Z:-2]
+<Architect> add 3 more blocks on top of each to make them columns
+[Builder puts down a orange block at X:1 Y:2 Z:-2]
+[Builder puts down a orange block at X:1 Y:3 Z:-2]
+[Builder puts down a orange block at X:-1 Y:2 Z:-2]
+[Builder puts down a orange block at X:-1 Y:3 Z:-2]
+[Builder puts down a orange block at X:-1 Y:4 Z:-2]
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+<Architect> ok then put a red block on top of each
+[Builder puts down a red block at X:1 Y:5 Z:-2]
+[Builder puts down a red block at X:-1 Y:5 Z:-2]
+<Architect> then connect the red blocks together by putting a red block in between them
+[Builder puts down a red block at X:0 Y:5 Z:-2]
+<Architect> we're making a person
+<Builder> lol cool
+<Architect> so the body is a red 3 x 3 square
+<Architect> vertical
+[Builder puts down a orange block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:6 Z:-2]
+[Builder puts down a red block at X:-1 Y:7 Z:-2]
+[Builder puts down a red block at X:0 Y:7 Z:-2]
+[Builder puts down a red block at X:1 Y:7 Z:-2]
+<Architect> then it's in a T pose so the arms are 2 blocks out
+<Architect> to the left and right
+<Architect> orange
+<Builder> red?
+<Builder> got it
+[Builder puts down a orange block at X:-2 Y:7 Z:-2]
+[Builder puts down a orange block at X:-3 Y:7 Z:-2]
+[Builder puts down a orange block at X:2 Y:7 Z:-2]
+[Builder puts down a orange block at X:3 Y:7 Z:-2]
+<Architect> and then the head goes on top of the middle red block
+<Architect> orange
+<Builder> what does it look like?
+<Architect> it's just a block
+[Builder puts down a orange block at X:0 Y:8 Z:-2]
+<Architect> ya like that
+<Builder> got it
+<Architect> ok go to the other side bc this is the back side
+<Architect> ok so now we're going to add an extra leg for some reason
+<Architect> it's a person kicking a ball but they have 3 legs
+<Builder> lol I'm down
+<Architect> to your left is the leg we're going to add on
+<Architect> at the top of the orange column put an orange block in front of it
+[Builder puts down a orange block at X:-1 Y:4 Z:-1]
+<Architect> ok then put another block below it
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+<Architect> and then a block in front of that one
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+<Architect> so it's a forward diagonal
+<Architect> then get rid of the block underneath the top one
+[Builder picks up a orange block at X:-1 Y:3 Z:-1]
+<Architect> then add one more diagonal block
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder picks up a orange block at X:-1 Y:2 Z:0]
+<Architect> ok in front of the block you just put down make a vertical column of 3 yellow blocks
+[Builder puts down a yellow block at X:-1 Y:1 Z:2]
+[Builder puts down a yellow block at X:-1 Y:2 Z:2]
+[Builder puts down a yellow block at X:-1 Y:3 Z:2]
+<Architect> add one more block sorry
+[Builder puts down a yellow block at X:-1 Y:4 Z:2]
+<Architect> ok then get rid of the bottom 3
+[Builder picks up a yellow block at X:-1 Y:3 Z:2]
+[Builder picks up a yellow block at X:-1 Y:2 Z:2]
+[Builder picks up a yellow block at X:-1 Y:1 Z:2]
+<Builder> interesting
+<Architect> ya lol
+<Architect> let me check to see if we need anything else
+<Architect> ok i think we're good
+<Architect> good job
+<Builder> thanks

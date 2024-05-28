@@ -1,0 +1,96 @@
+B23-A29-C24-1522768231164
+<Builder> Mission has started.
+[Builder puts down a purple block at X:5 Y:1 Z:0]
+[Builder puts down a red block at X:-5 Y:1 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:5]
+[Builder puts down a blue block at X:0 Y:1 Z:-5]
+<Builder> ready?
+<Architect> ready
+<Architect> we're going to build a 3 by square
+<Architect> that is 4 blocks high
+<Architect> and empty in the middle
+<Builder> gotcha
+<Architect> the first layer is orange
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:0 Y:1 Z:1]
+<Architect> correction
+<Architect> this first layer has an orange block in the middle
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+<Architect> but the rest are empty
+<Architect> the next layer is yellow
+<Builder> understood
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:1]
+[Builder puts down a yellow block at X:0 Y:2 Z:1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+<Architect> now another yellow layer
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+<Architect> next an orange layer
+[Builder puts down a orange block at X:-1 Y:4 Z:1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+[Builder puts down a orange block at X:-1 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+<Architect> then a red layer
+[Builder puts down a red block at X:-1 Y:5 Z:1]
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+[Builder puts down a red block at X:-1 Y:5 Z:-1]
+[Builder puts down a red block at X:0 Y:5 Z:-1]
+[Builder picks up a orange block at X:1 Y:4 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+[Builder puts down a red block at X:1 Y:5 Z:-1]
+[Builder puts down a red block at X:1 Y:5 Z:0]
+[Builder puts down a red block at X:1 Y:5 Z:1]
+[Builder puts down a red block at X:0 Y:5 Z:1]
+<Architect> now suppose what we're building is a coffee muf
+<Architect> mug
+<Builder> what color handle
+<Architect> next we're going to add a purple handle
+<Architect> it goes from the top orange layer
+[Builder picks up a orange block at X:-1 Y:4 Z:0]
+<Architect> to the bottom yellow layer
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:4 Z:0]
+[Builder puts down a purple block at X:-3 Y:4 Z:0]
+<Architect> two blocks out
+[Builder puts down a purple block at X:-3 Y:3 Z:0]
+[Builder puts down a purple block at X:-3 Y:1 Z:0]
+<Architect> excellent
+[Builder puts down a blue block at X:0 Y:1 Z:-5]
+<Architect> oops
+<Architect> to the bottom yellow layer
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+[Builder picks up a purple block at X:-3 Y:1 Z:0]
+[Builder picks up a purple block at X:-2 Y:1 Z:0]
+<Architect> please pick up reference blocks
+[Builder puts down a green block at X:-5 Y:1 Z:-1]
+[Builder picks up a green block at X:-5 Y:1 Z:-1]
+[Builder picks up a red block at X:-5 Y:1 Z:0]
+[Builder picks up a blue block at X:0 Y:1 Z:-5]
+<Architect> and we're done
+[Builder puts down a blue block at X:5 Y:2 Z:0]
+[Builder picks up a blue block at X:5 Y:2 Z:0]
+[Builder picks up a purple block at X:5 Y:1 Z:0]
+[Builder picks up a green block at X:0 Y:1 Z:5]

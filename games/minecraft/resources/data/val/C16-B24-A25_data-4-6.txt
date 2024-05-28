@@ -1,0 +1,56 @@
+B24-A25-C16-1523054900788
+<Builder> Mission has started.
+<Architect> ok, this is a 3D figure
+<Architect> 5 blocks long, 3 blocks wide
+<Architect> instead of row by row, i'll go plane by plane
+<Architect> first make a 3x3 cross out of red blocks
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+<Architect> then one block apart from the left most part of the cross, put an orange block
+[Builder picks up a red block at X:0 Y:1 Z:-2]
+[Builder picks up a red block at X:1 Y:1 Z:-1]
+[Builder picks up a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:3 Y:1 Z:0]
+<Architect> and then one more block apart to the left put a purple block
+[Builder puts down a purple block at X:4 Y:1 Z:0]
+<Architect> sorry, should be one space apart to the left
+[Builder picks up a purple block at X:4 Y:1 Z:0]
+[Builder puts down a purple block at X:5 Y:1 Z:0]
+<Architect> perfect, plane 1 done
+<Architect> plane 2, one yellow block on top of the orange block
+[Builder puts down a yellow block at X:3 Y:2 Z:0]
+<Architect> red block to the right of it
+[Builder puts down a red block at X:2 Y:2 Z:0]
+<Architect> orange to the left of it
+[Builder puts down a orange block at X:4 Y:2 Z:0]
+<Architect> plane 2 done
+<Architect> then put a row of 3 yellow blocks centered ontop of the yellow block
+[Builder puts down a yellow block at X:4 Y:3 Z:0]
+[Builder puts down a yellow block at X:2 Y:3 Z:0]
+[Builder puts down a yellow block at X:3 Y:3 Z:0]
+<Architect> put an orange block on the left of that row, and a red block on the right of it
+[Builder puts down a orange block at X:5 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+<Architect> plane 3 done
+<Architect> next, put a row of 3 yellow blocks from left to right starting ontop of the center yellow block
+[Builder puts down a yellow block at X:3 Y:4 Z:0]
+[Builder puts down a yellow block at X:2 Y:4 Z:0]
+[Builder puts down a yellow block at X:1 Y:4 Z:0]
+<Architect> yup, and then a red block hanging off the right side
+[Builder puts down a red block at X:0 Y:4 Z:0]
+<Architect> plane 4 done
+<Architect> then, put 3 more yellow blocks from left to right on top of the center yellow block on the previous plane
+[Builder puts down a yellow block at X:2 Y:5 Z:0]
+[Builder puts down a yellow block at X:1 Y:5 Z:0]
+[Builder puts down a yellow block at X:0 Y:5 Z:0]
+<Architect> plane 5 done
+<Architect> then put 2 yellow blocks on the rightmost yellow blocks on the previous plane
+[Builder puts down a yellow block at X:1 Y:6 Z:0]
+[Builder puts down a yellow block at X:0 Y:6 Z:0]
+<Architect> aight we're done

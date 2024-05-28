@@ -1,0 +1,58 @@
+B37-A23-C107-1523633626568
+<Builder> Mission has started.
+<Architect> You ready?
+<Builder> yes!
+<Architect> we are about to make a really boxy Ventruvian man
+<Builder> haha ok
+<Architect> so on the middle ish, stack two red blocks. Not exactly in the middle. like two away from it
+[Builder puts down a red block at X:2 Y:1 Z:1]
+[Builder puts down a red block at X:2 Y:2 Z:1]
+<Architect> that will work
+<Architect> three spaces away, same row, place two orange stack
+<Builder> towards the middle?
+<Architect> sure
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+<Architect> place one more red and orange on top of each block, respectively
+[Builder puts down a red block at X:2 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+<Architect> then place a cooridnating color on each stack going inward.
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a red block at X:1 Y:3 Z:1]
+<Architect> remove the tops of each stack.
+[Builder picks up a orange block at X:-1 Y:3 Z:1]
+[Builder picks up a red block at X:2 Y:3 Z:1]
+<Architect> above the orange float, place a red, and vice versa
+[Builder puts down a red block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+<Architect> off the upward diagonal of the red, place a red, and same with orange on otehr side.
+[Builder puts down a red block at X:0 Y:5 Z:1]
+[Builder puts down a red block at X:-1 Y:5 Z:1]
+[Builder picks up a red block at X:0 Y:5 Z:1]
+[Builder puts down a orange block at X:1 Y:5 Z:1]
+[Builder puts down a orange block at X:2 Y:5 Z:1]
+[Builder picks up a orange block at X:1 Y:5 Z:1]
+<Architect> stack an orange on orange, and red on red
+[Builder puts down a orange block at X:2 Y:6 Z:1]
+[Builder puts down a red block at X:-1 Y:6 Z:1]
+<Architect> make another square like the one below on those, except its flipped to match the stacks you just made.
+<Builder> so that's above the existing columns at the top?
+<Architect> yes.
+[Builder puts down a red block at X:0 Y:6 Z:1]
+[Builder puts down a red block at X:0 Y:7 Z:1]
+[Builder picks up a red block at X:0 Y:6 Z:1]
+[Builder puts down a orange block at X:0 Y:8 Z:1]
+[Builder puts down a orange block at X:1 Y:7 Z:1]
+[Builder puts down a red block at X:1 Y:8 Z:1]
+<Architect> that is his head. attach yellow blocks outward from his shoulders.
+[Builder puts down a yellow block at X:-2 Y:6 Z:1]
+<Builder> there?
+<Architect> perfect.
+[Builder puts down a yellow block at X:3 Y:6 Z:1]
+<Architect> add one more to each side to make his arms longer
+[Builder puts down a yellow block at X:4 Y:6 Z:1]
+[Builder puts down a yellow block at X:-2 Y:6 Z:0]
+[Builder picks up a yellow block at X:-2 Y:6 Z:0]
+[Builder puts down a yellow block at X:-3 Y:6 Z:1]
+<Architect> done!
+<Builder> awesome

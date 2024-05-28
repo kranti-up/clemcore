@@ -1,0 +1,76 @@
+B16-A1-C102-1523660203486
+<Builder> Mission has started.
+<Architect> looks like a witch riding a broom
+<Architect> lets start with the broom
+<Builder> okay, cool
+<Architect> place five orange blocks in the center one block floating
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder picks up a orange block at X:1 Y:1 Z:-1]
+[Builder picks up a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+[Builder puts down a orange block at X:-2 Y:1 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder picks up a orange block at X:-2 Y:1 Z:-1]
+<Architect> yeah like that do that for the rest.
+<Architect> sorry
+<Architect> all five blocks should be floating one above
+<Builder> oh, okay!
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+[Builder picks up a orange block at X:2 Y:1 Z:-1]
+[Builder picks up a orange block at X:1 Y:1 Z:-1]
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+[Builder picks up a orange block at X:-1 Y:1 Z:-1]
+<Architect> okay thats the stick of the broom time to add the tail
+<Architect> place one yellow block at an end
+[Builder puts down a yellow block at X:-3 Y:2 Z:-1]
+<Architect> place one block on the front and back of this yellow block
+<Builder> also yellow?
+<Architect> yes
+[Builder puts down a yellow block at X:-3 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-3 Y:3 Z:-1]
+[Builder picks up a yellow block at X:-3 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-3 Y:2 Z:0]
+<Architect> okay the rest of the broom kinda looks like a trident or fork
+<Architect> place one more yellow block at the end of the stick kinda like the first one
+[Builder puts down a yellow block at X:-4 Y:2 Z:-1]
+<Architect> yes
+<Architect> now leaving one block empty add the trident fork
+<Architect> maybe it would be easy if you put two more in front and back
+[Builder puts down a yellow block at X:-4 Y:2 Z:0]
+[Builder puts down a yellow block at X:-4 Y:2 Z:-2]
+<Builder> like this?
+<Architect> yes do that again to make it wider
+[Builder puts down a yellow block at X:-5 Y:2 Z:0]
+[Builder puts down a yellow block at X:-5 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-5 Y:2 Z:-2]
+<Architect> sorry i meant make it a 3-5 instead of 3-3-3
+[Builder picks up a yellow block at X:-5 Y:2 Z:-2]
+[Builder picks up a yellow block at X:-5 Y:2 Z:-1]
+[Builder picks up a yellow block at X:-5 Y:2 Z:0]
+[Builder picks up a yellow block at X:-4 Y:2 Z:0]
+[Builder puts down a yellow block at X:-4 Y:2 Z:0]
+[Builder puts down a yellow block at X:-4 Y:2 Z:1]
+[Builder puts down a yellow block at X:-4 Y:2 Z:-3]
+[Builder picks up a yellow block at X:-4 Y:2 Z:-2]
+[Builder picks up a yellow block at X:-4 Y:2 Z:0]
+<Builder> this?
+<Architect> yes
+<Architect> now for the witch
+<Architect> she is in the middle of the orange.
+<Architect> start with three green all in a form of a tower
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:4 Z:-1]
+[Builder puts down a green block at X:0 Y:5 Z:-1]
+<Architect> okay we need the arms perpendicular to the broom add two more green at the top most green block
+[Builder puts down a green block at X:0 Y:5 Z:-2]
+[Builder puts down a green block at X:0 Y:5 Z:0]
+<Architect> finally the head is red
+[Builder puts down a red block at X:0 Y:6 Z:-1]
+<Architect> great

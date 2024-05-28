@@ -1,0 +1,67 @@
+B1-A4-C45-1522776326240
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hello
+<Architect> this is two interlocking horse shoes
+<Architect> start with blue
+<Architect> make a U shape 3x3
+[Builder puts down a blue block at X:1 Y:1 Z:3]
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+<Builder> flat?
+<Architect> flat
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:2]
+[Builder puts down a blue block at X:-1 Y:1 Z:3]
+<Architect> now green
+<Architect> make the same shape such that one of the arms of the green U is in the middle of the blue one
+[Builder puts down a green block at X:0 Y:1 Z:2]
+[Builder puts down a green block at X:0 Y:1 Z:3]
+[Builder puts down a green block at X:0 Y:1 Z:5]
+[Builder picks up a green block at X:0 Y:1 Z:5]
+[Builder puts down a green block at X:0 Y:1 Z:4]
+[Builder picks up a green block at X:0 Y:2 Z:4]
+[Builder puts down a green block at X:-1 Y:1 Z:4]
+[Builder puts down a green block at X:-2 Y:1 Z:4]
+[Builder puts down a green block at X:-2 Y:1 Z:3]
+[Builder puts down a green block at X:-2 Y:1 Z:2]
+<Architect> chill
+<Builder> ok
+<Builder> delete?
+<Architect> shit actually wrong
+[Builder picks up a green block at X:-2 Y:1 Z:2]
+[Builder picks up a green block at X:-2 Y:1 Z:3]
+<Architect> delete teh green
+[Builder picks up a green block at X:-1 Y:1 Z:4]
+[Builder picks up a green block at X:0 Y:1 Z:4]
+[Builder picks up a green block at X:0 Y:1 Z:3]
+[Builder picks up a green block at X:0 Y:1 Z:2]
+[Builder picks up a blue block at X:-1 Y:1 Z:1]
+<Architect> move the base of the blue to the other side
+<Architect> so the U faces teh other way
+[Builder puts down a blue block at X:0 Y:1 Z:3]
+[Builder picks up a blue block at X:0 Y:1 Z:1]
+<Builder> like this?
+<Architect> okay repeat with green
+<Builder> like before?
+[Builder puts down a green block at X:2 Y:1 Z:1]
+<Architect> yep
+[Builder puts down a green block at X:2 Y:1 Z:2]
+[Builder puts down a green block at X:0 Y:1 Z:2]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:2 Y:1 Z:0]
+<Builder> like this?
+<Architect> the green has to wrap around the other arm of the blue U
+[Builder picks up a green block at X:2 Y:1 Z:2]
+[Builder picks up a green block at X:2 Y:1 Z:1]
+[Builder picks up a green block at X:2 Y:1 Z:0]
+[Builder picks up a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:1 Z:1]
+[Builder puts down a green block at X:-2 Y:1 Z:2]
+<Builder> here?
+<Architect> great

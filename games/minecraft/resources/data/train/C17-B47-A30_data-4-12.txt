@@ -1,0 +1,14 @@
+B47-A30-C17-1523543622315
+<Builder> Mission has started.
+<Builder> hi
+<Architect> hi. we are building an orange L to start
+<Builder> any orientation?
+<Architect> it is 2x2 flat on the ground
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:3 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:1]
+<Architect> oh wait delete the end pieces
+[Builder picks up a orange block at X:1 Y:1 Z:1]
+[Builder picks up a orange block at X:3 Y:1 Z:-1]

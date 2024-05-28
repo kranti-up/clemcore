@@ -1,0 +1,45 @@
+B3-A2-C14-1522444981929
+<Builder> Mission has started.
+<Builder> hello architect, my only friend
+<Architect> what's shakin
+<Builder> i am ready to build
+<Architect> ok place two blue blocks on the ground
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+<Architect> cool, now put two more blue blocks on top of those
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+<Architect> Now attach two more blue blocks to the top two parallel to the ground
+[Builder puts down a blue block at X:-2 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+<Builder> like so?
+<Architect> Move them to the longer side
+[Builder picks up a blue block at X:-2 Y:2 Z:0]
+[Builder picks up a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+[Builder puts down a blue block at X:-1 Y:2 Z:1]
+<Architect> yeah great
+<Builder> like that?
+<Builder> ok
+<Architect> On top of the blocks you just placed, put down two red blocks
+[Builder puts down a red block at X:-1 Y:2 Z:2]
+[Builder picks up a red block at X:-1 Y:2 Z:2]
+[Builder puts down a red block at X:-1 Y:3 Z:1]
+[Builder puts down a red block at X:0 Y:3 Z:1]
+<Architect> great
+<Architect> Now place two more red blocks on the same horizontal plane that jut out to the left
+[Builder puts down a red block at X:0 Y:3 Z:2]
+[Builder puts down a red block at X:-1 Y:3 Z:2]
+<Builder> like that?
+<Architect> perfect
+<Architect> On top of the ones you just placed add two purple blocks
+[Builder puts down a purple block at X:-1 Y:4 Z:2]
+[Builder puts down a purple block at X:0 Y:4 Z:2]
+<Architect> then do the same thing you did for the red blocks
+[Builder puts down a purple block at X:-1 Y:4 Z:3]
+[Builder puts down a purple block at X:0 Y:4 Z:3]
+<Architect> and put two purple blocks on top of those
+[Builder puts down a purple block at X:-1 Y:5 Z:3]
+[Builder puts down a purple block at X:0 Y:5 Z:3]
+<Builder> like that?
+<Architect> yep nice

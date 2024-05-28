@@ -1,0 +1,75 @@
+B4-A40-C110-1523981079603
+<Builder> Mission has started.
+<Architect> okay so this one is entirely floating in the air...
+<Architect> put down a block in the middle for now
+<Architect> any color
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder picks up a yellow block at X:-1 Y:1 Z:0]
+<Architect> a row of two purple on top of it
+<Architect> horizontally
+[Builder puts down a purple block at X:0 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+<Architect> remove the yellow now
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+<Architect> place another purple next to the left one
+<Architect> towardsyou
+[Builder puts down a purple block at X:-1 Y:2 Z:1]
+<Architect> make a vertical column out of it now
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a purple block at X:-1 Y:4 Z:1]
+<Architect> a column of two purples in total
+[Builder picks up a purple block at X:-1 Y:4 Z:1]
+<Architect> now a red row of 2 blocks jutting out from the topmost purple and to the left
+[Builder puts down a red block at X:-2 Y:3 Z:1]
+[Builder puts down a red block at X:-3 Y:3 Z:1]
+<Builder> there?
+<Architect> yep
+<Architect> now another red row of 2 blocks on top of the last red you placed and going away from you
+[Builder puts down a red block at X:-3 Y:4 Z:1]
+[Builder puts down a red block at X:-3 Y:4 Z:0]
+<Builder> how's that?
+<Architect> perfect
+<Architect> i think it's just going to be a bunch of rows of 2 blocks
+<Architect> so for the next one...
+<Architect> put down a blue row next to the last red one and towards you
+<Builder> in line with the red row?
+<Architect> ah no sorry
+<Architect> going towards your left actually
+<Builder> and starting where?
+<Architect> next to the last red you placed
+[Builder puts down a blue block at X:-2 Y:4 Z:0]
+[Builder puts down a blue block at X:-1 Y:4 Z:0]
+<Architect> ah my bad!
+<Architect> sorry i meant the first blue is in line with the last red dow
+[Builder picks up a blue block at X:-2 Y:4 Z:0]
+[Builder picks up a blue block at X:-1 Y:4 Z:0]
+[Builder puts down a blue block at X:-3 Y:4 Z:-1]
+[Builder puts down a blue block at X:-2 Y:4 Z:-1]
+<Architect> perfect
+<Architect> now another blue row. pointing towards you. first block is right below the last blue.
+[Builder puts down a blue block at X:-2 Y:3 Z:-1]
+[Builder puts down a blue block at X:-2 Y:3 Z:-2]
+<Architect> yep
+<Architect> now a green row going vertically downwards. first block is to the left of the last blue.
+[Builder puts down a green block at X:-1 Y:3 Z:-2]
+[Builder puts down a green block at X:-1 Y:2 Z:-2]
+[Builder puts down a green block at X:0 Y:2 Z:-2]
+[Builder picks up a green block at X:-1 Y:2 Z:-2]
+<Architect> wait
+<Architect> no it's a row
+<Architect> not a diagonal
+<Builder> whoops
+[Builder picks up a green block at X:0 Y:2 Z:-2]
+<Builder> wait...a column?
+<Builder> how does the row go vertical?
+<Architect> ah right
+[Builder puts down a green block at X:-1 Y:2 Z:-2]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder picks up a green block at X:-1 Y:1 Z:-2]
+<Architect> now complete the structure with a green row
+[Builder puts down a green block at X:0 Y:2 Z:-1]
+[Builder puts down a green block at X:0 Y:2 Z:-2]
+<Architect> let me check...
+<Architect> perfect!
+<Architect> gg

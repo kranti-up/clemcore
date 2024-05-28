@@ -1,0 +1,60 @@
+B27-A25-C91-1523573214139
+<Builder> Mission has started.
+<Architect> ok, this build is going to need a 5x5 area
+<Builder> in the middle?
+<Architect> yea we should start there
+<Architect> we'll start with the corners
+<Architect> put down 4 blue pillars, 3 blocks high
+[Builder puts down a blue block at X:2 Y:1 Z:2]
+[Builder puts down a blue block at X:2 Y:2 Z:2]
+[Builder puts down a blue block at X:2 Y:3 Z:2]
+<Architect> in each corner of a 5x5 square
+[Builder puts down a blue block at X:-2 Y:1 Z:2]
+[Builder puts down a blue block at X:-2 Y:2 Z:2]
+[Builder puts down a blue block at X:-2 Y:3 Z:2]
+[Builder puts down a blue block at X:-2 Y:1 Z:-2]
+[Builder puts down a blue block at X:-2 Y:2 Z:-2]
+[Builder puts down a blue block at X:-2 Y:3 Z:-2]
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+[Builder puts down a blue block at X:2 Y:2 Z:-2]
+[Builder puts down a blue block at X:2 Y:3 Z:-2]
+<Architect> perfect, now put a yellow block on the top of each blue pillar
+[Builder puts down a yellow block at X:-2 Y:4 Z:-2]
+[Builder puts down a yellow block at X:2 Y:4 Z:-2]
+[Builder puts down a yellow block at X:2 Y:4 Z:2]
+[Builder puts down a yellow block at X:-2 Y:4 Z:2]
+<Architect> then put a 2x3 wall of purple blocks on walls parallel to each other
+[Builder puts down a purple block at X:2 Y:1 Z:1]
+[Builder puts down a purple block at X:2 Y:1 Z:0]
+[Builder puts down a purple block at X:2 Y:1 Z:-1]
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder puts down a purple block at X:2 Y:2 Z:1]
+<Builder> good?
+<Architect> yup, then on the wall across from it
+[Builder puts down a purple block at X:-2 Y:1 Z:-1]
+[Builder puts down a purple block at X:-2 Y:1 Z:0]
+[Builder puts down a purple block at X:-2 Y:1 Z:1]
+[Builder puts down a purple block at X:-2 Y:2 Z:1]
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+[Builder puts down a purple block at X:-2 Y:2 Z:-1]
+<Architect> then on one side put a 2x3 orange wall
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:-1 Y:1 Z:-2]
+[Builder puts down a orange block at X:-1 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:1 Y:2 Z:-2]
+<Architect> and then a 3x3 wall of red blocks on this side, with the middle and middle bottom block cut out for a doorway
+[Builder puts down a red block at X:-1 Y:1 Z:2]
+[Builder puts down a red block at X:0 Y:1 Z:2]
+[Builder puts down a red block at X:1 Y:1 Z:2]
+[Builder puts down a red block at X:-1 Y:2 Z:2]
+[Builder puts down a red block at X:0 Y:2 Z:2]
+[Builder puts down a red block at X:1 Y:2 Z:2]
+[Builder puts down a red block at X:-1 Y:3 Z:2]
+[Builder puts down a red block at X:0 Y:3 Z:2]
+[Builder puts down a red block at X:1 Y:3 Z:2]
+[Builder picks up a red block at X:0 Y:2 Z:2]
+[Builder picks up a red block at X:0 Y:1 Z:2]
+<Architect> perfect

@@ -1,0 +1,56 @@
+B4-A20-C41-1522767672579
+<Builder> Mission has started.
+<Architect> whole thing will be 5 blocks long
+<Architect> 5x9
+<Architect> keep that in mind for space
+<Architect> the blocks spell out "L = 5"
+<Architect> start with green
+[Builder puts down a green block at X:2 Y:1 Z:-3]
+[Builder puts down a green block at X:1 Y:1 Z:-3]
+[Builder puts down a green block at X:0 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+[Builder picks up a green block at X:-1 Y:1 Z:-3]
+[Builder picks up a green block at X:0 Y:1 Z:-3]
+[Builder picks up a green block at X:2 Y:1 Z:-3]
+[Builder picks up a green block at X:1 Y:1 Z:-3]
+[Builder puts down a green block at X:2 Y:1 Z:-5]
+[Builder puts down a green block at X:1 Y:1 Z:-5]
+[Builder puts down a green block at X:0 Y:1 Z:-5]
+[Builder puts down a green block at X:-1 Y:1 Z:-5]
+[Builder puts down a green block at X:-1 Y:1 Z:-4]
+[Builder puts down a green block at X:-1 Y:1 Z:-3]
+[Builder picks up a green block at X:-1 Y:1 Z:-2]
+[Builder picks up a green block at X:-1 Y:1 Z:-1]
+<Builder> how's that?
+<Architect> add one more green to the longer side of L
+[Builder puts down a green block at X:3 Y:1 Z:-5]
+<Architect> perfect
+<Architect> now switch to purple
+[Builder puts down a purple block at X:2 Y:1 Z:-2]
+[Builder puts down a purple block at X:0 Y:1 Z:-2]
+<Architect> leave one block space
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder puts down a purple block at X:0 Y:1 Z:-1]
+[Builder picks up a purple block at X:0 Y:2 Z:-2]
+[Builder picks up a purple block at X:0 Y:1 Z:-2]
+[Builder picks up a purple block at X:2 Y:1 Z:-2]
+[Builder puts down a purple block at X:3 Y:1 Z:-1]
+[Builder picks up a purple block at X:3 Y:1 Z:-1]
+[Builder puts down a purple block at X:2 Y:1 Z:-1]
+<Architect> one more purple to each line to finish the = sign
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:2 Y:1 Z:0]
+<Architect> now blue for the S
+<Architect> it's same height as L
+<Architect> two block wide
+[Builder puts down a blue block at X:-1 Y:1 Z:2]
+[Builder puts down a blue block at X:-1 Y:1 Z:3]
+[Builder puts down a blue block at X:0 Y:1 Z:3]
+[Builder puts down a blue block at X:1 Y:1 Z:3]
+[Builder puts down a blue block at X:3 Y:1 Z:3]
+[Builder puts down a blue block at X:3 Y:1 Z:2]
+[Builder puts down a blue block at X:2 Y:1 Z:2]
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+<Architect> all good

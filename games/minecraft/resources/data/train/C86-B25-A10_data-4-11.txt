@@ -1,0 +1,122 @@
+B25-A10-C86-1523489364518
+<Builder> Mission has started.
+<Architect> okay same structure take two
+<Architect> make a line of four purple horizontally, floating up one block.
+[Builder puts down a purple block at X:2 Y:1 Z:-1]
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+[Builder picks up a purple block at X:2 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+<Architect> yeah, thats good
+<Architect> on the second from the right put an orange above and below, in the same plane
+<Architect> like horizontal plane
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+<Architect> the other way
+[Builder picks up a orange block at X:0 Y:3 Z:-1]
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+<Architect> ya
+<Builder> my bad
+<Architect> no worries. now, in this same horizontal level, put two blue blocks in the direction of the right edge, extending from both oranges you just put down
+[Builder puts down a blue block at X:-1 Y:2 Z:-2]
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+<Builder> like that?
+<Architect> another blue on each in the same direction
+[Builder puts down a blue block at X:-2 Y:2 Z:-2]
+[Builder puts down a blue block at X:-2 Y:2 Z:0]
+<Architect> cool and then remove the ones directly adjacent to the orange
+[Builder picks up a blue block at X:-1 Y:2 Z:-2]
+[Builder picks up a blue block at X:-1 Y:2 Z:0]
+<Architect> cool. now extend each of those blues diagonally away from the purple
+[Builder puts down a blue block at X:-3 Y:2 Z:-2]
+[Builder puts down a blue block at X:-3 Y:2 Z:-3]
+[Builder picks up a blue block at X:-3 Y:2 Z:-2]
+[Builder puts down a blue block at X:-3 Y:2 Z:0]
+[Builder puts down a blue block at X:-3 Y:2 Z:1]
+[Builder picks up a blue block at X:-3 Y:2 Z:0]
+<Architect> cool, the next layer up has four orange blocks
+<Architect> they are connected at the corner with the open corners of the orange blocks
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+[Builder picks up a orange block at X:1 Y:2 Z:0]
+[Builder picks up a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+[Builder picks up a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+[Builder puts down a orange block at X:-1 Y:3 Z:-2]
+[Builder puts down a orange block at X:-1 Y:3 Z:-3]
+[Builder picks up a orange block at X:0 Y:3 Z:-2]
+[Builder picks up a orange block at X:-1 Y:3 Z:-2]
+[Builder puts down a orange block at X:1 Y:2 Z:-2]
+[Builder puts down a orange block at X:1 Y:3 Z:-2]
+[Builder puts down a orange block at X:1 Y:3 Z:-3]
+[Builder picks up a orange block at X:1 Y:3 Z:-2]
+[Builder picks up a orange block at X:1 Y:2 Z:-2]
+<Architect> beautiful
+<Builder> yay
+<Architect> okay, so next layer up has two rows of 5 orange blocks.
+<Architect> each of them is parallel to the purple and connect the oranges of the layer you just put down
+[Builder puts down a orange block at X:2 Y:3 Z:-1]
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+[Builder picks up a orange block at X:2 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:-1 Y:4 Z:-1]
+<Builder> like that?
+[Builder puts down a orange block at X:0 Y:3 Z:-3]
+[Builder puts down a orange block at X:1 Y:3 Z:-2]
+[Builder picks up a orange block at X:1 Y:3 Z:-2]
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+<Architect> not quite. go back to what we just had
+[Builder picks up a orange block at X:0 Y:3 Z:-3]
+[Builder picks up a orange block at X:0 Y:3 Z:-2]
+[Builder picks up a orange block at X:0 Y:3 Z:-1]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:1]
+<Builder> ok
+<Architect> move that floating orange row toards the right by 3
+[Builder puts down a orange block at X:-1 Y:4 Z:1]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+[Builder puts down a orange block at X:2 Y:4 Z:1]
+[Builder picks up a orange block at X:2 Y:4 Z:-1]
+[Builder picks up a orange block at X:1 Y:4 Z:-1]
+[Builder picks up a orange block at X:0 Y:4 Z:-1]
+[Builder picks up a orange block at X:-1 Y:4 Z:-1]
+[Builder puts down a orange block at X:-1 Y:4 Z:-3]
+[Builder puts down a orange block at X:0 Y:4 Z:-3]
+[Builder puts down a orange block at X:1 Y:4 Z:-3]
+[Builder puts down a orange block at X:2 Y:4 Z:-3]
+<Architect> move each of those rows out by one
+[Builder puts down a orange block at X:-1 Y:4 Z:-4]
+[Builder puts down a orange block at X:0 Y:4 Z:-4]
+[Builder puts down a orange block at X:1 Y:4 Z:-4]
+[Builder puts down a orange block at X:2 Y:4 Z:-4]
+[Builder picks up a orange block at X:2 Y:4 Z:-3]
+[Builder picks up a orange block at X:1 Y:4 Z:-3]
+[Builder picks up a orange block at X:0 Y:4 Z:-3]
+[Builder picks up a orange block at X:-1 Y:4 Z:-3]
+[Builder puts down a orange block at X:-1 Y:4 Z:2]
+[Builder puts down a orange block at X:0 Y:4 Z:2]
+[Builder puts down a orange block at X:1 Y:4 Z:2]
+[Builder puts down a orange block at X:2 Y:4 Z:2]
+[Builder picks up a orange block at X:2 Y:4 Z:1]
+[Builder picks up a orange block at X:1 Y:4 Z:1]
+[Builder picks up a orange block at X:0 Y:4 Z:1]
+[Builder picks up a orange block at X:-1 Y:4 Z:1]
+<Architect> okay almost, they are rows of 5
+<Builder> should i put one more in the front or the back
+<Architect> one more in the direction of the blue
+[Builder puts down a orange block at X:3 Y:4 Z:2]
+[Builder picks up a orange block at X:3 Y:4 Z:2]
+[Builder puts down a orange block at X:-2 Y:4 Z:2]
+[Builder puts down a orange block at X:-2 Y:4 Z:-4]
+<Architect> that looks right to me

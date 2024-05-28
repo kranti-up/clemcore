@@ -1,0 +1,53 @@
+B16-A29-C126-1524063871418
+<Builder> Mission has started.
+<Builder> good morning!
+<Architect> hello
+<Architect> we're going to build a teapot
+<Builder> nice!
+<Architect> first build a 4 by 3 rectangle
+<Architect> that's 4 high
+<Architect> and 3 wide
+<Architect> in read
+<Architect> red
+<Builder> upright or flat?
+<Architect> upright
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+<Architect> 4 high
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:3 Z:-1]
+[Builder puts down a red block at X:1 Y:4 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:3 Z:-1]
+[Builder puts down a red block at X:0 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+<Architect> the handle will extend from the left side
+<Architect> it's orange
+<Architect> from the top it extends 2 blocks out
+<Architect> then 2 more down
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+[Builder puts down a orange block at X:3 Y:4 Z:-1]
+[Builder puts down a orange block at X:3 Y:3 Z:-1]
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+<Builder> like this?/
+<Architect> then 1 block to connect it back
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+<Architect> perfect
+<Builder> is that it?
+<Architect> put one more orange block on top in the middle
+<Builder> of the rectangle or the handle?
+<Architect> the middle of rectangle
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+<Architect> that's our lid
+<Architect> finally we have to build the spout
+<Architect> it's red
+<Architect> it is made of two blocks at an angle going up starting from the second red block down on the right side
+[Builder puts down a red block at X:-2 Y:3 Z:-1]
+[Builder puts down a red block at X:-3 Y:3 Z:-1]
+[Builder puts down a red block at X:-3 Y:4 Z:-1]
+[Builder picks up a red block at X:-3 Y:3 Z:-1]
+<Architect> wonderful job
+<Architect> this might hurt

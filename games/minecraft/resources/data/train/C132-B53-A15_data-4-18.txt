@@ -1,0 +1,67 @@
+B53-A15-C132-1524067475521
+<Builder> Mission has started.
+<Architect> okay, super easy one
+<Architect> make a stack of 6 purple blocks
+[Builder puts down a purple block at X:0 Y:1 Z:1]
+[Builder puts down a purple block at X:0 Y:2 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:4 Z:1]
+[Builder puts down a purple block at X:0 Y:5 Z:1]
+[Builder puts down a purple block at X:0 Y:6 Z:1]
+<Architect> 3 more stacks like it, in a diagonal line
+<Architect> any direction is fine
+<Builder> Directly adjacent?
+<Architect> yep!
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:4 Z:0]
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+[Builder puts down a purple block at X:1 Y:6 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:2]
+[Builder puts down a purple block at X:-1 Y:2 Z:2]
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+[Builder puts down a purple block at X:-1 Y:4 Z:2]
+[Builder puts down a purple block at X:-2 Y:4 Z:2]
+[Builder picks up a purple block at X:-2 Y:4 Z:2]
+[Builder puts down a purple block at X:-1 Y:5 Z:2]
+[Builder puts down a purple block at X:-1 Y:6 Z:2]
+<Builder> Ok, now what?
+<Architect> one more stack!
+<Builder> Ah, 3 more, not 3 total
+<Builder> my mistake
+[Builder puts down a purple block at X:2 Y:1 Z:-1]
+<Architect> yeah 4 total, no worrie :)
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+<Architect> worries*
+<Builder> I'm out of purple blocks
+<Architect> oh, snap
+<Architect> okay, well, remove the bottom block from each stack
+[Builder picks up a purple block at X:2 Y:1 Z:-1]
+[Builder picks up a purple block at X:1 Y:1 Z:0]
+[Builder picks up a purple block at X:0 Y:1 Z:1]
+<Architect> that was the next step anyway
+<Builder> Ah I see
+[Builder puts down a purple block at X:2 Y:3 Z:-1]
+[Builder puts down a purple block at X:2 Y:4 Z:-1]
+[Builder puts down a purple block at X:2 Y:5 Z:-1]
+[Builder puts down a purple block at X:2 Y:6 Z:-1]
+<Architect> alright, remove the middle block from the left stack
+[Builder picks up a purple block at X:2 Y:4 Z:-1]
+<Architect> and the 3rd stack from the left
+[Builder puts down a purple block at X:-1 Y:4 Z:1]
+[Builder picks up a purple block at X:-1 Y:4 Z:1]
+[Builder picks up a purple block at X:0 Y:4 Z:1]
+<Architect> in the other two stacks, remove the block above that
+[Builder picks up a purple block at X:1 Y:5 Z:0]
+[Builder picks up a purple block at X:-1 Y:5 Z:2]
+<Architect> and fill in all the gaps with red blocks :)
+<Builder> Easy enough
+[Builder picks up a purple block at X:2 Y:3 Z:-1]
+[Builder puts down a purple block at X:2 Y:3 Z:-1]
+[Builder puts down a red block at X:2 Y:4 Z:-1]
+[Builder puts down a red block at X:1 Y:5 Z:0]
+[Builder puts down a red block at X:0 Y:4 Z:1]
+[Builder puts down a red block at X:-1 Y:5 Z:2]
+<Architect> perfect! easy peasy
+<Builder> Indeed

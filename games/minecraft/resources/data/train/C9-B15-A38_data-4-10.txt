@@ -1,0 +1,47 @@
+B15-A38-C9-1523400593183
+<Builder> Mission has started.
+<Builder> ready!
+<Architect> Cool, this one is going to look like an asterisk.
+<Builder> easy enough
+<Architect> It's going to be flat on the ground. Make a green square in the middle of the area
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+<Builder> got it!
+[Builder puts down a green block at X:0 Y:1 Z:2]
+[Builder puts down a green block at X:2 Y:1 Z:2]
+<Architect> Cool, do that on each side
+[Builder puts down a green block at X:-2 Y:1 Z:2]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:2 Y:1 Z:-2]
+[Builder puts down a green block at X:2 Y:1 Z:0]
+<Builder> is there more?
+<Builder> i don't have enough green to continue
+<Architect> Yup, now add two blue blocks to the each of those blocks
+[Builder puts down a blue block at X:0 Y:1 Z:4]
+[Builder puts down a blue block at X:0 Y:1 Z:3]
+[Builder puts down a blue block at X:3 Y:1 Z:3]
+[Builder puts down a blue block at X:4 Y:1 Z:4]
+[Builder puts down a blue block at X:3 Y:1 Z:0]
+[Builder puts down a blue block at X:4 Y:1 Z:0]
+[Builder puts down a blue block at X:3 Y:1 Z:-3]
+[Builder puts down a blue block at X:4 Y:1 Z:-4]
+[Builder puts down a blue block at X:0 Y:1 Z:-3]
+[Builder puts down a blue block at X:0 Y:1 Z:-4]
+[Builder puts down a blue block at X:-3 Y:1 Z:-3]
+[Builder puts down a blue block at X:-4 Y:1 Z:-4]
+[Builder puts down a blue block at X:-3 Y:1 Z:0]
+[Builder puts down a blue block at X:-4 Y:1 Z:0]
+[Builder puts down a blue block at X:-3 Y:1 Z:3]
+[Builder puts down a blue block at X:-4 Y:1 Z:4]
+<Builder> like that?
+<Architect> Yup, perfect.
+<Builder> cool!

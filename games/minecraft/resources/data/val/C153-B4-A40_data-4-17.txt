@@ -1,0 +1,106 @@
+B4-A40-C153-1523983188276
+<Builder> Mission has started.
+<Architect> this one looks random...
+<Architect> uhh
+<Architect> place a column of 7 blocks five spaces from one edge
+<Builder> centered? color?
+<Architect> sure
+<Architect> purple
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+[Builder puts down a purple block at X:-1 Y:5 Z:0]
+[Builder puts down a purple block at X:-1 Y:6 Z:0]
+[Builder puts down a purple block at X:-1 Y:7 Z:0]
+<Architect> place a purple diagonally upwards and to the right of the topmost block
+[Builder puts down a purple block at X:-1 Y:8 Z:0]
+[Builder puts down a purple block at X:-2 Y:8 Z:0]
+[Builder picks up a purple block at X:-1 Y:8 Z:0]
+<Architect> then another one diagonally below the last one
+[Builder puts down a purple block at X:-2 Y:7 Z:0]
+[Builder puts down a purple block at X:-3 Y:7 Z:0]
+[Builder picks up a purple block at X:-2 Y:7 Z:0]
+<Architect> then another one diaognally below it but touching the column
+[Builder puts down a purple block at X:-2 Y:6 Z:0]
+<Architect> yes
+<Architect> now place a purple to the right of the third block from the bottom
+[Builder puts down a purple block at X:-2 Y:3 Z:0]
+<Architect> extend it diagonally now and along each diagonal
+<Builder> ?
+<Builder> what do you mean along each diagonal?
+<Architect> so starting with the last purple block build two diagonals -- one going upward and one downward
+<Builder> ah i see
+[Builder puts down a purple block at X:-3 Y:3 Z:0]
+[Builder puts down a purple block at X:-3 Y:2 Z:0]
+[Builder puts down a purple block at X:-3 Y:4 Z:0]
+[Builder picks up a purple block at X:-3 Y:3 Z:0]
+<Architect> for each diagonal 2 more blocks
+<Architect> now one more for each
+[Builder puts down a purple block at X:-4 Y:1 Z:1]
+[Builder picks up a purple block at X:-4 Y:1 Z:1]
+[Builder puts down a purple block at X:-4 Y:1 Z:0]
+[Builder picks up a purple block at X:-3 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:4 Z:0]
+[Builder puts down a purple block at X:-3 Y:4 Z:0]
+[Builder puts down a purple block at X:-3 Y:5 Z:0]
+[Builder puts down a purple block at X:-4 Y:5 Z:0]
+[Builder picks up a purple block at X:-3 Y:5 Z:0]
+[Builder picks up a purple block at X:-2 Y:4 Z:0]
+<Architect> perfect
+<Architect> now one more purple diagonally upwards from the bottom right purple block
+[Builder puts down a purple block at X:-5 Y:1 Z:0]
+[Builder puts down a purple block at X:-5 Y:2 Z:0]
+[Builder picks up a purple block at X:-5 Y:1 Z:0]
+<Architect> nice
+<Architect> so for the second half of this thing it will be all blue blocks...
+<Builder> eh i was hoping we were done lol
+<Architect> i know right...
+<Architect> lol
+[Builder puts down a blue block at X:-1 Y:1 Z:-4]
+[Builder puts down a blue block at X:-1 Y:1 Z:-5]
+[Builder puts down a blue block at X:-3 Y:1 Z:-5]
+[Builder puts down a blue block at X:-1 Y:3 Z:-5]
+[Builder puts down a blue block at X:-2 Y:2 Z:-5]
+[Builder puts down a blue block at X:-2 Y:3 Z:-5]
+[Builder picks up a blue block at X:-1 Y:3 Z:-5]
+[Builder picks up a blue block at X:-2 Y:3 Z:-5]
+[Builder picks up a blue block at X:-1 Y:2 Z:-5]
+[Builder picks up a blue block at X:-1 Y:1 Z:-5]
+[Builder picks up a blue block at X:-2 Y:2 Z:-5]
+[Builder picks up a blue block at X:-2 Y:1 Z:-5]
+[Builder picks up a blue block at X:-3 Y:1 Z:-5]
+[Builder picks up a blue block at X:-1 Y:1 Z:-4]
+<Architect> hold on
+<Architect> don't place anything though
+<Architect> lol
+<Architect> put down a 3X3 square one space away from the purple thing. same plane.
+<Architect> vertically
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:2 Y:1 Z:0]
+[Builder puts down a blue block at X:3 Y:1 Z:0]
+[Builder puts down a blue block at X:3 Y:2 Z:0]
+[Builder puts down a blue block at X:2 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+[Builder puts down a blue block at X:2 Y:3 Z:0]
+[Builder puts down a blue block at X:3 Y:3 Z:0]
+<Architect> remove thecenter block
+[Builder picks up a blue block at X:2 Y:2 Z:0]
+<Architect> now place a block to the left of the blue square but one space above ground
+<Builder> touching the side of the square?
+<Architect> yes. and extend it diagonally upwards.
+[Builder puts down a blue block at X:4 Y:2 Z:0]
+<Architect> so put one more diagonally upwards from the last one
+[Builder puts down a blue block at X:4 Y:3 Z:0]
+[Builder puts down a blue block at X:5 Y:3 Z:0]
+[Builder picks up a blue block at X:4 Y:3 Z:0]
+<Architect> we are now going to connect the two structures with a blue block
+<Architect> diagonally from the top right corner of the square
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+<Architect> let me check...
+<Architect> great! we are done!
+<Architect> gg
+<Builder> phew
+<Architect> phew++
+<Builder> lol

@@ -1,0 +1,88 @@
+B25-A51-C37-1524264875322
+<Builder> Mission has started.
+<Architect> okay so in your view the left edge, make ea 4x1 layer of red
+[Builder puts down a red block at X:4 Y:1 Z:-2]
+[Builder picks up a red block at X:4 Y:1 Z:-2]
+[Builder puts down a red block at X:5 Y:1 Z:-2]
+[Builder puts down a red block at X:5 Y:1 Z:1]
+[Builder puts down a red block at X:5 Y:1 Z:0]
+[Builder puts down a red block at X:4 Y:1 Z:-1]
+[Builder picks up a red block at X:4 Y:1 Z:-1]
+<Builder> like that?
+<Architect> great
+<Architect> so on top of the red, place 2 additional columns of 5 oranges on the leftmost AND the rightmost reds
+[Builder puts down a orange block at X:5 Y:2 Z:-2]
+[Builder puts down a orange block at X:5 Y:3 Z:-2]
+[Builder puts down a orange block at X:5 Y:4 Z:-2]
+[Builder puts down a orange block at X:5 Y:5 Z:-2]
+[Builder puts down a orange block at X:5 Y:6 Z:-2]
+[Builder puts down a orange block at X:5 Y:2 Z:1]
+[Builder puts down a orange block at X:5 Y:3 Z:1]
+[Builder puts down a orange block at X:5 Y:4 Z:1]
+[Builder puts down a orange block at X:5 Y:5 Z:1]
+[Builder puts down a orange block at X:5 Y:6 Z:1]
+<Architect> perfect, so on top of the top layer of orange columns, place a 4x1 layer of red
+[Builder puts down a red block at X:5 Y:7 Z:-2]
+[Builder puts down a red block at X:5 Y:7 Z:-1]
+[Builder puts down a red block at X:5 Y:7 Z:1]
+[Builder puts down a red block at X:5 Y:7 Z:0]
+<Architect> okay so this will be forming an "S" (or 5) inside that box you just made
+<Builder> what color
+<Architect> it'll be made of yellow (the S)
+[Builder puts down a yellow block at X:5 Y:6 Z:0]
+[Builder puts down a yellow block at X:5 Y:6 Z:-1]
+[Builder puts down a yellow block at X:5 Y:5 Z:-1]
+[Builder puts down a yellow block at X:5 Y:4 Z:-1]
+[Builder puts down a yellow block at X:5 Y:4 Z:0]
+[Builder puts down a yellow block at X:5 Y:3 Z:0]
+[Builder puts down a yellow block at X:5 Y:2 Z:0]
+[Builder puts down a yellow block at X:5 Y:2 Z:-1]
+<Architect> perfect, now fill the empty spaces with red
+[Builder puts down a red block at X:5 Y:3 Z:-1]
+[Builder puts down a red block at X:5 Y:5 Z:0]
+<Architect> nice, so 5 away from that face of the block, make a 4x1 layer of green
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+[Builder picks up a green block at X:-1 Y:1 Z:1]
+<Architect> essentially, it'll be a reflection of this rectangle but with replaced colors
+<Builder> give me the mapping
+<Builder> i can just fill it in
+<Builder> is it red to green
+<Architect> can you move the green layer towards you by one more?
+[Builder picks up a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder picks up a green block at X:0 Y:1 Z:-1]
+[Builder picks up a green block at X:0 Y:1 Z:0]
+[Builder picks up a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+<Architect> great, so red-->green, orange-->blue, yellow-->purple
+[Builder puts down a blue block at X:-1 Y:2 Z:-2]
+[Builder puts down a blue block at X:-1 Y:3 Z:-2]
+[Builder puts down a blue block at X:-1 Y:4 Z:-2]
+[Builder puts down a blue block at X:-1 Y:5 Z:-2]
+[Builder puts down a blue block at X:-1 Y:6 Z:-2]
+[Builder puts down a blue block at X:-1 Y:2 Z:1]
+[Builder puts down a blue block at X:-1 Y:3 Z:1]
+[Builder puts down a blue block at X:-1 Y:4 Z:1]
+[Builder puts down a blue block at X:-1 Y:5 Z:1]
+[Builder puts down a blue block at X:-1 Y:6 Z:1]
+[Builder puts down a green block at X:-1 Y:7 Z:1]
+[Builder puts down a green block at X:-1 Y:7 Z:-2]
+[Builder puts down a green block at X:-1 Y:7 Z:-1]
+[Builder puts down a green block at X:-1 Y:7 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+[Builder puts down a purple block at X:-1 Y:5 Z:-1]
+[Builder puts down a purple block at X:-1 Y:6 Z:-1]
+[Builder puts down a purple block at X:-1 Y:6 Z:0]
+[Builder puts down a green block at X:-1 Y:5 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+<Architect> fantastic, that should be it
+<Builder> ok

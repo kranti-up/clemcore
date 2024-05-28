@@ -1,0 +1,29 @@
+B16-A26-C75-1524152904572
+<Builder> Mission has started.
+<Architect> So we're building a funky snake. Start with a column of three red bricks please
+<Architect> purple*
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+<Architect> in front of the top purple brick. please add a yellow brick
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+<Architect> ok! now add an orange brick between your avatar and the yellow brick
+[Builder puts down a red block at X:0 Y:3 Z:-2]
+[Builder picks up a red block at X:0 Y:3 Z:-2]
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+<Architect> The orange brick will be part of a column of three orange bricks
+<Architect> going up
+[Builder puts down a orange block at X:0 Y:4 Z:-2]
+[Builder puts down a orange block at X:0 Y:5 Z:-2]
+<Architect> perfect! Now above the yellow brick, touching the top orange brick, add a blue brick please
+[Builder puts down a blue block at X:0 Y:5 Z:-1]
+<Architect> There will be a space between the yellow and blue brick
+<Architect> Great!
+<Architect> Now please add a red brick above the purple column
+<Architect> touching the blue brick
+[Builder puts down a red block at X:1 Y:5 Z:-1]
+<Architect> We'll add another blue brick on the ground below the yellow brick
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+<Architect> And a green brick beneath the orange column on the ground
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+<Architect> Perfect!

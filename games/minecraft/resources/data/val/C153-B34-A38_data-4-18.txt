@@ -1,0 +1,122 @@
+B34-A38-C153-1524089941263
+<Builder> Mission has started.
+<Builder> 3
+<Builder> what is this
+<Architect> It looks weird, so I don't really know.
+<Builder> ok
+<Builder> then guide me blok by block
+<Architect> Ok, starting on an edge, make a purple block two blocks in
+[Builder puts down a purple block at X:0 Y:1 Z:-4]
+[Builder picks up a purple block at X:0 Y:1 Z:-4]
+[Builder puts down a purple block at X:0 Y:1 Z:-3]
+<Builder> I'll stay with this perspective
+<Builder> unless you want me to change
+<Architect> Sorry, one block closer to the edge
+[Builder picks up a purple block at X:0 Y:1 Z:-3]
+[Builder puts down a purple block at X:0 Y:1 Z:-4]
+<Architect> Can you make a block 1 off the ground on the edge
+<Builder> like on top of that purple block?
+<Architect> Like a v with the purple block as the poiunt
+[Builder puts down a purple block at X:-1 Y:1 Z:-4]
+[Builder puts down a purple block at X:-1 Y:2 Z:-4]
+[Builder picks up a purple block at X:-1 Y:1 Z:-4]
+[Builder puts down a purple block at X:1 Y:1 Z:-4]
+[Builder puts down a purple block at X:1 Y:2 Z:-4]
+[Builder picks up a purple block at X:1 Y:1 Z:-4]
+<Builder> yeha?
+<Architect> Like that, except perpendicular to the edge
+[Builder picks up a purple block at X:-1 Y:2 Z:-4]
+[Builder picks up a purple block at X:1 Y:2 Z:-4]
+[Builder puts down a purple block at X:0 Y:1 Z:-5]
+[Builder puts down a purple block at X:0 Y:2 Z:-5]
+[Builder picks up a purple block at X:0 Y:1 Z:-5]
+[Builder puts down a purple block at X:0 Y:1 Z:-3]
+[Builder puts down a purple block at X:0 Y:2 Z:-3]
+[Builder picks up a purple block at X:0 Y:1 Z:-3]
+<Builder> there?
+<Architect> Yup, can you extend the block on the right diagonally up?
+[Builder puts down a purple block at X:0 Y:1 Z:-2]
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder puts down a purple block at X:0 Y:3 Z:-2]
+[Builder picks up a purple block at X:0 Y:2 Z:-2]
+[Builder picks up a purple block at X:0 Y:1 Z:-2]
+<Builder> like that
+<Architect> Yes, can you make a 7 block tall pillar to the right of that block. It should start from the ground
+<Builder> what color?
+<Builder> purple?
+<Architect> Purple still
+[Builder puts down a purple block at X:0 Y:1 Z:-1]
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:0 Y:4 Z:-1]
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+[Builder puts down a purple block at X:0 Y:6 Z:-1]
+[Builder puts down a purple block at X:0 Y:7 Z:-1]
+<Architect> Can you extend the top block 2 blocks wtowards the edge
+<Builder> which edge
+<Architect> The side with the v
+[Builder puts down a purple block at X:0 Y:7 Z:-2]
+[Builder puts down a purple block at X:0 Y:7 Z:-3]
+<Architect> Can you add a block on top and below the middle block the blocks we just placeD?
+[Builder puts down a purple block at X:0 Y:6 Z:-2]
+[Builder puts down a purple block at X:0 Y:8 Z:-2]
+<Builder> um
+<Architect> Yes?
+<Builder> is this it?
+<Architect> Oh, yeah, can you punch out the middle block
+[Builder picks up a purple block at X:0 Y:7 Z:-2]
+<Architect> Cool, from the block 3 blocks below that, can you extend it two blocks diagonally towards the closest edge?
+<Builder> what
+<Builder> literally what
+<Architect> Sorry,
+<Architect> You know how we have the block next to the pillar?
+<Architect> Close to the bottom
+<Builder> yes
+<Builder> the one i am looking at?
+<Architect> Can you add a block to it going diagonally.
+<Builder> down?
+[Builder puts down a purple block at X:0 Y:5 Z:-2]
+[Builder puts down a purple block at X:0 Y:5 Z:-3]
+[Builder picks up a purple block at X:0 Y:5 Z:-2]
+<Builder> like that
+<Architect> One beloow the block you just placed, sorry.
+[Builder puts down a purple block at X:0 Y:4 Z:-3]
+[Builder picks up a purple block at X:0 Y:5 Z:-3]
+<Architect> And another block to the left and up
+[Builder puts down a purple block at X:0 Y:5 Z:-3]
+[Builder puts down a purple block at X:0 Y:5 Z:-4]
+[Builder picks up a purple block at X:0 Y:5 Z:-3]
+<Architect> Ok, that is all of the purple blocks. We are going to use blue blocks now.
+<Architect> to the right of the pillar,
+<Builder> is there symmetry?
+<Architect> No,
+<Builder> sad
+<Architect> I know, maybe it will make sense to you. There is a block attached the the pillar on the fourth block from the ground
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+<Builder> there
+<Architect> Perfect
+<Architect> From the right of that, can you make a 3 block pillar from the ground
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+[Builder puts down a blue block at X:0 Y:3 Z:1]
+<Builder> is this a 2D structure?
+<Architect> Yes
+<Architect> Can you make a ring using the pillar we just made?
+<Builder> 3x3
+<Builder> ?
+<Architect> Yes
+<Architect> sorry,
+[Builder puts down a blue block at X:0 Y:1 Z:3]
+[Builder puts down a blue block at X:0 Y:2 Z:3]
+[Builder puts down a blue block at X:0 Y:3 Z:3]
+[Builder puts down a blue block at X:0 Y:3 Z:2]
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+<Builder> that
+<Architect> Yup, on the middle block of the ring's right side, can you put a blue block?
+[Builder puts down a blue block at X:0 Y:2 Z:4]
+<Architect> And up and to the right of that, one more blue block
+[Builder puts down a blue block at X:0 Y:2 Z:5]
+[Builder puts down a blue block at X:0 Y:3 Z:5]
+[Builder picks up a blue block at X:0 Y:2 Z:5]
+<Builder> it looks like a cursive "ok" form the other end
+<Architect> That should be it. Oh, I never learned cursive.

@@ -1,0 +1,111 @@
+B35-A55-C55-1524260999646
+<Builder> Mission has started.
+<Architect> okay this is the last structure
+<Builder> gotcha
+<Architect> place one yellow block in the middle of a row that is one from the edge
+[Builder puts down a yellow block at X:4 Y:1 Z:0]
+<Architect> now place one yellow block down and right diagonal from that and one up and right
+[Builder puts down a yellow block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:3 Y:1 Z:1]
+<Architect> good
+<Architect> make each diagonal one longer to the right
+[Builder puts down a yellow block at X:2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:2 Y:1 Z:2]
+<Architect> good now orange
+<Builder> ok
+<Architect> place an orange to the right of each of the rightmost yellows
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+[Builder puts down a orange block at X:1 Y:1 Z:2]
+<Architect> place an orange vertically up and right to each of those
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:2]
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+[Builder picks up a orange block at X:0 Y:1 Z:2]
+<Architect> good
+<Architect> now again
+[Builder puts down a orange block at X:-1 Y:2 Z:2]
+[Builder puts down a orange block at X:-1 Y:3 Z:2]
+[Builder puts down a orange block at X:-1 Y:2 Z:-2]
+[Builder puts down a orange block at X:-1 Y:3 Z:-2]
+[Builder picks up a orange block at X:-1 Y:2 Z:-2]
+<Architect> good
+<Architect> now red
+<Builder> ok
+<Architect> place a red to the right of each of the last oranges
+[Builder puts down a red block at X:-1 Y:3 Z:-3]
+[Builder puts down a red block at X:-1 Y:3 Z:3]
+<Architect> oh wait you changed your orientation
+<Builder> from here?
+<Architect> yes
+[Builder puts down a red block at X:-2 Y:3 Z:-2]
+[Builder puts down a red block at X:-2 Y:3 Z:2]
+[Builder picks up a red block at X:-1 Y:3 Z:3]
+<Architect> keep your orientation so that the yellow arrow points left
+<Builder> ok
+<Builder> sorry about that
+<Architect> thats okay
+<Architect> place one red block vertically up and towards the middle of those two last reds
+[Builder puts down a red block at X:-2 Y:4 Z:-2]
+[Builder puts down a red block at X:-2 Y:4 Z:-1]
+<Architect> so one for each
+[Builder puts down a red block at X:-2 Y:4 Z:2]
+[Builder puts down a red block at X:-2 Y:4 Z:1]
+[Builder picks up a red block at X:-2 Y:4 Z:2]
+[Builder picks up a red block at X:-2 Y:4 Z:-2]
+<Architect> good
+<Architect> now do the same thing but below
+[Builder puts down a yellow block at X:-3 Y:4 Z:1]
+[Builder puts down a yellow block at X:-3 Y:4 Z:0]
+[Builder puts down a yellow block at X:-3 Y:5 Z:0]
+<Architect> below the first two reds and towards the middle
+[Builder picks up a yellow block at X:-3 Y:4 Z:1]
+[Builder picks up a yellow block at X:-3 Y:5 Z:0]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder picks up a yellow block at X:-2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:3 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+<Architect> its gotta be red tho
+[Builder picks up a yellow block at X:-1 Y:3 Z:1]
+[Builder picks up a yellow block at X:-2 Y:3 Z:1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:-1 Y:3 Z:1]
+<Builder> like this?
+<Architect> no they should be two blocks down from the last ones you did
+<Architect> vertically down
+[Builder picks up a red block at X:-1 Y:3 Z:-1]
+[Builder picks up a red block at X:-1 Y:3 Z:1]
+[Builder puts down a red block at X:-3 Y:1 Z:2]
+[Builder puts down a red block at X:-3 Y:1 Z:-2]
+[Builder puts down a red block at X:-2 Y:1 Z:2]
+[Builder puts down a red block at X:-2 Y:1 Z:-2]
+<Architect> let me rephrase
+<Builder> yeah I'm a little confused
+<Architect> from the top most reds, place a block below each but leave a space
+<Architect> so these new blocks will be two blocks below the original ones
+[Builder picks up a red block at X:-2 Y:1 Z:-2]
+[Builder picks up a red block at X:-2 Y:1 Z:2]
+[Builder puts down a red block at X:-2 Y:1 Z:1]
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+<Architect> move them vertically one up
+<Builder> gotcha
+[Builder puts down a red block at X:-2 Y:2 Z:-1]
+[Builder puts down a red block at X:-2 Y:2 Z:1]
+[Builder picks up a red block at X:-2 Y:1 Z:1]
+[Builder picks up a red block at X:-2 Y:1 Z:-1]
+<Architect> good
+<Architect> now two more blocks
+<Builder> are we close to finishing?
+<Builder> gotcha
+<Architect> one block in between those last two but touching the ground
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+<Architect> good
+<Architect> now one block 4 spaces above that
+[Builder puts down a red block at X:-2 Y:4 Z:0]
+[Builder puts down a red block at X:-2 Y:5 Z:0]
+[Builder picks up a red block at X:-2 Y:4 Z:0]
+<Architect> good job
+<Architect> its done
+<Builder> sweeeeeeet

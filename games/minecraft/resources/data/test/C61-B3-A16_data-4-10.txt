@@ -1,0 +1,81 @@
+B3-A16-C61-1523398543923
+<Builder> Mission has started.
+<Builder> hello architect
+<Architect> hi!
+<Builder> what are we building today?
+<Architect> we are building a chair; sorry for the delay, was working on controls
+<Architect> so to start
+<Builder> no problem at all
+<Architect> build two rows of yellow blocks parallel to one another
+<Builder> upright or on the ground?
+<Architect> should be 3 blocks in length, separated by one space
+[Builder puts down a yellow block at X:1 Y:1 Z:1]
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+[Builder puts down a yellow block at X:1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+<Architect> perfect!
+<Architect> build red blocks to fill in the center space between the two rows
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+<Builder> like that?
+<Architect> yep!
+<Architect> build an orange square on top on that structure
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+<Architect> so it is flat '
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+<Builder> like that?
+<Architect> yep!
+<Architect> now remove all of the red blocks
+[Builder picks up a red block at X:0 Y:1 Z:-1]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:1]
+<Architect> and now we have to build the bacl rest of the chair
+<Builder> ok!
+<Architect> so it should be two blocks high, one block thick, and three blocks long
+<Architect> on top of the edge to your right
+<Builder> orange?
+<Architect> yellow, sorry!
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+[Builder puts down a yellow block at X:1 Y:3 Z:1]
+[Builder puts down a yellow block at X:1 Y:4 Z:1]
+[Builder puts down a yellow block at X:0 Y:4 Z:1]
+[Builder puts down a yellow block at X:-1 Y:4 Z:1]
+<Builder> like that?
+<Architect> i think so!
+<Builder> awesome
+<Builder> i'll let you end us so you can check the final product each time
+<Architect> we made a small error
+<Architect> well i did
+<Builder> no problem, what should i do?
+<Builder> just need to take the middle yellows out?
+<Architect> the back rest should be build so it is directly on top of the 3 block-long leg
+<Architect> it's perpendicular right now
+<Builder> oh i get it
+[Builder picks up a yellow block at X:-1 Y:4 Z:1]
+[Builder picks up a yellow block at X:0 Y:4 Z:1]
+[Builder picks up a yellow block at X:1 Y:4 Z:1]
+[Builder picks up a yellow block at X:0 Y:3 Z:1]
+[Builder picks up a yellow block at X:-1 Y:3 Z:1]
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:0]
+[Builder puts down a yellow block at X:1 Y:4 Z:1]
+<Builder> how's that?
+<Architect> ok, now we just have to remove the center blocks of the legs
+[Builder picks up a yellow block at X:-1 Y:1 Z:0]
+<Architect> and THEN we should be good
+[Builder picks up a yellow block at X:1 Y:1 Z:0]
+<Builder> cool, so like that?
+<Architect> yep!

@@ -1,0 +1,13 @@
+B37-A46-C3-1523304627789
+<Builder> Mission has started.
+<Builder> hi!
+<Architect> put 2 blue blocks on the ground
+<Builder> next to each other?
+<Architect> yes
+<Builder> ok
+[Builder puts down a blue block at X:-3 Y:1 Z:0]
+[Builder puts down a blue block at X:-2 Y:1 Z:0]
+<Architect> now put one on top to make an L
+[Builder puts down a blue block at X:-3 Y:2 Z:0]
+<Builder> like that?
+<Architect> yes

@@ -1,0 +1,97 @@
+B35-A34-C115-1524007397413
+<Builder> Mission has started.
+<Architect> welcome
+<Architect> to table building simulator
+[Builder puts down a orange block at X:4 Y:1 Z:4]
+<Architect> today we will be building 2 tables
+[Builder puts down a orange block at X:4 Y:1 Z:4]
+[Builder puts down a orange block at X:2 Y:2 Z:4]
+[Builder puts down a orange block at X:3 Y:2 Z:3]
+[Builder puts down a orange block at X:1 Y:2 Z:3]
+[Builder puts down a orange block at X:1 Y:1 Z:3]
+<Architect> please stop
+<Builder> ctrl c
+[Builder picks up a orange block at X:2 Y:2 Z:4]
+[Builder picks up a orange block at X:3 Y:2 Z:4]
+[Builder picks up a orange block at X:2 Y:2 Z:3]
+[Builder picks up a orange block at X:1 Y:2 Z:3]
+[Builder picks up a orange block at X:1 Y:1 Z:3]
+[Builder picks up a orange block at X:3 Y:2 Z:3]
+[Builder picks up a orange block at X:4 Y:2 Z:4]
+[Builder picks up a orange block at X:4 Y:1 Z:4]
+<Architect> why
+<Builder> continue
+<Architect> um
+<Architect> anyways
+[Builder puts down a blue block at X:-2 Y:1 Z:3]
+[Builder puts down a blue block at X:-1 Y:1 Z:3]
+[Builder picks up a blue block at X:-1 Y:1 Z:4]
+[Builder picks up a blue block at X:-1 Y:1 Z:3]
+[Builder picks up a blue block at X:-2 Y:1 Z:3]
+[Builder puts down a blue block at X:-2 Y:1 Z:3]
+[Builder puts down a blue block at X:-1 Y:1 Z:3]
+<Architect> go to dead center
+[Builder picks up a blue block at X:-1 Y:1 Z:4]
+[Builder picks up a blue block at X:-1 Y:1 Z:3]
+[Builder picks up a blue block at X:-2 Y:1 Z:3]
+<Architect> place one green
+[Builder puts down a green block at X:0 Y:1 Z:0]
+<Architect> place 2 yellow blocks, one on either side
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+<Architect> get off of the green
+<Architect> behind the 2 yellow blocks place 2 green blocks
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+[Builder puts down a green block at X:1 Y:1 Z:-2]
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+<Architect> replace the end green blocks with yellow blocks
+[Builder picks up a green block at X:-1 Y:1 Z:-2]
+[Builder picks up a green block at X:1 Y:1 Z:-2]
+[Builder puts down a yellow block at X:1 Y:1 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-2]
+<Architect> remove all of the green
+[Builder picks up a green block at X:-1 Y:1 Z:-1]
+[Builder picks up a green block at X:0 Y:1 Z:0]
+[Builder picks up a green block at X:1 Y:1 Z:-1]
+<Architect> build a 3x3 red donut on top of the 4 yellow table legs
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder picks up a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder picks up a red block at X:-2 Y:3 Z:-1]
+[Builder picks up a red block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-2]
+[Builder puts down a red block at X:-1 Y:2 Z:-2]
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+<Builder> ok
+<Architect> now remove one of the corners
+[Builder picks up a red block at X:-1 Y:2 Z:-2]
+<Architect> place a blue block there
+[Builder puts down a blue block at X:-1 Y:2 Z:-2]
+<Architect> now we are building a floating table, and that blue block is one of the legs
+[Builder puts down a blue block at X:-1 Y:3 Z:-2]
+<Builder> same deisgn
+<Architect> yeah
+<Architect> but the donut is purple
+[Builder picks up a blue block at X:-1 Y:3 Z:-2]
+[Builder puts down a blue block at X:-1 Y:3 Z:-2]
+[Builder picks up a blue block at X:-1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-3]
+[Builder puts down a purple block at X:-1 Y:3 Z:-4]
+[Builder puts down a purple block at X:-2 Y:3 Z:-2]
+[Builder puts down a purple block at X:-3 Y:3 Z:-2]
+[Builder puts down a purple block at X:-3 Y:3 Z:-3]
+[Builder puts down a purple block at X:-3 Y:3 Z:-4]
+[Builder puts down a purple block at X:-2 Y:3 Z:-4]
+[Builder puts down a blue block at X:-1 Y:2 Z:-4]
+[Builder puts down a blue block at X:-3 Y:2 Z:-4]
+[Builder puts down a blue block at X:-3 Y:2 Z:-2]
+<Architect> perfect
+<Architect> 10/10
+<Builder> swwwwweeeeetttt

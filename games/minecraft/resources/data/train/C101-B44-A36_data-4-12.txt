@@ -1,0 +1,121 @@
+B44-A36-C101-1523573407514
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hi
+<Builder> was that last one a warmup? seemed really easy
+<Architect> ya haha
+<Architect> get a yellow block
+<Builder> you don't have to give me individual instructions for getting out colored blocks. Just tell me to place x colored block here or there
+<Architect> ok cool
+<Architect> move so that you're at the third row from the bottom of the square
+<Architect> ok place 2 orange blocks flat next to each other
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+<Architect> oh sorry place the 2 blocks so that one is in front of you and the other one is behind that one
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+[Builder picks up a orange block at X:-1 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+<Architect> then place a block on top of each
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+<Architect> ok then place 2 blocks to the right of the blocks on the top layer
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-2]
+<Architect> then place another 2
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-2]
+<Architect> and then another 2
+[Builder puts down a orange block at X:-3 Y:2 Z:-1]
+[Builder puts down a orange block at X:-3 Y:2 Z:-2]
+<Architect> and then place 2 blocks on the lower layer underneath the ones you just put down
+[Builder puts down a orange block at X:-3 Y:1 Z:-1]
+[Builder puts down a orange block at X:-3 Y:1 Z:-2]
+<Architect> ok go to the top right corner of the top layer
+<Architect> uh step so that you're on top of the block in front of you
+<Architect> and then place a green block on the top layer
+<Architect> wait
+<Architect> to the side of the top layer
+<Builder> I think the instructions would be more effective if you told me where to place blocks relative to where other blocks are rather than where I am located
+[Builder puts down a green block at X:-3 Y:3 Z:-1]
+[Builder picks up a green block at X:-3 Y:3 Z:-1]
+<Architect> o ok sorry
+[Builder puts down a green block at X:-3 Y:3 Z:-1]
+<Builder> does the green block go here?
+<Architect> no it goes to your right
+[Builder puts down a green block at X:-4 Y:3 Z:-1]
+[Builder picks up a green block at X:-3 Y:3 Z:-1]
+<Builder> here?
+<Architect> no on the 2nd layer of the orange structure
+[Builder picks up a green block at X:-4 Y:3 Z:-1]
+[Builder puts down a green block at X:-4 Y:2 Z:-1]
+<Architect> like in front of the corner block not the side
+<Builder> ok how many spaces forwar/backward/left/right/up/down from the current location of the green block?
+<Architect> one space up, one space left
+[Builder puts down a green block at X:-3 Y:3 Z:-1]
+[Builder picks up a green block at X:-4 Y:2 Z:-1]
+<Architect> *forward not up
+[Builder picks up a green block at X:-3 Y:3 Z:-1]
+[Builder picks up a orange block at X:-3 Y:2 Z:-2]
+[Builder puts down a orange block at X:-3 Y:2 Z:-2]
+[Builder puts down a orange block at X:-3 Y:2 Z:-3]
+[Builder picks up a orange block at X:-3 Y:2 Z:-3]
+[Builder picks up a orange block at X:-3 Y:2 Z:-2]
+[Builder puts down a green block at X:-3 Y:2 Z:-2]
+<Builder> here?
+<Architect> no replace the one you just put down with an orange block
+[Builder picks up a green block at X:-3 Y:2 Z:-2]
+[Builder puts down a orange block at X:-3 Y:2 Z:-2]
+[Builder puts down a green block at X:-4 Y:2 Z:-2]
+[Builder puts down a green block at X:-3 Y:2 Z:-3]
+[Builder picks up a green block at X:-4 Y:2 Z:-2]
+<Builder> here?
+<Architect> ya like that but on the other side
+[Builder picks up a green block at X:-3 Y:2 Z:-3]
+[Builder puts down a green block at X:-3 Y:2 Z:0]
+<Architect> ok good
+<Architect> now place another green block in front of the one you just put down
+<Builder> do you mean behind?
+[Builder puts down a green block at X:-3 Y:2 Z:1]
+<Architect> o ya sorry
+<Builder> the green block cannot be in front because there is an orange block there
+<Architect> ok then place a green block to the right of the one you just put down
+[Builder puts down a green block at X:-4 Y:2 Z:1]
+<Architect> wait no left sorry
+[Builder picks up a green block at X:-4 Y:2 Z:1]
+[Builder puts down a green block at X:-2 Y:2 Z:1]
+<Architect> ok then place a green block behind that one
+[Builder puts down a green block at X:-2 Y:2 Z:2]
+<Architect> then place a green block to the left of that one
+[Builder puts down a green block at X:-1 Y:2 Z:2]
+<Architect> then place a green block behind that one
+[Builder puts down a green block at X:-1 Y:2 Z:3]
+<Architect> then place a green block to the left of the one you just put down
+[Builder puts down a green block at X:0 Y:2 Z:3]
+<Architect> ok good
+<Architect> now
+<Architect> make a yellow structure just like how you made the orange one
+<Architect> it's the same structure as the orange one
+<Builder> where?
+<Architect> behind the green blocks
+[Builder puts down a yellow block at X:0 Y:2 Z:4]
+[Builder puts down a yellow block at X:-1 Y:2 Z:4]
+[Builder puts down a yellow block at X:-2 Y:2 Z:4]
+[Builder puts down a yellow block at X:-3 Y:2 Z:4]
+[Builder picks up a yellow block at X:-3 Y:2 Z:4]
+[Builder puts down a yellow block at X:-2 Y:1 Z:4]
+[Builder puts down a yellow block at X:-2 Y:1 Z:5]
+[Builder puts down a yellow block at X:-2 Y:2 Z:5]
+[Builder puts down a yellow block at X:-1 Y:2 Z:5]
+[Builder puts down a yellow block at X:0 Y:2 Z:5]
+[Builder puts down a yellow block at X:0 Y:1 Z:4]
+[Builder puts down a yellow block at X:0 Y:1 Z:5]
+[Builder picks up a yellow block at X:-2 Y:1 Z:5]
+[Builder picks up a yellow block at X:-2 Y:1 Z:4]
+[Builder puts down a yellow block at X:-3 Y:2 Z:4]
+[Builder puts down a yellow block at X:-3 Y:2 Z:5]
+[Builder puts down a yellow block at X:-3 Y:1 Z:4]
+[Builder puts down a yellow block at X:-3 Y:1 Z:5]
+<Builder> is this good
+<Architect> ok nice
+<Architect> ya thats good

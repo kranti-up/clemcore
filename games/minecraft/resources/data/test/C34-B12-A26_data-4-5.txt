@@ -1,0 +1,42 @@
+B12-A26-C34-1522939450817
+<Builder> Mission has started.
+<Architect> Hey friend
+<Architect> We're building a big S on the ground
+<Builder> ok
+<Builder> what color?
+<Architect> First, use place three red bricks on the ground
+[Builder puts down a red block at X:0 Y:1 Z:4]
+[Builder puts down a red block at X:-1 Y:1 Z:4]
+<Architect> The S will have three colors
+[Builder puts down a red block at X:-2 Y:1 Z:4]
+<Architect> Now go add three more red bricks going toward the center of the white square
+[Builder puts down a red block at X:-1 Y:1 Z:3]
+[Builder puts down a red block at X:-1 Y:1 Z:2]
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+<Architect> One more to your left
+[Builder puts down a red block at X:0 Y:1 Z:1]
+<Architect> Sorry I misspoke
+[Builder puts down a red block at X:0 Y:1 Z:3]
+[Builder puts down a red block at X:0 Y:1 Z:2]
+[Builder picks up a red block at X:-1 Y:1 Z:3]
+[Builder picks up a red block at X:-1 Y:1 Z:2]
+[Builder picks up a red block at X:-1 Y:1 Z:1]
+<Architect> Perfect!
+<Builder> likethat?
+<Builder> ok
+<Architect> Yes! Now place a yellow block directly in front of you
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+<Architect> So it is adjacent to the last red brick
+[Builder picks up a yellow block at X:-1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+<Architect> Nice
+<Architect> Now create the mirror image of the red bricks with the green bricks, completing the S
+[Builder puts down a green block at X:-2 Y:1 Z:1]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:1 Z:-1]
+[Builder puts down a green block at X:-2 Y:1 Z:-2]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-2]

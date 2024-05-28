@@ -1,0 +1,48 @@
+B44-A15-C121-1523893512968
+<Builder> Mission has started.
+<Builder> ready
+<Architect> okay, easy one
+<Architect> make two stacks of two red blocks each, with a one tile gap in between
+<Architect> near the center
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+<Architect> and a 3x3 vertical square of orange blocks on top of those
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+[Builder puts down a orange block at X:1 Y:5 Z:0]
+[Builder puts down a orange block at X:0 Y:5 Z:0]
+[Builder puts down a orange block at X:-1 Y:5 Z:0]
+<Architect> put an extra orange block on the side of one of the topmost orange blocks, parallel to all the others
+<Architect> this is a 2d structure
+<Architect> so everything's gonna be in the same plane
+[Builder puts down a orange block at X:2 Y:5 Z:0]
+<Architect> okay, and one more orange block diagonally down from that
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+[Builder puts down a orange block at X:3 Y:4 Z:0]
+<Architect> in a staircase
+[Builder picks up a orange block at X:2 Y:4 Z:0]
+<Architect> okay, now on the other side of the top of the orange square, you're gonna want another orange block in an upwards staircase
+[Builder puts down a orange block at X:-2 Y:5 Z:0]
+[Builder puts down a orange block at X:-2 Y:6 Z:0]
+[Builder picks up a orange block at X:-2 Y:5 Z:0]
+<Architect> yep! and extend that staircase with two more orange blocks
+[Builder puts down a orange block at X:-3 Y:6 Z:0]
+[Builder puts down a orange block at X:-3 Y:7 Z:0]
+[Builder picks up a orange block at X:-3 Y:6 Z:0]
+[Builder puts down a orange block at X:-4 Y:7 Z:0]
+[Builder puts down a orange block at X:-4 Y:8 Z:0]
+[Builder picks up a orange block at X:-4 Y:7 Z:0]
+<Architect> perfect! and one more yellow block out front of the highest orange block
+<Architect> looks kinda like an orange giraffe
+[Builder puts down a yellow block at X:-4 Y:8 Z:-1]
+[Builder picks up a yellow block at X:-4 Y:8 Z:-1]
+[Builder puts down a yellow block at X:-5 Y:8 Z:0]
+<Builder> like that?
+<Architect> perfect! super easy
+<Builder> ecin

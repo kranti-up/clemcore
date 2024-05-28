@@ -1,0 +1,95 @@
+B34-A31-C113-1523651402802
+<Builder> Mission has started.
+<Builder> :)
+<Architect> This one is a little difficult, we will be building some large numbers
+<Builder> like the block I but it's a number
+<Builder> how many digits?
+<Architect> Right
+<Architect> First we will make a 2
+<Builder> and what color(s)
+<Architect> The 2 will be green
+<Architect> In the middle, make a row of three green blocks
+[Builder puts down a green block at X:2 Y:1 Z:1]
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+<Builder> should I move that?
+<Architect> The placement is fine, but switch to the other side
+<Builder> shift it?
+<Architect> Good
+<Architect> Now on the left block, build two more green blocks upward
+[Builder puts down a green block at X:0 Y:2 Z:1]
+[Builder puts down a green block at X:0 Y:3 Z:1]
+<Architect> Two green blocks to the right, off the top green block
+<Builder> this is going to be like a HEX 2?
+[Builder puts down a green block at X:1 Y:3 Z:1]
+[Builder puts down a green block at X:2 Y:3 Z:1]
+[Builder puts down a green block at X:2 Y:4 Z:1]
+<Architect> Yeah, the top part of the 2 now.
+[Builder puts down a green block at X:2 Y:5 Z:1]
+[Builder puts down a green block at X:1 Y:5 Z:1]
+[Builder puts down a green block at X:0 Y:5 Z:1]
+<Builder> like that?
+<Architect> Perfect!
+<Architect> Now go to the lower righthand corner of the two
+<Architect> Behind the right-most green block, place a purple block
+[Builder puts down a purple block at X:2 Y:1 Z:0]
+<Builder> there?
+<Builder> that's behind
+<Architect> Yes, that's good
+<Builder> gr8
+<Architect> Now moving right, place two more purple blocks
+[Builder puts down a purple block at X:3 Y:1 Z:0]
+[Builder puts down a purple block at X:4 Y:1 Z:0]
+<Architect> This one will be an 8
+[Builder puts down a purple block at X:4 Y:2 Z:0]
+[Builder puts down a purple block at X:4 Y:3 Z:0]
+<Builder> same height?
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+<Architect> Correct, same height
+[Builder puts down a purple block at X:2 Y:3 Z:0]
+[Builder puts down a purple block at X:3 Y:3 Z:0]
+[Builder puts down a purple block at X:2 Y:4 Z:0]
+[Builder puts down a purple block at X:2 Y:5 Z:0]
+[Builder puts down a purple block at X:3 Y:5 Z:0]
+[Builder puts down a purple block at X:4 Y:5 Z:0]
+[Builder puts down a purple block at X:4 Y:4 Z:0]
+<Builder> like that?
+<Architect> That's good
+<Architect> Now come to the side of the 8 so the 2 is behind the 8
+<Architect> Go to the bottom righthand corner of the 8
+<Architect> Place a yellow block diagonal to the corner of the 8
+[Builder puts down a yellow block at X:1 Y:1 Z:-1]
+<Builder> there?
+<Architect> Yes
+<Architect> Now two more yellow blocks to the right of that
+<Builder> alright. What number is this?
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+<Architect> 6
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:1 Y:4 Z:-1]
+[Builder puts down a yellow block at X:1 Y:5 Z:-1]
+[Builder puts down a yellow block at X:0 Y:5 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:5 Z:-1]
+<Builder> like that?
+<Architect> Nice, that's perfect
+<Architect> Now go to the bottom right corner of the 6
+<Architect> I'm sorry, bottom left corner. My mistake
+<Builder> you good
+<Architect> Place an orange block right infront of that yellow block
+[Builder puts down a orange block at X:1 Y:1 Z:-2]
+<Architect> Good, now make it a tower the same heigh as the other numbers
+[Builder puts down a orange block at X:1 Y:2 Z:-2]
+[Builder puts down a orange block at X:1 Y:3 Z:-2]
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+[Builder puts down a orange block at X:1 Y:5 Z:-2]
+<Architect> Nice, it will be a 7. So we just need two more orange blocks off the left side of the tower
+[Builder puts down a orange block at X:2 Y:5 Z:-2]
+[Builder puts down a orange block at X:3 Y:5 Z:-2]
+<Architect> Fantastic. Let me just double check this
+<Builder> just a bunch of colorful numbers
+<Architect> Looks fine to me, good job

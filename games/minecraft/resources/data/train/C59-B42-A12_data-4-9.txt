@@ -1,0 +1,38 @@
+B42-A12-C59-1523308234826
+<Builder> Mission has started.
+<Builder> ready to go
+<Architect> this looks like the uneven bars at the olympics
+<Architect> star with a red pillar 2 high in the middle
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+<Architect> orange on top
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+<Architect> three green in any direction
+<Architect> as abar
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:3 Y:3 Z:0]
+<Architect> then orange
+[Builder puts down a orange block at X:4 Y:3 Z:0]
+<Architect> and 2 red back to earth
+[Builder puts down a red block at X:4 Y:2 Z:0]
+[Builder puts down a red block at X:4 Y:1 Z:0]
+<Architect> another red tower 3 high three blocks away from any previous one
+<Architect> to make a higher parallel bar
+[Builder puts down a red block at X:0 Y:1 Z:-4]
+<Architect> 3 empty spaces
+<Architect> yes
+[Builder puts down a red block at X:0 Y:2 Z:-4]
+[Builder puts down a red block at X:0 Y:3 Z:-4]
+<Architect> 3 tall with orange on top
+[Builder puts down a orange block at X:0 Y:4 Z:-4]
+<Architect> 3 yelow in the middle and a similar pillar going down
+<Builder> 3 red 1 orange?
+[Builder puts down a yellow block at X:1 Y:4 Z:-4]
+[Builder puts down a yellow block at X:2 Y:4 Z:-4]
+[Builder puts down a yellow block at X:3 Y:4 Z:-4]
+[Builder puts down a orange block at X:4 Y:4 Z:-4]
+<Architect> yes
+[Builder puts down a red block at X:4 Y:3 Z:-4]
+[Builder puts down a red block at X:4 Y:2 Z:-4]
+[Builder puts down a red block at X:4 Y:1 Z:-4]

@@ -1,0 +1,83 @@
+B24-A25-C48-1523056660291
+<Builder> Mission has started.
+<Architect> ok, this is a complex type of build
+<Architect> so we'll go plane by plane again
+<Builder> aright
+<Architect> just start in the center of the grid, put 2 purple blocks down
+[Builder puts down a purple block at X:0 Y:1 Z:-1]
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder picks up a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+<Architect> kk plane 1 done
+<Architect> on the right purple block, put a purple block
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+<Architect> plane 2 done
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder picks up a red block at X:1 Y:1 Z:-1]
+<Architect> on top of the purple block, put another one
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+<Architect> plane 3 done
+<Architect> on top of the purple block, put a blue block
+[Builder puts down a blue block at X:0 Y:4 Z:-1]
+<Architect> plane 4 done
+<Architect> on top of the blue block, put another blue blocl
+[Builder puts down a blue block at X:0 Y:5 Z:-1]
+<Architect> plane 5 done
+<Architect> put another blue block on top
+[Builder puts down a blue block at X:0 Y:6 Z:-1]
+<Architect> plane 6 done
+<Architect> this is where it gets interesting
+<Architect> first put down a blue block
+[Builder puts down a blue block at X:0 Y:7 Z:-1]
+<Architect> on the same plane facing you, leave a space and then put 2 red blocks down in a row
+[Builder puts down a red block at X:1 Y:7 Z:-1]
+[Builder puts down a red block at X:2 Y:7 Z:-1]
+[Builder puts down a red block at X:3 Y:7 Z:-1]
+[Builder picks up a red block at X:1 Y:7 Z:-1]
+<Architect> and the same thing on the other side
+[Builder puts down a red block at X:-1 Y:7 Z:-1]
+[Builder puts down a red block at X:-2 Y:7 Z:-1]
+[Builder puts down a red block at X:-3 Y:7 Z:-1]
+[Builder picks up a red block at X:-1 Y:7 Z:-1]
+<Architect> actually all 4 sides
+[Builder puts down a red block at X:0 Y:7 Z:0]
+[Builder puts down a red block at X:0 Y:7 Z:1]
+[Builder puts down a red block at X:0 Y:7 Z:2]
+[Builder picks up a red block at X:0 Y:7 Z:0]
+<Architect> the build is symmetric from here
+[Builder puts down a red block at X:0 Y:7 Z:-2]
+[Builder puts down a red block at X:0 Y:7 Z:-3]
+[Builder puts down a red block at X:0 Y:7 Z:-4]
+[Builder picks up a red block at X:0 Y:7 Z:-2]
+<Architect> then an orange block on the left and right of each of the more inner red blocks
+[Builder puts down a orange block at X:2 Y:7 Z:-2]
+[Builder puts down a orange block at X:2 Y:7 Z:0]
+[Builder puts down a orange block at X:1 Y:7 Z:1]
+[Builder puts down a orange block at X:-1 Y:7 Z:1]
+[Builder puts down a orange block at X:-2 Y:7 Z:0]
+[Builder puts down a orange block at X:-2 Y:7 Z:-2]
+[Builder puts down a orange block at X:-1 Y:7 Z:-3]
+[Builder puts down a orange block at X:1 Y:7 Z:-3]
+<Architect> perfect, plane 7 done
+<Architect> ok, put a red block on top of the blue block
+[Builder puts down a red block at X:0 Y:8 Z:-1]
+<Architect> then one on all 4 faces
+[Builder puts down a red block at X:0 Y:8 Z:-2]
+[Builder puts down a red block at X:1 Y:8 Z:-1]
+[Builder puts down a red block at X:0 Y:8 Z:0]
+[Builder puts down a red block at X:-1 Y:8 Z:-1]
+<Architect> then one outward from each red block you just put down
+[Builder puts down a red block at X:0 Y:8 Z:1]
+[Builder puts down a red block at X:-2 Y:8 Z:-1]
+[Builder puts down a red block at X:0 Y:8 Z:-3]
+[Builder puts down a red block at X:2 Y:8 Z:-1]
+<Architect> and then fill the gaps on that plane with 4 orange blocks
+[Builder puts down a orange block at X:1 Y:8 Z:0]
+[Builder puts down a orange block at X:-1 Y:8 Z:0]
+[Builder puts down a orange block at X:-1 Y:8 Z:-2]
+[Builder puts down a orange block at X:1 Y:8 Z:-2]
+<Architect> plane 8 done
+<Architect> top it off with a red block and we done
+[Builder puts down a red block at X:0 Y:9 Z:-1]
+<Architect> lit
+<Builder> kool

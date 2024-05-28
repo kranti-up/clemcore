@@ -1,0 +1,29 @@
+B27-A25-C96-1523573042341
+<Builder> Mission has started.
+<Architect> ok this one looks fun
+<Builder> ready!
+<Architect> in the top left corner, put 3 red blocks
+<Architect> in the leftmost corner, the block below that, and the block to the right of the corner
+[Builder puts down a red block at X:5 Y:1 Z:5]
+[Builder puts down a red block at X:5 Y:1 Z:4]
+[Builder puts down a red block at X:4 Y:1 Z:5]
+<Architect> yup, just like that
+<Architect> then put a red block on top of the corner block
+[Builder puts down a red block at X:5 Y:2 Z:5]
+<Architect> ok, now we're going to replicate this structure exactly in all 4 corners
+<Architect> in the right corner, do this with yellow blocks
+[Builder puts down a yellow block at X:-5 Y:1 Z:5]
+[Builder puts down a yellow block at X:-4 Y:1 Z:5]
+[Builder puts down a yellow block at X:-5 Y:1 Z:4]
+[Builder puts down a yellow block at X:-5 Y:2 Z:5]
+<Architect> in the bottom right corner, do it with green blocks
+[Builder puts down a green block at X:-5 Y:1 Z:-5]
+[Builder puts down a green block at X:-5 Y:1 Z:-4]
+[Builder puts down a green block at X:-4 Y:1 Z:-5]
+<Architect> and then purple blocks in the bottom left
+[Builder puts down a green block at X:-5 Y:2 Z:-5]
+[Builder puts down a purple block at X:5 Y:1 Z:-5]
+[Builder puts down a purple block at X:4 Y:1 Z:-5]
+[Builder puts down a purple block at X:5 Y:1 Z:-4]
+[Builder puts down a purple block at X:5 Y:2 Z:-5]
+<Architect> ok we're done!

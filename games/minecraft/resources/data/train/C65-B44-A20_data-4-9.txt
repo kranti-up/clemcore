@@ -1,0 +1,55 @@
+B44-A20-C65-1523286637662
+<Builder> Mission has started.
+<Architect> leave room for a lone of 7 blocks long
+<Architect> we'll start with green
+<Architect> place one green
+[Builder puts down a green block at X:-1 Y:1 Z:-4]
+<Architect> okay, now we'll add two more green in a diagonal going up and right
+[Builder puts down a green block at X:-1 Y:1 Z:-3]
+[Builder puts down a green block at X:-1 Y:2 Z:-3]
+[Builder puts down a green block at X:-1 Y:2 Z:-2]
+[Builder puts down a green block at X:-1 Y:3 Z:-2]
+[Builder picks up a green block at X:-1 Y:2 Z:-2]
+[Builder picks up a green block at X:-1 Y:1 Z:-3]
+<Architect> great! now place one red to the right of the top green
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+<Architect> now we'll go back to green
+<Architect> from the red block, make a diagonal of 3 green going down and to the right
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:1]
+[Builder picks up a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:2]
+[Builder picks up a green block at X:-1 Y:1 Z:1]
+<Architect> now we'll go back to red
+<Architect> put 3 red on top of the red you placed before
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:5 Z:-1]
+[Builder puts down a red block at X:-1 Y:6 Z:-1]
+<Architect> now we'll top it off with an orange block
+[Builder puts down a orange block at X:-1 Y:7 Z:-1]
+<Architect> now we'll go back to green
+<Architect> place one block of green to the left and right of the topmost red
+[Builder puts down a green block at X:-1 Y:6 Z:-2]
+[Builder puts down a green block at X:-1 Y:6 Z:0]
+<Architect> now you'll place one green to the right of the rightmost green but also one block towards you
+[Builder puts down a green block at X:-2 Y:1 Z:3]
+<Architect> on sorry i meant the greens on the top of the structure
+[Builder picks up a green block at X:-2 Y:1 Z:3]
+[Builder puts down a green block at X:-2 Y:6 Z:0]
+[Builder puts down a green block at X:-2 Y:6 Z:1]
+[Builder picks up a green block at X:-2 Y:6 Z:0]
+<Architect> and now one green to the left of the left top green, but it will also be one level higher
+[Builder puts down a green block at X:-1 Y:6 Z:-3]
+[Builder puts down a green block at X:-2 Y:6 Z:-3]
+[Builder puts down a green block at X:-2 Y:6 Z:-4]
+[Builder picks up a green block at X:-2 Y:6 Z:-4]
+[Builder puts down a green block at X:-2 Y:7 Z:-3]
+[Builder picks up a green block at X:-2 Y:6 Z:-3]
+[Builder picks up a green block at X:-1 Y:6 Z:-3]
+[Builder puts down a green block at X:-1 Y:7 Z:-3]
+[Builder picks up a green block at X:-2 Y:7 Z:-3]
+<Architect> perfect!
+<Builder> done?
+<Architect> yup!

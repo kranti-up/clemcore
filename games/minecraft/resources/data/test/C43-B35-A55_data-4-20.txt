@@ -1,0 +1,87 @@
+B35-A55-C43-1524256458640
+<Builder> Mission has started.
+<Builder> to make things easier, I'll always start at the center
+<Architect> sounds good
+<Builder> if the structure is big, I can move to the edges
+<Architect> place a red block where you are
+<Builder> just lmk
+<Architect> sounds good
+[Builder puts down a red block at X:0 Y:1 Z:1]
+<Architect> place another red block two spaces to the left of that block
+[Builder puts down a red block at X:2 Y:1 Z:1]
+<Builder> here?
+<Architect> yes
+<Builder> cool
+<Architect> place 7 green blocks as a kind of bridge over the red blocks
+<Architect> centered on the middle between the red blocks
+<Builder> in particular order?
+<Architect> just in a line
+<Builder> gotcha
+[Builder puts down a green block at X:0 Y:2 Z:1]
+[Builder puts down a green block at X:1 Y:2 Z:1]
+[Builder puts down a green block at X:2 Y:2 Z:1]
+[Builder puts down a green block at X:3 Y:2 Z:1]
+[Builder puts down a green block at X:4 Y:2 Z:1]
+[Builder puts down a green block at X:-1 Y:2 Z:1]
+[Builder puts down a green block at X:-2 Y:2 Z:1]
+<Builder> okay
+<Architect> good
+<Architect> now make two more green lines above that green line like a pyramid
+<Architect> so the next line would have 5 blocks
+<Builder> gotcha
+<Architect> and the next one would have 3
+[Builder puts down a green block at X:3 Y:3 Z:1]
+[Builder puts down a green block at X:2 Y:3 Z:1]
+[Builder puts down a green block at X:2 Y:4 Z:1]
+[Builder picks up a green block at X:2 Y:3 Z:1]
+[Builder puts down a green block at X:1 Y:3 Z:1]
+[Builder puts down a green block at X:1 Y:4 Z:1]
+[Builder picks up a green block at X:1 Y:3 Z:1]
+[Builder puts down a green block at X:1 Y:5 Z:1]
+[Builder picks up a green block at X:1 Y:4 Z:1]
+[Builder puts down a green block at X:0 Y:5 Z:1]
+[Builder puts down a green block at X:0 Y:6 Z:1]
+[Builder picks up a green block at X:0 Y:5 Z:1]
+<Builder> this look right?
+[Builder puts down a green block at X:-1 Y:6 Z:1]
+[Builder puts down a green block at X:-1 Y:7 Z:1]
+[Builder picks up a green block at X:-1 Y:6 Z:1]
+<Architect> delete the top 3 blocks of what you just did
+[Builder picks up a green block at X:0 Y:6 Z:1]
+[Builder picks up a green block at X:-1 Y:7 Z:1]
+[Builder picks up a green block at X:1 Y:5 Z:1]
+<Architect> now place 4 blocks to the right of the bottom green block
+[Builder puts down a green block at X:2 Y:3 Z:1]
+[Builder puts down a green block at X:1 Y:3 Z:1]
+[Builder puts down a green block at X:0 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+<Architect> and two to the right of the top green block
+[Builder puts down a green block at X:1 Y:4 Z:1]
+[Builder puts down a green block at X:0 Y:4 Z:1]
+<Architect> good
+<Builder> oh, you wanted me to stack them
+<Builder> i misunderstood
+<Architect> yes
+<Architect> now put 3 yellow blocks in a horizontal line above the 3 green blocks
+[Builder puts down a yellow block at X:2 Y:5 Z:1]
+[Builder puts down a yellow block at X:0 Y:5 Z:1]
+[Builder puts down a yellow block at X:1 Y:5 Z:1]
+<Architect> do it two more times
+[Builder puts down a yellow block at X:0 Y:6 Z:1]
+[Builder puts down a yellow block at X:0 Y:7 Z:1]
+[Builder puts down a yellow block at X:2 Y:6 Z:1]
+[Builder puts down a yellow block at X:2 Y:7 Z:1]
+[Builder puts down a yellow block at X:1 Y:7 Z:1]
+[Builder puts down a yellow block at X:1 Y:6 Z:1]
+<Builder> okay
+<Architect> put one yellow block on both sides of the top row
+[Builder puts down a yellow block at X:-1 Y:7 Z:1]
+[Builder puts down a yellow block at X:3 Y:7 Z:1]
+<Architect> so that the top row will have 5 yellow blocks
+<Architect> now place 1 red block above the middle of the yellow line
+[Builder puts down a red block at X:1 Y:8 Z:1]
+<Builder> is that it?
+<Architect> yes
+<Builder> looks like a person
+<Builder> sweet
+<Builder> ctrl C

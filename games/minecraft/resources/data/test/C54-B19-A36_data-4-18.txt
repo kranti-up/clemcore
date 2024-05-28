@@ -1,0 +1,84 @@
+B19-A36-C54-1524091625348
+<Builder> Mission has started.
+<Architect> hi
+<Builder> hi
+<Architect> ok go 5 spaces to the left
+<Builder> which left
+<Architect> your left
+<Builder> ok
+<Architect> then place a yellow block in front of you
+[Builder puts down a yellow block at X:4 Y:1 Z:-1]
+<Architect> then place a yellow block behind it
+[Builder puts down a yellow block at X:3 Y:1 Z:-1]
+<Architect> and then a yellow block on top of it
+[Builder puts down a yellow block at X:3 Y:2 Z:-1]
+<Architect> and then get rid of the yellow block on the ground
+[Builder picks up a yellow block at X:3 Y:1 Z:-1]
+<Architect> so that it floats
+<Architect> so it's like a staircase right
+<Architect> add one more step
+[Builder puts down a yellow block at X:2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder picks up a yellow block at X:2 Y:2 Z:-1]
+[Builder picks up a yellow block at X:2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:1 Y:1 Z:2]
+[Builder picks up a yellow block at X:1 Y:1 Z:2]
+[Builder puts down a yellow block at X:1 Y:1 Z:1]
+[Builder picks up a yellow block at X:1 Y:1 Z:1]
+<Architect> pl then 4 spaces to the left of the top yellow block
+<Architect> put a red block on the ground
+[Builder puts down a red block at X:2 Y:1 Z:3]
+<Architect> then to the right of that block, put another red block
+<Builder> should i put it one space closer to he yellow?
+<Builder> ok
+[Builder puts down a red block at X:2 Y:1 Z:2]
+<Architect> no you're good
+<Architect> then put a red block in front of the one you just placed
+[Builder puts down a red block at X:1 Y:1 Z:2]
+<Architect> and then put another red block on top of it
+[Builder puts down a red block at X:1 Y:2 Z:2]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder picks up a red block at X:1 Y:1 Z:0]
+<Architect> ok then u can get rid of the red block underneath it so that it floats
+[Builder puts down a red block at X:1 Y:1 Z:3]
+[Builder picks up a red block at X:1 Y:1 Z:3]
+[Builder picks up a red block at X:1 Y:1 Z:2]
+<Architect> and then get rid of the corner red block
+[Builder picks up a red block at X:2 Y:1 Z:2]
+<Architect> so it's like a diagonal staircase right
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:3 Z:1]
+[Builder picks up a red block at X:0 Y:2 Z:1]
+<Architect> add 2 more steps
+[Builder picks up a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:4 Z:0]
+[Builder picks up a red block at X:-1 Y:3 Z:0]
+[Builder picks up a red block at X:-1 Y:2 Z:0]
+[Builder picks up a red block at X:-1 Y:1 Z:0]
+<Architect> ok so the 2nd to last red step
+<Architect> 5 spaces in front of it, put an orange block on the ground
+[Builder puts down a orange block at X:0 Y:1 Z:-4]
+<Architect> ok then put another orange block on top of it
+[Builder puts down a orange block at X:0 Y:2 Z:-4]
+<Architect> then get rid of the orange block on the floor
+[Builder picks up a orange block at X:0 Y:1 Z:-4]
+<Architect> then add a diagonal step to the top right
+<Architect> of the orange block
+[Builder puts down a orange block at X:0 Y:3 Z:-4]
+[Builder puts down a orange block at X:-1 Y:3 Z:-4]
+[Builder puts down a orange block at X:-1 Y:3 Z:-3]
+[Builder picks up a orange block at X:-1 Y:3 Z:-4]
+[Builder picks up a orange block at X:0 Y:3 Z:-4]
+<Architect> then add one more
+[Builder puts down a orange block at X:-1 Y:4 Z:-3]
+[Builder puts down a orange block at X:-2 Y:4 Z:-3]
+[Builder puts down a orange block at X:-2 Y:4 Z:-2]
+[Builder picks up a orange block at X:-2 Y:4 Z:-3]
+[Builder picks up a orange block at X:-1 Y:4 Z:-3]
+<Architect> ok i think we're good
+<Builder> cool

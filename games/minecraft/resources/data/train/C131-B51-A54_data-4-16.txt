@@ -1,0 +1,114 @@
+B51-A54-C131-1523914706199
+<Builder> Mission has started.
+<Builder> hey do u know how many we've done so far lol
+<Architect> This one's going to be a table with surface 3x6 and legs of 2 blocks (4 or 5 so far I think)
+<Builder> nice what color
+<Architect> The legs are red so let's do them first
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:1 Z:-2]
+[Builder puts down a red block at X:2 Y:2 Z:-2]
+[Builder puts down a red block at X:-3 Y:1 Z:-2]
+[Builder puts down a red block at X:-3 Y:2 Z:-2]
+[Builder puts down a red block at X:-3 Y:1 Z:0]
+[Builder puts down a red block at X:-3 Y:2 Z:0]
+<Architect> The surface is yellow
+[Builder puts down a yellow block at X:-3 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-3 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-3 Y:3 Z:0]
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+[Builder picks up a yellow block at X:0 Y:4 Z:0]
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+[Builder puts down a yellow block at X:2 Y:3 Z:0]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-3 Y:4 Z:-2]
+[Builder picks up a yellow block at X:-3 Y:4 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:4 Z:-2]
+[Builder puts down a yellow block at X:0 Y:3 Z:-2]
+[Builder puts down a yellow block at X:1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:2 Y:3 Z:-2]
+<Architect> fix your view from one side
+<Architect> On the bottom right, put an orange block on top
+[Builder puts down a orange block at X:2 Y:4 Z:-2]
+<Architect> Put another one (temp block) on that
+[Builder puts down a orange block at X:2 Y:5 Z:-2]
+<Architect> One more temp block next to the temp block
+[Builder puts down a orange block at X:2 Y:5 Z:-1]
+<Architect> sorry, other side
+[Builder puts down a orange block at X:2 Y:5 Z:-3]
+[Builder picks up a orange block at X:2 Y:5 Z:-1]
+<Architect> and towards you put one orange block
+[Builder puts down a orange block at X:3 Y:5 Z:-3]
+<Architect> You can break the temps now
+[Builder picks up a orange block at X:2 Y:5 Z:-2]
+[Builder picks up a orange block at X:2 Y:5 Z:-3]
+<Architect> On the third yellow block from your side put one purple
+[Builder puts down a purple block at X:3 Y:3 Z:-2]
+<Builder> like this?
+<Architect> No, I mean on top of the table
+[Builder puts down a purple block at X:1 Y:4 Z:-2]
+[Builder picks up a purple block at X:3 Y:3 Z:-2]
+<Architect> in the center, the one you're looking at now
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+[Builder picks up a purple block at X:1 Y:4 Z:-2]
+<Builder> like this ?
+<Architect> Close, the one next to it
+[Builder puts down a purple block at X:-1 Y:4 Z:-2]
+[Builder picks up a purple block at X:0 Y:4 Z:-2]
+<Architect> No no I mean in the center
+[Builder puts down a purple block at X:0 Y:4 Z:-1]
+[Builder picks up a purple block at X:-1 Y:4 Z:-2]
+<Architect> yup
+<Architect> Build one on top of that
+[Builder puts down a purple block at X:0 Y:5 Z:-1]
+<Architect> Build one towards you from the top
+[Builder puts down a purple block at X:0 Y:5 Z:0]
+<Architect> go to the right side of the purple blocks now
+<Architect> build another one from the pillar like the one you just did
+<Builder> touching the purple?
+<Architect> up
+<Architect> *yup
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:5 Z:-1]
+[Builder puts down a purple block at X:1 Y:5 Z:0]
+<Architect> You can break the last one
+[Builder puts down a purple block at X:1 Y:5 Z:1]
+[Builder picks up a purple block at X:1 Y:5 Z:0]
+[Builder picks up a purple block at X:1 Y:5 Z:1]
+<Architect> and the one below the other one
+[Builder picks up a purple block at X:1 Y:4 Z:-1]
+<Architect> up
+<Architect> *yup
+<Architect> Now go to the other side of the table
+<Builder> do the same thing?
+<Architect> No no
+<Architect> Switch to blue and put a block on the table block right in front of you
+[Builder puts down a blue block at X:-2 Y:4 Z:0]
+<Architect> Yes now to green
+[Builder puts down a green block at X:-2 Y:5 Z:0]
+<Architect> No, that was it for that part
+<Architect> The last one now
+[Builder picks up a green block at X:-2 Y:5 Z:0]
+<Architect> On the bottom left side
+<Architect> put one
+[Builder puts down a green block at X:-3 Y:4 Z:-2]
+<Architect> put a temp block
+[Builder puts down a green block at X:-3 Y:5 Z:-2]
+<Architect> go to the other side of the greens
+<Architect> and put a block on the temp like that
+[Builder puts down a green block at X:-2 Y:5 Z:-2]
+<Architect> Yup now just have to break that temp
+[Builder puts down a green block at X:-3 Y:5 Z:-1]
+[Builder picks up a green block at X:-3 Y:5 Z:-1]
+[Builder picks up a green block at X:-3 Y:5 Z:-2]
+<Architect> Nice
+<Builder> nice

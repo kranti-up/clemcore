@@ -1,0 +1,105 @@
+B29-A1-C52-1524079252247
+<Builder> Mission has started.
+<Architect> this one is pretty complicated. place four blue blocks each on the corner of a 5x5, build near the corner of the board
+[Builder puts down a blue block at X:-4 Y:1 Z:4]
+[Builder puts down a blue block at X:-4 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:0]
+[Builder puts down a blue block at X:0 Y:1 Z:4]
+<Architect> okay so each of these structures are symmetric,
+<Architect> it is a tower of three blue and one orange
+<Builder> where?
+<Architect> add two more blocks to each blue
+[Builder puts down a blue block at X:0 Y:2 Z:4]
+[Builder puts down a blue block at X:0 Y:3 Z:4]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+[Builder puts down a blue block at X:-4 Y:2 Z:0]
+[Builder puts down a blue block at X:-4 Y:3 Z:0]
+[Builder puts down a blue block at X:-4 Y:2 Z:4]
+[Builder puts down a blue block at X:-4 Y:3 Z:4]
+<Architect> now add an orange to each blue
+[Builder puts down a orange block at X:-4 Y:4 Z:4]
+[Builder puts down a orange block at X:-4 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:4]
+<Architect> okay we will try to connect each of these towers using five orange blocks i.e. diagonally
+<Architect> but the middle block floating
+<Builder> does it matter which I pair?
+<Builder> or are they all connected?
+<Architect> its looks symetric so they are all connected so if you look from the top down it kinda looks like an x, but the thing is that the bridge is one step above the top of the oranges
+<Builder> oh so they connect across the center?
+<Architect> yes
+<Builder> the bridge?
+<Architect> okay, so first place an orange block next to any of the current tops of the towers
+[Builder puts down a orange block at X:-3 Y:4 Z:4]
+<Architect> okay now make a 2x2 going towards the other tower
+<Builder> the other behind me? or to my right?
+<Architect> to your right the 2x2 is parallel to the ground
+[Builder puts down a orange block at X:-3 Y:4 Z:3]
+[Builder puts down a orange block at X:-4 Y:4 Z:3]
+<Architect> okay so place one orange block on top of the orange block closes to the middle
+[Builder puts down a orange block at X:-3 Y:5 Z:3]
+<Architect> okay now delete all of the blocks except the last one you placed and the one on top of the tower
+[Builder picks up a orange block at X:-4 Y:4 Z:3]
+[Builder picks up a orange block at X:-3 Y:4 Z:3]
+[Builder picks up a orange block at X:-3 Y:4 Z:4]
+<Architect> okay copy that to all the other towers each going towards the center
+[Builder puts down a orange block at X:0 Y:4 Z:3]
+[Builder puts down a orange block at X:-1 Y:4 Z:3]
+[Builder puts down a orange block at X:-1 Y:5 Z:3]
+[Builder picks up a orange block at X:-1 Y:4 Z:3]
+[Builder picks up a orange block at X:0 Y:4 Z:3]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+[Builder puts down a orange block at X:-1 Y:4 Z:1]
+[Builder puts down a orange block at X:-1 Y:5 Z:1]
+[Builder puts down a orange block at X:0 Y:5 Z:1]
+[Builder picks up a orange block at X:0 Y:5 Z:1]
+[Builder picks up a orange block at X:0 Y:4 Z:1]
+[Builder picks up a orange block at X:-1 Y:4 Z:1]
+[Builder puts down a orange block at X:-4 Y:4 Z:1]
+[Builder puts down a orange block at X:-4 Y:5 Z:1]
+[Builder puts down a orange block at X:-3 Y:5 Z:1]
+[Builder picks up a orange block at X:-4 Y:5 Z:1]
+[Builder picks up a orange block at X:-4 Y:4 Z:1]
+<Architect> okay add one more orange block in the center making a step
+[Builder puts down a orange block at X:-3 Y:6 Z:1]
+[Builder puts down a orange block at X:-2 Y:6 Z:1]
+[Builder puts down a orange block at X:-2 Y:6 Z:2]
+[Builder picks up a orange block at X:-2 Y:6 Z:1]
+[Builder picks up a orange block at X:-3 Y:6 Z:1]
+<Architect> okay
+<Architect> so now we have to T type structures next to this
+<Architect> build*
+<Architect> so starting with green
+<Architect> stand on the middle shadow of the orange tower thing
+<Architect> now three blocks to your left place a green block there
+[Builder puts down a green block at X:-2 Y:1 Z:-1]
+<Architect> actually one more away
+[Builder picks up a green block at X:-2 Y:1 Z:-1]
+[Builder puts down a green block at X:-2 Y:1 Z:-2]
+<Architect> okay make a tower of three
+[Builder puts down a green block at X:-2 Y:2 Z:-2]
+[Builder puts down a green block at X:-2 Y:3 Z:-2]
+<Architect> now make the top of the T add two greens
+[Builder puts down a green block at X:-3 Y:3 Z:-2]
+[Builder puts down a green block at X:-1 Y:3 Z:-2]
+<Architect> now add one green three blocks to the left and one block towards you
+<Builder> in the air?
+<Architect> no on the ground
+[Builder puts down a green block at X:0 Y:1 Z:-3]
+[Builder picks up a green block at X:0 Y:1 Z:-3]
+[Builder puts down a green block at X:1 Y:1 Z:-3]
+<Architect> actually one more block to the left
+[Builder picks up a green block at X:1 Y:1 Z:-3]
+[Builder puts down a green block at X:2 Y:1 Z:-3]
+<Architect> so thats the bottom of the T again
+[Builder puts down a green block at X:2 Y:2 Z:-3]
+[Builder puts down a green block at X:2 Y:1 Z:-4]
+[Builder picks up a green block at X:2 Y:1 Z:-4]
+[Builder puts down a green block at X:2 Y:3 Z:-3]
+<Builder> does it face the same direction?
+<Architect> no its perpendicular
+[Builder puts down a green block at X:2 Y:3 Z:-4]
+[Builder puts down a green block at X:2 Y:3 Z:-2]
+<Architect> great
+<Architect> all done

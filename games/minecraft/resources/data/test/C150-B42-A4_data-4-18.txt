@@ -1,0 +1,76 @@
+B42-A4-C150-1524079015788
+<Builder> Mission has started.
+<Builder> hi, sorry about that
+<Architect> no problem
+<Architect> let's start with red
+<Architect> this is a sort of alternating checkerboard of different colors
+<Builder> ok
+<Architect> start toward the middle
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> put one block down then another two spaces away
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder picks up a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:3 Y:1 Z:0]
+<Architect> one blank space, but two total spaces
+[Builder picks up a red block at X:3 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+<Architect> now orange
+<Architect> one row up but between the two reds
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder picks up a orange block at X:1 Y:1 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder picks up a orange block at X:2 Y:2 Z:0]
+<Architect> good now one diagonal up to the right from the rightmost red
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+<Architect> now yellow
+<Architect> they're two rows up from red, but directly over the red blocks
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+[Builder puts down a yellow block at X:1 Y:3 Z:-1]
+[Builder picks up a yellow block at X:1 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:2 Y:3 Z:0]
+[Builder picks up a yellow block at X:1 Y:3 Z:0]
+<Architect> great
+<Architect> now green over the orange blocks
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:4 Z:0]
+[Builder picks up a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:4 Z:0]
+[Builder picks up a green block at X:-1 Y:3 Z:0]
+<Architect> great switch back to yellow
+<Architect> and go to the other side
+<Architect> starting on the bottom again:
+<Architect> build them diagonal from the reds, but still on the flat surface
+[Builder puts down a yellow block at X:1 Y:1 Z:1]
+[Builder puts down a yellow block at X:3 Y:1 Z:1]
+<Architect> other side for the right one
+[Builder picks up a yellow block at X:3 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+<Architect> super
+<Architect> now switch to green
+<Architect> and just follow the same pattern going up
+[Builder puts down a green block at X:-1 Y:2 Z:1]
+[Builder puts down a green block at X:0 Y:2 Z:1]
+[Builder puts down a green block at X:1 Y:2 Z:1]
+[Builder puts down a green block at X:2 Y:2 Z:1]
+[Builder picks up a green block at X:1 Y:2 Z:1]
+[Builder picks up a green block at X:-1 Y:2 Z:1]
+<Architect> good
+<Architect> now blue then purple rows
+[Builder puts down a blue block at X:0 Y:3 Z:1]
+[Builder puts down a blue block at X:1 Y:3 Z:1]
+[Builder puts down a blue block at X:-1 Y:3 Z:1]
+[Builder picks up a blue block at X:0 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:4 Z:1]
+[Builder puts down a purple block at X:2 Y:3 Z:1]
+[Builder puts down a purple block at X:2 Y:4 Z:1]
+[Builder picks up a purple block at X:0 Y:3 Z:1]
+[Builder picks up a purple block at X:2 Y:3 Z:1]
+<Architect> great
+<Architect> that's it
+<Builder> ok cool

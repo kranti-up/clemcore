@@ -1,0 +1,42 @@
+B13-A30-C28-1522968542285
+<Builder> Mission has started.
+<Architect> start with purple blocks
+<Architect> near one edge of the board place 2 purple blocks with one space between them
+<Builder> does it matter if I place them near a corner?
+<Architect> yes. try to make it near the center
+<Architect> of an edge
+[Builder puts down a purple block at X:4 Y:1 Z:1]
+[Builder puts down a purple block at X:4 Y:1 Z:-1]
+<Architect> ok then replicate that towards the center of the board leaving two spaces between those blocks
+<Builder> two spaces between my current two purple blocks and the new ones I'm about to place?
+<Architect> yes
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:1 Z:2]
+[Builder picks up a purple block at X:1 Y:1 Z:2]
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+<Architect> now build a platform out of yellow blocks on top of the purple blocks
+[Builder puts down a yellow block at X:4 Y:2 Z:-1]
+[Builder puts down a yellow block at X:4 Y:2 Z:1]
+[Builder puts down a yellow block at X:1 Y:2 Z:1]
+[Builder puts down a yellow block at X:3 Y:2 Z:1]
+[Builder puts down a yellow block at X:2 Y:2 Z:1]
+[Builder puts down a yellow block at X:4 Y:2 Z:0]
+[Builder puts down a yellow block at X:3 Y:2 Z:-1]
+[Builder puts down a yellow block at X:3 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+<Architect> ok now on the edge of the long side of the platform place an overhanging yellow block one space from the corner
+[Builder puts down a yellow block at X:2 Y:2 Z:2]
+<Architect> yes! now replicate that on the other side
+[Builder puts down a yellow block at X:2 Y:2 Z:-2]
+<Architect> ok now on the short edge closest to those 2 new blocks, build 2 yellow squares up in the middle
+<Architect> not overhanging
+<Builder> the two squares should be on top of each other?
+<Architect> yes
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+[Builder puts down a yellow block at X:1 Y:4 Z:0]
+<Architect> now place one more yellow block on the edge of the top block that you just placed and make it overhang
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+<Architect> thats it

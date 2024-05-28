@@ -1,0 +1,176 @@
+B20-A30-C23-1523460705190
+<Builder> Mission has started.
+<Architect> this looks like a bridge
+<Builder> how much space
+<Architect> 10x4
+[Builder puts down a purple block at X:4 Y:1 Z:-2]
+[Builder puts down a purple block at X:-5 Y:1 Z:-2]
+[Builder puts down a purple block at X:-5 Y:1 Z:1]
+<Builder> ready when you are
+<Architect> ok start by building a row of 2 red blocks in between where you have the purple blocks
+[Builder puts down a red block at X:3 Y:1 Z:0]
+[Builder puts down a red block at X:3 Y:1 Z:-1]
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+<Builder> like this?
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-4 Y:1 Z:0]
+[Builder puts down a red block at X:-3 Y:1 Z:0]
+[Builder puts down a red block at X:-3 Y:1 Z:-1]
+[Builder puts down a red block at X:-4 Y:1 Z:-1]
+<Architect> no. on the other end just place 2 red blocks
+[Builder picks up a red block at X:-3 Y:1 Z:-1]
+[Builder picks up a red block at X:-3 Y:1 Z:0]
+[Builder picks up a red block at X:-2 Y:1 Z:-1]
+[Builder picks up a red block at X:-2 Y:1 Z:0]
+[Builder picks up a red block at X:-4 Y:1 Z:-1]
+[Builder picks up a red block at X:-4 Y:1 Z:0]
+[Builder puts down a red block at X:-5 Y:1 Z:0]
+[Builder puts down a red block at X:-5 Y:1 Z:-1]
+[Builder picks up a red block at X:-1 Y:1 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+[Builder picks up a red block at X:-1 Y:1 Z:-1]
+[Builder picks up a red block at X:0 Y:1 Z:-1]
+[Builder picks up a red block at X:1 Y:1 Z:0]
+[Builder picks up a red block at X:2 Y:1 Z:0]
+[Builder picks up a red block at X:3 Y:1 Z:0]
+[Builder picks up a red block at X:1 Y:1 Z:-1]
+[Builder picks up a red block at X:2 Y:1 Z:-1]
+[Builder picks up a red block at X:3 Y:1 Z:-1]
+<Architect> yes! and repeat on the other far side
+[Builder puts down a red block at X:4 Y:1 Z:-1]
+[Builder puts down a red block at X:3 Y:1 Z:0]
+[Builder picks up a red block at X:4 Y:2 Z:0]
+[Builder picks up a red block at X:3 Y:1 Z:0]
+<Architect> now delete the purple blocks
+[Builder picks up a purple block at X:4 Y:1 Z:-2]
+[Builder picks up a purple block at X:-5 Y:1 Z:1]
+[Builder picks up a purple block at X:-5 Y:1 Z:-2]
+<Architect> connect the red blocks with a platform of purple blocks on top
+[Builder puts down a purple block at X:4 Y:2 Z:0]
+[Builder puts down a purple block at X:4 Y:2 Z:-1]
+[Builder puts down a purple block at X:4 Y:3 Z:-1]
+[Builder picks up a purple block at X:4 Y:3 Z:-1]
+[Builder puts down a purple block at X:3 Y:2 Z:-1]
+[Builder puts down a purple block at X:3 Y:2 Z:0]
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:0 Y:2 Z:0]
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder picks up a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-2 Y:2 Z:-1]
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+[Builder puts down a purple block at X:-3 Y:2 Z:0]
+[Builder puts down a purple block at X:-4 Y:2 Z:0]
+[Builder puts down a purple block at X:-5 Y:2 Z:0]
+[Builder puts down a purple block at X:-3 Y:2 Z:-1]
+[Builder puts down a purple block at X:-4 Y:2 Z:-1]
+[Builder puts down a purple block at X:-5 Y:2 Z:-1]
+<Architect> good!
+<Architect> now from the second purple block from the end, off to the side, build a stack of 4 orange blocks
+[Builder puts down a orange block at X:-4 Y:3 Z:0]
+<Builder> here?
+<Architect> off to the side starting on the gorund
+[Builder puts down a orange block at X:-4 Y:1 Z:-2]
+[Builder puts down a orange block at X:-4 Y:2 Z:-2]
+[Builder puts down a orange block at X:-4 Y:3 Z:-2]
+[Builder puts down a orange block at X:-4 Y:4 Z:-2]
+[Builder picks up a orange block at X:-4 Y:3 Z:0]
+<Architect> yes
+<Builder> repeat here?
+<Architect> yes repeat so there are 4 stacks
+[Builder puts down a orange block at X:-4 Y:1 Z:1]
+[Builder puts down a orange block at X:-4 Y:2 Z:1]
+[Builder puts down a orange block at X:-4 Y:3 Z:1]
+[Builder puts down a orange block at X:-4 Y:4 Z:1]
+[Builder puts down a orange block at X:3 Y:1 Z:1]
+[Builder puts down a orange block at X:3 Y:2 Z:1]
+[Builder puts down a orange block at X:3 Y:3 Z:1]
+[Builder puts down a orange block at X:3 Y:4 Z:1]
+[Builder puts down a orange block at X:3 Y:1 Z:-2]
+[Builder puts down a orange block at X:3 Y:2 Z:-2]
+[Builder puts down a orange block at X:3 Y:3 Z:-2]
+[Builder puts down a orange block at X:3 Y:4 Z:-2]
+<Architect> on top of each of those build 2 yellow blocks up
+[Builder puts down a yellow block at X:3 Y:5 Z:-2]
+[Builder puts down a yellow block at X:3 Y:6 Z:-2]
+[Builder puts down a yellow block at X:3 Y:5 Z:1]
+[Builder puts down a yellow block at X:3 Y:6 Z:1]
+[Builder puts down a yellow block at X:-4 Y:5 Z:1]
+[Builder puts down a yellow block at X:-4 Y:6 Z:1]
+[Builder puts down a yellow block at X:-4 Y:5 Z:-2]
+[Builder puts down a yellow block at X:-4 Y:6 Z:-2]
+<Architect> now connect the far yellow blocks with a line of red blocks
+[Builder puts down a red block at X:2 Y:6 Z:-2]
+[Builder puts down a red block at X:1 Y:6 Z:-2]
+<Builder> this way?
+<Architect> yes on each side
+[Builder puts down a red block at X:0 Y:6 Z:-2]
+[Builder puts down a red block at X:-1 Y:6 Z:-2]
+[Builder puts down a red block at X:-2 Y:6 Z:-2]
+[Builder puts down a red block at X:-3 Y:6 Z:-2]
+[Builder puts down a red block at X:-3 Y:6 Z:1]
+[Builder puts down a red block at X:-2 Y:6 Z:1]
+[Builder puts down a red block at X:-1 Y:6 Z:1]
+[Builder puts down a red block at X:0 Y:6 Z:1]
+[Builder puts down a red block at X:2 Y:6 Z:1]
+[Builder puts down a red block at X:1 Y:6 Z:1]
+<Builder> do i connect these too?
+<Architect> no do not connect these.
+<Architect> under the red blocks you just placed, make a row of 4 red blocks
+[Builder puts down a red block at X:1 Y:5 Z:-2]
+[Builder puts down a red block at X:0 Y:5 Z:-2]
+[Builder puts down a red block at X:-1 Y:5 Z:-2]
+[Builder puts down a red block at X:-2 Y:5 Z:-2]
+<Builder> what do you mean?
+[Builder picks up a red block at X:1 Y:5 Z:-2]
+[Builder picks up a red block at X:0 Y:5 Z:-2]
+[Builder picks up a red block at X:-1 Y:5 Z:-2]
+[Builder picks up a red block at X:-2 Y:5 Z:-2]
+<Architect> thats good!
+[Builder puts down a red block at X:-2 Y:5 Z:-2]
+[Builder puts down a red block at X:-1 Y:5 Z:-2]
+[Builder puts down a red block at X:0 Y:5 Z:-2]
+[Builder puts down a red block at X:1 Y:5 Z:-2]
+<Builder> I'm out of red blocks now
+<Architect> now build a row of 2 beneath those
+<Architect> h ok delete the middle ones on the top row of red
+[Builder picks up a red block at X:-1 Y:6 Z:-2]
+[Builder picks up a red block at X:0 Y:6 Z:-2]
+[Builder puts down a red block at X:-1 Y:4 Z:-2]
+[Builder puts down a red block at X:0 Y:4 Z:-2]
+[Builder picks up a red block at X:-1 Y:5 Z:-2]
+[Builder picks up a red block at X:0 Y:5 Z:-2]
+[Builder puts down a red block at X:-1 Y:5 Z:-2]
+[Builder puts down a red block at X:0 Y:5 Z:-2]
+<Architect> only leave the far end ones out of each row
+[Builder picks up a red block at X:0 Y:5 Z:-2]
+[Builder picks up a red block at X:-1 Y:5 Z:-2]
+[Builder picks up a red block at X:-2 Y:6 Z:-2]
+[Builder picks up a red block at X:1 Y:6 Z:-2]
+<Architect> yes!
+[Builder puts down a red block at X:0 Y:5 Z:1]
+[Builder puts down a red block at X:-2 Y:5 Z:1]
+[Builder puts down a red block at X:-1 Y:5 Z:1]
+[Builder puts down a red block at X:1 Y:5 Z:1]
+[Builder picks up a red block at X:0 Y:6 Z:1]
+[Builder picks up a red block at X:-1 Y:6 Z:1]
+[Builder puts down a red block at X:-1 Y:4 Z:1]
+[Builder puts down a red block at X:0 Y:4 Z:1]
+[Builder picks up a red block at X:0 Y:5 Z:1]
+[Builder picks up a red block at X:-1 Y:5 Z:1]
+[Builder picks up a red block at X:-2 Y:6 Z:1]
+[Builder picks up a red block at X:1 Y:6 Z:1]
+<Architect> thats it

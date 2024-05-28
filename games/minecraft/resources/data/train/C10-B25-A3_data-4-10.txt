@@ -1,0 +1,69 @@
+B25-A3-C10-1523387303809
+<Builder> Mission has started.
+<Architect> ok this one goes across the whole space but is only 1 space in length i'd say
+<Builder> ok
+<Builder> what color blocks should I start with?
+<Architect> lets go with yellow. find the true center of the board and place 1 yellow block to the left and right of center
+<Architect> err
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+<Architect> yeah that looks good let me check
+<Builder> I will zoom out for you
+<Architect> ok i think thats good. then place 1 yellow block on top of the middle and remove the middle block
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+<Architect> its like arches within arches by the way
+<Builder> should I just replicate this design
+<Architect> it should be upright. my bad
+[Builder picks up a yellow block at X:1 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+<Architect> yeah like that
+<Architect> the shapes aren't exactly the same
+<Builder> oh ok
+<Architect> ok place 1 purple block on top of the top yellow block and put 1 purple on either side of the center purple so its 3 in total
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder picks up a purple block at X:-1 Y:3 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+<Architect> yeah like that. then if you could stairstep it down to the left and right that one is finished too
+[Builder puts down a purple block at X:0 Y:3 Z:2]
+[Builder puts down a purple block at X:0 Y:2 Z:2]
+[Builder picks up a purple block at X:0 Y:3 Z:2]
+[Builder puts down a purple block at X:0 Y:1 Z:3]
+[Builder puts down a purple block at X:0 Y:1 Z:-3]
+[Builder puts down a purple block at X:0 Y:2 Z:-3]
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder picks up a purple block at X:0 Y:2 Z:-3]
+<Architect> awesome. last one is red and similar to the purple but longer on top
+<Architect> need 5 red blocks in a row on top of the purple row
+<Builder> ok, i'll just try and go for it
+<Builder> let me know if I do it wrong
+[Builder puts down a red block at X:0 Y:4 Z:0]
+[Builder puts down a red block at X:0 Y:4 Z:1]
+<Architect> yeah go ahead. i believe in you
+[Builder puts down a red block at X:0 Y:4 Z:2]
+[Builder puts down a red block at X:0 Y:4 Z:-1]
+[Builder puts down a red block at X:0 Y:4 Z:-2]
+[Builder puts down a red block at X:0 Y:3 Z:-2]
+[Builder puts down a red block at X:0 Y:3 Z:-3]
+[Builder picks up a red block at X:0 Y:3 Z:-2]
+[Builder puts down a red block at X:0 Y:2 Z:-3]
+[Builder puts down a red block at X:0 Y:2 Z:-4]
+[Builder picks up a red block at X:0 Y:2 Z:-3]
+[Builder puts down a red block at X:0 Y:1 Z:-5]
+[Builder puts down a red block at X:0 Y:4 Z:3]
+[Builder puts down a red block at X:0 Y:3 Z:3]
+[Builder picks up a red block at X:0 Y:4 Z:3]
+[Builder puts down a red block at X:0 Y:3 Z:4]
+[Builder puts down a red block at X:0 Y:2 Z:4]
+[Builder picks up a red block at X:0 Y:3 Z:4]
+[Builder puts down a red block at X:0 Y:2 Z:5]
+[Builder puts down a red block at X:0 Y:1 Z:5]
+[Builder picks up a red block at X:0 Y:2 Z:5]
+<Architect> beautiful
+<Builder> it's a rainbow!
+<Builder> lol

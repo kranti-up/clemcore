@@ -1,0 +1,100 @@
+B38-A42-C132-1523911175052
+<Builder> Mission has started.
+<Builder> Hello
+<Builder> What are we building today?
+<Architect> looks like 4 floating columns
+<Builder> Ok,
+<Builder> What should I do first?
+<Architect> make a purple 1x6 column near the middle
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:5 Z:-2]
+[Builder puts down a purple block at X:1 Y:6 Z:-1]
+[Builder picks up a purple block at X:1 Y:5 Z:-2]
+<Builder> Like this?
+<Architect> is there another purple?
+<Builder> Purple block, or pillar?
+<Architect> no the structure is good but looks like wrong color
+<Architect> on the plans its a different purple
+<Builder> Ah, no. This is the only purple I have
+<Architect> ok is good then
+<Architect> now make the 4th block from the ground in the column red
+[Builder picks up a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder picks up a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a red block at X:1 Y:4 Z:-1]
+<Builder> Ok
+<Architect> yep
+<Architect> now make another 1x6 purple column diagonal to that one
+<Builder> Ok
+[Builder puts down a purple block at X:0 Y:1 Z:-2]
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder puts down a purple block at X:0 Y:3 Z:-2]
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+[Builder puts down a purple block at X:0 Y:5 Z:-3]
+[Builder puts down a purple block at X:0 Y:6 Z:-2]
+[Builder picks up a purple block at X:0 Y:5 Z:-3]
+<Architect> now the 2nd to top block should be red
+<Builder> Ok
+[Builder picks up a purple block at X:0 Y:5 Z:-2]
+[Builder puts down a red block at X:0 Y:5 Z:-2]
+<Builder> Will this pattern of pillars with red blocks repeat?
+<Architect> yeah
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:3 Z:0]
+[Builder picks up a red block at X:2 Y:2 Z:0]
+[Builder picks up a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:3 Y:1 Z:1]
+[Builder puts down a red block at X:3 Y:2 Z:1]
+[Builder picks up a red block at X:3 Y:1 Z:1]
+[Builder puts down a red block at X:4 Y:1 Z:2]
+[Builder puts down a red block at X:-1 Y:6 Z:-2]
+[Builder puts down a red block at X:-1 Y:6 Z:-3]
+[Builder picks up a red block at X:-1 Y:6 Z:-2]
+<Architect> not like that
+<Builder> Ok, what colors are the pillars?
+<Builder> Ah, ok
+<Builder> Should I remove all of the red blocks, or are some of them in the right place?
+<Architect> just 2 more purple ones that look like the first 2
+[Builder picks up a red block at X:4 Y:1 Z:2]
+[Builder picks up a red block at X:3 Y:2 Z:1]
+<Builder> Ok, are these red blocks in the right place?
+<Architect> so the pattern should go, 3 from top, 2 from top, 3 from top, 2 from top
+[Builder picks up a red block at X:2 Y:3 Z:0]
+<Builder> Ah, ok
+[Builder puts down a red block at X:-1 Y:5 Z:-3]
+[Builder puts down a red block at X:-1 Y:4 Z:-3]
+[Builder picks up a red block at X:-1 Y:5 Z:-3]
+[Builder picks up a red block at X:-1 Y:6 Z:-3]
+[Builder puts down a red block at X:-1 Y:5 Z:-3]
+[Builder puts down a red block at X:-1 Y:5 Z:-4]
+[Builder puts down a red block at X:-2 Y:5 Z:-4]
+[Builder picks up a red block at X:-2 Y:5 Z:-4]
+[Builder puts down a red block at X:-2 Y:5 Z:-4]
+[Builder picks up a red block at X:-1 Y:5 Z:-4]
+[Builder picks up a red block at X:-1 Y:5 Z:-3]
+[Builder puts down a purple block at X:-1 Y:5 Z:-3]
+[Builder puts down a purple block at X:-1 Y:6 Z:-3]
+[Builder puts down a purple block at X:-2 Y:6 Z:-4]
+<Builder> Like this?
+<Architect> yep like that
+[Builder puts down a purple block at X:-1 Y:3 Z:-3]
+[Builder puts down a purple block at X:-1 Y:1 Z:-3]
+[Builder puts down a purple block at X:0 Y:1 Z:-4]
+[Builder picks up a purple block at X:0 Y:1 Z:-4]
+[Builder puts down a purple block at X:-1 Y:2 Z:-3]
+[Builder puts down a purple block at X:-2 Y:1 Z:-4]
+[Builder puts down a purple block at X:-2 Y:2 Z:-4]
+[Builder puts down a purple block at X:-2 Y:3 Z:-4]
+[Builder puts down a purple block at X:-2 Y:4 Z:-4]
+<Builder> Is this it?
+<Architect> now just break the bottom level of purple blocks
+[Builder picks up a purple block at X:1 Y:1 Z:-1]
+[Builder picks up a purple block at X:0 Y:1 Z:-2]
+[Builder picks up a purple block at X:-1 Y:1 Z:-3]
+[Builder picks up a purple block at X:-2 Y:1 Z:-4]
+<Builder> Ok
+<Architect> yay were done!

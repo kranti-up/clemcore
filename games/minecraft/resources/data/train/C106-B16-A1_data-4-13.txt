@@ -1,0 +1,104 @@
+B16-A1-C106-1523661697475
+<Builder> Mission has started.
+<Architect> his one looks like a tree house
+<Builder> cute!
+<Architect> the tree is red
+<Architect> start with three blocks forming a tower
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:2 Y:3 Z:0]
+<Architect> can you add it a little more to the center
+[Builder picks up a red block at X:2 Y:3 Z:0]
+[Builder picks up a red block at X:2 Y:2 Z:0]
+[Builder picks up a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+<Architect> great
+<Architect> now add two more on the opposite sides of the tree
+[Builder puts down a red block at X:2 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+<Architect> yes thats good
+<Architect> okay now stand on the tree on the left branch
+<Architect> looking away from the tree
+<Architect> add a step
+<Architect> of one red block
+[Builder puts down a red block at X:3 Y:3 Z:0]
+<Architect> like a stair case going up
+[Builder puts down a red block at X:3 Y:4 Z:0]
+[Builder picks up a red block at X:3 Y:3 Z:0]
+<Architect> yes like that
+<Builder> okay cool
+<Architect> now add one more step this time green
+[Builder puts down a green block at X:4 Y:4 Z:0]
+[Builder puts down a green block at X:4 Y:5 Z:0]
+[Builder picks up a green block at X:4 Y:4 Z:0]
+<Architect> good
+<Architect> now on the other side the branch goes up two more red blocks
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:4 Z:0]
+[Builder picks up a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+[Builder puts down a red block at X:-1 Y:5 Z:-1]
+[Builder picks up a red block at X:-1 Y:5 Z:-1]
+[Builder puts down a red block at X:-2 Y:5 Z:0]
+[Builder picks up a red block at X:-1 Y:5 Z:0]
+<Architect> sorry these are not steps
+[Builder picks up a red block at X:-1 Y:4 Z:0]
+[Builder picks up a red block at X:-2 Y:5 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+<Architect> its tower of three
+[Builder picks up a red block at X:-1 Y:3 Z:0]
+[Builder picks up a red block at X:-2 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:4 Z:0]
+[Builder puts down a red block at X:0 Y:5 Z:0]
+<Architect> yes like that
+<Architect> now like the other side add one red step followed by a green step
+[Builder puts down a red block at X:0 Y:6 Z:0]
+[Builder puts down a red block at X:-1 Y:6 Z:0]
+[Builder picks up a red block at X:0 Y:6 Z:0]
+[Builder puts down a green block at X:-2 Y:6 Z:0]
+[Builder puts down a green block at X:-2 Y:7 Z:0]
+[Builder picks up a green block at X:-2 Y:6 Z:0]
+<Architect> okay time to add more leaves
+<Architect> on the bottom on the last red step you placed add two green blocks
+[Builder puts down a green block at X:-1 Y:5 Z:0]
+[Builder puts down a green block at X:-2 Y:5 Z:0]
+<Builder> this?
+<Architect> almost it should be touching the red branch
+[Builder picks up a green block at X:-2 Y:5 Z:0]
+[Builder puts down a green block at X:-1 Y:4 Z:0]
+<Architect> great
+<Architect> now add three more green all parallel to the ground
+<Architect> making a box
+<Architect> or square
+<Architect> and using the last green block you placed as one of the corners
+[Builder puts down a green block at X:-1 Y:4 Z:-1]
+[Builder puts down a green block at X:-1 Y:4 Z:-2]
+[Builder puts down a green block at X:-1 Y:4 Z:-3]
+<Builder> this?
+<Architect> almost it should be a square
+<Architect> so 2x2
+<Builder> ahh okay
+[Builder picks up a green block at X:-1 Y:4 Z:-3]
+<Architect> instead of 4x1
+[Builder puts down a green block at X:-1 Y:5 Z:-1]
+<Architect> almost remember its parallel to the ground
+<Architect> not perpendicular
+[Builder picks up a green block at X:-1 Y:5 Z:-1]
+[Builder puts down a green block at X:-2 Y:4 Z:0]
+[Builder puts down a green block at X:-2 Y:4 Z:-1]
+<Architect> got it
+<Architect> now we only need two more green blocks
+<Architect> both green block are touching one of the blocks from the square you just placed
+<Architect> one of the green block is on the back of the tree
+<Architect> and the other is on the right side
+[Builder puts down a green block at X:-2 Y:4 Z:1]
+<Builder> here?
+<Architect> yes there
+[Builder puts down a green block at X:-3 Y:4 Z:0]
+<Builder> and this one?
+<Architect> yes
+<Architect> thats it i think
+<Builder> weird, okay!

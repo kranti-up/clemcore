@@ -1,0 +1,72 @@
+B25-A3-C57-1523386572302
+<Builder> Mission has started.
+<Architect> ok this one looks like a 4 and a weird 3 but they arent side by side and they are sort of interlinked
+<Architect> you'll get what i mean later. lets start with the 4 because it's easy
+<Architect> can start in the middle with 5 blue blocks straight up into the air
+<Builder> to the left of the board?
+<Architect> shouldn
+<Architect> shouldnt matter
+<Builder> ok
+[Builder puts down a blue block at X:3 Y:1 Z:-1]
+[Builder puts down a blue block at X:3 Y:2 Z:-1]
+[Builder puts down a blue block at X:3 Y:3 Z:-1]
+[Builder puts down a blue block at X:3 Y:4 Z:-1]
+[Builder puts down a blue block at X:3 Y:5 Z:-1]
+<Architect> ok then one blue block to the right of the center and 2 blocks to the left of the center
+[Builder puts down a blue block at X:2 Y:3 Z:-1]
+[Builder puts down a blue block at X:4 Y:3 Z:-1]
+[Builder puts down a blue block at X:5 Y:3 Z:-1]
+[Builder puts down a blue block at X:5 Y:4 Z:-1]
+<Architect> yeah like that
+<Architect> need 1 more on top of the left block
+[Builder puts down a blue block at X:5 Y:4 Z:-2]
+[Builder picks up a blue block at X:5 Y:4 Z:-2]
+[Builder puts down a blue block at X:5 Y:5 Z:-1]
+<Architect> ok now the 3 is green. let me look where to start
+<Builder> ok
+<Architect> come around to the right so you are looking at the right side of the 4 please
+<Architect> yeah there
+<Architect> so place the first green on top of the little 4 arm
+[Builder puts down a green block at X:2 Y:4 Z:-1]
+<Architect> nice then one to the right of that piece
+[Builder puts down a green block at X:1 Y:4 Z:-1]
+<Architect> hmm not there. like to the right from where you were. the 3 isn
+<Architect> isnt oriented the same, its tilted like 90 degreeds
+[Builder picks up a green block at X:1 Y:4 Z:-1]
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+<Architect> degrees*
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+<Architect> from where you are the next piece should go on the other side (forward)
+[Builder picks up a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder picks up a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+<Builder> like that?
+[Builder picks up a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:-2]
+<Architect> no, those 2 new pieces aren't right yet. we need 1 block directly connected to that first green piece on the back side
+<Architect> its hard to describe sorry
+[Builder picks up a green block at X:1 Y:3 Z:-2]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+<Architect> its not a traditional 3 either
+<Builder> something like that?
+[Builder puts down a green block at X:2 Y:4 Z:0]
+[Builder picks up a green block at X:2 Y:3 Z:0]
+<Builder> or like that
+<Architect> yeah there
+<Builder> ok
+<Architect> the piece not directly connected can be removed
+[Builder picks up a green block at X:1 Y:3 Z:-1]
+<Architect> ok then we need 1 green block right under the right green block
+[Builder puts down a green block at X:2 Y:3 Z:0]
+<Architect> and one to the right of that
+[Builder puts down a green block at X:2 Y:3 Z:1]
+<Architect> then 2 straight down from that one
+[Builder puts down a green block at X:2 Y:2 Z:1]
+[Builder puts down a green block at X:2 Y:1 Z:1]
+<Architect> and 1 to the left of that
+[Builder puts down a green block at X:2 Y:1 Z:0]
+<Architect> there we go
+<Builder> wow that is a funky 3
+<Architect> i know right
+<Architect> good job though

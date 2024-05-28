@@ -1,0 +1,250 @@
+B51-A54-C137-1523912531770
+<Builder> Mission has started.
+<Architect> Build a standing 5x5 square
+<Architect> red
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+<Architect> 6x6 sorry
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:3 Y:1 Z:0]
+[Builder puts down a red block at X:3 Y:2 Z:0]
+[Builder puts down a red block at X:3 Y:3 Z:0]
+[Builder puts down a red block at X:2 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+<Builder> i dont think i have enough lol
+[Builder puts down a red block at X:-2 Y:4 Z:0]
+[Builder puts down a red block at X:-1 Y:4 Z:0]
+<Builder> or is there no fill in the square?
+<Builder> like just the outline
+<Architect> There's no fill
+[Builder picks up a red block at X:-1 Y:4 Z:0]
+[Builder picks up a red block at X:-1 Y:3 Z:0]
+[Builder picks up a red block at X:1 Y:3 Z:0]
+[Builder picks up a red block at X:0 Y:3 Z:0]
+[Builder picks up a red block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:-1 Y:2 Z:0]
+[Builder picks up a red block at X:1 Y:2 Z:0]
+[Builder picks up a red block at X:2 Y:2 Z:0]
+[Builder picks up a red block at X:3 Y:2 Z:0]
+[Builder picks up a red block at X:2 Y:3 Z:0]
+[Builder puts down a red block at X:3 Y:2 Z:0]
+<Architect> Not completely anyway
+[Builder puts down a red block at X:3 Y:4 Z:0]
+[Builder puts down a red block at X:3 Y:5 Z:0]
+[Builder puts down a red block at X:3 Y:6 Z:0]
+<Architect> Just build a 6x6 frame for now then
+[Builder puts down a red block at X:2 Y:6 Z:0]
+[Builder puts down a red block at X:1 Y:6 Z:0]
+[Builder puts down a red block at X:0 Y:6 Z:0]
+[Builder puts down a red block at X:-1 Y:6 Z:0]
+[Builder puts down a red block at X:-2 Y:6 Z:0]
+[Builder puts down a red block at X:-2 Y:5 Z:0]
+<Architect> Pluck out the corners
+[Builder picks up a red block at X:3 Y:6 Z:0]
+[Builder picks up a red block at X:-2 Y:6 Z:0]
+[Builder picks up a red block at X:-2 Y:1 Z:0]
+[Builder picks up a red block at X:3 Y:1 Z:0]
+<Architect> Now we just need a line from top left to bottom right
+[Builder puts down a red block at X:2 Y:5 Z:0]
+[Builder puts down a red block at X:2 Y:4 Z:0]
+[Builder puts down a red block at X:1 Y:4 Z:0]
+[Builder picks up a red block at X:2 Y:4 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder picks up a red block at X:3 Y:3 Z:0]
+[Builder picks up a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:3 Y:3 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:-1]
+[Builder picks up a red block at X:-2 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+<Architect> Nice
+<Architect> Okay one small point I just noticed now...
+<Builder> yeah
+<Architect> This is supposed to float one block
+<Builder> lol
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+[Builder picks up a orange block at X:2 Y:1 Z:-1]
+[Builder picks up a red block at X:2 Y:1 Z:0]
+[Builder picks up a red block at X:1 Y:1 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+[Builder picks up a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder picks up a red block at X:3 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:-2 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:4 Z:0]
+[Builder picks up a red block at X:0 Y:3 Z:0]
+[Builder picks up a red block at X:1 Y:4 Z:0]
+[Builder puts down a red block at X:1 Y:5 Z:0]
+[Builder picks up a red block at X:2 Y:5 Z:0]
+[Builder picks up a red block at X:3 Y:5 Z:0]
+[Builder puts down a red block at X:3 Y:5 Z:0]
+[Builder puts down a red block at X:3 Y:6 Z:0]
+[Builder puts down a red block at X:2 Y:7 Z:0]
+[Builder puts down a red block at X:1 Y:7 Z:0]
+[Builder picks up a red block at X:1 Y:6 Z:0]
+[Builder puts down a red block at X:0 Y:7 Z:0]
+[Builder picks up a red block at X:0 Y:6 Z:0]
+[Builder puts down a red block at X:-1 Y:7 Z:0]
+[Builder picks up a red block at X:-1 Y:6 Z:0]
+[Builder puts down a red block at X:-2 Y:6 Z:0]
+<Builder> hows this
+<Architect> Perfect
+<Architect> For this one, go to the other side
+<Architect> Where the leftmost red block is, build a purple on the ground
+<Architect> two blocks away towards you
+[Builder puts down a purple block at X:-1 Y:1 Z:2]
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder picks up a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+<Architect> tOne to its left
+[Builder puts down a purple block at X:-1 Y:2 Z:2]
+[Builder puts down a purple block at X:0 Y:1 Z:2]
+[Builder picks up a purple block at X:0 Y:1 Z:2]
+[Builder picks up a purple block at X:-1 Y:2 Z:2]
+[Builder picks up a purple block at X:-1 Y:1 Z:1]
+[Builder picks up a purple block at X:-1 Y:1 Z:2]
+[Builder puts down a purple block at X:-2 Y:1 Z:0]
+[Builder puts down a purple block at X:-2 Y:1 Z:1]
+<Architect> Build one towards you and break those two
+<Builder> wait what
+[Builder picks up a purple block at X:-2 Y:1 Z:1]
+[Builder puts down a purple block at X:-2 Y:1 Z:1]
+[Builder puts down a purple block at X:-2 Y:1 Z:2]
+[Builder picks up a purple block at X:-2 Y:1 Z:2]
+[Builder picks up a purple block at X:-2 Y:1 Z:1]
+[Builder picks up a purple block at X:-2 Y:1 Z:0]
+[Builder puts down a purple block at X:-2 Y:1 Z:2]
+[Builder picks up a purple block at X:-2 Y:1 Z:3]
+[Builder picks up a purple block at X:-2 Y:1 Z:2]
+[Builder puts down a purple block at X:-2 Y:1 Z:2]
+<Architect> Build one on top of that this time
+[Builder puts down a purple block at X:-2 Y:2 Z:2]
+<Architect> Okay now we can break the bottom one
+[Builder picks up a purple block at X:-2 Y:1 Z:2]
+<Builder> wrow
+<Architect> Build five more purples on that one
+<Architect> straight up
+[Builder puts down a purple block at X:-2 Y:3 Z:2]
+[Builder puts down a purple block at X:-2 Y:4 Z:2]
+[Builder puts down a purple block at X:-2 Y:5 Z:2]
+[Builder puts down a purple block at X:-2 Y:6 Z:2]
+[Builder puts down a purple block at X:-2 Y:7 Z:2]
+<Architect> Build four to its right
+<Architect> Top
+<Builder> four on the top?
+<Builder> gotcha
+[Builder puts down a purple block at X:-1 Y:7 Z:2]
+[Builder puts down a purple block at X:0 Y:7 Z:2]
+[Builder puts down a purple block at X:1 Y:7 Z:2]
+[Builder puts down a purple block at X:2 Y:7 Z:2]
+<Architect> Now go down five at that end
+[Builder puts down a purple block at X:3 Y:7 Z:2]
+[Builder puts down a purple block at X:3 Y:6 Z:2]
+[Builder puts down a purple block at X:3 Y:5 Z:2]
+[Builder puts down a purple block at X:3 Y:4 Z:2]
+[Builder puts down a purple block at X:3 Y:3 Z:2]
+<Architect> One more
+[Builder puts down a purple block at X:3 Y:2 Z:2]
+<Architect> And make an arrow out of it like in the second one
+<Builder> what arrow
+<Architect> Oh ok
+<Architect> Pick the second one from bottom at the end
+<Architect> Don't break it
+[Builder puts down a purple block at X:2 Y:2 Z:2]
+[Builder picks up a purple block at X:3 Y:2 Z:2]
+[Builder puts down a purple block at X:3 Y:1 Z:2]
+[Builder puts down a purple block at X:3 Y:2 Z:2]
+[Builder puts down a purple block at X:4 Y:2 Z:2]
+[Builder picks up a purple block at X:3 Y:2 Z:2]
+<Architect> No no I mean
+[Builder puts down a purple block at X:3 Y:2 Z:2]
+[Builder picks up a purple block at X:3 Y:2 Z:2]
+[Builder picks up a purple block at X:4 Y:2 Z:2]
+[Builder picks up a purple block at X:3 Y:1 Z:2]
+[Builder puts down a purple block at X:3 Y:2 Z:2]
+<Architect> The one above that, place one block on either side of it
+[Builder picks up a purple block at X:3 Y:3 Z:2]
+[Builder puts down a purple block at X:3 Y:3 Z:2]
+[Builder puts down a purple block at X:2 Y:3 Z:2]
+[Builder picks up a purple block at X:2 Y:2 Z:2]
+<Architect> And the other side
+[Builder puts down a purple block at X:4 Y:3 Z:2]
+<Architect> put one block on top of one of them
+[Builder puts down a purple block at X:4 Y:4 Z:2]
+<Architect> Then put one more next to the new one
+[Builder puts down a purple block at X:5 Y:4 Z:2]
+<Architect> Break the block you put before this one so that the last block you put hangs in the air
+[Builder picks up a purple block at X:4 Y:4 Z:2]
+<Builder> ohhh
+<Builder> do you want me to replicate the right side onto the left
+<Architect> You might need to use a temp block to place the purple one but yeah
+<Builder> wait what happened to the block
+<Builder> i dont have anymore purple blocks
+<Architect> Break one that's easy to put back
+[Builder picks up a purple block at X:3 Y:4 Z:2]
+[Builder puts down a purple block at X:2 Y:4 Z:2]
+[Builder puts down a purple block at X:1 Y:4 Z:2]
+[Builder picks up a purple block at X:2 Y:4 Z:2]
+[Builder puts down a purple block at X:3 Y:4 Z:2]
+<Builder> nvm it like disappeared for a sec LMAO
+<Architect> Seems right
+<Builder> ohh so no u-turns
+<Builder> haha
+<Architect> Eh...
+<Architect> The arrow needs to be one to the left...
+<Builder> wym
+<Architect> So the top side should be one block shorter
+<Architect> The purple one
+<Builder> do u want me to lower the top portion
+<Architect> No no
+<Architect> Think of like sliding the arrow left
+<Builder> okay so move the arrow then
+<Builder> one left?
+<Architect> One left
+[Builder picks up a purple block at X:3 Y:7 Z:2]
+[Builder picks up a purple block at X:3 Y:6 Z:2]
+[Builder picks up a purple block at X:3 Y:5 Z:2]
+[Builder picks up a purple block at X:3 Y:4 Z:2]
+[Builder puts down a purple block at X:2 Y:6 Z:2]
+[Builder puts down a purple block at X:2 Y:5 Z:2]
+[Builder puts down a purple block at X:2 Y:4 Z:2]
+[Builder picks up a purple block at X:3 Y:3 Z:2]
+[Builder picks up a purple block at X:3 Y:2 Z:2]
+[Builder picks up a purple block at X:5 Y:4 Z:2]
+[Builder picks up a purple block at X:4 Y:3 Z:2]
+[Builder puts down a purple block at X:3 Y:4 Z:2]
+[Builder puts down a purple block at X:3 Y:5 Z:2]
+[Builder puts down a purple block at X:4 Y:5 Z:2]
+[Builder picks up a purple block at X:4 Y:5 Z:2]
+[Builder puts down a purple block at X:4 Y:5 Z:2]
+[Builder picks up a purple block at X:3 Y:5 Z:2]
+[Builder puts down a purple block at X:1 Y:5 Z:2]
+[Builder puts down a purple block at X:0 Y:5 Z:2]
+[Builder picks up a purple block at X:1 Y:5 Z:2]
+<Architect> But one more down though
+<Architect> Like before
+[Builder puts down a purple block at X:2 Y:2 Z:2]
+[Builder puts down a purple block at X:1 Y:3 Z:2]
+[Builder picks up a purple block at X:1 Y:4 Z:2]
+[Builder puts down a purple block at X:3 Y:3 Z:2]
+[Builder picks up a purple block at X:3 Y:4 Z:2]
+[Builder puts down a purple block at X:4 Y:4 Z:2]
+[Builder picks up a purple block at X:4 Y:5 Z:2]
+[Builder puts down a purple block at X:0 Y:4 Z:2]
+[Builder picks up a purple block at X:0 Y:5 Z:2]
+<Builder> hows this
+<Architect> Nice
+<Architect> Sorry about that

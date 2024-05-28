@@ -1,0 +1,45 @@
+B53-A4-C92-1524152696545
+<Builder> Mission has started.
+<Architect> hi
+<Builder> Hello
+<Architect> i think this is a pair of cherries
+<Architect> start with red
+<Architect> and build a vertical 2x2 square
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+<Architect> now to the right one blank space
+<Architect> same thing but floating up one block
+<Builder> Gotcha
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+[Builder puts down a red block at X:-3 Y:1 Z:-1]
+[Builder puts down a red block at X:-2 Y:2 Z:-1]
+[Builder puts down a red block at X:-3 Y:2 Z:-1]
+[Builder picks up a red block at X:-2 Y:1 Z:-1]
+[Builder picks up a red block at X:-3 Y:1 Z:-1]
+[Builder puts down a red block at X:-2 Y:3 Z:-1]
+[Builder puts down a red block at X:-3 Y:3 Z:-1]
+<Architect> great. now green vines
+<Architect> on the left cherry, one green block in top right corner
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+<Architect> on the right it's a column of 2 in same place
+[Builder puts down a green block at X:-3 Y:4 Z:-1]
+[Builder puts down a green block at X:-3 Y:5 Z:-1]
+<Architect> back to left: it's a column of 3 up and diagonal right from greeen block
+<Builder> To confirm: it's a column of three blocks whose bottom block is diagonal from the one green block?
+<Architect> yep. up and to the right
+[Builder puts down a green block at X:0 Y:4 Z:-1]
+[Builder puts down a green block at X:-1 Y:4 Z:-1]
+[Builder picks up a green block at X:0 Y:4 Z:-1]
+[Builder puts down a green block at X:-1 Y:5 Z:-1]
+[Builder puts down a green block at X:-1 Y:6 Z:-1]
+<Architect> great. now one block to the right of the top green
+[Builder puts down a green block at X:-2 Y:6 Z:-1]
+<Architect> and one block up and diagonal left from the top
+[Builder puts down a green block at X:-1 Y:7 Z:-1]
+[Builder puts down a green block at X:0 Y:7 Z:-1]
+[Builder picks up a green block at X:-1 Y:7 Z:-1]
+<Architect> super
+<Builder> That was easy
+<Architect> good

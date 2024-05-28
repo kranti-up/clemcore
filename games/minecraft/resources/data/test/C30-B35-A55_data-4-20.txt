@@ -1,0 +1,46 @@
+B35-A55-C30-1524259543693
+<Builder> Mission has started.
+<Architect> starting two spaces from any edge, place a yellow horizontal line 5 blocks long
+<Architect> hold on
+<Architect> wait we're good
+<Architect> yeah do what i said
+<Architect> starting two spaces from any edge, place a yellow horizontal line 5 blocks long
+[Builder puts down a yellow block at X:3 Y:1 Z:0]
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+<Architect> good
+<Architect> make a green line on top of that
+<Architect> same length
+[Builder puts down a green block at X:3 Y:1 Z:-1]
+[Builder picks up a green block at X:3 Y:1 Z:-1]
+[Builder puts down a green block at X:3 Y:2 Z:0]
+[Builder puts down a green block at X:2 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+[Builder picks up a green block at X:1 Y:1 Z:-1]
+[Builder puts down a green block at X:1 Y:2 Z:0]
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+<Architect> now take blue
+[Builder picks up a green block at X:1 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:2 Z:0]
+<Architect> place 1 blue block in front of the rightmost yellow
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+<Architect> place 1 blue block diagonally left to that
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+<Architect> and one more time
+[Builder puts down a blue block at X:1 Y:1 Z:-3]
+<Architect> place 1 red block diagonally up and left from that
+[Builder puts down a red block at X:2 Y:1 Z:-2]
+<Architect> and one more time
+[Builder puts down a red block at X:3 Y:1 Z:-1]
+<Architect> place orange blocks on top of the blue ones
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:1 Y:1 Z:-4]
+[Builder puts down a orange block at X:1 Y:2 Z:-3]
+[Builder picks up a orange block at X:1 Y:1 Z:-4]
+<Architect> and purple blocks on top of the red
+[Builder puts down a purple block at X:3 Y:2 Z:-1]
+[Builder puts down a purple block at X:2 Y:2 Z:-2]

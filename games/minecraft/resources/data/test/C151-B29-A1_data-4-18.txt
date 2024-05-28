@@ -1,0 +1,40 @@
+B29-A1-C151-1524078449685
+<Builder> Mission has started.
+<Architect> hello
+<Builder> hi
+<Architect> we are making some sort of cupcake.
+<Architect> start with 7 red blocks all on the ground
+[Builder puts down a red block at X:3 Y:1 Z:1]
+[Builder puts down a red block at X:2 Y:1 Z:1]
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+[Builder puts down a red block at X:-2 Y:1 Z:1]
+[Builder puts down a red block at X:-3 Y:1 Z:1]
+<Architect> thats the bottom part of the cupcake
+<Architect> now lets make the top part its 3 orange on each side all going in a stepwise manner
+[Builder puts down a orange block at X:3 Y:2 Z:1]
+[Builder puts down a orange block at X:2 Y:2 Z:1]
+[Builder puts down a orange block at X:2 Y:3 Z:1]
+[Builder picks up a orange block at X:2 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+[Builder picks up a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:-3 Y:2 Z:1]
+[Builder puts down a orange block at X:-3 Y:3 Z:1]
+[Builder puts down a orange block at X:-3 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:1]
+[Builder picks up a orange block at X:-3 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:4 Z:1]
+[Builder puts down a orange block at X:-1 Y:4 Z:1]
+[Builder picks up a orange block at X:-2 Y:4 Z:1]
+[Builder picks up a orange block at X:-3 Y:3 Z:1]
+<Architect> great, now we need a candle
+<Architect> place one purple in between the oranges making a step again
+[Builder puts down a purple block at X:1 Y:5 Z:1]
+[Builder puts down a purple block at X:0 Y:5 Z:1]
+[Builder picks up a purple block at X:1 Y:5 Z:1]
+<Architect> two more purple blocks and we are done, one goes on top of the one you just placed and another one on the left side of the topmost purple block
+[Builder puts down a purple block at X:0 Y:6 Z:1]
+[Builder puts down a purple block at X:1 Y:6 Z:1]
+<Architect> great

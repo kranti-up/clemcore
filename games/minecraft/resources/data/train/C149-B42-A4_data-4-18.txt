@@ -1,0 +1,137 @@
+B42-A4-C149-1524079347889
+<Builder> Mission has started.
+<Architect> hey
+<Architect> this is a little more complicated
+<Builder> hey, where do i start?
+<Architect> it looks sort of like a balloon animal
+<Builder> ok
+<Architect> start with red in the middle of the surface
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> 4x4 square flat on the surface
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+[Builder puts down a red block at X:0 Y:1 Z:-3]
+[Builder puts down a red block at X:1 Y:1 Z:-3]
+[Builder puts down a red block at X:1 Y:1 Z:-2]
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+<Architect> then delete the four corners
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder picks up a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:-2]
+[Builder puts down a red block at X:-1 Y:1 Z:-3]
+[Builder puts down a red block at X:2 Y:1 Z:-3]
+[Builder puts down a red block at X:2 Y:1 Z:-2]
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder picks up a red block at X:-1 Y:1 Z:-3]
+[Builder picks up a red block at X:2 Y:1 Z:-3]
+<Architect> now purple blocks
+[Builder picks up a red block at X:2 Y:1 Z:0]
+[Builder picks up a red block at X:-1 Y:1 Z:0]
+<Architect> this is the body of a "dog"
+<Builder> ok
+<Architect> one space up from the now blank corners build a column of two purples
+[Builder puts down a purple block at X:2 Y:2 Z:-2]
+[Builder puts down a purple block at X:2 Y:2 Z:-3]
+[Builder puts down a purple block at X:2 Y:3 Z:-3]
+[Builder picks up a purple block at X:2 Y:2 Z:-2]
+<Architect> good
+<Architect> all four corners
+<Builder> should i do that in all corners
+<Builder> ok
+[Builder puts down a purple block at X:0 Y:2 Z:-3]
+[Builder puts down a purple block at X:-1 Y:2 Z:-3]
+[Builder puts down a purple block at X:-1 Y:3 Z:-3]
+[Builder picks up a purple block at X:0 Y:2 Z:-3]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+[Builder picks up a purple block at X:-2 Y:3 Z:0]
+[Builder picks up a purple block at X:-2 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder picks up a purple block at X:-1 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:0]
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder puts down a purple block at X:2 Y:3 Z:0]
+[Builder picks up a purple block at X:1 Y:2 Z:0]
+<Architect> great
+<Architect> now make a sort of arch between two columns
+[Builder puts down a purple block at X:1 Y:3 Z:-3]
+[Builder puts down a purple block at X:1 Y:4 Z:-3]
+<Architect> build a row of two up and diagonal from the columns
+[Builder puts down a purple block at X:0 Y:4 Z:-3]
+[Builder picks up a purple block at X:1 Y:3 Z:-3]
+<Architect> great
+<Architect> do it on all columns
+[Builder puts down a purple block at X:2 Y:3 Z:-1]
+[Builder puts down a purple block at X:2 Y:4 Z:-1]
+[Builder puts down a purple block at X:2 Y:4 Z:-2]
+[Builder picks up a purple block at X:2 Y:3 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:0]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:1 Y:4 Z:0]
+[Builder picks up a purple block at X:0 Y:3 Z:1]
+[Builder picks up a purple block at X:0 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:4 Z:-2]
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+[Builder picks up a purple block at X:-1 Y:3 Z:-2]
+<Architect> great. body's done
+<Architect> switch to green
+<Builder> ok
+<Architect> this is a diagonal staircase four long
+<Architect> start on the red base
+<Architect> oops. one above the red base
+[Builder puts down a green block at X:0 Y:3 Z:-3]
+<Builder> like that?
+<Architect> it should be within that small square made by purple
+[Builder picks up a green block at X:0 Y:3 Z:-3]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder picks up a green block at X:-1 Y:3 Z:-1]
+<Builder> like that?
+<Architect> that's good but move it one space towards you
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+[Builder picks up a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:1 Y:4 Z:-2]
+<Architect> otherwise the final structure will be mirrored
+[Builder puts down a green block at X:1 Y:5 Z:-3]
+[Builder puts down a green block at X:1 Y:5 Z:-4]
+[Builder picks up a green block at X:1 Y:5 Z:-4]
+[Builder puts down a green block at X:1 Y:6 Z:-3]
+[Builder puts down a green block at X:1 Y:6 Z:-4]
+[Builder picks up a green block at X:1 Y:6 Z:-3]
+<Builder> like that?
+<Architect> crap i told you wrong
+<Architect> move the neck toward you one space
+[Builder picks up a green block at X:1 Y:6 Z:-4]
+[Builder picks up a green block at X:1 Y:5 Z:-3]
+[Builder picks up a green block at X:1 Y:4 Z:-2]
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder picks up a green block at X:1 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:3 Z:-2]
+[Builder picks up a green block at X:0 Y:3 Z:-2]
+[Builder puts down a green block at X:0 Y:4 Z:-2]
+[Builder puts down a green block at X:0 Y:5 Z:-3]
+[Builder puts down a green block at X:0 Y:6 Z:-3]
+[Builder puts down a green block at X:0 Y:6 Z:-4]
+[Builder picks up a green block at X:0 Y:6 Z:-3]
+<Builder> good?
+<Architect> better. sorry
+<Architect> now a blue head
+<Builder> no problemo
+[Builder puts down a blue block at X:0 Y:6 Z:-5]
+<Architect> it's a plus sign flat on the top green one
+<Builder> ok
+[Builder picks up a blue block at X:0 Y:6 Z:-5]
+[Builder puts down a blue block at X:0 Y:7 Z:-4]
+[Builder puts down a blue block at X:1 Y:7 Z:-4]
+[Builder puts down a blue block at X:0 Y:7 Z:-5]
+[Builder puts down a blue block at X:-1 Y:7 Z:-4]
+[Builder puts down a blue block at X:0 Y:7 Z:-3]
+<Architect> great
+<Builder> yay
+<Architect> all done

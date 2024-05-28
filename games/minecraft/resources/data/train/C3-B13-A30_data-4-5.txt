@@ -1,0 +1,9 @@
+B13-A30-C3-1522967809907
+<Builder> Mission has started.
+<Architect> Use blue blocks for this build
+<Architect> use 2 blue squares to form a base
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+[Builder puts down a blue block at X:-1 Y:1 Z:2]
+<Architect> put one ore square on top of only one on the base to form an l
+[Builder puts down a blue block at X:-1 Y:2 Z:2]
+<Architect> thats it!

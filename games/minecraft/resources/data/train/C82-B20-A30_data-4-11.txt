@@ -1,0 +1,109 @@
+B20-A30-C82-1523457660797
+<Builder> Mission has started.
+<Builder> how much space this time?
+<Architect> leave a 7x7 block free for this build
+<Architect> it looks like a monument or an obelisk
+<Builder> im going to mark down how much space I have
+[Builder puts down a purple block at X:4 Y:1 Z:-3]
+[Builder puts down a purple block at X:-2 Y:1 Z:-3]
+[Builder puts down a purple block at X:-2 Y:1 Z:3]
+<Architect> to start build a flat 5x5 yellow box
+<Builder> should i start in the middle or a corner
+<Architect> start just inside the boxes you already placed
+[Builder puts down a yellow block at X:2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:1 Y:1 Z:-2]
+[Builder puts down a yellow block at X:0 Y:1 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:1 Z:1]
+[Builder puts down a yellow block at X:-2 Y:1 Z:0]
+[Builder puts down a yellow block at X:-2 Y:1 Z:2]
+[Builder puts down a yellow block at X:-1 Y:1 Z:2]
+[Builder puts down a yellow block at X:0 Y:1 Z:2]
+[Builder puts down a yellow block at X:1 Y:1 Z:2]
+[Builder puts down a yellow block at X:2 Y:1 Z:2]
+[Builder puts down a yellow block at X:2 Y:1 Z:1]
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+[Builder puts down a yellow block at X:2 Y:1 Z:-1]
+[Builder picks up a purple block at X:4 Y:1 Z:-3]
+<Architect> ok good!!
+[Builder picks up a purple block at X:-2 Y:1 Z:-3]
+[Builder picks up a purple block at X:-2 Y:1 Z:3]
+<Architect> now at the corners of the box place 1 purple square
+[Builder puts down a purple block at X:-2 Y:2 Z:-2]
+[Builder puts down a purple block at X:2 Y:2 Z:-2]
+[Builder puts down a purple block at X:2 Y:2 Z:2]
+[Builder puts down a purple block at X:-2 Y:2 Z:2]
+<Architect> even with the yellow not on top
+<Architect> actually keep those
+<Builder> inside corner or outside corner?
+[Builder puts down a purple block at X:3 Y:1 Z:-3]
+<Architect> outside corner
+[Builder puts down a purple block at X:-3 Y:1 Z:-3]
+[Builder puts down a purple block at X:-3 Y:1 Z:3]
+[Builder puts down a purple block at X:3 Y:1 Z:3]
+<Architect> now build another purple block in line with the others to make a pyramid type shape towards the middle.
+[Builder puts down a purple block at X:2 Y:3 Z:-2]
+[Builder puts down a purple block at X:1 Y:3 Z:-2]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:1 Y:3 Z:-2]
+[Builder picks up a purple block at X:2 Y:3 Z:-2]
+[Builder picks up a purple block at X:2 Y:2 Z:-2]
+<Builder> liek that?
+<Builder> like*
+<Architect> yes but make sure to replace the block directly on top of the yellow
+[Builder puts down a purple block at X:-2 Y:3 Z:-2]
+[Builder picks up a purple block at X:-2 Y:2 Z:-2]
+[Builder puts down a purple block at X:2 Y:2 Z:-2]
+[Builder puts down a purple block at X:2 Y:3 Z:-2]
+[Builder picks up a purple block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:2 Y:2 Z:-2]
+<Builder> this?
+<Architect> no. so place the purple square back on the yellow square where it was before
+[Builder picks up a purple block at X:-2 Y:3 Z:-2]
+[Builder puts down a purple block at X:-2 Y:2 Z:-2]
+[Builder picks up a purple block at X:2 Y:3 Z:-2]
+[Builder puts down a purple block at X:2 Y:2 Z:-2]
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:1 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:1 Y:2 Z:-1]
+[Builder picks up a purple block at X:1 Y:1 Z:-1]
+<Architect> yes!
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder picks up a purple block at X:-1 Y:2 Z:-1]
+[Builder picks up a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+[Builder puts down a purple block at X:-1 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder picks up a purple block at X:-1 Y:2 Z:1]
+[Builder picks up a purple block at X:-1 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:2 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+[Builder picks up a purple block at X:1 Y:2 Z:1]
+[Builder picks up a purple block at X:1 Y:1 Z:1]
+<Architect> ok now on top of those purple squares you just placed, build a flat 3x3 blue box
+[Builder puts down a blue block at X:1 Y:4 Z:1]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:-1]
+[Builder puts down a blue block at X:0 Y:4 Z:-1]
+[Builder puts down a blue block at X:-1 Y:4 Z:-1]
+[Builder puts down a blue block at X:0 Y:4 Z:1]
+[Builder puts down a blue block at X:-1 Y:4 Z:1]
+[Builder puts down a blue block at X:-1 Y:4 Z:0]
+<Architect> now where the gap is in the middle, build a green tower 6 blocks tall, with the bottom one beginning in the hole
+[Builder puts down a green block at X:0 Y:4 Z:0]
+[Builder puts down a green block at X:0 Y:5 Z:0]
+[Builder puts down a green block at X:0 Y:6 Z:0]
+[Builder puts down a green block at X:0 Y:7 Z:0]
+[Builder puts down a green block at X:0 Y:8 Z:0]
+[Builder puts down a green block at X:0 Y:9 Z:0]
+<Architect> yes! now delete the one in the hole and the build will be done
+<Builder> alright
+[Builder picks up a green block at X:0 Y:4 Z:0]

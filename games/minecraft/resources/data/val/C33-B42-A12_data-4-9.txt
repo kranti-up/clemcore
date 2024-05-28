@@ -1,0 +1,73 @@
+B42-A12-C33-1523308506692
+<Builder> Mission has started.
+<Builder> ready to go
+<Architect> start with adjacent orange and green towers in the middle
+<Architect> 3 high
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+<Architect> then chop all and leave the top 2 floating
+[Builder picks up a orange block at X:1 Y:2 Z:0]
+[Builder picks up a orange block at X:1 Y:1 Z:0]
+[Builder picks up a green block at X:-1 Y:2 Z:0]
+<Architect> the towers should touch
+[Builder picks up a green block at X:-1 Y:1 Z:0]
+[Builder picks up a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+<Architect> good
+[Builder puts down a green block at X:0 Y:2 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder picks up a green block at X:0 Y:1 Z:0]
+[Builder picks up a green block at X:0 Y:2 Z:0]
+<Architect> make the orange one into an orange bar
+<Architect> 5 long
+<Architect> directly away from green
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder puts down a orange block at X:3 Y:3 Z:0]
+[Builder puts down a orange block at X:4 Y:3 Z:0]
+[Builder puts down a orange block at X:5 Y:3 Z:0]
+<Builder> thats at the edge of the build space
+<Architect> make a tower 2 tall ffrom the middle
+<Architect> that is OK
+[Builder puts down a orange block at X:3 Y:2 Z:0]
+<Architect> now above also
+[Builder puts down a orange block at X:3 Y:4 Z:0]
+[Builder puts down a orange block at X:3 Y:5 Z:0]
+<Architect> a big plus
+<Architect> now make the same shape in green, but flat
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+[Builder puts down a green block at X:-3 Y:3 Z:0]
+[Builder puts down a green block at X:-4 Y:3 Z:0]
+[Builder puts down a green block at X:-2 Y:3 Z:-1]
+[Builder puts down a green block at X:-2 Y:3 Z:-2]
+[Builder puts down a green block at X:-2 Y:3 Z:1]
+[Builder puts down a green block at X:-2 Y:3 Z:2]
+<Architect> now put a green block in every green corner
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+<Architect> to make the + a diamond
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+[Builder puts down a green block at X:-3 Y:3 Z:-1]
+[Builder puts down a green block at X:-3 Y:3 Z:1]
+<Architect> now cut out the middle small + to make a hole
+[Builder picks up a green block at X:-1 Y:3 Z:0]
+[Builder picks up a green block at X:-2 Y:3 Z:0]
+[Builder picks up a green block at X:-2 Y:3 Z:1]
+[Builder picks up a green block at X:-3 Y:3 Z:0]
+[Builder picks up a green block at X:-2 Y:3 Z:-1]
+<Architect> do the same in orange
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:4 Y:2 Z:0]
+[Builder puts down a orange block at X:4 Y:4 Z:0]
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+[Builder picks up a orange block at X:3 Y:4 Z:0]
+[Builder picks up a orange block at X:3 Y:3 Z:0]
+[Builder picks up a orange block at X:3 Y:2 Z:0]
+[Builder picks up a orange block at X:4 Y:3 Z:0]
+[Builder picks up a orange block at X:2 Y:3 Z:0]
+<Architect> now remove both oranges on the 4th level
+[Builder picks up a orange block at X:2 Y:4 Z:0]
+[Builder picks up a orange block at X:4 Y:4 Z:0]

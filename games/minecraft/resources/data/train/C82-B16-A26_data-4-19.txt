@@ -1,0 +1,101 @@
+B16-A26-C82-1524152505823
+<Builder> Mission has started.
+<Architect> This is going to be a neat one. I believe we're building an eiffel tower
+<Architect> We'll start with the base, which will be the perimeter of a 5x5 yellow square
+<Builder> nice!
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-2 Y:1 Z:0]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-4]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-4]
+[Builder puts down a yellow block at X:0 Y:1 Z:-4]
+[Builder puts down a yellow block at X:1 Y:1 Z:-4]
+[Builder puts down a yellow block at X:2 Y:1 Z:-4]
+[Builder puts down a yellow block at X:3 Y:1 Z:-4]
+[Builder puts down a yellow block at X:3 Y:1 Z:0]
+[Builder puts down a yellow block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:3 Y:1 Z:-2]
+[Builder puts down a yellow block at X:3 Y:1 Z:-3]
+<Architect> Oops, I think that's a rectangle
+[Builder puts down a yellow block at X:3 Y:2 Z:0]
+[Builder picks up a yellow block at X:3 Y:1 Z:-1]
+[Builder picks up a yellow block at X:3 Y:2 Z:0]
+[Builder picks up a yellow block at X:3 Y:1 Z:0]
+[Builder picks up a yellow block at X:3 Y:1 Z:-2]
+[Builder picks up a yellow block at X:3 Y:1 Z:-3]
+[Builder picks up a yellow block at X:3 Y:1 Z:-4]
+[Builder puts down a yellow block at X:2 Y:1 Z:-3]
+[Builder puts down a yellow block at X:2 Y:1 Z:-2]
+[Builder puts down a yellow block at X:2 Y:1 Z:-1]
+<Architect> Awesome!
+<Builder> sorry about that!
+<Architect> No worries! On top of each of the corners of the square, add a purple brick
+[Builder puts down a purple block at X:2 Y:2 Z:-4]
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder puts down a purple block at X:-2 Y:2 Z:0]
+[Builder puts down a purple block at X:-2 Y:2 Z:-4]
+<Architect> each purple brick will be the middle of a length 3 diagonal of purple bricks
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+[Builder puts down a purple block at X:2 Y:3 Z:-1]
+[Builder picks up a purple block at X:2 Y:2 Z:-1]
+<Architect> so there will be purple bricks in the corners on the ground
+[Builder puts down a purple block at X:2 Y:1 Z:1]
+<Architect> Not quite
+[Builder picks up a purple block at X:2 Y:1 Z:1]
+[Builder picks up a purple block at X:2 Y:3 Z:-1]
+<Architect> the purple bricks will only touch at their diagonals
+[Builder puts down a purple block at X:3 Y:1 Z:1]
+<Architect> perfect!
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder picks up a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:1 Y:1 Z:-3]
+[Builder puts down a purple block at X:1 Y:2 Z:-3]
+[Builder puts down a purple block at X:1 Y:3 Z:-3]
+[Builder picks up a purple block at X:1 Y:2 Z:-3]
+[Builder picks up a purple block at X:1 Y:1 Z:-3]
+<Architect> Good work!
+[Builder puts down a purple block at X:3 Y:1 Z:-5]
+[Builder puts down a purple block at X:-2 Y:1 Z:-5]
+[Builder picks up a purple block at X:-2 Y:1 Z:-5]
+[Builder puts down a purple block at X:-4 Y:1 Z:-5]
+[Builder picks up a purple block at X:-4 Y:1 Z:-5]
+[Builder puts down a purple block at X:-3 Y:1 Z:-5]
+[Builder puts down a purple block at X:-1 Y:1 Z:-3]
+[Builder puts down a purple block at X:-1 Y:2 Z:-3]
+[Builder puts down a purple block at X:-1 Y:3 Z:-3]
+[Builder picks up a purple block at X:-1 Y:2 Z:-3]
+[Builder picks up a purple block at X:-1 Y:1 Z:-3]
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder picks up a purple block at X:-1 Y:2 Z:-1]
+[Builder picks up a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-3 Y:1 Z:1]
+<Architect> Now we'll add a 3x3 blue square on top of the purple supports
+[Builder puts down a blue block at X:-1 Y:4 Z:-3]
+[Builder puts down a blue block at X:-1 Y:4 Z:-2]
+[Builder puts down a blue block at X:-1 Y:4 Z:-1]
+[Builder puts down a blue block at X:0 Y:4 Z:-1]
+[Builder puts down a blue block at X:1 Y:4 Z:-1]
+[Builder puts down a blue block at X:1 Y:4 Z:-2]
+[Builder puts down a blue block at X:1 Y:4 Z:-3]
+[Builder puts down a blue block at X:0 Y:4 Z:-3]
+<Architect> The finishing touch will be a height five column of green bricks, but first we need a blue brick in the center of the square
+[Builder puts down a blue block at X:0 Y:4 Z:-2]
+[Builder puts down a green block at X:0 Y:5 Z:-2]
+[Builder puts down a green block at X:0 Y:6 Z:-2]
+[Builder puts down a green block at X:0 Y:7 Z:-2]
+[Builder puts down a green block at X:0 Y:8 Z:-2]
+[Builder puts down a green block at X:0 Y:9 Z:-2]
+<Architect> Okay! now the last thing is to remove the blue brick in the middle of the square
+[Builder picks up a blue block at X:0 Y:4 Z:-2]
+<Architect> sorry i had you place it there to help with the column
+<Architect> Great!

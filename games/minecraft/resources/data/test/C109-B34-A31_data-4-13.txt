@@ -1,0 +1,34 @@
+B34-A31-C109-1523650510682
+<Builder> Mission has started.
+<Builder> hello again
+<Architect> Hello. This next one is abstract
+<Builder> fun
+<Architect> In the center, build a tower of five yellow blocks
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+[Builder puts down a yellow block at X:0 Y:5 Z:0]
+<Architect> Good, now we will be using red blocks
+<Architect> Place a red block on one side of the top yellow block
+[Builder puts down a red block at X:0 Y:5 Z:-1]
+<Architect> Now look at the structure so the red block is on the right
+<Architect> Place another red block on the back side of the current red block
+[Builder puts down a red block at X:1 Y:5 Z:-1]
+<Builder> like that?
+<Architect> Sorry, the other side of the red block
+[Builder picks up a red block at X:1 Y:5 Z:-1]
+[Builder puts down a red block at X:-1 Y:5 Z:-1]
+<Architect> Yes, like that
+<Builder> alright
+<Architect> Now place another red block to the right of the red block you just placed
+[Builder puts down a red block at X:-1 Y:5 Z:-2]
+<Builder> there
+<Builder> do you want me to stand at a different perspective or is this the easiest position?
+<Architect> Good, now fill in red blocks on the underside of the existing red blocks, so they are two layers high
+[Builder puts down a red block at X:0 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:-2]
+<Builder> like a flag
+<Builder> ish
+<Architect> It does look like a flag. We are done with this building phase

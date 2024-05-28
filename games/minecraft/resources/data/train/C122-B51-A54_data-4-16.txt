@@ -1,0 +1,88 @@
+B51-A54-C122-1523914166048
+<Builder> Mission has started.
+<Architect> For this one, build two lines of three touching the ground with one block gap between them
+<Architect> In blue
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:-1]
+[Builder puts down a blue block at X:-1 Y:1 Z:0]
+<Architect> On top of each of the middle ones, build one more blue
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder puts down a blue block at X:-1 Y:2 Z:0]
+<Architect> On top of the two blues, put one orange block each
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+<Architect> build a square from them, paralel to the ground
+<Builder> uhh
+<Builder> how big of a square
+<Architect> oh yeah 3x3
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+<Builder> so like combine the blue and orange to make a 3x3?
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+<Architect> Ah no but we can work from this . Connect the oranges on top
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+<Architect> Into a square
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder picks up a orange block at X:-1 Y:3 Z:1]
+[Builder picks up a orange block at X:-1 Y:2 Z:1]
+[Builder picks up a orange block at X:-1 Y:3 Z:-1]
+[Builder picks up a orange block at X:-1 Y:2 Z:-1]
+[Builder picks up a orange block at X:1 Y:3 Z:-1]
+[Builder picks up a orange block at X:1 Y:2 Z:-1]
+[Builder picks up a orange block at X:1 Y:3 Z:1]
+[Builder picks up a orange block at X:1 Y:2 Z:1]
+<Architect> No I mean the top surface should be a square
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder picks up a orange block at X:0 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+<Architect> Yup sorry for the vague description
+<Builder> ur good lmao
+<Architect> Think of those blue things as the legs
+<Builder> ohhh
+<Architect> Build a one block yellow head
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+<Architect> Extend the head by two more towards you
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:0 Y:4 Z:-2]
+<Builder> is this like a weird bird lmao
+<Architect> You can break the first yellow block now
+[Builder picks up a yellow block at X:0 Y:4 Z:0]
+<Architect> I think it's a robot chicken. so now the wings.
+<Architect> Build a temp block on both sides of the square
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+<Architect> Put an orange block on each of them
+<Builder> which direction? on top
+<Architect> On top of them
+[Builder picks up a green block at X:-2 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+[Builder picks up a orange block at X:-2 Y:3 Z:0]
+[Builder picks up a green block at X:2 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+[Builder picks up a orange block at X:2 Y:3 Z:0]
+<Architect> Now towards the front, extend them by one
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+[Builder puts down a orange block at X:-2 Y:4 Z:-1]
+<Architect> And on the other side of the wings, add one red block
+[Builder puts down a red block at X:1 Y:4 Z:0]
+[Builder picks up a red block at X:1 Y:4 Z:0]
+[Builder puts down a red block at X:2 Y:4 Z:1]
+[Builder puts down a red block at X:-2 Y:4 Z:1]
+<Architect> That seems to do it
+<Builder> nice

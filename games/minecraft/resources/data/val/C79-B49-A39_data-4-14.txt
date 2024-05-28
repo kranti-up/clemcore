@@ -1,0 +1,59 @@
+B49-A39-C79-1523769585238
+<Builder> Mission has started.
+<Architect> hi!
+<Builder> hi
+<Architect> this entire thing floats in the air and consists of cross shaped structures
+<Architect> start at an edge in the middle and place two green blocks stacked on top of each other
+[Builder puts down a green block at X:0 Y:1 Z:-5]
+[Builder puts down a green block at X:0 Y:2 Z:-5]
+<Architect> actually, make that 4
+[Builder puts down a green block at X:0 Y:3 Z:-5]
+[Builder puts down a green block at X:0 Y:4 Z:-5]
+<Architect> remove the bottom one
+[Builder picks up a green block at X:0 Y:1 Z:-5]
+<Architect> on the left and right sides of the middle block, place another green block
+[Builder puts down a green block at X:1 Y:3 Z:-5]
+[Builder puts down a green block at X:-1 Y:3 Z:-5]
+<Architect> on the back side of that middle green block, put a yellow block
+[Builder puts down a yellow block at X:0 Y:3 Z:-4]
+<Architect> extend that to make a row of 5 blocks coming towards you
+[Builder puts down a yellow block at X:0 Y:3 Z:-3]
+[Builder puts down a yellow block at X:0 Y:3 Z:-2]
+[Builder puts down a yellow block at X:0 Y:3 Z:-1]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+<Architect> this is part of a 5x5 yellow cross, so you can fill in the rest
+<Builder> i thought you said it was floating
+<Architect> oh, yeah
+<Architect> the sides go out to the left and right
+[Builder puts down a yellow block at X:1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:2 Y:3 Z:-2]
+<Architect> it's a centered cross when looking top down
+[Builder puts down a yellow block at X:-1 Y:3 Z:-2]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-2]
+<Builder> ok i think
+<Architect> looks good
+<Architect> at the end of that yellow cross that's closest to you right now, put an orange block towards you
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+<Architect> then put a blue block to the left of that
+[Builder puts down a blue block at X:-1 Y:3 Z:1]
+<Architect> the blue block is the right end of a cross that looks exactly like the green one
+[Builder puts down a blue block at X:-2 Y:3 Z:1]
+[Builder puts down a blue block at X:-2 Y:4 Z:1]
+[Builder puts down a blue block at X:-3 Y:3 Z:1]
+[Builder puts down a blue block at X:-2 Y:2 Z:1]
+<Builder> ok
+<Architect> the orange block is going to be part of the only cross that isn't centered
+<Architect> so more of a holy cross i guess?
+<Architect> put another three oranges to its right
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:2 Y:3 Z:1]
+[Builder puts down a orange block at X:3 Y:3 Z:1]
+<Architect> on the second to rightmost orange block, we'll put one block on each of its sides, such that it is laying flat like the yellow cross
+<Builder> orange?
+<Architect> yup
+[Builder puts down a orange block at X:2 Y:3 Z:2]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+<Builder> ok
+<Architect> beautiful
+<Architect> we've finished the cross montage
+<Builder> nice!

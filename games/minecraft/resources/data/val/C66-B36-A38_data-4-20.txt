@@ -1,0 +1,140 @@
+B36-A38-C66-1524262976017
+<Builder> Mission has started.
+<Builder> hi
+<Architect> Hello, this one is a little weird, it's a lot of triangles in weird places.
+<Builder> let's do it
+<Architect> Ok, somewhere in the middle and off to the left, make a line of orange blocks that is 5 long. It should be parrallel to the edge in front of you
+[Builder puts down a orange block at X:4 Y:1 Z:-3]
+[Builder puts down a orange block at X:3 Y:1 Z:-3]
+[Builder puts down a orange block at X:2 Y:1 Z:-3]
+[Builder puts down a orange block at X:1 Y:1 Z:-3]
+[Builder puts down a orange block at X:0 Y:1 Z:-3]
+<Builder> like this?
+[Builder picks up a orange block at X:0 Y:1 Z:-3]
+[Builder picks up a orange block at X:1 Y:1 Z:-3]
+[Builder picks up a orange block at X:2 Y:1 Z:-3]
+[Builder picks up a orange block at X:3 Y:1 Z:-3]
+[Builder picks up a orange block at X:4 Y:1 Z:-3]
+<Builder> actually let me move that closer sorry
+[Builder puts down a orange block at X:4 Y:1 Z:-1]
+[Builder puts down a orange block at X:3 Y:1 Z:-1]
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+<Architect> No worries, that's perfect
+<Builder> ok
+<Architect> Can you make stairs going up from the two edges?
+<Builder> sure
+<Architect> To complete the triangle
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:1 Y:3 Z:-1]
+[Builder picks up a orange block at X:1 Y:2 Z:-1]
+[Builder puts down a orange block at X:4 Y:2 Z:-1]
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+[Builder puts down a orange block at X:3 Y:3 Z:-1]
+[Builder picks up a orange block at X:4 Y:2 Z:-1]
+[Builder picks up a orange block at X:3 Y:2 Z:-1]
+[Builder puts down a orange block at X:4 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:3 Z:-1]
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+[Builder picks up a orange block at X:2 Y:3 Z:-1]
+<Builder> like this?
+<Architect> Yup.
+<Architect> let's getr started on the red triangle.
+<Builder> ok
+<Architect> If you look at the right side of the orange triangle, you should see the 2nd block from the ground, right?
+<Builder> here?
+<Architect> One up and to the right of that, we will put a red block
+[Builder puts down a red block at X:-3 Y:1 Z:0]
+<Builder> here?
+<Architect> Sorry, it should be as if you made a stair coming from the orange triangle
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+<Builder> ooooo
+[Builder puts down a red block at X:-3 Y:1 Z:-1]
+[Builder picks up a red block at X:-3 Y:1 Z:-1]
+[Builder picks up a red block at X:-3 Y:1 Z:0]
+[Builder puts down a red block at X:-2 Y:2 Z:-1]
+[Builder puts down a red block at X:-3 Y:2 Z:-1]
+[Builder picks up a red block at X:-2 Y:2 Z:-1]
+<Builder> here?
+<Architect> Sorry, lets try this a different way, if you walk to the right side of the yellow triangle
+[Builder picks up a red block at X:-3 Y:2 Z:-1]
+[Builder picks up a red block at X:-2 Y:1 Z:-1]
+<Builder> my right?
+<Architect> Now your left, sorry.
+<Builder> o its ok
+<Builder> here?
+<Architect> Yeah, if you stand right next to it.
+<Architect> you will need to puit a block above your head
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+[Builder picks up a red block at X:-1 Y:2 Z:-1]
+<Architect> Perfecty
+<Builder> ok
+<Architect> The red triangle is upside down and is perpendicular to the orange triangle
+<Builder> oooo
+<Builder> ok
+<Architect> We are going to make the stairs going up to the two sides of the red block. They should be two blocks long
+<Builder> ok
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:0]
+[Builder picks up a red block at X:-1 Y:4 Z:-1]
+[Builder picks up a red block at X:-1 Y:4 Z:0]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:0]
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+[Builder puts down a red block at X:-1 Y:5 Z:1]
+[Builder picks up a red block at X:-1 Y:5 Z:0]
+[Builder picks up a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:3 Z:-2]
+[Builder puts down a red block at X:-1 Y:4 Z:-2]
+[Builder puts down a red block at X:-1 Y:5 Z:-2]
+[Builder puts down a red block at X:-1 Y:5 Z:-3]
+[Builder picks up a red block at X:-1 Y:5 Z:-2]
+[Builder puts down a red block at X:-2 Y:3 Z:-2]
+[Builder picks up a red block at X:-2 Y:3 Z:-2]
+[Builder picks up a red block at X:-1 Y:3 Z:-2]
+<Builder> like this?
+<Architect> Yup, now we just need to put a bar of red blocks on top of that
+<Builder> ok
+[Builder puts down a red block at X:-1 Y:6 Z:-3]
+[Builder puts down a red block at X:-1 Y:6 Z:1]
+[Builder puts down a red block at X:-1 Y:6 Z:-2]
+[Builder puts down a red block at X:-1 Y:6 Z:0]
+[Builder puts down a red block at X:-1 Y:6 Z:-1]
+<Architect> Perfect, now we just need to do the green triangle
+<Builder> ok
+<Architect> If you float to the left side of the red triangle,
+<Architect> We are going to put the green triangle's point on the side of the bottom of the two red blocks
+[Builder puts down a green block at X:-1 Y:4 Z:-3]
+<Builder> here?
+<Architect> Sorry, I was vague, It shoudl be rright above your head
+[Builder picks up a green block at X:-1 Y:4 Z:-3]
+<Builder> it's ok
+[Builder puts down a green block at X:-1 Y:5 Z:-4]
+<Builder> here?
+<Architect> Yup, this should look just like the orange one
+<Builder> ok
+[Builder puts down a green block at X:-2 Y:5 Z:-4]
+[Builder puts down a green block at X:-2 Y:4 Z:-4]
+[Builder picks up a green block at X:-2 Y:5 Z:-4]
+[Builder puts down a green block at X:-1 Y:4 Z:-4]
+[Builder puts down a green block at X:0 Y:4 Z:-4]
+[Builder picks up a green block at X:-1 Y:4 Z:-4]
+[Builder puts down a green block at X:0 Y:3 Z:-4]
+[Builder puts down a green block at X:1 Y:3 Z:-4]
+[Builder picks up a green block at X:0 Y:3 Z:-4]
+[Builder puts down a green block at X:-2 Y:3 Z:-4]
+[Builder puts down a green block at X:-3 Y:3 Z:-4]
+[Builder picks up a green block at X:-2 Y:3 Z:-4]
+[Builder puts down a green block at X:1 Y:3 Z:-5]
+[Builder picks up a green block at X:1 Y:3 Z:-5]
+[Builder puts down a green block at X:1 Y:2 Z:-4]
+[Builder puts down a green block at X:0 Y:2 Z:-4]
+[Builder puts down a green block at X:-1 Y:2 Z:-4]
+[Builder puts down a green block at X:-3 Y:2 Z:-4]
+[Builder puts down a green block at X:-2 Y:2 Z:-4]
+<Builder> like this?
+<Architect> Exactly, that should be it.
+<Builder> ok

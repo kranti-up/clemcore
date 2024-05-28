@@ -1,0 +1,108 @@
+B53-A15-C142-1524065765008
+<Builder> Mission has started.
+<Architect> alright, start with a 3x3 square of red on the ground near the center
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> stack another square of the same shape on top of it, also red
+[Builder puts down a red block at X:-1 Y:2 Z:-1]
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+<Architect> and then remove the bottom layer
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+<Builder> Floating square, got it
+[Builder picks up a red block at X:1 Y:1 Z:-1]
+[Builder picks up a red block at X:0 Y:1 Z:-1]
+[Builder picks up a red block at X:-1 Y:1 Z:-1]
+[Builder picks up a red block at X:-1 Y:1 Z:0]
+[Builder picks up a red block at X:-1 Y:1 Z:1]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:1]
+[Builder picks up a red block at X:1 Y:1 Z:1]
+[Builder picks up a red block at X:1 Y:1 Z:0]
+<Architect> okay, now, you're gonna want to make a 5x5 hollow ring around the square
+<Architect> but one layer above it
+<Architect> it should be orange
+<Builder> Alright, I can do that
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:2]
+[Builder picks up a orange block at X:-1 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:2]
+[Builder puts down a orange block at X:1 Y:3 Z:2]
+[Builder puts down a orange block at X:2 Y:3 Z:2]
+<Architect> and remove the 4 corner blocks when you're done
+[Builder puts down a orange block at X:2 Y:3 Z:1]
+[Builder picks up a orange block at X:2 Y:3 Z:2]
+<Builder> Will do
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:-1]
+[Builder puts down a orange block at X:2 Y:3 Z:-2]
+[Builder puts down a orange block at X:1 Y:3 Z:-2]
+[Builder picks up a orange block at X:2 Y:3 Z:-2]
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+[Builder puts down a orange block at X:-1 Y:3 Z:-2]
+[Builder puts down a orange block at X:-2 Y:3 Z:-2]
+[Builder puts down a orange block at X:-2 Y:3 Z:-1]
+[Builder picks up a orange block at X:-2 Y:3 Z:-2]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:1]
+<Architect> perfect! two green blocks on any two corners of the red square
+<Architect> adjacent corners*
+<Architect> not diagonals
+<Builder> Should they be inside the orange ring?
+<Architect> yes! same height as the orange ring, and inside it
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+[Builder puts down a green block at X:1 Y:3 Z:1]
+<Architect> okay, from the right one, make a staircase of 4 green blocks total
+<Architect> extending in the direction you're currently facing, and upwards
+<Builder> I need more information
+<Architect> yeah, sorry, i just realized that was unclear
+<Builder> Is it a diagonal line?
+<Architect> start with a green block on top of the orange one in front of the right green one
+[Builder puts down a green block at X:1 Y:4 Z:2]
+<Architect> on the same side as the other green block
+[Builder puts down a green block at X:0 Y:4 Z:2]
+[Builder picks up a green block at X:0 Y:4 Z:2]
+[Builder picks up a orange block at X:0 Y:3 Z:2]
+[Builder picks up a green block at X:1 Y:4 Z:2]
+[Builder puts down a orange block at X:0 Y:3 Z:2]
+<Architect> on top of the other orange block touching the same green block
+<Builder> Okay, so the one on the side furthest away from me?
+<Architect> yes, sorry :(
+[Builder puts down a green block at X:2 Y:4 Z:1]
+<Builder> Then continue the line?
+<Builder> Diagonal line, I mean
+<Architect> yeah, same trajectory, 4 blocks total
+<Builder> Ok I understand
+[Builder puts down a green block at X:3 Y:4 Z:1]
+[Builder puts down a green block at X:3 Y:5 Z:1]
+[Builder picks up a green block at X:3 Y:4 Z:1]
+[Builder puts down a green block at X:4 Y:5 Z:1]
+[Builder puts down a green block at X:4 Y:6 Z:1]
+[Builder picks up a green block at X:4 Y:5 Z:1]
+<Architect> perfect! do the same thing on the other side, except it's also diagonally away from the corner
+<Builder> I see
+<Architect> so the trajectory is forward, up, and left
+[Builder puts down a green block at X:2 Y:3 Z:-2]
+<Architect> and stop at 3 blocks
+[Builder puts down a green block at X:2 Y:4 Z:-2]
+[Builder picks up a green block at X:2 Y:3 Z:-2]
+[Builder puts down a green block at X:2 Y:4 Z:-3]
+[Builder puts down a green block at X:3 Y:4 Z:-3]
+[Builder puts down a green block at X:3 Y:5 Z:-3]
+[Builder picks up a green block at X:3 Y:4 Z:-3]
+[Builder picks up a green block at X:2 Y:4 Z:-3]
+<Builder> Like so?
+<Architect> perfect! all done i think. sorry for the confusion
+<Builder> No worries

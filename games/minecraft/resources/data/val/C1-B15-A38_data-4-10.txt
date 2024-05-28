@@ -1,0 +1,67 @@
+B15-A38-C1-1523399524945
+<Builder> Mission has started.
+<Builder> ready!
+<Architect> Ok, this on looks sort of like a hanging bell.
+<Architect> close to the left edge make a pillar of red blocks
+<Builder> how high?
+[Builder puts down a red block at X:4 Y:1 Z:-3]
+<Architect> 8 blocks
+[Builder puts down a red block at X:4 Y:2 Z:-3]
+[Builder puts down a red block at X:4 Y:3 Z:-3]
+[Builder puts down a red block at X:4 Y:4 Z:-3]
+[Builder puts down a red block at X:4 Y:5 Z:-3]
+[Builder puts down a red block at X:4 Y:6 Z:-3]
+[Builder puts down a red block at X:4 Y:7 Z:-3]
+[Builder puts down a red block at X:4 Y:8 Z:-3]
+<Builder> done!
+<Architect> cool, make a green pillar 8 blocks to the right of that
+[Builder puts down a green block at X:-4 Y:1 Z:-3]
+[Builder puts down a green block at X:-4 Y:2 Z:-3]
+[Builder puts down a green block at X:-4 Y:3 Z:-3]
+[Builder puts down a green block at X:-4 Y:4 Z:-3]
+[Builder puts down a green block at X:-4 Y:4 Z:-4]
+[Builder picks up a green block at X:-4 Y:4 Z:-4]
+[Builder puts down a green block at X:-4 Y:5 Z:-3]
+[Builder puts down a green block at X:-4 Y:6 Z:-3]
+[Builder puts down a green block at X:-4 Y:7 Z:-3]
+[Builder puts down a green block at X:-4 Y:8 Z:-3]
+<Builder> there?
+<Architect> Yup
+<Architect> Now put a bar of purple blocks on top of the two pillars
+<Builder> feel free to pipeline instructions if you think it'll work better!
+[Builder puts down a purple block at X:4 Y:9 Z:-3]
+[Builder puts down a purple block at X:3 Y:9 Z:-3]
+[Builder puts down a purple block at X:2 Y:9 Z:-3]
+[Builder puts down a purple block at X:1 Y:9 Z:-3]
+[Builder puts down a purple block at X:0 Y:9 Z:-3]
+[Builder puts down a purple block at X:-1 Y:9 Z:-3]
+[Builder puts down a purple block at X:-2 Y:9 Z:-3]
+[Builder puts down a purple block at X:-3 Y:9 Z:-3]
+[Builder puts down a purple block at X:-4 Y:9 Z:-3]
+<Builder> there, or should it be lower?
+<Architect> Thats good.
+<Architect> Now make an orange block underneath the bar in the middle
+[Builder puts down a orange block at X:0 Y:8 Z:-3]
+<Builder> alright!
+<Architect> Now hang a 3 by 3 square from that. Everything should look flat
+[Builder puts down a orange block at X:0 Y:8 Z:-4]
+[Builder picks up a orange block at X:0 Y:8 Z:-4]
+[Builder puts down a orange block at X:0 Y:7 Z:-3]
+[Builder puts down a orange block at X:-1 Y:7 Z:-3]
+[Builder puts down a orange block at X:1 Y:7 Z:-3]
+[Builder puts down a orange block at X:1 Y:6 Z:-3]
+[Builder puts down a orange block at X:-1 Y:6 Z:-3]
+[Builder puts down a orange block at X:1 Y:5 Z:-3]
+[Builder puts down a orange block at X:0 Y:5 Z:-3]
+[Builder puts down a orange block at X:-1 Y:5 Z:-3]
+[Builder puts down a orange block at X:0 Y:6 Z:-3]
+<Builder> i'm guessing 5 below that?
+<Builder> a row of 5?
+<Architect> No, just add a block to the sides on the botoom layer.
+[Builder puts down a orange block at X:2 Y:5 Z:-3]
+[Builder puts down a orange block at X:-2 Y:5 Z:-3]
+<Builder> like that?
+<Architect> Yup, now we just need to add a yellow block on the bottom in the middle
+[Builder puts down a yellow block at X:0 Y:4 Z:-3]
+<Builder> nice!
+<Architect> Perfect

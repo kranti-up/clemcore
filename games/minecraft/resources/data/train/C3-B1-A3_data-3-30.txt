@@ -1,0 +1,20 @@
+B1-A3-C3-1522431780184
+<Builder> Mission has started.
+<Architect> hello
+<Builder> hello
+<Architect> are u rdy to get to work?
+<Builder> yes
+<Architect> ok
+<Architect> build a 2x1 structure that is blue
+<Builder> is the structure extending upwards?
+<Architect> no, it goes across
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+[Builder puts down a blue block at X:0 Y:1 Z:-3]
+<Builder> is that good?
+<Architect> now place 1 blue piece on the left block extending upwards
+<Architect> yes that is correct
+[Builder puts down a blue block at X:0 Y:2 Z:-2]
+<Builder> like that?
+<Architect> yes, now it is finished
+<Builder> good job!
+<Architect> you too builder

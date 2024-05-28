@@ -1,0 +1,85 @@
+B49-A39-C10-1523768489600
+<Builder> Mission has started.
+<Architect> hello
+<Architect> this one is kind of like a rainbow using three colors
+<Architect> it stands up, and all blocks lie within the same plane
+<Builder> ready
+<Architect> on two edges, along the same row, place a red block at each end
+[Builder puts down a red block at X:5 Y:1 Z:-1]
+[Builder puts down a red block at X:-5 Y:1 Z:-1]
+<Architect> now put a purple block to the right of the left red block, leaving a one block gap
+[Builder puts down a purple block at X:3 Y:1 Z:-1]
+[Builder puts down a purple block at X:3 Y:2 Z:-1]
+[Builder picks up a purple block at X:3 Y:1 Z:-1]
+<Architect> wait sorry, that purple should be on the ground
+<Builder> i thought you said it stands up
+<Architect> yeah, it will
+<Architect> patience!
+[Builder puts down a purple block at X:3 Y:1 Z:-1]
+[Builder picks up a purple block at X:3 Y:2 Z:-1]
+<Architect> do the same thing on the right side
+<Architect> but going inwards
+[Builder puts down a purple block at X:-3 Y:1 Z:-1]
+<Architect> okay, now using the same technique, place yellow blocks relative to those purple blocks
+[Builder puts down a yellow block at X:1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+<Architect> cool
+<Architect> now think of these as the bases of three separate arches
+<Architect> in those colors
+<Builder> i see
+<Architect> let's start simple with yellow
+<Architect> put a yellow block on the next layer up and between those on the ground
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder picks up a yellow block at X:0 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder picks up a yellow block at X:0 Y:1 Z:-1]
+<Architect> that finishes the yellow arch
+<Architect> now for purple
+<Architect> on the left purple block, put one purple block diagonally up and right of it
+[Builder puts down a purple block at X:3 Y:2 Z:-1]
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+[Builder picks up a purple block at X:3 Y:2 Z:-1]
+<Architect> this whole shape is symmetric, so you can do the same for the other side
+[Builder puts down a purple block at X:-2 Y:1 Z:-1]
+[Builder puts down a purple block at X:-2 Y:2 Z:-1]
+[Builder picks up a purple block at X:-2 Y:1 Z:-1]
+<Architect> up and right one more time
+[Builder puts down a purple block at X:2 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:2 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder picks up a purple block at X:-1 Y:2 Z:-1]
+<Architect> now connect those two top purple blocks in the middle, on the same level
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+<Architect> we'll do a similar pattern for the red blocks, except now there will be four blocks going up diagonally instead of three
+<Builder> connected at the top in the same layer?
+[Builder puts down a red block at X:4 Y:1 Z:-1]
+[Builder puts down a red block at X:4 Y:2 Z:-1]
+[Builder picks up a red block at X:4 Y:1 Z:-1]
+[Builder puts down a red block at X:3 Y:2 Z:-1]
+[Builder puts down a red block at X:3 Y:3 Z:-1]
+[Builder picks up a red block at X:3 Y:2 Z:-1]
+[Builder puts down a red block at X:2 Y:3 Z:-1]
+[Builder puts down a red block at X:2 Y:4 Z:-1]
+[Builder picks up a red block at X:2 Y:3 Z:-1]
+<Architect> yes, you'll end up with a row of 5 connected at the top
+[Builder puts down a red block at X:-4 Y:1 Z:-1]
+[Builder puts down a red block at X:-4 Y:2 Z:-1]
+[Builder picks up a red block at X:-4 Y:1 Z:-1]
+[Builder puts down a red block at X:-3 Y:2 Z:-1]
+[Builder puts down a red block at X:-3 Y:3 Z:-1]
+[Builder picks up a red block at X:-3 Y:2 Z:-1]
+[Builder puts down a red block at X:-2 Y:3 Z:-1]
+[Builder puts down a red block at X:-2 Y:4 Z:-1]
+[Builder picks up a red block at X:-2 Y:3 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:0 Y:4 Z:-1]
+[Builder puts down a red block at X:1 Y:4 Z:-1]
+<Builder> done
+<Architect> cool! that's our rainbow
+<Architect> sort of
+<Builder> its not right?
+<Architect> no it's right, it's just not really a rainbow :P
+<Builder> oh gotcha

@@ -1,0 +1,92 @@
+B34-A38-C50-1524091418001
+<Builder> Mission has started.
+<Architect> Ok, this one looks like a bunch of weirdlt orientated x's
+<Builder> where do i start
+<Architect> if you back up, we are going to need a purple block 1 off the ground, near the edge
+[Builder puts down a purple block at X:0 Y:1 Z:-4]
+[Builder puts down a purple block at X:0 Y:2 Z:-4]
+[Builder picks up a purple block at X:0 Y:1 Z:-4]
+<Architect> Perfect, if you go to the left side, this is going to be the bottomr right corner of an x
+[Builder puts down a purple block at X:0 Y:3 Z:-4]
+[Builder puts down a purple block at X:0 Y:3 Z:-3]
+[Builder picks up a purple block at X:0 Y:3 Z:-4]
+[Builder puts down a purple block at X:0 Y:4 Z:-3]
+[Builder puts down a purple block at X:0 Y:4 Z:-4]
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+[Builder picks up a purple block at X:0 Y:4 Z:-3]
+[Builder puts down a purple block at X:0 Y:2 Z:-3]
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder picks up a purple block at X:0 Y:2 Z:-3]
+<Builder> like that
+<Architect> Yes
+<Architect> On the ground near the bottom left corner of the x,
+<Architect> if you step back 2 blocks, in the block to your left place a green block.
+[Builder puts down a green block at X:3 Y:1 Z:0]
+<Architect> Sprry, one up and to the right from that one
+[Builder puts down a green block at X:2 Y:1 Z:-1]
+[Builder picks up a green block at X:3 Y:1 Z:0]
+<Architect> Perfect
+<Architect> to the left and down, can you make a block 1 off the ground
+<Builder> which corner is this
+[Builder puts down a green block at X:3 Y:1 Z:-1]
+[Builder puts down a green block at X:3 Y:2 Z:-1]
+[Builder picks up a green block at X:3 Y:1 Z:-1]
+<Architect> Sorry, this is the lower right corner, but it is angled diagonally
+[Builder puts down a green block at X:3 Y:2 Z:0]
+[Builder picks up a green block at X:3 Y:2 Z:-1]
+<Builder> there?
+<Architect> Sorry, I gave the wrong direction, it shlould be angled towards the corner to your right
+[Builder picks up a green block at X:3 Y:2 Z:0]
+[Builder puts down a green block at X:1 Y:1 Z:-2]
+[Builder puts down a green block at X:1 Y:2 Z:-2]
+[Builder picks up a green block at X:1 Y:1 Z:-2]
+<Builder> that?
+[Builder puts down a green block at X:2 Y:2 Z:-2]
+[Builder puts down a green block at X:3 Y:2 Z:-2]
+[Builder picks up a green block at X:2 Y:2 Z:-2]
+[Builder picks up a green block at X:1 Y:2 Z:-2]
+<Builder> that
+<Architect> Yes, like that
+<Architect> Can you add a green block to the ground to the down and right of the block you just placed
+[Builder puts down a green block at X:4 Y:1 Z:-3]
+<Architect> And then just add a block one above this one
+[Builder puts down a green block at X:4 Y:2 Z:-3]
+<Architect> Sorry, can you move that one up by one
+[Builder puts down a green block at X:4 Y:3 Z:-3]
+[Builder picks up a green block at X:4 Y:2 Z:-3]
+[Builder puts down a green block at X:2 Y:2 Z:-1]
+[Builder puts down a green block at X:2 Y:3 Z:-1]
+[Builder picks up a green block at X:2 Y:2 Z:-1]
+<Builder> liek that
+<Architect> Yup
+<Architect> From the left side of the top left purple block, can you make a yellow line that is 4 blocks long going left
+<Builder> sorry
+[Builder puts down a yellow block at X:0 Y:4 Z:-1]
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+[Builder puts down a yellow block at X:0 Y:4 Z:1]
+[Builder puts down a yellow block at X:0 Y:4 Z:2]
+<Builder> like that
+<Architect> Yup, can you go to the other side
+<Architect> On the third block you placed, can you add another one that is one down and closre
+[Builder puts down a yellow block at X:0 Y:3 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:1]
+[Builder picks up a yellow block at X:0 Y:3 Z:1]
+<Architect> Can you also break the 1st and 3rd yellow blocks in the line, this will look like another x, sort of
+[Builder puts down a yellow block at X:-1 Y:4 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:4 Z:-1]
+[Builder picks up a yellow block at X:0 Y:4 Z:-1]
+[Builder picks up a yellow block at X:0 Y:4 Z:1]
+<Architect> And one down and closer from the middle yellow block should be the other corners
+[Builder puts down a yellow block at X:-2 Y:3 Z:1]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder picks up a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:-2 Y:2 Z:1]
+[Builder puts down a yellow block at X:-3 Y:2 Z:0]
+[Builder picks up a yellow block at X:-3 Y:2 Z:0]
+[Builder puts down a yellow block at X:-2 Y:2 Z:2]
+[Builder picks up a yellow block at X:-2 Y:3 Z:1]
+[Builder picks up a yellow block at X:-2 Y:2 Z:1]
+<Builder> yeha?
+<Architect> I think so, let me double check spacing
+<Architect> Yup, that is it.
+<Builder> gr8

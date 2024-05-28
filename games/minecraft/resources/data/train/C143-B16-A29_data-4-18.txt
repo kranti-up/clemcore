@@ -1,0 +1,131 @@
+B16-A29-C143-1524067984642
+<Builder> Mission has started.
+<Builder> hola
+<Architect> hello
+<Architect> we're going to build a flower
+<Builder> yay!
+<Architect> but it has a pretty complex shape
+<Builder> less yay
+<Architect> beginning with the stem in green
+<Architect> start in the middle so we have some room
+<Architect> the stem is 4 tall but the bottom block is shifted out by one
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:0 Y:2 Z:-1]
+[Builder picks up a green block at X:0 Y:1 Z:-1]
+<Builder> like this?
+<Architect> yes
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:4 Z:-1]
+<Architect> precisely
+<Architect> now a purple block symmetric to the bottom green block
+<Architect> on top
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+<Builder> oh wair
+[Builder picks up a purple block at X:0 Y:2 Z:-2]
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+<Architect> up top
+[Builder puts down a purple block at X:0 Y:5 Z:-2]
+[Builder picks up a purple block at X:0 Y:4 Z:-2]
+<Architect> great
+<Builder> sorry about that
+<Architect> no worries, you're still being programmed
+<Builder> so true
+<Architect> now for the rest of the flower
+<Architect> we're are going to make a 3 by 3 square with the purple block as its center
+<Architect> but shifted one block away
+<Architect> from the purple block
+<Architect> does that make sense?
+<Builder> not entirely
+[Builder puts down a purple block at X:1 Y:5 Z:-2]
+[Builder puts down a purple block at X:1 Y:5 Z:-3]
+[Builder picks up a purple block at X:1 Y:5 Z:-2]
+[Builder puts down a purple block at X:1 Y:6 Z:-3]
+<Architect> make a 3by3 orange square
+[Builder picks up a purple block at X:1 Y:6 Z:-3]
+[Builder puts down a orange block at X:1 Y:6 Z:-3]
+[Builder picks up a purple block at X:1 Y:5 Z:-3]
+<Architect> you got it
+[Builder puts down a purple block at X:1 Y:5 Z:-3]
+[Builder picks up a purple block at X:1 Y:5 Z:-3]
+[Builder puts down a orange block at X:1 Y:5 Z:-3]
+[Builder puts down a orange block at X:1 Y:4 Z:-3]
+[Builder puts down a orange block at X:0 Y:4 Z:-3]
+[Builder puts down a orange block at X:-1 Y:4 Z:-3]
+[Builder puts down a orange block at X:-1 Y:5 Z:-3]
+<Architect> perfect
+[Builder puts down a orange block at X:1 Y:6 Z:-4]
+[Builder picks up a orange block at X:1 Y:6 Z:-4]
+[Builder puts down a orange block at X:-1 Y:6 Z:-3]
+<Architect> plot twist!
+<Builder> ready for it
+<Architect> only corners are orange
+<Architect> the others should be red
+[Builder picks up a orange block at X:0 Y:6 Z:-3]
+[Builder puts down a red block at X:0 Y:6 Z:-3]
+[Builder picks up a orange block at X:1 Y:5 Z:-3]
+[Builder puts down a orange block at X:1 Y:5 Z:-3]
+[Builder picks up a orange block at X:1 Y:5 Z:-3]
+[Builder puts down a red block at X:1 Y:5 Z:-3]
+[Builder picks up a orange block at X:-1 Y:5 Z:-3]
+[Builder puts down a red block at X:-1 Y:5 Z:-3]
+[Builder picks up a orange block at X:0 Y:4 Z:-3]
+[Builder puts down a red block at X:0 Y:4 Z:-3]
+<Architect> that's excellent
+<Architect> now we're basically going to do the same thing
+<Architect> build another square on the rim of that square
+<Architect> one block out
+<Architect> in yellow
+[Builder puts down a yellow block at X:1 Y:4 Z:-4]
+<Builder> here?
+[Builder puts down a yellow block at X:1 Y:4 Z:-5]
+<Architect> diagonally
+[Builder picks up a yellow block at X:1 Y:4 Z:-5]
+[Builder picks up a yellow block at X:1 Y:4 Z:-4]
+<Architect> so this one is 5x5
+[Builder puts down a yellow block at X:1 Y:4 Z:-4]
+[Builder puts down a yellow block at X:2 Y:4 Z:-4]
+[Builder picks up a yellow block at X:1 Y:4 Z:-4]
+[Builder puts down a yellow block at X:2 Y:5 Z:-4]
+<Architect> precisely
+[Builder puts down a yellow block at X:2 Y:3 Z:-4]
+[Builder puts down a yellow block at X:1 Y:3 Z:-4]
+[Builder puts down a yellow block at X:0 Y:3 Z:-4]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:4 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:5 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:6 Z:-4]
+[Builder puts down a yellow block at X:-2 Y:7 Z:-4]
+[Builder puts down a yellow block at X:2 Y:6 Z:-4]
+[Builder puts down a yellow block at X:2 Y:7 Z:-4]
+[Builder puts down a yellow block at X:1 Y:7 Z:-4]
+[Builder puts down a yellow block at X:0 Y:7 Z:-4]
+[Builder puts down a yellow block at X:-1 Y:7 Z:-4]
+<Architect> excellent
+<Architect> now
+<Architect> plot twist!
+<Builder> it's already beautiful
+<Builder> alright!
+<Architect> the middle blocks are red
+<Architect> on each side
+[Builder picks up a yellow block at X:0 Y:7 Z:-4]
+[Builder puts down a red block at X:0 Y:7 Z:-4]
+[Builder picks up a yellow block at X:-2 Y:5 Z:-4]
+[Builder puts down a red block at X:-2 Y:5 Z:-4]
+[Builder picks up a yellow block at X:2 Y:5 Z:-4]
+[Builder puts down a red block at X:2 Y:5 Z:-4]
+[Builder puts down a red block at X:0 Y:4 Z:-4]
+[Builder picks up a red block at X:0 Y:4 Z:-4]
+[Builder picks up a yellow block at X:0 Y:3 Z:-4]
+[Builder puts down a red block at X:0 Y:3 Z:-4]
+<Architect> finally remove every block that isn't red or a corner block
+[Builder picks up a yellow block at X:2 Y:6 Z:-4]
+[Builder picks up a yellow block at X:1 Y:7 Z:-4]
+[Builder picks up a yellow block at X:-1 Y:7 Z:-4]
+[Builder picks up a yellow block at X:-2 Y:6 Z:-4]
+[Builder picks up a yellow block at X:-2 Y:4 Z:-4]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-4]
+[Builder picks up a yellow block at X:1 Y:3 Z:-4]
+[Builder picks up a yellow block at X:2 Y:4 Z:-4]
+<Architect> great work!

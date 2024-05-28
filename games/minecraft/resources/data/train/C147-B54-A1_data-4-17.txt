@@ -1,0 +1,193 @@
+B54-A1-C147-1523982608500
+<Builder> Mission has started.
+<Architect> okay this one is sorta diagonal. its a 3 - 1 4
+<Architect> the three is orange
+<Builder> I'm not sure what you mean by 3-1 4
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder picks up a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+<Architect> the structures are a "3" then diagonally behind it a "-" and diagonally behind it a "1" and so on
+[Builder puts down a orange block at X:-1 Y:1 Z:1]
+<Architect> so they are all standing
+[Builder picks up a orange block at X:-1 Y:1 Z:1]
+[Builder picks up a orange block at X:0 Y:1 Z:0]
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-2]
+[Builder puts down a orange block at X:0 Y:3 Z:-2]
+[Builder puts down a orange block at X:-1 Y:3 Z:-2]
+[Builder puts down a orange block at X:-1 Y:4 Z:-2]
+[Builder picks up a orange block at X:-1 Y:3 Z:-2]
+<Builder> Is this the right idea?
+<Architect> yeah but each structure is really big so lets build it near one of the corners
+[Builder picks up a orange block at X:0 Y:3 Z:-2]
+[Builder picks up a orange block at X:0 Y:2 Z:-2]
+[Builder picks up a orange block at X:-1 Y:4 Z:-2]
+[Builder picks up a orange block at X:0 Y:1 Z:-2]
+[Builder puts down a orange block at X:4 Y:1 Z:-4]
+[Builder puts down a orange block at X:4 Y:2 Z:-4]
+[Builder puts down a orange block at X:4 Y:3 Z:-4]
+<Architect> okay delete the top two blocks
+[Builder picks up a orange block at X:4 Y:3 Z:-4]
+[Builder picks up a orange block at X:4 Y:2 Z:-4]
+<Architect> can you stand on the other side?
+<Architect> okay now place an orange block next to this one
+[Builder puts down a orange block at X:3 Y:1 Z:-4]
+<Architect> now make a step to the right
+<Architect> sorry i mean make a step structure
+[Builder puts down a orange block at X:2 Y:1 Z:-4]
+[Builder puts down a orange block at X:2 Y:2 Z:-4]
+[Builder picks up a orange block at X:2 Y:1 Z:-4]
+<Architect> great
+<Builder> xD Sorry that makes more sense...
+<Architect> lol thats okay. thats the bottom of the 3
+<Architect> now we need that middle part of the 3 is a step to the left
+[Builder puts down a orange block at X:2 Y:3 Z:-4]
+[Builder puts down a orange block at X:3 Y:3 Z:-4]
+[Builder picks up a orange block at X:2 Y:3 Z:-4]
+<Architect> yes so the three is kinda symmetrical, except some little part which we will make later
+[Builder puts down a orange block at X:3 Y:4 Z:-4]
+[Builder puts down a orange block at X:2 Y:4 Z:-4]
+[Builder picks up a orange block at X:3 Y:4 Z:-4]
+[Builder puts down a orange block at X:3 Y:4 Z:-4]
+[Builder puts down a orange block at X:4 Y:4 Z:-4]
+[Builder picks up a orange block at X:3 Y:4 Z:-4]
+[Builder picks up a orange block at X:2 Y:4 Z:-4]
+<Architect> how you had it before
+[Builder puts down a orange block at X:3 Y:4 Z:-4]
+[Builder puts down a orange block at X:2 Y:4 Z:-5]
+[Builder puts down a orange block at X:1 Y:4 Z:-4]
+[Builder picks up a orange block at X:2 Y:4 Z:-5]
+[Builder picks up a orange block at X:3 Y:4 Z:-4]
+[Builder picks up a orange block at X:4 Y:4 Z:-4]
+[Builder picks up a orange block at X:1 Y:4 Z:-4]
+<Architect> yes now make the top of the 3 similar to the bottom
+<Builder> In the same direction or the opposite?
+<Architect> opposite? lets try it
+[Builder puts down a orange block at X:2 Y:5 Z:-4]
+[Builder puts down a orange block at X:1 Y:5 Z:-4]
+[Builder puts down a orange block at X:0 Y:5 Z:-4]
+[Builder picks up a orange block at X:2 Y:5 Z:-4]
+<Architect> oh then its the same direction. sorry
+[Builder picks up a orange block at X:1 Y:5 Z:-4]
+[Builder picks up a orange block at X:0 Y:5 Z:-4]
+[Builder puts down a orange block at X:2 Y:5 Z:-4]
+[Builder puts down a orange block at X:3 Y:5 Z:-4]
+[Builder puts down a orange block at X:4 Y:5 Z:-4]
+[Builder picks up a orange block at X:3 Y:5 Z:-4]
+[Builder picks up a orange block at X:2 Y:5 Z:-4]
+[Builder puts down a orange block at X:3 Y:5 Z:-4]
+[Builder picks up a orange block at X:5 Y:5 Z:-4]
+<Architect> that looks like a 3
+<Builder> Just about to say that too xD
+<Architect> okay now remember what i said before about this little thing, now we just need to add one more block to this 3
+<Architect> so on the first row
+<Architect> make a step to the left
+[Builder puts down a orange block at X:5 Y:1 Z:-4]
+[Builder puts down a orange block at X:5 Y:2 Z:-4]
+[Builder picks up a orange block at X:5 Y:1 Z:-4]
+<Architect> great
+<Architect> okay the "-" is only a single yellow bock and two blocks behind the three and one block to the right
+[Builder puts down a yellow block at X:4 Y:1 Z:-2]
+[Builder picks up a yellow block at X:4 Y:1 Z:-2]
+[Builder puts down a yellow block at X:4 Y:1 Z:-2]
+[Builder puts down a yellow block at X:4 Y:2 Z:-2]
+[Builder picks up a yellow block at X:4 Y:1 Z:-2]
+[Builder puts down a yellow block at X:4 Y:2 Z:-3]
+[Builder puts down a yellow block at X:4 Y:2 Z:-4]
+[Builder puts down a yellow block at X:4 Y:3 Z:-4]
+[Builder picks up a yellow block at X:4 Y:3 Z:-4]
+[Builder picks up a yellow block at X:4 Y:2 Z:-4]
+[Builder picks up a yellow block at X:4 Y:2 Z:-3]
+<Builder> (sorry about that my finger slipped) Is that right?
+<Architect> almost, move it more to the right,
+[Builder puts down a yellow block at X:3 Y:2 Z:-2]
+[Builder picks up a yellow block at X:4 Y:2 Z:-2]
+<Architect> two more
+[Builder puts down a yellow block at X:2 Y:2 Z:-2]
+[Builder puts down a yellow block at X:1 Y:2 Z:-2]
+[Builder picks up a yellow block at X:2 Y:2 Z:-2]
+[Builder picks up a yellow block at X:3 Y:2 Z:-2]
+<Architect> thats good
+<Architect> okay no for the 1, which is about the same distance as the yellow and orange blocks
+[Builder puts down a orange block at X:0 Y:1 Z:-4]
+[Builder puts down a orange block at X:0 Y:2 Z:-4]
+[Builder puts down a orange block at X:0 Y:3 Z:-4]
+<Architect> all green
+[Builder puts down a orange block at X:0 Y:5 Z:-4]
+[Builder picks up a orange block at X:0 Y:5 Z:-4]
+[Builder picks up a orange block at X:0 Y:4 Z:-4]
+[Builder picks up a orange block at X:0 Y:3 Z:-4]
+[Builder picks up a orange block at X:0 Y:2 Z:-4]
+[Builder picks up a orange block at X:0 Y:1 Z:-4]
+[Builder puts down a green block at X:0 Y:1 Z:-4]
+[Builder puts down a green block at X:0 Y:2 Z:-4]
+[Builder puts down a green block at X:0 Y:3 Z:-4]
+[Builder puts down a green block at X:0 Y:4 Z:-4]
+[Builder puts down a green block at X:0 Y:5 Z:-4]
+<Architect> remember they are all diagonally behind each other..
+[Builder picks up a green block at X:0 Y:5 Z:-4]
+[Builder picks up a green block at X:0 Y:4 Z:-4]
+[Builder picks up a green block at X:0 Y:3 Z:-4]
+[Builder picks up a green block at X:0 Y:2 Z:-4]
+[Builder picks up a green block at X:0 Y:1 Z:-4]
+<Builder> Is it just a straight line?
+<Architect> no
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:4 Z:0]
+[Builder puts down a green block at X:-1 Y:5 Z:0]
+[Builder puts down a green block at X:0 Y:4 Z:0]
+<Architect> so its 4x3 where 4 is the tall part
+[Builder picks up a green block at X:-1 Y:5 Z:0]
+[Builder puts down a green block at X:0 Y:1 Z:0]
+[Builder puts down a green block at X:-2 Y:1 Z:0]
+<Architect> okay now we just need one more green block, on the ground and next to the rightmost green block
+[Builder puts down a green block at X:-3 Y:1 Z:0]
+<Architect> great
+<Architect> now for the "4" all blue
+<Builder> Where do we start?
+[Builder puts down a blue block at X:-3 Y:1 Z:2]
+<Architect> one block to the right of the one you just placed
+[Builder picks up a blue block at X:-3 Y:1 Z:2]
+[Builder puts down a blue block at X:-4 Y:1 Z:2]
+[Builder puts down a blue block at X:-4 Y:2 Z:2]
+[Builder puts down a blue block at X:-5 Y:2 Z:2]
+<Architect> okay make the 4 a 4x3 again
+[Builder puts down a blue block at X:-3 Y:2 Z:2]
+[Builder puts down a blue block at X:-3 Y:3 Z:2]
+[Builder puts down a blue block at X:-4 Y:3 Z:2]
+[Builder puts down a blue block at X:-4 Y:4 Z:2]
+[Builder picks up a blue block at X:-4 Y:3 Z:2]
+<Architect> so the 4 doesn't have a tick to the right
+[Builder picks up a blue block at X:-5 Y:2 Z:2]
+[Builder puts down a blue block at X:-5 Y:4 Z:2]
+[Builder picks up a blue block at X:-5 Y:4 Z:2]
+<Architect> the top looks like a cup
+[Builder puts down a blue block at X:-2 Y:2 Z:2]
+[Builder picks up a blue block at X:-2 Y:2 Z:2]
+<Builder> Could we go through it step by step?
+<Architect> yeah
+<Architect> so from the very first block make a tower of four
+[Builder puts down a blue block at X:-4 Y:3 Z:2]
+[Builder picks up a blue block at X:-3 Y:3 Z:2]
+[Builder picks up a blue block at X:-3 Y:2 Z:2]
+<Architect> now make a column of three from the block you just placed
+<Architect> sorry
+<Architect> row
+[Builder puts down a blue block at X:-3 Y:3 Z:2]
+[Builder puts down a blue block at X:-5 Y:3 Z:2]
+<Architect> none on the right
+[Builder puts down a blue block at X:-2 Y:3 Z:2]
+[Builder picks up a blue block at X:-5 Y:3 Z:2]
+<Architect> yes now on top of this one make a tower of three
+[Builder puts down a blue block at X:-2 Y:4 Z:2]
+[Builder puts down a blue block at X:-2 Y:5 Z:2]
+[Builder picks up a blue block at X:-4 Y:1 Z:2]
+<Architect> everything was correct dont delete anything
+[Builder puts down a blue block at X:-4 Y:1 Z:2]
+<Architect> add one more block to the tower of three
+[Builder puts down a blue block at X:-2 Y:6 Z:2]
+<Architect> thats it

@@ -1,0 +1,45 @@
+B29-A1-C60-1524081354102
+<Builder> Mission has started.
+<Architect> okay this one has two diagonals next to each other with colors repeating from one corner of the building area to the opposite corner
+<Architect> place a red block at the corner
+<Builder> when you say two, do you mean they are off diagonal?
+[Builder puts down a red block at X:-5 Y:1 Z:-5]
+<Builder> parallel
+<Architect> yeah essentially but i was going to use this red block as reference,
+<Architect> to the right place a green block
+[Builder puts down a green block at X:-4 Y:1 Z:-5]
+<Architect> under it place a blue block
+[Builder puts down a blue block at X:-5 Y:1 Z:-4]
+<Architect> under the red one yeah
+<Architect> okay delete the red block
+[Builder picks up a red block at X:-5 Y:1 Z:-5]
+<Architect> place the red block touching both blocks again on the opposite side
+[Builder puts down a red block at X:-4 Y:1 Z:-4]
+[Builder puts down a red block at X:-4 Y:1 Z:-3]
+[Builder picks up a red block at X:-4 Y:1 Z:-3]
+<Architect> okay now on the right place a yellow and under an orange block
+[Builder puts down a yellow block at X:-3 Y:1 Z:-4]
+[Builder puts down a orange block at X:-4 Y:1 Z:-3]
+[Builder picks up a red block at X:-4 Y:1 Z:-4]
+<Architect> delete the red block
+<Architect> now add the red block again touching orange and yellow block
+<Builder> you can just tell me right and under
+<Architect> okay so to the right is red and under is purple
+[Builder puts down a red block at X:-2 Y:1 Z:-3]
+[Builder puts down a purple block at X:-3 Y:1 Z:-2]
+<Architect> now just repeat this pattern all the way across
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder puts down a yellow block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a green block at X:2 Y:1 Z:1]
+[Builder puts down a yellow block at X:3 Y:1 Z:2]
+[Builder puts down a red block at X:4 Y:1 Z:3]
+[Builder puts down a green block at X:5 Y:1 Z:4]
+[Builder puts down a blue block at X:-2 Y:1 Z:-1]
+[Builder puts down a orange block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+[Builder puts down a orange block at X:2 Y:1 Z:3]
+[Builder puts down a purple block at X:3 Y:1 Z:4]
+[Builder puts down a blue block at X:4 Y:1 Z:5]
+<Architect> great

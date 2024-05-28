@@ -1,0 +1,188 @@
+B31-A23-C88-1523476504269
+<Builder> Mission has started.
+<Architect> this shape has no recognizable look.
+<Builder> nice
+<Architect> it is also all floating one layer off the ground.
+<Builder> got it
+<Architect> on one side of the plate, i need a orange 3 x 3 square.
+[Builder puts down a orange block at X:-2 Y:1 Z:-2]
+[Builder puts down a orange block at X:-2 Y:2 Z:-2]
+[Builder picks up a orange block at X:-2 Y:1 Z:-2]
+[Builder puts down a orange block at X:-2 Y:2 Z:-3]
+[Builder puts down a orange block at X:-3 Y:2 Z:-2]
+[Builder puts down a orange block at X:-3 Y:2 Z:-3]
+[Builder puts down a orange block at X:-3 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:-3]
+[Builder puts down a orange block at X:-1 Y:2 Z:-2]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+<Builder> is here okay or is that too close?
+<Architect> oops. it needs to be upright.
+[Builder picks up a orange block at X:-2 Y:2 Z:-3]
+[Builder picks up a orange block at X:-2 Y:2 Z:-2]
+[Builder picks up a orange block at X:-2 Y:2 Z:-1]
+[Builder picks up a orange block at X:-1 Y:2 Z:-3]
+[Builder picks up a orange block at X:-1 Y:2 Z:-2]
+[Builder picks up a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:-3 Y:3 Z:-1]
+[Builder puts down a orange block at X:-3 Y:3 Z:-2]
+[Builder puts down a orange block at X:-3 Y:3 Z:-3]
+[Builder puts down a orange block at X:-3 Y:4 Z:-1]
+[Builder puts down a orange block at X:-3 Y:4 Z:-2]
+[Builder puts down a orange block at X:-3 Y:4 Z:-3]
+<Architect> perfect
+<Architect> we have two small blue block things next.
+<Builder> okay
+<Architect> So the block is to your right, right?
+<Builder> correct
+<Architect> three spaces over from the forward end of the orange block, place a blue block
+<Architect> this is on the left side
+[Builder puts down a blue block at X:-3 Y:2 Z:0]
+[Builder puts down a blue block at X:-3 Y:2 Z:1]
+[Builder puts down a blue block at X:-3 Y:2 Z:2]
+[Builder puts down a blue block at X:-3 Y:2 Z:3]
+[Builder picks up a blue block at X:-3 Y:2 Z:2]
+[Builder picks up a blue block at X:-3 Y:2 Z:1]
+[Builder picks up a blue block at X:-3 Y:2 Z:0]
+<Builder> is that what you meant?
+<Architect> actually put one where you are standing
+[Builder puts down a blue block at X:3 Y:1 Z:0]
+[Builder puts down a blue block at X:3 Y:2 Z:0]
+[Builder picks up a blue block at X:3 Y:1 Z:0]
+<Builder> there?
+<Architect> oops you arent in the same place on my screen
+[Builder picks up a blue block at X:3 Y:2 Z:0]
+<Builder> okay, I deleted that block
+<Architect> that side though,
+<Builder> what side?
+<Architect> On the broad side of the orange square.
+<Builder> is the blue block that i already put down correct?
+[Builder puts down a blue block at X:-2 Y:2 Z:-1]
+[Builder picks up a blue block at X:-2 Y:2 Z:-1]
+<Architect> no. it needs to be moved to the broad side, closer to the middle of the plate
+[Builder picks up a blue block at X:-3 Y:2 Z:3]
+<Builder> okay, just give me directions from the organe square
+<Builder> *orange
+<Architect> left side
+<Builder> this side?
+<Architect> left stack. face the broad side of the square.
+<Builder> okay
+<Architect> perfect. place the block three blocks away from the left stack on this side.
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+[Builder picks up a blue block at X:1 Y:1 Z:-1]
+<Builder> three blocks inbetween them or on the third block moving away from the square?
+<Architect> one space closer to the orange block
+[Builder puts down a blue block at X:0 Y:1 Z:-1]
+[Builder puts down a blue block at X:0 Y:2 Z:-1]
+[Builder picks up a blue block at X:1 Y:2 Z:-1]
+[Builder picks up a blue block at X:0 Y:1 Z:-1]
+<Builder> okay
+<Architect> this looks like a narrow staircase
+<Architect> put one block on top of that
+[Builder puts down a blue block at X:0 Y:3 Z:-1]
+<Architect> so on the left side of that block (the side that faces where you placed the blue block before)
+<Builder> okay
+<Architect> place a blue block on the side of the top block
+[Builder puts down a blue block at X:0 Y:3 Z:0]
+<Architect> place one on top of that
+[Builder puts down a blue block at X:0 Y:4 Z:0]
+<Architect> hecl
+<Architect> heck. its going the wrong direction
+<Builder> which direction should it be
+<Architect> that was my fault i apologize.
+<Builder> no worries
+<Architect> add three more oranges to the left side of the orange block and take off the right hand stack
+[Builder picks up a orange block at X:-3 Y:4 Z:-3]
+[Builder picks up a orange block at X:-3 Y:3 Z:-3]
+[Builder picks up a orange block at X:-3 Y:2 Z:-3]
+[Builder puts down a orange block at X:-3 Y:4 Z:0]
+[Builder puts down a orange block at X:-3 Y:3 Z:0]
+[Builder puts down a orange block at X:-3 Y:2 Z:0]
+<Builder> like that?
+<Architect> yes. on the right hand side, three blocks over from the right stack like before, place a blue block
+[Builder puts down a blue block at X:-3 Y:5 Z:-2]
+<Builder> wait
+<Builder> where?
+<Architect> on the bottom of the blue staircase, place a block
+[Builder puts down a blue block at X:0 Y:2 Z:-2]
+[Builder picks up a blue block at X:-3 Y:5 Z:-2]
+<Architect> there
+<Architect> we need to turn that staircase around to face the opposite direction
+[Builder picks up a blue block at X:0 Y:3 Z:0]
+[Builder picks up a blue block at X:0 Y:4 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:0]
+[Builder puts down a blue block at X:0 Y:2 Z:-3]
+[Builder puts down a blue block at X:0 Y:3 Z:-2]
+[Builder puts down a blue block at X:0 Y:4 Z:-2]
+[Builder picks up a blue block at X:0 Y:2 Z:-3]
+[Builder picks up a blue block at X:0 Y:2 Z:-2]
+<Builder> is that right?
+<Architect> it will need to be shifted right by two blocks
+[Builder puts down a blue block at X:0 Y:2 Z:-2]
+[Builder picks up a blue block at X:0 Y:2 Z:-1]
+[Builder puts down a blue block at X:0 Y:3 Z:-3]
+[Builder puts down a blue block at X:0 Y:3 Z:-4]
+[Builder puts down a blue block at X:0 Y:4 Z:-4]
+[Builder picks up a blue block at X:0 Y:3 Z:-4]
+[Builder picks up a blue block at X:0 Y:3 Z:-3]
+[Builder picks up a blue block at X:0 Y:4 Z:-4]
+[Builder picks up a blue block at X:0 Y:2 Z:-2]
+<Architect> getting there
+[Builder puts down a blue block at X:0 Y:2 Z:-2]
+[Builder puts down a blue block at X:0 Y:2 Z:-3]
+[Builder puts down a blue block at X:0 Y:3 Z:-3]
+[Builder puts down a blue block at X:0 Y:3 Z:-4]
+[Builder puts down a blue block at X:0 Y:4 Z:-4]
+[Builder picks up a blue block at X:0 Y:3 Z:-2]
+[Builder picks up a blue block at X:0 Y:4 Z:-2]
+[Builder picks up a blue block at X:0 Y:3 Z:-1]
+[Builder picks up a blue block at X:0 Y:2 Z:0]
+<Builder> there?
+<Architect> great!
+<Architect> so the first row is the single blue block okay
+<Architect> third row is highest row
+<Builder> okay
+<Architect> fisrt row add a block on top
+[Builder puts down a blue block at X:0 Y:3 Z:-2]
+<Architect> second row add a block on top
+[Builder puts down a blue block at X:0 Y:4 Z:-3]
+<Architect> second row remove bottom
+[Builder picks up a blue block at X:0 Y:2 Z:-3]
+<Architect> third row remove bottom
+[Builder picks up a blue block at X:0 Y:3 Z:-4]
+<Architect> finished with that part
+<Builder> okay
+<Architect> we are building an exact copy of that
+<Architect> its going to be four rows away instead of three
+<Architect> and it will be on the left side.
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:2 Z:0]
+[Builder picks up a blue block at X:1 Y:1 Z:0]
+<Builder> so I'm starting here?
+<Architect> keep that there. we can use it as a reference. correct row, but it will be moved left buy a bit. let me count
+<Architect> build three blocks on top of that one
+[Builder puts down a blue block at X:1 Y:3 Z:0]
+[Builder puts down a blue block at X:1 Y:4 Z:0]
+[Builder puts down a blue block at X:1 Y:5 Z:0]
+<Architect> remove top block
+[Builder picks up a blue block at X:1 Y:5 Z:0]
+<Architect> add one to the left side of the top block and a block below that one
+[Builder puts down a blue block at X:1 Y:4 Z:1]
+[Builder puts down a blue block at X:1 Y:3 Z:1]
+<Architect> add another to the left side of the last block you placed, and one below it.
+[Builder puts down a blue block at X:1 Y:3 Z:2]
+[Builder puts down a blue block at X:1 Y:2 Z:2]
+[Builder picks up a blue block at X:1 Y:3 Z:2]
+<Builder> like that?
+<Architect> replace the one you jsut removed
+<Builder> which one was that, i don't remember
+<Architect> place a blue block right above the floating diagonal block you just placed.
+[Builder puts down a blue block at X:1 Y:3 Z:2]
+<Builder> okay
+<Architect> on the third row, remove the bottom two blocks.
+[Builder picks up a blue block at X:1 Y:3 Z:0]
+[Builder picks up a blue block at X:1 Y:2 Z:0]
+<Builder> got it
+<Architect> looks good to me! i think we are done let me check
+<Architect> done!

@@ -1,0 +1,55 @@
+B37-A23-C106-1523631763706
+<Builder> Mission has started.
+<Architect> in the middle of the board, make a stack of three red blocks, with two on either side of the top block liek a 'T'
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-1]
+[Builder puts down a red block at X:0 Y:3 Z:-1]
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:1 Y:3 Z:-1]
+<Architect> on the right side, place two blocks on the top of the t
+<Architect> a stack
+<Builder> in a stack?
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:5 Z:-1]
+<Builder> ok
+<Architect> place one more, and then one going off it away from the t
+<Builder> at the top?
+<Architect> on top of the stack uy
+[Builder puts down a red block at X:-1 Y:6 Z:-1]
+[Builder puts down a red block at X:-2 Y:6 Z:-1]
+<Architect> remove the top block support.
+[Builder picks up a red block at X:-1 Y:6 Z:-1]
+<Architect> on that same diagonal line upward, place a green block.
+[Builder puts down a green block at X:-2 Y:7 Z:-1]
+[Builder puts down a green block at X:-3 Y:7 Z:-1]
+[Builder picks up a green block at X:-2 Y:7 Z:-1]
+<Architect> below the hanging red, hang two green blocks.
+[Builder puts down a green block at X:-2 Y:5 Z:-1]
+[Builder puts down a green block at X:-2 Y:4 Z:-1]
+<Architect> on the bottom of those two, place a green block on every side but the bottom.
+[Builder puts down a green block at X:-2 Y:4 Z:-2]
+[Builder puts down a green block at X:-3 Y:4 Z:-1]
+[Builder puts down a green block at X:-2 Y:4 Z:0]
+<Builder> ok
+<Architect> fill in the two green corners
+[Builder puts down a green block at X:-3 Y:4 Z:0]
+[Builder puts down a green block at X:-3 Y:4 Z:-2]
+<Architect> and on that side, in the middle of the green, place one more block on the side.
+[Builder puts down a green block at X:-4 Y:4 Z:-1]
+<Builder> there?
+<Architect> eys
+<Architect> yes
+<Architect> on the other side of the t now
+<Architect> place a block on the diagonal of the red.
+<Architect> red block
+<Builder> diagonal in which direction?
+<Architect> upward
+[Builder puts down a red block at X:1 Y:4 Z:-1]
+[Builder puts down a red block at X:2 Y:4 Z:-1]
+[Builder picks up a red block at X:1 Y:4 Z:-1]
+<Architect> place a green on that same diagona;
+[Builder puts down a green block at X:2 Y:5 Z:-1]
+[Builder puts down a green block at X:3 Y:5 Z:-1]
+[Builder picks up a green block at X:2 Y:5 Z:-1]
+<Architect> I think we are done!
+<Builder> cool

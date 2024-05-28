@@ -1,0 +1,39 @@
+B12-A26-C5-1522942414410
+<Builder> Mission has started.
+<Architect> We'll start with a line of three red bricks
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+<Architect> On top of them, make a line of four red bricks (the extra one will hang off the right)
+[Builder puts down a red block at X:-1 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder picks up a red block at X:1 Y:2 Z:1]
+<Architect> Cool, now on the third layer, add three more bricks
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:-1 Y:3 Z:0]
+<Architect> They will be above the three on the first layer
+<Architect> Nice. Now remove the middle block of the 3x3 square
+[Builder picks up a red block at X:0 Y:2 Z:0]
+<Architect> Great! Now on the third layer, in front of the top left brick, add a purple brick
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+<Architect> Awesome! Now add two bricks on top of the purple
+<Architect> (both will be purple)
+[Builder puts down a purple block at X:-1 Y:4 Z:1]
+[Builder puts down a purple block at X:-1 Y:5 Z:1]
+<Architect> The three purple bricks will be the right side of a 3x3 square
+[Builder puts down a purple block at X:-2 Y:5 Z:1]
+[Builder puts down a purple block at X:-2 Y:4 Z:1]
+[Builder puts down a purple block at X:-2 Y:3 Z:1]
+[Builder puts down a purple block at X:-3 Y:5 Z:1]
+[Builder puts down a purple block at X:-3 Y:4 Z:1]
+[Builder puts down a purple block at X:-3 Y:3 Z:1]
+<Architect> Please complete the square, with no middle block
+[Builder picks up a purple block at X:-2 Y:4 Z:1]
+<Architect> Perfect. Now on the top and bottom of the purple square, add one more purple brick
+[Builder puts down a purple block at X:-2 Y:2 Z:1]
+[Builder puts down a purple block at X:-2 Y:6 Z:1]
+<Architect> Good work

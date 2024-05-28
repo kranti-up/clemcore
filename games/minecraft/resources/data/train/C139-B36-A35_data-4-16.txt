@@ -1,0 +1,80 @@
+B36-A35-C139-1523916627477
+<Builder> Mission has started.
+<Builder> hi
+<Architect> okay so the first thing your going to need to do is build a 3x3 block floating off the ground by 1 space
+<Architect> in purple
+<Builder> does it matter where i put it?
+<Architect> nope
+<Builder> ok
+<Architect> just keep it close to the center
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+[Builder puts down a purple block at X:0 Y:1 Z:1]
+[Builder puts down a purple block at X:-1 Y:1 Z:1]
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:0 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+<Architect> build it vertically
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:2 Z:-1]
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+[Builder picks up a purple block at X:1 Y:1 Z:-1]
+[Builder picks up a purple block at X:0 Y:1 Z:-1]
+<Architect> I forgot to specify that
+<Builder> oh ok
+[Builder puts down a purple block at X:2 Y:1 Z:0]
+[Builder picks up a purple block at X:2 Y:1 Z:0]
+[Builder picks up a purple block at X:1 Y:1 Z:0]
+[Builder picks up a purple block at X:1 Y:1 Z:1]
+[Builder picks up a purple block at X:0 Y:1 Z:1]
+[Builder picks up a purple block at X:-1 Y:1 Z:0]
+[Builder picks up a purple block at X:-1 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+[Builder puts down a purple block at X:0 Y:4 Z:-1]
+<Builder> like this?
+<Architect> fill in the center
+<Architect> but yeah exactly
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+<Builder> ok cool
+<Architect> okay so now in the bottom row center space
+<Architect> place 1 red block
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+<Architect> on the purple
+[Builder picks up a red block at X:0 Y:1 Z:-1]
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+[Builder picks up a red block at X:0 Y:2 Z:-2]
+<Architect> yup
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+<Architect> okay now using blue
+<Architect> go to the top left corner of the purple structure
+<Architect> and add 1 block on the top, left, and right side of the corner
+[Builder puts down a blue block at X:1 Y:4 Z:-2]
+[Builder puts down a blue block at X:-1 Y:4 Z:-2]
+<Builder> like this?
+<Architect> 1 second
+[Builder picks up a blue block at X:-1 Y:4 Z:-2]
+[Builder picks up a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a blue block at X:1 Y:5 Z:-1]
+<Architect> no so remove the block to your right
+<Architect> the blue one
+[Builder picks up a blue block at X:1 Y:4 Z:-2]
+<Architect> okay now add a block to the left of the blue one u just placed
+[Builder puts down a blue block at X:2 Y:5 Z:-1]
+<Architect> and 1 below that
+[Builder puts down a blue block at X:2 Y:4 Z:-1]
+<Architect> it looks like an ear
+<Builder> like this?
+<Architect> do that on the right side
+<Architect> yup
+[Builder puts down a blue block at X:-1 Y:5 Z:-1]
+[Builder puts down a blue block at X:-2 Y:5 Z:-1]
+[Builder puts down a blue block at X:-2 Y:4 Z:-1]
+<Architect> u made mickey mouse
+<Builder> omg
+<Builder> nice
+<Architect> we're done!

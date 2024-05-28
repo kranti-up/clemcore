@@ -1,0 +1,84 @@
+B29-A8-C78-1522862991223
+<Builder> Mission has started.
+<Architect> start with a yellow tower of six
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+[Builder puts down a yellow block at X:0 Y:5 Z:0]
+[Builder puts down a yellow block at X:0 Y:6 Z:0]
+<Architect> three blocks from an edge
+<Architect> we will run out of space
+[Builder puts down a yellow block at X:3 Y:1 Z:0]
+[Builder puts down a yellow block at X:3 Y:2 Z:0]
+[Builder puts down a yellow block at X:3 Y:3 Z:0]
+[Builder puts down a yellow block at X:3 Y:4 Z:0]
+[Builder puts down a yellow block at X:3 Y:5 Z:0]
+[Builder puts down a yellow block at X:3 Y:6 Z:0]
+[Builder picks up a yellow block at X:0 Y:6 Z:0]
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+[Builder picks up a yellow block at X:0 Y:3 Z:0]
+[Builder picks up a yellow block at X:0 Y:2 Z:0]
+[Builder picks up a yellow block at X:0 Y:4 Z:0]
+[Builder picks up a yellow block at X:0 Y:5 Z:0]
+<Architect> now three blocks over from the top
+<Architect> like a gate
+<Architect> to your right
+<Architect> in yellow
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+[Builder puts down a yellow block at X:0 Y:5 Z:0]
+[Builder puts down a yellow block at X:0 Y:6 Z:0]
+<Architect> three blocks of space sorry
+[Builder picks up a yellow block at X:0 Y:6 Z:0]
+[Builder picks up a yellow block at X:0 Y:5 Z:0]
+[Builder picks up a yellow block at X:0 Y:4 Z:0]
+[Builder picks up a yellow block at X:0 Y:3 Z:0]
+[Builder picks up a yellow block at X:0 Y:2 Z:0]
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-1 Y:2 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:4 Z:0]
+[Builder puts down a yellow block at X:-1 Y:5 Z:0]
+[Builder puts down a yellow block at X:-1 Y:6 Z:0]
+<Architect> connect the topmost blocks
+[Builder puts down a yellow block at X:0 Y:6 Z:0]
+[Builder puts down a yellow block at X:1 Y:6 Z:0]
+<Architect> yes
+[Builder puts down a yellow block at X:2 Y:6 Z:0]
+<Architect> okay now on the ground
+<Architect> place a red block back one and over one from the first tower
+<Builder> over?
+<Architect> to the right
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+<Architect> yes
+<Architect> now a two block tower to the right of that
+[Builder puts down a red block at X:1 Y:1 Z:-1]
+[Builder puts down a red block at X:1 Y:2 Z:-1]
+<Architect> right again and back another red block
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+<Architect> and diagonally back again
+[Builder puts down a red block at X:-1 Y:1 Z:-3]
+<Architect> and one more block just back
+[Builder puts down a red block at X:-1 Y:1 Z:-4]
+<Architect> now on the blocknext to the top of the red tower
+<Architect> beneath the gate
+<Architect> an orange block
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+<Architect> now a diagonal line extending three block up out and to the left
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder picks up a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder picks up a orange block at X:1 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:1]
+<Architect> yes
+[Builder puts down a orange block at X:0 Y:4 Z:2]
+[Builder puts down a orange block at X:-1 Y:4 Z:2]
+[Builder picks up a orange block at X:0 Y:4 Z:2]
+[Builder picks up a orange block at X:0 Y:4 Z:1]

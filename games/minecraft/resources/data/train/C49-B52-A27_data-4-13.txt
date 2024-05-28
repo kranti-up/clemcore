@@ -1,0 +1,143 @@
+B52-A27-C49-1523660730846
+<Builder> Mission has started.
+<Architect> build a 4x4 blue wall 4 spaces from an edge parallel to that edge
+<Builder> got it
+<Architect> but make the farthest right column purple
+<Builder> like, resting on the 4th space?
+<Builder> from the edge?
+<Architect> yeah
+<Builder> okay
+[Builder puts down a blue block at X:2 Y:1 Z:-2]
+[Builder puts down a blue block at X:-1 Y:1 Z:-2]
+[Builder puts down a blue block at X:0 Y:1 Z:-2]
+[Builder puts down a blue block at X:1 Y:1 Z:-2]
+<Builder> right from which angle
+<Builder> my current right?
+<Architect> build from the other side then your right
+[Builder picks up a blue block at X:-1 Y:1 Z:-2]
+[Builder puts down a blue block at X:-1 Y:1 Z:-2]
+[Builder picks up a blue block at X:-1 Y:1 Z:-2]
+[Builder puts down a purple block at X:-1 Y:1 Z:-2]
+[Builder puts down a purple block at X:-1 Y:2 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:4 Z:-2]
+[Builder puts down a blue block at X:0 Y:2 Z:-2]
+[Builder puts down a blue block at X:1 Y:2 Z:-2]
+[Builder puts down a blue block at X:2 Y:2 Z:-2]
+[Builder puts down a blue block at X:2 Y:3 Z:-2]
+[Builder puts down a blue block at X:1 Y:3 Z:-2]
+[Builder puts down a blue block at X:0 Y:3 Z:-2]
+[Builder puts down a blue block at X:0 Y:4 Z:-2]
+[Builder puts down a blue block at X:2 Y:4 Z:-2]
+[Builder puts down a blue block at X:1 Y:4 Z:-2]
+<Builder> i think
+<Architect> knock out the middle 2x2 of that wall and break the top purple
+[Builder picks up a blue block at X:1 Y:2 Z:-2]
+[Builder picks up a blue block at X:1 Y:3 Z:-2]
+[Builder picks up a blue block at X:0 Y:3 Z:-2]
+[Builder picks up a blue block at X:0 Y:2 Z:-2]
+[Builder picks up a purple block at X:-1 Y:4 Z:-2]
+<Architect> go to the edge on your right and face the structure
+<Architect> now build a 3x3 wall off of that
+<Architect> include that column in the 3x3
+<Builder> all purple?
+<Architect> yeah
+<Builder> perpendicular to the current thing?
+[Builder puts down a purple block at X:-1 Y:1 Z:-3]
+[Builder puts down a purple block at X:-1 Y:2 Z:-3]
+[Builder puts down a purple block at X:-1 Y:3 Z:-3]
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:2 Z:-1]
+<Architect> yes but where forming a cube so shift over a column
+[Builder picks up a purple block at X:-1 Y:3 Z:-3]
+[Builder picks up a purple block at X:-1 Y:2 Z:-3]
+[Builder picks up a purple block at X:-1 Y:1 Z:-3]
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+<Builder> thanks
+<Architect> and make the column on the right have 4 and also knock out the middle of the purple
+[Builder puts down a purple block at X:-1 Y:4 Z:0]
+[Builder picks up a purple block at X:-1 Y:2 Z:-1]
+[Builder puts down a purple block at X:0 Y:4 Z:0]
+[Builder puts down a purple block at X:1 Y:4 Z:0]
+[Builder puts down a purple block at X:2 Y:4 Z:0]
+[Builder puts down a purple block at X:0 Y:1 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder puts down a purple block at X:2 Y:1 Z:0]
+[Builder puts down a purple block at X:2 Y:3 Z:0]
+[Builder puts down a purple block at X:2 Y:2 Z:0]
+[Builder picks up a purple block at X:2 Y:4 Z:0]
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+[Builder puts down a blue block at X:2 Y:3 Z:-1]
+[Builder puts down a blue block at X:3 Y:3 Z:0]
+[Builder picks up a blue block at X:3 Y:3 Z:0]
+[Builder picks up a purple block at X:2 Y:3 Z:0]
+[Builder picks up a purple block at X:2 Y:2 Z:0]
+[Builder picks up a purple block at X:2 Y:1 Z:0]
+[Builder puts down a blue block at X:2 Y:1 Z:0]
+[Builder puts down a blue block at X:2 Y:2 Z:0]
+[Builder puts down a blue block at X:2 Y:3 Z:0]
+<Builder> did i guess it?
+<Builder> i can undo
+<Architect> not quite take that down and put a 4 tall red column next to the purple
+[Builder picks up a blue block at X:2 Y:3 Z:0]
+[Builder picks up a blue block at X:2 Y:2 Z:0]
+[Builder picks up a blue block at X:2 Y:1 Z:0]
+[Builder picks up a blue block at X:2 Y:1 Z:-1]
+[Builder picks up a blue block at X:2 Y:3 Z:-1]
+[Builder picks up a purple block at X:1 Y:4 Z:0]
+[Builder picks up a purple block at X:0 Y:4 Z:0]
+[Builder picks up a purple block at X:1 Y:1 Z:0]
+[Builder picks up a purple block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:4 Z:0]
+<Builder> lol
+<Architect> the other side so extend the purple wall
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:2 Z:1]
+[Builder puts down a red block at X:-1 Y:3 Z:1]
+[Builder puts down a red block at X:-1 Y:4 Z:1]
+[Builder picks up a red block at X:0 Y:4 Z:0]
+[Builder picks up a red block at X:0 Y:3 Z:0]
+[Builder picks up a red block at X:0 Y:2 Z:0]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+<Architect> so now its gonna be a 4x3 wall of red
+<Builder> parallel to the blue wall?
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:1 Y:1 Z:1]
+<Architect> yeah
+[Builder puts down a red block at X:0 Y:2 Z:1]
+[Builder puts down a red block at X:0 Y:3 Z:1]
+[Builder puts down a red block at X:0 Y:4 Z:1]
+[Builder puts down a red block at X:1 Y:4 Z:1]
+[Builder puts down a red block at X:1 Y:3 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+<Architect> and knock out the middle bottom and second from the top middle
+[Builder picks up a red block at X:0 Y:1 Z:1]
+[Builder picks up a red block at X:0 Y:3 Z:1]
+<Builder> like an A
+<Builder> ?
+<Architect> last side is gonna be yellow so do a column of 4 yellow on that red
+[Builder puts down a yellow block at X:2 Y:1 Z:1]
+[Builder puts down a yellow block at X:2 Y:4 Z:1]
+[Builder puts down a yellow block at X:2 Y:3 Z:1]
+[Builder puts down a yellow block at X:2 Y:2 Z:1]
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+[Builder puts down a yellow block at X:2 Y:1 Z:-1]
+[Builder picks up a yellow block at X:2 Y:1 Z:0]
+[Builder picks up a yellow block at X:2 Y:1 Z:-1]
+<Builder> is it the same shape as the purple?
+<Architect> build over to the blue like you did with the purple
+[Builder puts down a yellow block at X:2 Y:3 Z:0]
+[Builder puts down a yellow block at X:2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+[Builder puts down a yellow block at X:2 Y:1 Z:-1]
+<Architect> yeah same as purple
+[Builder puts down a yellow block at X:2 Y:2 Z:-1]
+<Builder> yeah?
+<Builder> cute, A, b, C, d
+<Architect> that looks good

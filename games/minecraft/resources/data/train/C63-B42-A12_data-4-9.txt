@@ -1,0 +1,20 @@
+B42-A12-C63-1523304955372
+<Builder> Mission has started.
+<Architect> start with a blue tower 5 high
+<Builder> what should i do?
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:2 Z:1]
+[Builder puts down a blue block at X:0 Y:3 Z:1]
+[Builder puts down a blue block at X:0 Y:4 Z:1]
+[Builder puts down a blue block at X:0 Y:5 Z:1]
+<Architect> knock out levels 2 and 4
+[Builder picks up a blue block at X:0 Y:2 Z:1]
+[Builder picks up a blue block at X:0 Y:4 Z:1]
+<Builder> good
+<Architect> connect the top two via 3 blocks on any side
+<Builder> what color
+<Architect> also blue
+[Builder puts down a blue block at X:-1 Y:5 Z:1]
+[Builder puts down a blue block at X:-1 Y:4 Z:1]
+[Builder puts down a blue block at X:-1 Y:3 Z:1]
+<Builder> like that?

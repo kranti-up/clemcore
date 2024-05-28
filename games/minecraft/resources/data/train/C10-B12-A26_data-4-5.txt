@@ -1,0 +1,94 @@
+B12-A26-C10-1522940187640
+<Builder> Mission has started.
+<Builder> ready
+<Architect> We will start on the ground, placing red-purple-yellow-yellow-purple-red in a line. Each will have a space in between
+[Builder puts down a red block at X:5 Y:1 Z:-1]
+[Builder puts down a purple block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-1 Y:1 Z:-1]
+[Builder puts down a green block at X:-3 Y:1 Z:-1]
+<Builder> like that?
+<Architect> Close, I think on your right it should be yellow-purple-red instead of purple-green
+[Builder picks up a green block at X:-3 Y:1 Z:-1]
+[Builder puts down a red block at X:-3 Y:1 Z:-1]
+<Builder> ok
+<Architect> Now in the center there should be two yellows, not just one
+[Builder picks up a purple block at X:-1 Y:1 Z:-1]
+<Architect> So t6 bricks in total
+[Builder puts down a red block at X:-1 Y:1 Z:-1]
+[Builder picks up a red block at X:-1 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:-1]
+[Builder puts down a purple block at X:-3 Y:1 Z:-1]
+[Builder puts down a red block at X:-5 Y:1 Z:-1]
+<Architect> Nice
+<Architect> Now on the next level, we will be doing red-purple-yellow-purple-red
+[Builder puts down a red block at X:5 Y:2 Z:-1]
+<Architect> Again, evenly spaced, and flowing in between each brick
+[Builder puts down a purple block at X:3 Y:2 Z:-1]
+[Builder puts down a yellow block at X:1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a purple block at X:-3 Y:2 Z:-1]
+[Builder puts down a red block at X:-5 Y:2 Z:-1]
+<Architect> There will be only 5 bricks on the secone level. You may need to place bricks in between your currently existing bricks and then remove the old ones
+<Builder> ok
+[Builder puts down a red block at X:4 Y:2 Z:-1]
+[Builder picks up a red block at X:5 Y:2 Z:-1]
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+[Builder picks up a purple block at X:3 Y:2 Z:-1]
+[Builder puts down a yellow block at X:0 Y:2 Z:-1]
+[Builder picks up a yellow block at X:1 Y:2 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a purple block at X:-2 Y:2 Z:-1]
+[Builder picks up a purple block at X:-3 Y:2 Z:-1]
+[Builder puts down a red block at X:-4 Y:2 Z:-1]
+[Builder picks up a red block at X:-5 Y:2 Z:-1]
+<Builder> good?
+<Architect> Good stuff! Following the same pattern, use 4 bricks now, making a red-purple-purple-red
+[Builder puts down a red block at X:4 Y:3 Z:-1]
+[Builder puts down a red block at X:3 Y:3 Z:-1]
+[Builder picks up a red block at X:4 Y:3 Z:-1]
+[Builder puts down a purple block at X:2 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder picks up a purple block at X:2 Y:3 Z:-1]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder picks up a purple block at X:0 Y:3 Z:-1]
+[Builder puts down a purple block at X:-2 Y:3 Z:-1]
+[Builder puts down a purple block at X:-3 Y:3 Z:-1]
+[Builder picks up a purple block at X:-3 Y:3 Z:-1]
+[Builder puts down a purple block at X:-3 Y:3 Z:-2]
+[Builder picks up a purple block at X:-3 Y:3 Z:-2]
+[Builder picks up a purple block at X:-3 Y:3 Z:-1]
+[Builder puts down a red block at X:-3 Y:3 Z:-1]
+[Builder picks up a purple block at X:-2 Y:3 Z:-1]
+[Builder puts down a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a purple block at X:0 Y:4 Z:-1]
+[Builder picks up a purple block at X:1 Y:4 Z:-1]
+[Builder puts down a red block at X:3 Y:4 Z:-1]
+[Builder puts down a red block at X:2 Y:4 Z:-1]
+[Builder picks up a red block at X:3 Y:4 Z:-1]
+[Builder puts down a red block at X:-3 Y:4 Z:-1]
+[Builder puts down a red block at X:-2 Y:4 Z:-1]
+[Builder picks up a red block at X:-3 Y:4 Z:-1]
+<Builder> pyramid?
+[Builder puts down a red block at X:0 Y:5 Z:-1]
+[Builder puts down a red block at X:-1 Y:5 Z:-1]
+[Builder picks up a red block at X:0 Y:5 Z:-1]
+<Architect> Good work. Hold on on the top layer- although you might expect the same thing, it will be 5 red blocks in a line
+[Builder picks up a red block at X:-1 Y:5 Z:-1]
+<Builder> which layer?
+<Architect> the 4th layer
+[Builder picks up a purple block at X:0 Y:4 Z:-1]
+[Builder puts down a purple block at X:-2 Y:4 Z:-2]
+[Builder puts down a purple block at X:-1 Y:4 Z:-1]
+[Builder picks up a purple block at X:-2 Y:4 Z:-2]
+[Builder picks up a purple block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:-1 Y:4 Z:-1]
+[Builder puts down a red block at X:0 Y:4 Z:-1]
+[Builder puts down a red block at X:1 Y:4 Z:-1]
+<Builder> thusly?
+<Architect> Cool! Now one last touch, in between the two purple bricks, add a purple brick
+<Architect> It should make three arches
+[Builder puts down a purple block at X:0 Y:4 Z:-2]
+[Builder puts down a purple block at X:0 Y:3 Z:-1]
+[Builder picks up a purple block at X:0 Y:4 Z:-2]

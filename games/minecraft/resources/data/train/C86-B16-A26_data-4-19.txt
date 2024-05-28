@@ -1,0 +1,156 @@
+B16-A26-C86-1524153493389
+<Builder> Mission has started.
+<Architect> This structure looks fun- nothing will touch the ground!
+<Builder> cool!
+<Architect> We'll start with a row of 4 purple bricks, a layer above the ground
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:2 Z:1]
+[Builder picks up a purple block at X:1 Y:1 Z:1]
+[Builder puts down a purple block at X:0 Y:2 Z:1]
+[Builder puts down a purple block at X:-1 Y:2 Z:1]
+[Builder puts down a purple block at X:-2 Y:2 Z:1]
+<Architect> Great! now to the left and right of one of the purple bricks in the middle of the row, add orange bricks
+<Architect> Sort of like a floating cross if you viewed it from the sky
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:-2 Y:2 Z:2]
+[Builder picks up a orange block at X:-2 Y:2 Z:2]
+[Builder puts down a orange block at X:-1 Y:2 Z:2]
+<Architect> Great! we'll add a two blue bricks, one space away from the orange bricks and diagonally adjacent to the top of the cross
+<Architect> You could think of it as adding a row of blue bricks to the top of the cross and then removing the middle brick
+<Builder> in the same layer as the rest of the structure?
+<Architect> Yes!
+[Builder puts down a blue block at X:-3 Y:2 Z:1]
+[Builder puts down a blue block at X:-3 Y:2 Z:2]
+[Builder puts down a blue block at X:-3 Y:2 Z:0]
+[Builder picks up a blue block at X:-3 Y:2 Z:1]
+<Architect> We'll do that once more (so the blue bricks are part of a length 2 blue diagonal
+<Architect> )
+[Builder puts down a blue block at X:-4 Y:2 Z:0]
+[Builder puts down a blue block at X:-4 Y:2 Z:-1]
+[Builder picks up a blue block at X:-4 Y:2 Z:0]
+[Builder puts down a blue block at X:-3 Y:2 Z:3]
+[Builder puts down a blue block at X:-4 Y:2 Z:3]
+[Builder picks up a blue block at X:-3 Y:2 Z:3]
+<Architect> great! Now we'll mve up a layer
+<Architect> we'll start by making the perimeter of a 3x5 orange rectangle
+<Architect> the corners of the rectangle touch the orange bricks onthe second layer
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:1]
+[Builder puts down a orange block at X:-1 Y:3 Z:2]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+<Architect> The three bricks you added will be the center of the rectangle
+[Builder picks up a orange block at X:2 Y:3 Z:0]
+[Builder picks up a orange block at X:1 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:1 Y:3 Z:0]
+[Builder picks up a orange block at X:-1 Y:3 Z:1]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder puts down a orange block at X:-3 Y:3 Z:0]
+[Builder puts down a orange block at X:-3 Y:3 Z:1]
+[Builder puts down a orange block at X:-3 Y:3 Z:2]
+[Builder puts down a orange block at X:-1 Y:3 Z:3]
+[Builder picks up a orange block at X:-1 Y:3 Z:3]
+[Builder puts down a orange block at X:-2 Y:3 Z:2]
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:1 Y:3 Z:2]
+[Builder puts down a orange block at X:0 Y:3 Z:2]
+<Architect> You're close! try rotating the rectangle 90 degrees
+[Builder picks up a orange block at X:0 Y:3 Z:2]
+[Builder picks up a orange block at X:1 Y:3 Z:2]
+[Builder picks up a orange block at X:1 Y:3 Z:1]
+[Builder picks up a orange block at X:1 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+[Builder picks up a orange block at X:-2 Y:3 Z:0]
+[Builder picks up a orange block at X:-3 Y:3 Z:1]
+<Architect> so if you looked down from the sky, through the rectangle, you would see the orange-purple-orange part of the seoncd layer
+[Builder picks up a orange block at X:-3 Y:3 Z:2]
+[Builder picks up a orange block at X:-2 Y:3 Z:2]
+[Builder picks up a blue block at X:-4 Y:2 Z:-1]
+<Architect> maybe an easier way to put it is to add a brick on top of the brick at the top of the cross
+[Builder puts down a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:1 Y:3 Z:2]
+<Architect> Sorry! The other side of the purple row
+[Builder puts down a orange block at X:0 Y:3 Z:2]
+[Builder picks up a orange block at X:1 Y:3 Z:2]
+[Builder picks up a orange block at X:0 Y:3 Z:2]
+[Builder picks up a orange block at X:1 Y:3 Z:1]
+[Builder puts down a orange block at X:-2 Y:3 Z:1]
+[Builder puts down a orange block at X:-2 Y:3 Z:2]
+[Builder picks up a orange block at X:-2 Y:3 Z:2]
+<Architect> Ok! That brick will be part of a row of length 5, perpendicular to the purple row
+[Builder puts down a orange block at X:-2 Y:3 Z:2]
+[Builder puts down a orange block at X:-2 Y:3 Z:3]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder puts down a orange block at X:-2 Y:3 Z:-1]
+<Architect> You got it! :)
+[Builder puts down a orange block at X:-1 Y:3 Z:3]
+[Builder puts down a orange block at X:0 Y:3 Z:3]
+[Builder puts down a orange block at X:0 Y:3 Z:2]
+[Builder puts down a orange block at X:0 Y:3 Z:1]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+<Architect> Can you remove the two orange bricks from the middle
+[Builder picks up a orange block at X:-1 Y:3 Z:2]
+[Builder picks up a orange block at X:-1 Y:3 Z:0]
+<Architect> Great! Now we'll add the perimeter of a 7x5 rectangle on top of the 3x5 one (up a layer)
+<Builder> what color?
+<Architect> Also orange
+[Builder puts down a orange block at X:0 Y:4 Z:3]
+[Builder puts down a orange block at X:1 Y:4 Z:3]
+[Builder picks up a orange block at X:0 Y:4 Z:3]
+[Builder puts down a orange block at X:1 Y:4 Z:2]
+[Builder puts down a orange block at X:1 Y:4 Z:1]
+[Builder puts down a orange block at X:1 Y:4 Z:0]
+[Builder puts down a orange block at X:1 Y:4 Z:-1]
+<Architect> The row you're currently building will be the side that has length 7
+<Builder> unless i am reading your directions badly, it doesnt seem like we have enough orange to build this?
+<Architect> Ok! we'll need to remove some bricks from the second layer anyway, so we might as well do that now!
+<Builder> if we are removing parts of this, we can substitute some for purple
+<Builder> alright!
+<Architect> Please remove the bricks from the 3x5 rectangle that are not the corner bricks
+[Builder picks up a orange block at X:-1 Y:3 Z:-1]
+[Builder picks up a orange block at X:0 Y:3 Z:0]
+[Builder picks up a orange block at X:0 Y:3 Z:1]
+[Builder picks up a orange block at X:0 Y:3 Z:2]
+[Builder picks up a orange block at X:-1 Y:3 Z:3]
+[Builder picks up a orange block at X:-2 Y:3 Z:2]
+[Builder picks up a orange block at X:-2 Y:3 Z:0]
+[Builder picks up a orange block at X:-2 Y:3 Z:1]
+<Architect> And for the 7x5 rectangle, we will only need the sides of length 5
+<Architect> not the entire rectangle
+<Builder> alright!
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+[Builder puts down a orange block at X:0 Y:4 Z:-2]
+[Builder puts down a orange block at X:-1 Y:4 Z:-2]
+[Builder puts down a orange block at X:-2 Y:4 Z:-2]
+[Builder puts down a orange block at X:-3 Y:4 Z:-2]
+[Builder picks up a orange block at X:1 Y:4 Z:-1]
+[Builder picks up a orange block at X:1 Y:4 Z:0]
+[Builder picks up a orange block at X:1 Y:4 Z:1]
+[Builder picks up a orange block at X:1 Y:4 Z:2]
+[Builder puts down a orange block at X:0 Y:4 Z:3]
+[Builder puts down a orange block at X:-1 Y:4 Z:3]
+[Builder puts down a orange block at X:-1 Y:5 Z:3]
+[Builder picks up a orange block at X:-1 Y:5 Z:3]
+[Builder puts down a orange block at X:-2 Y:4 Z:3]
+[Builder puts down a orange block at X:-3 Y:4 Z:3]
+<Architect> I think the row on you're right needs to be moved to the right by one space
+<Architect> So that it is symmetrical to the left side of the structure
+[Builder picks up a orange block at X:1 Y:4 Z:3]
+<Builder> okay i see!
+[Builder picks up a orange block at X:0 Y:4 Z:3]
+<Architect> Ok!
+[Builder puts down a orange block at X:-1 Y:4 Z:4]
+[Builder puts down a orange block at X:0 Y:4 Z:4]
+[Builder puts down a orange block at X:1 Y:4 Z:4]
+[Builder picks up a orange block at X:-3 Y:4 Z:3]
+[Builder picks up a orange block at X:-2 Y:4 Z:3]
+[Builder picks up a orange block at X:-1 Y:4 Z:3]
+[Builder puts down a orange block at X:-2 Y:4 Z:4]
+[Builder puts down a orange block at X:-3 Y:4 Z:4]
+<Architect> Nice work :D this is a tough structure
+<Builder> there we go!

@@ -1,0 +1,68 @@
+B29-A26-C35-1523375743673
+<Builder> Mission has started.
+<Architect> We'll start with 4 red bricks horizonal to one another
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> On top of the rightmost brick, add three orange bricks
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+[Builder picks up a orange block at X:-1 Y:4 Z:0]
+[Builder puts down a orange block at X:-1 Y:4 Z:0]
+<Architect> Now we'll add a diagonal of yellow bricks
+[Builder picks up a orange block at X:-1 Y:3 Z:0]
+<Architect> the bottom one will be on top of the leftmost red brick
+[Builder puts down a orange block at X:-1 Y:3 Z:0]
+<Architect> and the top one will be on the left of the orange brick
+<Architect> So add a yellow brick on top of the leftmost red brick
+[Builder picks up a red block at X:2 Y:1 Z:0]
+[Builder puts down a red block at X:2 Y:1 Z:0]
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:2 Z:0]
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+[Builder picks up a yellow block at X:0 Y:3 Z:0]
+[Builder picks up a yellow block at X:1 Y:2 Z:0]
+<Architect> Perfect!
+<Architect> Please add another green diagonal directly on top of the red one
+<Architect> Yellow* one
+[Builder picks up a yellow block at X:2 Y:2 Z:0]
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:4 Z:0]
+[Builder puts down a green block at X:0 Y:5 Z:0]
+<Architect> Now we'll make a blue row that starts on top of the orange bricks and goes forward
+<Architect> the row will have 4 blue bricks
+<Builder> forward to my right or in front of me?
+<Architect> So the last brick will be behind the structure
+<Builder> behind relative to?
+<Builder> my back?
+<Architect> as in further from you
+[Builder puts down a blue block at X:-1 Y:5 Z:0]
+[Builder puts down a blue block at X:-1 Y:5 Z:1]
+[Builder puts down a blue block at X:-1 Y:5 Z:2]
+[Builder puts down a blue block at X:-1 Y:5 Z:3]
+<Architect> great!
+<Architect> Now we'll add a diagonal that conects that most recently placed blue brick to the bottom green brick
+<Builder> which color?
+<Architect> So one brick will touch the bottom right green brick
+<Architect> Purple
+[Builder puts down a purple block at X:2 Y:3 Z:1]
+[Builder puts down a purple block at X:2 Y:3 Z:2]
+[Builder puts down a purple block at X:2 Y:4 Z:2]
+[Builder puts down a purple block at X:1 Y:4 Z:1]
+[Builder picks up a purple block at X:1 Y:4 Z:1]
+[Builder puts down a purple block at X:1 Y:4 Z:2]
+[Builder puts down a purple block at X:1 Y:4 Z:3]
+[Builder puts down a purple block at X:0 Y:4 Z:2]
+[Builder picks up a purple block at X:1 Y:4 Z:3]
+[Builder puts down a purple block at X:0 Y:4 Z:3]
+[Builder puts down a purple block at X:0 Y:5 Z:3]
+[Builder picks up a purple block at X:0 Y:4 Z:3]
+[Builder picks up a purple block at X:2 Y:4 Z:2]
+[Builder picks up a purple block at X:2 Y:3 Z:2]
+<Architect> nice!
+[Builder picks up a purple block at X:0 Y:4 Z:2]

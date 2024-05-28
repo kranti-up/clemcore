@@ -1,0 +1,60 @@
+B20-A10-C43-1522940025842
+<Builder> Mission has started.
+<Architect> this one is all in one vertical plane
+<Architect> so you'll be building up. Start with two red blocks one space apart
+[Builder puts down a red block at X:1 Y:1 Z:0]
+<Architect> somewhere in the middle
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> on top of that a row of 7 forest green blocks.
+[Builder puts down a green block at X:1 Y:2 Z:0]
+<Builder> on top of both?
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:4 Z:0]
+[Builder puts down a green block at X:1 Y:5 Z:0]
+<Architect> not vertically, horizontally
+[Builder picks up a green block at X:1 Y:5 Z:0]
+[Builder picks up a green block at X:1 Y:4 Z:0]
+[Builder picks up a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:2 Z:0]
+<Builder> like this?
+<Architect> and it will be symmetric
+[Builder puts down a green block at X:-1 Y:2 Z:0]
+[Builder puts down a green block at X:-2 Y:2 Z:0]
+<Architect> and yeah@!!
+[Builder puts down a green block at X:-3 Y:2 Z:0]
+[Builder puts down a green block at X:2 Y:2 Z:0]
+[Builder puts down a green block at X:3 Y:2 Z:0]
+<Architect> awesome. on top of that, 5 forest green blocks
+<Builder> are we making a tree?
+[Builder puts down a green block at X:-2 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+<Architect> kind of. do another layer of the tree (3) then it will change after that
+[Builder puts down a green block at X:0 Y:4 Z:0]
+[Builder puts down a green block at X:-1 Y:4 Z:0]
+[Builder puts down a green block at X:1 Y:4 Z:0]
+<Architect> it kind of looks like a man in a skirt
+<Architect> on top of that, three light/puke green blocks
+[Builder puts down a yellow block at X:-1 Y:5 Z:0]
+[Builder puts down a yellow block at X:0 Y:5 Z:0]
+[Builder puts down a yellow block at X:1 Y:5 Z:0]
+<Architect> yup! and the same again
+<Builder> the closest I have to that is the yellow i put down
+[Builder puts down a yellow block at X:1 Y:6 Z:0]
+[Builder puts down a yellow block at X:0 Y:6 Z:0]
+[Builder puts down a yellow block at X:-1 Y:6 Z:0]
+<Architect> that looks right
+<Builder> alrighty
+<Architect> color wise. now, 5 of the same color on top of that
+[Builder puts down a yellow block at X:0 Y:7 Z:0]
+[Builder puts down a yellow block at X:-1 Y:7 Z:0]
+[Builder puts down a yellow block at X:-2 Y:7 Z:0]
+[Builder puts down a yellow block at X:1 Y:7 Z:0]
+[Builder puts down a yellow block at X:2 Y:7 Z:0]
+<Builder> this?
+<Architect> yep! and finally, one red on top in the middle
+[Builder puts down a red block at X:0 Y:8 Z:0]
+<Architect> thats good!
+<Builder> cool

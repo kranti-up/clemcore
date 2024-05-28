@@ -1,0 +1,130 @@
+B24-A25-C20-1523055406013
+<Builder> Mission has started.
+<Architect> ok, this build is 3D
+<Architect> so we'll keep the plane convention
+<Builder> yeah
+<Architect> and it's 4 blocks long, 4 blocks wide, and 6 blocks tall
+<Architect> first, put a red block down
+<Architect> in a place where the dimensions will fit
+<Builder> what corner are we starting at?
+<Architect> just put it in the second row in the middle from any edge of the box
+<Architect> like 6th column, second row from any side of the square
+<Architect> doesn't matter, as long as we can build out 4 blocks and to the left or right 2 blocks
+<Builder> yeah
+<Architect> if u put it two blocks back that'll work
+<Architect> from the one ur looking at
+<Architect> yea that works
+<Architect> so the red block goes there
+[Builder puts down a red block at X:-2 Y:1 Z:-2]
+<Architect> kk, plane 1 done
+<Builder> lol
+<Architect> plane 2, put an orange block one block up and one block to the right of the red block
+[Builder puts down a orange block at X:-2 Y:2 Z:-2]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder picks up a orange block at X:-2 Y:2 Z:-2]
+<Architect> kk, plane 2 done
+<Architect> plane 3, put a yellow block one block to the left of the orange
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+[Builder picks up a yellow block at X:-2 Y:3 Z:-1]
+<Architect> then a yellow block one block forward and one block to the right of the orange block
+[Builder puts down a yellow block at X:-1 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:3 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:2 Z:-1]
+[Builder picks up a yellow block at X:-1 Y:2 Z:-2]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-2]
+<Architect> the yellow blocks should be on the same level
+[Builder puts down a yellow block at X:-1 Y:3 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:4 Z:-2]
+<Architect> kk
+<Architect> can u go on the other side real quick
+<Architect> ok, plane 3 done
+<Architect> on the yellow block on the left, put a green block one block forward and one block to the left
+[Builder puts down a green block at X:-1 Y:4 Z:-2]
+[Builder puts down a green block at X:-2 Y:4 Z:-2]
+[Builder picks up a green block at X:-1 Y:4 Z:-2]
+[Builder puts down a green block at X:-2 Y:4 Z:-3]
+[Builder picks up a green block at X:-2 Y:4 Z:-2]
+<Architect> other way, facing outward from what we've built rather than inward
+[Builder puts down a green block at X:-1 Y:4 Z:-3]
+[Builder puts down a green block at X:0 Y:4 Z:-3]
+[Builder picks up a green block at X:-1 Y:4 Z:-3]
+[Builder picks up a green block at X:-2 Y:4 Z:-3]
+<Architect> yup, and then on the other yellow block, put a green block one up and one forward from the yellow block
+[Builder puts down a green block at X:-2 Y:4 Z:0]
+[Builder puts down a green block at X:-3 Y:4 Z:0]
+[Builder picks up a green block at X:-2 Y:4 Z:0]
+<Architect> facing the other way also, my bad
+[Builder puts down a green block at X:-2 Y:4 Z:0]
+[Builder puts down a green block at X:-1 Y:4 Z:0]
+[Builder picks up a green block at X:-2 Y:4 Z:0]
+[Builder picks up a green block at X:-3 Y:4 Z:0]
+<Architect> perfect, plane 4 done
+<Architect> next plane again has 2 blue blocks
+<Builder> forward = going farther from me?
+<Architect> yes
+<Builder> k
+<Architect> facing you meaning towards you
+<Builder> gotchu
+<Architect> from the green block on the left, put a blue block one unit to the right, one unit up, and one unit towards you
+<Architect> just a single block
+<Architect> that's just its position
+[Builder puts down a blue block at X:-1 Y:4 Z:1]
+[Builder puts down a blue block at X:-1 Y:5 Z:1]
+[Builder puts down a blue block at X:0 Y:5 Z:1]
+[Builder picks up a blue block at X:-1 Y:5 Z:1]
+[Builder picks up a blue block at X:-1 Y:4 Z:1]
+<Architect> right plane, but two units to the right
+[Builder puts down a blue block at X:0 Y:5 Z:0]
+[Builder puts down a blue block at X:0 Y:5 Z:-1]
+[Builder picks up a blue block at X:0 Y:5 Z:0]
+[Builder picks up a blue block at X:0 Y:5 Z:1]
+<Architect> yup
+<Builder> my b
+<Architect> and then another blue block one unit up and one unit towards u from the green block on the right
+[Builder puts down a blue block at X:0 Y:5 Z:-3]
+[Builder puts down a blue block at X:1 Y:5 Z:-3]
+[Builder picks up a blue block at X:0 Y:5 Z:-3]
+<Architect> kk, plane 5 done
+<Architect> just one block left, a purple block
+<Architect> it should share an edge with the block on the left and a corner with the block on the right
+<Architect> above both
+[Builder puts down a purple block at X:0 Y:6 Z:-1]
+[Builder puts down a purple block at X:0 Y:6 Z:-2]
+[Builder picks up a purple block at X:0 Y:6 Z:-1]
+<Architect> yup
+<Architect> wait we built this wrong LOL
+<Architect> let's backtrack
+<Builder> aright
+<Architect> should be easy to fix,
+<Architect> can u go on the other side
+<Architect> it'll be easier to fix from there
+<Builder> kk
+<Architect> ok, plane 3
+<Architect> yellow block on the right should be one block forward, yellow block on the left should be one block toward you
+<Architect> so the one on the right should be moved one more block forward, the yellow block on the left should float above the red block
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder picks up a yellow block at X:-2 Y:3 Z:0]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-2]
+[Builder picks up a yellow block at X:-1 Y:3 Z:-2]
+<Architect> yup, now move the green block on the right one forward as well, and the left one backward
+[Builder puts down a green block at X:0 Y:4 Z:0]
+[Builder puts down a blue block at X:1 Y:5 Z:-1]
+[Builder picks up a green block at X:-1 Y:4 Z:0]
+[Builder picks up a blue block at X:0 Y:5 Z:-1]
+[Builder puts down a green block at X:-1 Y:4 Z:-3]
+[Builder puts down a blue block at X:0 Y:5 Z:-3]
+[Builder picks up a green block at X:0 Y:4 Z:-3]
+[Builder picks up a blue block at X:1 Y:5 Z:-3]
+<Architect> yup
+<Architect> and then move the purple one back
+[Builder puts down a purple block at X:-1 Y:6 Z:-2]
+[Builder picks up a purple block at X:-1 Y:6 Z:-2]
+[Builder puts down a purple block at X:1 Y:6 Z:-2]
+<Architect> should share an edge with the blue block on the right
+[Builder picks up a purple block at X:0 Y:6 Z:-2]
+<Architect> we done
+<Builder> sweet
+<Architect> sorry about that, switching sides threw me off at some point i guess

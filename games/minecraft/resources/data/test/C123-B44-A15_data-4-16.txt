@@ -1,0 +1,75 @@
+B44-A15-C123-1523891780457
+<Builder> Mission has started.
+<Builder> ready
+<Architect> okay, this one's a little weird
+<Architect> it looks like a person kicking a soccer ball
+<Architect> make two columns of 4 orange blocks, one tile apart
+<Architect> like someone's legs
+<Builder> where?
+<Architect> either the middle, or maybe slightly closer to the middle of one edge
+[Builder puts down a orange block at X:2 Y:1 Z:0]
+[Builder puts down a orange block at X:2 Y:2 Z:0]
+[Builder puts down a orange block at X:2 Y:3 Z:0]
+[Builder puts down a orange block at X:2 Y:4 Z:0]
+[Builder puts down a orange block at X:0 Y:1 Z:0]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder puts down a orange block at X:0 Y:3 Z:0]
+[Builder puts down a orange block at X:0 Y:4 Z:0]
+<Architect> yep! now on top of those, make a vertical 3x3 square of red blocks
+<Architect> like someone's shirt
+[Builder puts down a red block at X:2 Y:5 Z:0]
+[Builder puts down a red block at X:0 Y:5 Z:-1]
+[Builder picks up a red block at X:0 Y:5 Z:-1]
+[Builder picks up a red block at X:1 Y:5 Z:-1]
+[Builder puts down a red block at X:0 Y:5 Z:0]
+[Builder puts down a red block at X:2 Y:6 Z:0]
+[Builder puts down a red block at X:1 Y:6 Z:0]
+[Builder puts down a red block at X:0 Y:6 Z:0]
+[Builder puts down a red block at X:2 Y:7 Z:0]
+[Builder puts down a red block at X:1 Y:7 Z:0]
+[Builder puts down a red block at X:0 Y:7 Z:0]
+<Architect> on top of the middle red block, make an orange block for the head
+[Builder puts down a orange block at X:1 Y:8 Z:0]
+<Architect> and extending of the sides of the other two top red blocks, make rows of two orange blocks for the armws
+[Builder puts down a orange block at X:-1 Y:7 Z:0]
+[Builder puts down a orange block at X:-2 Y:7 Z:0]
+[Builder puts down a orange block at X:3 Y:7 Z:0]
+[Builder puts down a orange block at X:4 Y:7 Z:0]
+<Architect> perfect! put an orange block in front of the top of the left leg
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+<Architect> yeah, that one
+<Architect> sorry, left was unclear
+<Architect> and it should be in front of the topmost block, near the torso
+[Builder puts down a orange block at X:2 Y:4 Z:-1]
+[Builder picks up a orange block at X:2 Y:1 Z:-1]
+<Architect> yep! now extend that with two more blocks diagonally towards you, like a diagonal leg
+[Builder puts down a orange block at X:2 Y:4 Z:-2]
+[Builder puts down a orange block at X:1 Y:4 Z:-2]
+[Builder picks up a orange block at X:2 Y:4 Z:-2]
+[Builder puts down a orange block at X:1 Y:4 Z:-3]
+[Builder puts down a orange block at X:0 Y:4 Z:-3]
+[Builder picks up a orange block at X:1 Y:4 Z:-3]
+<Builder> not sure
+<Architect> sorry, my bad. diagonally towards you and the ground, like a staircase
+[Builder picks up a orange block at X:1 Y:4 Z:-2]
+[Builder picks up a orange block at X:0 Y:4 Z:-3]
+[Builder puts down a orange block at X:2 Y:3 Z:-1]
+[Builder puts down a orange block at X:2 Y:3 Z:-2]
+[Builder picks up a orange block at X:2 Y:3 Z:-1]
+[Builder puts down a orange block at X:2 Y:2 Z:-2]
+[Builder picks up a orange block at X:2 Y:2 Z:-2]
+[Builder puts down a orange block at X:2 Y:2 Z:-2]
+[Builder puts down a orange block at X:2 Y:2 Z:-3]
+[Builder picks up a orange block at X:2 Y:2 Z:-2]
+<Builder> this right?
+<Architect> yep, perfect! :)
+<Architect> now, you're gonna want to get one more yellow block three spaces in front of the top of the leg
+[Builder puts down a yellow block at X:2 Y:3 Z:-3]
+[Builder puts down a yellow block at X:2 Y:4 Z:-3]
+[Builder picks up a yellow block at X:2 Y:3 Z:-3]
+[Builder puts down a yellow block at X:2 Y:4 Z:-4]
+[Builder picks up a yellow block at X:2 Y:4 Z:-3]
+<Architect> perfect! all done i think
+<Builder> ok
+<Builder> nie
+<Builder> c

@@ -1,0 +1,123 @@
+B3-A2-C19-1522448045828
+<Builder> Mission has started.
+<Builder> hello architect, my only friend and parent
+<Architect> hello my child
+<Architect> alright this thing looks like an artistic staircase
+<Builder> ok, is it straight or spiraling?
+<Architect> straight
+<Builder> roger that. i am ready to build
+<Architect> it will have a red tower at one end and a green one in the middle
+<Architect> let's start with the red tower
+<Builder> ok
+<Architect> cool, place a red block along the edge near the center of the row
+[Builder puts down a red block at X:-5 Y:1 Z:0]
+<Architect> great, skip a space and place anothe rone
+<Builder> on the edge or toward the center?
+[Builder puts down a red block at X:-5 Y:1 Z:-2]
+[Builder puts down a red block at X:-3 Y:1 Z:0]
+<Architect> along the edge
+[Builder picks up a red block at X:-3 Y:1 Z:0]
+<Builder> got it
+<Architect> go up a row and connect them
+[Builder puts down a red block at X:-5 Y:2 Z:0]
+[Builder puts down a red block at X:-5 Y:2 Z:-2]
+[Builder puts down a red block at X:-5 Y:2 Z:-1]
+<Architect> now just build two on top of the posts
+[Builder puts down a red block at X:-5 Y:3 Z:0]
+[Builder puts down a red block at X:-5 Y:3 Z:-2]
+<Builder> it looks like an H
+<Architect> great, go up another row and connect them
+[Builder puts down a red block at X:-5 Y:4 Z:0]
+[Builder puts down a red block at X:-5 Y:4 Z:-1]
+<Architect> that it does
+[Builder puts down a red block at X:-5 Y:4 Z:-2]
+<Builder> now its an A
+<Builder> HA
+<Architect> what a joke
+<Builder> sorry lets continue
+<Architect> ok, now do the posts again and connect
+[Builder puts down a red block at X:-5 Y:5 Z:-2]
+[Builder puts down a red block at X:-5 Y:5 Z:0]
+[Builder puts down a red block at X:-5 Y:6 Z:0]
+[Builder puts down a red block at X:-5 Y:6 Z:-1]
+[Builder puts down a red block at X:-5 Y:6 Z:-2]
+<Builder> like so?
+<Architect> yes, build a row of three next to the top three
+<Architect> into the space
+[Builder puts down a red block at X:-4 Y:6 Z:0]
+[Builder puts down a red block at X:-4 Y:6 Z:-1]
+[Builder puts down a red block at X:-4 Y:6 Z:-2]
+<Builder> like that?
+<Architect> yes, put a placeholder row of orange blocks below that
+[Builder puts down a orange block at X:-4 Y:5 Z:-2]
+[Builder puts down a orange block at X:-4 Y:5 Z:-1]
+[Builder puts down a orange block at X:-4 Y:5 Z:0]
+<Architect> then next to those put a row of purple
+[Builder puts down a purple block at X:-3 Y:5 Z:-2]
+[Builder puts down a purple block at X:-3 Y:5 Z:-1]
+[Builder puts down a purple block at X:-3 Y:5 Z:0]
+<Architect> then remove orange
+[Builder picks up a orange block at X:-4 Y:5 Z:-2]
+[Builder picks up a orange block at X:-4 Y:5 Z:-1]
+[Builder picks up a orange block at X:-4 Y:5 Z:0]
+<Architect> that is going to be the top of the stars
+<Architect> stairs
+<Builder> ok
+<Architect> repeat that process until you reach the ground
+<Builder> with purple being all of the stairs?
+<Architect> yes
+[Builder puts down a orange block at X:-3 Y:4 Z:-2]
+[Builder puts down a orange block at X:-3 Y:4 Z:-1]
+[Builder puts down a orange block at X:-3 Y:4 Z:0]
+[Builder puts down a purple block at X:-2 Y:4 Z:-2]
+[Builder puts down a purple block at X:-2 Y:4 Z:-1]
+[Builder puts down a purple block at X:-2 Y:4 Z:0]
+[Builder picks up a orange block at X:-3 Y:4 Z:0]
+[Builder picks up a orange block at X:-3 Y:4 Z:-1]
+[Builder picks up a orange block at X:-3 Y:4 Z:-2]
+[Builder puts down a orange block at X:-2 Y:3 Z:-2]
+[Builder puts down a orange block at X:-2 Y:3 Z:-1]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder puts down a purple block at X:-1 Y:3 Z:-2]
+[Builder puts down a purple block at X:-1 Y:3 Z:-1]
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+[Builder picks up a orange block at X:-2 Y:3 Z:-2]
+[Builder picks up a orange block at X:-2 Y:3 Z:-1]
+[Builder picks up a orange block at X:-2 Y:3 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:-2]
+[Builder puts down a orange block at X:-1 Y:2 Z:-1]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a purple block at X:0 Y:2 Z:-2]
+[Builder puts down a purple block at X:0 Y:2 Z:-1]
+[Builder puts down a purple block at X:0 Y:2 Z:0]
+[Builder puts down a purple block at X:1 Y:1 Z:-2]
+[Builder puts down a purple block at X:1 Y:1 Z:-1]
+[Builder puts down a purple block at X:1 Y:1 Z:0]
+[Builder picks up a orange block at X:-1 Y:2 Z:-2]
+[Builder picks up a orange block at X:-1 Y:2 Z:-1]
+[Builder picks up a orange block at X:-1 Y:2 Z:0]
+<Architect> excellent
+<Builder> thank you architect
+<Architect> now on either side of the third stair build a tower of six green blocks
+[Builder puts down a green block at X:-1 Y:1 Z:-3]
+<Builder> here?
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+<Architect> yeah
+[Builder puts down a green block at X:-1 Y:2 Z:1]
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+[Builder puts down a green block at X:-1 Y:4 Z:1]
+[Builder puts down a green block at X:-1 Y:5 Z:1]
+[Builder puts down a green block at X:-1 Y:6 Z:1]
+[Builder puts down a green block at X:-1 Y:2 Z:-3]
+[Builder puts down a green block at X:-1 Y:3 Z:-3]
+[Builder puts down a green block at X:-1 Y:4 Z:-3]
+[Builder puts down a green block at X:-1 Y:5 Z:-3]
+[Builder puts down a green block at X:-1 Y:6 Z:-3]
+<Architect> then you want to connect those across on the same row as the sixth block
+[Builder puts down a green block at X:-1 Y:6 Z:0]
+[Builder puts down a green block at X:-1 Y:6 Z:-2]
+[Builder puts down a green block at X:-1 Y:6 Z:-1]
+<Architect> beautiful art
+<Builder> indeed it is
+<Builder> are we finished?
+<Architect> yessir

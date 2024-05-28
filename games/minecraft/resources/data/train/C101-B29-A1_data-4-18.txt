@@ -1,0 +1,73 @@
+B29-A1-C101-1524082672958
+<Builder> Mission has started.
+<Architect> using orange, make a 2x4 on the ground, build near the edge
+[Builder puts down a orange block at X:4 Y:1 Z:2]
+[Builder puts down a orange block at X:3 Y:1 Z:2]
+[Builder puts down a orange block at X:3 Y:1 Z:0]
+[Builder puts down a orange block at X:3 Y:1 Z:1]
+[Builder puts down a orange block at X:4 Y:1 Z:1]
+[Builder puts down a orange block at X:4 Y:1 Z:0]
+[Builder puts down a orange block at X:4 Y:1 Z:-1]
+[Builder puts down a orange block at X:3 Y:1 Z:-1]
+<Architect> delete the 2x2 in the middle
+[Builder picks up a orange block at X:3 Y:1 Z:0]
+[Builder picks up a orange block at X:3 Y:1 Z:1]
+[Builder picks up a orange block at X:4 Y:1 Z:1]
+[Builder picks up a orange block at X:4 Y:1 Z:0]
+<Architect> place two more blocks on top of each of the orange blocks
+<Builder> orange?
+<Architect> yes
+[Builder puts down a orange block at X:3 Y:2 Z:-1]
+[Builder puts down a orange block at X:4 Y:2 Z:-1]
+[Builder puts down a orange block at X:3 Y:2 Z:2]
+[Builder puts down a orange block at X:4 Y:2 Z:2]
+<Architect> do that one more time
+[Builder puts down a orange block at X:3 Y:3 Z:-1]
+[Builder puts down a orange block at X:4 Y:3 Z:-1]
+[Builder puts down a orange block at X:4 Y:3 Z:2]
+[Builder puts down a orange block at X:3 Y:3 Z:2]
+<Architect> add a 2x2 connecting these two towers
+<Builder> orange?
+<Architect> yes
+[Builder puts down a orange block at X:3 Y:3 Z:0]
+[Builder puts down a orange block at X:4 Y:3 Z:0]
+[Builder puts down a orange block at X:4 Y:3 Z:1]
+[Builder puts down a orange block at X:3 Y:3 Z:1]
+<Architect> now four spaces away we will build the same thing but yellow
+<Architect> sorry 4 spaces seperating them
+[Builder puts down a yellow block at X:-2 Y:1 Z:2]
+[Builder puts down a yellow block at X:-3 Y:1 Z:2]
+[Builder puts down a yellow block at X:-3 Y:2 Z:2]
+[Builder puts down a yellow block at X:-2 Y:2 Z:2]
+[Builder puts down a yellow block at X:-2 Y:3 Z:2]
+[Builder puts down a yellow block at X:-3 Y:3 Z:2]
+[Builder puts down a yellow block at X:-2 Y:3 Z:1]
+[Builder puts down a yellow block at X:-2 Y:4 Z:1]
+[Builder picks up a yellow block at X:-2 Y:4 Z:1]
+[Builder puts down a yellow block at X:-3 Y:3 Z:1]
+[Builder puts down a yellow block at X:-3 Y:3 Z:0]
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+[Builder puts down a yellow block at X:-2 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-3 Y:3 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-3 Y:2 Z:0]
+[Builder picks up a yellow block at X:-3 Y:2 Z:0]
+[Builder puts down a yellow block at X:-3 Y:2 Z:-1]
+[Builder puts down a yellow block at X:-2 Y:1 Z:-1]
+[Builder puts down a yellow block at X:-3 Y:1 Z:-1]
+<Architect> okay now add 4 green blocks connecting the left of the orange to the right of the yellow. the green line is diagonal
+[Builder puts down a green block at X:2 Y:3 Z:-1]
+[Builder puts down a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:0]
+[Builder picks up a green block at X:2 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:0 Y:3 Z:1]
+[Builder picks up a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:-1 Y:3 Z:2]
+<Architect> good now we just need three more green blocks each block is connected to a green diagonal block
+<Architect> and it is towards the yellow
+<Architect> structure
+[Builder puts down a green block at X:-1 Y:3 Z:1]
+[Builder puts down a green block at X:0 Y:3 Z:0]
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+<Architect> awesome

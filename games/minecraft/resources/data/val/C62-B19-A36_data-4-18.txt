@@ -1,0 +1,63 @@
+B19-A36-C62-1524091199214
+<Builder> Mission has started.
+<Builder> hi
+<Architect> hi
+<Architect> ok where you're standing put down a blue block
+[Builder puts down a blue block at X:2 Y:1 Z:-3]
+<Architect> then put another blue block to your right
+[Builder puts down a blue block at X:1 Y:1 Z:-3]
+<Architect> then put a blue block down 2 rows in front of you
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+<Architect> and put a blue block to the left of that
+[Builder puts down a blue block at X:2 Y:1 Z:-1]
+<Architect> then in front of the blue blocks you just put down place 2 red blocks
+[Builder puts down a red block at X:1 Y:1 Z:0]
+<Builder> here?
+<Architect> ya
+[Builder puts down a red block at X:2 Y:1 Z:0]
+<Architect> then 2 rows in front of the red blocks put down 2 more red blocks
+[Builder puts down a red block at X:1 Y:1 Z:2]
+[Builder puts down a red block at X:2 Y:1 Z:2]
+<Architect> ok then add a 2nd layer to all the blocks that you put down
+<Architect> in their respective colors
+[Builder puts down a blue block at X:2 Y:2 Z:-3]
+[Builder puts down a blue block at X:1 Y:2 Z:-3]
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+[Builder puts down a blue block at X:2 Y:2 Z:-1]
+[Builder puts down a red block at X:2 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:0]
+[Builder puts down a red block at X:1 Y:2 Z:2]
+[Builder puts down a red block at X:2 Y:2 Z:2]
+<Architect> then connect the top layer of the red blocks
+[Builder puts down a red block at X:2 Y:2 Z:1]
+[Builder puts down a red block at X:1 Y:2 Z:1]
+<Builder> like that?
+<Architect> ya
+<Architect> then all the way to the left red
+<Architect> add 2 more layers
+<Architect> of red blocks
+[Builder puts down a red block at X:2 Y:3 Z:2]
+[Builder puts down a red block at X:1 Y:3 Z:2]
+[Builder puts down a red block at X:2 Y:4 Z:2]
+[Builder puts down a red block at X:1 Y:4 Z:2]
+<Builder> like that?
+<Architect> ya
+<Architect> then where the blue and red blocks touch
+<Architect> on top of that make a purple square
+[Builder puts down a purple block at X:2 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:0]
+[Builder puts down a purple block at X:1 Y:3 Z:-1]
+[Builder puts down a purple block at X:2 Y:3 Z:-1]
+<Architect> then make another purple square to the right of it
+[Builder puts down a purple block at X:2 Y:3 Z:-2]
+[Builder puts down a purple block at X:1 Y:3 Z:-2]
+[Builder puts down a purple block at X:2 Y:3 Z:-3]
+[Builder puts down a purple block at X:1 Y:3 Z:-3]
+[Builder picks up a purple block at X:1 Y:4 Z:-3]
+[Builder puts down a purple block at X:1 Y:4 Z:-3]
+[Builder picks up a purple block at X:1 Y:4 Z:-3]
+<Architect> and then add 2 more purple blocks to the right of it so that they hang over
+[Builder puts down a purple block at X:2 Y:3 Z:-4]
+[Builder puts down a purple block at X:1 Y:3 Z:-4]
+<Architect> ok i think we're good
+<Builder> cool

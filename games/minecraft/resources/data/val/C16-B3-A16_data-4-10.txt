@@ -1,0 +1,99 @@
+B3-A16-C16-1523399418222
+<Builder> Mission has started.
+<Architect> give me a minute to look!
+<Builder> sure, take your time
+<Architect> okay, so one block from the left edge of the boundary, build a red square that is 3x3
+[Builder puts down a red block at X:4 Y:1 Z:-5]
+[Builder puts down a red block at X:3 Y:1 Z:-5]
+[Builder puts down a red block at X:2 Y:1 Z:-5]
+[Builder puts down a red block at X:4 Y:1 Z:-4]
+<Builder> is that ok to start?
+[Builder puts down a red block at X:4 Y:1 Z:-3]
+[Builder puts down a red block at X:4 Y:1 Z:-2]
+[Builder picks up a red block at X:4 Y:1 Z:-2]
+[Builder puts down a red block at X:3 Y:1 Z:-3]
+[Builder puts down a red block at X:2 Y:1 Z:-3]
+<Architect> fill in the missing two block and we're good
+[Builder puts down a red block at X:3 Y:1 Z:-4]
+[Builder puts down a red block at X:2 Y:1 Z:-4]
+<Builder> sorry, ready for more
+<Architect> now, above the center block, build a tower that is one two blue blocks, one red blck, and two yellow blocks
+[Builder puts down a blue block at X:3 Y:2 Z:-4]
+[Builder puts down a blue block at X:3 Y:3 Z:-4]
+[Builder puts down a red block at X:3 Y:4 Z:-4]
+[Builder puts down a yellow block at X:3 Y:5 Z:-4]
+[Builder puts down a yellow block at X:3 Y:6 Z:-4]
+<Builder> like that?
+<Architect> yep! sorry, glitch
+<Architect> now so
+<Builder> no worries
+<Architect> build a tower in front of the last, on the edge near the rest of the boundary that is
+<Architect> one blue block, one red, and then 3 yellow
+[Builder puts down a blue block at X:3 Y:2 Z:-5]
+[Builder puts down a red block at X:3 Y:3 Z:-5]
+[Builder puts down a yellow block at X:3 Y:4 Z:-5]
+[Builder puts down a yellow block at X:3 Y:5 Z:-5]
+[Builder puts down a yellow block at X:3 Y:6 Z:-5]
+<Architect> no. the other side!
+<Builder> like that?
+<Builder> oh ok
+<Architect> sorry about that
+[Builder picks up a yellow block at X:3 Y:6 Z:-5]
+[Builder picks up a yellow block at X:3 Y:5 Z:-5]
+[Builder picks up a yellow block at X:3 Y:4 Z:-5]
+[Builder picks up a red block at X:3 Y:3 Z:-5]
+[Builder picks up a blue block at X:3 Y:2 Z:-5]
+[Builder puts down a blue block at X:3 Y:2 Z:-3]
+[Builder puts down a red block at X:3 Y:3 Z:-3]
+[Builder puts down a yellow block at X:3 Y:4 Z:-3]
+[Builder puts down a yellow block at X:3 Y:5 Z:-3]
+[Builder puts down a yellow block at X:3 Y:6 Z:-3]
+<Builder> so then like that?
+<Architect> yep!
+<Builder> cool, is there more?
+<Builder> i think i see a pattern
+<Architect> now to the right of that tower, build another tower from the ground up that is one blue, one red, and three yellow
+[Builder puts down a blue block at X:3 Y:1 Z:-2]
+[Builder puts down a red block at X:3 Y:2 Z:-2]
+[Builder puts down a yellow block at X:3 Y:3 Z:-2]
+[Builder puts down a yellow block at X:3 Y:4 Z:-2]
+[Builder puts down a yellow block at X:3 Y:5 Z:-2]
+<Architect> good!
+<Architect> yeah, it
+<Architect> is kinda like weird colorful stairs, but there's still a bit to go
+<Builder> i understand. please continue!
+<Builder> also feel free to tell me to move if you think another perspective will help
+<Architect> now on to the right of that tower, build another that is one orange and three yellow tall
+[Builder puts down a orange block at X:3 Y:1 Z:-1]
+[Builder puts down a yellow block at X:3 Y:2 Z:-1]
+[Builder puts down a yellow block at X:3 Y:3 Z:-1]
+[Builder puts down a yellow block at X:3 Y:4 Z:-1]
+<Architect> great!
+<Architect> now another tower that is one blue, one orange, and one yellow directly to the right again
+[Builder puts down a blue block at X:3 Y:1 Z:0]
+[Builder puts down a orange block at X:3 Y:2 Z:0]
+[Builder puts down a yellow block at X:3 Y:3 Z:0]
+<Architect> great!
+<Architect> now one last tower to the right again
+<Architect> it should be one purple, one blue, and one orange
+[Builder puts down a purple block at X:3 Y:1 Z:1]
+[Builder puts down a blue block at X:3 Y:2 Z:1]
+[Builder puts down a orange block at X:3 Y:3 Z:1]
+<Builder> that one was tough
+<Builder> is it complete?
+<Architect> not yet, few more steps
+<Builder> ok sure
+<Architect> remove all of the blue
+[Builder picks up a blue block at X:3 Y:2 Z:1]
+[Builder picks up a blue block at X:3 Y:1 Z:0]
+[Builder picks up a blue block at X:3 Y:1 Z:-2]
+[Builder picks up a blue block at X:3 Y:2 Z:-3]
+[Builder picks up a blue block at X:3 Y:2 Z:-4]
+[Builder picks up a blue block at X:3 Y:3 Z:-4]
+<Architect> great!
+<Architect> just remove all of the blocks in the corners of the red square so that it looks like a plus sign
+[Builder picks up a red block at X:2 Y:1 Z:-5]
+[Builder picks up a red block at X:2 Y:1 Z:-3]
+[Builder picks up a red block at X:4 Y:1 Z:-5]
+[Builder picks up a red block at X:4 Y:1 Z:-3]
+<Architect> and we're good! great job!

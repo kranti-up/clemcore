@@ -1,0 +1,10 @@
+B31-A41-C17-1523029046594
+<Builder> Mission has started.
+<Architect> Hi!
+<Builder> hello
+<Architect> So the shape is three orange blocks on the ground, in an L shape
+[Builder puts down a orange block at X:2 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:-1]
+[Builder puts down a orange block at X:1 Y:1 Z:0]
+<Builder> like this?
+<Architect> Yep perfect!

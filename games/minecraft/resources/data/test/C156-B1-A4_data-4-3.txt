@@ -1,0 +1,145 @@
+B1-A4-C156-1522774417770
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hi; this one is pretty complicated
+<Architect> start with blue
+<Architect> towards the edge
+<Architect> place three on top of each other
+[Builder puts down a blue block at X:0 Y:1 Z:5]
+[Builder puts down a blue block at X:0 Y:2 Z:5]
+[Builder puts down a blue block at X:0 Y:3 Z:5]
+<Builder> anywhere is fine?
+<Architect> yeah that's good; delete the bottom one
+[Builder picks up a blue block at X:0 Y:1 Z:5]
+<Builder> done
+<Architect> build one next to the top one
+<Architect> towards the center
+[Builder puts down a blue block at X:0 Y:3 Z:4]
+<Architect> one on top of that
+[Builder puts down a blue block at X:0 Y:4 Z:4]
+<Architect> one more next to the newest one
+[Builder puts down a blue block at X:0 Y:5 Z:4]
+<Builder> here?
+<Architect> next to it not on top
+[Builder puts down a blue block at X:0 Y:4 Z:3]
+[Builder picks up a blue block at X:0 Y:5 Z:4]
+<Architect> good
+<Architect> you'll make that same structure two more times
+<Architect> second one is almost directly above the first
+<Builder> okay. what color?
+<Architect> blue still; start in the middle column, build up three blocks
+[Builder puts down a blue block at X:0 Y:5 Z:4]
+[Builder puts down a blue block at X:0 Y:6 Z:4]
+[Builder puts down a blue block at X:0 Y:7 Z:4]
+<Builder> like this?
+<Architect> good; delete the middle one
+[Builder picks up a blue block at X:0 Y:6 Z:4]
+<Architect> the other middle one
+[Builder puts down a blue block at X:0 Y:6 Z:4]
+[Builder picks up a blue block at X:0 Y:5 Z:4]
+<Architect> good; just make the same structure as below it
+<Builder> okay
+[Builder puts down a blue block at X:0 Y:7 Z:3]
+[Builder puts down a blue block at X:0 Y:8 Z:3]
+[Builder puts down a blue block at X:0 Y:8 Z:2]
+<Builder> like this?
+<Architect> yep
+<Architect> now the third one is farther away
+<Builder> still blue?
+<Architect> look at the tip of the second "m"
+<Architect> still blue
+<Architect> two blank spaces towards the center then one space to the right
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+<Builder> here?
+<Architect> one more towards the center
+[Builder picks up a blue block at X:1 Y:1 Z:0]
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+<Architect> good
+<Architect> build a tower straight up
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+[Builder puts down a blue block at X:1 Y:3 Z:-1]
+[Builder puts down a blue block at X:1 Y:4 Z:-1]
+<Builder> how big?
+[Builder puts down a blue block at X:1 Y:5 Z:-1]
+[Builder puts down a blue block at X:1 Y:6 Z:-1]
+[Builder puts down a blue block at X:1 Y:7 Z:-1]
+<Architect> there
+<Builder> 7?
+<Architect> it's hard to tell; the thing is just floating
+<Builder> are the tops aligned?
+<Architect> the third one's top is one taller than the second one
+<Builder> by how much?
+[Builder puts down a blue block at X:1 Y:8 Z:-1]
+[Builder puts down a blue block at X:1 Y:9 Z:-1]
+<Architect> make the top of your tower the starting block then make the same structure
+[Builder puts down a blue block at X:1 Y:9 Z:-2]
+<Architect> oops you added more
+[Builder picks up a blue block at X:1 Y:7 Z:-1]
+[Builder picks up a blue block at X:1 Y:6 Z:-1]
+[Builder picks up a blue block at X:1 Y:5 Z:-1]
+<Architect> the top of your tower lines up with the middle row of the second "m"
+<Builder> wait so the 7th block was the start right?
+<Architect> yep
+<Builder> so that should be okay?
+<Architect> it needs to move down one space
+[Builder puts down a blue block at X:1 Y:7 Z:-1]
+[Builder puts down a blue block at X:1 Y:8 Z:-2]
+[Builder picks up a blue block at X:1 Y:9 Z:-1]
+[Builder puts down a blue block at X:1 Y:9 Z:-3]
+[Builder picks up a blue block at X:1 Y:4 Z:-1]
+[Builder picks up a blue block at X:1 Y:3 Z:-1]
+[Builder picks up a blue block at X:1 Y:2 Z:-1]
+[Builder picks up a blue block at X:1 Y:1 Z:-1]
+<Builder> is this okay?
+<Architect> yes great
+<Builder> good
+<Architect> now switch to orange
+<Architect> look at the shadows of two structures
+<Architect> the one with four spaces
+<Architect> move two spaces to the left
+<Architect> on the opposite side of the third structure
+[Builder puts down a orange block at X:-1 Y:1 Z:-1]
+<Architect> in line with the four shadows
+[Builder picks up a orange block at X:-1 Y:1 Z:-1]
+<Builder> where should i stand?
+<Architect> there is good
+<Architect> leave two blank spaces, then place an orange block
+<Architect> such that it lines up with the top of the shadows
+[Builder puts down a orange block at X:-3 Y:1 Z:2]
+<Architect> great
+<Builder> ok
+<Architect> now build a tower straight up
+<Architect> line up with the top of the second structure
+<Builder> it might be easier to connect the stuctures from before?
+[Builder puts down a orange block at X:-3 Y:2 Z:2]
+[Builder puts down a orange block at X:-3 Y:3 Z:2]
+[Builder puts down a orange block at X:-3 Y:4 Z:2]
+[Builder puts down a orange block at X:-3 Y:5 Z:2]
+[Builder puts down a orange block at X:-3 Y:6 Z:2]
+[Builder puts down a orange block at X:-3 Y:7 Z:2]
+[Builder puts down a orange block at X:-3 Y:8 Z:2]
+<Architect> there's no connection though
+<Architect> build one more up
+[Builder puts down a orange block at X:-3 Y:9 Z:2]
+<Architect> delete all but the top three
+[Builder picks up a orange block at X:-3 Y:6 Z:2]
+[Builder picks up a orange block at X:-3 Y:5 Z:2]
+[Builder picks up a orange block at X:-3 Y:1 Z:2]
+[Builder picks up a orange block at X:-3 Y:2 Z:2]
+[Builder picks up a orange block at X:-3 Y:3 Z:2]
+[Builder picks up a orange block at X:-3 Y:4 Z:2]
+<Architect> rotate 90 degrees and face the orange line
+<Architect> okay; put three more orange blocks to the right of that
+[Builder puts down a orange block at X:-3 Y:9 Z:1]
+[Builder puts down a orange block at X:-3 Y:9 Z:0]
+<Architect> you're making a flat 3x3 square
+[Builder puts down a orange block at X:-3 Y:9 Z:-1]
+[Builder picks up a orange block at X:-3 Y:9 Z:-1]
+<Builder> here?
+<Architect> yes; fill in any gaps below it
+[Builder puts down a orange block at X:-3 Y:8 Z:1]
+[Builder puts down a orange block at X:-3 Y:8 Z:0]
+[Builder puts down a orange block at X:-3 Y:7 Z:1]
+[Builder puts down a orange block at X:-3 Y:7 Z:0]
+<Architect> great all done
+<Builder> good

@@ -1,0 +1,118 @@
+B1-A4-C54-1522773776201
+<Builder> Mission has started.
+<Builder> hello
+<Architect> hi
+<Architect> you're building a bunch of diagonal staircases
+<Architect> start with yellow
+<Architect> and towards the edge but in the center
+[Builder puts down a yellow block at X:-4 Y:1 Z:-4]
+<Architect> more towards the middle of that edge
+[Builder puts down a yellow block at X:-3 Y:1 Z:-3]
+[Builder puts down a yellow block at X:-5 Y:1 Z:-5]
+[Builder picks up a yellow block at X:-3 Y:1 Z:-3]
+[Builder picks up a yellow block at X:-5 Y:1 Z:-5]
+[Builder picks up a yellow block at X:-4 Y:1 Z:-4]
+[Builder puts down a yellow block at X:-3 Y:1 Z:-3]
+<Builder> here?
+<Architect> i mean where you should put your starting block
+<Architect> the yellow staircase is in the middle
+<Builder> in the middle of the building area?
+[Builder picks up a yellow block at X:-3 Y:1 Z:-3]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+<Builder> oh wait
+[Builder puts down a yellow block at X:0 Y:1 Z:-5]
+<Builder> here?
+<Architect> yeah great; the second one
+[Builder picks up a yellow block at X:0 Y:1 Z:0]
+<Architect> now a staircase: one towards teh center, but also raised vertically
+[Builder puts down a yellow block at X:0 Y:1 Z:-4]
+[Builder puts down a yellow block at X:0 Y:2 Z:-4]
+[Builder picks up a yellow block at X:0 Y:1 Z:-4]
+<Architect> good
+<Builder> like this?
+<Builder> ok
+<Architect> one more like that so there's three steps
+[Builder puts down a yellow block at X:0 Y:3 Z:-4]
+[Builder puts down a yellow block at X:0 Y:3 Z:-3]
+[Builder picks up a yellow block at X:0 Y:3 Z:-4]
+<Builder> is this good?
+<Architect> good
+<Architect> switch to orange
+<Architect> face along the length of hte yellow staircase
+<Architect> the starting orange block is three to teh left
+<Architect> five back
+<Builder> to my left?
+<Architect> yes
+[Builder puts down a orange block at X:-3 Y:1 Z:-1]
+<Builder> here?
+<Architect> yes
+[Builder puts down a orange block at X:-3 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder picks up a orange block at X:-3 Y:2 Z:-1]
+<Architect> build one orange on top of it
+[Builder puts down a orange block at X:-3 Y:2 Z:-1]
+[Builder picks up a orange block at X:-2 Y:2 Z:-1]
+<Architect> delete the bottom one
+[Builder picks up a orange block at X:-3 Y:1 Z:-1]
+<Architect> now make a diagonal staircase
+<Builder> towards the orange?
+<Builder> i mean yellow?
+<Architect> imagine a 2x2 cube where the two orange blocks make up opposite corners
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a orange block at X:-2 Y:3 Z:-1]
+[Builder puts down a orange block at X:-2 Y:3 Z:0]
+[Builder picks up a orange block at X:-2 Y:3 Z:-1]
+[Builder picks up a orange block at X:-2 Y:2 Z:-1]
+<Architect> great
+<Architect> now do the same to make it three long
+[Builder puts down a orange block at X:-2 Y:4 Z:0]
+[Builder puts down a orange block at X:-2 Y:4 Z:1]
+[Builder puts down a orange block at X:-1 Y:4 Z:1]
+[Builder picks up a orange block at X:-2 Y:4 Z:0]
+[Builder picks up a orange block at X:-2 Y:4 Z:1]
+<Architect> good switch to red
+<Architect> orient yourself on the far side of the yellow staircase
+<Architect> loooking in towards the center
+<Builder> here?
+<Architect> look along the length of the yellow
+<Architect> like stand behind it
+<Architect> yeah
+<Architect> red starting block is 4 to the left and 3 up
+[Builder puts down a red block at X:4 Y:1 Z:-2]
+<Builder> is this good?
+[Builder puts down a red block at X:4 Y:1 Z:-3]
+[Builder picks up a red block at X:4 Y:1 Z:-2]
+<Architect> fixed it
+<Builder> here?
+<Architect> yes
+<Architect> now just do teh same thing you did with the orange blocks
+<Architect> sloping towards the center
+<Builder> okay
+[Builder puts down a red block at X:4 Y:2 Z:-3]
+[Builder puts down a red block at X:4 Y:3 Z:-3]
+[Builder puts down a red block at X:4 Y:3 Z:-2]
+[Builder puts down a red block at X:3 Y:3 Z:-2]
+[Builder picks up a red block at X:4 Y:3 Z:-2]
+[Builder picks up a red block at X:4 Y:3 Z:-3]
+[Builder picks up a red block at X:4 Y:1 Z:-3]
+[Builder puts down a red block at X:3 Y:4 Z:-2]
+[Builder puts down a red block at X:3 Y:4 Z:-1]
+[Builder puts down a red block at X:2 Y:4 Z:-1]
+[Builder picks up a red block at X:3 Y:4 Z:-1]
+<Architect> starting on the bottom level though
+[Builder picks up a red block at X:3 Y:4 Z:-2]
+<Builder> i see
+[Builder puts down a red block at X:4 Y:1 Z:-3]
+<Architect> don't delete your starting block
+[Builder puts down a red block at X:3 Y:2 Z:-2]
+[Builder puts down a red block at X:2 Y:3 Z:-1]
+[Builder picks up a red block at X:2 Y:4 Z:-1]
+[Builder picks up a red block at X:3 Y:3 Z:-2]
+[Builder picks up a red block at X:4 Y:2 Z:-3]
+<Architect> good one more
+[Builder puts down a red block at X:2 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:3 Z:0]
+[Builder puts down a red block at X:1 Y:4 Z:0]
+[Builder picks up a red block at X:2 Y:3 Z:0]
+[Builder picks up a red block at X:1 Y:3 Z:0]
+<Architect> great

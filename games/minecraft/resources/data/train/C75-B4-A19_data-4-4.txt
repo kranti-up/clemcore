@@ -1,0 +1,37 @@
+B4-A19-C75-1522885325283
+<Builder> Mission has started.
+<Architect> ok get a green block
+<Architect> place it anywhere
+[Builder puts down a green block at X:-2 Y:1 Z:-1]
+<Architect> place a blue block next to it
+<Architect> doesnt matter where
+<Architect> just next to it
+[Builder puts down a blue block at X:-2 Y:1 Z:0]
+<Architect> ok horizontally on top of the blue block place a purple block
+<Architect> so like one row up
+<Builder> but still aligned with blue?
+[Builder puts down a purple block at X:-1 Y:1 Z:0]
+<Architect> yea
+<Architect> place another purple on top of the purple thats here
+<Architect> floating
+[Builder puts down a purple block at X:-1 Y:2 Z:0]
+<Architect> or i mean stacked
+<Builder> like that?
+<Architect> and then another purple stacked
+[Builder puts down a purple block at X:-1 Y:3 Z:0]
+<Architect> yeah
+<Architect> now a yellow block conncted to that purple and directly above the blue
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+<Architect> now an orange connected to the yellow and above the green
+[Builder puts down a orange block at X:-2 Y:3 Z:-1]
+<Architect> now stack an orange on that orange
+[Builder puts down a orange block at X:-2 Y:4 Z:-1]
+<Architect> do it again
+[Builder puts down a orange block at X:-2 Y:5 Z:-1]
+<Architect> now a blue on top of the yellow and connected to that orange
+<Builder> on top of the yellow or with a space btw?
+<Architect> with a space btw
+[Builder puts down a blue block at X:-2 Y:5 Z:0]
+<Architect> ok now a red connected to that blue and above the purple
+[Builder puts down a red block at X:-1 Y:5 Z:0]
+<Architect> ok thats good

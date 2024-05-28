@@ -1,0 +1,19 @@
+B16-A41-C3-1522944359457
+<Builder> Mission has started.
+<Builder> Hello?
+<Architect> Hi!
+<Builder> Hi!
+<Architect> Build a blue L out of three blocks
+[Builder puts down a blue block at X:0 Y:1 Z:2]
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+<Architect> whoops, the top of the L is vertical
+<Architect> two blocks on the ground, and one above on the left
+[Builder picks up a blue block at X:-1 Y:1 Z:1]
+[Builder picks up a blue block at X:0 Y:1 Z:2]
+[Builder picks up a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:0 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:2 Z:1]
+<Builder> Okay!
+<Architect> Perfect!

@@ -1,0 +1,64 @@
+B35-A15-C145-1524246503045
+<Builder> Mission has started.
+<Architect> alright, so, this structure is gonna be all red blocks, and it's gonna be in 2D
+<Builder> gotcha
+<Architect> start with a stack of 6 red blocks near the center
+[Builder puts down a red block at X:0 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:2 Z:0]
+[Builder puts down a red block at X:0 Y:3 Z:0]
+[Builder puts down a red block at X:0 Y:4 Z:0]
+[Builder puts down a red block at X:0 Y:5 Z:0]
+[Builder puts down a red block at X:0 Y:6 Z:0]
+<Builder> ok
+<Architect> alright, now put another block next to the bottom one
+<Architect> any direction is fine
+[Builder puts down a red block at X:0 Y:1 Z:-1]
+<Architect> make a stack of 4 blocks next to that
+<Builder> right or left?
+<Architect> in front of the single block. all the blocks are in the same 2d plane
+[Builder puts down a red block at X:0 Y:1 Z:-2]
+[Builder puts down a red block at X:0 Y:2 Z:-2]
+[Builder puts down a red block at X:0 Y:3 Z:-2]
+[Builder puts down a red block at X:0 Y:4 Z:-2]
+<Builder> gotcha
+<Architect> okay, remove the bottom block from both stacks, but leave the single one on the ground
+[Builder picks up a red block at X:0 Y:1 Z:-2]
+[Builder picks up a red block at X:0 Y:1 Z:0]
+<Builder> gotcha
+<Architect> okay, now, starting with the shorter stack, you want a block one tile above and to the left of the top of the stack
+[Builder puts down a red block at X:0 Y:4 Z:-3]
+[Builder puts down a red block at X:0 Y:5 Z:-3]
+[Builder picks up a red block at X:0 Y:4 Z:-3]
+<Architect> good! and another block one tile below and to the left of that
+[Builder puts down a red block at X:0 Y:4 Z:-3]
+[Builder puts down a red block at X:0 Y:4 Z:-4]
+[Builder picks up a red block at X:0 Y:4 Z:-3]
+<Architect> excellent! now moving on to the taller stack, you want a block one tile above and to the right of the top of that stack
+[Builder puts down a red block at X:0 Y:6 Z:1]
+[Builder puts down a red block at X:0 Y:7 Z:1]
+[Builder picks up a red block at X:0 Y:6 Z:1]
+<Architect> and another one below and to the right of that
+[Builder puts down a red block at X:0 Y:6 Z:1]
+[Builder puts down a red block at X:0 Y:6 Z:2]
+[Builder picks up a red block at X:0 Y:6 Z:1]
+<Builder> ok
+<Architect> cool! two more blocks underneath that last oen
+<Architect> one*
+[Builder puts down a red block at X:0 Y:5 Z:2]
+[Builder puts down a red block at X:0 Y:4 Z:2]
+<Architect> and another one below and to the right
+[Builder puts down a red block at X:0 Y:4 Z:3]
+[Builder puts down a red block at X:0 Y:3 Z:3]
+[Builder picks up a red block at X:0 Y:4 Z:3]
+<Architect> and another one above and to the right
+[Builder puts down a red block at X:0 Y:3 Z:4]
+[Builder puts down a red block at X:0 Y:4 Z:4]
+[Builder picks up a red block at X:0 Y:3 Z:4]
+<Architect> and another one below and to the right
+[Builder puts down a red block at X:0 Y:4 Z:5]
+[Builder puts down a red block at X:0 Y:3 Z:5]
+[Builder picks up a red block at X:0 Y:4 Z:5]
+<Architect> and one more to the right :)
+[Builder puts down a red block at X:0 Y:3 Z:6]
+<Architect> perfect! that was a mouthful
+<Builder> lol

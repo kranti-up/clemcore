@@ -1,0 +1,64 @@
+B25-A3-C59-1523388197708
+<Builder> Mission has started.
+<Architect> ok this one isn't too bad. its two arches that have multiple colors in each and they are slightly different heights
+<Builder> ok
+<Architect> lets start fairly centered. 1 red block sort of on the left side and then on the 4th piece to the right of that block, another red block
+[Builder puts down a red block at X:2 Y:1 Z:-1]
+[Builder puts down a red block at X:-2 Y:1 Z:-1]
+<Architect> yup nice. then 1 orange block on each of those
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a orange block at X:2 Y:2 Z:-1]
+<Architect> then connect it with 3 green blocks
+[Builder puts down a green block at X:1 Y:2 Z:-1]
+[Builder puts down a green block at X:0 Y:2 Z:-1]
+[Builder puts down a green block at X:-1 Y:2 Z:-1]
+<Architect> perfect
+<Architect> oh wait
+<Architect> there should be another red block on each leg i couldn
+<Architect> couldnt see them
+<Builder> ok, so raise everything one block?
+[Builder picks up a orange block at X:2 Y:2 Z:-1]
+<Architect> so 2 reds, then the orange
+[Builder puts down a red block at X:2 Y:2 Z:-1]
+[Builder picks up a green block at X:1 Y:2 Z:-1]
+[Builder picks up a green block at X:0 Y:2 Z:-1]
+[Builder picks up a green block at X:-1 Y:2 Z:-1]
+[Builder picks up a orange block at X:-2 Y:2 Z:-1]
+<Architect> yeah
+[Builder puts down a orange block at X:-2 Y:2 Z:-1]
+[Builder picks up a orange block at X:-2 Y:2 Z:-1]
+[Builder puts down a red block at X:-2 Y:2 Z:-1]
+<Builder> ok
+[Builder puts down a orange block at X:-2 Y:3 Z:-1]
+[Builder puts down a orange block at X:2 Y:3 Z:-1]
+[Builder puts down a green block at X:1 Y:3 Z:-1]
+[Builder puts down a green block at X:0 Y:3 Z:-1]
+[Builder puts down a green block at X:-1 Y:3 Z:-1]
+<Architect> ok then on the 4th piece forward from this arch, place red blocks to start the next arch
+[Builder puts down a red block at X:-2 Y:3 Z:-2]
+[Builder puts down a red block at X:-2 Y:3 Z:-3]
+[Builder puts down a red block at X:-2 Y:3 Z:-4]
+[Builder puts down a red block at X:-2 Y:3 Z:-5]
+[Builder picks up a red block at X:-2 Y:3 Z:-2]
+[Builder picks up a red block at X:-2 Y:3 Z:-3]
+[Builder picks up a red block at X:-2 Y:3 Z:-4]
+<Builder> like there?
+<Architect> yeah i think so. its also 3 red blocks high so that works
+[Builder puts down a red block at X:-2 Y:1 Z:-5]
+[Builder puts down a red block at X:-2 Y:2 Z:-5]
+[Builder puts down a red block at X:2 Y:1 Z:-5]
+[Builder puts down a red block at X:2 Y:2 Z:-5]
+[Builder puts down a red block at X:2 Y:3 Z:-5]
+<Architect> same deal. orange block on top of each pillar then connect with yellow this time
+[Builder puts down a orange block at X:1 Y:3 Z:-5]
+[Builder picks up a orange block at X:1 Y:3 Z:-5]
+[Builder puts down a orange block at X:2 Y:4 Z:-5]
+[Builder puts down a orange block at X:-2 Y:4 Z:-5]
+[Builder puts down a yellow block at X:1 Y:4 Z:-5]
+[Builder puts down a yellow block at X:0 Y:4 Z:-5]
+[Builder puts down a yellow block at X:-1 Y:4 Z:-5]
+<Architect> nice that's it
+<Builder> yay
+<Architect> it's been a pleasure builder
+<Builder> same
+<Architect> now lets get some money $$$

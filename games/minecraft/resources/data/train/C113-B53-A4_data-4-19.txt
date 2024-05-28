@@ -1,0 +1,93 @@
+B53-A4-C113-1524154533854
+<Builder> Mission has started.
+<Architect> hello
+<Builder> hey
+<Architect> this is a bunch of giant block numbers
+<Architect> start with orange and stop waving at me
+<Architect> in about the middle build a column five tall
+[Builder puts down a orange block at X:0 Y:1 Z:-1]
+[Builder puts down a orange block at X:0 Y:2 Z:-1]
+[Builder puts down a orange block at X:0 Y:3 Z:-1]
+[Builder puts down a orange block at X:0 Y:4 Z:-1]
+[Builder puts down a orange block at X:0 Y:5 Z:-1]
+<Architect> then two more to the left of the top to make a 7
+[Builder puts down a orange block at X:1 Y:5 Z:-1]
+[Builder puts down a orange block at X:2 Y:5 Z:-1]
+<Architect> now a yellow 6
+<Architect> the long edge of the 6 aligns with the stem of the 7 and faces right
+<Builder> Where does the 6 start?
+<Architect> behind the 7 from your perspective
+<Builder> Is it directly adjacent?
+<Architect> yes directly behind it. touches it
+[Builder puts down a yellow block at X:2 Y:1 Z:0]
+[Builder puts down a yellow block at X:1 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:1 Z:0]
+[Builder puts down a yellow block at X:0 Y:2 Z:0]
+[Builder puts down a yellow block at X:2 Y:2 Z:0]
+[Builder puts down a yellow block at X:2 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:3 Z:0]
+[Builder puts down a yellow block at X:1 Y:3 Z:0]
+[Builder puts down a yellow block at X:2 Y:4 Z:0]
+[Builder puts down a yellow block at X:0 Y:5 Z:0]
+[Builder puts down a yellow block at X:1 Y:5 Z:0]
+[Builder puts down a yellow block at X:2 Y:5 Z:0]
+<Architect> too much overlap unfortunately
+<Architect> the colummn of the 6 is right behind the column of hte 7
+<Builder> Ah okay, I see
+[Builder puts down a yellow block at X:-1 Y:1 Z:1]
+[Builder picks up a yellow block at X:-1 Y:1 Z:1]
+[Builder puts down a yellow block at X:-1 Y:1 Z:0]
+[Builder puts down a yellow block at X:-2 Y:1 Z:0]
+[Builder puts down a yellow block at X:-2 Y:2 Z:0]
+[Builder puts down a yellow block at X:-2 Y:3 Z:0]
+[Builder puts down a yellow block at X:-1 Y:3 Z:0]
+[Builder puts down a yellow block at X:0 Y:4 Z:0]
+[Builder puts down a yellow block at X:0 Y:5 Z:1]
+[Builder picks up a yellow block at X:0 Y:5 Z:1]
+[Builder puts down a yellow block at X:-1 Y:5 Z:0]
+[Builder puts down a yellow block at X:-2 Y:5 Z:0]
+[Builder picks up a yellow block at X:2 Y:5 Z:0]
+[Builder picks up a yellow block at X:1 Y:5 Z:0]
+[Builder picks up a yellow block at X:2 Y:4 Z:0]
+[Builder picks up a yellow block at X:2 Y:3 Z:0]
+[Builder picks up a yellow block at X:1 Y:3 Z:0]
+[Builder picks up a yellow block at X:2 Y:2 Z:0]
+[Builder picks up a yellow block at X:2 Y:1 Z:0]
+[Builder picks up a yellow block at X:1 Y:1 Z:0]
+<Architect> awesome good fix
+<Builder> Anything else?
+<Architect> now a purple 8
+<Architect> the right edge of the 8 is diagonal to the left of the 6
+[Builder puts down a purple block at X:1 Y:1 Z:1]
+<Builder> here?
+<Architect> yes
+[Builder puts down a purple block at X:2 Y:1 Z:1]
+[Builder puts down a purple block at X:3 Y:1 Z:1]
+[Builder puts down a purple block at X:1 Y:2 Z:1]
+[Builder puts down a purple block at X:3 Y:2 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+[Builder puts down a purple block at X:2 Y:3 Z:1]
+[Builder puts down a purple block at X:3 Y:3 Z:1]
+[Builder puts down a purple block at X:3 Y:4 Z:1]
+[Builder puts down a purple block at X:1 Y:4 Z:1]
+[Builder puts down a purple block at X:1 Y:5 Z:1]
+[Builder puts down a purple block at X:2 Y:5 Z:1]
+[Builder puts down a purple block at X:3 Y:5 Z:1]
+<Architect> finally a green 5
+<Architect> he left edge of the five overlaps the right edge of the 8
+<Builder> behind the 8 I'm assuming?
+<Architect> yes
+[Builder puts down a green block at X:1 Y:1 Z:2]
+[Builder puts down a green block at X:0 Y:1 Z:2]
+[Builder puts down a green block at X:-1 Y:1 Z:2]
+[Builder puts down a green block at X:-1 Y:2 Z:2]
+[Builder puts down a green block at X:-1 Y:3 Z:2]
+[Builder puts down a green block at X:0 Y:3 Z:2]
+[Builder puts down a green block at X:1 Y:3 Z:2]
+[Builder puts down a green block at X:1 Y:4 Z:2]
+[Builder puts down a green block at X:1 Y:5 Z:2]
+[Builder puts down a green block at X:0 Y:5 Z:2]
+<Architect> it'll be a 2 from this backward perspective
+[Builder puts down a green block at X:-1 Y:5 Z:2]
+<Builder> Yes
+<Architect> great

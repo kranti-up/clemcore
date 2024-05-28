@@ -1,0 +1,13 @@
+B12-A26-C3-1522939293524
+<Builder> Mission has started.
+<Builder> hello
+<Architect> Hi!
+<Architect> Today we're bulding a structure with three blue cubes
+<Builder> ok
+<Architect> First, please place two of them adjacent to one another on the ground
+[Builder puts down a blue block at X:1 Y:1 Z:-1]
+[Builder puts down a blue block at X:1 Y:1 Z:0]
+<Architect> Great! Now put one more on top
+[Builder puts down a blue block at X:1 Y:2 Z:-1]
+<Architect> I think we're done!
+<Architect> You're fast at minecrafting

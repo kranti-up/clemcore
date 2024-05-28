@@ -1,0 +1,54 @@
+B20-A30-C83-1523458303350
+<Builder> Mission has started.
+<Architect> leave 5 spaces of room
+<Builder> 5x5 or 5x1
+<Architect> 5x5
+<Architect> so start by building a tower of 2 purple blocks at each of the corners
+[Builder puts down a purple block at X:2 Y:1 Z:-1]
+[Builder puts down a purple block at X:2 Y:2 Z:-1]
+[Builder puts down a purple block at X:-2 Y:1 Z:-1]
+[Builder puts down a purple block at X:-2 Y:2 Z:-1]
+[Builder puts down a purple block at X:-2 Y:1 Z:3]
+[Builder puts down a purple block at X:-2 Y:2 Z:3]
+[Builder puts down a purple block at X:2 Y:1 Z:3]
+[Builder puts down a purple block at X:2 Y:2 Z:3]
+<Architect> now place one yellow square directly in the middle
+<Builder> floating?
+<Architect> no just on the ground
+[Builder puts down a yellow block at X:0 Y:1 Z:1]
+<Architect> now on top of that yellow block, build a square of orange blocks 3x3
+[Builder puts down a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:0 Y:2 Z:0]
+[Builder picks up a orange block at X:0 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:0]
+[Builder puts down a orange block at X:-1 Y:2 Z:1]
+[Builder puts down a orange block at X:-1 Y:2 Z:2]
+<Builder> do i fill it in
+[Builder puts down a orange block at X:1 Y:2 Z:0]
+[Builder puts down a orange block at X:1 Y:2 Z:1]
+[Builder puts down a orange block at X:1 Y:2 Z:2]
+<Architect> no
+[Builder puts down a orange block at X:0 Y:2 Z:2]
+[Builder picks up a orange block at X:1 Y:3 Z:2]
+[Builder picks up a orange block at X:0 Y:3 Z:2]
+<Architect> good!
+<Architect> now on top of that build a 5x5 red box resting on the purple squares
+[Builder puts down a red block at X:2 Y:3 Z:-1]
+[Builder puts down a red block at X:1 Y:3 Z:-1]
+[Builder puts down a red block at X:1 Y:3 Z:-2]
+[Builder picks up a red block at X:1 Y:3 Z:-2]
+[Builder puts down a red block at X:0 Y:3 Z:-1]
+[Builder puts down a red block at X:-1 Y:3 Z:-1]
+[Builder puts down a red block at X:-2 Y:3 Z:-1]
+[Builder puts down a red block at X:-2 Y:3 Z:0]
+[Builder puts down a red block at X:-2 Y:3 Z:1]
+[Builder puts down a red block at X:-2 Y:3 Z:2]
+[Builder puts down a red block at X:-2 Y:3 Z:3]
+[Builder puts down a red block at X:2 Y:3 Z:0]
+[Builder puts down a red block at X:2 Y:3 Z:1]
+[Builder puts down a red block at X:2 Y:3 Z:2]
+[Builder puts down a red block at X:2 Y:3 Z:3]
+[Builder puts down a red block at X:-1 Y:3 Z:3]
+[Builder puts down a red block at X:0 Y:3 Z:3]
+[Builder puts down a red block at X:1 Y:3 Z:3]
+<Architect> thats it!

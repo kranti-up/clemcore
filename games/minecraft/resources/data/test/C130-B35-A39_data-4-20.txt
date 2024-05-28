@@ -1,0 +1,86 @@
+B35-A39-C130-1524249079307
+<Builder> Mission has started.
+<Architect> i don't really know how to describe this one
+<Builder> lol all good
+<Architect> just looks like random stuff
+<Architect> start by putting a hollow 3x3 square flat on the ground, using green
+[Builder puts down a green block at X:1 Y:1 Z:1]
+[Builder puts down a green block at X:0 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:1]
+[Builder puts down a green block at X:-1 Y:1 Z:0]
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder picks up a green block at X:-1 Y:1 Z:-2]
+[Builder puts down a green block at X:-1 Y:1 Z:-1]
+[Builder puts down a green block at X:0 Y:1 Z:-1]
+[Builder puts down a green block at X:1 Y:1 Z:-1]
+[Builder puts down a green block at X:1 Y:1 Z:0]
+<Builder> ok
+<Architect> on the other side from where you're standing, make a step up like a staircase, also 3 wide
+[Builder puts down a green block at X:-1 Y:1 Z:2]
+[Builder puts down a green block at X:-1 Y:2 Z:2]
+[Builder picks up a green block at X:-1 Y:1 Z:2]
+[Builder puts down a green block at X:0 Y:2 Z:2]
+[Builder puts down a green block at X:1 Y:2 Z:2]
+<Builder> this?
+<Architect> yup!
+<Builder> cool
+<Architect> we'll step up twice more, but the second step in the staircase (the one you'll make first) is hollow in the middle
+[Builder puts down a green block at X:-1 Y:2 Z:3]
+[Builder puts down a green block at X:-1 Y:3 Z:3]
+[Builder picks up a green block at X:-1 Y:2 Z:3]
+[Builder puts down a green block at X:-1 Y:3 Z:4]
+[Builder puts down a green block at X:-1 Y:4 Z:4]
+[Builder picks up a green block at X:-1 Y:3 Z:4]
+[Builder puts down a green block at X:1 Y:2 Z:3]
+[Builder puts down a green block at X:1 Y:2 Z:4]
+[Builder puts down a green block at X:1 Y:3 Z:4]
+[Builder puts down a green block at X:1 Y:4 Z:4]
+[Builder puts down a green block at X:1 Y:3 Z:3]
+[Builder picks up a green block at X:1 Y:2 Z:3]
+[Builder picks up a green block at X:1 Y:2 Z:4]
+[Builder picks up a green block at X:1 Y:3 Z:4]
+[Builder puts down a green block at X:-1 Y:4 Z:5]
+[Builder puts down a green block at X:0 Y:4 Z:4]
+[Builder picks up a green block at X:-1 Y:4 Z:5]
+<Builder> okay
+<Architect> looks good
+<Architect> so now we're going to make that last part of the structure with the three steps again, but they'll be lying on their side
+<Architect> go back to the original viewpoint you had when you made that square
+<Builder> okay
+<Builder> am I building towards me?
+<Architect> you'll place one on the ground then build upwards
+<Architect> then away from you
+[Builder puts down a green block at X:-1 Y:1 Z:-2]
+[Builder puts down a green block at X:0 Y:1 Z:-2]
+[Builder puts down a green block at X:1 Y:1 Z:-2]
+[Builder puts down a green block at X:1 Y:2 Z:-1]
+<Architect> so first put a blue block diagonally down and right from teh bottom right corner of the square
+[Builder picks up a green block at X:1 Y:2 Z:-1]
+[Builder picks up a green block at X:1 Y:1 Z:-2]
+[Builder picks up a green block at X:0 Y:1 Z:-2]
+[Builder picks up a green block at X:-1 Y:1 Z:-2]
+<Architect> sorry haha this structure is kind of separate from the green one
+[Builder puts down a blue block at X:-2 Y:1 Z:-2]
+<Builder> oh okay gotcha lol
+<Architect> make that a pillar of 3
+[Builder puts down a blue block at X:-2 Y:2 Z:-2]
+[Builder puts down a blue block at X:-2 Y:3 Z:-2]
+<Architect> now diagonally up and right from there, you'll make the hollow stair
+[Builder puts down a blue block at X:-3 Y:3 Z:-2]
+[Builder puts down a blue block at X:-3 Y:4 Z:-2]
+[Builder picks up a blue block at X:-3 Y:3 Z:-2]
+<Architect> uhh
+<Builder> I don't quite follow
+<Architect> so if you take a directly top-down view, it will look like a staircase going up and right
+[Builder picks up a blue block at X:-3 Y:4 Z:-2]
+<Builder> oh okay
+[Builder puts down a blue block at X:-3 Y:1 Z:-1]
+[Builder puts down a blue block at X:-3 Y:2 Z:-1]
+[Builder puts down a blue block at X:-3 Y:3 Z:-1]
+[Builder picks up a blue block at X:-3 Y:2 Z:-1]
+<Architect> yup!
+<Architect> then the last stair
+[Builder puts down a blue block at X:-4 Y:1 Z:0]
+[Builder puts down a blue block at X:-4 Y:2 Z:0]
+<Architect> nice, think that's it
+<Builder> sweet!

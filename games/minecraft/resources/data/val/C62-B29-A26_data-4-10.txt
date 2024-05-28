@@ -1,0 +1,76 @@
+B29-A26-C62-1523376847005
+<Builder> Mission has started.
+<Architect> We'll be building a lowercase h followed by a pi symbol
+<Architect> The h will be red, consisting of a column of 4 red bricks, then one red brick floating, then two red bricks
+<Architect> from left to right
+[Builder puts down a red block at X:1 Y:1 Z:2]
+[Builder puts down a red block at X:1 Y:1 Z:1]
+[Builder puts down a red block at X:1 Y:1 Z:0]
+[Builder puts down a red block at X:0 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:1]
+[Builder puts down a red block at X:-1 Y:1 Z:0]
+<Architect> The h will be vertical
+[Builder picks up a red block at X:-1 Y:1 Z:0]
+[Builder picks up a red block at X:-1 Y:1 Z:1]
+[Builder picks up a red block at X:0 Y:1 Z:1]
+[Builder picks up a red block at X:1 Y:1 Z:0]
+[Builder picks up a red block at X:1 Y:1 Z:1]
+[Builder picks up a red block at X:1 Y:1 Z:2]
+[Builder puts down a red block at X:4 Y:1 Z:1]
+[Builder puts down a red block at X:4 Y:2 Z:1]
+[Builder puts down a red block at X:3 Y:2 Z:1]
+[Builder puts down a red block at X:3 Y:2 Z:0]
+[Builder picks up a red block at X:3 Y:2 Z:1]
+[Builder picks up a red block at X:3 Y:2 Z:0]
+[Builder puts down a red block at X:3 Y:2 Z:1]
+[Builder puts down a red block at X:2 Y:2 Z:1]
+[Builder puts down a red block at X:2 Y:1 Z:1]
+[Builder puts down a red block at X:4 Y:3 Z:1]
+[Builder puts down a red block at X:4 Y:4 Z:1]
+<Architect> Great job!
+<Builder> which color for pi?
+<Architect> Now we'll make the pi. First, add a column of two bricks that are blue, adjacent to the right side of the h
+[Builder puts down a blue block at X:1 Y:1 Z:1]
+[Builder puts down a blue block at X:1 Y:2 Z:1]
+<Architect> Then skip a space, and add another column of two blue bricks
+[Builder puts down a blue block at X:-1 Y:1 Z:1]
+[Builder puts down a blue block at X:-1 Y:2 Z:1]
+<Architect> Nice! now cap of the pi with 5 purple bricks
+<Architect> cap off*
+<Builder> will one be over the h?
+<Architect> yes
+[Builder puts down a blue block at X:2 Y:3 Z:1]
+[Builder puts down a blue block at X:1 Y:3 Z:1]
+[Builder puts down a blue block at X:0 Y:3 Z:1]
+[Builder puts down a blue block at X:-1 Y:3 Z:1]
+[Builder puts down a blue block at X:-2 Y:3 Z:1]
+<Architect> the bricks on the top of the pi are purple
+[Builder picks up a blue block at X:2 Y:3 Z:1]
+[Builder picks up a blue block at X:-1 Y:3 Z:1]
+[Builder picks up a blue block at X:0 Y:3 Z:1]
+[Builder picks up a blue block at X:1 Y:3 Z:1]
+[Builder picks up a blue block at X:-2 Y:3 Z:1]
+[Builder puts down a purple block at X:2 Y:3 Z:1]
+[Builder puts down a purple block at X:1 Y:3 Z:1]
+[Builder puts down a purple block at X:0 Y:3 Z:1]
+[Builder puts down a purple block at X:-1 Y:3 Z:1]
+[Builder puts down a purple block at X:-2 Y:3 Z:1]
+<Architect> Great job! the h pi has depth two, so add the bricks necessary to make it have depth 2
+<Builder> all the colors are the same?
+<Architect> yep!
+[Builder puts down a red block at X:4 Y:1 Z:2]
+[Builder puts down a red block at X:4 Y:2 Z:2]
+[Builder puts down a red block at X:4 Y:3 Z:2]
+[Builder puts down a red block at X:4 Y:4 Z:2]
+[Builder puts down a red block at X:3 Y:2 Z:2]
+[Builder puts down a red block at X:2 Y:1 Z:2]
+[Builder puts down a red block at X:2 Y:2 Z:2]
+[Builder puts down a purple block at X:2 Y:3 Z:2]
+[Builder puts down a purple block at X:1 Y:3 Z:2]
+[Builder puts down a purple block at X:0 Y:3 Z:2]
+[Builder puts down a purple block at X:-1 Y:3 Z:2]
+[Builder puts down a purple block at X:-2 Y:3 Z:2]
+[Builder puts down a blue block at X:-1 Y:2 Z:2]
+[Builder puts down a blue block at X:-1 Y:1 Z:2]
+[Builder puts down a blue block at X:1 Y:1 Z:2]
+[Builder puts down a blue block at X:1 Y:2 Z:2]
