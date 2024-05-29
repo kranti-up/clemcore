@@ -36,11 +36,12 @@ class Minecraft(GameMaster):
         #self.meval = MinecraftEval()
 
 
-    def setup(self, n_turns: int, prompt: str, game_id: int, dialogue: List) -> None:
+    def setup(self, n_turns: int, prompt: str, game_id: int, dialogue: List, incontext_samples: Dict) -> None:
         """Setup the episode (mandatory)."""
         self.n_turns = n_turns
         self.game_id = game_id
         self.dialogue = dialogue
+        self.incontext_samples = incontext_samples
 
         # instantiate both players
         self.player_a = InstructionGiver(self.model_a, "A")
@@ -102,6 +103,23 @@ class Minecraft(GameMaster):
             yield data["utterance"], data["action"]
 
     def _add_instruction(self, utterance: str, prompt: dict) -> None:
+        #Update In-context samples for this turn
+        samples = self.incontext_samples[str(self.current_turn)]
+        incsamples = ""
+        for sample in samples:
+            d, a = sample
+            a = "\n".join(a)
+            incsamples += d + "\n" + a + "\n\n"
+        #samples = "\n".join(samples)
+        #print(utterance)
+        #print(incsamples)
+        #input()
+        samples = "In-Context Samples\n"+ incsamples + "\n"
+
+        if "$INCONTEXT_SAMPLES" in prompt[0]["content"]:
+            prompt[0]["content"] = prompt[0]["content"].replace("$INCONTEXT_SAMPLES", incsamples)
+
+
         content = "Instruction\n" + utterance + "\n"
         if prompt[-1]["role"] == "user":
             prompt[-1]["content"] = prompt[-1]["content"] + "\n" + content
@@ -118,6 +136,8 @@ class Minecraft(GameMaster):
         # append the initial message of each player to their history
         # the value user means the message is from an interlocutor of the model
         self.player_a.history.append({'role': 'user', 'content': prompt_player_a})
+
+        self.base_prompt = prompt_player_a
 
         # also log the messages as events for the transcriptions
         #action = {'type': 'send message', 'content': prompt_player_a}
@@ -353,4 +373,4 @@ class MinecraftGameBenchmark(GameBenchmark):
         return Minecraft(experiment, player_backends)
     
     def create_game_scorer(self, experiment: Dict, game_instance: Dict) -> GameScorer:
-        return MinecraftGameScorer(self.name, experiment, game_instance)    
+        return MinecraftGameScorer(self.name, experiment, game_instance)

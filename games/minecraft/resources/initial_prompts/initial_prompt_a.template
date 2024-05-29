@@ -10,14 +10,9 @@ You should only use these specified functions and not create any hypothetical fu
 
 Please use the pick function only to select the pieces that you have previously placed on the board. You can safely assume that the available blocks are automatically selected, and therefore, you can directly use the "place()" function without needing to call the "pick()" function first.
 
+$INCONTEXT_SAMPLES
+
 For each instruction labeled "Instruction" please respond with code under the label "Output" followed by a newline.
-
-Instruction
-place a red block at the center of the board
-
-Output
-place(color='red',x=0,y=1,z=0)
-
 
 Do not generate any other text/explanations. Use python code to express the solution. Please keep the solutions simple and clear. Do not use loops, comments in the solution. Do not generate the instructions on your own. Stick to the given format. Think step by step.
 

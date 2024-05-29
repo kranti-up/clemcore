@@ -2,6 +2,7 @@ import random
 import string
 
 from clemgame.clemgame import GameInstanceGenerator
+from games.minecraft.utils.preparesamples import PrepareSamples
 
 # set the name of the game in the script, as you named the directory
 # this name will be used everywhere, including in the table of results
@@ -15,6 +16,7 @@ class MinecraftGameInstanceGenerator(GameInstanceGenerator):
     def __init__(self):
         # always do this to initialise GameInstanceGenerator
         super().__init__(GAME_NAME)
+        self.ps = PrepareSamples()
 
 
     # define on_generate, a mandatory method
@@ -23,7 +25,7 @@ class MinecraftGameInstanceGenerator(GameInstanceGenerator):
         prompt_a = self.load_template('resources/initial_prompts/initial_prompt_a')
 
         # get the list of dialogues, which will be our experiments
-        dialogues = self.load_json('resources/minecraft_dialogues.json')
+        dialogues = self.load_json('resources/minecraft_dialogues_test.json')
         game_ids_select = random.sample(list(dialogues.keys()), N_INSTANCES)
 
         for exp_index, game_id in enumerate(game_ids_select):
@@ -34,9 +36,12 @@ class MinecraftGameInstanceGenerator(GameInstanceGenerator):
             instance = self.add_game_instance(experiment, exp_index+1)
             # populate the game instance with its parameters
             instance['dialogue'] = dialogues[game_id]
+            instance['incontext_samples'] = self.ps.getsamples(dialogues[game_id])
             instance["n_turns"] = len(dialogues[game_id])
             instance['prompt'] = prompt_a
             instance['game_id'] = game_id#exp_index
+
+        print(f"Generated {len(game_ids_select)} instances")
 
 if __name__ == '__main__':
     #random.seed(SEED)
