@@ -84,8 +84,8 @@ class Minecraft(GameMaster):
             action = {'type': 'info', 'content': 'game successful'}
             self.log_event(from_='GM', to='GM', action=action)
 
-        action = {'type': 'final_prompt_a', 'content': self.player_a.history}
-        self.log_event(from_='GM', to='GM', action=action)
+        #action = {'type': 'final_prompt_a', 'content': self.player_a.history}
+        #self.log_event(from_='GM', to='GM', action=action)
 
 
         #action = {'type': 'resforeval', 'content': self.game_data}
@@ -116,9 +116,12 @@ class Minecraft(GameMaster):
         #input()
         samples = "In-Context Samples\n"+ incsamples + "\n"
 
-        if "$INCONTEXT_SAMPLES" in prompt[0]["content"]:
-            prompt[0]["content"] = prompt[0]["content"].replace("$INCONTEXT_SAMPLES", incsamples)
-
+        if self.current_turn == 1:
+            self.replaced_samples = []
+            self.replaced_samples.append(samples)
+            prompt[0]["content"] = prompt[0]["content"].replace("$INCONTEXT_SAMPLES", samples)
+        else:
+            prompt[0]["content"] = prompt[0]["content"].replace(self.replaced_samples[-1], samples)
 
         content = "Instruction\n" + utterance + "\n"
         if prompt[-1]["role"] == "user":
