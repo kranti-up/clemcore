@@ -26,7 +26,8 @@ class MinecraftGameInstanceGenerator(GameInstanceGenerator):
 
         # get the list of dialogues, which will be our experiments
         dialogues = self.load_json('resources/minecraft_dialogues_test.json')
-        game_ids_select = random.sample(list(dialogues.keys()), N_INSTANCES)
+        #game_ids_select = random.sample(list(dialogues.keys()), N_INSTANCES)
+        game_ids_select = list(dialogues.keys())
 
         for exp_index, game_id in enumerate(game_ids_select):
             # create an experiment (for us, named after a topic)
