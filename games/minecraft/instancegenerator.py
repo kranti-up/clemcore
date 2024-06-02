@@ -37,7 +37,7 @@ class MinecraftGameInstanceGenerator(GameInstanceGenerator):
             instance = self.add_game_instance(experiment, exp_index+1)
             # populate the game instance with its parameters
             instance['dialogue'] = dialogues[game_id]
-            instance['incontext_samples'] = self.ps.getsamples(dialogues[game_id])
+            instance['incontext_samples'] = None#self.ps.getsamples(dialogues[game_id])
             instance["n_turns"] = len(dialogues[game_id])
             instance['prompt'] = prompt_a
             instance['game_id'] = game_id#exp_index

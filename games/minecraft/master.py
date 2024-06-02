@@ -84,9 +84,9 @@ class Minecraft(GameMaster):
             action = {'type': 'info', 'content': 'game successful'}
             self.log_event(from_='GM', to='GM', action=action)
 
-        #action = {'type': 'final_prompt_a', 'content': self.player_a.history}
-        #self.log_event(from_='GM', to='GM', action=action)
-
+        action = {'type': 'final_prompt_a', 'content': self.player_a.history}
+        self.log_event(from_='GM', to='GM', action=action)
+        #input()
 
         #action = {'type': 'resforeval', 'content': self.game_data}
         #self.log_event(from_='GM', to='GM', action=action)
@@ -104,30 +104,34 @@ class Minecraft(GameMaster):
 
     def _add_instruction(self, utterance: str, prompt: dict) -> None:
         #Update In-context samples for this turn
-        samples = self.incontext_samples[str(self.current_turn)]
-        incsamples = ""
-        for sample in samples:
-            d, a = sample
-            a = "\n".join(a)
-            incsamples += d + "\n" + a + "\n\n"
-        #samples = "\n".join(samples)
-        #print(utterance)
-        #print(incsamples)
-        #input()
-        samples = "In-Context Samples\n"+ incsamples + "\n"
+        if self.incontext_samples:
+            samples = self.incontext_samples[str(self.current_turn)]
+            incsamples = ""
+            for sample in samples:
+                d, a = sample
+                a = "\n".join(a)
+                incsamples += d + "\n" + a + "\n\n"
+            #samples = "\n".join(samples)
+            #print(utterance)
+            #print(incsamples)
+            #input()
+            samples = "In-Context Samples\n"+ incsamples + "\n"
 
-        if self.current_turn == 1:
-            self.replaced_samples = []
-            self.replaced_samples.append(samples)
-            prompt[0]["content"] = prompt[0]["content"].replace("$INCONTEXT_SAMPLES", samples)
-        else:
-            prompt[0]["content"] = prompt[0]["content"].replace(self.replaced_samples[-1], samples)
+            if self.current_turn == 1:
+                self.replaced_samples = []
+                self.replaced_samples.append(samples)
+                prompt[0]["content"] = prompt[0]["content"].replace("$INCONTEXT_SAMPLES", samples)
+            else:
+                prompt[0]["content"] = prompt[0]["content"].replace(self.replaced_samples[-1], samples)
 
         content = "Instruction\n" + utterance + "\n"
         if prompt[-1]["role"] == "user":
             prompt[-1]["content"] = prompt[-1]["content"] + "\n" + content
         else:
-            self.player_a.history.append({'role': "user", 'content': content})  
+            self.player_a.history.append({'role': "user", 'content': content}) 
+
+        print(self.player_a.history)
+        input()
 
         return content
 
