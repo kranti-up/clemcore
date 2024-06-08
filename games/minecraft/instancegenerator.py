@@ -2,7 +2,7 @@ import random
 import string
 
 from clemgame.clemgame import GameInstanceGenerator
-from games.minecraft.utils.preparesamples import PrepareSamples
+#from games.minecraft.utils.preparesamples import PrepareSamples
 
 # set the name of the game in the script, as you named the directory
 # this name will be used everywhere, including in the table of results
@@ -16,13 +16,13 @@ class MinecraftGameInstanceGenerator(GameInstanceGenerator):
     def __init__(self):
         # always do this to initialise GameInstanceGenerator
         super().__init__(GAME_NAME)
-        self.ps = PrepareSamples()
+        #self.ps = PrepareSamples()
 
 
     # define on_generate, a mandatory method
     def on_generate(self):
 
-        prompt_a = self.load_template('resources/initial_prompts/initial_prompt_a')
+        prompt_a = self.load_template('resources/initial_prompts/initial_prompt_a_noic')
 
         # get the list of dialogues, which will be our experiments
         dialogues = self.load_json('resources/minecraft_dialogues_test.json')
