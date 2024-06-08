@@ -206,6 +206,7 @@ class DetectObject(GameMaster):
 
     def _add_instruction(self, conversation: str, prompt: dict) -> None:
         content = conversation
+        
         #for conv in conversation:
         #    content += "\n".join(conv) + "\n"
 

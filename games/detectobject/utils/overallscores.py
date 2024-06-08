@@ -136,6 +136,9 @@ def compute_overall_scores_update(records_path, filter, cr_turn):
                         else:
                             if cr_turn != scores["turn scores"][turn]["is_cr_turn"]:
                                 continue
+                    else:
+                        if scores["turn scores"][turn]["is_cr_turn"] == "none":
+                            continue
 
                     filter_episodes += 1
 
@@ -153,4 +156,4 @@ def compute_overall_scores_update(records_path, filter, cr_turn):
 if __name__=="__main__":
     #compute_overall_scores(records_path="/Users/kranti/Desktop/codebase/cocobots/clembench/results_abl_do_ic_0/")
     compute_overall_scores_update(records_path="/home/admin/Desktop/codebase/cocobots/detectobject_code/clembench/results_all_turns/",
-                                  filter="is_cr_turn", cr_turn="before")
+                                  filter="individual_property", cr_turn="before")

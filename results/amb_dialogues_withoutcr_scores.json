@@ -1,1 +1,0 @@
-{"gpt-4-0125-preview-t0.0--gpt-4-0125-preview-t0.0": {"precision": 0.583, "recall": 0.875, "f1_score": 0.661, "num_episodes": 826}, "anyscale-llama-3-8b-instruct-hf-t0.0--anyscale-llama-3-8b-instruct-hf-t0.0": {"precision": 0.411, "recall": 0.516, "f1_score": 0.44, "num_episodes": 826}}

@@ -247,10 +247,63 @@ class PrepareDataAsBaseline:
         print(f"Saving {save_file_name}")
         file_utils.store_game_file(self.clemtestdata, save_file_name, GAME_NAME, "resources/data/")
 
+    def getstats(self, filename):
+        dialogues = file_utils.load_json(self.filename, GAME_NAME)
+        dialogue_data = dialogues["dialogue_data"]
+        num_dialogues = 0
+        num_turns = 0
+        turns_len = []
+        for index, dialogue in enumerate(dialogue_data):
+            for index, turn in enumerate(dialogue["dialogue"]):
+                num_turns += 1
+            turns_len.append(len(dialogue["dialogue"]))
+            num_dialogues += 1
+
+        print(f"Total Dialogues: {num_dialogues}, Total Turns: {num_turns}")
+        print(f"Average Turns per Dialogue: {num_turns/num_dialogues}")
+        print(f"Max Turns in a Dialogue: {max(turns_len)}, Min Turns in a Dialogue: {min(turns_len)}, Median Turns in a Dialogue: {sorted(turns_len)[len(turns_len)//2]}, Mean Turns in a Dialogue: {sum(turns_len)/len(turns_len)}")
+
+        turn_data = file_utils.load_json(f"resources/data/{filename}", GAME_NAME)
+
+        is_cr_before_turns = 0
+        is_cr_after_turns = 0
+        is_cr_none_turns = 0
+        individual_property_turns = 0
+        dialogue_history_turns = 0
+        relational_context_turns = 0
+
+        for turn in turn_data:
+            if turn["is_cr_turn"] == "before":
+                is_cr_before_turns += 1
+            elif turn["is_cr_turn"] == "after":
+                is_cr_after_turns += 1
+            else:
+                is_cr_none_turns += 1
+
+            if turn["individual_property"]:
+                individual_property_turns += 1
+
+            if turn["dialogue_history"]:
+                dialogue_history_turns += 1
+
+            if turn["relational_context"]:
+                relational_context_turns += 1
+
+        print(f"Total Turns: {len(turn_data)}")
+        print(f"CR Before Turns: {is_cr_before_turns}")
+        print(f"CR After Turns: {is_cr_after_turns}")
+        print(f"CR None Turns: {is_cr_none_turns}")
+        print(f"Individual Property Turns: {individual_property_turns}")
+        print(f"Dialogue History Turns: {dialogue_history_turns}")
+        print(f"Relational Context Turns: {relational_context_turns}")
+
+
+
 
 if __name__ == "__main__":
     pdd = PrepareDataAsBaseline("simmc2_dials_dstc10_dev.json", False, "all")
     #pdd = PrepareDataAsBaseline("simmc2_dials_dstc10_devtest.json", False, "none")
     pdd.run(save_file_name="clemtestdata_ablation_all_turn_all_dh.json")
     #print(pdd.count_turns_base_data())
+    #pdd.getstats("clemtestdata_ablation_all_turn_all_dh.json")
 

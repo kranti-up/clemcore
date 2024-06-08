@@ -81,11 +81,11 @@ class CCBTSEval:
         self._cleanup_response(prediction)
         #print(prediction)
 
-        em_match_type = em_comparison(ground_truth, prediction, results["exact_match"])
+        #em_match_type = em_comparison(ground_truth, prediction, results["exact_match"])
         #print(f"em_match_type: {em_match_type}")
         cb_match_type = cb_comparison(ground_truth, prediction, results["codebleu"])
-        exec_match_type, exec_result = exec_comparison(rows, cols, ground_truth, prediction, results["exec_score"])
-        print(exec_match_type, exec_result)
+        #exec_match_type, exec_result = exec_comparison(rows, cols, ground_truth, prediction, results["exec_score"])
+        #print(exec_match_type, exec_result)
 
         #if not all(all(match_type == "success" for match_type in lst) for lst in [em_match_type, cb_match_type, exec_match_type]):
         return {

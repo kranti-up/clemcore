@@ -65,7 +65,7 @@ class HuggingfaceRemoteModel(backends.Model):
             "num_return_sequences": 1,
         }
         payload = {"inputs": prompt, "parameters": model_parameters}
-        model_url = f"{API_URL}{self.model_spec.model_id}"
+        model_url = f"{API_URL}"#f"{API_URL}{self.model_spec.model_id}"
 
         try:
             with requests.post(
