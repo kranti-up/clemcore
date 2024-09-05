@@ -26,7 +26,7 @@ class Greeter(Player):
         super().__init__(model)
 
     def _custom_response(self, messages, turn_idx):
-        raise NotImplementedError("This should not be called, but the remote APIs.")
+        raise NotImplementedError("This game is intended to test the model backends, so it should not be called with mock, but with a model. To test the framework, run it with '-g taboo -m mock'.")
 
 
 class HelloGame(DialogueGameMaster):
