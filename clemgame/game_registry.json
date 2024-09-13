@@ -1,0 +1,10 @@
+[
+  {
+    "game_name": "hellogame",
+    "game_path": "games/hellogame",
+    "player": "single",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": []
+  }
+]
