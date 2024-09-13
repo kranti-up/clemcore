@@ -3,7 +3,7 @@ import json
 from typing import List
 
 from backends import ModelSpec
-from clemgame import benchmark
+from clemgame import framework
 
 """
     Use good old argparse to run the commands.
@@ -53,18 +53,18 @@ def read_gen_args(args: argparse.Namespace):
 
 def main(args: argparse.Namespace):
     if args.command_name == "ls":
-        benchmark.list_games()
+        framework.list_games()
     if args.command_name == "run":
-        benchmark.run(args.game,
+        framework.run(args.game,
                       model_specs=read_model_specs(args.models),
                       gen_args=read_gen_args(args),
                       experiment_name=args.experiment_name,
                       instances_name=args.instances_name,
                       results_dir=args.results_dir)
     if args.command_name == "score":
-        benchmark.score(args.game, experiment_name=args.experiment_name, results_dir=args.results_dir)
+        framework.score(args.game, experiment_name=args.experiment_name, results_dir=args.results_dir)
     if args.command_name == "transcribe":
-        benchmark.transcripts(args.game, experiment_name=args.experiment_name, results_dir=args.results_dir)
+        framework.transcripts(args.game, experiment_name=args.experiment_name, results_dir=args.results_dir)
 
 
 if __name__ == "__main__":

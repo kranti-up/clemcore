@@ -6,10 +6,10 @@ import clemgame
 
 from datetime import datetime
 
-from clemgame.clemgame import load_benchmarks, load_benchmark
+from clemgame.clemgame import load_games, load_game
 
 logger = clemgame.get_logger(__name__)
-stdout_logger = clemgame.get_logger("benchmark.run")
+stdout_logger = clemgame.get_logger("framework.run")
 
 # look for custom user-defined models before loading the base registry
 backends.load_custom_model_registry()
@@ -17,8 +17,8 @@ backends.load_model_registry()
 
 
 def list_games():
-    stdout_logger.info("Listing benchmark games:")
-    games_list = load_benchmarks(do_setup=False)
+    stdout_logger.info("Listing games:")
+    games_list = load_games(do_setup=False)
     if not games_list:
         stdout_logger.info(" No games found. You can create a new game module in a sibling 'games' directory.")
     games_list = sorted(games_list, key=lambda gb: gb.name)
@@ -36,7 +36,7 @@ def run(game_name: str, model_specs: List[backends.ModelSpec], gen_args: Dict,
             model = backends.get_model_for(model_spec)
             model.set_gen_args(**gen_args)  # todo make this somehow available in generate method?
             player_models.append(model)
-        benchmark = load_benchmark(game_name, instances_name=instances_name)
+        benchmark = load_game(game_name, instances_name=instances_name)
         logger.info("Running benchmark for '%s' (models=%s)", game_name,
                     player_models if player_models is not None else "see experiment configs")
         if experiment_name:
@@ -55,9 +55,9 @@ def score(game_name: str, experiment_name: str = None, results_dir: str = None):
     if experiment_name:
         logger.info("Only scoring experiment: %s", experiment_name)
     if game_name == "all":
-        games_list = load_benchmarks(do_setup=False)
+        games_list = load_games(do_setup=False)
     else:
-        games_list = [load_benchmark(game_name, do_setup=False)]
+        games_list = [load_game(game_name, do_setup=False)]
     total_games = len(games_list)
     for idx, benchmark in enumerate(games_list):
         try:
@@ -78,9 +78,9 @@ def transcripts(game_name: str, experiment_name: str = None, results_dir: str = 
     if experiment_name:
         logger.info("Only transcribe experiment: %s", experiment_name)
     if game_name == "all":
-        games_list = load_benchmarks(do_setup=False)
+        games_list = load_games(do_setup=False)
     else:
-        games_list = [load_benchmark(game_name, do_setup=False)]
+        games_list = [load_game(game_name, do_setup=False)]
     total_games = len(games_list)
     for idx, benchmark in enumerate(games_list):
         try:

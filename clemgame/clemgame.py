@@ -14,10 +14,7 @@ from clemgame import file_utils, transcript_utils
 import clemgame.metrics as ms
 
 logger = clemgame.get_logger(__name__)
-stdout_logger = clemgame.get_logger("benchmark.run")
-
-# Showcases that should not be run for the overall benchmark (still can be run, when specified specifically)
-GAMES_TO_IGNORE = ["hellogame", "chatgame"]
+stdout_logger = clemgame.get_logger("framework.run")
 
 
 class Player(abc.ABC):
@@ -925,28 +922,27 @@ class GameInstanceGenerator(GameResourceLocator):
         self.store_file(self.instances, filename, sub_dir="in")
 
 
-def load_benchmarks(do_setup: bool = True) -> List[GameBenchmark]:
-    game_benchmarks = []
+def load_games(do_setup: bool = True) -> List[GameBenchmark]:
+    games = []
     for gb_cls in GameBenchmark.__subclasses__():
         gb = gb_cls()  # subclasses should only get the model_name
         if do_setup:
             gb.setup()
-        if gb.name in GAMES_TO_IGNORE:
-            continue  # only a showcase
-        game_benchmarks.append(gb)
-    return game_benchmarks
+        games.append(gb)
+    return games
 
 
-def load_benchmark(game_name: str, do_setup: bool = True, instances_name: str = None) -> GameBenchmark:
-    gm = find_benchmark(game_name)
+def load_game(game_name: str, do_setup: bool = True, instances_name: str = None) -> GameBenchmark:
+    gm = find_game(game_name)
     if do_setup:
         gm.setup(instances_name)
     return gm
 
 
-def find_benchmark(game_name: str):
+def find_game(game_name: str):
+    game_classes = GameBenchmark.__subclasses__()
     for gb_cls in GameBenchmark.__subclasses__():
         gb = gb_cls()  # subclasses should only get the dialog_pair
         if gb.applies_to(game_name):
             return gb
-    raise NotImplementedError("No game benchmark for:", game_name)
+    raise NotImplementedError("No game class for:", game_name)
