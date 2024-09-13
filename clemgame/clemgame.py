@@ -940,7 +940,6 @@ def load_game(game_name: str, do_setup: bool = True, instances_name: str = None)
 
 
 def find_game(game_name: str):
-    game_classes = GameBenchmark.__subclasses__()
     for gb_cls in GameBenchmark.__subclasses__():
         gb = gb_cls()  # subclasses should only get the dialog_pair
         if gb.applies_to(game_name):
