@@ -17,13 +17,8 @@ backends.load_model_registry()
 
 
 def list_games():
-    stdout_logger.info("Listing games:")
-    games_list = load_games(do_setup=False)
-    if not games_list:
-        stdout_logger.info(" No games found. You can create a new game module in a sibling 'games' directory.")
-    games_list = sorted(games_list, key=lambda gb: gb.name)
-    for game in games_list:
-        stdout_logger.info(" Game: %s -> %s", game.name, game.get_description())
+    print("See clemgame/game_registry.json for available games.")
+    stdout_logger.info("See clemgame/game_registry.json for available games.")
 
 
 def run(game_name: str, model_specs: List[backends.ModelSpec], gen_args: Dict,
