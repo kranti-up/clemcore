@@ -36,15 +36,15 @@ def run(game_name: str, model_specs: List[backends.ModelSpec], gen_args: Dict,
             model = backends.get_model_for(model_spec)
             model.set_gen_args(**gen_args)  # todo make this somehow available in generate method?
             player_models.append(model)
-        benchmark = load_game(game_name, instances_name=instances_name)
+        game = load_game(game_name, instances_name=instances_name)
         logger.info("Running benchmark for '%s' (models=%s)", game_name,
                     player_models if player_models is not None else "see experiment configs")
         if experiment_name:
-            benchmark.filter_experiment.append(experiment_name)
+            game.filter_experiment.append(experiment_name)
         time_start = datetime.now()
-        benchmark.run(player_models=player_models, results_dir=results_dir)
+        game.run(player_models=player_models, results_dir=results_dir)
         time_end = datetime.now()
-        logger.info(f"Run {benchmark.name} took {str(time_end - time_start)}")
+        logger.info(f"Run {game.name} took {str(time_end - time_start)}")
     except Exception as e:
         stdout_logger.exception(e)
         logger.error(e, exc_info=True)
@@ -59,15 +59,15 @@ def score(game_name: str, experiment_name: str = None, results_dir: str = None):
     else:
         games_list = [load_game(game_name, do_setup=False)]
     total_games = len(games_list)
-    for idx, benchmark in enumerate(games_list):
+    for idx, game in enumerate(games_list):
         try:
             if experiment_name:
-                benchmark.filter_experiment.append(experiment_name)
-            stdout_logger.info(f"Score game {idx + 1} of {total_games}: {benchmark.name}")
+                game.filter_experiment.append(experiment_name)
+            stdout_logger.info(f"Score game {idx + 1} of {total_games}: {game.name}")
             time_start = datetime.now()
-            benchmark.compute_scores(results_dir)
+            game.compute_scores(results_dir)
             time_end = datetime.now()
-            logger.info(f"Score {benchmark.name} took {str(time_end - time_start)}")
+            logger.info(f"Score {game.name} took {str(time_end - time_start)}")
         except Exception as e:
             stdout_logger.exception(e)
             logger.error(e, exc_info=True)
@@ -82,15 +82,15 @@ def transcripts(game_name: str, experiment_name: str = None, results_dir: str = 
     else:
         games_list = [load_game(game_name, do_setup=False)]
     total_games = len(games_list)
-    for idx, benchmark in enumerate(games_list):
+    for idx, game in enumerate(games_list):
         try:
             if experiment_name:
-                benchmark.filter_experiment.append(experiment_name)
-            stdout_logger.info(f"Transcribe game {idx + 1} of {total_games}: {benchmark.name}")
+                game.filter_experiment.append(experiment_name)
+            stdout_logger.info(f"Transcribe game {idx + 1} of {total_games}: {game.name}")
             time_start = datetime.now()
-            benchmark.build_transcripts(results_dir)
+            game.build_transcripts(results_dir)
             time_end = datetime.now()
-            logger.info(f"Building transcripts {benchmark.name} took {str(time_end - time_start)}")
+            logger.info(f"Building transcripts {game.name} took {str(time_end - time_start)}")
         except Exception as e:
             stdout_logger.exception(e)
             logger.error(e, exc_info=True)
