@@ -1,8 +1,30 @@
 [
   {
     "game_name": "hellogame",
-    "game_path": "games/hellogame",
+    "game_path": "../clemgames/hellogame",
+    "description": "Hello game between a greeter and a greeted player (for testing backends)",
+    "main_game": "hellogame",
     "player": "single",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": []
+  },
+  {
+    "game_name": "taboo",
+    "game_path": "../clemgames/taboo",
+    "description": "Taboo game between two agents where one has to describe a word for the other to guess.",
+    "main_game": "taboo",
+    "player": "two",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": []
+  },
+  {
+    "game_name": "taboo2",
+    "game_path": "games/taboo",
+    "description": "Taboo game between two agents where one has to describe a word for the other to guess.",
+    "main_game": "taboo",
+    "player": "two",
     "image": "none",
     "languages": ["en"],
     "benchmark": []
