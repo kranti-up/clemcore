@@ -1,5 +1,3 @@
-import importlib
-import sys
 import os
 import logging
 import logging.config
@@ -30,18 +28,3 @@ with open(os.path.join(project_root, "logging.yaml")) as f:
 
 def get_logger(name):
     return logging.getLogger(name)
-
-
-# Load games dynamically from "games" sibling directory
-# Note: The games might use get_logger (circular import)
-games_root = os.path.join(project_root, "games")
-if os.path.isdir(games_root):
-    games_modules = [file for file in os.listdir(games_root)
-                     if os.path.isdir(os.path.join(games_root, file)) and file not in ["__pycache__"]]
-    for game_module in games_modules:
-        try:
-            importlib.import_module(f"games.{game_module}.master")
-        except Exception as e:
-            print(e)
-            print(f"Cannot load 'games.{game_module}.master'."
-                  f" Please make sure that the file exists.", file=sys.stderr)
