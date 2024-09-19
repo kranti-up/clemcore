@@ -13,7 +13,7 @@ handlers:
     filename: clembench.log
     encoding: utf8
 loggers:
-  benchmark.run:
+  framework.run:
     handlers: [ console ]
   backends:
     level: DEBUG

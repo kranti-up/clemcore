@@ -14,7 +14,6 @@ class TabooGameBenchmark(GameBenchmark):
         return Taboo(experiment, player_models)
 
 ```
-* cli.py doesn't throw any errors (if game name/model name/instance file doesn't exists or anything else, for that matter). It does show up in clembench.log, but do we want to make this more explicit (at least a "something went wrong, check clembench.log for details")? (Or, this should be part of the documentation, which I have to admit I didn't check fully.)
 
 ## TODOs:
 * load game_registry in \__init\__.py
@@ -81,7 +80,7 @@ built by GameMaster and GameScorer, path specified as argument in cli.py, no cha
  clemgame
 | 
 +--- __init__.py 
-|       --> change to load only specified games/one game at a time as specified in bash script
+|       --> changed to load only specified games/one game at a time as specified in bash script
 +--- benchmark.py 
 |       list_games() # replaced by pointer to game_registry
 +--- clemgame.py
@@ -92,12 +91,12 @@ built by GameMaster and GameScorer, path specified as argument in cli.py, no cha
 |       game_dir() # needs to implement lookup in game_registry
  scripts
 |
-+--- cli.py # rename benchmark to framework
++--- cli.py # renamed benchmark to framework
 |
  tests
 |
 +--- test_benchmark.py # rename to test_framework.py and adapt
-|
- run_benchmark.sh # to run a specific set of games constituting a benchmark version
++--- logging.yaml # renamed main logger to framework.run
++--- run_benchmark.sh # added to run a specific set of games constituting a benchmark version
 ```
 
