@@ -14,9 +14,9 @@ class TabooGameBenchmark(GameBenchmark):
         return Taboo(experiment, player_models)
 
 ```
+* \__init\__.py in clemgame and backends defines project_root and configures logging, respectively. Is this redundant or am I missing something? Also, what's the difference in the loggers instantiated in chatgame/game.py and master.py?  
 
 ## TODOs:
-* load game_registry in \__init\__.py
 * use path from game registry for game loading (currently uses a default location outside the main repository)
 * adapt instance file default location to game default location
 * update test_benchmark.py (also contains old versions of reference game)
@@ -31,19 +31,18 @@ class TabooGameBenchmark(GameBenchmark):
 ```
 {
 "game_name": game identifier
-"game_path": path to game  # absolute or relative to certain directory(tbd))
+"game_path": path to game  # absolute or relative to clemgame directory
 "description": "A brief description of the game"
-"main_game": "main game identifier"
+"main_game": "main game identifier" # to cluster different versions of the same game
 "player": "single" | "two" | "multi"
 "image": "none" | "single" | "multi"
 "languages": ["en"] # list of ISO codes
-"benchmark": ["vX.X"] # lists all benchmark versions in which this game was used 
+"benchmark": ["X.X", "Y.Y"] # lists all benchmark versions in which this game was used 
 
-# The games that are part of a specific benchmark version are defined in a 
-# bash script run_benchmark.sh by listing the identifiers for each game
-# but could potentially also be filtered based on the game attributes
-# For reproducibility, we could also list all benchmark versions a game has been  
-# used in (as in the example above)
+# The games that are part of a specific collection can be filtered based on the 
+# game attributes.
+# For reproducibility, benchmark will also list all benchmark versions a game has   
+# been used in previously
 }
 ```
 
