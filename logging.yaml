@@ -18,7 +18,7 @@ loggers:
   backends:
     level: DEBUG
     handlers: [ console ]
-  benchmark:
+  framework:
     level: DEBUG
   games:
     level: INFO

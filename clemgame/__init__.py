@@ -1,12 +1,12 @@
-import json
 import os
 import logging
 import logging.config
+import yaml
+import json
 from dataclasses import dataclass
 from types import SimpleNamespace
-from typing import Dict, List
+from typing import Dict
 
-import yaml
 
 BANNER = \
     r"""
@@ -21,6 +21,8 @@ BANNER = \
 print(BANNER)
 
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+game_registry = []  # list of game specs to load from dynamically
+
 
 # Configure logging
 with open(os.path.join(project_root, "logging.yaml")) as f:
@@ -44,6 +46,12 @@ class GameSpec(SimpleNamespace):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        # check for required fields
+        if "game_name" not in self:
+            raise KeyError(f"No game name specified in entry {kwargs}")
+        if "game_path" not in self:
+            raise KeyError(f"No game path specified in {kwargs}")
+
 
     def __repr__(self):
         return f"GameSpec({str(self)})"
@@ -66,7 +74,26 @@ class GameSpec(SimpleNamespace):
         """
         return cls(**spec)
 
+    def matches(self, spec: Dict):
+        """
+        Check if the game features match a given specification
+        """
+        for key, value in spec.items():
+            if not self.__contains__(key):
+                raise KeyError(f"The specified key '{key}' for selecting games is not set in the game registry "
+                               f"for game '{self['game_name']}'")
+            if type(self[key]) == str:
+                if not self[key] == value:
+                    return False
+            elif type(self[key]) == list:
+                if value not in self[key]:
+                    return False
+        return True
+
     def game_file_exists(self):
+        """
+        Check if master.py can be located at the specified game_path
+        """
         if os.path.isabs(self.game_path):
             game_file = os.path.join(self.game_path, "master.py")
         else:
@@ -79,23 +106,15 @@ class GameSpec(SimpleNamespace):
         else:
             return os.path.join(project_root, self.game_path, "master.py")
 
-    def in_collection(self, collection):
-        return True if collection in self.collection else False
 
-    def is_multimodal(self):
-        return self.image in ["single", "multi"]
-
-    def in_languages(self, lang):
-        return True if lang in self.languages else False
-
-
-def load_custom_game_registry(_game_registry_path: str = None, is_optional=True):
+def load_custom_game_registry(logger, _game_registry_path: str = None, is_optional=True):
+    # optional custom registry loaded first, so that these entries come first in the game registry list
     if not _game_registry_path:
         _game_registry_path = os.path.join(project_root, "clemgame", "game_registry_custom.json")
-    load_game_registry(_game_registry_path, is_mandatory=not is_optional)
+    load_game_registry(logger, _game_registry_path, is_mandatory=not is_optional)
 
 
-def load_game_registry(_game_registry_path: str = None, is_mandatory=True):
+def load_game_registry(logger, _game_registry_path: str = None, is_mandatory=True):
     if not _game_registry_path:
         _game_registry_path = os.path.join(project_root, "clemgame", "game_registry.json")
     if not os.path.isfile(_game_registry_path):
@@ -111,11 +130,7 @@ def load_game_registry(_game_registry_path: str = None, is_mandatory=True):
             if _game_spec.game_file_exists():
                 game_registry.append(_game_spec)
             else:
-                #TODO: where to log this properly?
-                print(f"Game master for {_game_spec.game_name} not found in '{_game_spec}'. "
-                    f"Update the game_registry.json (or game_registry_custom.json).")
+                logger.warning(f"Game master for {_game_spec.game_name} not found in '{_game_spec['game_path']}'. "
+                               f"Game '{_game_spec.game_name}' not added to available games."
+                               f"Update game_registry.json (or game_registry_custom.json) with the right path to include it.")
 
-
-game_registry: List[GameSpec] = list()  # we store game specs so that games can be loaded dynamically
-load_custom_game_registry()
-load_game_registry()

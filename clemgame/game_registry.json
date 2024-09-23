@@ -6,7 +6,7 @@
     "main_game": "taboo",
     "player": "two",
     "image": "none",
-    "languages": ["en"],
+    "language": ["en"],
     "benchmark": ["0.9", "1.0", "1.5"]
   }
 ]

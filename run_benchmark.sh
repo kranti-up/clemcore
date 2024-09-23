@@ -3,17 +3,8 @@
 
 source prepare_path.sh
 
-version="v2.0"
-results="results/${version}"
-games=(
-  #"imagegame"
-  #"referencegame"
-  "taboo"
-  #"wordle"
-  #"wordle_withclue"
-  #"wordle_withcritic"
-  #"privateshared"
-  )
+games="game_selection.json"
+version="v2.0"  # could potentially also be extracted from game_selection.json in clemgame/framework.py, see comments there
 models=(
 "mock"
 #"claude-3-opus-20240229"
@@ -29,28 +20,21 @@ echo "RUNNING: Benchmark Run Version ${version}"
 echo "==================================================="
 echo
 
-for game in "${games[@]}"; do
-  for model in "${models[@]}"; do
-    echo "Running ${model} on ${game}"
-    # currently, instances.json is the default file for the current benchmark version
-    # older files are being renamed retrospectively, but the framework also allows
-    # to input a specific instances file, so we could also use the version number here like this: -i instances_"${version}".json
-    { time python3 scripts/cli.py run -g "${game}" -m "${model}" -i instances.json -r "${results}"; } 2>&1 | tee runtime."${game}"."${model}".log
-    # note that cli.py currently doesn't always throw errors, so always check clembench.log (in clembench)
-  done
+
+for model in "${models[@]}"; do
+  echo "Running ${model}"
+  # currently, instances.json is the default file for the current benchmark version
+  # older files are being renamed retrospectively, but the framework also allows
+  # to input a specific instances file, so we could also use the version number here like this: -i instances_"${version}".json
+  { time python3 scripts/cli.py run -g "${games}" -m "${model}" -i instances.json -r "results/${version}"; } 2>&1 | tee runtime."${games}"."${model}".log
 done
 
 # if errors occur during the run, we don't want to go on with the evaluation automatically,
 # so maybe move this to a separate script
 
-#for game in "${games[@]}"; do
-  #echo "Transcribing ${game}"
-  #{ time python3 scripts/cli.py transcribe -g "${game}" -r "${results}"; } 2>&1 | tee runtime.transcribe."${game}".log
-  #echo "Scoring ${game}"
-  #{ time python3 scripts/cli.py score -g "${game}" -r "${results}"; } 2>&1 | tee runtime.score."${game}".log
-  #echo "Evaluating ${game}"
-  #{ time python3 evaluation/bencheval.py -p "${results}"; }
-#done
+#{ time python3 scripts/cli.py transcribe -g "${games}" -r "${results}"; } 2>&1 | tee runtime.transcribe."${games}".log
+#{ time python3 scripts/cli.py score -g "${games}" -r "${results}"; } 2>&1 | tee runtime.score."${games}".log
+#{ time python3 evaluation/bencheval.py -p "results/${version}"; }
 
 echo "==================================================="
 echo "FINISHED: Benchmark Run Version ${version}"

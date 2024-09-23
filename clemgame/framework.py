@@ -3,11 +3,10 @@ from typing import List, Dict
 
 import backends
 import clemgame
-from clemgame import game_registry
+
+from clemgame.clemgame import select_games, load_game
 
 from datetime import datetime
-
-from clemgame.clemgame import load_games, load_game
 
 logger = clemgame.get_logger(__name__)
 stdout_logger = clemgame.get_logger("framework.run")
@@ -16,13 +15,14 @@ stdout_logger = clemgame.get_logger("framework.run")
 backends.load_custom_model_registry()
 backends.load_model_registry()
 
-# game registry currently loaded in clemgame/__init__.py
-# TODO: move here?
+# load available games
+clemgame.load_custom_game_registry(stdout_logger)
+clemgame.load_game_registry(stdout_logger)
 
 
 def list_games():
     stdout_logger.info("Listing all available games:")
-    for game in game_registry:
+    for game in clemgame.game_registry:
         stdout_logger.info(f' Game:{game["game_name"]} -> {game["description"]}')
 
 
@@ -34,37 +34,41 @@ def run(game_or_collection: str, model_specs: List[backends.ModelSpec], gen_args
             model = backends.get_model_for(model_spec)
             model.set_gen_args(**gen_args)  # todo make this somehow available in generate method?
             player_models.append(model)
-        games = load_games(game_or_collection) #TODO: return filtered game registry (list)
-        for game in games:
-            #TODO: adapt results_dir and instances_name according to collection
-            game_class = load_game(game["game_name"], instances_name=instances_name) # TODO return game object
-            logger.info(f'Running benchmark for {game["game_name"]} (models={player_models if player_models is not None else "see experiment configs"})')
+
+        games_list = select_games(game_or_collection)
+        total_games = len(games_list)
+        # TODO: return results_dir and instances_name as well according to collection?  [ab]
+        for idx,game_spec in enumerate(games_list):
+            game = load_game(game_spec, instances_name=instances_name)
+            logger.info(f'Running {game_spec["game_name"]} (models={player_models if player_models is not None else "see experiment configs"})')
             if experiment_name:
+                # TODO experiment name can only be given for single games, not for collections [ab]
                 logger.info("Only running experiment: %s", experiment_name)
-                game_class.filter_experiment.append(experiment_name)
+                game.filter_experiment.append(experiment_name)
+            stdout_logger.info(f"Running game {idx + 1} of {total_games}: {game_spec['game_name']}")
             time_start = datetime.now()
-            game_class.run(player_models=player_models, results_dir=results_dir)
+            game.run(player_models=player_models, results_dir=results_dir)
             time_end = datetime.now()
-            logger.info(f'Running {game["game_name"]} took {str(time_end - time_start)}')
+            logger.info(f'Running {game_spec["game_name"]} took {str(time_end - time_start)}')
     except Exception as e:
         stdout_logger.exception(e)
         logger.error(e, exc_info=True)
 
 
-def score(game_name: str, experiment_name: str = None, results_dir: str = None):
-    logger.info("Scoring benchmark for: %s", game_name)
+def score(game_or_collection: str, experiment_name: str = None, results_dir: str = None):
+    logger.info("Scoring benchmark for: %s", game_or_collection)
     if experiment_name:
+        # TODO experiment name can only be given for single games, not for collections [ab]
         logger.info("Only scoring experiment: %s", experiment_name)
-    if game_name == "all":
-        games_list = load_games(do_setup=False) #TODO adapt
-    else:
-        games_list = [load_game(game_name, do_setup=False)] #TODO adapt
+    games_list = select_games(game_or_collection) #TODO adapt
+    # TODO: return results_dir as well according to collection?  [ab]
     total_games = len(games_list)
-    for idx, game in enumerate(games_list):
+    for idx, game_spec in enumerate(games_list):
         try:
+            game = load_game(game_spec, do_setup=False)
             if experiment_name:
                 game.filter_experiment.append(experiment_name)
-            stdout_logger.info(f"Score game {idx + 1} of {total_games}: {game.name}")
+            stdout_logger.info(f"Score game {idx + 1} of {total_games}: {game_spec['game_name']}")
             time_start = datetime.now()
             game.compute_scores(results_dir)
             time_end = datetime.now()
@@ -74,20 +78,20 @@ def score(game_name: str, experiment_name: str = None, results_dir: str = None):
             logger.error(e, exc_info=True)
 
 
-def transcripts(game_name: str, experiment_name: str = None, results_dir: str = None):
-    logger.info("Building benchmark transcripts for: %s", game_name)
+def transcripts(game_or_collection: str, experiment_name: str = None, results_dir: str = None):
+    logger.info("Building benchmark transcripts for: %s", game_or_collection)
     if experiment_name:
+        # TODO experiment name can only be given for single games, not for collections [ab]
         logger.info("Only transcribe experiment: %s", experiment_name)
-    if game_name == "all":
-        games_list = load_games(do_setup=False) #TODO adapt
-    else:
-        games_list = [load_game(game_name, do_setup=False)] #TODO adapt
+    games_list = select_games(game_or_collection)  # TODO adapt
+    # TODO: return results_dir as well according to collection?  [ab]
     total_games = len(games_list)
-    for idx, game in enumerate(games_list):
+    for idx, game_spec in enumerate(games_list):
         try:
+            game = load_game(game_spec, do_setup=False)
             if experiment_name:
                 game.filter_experiment.append(experiment_name)
-            stdout_logger.info(f"Transcribe game {idx + 1} of {total_games}: {game.name}")
+            stdout_logger.info(f"Transcribe game {idx + 1} of {total_games}: {game_spec['game_name']}")
             time_start = datetime.now()
             game.build_transcripts(results_dir)
             time_end = datetime.now()

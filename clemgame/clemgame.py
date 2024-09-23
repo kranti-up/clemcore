@@ -1,19 +1,19 @@
 import abc
 import collections
 import copy
-import importlib
-import importlib.util
-import inspect
+import json
 import os.path
 from datetime import datetime
 from typing import List, Dict, Tuple, Any
-import json
 from tqdm import tqdm
+import importlib
+import importlib.util
+import inspect
 
 import backends
 from backends import Model, CustomResponseModel, HumanModel
 import clemgame
-from clemgame import file_utils, transcript_utils, project_root
+from clemgame import GameSpec, project_root, file_utils, transcript_utils
 import clemgame.metrics as ms
 
 logger = clemgame.get_logger(__name__)
@@ -605,10 +605,11 @@ class GameBenchmark(GameResourceLocator):
     which compose a benchmark for the game. It supports different experiment conditions for games.
     """
 
-    def __init__(self, name: str):
+    def __init__(self, name: str, location = None):
         super().__init__(name)
         self.instances = None
         self.filter_experiment: List[str] = []
+        self.location = location
 
     def get_description(self) -> str:
         """
@@ -925,26 +926,41 @@ class GameInstanceGenerator(GameResourceLocator):
         self.store_file(self.instances, filename, sub_dir="in")
 
 
-def load_games(do_setup: bool = True) -> List[GameBenchmark]:
-    # load all available games from game registry
-    games = []
-    game_registry_path = os.path.join(project_root, "clemgame", "game_registry.json")
-    if not os.path.isfile(game_registry_path):
-        raise FileNotFoundError(f"The game registry at '{game_registry_path}' does not exist. "
-                                f"Create game registry as a game_registry.json file and try again.")
 
-    with open(game_registry_path, encoding='utf-8') as f:
-        game_list = json.load(f)
-        for game in game_list:
-            game_path = game["game_path"]
-            if not os.path.isabs(game_path):
-                # if no absolute path is given, games are expected to live in a sister directory to clembench named clemgames
-                # game_path = os.path.join(os.path.dirname(project_root), "clemgames", game["game_path"])
-                game_path = os.path.join(os.path.dirname(project_root), game["game_path"])
-                games[game["game_name"]] = {"game_path":game_path, "description": game["description"]}
-        game_class = load_game(game["game_name"], do_setup)
-        games.append(game_class)
-    return games
+def select_games(game_or_collection: str) -> List[GameSpec]:
+    # select relevant games from game registry
+    selected_games = []
+    properties = {}
+    is_single_game = True
+    if game_or_collection.endswith(".json"):
+        is_single_game = False
+        with open(os.path.join(project_root, game_or_collection)) as f:
+            properties = json.load(f)
+        # add default values
+        if "lang" not in properties:
+            properties["language"] = "en"
+        if "image" not in properties:
+            properties["image"] = "none"
+        # examples:
+        # {"benchmark" : "2.0"} # run all English textual games marked for benchmark version 2.0
+        # {"benchmark" : "1.5", "lang": "ru"} # run all games of benchmark version 1.5 for which Russian versions exist
+        # {"main_game": "matchit"} # to run all English textual matchit game versions
+        # {"image": "single", "main_game": "matchit"} # to run all English multimodal matchit game versions
+
+    if is_single_game:
+        # return first entry that matches game_name
+        for game in clemgame.game_registry:
+            if game["game_name"] == game_or_collection:
+                return [game]
+    else:
+        for game in clemgame.game_registry:
+            if game.matches(properties):
+                selected_games.append(game)
+
+    if len(selected_games) == 0:
+        raise ValueError(f"No games found matching the given specification '{game_or_collection}'. "
+                         "Make sure game name or attribute names and values match game_registry.json")
+    return selected_games
 
 
 def is_game(obj):
@@ -954,16 +970,9 @@ def is_game(obj):
     return False
 
 
-def load_game(game_name: str, do_setup: bool = True, instances_name: str = None) -> GameBenchmark:
-    # games are expected to live in a sibling directory of clembench named clemgames
-    games_root = os.path.join(os.path.dirname(project_root), "clemgames")
-    game_file = os.path.join(games_root, game_name, "master.py")
-    if not os.path.isfile(game_file):
-        raise FileNotFoundError(f"The file '{game_file}' does not exist. "
-                                f"The game must be defined in a master.py file.")
-
+def load_game(game_spec: GameSpec, do_setup: bool = True, instances_name: str = None) -> GameBenchmark:
     # load game module from this master file
-    spec = importlib.util.spec_from_file_location(game_name, game_file)
+    spec = importlib.util.spec_from_file_location(game_spec["game_name"], game_spec.get_game_file())
     game_module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(game_module)
 
@@ -974,16 +983,16 @@ def load_game(game_name: str, do_setup: bool = True, instances_name: str = None)
                           f"Create such a class and try again.")
     if len(game_subclasses) > 2:
         # currently it finds GameBenchmark and the specific game class (like TabooGameBenchmark)
-        # once this is removed from the framework (if this is desired, the check should be > 1)
+        # if this is removed from the framework (if this is possible/desired), the check should be > 1
         raise LookupError(f"There is more than one Game defined in {game_module}.")
     for game in game_subclasses:
-        # see comment above, this loop becomes redundant (though it also shouldn't hurt)
+        # see comment above, this loop could become redundant (though it also shouldn't hurt)
         if game[0] == "GameBenchmark":
             continue
-        game_cls = game[1]() # instantiate the specific game class
+        game_cls = game[1]()  # instantiate the specific game class
 
         if do_setup:
+            #TODO: check if instance file exists (done in setup()?)
             game_cls.setup(instances_name)
 
         return game_cls
-

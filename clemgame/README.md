@@ -17,7 +17,6 @@ class TabooGameBenchmark(GameBenchmark):
 * \__init\__.py in clemgame and backends defines project_root and configures logging, respectively. Is this redundant or am I missing something? Also, what's the difference in the loggers instantiated in chatgame/game.py and master.py?  
 
 ## TODOs:
-* use path from game registry for game loading (currently uses a default location outside the main repository)
 * adapt instance file default location to game default location
 * update test_benchmark.py (also contains old versions of reference game)
 
@@ -69,25 +68,30 @@ game
 ### Results Structure
 built by GameMaster and GameScorer, path specified as argument in cli.py, no changes needed
 
-### Benchmark games
-* text based benchmark (see clembench paper)
-* multimodal benchmark (see current version of the paper)
-* other games (student projects, new games, possibly to be added to benchmark)
+### Game collections
+* benchmark versions (currently different versions of code and instances, in the future only different instances)
+  * text based benchmark (see clembench paper)
+  * multimodal benchmark (see current version of the multimodal paper)
+* game class (several versions of one game, for in-depth analysis)
 
 ### Required Changes: 
 ```
  clemgame
 | 
 +--- __init__.py 
-|       --> changed to load only specified games/one game at a time as specified in bash script
-+--- benchmark.py 
-|       list_games() # replaced by pointer to game_registry
+|       --> add GameSpec class based on ModelSpec (from backends)
+        --> load_custom_game_registry() and load_game_registry() similar to loading model registries
++--- benchmark.py # renamed to framework.py
+|       list_games() # replaced to reading from game_registry
+|       run() # adapted to new game loading
+|       score() # adapted to new game loading
+|       transcripts() # adapted to new game loading
 +--- clemgame.py
-|       load_benchmarks() # rename and adapt based on game registry
-|       load_benchmark() # adapted to load game from different location
-|       find_benchmark() # integrated into load_benchmark
+|       load_benchmarks() # renamed to select_games() and adapted based on game registry and selection
+|       load_benchmark() # renamed to load_game() and adapted to load game from different location
+|       find_benchmark() # integrated into load_benchmark()
 +--- file_utils.py
-|       game_dir() # needs to implement lookup in game_registry
+|       game_dir() # needs to implement lookup in game_registry!
  scripts
 |
 +--- cli.py # renamed benchmark to framework
@@ -97,5 +101,6 @@ built by GameMaster and GameScorer, path specified as argument in cli.py, no cha
 +--- test_benchmark.py # rename to test_framework.py and adapt
 +--- logging.yaml # renamed main logger to framework.run
 +--- run_benchmark.sh # added to run a specific set of games constituting a benchmark version
++--- game_selection.json # added to specify game properties for loading collections of games
 ```
 
