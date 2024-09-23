@@ -89,7 +89,7 @@ class GameResourceLocator(abc.ABC):
     You can access subdirectories by giving `gm.load_json("sub/my_file")` in `game/sub/my_file.json`.
     """
 
-    def __init__(self, name: str):
+    def __init__(self, name: str, game_dir=None):
         """
         :param name: of the game
         """
@@ -103,6 +103,19 @@ class GameResourceLocator(abc.ABC):
         :return: the absolute path to the file in the game directory
         """
         return file_utils.file_path(file_name, self.name)
+
+    def load_instances(self, game_path, instances_name):
+        """
+        Construct instances path and return json object of the instance file
+        """
+        if instances_name is None:
+            instances_name = "instances"
+        if not instances_name.endswith(".json"):
+            instances_name += ".json"
+        fp = os.path.join(project_root, game_path, "in", instances_name)
+        with open(fp, encoding='utf8') as f:
+            instances = json.load(f)
+        return instances
 
     def load_template(self, file_name: str) -> str:
         """
@@ -605,11 +618,10 @@ class GameBenchmark(GameResourceLocator):
     which compose a benchmark for the game. It supports different experiment conditions for games.
     """
 
-    def __init__(self, name: str, location = None):
+    def __init__(self, name: str):
         super().__init__(name)
         self.instances = None
         self.filter_experiment: List[str] = []
-        self.location = location
 
     def get_description(self) -> str:
         """
@@ -618,10 +630,8 @@ class GameBenchmark(GameResourceLocator):
         """
         raise NotImplementedError()
 
-    def setup(self, instances_name: str = None):
-        if instances_name is None:
-            instances_name = "instances"
-        self.instances = self.load_json(f"in/{instances_name}")
+    def setup(self, game_path: str, instances_name: str = None):
+        self.instances = self.load_instances(game_path, instances_name)
 
     def build_transcripts(self, results_dir: str = None):
         results_root = file_utils.results_root(results_dir)
@@ -926,7 +936,6 @@ class GameInstanceGenerator(GameResourceLocator):
         self.store_file(self.instances, filename, sub_dir="in")
 
 
-
 def select_games(game_or_collection: str) -> List[GameSpec]:
     # select relevant games from game registry
     selected_games = []
@@ -992,7 +1001,6 @@ def load_game(game_spec: GameSpec, do_setup: bool = True, instances_name: str = 
         game_cls = game[1]()  # instantiate the specific game class
 
         if do_setup:
-            #TODO: check if instance file exists (done in setup()?)
-            game_cls.setup(instances_name)
+            game_cls.setup(game_spec["game_path"], instances_name)
 
         return game_cls

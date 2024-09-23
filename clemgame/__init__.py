@@ -131,6 +131,6 @@ def load_game_registry(logger, _game_registry_path: str = None, is_mandatory=Tru
                 game_registry.append(_game_spec)
             else:
                 logger.warning(f"Game master for {_game_spec.game_name} not found in '{_game_spec['game_path']}'. "
-                               f"Game '{_game_spec.game_name}' not added to available games."
+                               f"Game '{_game_spec.game_name}' not added to available games. "
                                f"Update game_registry.json (or game_registry_custom.json) with the right path to include it.")
 

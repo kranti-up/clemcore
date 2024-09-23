@@ -8,5 +8,46 @@
     "image": "none",
     "language": ["en"],
     "benchmark": ["0.9", "1.0", "1.5"]
+  },
+    {
+    "game_name": "referencegame",
+    "game_path": "games/_referencegame",
+    "description": "Reference Game between two agents where one has to describe one of three grids and the other has to guess which one it is.",
+    "main_game": "referencegame",
+    "player": "two",
+    "image": "none",
+    "language": ["en"],
+    "benchmark": ["0.9", "1.0", "1.5"]
+  },
+      {
+    "game_name": "multimodal_referencegame",
+    "game_path": "games/multimodal_referencegame",
+    "description": "Reference Game between two agents where one has to describe one of three grids and the other has to guess which one it is.",
+    "main_game": "referencegame",
+    "player": "two",
+    "image": "multi",
+    "language": ["en"],
+    "benchmark": ["0.9", "1.0", "1.5"]
+  },
+  {
+    "game_name": "imagegame",
+    "game_path": "games/imagegame",
+    "description": "Image Game simulation to generate referring expressions and fill a grid accordingly",
+    "main_game": "imagegame",
+    "player": "two",
+    "image": "none",
+    "language": ["en"],
+    "benchmark": ["0.9", "1.0", "1.5"]
+  },
+    {
+    "game_name": "matchit",
+    "game_path": "games/matchit",
+    "description": "Image Game simulation to generate referring expressions and fill a grid accordingly",
+    "main_game": "matchit",
+    "player": "two",
+    "image": "single",
+    "language": ["en"],
+    "benchmark": ["0.9", "1.0", "1.5"]
   }
+
 ]
