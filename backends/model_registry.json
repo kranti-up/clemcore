@@ -417,14 +417,35 @@
       "parameters": "1.5T"
   },
   {
-      "model_name": "gemini-1.5-pro-exp-0801",
-      "model_id": "gemini-1.5-pro-exp-0801",
+      "model_name": "gemini-1.5-pro-002",
+      "model_id": "gemini-1.5-pro-002",
       "backend": "google",
       "supports_images": true,
       "support_multiple_images": true,
-      "release_date": "2024-08-01",
+      "release_date": "2024-09-24",
       "open_weight": false,
       "parameters": "1.5T"
+  },
+  {
+      "model_name": "gemini-1.5-flash-002",
+      "model_id": "gemini-1.5-flash-002",
+      "backend": "google",
+      "supports_images": true,
+      "support_multiple_images": true,
+      "release_date": "2024-09-24",
+      "open_weight": false,
+      "parameters": "",
+      "estimated_parameters": ""
+  },
+  {
+      "model_name": "gemini-1.5-flash-8b-001",
+      "model_id": "gemini-1.5-flash-8b-001",
+      "backend": "google",
+      "supports_images": true,
+      "support_multiple_images": true,
+      "release_date": "2024-10-03",
+      "open_weight": false,
+      "parameters": "8B"
   },
   {
       "model_name": "luminous-supreme-control",
@@ -1044,6 +1065,76 @@
       "release_date": "2024-07-24",
       "open_weight": true,
       "parameters": "123B"
+  },
+  {
+      "model_name": "Qwen2.5-7B-Instruct",
+      "backend": "huggingface_local",
+      "huggingface_id": "Qwen/Qwen2.5-7B-Instruct",
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "release_date": "2024-07-24",
+      "open_weight": true,
+      "parameters": "7B"
+  },
+  {
+      "model_name": "Qwen2.5-14B-Instruct",
+      "backend": "huggingface_local",
+      "huggingface_id": "Qwen/Qwen2.5-14B-Instruct",
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "release_date": "2024-07-24",
+      "open_weight": true,
+      "parameters": "14B"
+  },
+  {
+      "model_name": "Qwen2.5-32B-Instruct",
+      "backend": "huggingface_local",
+      "huggingface_id": "Qwen/Qwen2.5-32B-Instruct",
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "release_date": "2024-07-24",
+      "open_weight": true,
+      "parameters": "32B"
+  },
+  {
+      "model_name": "Qwen2.5-72B-Instruct",
+      "backend": "huggingface_local",
+      "huggingface_id": "Qwen/Qwen2.5-72B-Instruct",
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "release_date": "2024-07-24",
+      "open_weight": true,
+      "parameters": "72B"
+  },
+  {
+      "model_name": "Llama-3.2-1B-Instruct",
+      "backend": "huggingface_local",
+      "huggingface_id": "meta-llama/Llama-3.2-1B-Instruct",
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|eot_id\\|>",
+      "release_date": "2024-09-18",
+      "open_weight": false,
+      "parameters": "1B"
+  },
+  {
+      "model_name": "Llama-3.2-3B-Instruct",
+      "backend": "huggingface_local",
+      "huggingface_id": "meta-llama/Llama-3.2-3B-Instruct",
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|eot_id\\|>",
+      "release_date": "2024-09-18",
+      "open_weight": false,
+      "parameters": "3B"
+  },
+  {
+      "model_name": "EuroLLM-1.7B-Instruct",
+      "backend": "huggingface_local",
+      "huggingface_id": "utter-project/EuroLLM-1.7B-Instruct",
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "release_date": "2024-09-24",
+      "open_weight": true,
+      "parameters": "1.7B"
   },
   {
       "model_name": "Qwen1.5-0.5B-Chat-GGUF-q8",
