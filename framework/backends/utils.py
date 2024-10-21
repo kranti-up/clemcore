@@ -1,10 +1,11 @@
+import logging
 import copy
 from functools import wraps
 from typing import List, Dict, Tuple
 
-from backends import get_logger, ContextExceededError
+from framework.backends import ContextExceededError
 
-logger = get_logger(__name__)
+logger = logging.getLogger(__name__)
 
 
 def ensure_alternating_roles(messages: List[Dict], cull_system_message: bool = True) -> List[Dict]:

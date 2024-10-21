@@ -2,11 +2,12 @@ import json
 import os
 from string import Template
 from typing import Dict
-from clemgame import file_utils, project_root
+import framework.utils.file_utils as file_utils
 
 import html
 
-CSS_STRING = file_utils.load_file("chat-two-tracks.css", file_ending=".css")
+CSS_FILE = os.path.join(file_utils.project_utils(), "chat-two-tracks.css")
+CSS_STRING = file_utils.load_file(CSS_FILE, file_ending=".css")
 
 HTML_HEADER = '''
 <!DOCTYPE html>
@@ -133,7 +134,7 @@ def build_transcript(interactions: Dict, experiment_config: Dict, game_instance:
                         if "IMAGE_ROOT" in os.environ:
                             image_src = os.path.join(os.environ["IMAGE_ROOT"], image_src)
                         else:
-                            image_src = os.path.join(project_root, image_src)
+                            image_src = os.path.join(file_utils.project_root(), image_src)
                     transcript += (f'  <a title="{image_src}">'
                                    f'<img style="width:100%" src="{image_src}" alt="{image_src}" />'
                                    f'</a>\n')

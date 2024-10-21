@@ -1,13 +1,15 @@
 """
 Backend using HuggingFace transformers for open-weight multimodal models.
 """
+import logging
 from typing import List, Dict, Tuple, Any
 import torch
-import backends
 from PIL import Image
 import requests
 from transformers import AutoProcessor, AutoModelForVision2Seq, IdeficsForVisionText2Text, AutoConfig
 from jinja2 import Template
+
+import framework.backends as backends
 
 # Define a map to load model from transformers Auto Classes
 # IdeficsForVisionText2Text is not yet supported by any Auto Class
@@ -18,7 +20,7 @@ MODEL_TYPE_MAP = {
 
 FALLBACK_CONTEXT_SIZE = 256
 
-logger = backends.get_logger(__name__)
+logger = logging.getLogger(__name__)
 
 def get_context_limit(model_spec: backends.ModelSpec) -> int:
     """

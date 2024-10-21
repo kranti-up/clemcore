@@ -1,15 +1,16 @@
+import logging
 from typing import List, Dict, Tuple, Any
 from retry import retry
 import anthropic
-import backends
 import json
 import base64
 import httpx
 import imghdr
 
-from backends.utils import ensure_messages_format
+import framework.backends as backends
+from framework.backends.utils import ensure_messages_format
 
-logger = backends.get_logger(__name__)
+logger = logging.getLogger(__name__)
 
 NAME = "anthropic"
 

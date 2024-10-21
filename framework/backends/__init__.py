@@ -3,46 +3,11 @@ import importlib
 import inspect
 import json
 import os
-import nltk
-import logging
-import logging.config
 from types import SimpleNamespace
 from dataclasses import dataclass
-
+import nltk
 from typing import Dict, List, Tuple, Any, Type, Union
-
-import yaml
-
-project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-# Configure logging
-with open(os.path.join(project_root, "logging.yaml")) as f:
-    conf = yaml.safe_load(f)
-    log_fn = conf["handlers"]["file_handler"]["filename"]
-    log_fn = os.path.join(project_root, log_fn)
-    conf["handlers"]["file_handler"]["filename"] = log_fn
-    logging.config.dictConfig(conf)
-
-
-def get_logger(name):
-    return logging.getLogger(name)
-
-
-# Load backend dynamically from "backends" sibling directory
-# Note: The backends might use get_logger (circular import)
-def load_credentials(backend, file_name="key.json") -> Dict:
-    """
-    Load login credentials and API keys from JSON file.
-    :param backend: Name of the backend/API provider to load key for.
-    :param file_name: Name of the key file. Defaults to key.json in the clembench root directory.
-    :return: Dictionary with {backend: {api_key: key}}.
-    """
-    key_file = os.path.join(project_root, file_name)
-    with open(key_file) as f:
-        creds = json.load(f)
-    assert backend in creds, f"No '{backend}' in {file_name}. See README."
-    assert "api_key" in creds[backend], f"No 'api_key' in {file_name}. See README."
-    return creds
+import framework.utils.file_utils as file_utils
 
 
 @dataclass(frozen=True)
@@ -107,6 +72,23 @@ class ModelSpec(SimpleNamespace):
 
     def is_human(self):
         return self.model_name in ModelSpec.HUMAN_SPECS
+
+
+# Load backend dynamically from "backends" sibling directory
+# Note: The backends might use get_logger (circular import)
+def load_credentials(backend, file_name="key.json") -> Dict:
+    """
+    Load login credentials and API keys from JSON file.
+    :param backend: Name of the backend/API provider to load key for.
+    :param file_name: Name of the key file. Defaults to key.json in the clembench root directory.
+    :return: Dictionary with {backend: {api_key: key}}.
+    """
+    key_file = os.path.join(file_utils.project_root(), file_name)
+    with open(key_file) as f:
+        creds = json.load(f)
+    assert backend in creds, f"No '{backend}' in {file_name}. See README."
+    assert "api_key" in creds[backend], f"No 'api_key' in {file_name}. See README."
+    return creds
 
 
 class Model(abc.ABC):
@@ -238,13 +220,14 @@ _model_registry: List[ModelSpec] = list()  # we store model specs so that users 
 
 def load_custom_model_registry(_model_registry_path: str = None, is_optional=True):
     if not _model_registry_path:
-        _model_registry_path = os.path.join(project_root, "backends", "model_registry_custom.json")
+        _model_registry_path = os.path.join(file_utils.project_root(), "backends",
+                                            "model_registry_custom.json.template")
     load_model_registry(_model_registry_path, is_mandatory=not is_optional)
 
 
 def load_model_registry(_model_registry_path: str = None, is_mandatory=True):
     if not _model_registry_path:
-        _model_registry_path = os.path.join(project_root, "backends", "model_registry.json")
+        _model_registry_path = os.path.join(file_utils.project_root(), "backends", "model_registry.json")
     if not os.path.isfile(_model_registry_path):
         if is_mandatory:
             raise FileNotFoundError(f"The file model registry at '{_model_registry_path}' does not exist. "
@@ -270,7 +253,7 @@ def _register_backend(backend_name: str):
 
     :param backen_name: the prefix of the <backend_name>_api.py file
     """
-    backends_root = os.path.join(project_root, "backends")
+    backends_root = os.path.join(file_utils.project_root(), "backends")
     backend_module = f"{backend_name}_api"
     backend_path = os.path.join(backends_root, f"{backend_module}.py")
     if not os.path.isfile(backend_path):

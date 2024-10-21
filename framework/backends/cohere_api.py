@@ -1,11 +1,13 @@
+import logging
 from typing import List, Dict, Tuple, Any
 from retry import retry
 import cohere
-import backends
-from backends.utils import ensure_messages_format
 import json
 
-logger = backends.get_logger(__name__)
+import framework.backends as backends
+from framework.backends.utils import ensure_messages_format
+
+logger = logging.getLogger(__name__)
 
 NAME = "cohere"
 

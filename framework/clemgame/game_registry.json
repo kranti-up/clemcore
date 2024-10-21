@@ -1,7 +1,7 @@
 [
   {
     "game_name": "taboo",
-    "game_path": "../clemgames/taboo",
+    "game_path": "../../clemgames/taboo",
     "description": "Taboo game between two agents where one has to describe a word for the other to guess.",
     "main_game": "taboo",
     "player": "two",
@@ -11,7 +11,7 @@
   },
     {
     "game_name": "referencegame",
-    "game_path": "games/_referencegame",
+    "game_path": "../../clemgames/referencegame",
     "description": "Reference Game between two agents where one has to describe one of three grids and the other has to guess which one it is.",
     "main_game": "referencegame",
     "player": "two",
@@ -21,8 +21,8 @@
   },
       {
     "game_name": "multimodal_referencegame",
-    "game_path": "games/multimodal_referencegame",
-    "description": "Reference Game between two agents where one has to describe one of three grids and the other has to guess which one it is.",
+    "game_path": "../../clemgames/multimodal_referencegame",
+    "description": "Reference Game between two agents where one has to describe one of three images and the other has to guess which one it is.",
     "main_game": "referencegame",
     "player": "two",
     "image": "multi",
@@ -31,7 +31,7 @@
   },
   {
     "game_name": "imagegame",
-    "game_path": "games/imagegame",
+    "game_path": "../../clemgames/imagegame",
     "description": "Image Game simulation to generate referring expressions and fill a grid accordingly",
     "main_game": "imagegame",
     "player": "two",
@@ -41,13 +41,13 @@
   },
     {
     "game_name": "matchit",
-    "game_path": "games/matchit",
+    "game_path": "../../clemgames/matchit",
     "description": "Image Game simulation to generate referring expressions and fill a grid accordingly",
     "main_game": "matchit",
     "player": "two",
     "image": "single",
     "language": ["en"],
-    "benchmark": ["0.9", "1.0", "1.5"]
+    "benchmark": ["2.0"]
   }
 
 ]

@@ -1,12 +1,13 @@
+import logging
 from mistralai.client import MistralClient
 from mistralai.models.chat_completion import ChatMessage
 from typing import List, Dict, Tuple, Any
 from retry import retry
 import json
-import backends
-from backends.utils import ensure_messages_format
+import framework.backends as backends
+from framework.backends.utils import ensure_messages_format
 
-logger = backends.get_logger(__name__)
+logger = logging.getLogger(__name__)
 
 NAME = "mistral"
 

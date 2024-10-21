@@ -1,13 +1,14 @@
+import logging
 from typing import List, Dict, Tuple, Any
 from retry import retry
 
 import aleph_alpha_client
 import anthropic
-import backends
-from backends import ModelSpec, Model
-from backends.utils import ensure_messages_format
+import framework.backends as backends
+from framework.backends import ModelSpec, Model
+from framework.backends.utils import ensure_messages_format
 
-logger = backends.get_logger(__name__)
+logger = logging.getLogger(__name__)
 
 NAME = "alephalpha"
 

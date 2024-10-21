@@ -2,19 +2,17 @@
     Backend using HuggingFace transformers models.
     Uses HF tokenizers instruct/chat templates for proper input format per model.
 """
+import logging
 from typing import List, Dict, Tuple, Any, Union
 import torch
-import backends
 import re
-
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig
-import copy
-
 from jinja2 import TemplateError
 
-from backends.utils import ensure_alternating_roles
+import framework.backends as backends
+from framework.backends.utils import ensure_alternating_roles
 
-logger = backends.get_logger(__name__)
+logger = logging.getLogger(__name__)
 
 FALLBACK_CONTEXT_SIZE = 256
 

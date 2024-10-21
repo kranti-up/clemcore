@@ -8,6 +8,7 @@ the model's special tokens and/or chat template.
 
 import json
 import os
+import framework.utils.file_utils as file_utils
 
 # all python regEx characters/sequences:
 regex_specials = [".", "^", "$", "*", "+", "?", "{", "}", ",", "[", "]", "|", "(", ")"]
@@ -54,10 +55,10 @@ def check_model_registry_eos(model_registry_path):
                               f"pair {unescaped_sequence[2]}")
                 print()
 
-
-check_model_registry_eos("model_registry.json")
+model_registry_path = os.path.join(file_utils.project_root(), "backends")
+check_model_registry_eos(os.path.join(model_registry_path, "model_registry.json"))
 
 if "model_registry_custom.json" in os.listdir():
     print("Custom model registry found, checking for regEx EOS...")
     print()
-    check_model_registry_eos("model_registry_custom.json")
+    check_model_registry_eos(os.path.join(model_registry_path, "model_registry_custom.json.template"))

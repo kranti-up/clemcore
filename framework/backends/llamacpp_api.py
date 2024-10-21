@@ -1,17 +1,17 @@
 """
     Backend using llama.cpp for GGUF/GGML models.
 """
-
+import logging
 from typing import List, Dict, Tuple, Any
 import re
 
-import backends
-from backends.utils import check_context_limit_generic, ensure_alternating_roles
+import framework.backends as backends
+from framework.backends.utils import check_context_limit_generic, ensure_alternating_roles
 
 import llama_cpp
 from llama_cpp import Llama
 
-logger = backends.get_logger(__name__)
+logger = logging.getLogger(__name__)
 
 
 def load_model(model_spec: backends.ModelSpec) -> Any:
@@ -67,7 +67,7 @@ def load_model(model_spec: backends.ModelSpec) -> Any:
     return model
 
 
-def get_chat_formatter(model: Llama, model_spec: backends.ModelSpec) -> llama_cpp.llama_chat_format.Jinja2ChatFormatter:
+def get_chat_formatter(model: Llama, model_spec: backends.ModelSpec):
     # placeholders for BOS/EOS:
     bos_string = None
     eos_string = None

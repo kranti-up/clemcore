@@ -1,3 +1,9 @@
+"""
+Defines locations within the project structure
+and supplies several functions for loading different files
+#TODO: check which functions could be moved to ResourceLocator
+"""
+
 from typing import Dict
 import os
 import json
@@ -5,18 +11,34 @@ import csv
 
 
 def project_root():
+    """
+        returns absolute path to main directory (clembench)
+    """
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def game_dir(game_name: str) -> str:
-    return os.path.join(project_root(), "games", game_name)
+def framework_root():
+    """
+        returns absolute path to framework directory (clembench/framework)
+    """
+    return os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+
+def project_utils():
+    """
+        returns absolute path to main directory (clembench/utils)
+    """
+    return os.path.join(project_root(), "utils")
 
 
 def results_root(results_dir: str = None) -> str:
-    results_dir = "results" if results_dir is None else results_dir
+    #if the framework is used via cli.py, the default is actually already set by argparse, so this will not be None
+    results_dir = os.path.join(project_root(), "results") if results_dir is None else results_dir
     if os.path.isabs(results_dir):
         return results_dir
-    return os.path.join(project_root(), results_dir)
+    # if not absolute, results_dir is given relative to project root (see default in cli.py)
+    # and needs to be transformed
+    return os.path.normpath(os.path.join(project_root(), results_dir))
 
 
 def game_results_dir_for(results_dir: str, dialogue_pair: str, game_name: str) -> str:
@@ -29,7 +51,7 @@ def load_json(file_name: str, game_name: str) -> Dict:
     return data
 
 
-def load_csv(file_name: str, game_name: str) -> Dict:
+def load_csv(file_name: str, game_name: str):
     # iso8859_2 was required for opening nytcrosswords.csv for clues in wordle
     rows = []
     fp = file_path(file_name, game_name)

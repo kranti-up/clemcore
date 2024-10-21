@@ -3,21 +3,168 @@ import collections
 import copy
 import json
 import os.path
+import sys
 from datetime import datetime
 from typing import List, Dict, Tuple, Any
 from tqdm import tqdm
+from dataclasses import dataclass
+from types import SimpleNamespace
 import importlib
 import importlib.util
 import inspect
+import logging
 
-import backends
-from backends import Model, CustomResponseModel, HumanModel
-import clemgame
-from clemgame import GameSpec, project_root, file_utils, transcript_utils
-import clemgame.metrics as ms
+import framework.backends as backends
+import framework.utils.file_utils as file_utils
+import framework.utils.transcript_utils as transcript_utils
+import framework.clemgame.metrics as ms
 
-logger = clemgame.get_logger(__name__)
-stdout_logger = clemgame.get_logger("framework.run")
+logger = logging.getLogger(__name__)
+stdout_logger = logging.getLogger("framework.run")
+
+game_registry = []  # list of game specs to load from dynamically
+
+
+@dataclass(frozen=True)
+class GameSpec(SimpleNamespace):
+    """
+    Base class for game specifications.
+    Holds all necessary information to play game in clembench (see README for list of attributes)
+    """
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        # check for required fields
+        if "game_name" not in self:
+            raise KeyError(f"No game name specified in entry {kwargs}")
+        if "game_path" not in self:
+            raise KeyError(f"No game path specified in {kwargs}")
+
+
+    def __repr__(self):
+        return f"GameSpec({str(self)})"
+
+    def __str__(self):
+        return str(self.__dict__)
+
+    def __getitem__(self, item):
+        """ dict-like behavior """
+        return getattr(self, item)
+
+    def __contains__(self, attribute):
+        """ dict-like behavior """
+        return hasattr(self, attribute)
+
+    @classmethod
+    def from_dict(cls, spec: Dict):
+        """
+        Initialize a GameSpec from a dictionary. Can be used to directly create a GameSpec from a game registry entry.
+        """
+        return cls(**spec)
+
+    def matches(self, spec: Dict):
+        """
+        Check if the game features match a given specification
+        """
+        for key, value in spec.items():
+            if not self.__contains__(key):
+                raise KeyError(f"The specified key '{key}' for selecting games is not set in the game registry "
+                               f"for game '{self['game_name']}'")
+            if type(self[key]) == str:
+                if not self[key] == value:
+                    return False
+            elif type(self[key]) == list:
+                if value not in self[key]:
+                    return False
+        return True
+
+    def get_game_file(self):
+        if os.path.isabs(self.game_path):
+            return os.path.join(self.game_path, "master.py")
+        else:
+            return os.path.join(file_utils.project_root(), self.game_path, "master.py")
+
+    def game_file_exists(self):
+        """
+        Check if master.py can be located at the specified game_path
+        """
+        return True if os.path.isfile(self.get_game_file()) else False
+
+
+def load_custom_game_registry(_game_registry_path: str = None, is_optional=True):
+    # optional custom registry loaded first, so that these entries come first in the game registry list
+    if not _game_registry_path:
+        _game_registry_path = os.path.join(file_utils.project_root(), "clemgame", "game_registry_custom.json")
+    load_game_registry(_game_registry_path, is_mandatory=not is_optional)
+
+
+def load_game_registry(_game_registry_path: str = None, is_mandatory=True):
+    if not _game_registry_path:
+        _game_registry_path = os.path.join(file_utils.project_root(), "clemgame", "game_registry.json")
+    if not os.path.isfile(_game_registry_path):
+        if is_mandatory:
+            raise FileNotFoundError(f"The file game registry at '{_game_registry_path}' does not exist. "
+                                    f"Create game registry as a game_registry.json file and try again.")
+        else:
+            return  # do nothing
+    with open(_game_registry_path, encoding='utf-8') as gr:
+        _game_listing = json.load(gr)
+        for _game_entry in _game_listing:
+            _game_spec: GameSpec = GameSpec.from_dict(_game_entry)
+            if _game_spec.game_file_exists():
+                game_registry.append(_game_spec)
+            else:
+                stdout_logger.warning(f"Game master for {_game_spec.game_name} not found in '{_game_spec['game_path']}'. "
+                               f"Game '{_game_spec.game_name}' not added to available games. "
+                               f"Update game_registry.json (or game_registry_custom.json) with the right path to include it.")
+
+
+def select_game(game_name: str) -> GameSpec:
+    # return first entry that matches game_name
+    for game in game_registry:
+        if game["game_name"] == game_name:
+            return game
+    raise ValueError(f"No games found matching the given specification '{game_name}'. "
+                          "Make sure the game name matches the value in game_registry.json")
+    # extension to select subset of games
+    # (postponed because it introduces more complexity
+    # on things like how to specify specific episodes,
+    # and thus can be easier done by looping over an
+    # explicit list of games with a bash script (see clembench/scripts/run_benchmark.sh)
+
+    # select relevant games from game registry
+    # selected_games = []
+    # properties = {}
+    # is_single_game = True
+    # if game_name.endswith(".json"):
+    #     is_single_game = False
+    #     with open(os.path.join(file_utils.project_root(), game_name)) as f:
+    #         properties = json.load(f)
+    #     # add default values
+    #     if "lang" not in properties:
+    #         properties["language"] = "en"
+    #     if "image" not in properties:
+    #         properties["image"] = "none"
+    #     # examples:
+    #     # {"benchmark" : "2.0"} # run all English textual games marked for benchmark version 2.0
+    #     # {"benchmark" : "1.5", "lang": "ru"} # run all games of benchmark version 1.5 for which Russian versions exist
+    #     # {"main_game": "matchit"} # to run all English textual matchit game versions
+    #     # {"image": "single", "main_game": "matchit"} # to run all English multimodal matchit game versions
+    #
+    # if is_single_game:
+    #     # return first entry that matches game_name
+    #     for game in game_registry:
+    #         if game["game_name"] == game_name:
+    #             return game
+    # else:
+    #     for game in game_registry:
+    #         if game.matches(properties):
+    #             selected_games.append(game)
+    #
+    # if len(selected_games) == 0:
+    #     raise ValueError(f"No games found matching the given specification '{game_name}'. "
+    #                      "Make sure game name or attribute names and values match game_registry.json")
+    # return selected_games
 
 
 class Player(abc.ABC):
@@ -29,7 +176,7 @@ class Player(abc.ABC):
     - the backend players are called via the generate_response() method of the backend
     """
 
-    def __init__(self, model: Model):
+    def __init__(self, model: backends.Model):
         self.model = model
         self.descriptor: str = None
         logger.info("Player %s", self.get_description())
@@ -41,9 +188,9 @@ class Player(abc.ABC):
         call_start = datetime.now()
         prompt = messages
         response = dict()
-        if isinstance(self.model, CustomResponseModel):
+        if isinstance(self.model, backends.CustomResponseModel):
             response_text = self._custom_response(messages, turn_idx)
-        elif isinstance(self.model, HumanModel):
+        elif isinstance(self.model, backends.HumanModel):
             response_text = self._terminal_response(messages, turn_idx)
         else:
             prompt, response, response_text = self.model.generate_response(messages)
@@ -89,12 +236,12 @@ class GameResourceLocator(abc.ABC):
     You can access subdirectories by giving `gm.load_json("sub/my_file")` in `game/sub/my_file.json`.
     """
 
-    def __init__(self, name: str, game_dir=None):
+    def __init__(self, name: str):
         """
         :param name: of the game
         """
         self.name = name
-        self.logger = clemgame.get_logger(self.__class__.__module__)
+        self.logger = logging.getLogger(self.__class__.__module__)
 
     def file_path(self, file_name: str) -> str:
         """
@@ -112,7 +259,10 @@ class GameResourceLocator(abc.ABC):
             instances_name = "instances"
         if not instances_name.endswith(".json"):
             instances_name += ".json"
-        fp = os.path.join(project_root, game_path, "in", instances_name)
+        #TODO: currently, this requires game path to be relative to clembench, this needs some further refinement
+        # to also allow for absolute paths
+        # i.e., by being set from the game registry either in the GameResourceLocator or in the GameBenchmark
+        fp = os.path.join(file_utils.project_root(), game_path, "in", instances_name)
         with open(fp, encoding='utf8') as f:
             instances = json.load(f)
         return instances
@@ -184,9 +334,6 @@ class GameResourceLocator(abc.ABC):
 
     def results_path_for(self, results_dir: str, dialogue_pair: str):
         return file_utils.game_results_dir_for(results_dir, dialogue_pair, self.name)
-
-    def applies_to(self, game_name: str) -> bool:
-        return game_name == self.name
 
 
 class GameRecorder(GameResourceLocator):
@@ -291,14 +438,14 @@ class GameMaster(GameRecorder):
 
     """
 
-    def __init__(self, name: str, experiment: Dict, player_models: List[Model] = None):
+    def __init__(self, name: str, experiment: Dict, player_models: List[backends.Model] = None):
         """
         :param name: of the game
         :param player_models: to use for one or two players.
         """
         super().__init__(name)
         self.experiment: Dict = experiment
-        self.player_models: List[Model] = player_models
+        self.player_models: List[backends.Model] = player_models
 
     def setup(self, **kwargs):
         """
@@ -394,7 +541,7 @@ class DialogueGameMaster(GameMaster):
     Extended GameMaster, implementing turns as described in the clembench paper.
     Has most logging and gameplay procedures implemented, including convenient logging methods.
     """
-    def __init__(self, name: str, experiment: dict, player_models: List[Model]):
+    def __init__(self, name: str, experiment: dict, player_models: List[backends.Model]):
         super().__init__(name, experiment, player_models)
         # the logging works with an internal mapping of "Player N" -> Player
         self.players_by_names: Dict[str, Player] = collections.OrderedDict()
@@ -631,6 +778,7 @@ class GameBenchmark(GameResourceLocator):
         raise NotImplementedError()
 
     def setup(self, game_path: str, instances_name: str = None):
+        self.game_dir = game_path
         self.instances = self.load_instances(game_path, instances_name)
 
     def build_transcripts(self, results_dir: str = None):
@@ -729,7 +877,7 @@ class GameBenchmark(GameResourceLocator):
                     stdout_logger.error(
                         f"{self.name}: '{error_count}' exceptions occurred: See clembench.log for details.")
 
-    def run(self, player_models: List[Model], results_dir: str = None):
+    def run(self, player_models: List[backends.Model], results_dir: str = None):
         """
         Runs game-play on all game instances for a game.
         There must be an instances.json with the following structure:
@@ -755,7 +903,7 @@ class GameBenchmark(GameResourceLocator):
                                 - instance.json
                                 - interaction.json
         """
-        results_root = "results" if results_dir is None else results_dir
+        results_root = file_utils.results_root(results_dir)
         experiments: List = self.instances["experiments"]
         if not experiments:
             self.logger.warning(f"{self.name}: No experiments for %s", self.name)
@@ -767,7 +915,7 @@ class GameBenchmark(GameResourceLocator):
                 continue
             stdout_logger.info(f"Run experiment {experiment_idx + 1} of {total_experiments}: {experiment_name}")
             # Determine dialogue partners: How often to run the experiment with different partners
-            dialogue_partners: List[List[Model]] = []
+            dialogue_partners: List[List[backends.Model]] = []
 
             if player_models:  # favor runtime argument over experiment config
                 dialogue_partners = [player_models]
@@ -869,7 +1017,7 @@ class GameBenchmark(GameResourceLocator):
         """
         return False
 
-    def create_game_master(self, experiment: Dict, player_models: List[Model]) -> GameMaster:
+    def create_game_master(self, experiment: Dict, player_models: List[backends.Model]) -> GameMaster:
         raise NotImplementedError()
 
     def create_game_scorer(self, experiment: Dict, game_instance: Dict) -> GameScorer:
@@ -936,42 +1084,6 @@ class GameInstanceGenerator(GameResourceLocator):
         self.store_file(self.instances, filename, sub_dir="in")
 
 
-def select_games(game_or_collection: str) -> List[GameSpec]:
-    # select relevant games from game registry
-    selected_games = []
-    properties = {}
-    is_single_game = True
-    if game_or_collection.endswith(".json"):
-        is_single_game = False
-        with open(os.path.join(project_root, game_or_collection)) as f:
-            properties = json.load(f)
-        # add default values
-        if "lang" not in properties:
-            properties["language"] = "en"
-        if "image" not in properties:
-            properties["image"] = "none"
-        # examples:
-        # {"benchmark" : "2.0"} # run all English textual games marked for benchmark version 2.0
-        # {"benchmark" : "1.5", "lang": "ru"} # run all games of benchmark version 1.5 for which Russian versions exist
-        # {"main_game": "matchit"} # to run all English textual matchit game versions
-        # {"image": "single", "main_game": "matchit"} # to run all English multimodal matchit game versions
-
-    if is_single_game:
-        # return first entry that matches game_name
-        for game in clemgame.game_registry:
-            if game["game_name"] == game_or_collection:
-                return [game]
-    else:
-        for game in clemgame.game_registry:
-            if game.matches(properties):
-                selected_games.append(game)
-
-    if len(selected_games) == 0:
-        raise ValueError(f"No games found matching the given specification '{game_or_collection}'. "
-                         "Make sure game name or attribute names and values match game_registry.json")
-    return selected_games
-
-
 def is_game(obj):
     # check whether a class inherited from GameBenchmark
     if inspect.isclass(obj) and issubclass(obj, GameBenchmark):
@@ -980,6 +1092,8 @@ def is_game(obj):
 
 
 def load_game(game_spec: GameSpec, do_setup: bool = True, instances_name: str = None) -> GameBenchmark:
+    # append game directory to system path for loading game specific dependencies
+    sys.path.insert(0, game_spec.game_path)
     # load game module from this master file
     spec = importlib.util.spec_from_file_location(game_spec["game_name"], game_spec.get_game_file())
     game_module = importlib.util.module_from_spec(spec)
@@ -991,16 +1105,18 @@ def load_game(game_spec: GameSpec, do_setup: bool = True, instances_name: str = 
         raise LookupError(f"There is no GameBenchmark defined in {game_module}. "
                           f"Create such a class and try again.")
     if len(game_subclasses) > 2:
-        # currently it finds GameBenchmark and the specific game class (like TabooGameBenchmark)
+        # currently it finds the super class GameBenchmark and the specific game class (like TabooGameBenchmark)
         # if this is removed from the framework (if this is possible/desired), the check should be > 1
         raise LookupError(f"There is more than one Game defined in {game_module}.")
-    for game in game_subclasses:
+    for game_name, game_class in game_subclasses:
+        # ignore the super class GameBenchmark
         # see comment above, this loop could become redundant (though it also shouldn't hurt)
-        if game[0] == "GameBenchmark":
+        if game_name == "GameBenchmark":
             continue
-        game_cls = game[1]()  # instantiate the specific game class
+        game_cls = game_class()  # instantiate the specific game class
 
         if do_setup:
             game_cls.setup(game_spec["game_path"], instances_name)
 
         return game_cls
+

@@ -1,16 +1,17 @@
+import logging
 from typing import List, Dict, Tuple, Any
 from retry import retry
 import google.generativeai as genai
-import backends
-from backends.utils import ensure_messages_format
 import os
 import requests
 import uuid
 import tempfile
 import imghdr
-import time
 
-logger = backends.get_logger(__name__)
+import framework.backends as backends
+from framework.backends.utils import ensure_messages_format
+
+logger = logging.getLogger(__name__)
 
 NAME = "google"
 
