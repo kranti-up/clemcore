@@ -2,8 +2,8 @@ import argparse
 import json
 from typing import List
 
-from backends import ModelSpec
-from clemgame import framework
+import framework
+from framework.backends import ModelSpec
 
 """
     Use good old argparse to run the commands.
@@ -99,29 +99,29 @@ if __name__ == "__main__":
                                  "Default: 100.")
     run_parser.add_argument("-i", "--instances_name", type=str, default="instances",
                             help="The instances file name (.json suffix will be added automatically.")
-    run_parser.add_argument("-r", "--results_dir", type=str, default="results",
+    run_parser.add_argument("-r", "--results_dir", type=str, default="../results",
                             help="A relative or absolute path to the results root directory. "
-                                 "For example '-r results/v1.5/de‘ or '-r /absolute/path/for/results'. "
-                                 "When not specified, then the results will be located in './results'")
+                                 "For example '-r ../results/v1.5/de‘ or '-r /absolute/path/for/results'. "
+                                 "When not specified, then the results will be located in '../results'")
 
     score_parser = sub_parsers.add_parser("score")
     score_parser.add_argument("-e", "--experiment_name", type=str,
                               help="Optional argument to only run a specific experiment")
     score_parser.add_argument("-g", "--game", type=str,
-                              help="A specific game name (see ls).", default="all")
-    score_parser.add_argument("-r", "--results_dir", type=str, default="results",
+                              help="A specific game name (see ls).")
+    score_parser.add_argument("-r", "--results_dir", type=str, default="../results",
                               help="A relative or absolute path to the results root directory. "
-                                   "For example '-r results/v1.5/de‘ or '-r /absolute/path/for/results'. "
-                                   "When not specified, then the results will be located in './results'")
+                                   "For example '-r ../results/v1.5/de‘ or '-r /absolute/path/for/results'. "
+                                   "When not specified, then the results will be located in '../results'")
 
     transcribe_parser = sub_parsers.add_parser("transcribe")
     transcribe_parser.add_argument("-e", "--experiment_name", type=str,
                                    help="Optional argument to only run a specific experiment")
     transcribe_parser.add_argument("-g", "--game", type=str,
                                    help="A specific game name (see ls).", default="all")
-    transcribe_parser.add_argument("-r", "--results_dir", type=str, default="results",
+    transcribe_parser.add_argument("-r", "--results_dir", type=str, default="../results",
                                    help="A relative or absolute path to the results root directory. "
-                                        "For example '-r results/v1.5/de‘ or '-r /absolute/path/for/results'. "
-                                        "When not specified, then the results will be located in './results'")
+                                        "For example '-r ../results/v1.5/de‘ or '-r /absolute/path/for/results'. "
+                                        "When not specified, then the results will be located in '../results'")
 
     main(parser.parse_args())
