@@ -34,7 +34,16 @@ from framework.backends import ModelSpec
 """
 
 
-def read_model_specs(model_strings: List[str]):
+def read_model_specs(model_strings: List[str]) -> List[ModelSpec]:
+    """Get ModelSpec instances for the passed list of models.
+    Takes both simple model names and (partially or fully specified) model specification data as JSON strings.
+    Args:
+        model_strings: List of string names of the models to return ModelSpec instances for. Model name strings
+            correspond to the 'model_name' key value of a model in the model registry. May also be partially or fully
+            specified model specification data as JSON strings.
+    Returns:
+        A list of ModelSpec instances for the passed list of models.
+    """
     model_specs = []
     for model_string in model_strings:
         try:
@@ -47,11 +56,30 @@ def read_model_specs(model_strings: List[str]):
     return model_specs
 
 
-def read_gen_args(args: argparse.Namespace):
+def read_gen_args(args: argparse.Namespace) -> dict:
+    """Get text generation inference parameters from CLI arguments.
+    Handles sampling temperature and maximum number of tokens to generate.
+    Args:
+        args: CLI arguments as passed via argparse.
+    Returns:
+        A dict with the keys 'temperature' and 'max_tokens' with the values parsed by argparse.
+    """
     return dict(temperature=args.temperature, max_tokens=args.max_tokens)
 
 
 def main(args: argparse.Namespace):
+    """Main CLI handling function.
+    Handles the clembench CLI commands
+    - 'ls' to list available clemgames.
+    - 'run' to start a benchmark run. Takes further arguments determining the clemgame to run, which experiments,
+    instances and models to use, inference parameters, and where to store the benchmark records.
+    - 'score' to score benchmark results. Takes further arguments determining the clemgame and which of its experiments
+    to score, and where the benchmark records are located.
+    - 'transcribe' to transcribe benchmark results. Takes further arguments determining the clemgame and which of its
+    experiments to transcribe, and where the benchmark records are located.
+    Args:
+        args: CLI arguments as passed via argparse.
+    """
     if args.command_name == "ls":
         framework.list_games()
     if args.command_name == "run":
