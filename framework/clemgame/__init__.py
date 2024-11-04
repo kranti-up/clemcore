@@ -224,7 +224,9 @@ def select_game(game_name: str) -> GameSpec:
 
 class Player(abc.ABC):
     """A participant of a game.
+
     A player can respond via a custom implementation, human input or a language model:
+
     - the programmatic players are called via the _custom_response() method
     - the human players are called via the _terminal_response() method
     - the backend players are called via the generate_response() method of the backend
