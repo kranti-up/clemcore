@@ -69,7 +69,9 @@ def read_gen_args(args: argparse.Namespace) -> dict:
 
 def main(args: argparse.Namespace):
     """Main CLI handling function.
+
     Handles the clembench CLI commands
+
     - 'ls' to list available clemgames.
     - 'run' to start a benchmark run. Takes further arguments determining the clemgame to run, which experiments,
     instances and models to use, inference parameters, and where to store the benchmark records.
@@ -77,6 +79,7 @@ def main(args: argparse.Namespace):
     to score, and where the benchmark records are located.
     - 'transcribe' to transcribe benchmark results. Takes further arguments determining the clemgame and which of its
     experiments to transcribe, and where the benchmark records are located.
+
     Args:
         args: CLI arguments as passed via argparse.
     """

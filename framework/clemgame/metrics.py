@@ -1,6 +1,6 @@
 """
 Definition of metrics/scores that should be defined and logged for all games.
-This constants should be used so that the naming is standardised across games.
+These constants should be used so that the naming is standardised across games.
 """
 
 # common names
