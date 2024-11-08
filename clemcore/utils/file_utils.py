@@ -1,13 +1,14 @@
 """
-Defines locations within the project structure
-and supplies several functions for loading different files
-#TODO: check which functions could be moved to ResourceLocator
+Defines locations within the project structure (for root directories, games and results)
+and supplies several functions for loading and storing files
 """
 
 from typing import Dict
 import os
 import json
 import csv
+
+######### path construction functions ###################
 
 
 def project_root():
@@ -24,37 +25,43 @@ def clemcore_root():
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def project_utils():
-    """
-        returns absolute path to utils directory (clembench/utils)
-    """
-    return os.path.join(clemcore_root(), "utils")
-
-
-def results_root(results_dir: str = None) -> str:
-    #if the framework is used via cli.py, the default is actually already set by argparse, so this will not be None
-    results_dir = os.path.join(project_root(), "results") if results_dir is None else results_dir
+def results_root(results_dir: str) -> str:
     if os.path.isabs(results_dir):
         return results_dir
     # if not absolute, results_dir is given relative to project root (see default in cli.py)
-    # and needs to be transformed
     return os.path.normpath(os.path.join(project_root(), results_dir))
 
 
-def game_results_dir_for(results_dir: str, dialogue_pair: str, game_name: str) -> str:
+def game_results_dir(results_dir: str, dialogue_pair: str, game_name: str):
     return os.path.join(results_root(results_dir), dialogue_pair, game_name)
 
 
-def load_json(file_name: str, game_name: str) -> Dict:
-    data = load_file(file_name, game_name, file_ending=".json")
-    data = json.loads(data)
-    return data
+def file_path(file_name: str, game_path: str = None) -> str:
+    """
+    Get absolute path to a specific file
+    TODO check if this is actually ever called without a game_path
+    Args:
+        file_name: the path to a file (can be a path relative to the game directory)
+        game_path: the path to the game directory (optinal)
+
+    Returns: The absolute path to a file relative to the game directory (if specified) or the clembench directory
+
+    """
+    if game_path:
+        if os.path.isabs(game_path):
+            return os.path.join(game_path, file_name)
+        else:
+            return os.path.join(project_root(), game_path, file_name)
+    return os.path.join(project_root(), file_name)
 
 
-def load_csv(file_name: str, game_name: str):
+########### file loading functions #########################
+
+
+def load_csv(file_name: str, game_path: str):
     # iso8859_2 was required for opening nytcrosswords.csv for clues in wordle
     rows = []
-    fp = file_path(file_name, game_name)
+    fp = file_path(file_name, game_path)
     with open(fp, encoding='iso8859_2') as csv_file:
         data = csv.reader(csv_file, delimiter=',')
         # header = next(data)
@@ -63,51 +70,38 @@ def load_csv(file_name: str, game_name: str):
     return rows
 
 
-def load_template(file_name: str, game_name: str) -> str:
-    return load_file(file_name, game_name, file_ending=".template")
+def load_json(file_name: str, game_path: str) -> Dict:
+    data = load_file(file_name, game_path, file_ending=".json")
+    data = json.loads(data)
+    return data
 
 
-def file_path(file_name: str, game_path: str = None) -> str:
-    if game_path:
-        return os.path.join(game_path, file_name)
-    return os.path.join(project_root(), file_name)
+def load_template(file_name: str, game_path: str) -> str:
+    # TODO this a bit redundant and could be removed by changing all usages
+    #  of load_template (and GameResourceLocator.load_template()) to directly use load_file(..., file_ending=".template")
+    return load_file(file_name, game_path, file_ending=".template")
 
 
-def load_file(file_name: str, game_name: str = None, file_ending: str = None) -> str:
+def load_file(file_name: str, game_path: str = None, file_ending: str = None) -> str:
     if file_ending and not file_name.endswith(file_ending):
         file_name = file_name + file_ending
-    fp = file_path(file_name, game_name)
+    fp = file_path(file_name, game_path)
     with open(fp, encoding='utf8') as f:
         data = f.read()
     return data
 
 
 def load_results_json(file_name: str, results_dir: str, dialogue_pair: str, game_name: str) -> Dict:
-    data = __load_results_file(file_name, results_dir, dialogue_pair, game_name, file_ending=".json")
+    file_ending = ".json"
+    if not file_name.endswith(file_ending):
+        file_name = file_name + file_ending
+    fp = os.path.join(game_results_dir(results_dir, dialogue_pair, game_name), file_name)
+    with open(fp, encoding='utf8') as f:
+        data = f.read()
     data = json.loads(data)
     return data
 
-
-def __load_results_file(file_name: str, results_dir: str, dialogue_pair: str, game_name: str,
-                        file_ending: str = None) -> str:
-    if file_ending and not file_name.endswith(file_ending):
-        file_name = file_name + file_ending
-    game_results_dir = game_results_dir_for(results_dir, dialogue_pair, game_name)
-    fp = os.path.join(game_results_dir, file_name)
-    with open(fp, encoding='utf8') as f:
-        data = f.read()
-    return data
-
-
-def store_game_results_file(data, file_name: str, dialogue_pair: str, game_name: str,
-                            sub_dir: str = None, root_dir: str = None,
-                            do_overwrite: bool = True) -> str:
-    game_results_dir = game_results_dir_for(root_dir, dialogue_pair, game_name)
-    return store_file(data, file_name, game_results_dir, sub_dir, do_overwrite)
-
-
-def store_game_file(data, file_name: str, game_name: str, sub_dir: str = None, do_overwrite: bool = True) -> str:
-    return store_file(data, file_name, game_dir(game_name), sub_dir, do_overwrite)
+########### file storing function ################
 
 
 def store_file(data, file_name: str, dir_path: str, sub_dir: str = None, do_overwrite: bool = True) -> str:

@@ -23,7 +23,7 @@ BANNER = \
 print(BANNER)
 
 # Configure logging
-with open(os.path.join(file_utils.project_utils(), "logging.yaml")) as f:
+with open(os.path.join(file_utils.clemcore_root(), "utils", "logging.yaml")) as f:
     conf = yaml.safe_load(f)
     # adapt path to logging relative to project root
     log_fn = conf["handlers"]["file_handler"]["filename"]
@@ -97,7 +97,7 @@ def score(game_name: str, experiment_name: str = None, results_dir: str = None):
         time_start = datetime.now()
         game.compute_scores(results_dir)
         time_end = datetime.now()
-        logger.info(f"Scoring {game.name} took {str(time_end - time_start)}")
+        logger.info(f"Scoring {game.game_name} took {str(time_end - time_start)}")
     except Exception as e:
         stdout_logger.exception(e)
         logger.error(e, exc_info=True)
@@ -116,7 +116,7 @@ def transcripts(game_name: str, experiment_name: str = None, results_dir: str = 
         time_start = datetime.now()
         game.build_transcripts(results_dir)
         time_end = datetime.now()
-        logger.info(f"Building transcripts for {game.name} took {str(time_end - time_start)}")
+        logger.info(f"Building transcripts for {game.game_name} took {str(time_end - time_start)}")
     except Exception as e:
         stdout_logger.exception(e)
         logger.error(e, exc_info=True)

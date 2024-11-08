@@ -7,7 +7,6 @@ import sys
 from datetime import datetime
 from typing import List, Dict, Tuple, Any
 from tqdm import tqdm
-from dataclasses import dataclass
 from types import SimpleNamespace
 import importlib
 import importlib.util
@@ -128,7 +127,8 @@ def select_game(game_name: str) -> GameSpec:
                           "Make sure the game name matches the name in clemcore/clemgame/game_registry.json (or game_registry_custom.json)")
     # extension to select subset of games
     # (postponed because it introduces more complexity
-    # on things like how to specify specific episodes,
+    # on things like how to specify specific episodes (which could, however be integrated into the game spec
+    # and then selected through the custom game_spec for a specific run),
     # and thus can be easier done by looping over an
     # explicit list of games with a bash script (see clembench/scripts/run_benchmark.sh)
 
@@ -229,42 +229,49 @@ class Player(abc.ABC):
 
 class GameResourceLocator(abc.ABC):
     """
-    Provides access to game specific resources
+    Provides access to game specific resources and results (based on game path and results directory)
 
     Note: You should access resource only via the game resource locator! The locator knows how to refer to them.
     For example use: `gm.load_json("my_file")` which is located directly at your game directory `game/my_file.json`.
     You can access subdirectories by giving `gm.load_json("sub/my_file")` in `game/sub/my_file.json`.
     """
 
-    def __init__(self, name: str):
+    def __init__(self, name: str, path: str = None):
         """
-        :param name: of the game
+
+        Args:
+            name: name of the game (as specified in game_registry)
+            path: path to the game (as specified in game_registry, optional, because not needed for GameScorer)
         """
-        self.name = name
+        self.game_name = name # for building results structure
+        self.game_path = path # for accessing game resources
         self.logger = logging.getLogger(self.__class__.__module__)
 
-    def file_path(self, file_name: str) -> str:
-        """
-        The absolute path to a game file. Sometimes we only need the path to a file, but not to load it.
-        :param file_name: can be a sub-path
-        :return: the absolute path to the file in the game directory
-        """
-        return file_utils.file_path(file_name, self.name)
+    # def file_path(self, file_name: str) -> str:
+    #     """
+    #     TODO: seems to be never used, check if removing breaks anything
+    #     The absolute path to a game file. Sometimes we only need the path to a file, but not to load it.
+    #     :param file_name: can be a sub-path
+    #     :return: the absolute path to the file in the game directory
+    #     """
+    #     return file_utils.file_path(file_name, self.game_name)
 
-    def load_instances(self, game_path, instances_name):
+    def load_instances(self, instances_name):
         """
         Construct instances path and return json object of the instance file
         """
         if instances_name is None:
             instances_name = "instances"
-        if not instances_name.endswith(".json"):
-            instances_name += ".json"
-        if not os.path.isabs(game_path):
-            game_path = os.path.join(file_utils.project_root(), game_path)
-        game_file_path = os.path.join(game_path, "in", instances_name)
-        with open(game_file_path, encoding='utf8') as f:
-            instances = json.load(f)
-        return instances
+        return file_utils.load_json(f"in/{instances_name}", self.game_path)
+        # TODO check if the following can be removed now
+        # if not instances_name.endswith(".json"):
+        #     instances_name += ".json"
+        # if not os.path.isabs(self.game_path):
+        #     game_path = os.path.join(file_utils.project_root(), self.game_path)
+        # game_file_path = os.path.join(game_path, "in", instances_name)
+        # with open(game_file_path, encoding='utf8') as f:
+        #     instances = json.load(f)
+        # return instances
 
     def load_template(self, file_name: str) -> str:
         """
@@ -272,7 +279,7 @@ class GameResourceLocator(abc.ABC):
         :param file_name: can have subdirectories e.g. "sub/my_file"
         :return: the file contents
         """
-        return file_utils.load_template(file_name, self.name)
+        return file_utils.load_file(file_name, self.game_path, file_ending=".template")
 
     def load_json(self, file_name: str) -> Dict:
         """
@@ -280,7 +287,7 @@ class GameResourceLocator(abc.ABC):
         :param file_name: can have subdirectories e.g. "sub/my_file"
         :return: the file contents
         """
-        return file_utils.load_json(file_name, self.name)
+        return file_utils.load_json(file_name, self.game_path)
 
     def load_results_json(self, file_name: str, results_dir: str, dialogue_pair: str) -> Dict:
         """
@@ -288,7 +295,7 @@ class GameResourceLocator(abc.ABC):
         :param file_name: can have subdirectories e.g. "sub/my_file"
         :return: the file contents
         """
-        return file_utils.load_results_json(file_name, results_dir, dialogue_pair, self.name)
+        return file_utils.load_results_json(file_name, results_dir, dialogue_pair, self.game_name)
 
     def load_csv(self, file_name: str) -> Dict:
         """
@@ -296,7 +303,7 @@ class GameResourceLocator(abc.ABC):
         :param file_name: can have subdirectories e.g. "sub/my_file"
         :return: the file contents
         """
-        return file_utils.load_csv(file_name, self.name)
+        return file_utils.load_csv(file_name, self.game_path)
 
     def load_file(self, file_name: str, file_ending: str = None) -> str:
         """
@@ -305,7 +312,7 @@ class GameResourceLocator(abc.ABC):
         :param file_ending: if not given in file_name
         :return: the file contents
         """
-        return file_utils.load_file(file_name, self.name, file_ending=file_ending)
+        return file_utils.load_file(file_name, self.game_path, file_ending=file_ending)
 
     def store_file(self, data, file_name: str, sub_dir: str = None):
         """
@@ -315,7 +322,7 @@ class GameResourceLocator(abc.ABC):
         :param data: to store
         :param file_name: can have subdirectories e.g. "sub/my_file"
         """
-        fp = file_utils.store_game_file(data, file_name, self.name, sub_dir=sub_dir)
+        fp = file_utils.store_file(data, file_name, self.game_name, sub_dir=sub_dir)
         self.logger.info("Game file stored to %s", fp)
 
     def store_results_file(self, data, file_name: str, dialogue_pair: str, sub_dir: str = None, root_dir: str = None):
@@ -327,18 +334,18 @@ class GameResourceLocator(abc.ABC):
         :param file_name: can have subdirectories e.g. "sub/my_file"
         :param root_dir: an alternative results directory structure given as a relative or absolute path
         """
-        fp = file_utils.store_game_results_file(data, file_name, dialogue_pair, self.name,
-                                                sub_dir=sub_dir, root_dir=root_dir)
-        self.logger.info("Results file stored to %s", fp)
+        game_results_path = file_utils.game_results_dir(root_dir, dialogue_pair, self.game_name)
+        fp = file_utils.store_file(data, file_name, game_results_path, sub_dir)
 
-    def results_path_for(self, results_dir: str, dialogue_pair: str):
-        return file_utils.game_results_dir_for(results_dir, dialogue_pair, self.name)
+        self.logger.info(f"Results file stored to {fp}")
 
 
 class GameRecorder(GameResourceLocator):
+    """ TODO: combine with GameMaster, because no other class inherits from it
+    """
 
-    def __init__(self, name: str):
-        super().__init__(name)
+    def __init__(self, name: str, path: str):
+        super().__init__(name, path)
         self.log_current_turn = -1
         """ Stores players and turn during the runs """
         self.interactions = {
@@ -356,11 +363,11 @@ class GameRecorder(GameResourceLocator):
     def log_key(self, key: str, value: Any):
         """Add a key and value to the internal log."""
         self.interactions[key] = value
-        self.logger.info(f"{self.name}: Logged a game-specific interaction key: {key}.")
+        self.logger.info(f"{self.game_name}: Logged a game-specific interaction key: {key}.")
 
     def log_players(self, players_dic: Dict):
         self.interactions["players"] = players_dic
-        self.logger.info(f"{self.name}: Logged players metadata.")
+        self.logger.info(f"{self.game_name}: Logged players metadata.")
 
     def log_event(self, from_: str, to: str, action: Dict, call: Tuple[Any, Any] = None):
         """
@@ -382,7 +389,7 @@ class GameRecorder(GameResourceLocator):
         }
         self.interactions["turns"][self.log_current_turn].append(copy.deepcopy(action_obj))
         self.logger.info(
-            f"{self.name}: Logged {action['type']} action ({from_}->{to}).")
+            f"{self.game_name}: Logged {action['type']} action ({from_}->{to}).")
         if call:
             call_obj = {
                 "timestamp": timestamp,
@@ -390,7 +397,7 @@ class GameRecorder(GameResourceLocator):
                 "raw_response_obj": self._needs_copy(call[1])
             }
             self.requests.append(call_obj)
-            self.logger.info(f"{self.name}: Logged a call with timestamp {timestamp}")
+            self.logger.info(f"{self.game_name}: Logged a call with timestamp {timestamp}")
 
     @staticmethod
     def _needs_copy(call_obj):
@@ -437,12 +444,15 @@ class GameMaster(GameRecorder):
 
     """
 
-    def __init__(self, name: str, experiment: Dict, player_models: List[backends.Model] = None):
+    def __init__(self, name: str, path: str, experiment: Dict, player_models: List[backends.Model] = None):
         """
-        :param name: of the game
-        :param player_models: to use for one or two players.
+
+        Args:
+            name: name of the game (as specified in game_registry)
+            path: path to the game (as specified in game_registry)
+            player_models: to use for one or two players
         """
-        super().__init__(name)
+        super().__init__(name, path)
         self.experiment: Dict = experiment
         self.player_models: List[backends.Model] = player_models
 
@@ -482,19 +492,19 @@ class GameScorer(GameResourceLocator):
 
     def log_turn_score(self, turn_idx, score_name, score_value):
         if isinstance(score_value, bool):
-            self.logger.warning(f"{self.name}: Score {score_name} value is boolean, this can break the eval!")
+            self.logger.warning(f"{self.game_name}: Score {score_name} value is boolean, this can break the eval!")
         if turn_idx not in self.scores["turn scores"]:
             self.scores["turn scores"][turn_idx] = {}
         if score_name in self.scores["turn scores"][turn_idx]:
-            self.logger.warning(f"{self.name}: Score {score_name} overwritten at turn {turn_idx}!")
+            self.logger.warning(f"{self.game_name}: Score {score_name} overwritten at turn {turn_idx}!")
         self.scores["turn scores"][turn_idx][score_name] = score_value
-        self.logger.info(f"{self.name}: Logged turn {turn_idx} score {score_name}={score_value}.")
+        self.logger.info(f"{self.game_name}: Logged turn {turn_idx} score {score_name}={score_value}.")
 
     def log_episode_score(self, score_name, score_value):
         if score_name in self.scores["episode scores"]:
-            self.logger.warning(f"{self.name}: Episode score {score_name} overwritten!")
+            self.logger.warning(f"{self.game_name}: Episode score {score_name} overwritten!")
         self.scores["episode scores"][score_name] = score_value
-        self.logger.info(f"{self.name}: Logged episode score {score_name}={score_value}.")
+        self.logger.info(f"{self.game_name}: Logged episode score {score_name}={score_value}.")
 
     def compute_scores(self, episode_interactions: Dict) -> None:
         self.score_turns(episode_interactions)
@@ -540,8 +550,8 @@ class DialogueGameMaster(GameMaster):
     Extended GameMaster, implementing turns as described in the clembench paper.
     Has most logging and gameplay procedures implemented, including convenient logging methods.
     """
-    def __init__(self, name: str, experiment: dict, player_models: List[backends.Model]):
-        super().__init__(name, experiment, player_models)
+    def __init__(self, name: str, path: str, experiment: dict, player_models: List[backends.Model]):
+        super().__init__(name, path, experiment, player_models)
         # the logging works with an internal mapping of "Player N" -> Player
         self.players_by_names: Dict[str, Player] = collections.OrderedDict()
         self.messages_by_names: Dict[str, List] = dict()
@@ -566,7 +576,7 @@ class DialogueGameMaster(GameMaster):
     def setup(self, **kwargs):
         self._on_setup(**kwargs)
         # log players
-        players_descriptions = collections.OrderedDict(GM=f"Game master for {self.name}")
+        players_descriptions = collections.OrderedDict(GM=f"Game master for {self.game_name}")
         for name, player in self.players_by_names.items():
             players_descriptions[name] = player.get_description()
         # log player ID and description dcit:
@@ -588,7 +598,7 @@ class DialogueGameMaster(GameMaster):
         while not inner_break and self._does_game_proceed():
             self.log_next_turn()  # not sure if we want to do this always here (or add to _on_before_turn)
             self._on_before_turn(self.current_turn)
-            self.logger.info(f"{self.name}: %s turn: %d", self.name, self.current_turn)
+            self.logger.info(f"{self.game_name}: %s turn: %d", self.game_name, self.current_turn)
             for player in self.__player_sequence():
                 if not self._does_game_proceed():
                     inner_break = True  # break outer loop without calling _does_game_proceed again
@@ -764,8 +774,8 @@ class GameBenchmark(GameResourceLocator):
     which compose a benchmark for the game. It supports different experiment conditions for games.
     """
 
-    def __init__(self, name: str):
-        super().__init__(name)
+    def __init__(self, name: str, path: str):
+        super().__init__(name, path)
         self.instances = None
         self.filter_experiment: List[str] = []
 
@@ -773,27 +783,27 @@ class GameBenchmark(GameResourceLocator):
         """
         A short string describing the game. Will be shown when listing the games.
         :return: game description
+        # TODO remove (i.e., move existing descriptions to game registry)
         """
         raise NotImplementedError()
 
-    def setup(self, game_path: str, instances_name: str = None):
-        self.game_dir = game_path
-        self.instances = self.load_instances(game_path, instances_name)
+    def setup(self, instances_name: str = None):
+        self.instances = self.load_instances(instances_name)
 
-    def build_transcripts(self, results_dir: str = None):
+    def build_transcripts(self, results_dir: str):
         results_root = file_utils.results_root(results_dir)
-        dialogue_partners = [file for file in os.listdir(results_root)
-                             if os.path.isdir(os.path.join(results_root, file))]
+        dialogue_partners = [model_dir for model_dir in os.listdir(results_root)
+                             if os.path.isdir(os.path.join(results_root, model_dir))]
         for dialogue_pair in dialogue_partners:
-            game_result_path = self.results_path_for(results_root, dialogue_pair)
+            game_result_path = file_utils.game_results_dir(results_root, dialogue_pair, self.game_name)
             if not os.path.exists(game_result_path) or not os.path.isdir(game_result_path):
                 stdout_logger.info("No results directory found at: " + game_result_path)
                 continue
 
-            experiment_dirs = [file for file in os.listdir(game_result_path)
-                               if os.path.isdir(os.path.join(game_result_path, file))]
+            experiment_dirs = [experiment_dir for experiment_dir in os.listdir(game_result_path)
+                               if os.path.isdir(os.path.join(game_result_path, experiment_dir))]
             if not experiment_dirs:
-                stdout_logger.warning(f"{self.name}: No experiments for {dialogue_pair}")
+                stdout_logger.warning(f"{self.game_name}: No experiments for {dialogue_pair}")
             for experiment_dir in experiment_dirs:
                 experiment_path = os.path.join(game_result_path, experiment_dir)
                 experiment_name = "_".join(experiment_dir.split("_")[1:])  # remove leading index number
@@ -826,26 +836,26 @@ class GameBenchmark(GameResourceLocator):
                                                 sub_dir=rel_episode_path,
                                                 root_dir=results_root)
                     except Exception:  # continue with other episodes if something goes wrong
-                        self.logger.exception(f"{self.name}: Cannot transcribe {episode_dir} (but continue)")
+                        self.logger.exception(f"{self.game_name}: Cannot transcribe {episode_dir} (but continue)")
                         error_count += 1
                 if error_count > 0:
                     stdout_logger.error(
-                        f"{self.name}: '{error_count}' exceptions occurred: See clembench.log for details.")
+                        f"{self.game_name}: '{error_count}' exceptions occurred: See clembench.log for details.")
 
-    def compute_scores(self, results_dir: str = None):
+    def compute_scores(self, results_dir: str):
         results_root = file_utils.results_root(results_dir)
-        dialogue_partners = [file for file in os.listdir(results_root)
-                             if os.path.isdir(os.path.join(results_root, file))]
+        dialogue_partners = [model_dir for model_dir in os.listdir(results_root)
+                             if os.path.isdir(os.path.join(results_root, model_dir))]
         for dialogue_pair in dialogue_partners:
-            game_result_path = self.results_path_for(results_root, dialogue_pair)
+            game_result_path = file_utils.game_results_dir(results_root, dialogue_pair, self.game_name)
             if not os.path.exists(game_result_path) or not os.path.isdir(game_result_path):
                 stdout_logger.info("No results directory found at: " + game_result_path)
                 continue
 
-            experiment_dirs = [file for file in os.listdir(game_result_path)
-                               if os.path.isdir(os.path.join(game_result_path, file))]
+            experiment_dirs = [experiment_dir for experiment_dir in os.listdir(game_result_path)
+                               if os.path.isdir(os.path.join(game_result_path, experiment_dir))]
             if not experiment_dirs:
-                stdout_logger.warning(f"{self.name}: No experiments for {dialogue_pair}")
+                stdout_logger.warning(f"{self.game_name}: No experiments for {dialogue_pair}")
             for experiment_dir in experiment_dirs:
                 experiment_path = os.path.join(game_result_path, experiment_dir)
                 experiment_name = "_".join(experiment_dir.split("_")[1:])  # remove leading index number
@@ -870,13 +880,13 @@ class GameBenchmark(GameResourceLocator):
                         game_scorer.compute_scores(game_interactions)
                         game_scorer.store_scores(results_root, dialogue_pair, rel_episode_path)
                     except Exception:  # continue with other episodes if something goes wrong
-                        self.logger.exception(f"{self.name}: Cannot score {episode_dir} (but continue)")
+                        self.logger.exception(f"{self.game_name}: Cannot score {episode_dir} (but continue)")
                         error_count += 1
                 if error_count > 0:
                     stdout_logger.error(
-                        f"{self.name}: '{error_count}' exceptions occurred: See clembench.log for details.")
+                        f"{self.game_name}: '{error_count}' exceptions occurred: See clembench.log for details.")
 
-    def run(self, player_models: List[backends.Model], results_dir: str = None):
+    def run(self, player_models: List[backends.Model], results_dir: str):
         """
         Runs game-play on all game instances for a game.
         There must be an instances.json with the following structure:
@@ -905,7 +915,7 @@ class GameBenchmark(GameResourceLocator):
         results_root = file_utils.results_root(results_dir)
         experiments: List = self.instances["experiments"]
         if not experiments:
-            self.logger.warning(f"{self.name}: No experiments for %s", self.name)
+            self.logger.warning(f"{self.game_name}: No experiments for %s", self.game_name)
         total_experiments = len(experiments)
         for experiment_idx, experiment in enumerate(experiments):
             experiment_name = experiment['name']
@@ -925,11 +935,11 @@ class GameBenchmark(GameResourceLocator):
                         player_model = backends.get_model_for(model_name)
                         player_models.append(player_model)
                     dialogue_partners.append(player_models)
-                self.logger.info(f"{self.name}: Detected 'dialogue_partners' in experiment config. "
+                self.logger.info(f"{self.game_name}: Detected 'dialogue_partners' in experiment config. "
                                  f"Will run with: {dialogue_partners}")
 
             if not dialogue_partners:
-                message = (f"{self.name}: Neither 'dialogue_partners' set in experiment instance"
+                message = (f"{self.game_name}: Neither 'dialogue_partners' set in experiment instance"
                            f" nor 'models' given as run arg")
                 stdout_logger.error(message)
                 raise ValueError(message)
@@ -937,7 +947,7 @@ class GameBenchmark(GameResourceLocator):
             for dialogue_pair in dialogue_partners:
                 if self.is_single_player():
                     if len(dialogue_pair) > 1:
-                        message = f"Too many player for singe-player game '{self.name}': '{len(dialogue_partners)}'"
+                        message = f"Too many player for singe-player game '{self.game_name}': '{len(dialogue_partners)}'"
                         stdout_logger.error(message)
                         raise ValueError(message)
                     model_0 = dialogue_pair[0]
@@ -946,7 +956,7 @@ class GameBenchmark(GameResourceLocator):
                     dialogue_pair_desc = f"{model_0}--{model_0}"
                 else:  # 2-players
                     if len(dialogue_pair) > 2:
-                        message = f"Too many player for two-player game '{self.name}': '{len(dialogue_partners)}'"
+                        message = f"Too many player for two-player game '{self.game_name}': '{len(dialogue_partners)}'"
                         stdout_logger.error(message)
                         raise ValueError(message)
                     if len(dialogue_pair) == 1:
@@ -959,7 +969,7 @@ class GameBenchmark(GameResourceLocator):
                 episode_counter = 0
 
                 self.logger.info("Activity: %s Experiment: %s Partners: %s Episode: %d",
-                                 self.name, experiment_name, dialogue_pair_desc, episode_counter)
+                                 self.game_name, experiment_name, dialogue_pair_desc, episode_counter)
 
                 experiment_record_dir = f"{experiment_idx}_{experiment_name}"
                 experiment_config = {k: experiment[k] for k in experiment if k != 'game_instances'}
@@ -980,7 +990,7 @@ class GameBenchmark(GameResourceLocator):
                 for game_instance in tqdm(game_instances, desc="Playing games"):
                     game_id = game_instance["game_id"]
                     self.logger.info("Activity: %s Experiment: %s Episode: %d Game: %s",
-                                     self.name, experiment_name, episode_counter, game_id)
+                                     self.game_name, experiment_name, episode_counter, game_id)
                     episode_dir = experiment_record_dir + f"/episode_{episode_counter}"
                     self.store_results_file(game_instance,
                                             f"instance.json",
@@ -993,12 +1003,12 @@ class GameBenchmark(GameResourceLocator):
                         game_master.play()
                         game_master.store_records(results_root, dialogue_pair_desc, episode_dir)
                     except Exception:  # continue with other episodes if something goes wrong
-                        self.logger.exception(f"{self.name}: Exception for episode {game_id} (but continue)")
+                        self.logger.exception(f"{self.game_name}: Exception for episode {game_id} (but continue)")
                         error_count += 1
                     episode_counter += 1
                 if error_count > 0:
                     stdout_logger.error(
-                        f"{self.name}: '{error_count}' exceptions occurred: See clembench.log for details.")
+                        f"{self.game_name}: '{error_count}' exceptions occurred: See clembench.log for details.")
                 # Add experiment duration and overwrite file
                 time_experiment_end = datetime.now() - time_experiment_start
                 experiment_config["duration"] = str(time_experiment_end)
@@ -1085,7 +1095,7 @@ class GameInstanceGenerator(GameResourceLocator):
 
 def is_game(obj):
     # check whether a class inherited from GameBenchmark
-    if inspect.isclass(obj) and issubclass(obj, GameBenchmark):
+    if inspect.isclass(obj) and issubclass(obj, GameBenchmark) and obj is not GameBenchmark:
         return True
     return False
 
@@ -1098,24 +1108,18 @@ def load_game(game_spec: GameSpec, do_setup: bool = True, instances_name: str = 
     game_module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(game_module)
 
-    # extract game class (must inherit from GameBenchmark)
+    # extract game class from master.py (is_game checks inheritance from GameBenchmark)
     game_subclasses = inspect.getmembers(game_module, predicate=is_game)
     if len(game_subclasses) == 0:
         raise LookupError(f"There is no GameBenchmark defined in {game_module}. "
                           f"Create such a class and try again.")
-    if len(game_subclasses) > 2:
-        # currently it finds the super class GameBenchmark and the specific game class (like TabooGameBenchmark)
-        # if this is removed from the framework (if this is possible/desired), the check should be > 1
+    if len(game_subclasses) > 1:
         raise LookupError(f"There is more than one Game defined in {game_module}.")
-    for game_name, game_class in game_subclasses:
-        # ignore the super class GameBenchmark
-        # see comment above, this loop could become redundant (though it also shouldn't hurt)
-        if game_name == "GameBenchmark":
-            continue
-        game_cls = game_class()  # instantiate the specific game class
+    game_class_name, game_class = game_subclasses[0]
+    game_cls = game_class(game_spec)  # instantiate the specific game class
 
-        if do_setup:
-            game_cls.setup(game_spec["game_path"], instances_name)
+    if do_setup:
+        game_cls.setup(instances_name)
 
-        return game_cls
+    return game_cls
 
