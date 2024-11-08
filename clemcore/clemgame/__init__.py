@@ -26,8 +26,7 @@ game_registry = []  # list of game specs to load from dynamically
 
 
 class GameSpec(SimpleNamespace):
-    """
-    Base class for game specifications.
+    """Base class for game specifications.
     Holds all necessary information to play game in clembench (see README for list of attributes)
     """
 
@@ -43,29 +42,52 @@ class GameSpec(SimpleNamespace):
             self.game_path = os.path.join(file_utils.project_root(), self.game_path)
 
     def __repr__(self):
+        """Returns string representation of this GameSpec."""
         return f"GameSpec({str(self)})"
 
     def __str__(self):
+        """Returns GameSpec instance attribute dict as string."""
         return str(self.__dict__)
 
     def __getitem__(self, item):
-        """ dict-like behavior """
+        """Access GameSpec instance attributes like dict items.
+        Args:
+            item: The string name of the instance attribute to get.
+        Returns:
+            The value of the GameSpec instance attribute, or if the instance does not have the attribute, the string
+            passed as argument to this method.
+        """
         return getattr(self, item)
 
     def __contains__(self, attribute):
-        """ dict-like behavior """
+        """Check GameSpec instance attributes like dict keys.
+        Args:
+            attribute: The string name of the instance attribute to check for.
+        Returns:
+            True if the GameSpec instance contains an attribute with the passed string name, False otherwise.
+        """
         return hasattr(self, attribute)
 
     @classmethod
     def from_dict(cls, spec: Dict):
-        """
-        Initialize a GameSpec from a dictionary. Can be used to directly create a GameSpec from a game registry entry.
+        """Initialize a GameSpec from a dictionary.
+        Can be used to directly create a GameSpec from a game registry entry.
+        Args:
+            spec: A game-specifying dict.
+        Returns:
+            A GameSpec instance with the data specified by the passed dict.
         """
         return cls(**spec)
 
     def matches(self, spec: Dict):
-        """
-        Check if the game features match a given specification
+        """Check if the game features match a given specification.
+        Args:
+            spec: A game-specifying dict.
+        Returns:
+            True if the game features match the passed specification, False otherwise.
+        Raises:
+            KeyError: The GameSpec instance does not contain an attribute corresponding to a key in the passed
+                game-specifying dict.
         """
         for key, value in spec.items():
             if not self.__contains__(key):
@@ -80,19 +102,28 @@ class GameSpec(SimpleNamespace):
         return True
 
     def get_game_file(self):
-        """
-        Main game file must be called master.py in game directory
+        """Get the file path of the master.py of the game specified by this GameSpec instance.
+        Returns:
+            The file path of the master.py of the game specified by this GameSpec instance as a string.
         """
         return os.path.join(self.game_path, "master.py")
 
     def game_file_exists(self):
-        """
-        Check if master.py can be located at the specified game_path
+        """Check if master.py can be located at the specified game_path.
+        Returns:
+            True if the master.py is located at the specified game_path, False otherwise.
         """
         return True if os.path.isfile(self.get_game_file()) else False
 
 
 def load_custom_game_registry(_game_registry_path: str = None, is_optional=True):
+    """Load a custom game registry.
+    Handled as module-level variable.
+    Args:
+        _game_registry_path: The path to a custom game registry JSON file. Optional: If not passed, default path is
+            used.
+        is_optional: Determines if a custom game registry is not required.
+    """
     # optional custom registry loaded first, so that these entries come first in the game registry list
     if not _game_registry_path:
         _game_registry_path = os.path.join(file_utils.clemcore_root(), "clemgame", "game_registry_custom.json")
@@ -100,6 +131,17 @@ def load_custom_game_registry(_game_registry_path: str = None, is_optional=True)
 
 
 def load_game_registry(_game_registry_path: str = None, is_mandatory=True):
+    """Load the game registry.
+    Handled as module-level variable.
+    Args:
+        _game_registry_path: The path to the game registry JSON file. Optional: If not passed, default path is used.
+        is_mandatory: If True, a FileNotFoundError is raised if the game registry JSON file does not exist at the
+            path specified in _game_registry_path (or the default path, if nothing is passed to _game_registry_path).
+    Raises:
+        FileNotFoundError: If True is passed to is_mandatory, FileNotFoundError is raised if the game registry JSON file
+            does not exist at the path specified in _game_registry_path (or the default path, if nothing is passed to
+            _game_registry_path).
+    """
     if not _game_registry_path:
         _game_registry_path = os.path.join(file_utils.clemcore_root(), "clemgame", "game_registry.json")
     if not os.path.isfile(_game_registry_path):
@@ -116,6 +158,14 @@ def load_game_registry(_game_registry_path: str = None, is_mandatory=True):
 
 
 def select_game(game_name: str) -> GameSpec:
+    """Select a GameSpec from the game registry by game name.
+    Args:
+        game_name: String name of the selected game.
+    Returns:
+        A GameSpec instance from the game registry corresponding to the passed game_name.
+    Raises:
+        ValueError: No game specification matching the passed game_name was found in the game registry.
+    """
     # return first entry that matches game_name
     for game in game_registry:
         if game["game_name"] == game_name:
@@ -168,8 +218,9 @@ def select_game(game_name: str) -> GameSpec:
 
 
 class Player(abc.ABC):
-    """
-    A participant of a game. A player can respond via a custom implementation, human input or a language model:
+    """A participant of a game.
+
+    A player can respond via a custom implementation, human input or a language model:
 
     - the programmatic players are called via the _custom_response() method
     - the human players are called via the _terminal_response() method
@@ -177,14 +228,33 @@ class Player(abc.ABC):
     """
 
     def __init__(self, model: backends.Model):
+        """
+        Args:
+            model: A backends.Model instance to be used by this Player instance.
+        """
         self.model = model
         self.descriptor: str = None
         logger.info("Player %s", self.get_description())
 
     def get_description(self) -> str:
+        """Get a description string for this Player instance.
+        Returns:
+            A string describing this Player instance's class name and used model.
+        """
         return f"{self.__class__.__name__}, {self.model}"
 
     def __call__(self, messages: List[Dict], turn_idx) -> Tuple[Any, Any, str]:
+        """Get a response from this Player instance's model.
+        Passes a messages list and turn index to the model, creates a response dict for record logging, including
+        timestamps and call duration, and returns a Player response tuple.
+        Args:
+            messages: A list of message dicts, containing the current conversation history to prompt the model with.
+            turn_idx: The current turn index.
+        Returns:
+            A Player response tuple consisting of: The prompt as converted by the model backend; the full response dict
+            to be used for recording/logging; the response text produced by the model, as post-processed by the model
+            backend.
+        """
         call_start = datetime.now()
         prompt = messages
         response = dict()
@@ -204,11 +274,13 @@ class Player(abc.ABC):
         return prompt, response, response_text
 
     def _terminal_response(self, messages, turn_idx) -> str:
-        """
-        Overwrite this method to customize human inputs (model_name: human, terminal)
-        :param messages: a list of dicts that contain the history of the conversation
-        :param turn_idx: the index of the current turn
-        :return: the human response as text
+        """Response for human interaction via terminal.
+        Overwrite this method to customize human inputs (model_name: human, terminal).
+        Args:
+            messages: A list of dicts that contain the history of the conversation.
+            turn_idx: The index of the current turn.
+        Returns:
+            The human response as text.
         """
         latest_response = "Nothing has been said yet."
         if messages:
@@ -218,42 +290,51 @@ class Player(abc.ABC):
         return user_input
 
     def _custom_response(self, messages, turn_idx) -> str:
-        """
-        Overwrite this method to implement programmatic behavior (model_name: mock, dry_run, programmatic, custom)
-        :param messages: a list of dicts that contain the history of the conversation
-        :param turn_idx: the index of the current turn
-        :return: the programmatic response as text
+        """Response for programmatic Player interaction.
+        Overwrite this method to implement programmatic behavior (model_name: mock, dry_run, programmatic, custom).
+        Args:
+            messages: A list of dicts that contain the history of the conversation.
+            turn_idx: The index of the current turn.
+        Returns:
+            The programmatic response as text.
         """
         raise NotImplementedError()
 
 
 class GameResourceLocator(abc.ABC):
-    """
-    Provides access to game specific resources
+    """Provides access to game specific resources.
+    Note: You should access game-specific resources only via the game resource locator! The locator knows how to refer
+    to them.
 
-    Note: You should access resource only via the game resource locator! The locator knows how to refer to them.
     For example use: `gm.load_json("my_file")` which is located directly at your game directory `game/my_file.json`.
+
     You can access subdirectories by giving `gm.load_json("sub/my_file")` in `game/sub/my_file.json`.
     """
-
     def __init__(self, name: str):
         """
-        :param name: of the game
+        Args:
+            name: The name of the game.
         """
         self.name = name
         self.logger = logging.getLogger(self.__class__.__module__)
 
     def file_path(self, file_name: str) -> str:
-        """
-        The absolute path to a game file. Sometimes we only need the path to a file, but not to load it.
-        :param file_name: can be a sub-path
-        :return: the absolute path to the file in the game directory
+        """Get the absolute path to a game resource file.
+        Sometimes we only need the path to a file, but not to load it.
+        Args:
+            file_name: The name of the game resource file. Can be a sub-path.
+        Returns:
+            The absolute path to the file in the game directory as string.
         """
         return file_utils.file_path(file_name, self.name)
 
     def load_instances(self, game_path, instances_name):
-        """
-        Construct instances path and return json object of the instance file
+        """Construct instances path and return json object of the instance file.
+        Args:
+            game_path: Path to the game directory.
+            instances_name: Name of the instances JSON file.
+        Returns:
+            A dict containing the contents of the given instances file.
         """
         if instances_name is None:
             instances_name = "instances"
@@ -267,77 +348,98 @@ class GameResourceLocator(abc.ABC):
         return instances
 
     def load_template(self, file_name: str) -> str:
-        """
-        Load a .template file from your game directory
-        :param file_name: can have subdirectories e.g. "sub/my_file"
-        :return: the file contents
+        """Load a .template file from the game directory.
+        Args:
+            file_name: The name of the template file. Can have subdirectories e.g. "sub/my_file".
+        Returns:
+            The template file content as string.
         """
         return file_utils.load_template(file_name, self.name)
 
     def load_json(self, file_name: str) -> Dict:
-        """
-        Load a .json file from your game (or game results) directory
-        :param file_name: can have subdirectories e.g. "sub/my_file"
-        :return: the file contents
+        """Load a .json file from the game (or game results) directory.
+        Args:
+            file_name: The name of the JSON file. Can have subdirectories e.g. "sub/my_file".
+        Returns:
+            The JSON file content as dict.
         """
         return file_utils.load_json(file_name, self.name)
 
     def load_results_json(self, file_name: str, results_dir: str, dialogue_pair: str) -> Dict:
-        """
-        Load a .json file from your game (or game results) directory
-        :param file_name: can have subdirectories e.g. "sub/my_file"
-        :return: the file contents
+        """Load a .json file from your game results directory.
+        Args:
+            file_name: The name of the JSON file. Can have subdirectories e.g. "sub/my_file".
+            results_dir: The string path to the results directory.
+            dialogue_pair: The name of the model pair directory. The directory name is retrieved from the results
+                directory file structure by classes/methods that use this method.
+        Returns:
+            The JSON file content as dict.
         """
         return file_utils.load_results_json(file_name, results_dir, dialogue_pair, self.name)
 
     def load_csv(self, file_name: str) -> Dict:
-        """
-        Load a .csv file from your game directory
-        :param file_name: can have subdirectories e.g. "sub/my_file"
-        :return: the file contents
+        """Load a .csv file from your game directory.
+        Args:
+            file_name: The name of the CSV file. Can have subdirectories e.g. "sub/my_file".
+        Returns:
+            The CSV file content as dict.
         """
         return file_utils.load_csv(file_name, self.name)
 
     def load_file(self, file_name: str, file_ending: str = None) -> str:
-        """
-        Load an arbitrary file from your game directory
-        :param file_name: can have subdirectories e.g. "sub/my_file"
-        :param file_ending: if not given in file_name
-        :return: the file contents
+        """Load an arbitrary file from your game directory.
+        Args:
+            file_name: The name of the file. Can have subdirectories e.g. "sub/my_file".
+            file_ending: The file type suffix of the file. Optional: Can be part of file_name.
+        Returns:
+            The file content as string.
         """
         return file_utils.load_file(file_name, self.name, file_ending=file_ending)
 
     def store_file(self, data, file_name: str, sub_dir: str = None):
-        """
-        Store a file in your game directory. The top-level directory is 'games'.
-
-        :param sub_dir: automatically created when given; otherwise an error will be thrown.
-        :param data: to store
-        :param file_name: can have subdirectories e.g. "sub/my_file"
+        """Store a file in your game directory. The top-level directory is 'games'.
+        Args:
+            data: The data to store in the file.
+            file_name: The name of the file. Can have subdirectories e.g. "sub/my_file".
+            sub_dir: The subdirectory to store the file in. Automatically created when given; otherwise an error will
+                be thrown.
         """
         fp = file_utils.store_game_file(data, file_name, self.name, sub_dir=sub_dir)
         self.logger.info("Game file stored to %s", fp)
 
     def store_results_file(self, data, file_name: str, dialogue_pair: str, sub_dir: str = None, root_dir: str = None):
-        """
-        Store a results file in your game results' directory. The top-level directory is 'results'.
-
-        :param sub_dir: automatically created when given; otherwise an error will be thrown.
-        :param data: to store
-        :param file_name: can have subdirectories e.g. "sub/my_file"
-        :param root_dir: an alternative results directory structure given as a relative or absolute path
+        """Store a results file in your game results' directory. The top-level directory is 'results'.
+        Args:
+            data: The data to store in the file.
+            file_name: The name of the file. Can have subdirectories e.g. "sub/my_file".
+            dialogue_pair: The name of the model pair directory. The directory name is retrieved from the results
+                directory file structure by classes/methods that use this method.
+            sub_dir: The subdirectory to store the results file in. Automatically created when given; otherwise an
+                error will be thrown.
+            root_dir: An (alternative) results directory structure given as a relative or absolute path.
         """
         fp = file_utils.store_game_results_file(data, file_name, dialogue_pair, self.name,
                                                 sub_dir=sub_dir, root_dir=root_dir)
         self.logger.info("Results file stored to %s", fp)
 
     def results_path_for(self, results_dir: str, dialogue_pair: str):
+        """Get the results directory for a model pair.
+        Args:
+            results_dir: The root results directory path as string.
+            dialogue_pair: The name of the model pair directory.
+        Returns:
+            The results directory path for the model pair as string.
+        """
         return file_utils.game_results_dir_for(results_dir, dialogue_pair, self.name)
 
 
 class GameRecorder(GameResourceLocator):
-
+    """Base class for benchmark record keeping and logging."""
     def __init__(self, name: str):
+        """
+        Args:
+            name: The name of the game.
+        """
         super().__init__(name)
         self.log_current_turn = -1
         """ Stores players and turn during the runs """
@@ -349,27 +451,37 @@ class GameRecorder(GameResourceLocator):
         self.requests = []
 
     def log_next_turn(self):
-        """ Call this method to group interactions per turn """
+        """Call this method to group interactions per turn."""
         self.log_current_turn += 1
         self.interactions["turns"].append([])
 
     def log_key(self, key: str, value: Any):
-        """Add a key and value to the internal log."""
+        """Add a key and value to the internal log.
+        Args:
+            key: A string to identify the kind of log entry to be made.
+            value: The content of the entry to be logged.
+        """
         self.interactions[key] = value
         self.logger.info(f"{self.name}: Logged a game-specific interaction key: {key}.")
 
     def log_players(self, players_dic: Dict):
+        """Log/record the players in this game episode.
+        Args:
+            players_dic: Dictionary of players in this game episode.
+        """
         self.interactions["players"] = players_dic
         self.logger.info(f"{self.name}: Logged players metadata.")
 
     def log_event(self, from_: str, to: str, action: Dict, call: Tuple[Any, Any] = None):
-        """
-        Add an event to the internal log. It can be only an action or an action
-        plus an API call that should have the same timestamp as the action.
-
-        call, if given, is a tuple whose first element is the input prompt
-        object (after API-specific manipulation) as passed to the API and the
-        second element is the raw response object as returned by the API.
+        """Add an event to the internal log.
+        It can be only an action or an action plus an API call that should have the same timestamp as the action.
+        Args:
+            from_: The identifier string of the Player/GM that originated the action.
+            to: The identifier string of the Player/GM target of the action.
+            action: The benchmark action to be logged.
+            call: If given, this is a tuple whose first element is the input prompt object (after API-specific
+                manipulation) as passed to the API and the second element is the raw response object as returned by the
+                API.
         """
         assert self.log_current_turn >= 0, f"Call log_add_new_turn at least once " \
                                            f"(log_current_turn={self.log_current_turn})"
@@ -394,6 +506,12 @@ class GameRecorder(GameResourceLocator):
 
     @staticmethod
     def _needs_copy(call_obj):
+        """Deepcopy objects that may otherwise lead to reference issues.
+        Args:
+            call_obj: The object to be deep-copied for safety.
+        Returns:
+            The deep-copy of the passed object, or the original object if it is safe to use.
+        """
         if isinstance(call_obj, Dict) or isinstance(call_obj, List):
             return copy.deepcopy(call_obj)
         elif isinstance(call_obj, str):
@@ -401,7 +519,13 @@ class GameRecorder(GameResourceLocator):
         return call_obj
 
     def store_records(self, results_root: str, dialogue_pair_desc: str, game_record_dir: str):
-        """Raise warnings if a mandatory element is empty or format is wrong."""
+        """Store benchmark records.
+        Raise warnings if a mandatory element is empty or format is wrong.
+        Args:
+            results_root: The root path to the results directory.
+            dialogue_pair_desc: A string combining the Player pair names to be used as directory name.
+            game_record_dir: The game's record directory path.
+        """
         if not self.interactions["players"]:
             self.logger.warning(f"Players metadada is missing!")
         else:
@@ -426,61 +550,77 @@ class GameRecorder(GameResourceLocator):
 
 
 class GameMaster(GameRecorder):
-    """
-    The game master is the master of a specific game. The master
+    """Base class to contain game-specific functionality.
+
+    A GameMaster (sub-)class
 
     - prepares a concrete game instance
     - plays an episode of a game instance
     - records a game episode
     - evaluates the game episode records
     - builds the interaction transcripts
-
     """
-
     def __init__(self, name: str, experiment: Dict, player_models: List[backends.Model] = None):
         """
-        :param name: of the game
-        :param player_models: to use for one or two players.
+        Args:
+            name: The name of the game.
+            experiment: The experiment (set of instances) to use.
+            player_models: Player models to use for one or two players.
         """
         super().__init__(name)
         self.experiment: Dict = experiment
         self.player_models: List[backends.Model] = player_models
 
     def setup(self, **kwargs):
-        """
-        Load resources and prepare everything to play the game
-        - Needs to log the players dictionary via self.log_players(players_dict)
+        """Load resources and prepare everything to play the game.
+        Needs to log the players dictionary via self.log_players(players_dict).
+        Called by the game's GameBenchmark run method for each game instance.
+        Args:
+            kwargs: Keyword arguments used to set up the GameMaster instance.
         """
         raise NotImplementedError()
 
     def play(self) -> None:
-        """
-        Play the game (multiple turns of specific a specific game instance)
-        """
+        """Play the game (multiple turns of a specific game instance)."""
         raise NotImplementedError()
 
 
 class GameScorer(GameResourceLocator):
-    """
-    Calculates scores based on interaction logs.
-    """
+    """Calculates scores based on interaction logs."""
     def __init__(self, name: str, experiment: Dict, game_instance: Dict):
+        """
+        Args:
+            name: The name of the game.
+            experiment: The experiment to score.
+            game_instance: The game instance to score.
+        """
         super().__init__(name)
         self.experiment = experiment
         self.game_instance = game_instance
-        """ Stores values of score computation """
-        self.scores = {
+        self.scores = {  # Stores values of score computation
             "turn scores": {},
             "episode scores": {},
         }
 
     def store_scores(self, results_root: str, dialogue_pair: str, game_record_dir: str):
+        """Store calculated scores to scores.json file.
+        Args:
+            results_root: The root path to the results directory.
+            dialogue_pair: A string path to the Player pair results directory.
+            game_record_dir: The game's record directory path.
+        """
         self.store_results_file(self.scores, "scores.json",
                                 dialogue_pair=dialogue_pair,
                                 sub_dir=game_record_dir,
                                 root_dir=results_root)
 
     def log_turn_score(self, turn_idx, score_name, score_value):
+        """Record a turn-level score for a single turn.
+        Args:
+            turn_idx: The turn index for the turn the score is to be recorded for.
+            score_name: The name of the turn-level score to record.
+            score_value: The value to be recorded for the turn-level score for this turn.
+        """
         if isinstance(score_value, bool):
             self.logger.warning(f"{self.name}: Score {score_name} value is boolean, this can break the eval!")
         if turn_idx not in self.scores["turn scores"]:
@@ -491,25 +631,55 @@ class GameScorer(GameResourceLocator):
         self.logger.info(f"{self.name}: Logged turn {turn_idx} score {score_name}={score_value}.")
 
     def log_episode_score(self, score_name, score_value):
+        """Record an episode-level score for a single turn.
+        Args:
+            score_name: The name of the episode-level score to record.
+            score_value: The value to be recorded for the episode-level score.
+        """
         if score_name in self.scores["episode scores"]:
             self.logger.warning(f"{self.name}: Episode score {score_name} overwritten!")
         self.scores["episode scores"][score_name] = score_value
         self.logger.info(f"{self.name}: Logged episode score {score_name}={score_value}.")
 
     def compute_scores(self, episode_interactions: Dict) -> None:
+        """Compute and log scores for a game episode.
+        This method is used to perform complete scoring of an episode.
+        Args:
+            episode_interactions: Dict containing the episode's interactions. This contains the actions recorded during
+                a benchmark run.
+        """
         self.score_turns(episode_interactions)
         self.score_game(episode_interactions)
 
     def score_turns(self, episode_interactions: Dict) -> None:
+        """Iterate over episode turns, calculate and log turn-level scores.
+        This method is intended to contain any game-specific turn-level scoring. Must be implemented!
+        Use the log_turn_score method to log turn-level scores.
+        Args:
+            episode_interactions: Dict containing the episode's interactions. This contains the actions recorded during
+                a benchmark run.
+        """
         # Loop over turns, calculate and log turn-specific scores
         raise NotImplementedError()
 
     def score_game(self, episode_interactions: Dict) -> None:
+        """Calculate and record standard clembench metric scores for an episode.
+        Args:
+            episode_interactions: Dict containing the episode's interactions. This contains the actions recorded during
+                a benchmark run.
+        """
         self.score_game_end(episode_interactions)
         self.score_requests(episode_interactions)
         self.log_main_score(episode_interactions)
 
     def score_game_end(self, episode_interactions: Dict) -> None:
+        """Calculate and record the ABORTED, LOSE and SUCCESS standard clembench metric scores.
+        Convenience method to cover mandatory clembench metric scores, so their calculation does not need to be
+        implemented anew for each new clemgame.
+        Args:
+            episode_interactions: Dict containing the episode's interactions. This contains the actions recorded during
+                a benchmark run.
+        """
         aborted = int(episode_interactions[ms.METRIC_ABORTED])
         lose = int(episode_interactions[ms.METRIC_LOSE]) if not aborted else 0
         success = 1 - lose if not aborted else 0
@@ -519,7 +689,15 @@ class GameScorer(GameResourceLocator):
         self.log_episode_score(ms.METRIC_SUCCESS, success)
 
     def score_requests(self, episode_interactions: Dict):
-        # logging total request count, parsed, violated, and success ratio of parsed requests over all requests
+        """Calculate and record standard request-based clembench metric scores.
+        Records total request count, parsed, violated, and success ratio of parsed requests over all requests in an
+        episode.
+        Convenience method to cover mandatory clembench metric scores, so their calculation does not need to be
+        implemented anew for each new clemgame.
+        Args:
+            episode_interactions: Dict containing the episode's interactions. This contains the actions recorded during
+                a benchmark run.
+        """
         request_count = episode_interactions[
             ms.METRIC_REQUEST_COUNT]  # could also be calculated by adding parsed and violated requests
         parsed_requests = episode_interactions[ms.METRIC_REQUEST_COUNT_PARSED]
@@ -531,16 +709,27 @@ class GameScorer(GameResourceLocator):
         self.log_episode_score(ms.METRIC_REQUEST_SUCCESS, parsed_requests / request_count)
 
     def log_main_score(self, episode_interactions: Dict):
-        # Replace this function call with a function that logs your main score aka BENCH_SCORE
+        """Record the game's main score.
+        Replace this method with a method that calculates and logs the clemgame's main score aka BENCH_SCORE.
+        Must be implemented! Recording BENCH_SCORE is mandatory.
+        Args:
+            episode_interactions: Dict containing the episode's interactions. This contains the actions recorded during
+                a benchmark run.
+        """
         raise NotImplementedError()
 
 
 class DialogueGameMaster(GameMaster):
-    """
-    Extended GameMaster, implementing turns as described in the clembench paper.
+    """Extended GameMaster, implementing turns as described in the clembench paper.
     Has most logging and gameplay procedures implemented, including convenient logging methods.
     """
     def __init__(self, name: str, experiment: dict, player_models: List[backends.Model]):
+        """
+        Args:
+            name: The name of the game.
+            experiment: The experiment (set of instances) to use.
+            player_models: Player models to use for one or two players.
+        """
         super().__init__(name, experiment, player_models)
         # the logging works with an internal mapping of "Player N" -> Player
         self.players_by_names: Dict[str, Player] = collections.OrderedDict()
@@ -548,15 +737,17 @@ class DialogueGameMaster(GameMaster):
         self.current_turn: int = 0
 
     def get_players(self) -> List[Player]:
+        """Get a list of the players.
+        Returns:
+            List of Player instances in the order they are added.
+        """
         return list(self.players_by_names.values())
 
     def add_player(self, player: Player):
-        """
-        Add a player to the game.
-
+        """Add a player to the game.
         Note: The players will be called in the same order as added!
-
-        :param player: to be added to the game
+        Args:
+            player: The player to be added to the game.
         """
         idx = len(self.players_by_names)
         player.descriptor = f"Player {idx + 1}"
@@ -564,6 +755,15 @@ class DialogueGameMaster(GameMaster):
         self.messages_by_names[player.descriptor] = []
 
     def setup(self, **kwargs):
+        """Load resources and prepare everything to play the game.
+        Needs to log the players dictionary via self.log_players(players_dict).
+        Intended to be left as-is by inheriting classes. Implement game-specific setup functionality in the _on_setup
+        method.
+        Called by the game's GameBenchmark run method for each game instance.
+        Args:
+            kwargs: Keyword arguments used to set up the GameMaster instance. This is usually a game instance object
+                read from the game's instances.json.
+        """
         self._on_setup(**kwargs)
         # log players
         players_descriptions = collections.OrderedDict(GM=f"Game master for {self.name}")
@@ -573,16 +773,22 @@ class DialogueGameMaster(GameMaster):
         self.log_players(players_descriptions)
 
     def _on_setup(self, **kwargs):
-        """
-        Template method: must be implemented
-
+        """Method executed at the start of the default setup method.
+        Template method: Must be implemented!
         Use add_player() here to add the players.
-
-        :param kwargs: of the game instance
+        Args:
+            kwargs: Keyword arguments of the game instance. This is usually a game instance object
+                read from the game's instances.json.
         """
         raise NotImplementedError()
 
     def play(self) -> None:
+        """Main play loop method.
+        This method is called to run the game for benchmarking.
+        Intended to be left as-is by inheriting classes. Implement additional game functionality in the
+        _on_before_game, _does_game_proceed, _on_before_turn, _should_reprompt, _on_before_reprompt, _on_after_turn and
+        _on_after_game methods.
+        """
         self._on_before_game()
         inner_break = False
         while not inner_break and self._does_game_proceed():
@@ -602,6 +808,15 @@ class DialogueGameMaster(GameMaster):
         self._on_after_game()
 
     def prompt(self, player: Player, is_reprompt=False):
+        """Prompt a player model.
+        Includes logging of 'send message' and 'get message' actions.
+        Intended to be left as-is by inheriting classes. Implement game-specific functionality in the
+        _should_reprompt, _on_before_reprompt, _after_add_player_response, _validate_player_response and
+        _on_parse_response methods.
+        Args:
+            player: The Player instance to be prompted.
+            is_reprompt: If this is a reprompt attempt. This is intended for re-prompting with modified prompts.
+        """
         # GM -> Player
         history = self.messages_by_names[player.descriptor]
         assert history, f"messages history must not be empty for {player.descriptor}"
@@ -626,46 +841,97 @@ class DialogueGameMaster(GameMaster):
         self.__validate_parse_and_add_player_response(player, response_message)
 
     def _should_reprompt(self, player: Player):
+        """Method to check if a Player should be re-prompted.
+        This is intended to check for invalid responses.
+        Args:
+            player: The Player instance to re-prompt.
+        """
         return False
 
     def _on_before_reprompt(self, player: Player):
-        """
+        """Method executed before reprompt is passed to a Player.
         Hook
-
         Change the prompt to reprompt the player on e.g. an invalid response.
         Add the new prompt to the players message via self.add_user_message(player, new_prompt)
-
-        :param player: that produced the invalid response
+        Args:
+            player: The Player instance that produced the invalid response.
         """
         pass
 
     def log_message_to(self, player: Player, message: str):
-        """            GM -> Player        """
+        """Logs a 'send message' action from GM to Player.
+        This is a logging method, and will not add the message to the conversation history on its own!
+        Args:
+            player: The Player instance the message is targeted at.
+            message: The message content sent to the Player instance.
+        """
         action = {'type': 'send message', 'content': message}
         self.log_event("GM", player.descriptor, action)
 
     def log_message_to_self(self, message: str):
-        """            GM -> GM        """
+        """Logs a 'metadata' action from GM to GM.
+        This is a logging method, and will not add anything to the conversation history.
+        Args:
+            message: The message content logged as metadata.
+        """
         action = {'type': 'metadata', 'content': message}
         self.log_event("GM", "GM", action)
 
     def log_to_self(self, type_: str, value: str):
-        """            GM -> GM        """
+        """Logs an action of the passed type from GM to GM.
+        This is a logging method, and will not add anything to the conversation history.
+        Args:
+            type_: The type of the action to be logged.
+            value: The content value of the action to be logged.
+        """
         action = {'type': type_, 'content': value}
         self.log_event("GM", "GM", action)
 
     def add_message(self, player: Player, utterance: str, role: str):
+        """Adds a message to the conversation history.
+        This method is used to iteratively create the conversation history, but will not log/record messages
+        automatically.
+        Args:
+            player: The Player instance that produced the message. This is usually a model output, but can be the game's
+                GM as well, if it directly adds messages to the conversation history. TODO: Check use
+            utterance: The text content of the message to be added.
+            role: The chat/instruct conversation role to use for this message. Either 'user' or 'assistant', or 'system'
+                for models/templates that support it. This is important to properly apply chat templates. Some chat
+                templates require that roles always alternate between messages!
+        """
         message = {"role": role, "content": utterance}
         history = self.messages_by_names[player.descriptor]
         history.append(message)
 
     def add_user_message(self, player: Player, utterance: str):
+        """Adds a message with the 'user' role to the conversation history.
+        This method is to be used for 'user' messages, usually the initial prompt and GM response messages. Used to
+        iteratively create the conversation history, but will not log/record messages automatically.
+        Args:
+            player: The Player instance that produced the message. This is usually the game's GM, if it directly adds
+                messages to the conversation history. TODO: Check use
+            utterance: The text content of the message to be added.
+        """
         self.add_message(player, utterance, role="user")
 
     def add_assistant_message(self, player: Player, utterance: str):
+        """Adds a message with the 'assistant' role to the conversation history.
+        This method is to be used for 'assistant' messages, usually model outputs. Used to iteratively create the
+        conversation history, but will not log/record messages automatically.
+        Args:
+            player: The Player instance that produced the message.
+            utterance: The text content of the message to be added.
+        """
         self.add_message(player, utterance, role="assistant")
 
     def __validate_parse_and_add_player_response(self, player: Player, utterance: str):
+        """Checks player response validity, parses it and adds it to the conversation history.
+        Part of the play loop, not intended to be modified - modify _validate_player_response, _on_parse_response and/or
+        _after_add_player_response instead.
+        Args:
+            player: The Player instance that produced the response.
+            utterance: The text content of the response.
+        """
         # todo: it seems we should change the order here: Parse should come first, and then validate.
         # While parse might throw a parsing (format error) validate would check solely for satisfied game rules.
         # Note: this would allow to cut off too long responses (during parse) and to only validate on the cut off piece.
@@ -675,32 +941,37 @@ class DialogueGameMaster(GameMaster):
             self._after_add_player_response(player, utterance)
 
     def _after_add_player_response(self, player: Player, utterance: str):
-        """
-        Hook
-
-        Add the utterance to other player's history, if necessary.
-        To do this use the method add_user_message(other_player,utterance).
-
-        :param player: that produced the response (or has been modified by the GM)
-        :param utterance: that has been added
+        """Method executed after a player response has been validated and added to the conversation history.
+        Hook: Modify this method for game-specific functionality.
+        Add the utterance to other player's history, if necessary. To do this use the method
+        add_user_message(other_player,utterance).
+        Args:
+            player: The Player instance that produced the response (or has been modified by the GM).
+            utterance: The text content of the message that was added.
         """
         pass
 
     def _validate_player_response(self, player: Player, utterance: str) -> bool:
-        """
-        Hook
-
-        Decide if an utterance should be added.
-
+        """Decide if an utterance should be added to the conversation history.
+        Hook: Modify this method for game-specific functionality.
         This is also the place to check for game end conditions.
-
-        :param player: for which the response is added as "assistant" to the history
-        :param utterance: to be added
-        :return: the True, if the utterance is fine; False, if the response should not be added to the history
+        Args:
+            player: The Player instance for which the response is added as "assistant" to the history.
+            utterance: The text content of the message to be added.
+        Returns:
+            True, if the utterance is fine; False, if the response should not be added to the history.
         """
         return True
 
     def __parse_response(self, player: Player, utterance: str) -> str:
+        """Parses a response and logs the message parsing result.
+        Part of the validate-parse loop, not intended to be modified - modify _on_parse_response instead.
+        Args:
+            player: The Player instance that produced the response.
+            utterance: The text content of the response.
+        Returns:
+            The response content, potentially modified by the _on_parse_response method.
+        """
         _utterance, log_action = self._on_parse_response(player, utterance)
         if _utterance == utterance:
             return utterance
@@ -710,77 +981,105 @@ class DialogueGameMaster(GameMaster):
         return _utterance
 
     def _on_parse_response(self, player: Player, utterance: str) -> Tuple[str, bool]:
-        """
-        Hook
-
-        Decide if a response utterance should be modified. If not simply return the utterance.
-
+        """Decide if a response utterance should be modified and apply modifications.
+        Hook: Modify this method for game-specific functionality.
+        If no modifications are applied, this method must simply return a tuple of the utterance and True.
         When a modified utterance and a true value is returned, then a 'parse' event is logged.
-
-        :param player: that produced the response
-        :param utterance: to be potentially modified
-        :return: the (modified) utterance and if to log the parse action (default: True)
+        Args:
+            player: The Player instance that produced the response. Intended to allow for individual handling of
+                different players.
+            utterance: The text content of the response.
+        Returns:
+            A tuple of the (modified) utterance, and a bool to determine if the parse action is to be logged (default:
+            True).
         """
         return utterance, True
 
     def _on_before_turn(self, turn_idx: int):
-        """
-        Hook
+        """Executed in play loop after turn advance and before proceed check and prompting.
+        Hook: Modify this method for game-specific functionality.
+        Args:
+            turn_idx: The current turn index.
         """
         pass
 
     def _on_after_turn(self, turn_idx: int):
-        """
-        Hook
+        """Executed in play loop after prompting.
+        Hook: Modify this method for game-specific functionality.
+        Args:
+            turn_idx: The current turn index.
         """
         pass
 
     def __player_sequence(self) -> List[Player]:
-        # basic implementation: return players in the order they are added
+        """Return players in the order they are added.
+        Returns:
+            List of Player instances in the order they are added.
+        """
         return self.get_players()
 
     def _does_game_proceed(self) -> bool:
-        """
-        Template method: must be implemented
+        """Check if game should proceed.
+        Template method: Must be implemented!
+        This method is used to determine if a game should continue or be stopped. Both successful completion of the game
+        and game-ending failures should lead to this method returning False.
+        Returns:
+            A bool, True if game continues, False if game should stop.
         """
         raise NotImplementedError()
 
     def _on_before_game(self):
-        """
-        Hook
+        """Executed once at the start, before entering the play loop.
+        Hook: Modify this method for game-specific functionality.
+        Adding the initial prompt to the dialogue history with this method is recommended.
         """
         pass
 
     def _on_after_game(self):
-        """
-        Hook
+        """Executed once at the end, after exiting the play loop.
+        Hook: Modify this method for game-specific functionality.
+        This method is useful to process and log/record overall game results.
         """
         pass
 
 
 class GameBenchmark(GameResourceLocator):
+    """Organizes the run of a particular collection of game instances which compose a benchmark for the game.
+    Supports different experiment conditions for games.
     """
-    The GameBenchmark organizes the run of a particular collection of game instances
-    which compose a benchmark for the game. It supports different experiment conditions for games.
-    """
-
     def __init__(self, name: str):
+        """
+        Args:
+            name: The name of the game.
+        """
         super().__init__(name)
         self.instances = None
         self.filter_experiment: List[str] = []
 
     def get_description(self) -> str:
-        """
-        A short string describing the game. Will be shown when listing the games.
-        :return: game description
+        """Get a short string describing the game.
+        Will be shown when listing the games.
+        Must be implemented!
+        Returns:
+            A game description as string.
         """
         raise NotImplementedError()
 
     def setup(self, game_path: str, instances_name: str = None):
+        """Set up a benchmark run of a clemgame.
+        Args:
+            game_path: Path to the game directory.
+            instances_name: Name of the instances JSON file to be used for the benchmark run.
+        """
         self.game_dir = game_path
         self.instances = self.load_instances(game_path, instances_name)
 
     def build_transcripts(self, results_dir: str = None):
+        """Create and store readable HTML and LaTeX episode transcripts.
+        Transcripts are stored in each corresponding episode directory.
+        Args:
+            results_dir: Path to the results directory.
+        """
         results_root = file_utils.results_root(results_dir)
         dialogue_partners = [file for file in os.listdir(results_root)
                              if os.path.isdir(os.path.join(results_root, file))]
@@ -833,6 +1132,12 @@ class GameBenchmark(GameResourceLocator):
                         f"{self.name}: '{error_count}' exceptions occurred: See clembench.log for details.")
 
     def compute_scores(self, results_dir: str = None):
+        """Compute and store scores for each episode and player pair.
+        Episode score JSON files are stored in each corresponding episode directory. Combined scores for a player/model
+        pair are stored in the player pair directory.
+        Args:
+            results_dir: Path to the results directory.
+        """
         results_root = file_utils.results_root(results_dir)
         dialogue_partners = [file for file in os.listdir(results_root)
                              if os.path.isdir(os.path.join(results_root, file))]
@@ -877,8 +1182,7 @@ class GameBenchmark(GameResourceLocator):
                         f"{self.name}: '{error_count}' exceptions occurred: See clembench.log for details.")
 
     def run(self, player_models: List[backends.Model], results_dir: str = None):
-        """
-        Runs game-play on all game instances for a game.
+        """Runs game-play on all game instances for a game.
         There must be an instances.json with the following structure:
         "experiments": [ # this is required
             {
@@ -901,6 +1205,10 @@ class GameBenchmark(GameResourceLocator):
                             - episode_id
                                 - instance.json
                                 - interaction.json
+
+        Args:
+            player_models: A list of backends.Model instances to run the game with.
+            results_dir: Path to the results directory.
         """
         results_root = file_utils.results_root(results_dir)
         experiments: List = self.instances["experiments"]
@@ -1009,25 +1317,38 @@ class GameBenchmark(GameResourceLocator):
                                         root_dir=results_root)
 
     def is_single_player(self) -> bool:
-        """
-        Decide if only a single cLLM is part of the interaction.
-
-        :return: true, when '-m all' should not try all model combinations, but only all models individually
+        """Decide if only a single cLLM is part of the interaction.
+        Returns:
+            True, when '-m all' should not try all model combinations, but only all models individually.
         """
         return False
 
     def create_game_master(self, experiment: Dict, player_models: List[backends.Model]) -> GameMaster:
+        """Create a game-specific GameMaster subclass instance to run the game with.
+        Must be implemented!
+        Args:
+            experiment: The experiment (set of instances) to run.
+            player_models: Player models to use for one or two players.
+        Returns:
+            A game-specific GameMaster subclass instance.
+        """
         raise NotImplementedError()
 
     def create_game_scorer(self, experiment: Dict, game_instance: Dict) -> GameScorer:
+        """Create a game-specific GameScorer subclass instance to score benchmark records with.
+        Must be implemented!
+        Args:
+            experiment: The experiment (set of instances) to score.
+            game_instance: The game instance to score.
+        Returns:
+            A game-specific GameScorer subclass instance.
+        """
         raise NotImplementedError()
 
 
 class GameInstanceGenerator(GameResourceLocator):
-    """
-    Create all game instances for a game benchmark.
-
-    Results in a instances.json with the following structure:
+    """Create all game instances for a game benchmark.
+    Results in an instances.json with the following structure:
 
     "experiments": [ # this is required
         {
@@ -1041,18 +1362,25 @@ class GameInstanceGenerator(GameResourceLocator):
         }
     ]
     """
-
     def __init__(self, name: str):
+        """
+        Args:
+            name: The name of the game.
+        """
         super().__init__(name)
         self.instances = dict(experiments=list())
 
     def add_experiment(self, experiment_name: str, dialogue_partners: List[Tuple[str, str]] = None) -> Dict:
-        """
+        """Add an experiment to the game benchmark.
+        Experiments are sets of instances, usually with different experimental variables than other experiments in a
+        game benchmark.
         Call this method and adjust the returned dict to configure the experiment.
         For game instances use add_game_instance!
-        :param experiment_name: of the new game instance
-        :param dialogue_partners: a list of partner definitions for which the experiment will run
-        :return: a new game instance dict
+        Args:
+            experiment_name: Name of the new game experiment.
+            dialogue_partners: A list of partner definitions for which the experiment will run.
+        Returns:
+            A new game experiment dict.
         """
         experiment = collections.OrderedDict(name=experiment_name)
         if dialogue_partners:
@@ -1062,35 +1390,60 @@ class GameInstanceGenerator(GameResourceLocator):
         return experiment
 
     def add_game_instance(self, experiment: Dict, game_id):
-        """
+        """Add an instance to an experiment.
+        An instance holds all data to run a single episode of a game.
         Call this method and adjust the returned dict to configure the instance.
-        :param experiment: to which a new game instance should be added
-        :param game_id: of the new game instance
-        :return: a new game instance dict
+        Args:
+            experiment: The experiment to which a new game instance should be added.
+            game_id: Identifier of the new game instance.
+        Returns:
+            A new game instance dict.
         """
         game_instance = dict(game_id=game_id)
         experiment["game_instances"].append(game_instance)
         return game_instance
 
     def on_generate(self, **kwargs):
-        """
-        Game-specific instance generation.
+        """Game-specific instance generation.
+        This method is intended for creation of instances and experiments for a game benchmark. Use the add_experiment
+        and add_game_instance methods to create the game benchmark.
+        Must be implemented!
+        Args:
+            kwargs: Keyword arguments (or dict) with data controlling instance generation.
         """
         raise NotImplementedError()
 
     def generate(self, filename="instances.json", **kwargs):
+        """Generate the game benchmark and store the instances JSON file.
+        Intended to not be modified by inheriting classes, modify on_generate instead.
+        Args:
+            filename: The name of the instances JSON file to be stored in the 'in' subdirectory. Defaults to
+                'instances.json'.
+            kwargs: Keyword arguments (or dict) to pass to the on_generate method.
+        """
         self.on_generate(**kwargs)
         self.store_file(self.instances, filename, sub_dir="in")
 
 
 def is_game(obj):
-    # check whether a class inherited from GameBenchmark
+    """Check whether a class inherited from GameBenchmark.
+    Args:
+        obj: The object instance to check.
+    Returns:
+        True if the passed object is a subclass of GameBenchmark, False otherwise.
+    """
     if inspect.isclass(obj) and issubclass(obj, GameBenchmark):
         return True
     return False
 
 
 def load_game(game_spec: GameSpec, do_setup: bool = True, instances_name: str = None) -> GameBenchmark:
+    """Load a clemgame using a GameSpec.
+    Args:
+        game_spec: A GameSpec instance holding specific clemgame data.
+        do_setup: Determines if the clemgame's setup method will be executed upon loading.
+        instances_name: The name of the instances file to be used for the clemgame's setup if do_setup is True.
+    """
     # append game directory to system path for loading game specific dependencies
     sys.path.insert(0, game_spec.game_path)
     # load game module from this master file

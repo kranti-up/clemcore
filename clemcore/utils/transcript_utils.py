@@ -89,6 +89,13 @@ TEX_FOOTER = '''
 
 
 def _get_class_name(event):
+    """Get a string representation of the direction of a message.
+    Example: A message from the game's GM to Player 1 is represented by the string 'gm-a'.
+    Args:
+        event: The interaction record event to get the message direction for.
+    Returns:
+        The string representation of the direction of the message in the passed interaction event.
+    """
     if event['from'] == 'GM' and event['to'] == 'Player 1':
         return "gm-a"
     if event['from'] == 'GM' and event['to'] == 'Player 2':
@@ -102,7 +109,14 @@ def _get_class_name(event):
 
 
 def build_transcript(interactions: Dict, experiment_config: Dict, game_instance: Dict, dialogue_pair: str):
-    """Create an html with the interaction transcript."""
+    """Create an HTML file with the interaction transcript.
+    The file is stored in the corresponding episode directory.
+    Args:
+        interactions: An episode interaction record dict.
+        experiment_config: An experiment configuration dict.
+        game_instance: The instance dict the episode interaction record is based on.
+        dialogue_pair: The model pair descriptor string for the Players.
+    """
     transcript = HTML_HEADER.format(CSS_STRING)
     title = f"Interaction Transcript for {experiment_config['name']}, " \
             f"episode {game_instance['game_id']} with {dialogue_pair}."
@@ -148,6 +162,11 @@ def build_transcript(interactions: Dict, experiment_config: Dict, game_instance:
 
 
 def build_tex(interactions: Dict):
+    """Create a LaTeX .tex file with the interaction transcript.
+    The file is stored in the corresponding episode directory.
+    Args:
+        interactions: An episode interaction record dict.
+    """
     tex = TEX_HEADER
     # Collect all events over all turns (ignore turn boundaries here)
     events = [event for turn in interactions['turns'] for event in turn]
