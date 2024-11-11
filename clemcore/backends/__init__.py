@@ -221,7 +221,7 @@ _model_registry: List[ModelSpec] = list()  # we store model specs so that users 
 def load_custom_model_registry(_model_registry_path: str = None, is_optional=True):
     if not _model_registry_path:
         _model_registry_path = os.path.join(file_utils.clemcore_root(), "backends",
-                                            "model_registry_custom.json.template")
+                                            "model_registry_custom.json")
     load_model_registry(_model_registry_path, is_mandatory=not is_optional)
 
 
