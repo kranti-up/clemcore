@@ -1,10 +1,8 @@
-"""
-Script to check model registry entries for regEx in EOS culling strings.
+"""Script to check model registry entries for regEx in EOS culling strings.
 Run this script after adding new model entries for the HuggingFace, llama-cpp and vLLM backends. These backends use
 re.sub to cull EOS and other sequences at the end of model outputs flexibly - but this means that characters/substrings
 that can be parsed as special python regEx special characters/sequences need to be properly escaped if they are part of
-the model's special tokens and/or chat template.
-"""
+the model's special tokens and/or chat template."""
 
 import json
 import os
@@ -17,6 +15,11 @@ regex_sequences = [r"\A", r"\b", r"\B", r"\d", r"\D", r"\s", r"\S", r"\w", r"\W"
 
 
 def check_model_registry_eos(model_registry_path):
+    """Check model registry entries for potential eos_to_cull issues.
+    Prints results to terminal.
+    Args:
+        model_registry_path: Path to the model registry JSON file.
+    """
     # load model registry:
     with open(model_registry_path, 'r', encoding='utf-8') as registry_file:
         model_registry = json.load(registry_file)

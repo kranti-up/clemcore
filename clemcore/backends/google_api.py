@@ -1,5 +1,5 @@
 import logging
-from typing import List, Dict, Tuple, Any
+from typing import List, Dict, Tuple, Any, Union
 from retry import retry
 import google.generativeai as genai
 import os
@@ -17,26 +17,41 @@ NAME = "google"
 
 
 class Google(backends.Backend):
-
+    """Backend class for accessing the Google remote API."""
     def __init__(self):
         creds = backends.load_credentials(NAME)
         genai.configure(api_key=creds[NAME]["api_key"])
 
     def get_model_for(self, model_spec: backends.ModelSpec) -> backends.Model:
+        """Get a Google model instance based on a model specification.
+        Args:
+            model_spec: A ModelSpec instance specifying the model.
+        Returns:
+            A Google model instance based on the passed model specification.
+        """
         return GoogleModel(model_spec)
 
 
 class GoogleModel(backends.Model):
-
+    """Model class accessing the Google remote API."""
     def __init__(self, model_spec: backends.ModelSpec):
+        """
+        Args:
+            model_spec: A ModelSpec instance specifying the model.
+        """
         super().__init__(model_spec)
 
         self.model = genai.GenerativeModel(
             model_name=model_spec.model_id
         )
 
-
-    def download_image(self, image_url):
+    def download_image(self, image_url) -> Union[str, None]:
+        """Download an image from a URL.
+        Args:
+            image_url: The URL to download the image from.
+        Returns:
+            The file path to the downloaded image or None if the image could not be downloaded.
+        """
         # Create a temporary directory
         temp_dir = tempfile.mkdtemp()
 
@@ -58,15 +73,25 @@ class GoogleModel(backends.Model):
             print(f"Failed to download {image_url}: {e}")
             return None
 
-    def upload_file(self, file_path, mime_type):
+    def upload_file(self, file_path, mime_type) -> genai.File:
         """Uploads the given file to Gemini.
-
         See https://ai.google.dev/gemini-api/docs/prompting_with_media
+        Args:
+            file_path: Path to the file to upload.
+            mime_type: The mime type of the file to upload.
+        Returns:
+            The (URL of the) uploaded file.
         """
         file_url = genai.upload_file(file_path, mime_type=mime_type)
         return file_url
 
-    def encode_images(self, images):
+    def encode_images(self, images) -> List[genai.File]:
+        """Encode images and upload them to Gemini allow sending them to the Google remote API.
+        Args:
+            images: Paths to the images to be encoded.
+        Returns:
+            A list of the (URLs of the) encoded and uploaded files.
+        """
         image_parts = []
 
         for image_path in images:
@@ -80,6 +105,18 @@ class GoogleModel(backends.Model):
         return image_parts
 
     def encode_messages(self, messages):
+        """Encode a message history containing images to allow sending it to the Google remote API.
+        Args:
+            messages: A message history. For example:
+                [
+                    {"role": "system", "content": "You are a helpful assistant."},
+                    {"role": "user", "content": "Who won the world series in 2020?"},
+                    {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
+                    {"role": "user", "content": "Where was it played?"}
+                ]
+        Returns:
+            A tuple of the message history list with encoded images and the message history list for logging.
+        """
         encoded_messages = []
         encoded_messages_for_logging = []
 
@@ -114,15 +151,17 @@ class GoogleModel(backends.Model):
     @retry(tries=10, delay=120, logger=logger)
     @ensure_messages_format
     def generate_response(self, messages: List[Dict]) -> Tuple[str, Any, str]:
-        """
-        :param messages: for example
+        """Request a generated response from the Google remote API.
+        Args:
+            messages: A message history. For example:
                 [
                     {"role": "system", "content": "You are a helpful assistant."},
                     {"role": "user", "content": "Who won the world series in 2020?"},
                     {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
                     {"role": "user", "content": "Where was it played?"}
                 ]
-        :return: the continuation
+        Returns:
+            The generated response message returned by the Google remote API.
         """
 
         generation_config = {
