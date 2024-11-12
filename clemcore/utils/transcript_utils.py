@@ -6,7 +6,7 @@ import clemcore.utils.file_utils as file_utils
 
 import html
 
-CSS_FILE = os.path.join(file_utils.project_utils(), "chat-two-tracks.css")
+CSS_FILE = os.path.join(file_utils.clemcore_root(), "utils", "chat-two-tracks.css")
 CSS_STRING = file_utils.load_file(CSS_FILE, file_ending=".css")
 
 HTML_HEADER = '''

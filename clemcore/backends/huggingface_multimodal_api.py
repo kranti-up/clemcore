@@ -1,4 +1,5 @@
 """Backend using HuggingFace transformers for open-weight multimodal models."""
+
 import logging
 from typing import List, Dict, Tuple, Any
 import torch
