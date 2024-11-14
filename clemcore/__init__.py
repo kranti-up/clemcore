@@ -1,4 +1,5 @@
 """ Main entry point """
+import textwrap
 from typing import List, Dict
 import os.path
 import logging
@@ -50,9 +51,13 @@ def list_games():
     See game registry doc for more infos (TODO: add link)
     TODO: add filtering options to see only specific games
     """
-    stdout_logger.info("Listing all available games:")
+    stdout_logger.info("Listing all available games")
     for game in clemgame.game_registry:
-        stdout_logger.info(f' Game:{game["game_name"]} -> {game["description"]}')
+        game_name = f'{game["game_name"]}:\n'
+        preferred_width = 70
+        wrapper = textwrap.TextWrapper(initial_indent="\t", width=preferred_width,
+                                       subsequent_indent="\t")
+        print(game_name, wrapper.fill(game["description"]))
 
 
 def run(game_name: str, model_specs: List[backends.ModelSpec], gen_args: Dict,
