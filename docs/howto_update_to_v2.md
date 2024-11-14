@@ -4,7 +4,7 @@ The current update contains a refactoring of the clembench core code in order to
 
 Why was this neccesary? 
 - As more and more games are being developed, they blow up the repository and the requirements, motivating the move to separate them from the core framework.
-- Now we do not need to load all games anymore at the start. A `game_registry` now contains the `game_path` and the `game_name` of all possible games, but only the currently specified one is actually loaded.
+- Now we do not need to load all games anymore at the start. A `game_registry` now contains the `game_path` and the `game_name` of all possible games, but only the game passed to `cli.py` is actually loaded.
 
 IMPORTANT: In order to avoid loosing any game code, please copy (or move) your game code from `clembench/games/YOUR_GAME` to a separate location (ideally create a new github repository) before updating your clembench fork. If you want to keep your commit history, [here](https://docs.github.com/en/get-started/using-git/splitting-a-subfolder-out-into-a-new-repository) is a guide on how to extract a subfolder into a new repository. 
 
@@ -19,9 +19,9 @@ To add games that are not (yet) addd to the official collection, create an entry
     "game_path": "../clemgames/taboo", # relative to clembench or absolute 
     "description": "Taboo game between two agents where one has to describe a word for the other to guess.", # copied from GameBenchmark get_description() in master.py
     "main_game": "taboo", # relevant for games with different versions, otherwise same as game_name
-    "player": "two", # [single|multi]
-    "image": "none", # [single|multi]
-    "language": ["en"], # use ISO- codes for available languages
+    "players": "two", # [one|multi]
+    "image": "none", # [one|multi]
+    "languages": ["en"], # use ISO- codes for available languages
   }
 ]
 ```
@@ -41,25 +41,54 @@ The InstanceGenerator only needs access to the game resources, which is now defi
 +         super().__init__(os.path.dirname(__file__))
 
 ```
-In master.py, `GAME_NAME` is also removed as a variable and instantiated from `clemcore/clemgame/game_registry.json` instead (allowing future adaptions like different versions of games pointing to the same game code but defining variations in terms of parameters).
+In master.py, `GAME_NAME` is also removed as a variable and `self.game_name` and `self.game_path` are instantiated from `clemcore/clemgame/game_registry.json` instead (allowing future adaptions like different versions of games pointing to the same game code but defining variations in terms of parameters). 
+The method `applies_to(cls, game_name: str)` is no longer needed.
+
 
 The GameScorer doesn't need access to the game resources but only requires `self.game_name` to configure the results path.
 
+In the GameBenchmark class, the game description and the number of players are now also extracted from the GameSpec (via the `game_registry`).
 ```python
 # master.py
 
 - GAME_NAME = "taboo"
 
+  class Taboo(DialogueGameMaster):
+    
+-     def __init__(self, experiment: Dict, player_models: List[Model]):
+-         super().__init__(GAME_NAME, experiment, player_models)
++     def __init__(self, game_name: str, game_path: str, experiment: Dict, player_models: List[Model]):
++         super().__init__(game_name, game_path, experiment, player_models)
+
+        ...
+
+-     @classmethod
+-     def applies_to(cls, game_name: str) -> bool:
+-         return game_name == GAME_NAME
+  
+        ...
+        
+  class TabooScorer(GameScorer):
+    
+-     def __init__(self, experiment: Dict, game_instance: Dict):
+-         super().__init__(GAME_NAME, experiment, game_instance)
++     def __init__(self, game_name: str, experiment: Dict, game_instance: Dict):
++         super().__init__(game_name, experiment, game_instance)
+
+    
   class TabooGameBenchmark(GameBenchmark):
 
 -      def __init__(self):
 -          super().__init__(GAME_NAME)
 
 +     def __init__(self, game_spec: GameSpec): 
-+          super().__init__(game_spec["game_name"], game_spec["game_path"])
++          super().__init__(game_spec)
 
 -     def get_description(self):
 -         return "Taboo game between two agents where one has to describe a word for the other to guess."
+
+-     def is_single_player(self):
+-         return False
 
       def create_game_master(self, experiment: Dict, player_models: List[Model]) -> DialogueGameMaster:
 -         return Taboo(experiment, player_models)
@@ -69,24 +98,7 @@ The GameScorer doesn't need access to the game resources but only requires `self
 -         return TabooScorer(experiment, game_instance)
 +         return TabooScorer(self.game_name, experiment, game_instance)     
 
-```
-and accordingly
-```python
-class Taboo(DialogueGameMaster):
-    
--     def __init__(self, experiment: Dict, player_models: List[Model]):
--         super().__init__(GAME_NAME, experiment, player_models)
-+     def __init__(self, game_name: str, game_path: str, experiment: Dict, player_models: List[Model]):
-+         super().__init__(game_name, game_path, experiment, player_models)
-
-        ...
-    
-class TabooScorer(GameScorer):
-    
--     def __init__(self, experiment: Dict, game_instance: Dict):
--         super().__init__(GAME_NAME, experiment, game_instance)
-+     def __init__(self, game_name: str, experiment: Dict, game_instance: Dict):
-+         super().__init__(game_name, experiment, game_instance)
+#TODO: add adaption for main() here as well
 
 ```
 
