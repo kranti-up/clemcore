@@ -234,17 +234,21 @@ class GameResourceLocator(abc.ABC):
     Note: You should access resource only via the game resource locator! The locator knows how to refer to them.
     For example use: `gm.load_json("my_file")` which is located directly at your game directory `game/my_file.json`.
     You can access subdirectories by giving `gm.load_json("sub/my_file")` in `game/sub/my_file.json`.
+
+    Makes a distinction between game files (which live in the game path specified in `self.game_path`)
+    and the results files, which live in the results directory (`clembench/results` if not set otherwise)
+    under `results/dialogue_pair/self.game_name/`
     """
 
-    def __init__(self, name: str, path: str = None):
+    def __init__(self, name: str = None, path: str = None):
         """
 
         Args:
-            name: name of the game (as specified in game_registry)
-            path: path to the game (as specified in game_registry, optional, because not needed for GameScorer)
+            game_name: name of the game (optional, because not needed for GameInstanceGenerator)
+            ga,e_path: path to the game (optional, because not needed for GameScorer)
         """
-        self.game_name = name # for building results structure
-        self.game_path = path # for accessing game resources
+        self.game_name = name  # for building results structure
+        self.game_path = path  # for accessing game resources
         self.logger = logging.getLogger(self.__class__.__module__)
 
     # def file_path(self, file_name: str) -> str:
@@ -263,15 +267,6 @@ class GameResourceLocator(abc.ABC):
         if instances_name is None:
             instances_name = "instances"
         return file_utils.load_json(f"in/{instances_name}", self.game_path)
-        # TODO check if the following can be removed now
-        # if not instances_name.endswith(".json"):
-        #     instances_name += ".json"
-        # if not os.path.isabs(self.game_path):
-        #     game_path = os.path.join(file_utils.project_root(), self.game_path)
-        # game_file_path = os.path.join(game_path, "in", instances_name)
-        # with open(game_file_path, encoding='utf8') as f:
-        #     instances = json.load(f)
-        # return instances
 
     def load_template(self, file_name: str) -> str:
         """
@@ -283,7 +278,7 @@ class GameResourceLocator(abc.ABC):
 
     def load_json(self, file_name: str) -> Dict:
         """
-        Load a .json file from your game (or game results) directory
+        Load a .json file from your game directory
         :param file_name: can have subdirectories e.g. "sub/my_file"
         :return: the file contents
         """
@@ -291,7 +286,7 @@ class GameResourceLocator(abc.ABC):
 
     def load_results_json(self, file_name: str, results_dir: str, dialogue_pair: str) -> Dict:
         """
-        Load a .json file from your game (or game results) directory
+        Load a .json file from your game results directory
         :param file_name: can have subdirectories e.g. "sub/my_file"
         :return: the file contents
         """
@@ -316,13 +311,13 @@ class GameResourceLocator(abc.ABC):
 
     def store_file(self, data, file_name: str, sub_dir: str = None):
         """
-        Store a file in your game directory. The top-level directory is 'games'.
+        Store a file in your game directory.
 
         :param sub_dir: automatically created when given; otherwise an error will be thrown.
         :param data: to store
-        :param file_name: can have subdirectories e.g. "sub/my_file"
+        :param file_name: can have subdirectories e.g. "sub/my_file" TODO: isn't this redundant, as sub_dir can also be given explicitly?
         """
-        fp = file_utils.store_file(data, file_name, self.game_name, sub_dir=sub_dir)
+        fp = file_utils.store_file(data, file_name, self.game_path, sub_dir=sub_dir)
         self.logger.info("Game file stored to %s", fp)
 
     def store_results_file(self, data, file_name: str, dialogue_pair: str, sub_dir: str = None, root_dir: str = None):
@@ -341,8 +336,6 @@ class GameResourceLocator(abc.ABC):
 
 
 class GameRecorder(GameResourceLocator):
-    """ TODO: combine with GameMaster, because no other class inherits from it
-    """
 
     def __init__(self, name: str, path: str):
         super().__init__(name, path)
@@ -475,7 +468,7 @@ class GameScorer(GameResourceLocator):
     Calculates scores based on interaction logs.
     """
     def __init__(self, name: str, experiment: Dict, game_instance: Dict):
-        super().__init__(name)
+        super().__init__(name=name)
         self.experiment = experiment
         self.game_instance = game_instance
         """ Stores values of score computation """
@@ -774,18 +767,11 @@ class GameBenchmark(GameResourceLocator):
     which compose a benchmark for the game. It supports different experiment conditions for games.
     """
 
-    def __init__(self, name: str, path: str):
-        super().__init__(name, path)
+    def __init__(self, game_spec: GameSpec):
+        super().__init__(game_spec["game_name"], game_spec["game_path"])
         self.instances = None
         self.filter_experiment: List[str] = []
-
-    def get_description(self) -> str:
-        """
-        A short string describing the game. Will be shown when listing the games.
-        :return: game description
-        # TODO remove (i.e., move existing descriptions to game registry)
-        """
-        raise NotImplementedError()
+        self.is_single_player = True if game_spec["players"] == "one" else False
 
     def setup(self, instances_name: str = None):
         self.instances = self.load_instances(instances_name)
@@ -945,7 +931,7 @@ class GameBenchmark(GameResourceLocator):
                 raise ValueError(message)
 
             for dialogue_pair in dialogue_partners:
-                if self.is_single_player():
+                if self.is_single_player:
                     if len(dialogue_pair) > 1:
                         message = f"Too many player for singe-player game '{self.game_name}': '{len(dialogue_partners)}'"
                         stdout_logger.error(message)
@@ -1018,14 +1004,6 @@ class GameBenchmark(GameResourceLocator):
                                         sub_dir=experiment_record_dir,
                                         root_dir=results_root)
 
-    def is_single_player(self) -> bool:
-        """
-        Decide if only a single cLLM is part of the interaction.
-
-        :return: true, when '-m all' should not try all model combinations, but only all models individually
-        """
-        return False
-
     def create_game_master(self, experiment: Dict, player_models: List[backends.Model]) -> GameMaster:
         raise NotImplementedError()
 
@@ -1052,8 +1030,8 @@ class GameInstanceGenerator(GameResourceLocator):
     ]
     """
 
-    def __init__(self, name: str):
-        super().__init__(name)
+    def __init__(self, path: str):
+        super().__init__(path=path)
         self.instances = dict(experiments=list())
 
     def add_experiment(self, experiment_name: str, dialogue_partners: List[Tuple[str, str]] = None) -> Dict:
