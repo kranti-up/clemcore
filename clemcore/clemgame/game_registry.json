@@ -4,19 +4,19 @@
     "game_path": "../clemgames/cloudgame",
     "description": "A simple game in which a player has to decide whether they see clouds or not and a second player has to judge this response.",
     "main_game": "cloudgame",
-    "player": "two",
+    "players": "two",
     "image": "single",
-    "language": ["en"],
+    "languages": ["en"],
     "benchmark": []
   },
   {
     "game_name": "hellogame",
     "game_path": "../clemgames/hellogame",
-    "description": "Hello game between a greeter and a greeted player",
+    "description": "Hello game between a greeter and a greeted players",
     "main_game": "hellogame",
-    "player": "two",
+    "players": "two",
     "image": "none",
-    "language": ["en"],
+    "languages": ["en"],
     "benchmark": []
   },
   {
@@ -24,9 +24,9 @@
     "game_path": "../clemgames/taboo",
     "description": "Taboo game between two agents where one has to describe a word for the other to guess.",
     "main_game": "taboo",
-    "player": "two",
+    "players": "two",
     "image": "none",
-    "language": ["en"],
+    "languages": ["en"],
     "benchmark": ["0.9", "1.0", "1.5", "2.0"]
   },
     {
@@ -34,9 +34,9 @@
     "game_path": "../clemgames/referencegame",
     "description": "Reference Game between two agents where one has to describe one of three grids and the other has to guess which one it is.",
     "main_game": "referencegame",
-    "player": "two",
+    "players": "two",
     "image": "none",
-    "language": ["en"],
+    "languages": ["en"],
     "benchmark": ["0.9", "1.0", "1.5", "2.0"]
   },
   {
@@ -44,9 +44,9 @@
     "game_path": "../clemgames/imagegame",
     "description": "Image Game simulation to generate referring expressions and fill a grid accordingly",
     "main_game": "imagegame",
-    "player": "two",
+    "players": "two",
     "image": "none",
-    "language": ["en"],
+    "languages": ["en"],
     "benchmark": ["0.9", "1.0", "1.5", "2.0"]
   },
   {
@@ -54,9 +54,9 @@
     "game_path": "../clemgames/privateshared",
     "description": "Questioner and answerer in scorekeeping game.",
     "main_game": "privateshared",
-    "player": "two",
+    "players": "two",
     "image": "none",
-    "language": ["en"],
+    "languages": ["en"],
     "benchmark": ["0.9", "1.0", "1.5", "2.0"]
   },
     {
@@ -64,9 +64,9 @@
     "game_path": "../clemgames/matchit_ascii",
     "description": "A simple game in which two players have to decide whether they see the same ascii image or not.",
     "main_game": "matchit",
-    "player": "two",
+    "players": "two",
     "image": "none",
-    "language": ["en"],
+    "languages": ["en"],
     "benchmark": ["2.0"]
   },
     {
@@ -74,9 +74,9 @@
     "game_path": "../clemgames/codenames",
     "description": "Codenames game between a cluegiver and a guesser",
     "main_game": "codenames",
-    "player": "two",
+    "players": "two",
     "image": "none",
-    "language": ["en"],
+    "languages": ["en"],
     "benchmark": ["2.0"]
   },
   {
@@ -84,9 +84,9 @@
     "game_path": "../clemgames/multimodal_referencegame",
     "description": "Reference Game between two agents where one has to describe one of three images and the other has to guess which one it is.",
     "main_game": "referencegame",
-    "player": "two",
+    "players": "two",
     "image": "multi",
-    "language": ["en"],
+    "languages": ["en"],
     "benchmark": ["1.6_mm"]
   }
 ]
