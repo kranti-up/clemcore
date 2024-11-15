@@ -35,6 +35,15 @@ from clemcore.backends import ModelSpec
 
 
 def read_model_specs(model_strings: List[str]):
+    """Get ModelSpec instances for the passed list of models.
+    Takes both simple model names and (partially or fully specified) model specification data as JSON strings.
+    Args:
+        model_strings: List of string names of the models to return ModelSpec instances for. Model name strings
+            correspond to the 'model_name' key value of a model in the model registry. May also be partially or fully
+            specified model specification data as JSON strings.
+    Returns:
+        A list of ModelSpec instances for the passed list of models.
+    """
     model_specs = []
     for model_string in model_strings:
         try:
@@ -48,6 +57,13 @@ def read_model_specs(model_strings: List[str]):
 
 
 def read_gen_args(args: argparse.Namespace):
+    """Get text generation inference parameters from CLI arguments.
+    Handles sampling temperature and maximum number of tokens to generate.
+    Args:
+        args: CLI arguments as passed via argparse.
+    Returns:
+        A dict with the keys 'temperature' and 'max_tokens' with the values parsed by argparse.
+    """
     return dict(temperature=args.temperature, max_tokens=args.max_tokens)
 
 
@@ -68,6 +84,21 @@ def main(args: argparse.Namespace):
 
 
 if __name__ == "__main__":
+    """Main CLI handling function.
+
+    Handles the clembench CLI commands
+
+    - 'ls' to list available clemgames.
+    - 'run' to start a benchmark run. Takes further arguments determining the clemgame to run, which experiments,
+    instances and models to use, inference parameters, and where to store the benchmark records.
+    - 'score' to score benchmark results. Takes further arguments determining the clemgame and which of its experiments
+    to score, and where the benchmark records are located.
+    - 'transcribe' to transcribe benchmark results. Takes further arguments determining the clemgame and which of its
+    experiments to transcribe, and where the benchmark records are located.
+
+    Args:
+        args: CLI arguments as passed via argparse.
+    """
     parser = argparse.ArgumentParser()
     sub_parsers = parser.add_subparsers(dest="command_name")
     sub_parsers.add_parser("ls")

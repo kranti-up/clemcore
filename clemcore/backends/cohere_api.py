@@ -13,33 +13,46 @@ NAME = "cohere"
 
 
 class Cohere(backends.Backend):
-
+    """Backend class for accessing the Cohere remote API."""
     def __init__(self):
         creds = backends.load_credentials(NAME)
         self.client = cohere.Client(creds[NAME]["api_key"])
 
     def get_model_for(self, model_spec: backends.ModelSpec) -> backends.Model:
+        """Get a Cohere model instance based on a model specification.
+        Args:
+            model_spec: A ModelSpec instance specifying the model.
+        Returns:
+            A Cohere model instance based on the passed model specification.
+        """
         return CohereModel(self.client, model_spec)
 
 
 class CohereModel(backends.Model):
-
+    """Model class accessing the Cohere remote API."""
     def __init__(self, client: cohere.Client, model_spec: backends.ModelSpec):
+        """
+        Args:
+            client: A Cohere library Client class.
+            model_spec: A ModelSpec instance specifying the model.
+        """
         super().__init__(model_spec)
         self.client = client
 
     @retry(tries=3, delay=0, logger=logger)
     @ensure_messages_format
     def generate_response(self, messages: List[Dict]) -> Tuple[str, Any, str]:
-        """
-        :param messages: for example
+        """Request a generated response from the Cohere remote API.
+        Args:
+            messages: A message history. For example:
                 [
                     {"role": "system", "content": "You are a helpful assistant."},
                     {"role": "user", "content": "Who won the world series in 2020?"},
                     {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
                     {"role": "user", "content": "Where was it played?"}
                 ]
-        :return: the continuation
+        Returns:
+            The generated response message returned by the Cohere remote API.
         """
         chat_history = []
 

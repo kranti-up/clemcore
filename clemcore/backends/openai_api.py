@@ -16,7 +16,7 @@ NAME = "openai"
 
 
 class OpenAI(backends.Backend):
-
+    """Backend class for accessing the OpenAI remote API."""
     def __init__(self):
         creds = backends.load_credentials(NAME)
         api_key = creds[NAME]["api_key"]
@@ -24,6 +24,10 @@ class OpenAI(backends.Backend):
         self.client = openai.OpenAI(api_key=api_key, organization=organization)
 
     def list_models(self):
+        """List models available on the OpenAI remote API.
+        Returns:
+            A list containing names of models available on the OpenAI remote API.
+        """
         models = self.client.models.list()
         names = [item.id for item in models.data]
         names = sorted(names)
@@ -31,16 +35,34 @@ class OpenAI(backends.Backend):
         # [print(n) for n in names]   # 2024-01-10: what was this? a side effect-only method?
 
     def get_model_for(self, model_spec: backends.ModelSpec) -> backends.Model:
+        """Get an OpenAI model instance based on a model specification.
+        Args:
+            model_spec: A ModelSpec instance specifying the model.
+        Returns:
+            An OpenAI model instance based on the passed model specification.
+        """
         return OpenAIModel(self.client, model_spec)
 
 
 class OpenAIModel(backends.Model):
-
+    """Model class accessing the OpenAI remote API."""
     def __init__(self, client: openai.OpenAI, model_spec: backends.ModelSpec):
+        """
+        Args:
+            client: An OpenAI library OpenAI client class.
+            model_spec: A ModelSpec instance specifying the model.
+        """
         super().__init__(model_spec)
         self.client = client
 
     def encode_image(self, image_path):
+        """Encode an image to allow sending it to the OpenAI remote API.
+        Args:
+            image_path: Path to the image to be encoded.
+        Returns:
+            A tuple with a bool, True if encoding was successful, False otherwise, the image encoded as base64 string
+            and a string containing the image type.
+        """
         if image_path.startswith('http'):
             image_bytes = httpx.get(image_path).content
             image_type = imghdr.what(None, image_bytes)
@@ -49,7 +71,19 @@ class OpenAIModel(backends.Model):
             image_type = imghdr.what(image_path)
             return False, base64.b64encode(image_file.read()).decode('utf-8'), 'image/'+str(image_type)
 
-    def encode_messages(self, messages):
+    def encode_messages(self, messages) -> list:
+        """Encode a message history containing images to allow sending it to the OpenAI remote API.
+        Args:
+            messages: A message history. For example:
+                [
+                    {"role": "system", "content": "You are a helpful assistant."},
+                    {"role": "user", "content": "Who won the world series in 2020?"},
+                    {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
+                    {"role": "user", "content": "Where was it played?"}
+                ]
+        Returns:
+            The message history list with encoded images.
+        """
         encoded_messages = []
 
         for message in messages:
@@ -88,15 +122,17 @@ class OpenAIModel(backends.Model):
     @retry(tries=3, delay=0, logger=logger)
     @ensure_messages_format
     def generate_response(self, messages: List[Dict]) -> Tuple[str, Any, str]:
-        """
-        :param messages: for example
+        """Request a generated response from the OpenAI remote API.
+        Args:
+            messages: A message history. For example:
                 [
                     {"role": "system", "content": "You are a helpful assistant."},
                     {"role": "user", "content": "Who won the world series in 2020?"},
                     {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
                     {"role": "user", "content": "Where was it played?"}
                 ]
-        :return: the continuation
+        Returns:
+            The generated response message returned by the OpenAI remote API.
         """
         prompt = self.encode_messages(messages)
 

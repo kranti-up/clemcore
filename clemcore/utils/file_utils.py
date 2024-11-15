@@ -1,7 +1,5 @@
-"""
-Defines locations within the project structure (for root directories, games and results)
-and supplies several functions for loading and storing files
-"""
+"""Defines locations within the project structure (for root directories, games and results)
+and supplies several functions for loading and storing files."""
 
 from typing import Dict
 import os
@@ -10,22 +8,27 @@ import csv
 
 ######### path construction functions ###################
 
-
 def project_root():
-    """
-        returns absolute path to main directory (clembench)
+    """Get the absolute path to main clembench directory.
+    Returns:
+         The absolute path to main clembench directory as string.
     """
     return os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 def clemcore_root():
-    """
-        returns absolute path to clemcore directory (clembench/clemcore)
+    """Get the absolute path to the framework directory.
+    Returns:
+        The absolute path to the framework directory (clembench/framework) as string.
     """
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def results_root(results_dir: str) -> str:
+    """Get the absolute path to the results root directory.
+    Args:
+        results_dir: The relative path to the results directory inside the clembench directory.
+    """
     if os.path.isabs(results_dir):
         return results_dir
     # if not absolute, results_dir is given relative to project root (see default in cli.py)
@@ -33,6 +36,14 @@ def results_root(results_dir: str) -> str:
 
 
 def game_results_dir(results_dir: str, dialogue_pair: str, game_name: str):
+    """Get the absolute path to the results directory for a specified game and player pair combination.
+    Args:
+        results_dir: The relative path to the results directory inside the clembench directory.
+        dialogue_pair: The name of the player pair combination directory.
+        game_name: The name of the game (directory).
+    Returns:
+        The absolute path to the results directory for a specified game and player pair combination as string.
+    """
     return os.path.join(results_root(results_dir), dialogue_pair, game_name)
 
 
@@ -59,6 +70,13 @@ def file_path(file_name: str, game_path: str = None) -> str:
 
 
 def load_csv(file_name: str, game_path: str):
+    """Load a CSV file from a clemgame.
+    Args:
+        file_name: Name of the CSV file.
+        game_name: The name of the game that the CSV file belongs to.
+    Returns:
+        A list version of the CSV file content.
+    """
     # iso8859_2 was required for opening nytcrosswords.csv for clues in wordle
     rows = []
     fp = file_path(file_name, game_path)
@@ -71,18 +89,41 @@ def load_csv(file_name: str, game_path: str):
 
 
 def load_json(file_name: str, game_path: str) -> Dict:
+    """Load a JSON file from a clemgame.
+    Args:
+        file_name: Name of the JSON file.
+        game_name: The name of the game that the JSON file belongs to.
+    Returns:
+        A dict of the JSON file content.
+    """
     data = load_file(file_name, game_path, file_ending=".json")
     data = json.loads(data)
     return data
 
 
 def load_template(file_name: str, game_path: str) -> str:
+    """Load a text template file from a clemgame.
+    Args:
+        file_name: Name of the text template file.
+        game_name: The name of the game that the text template file belongs to.
+    Returns:
+        A string version of the text template file content.
+    """
     # TODO this a bit redundant and could be removed by changing all usages
     #  of load_template (and GameResourceLocator.load_template()) to directly use load_file(..., file_ending=".template")
     return load_file(file_name, game_path, file_ending=".template")
 
 
 def load_file(file_name: str, game_path: str = None, file_ending: str = None) -> str:
+    """Load a file from a clemgame.
+    Assumes the file to be an utf8-encoded (text) file.
+    Args:
+        file_name: Name of the file.
+        game_name: The name of the game that the file belongs to.
+        file_ending: The file type suffix of the file.
+    Returns:
+        The file content as returned by open->read().
+    """
     if file_ending and not file_name.endswith(file_ending):
         file_name = file_name + file_ending
     fp = file_path(file_name, game_path)
@@ -105,13 +146,16 @@ def load_results_json(file_name: str, results_dir: str, dialogue_pair: str, game
 
 
 def store_file(data, file_name: str, dir_path: str, sub_dir: str = None, do_overwrite: bool = True) -> str:
-    """
-    :param data: to store
-    :param file_name: of the file to store
-    :param dir_path: to the directory to store to
-    :param sub_dir: optional subdirectories
-    :param do_overwrite: default: True
-    :return: the file path
+    """Store a file.
+    Base function to handle relative clembench directory paths.
+    Args:
+        data: Content to store in the file.
+        file_name: Name of the file to store.
+        dir_path: Path to the directory to store the file to.
+        sub_dir: Optional subdirectories to store the file in.
+        do_overwrite: Determines if existing file should be overwritten. Default: True
+    Returns:
+        The path to the stored file.
     """
     if sub_dir:
         dir_path = os.path.join(dir_path, sub_dir)

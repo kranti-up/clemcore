@@ -1,4 +1,4 @@
-""" Initial checks on models to be added to the HuggingFace local backend """
+"""Initial checks on models to be added to the HuggingFace local backend."""
 
 import argparse
 from transformers import AutoTokenizer
@@ -6,7 +6,20 @@ from jinja2.exceptions import TemplateError
 import copy
 
 
-def preprocess_messages(messages):
+def preprocess_messages(messages) -> list:
+    """Preprocess messages as the HuggingFace local backend does.
+    Removes empty system message and flattens consecutive same-role messages.
+    Args:
+        messages: A message history. For example:
+                [
+                    {"role": "system", "content": "You are a helpful assistant."},
+                    {"role": "user", "content": "Who won the world series in 2020?"},
+                    {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
+                    {"role": "user", "content": "Where was it played?"}
+                ]
+    Returns:
+        A preprocessed message history list.
+    """
     # deepcopy messages to prevent reference issues:
     current_messages = copy.deepcopy(messages)
 
@@ -28,6 +41,12 @@ def preprocess_messages(messages):
 
 
 def model_pre_check(args):
+    """Checks various model data to determine if a HuggingFace model is usable with clembench.
+    Results are printed to terminal.
+    Args:
+        args: Arguments as parsed with argparse. This contains at least the model HF model ID, optionally if tokenizer
+            and chat template information is to be printed.
+    """
     # load tokenizer:
     tokenizer = AutoTokenizer.from_pretrained(args.model_name, verbose=False)
 

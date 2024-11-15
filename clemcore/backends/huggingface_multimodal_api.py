@@ -1,6 +1,5 @@
-"""
-Backend using HuggingFace transformers for open-weight multimodal models.
-"""
+"""Backend using HuggingFace transformers for open-weight multimodal models."""
+
 import logging
 from typing import List, Dict, Tuple, Any
 import torch
@@ -22,12 +21,13 @@ FALLBACK_CONTEXT_SIZE = 256
 
 logger = logging.getLogger(__name__)
 
-def get_context_limit(model_spec: backends.ModelSpec) -> int:
-    """
-    Get the context limit of the model
 
-    :param model_spec: Contains definitions about the model to be used
-    :return context: Context limit of the model
+def get_context_limit(model_spec: backends.ModelSpec) -> int:
+    """Get the context limit of the model.
+    Args:
+        model_spec: Contains definitions about the model to be used.
+    Returns:
+        Context limit of the model.
     """
     hf_model_str = model_spec['huggingface_id']
     model_config = AutoConfig.from_pretrained(hf_model_str)
@@ -46,12 +46,13 @@ def get_context_limit(model_spec: backends.ModelSpec) -> int:
 
 def check_context_limit(context_size: int, prompt_tokens: list, max_new_tokens: int = 100) -> Tuple[
     bool, int, int, int]:
-    """
-    External context limit check
-    :param context_size: max_sequence_length/max_position_embeddings of the model
-    :param prompt_tokens: List of prompt token IDs.
-    :param max_new_tokens: How many tokens to generate ('at most', but no stop sequence is defined).
-    :return: Tuple with
+    """External context limit check.
+    Args:
+        context_size: max_sequence_length/max_position_embeddings of the model
+        prompt_tokens: List of prompt token IDs.
+        max_new_tokens: How many tokens to generate ('at most', but no stop sequence is defined).
+    Returns:
+        Tuple with
             Bool: True if context limit is not exceeded, False if too many tokens
             Number of tokens for the given messages and maximum new tokens
             Number of tokens of 'context space left'
@@ -65,11 +66,12 @@ def check_context_limit(context_size: int, prompt_tokens: list, max_new_tokens: 
 
 
 def load_processor(model_spec: backends.ModelSpec) -> AutoProcessor:
-    """
-    Load processor from AutoProcessor a specific model (Example - LlavaProcessor)
-
-    :param model_spec: A dictionary that defines the model to be used, loaded from Model Registry
-    :return processor: Processor for the specific model
+    """Load processor from AutoProcessor a specific model.
+    Example: LlavaProcessor
+    Args:
+        model_spec: A dictionary that defines the model to be used, loaded from Model Registry
+    Returns:
+        Processor for the specific model.
     """
     hf_model_str = model_spec['huggingface_id']  # Get the model name
 
@@ -83,12 +85,12 @@ def load_processor(model_spec: backends.ModelSpec) -> AutoProcessor:
     return processor
 
 
-def load_model(model_spec: backends.ModelSpec):
-    """
-    Load a specific model
-
-    :param model_spec: A dictionary that defines the model to be used, loaded from Model Registry
-    :return model: The specific model
+def load_model(model_spec: backends.ModelSpec) -> Any:
+    """Load a specific model.
+    Args:
+        model_spec: A dictionary that defines the model to be used, loaded from Model Registry
+    Returns:
+        The specific model.
     """
     logger.info(f'Start loading huggingface model weights: {model_spec.model_name}')
     hf_model_str = model_spec['huggingface_id']  # Get the model name
@@ -108,14 +110,13 @@ def load_model(model_spec: backends.ModelSpec):
     return model
 
 
-def load_image(image: str):
+def load_image(image: str) -> Image:
+    """Load an image based on a given local path or URL.
+    Args:
+        image: Image path/url.
+    Returns:
+        The loaded PIL Image.
     """
-    Load an image based on a given local path or URL
-
-    :param image: Image path/url
-    :return loaded_image: PIL Image
-    """
-
     if image.startswith('http') or image.startswith('https'):
         image = Image.open(requests.get(image, stream=True).raw).convert('RGB')
     else:
@@ -125,11 +126,11 @@ def load_image(image: str):
 
 
 def get_images(messages: list[Dict]) -> list:
-    """
-    Return loaded images from messages
-
-    :param messages: A list of messages passed to the model
-    :return images: A list of PIL Image objects.
+    """Return loaded images from messages.
+    Args:
+        messages: A list of messages passed to the model.
+    Returns:
+        A list of PIL Image objects.
     """
     # Collect image links/file locations mentioned in messages
     images = []
@@ -157,11 +158,12 @@ def get_images(messages: list[Dict]) -> list:
 
 # Separate Input and Output generation for Idefics
 # Input is required for context check
-def generate_idefics_input(messages: list[Dict]):
-    """
-    Return inputs specific to the format of Idefics
-
-    param messages: A list[Dict] type object passed to the backend containing 'role', 'content' and 'image'
+def generate_idefics_input(messages: list[Dict]) -> Tuple[list, str]:
+    """Return inputs specific to the format of Idefics.
+    Args:
+        messages: A list[Dict] type object passed to the backend containing 'role', 'content' and 'image'.
+    Returns:
+        Tuple of the Idefics input list and the Idefics input text.
     """
     # Create a list containing the prompt text and images specific to Idefics input
     # Refer - https://huggingface.co/HuggingFaceM4/idefics-80b-instruct
@@ -199,13 +201,15 @@ def generate_idefics_output(messages: list[Dict],
                             processor: AutoProcessor,
                             max_tokens: int,
                             device) -> list[str]:
-    """
-    Return generated text from Idefics model
-
-    param messages: A list[Dict] type object passed to the backend containing 'role', 'content' and 'image'
-    param model: Idefics model
-    param processor: Idefics processor
-    param device: Processing device - cuda/CPU
+    """Return generated text from Idefics model.
+    Args:
+        messages: A list[Dict] type object passed to the backend containing 'role', 'content' and 'image'.
+        model: Idefics model.
+        processor: Idefics processor.
+        max_tokens: The maximum number of tokens to generate.
+        device: Processing device - cuda/CPU.
+    Returns:
+        The generated text as a list of strings.
     """
     idefics_input, _ = generate_idefics_input(messages=messages)
     inputs = processor(idefics_input, add_end_of_utterance_token=False, return_tensors="pt").to(device)
@@ -221,10 +225,12 @@ def generate_idefics_output(messages: list[Dict],
     return generated_text
 
 
-def check_multiple_image(messages: List[Dict]):
-    """
-    Return True if a single message contains multiple images
-    param messages: A list[Dict] type object passed to the backend containing 'role', 'content' and 'image'
+def check_multiple_image(messages: List[Dict]) -> bool:
+    """Return True if a single message contains multiple images.
+    Args:
+        messages: A list[Dict] type object passed to the backend containing 'role', 'content' and 'image'.
+    Returns:
+        True if a single message contains multiple images; False otherwise.
     """
     has_multiple_images = False
     for msg in messages:
@@ -236,16 +242,28 @@ def check_multiple_image(messages: List[Dict]):
 
 
 class HuggingfaceMultimodal(backends.Backend):
+    """Backend class for multimodal models locally run via HuggingFace transformers."""
     def __init__(self):
         super().__init__()
 
     def get_model_for(self, model_spec: backends.ModelSpec) -> backends.Model:
+        """Get a HuggingfaceMultimodalModel instance with the passed model and settings.
+        Will load all required data for using the model upon initialization.
+        Args:
+            model_spec: The ModelSpec for the model.
+        Returns:
+            The Model class instance of the model.
+        """
         return HuggingfaceMultimodalModel(model_spec)
 
 
 class HuggingfaceMultimodalModel(backends.Model):
-
+    """Class for loaded multimodal HuggingFace transformers models ready for generation."""
     def __init__(self, model_spec: backends.ModelSpec):
+        """
+        Args:
+            model_spec: A ModelSpec instance specifying the model.
+        """
         super().__init__(model_spec)
 
         # Load instance variable used for evey model
@@ -267,15 +285,17 @@ class HuggingfaceMultimodalModel(backends.Model):
         self.idefics = 'idefics' in model_spec['model_name']
 
     def generate_response(self, messages: List[Dict]) -> Tuple[Any, Any, str]:
-        """
-        :param messages: for example
+        """Generate a response with the loaded multimodal HuggingFace transformers model.
+        Args:
+            messages: A message history. For example:
                 [
-                    {"role": "user", "content": "Are there any clouds in the image? Answer with only "Yes" or "No"."},
-                    {"role": "assistant", "content": "Yes"},
-                    {"role": "user", "content": "This seems correct."},
-                    {'role': 'user', 'content': 'Are there any chickens in the image? Answer with only "Yes" or "No".', 'image': 'games/cloudgame/resources/images/3.jpg'}
+                    {"role": "system", "content": "You are a helpful assistant."},
+                    {"role": "user", "content": "Who won the world series in 2020?"},
+                    {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
+                    {"role": "user", "content": "Where was it played?"}
                 ]
-        :return: the continuation
+        Returns:
+            The response message generated by the loaded multimodal HuggingFace transformers model.
         """
         # Check to see if game passes multiple images in a single turn
         # Proceed only if model supports multiple images, else return blanks for prompt, response and response_text

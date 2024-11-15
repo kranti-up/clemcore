@@ -45,9 +45,8 @@ clemgame.load_game_registry()
 
 
 def list_games():
-    """
-    List all games specified in the game registries
-    (only loads those for which master.py can be found in the specified path)
+    """List all games specified in the game registries.
+    Only loads those for which master.py can be found in the specified path.
     See game registry doc for more infos (TODO: add link)
     TODO: add filtering options to see only specific games
     """
@@ -62,8 +61,15 @@ def list_games():
 
 def run(game_name: str, model_specs: List[backends.ModelSpec], gen_args: Dict,
         experiment_name: str = None, instances_name: str = None, results_dir: str = None):
-    """
-    Run a specific model on a game
+    """Run specific model/models with a specified clemgame.
+    Args:
+        game_name: Name of the game, matching the game's name in the game registry.
+        model_specs: A list of backends.ModelSpec instances for the player models to run the game with.
+        gen_args: Text generation parameters for the backend; output length and temperature are implemented for the
+            majority of model backends.
+        experiment_name: Name of the experiment to run. Corresponds to the experiment key in the instances JSON file.
+        instances_name: Name of the instances JSON file to use for this benchmark run.
+        results_dir: Path to the results directory in which to store the episode records.
     """
     try:
         player_models = []
@@ -89,6 +95,13 @@ def run(game_name: str, model_specs: List[backends.ModelSpec], gen_args: Dict,
 
 
 def score(game_name: str, experiment_name: str = None, results_dir: str = None):
+    """Calculate scores from a game benchmark run's records and store score files.
+    Args:
+        game_name: Name of the game, matching the game's name in the game registry.
+        experiment_name: Name of the experiment to score. Corresponds to the experiment directory in each player pair
+            subdirectory in the results directory.
+        results_dir: Path to the results directory in which the benchmark records are stored.
+    """
     logger.info(f"Scoring game {game_name}")
     stdout_logger.info(f"Scoring game {game_name}")
 
@@ -109,6 +122,13 @@ def score(game_name: str, experiment_name: str = None, results_dir: str = None):
 
 
 def transcripts(game_name: str, experiment_name: str = None, results_dir: str = None):
+    """Create episode transcripts from a game benchmark run's records and store transcript files.
+    Args:
+        game_name: Name of the game, matching the game's name in the game registry.
+        experiment_name: Name of the experiment to score. Corresponds to the experiment directory in each player pair
+            subdirectory in the results directory.
+        results_dir: Path to the results directory in which the benchmark records are stored.
+    """
     logger.info(f"Transcribing game {game_name}")
     stdout_logger.info(f"Transcribing game {game_name}")
     if experiment_name:

@@ -1,6 +1,5 @@
-"""
-    Backend using HuggingFace transformers models.
-    Uses HF tokenizers instruct/chat templates for proper input format per model.
+"""Backend using HuggingFace transformers models.
+Uses HF tokenizers instruct/chat templates for proper input format per model.
 """
 import logging
 from typing import List, Dict, Tuple, Any, Union
@@ -17,13 +16,14 @@ logger = logging.getLogger(__name__)
 FALLBACK_CONTEXT_SIZE = 256
 
 
-def load_config_and_tokenizer(model_spec: backends.ModelSpec) -> Union[AutoTokenizer, AutoConfig, int]:
-    """
-    Load a HuggingFace model's standard config and tokenizer, and get context token limit from config. If the model
-    config does not contain the context limit, it is set to 256 as fallback. Does not load the model weights, allowing
-    for prototyping on non-GPU systems.
-    :param model_spec: The ModelSpec for the model.
-    :return: Tokenizer, model config and context token limit (int).
+def load_config_and_tokenizer(model_spec: backends.ModelSpec) -> Tuple[AutoTokenizer, AutoConfig, int]:
+    """Load a HuggingFace model's standard config and tokenizer, and get context token limit from config.
+    If the model config does not contain the context limit, it is set to 256 as fallback. Does not load the model
+    weights, allowing for prototyping on non-GPU systems.
+    Args:
+        model_spec: The ModelSpec for the model.
+    Returns:
+        Tokenizer, model config and context token limit (int).
     """
     logger.info(f'Loading huggingface model config and tokenizer: {model_spec.model_name}')
 
@@ -94,11 +94,13 @@ def load_config_and_tokenizer(model_spec: backends.ModelSpec) -> Union[AutoToken
 
 
 def load_model(model_spec: backends.ModelSpec) -> Any:
-    """
-    Load Huggingface model weights, into VRAM if available. Weights are distributed over all available GPUs for maximum
-    speed - make sure to limit the available GPUs using environment variables if only a subset is to be used.
-    :param model_spec: The ModelSpec for the model.
-    :return: The transformers model class instance of the loaded model.
+    """Load Huggingface model weights, into VRAM if available.
+    Weights are distributed over all available GPUs for maximum speed - make sure to limit the available GPUs using
+    environment variables if only a subset is to be used.
+    Args:
+        model_spec: The ModelSpec for the model.
+    Returns:
+        The transformers model class instance of the loaded model.
     """
     logger.info(f'Start loading huggingface model weights: {model_spec.model_name}')
 
@@ -119,30 +121,29 @@ def load_model(model_spec: backends.ModelSpec) -> Any:
 
 
 class HuggingfaceLocal(backends.Backend):
-    """
-    Model/backend handler class for locally-run Huggingface models.
-    """
-
+    """Model/backend handler class for locally-run Huggingface models."""
     def __init__(self):
         super().__init__()
 
     def get_model_for(self, model_spec: backends.ModelSpec) -> backends.Model:
-        """
-        Get a HuggingFaceLocalModel instance with the passed model and settings. Will load all required data for using
-        the model upon initialization.
-        :param model_spec: The ModelSpec for the model.
-        :return: The Model class instance of the model.
+        """Get a HuggingFaceLocalModel instance with the passed model and settings.
+        Will load all required data for using the model upon initialization.
+        Args:
+            model_spec: The ModelSpec for the model.
+        Returns:
+            The Model class instance of the model.
         """
         torch.set_num_threads(1)
         return HuggingfaceLocalModel(model_spec)
 
 
 class HuggingfaceLocalModel(backends.Model):
-    """
-    Class for loaded models ready for generation.
-    """
-
+    """Class for loaded HuggingFace transformers models ready for generation."""
     def __init__(self, model_spec: backends.ModelSpec):
+        """
+        Args:
+            model_spec: A ModelSpec instance specifying the model.
+        """
         super().__init__(model_spec)
         # fail-fast
         self.tokenizer, self.config, self.context_size = load_config_and_tokenizer(model_spec)
@@ -158,17 +159,19 @@ class HuggingfaceLocalModel(backends.Model):
     def generate_response(self, messages: List[Dict],
                           return_full_text: bool = False,
                           log_messages: bool = False) -> Tuple[Any, Any, str]:
-        """
-        :param messages: for example
+        """Generate a response with the loaded HuggingFace transformers model.
+        Args:
+            messages: A message history. For example:
                 [
                     {"role": "system", "content": "You are a helpful assistant."},
                     {"role": "user", "content": "Who won the world series in 2020?"},
                     {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
                     {"role": "user", "content": "Where was it played?"}
                 ]
-        :param return_full_text: If True, whole input context is returned.
-        :param log_messages: If True, raw and cleaned messages passed will be logged.
-        :return: the continuation
+            return_full_text: If True, whole input context is returned.
+            log_messages: If True, raw and cleaned messages passed will be logged.
+        Returns:
+            The response message generated by the loaded HuggingFace transformers model.
         """
         # log current given messages list:
         if log_messages:
@@ -243,11 +246,12 @@ class HuggingfaceLocalModel(backends.Model):
 
 
 def _check_context_limit(context_size, prompt_tokens, max_new_tokens: int = 100) -> Tuple[bool, int, int, int]:
-    """
-    Internal context limit check to run in generate_response.
-    :param prompt_tokens: List of prompt token IDs.
-    :param max_new_tokens: How many tokens to generate ('at most', but no stop sequence is defined).
-    :return: Tuple with
+    """Internal context limit check to run in generate_response.
+    Args:
+        prompt_tokens: List of prompt token IDs.
+        max_new_tokens: How many tokens to generate ('at most', but no stop sequence is defined).
+    Returns:
+        Tuple with
             Bool: True if context limit is not exceeded, False if too many tokens
             Number of tokens for the given messages and maximum new tokens
             Number of tokens of 'context space left'
@@ -261,20 +265,21 @@ def _check_context_limit(context_size, prompt_tokens, max_new_tokens: int = 100)
 
 
 def check_messages(messages: List[Dict], model_spec: backends.ModelSpec) -> bool:
-    """
-    Message checking for clemgame development. This checks if the model's chat template accepts the given messages
-    as passed, before the standard flattening done for generation. This allows clemgame developers to construct
-    message lists that are sound as-is and are not affected by the indiscriminate flattening of the generation
-    method. Deliberately verbose.
-    :param model_spec: The ModelSpec for the model.
-    :param messages: for example
+    """Message checking for clemgame development.
+    This checks if the model's chat template accepts the given messages as passed, before the standard flattening done
+    for generation. This allows clemgame developers to construct message lists that are sound as-is and are not affected
+    by the indiscriminate flattening of the generation method. Deliberately verbose.
+    Args:
+        model_spec: The ModelSpec for the model.
+        messages: for example
             [
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": "Who won the world series in 2020?"},
                 {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
                 {"role": "user", "content": "Where was it played?"}
             ]
-    :return: True if messages are sound as-is, False if messages are not compatible with the model's template.
+    Returns:
+        True if messages are sound as-is, False if messages are not compatible with the model's template.
     """
     tokenizer, _, _ = load_config_and_tokenizer(model_spec)
 
@@ -352,20 +357,21 @@ def check_messages(messages: List[Dict], model_spec: backends.ModelSpec) -> bool
 def check_context_limit(messages: List[Dict], model_spec: backends.ModelSpec,
                         max_new_tokens: int = 100, clean_messages: bool = False,
                         verbose: bool = True) -> Tuple[bool, int, int, int]:
-    """
-    Externally-callable context limit check for clemgame development.
-    :param messages: for example
+    """Externally-callable context limit check for clemgame development.
+    Args:
+        messages: for example
             [
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": "Who won the world series in 2020?"},
                 {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
                 {"role": "user", "content": "Where was it played?"}
             ]
-    :param model_spec: The ModelSpec for the model.
-    :param max_new_tokens: How many tokens to generate ('at most', but no stop sequence is defined).
-    :param clean_messages: If True, the standard cleaning method for message lists will be applied.
-    :param verbose: If True, prettyprint token counts.
-    :return: Tuple with
+        model_spec: The ModelSpec for the model.
+        max_new_tokens: How many tokens to generate ('at most', but no stop sequence is defined).
+        clean_messages: If True, the standard cleaning method for message lists will be applied.
+        verbose: If True, prettyprint token counts.
+    Returns:
+        Tuple with
             Bool: True if context limit is not exceeded, False if too many tokens
             Number of tokens for the given messages and maximum new tokens
             Number of tokens of 'context space left'
