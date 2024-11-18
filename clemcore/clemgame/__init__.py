@@ -426,8 +426,8 @@ class GameResourceLocator(abc.ABC):
 
 class GameRecorder(GameResourceLocator):
 
-    def __init__(self, name: str, path: str):
-        super().__init__(name, path)
+    def __init__(self, game_name: str, game_path: str):
+        super().__init__(game_name, game_path)
         self.log_current_turn = -1
         """ Stores players and turn during the runs """
         self.interactions = {
@@ -449,7 +449,7 @@ class GameRecorder(GameResourceLocator):
             value: The content of the entry to be logged.
         """
         self.interactions[key] = value
-        self.logger.info(f"{self.name}: Logged a game-specific interaction key: {key}.")
+        self.logger.info(f"{self.game_name}: Logged a game-specific interaction key: {key}.")
 
     def log_players(self, players_dic: Dict):
         """Log/record the players in this game episode.
@@ -457,7 +457,7 @@ class GameRecorder(GameResourceLocator):
             players_dic: Dictionary of players in this game episode.
         """
         self.interactions["players"] = players_dic
-        self.logger.info(f"{self.name}: Logged players metadata.")
+        self.logger.info(f"{self.game_name}: Logged players metadata.")
 
     def log_event(self, from_: str, to: str, action: Dict, call: Tuple[Any, Any] = None):
         """Add an event to the internal log.
