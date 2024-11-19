@@ -38,7 +38,7 @@ The InstanceGenerator only needs access to the game resources, which is now defi
 
       def __init__(self):
 -         super().__init__(GAME_NAME)
-+         super().__init__(os.path.dirname(__file__))
++         super().__init__(os.path.dirname(os.path.abspath(__file__)))
 
 ```
 In master.py, `GAME_NAME` is also removed as a variable and `self.game_name` and `self.game_path` are instantiated from `clemcore/clemgame/game_registry.json` instead (allowing future adaptions like different versions of games pointing to the same game code but defining variations in terms of parameters). 
@@ -50,6 +50,8 @@ The GameScorer doesn't need access to the game resources but only requires `self
 In the GameBenchmark class, the game description and the number of players are now also extracted from the GameSpec (via the `game_registry`).
 ```python
 # master.py
+
++ import os
 
 - GAME_NAME = "taboo"
 
@@ -81,7 +83,7 @@ In the GameBenchmark class, the game description and the number of players are n
 -      def __init__(self):
 -          super().__init__(GAME_NAME)
 
-+     def __init__(self, game_spec: GameSpec): 
++     def __init__(self, game_spec: GameSpec): # see next section on how to import GameSpec
 +          super().__init__(game_spec)
 
 -     def get_description(self):
@@ -98,9 +100,17 @@ In the GameBenchmark class, the game description and the number of players are n
 -         return TabooScorer(experiment, game_instance)
 +         return TabooScorer(self.game_name, experiment, game_instance)     
 
-#TODO: add adaption for main() here as well
 
+  def main():
+      # select one experiment and instance
++     game_path = os.path.dirname(os.path.abspath(__file__))
++     experiments = file_utils.load_json("in/instances.json", game_path)
+-     experiments = file_utils.load_json("in/instances.json", "taboo")
+    
 ```
+### Games using images (or other resources provided in the instances file)
+If your game uses images or other external resources, make sure that the paths in the instances file are relative to the game directory and that the GameMaster takes care of combining them with the actual game directory (using `self.game_path`) after reading them from the instance file.
+See [cloudgame](https://github.com/clp-research/clemgames/tree/main/cloudgame) for a minimal example. 
 
 ## Restructuring of clembench core code
 
@@ -133,7 +143,7 @@ import clemcore.clemgame.metrics as ms
 
 from clemcore.utils import file_utils, string_utils
 
-# if your game requires game-specific imports, change them to be relative to your game folder  
+# if your game requires game-specific imports (like, for example, utils.py), change them to be relative to your game folder  
 - from games.YOURGAME.utils import ...
 + from utils import ...
 
