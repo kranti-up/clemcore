@@ -41,6 +41,10 @@ The InstanceGenerator only needs access to the game resources, which is now defi
 +         super().__init__(os.path.dirname(os.path.abspath(__file__)))
 
 ```
+You also need to make sure that all paths to resource files (like prompt templates) 
+are given relative to your game directory, so the GameResourceLocator 
+(from which the InstanceGenerator inherits) will find them.
+
 In master.py, `GAME_NAME` is also removed as a variable and `self.game_name` and `self.game_path` are instantiated from `clemcore/clemgame/game_registry.json` instead (allowing future adaptions like different versions of games pointing to the same game code but defining variations in terms of parameters). 
 The method `applies_to(cls, game_name: str)` is no longer needed.
 
@@ -51,7 +55,7 @@ In the GameBenchmark class, the game description and the number of players are n
 ```python
 # master.py
 
-+ import os
++ import os # only required if main() is defined as below
 
 - GAME_NAME = "taboo"
 
@@ -100,8 +104,8 @@ In the GameBenchmark class, the game description and the number of players are n
 -         return TabooScorer(experiment, game_instance)
 +         return TabooScorer(self.game_name, experiment, game_instance)     
 
-
-  def main():
+  # if main is defined
+  def main(): 
       # select one experiment and instance
 +     game_path = os.path.dirname(os.path.abspath(__file__))
 +     experiments = file_utils.load_json("in/instances.json", game_path)
@@ -123,10 +127,6 @@ This means that all imports have to be adapted to the new structure as follows (
 # instancegenerator.py
 
 from clemcore.clemgame import GameInstanceGenerator
-
-# also make sure that all paths to resource files (like prompt templates) 
-# are given relative to your game directory (so the GameResourceLocator 
-# (from which the InstanceGenerator inherits) will find them)
 
 ```
 
