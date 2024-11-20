@@ -87,6 +87,46 @@
     "players": "two",
     "image": "multi",
     "languages": ["en"],
-    "benchmark": ["1.6_mm"]
+    "benchmark": ["1.6", "1.6.5", "2.0"]
+  },
+  {
+    "game_name": "matchit",
+    "game_path": "../clemgames/matchit",
+    "description": "A simple game in which two players have to decide whether they see the same image or not.",
+    "main_game": "matchit",
+    "players": "two",
+    "image": "single",
+    "languages": ["en"],
+    "benchmark": ["1.6", "1.6.5", "2.0"]
+  },
+  {
+    "game_name": "mm_mapworld",
+    "game_path": "../clemgames/mm_mapworld",
+    "description": "In this game an agent is placed on a graph and needs to navigate through it by reasoning about past steps taken",
+    "main_game": "mm_mapworld",
+    "players": "two",
+    "image": "single",
+    "languages": ["en"],
+    "benchmark": ["1.6", "1.6.5", "2.0"]
+  },
+  {
+    "game_name": "mm_mapworld_graphs",
+    "game_path": "../clemgames/mm_mapworld_graphs",
+    "description": "In this game an agent is placed on a graph and needs to navigate through it by reasoning about past steps taken",
+    "main_game": "mm_mapworld",
+    "players": "two",
+    "image": "single",
+    "languages": ["en"],
+    "benchmark": ["1.6", "1.6.5", "2.0"]
+  },
+  {
+    "game_name": "mm_mapworld_specificroom",
+    "game_path": "../clemgames/mm_mapworld_specificroom",
+    "description": "In this game an agent is placed on a graph and needs to navigate through it by reasoning about past steps taken",
+    "main_game": "mm_mapworld",
+    "players": "two",
+    "image": "single",
+    "languages": ["en"],
+    "benchmark": ["1.6", "1.6.5", "2.0"]
   }
 ]
