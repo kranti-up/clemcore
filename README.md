@@ -1,5 +1,5 @@
 ### Updates
-(November 2024): We have updated the framework code (again). If you have written games using the initial release version, see [this guide](docs/howto_update_to_v2.md) on how to update your game.
+(November 2024): We have updated the framework code (again). If you have written games using v_1, see [this guide](docs/howto_update_to_v2.md) on how to update your game and [these instructions](docs/01_how_to_get_started.md) on how the new framework works.
 
 (February 2024): We have updated the framework code. If you have written games using the initial release version, see [this guide](docs/howto_update_to_v1.md) on how to update your game.
 
