@@ -14,6 +14,9 @@ games=(
 #"wordle_withcritic"
 "privateshared"
 "codenames"
+"matchit_ascii"
+#"guess_what"
+#"textmapworld"
 )
 models=(
 "llama-70b"
