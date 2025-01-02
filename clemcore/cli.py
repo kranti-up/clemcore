@@ -128,7 +128,7 @@ if __name__ == "__main__":
                             help="Specify the maximum number of tokens to be generated per turn (except for cohere). "
                                  "Be careful with high values which might lead to exceed your API token limits."
                                  "Default: 100.")
-    run_parser.add_argument("-i", "--instances_name", type=str, default="instances",
+    run_parser.add_argument("-i", "--instances_name", type=str, default=None,
                             help="The instances file name (.json suffix will be added automatically.")
     run_parser.add_argument("-r", "--results_dir", type=str, default="results",
                             help="A relative or absolute path to the results root directory. "
