@@ -18,9 +18,11 @@ To add games that are not (yet) addd to the official collection, create an entry
     "game_name": "taboo",
     "game_path": "../clemgames/taboo", # relative to clembench or absolute 
     "description": "Taboo game between two agents where one has to describe a word for the other to guess.", # copied from GameBenchmark get_description() in master.py
-    "main_game": "taboo", # relevant for games with different versions, otherwise same as game_name
+    "main_game": "taboo", # relevant for games with different versions, otherwise same as game_name,
+    "instances": "instances", # OPTIONAL; if this key does not exist, instances.json will be used, if it exists, the instances file with the name given here will be used 
     "players": "two", # [one|multi]
     "image": "none", # [one|multi]
+    "benchmark": ["0.9", "1.0", "1.5", "2.0"], # list of benchmark versions this game is part of; can be empty
     "languages": ["en"], # use ISO- codes for available languages
   }
 ]

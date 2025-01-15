@@ -5,13 +5,15 @@ import json
 import os.path
 import sys
 from datetime import datetime
-from typing import List, Dict, Tuple, Any
+from re import match
+from typing import List, Dict, Tuple, Any, Union
 from tqdm import tqdm
 from types import SimpleNamespace
 import importlib
 import importlib.util
 import inspect
 import logging
+import nltk
 
 import clemcore.backends as backends
 import clemcore.utils.file_utils as file_utils
@@ -29,16 +31,18 @@ class GameSpec(SimpleNamespace):
     Holds all necessary information to play game in clembench (see README for list of attributes)
     """
 
-    def __init__(self, **kwargs):
+    def __init__(self, allow_underspecified: bool = False, **kwargs):
         super().__init__(**kwargs)
         # check for required fields
-        if "game_name" not in self:
-            raise KeyError(f"No game name specified in entry {kwargs}")
-        if "game_path" not in self:
-            raise KeyError(f"No game path specified in {kwargs}")
+        if not allow_underspecified:
+            if "game_name" not in self:
+                raise KeyError(f"No game name specified in entry {kwargs}")
+            if "game_path" not in self:
+                raise KeyError(f"No game path specified in {kwargs}")
         # make game_path absolute
-        if not os.path.isabs(self.game_path):
-            self.game_path = os.path.join(file_utils.project_root(), self.game_path)
+        if hasattr(self, 'game_path'):
+            if not os.path.isabs(self.game_path):
+                self.game_path = os.path.join(file_utils.project_root(), self.game_path)
 
     def __repr__(self):
         """Returns string representation of this GameSpec."""
@@ -68,7 +72,7 @@ class GameSpec(SimpleNamespace):
         return hasattr(self, attribute)
 
     @classmethod
-    def from_dict(cls, spec: Dict):
+    def from_dict(cls, spec: Dict, allow_underspecified: bool = False):
         """Initialize a GameSpec from a dictionary.
         Can be used to directly create a GameSpec from a game registry entry.
         Args:
@@ -76,7 +80,7 @@ class GameSpec(SimpleNamespace):
         Returns:
             A GameSpec instance with the data specified by the passed dict.
         """
-        return cls(**spec)
+        return cls(allow_underspecified, **spec)
 
     def matches(self, spec: Dict):
         """Check if the game features match a given specification.
@@ -114,6 +118,21 @@ class GameSpec(SimpleNamespace):
             True if the master.py is located at the specified game_path, False otherwise.
         """
         return True if os.path.isfile(self.get_game_file()) else False
+
+    def unify(self, other: "GameSpec") -> "GameSpec":
+        """Unify two GameSpec instances.
+        Args:
+            other: The other GameSpec instance this instance is to be unified with.
+        Returns:
+            The GameSpec unification of this GameSpec instance and the passed GameSpec instance.
+        Raises:
+            ValueError: A ValueError exception is raised if the passed GameSpec instance does not unify with this
+                GameSpec instance.
+        """
+        result = nltk.featstruct.unify(self.__dict__, other.__dict__)
+        if result is None:
+            raise ValueError(f"{self} does not unify with {other}")
+        return GameSpec(**result)
 
 
 def load_custom_game_registry(_game_registry_path: str = None, is_optional=True):
@@ -157,25 +176,77 @@ def load_game_registry(_game_registry_path: str = None, is_mandatory=True):
             game_registry.append(_game_spec)
 
 
-def select_game(game_name: str) -> GameSpec:
-    """Select a GameSpec from the game registry by game name.
+def select_game(game: Union[str, Dict, GameSpec]) -> List[GameSpec]:
+    """Select a list of GameSpecs from the game registry by unifying game spec dict or game name.
     Args:
-        game_name: String name of the selected game.
+        game: String name of the game matching the 'game_name' value of the game registry entry to select, OR a
+            GameSpec-like dict, OR a GameSpec object.
+            A passed GameSpec-like dict can EITHER contain the 'benchmark' key with a list of benchmark versions value,
+            in which case all games that have matching benchmark version strings in their 'benchmark' key values are
+            selected, OR contain one or more other GameSpec keys, in which case all games that unify with the given key
+            values are selected. If there is the 'benchmark' key, only benchmark versions are checked!
+            For example: {'benchmark':['v2']} will select all games that have 'v2' in their 'benchmark' key value list.
+            {'main_game': 'wordle'} will select all wordle variants, as their game registry entries have the 'main_game'
+            key value 'wordle'.
     Returns:
-        A GameSpec instance from the game registry corresponding to the passed game_name.
+        A list of GameSpec instances from the game registry corresponding to the passed game string, dict or GameSpec.
     Raises:
-        ValueError: No game specification matching the passed game_name was found in the game registry.
+        ValueError: No game specification matching the passed game was found in the game registry.
     """
-    # return first entry that matches game_name
-    for game in game_registry:
-        if game["game_name"] == game_name:
-            if game.game_file_exists():
-                return game
+    # check if passed game is parseable JSON:
+    game_is_dict = False
+    try:
+        game = game.replace("'", '"')
+        game = json.loads(game)
+        game_is_dict = True
+    except Exception:
+        print(f"Passed game {game} does not parse as JSON!")
+        pass
+
+    # convert passed JSON to GameSpec for unification:
+    game_is_gamespec = False
+    if game_is_dict:
+        game = GameSpec.from_dict(game, allow_underspecified=True)
+        game_is_gamespec = True
+    elif type(game) == GameSpec:
+        game_is_gamespec = True
+
+    if game_is_gamespec:
+        matching_registered_games: list = list()
+        # iterate over game registry:
+        for registered_game_spec in game_registry:
+
+            if hasattr(game, 'benchmark'):
+                # passed game spec specifies benchmark version
+                for benchmark_version in game.benchmark:
+                    if benchmark_version in registered_game_spec.benchmark:
+                        if registered_game_spec.game_file_exists():
+                            matching_registered_games.append(registered_game_spec)
+
             else:
-                raise ValueError(f"Game master file master.py not found in {game['game_path']}."
-                               f"Update clemcore/clemgame/game_registry.json (or game_registry_custom.json) with the right path for {game_name}.")
-    raise ValueError(f"No games found matching the given specification '{game_name}'. "
-                          "Make sure the game name matches the name in clemcore/clemgame/game_registry.json (or game_registry_custom.json)")
+                # get unifying entries:
+                unifying_game_spec = None
+                try:
+                    unifying_game_spec = game.unify(registered_game_spec)
+                    if unifying_game_spec.game_file_exists():
+                        # print(f"Found unifying game registry entry: {unifying_game_spec}")
+                        matching_registered_games.append(unifying_game_spec)
+                except ValueError:
+                    continue
+
+        return matching_registered_games
+    else:
+        # return first entry that matches game_name
+        for registered_game_spec in game_registry:
+            if registered_game_spec["game_name"] == game:
+                if registered_game_spec.game_file_exists():
+                    return [registered_game_spec]
+                else:
+                    raise ValueError(f"Game master file master.py not found in {registered_game_spec['game_path']}."
+                                     f"Update clemcore/clemgame/game_registry.json (or game_registry_custom.json) with the right path for {registered_game_spec}.")
+        raise ValueError(f"No games found matching the given specification '{registered_game_spec}'. "
+                         "Make sure the game name matches the name in clemcore/clemgame/game_registry.json (or game_registry_custom.json)")
+
     # extension to select subset of games
     # (postponed because it introduces more complexity
     # on things like how to specify specific episodes (which could, however be integrated into the game spec
@@ -1045,6 +1116,7 @@ class GameBenchmark(GameResourceLocator):
             game_spec: The name of the game (as specified in game_registry)
         """
         super().__init__(game_spec["game_name"], game_spec["game_path"])
+        self.game_spec = game_spec
         self.instances = None
         self.filter_experiment: List[str] = []
         self.is_single_player = True if game_spec["players"] == "one" else False
@@ -1055,7 +1127,12 @@ class GameBenchmark(GameResourceLocator):
             game_path: Path to the game directory.
             instances_name: Name of the instances JSON file to be used for the benchmark run.
         """
-        self.instances = self.load_instances(instances_name)
+        if instances_name:
+            self.instances = self.load_instances(instances_name)
+        elif hasattr(self.game_spec, 'instances'):
+            self.instances = self.load_instances(self.game_spec.instances)
+        else:
+            self.instances = self.load_instances("instances")  # fallback to instances.json default
 
     def build_transcripts(self, results_dir: str):
         """Create and store readable HTML and LaTeX episode transcripts.

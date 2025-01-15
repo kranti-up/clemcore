@@ -1,15 +1,17 @@
 """ Main entry point """
 import textwrap
-from typing import List, Dict
+from typing import List, Dict, Union
 import os.path
 import logging
 import logging.config
 import yaml
 from datetime import datetime
+import json
 
 import clemcore.backends as backends
 import clemcore.clemgame as clemgame
 import clemcore.utils.file_utils as file_utils
+from clemcore.clemgame import GameSpec
 
 BANNER = \
     r"""
@@ -59,11 +61,11 @@ def list_games():
         print(game_name, wrapper.fill(game["description"]))
 
 
-def run(game_name: str, model_specs: List[backends.ModelSpec], gen_args: Dict,
+def run(game: Union[str, Dict, GameSpec], model_specs: List[backends.ModelSpec], gen_args: Dict,
         experiment_name: str = None, instances_name: str = None, results_dir: str = None):
     """Run specific model/models with a specified clemgame.
     Args:
-        game_name: Name of the game, matching the game's name in the game registry.
+        game: Name of the game, matching the game's name in the game registry, OR GameSpec-like dict, OR GameSpec.
         model_specs: A list of backends.ModelSpec instances for the player models to run the game with.
         gen_args: Text generation parameters for the backend; output length and temperature are implemented for the
             majority of model backends.
@@ -78,17 +80,21 @@ def run(game_name: str, model_specs: List[backends.ModelSpec], gen_args: Dict,
             model.set_gen_args(**gen_args)  # todo make this somehow available in generate method?
             player_models.append(model)
 
-        game_spec = clemgame.select_game(game_name)
-        game = clemgame.load_game(game_spec, instances_name=instances_name)
-        logger.info(f'Running {game_spec["game_name"]} (models={player_models if player_models is not None else "see experiment configs"})')
-        stdout_logger.info(f"Running game {game_spec['game_name']}")
-        if experiment_name:
-            logger.info("Only running experiment: %s", experiment_name)
-            game.filter_experiment.append(experiment_name)
-        time_start = datetime.now()
-        game.run(player_models=player_models, results_dir=results_dir)
-        time_end = datetime.now()
-        logger.info(f'Running {game_spec["game_name"]} took {str(time_end - time_start)}')
+        game_specs = clemgame.select_game(game)
+        print("Matched game specs in registry:", " ".join([game_spec.game_name for game_spec in game_specs]))
+        for game_spec in game_specs:
+            game_benchmark = clemgame.load_game(game_spec, instances_name=instances_name)
+            logger.info(
+                f'Running {game_spec["game_name"]} (models={player_models if player_models is not None else "see experiment configs"})')
+            stdout_logger.info(f"Running game {game_spec['game_name']}")
+            if experiment_name:  # leaving this as-is for now, needs discussion conclusions
+                logger.info("Only running experiment: %s", experiment_name)
+                game_benchmark.filter_experiment.append(experiment_name)
+            time_start = datetime.now()
+            game_benchmark.run(player_models=player_models, results_dir=results_dir)
+            time_end = datetime.now()
+            logger.info(f'Running {game_spec["game_name"]} took {str(time_end - time_start)}')
+
     except Exception as e:
         stdout_logger.exception(e)
         logger.error(e, exc_info=True)
