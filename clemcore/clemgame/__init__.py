@@ -179,11 +179,19 @@ def load_game_registry(_game_registry_path: str = None, is_mandatory=True):
 def select_game(game: Union[str, Dict, GameSpec]) -> List[GameSpec]:
     """Select a list of GameSpecs from the game registry by unifying game spec dict or game name.
     Args:
-        game: String name of the selected game.
+        game: String name of the game matching the 'game_name' value of the game registry entry to select, OR a
+            GameSpec-like dict, OR a GameSpec object.
+            A passed GameSpec-like dict can EITHER contain the 'benchmark' key with a list of benchmark versions value,
+            in which case all games that have matching benchmark version strings in their 'benchmark' key values are
+            selected, OR contain one or more other GameSpec keys, in which case all games that unify with the given key
+            values are selected. If there is the 'benchmark' key, only benchmark versions are checked!
+            For example: {'benchmark':['v2']} will select all games that have 'v2' in their 'benchmark' key value list.
+            {'main_game': 'wordle'} will select all wordle variants, as their game registry entries have the 'main_game'
+            key value 'wordle'.
     Returns:
-        A GameSpec instance from the game registry corresponding to the passed game_name.
+        A list of GameSpec instances from the game registry corresponding to the passed game string, dict or GameSpec.
     Raises:
-        ValueError: No game specification matching the passed game_name was found in the game registry.
+        ValueError: No game specification matching the passed game was found in the game registry.
     """
     # check if passed game is parseable JSON:
     game_is_dict = False
