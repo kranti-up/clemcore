@@ -1,0 +1,7 @@
+1. Continue interacting until the task is complete.
+2. Once the task is complete, respond with "DONE".
+3. Do not simulate or act as the booking system; you are only interacting with it.
+4. Use the following information to provide information during the conversation:
+$slots
+
+Here is the $topic booking system response:

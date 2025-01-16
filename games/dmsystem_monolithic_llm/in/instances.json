@@ -1,0 +1,709 @@
+{
+  "experiments": [
+    {
+      "name": "restaurant",
+      "game_instances": [
+        {
+          "game_id": 0,
+          "data": {
+            "n_turns": 10,
+            "similarity": { "threshold": 70 },
+            "liberal_processing": true,
+            "statusmsg": {
+              "welcome": "Welcome to the $domain booking bot. Let me know, how can I help you?",
+              "usergoal": "SaveGoal:\nBegin your interaction with the bot by exactly stating the below mentioned goal:\nGoal:\n$goal\n\nFollow-up with the bot to achieve the goal.",
+              "dmresponse": "$response",
+              "no_booking": "The game has started. You are the first player.",
+              "no_slots": "The game has ended. Thank you for playing.",
+              "no_domain": "domain info is not available",
+              "no_key_match": "none of the keys are matched",
+              "partial_key_match": "only some of the keys are matched",
+              "no_value_match": "keys are matched but none of the values are matched",
+              "partial_value_match": "for some keys, values are matched",
+              "unknown": "unknown error",
+              "success": "Success",
+              "failure": "Failure",
+              "dbfetch": "in fetching the data from the database.",
+              "validatebooking": "in booking",
+              "availablecolumns": "The available columns are: $columns",
+              "missing_slots": "The missing arguments are: $slots",
+              "invalid_value": "The value for $slot is invalid",
+              "booking_reference": "Your booking reference number is 123456.",
+              "nocolumnmatch": "No matching columns found in the database.",
+              "novaluematch": "No matching data found in the database for the given query. Possible values: $values"
+            },
+            "domain": "restaurant",
+            "domaindb_path": "games/dmsystem_monolithic_llm/resources/domains/en/restaurant-dbase.db",
+            "domain_schema": {
+              "restaurant": {
+                "service_name": "restaurant",
+                "slots": [
+                  {
+                    "name": "pricerange",
+                    "is_categorical": true,
+                    "possible_values": ["cheap", "expensive", "moderate"]
+                  },
+                  {
+                    "name": "area",
+                    "is_categorical": true,
+                    "possible_values": [
+                      "centre",
+                      "east",
+                      "north",
+                      "south",
+                      "west"
+                    ]
+                  },
+                  {
+                    "name": "food",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "name",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "bookday",
+                    "is_categorical": true,
+                    "possible_values": [
+                      "monday",
+                      "tuesday",
+                      "wednesday",
+                      "thursday",
+                      "friday",
+                      "saturday",
+                      "sunday"
+                    ]
+                  },
+                  {
+                    "name": "bookpeople",
+                    "is_categorical": true,
+                    "possible_values": ["1", "2", "3", "4", "5", "6", "7", "8"]
+                  },
+                  {
+                    "name": "booktime",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "address",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "phone",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "postcode",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "ref",
+                    "is_categorical": false,
+                    "possible_values": []
+                  }
+                ],
+                "description": "find places to dine and whet your appetite",
+                "intents": [
+                  {
+                    "name": "find_restaurant",
+                    "description": "search for places to wine and dine",
+                    "is_transactional": false,
+                    "required_slots": [],
+                    "optional_slots": {
+                      "restaurant-pricerange": "dontcare",
+                      "restaurant-area": "dontcare",
+                      "restaurant-food": "dontcare",
+                      "restaurant-name": "dontcare",
+                      "restaurant-bookday": "dontcare",
+                      "restaurant-bookpeople": "dontcare",
+                      "restaurant-booktime": "dontcare"
+                    }
+                  },
+                  {
+                    "name": "book_restaurant",
+                    "description": "book a table at a restaurant",
+                    "is_transactional": true,
+                    "required_slots": [],
+                    "optional_slots": {
+                      "restaurant-pricerange": "dontcare",
+                      "restaurant-area": "dontcare",
+                      "restaurant-food": "dontcare",
+                      "restaurant-name": "dontcare",
+                      "restaurant-bookday": "dontcare",
+                      "restaurant-bookpeople": "dontcare",
+                      "restaurant-booktime": "dontcare"
+                    }
+                  }
+                ]
+              }
+            },
+            "goal": "I'm looking for a cheap place to dine, preferably in the centre of town.",
+            "slots": {
+              "area": "centre",
+              "bookday": "friday",
+              "bookpeople": "4",
+              "booktime": "14:15",
+              "food": "chinese",
+              "name": "charlie chan",
+              "pricerange": "cheap"
+            },
+            "cat_slots": ["pricerange", "area", "bookday", "bookpeople"],
+            "noncat_slots": [
+              "food",
+              "name",
+              "booktime",
+              "address",
+              "phone",
+              "postcode",
+              "ref"
+            ],
+            "game_name": "dmsystem_monolithic_llm",
+            "prompt_a": "ROLE: You are a system tasked with interacting naturally with a restaurant booking system.\n\nTASK:\nI'm looking for a cheap place to dine, preferably in the centre of town.\n\nINSTRUCTIONS:\n1. Begin the conversation by repeating the task exactly as written under the label TASK. Do not add any other text, commentary, or explanations.\n2. Communicate naturally by expressing preferences, asking clarifying questions, and making decisions as needed during the interaction. Ensure the tone is polite and conversational.\n3. Respond strictly based on the 'response' provided by the booking system. Use no additional logic or interpretation beyond what is explicitly stated in the task.\n4. Once the booking system completes the task and provides all necessary slots, respond with \"DONE.\" No other text should follow.\n5. Do not attempt to simulate or act as the booking system; you are only interacting with it.\n6. Keep responses concise and focused, avoiding unnecessary elaboration or overly conversational tone.\n7. Use the following information to provide information during the conversation:\n{'area': 'centre', 'bookday': 'friday', 'bookpeople': '4', 'booktime': '14:15', 'food': 'chinese', 'name': 'charlie chan', 'pricerange': 'cheap'}\n\nOUTPUT FORMAT:\n1. When beginning: Repeat the TASK exactly as stated.\n2. When interacting: Provide appropriate conversational utterances based solely on the booking system's 'response.'\n3. When finished: Respond with \"DONE\"\n\n\nLets begin\n",
+            "turn_prompt_a": "1. Continue interacting until the task is complete.\n2. Once the task is complete, respond with \"DONE\".\n3. Do not simulate or act as the booking system; you are only interacting with it.\n4. Use the following information to provide information during the conversation:\n{'area': 'centre', 'bookday': 'friday', 'bookpeople': '4', 'booktime': '14:15', 'food': 'chinese', 'name': 'charlie chan', 'pricerange': 'cheap'}\n\nHere is the restaurant booking system response:",
+            "prompt_b": "ROLE: You are a specialized restaurant booking assistant interacting with a human user. Your role is to process user requests and ensure successful task completion while maintaining a professional, helpful tone.\n\nTASK: Assist the user conversationally by:\n1. Identifying the user's intent (e.g., inquiry, clarification, or booking)\n2. Extracting key details needed for the task (e.g., date, time, location).\n3. Cross-referencing user-provided information with the database to find relevant matches.\n4. Generating responses to gather missing or unclear information or to provide the booking status.\n5. Consolidating all extracted and clarified details for booking finalization.\n6. Validating the booking and generating confirmation details.\n7. Keeping responses concise and focused, avoiding unnecessary elaboration or overly conversational tone.\n\n\nRESPONSE FORMAT:\n1. For proceeding with booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nUSER REQUEST:",
+            "turn_prompt_b": "TASK:\n1. Review the previous state and new user input\n2. Update the conversation flow if necessary\n3. Identify missing or unclear information\n\nRESPONSE FORMAT:\n1. For proceeding with booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nUSER REQUEST:",
+            "dbquery_prompt_b": "TASK:\n1. Review the previous state and new user input\n2. Update the conversation flow if necessary\n3. Identify missing or unclear information\n\nRESPONSE FORMAT:\n1. For proceeding with the booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nDATABASE RETRIEVAL RESULTS:",
+            "validbooking_prompt_b": "TASK:\n1. Review the previous state and new user input\n2. Update the conversation flow if necessary\n3. Identify missing or unclear information\n\nRESPONSE FORMAT:\n1. For proceeding with the booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nBOOKING VALIDATION STATUS:"
+          }
+        }
+      ]
+    },
+    {
+      "name": "attraction",
+      "game_instances": [
+        {
+          "game_id": 0,
+          "data": {
+            "n_turns": 10,
+            "similarity": { "threshold": 70 },
+            "liberal_processing": true,
+            "statusmsg": {
+              "welcome": "Welcome to the $domain booking bot. Let me know, how can I help you?",
+              "usergoal": "SaveGoal:\nBegin your interaction with the bot by exactly stating the below mentioned goal:\nGoal:\n$goal\n\nFollow-up with the bot to achieve the goal.",
+              "dmresponse": "$response",
+              "no_booking": "The game has started. You are the first player.",
+              "no_slots": "The game has ended. Thank you for playing.",
+              "no_domain": "domain info is not available",
+              "no_key_match": "none of the keys are matched",
+              "partial_key_match": "only some of the keys are matched",
+              "no_value_match": "keys are matched but none of the values are matched",
+              "partial_value_match": "for some keys, values are matched",
+              "unknown": "unknown error",
+              "success": "Success",
+              "failure": "Failure",
+              "dbfetch": "in fetching the data from the database.",
+              "validatebooking": "in booking",
+              "availablecolumns": "The available columns are: $columns",
+              "missing_slots": "The missing arguments are: $slots",
+              "invalid_value": "The value for $slot is invalid",
+              "booking_reference": "Your booking reference number is 123456.",
+              "nocolumnmatch": "No matching columns found in the database.",
+              "novaluematch": "No matching data found in the database for the given query. Possible values: $values"
+            },
+            "domain": "attraction",
+            "domaindb_path": "games/dmsystem_monolithic_llm/resources/domains/en/attraction-dbase.db",
+            "domain_schema": {
+              "attraction": {
+                "service_name": "attraction",
+                "slots": [
+                  {
+                    "name": "area",
+                    "is_categorical": true,
+                    "possible_values": [
+                      "centre",
+                      "east",
+                      "north",
+                      "south",
+                      "west"
+                    ]
+                  },
+                  {
+                    "name": "name",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "type",
+                    "is_categorical": true,
+                    "possible_values": [
+                      "architecture",
+                      "boat",
+                      "cinema",
+                      "college",
+                      "concerthall",
+                      "entertainment",
+                      "museum",
+                      "multiple sports",
+                      "nightclub",
+                      "park",
+                      "swimmingpool",
+                      "theatre"
+                    ]
+                  },
+                  {
+                    "name": "entrancefee",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "openhours",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "address",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "phone",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "postcode",
+                    "is_categorical": false,
+                    "possible_values": []
+                  }
+                ],
+                "description": "find touristy stuff to do around you",
+                "intents": [
+                  {
+                    "name": "find_attraction",
+                    "description": "search for places to see for leisure",
+                    "is_transactional": false,
+                    "required_slots": [],
+                    "optional_slots": {
+                      "attraction-area": "dontcare",
+                      "attraction-name": "dontcare",
+                      "attraction-type": "dontcare"
+                    }
+                  }
+                ]
+              }
+            },
+            "goal": "Can you find me a cinema in town that I can go to?",
+            "slots": { "type": "cinema" },
+            "cat_slots": ["type"],
+            "noncat_slots": [
+              "area",
+              "name",
+              "entrancefee",
+              "openhours",
+              "address",
+              "phone",
+              "postcode"
+            ],
+            "game_name": "dmsystem_monolithic_llm",
+            "prompt_a": "ROLE: You are a system tasked with interacting naturally with a attraction booking system.\n\nTASK:\nCan you find me a cinema in town that I can go to?\n\nINSTRUCTIONS:\n1. Begin the conversation by repeating the task exactly as written under the label TASK. Do not add any other text, commentary, or explanations.\n2. Communicate naturally by expressing preferences, asking clarifying questions, and making decisions as needed during the interaction. Ensure the tone is polite and conversational.\n3. Respond strictly based on the 'response' provided by the booking system. Use no additional logic or interpretation beyond what is explicitly stated in the task.\n4. Once the booking system completes the task and provides all necessary slots, respond with \"DONE.\" No other text should follow.\n5. Do not attempt to simulate or act as the booking system; you are only interacting with it.\n6. Keep responses concise and focused, avoiding unnecessary elaboration or overly conversational tone.\n7. Use the following information to provide information during the conversation:\n{'type': 'cinema'}\n\nOUTPUT FORMAT:\n1. When beginning: Repeat the TASK exactly as stated.\n2. When interacting: Provide appropriate conversational utterances based solely on the booking system's 'response.'\n3. When finished: Respond with \"DONE\"\n\n\nLets begin\n",
+            "turn_prompt_a": "1. Continue interacting until the task is complete.\n2. Once the task is complete, respond with \"DONE\".\n3. Do not simulate or act as the booking system; you are only interacting with it.\n4. Use the following information to provide information during the conversation:\n{'type': 'cinema'}\n\nHere is the attraction booking system response:",
+            "prompt_b": "ROLE: You are a specialized attraction booking assistant interacting with a human user. Your role is to process user requests and ensure successful task completion while maintaining a professional, helpful tone.\n\nTASK: Assist the user conversationally by:\n1. Identifying the user's intent (e.g., inquiry, clarification, or booking)\n2. Extracting key details needed for the task (e.g., date, time, location).\n3. Cross-referencing user-provided information with the database to find relevant matches.\n4. Generating responses to gather missing or unclear information or to provide the booking status.\n5. Consolidating all extracted and clarified details for booking finalization.\n6. Validating the booking and generating confirmation details.\n7. Keeping responses concise and focused, avoiding unnecessary elaboration or overly conversational tone.\n\n\nRESPONSE FORMAT:\n1. For proceeding with booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nUSER REQUEST:",
+            "turn_prompt_b": "TASK:\n1. Review the previous state and new user input\n2. Update the conversation flow if necessary\n3. Identify missing or unclear information\n\nRESPONSE FORMAT:\n1. For proceeding with booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nUSER REQUEST:",
+            "dbquery_prompt_b": "TASK:\n1. Review the previous state and new user input\n2. Update the conversation flow if necessary\n3. Identify missing or unclear information\n\nRESPONSE FORMAT:\n1. For proceeding with the booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nDATABASE RETRIEVAL RESULTS:",
+            "validbooking_prompt_b": "TASK:\n1. Review the previous state and new user input\n2. Update the conversation flow if necessary\n3. Identify missing or unclear information\n\nRESPONSE FORMAT:\n1. For proceeding with the booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nBOOKING VALIDATION STATUS:"
+          }
+        }
+      ]
+    },
+    {
+      "name": "hotel",
+      "game_instances": [
+        {
+          "game_id": 0,
+          "data": {
+            "n_turns": 12,
+            "similarity": { "threshold": 70 },
+            "liberal_processing": true,
+            "statusmsg": {
+              "welcome": "Welcome to the $domain booking bot. Let me know, how can I help you?",
+              "usergoal": "SaveGoal:\nBegin your interaction with the bot by exactly stating the below mentioned goal:\nGoal:\n$goal\n\nFollow-up with the bot to achieve the goal.",
+              "dmresponse": "$response",
+              "no_booking": "The game has started. You are the first player.",
+              "no_slots": "The game has ended. Thank you for playing.",
+              "no_domain": "domain info is not available",
+              "no_key_match": "none of the keys are matched",
+              "partial_key_match": "only some of the keys are matched",
+              "no_value_match": "keys are matched but none of the values are matched",
+              "partial_value_match": "for some keys, values are matched",
+              "unknown": "unknown error",
+              "success": "Success",
+              "failure": "Failure",
+              "dbfetch": "in fetching the data from the database.",
+              "validatebooking": "in booking",
+              "availablecolumns": "The available columns are: $columns",
+              "missing_slots": "The missing arguments are: $slots",
+              "invalid_value": "The value for $slot is invalid",
+              "booking_reference": "Your booking reference number is 123456.",
+              "nocolumnmatch": "No matching columns found in the database.",
+              "novaluematch": "No matching data found in the database for the given query. Possible values: $values"
+            },
+            "domain": "hotel",
+            "domaindb_path": "games/dmsystem_monolithic_llm/resources/domains/en/hotel-dbase.db",
+            "domain_schema": {
+              "hotel": {
+                "service_name": "hotel",
+                "slots": [
+                  {
+                    "name": "pricerange",
+                    "is_categorical": true,
+                    "possible_values": ["expensive", "cheap", "moderate"]
+                  },
+                  {
+                    "name": "type",
+                    "is_categorical": true,
+                    "possible_values": ["guesthouse", "hotel"]
+                  },
+                  {
+                    "name": "parking",
+                    "is_categorical": true,
+                    "possible_values": ["free", "no", "yes"]
+                  },
+                  {
+                    "name": "bookday",
+                    "is_categorical": true,
+                    "possible_values": [
+                      "monday",
+                      "tuesday",
+                      "wednesday",
+                      "thursday",
+                      "friday",
+                      "saturday",
+                      "sunday"
+                    ]
+                  },
+                  {
+                    "name": "bookpeople",
+                    "is_categorical": true,
+                    "possible_values": ["1", "2", "3", "4", "5", "6", "7", "8"]
+                  },
+                  {
+                    "name": "bookstay",
+                    "is_categorical": true,
+                    "possible_values": ["1", "2", "3", "4", "5", "6", "7", "8"]
+                  },
+                  {
+                    "name": "stars",
+                    "is_categorical": true,
+                    "possible_values": ["0", "1", "2", "3", "4", "5"]
+                  },
+                  {
+                    "name": "internet",
+                    "is_categorical": true,
+                    "possible_values": ["free", "no", "yes"]
+                  },
+                  {
+                    "name": "name",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "area",
+                    "is_categorical": true,
+                    "possible_values": [
+                      "centre",
+                      "east",
+                      "north",
+                      "south",
+                      "west"
+                    ]
+                  },
+                  {
+                    "name": "address",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "phone",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "postcode",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "ref",
+                    "is_categorical": false,
+                    "possible_values": []
+                  }
+                ],
+                "description": "hotel reservations and vacation stays",
+                "intents": [
+                  {
+                    "name": "find_hotel",
+                    "description": "search for a hotel to stay in",
+                    "is_transactional": false,
+                    "required_slots": [],
+                    "optional_slots": {
+                      "hotel-pricerange": "dontcare",
+                      "hotel-type": "dontcare",
+                      "hotel-parking": "dontcare",
+                      "hotel-bookday": "dontcare",
+                      "hotel-bookpeople": "dontcare",
+                      "hotel-bookstay": "dontcare",
+                      "hotel-stars": "dontcare",
+                      "hotel-internet": "dontcare",
+                      "hotel-name": "dontcare",
+                      "hotel-area": "dontcare"
+                    }
+                  },
+                  {
+                    "name": "book_hotel",
+                    "description": "book a hotel to stay in",
+                    "is_transactional": true,
+                    "required_slots": [],
+                    "optional_slots": {
+                      "hotel-pricerange": "dontcare",
+                      "hotel-type": "dontcare",
+                      "hotel-parking": "dontcare",
+                      "hotel-bookday": "dontcare",
+                      "hotel-bookpeople": "dontcare",
+                      "hotel-bookstay": "dontcare",
+                      "hotel-stars": "dontcare",
+                      "hotel-internet": "dontcare",
+                      "hotel-name": "dontcare",
+                      "hotel-area": "dontcare"
+                    }
+                  }
+                ]
+              }
+            },
+            "goal": "Hello. I am needing some help finding a cheap room.",
+            "slots": {
+              "internet": "yes",
+              "pricerange": "cheap",
+              "stars": "4",
+              "type": "guesthouse"
+            },
+            "cat_slots": ["pricerange", "type", "stars", "internet"],
+            "noncat_slots": [
+              "parking",
+              "bookday",
+              "bookpeople",
+              "bookstay",
+              "name",
+              "area",
+              "address",
+              "phone",
+              "postcode",
+              "ref"
+            ],
+            "game_name": "dmsystem_monolithic_llm",
+            "prompt_a": "ROLE: You are a system tasked with interacting naturally with a hotel booking system.\n\nTASK:\nHello. I am needing some help finding a cheap room.\n\nINSTRUCTIONS:\n1. Begin the conversation by repeating the task exactly as written under the label TASK. Do not add any other text, commentary, or explanations.\n2. Communicate naturally by expressing preferences, asking clarifying questions, and making decisions as needed during the interaction. Ensure the tone is polite and conversational.\n3. Respond strictly based on the 'response' provided by the booking system. Use no additional logic or interpretation beyond what is explicitly stated in the task.\n4. Once the booking system completes the task and provides all necessary slots, respond with \"DONE.\" No other text should follow.\n5. Do not attempt to simulate or act as the booking system; you are only interacting with it.\n6. Keep responses concise and focused, avoiding unnecessary elaboration or overly conversational tone.\n7. Use the following information to provide information during the conversation:\n{'internet': 'yes', 'pricerange': 'cheap', 'stars': '4', 'type': 'guesthouse'}\n\nOUTPUT FORMAT:\n1. When beginning: Repeat the TASK exactly as stated.\n2. When interacting: Provide appropriate conversational utterances based solely on the booking system's 'response.'\n3. When finished: Respond with \"DONE\"\n\n\nLets begin\n",
+            "turn_prompt_a": "1. Continue interacting until the task is complete.\n2. Once the task is complete, respond with \"DONE\".\n3. Do not simulate or act as the booking system; you are only interacting with it.\n4. Use the following information to provide information during the conversation:\n{'internet': 'yes', 'pricerange': 'cheap', 'stars': '4', 'type': 'guesthouse'}\n\nHere is the hotel booking system response:",
+            "prompt_b": "ROLE: You are a specialized hotel booking assistant interacting with a human user. Your role is to process user requests and ensure successful task completion while maintaining a professional, helpful tone.\n\nTASK: Assist the user conversationally by:\n1. Identifying the user's intent (e.g., inquiry, clarification, or booking)\n2. Extracting key details needed for the task (e.g., date, time, location).\n3. Cross-referencing user-provided information with the database to find relevant matches.\n4. Generating responses to gather missing or unclear information or to provide the booking status.\n5. Consolidating all extracted and clarified details for booking finalization.\n6. Validating the booking and generating confirmation details.\n7. Keeping responses concise and focused, avoiding unnecessary elaboration or overly conversational tone.\n\n\nRESPONSE FORMAT:\n1. For proceeding with booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nUSER REQUEST:",
+            "turn_prompt_b": "TASK:\n1. Review the previous state and new user input\n2. Update the conversation flow if necessary\n3. Identify missing or unclear information\n\nRESPONSE FORMAT:\n1. For proceeding with booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nUSER REQUEST:",
+            "dbquery_prompt_b": "TASK:\n1. Review the previous state and new user input\n2. Update the conversation flow if necessary\n3. Identify missing or unclear information\n\nRESPONSE FORMAT:\n1. For proceeding with the booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nDATABASE RETRIEVAL RESULTS:",
+            "validbooking_prompt_b": "TASK:\n1. Review the previous state and new user input\n2. Update the conversation flow if necessary\n3. Identify missing or unclear information\n\nRESPONSE FORMAT:\n1. For proceeding with the booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nBOOKING VALIDATION STATUS:"
+          }
+        }
+      ]
+    },
+    {
+      "name": "train",
+      "game_instances": [
+        {
+          "game_id": 0,
+          "data": {
+            "n_turns": 14,
+            "similarity": { "threshold": 70 },
+            "liberal_processing": true,
+            "statusmsg": {
+              "welcome": "Welcome to the $domain booking bot. Let me know, how can I help you?",
+              "usergoal": "SaveGoal:\nBegin your interaction with the bot by exactly stating the below mentioned goal:\nGoal:\n$goal\n\nFollow-up with the bot to achieve the goal.",
+              "dmresponse": "$response",
+              "no_booking": "The game has started. You are the first player.",
+              "no_slots": "The game has ended. Thank you for playing.",
+              "no_domain": "domain info is not available",
+              "no_key_match": "none of the keys are matched",
+              "partial_key_match": "only some of the keys are matched",
+              "no_value_match": "keys are matched but none of the values are matched",
+              "partial_value_match": "for some keys, values are matched",
+              "unknown": "unknown error",
+              "success": "Success",
+              "failure": "Failure",
+              "dbfetch": "in fetching the data from the database.",
+              "validatebooking": "in booking",
+              "availablecolumns": "The available columns are: $columns",
+              "missing_slots": "The missing arguments are: $slots",
+              "invalid_value": "The value for $slot is invalid",
+              "booking_reference": "Your booking reference number is 123456.",
+              "nocolumnmatch": "No matching columns found in the database.",
+              "novaluematch": "No matching data found in the database for the given query. Possible values: $values"
+            },
+            "domain": "train",
+            "domaindb_path": "games/dmsystem_monolithic_llm/resources/domains/en/train-dbase.db",
+            "domain_schema": {
+              "train": {
+                "service_name": "train",
+                "slots": [
+                  {
+                    "name": "arriveby",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "departure",
+                    "is_categorical": true,
+                    "possible_values": [
+                      "birmingham new street",
+                      "bishops stortford",
+                      "broxbourne",
+                      "cambridge",
+                      "ely",
+                      "kings lynn",
+                      "leicester",
+                      "london kings cross",
+                      "london liverpool street",
+                      "norwich",
+                      "peterborough",
+                      "stansted airport",
+                      "stevenage"
+                    ]
+                  },
+                  {
+                    "name": "day",
+                    "is_categorical": true,
+                    "possible_values": [
+                      "monday",
+                      "tuesday",
+                      "wednesday",
+                      "thursday",
+                      "friday",
+                      "saturday",
+                      "sunday"
+                    ]
+                  },
+                  {
+                    "name": "bookpeople",
+                    "is_categorical": true,
+                    "possible_values": [
+                      "0",
+                      "1",
+                      "2",
+                      "3",
+                      "4",
+                      "5",
+                      "6",
+                      "7",
+                      "8",
+                      "9",
+                      "10",
+                      "15"
+                    ]
+                  },
+                  {
+                    "name": "leaveat",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "destination",
+                    "is_categorical": true,
+                    "possible_values": [
+                      "birmingham new street",
+                      "bishops stortford",
+                      "broxbourne",
+                      "cambridge",
+                      "ely",
+                      "kings lynn",
+                      "leicester",
+                      "london kings cross",
+                      "london liverpool street",
+                      "norwich",
+                      "peterborough",
+                      "stansted airport",
+                      "stevenage"
+                    ]
+                  },
+                  {
+                    "name": "trainid",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "ref",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "price",
+                    "is_categorical": false,
+                    "possible_values": []
+                  },
+                  {
+                    "name": "duration",
+                    "is_categorical": false,
+                    "possible_values": []
+                  }
+                ],
+                "description": "find trains that take you to places",
+                "intents": [
+                  {
+                    "name": "find_train",
+                    "description": "search for trains that take you places",
+                    "is_transactional": false,
+                    "required_slots": [],
+                    "optional_slots": {
+                      "train-destination": "dontcare",
+                      "train-arriveby": "dontcare",
+                      "train-departure": "dontcare",
+                      "train-day": "dontcare",
+                      "train-bookpeople": "dontcare",
+                      "train-leaveat": "dontcare"
+                    }
+                  },
+                  {
+                    "name": "book_train",
+                    "description": "book train tickets",
+                    "is_transactional": true,
+                    "required_slots": [],
+                    "optional_slots": {
+                      "train-destination": "dontcare",
+                      "train-arriveby": "dontcare",
+                      "train-departure": "dontcare",
+                      "train-day": "dontcare",
+                      "train-bookpeople": "dontcare",
+                      "train-leaveat": "dontcare"
+                    }
+                  }
+                ]
+              }
+            },
+            "goal": "Wow, sounds like you might be able to help me then. Can you find me a train going into Leicester?",
+            "slots": {
+              "arriveby": "17:45",
+              "day": "thursday",
+              "departure": "cambridge",
+              "destination": "leicester"
+            },
+            "cat_slots": ["departure", "day", "destination"],
+            "noncat_slots": [
+              "arriveby",
+              "bookpeople",
+              "leaveat",
+              "trainid",
+              "ref",
+              "price",
+              "duration"
+            ],
+            "game_name": "dmsystem_monolithic_llm",
+            "prompt_a": "ROLE: You are a system tasked with interacting naturally with a train booking system.\n\nTASK:\nWow, sounds like you might be able to help me then. Can you find me a train going into Leicester?\n\nINSTRUCTIONS:\n1. Begin the conversation by repeating the task exactly as written under the label TASK. Do not add any other text, commentary, or explanations.\n2. Communicate naturally by expressing preferences, asking clarifying questions, and making decisions as needed during the interaction. Ensure the tone is polite and conversational.\n3. Respond strictly based on the 'response' provided by the booking system. Use no additional logic or interpretation beyond what is explicitly stated in the task.\n4. Once the booking system completes the task and provides all necessary slots, respond with \"DONE.\" No other text should follow.\n5. Do not attempt to simulate or act as the booking system; you are only interacting with it.\n6. Keep responses concise and focused, avoiding unnecessary elaboration or overly conversational tone.\n7. Use the following information to provide information during the conversation:\n{'arriveby': '17:45', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'leicester'}\n\nOUTPUT FORMAT:\n1. When beginning: Repeat the TASK exactly as stated.\n2. When interacting: Provide appropriate conversational utterances based solely on the booking system's 'response.'\n3. When finished: Respond with \"DONE\"\n\n\nLets begin\n",
+            "turn_prompt_a": "1. Continue interacting until the task is complete.\n2. Once the task is complete, respond with \"DONE\".\n3. Do not simulate or act as the booking system; you are only interacting with it.\n4. Use the following information to provide information during the conversation:\n{'arriveby': '17:45', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'leicester'}\n\nHere is the train booking system response:",
+            "prompt_b": "ROLE: You are a specialized train booking assistant interacting with a human user. Your role is to process user requests and ensure successful task completion while maintaining a professional, helpful tone.\n\nTASK: Assist the user conversationally by:\n1. Identifying the user's intent (e.g., inquiry, clarification, or booking)\n2. Extracting key details needed for the task (e.g., date, time, location).\n3. Cross-referencing user-provided information with the database to find relevant matches.\n4. Generating responses to gather missing or unclear information or to provide the booking status.\n5. Consolidating all extracted and clarified details for booking finalization.\n6. Validating the booking and generating confirmation details.\n7. Keeping responses concise and focused, avoiding unnecessary elaboration or overly conversational tone.\n\n\nRESPONSE FORMAT:\n1. For proceeding with booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nUSER REQUEST:",
+            "turn_prompt_b": "TASK:\n1. Review the previous state and new user input\n2. Update the conversation flow if necessary\n3. Identify missing or unclear information\n\nRESPONSE FORMAT:\n1. For proceeding with booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nUSER REQUEST:",
+            "dbquery_prompt_b": "TASK:\n1. Review the previous state and new user input\n2. Update the conversation flow if necessary\n3. Identify missing or unclear information\n\nRESPONSE FORMAT:\n1. For proceeding with the booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nDATABASE RETRIEVAL RESULTS:",
+            "validbooking_prompt_b": "TASK:\n1. Review the previous state and new user input\n2. Update the conversation flow if necessary\n3. Identify missing or unclear information\n\nRESPONSE FORMAT:\n1. For proceeding with the booking:\n{\n   \"status\": \"validate-booking\",\n   \"details\": {FILLED SLOTS}\n}\n\n2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):\n{\n   \"status\": \"follow-up\",\n   \"details\": FOLLOW-UP MESSAGE\n}\n\n3. For querying database:\n{\n   \"status\": \"db-query\",\n   \"details\": {FILLED SLOTS}\n}\n\nBOOKING VALIDATION STATUS:"
+          }
+        }
+      ]
+    }
+  ]
+}
