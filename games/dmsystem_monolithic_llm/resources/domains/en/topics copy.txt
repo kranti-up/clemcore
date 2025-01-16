@@ -1,5 +1,0 @@
-restaurant
-attraction
-bus
-hotel
-train
