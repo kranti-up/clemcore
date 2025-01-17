@@ -56,7 +56,7 @@ FINAL RESPONSE FORMAT:
    "details": {FILLED SLOTS}
 }
 
-2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):
+2. For follow-up/acknowledgement (The FOLLOW-UP MESSAGE must be a concise string.):
 {
    "status": "follow-up",
    "details": FOLLOW-UP MESSAGE

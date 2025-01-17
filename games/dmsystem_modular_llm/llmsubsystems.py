@@ -42,15 +42,6 @@ class LLMSubSystems:
             {"role": "user", "content": prompts_dict["booking_aggregator"]}
         )
 
-        bconfirmer = {
-            "domain": game_data["domain"],
-            "gtslots": game_data["slots"],
-            "statusmsg": game_data["statusmsg"],
-            "similarity": game_data["similarity"],
-            "cat_slots": game_data["cat_slots"],
-            "noncat_slots": game_data["noncat_slots"],
-        }
-
         self.liberalcount = {"intent": 0, "slot": 0, "follow": 0, "aggregator": 0}
         self.subsystemnamemap = {"intent_detector": "intent", "slot_extractor": "slot", 
                                  "followup_generator": "follow", "booking_aggregator": "aggregator"}
