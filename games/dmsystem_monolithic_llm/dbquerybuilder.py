@@ -82,6 +82,9 @@ class DBQueryBuilder:
         dbcolumns = self.dbretriever.getcolumns()
         #Get the intersection of catslots and dbcolumns
         self.dbcolumns = list(set(catslots).intersection(set(dbcolumns)))
+        if not self.dbcolumns:
+            logger.error(f"No matching columns found for the experiment catslots:{catslots} dbcolumns:{dbcolumns}")
+            self.dbcolumns = dbcolumns
         self.schema_manager = SchemaManager(schema, domain, self.dbcolumns, thresholdvalue)
 
     def _setto_lower(self, slots: dict) -> dict:
@@ -193,4 +196,4 @@ if __name__ == "__main__":
     #qslots = {'location': 'centre of town', 'date': 'Friday', 'time': '14:15', 'party_size': 4, 'cuisine': 'Chinese'}
     #result = dbq.run(qslots)
     #print(result)
-    print(dbq.get_valid_values("area"))
+    print(dbq.getcolumns())

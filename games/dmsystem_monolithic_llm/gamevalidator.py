@@ -1,14 +1,17 @@
 import clemgame
 from clemgame import get_logger
 
+from fuzzywuzzy import process
+
 logger = get_logger(__name__)
 
 class GameValidator:
-    def __init__(self, game_name: str, gt_slots: dict, cat_slots: list, noncat_slots: list):
+    def __init__(self, game_name: str, gt_slots: dict, cat_slots: list, noncat_slots: list, threshold_value: int):
         self.game_name = game_name
         self.gt_slots = gt_slots
         self.cat_slots = cat_slots
         self.noncat_slots = noncat_slots
+        self.threshold_value = threshold_value
   
     def _setto_lower(self, slots: dict) -> dict:
         return {
@@ -29,15 +32,57 @@ class GameValidator:
         self.gt_slots = self._setto_lower(self.gt_slots)
         gen_slots = self._setto_lower(gen_slots)
 
+        missed_keys = []
+        missed_values = []
+        use_match = {}
+        for key, value in self.gt_slots.items():
+            if key not in gen_slots:
+                match, score = process.extractOne(key, gen_slots.keys())
+                if score < self.threshold_value:
+                    missed_keys.append(key)
+                else:
+                    use_match.update({key: match})
+
+        if missed_keys:
+            logger.error(f"Keys of the ground truth slots and generated slots do not match {missed_keys}")
+            return False, missed_keys
+        
+        for key, value in self.gt_slots.items():
+            if key in gen_slots:
+                if value != gen_slots[key]:
+                    missed_values.append({key: {"gt": value, "gen": gen_slots[key]}})
+            else:
+                if key in use_match:
+                    if value != gen_slots[use_match[key]]:
+                        missed_values.append({key: {"gt": value, "gen": gen_slots[use_match[key]]}})
+
+        if missed_values:
+            logger.error(f"Values of the ground truth slots and generated slots do not match {missed_values}")
+            return False, missed_values
+        
+        return True, None
+
+
+
+        reformat_keys = {"bookday": "day", "bookpeople": "people", "booktime": "time",
+                          "bookstay": "stay", "price": "pricerange", "location": "area",
+                          "food": "cuisine"}
+
         #Compare the keys and values of the two dictionaries
         missed_keys = []
         missed_values = []
         for key, value in self.gt_slots.items():
+            usekey = key
             if key not in gen_slots.keys():
-                missed_keys.append(key)
+                if key in reformat_keys.keys():
+                    usekey = reformat_keys[key]
+                    if reformat_keys[key] not in gen_slots.keys():
+                        missed_keys.append(key)
+                else:
+                    missed_keys.append(key)
 
-            if value != gen_slots[key]:
-                missed_values.append({key: {"gt": value, "gen": gen_slots[key]}})
+            if value != gen_slots[usekey]:
+                missed_values.append({key: {"gt": value, "gen": gen_slots[usekey]}})
 
         if missed_keys:
             logger.error(f"Keys of the ground truth slots and generated slots do not match {missed_keys}")
