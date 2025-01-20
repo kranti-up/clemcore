@@ -100,56 +100,57 @@ def run(game: Union[str, Dict, GameSpec], model_specs: List[backends.ModelSpec],
         logger.error(e, exc_info=True)
 
 
-def score(game_name: str, experiment_name: str = None, results_dir: str = None):
+def score(game: Union[str, Dict, GameSpec], experiment_name: str = None, results_dir: str = None):
     """Calculate scores from a game benchmark run's records and store score files.
     Args:
-        game_name: Name of the game, matching the game's name in the game registry.
+        game: Name of the game, matching the game's name in the game registry, OR GameSpec-like dict, OR GameSpec.
         experiment_name: Name of the experiment to score. Corresponds to the experiment directory in each player pair
             subdirectory in the results directory.
         results_dir: Path to the results directory in which the benchmark records are stored.
     """
-    logger.info(f"Scoring game {game_name}")
-    stdout_logger.info(f"Scoring game {game_name}")
+    logger.info(f"Scoring game {game}")
+    stdout_logger.info(f"Scoring game {game}")
 
     if experiment_name:
         logger.info("Only scoring experiment: %s", experiment_name)
-    game_spec = clemgame.select_game(game_name)
-    try:
-        game = clemgame.load_game(game_spec, do_setup=False)
-        if experiment_name:
-            game.filter_experiment.append(experiment_name)
-        time_start = datetime.now()
-        game.compute_scores(results_dir)
-        time_end = datetime.now()
-        logger.info(f"Scoring {game.game_name} took {str(time_end - time_start)}")
-    except Exception as e:
-        stdout_logger.exception(e)
-        logger.error(e, exc_info=True)
+    game_specs = clemgame.select_game(game)
+    for game_spec in game_specs:
+        try:
+            game = clemgame.load_game(game_spec, do_setup=False)
+            if experiment_name:
+                game.filter_experiment.append(experiment_name)
+            time_start = datetime.now()
+            game.compute_scores(results_dir)
+            time_end = datetime.now()
+            logger.info(f"Scoring {game.game_name} took {str(time_end - time_start)}")
+        except Exception as e:
+            stdout_logger.exception(e)
+            logger.error(e, exc_info=True)
 
 
-def transcripts(game_name: str, experiment_name: str = None, results_dir: str = None):
+def transcripts(game: Union[str, Dict, GameSpec], experiment_name: str = None, results_dir: str = None):
     """Create episode transcripts from a game benchmark run's records and store transcript files.
     Args:
-        game_name: Name of the game, matching the game's name in the game registry.
+        game: Name of the game, matching the game's name in the game registry, OR GameSpec-like dict, OR GameSpec.
         experiment_name: Name of the experiment to score. Corresponds to the experiment directory in each player pair
             subdirectory in the results directory.
         results_dir: Path to the results directory in which the benchmark records are stored.
     """
-    logger.info(f"Transcribing game {game_name}")
-    stdout_logger.info(f"Transcribing game {game_name}")
+    logger.info(f"Transcribing game {game}")
+    stdout_logger.info(f"Transcribing game {game}")
     if experiment_name:
         logger.info("Only transcribing experiment: %s", experiment_name)
-    game_spec = clemgame.select_game(game_name)
-    try:
-        game = clemgame.load_game(game_spec, do_setup=False)
-        if experiment_name:
-            game.filter_experiment.append(experiment_name)
-        time_start = datetime.now()
-        game.build_transcripts(results_dir)
-        time_end = datetime.now()
-        logger.info(f"Building transcripts for {game.game_name} took {str(time_end - time_start)}")
-    except Exception as e:
-        stdout_logger.exception(e)
-        logger.error(e, exc_info=True)
-
+    game_specs = clemgame.select_game(game)
+    for game_spec in game_specs:
+        try:
+            game = clemgame.load_game(game_spec, do_setup=False)
+            if experiment_name:
+                game.filter_experiment.append(experiment_name)
+            time_start = datetime.now()
+            game.build_transcripts(results_dir)
+            time_end = datetime.now()
+            logger.info(f"Building transcripts for {game.game_name} took {str(time_end - time_start)}")
+        except Exception as e:
+            stdout_logger.exception(e)
+            logger.error(e, exc_info=True)
 
