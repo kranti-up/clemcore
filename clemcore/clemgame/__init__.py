@@ -235,6 +235,8 @@ def select_game(game: Union[str, Dict, GameSpec]) -> List[GameSpec]:
                     continue
 
         return matching_registered_games
+    elif game == "all":
+        return game_registry
     else:
         # return first entry that matches game_name
         for registered_game_spec in game_registry:

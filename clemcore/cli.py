@@ -121,7 +121,7 @@ if __name__ == "__main__":
     run_parser.add_argument("-e", "--experiment_name", type=str,
                             help="Optional argument to only run a specific experiment")
     run_parser.add_argument("-g", "--game", type=str,
-                            required=True, help="A specific game name (see ls).")
+                            required=True, help="A specific game name (see ls), or a GameSpec-like JSON string object.")
     run_parser.add_argument("-t", "--temperature", type=float, default=0.0,
                             help="Argument to specify sampling temperature for the models. Default: 0.0.")
     run_parser.add_argument("-l", "--max_tokens", type=int, default=100,
@@ -139,7 +139,8 @@ if __name__ == "__main__":
     score_parser.add_argument("-e", "--experiment_name", type=str,
                               help="Optional argument to only run a specific experiment")
     score_parser.add_argument("-g", "--game", type=str,
-                              help="A specific game name (see ls).")
+                              help='A specific game name (see ls), a GameSpec-like JSON string object or "all" (default).',
+                              default="all")
     score_parser.add_argument("-r", "--results_dir", type=str, default="results",
                               help="A relative or absolute path to the results root directory. "
                                    "For example '-r results/v1.5/de‘ or '-r /absolute/path/for/results'. "
@@ -149,7 +150,8 @@ if __name__ == "__main__":
     transcribe_parser.add_argument("-e", "--experiment_name", type=str,
                                    help="Optional argument to only run a specific experiment")
     transcribe_parser.add_argument("-g", "--game", type=str,
-                                   help="A specific game name (see ls).", default="all")
+                                   help='A specific game name (see ls), a GameSpec-like JSON string object or "all" (default).',
+                                   default="all")
     transcribe_parser.add_argument("-r", "--results_dir", type=str, default="results",
                                    help="A relative or absolute path to the results root directory. "
                                         "For example '-r results/v1.5/de‘ or '-r /absolute/path/for/results'. "
