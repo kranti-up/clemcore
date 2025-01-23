@@ -19,10 +19,11 @@ class ModularLLMSpeaker(Player):
         # a list to keep the dialogue history
         self.history: List = []
 
+        self.cursystem = None
+
     # implement this method as you prefer, with these same arguments
     def _custom_response(self, messages, turn_idx) -> str:
         """Return a mock message with the suitable letter and format."""
-        slotsdict = dict.fromkeys(self.slots, '')
         if self.player == 'A':
             if turn_idx == 1:
                 return self.task
@@ -44,26 +45,28 @@ class ModularLLMSpeaker(Player):
                 subsystems = [
                     ("intent_detector", '{"user_request": "I want to book a room in centre"}'),
                     ("slot_extractor", '{"user_request": "I want to book a room in centre"}'),
-                    ("db_retriever", '{"area": "centre"}'),
-                    ("followup_generator", '{"area": "centre"}'),
+                    ("followup_generator", '{"status": "follow-up", "details": "do you want to proceed with the booking?"}'),
                     ("booking_aggregator", '{"area": "centre"}'),
-                    ("booking_confirmer", '{"area": "centre"}')
                 ]
 
                 if self.cursystem is None:
                     self.cursystem = subsystems[0][0]
                     return f'{{"next_subsystem": "{self.cursystem}", "input_data": {subsystems[0][1]}}}'
+                
+                elif self.cursystem == "intent_detector":
+                    self.cursystem = "slot_extractor"
+                    return f'{{"next_subsystem": "{self.cursystem}", "input_data": {subsystems[1][1]}}}'
+                
+                elif self.cursystem == "slot_extractor":
+                    self.cursystem = "followup_generator"
+                    return f'{{"next_subsystem": "{self.cursystem}", "input_data": {subsystems[2][1]}}}'
 
-                for i, (system, data) in enumerate(subsystems):
-                    if self.cursystem == system:
-                        next_system = subsystems[i + 1][0] if i + 1 < len(subsystems) else None
-                        self.cursystem = next_system
-                        if next_system:
-                            return f'{{"next_subsystem": "{next_system}", "input_data": {data}}}'
-                        else:
-                            return f'{{"status": "booking-confirmed", "details": {data}}}'
 
                 if self.cursystem == "followup_generator":
                     self.cursystem = "booking_aggregator"
-                    return '{"status": "follow-up", "details": "do you want to proceed with the booking?"}'
+                    return json.dumps({"status": "validate-booking", "details": self.slots})
+                
+                elif self.cursystem == "booking_aggregator":
+                    return json.dumps({"status": "follow-up", "details": "booking done with reference number 123456"})
+
 

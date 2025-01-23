@@ -21,11 +21,41 @@
         "validatebooking": "in booking",
         "availablecolumns": "The available columns are: $columns",
         "missing_slots": "The missing arguments are: $slots",
-        "invalid_value": "The value for $slot is invalid",
+        "invalid_value": "The value(s) for $slot are not matching with the booking system.",
         "booking_reference": "Your booking reference number is 123456.",
         "nocolumnmatch": "No matching columns found in the database.",
-        "novaluematch": "No matching data found in the database for the given query. Possible values: $values"
+        "novaluematch": "No matching data found in the database for the given query."
     },
-
+    "json_schema": {
+        "type": "object",
+        "properties": {
+            "status": {
+                "type": "string",
+                "enum": ["follow-up", "db-query", "validate-booking"]
+            },
+            "details": {
+                "oneOf": [
+                    {
+                        "type": "string",
+                        "description": "Details for follow-up/acknowledgement, if the status is 'follow-up'."
+                    },
+                    {
+                        "type": "object",
+                        "description": "Details for db-query.",
+                        "properties": {},
+                        "additionalProperties": false                      
+                    },
+                    {
+                        "type": "object",
+                        "description": "Parameters specific to validate-booking.",
+                        "properties": {},
+                        "required": [],
+                        "additionalProperties": false
+                    }
+                ]
+            }
+        },
+        "required": ["status", "details"]
+    },
     "sub-system-liberal": true
 }

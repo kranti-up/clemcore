@@ -7,6 +7,7 @@ TASK:
    * Completeness of required information
    * Previous subsystem results
    * User's latest input
+5. All responses must strictly adhere to the schema. Include all required fields.
 
 RESPONSE FORMAT:
 1. For proceeding with the booking:

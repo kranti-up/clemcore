@@ -3,11 +3,9 @@ from typing import Dict, List
 from backends import Model
 from clemgame.clemgame import GameBenchmark, GameMaster, GameScorer
 from games.dmsystem_monolithic_llm.master import DMSystemMaster, DMSystemScorer
+from games.dmsystem_modular_llm.instancegenerator import GAME_NAME
 from games.dmsystem_modular_llm.llmsubsystems import LLMSubSystems
 from games.dmsystem_modular_llm.players import ModularLLMSpeaker
-
-# this will resolve into subdirectories to find the instances
-GAME_NAME = "dmsystem_modular_llm"
 
 
 class DMSystemModularLLMBenchmark(GameBenchmark):

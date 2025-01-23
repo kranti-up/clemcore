@@ -5,37 +5,178 @@ import json
 
 import clemgame
 from clemgame import get_logger
-from games.dmsystem_monolithic_llm.utils import cleanupanswer
 from games.dmsystem_modular_llm.players import ModularLLMSpeaker
-from games.dmsystem_modular_llm.intentdetector import IntentDetector
-from games.dmsystem_modular_llm.slotextractor import SlotExtractor
-from games.dmsystem_modular_llm.followupgenerator import FollowupGenerator
-from games.dmsystem_modular_llm.bookingaggregator import BookingAggregator
 
 logger = get_logger(__name__)
 
 
 class LLMSubSystems:
     def __init__(
-        self, model_name: str, game_data: Dict, player: object) -> None:
+        self, model_name: str, game_data: Dict, player: object, prompts_dict: Dict
+    ) -> None:
         self.model_name = model_name
         self.game_data = game_data
         self.respformat = game_data["json_schema"]
         self.player_b = player
 
-        self.turn_ss_prompt_player_b = game_data["prompts_dict"]["turn_ss_prompt_b"]
+        self.turn_ss_prompt_player_b = prompts_dict["turn_ss_prompt_b"]
 
         self.liberal_processing = game_data["liberal_processing"]
 
-        self.intentdet = IntentDetector(model_name, game_data["prompts_dict"]["intent_detection"])
-        self.slotext = SlotExtractor(model_name, game_data["prompts_dict"]["slot_extraction"])
-        self.followupgen = FollowupGenerator(model_name, game_data["prompts_dict"]["followup_generation"])
-        #self.bookaggregator = BookingAggregator(model_name, prompts_dict["booking_aggregator"])
+        self.intentdet = ModularLLMSpeaker(model_name, "intent_detection", "", {})
+        self.intentdet.history.append(
+            {"role": "user", "content": prompts_dict["intent_detection"]}
+        )
+
+        self.slotext = ModularLLMSpeaker(model_name, "slot_extraction", "", {})
+        self.slotext.history.append(
+            {"role": "user", "content": prompts_dict["slot_extraction"]}
+        )
+
+        self.followupgen = ModularLLMSpeaker(model_name, "followup_generation", "", {})
+        self.followupgen.history.append(
+            {"role": "user", "content": prompts_dict["followup_generation"]}
+        )
+
+        self.bookaggregator = ModularLLMSpeaker(model_name, "booking_aggregator", "", {})
+        self.bookaggregator.history.append(
+            {"role": "user", "content": prompts_dict["booking_aggregator"]}
+        )
 
         self.liberalcount = {"intent": 0, "slot": 0, "follow": 0, "aggregator": 0}
         self.subsystemnamemap = {"intent_detector": "intent", "slot_extractor": "slot", 
-                                 "followup_generator": "follow"}#, "booking_aggregator": "aggregator"}
+                                 "followup_generator": "follow", "booking_aggregator": "aggregator"}
 
+    def _cleanupanswer(self, prompt_answer: str) -> str:
+        """Clean up the answer from the LLM DM."""
+        if "```json" in prompt_answer:
+            prompt_answer = prompt_answer.replace("```json", "").replace("```", "")
+            try:
+                prompt_answer = json.loads(prompt_answer)
+            except Exception as e:
+                pass
+            return prompt_answer
+
+        return prompt_answer
+
+    def _handleintent(self, utterance: str, current_turn: int) -> str:
+        # TODO: Do I need to log the prompt and raw_answer for all the sub-systems?
+        if self.intentdet.history[-1]["role"] == "user":
+            if isinstance(utterance, Dict):
+                self.intentdet.history[-1]["content"] += json.dumps(utterance)
+            else:
+                self.intentdet.history[-1]["content"] += utterance
+        else:
+            self.intentdet.history.append(
+                {
+                    "role": "user",
+                    "content": json.dumps(utterance)
+                    if isinstance(utterance, dict)
+                    else utterance,
+                }
+            )
+        # print(self.intentdet.history[-1])
+        prompt, raw_answer, answer = self.intentdet(
+            self.intentdet.history, current_turn, None
+        )
+        # self.intentdet.history.append({'role': "assistant", 'content': answer})
+        logger.error(f"Intent detection raw response:\n{answer}")
+        answer = self._cleanupanswer(answer)
+        # print(f"Intent detection: {answer}")
+        self.intentdet.history.append(
+            {
+                "role": "assistant",
+                "content": json.dumps(answer) if isinstance(answer, dict) else answer,
+            }
+        )
+        return answer
+
+    def _handleslots(self, utterance: str, current_turn: int) -> str:
+        if self.slotext.history[-1]["role"] == "user":
+            if isinstance(utterance, Dict):
+                self.slotext.history[-1]["content"] += json.dumps(utterance)
+            else:
+                self.slotext.history[-1]["content"] += utterance
+
+        else:
+            self.slotext.history.append(
+                {
+                    "role": "user",
+                    "content": json.dumps(utterance)
+                    if isinstance(utterance, dict)
+                    else utterance,
+                }
+            )
+        # print(self.entityext.history[-1])
+
+        prompt, raw_answer, answer = self.slotext(self.slotext.history, current_turn, None)
+        # self.entityext.history.append({'role': "assistant", 'content': answer})
+        logger.error(f"Slot Extraction raw response:\n{answer}")
+        answer = self._cleanupanswer(answer)
+        # print(f"Slot extraction: {answer}")
+        self.slotext.history.append(
+            {
+                "role": "assistant",
+                "content": json.dumps(answer) if isinstance(answer, dict) else answer,
+            }
+        )
+        return answer
+
+    def _handlefollowup(self, data: Dict, current_turn: int) -> str:
+        if self.followupgen.history[-1]["role"] == "user":
+            if isinstance(self.followupgen.history[-1]["content"], str):
+                self.followupgen.history[-1]["content"] += json.dumps(data)
+            else:
+                print(
+                    f"Issue with Content Type: Followup generation: {self.followupgen.history[-1]}"
+                )
+                input()
+
+            # print(self.responsegen.history[-1])
+        else:
+            self.followupgen.history.append(
+                {"role": "user", "content": json.dumps(data)}
+            )
+
+        prompt, raw_answer, answer = self.followupgen(
+            self.followupgen.history, current_turn, None
+        )
+        # self.responsegen.history.append({'role': "assistant", 'content': answer})
+        logger.error(f"Followup raw response:\n{answer}")
+
+        answer = self._cleanupanswer(answer)
+        # print(f'Follow-up generation: {answer}')
+        self.followupgen.history.append(
+            {
+                "role": "assistant",
+                "content": json.dumps(answer) if isinstance(answer, dict) else answer,
+            }
+        )
+        return answer
+
+    def _handlebookaggregator(self, data: Dict, current_turn: int) -> str:
+        if self.bookaggregator.history[-1]["role"] == "user":
+            self.bookaggregator.history[-1]["content"] += json.dumps(data)
+        else:
+            self.bookaggregator.history.append(
+                {"role": "user", "content": json.dumps(data)}
+            )
+        # print(self.responsegen.history[-1])
+
+        prompt, raw_answer, answer = self.bookaggregator(
+            self.bookaggregator.history, current_turn, None
+        )
+        # self.responsegen.history.append({'role': "assistant", 'content': answer})
+        logger.error(f"Book Aggregator raw response:\n{answer}")
+        answer = self._cleanupanswer(answer)
+        # print(f'Booking aggregator: {answer}')
+        self.bookaggregator.history.append(
+            {
+                "role": "assistant",
+                "content": json.dumps(answer) if isinstance(answer, dict) else answer,
+            }
+        )
+        return answer
 
     def _append_utterance(self, subsystem: str, utterance: str, role: str) -> None:
         """Add an utterance to the history of a player (firstlast specific)."""
@@ -94,10 +235,10 @@ class LLMSubSystems:
         """
 
         subsystem_handlers = {
-                    "intent_detector": self.intentdet.run,
-                    "slot_extractor": self.slotext.run,
-                    "followup_generator": self.followupgen.run,
-                    #"booking_aggregator": self.bookaggregator.run
+                    "intent_detector": self._handleintent,
+                    "slot_extractor": self._handleslots,
+                    "followup_generator": self._handlefollowup,
+                    "booking_aggregator": self._handlebookaggregator,
                 }        
         num_probes = 0
 
@@ -109,7 +250,7 @@ class LLMSubSystems:
             )
             logger.error(f"Player B: Subsystem Flow response\n{answer}")
             num_probes += 1
-            answer = cleanupanswer(answer)
+            answer = self._cleanupanswer(answer)
             # print('2.2 DM System Output\n',answer)
             # input()
             self._append_utterance(None, answer, "assistant")
