@@ -1,0 +1,30 @@
+TASK:
+1. Review the previous state and new user input
+2. Update the conversation flow if necessary
+3. Identify missing or unclear information
+4. Select the next appropriate subsystem based on:
+   * Current flow status
+   * Completeness of required information
+   * Previous subsystem results
+   * User's latest input
+
+RESPONSE FORMAT:
+1. For proceeding with the booking:
+{
+   "status": "validate-booking",
+   "details": {FILLED SLOTS}
+}
+
+2. For follow-up (The FOLLOW-UP MESSAGE must be a concise string.):
+{
+   "status": "follow-up",
+   "details": FOLLOW-UP MESSAGE
+}
+
+3. For querying the database:
+{
+   "status": "db-query",
+   "details": {FILLED SLOTS}
+}
+
+BOOKING VALIDATION STATUS:
