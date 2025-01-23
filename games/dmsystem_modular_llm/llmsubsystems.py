@@ -10,7 +10,8 @@ from games.dmsystem_modular_llm.players import ModularLLMSpeaker
 from games.dmsystem_modular_llm.intentdetector import IntentDetector
 from games.dmsystem_modular_llm.slotextractor import SlotExtractor
 from games.dmsystem_modular_llm.followupgenerator import FollowupGenerator
-from games.dmsystem_modular_llm.bookingaggregator import BookingAggregator
+from games.dmsystem_modular_llm.dbqueryformatter import DBQueryFormatter
+from games.dmsystem_modular_llm.bookingformatter import BookingFormatter
 
 logger = get_logger(__name__)
 
@@ -30,36 +31,34 @@ class LLMSubSystems:
         self.intentdet = IntentDetector(model_name, game_data["prompts_dict"]["intent_detection"])
         self.slotext = SlotExtractor(model_name, game_data["prompts_dict"]["slot_extraction"])
         self.followupgen = FollowupGenerator(model_name, game_data["prompts_dict"]["followup_generation"])
-        #self.bookaggregator = BookingAggregator(model_name, prompts_dict["booking_aggregator"])
+        self.dbqueryformatter = DBQueryFormatter(model_name, game_data["prompts_dict"]["dbquery_formatter"])
+        self.bookformatter = BookingFormatter(model_name, game_data["prompts_dict"]["booking_formatter"])
 
         self.liberalcount = {"intent": 0, "slot": 0, "follow": 0, "aggregator": 0}
         self.subsystemnamemap = {"intent_detector": "intent", "slot_extractor": "slot", 
-                                 "followup_generator": "follow"}#, "booking_aggregator": "aggregator"}
+                                 "followup_generator": "follow",
+                                 "dbquery_formatter": "dbquery", "booking_formatter": "booking"}
 
 
     def _append_utterance(self, subsystem: str, utterance: str, role: str) -> None:
         """Add an utterance to the history of a player (firstlast specific)."""
+
+        message = utterance
+        if isinstance(utterance, dict) or isinstance(utterance, list):
+            message = json.dumps(utterance)
+
+
         if role == "assistant":
-            if isinstance(utterance, dict) or isinstance(utterance, list):
-                self.player_b.history.append(
-                    {"role": role, "content": json.dumps(utterance)}
-                )
-            else:
-                self.player_b.history.append({"role": role, "content": utterance})
+            self.player_b.history.append({"role": role, "content": message})
         else:
             if utterance:
                 turn_prompt = self.turn_ss_prompt_player_b.replace(
                     "$sub-system", subsystem
                 )
-                if isinstance(utterance, dict) or isinstance(utterance, list):
-                    turn_prompt += "\n\n" + json.dumps(utterance)
-                else:
-                    turn_prompt += "\n\n" + utterance
+                turn_prompt += "\n\n" + message
             else:
                 turn_prompt = subsystem
             self.player_b.history.append({"role": role, "content": turn_prompt.strip()})
-            # print(self.player_b.history[-1])
-            # input()
 
 
     def _validate_subsystem(self, nextsubsystem: str) -> bool:
@@ -97,21 +96,17 @@ class LLMSubSystems:
                     "intent_detector": self.intentdet.run,
                     "slot_extractor": self.slotext.run,
                     "followup_generator": self.followupgen.run,
-                    #"booking_aggregator": self.bookaggregator.run
-                }        
-        num_probes = 0
+                    "dbquery_formatter": self.dbqueryformatter.run,
+                    "booking_formatter": self.bookformatter.run
+                }
 
         while True:
-            # print(f'2.1 Calling player B, num_probes: {num_probes}')#\n{self.player_b.history}')
-            # input()
             prompt, raw_answer, answer = self.player_b(
                 self.player_b.history, current_turn, self.respformat
             )
-            logger.error(f"Player B: Subsystem Flow response\n{answer}")
-            num_probes += 1
+            logger.info(f"Player B: Subsystem Flow response\n{answer}")
+
             answer = cleanupanswer(answer)
-            # print('2.2 DM System Output\n',answer)
-            # input()
             self._append_utterance(None, answer, "assistant")
 
             try:
@@ -119,21 +114,19 @@ class LLMSubSystems:
             except Exception as e:
                 result = answer
 
-            # print(f'2.3 Result = {result} TypeR = {type(result)} TypeA = {type(answer)}')
             if isinstance(result, dict):
                 next_subsystem = result.get("next_subsystem", None)
             else:
                 next_subsystem = None
 
-            # print(f'2.4 Next SubSystem: {next_subsystem}')#, type: {type(result)}, result: {result}')
-            logger.error(f"Player B: Next SubSystem response\n{next_subsystem}")
+            logger.info(f"Player B: Next SubSystem response\n{next_subsystem}")
             if next_subsystem:
                 next_subsystem = next_subsystem.lower()
                 taskinput = result.get("input_data", None)
-                logger.error(f"Player B: Next SubSystem Input\n{taskinput}")
+                logger.info(f"Player B: Next SubSystem Input\n{taskinput}")
 
                 status, use_subsystem = self._validate_subsystem(next_subsystem)
-                logger.error(f"Player B: Subsystem Validation: status - {status}, use_subsystem - {use_subsystem}")
+                logger.info(f"Player B: Subsystem Validation: status - {status}, use_subsystem - {use_subsystem}")
 
                 if not status:
                     if use_subsystem == "reprobe":
@@ -143,36 +136,29 @@ class LLMSubSystems:
                         logger.error(
                             "No matching sub-system found for the next task. Probing the LLM one more time."
                         )
-                        # print("2.5 No matching sub-system found for the next task. Probing the LLM one more time.")
                         self._append_utterance(
                             "No matching sub-system found for the next task.", None, "user"
                         )                        
-
+                        continue
                     else:
                         logger.error(f"Invalid Subsystem: {next_subsystem}. Cannot continue processing.")
                         #Game Master should treat this as failure and abort the game
-                        #TODO: Having None for prompt, raw_answer and answer is not a good idea. Need to handle this properly
-                        return None, None, None
+                        return prompt, None, None
 
                 usetaskinput = self._validate_subsystem_input(taskinput)
 
                 if usetaskinput is None:
                     logger.error(f"Invalid Subsystem InputData {taskinput}. Cannot continue processing.")
                     #Game Master should treat this as failure and abort the game
-                    #TODO: Having None for prompt, raw_answer and answer is not a good idea. Need to handle this properly
-                    return None, None, None
+                    return prompt, None, None
 
 
                 ss_response = subsystem_handlers[use_subsystem](usetaskinput, current_turn)
-                logger.error(f"{use_subsystem} response appending to Player B\n{ss_response}")
+                logger.info(f"{use_subsystem} response appending to Player B\n{ss_response}")
                 self._append_utterance(use_subsystem, ss_response, "user")
                 #Adding sleep to reduce the frequencey of calls to the LLM
                 time.sleep(3)                   
             else:
                 # Return the LLM response to user
-                # print(f'2. Returning the LLM response to user:\n{answer}')
-                # input()
-                # print(f"2.6 Returning the LLM response to the user:\n{answer}")
-                # input()
-                logger.error(f"Returning the LLM response to the user\n{answer}")
+                logger.info(f"Returning the LLM response to the user\n{answer}")
                 return prompt, raw_answer, answer      

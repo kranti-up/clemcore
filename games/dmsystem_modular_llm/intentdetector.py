@@ -24,6 +24,7 @@ class IntentDetector:
         self.player.history.append({"role": "user", "content": self.base_prompt})
 
     def run(self, utterance: Dict, turn_idx: int) -> str:
+        self.player.history = [{"role": "user", "content": self.base_prompt}] 
         message = json.dumps(utterance) if isinstance(utterance, Dict) else utterance
 
         self.player.history[-1]["content"] += message

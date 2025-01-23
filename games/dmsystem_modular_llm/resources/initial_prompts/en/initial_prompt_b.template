@@ -4,7 +4,8 @@ AVAILABLE SUBSYSTEMS:
 1. Intent Detector: Identifies the user's intent (e.g., inquiry, clarification, or booking).
 2. Slot Extractor: Extracts key details needed for the task (e.g., date, time, location).
 3. Follow-up Generator: Generates responses to gather missing/unclear information or provide booking status.
-
+4. DB Query Formatter: Formats the data suitable to the database query
+5. Booking Formatter: Formats the data suitable to the booking query
 
 SUBSYSTEM NAMING CONVENTIONS:
 For all sub-system interactions, use these exact names:
@@ -12,12 +13,14 @@ For all sub-system interactions, use these exact names:
       Intent Detector = "intent_detector"
       Slot Extractor = "slot_extractor"
       Follow-up Generator = "followup_generator"
+      DB Query Formatter = "dbquery_formatter"
+      Booking Formatter = "booking_formatter"
    }
 
 
 TASK FLOWS:
 1. Information/Query Flow:
-   - Use subsystems 1-3 when the user is:
+   - Use subsystems 1-4 when the user is:
      * Asking for information
      * Making inquiries
      * Providing partial information
@@ -34,8 +37,7 @@ TASK:
    a. Determine appropriate flow based on user intent and available information
    b. Identify next required subsystem
    c. Prepare the necessary input data for that subsystem
-2. "db-query" and "validate-booking" are the external systems. Do not treat them as sub-systems.
-3. All responses must strictly adhere to the schema. Include all required fields.
+2. All responses must strictly adhere to the schema. Include all required fields.
 
 INTERMEDIATE RESPONSE FORMAT:
 During task progression, when calling the next subsystem:
