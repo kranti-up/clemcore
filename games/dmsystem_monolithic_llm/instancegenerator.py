@@ -11,7 +11,7 @@ from games.dmsystem_llm_monolithic.domaindbreader import DomainDBReader
 # this name will be used everywhere, including in the table of results
 GAME_NAME = "dmsystem_monolithic_llm"
 # we will create 10 instances for each experiment; vary this as you wish
-N_INSTANCES = 1
+N_INSTANCES = 5
 # if the generation involves randomness, remember to set a random seed
 SEED = 123
 
@@ -43,7 +43,7 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
             if entry["service_name"] == domain:
                 for slot in entry["slots"]:
                     slot_name = slot["name"].split("-")[1].strip()
-                    if slot["is_categorical"] and slot_name in game_slots:
+                    if slot["is_categorical"]:  # and slot_name in game_slots:
                         cat_slots.append(slot_name)
                     else:
                         noncat_slots.append(slot_name)
@@ -69,15 +69,13 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
                 gamedata["slots"],
                 promptsdict[prompt_type],
             )
-            
 
-        if game_name == "dmsystem_modular_llm":
+        if game_name in ["dmsystem_modular_llm", "dmsystem_modular_prog"]:
             gamedata["turn_ss_prompt_b"] = promptsdict["turn_ss_prompt_b"]
             modular_prompt_types = [
                 "intent_detection",
                 "slot_extraction",
                 "followup_generation",
-                "booking_aggregator",
             ]
             for prompt_type in modular_prompt_types:
                 gamedata[prompt_type] = self.create_prompt(
@@ -87,25 +85,124 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
                     promptsdict[prompt_type],
                 )
 
+            for index, formatter_type in enumerate(
+                ["dbquery_formatter", "booking_formatter"]
+            ):
+                json_schema = gamedata["json_schema"]["schema"]["properties"][
+                    "details"
+                ]["oneOf"][index + 1]["properties"]
+                gamedata[formatter_type] = self.create_prompt(
+                    domain,
+                    taskdlgs[game_id]["goal"],
+                    json_schema,
+                    promptsdict[formatter_type],
+                )
+
+    def _get_possible_values(self, domain, slot_name, domain_schema):
+        for entry in domain_schema:
+            if entry["service_name"] == domain:
+                for slot in entry["slots"]:
+                    if slot["name"].split("-")[1].strip() == slot_name:
+                        # parking and internet slots have possible values 'free' in schema.json and 'yes', 'no' in db
+                        if slot_name in ["internet", "parking"]:
+                            return ["yes", "no"]
+                        return (
+                            slot["possible_values"] if "possible_values" in slot else []
+                        )
+        return []
+
+    def _get_service_cat_slots(self, domain, domain_schema):
+        for entry in domain_schema:
+            if entry["service_name"] == domain:
+                return [
+                    slot["name"].split("-")[1].strip()
+                    for slot in entry["slots"]
+                    if slot["is_categorical"]
+                ]
+        return []
+
+    def _get_db_columns_service(self, domain):
+        """
+        Removed parking, internet columns
+        In Schema.json, the possibe values for these columns are yes, no and free
+        But in the db, the values are yes and no
+        This causes the db to return empty results for queries with parking or internet with values 'free'
+        """
+        db_columns = {
+            "restaurant": ["area", "pricerange", "name", "food"],
+            "hotel": [
+                "area",
+                "pricerange",
+                "name",
+                "stars",
+                "type",
+                "internet",
+                "parking",
+            ],
+            "attraction": ["area", "type", "name"],
+            "train": [
+                "destination",
+                "day",
+                "departure",
+                "arriveby",
+                "leaveat",
+                "duration",
+            ],
+            "bus": [
+                "destination",
+                "day",
+                "departure",
+                "arriveby",
+                "leaveat",
+                "duration",
+            ],
+        }
+        return db_columns.get(domain, [])
+
+    def _update_properties(self, domain, domain_schema, keys, details):
+        data = {}
+        for key in keys:
+            data[key] = {"type": "string"}
+            values = self._get_possible_values(domain, key, domain_schema)
+            if values:
+                data[key]["enum"] = values
+            details["properties"].update(data)
+
+    def _fill_jsonscheme(self, gamedata, domain, domain_schema):
+        json_schema = copy.deepcopy(gamedata["json_schema"])
+
+        db_details = json_schema["properties"]["details"]["oneOf"][1]
+        db_keys = self._get_db_columns_service(domain)
+        self._update_properties(domain, domain_schema, db_keys, db_details)
+        gamedata["domaindbkeys"] = db_keys
+
+        booking_details = json_schema["properties"]["details"]["oneOf"][2]
+        book_keys = list(gamedata["slots"].keys())
+        self._update_properties(domain, domain_schema, book_keys, booking_details)
+        booking_details["required"] = book_keys
+        gamedata["json_schema"] = {
+            "name": "response_format_schema",
+            "schema": json_schema,
+        }
+
     def _preparegamedata(
         self,
         game_name,
         game_id,
-        similarity,
-        liberal_processing,
-        statusmsg,
+        gameconfig,
         domain,
         domain_schema,
         taskdlgs,
         promptsdict,
     ):
         gamedata = {}
-        gamedata["n_turns"] = taskdlgs[game_id]["n_turns"]
-        gamedata["similarity"] = similarity
-        gamedata["liberal_processing"] = liberal_processing
-        gamedata["statusmsg"] = statusmsg
+        gamedata["n_turns"] = gameconfig["n_turns"]  # taskdlgs[game_id]["n_turns"]
+        gamedata["similarity"] = gameconfig["similarity"]
+        gamedata["liberal_processing"] = gameconfig["sub-system-liberal"]
+        gamedata["statusmsg"] = gameconfig["statusmsg"]
+        gamedata["json_schema"] = gameconfig["json_schema"]
         gamedata["domain"] = domain
-        #without games/ prefix in the path, the sqlite connection fails
+        # without games/ prefix in the path, the sqlite connection fails
         gamedata[
             "domaindb_path"
         ] = f"games/{GAME_NAME}/resources/domains/{LANGUAGE}/{domain}-dbase.db"
@@ -134,6 +231,8 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
         )
         gamedata["game_name"] = game_name
 
+        self._fill_jsonscheme(gamedata, domain, domain_schema)
+
         self._fill_player_prompts(
             game_name, game_id, gamedata, domain, taskdlgs, promptsdict, prompt_slots
         )
@@ -141,14 +240,11 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
         return gamedata
 
     def _get_player_prompts(self, game_name):
-        prompt_file_names = [
-            "initial_prompt_a",
-            "turn_prompt_a"
-        ]
+        prompt_file_names = ["initial_prompt_a", "turn_prompt_a"]
 
         prompts_dict_match_keys = {
             "initial_prompt_a": "prompt_a",
-            "turn_prompt_a": "turn_prompt_a"
+            "turn_prompt_a": "turn_prompt_a",
         }
 
         promptsdict = {
@@ -158,37 +254,37 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
             for file_name in prompt_file_names
         }
 
-
         prompt_file_names = [
             "initial_prompt_b",
             "turn_prompt_b",
             "dbquery_prompt_b",
-            "validbooking_prompt_b"
+            "validbooking_prompt_b",
         ]
 
         prompts_dict_match_keys = {
             "initial_prompt_b": "prompt_b",
             "turn_prompt_b": "turn_prompt_b",
             "dbquery_prompt_b": "dbquery_prompt_b",
-            "validbooking_prompt_b": "validbooking_prompt_b"
+            "validbooking_prompt_b": "validbooking_prompt_b",
         }
 
         promptsdict.update(
             {
-                    value: file_utils.load_template(
-                        f"resources/initial_prompts/{LANGUAGE}/{key}", game_name
-                    )
-                    for key, value in prompts_dict_match_keys.items()
-                }
-            )
+                value: file_utils.load_template(
+                    f"resources/initial_prompts/{LANGUAGE}/{key}", game_name
+                )
+                for key, value in prompts_dict_match_keys.items()
+            }
+        )
 
-        if game_name == "dmsystem_modular_llm":
+        if game_name in ["dmsystem_modular_llm", "dmsystem_modular_prog"]:
             additional_prompts = {
                 "turn_subsystem_prompt_b": "turn_ss_prompt_b",
                 "initial_prompt_intent_detection": "intent_detection",
                 "initial_prompt_slot_extraction": "slot_extraction",
                 "initial_prompt_followup_generation": "followup_generation",
-                "initial_prompt_booking_aggregator": "booking_aggregator",
+                "initial_prompt_dbquery_formatter": "dbquery_formatter",
+                "initial_prompt_booking_formatter": "booking_formatter",
             }
 
             promptsdict.update(
@@ -201,7 +297,7 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
             )
 
         return promptsdict
-    
+
     def _normalize_domain_schema(self, domain, domain_schema):
         normalized_schema = {}
         for entry in domain_schema:
@@ -212,7 +308,9 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
                 {
                     "name": slot["name"].split("-")[1].strip(),
                     "is_categorical": slot["is_categorical"],
-                    "possible_values": slot["possible_values"] if "possible_values" in slot else [],
+                    "possible_values": slot["possible_values"]
+                    if "possible_values" in slot
+                    else [],
                 }
                 for slot in entry["slots"]
             ]
@@ -251,22 +349,20 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
                 continue
             # create an experiment (for us, named after a topic)
 
-            taskdlgs = random.choices(filteredtasks[domain], k=N_INSTANCES)
+            try:
+                taskdlgs = random.sample(filteredtasks[domain], k=N_INSTANCES)
+            except ValueError:
+                print(f"Insufficient tasks for {domain} domain.")
+                continue
             gameinstances = []
             # build N_INSTANCES instances for each experiment
             for game_id in range(N_INSTANCES):
                 # set the parameters
-                similarity = gameconfig["similarity"]
-                statusmsg = gameconfig["statusmsg"]
-                liberal_processing = gameconfig["sub-system-liberal"]
-
                 # populate the game instance with its parameters
                 data_instance = self._preparegamedata(
                     self.game_name,
                     game_id,
-                    similarity,
-                    liberal_processing,
-                    statusmsg,
+                    gameconfig,
                     domain,
                     domain_schema,
                     taskdlgs,

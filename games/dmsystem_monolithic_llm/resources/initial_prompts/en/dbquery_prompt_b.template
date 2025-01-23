@@ -2,6 +2,7 @@ TASK:
 1. Review the previous state and new user input
 2. Update the conversation flow if necessary
 3. Identify missing or unclear information
+4. All responses must strictly adhere to the schema. Include all required fields
 
 RESPONSE FORMAT:
 1. For proceeding with the booking:

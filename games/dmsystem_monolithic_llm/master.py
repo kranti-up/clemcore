@@ -1,3 +1,4 @@
+import random
 import copy
 from typing import List, Dict, Tuple
 from string import ascii_lowercase as letters
@@ -18,7 +19,7 @@ from games.dmsystem_monolithic_llm.instancegenerator import GAME_NAME
 from games.dmsystem_monolithic_llm.gamevalidator import GameValidator
 from games.dmsystem_monolithic_llm.dbquerybuilder import DBQueryBuilder
 
-from games.dmsystem_monolithic_llm.utils import cleanupanswer
+from games.dmsystem_monolithic_llm.utils import cleanupanswer, generate_reference_number
 
 
 # use the framework logger to log events relevant at runtime;
@@ -35,7 +36,6 @@ class DMSystemMaster(GameMaster):
         other_modules: classmethod,
     ):
         super().__init__(gamename, experiment, player_backends)
-
         # save experiment and player attributes that will be necessary later
         self.topic = experiment["name"]
         self.model_a = player_backends[0]
@@ -91,6 +91,8 @@ class DMSystemMaster(GameMaster):
         self.slots = data["slots"]
         self.cat_slots = data["cat_slots"]
         self.noncat_slots = data["noncat_slots"]
+        self.respformat = data["json_schema"]
+        self.domaindbkeys = data["domaindbkeys"]  
 
         self.gamedata = None
         self.slots_gen = None
@@ -114,6 +116,7 @@ class DMSystemMaster(GameMaster):
         self.request_counts = [0] * (self.n_turns + 1)
         self.parsed_request_counts = [0] * (self.n_turns + 1)
         self.violated_request_counts = [0] * (self.n_turns + 1)
+
 
     def _setgamespecificsetup(self, data: Dict, game_id: int) -> None:
         # instantiate both players
@@ -158,7 +161,9 @@ class DMSystemMaster(GameMaster):
             self.prompt_intent = data["intent_detection"]
             self.prompt_slot_extraction = data["slot_extraction"]
             self.prompt_followup_generation = data["followup_generation"]
-            self.prompt_booking_aggregator = data["booking_aggregator"]
+            self.prompt_dbquery_formatter = data["dbquery_formatter"]
+            self.prompt_booking_formatter = data["booking_formatter"]
+            #self.prompt_booking_aggregator = data["booking_aggregator"]
 
         elif data["game_name"] == self.custom_dm_game_name:
             self.player_a = LLMSpeaker(self.model_a, "A", self.goal, self.slots)
@@ -186,16 +191,21 @@ class DMSystemMaster(GameMaster):
                 "intent_detection": self.prompt_intent,
                 "slot_extraction": self.prompt_slot_extraction,
                 "followup_generation": self.prompt_followup_generation,
-                "booking_aggregator": self.prompt_booking_aggregator,
+                "dbquery_formatter": self.prompt_dbquery_formatter,
+                "booking_formatter": self.prompt_booking_formatter,
+                #"booking_aggregator": self.prompt_booking_aggregator,
             }
 
+            reqdata = { "json_schema": self.respformat,
+                       "liberal_processing": data["liberal_processing"],
+                       "prompts_dict": prompts_dict,}
+
             self.modularb = self.other_modules["modules"](
-                self.model_b, data, self.player_b, prompts_dict
-            )
+                self.model_b, reqdata, self.player_b)
         elif self.game_name == self.custom_dm_game_name:
             self.modularb = self.other_modules["modules"](
                 self.model_b.model_spec["model_name"], data["goal"]
-            )
+            )        
 
     def play(self) -> None:
         """Play the game until the end (mandatory)."""
@@ -205,6 +215,8 @@ class DMSystemMaster(GameMaster):
             # always call log_next_turn when a new turn starts
             self.log_next_turn()
             self.turn()
+
+        logger.info(f"Player B history\n{self.player_b.history}")
 
         logger.info("Closing the DB connection")
         self.dbquery.reset()
@@ -289,8 +301,10 @@ class DMSystemMaster(GameMaster):
         else:
             self.player_a.history.append({"role": "user", "content": prompt_player_a})
 
-        if self.game_name != self.custom_dm_game_name:
+        if self.game_name == self.modular_llm_game_name:
             self.player_b.history.append({"role": "user", "content": prompt_player_b})
+        elif self.game_name == self.modular_prog_game_name:
+            self.player_b.history.append({"role": "user", "content": "USER REQUEST:"})
 
         # also log the messages as events for the transcriptions
         action = {"type": "send message", "content": prompt_player_a}
@@ -347,7 +361,7 @@ class DMSystemMaster(GameMaster):
                     # stop game
                     self.aborted = True
                     # log the abortion event
-                    action = {"type": "invalid format", "content": "abort"}
+                    action = {"type": "invalid format", "content": "game aborted due to an issue in dbquery"}
                     self.log_event(from_="GM", to="GM", action=action)
                     # increase the counter of requests that violate form rules
                     self.violated_request_counts[self.current_turn] += 1
@@ -360,7 +374,7 @@ class DMSystemMaster(GameMaster):
                     # stop game
                     self.aborted = True
                     # log the abortion event
-                    action = {"type": "invalid format", "content": "abort"}
+                    action = {"type": "invalid format", "content": "game aborted due to an issue in booking"}
                     self.log_event(from_="GM", to="GM", action=action)
                     # increase the counter of requests that violate form rules
                     self.violated_request_counts[self.current_turn] += 1
@@ -383,7 +397,7 @@ class DMSystemMaster(GameMaster):
                 self.player_a.history[-1]["content"] += "\n\n" + usergoal
             # make an API call (or get a programmatic response) from player a
             prompt, raw_answer, answer = self.player_a(
-                self.player_a.history, self.current_turn
+                self.player_a.history, self.current_turn, None
             )
             # add API call to the records
             action = {"type": "get message", "content": answer}
@@ -399,15 +413,8 @@ class DMSystemMaster(GameMaster):
         else:
             # make an API call (or get a programmatic response) from player b
             if self.game_name == self.monolithic_llm_game_name:
-                if len(self.player_b.history) >= 2:
-                    if self.player_b.history[-2]["role"] == self.player_b.history[-1]["role"]:
-                        print("Player B: Repeating the same role")
-                        print(self.player_b.history)
-                        input()
-
-
                 prompt, raw_answer, answer = self.player_b(
-                    self.player_b.history, self.current_turn
+                    self.player_b.history, self.current_turn, self.respformat
                 )
                 answer = cleanupanswer(answer)
 
@@ -441,6 +448,7 @@ class DMSystemMaster(GameMaster):
             )
 
         # increase the number of API requests
+        #TODO: For Modular DM, there are multiple calls to the sub-modules which are not counted here
         self.request_counts[self.current_turn] += 1
         return answer
 
@@ -488,10 +496,18 @@ class DMSystemMaster(GameMaster):
 
                     if role == "user":
                         turn_prompt = self.turn_prompt_player_b
+                        if self.game_name == self.modular_prog_game_name:
+                            turn_prompt = "USER REQUEST:"                        
                     elif role == "db-query":
                         turn_prompt = self.dbquery_prompt_player_b
+                        if self.game_name == self.modular_prog_game_name:
+                            turn_prompt = "DATABASE RETRIEVAL RESULTS:"
+
                     elif role == "validate-booking":
                         turn_prompt = self.validbooking_prompt_player_b
+                        if self.game_name == self.modular_prog_game_name:
+                            turn_prompt = "BOOKING VALIDATION STATUS:"
+
 
                     self.player_b.history.append({"role": "user", "content": turn_prompt + "\n\n" + b_response})
                     logger.info(f"Player B: {self.player_b.history[-1]}")
@@ -509,7 +525,7 @@ class DMSystemMaster(GameMaster):
         if response is None:
             self.aborted = True
             # log the abortion event
-            action = {"type": "invalid format", "content": "abort"}
+            action = {"type": "invalid format", "content": "game aborted due to an issue in parsing the response"}
             self.log_event(from_="GM", to="GM", action=action)
             # increase the counter of requests that violate form rules
             self.violated_request_counts[self.current_turn] += 1
@@ -531,12 +547,15 @@ class DMSystemMaster(GameMaster):
                     self.log_event(from_="GM", to="GM", action=action)
 
                     # Compare the slots of the ground truth and the generated slots
+                    # This comparison is done in handle_booking() method
+
                     status, missed_values = self.gamevalidator.run(self.slots_gen)
                     if status:
                         self.success = True
                     else:
                         self.lose = True
                         self.misses = missed_values
+
                 else:
                     self.aborted = True
                     # log the abortion event
@@ -581,20 +600,9 @@ class DMSystemMaster(GameMaster):
             return True
         return False
     
-   
     def _handle_booking(self, details) -> bool:
         if not isinstance(details, dict):
             return False, None, details
-        
-
-        reformat_keys = {"bookday": "day", "bookpeople": "people", "booktime": "time",
-                          "bookstay": "stay", "price": "pricerange", "location": "area",
-                          "food": "cuisine"}
-
-        #compare the slots and values if they are in available
-        slot_values = {}
-        for slot in self.slots:
-            slot_values[slot] = self.dbquery.get_valid_values(slot)
 
         while True:
             if self.num_booking_attempts >= self.n_turns or details is None:
@@ -605,120 +613,60 @@ class DMSystemMaster(GameMaster):
 
             logger.info(f"continuing with booking confirmation for: {details}")
 
-            missing_slots = []
-            use_match = {}
+            missing_slots = [slot for slot in self.slots if slot not in details]
             message = ""
-            for slot in self.slots:
-                if slot not in details:
-                    match, score = process.extractOne(slot, details.keys())
-                    if score < self.similarity["threshold"]:
-                        missing_slots.append(slot)
-                    else:
-                        use_match.update({match: slot})
 
             if missing_slots:
                 missing_slots_info = self.statusmsg["missing_slots"].replace("$slots", ", ".join(missing_slots))
                 message = "Missed some slots: " + missing_slots_info
 
             else:
-                # check if the values are valid
-                for slot, slotvalue in details.items():
-                    if slot in slot_values:
-                        if not slot_values[slot]:
-                            continue
-                        if slotvalue not in slot_values[slot]:
-                            invalid_value_info = self.statusmsg["invalid_value"].replace("$slot", slot) + f" -> possible values: {slot_values[slot]}\n"
-                            message += invalid_value_info
-                    else:
-                        if slot in use_match:
-                            if use_match[slot] in slot_values:
-                                if not slot_values[use_match[slot]]:
-                                    continue
-                                if slotvalue not in slot_values[use_match[slot]]:
-                                    invalid_value_info = self.statusmsg["invalid_value"].replace("$slot", use_match[slot]) + f" -> possible values: {slot_values[use_match[slot]]}\n"
-                                    message += invalid_value_info 
-            if not message:
-                message = f"{self.statusmsg['success']} {self.statusmsg['validatebooking']}\n{self.statusmsg['booking_reference']}"
-                self.slots_gen = details
-                # log the fact that the booking is completed
-                action = {"type": "parse", "content": f"booking completed"}
-                self.log_event(from_="GM", to="GM", action=action)
+                # Check if the values are valid
+                missing_values = []
+                only_book_slots = list(set(self.slots.keys()) - set(self.domaindbkeys))
+                db_book_slots = list(set(self.slots.keys()) - set(only_book_slots))
+                booking_query_details = self.respformat["schema"]["properties"]["details"]["oneOf"][2]["properties"]
+                for slot in only_book_slots:
+                    if slot in booking_query_details and "enum" in booking_query_details[slot]:
+                        if details[slot] not in booking_query_details[slot]["enum"]:
+                            missing_values.append(slot)
 
-            '''
-            missing_slots = []
-            use_match = {}
-            for slot in self.slots:
-                if slot not in details:
-                    match, score = process.extractOne(slot, details.keys())
-                    if score < self.similarity["threshold"]:
-                        missing_slots.append(slot)
-                    else:
-                        use_match.update({match: slot})
-
-            if missing_slots:
-                message = f"{self.statusmsg['failure']} {self.statusmsg['validatebooking']}\n"
-                missing_slots_info = self.statusmsg["missing_slots"].replace("$slots", ", ".join(miss_slots))
-                message += missing_slots_info
-
-            else:
-                # check if the values are valid
-                for slot, slotvalue in details.items():
-                    if slot in slot_values:
-                        if slotvalue not in slot_values[slot]:
-                            invalid_value_info = self.statusmsg["invalid_value"].replace("$slot", slot)
-                            message += invalid_value_info
-                    else:
-                        if slot in use_match:
-                            if use_match[slot] in slot_values:
-                                if slotvalue not in slot_values[use_match[slot]]:
-                                    invalid_value_info = self.statusmsg["invalid_value"].replace("$slot", use_match[slot])
-                                    message += invalid_value_info                 
-
-
-            message = ""
-            missing_slots = [slot for slot in self.slots if slot not in details]
-            miss_slots = []
-            if missing_slots:
-                for slot in self.slots:
-                    if slot in reformat_keys:
-                        if reformat_keys[slot] not in details:
-                            miss_slots.append(reformat_keys[slot])
-                    else:
-                        if slot not in details:
-                            miss_slots.append(slot)
-                if miss_slots:
-                    message = f"{self.statusmsg['failure']} {self.statusmsg['validatebooking']}\n"
-                    missing_slots_info = self.statusmsg["missing_slots"].replace("$slots", ", ".join(miss_slots))
-                    message += missing_slots_info
-
-            if not miss_slots:
-                # check if the values are valid
-                message = f"{self.statusmsg['failure']} {self.statusmsg['validatebooking']}\n"
-                for slot, slotvalue in details.items():
-                    if slot not in slot_values:
-                        usekey = ""
-                        for key, value in reformat_keys.items():
-                            if value == slot:
-                                usekey = key
-                                if not usekey in slot_values or not slot_values[usekey]:
-                                    break
-                                if slotvalue not in slot_values[usekey]:
-                                    invalid_value_info = self.statusmsg["invalid_value"].replace("$slot", usekey)
-                                    message += invalid_value_info
-                                break
-                    elif not slot_values[slot]:
-                        continue
-                    else:
-                        if slotvalue not in slot_values[slot]:
-                            invalid_value_info = self.statusmsg["invalid_value"].replace("$slot", slot)
-                            message += invalid_value_info
+                if missing_values:
+                    invalid_value_info = self.statusmsg["invalid_value"].replace("$slot", ", ".join(missing_values))
+                    message += invalid_value_info
+                
                 else:
-                    message = f"{self.statusmsg['success']} {self.statusmsg['validatebooking']}\n{self.statusmsg['booking_reference']}"
-                    self.slots_gen = details
-                    # log the fact that the booking is completed
-                    action = {"type": "parse", "content": f"booking completed"}
-                    self.log_event(from_="GM", to="GM", action=action)
-            '''
+                    db_query_data = {}
+                    db_query_details = self.respformat["schema"]["properties"]["details"]["oneOf"][1]["properties"]
+                    for slot in db_book_slots:
+                        if slot in db_query_details:
+                            if "enum" in db_query_details[slot]:
+                                if details[slot] not in db_query_details[slot]["enum"]:
+                                    missing_values.append(slot)
+                                else:
+                                    db_query_data.update({slot: details[slot]})
+                            else:
+                                db_query_data.update({slot: details[slot]})
+                    if missing_values:
+                        invalid_value_info = self.statusmsg["invalid_value"].replace("$slot", ", ".join(missing_values))
+                        message += invalid_value_info
+
+                    else:
+                        #Make a DB Query and check if the value is present in the DB
+                        dbquery_result = self.dbquery.run(db_query_data)
+                        if dbquery_result["status"] == "success":
+                            #Fetch the booking reference number
+                            bookrefnum = generate_reference_number()
+                            refnumber = self.statusmsg['booking_reference'].replace("$refnum", bookrefnum)
+                            message = f"{self.statusmsg['success']} {self.statusmsg['validatebooking']}\n{refnumber}"
+                            self.slots_gen = details
+                            # log the fact that the booking is completed
+                            action = {"type": "parse", "content": f"booking completed"}
+                            self.log_event(from_="GM", to="GM", action=action)
+                        else:
+                            missing_values = list(db_query_data.keys())
+                            invalid_value_info = self.statusmsg["invalid_value"].replace("$slot", ", ".join(missing_values))
+                            message += invalid_value_info
 
             if not message:
                 print("Message is empty")
@@ -746,10 +694,84 @@ class DMSystemMaster(GameMaster):
             else:
                 self.num_booking_attempts += 1
                 continue
-        
+
+
+
+    def _handle_booking_old(self, details) -> bool:
+        if not isinstance(details, dict):
+            return False, None, details
+
+
+        while True:
+            if self.num_booking_attempts >= self.n_turns or details is None:
+                # stop game
+                logger.info(f"Booking attempts exceeded {self.num_booking_attempts} or error in details: {details}")
+                self.num_booking_attempts = 0
+                return None, None, None
+
+            logger.info(f"continuing with booking confirmation for: {details}")
+
+            missing_slots = [slot for slot in self.slots if slot not in details]
+            message = ""
+
+            if missing_slots:
+                missing_slots_info = self.statusmsg["missing_slots"].replace("$slots", ", ".join(missing_slots))
+                message = "Missed some slots: " + missing_slots_info
+
+            else:
+                # check if the values are valid
+                missing_values = []
+                for slot, slotvalue in self.slots.items():
+                    if isinstance(slotvalue, list):
+                        if details[slot] not in slotvalue:
+                            missing_values.append(slot)
+                    else:
+                        if details[slot] != slotvalue:
+                            missing_values.append(slot)
+
+                if missing_values:
+                    invalid_value_info = self.statusmsg["invalid_value"].replace("$slot", ", ".join(missing_values))
+                    message += invalid_value_info
+
+                else:
+                    #Fetch the booking reference number
+                    bookrefnum = generate_reference_number()
+                    refnumber = self.statusmsg['booking_reference'].replace("$refnum", bookrefnum)
+                    message = f"{self.statusmsg['success']} {self.statusmsg['validatebooking']}\n{refnumber}"
+                    self.slots_gen = details
+                    # log the fact that the booking is completed
+                    action = {"type": "parse", "content": f"booking completed"}
+                    self.log_event(from_="GM", to="GM", action=action)
+
+
+            if not message:
+                print("Message is empty")
+                input()
+                raise ValueError("Message is empty")
+
+            logger.info(f"Booking Message: {message}")
+            self._append_utterance(message, "b", "validate-booking")
+            # also add the reply to the transcript
+            action = {
+                "type": "send message",
+                "content": self.player_b.history[-1]["content"],
+            }
+            self.log_event(from_="GM", to="Player 2", action=action)
+            status, response, details = self._triggerplayer("b")
+            logger.info(f"status is {status}, response: {response} details: {details}")
+            if status is None:
+                # stop game
+                self.num_booking_attempts = 0
+                return None, response, details
+
+            if response in ["follow-up", "db-query"]:
+                self.num_booking_attempts = 0
+                return status, response, details
+            else:
+                self.num_booking_attempts += 1
+                continue
 
     def _handle_dbquery(self, details) -> bool:
-        dbcolumns = self.dbquery.getcolumns()
         while True:
             if self.num_db_queries >= self.n_turns or details is None:
                 # stop game
@@ -765,8 +787,11 @@ class DMSystemMaster(GameMaster):
                 message += json.dumps(dbresult["data"])
             else:
                 availcolumns = self.statusmsg["availablecolumns"].replace(
-                    "$columns", ", ".join(dbcolumns)
+                    "$columns", ", ".join(self.domaindbkeys)
                 )
+                if not self.domaindbkeys:
+                    print("Domain DB keys are empty")
+                    input()
                 message += f'{dbresult["error"]}\n\n{availcolumns}'
             
             self._append_utterance(message, "b", "db-query")

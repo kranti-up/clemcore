@@ -7,16 +7,19 @@ INSTRUCTIONS:
 1. Begin the conversation by repeating the task exactly as written under the label TASK. Do not add any other text, commentary, or explanations.
 2. Communicate naturally by expressing preferences, asking clarifying questions, and making decisions as needed during the interaction. Ensure the tone is polite and conversational.
 3. Respond strictly based on the 'response' provided by the booking system. Use no additional logic or interpretation beyond what is explicitly stated in the task.
-4. Once the booking system completes the task and provides all necessary slots, respond with "DONE." No other text should follow.
+4. Once the booking system completes the task and provides the booking reference number, respond with "DONE." No other text should follow.
 5. Do not attempt to simulate or act as the booking system; you are only interacting with it.
 6. Keep responses concise and focused, avoiding unnecessary elaboration or overly conversational tone.
-7. Use the following information to provide information during the conversation:
+
+TASK DETAILS:
+Use the following details to provide information during the conversation:
 $slots
 
 OUTPUT FORMAT:
 1. When beginning: Repeat the TASK exactly as stated.
 2. When interacting: Provide appropriate conversational utterances based solely on the booking system's 'response.'
-3. When finished: Respond with "DONE"
+3. For the booking system's queries, strictly use the information under TASK DETAILS.
+4. When the booking is complete: Respond with "DONE"
 
 
 Lets begin

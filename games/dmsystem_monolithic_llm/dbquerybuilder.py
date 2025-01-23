@@ -79,12 +79,12 @@ class DBQueryBuilder:
         self.table_name = f"{domain}"
 
         self.dbretriever = DBRetriever(domain, dbpath)
-        dbcolumns = self.dbretriever.getcolumns()
+        self.dbcolumns = self.dbretriever.getcolumns()
         #Get the intersection of catslots and dbcolumns
-        self.dbcolumns = list(set(catslots).intersection(set(dbcolumns)))
-        if not self.dbcolumns:
-            logger.error(f"No matching columns found for the experiment catslots:{catslots} dbcolumns:{dbcolumns}")
-            self.dbcolumns = dbcolumns
+        #self.dbcolumns = list(set(catslots).intersection(set(dbcolumns)))
+        #if not self.dbcolumns:
+        #    logger.error(f"No matching columns found for the experiment catslots:{catslots} dbcolumns:{dbcolumns}")
+        #    self.dbcolumns = dbcolumns
         self.schema_manager = SchemaManager(schema, domain, self.dbcolumns, thresholdvalue)
 
     def _setto_lower(self, slots: dict) -> dict:
@@ -119,6 +119,36 @@ class DBQueryBuilder:
         return normalized_query
 
     def run(self, slotsdict):
+        dwhere = slotsdict#self._process_query(slotsdict)
+        logger.info(f"DB Query dwhere: {dwhere}")
+        if not dwhere:
+            return {"status": "failure", "data": None, "error": self.errormsgs["nocolumnmatch"]}
+
+        dwhere = {key: value for key, value in dwhere.items() if value}
+
+        where_clause = " AND ".join([f"{key} = ?" for key in dwhere.keys()])
+        values = tuple(dwhere.values())
+        query = f"SELECT * FROM {self.domain} WHERE {where_clause};"
+        logger.info(f"DB Query: {query} Values: {values} Domain {self.domain}")
+        try:
+            domaindata = self.dbretriever.run(query, values)
+
+            if not domaindata:
+                poss_values = {}
+                column_keys = list(dwhere.keys())
+                for clmn in column_keys:
+                    poss_values[clmn] = self.schema_manager.get_valid_values(self.domain, clmn)
+
+                errormsg = self.errormsgs["novaluematch"]#.replace("$values", json.dumps(poss_values))
+
+                return {"status": "failure", "data": None, "error": errormsg}
+            return {"status": "success", "data": domaindata, "error": None}
+        except Exception as error:
+            logger.error(f"Error in DB Query: {error}")
+            return {"status": "failure", "data": None, "error": str(error)}
+
+
+    def run_old(self, slotsdict):
         dwhere = self._process_query(slotsdict)
         logger.info(f"DB Query dwhere: {dwhere}")
         if not dwhere:
@@ -137,7 +167,7 @@ class DBQueryBuilder:
                 for clmn in column_keys:
                     poss_values[clmn] = self.schema_manager.get_valid_values(self.domain, clmn)
 
-                errormsg = self.errormsgs["novaluematch"].replace("$values", json.dumps(poss_values))
+                errormsg = self.errormsgs["novaluematch"]#.replace("$values", json.dumps(poss_values))
 
                 return {"status": "failure", "data": None, "error": errormsg}
             return {"status": "success", "data": domaindata, "error": None}

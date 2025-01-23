@@ -30,7 +30,7 @@ class LLMSpeaker(Player):
             self.mode = "programmatic"
 
     # implement this method as you prefer, with these same arguments
-    def _custom_response(self, messages, turn_idx) -> str:
+    def _custom_response(self, messages, turn_idx, respformat) -> str:
         """Return a mock message with the suitable letter and format."""
         if self.mode  == "programmatic":
             slotsdict = dict.fromkeys(self.slots, '')
