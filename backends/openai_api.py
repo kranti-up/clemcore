@@ -86,7 +86,7 @@ class OpenAIModel(backends.Model):
 
     @retry(tries=3, delay=0, logger=logger)
     @ensure_messages_format
-    def generate_response(self, messages: List[Dict]) -> Tuple[str, Any, str]:
+    def generate_response(self, messages: List[Dict], respformat=None) -> Tuple[str, Any, str]:
         """
         :param messages: for example
                 [
@@ -104,10 +104,22 @@ class OpenAIModel(backends.Model):
                                                                messages=prompt,
                                                                temperature=1)
         else:
-            api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
-                                                           messages=prompt,
-                                                           temperature=self.get_temperature(),
-                                                           max_tokens=self.get_max_tokens())
+            if respformat:
+                api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
+                                                            messages=prompt,
+                                                            temperature=self.get_temperature(),
+                                                            max_tokens=self.get_max_tokens(),
+                                                            response_format={
+                                                                    "type": "json_schema",
+                                                                    "json_schema": respformat
+                                                                }
+                                                            )
+            else:
+                api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
+                                                            messages=prompt,
+                                                            temperature=self.get_temperature(),
+                                                            max_tokens=self.get_max_tokens()
+                                                            )                
         message = api_response.choices[0].message
         if message.role != "assistant":  # safety check
             raise AttributeError("Response message role is " + message.role + " but should be 'assistant'")

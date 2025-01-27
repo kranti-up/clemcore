@@ -1,14 +1,14 @@
 import sys
-
-sys.path = [p for p in sys.path if "schmidtova" not in p and "mukherjee" not in p]
-print(sys.path)
+import re
+#sys.path = [p for p in sys.path if "schmidtova" not in p and "mukherjee" not in p]
+#print(sys.path)
 import argparse
 import pickle
 import json
 import tqdm
 from collections import Counter
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForCausalLM
-from pynvml import *
+#from pynvml import *
 from datasets import load_dataset
 import wandb
 import logging
@@ -69,7 +69,7 @@ class Interact:
         parser = argparse.ArgumentParser()
         # parser.add_argument("--cache_dir", type=str, default="/home/hudecek/hudecek/hf_cache")
         #parser.add_argument("--model_name", type=str, default="gpt-3.5-turbo-0125")
-        parser.add_argument("--model_name", type=str, default="gpt-4o-2024-08-06")
+        parser.add_argument("--model_name", type=str, default=self.model_id)
         parser.add_argument(
             "--faiss_db", type=str, default="games/dmsystem_customtod/multiwoz-context-db.vec"
         )
@@ -120,14 +120,20 @@ class Interact:
             model_name = "gpt-4o-2024-08-06"
         elif args.model_name == "alpaca":
             model_name = "Alpaca-LoRA"
+        elif args.model_name == "claude-3-5-sonnet-20240620":
+            model_name = "claude-3-5-sonnet-20240620"
+        elif args.model_name == "remote-qwen2.5-34b-instruct-hf":
+            args.model_name = "Qwen/Qwen2.5-32B-Instruct"
+            model_name = "Qwen/Qwen2.5-32B-Instruct"
         else:
             #model_name = "GPT3.5"
             model_name = "gpt-4o-2024-08-06"
 
-        logger.info(f"Model name: {model_name}")
+        logger.info(f'Model name: {model_name}, args.model_name: {args.model_name} {args.model_name.startswith("claude-")}')
         self.model_name = model_name
         self.dials_total = args.dials_total
 
+        '''
         if "mukherjee" not in args.run_name:
             wandb.init(
                 project="llmbot-interact",
@@ -155,19 +161,21 @@ class Interact:
                 "predicted_domain",
             ]
         )
+        '''
 
         self.mw_dial_goals = []
         #with open(args.goal_data, "rt") as fd:
             # data = json.load(fd)
             # mw_dial_goals = [dial['goal']['message'] for did, dial in data.items()]
         self.mw_dial_goals.append(args.goal_data)
+        logger.info(f"Goals: {self.mw_dial_goals}")
         if args.model_name.startswith("text-"):
             model_factory = (
                 ZeroShotOpenAILLM if args.use_zero_shot else FewShotOpenAILLM
             )
             self.model = model_factory(args.model_name)
             self.domain_model = ZeroShotOpenAILLM(args.model_name)
-        elif args.model_name.startswith("gpt-"):
+        elif args.model_name.startswith("gpt-") or args.model_name.startswith("claude-") or "Qwen2.5" in args.model_name:
             model_factory = (
                 ZeroShotOpenAIChatLLM if args.use_zero_shot else FewShotOpenAIChatLLM
             )
@@ -237,6 +245,8 @@ class Interact:
         self.dialogue_id = 1
         self.total_state = {}
         self.goal = self.mw_dial_goals[0]  # random.choice(mw_dial_goals)
+        self.booking_done = False
+        self.gmbookingresponse = None
         logger.info(f"Setup completed, model = {self.model}, goal = {self.mw_dial_goals[0]} config = {config}")
 
     def lexicalize(self, results, domain, response):
@@ -254,8 +264,14 @@ class Interact:
             if x in response:
                 response = response.replace(x, val)
         return response
-
+    
     def run(self, user_input, current_turn):
+        '''
+        if self.booking_done:
+            logger.info(f"Booking already done, returning booking response: {self.gmbookingresponse}")
+            result = {"status": "follow-up", "details": self.gmbookingresponse}
+            return self.history[-2], result, result
+        '''
         question = user_input
         retrieve_history = self.history + ["Customer: " + question]
         retrieved_examples = self.example_retriever.retrieve(
@@ -263,6 +279,7 @@ class Interact:
         )
         logger.info(f"Entered run: question: {question}, current_turn: {current_turn}, retrieve_history: {retrieve_history}")
         retrieved_domains = [example["domain"] for example in retrieved_examples]
+        logger.info(f"Retrieved domains: {retrieved_domains}")
         selected_domain, dp = self.domain_model(
             self.domain_prompt,
             predict=True,
@@ -276,7 +293,8 @@ class Interact:
             available_domains = list(SGD_FEW_SHOT_DOMAIN_DEFINITIONS.keys())
         logger.info(f"Available domains: {available_domains} self.dataset = {self.dataset}")
         if selected_domain not in available_domains:
-            selected_domain = "restaurant"#random.choice(available_domains)
+            raise ValueError(f"Selected domain {selected_domain} not in available domains")
+            #selected_domain = "restaurant"#random.choice(available_domains)
         if self.dataset == "multiwoz":
             domain_definition = (
                 MW_ZERO_SHOT_DOMAIN_DEFINITIONS[selected_domain]
@@ -330,15 +348,19 @@ class Interact:
 
         try:
             kwargs = {"history": "\n".join(self.history), "utterance": question.strip()}
+            logger.info(f"kwargs: {kwargs}")
             if not self.use_zero_shot:
                 kwargs["positive_examples"] = positive_state_examples
                 kwargs["negative_examples"] = []  # negative_state_examples
             state, filled_state_prompt = self.model(state_prompt, predict=True, **kwargs)
+            logger.info(f"State: {state}")
+            logger.info(f"Filled state prompt: {filled_state_prompt}")
         except Exception as e:
-            logger.error(f"Error: {e}")
+            logger.error(f"Error in model prediction: {e}")
             state = "{}"
 
         parsed_state = parse_state(state, default_domain=selected_domain)
+        logger.info(f"Parsed state: {parsed_state}")
         if selected_domain not in parsed_state:
             parsed_state[selected_domain] = {}
         if not isinstance(parsed_state[selected_domain], dict):
@@ -357,10 +379,12 @@ class Interact:
         except:
             parsed_state = {selected_domain: {}}
 
+        logger.info(f"Parsed state after processing: {parsed_state}")
         final_state = {}
         for domain, ds in parsed_state.items():
             if domain in available_domains:
                 final_state[domain] = ds
+        logger.info(f"Final state: {final_state}")
 
         for domain, dbs in final_state.items():
             if domain not in self.total_state:
@@ -383,13 +407,16 @@ class Interact:
                 for domain, ds in self.total_state.items()
                 if len(ds) > 0
             }
+
+            for domain, results in database_results.items():
+                database_results[domain] = results[:5]            
         else:
             database_results = self.turn["metadata"]["database"]
         logger.info(f"Database Results: {database_results}")
-        print(
-            f"Database Results: {database_results[selected_domain][0] if selected_domain in database_results and len(database_results[selected_domain]) > 0 else 'EMPTY'}",
-            flush=True,
-        )
+        #print(
+        #    f"Database Results: {database_results[selected_domain][0] if selected_domain in database_results and len(database_results[selected_domain]) > 0 else 'EMPTY'}",
+        #    flush=True,
+        #)
 
         try:
             kwargs = {
@@ -398,12 +425,13 @@ class Interact:
                 "state": json.dumps(
                     self.total_state
                 ),  # .replace("{", '<').replace("}", '>'),
-                "database": str(
-                    {
-                        domain: len(results)
-                        for domain, results in database_results.items()
-                    }
-                ),
+                #"database": str(
+                #    {
+                #        domain: len(results)
+                #        for domain, results in database_results.items()
+                #    }
+                #),
+                "database": str(database_results),
             }
             logger.info(f"kwargs: {kwargs}")
             #input()
@@ -413,20 +441,26 @@ class Interact:
 
             # response, filled_prompt = "IDK", "-"
             response, filled_prompt = self.model(response_prompt, predict=True, **kwargs)
+            logger.info(f"Response: {response}")
+            logger.info(f"Filled prompt: {filled_prompt}")
         except:
             response = ""
 
+
         if self.dataset == "multiwoz":
+            logger.info(f"Delexicalising response")
             response = delexicalise(response, self.delex_dic)
-            response = delexicaliseReferenceNumber(response)
+            logger.info(f"Delexicalised response: {response}")
+            #response = delexicaliseReferenceNumber(response)
 
         logger.info(f"Response: {response}")
-        print(
-            f"Lexicalized response: {self.lexicalize(database_results, selected_domain, response)}",
-            flush=True,
-        )
+        #print(
+        #    f"Lexicalized response: {self.lexicalize(database_results, selected_domain, response)}",
+        #    flush=True,
+        #)
 
         self.history.append("Customer: " + question)
+        '''
         self.report_table.add_data(
             f"dial_{self.dialogue_id}-turn_{current_turn}",
             " ".join(self.goal),
@@ -436,10 +470,15 @@ class Interact:
             response,
             selected_domain,
         )
+        '''
         self.history.append("Assistant: " + response)
+
         logger.info(f"Returning response from dmsystems: {response}")
         result = {"status": "follow-up", "details": response}
         return self.history[-2], result, result
+
+    def getgenslots(self):
+        return self.total_state[next(iter(self.total_state))]
 
 
 if __name__ == "__main__":

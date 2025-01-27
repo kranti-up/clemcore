@@ -1,3 +1,4 @@
+import copy
 from typing import List, Dict, Tuple, Any
 from retry import retry
 import anthropic
@@ -85,7 +86,7 @@ class AnthropicModel(backends.Model):
 
     @retry(tries=3, delay=0, logger=logger)
     @ensure_messages_format
-    def generate_response(self, messages: List[Dict]) -> Tuple[str, Any, str]:
+    def generate_response(self, messages: List[Dict], respformat=None) -> Tuple[str, Any, str]:
         """
         :param messages: for example
                 [
@@ -98,16 +99,49 @@ class AnthropicModel(backends.Model):
         """
         prompt, system_message = self.encode_messages(messages)
 
-        completion = self.client.messages.create(
-            messages=prompt,
-            system=system_message,
-            model=self.model_spec.model_id,
-            temperature=self.get_temperature(),
-            max_tokens=self.get_max_tokens()
-        )
+        if respformat is None:
+            completion = self.client.messages.create(
+                messages=prompt,
+                system=system_message,
+                model=self.model_spec.model_id,
+                temperature=self.get_temperature(),
+                max_tokens=self.get_max_tokens()
+            )
 
-        json_output = completion.model_dump_json()
-        response = json.loads(json_output)
-        response_text = completion.content[0].text
+            json_output = completion.model_dump_json()
+            response = json.loads(json_output)
+            response_text = completion.content[0].text
 
+        else:
+            use_new_format = {}
+            for key, value in respformat.items():
+                if key != "schema":
+                    use_new_format[key] = value
+                else:
+                    use_new_format["input_schema"] = value
+
+            completion = self.client.messages.create(
+                messages=prompt,
+                system=system_message,
+                model=self.model_spec.model_id,
+                temperature=self.get_temperature(),
+                max_tokens=self.get_max_tokens(),
+                tools=[use_new_format],
+                tool_choice={"type": "tool", "name": "response_format_schema"},
+            )
+
+            json_output = completion.model_dump_json()
+            response = json.loads(json_output)
+            response_text = completion.content[0].input
+            if "details" in response_text:
+                if isinstance(response_text["details"], str):
+                    try:
+                        response_text["details"] = json.loads(response_text["details"])
+                    except:
+                        response_text["details"] = response_text["details"]
+
+            response_text = json.dumps(response_text)
+
+
+        logger.info(f"Anthropic response: {response_text} {type(response_text)}")
         return prompt, response, response_text
