@@ -41,10 +41,6 @@ class DMSystemMaster(GameMaster):
         self.model_a = player_backends[0]
         self.model_b = player_backends[1]
         self.human_input = ["gradio", "slurk"]  # Add the human input backends here
-        self.custom_dm = [
-            "customtod-gpt-3.5",
-            "customtod-opt-iml-1.3b",
-        ]  # Add the custom DM backends here
 
         # initialise attributes that will be used for the evaluation scores
         self.aborted: bool = False
@@ -63,7 +59,10 @@ class DMSystemMaster(GameMaster):
         self._initothermodules(data)
 
         # add initial prompts to each player's messages
-        self.initiate(self.prompt_player_a, self.prompt_player_b)
+        if self.game_name != self.custom_dm_game_name:
+            self.initiate(self.prompt_player_a, self.prompt_player_b)
+        else:
+            self.initiate(self.prompt_player_a, None)
 
         # always log the details of the players in this format (see logdoc)
         self.log_players(
@@ -98,14 +97,6 @@ class DMSystemMaster(GameMaster):
         self.slots_gen = None
         self.misses = None
 
-        self.prompt_player_a = data["prompt_a"]
-        self.prompt_player_b = data["prompt_b"]
-
-        self.turn_prompt_player_a = data["turn_prompt_a"]
-        self.turn_prompt_player_b = data["turn_prompt_b"]
-        self.dbquery_prompt_player_b = data["dbquery_prompt_b"]
-        self.validbooking_prompt_player_b = data["validbooking_prompt_b"]
-
         # initialise game variables
         self.current_turn: int = 0
 
@@ -117,6 +108,15 @@ class DMSystemMaster(GameMaster):
         self.parsed_request_counts = [0] * (self.n_turns + 1)
         self.violated_request_counts = [0] * (self.n_turns + 1)
 
+    def _save_prompts(self, data):
+        self.prompt_player_a = data["prompt_a"]
+        self.turn_prompt_player_a = data["turn_prompt_a"]
+
+        if data["game_name"] != self.custom_dm_game_name:
+            self.prompt_player_b = data["prompt_b"]
+            self.turn_prompt_player_b = data["turn_prompt_b"]
+            self.dbquery_prompt_player_b = data["dbquery_prompt_b"]
+            self.validbooking_prompt_player_b = data["validbooking_prompt_b"]
 
     def _setgamespecificsetup(self, data: Dict, game_id: int) -> None:
         # instantiate both players
@@ -130,26 +130,26 @@ class DMSystemMaster(GameMaster):
             "games.dmsystem_modular_prog.instancegenerator"
         )
 
+        modular_hybrid_dm = importlib.import_module(
+            "games.dmsystem_modular_hybrid.instancegenerator"
+        )        
+
         custom_dm = importlib.import_module("games.dmsystem_customtod.instancegenerator")
 
         self.monolithic_llm_game_name = getattr(mono_dm, "GAME_NAME")
         self.modular_llm_game_name = getattr(modular_dm, "GAME_NAME")
         self.modular_prog_game_name = getattr(modular_prog_dm, "GAME_NAME")
+        self.modular_hybrid_game_name = getattr(modular_hybrid_dm, "GAME_NAME")
         self.custom_dm_game_name = getattr(custom_dm, "GAME_NAME")
 
-        if (
-            data["game_name"] != self.custom_dm_game_name
-            and self.model_b.model_spec["model_name"] in self.custom_dm
-        ):
-            raise ValueError(
-                f"Model: {self.model_b.model_spec['model_name']} is not implemented for this game -> {data['game_name']}"
-            )
+        self._save_prompts(data)
 
         if data["game_name"] == self.monolithic_llm_game_name:
             self.player_a = LLMSpeaker(self.model_a, "A", self.goal, self.slots)
             self.player_b = LLMSpeaker(self.model_b, "B", "", self.slots)
 
-        elif data["game_name"] in [self.modular_llm_game_name, self.modular_prog_game_name]:
+        elif data["game_name"] in [self.modular_llm_game_name, self.modular_prog_game_name,
+                                   self.modular_hybrid_game_name]:
             self.player_a = self.other_modules["speaker"](
                 self.model_a, "A", self.goal, self.slots
             )
@@ -185,7 +185,8 @@ class DMSystemMaster(GameMaster):
             {"nocolumnmatch": self.statusmsg["nocolumnmatch"], "novaluematch": self.statusmsg["novaluematch"]},
         )
 
-        if self.game_name in [self.modular_llm_game_name, self.modular_prog_game_name]:
+        if self.game_name in [self.modular_llm_game_name, self.modular_prog_game_name,
+                              self.modular_hybrid_game_name]:
             prompts_dict = {
                 "turn_ss_prompt_b": self.turn_ss_prompt_player_b,
                 "intent_detection": self.prompt_intent,
@@ -301,10 +302,12 @@ class DMSystemMaster(GameMaster):
         else:
             self.player_a.history.append({"role": "user", "content": prompt_player_a})
 
-        if self.game_name == self.modular_llm_game_name:
+        if self.game_name in [self.modular_llm_game_name, self.monolithic_llm_game_name]:
             self.player_b.history.append({"role": "user", "content": prompt_player_b})
-        elif self.game_name == self.modular_prog_game_name:
+        elif self.game_name in [self.modular_prog_game_name, self.modular_hybrid_game_name]:
             self.player_b.history.append({"role": "user", "content": "USER REQUEST:"})
+        elif self.game_name == self.custom_dm_game_name:
+            self.player_b.history.append({"role": "user", "content": ""})
 
         # also log the messages as events for the transcriptions
         action = {"type": "send message", "content": prompt_player_a}
@@ -416,12 +419,16 @@ class DMSystemMaster(GameMaster):
                 prompt, raw_answer, answer = self.player_b(
                     self.player_b.history, self.current_turn, self.respformat
                 )
+                logger.info(f"Player B: Before cleanup: {answer} {type(answer)}")
                 answer = cleanupanswer(answer)
+                logger.info(f"Player B: After cleanup: {answer} {type(answer)}") 
 
                 # add reply to its own memory
                 self._append_utterance(answer, "b", "assistant")
+                logger.info(f"Player B: After appending: {answer} {type(answer)}") 
 
-            elif self.game_name in [self.modular_llm_game_name, self.modular_prog_game_name]:
+            elif self.game_name in [self.modular_llm_game_name, self.modular_prog_game_name,
+                                    self.modular_hybrid_game_name]:
                 prevlen = len(self.player_b.history)
                 prompt, raw_answer, answer = self.modularb.run(self.current_turn)
                 # Don't add answer to player b's history, as it is already added in the modularb.run method
@@ -437,6 +444,8 @@ class DMSystemMaster(GameMaster):
 
             elif self.game_name == self.custom_dm_game_name:
                 prompt, raw_answer, answer = self.modularb.run(self.player_b.history[-1]["content"], self.current_turn)
+                # add reply to its own memory
+                self._append_utterance(answer, "b", "assistant")                
 
             # add API call to the records
             action = {"type": "get message", "content": answer}
@@ -488,6 +497,7 @@ class DMSystemMaster(GameMaster):
                 if len(self.player_b.history) == 1:
                     #TODO: check for cases, where player_b.history is empty
                     self.player_b.history[-1]["content"] += "\n\n" + utterance
+                    self.player_b.history[-1]["content"] = self.player_b.history[-1]["content"].strip()
                 else:
                     if isinstance(utterance, dict):
                         b_response = json.dumps(utterance)
@@ -495,21 +505,24 @@ class DMSystemMaster(GameMaster):
                         b_response = utterance
 
                     if role == "user":
-                        turn_prompt = self.turn_prompt_player_b
-                        if self.game_name == self.modular_prog_game_name:
-                            turn_prompt = "USER REQUEST:"                        
+                        if self.game_name in [self.modular_llm_game_name, self.monolithic_llm_game_name]:
+                            turn_prompt = self.turn_prompt_player_b
+                        if self.game_name in [self.modular_prog_game_name, self.modular_hybrid_game_name]:
+                            turn_prompt = "USER REQUEST:"
+                        elif self.game_name == self.custom_dm_game_name:
+                            turn_prompt = ""                 
                     elif role == "db-query":
                         turn_prompt = self.dbquery_prompt_player_b
-                        if self.game_name == self.modular_prog_game_name:
+                        if self.game_name in [self.modular_prog_game_name, self.modular_hybrid_game_name]:
                             turn_prompt = "DATABASE RETRIEVAL RESULTS:"
 
                     elif role == "validate-booking":
                         turn_prompt = self.validbooking_prompt_player_b
-                        if self.game_name == self.modular_prog_game_name:
+                        if self.game_name in [self.modular_prog_game_name, self.modular_hybrid_game_name]:
                             turn_prompt = "BOOKING VALIDATION STATUS:"
 
-
-                    self.player_b.history.append({"role": "user", "content": turn_prompt + "\n\n" + b_response})
+                    b_message = turn_prompt + "\n\n" + b_response
+                    self.player_b.history.append({"role": "user", "content": b_message.strip()})
                     logger.info(f"Player B: {self.player_b.history[-1]}")
 
 
@@ -548,6 +561,9 @@ class DMSystemMaster(GameMaster):
 
                     # Compare the slots of the ground truth and the generated slots
                     # This comparison is done in handle_booking() method
+                    if self.game_name == self.custom_dm_game_name:
+                        self.slots_gen = self.modularb.getgenslots()
+                        logger.info(f"Generated slots in Player2: {self.slots_gen}")
 
                     status, missed_values = self.gamevalidator.run(self.slots_gen)
                     if status:
@@ -570,11 +586,11 @@ class DMSystemMaster(GameMaster):
     def _triggerplayer(self, player: str) -> Tuple[bool, str, str]:
         answer = self._get_utterance(player)
         # print(f"3. Player B answer\n{answer_b}")
-        logger.info(f"Player-{player} answer\n{answer}")
+        logger.info(f"Player-{player} answer\n{answer} {type(answer)}")
         is_valid_turn, response, details = self._isvalidturn(player, answer)
 
         logger.info(
-            f"Player-{player} is_valid_turn: {is_valid_turn}, response: {response}, details: {details}"
+            f"Player-{player} is_valid_turn: {is_valid_turn}, response: {response}, details: {details} {type(details)}"
         )
         if not is_valid_turn:
             # stop game
@@ -611,7 +627,7 @@ class DMSystemMaster(GameMaster):
                 self.num_booking_attempts = 0
                 return None, None, None
 
-            logger.info(f"continuing with booking confirmation for: {details}")
+            logger.info(f"continuing with booking confirmation for: {details}, gt_slots: {self.slots}")
 
             missing_slots = [slot for slot in self.slots if slot not in details]
             message = ""
@@ -669,8 +685,7 @@ class DMSystemMaster(GameMaster):
                             message += invalid_value_info
 
             if not message:
-                print("Message is empty")
-                input()
+                logger.error("Message is empty")
                 raise ValueError("Message is empty")
 
             logger.info(f"Booking Message: {message}")
@@ -780,7 +795,7 @@ class DMSystemMaster(GameMaster):
                 return None, None, None
 
             slots = details
-            logger.info(f"continuing with db query slots = {slots}")
+            logger.info(f"continuing with db query slots = {slots} {type(slots)}")
             dbresult = self.dbquery.run(slots)
             message = f'{self.statusmsg[dbresult["status"]]} {self.statusmsg["dbfetch"]}\n'
             if dbresult["status"] == "success":
@@ -790,8 +805,7 @@ class DMSystemMaster(GameMaster):
                     "$columns", ", ".join(self.domaindbkeys)
                 )
                 if not self.domaindbkeys:
-                    print("Domain DB keys are empty")
-                    input()
+                    logger.error("Domain DB keys are empty")
                 message += f'{dbresult["error"]}\n\n{availcolumns}'
             
             self._append_utterance(message, "b", "db-query")

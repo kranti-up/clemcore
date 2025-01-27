@@ -120,7 +120,7 @@ class DBQueryBuilder:
 
     def run(self, slotsdict):
         dwhere = slotsdict#self._process_query(slotsdict)
-        logger.info(f"DB Query dwhere: {dwhere}")
+        logger.info(f"DB Query dwhere: {dwhere} {type(dwhere)}")
         if not dwhere:
             return {"status": "failure", "data": None, "error": self.errormsgs["nocolumnmatch"]}
 

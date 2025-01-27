@@ -63,6 +63,8 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
         ]
 
         for prompt_type in prompt_types:
+            if prompt_type not in promptsdict:
+                continue
             gamedata[prompt_type] = self.create_prompt(
                 domain,
                 taskdlgs[game_id]["goal"],
@@ -70,7 +72,8 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
                 promptsdict[prompt_type],
             )
 
-        if game_name in ["dmsystem_modular_llm", "dmsystem_modular_prog"]:
+
+        if game_name in ["dmsystem_modular_llm", "dmsystem_modular_prog", "dmsystem_modular_hybrid"]:
             gamedata["turn_ss_prompt_b"] = promptsdict["turn_ss_prompt_b"]
             modular_prompt_types = [
                 "intent_detection",
@@ -268,16 +271,19 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
             "validbooking_prompt_b": "validbooking_prompt_b",
         }
 
-        promptsdict.update(
-            {
-                value: file_utils.load_template(
-                    f"resources/initial_prompts/{LANGUAGE}/{key}", game_name
-                )
-                for key, value in prompts_dict_match_keys.items()
-            }
-        )
+        try:
+            promptsdict.update(
+                {
+                    value: file_utils.load_template(
+                        f"resources/initial_prompts/{LANGUAGE}/{key}", game_name
+                    )
+                    for key, value in prompts_dict_match_keys.items()
+                }
+            )
+        except FileNotFoundError:
+            print(f"Prompt File not found for {game_name} game.")
 
-        if game_name in ["dmsystem_modular_llm", "dmsystem_modular_prog"]:
+        if game_name in ["dmsystem_modular_llm", "dmsystem_modular_prog", "dmsystem_modular_hybrid"]:
             additional_prompts = {
                 "turn_subsystem_prompt_b": "turn_ss_prompt_b",
                 "initial_prompt_intent_detection": "intent_detection",
@@ -328,7 +334,7 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
         domain_schema = file_utils.load_json(f"{domain_path}/schema.json", GAME_NAME)
         promptsdict = self._get_player_prompts(self.game_name)
         gameconfig = file_utils.load_json(
-            f"resources/config/{LANGUAGE}/taskconfig.json", self.game_name
+            f"resources/config/{LANGUAGE}/taskconfig.json", GAME_NAME
         )
         taskdetails = file_utils.load_json(
             f"resources/tasks/{LANGUAGE}/taskdetails.json", GAME_NAME
@@ -350,13 +356,15 @@ class DMSystemInstanceGenerator(GameInstanceGenerator):
             # create an experiment (for us, named after a topic)
 
             try:
-                taskdlgs = random.sample(filteredtasks[domain], k=N_INSTANCES)
+                #taskdlgs = random.sample(filteredtasks[domain], k=N_INSTANCES)
+                taskdlgs = filteredtasks[domain]
             except ValueError:
                 print(f"Insufficient tasks for {domain} domain.")
                 continue
             gameinstances = []
             # build N_INSTANCES instances for each experiment
-            for game_id in range(N_INSTANCES):
+            #for game_id in range(N_INSTANCES):
+            for game_id in range(len(taskdlgs)):
                 # set the parameters
                 # populate the game instance with its parameters
                 data_instance = self._preparegamedata(
