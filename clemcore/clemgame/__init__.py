@@ -200,7 +200,7 @@ def select_game(game: Union[str, Dict, GameSpec]) -> List[GameSpec]:
         game = json.loads(game)
         game_is_dict = True
     except Exception:
-        print(f"Passed game {game} does not parse as JSON!")
+        logger.info(f"Passed game '{game}' does not parse as JSON!")
         pass
 
     # convert passed JSON to GameSpec for unification:
@@ -235,6 +235,8 @@ def select_game(game: Union[str, Dict, GameSpec]) -> List[GameSpec]:
                     continue
 
         return matching_registered_games
+    elif game == "all":
+        return game_registry
     else:
         # return first entry that matches game_name
         for registered_game_spec in game_registry:
