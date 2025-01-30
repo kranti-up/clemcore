@@ -160,5 +160,45 @@
     "image": "none",
     "languages": ["en"],
     "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "matchit_ascii",
+    "game_path": "../clemgames/matchit_ascii",
+    "description": "Matching grids of ASCII characters between two players.",
+    "main_game": "matchit_ascii",
+    "players": "two",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "textmapworld",
+    "game_path": "../clemgames/textmapworld/textmapworld_main",
+    "description": "Exhaustively exploring a map.",
+    "main_game": "textmapworld",
+    "players": "one",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "textmapworld_graphreasoning",
+    "game_path": "../clemgames/textmapworld/textmapworld_graphreasoning",
+    "description": "Exhaustively exploring a map with graph reasoning.",
+    "main_game": "textmapworld",
+    "players": "one",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "textmapworld_specificroom",
+    "game_path": "../clemgames/textmapworld/textmapworld_specificroom",
+    "description": "Exploring a map to find a specific room.",
+    "main_game": "textmapworld",
+    "players": "one",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
   }
 ]
