@@ -67,7 +67,7 @@ def read_gen_args(args: argparse.Namespace):
     return dict(temperature=args.temperature, max_tokens=args.max_tokens)
 
 
-def main(args: argparse.Namespace):
+def cli(args: argparse.Namespace):
     if args.command_name == "ls":
         clemcore.list_games()
     if args.command_name == "run":
@@ -83,7 +83,7 @@ def main(args: argparse.Namespace):
         clemcore.transcripts(args.game, experiment_name=args.experiment_name, results_dir=args.results_dir)
 
 
-if __name__ == "__main__":
+def main():
     """Main CLI handling function.
 
     Handles the clembench CLI commands
@@ -157,4 +157,8 @@ if __name__ == "__main__":
                                         "For example '-r results/v1.5/de‘ or '-r /absolute/path/for/results'. "
                                         "When not specified, then the results will be located in 'results'")
 
-    main(parser.parse_args())
+    cli(parser.parse_args())
+
+
+if __name__ == "__main__":
+    main()
