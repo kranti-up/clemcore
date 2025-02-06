@@ -140,7 +140,6 @@ def load_game_registry_dynamic(context_path: str):
 
 def load_game_spec_from_directory(dir_path: str):
     file_path = os.path.join(dir_path, "clemgame.json")
-    # we could raise here a special error that a file has been found but could not be loaded
     with open(file_path, encoding='utf-8') as f:
         game_spec = json.load(f)
         game_spec["game_path"] = dir_path
@@ -148,10 +147,10 @@ def load_game_spec_from_directory(dir_path: str):
 
 
 def load_game_registry_from_directories(context_path: str, max_depth=10):
-    def add_candidates(dir_path):
+    def add_subdirectories_as_candidates(dir_path):
         for current_file in os.listdir(dir_path):
             file_path = os.path.join(current_directory, current_file)
-            if os.path.isdir(file_path):
+            if os.path.isdir(file_path) and not current_file.startswith("."):  # hidden dir
                 game_candidates.append((file_path, depth + 1))
 
     game_registry = []
@@ -163,12 +162,15 @@ def load_game_registry_from_directories(context_path: str, max_depth=10):
         try:
             game_spec = load_game_spec_from_directory(current_directory)
             game_registry.append(game_spec)
-            add_candidates(current_directory)  # check for possible subgames
-        except Exception as e:
-            if current_directory == ".":
-                add_candidates(current_directory)
-            else:
-                stdout_logger.warning(e)
+            add_subdirectories_as_candidates(current_directory)
+        except PermissionError:
+            continue  # ignore permissions errors
+        except FileNotFoundError:
+            if current_directory == ".":  # we expect that dot-dir is not necessarily a clemgame
+                add_subdirectories_as_candidates(current_directory)
+        except Exception as e:  # most likely a problem with the json file
+            stdout_logger.warning("Lookup failed at '%s' with exception: %s",
+                                  current_directory, e)
     return game_registry
 
 

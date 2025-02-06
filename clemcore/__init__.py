@@ -41,6 +41,7 @@ stdout_logger = logging.getLogger("clemcore.run")
 backends.load_custom_model_registry()
 backends.load_model_registry()
 
+
 def list_games(context_path: str):
     """List all games specified in the game registries.
     Only loads those for which master.py can be found in the specified path.
@@ -49,6 +50,11 @@ def list_games(context_path: str):
     """
     stdout_logger.info("Listing all available games")
     game_registry = clemgame.load_game_registry_dynamic(context_path)
+    if not game_registry:
+        print("No clemgames found under context path:", context_path)
+        print("Make sure that your clemgame directory have a clemgame.json")
+        print("or register them with 'clem register <your-game-directory>'.")
+        return
     for game in game_registry:
         game_name = f'{game["game_name"]}:\n'
         preferred_width = 70
