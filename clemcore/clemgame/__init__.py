@@ -23,9 +23,6 @@ import clemcore.clemgame.metrics as ms
 logger = logging.getLogger(__name__)
 stdout_logger = logging.getLogger("clemcore.run")
 
-game_registry = []  # list of game specs to load from dynamically
-
-
 class GameSpec(SimpleNamespace):
     """Base class for game specifications.
     Holds all necessary information to play game in clembench (see README for list of attributes)
@@ -135,21 +132,47 @@ class GameSpec(SimpleNamespace):
         return GameSpec(**result)
 
 
-def load_custom_game_registry(_game_registry_path: str = None, is_optional=True):
-    """Load a custom game registry.
-    Handled as module-level variable.
-    Args:
-        _game_registry_path: The path to a custom game registry JSON file. Optional: If not passed, default path is
-            used.
-        is_optional: Determines if a custom game registry is not required.
-    """
-    # optional custom registry loaded first, so that these entries come first in the game registry list
-    if not _game_registry_path:
-        _game_registry_path = os.path.join(file_utils.clemcore_root(), "clemgame", "game_registry_custom.json")
-    load_game_registry(_game_registry_path, is_mandatory=not is_optional)
+def load_game_registry_dynamic(context_path: str):
+    if os.path.isfile(context_path):
+        return load_game_registry_from_file(context_path)
+    return load_game_registry_from_directories(context_path)
 
 
-def load_game_registry(_game_registry_path: str = None, is_mandatory=True):
+def load_game_spec_from_directory(dir_path: str):
+    file_path = os.path.join(dir_path, "clemgame.json")
+    # we could raise here a special error that a file has been found but could not be loaded
+    with open(file_path, encoding='utf-8') as f:
+        game_spec = json.load(f)
+        game_spec["game_path"] = dir_path
+    return GameSpec.from_dict(game_spec)
+
+
+def load_game_registry_from_directories(context_path: str, max_depth=10):
+    def add_candidates(dir_path):
+        for current_file in os.listdir(dir_path):
+            file_path = os.path.join(current_directory, current_file)
+            if os.path.isdir(file_path):
+                game_candidates.append((file_path, depth + 1))
+
+    game_registry = []
+    game_candidates = collections.deque([(context_path, 0)])
+    while game_candidates:
+        current_directory, depth = game_candidates.popleft()
+        if depth > max_depth:
+            continue  # Early stopping to prevent infinite lookups
+        try:
+            game_spec = load_game_spec_from_directory(current_directory)
+            game_registry.append(game_spec)
+            add_candidates(current_directory)  # check for possible subgames
+        except Exception as e:
+            if current_directory == ".":
+                add_candidates(current_directory)
+            else:
+                stdout_logger.warning(e)
+    return game_registry
+
+
+def load_game_registry_from_file(_game_registry_path: str = None, is_mandatory=True):
     """Load the game registry.
     Handled as module-level variable.
     Args:
@@ -161,6 +184,7 @@ def load_game_registry(_game_registry_path: str = None, is_mandatory=True):
             does not exist at the path specified in _game_registry_path (or the default path, if nothing is passed to
             _game_registry_path).
     """
+    game_registry = []
     if not _game_registry_path:
         _game_registry_path = os.path.join(file_utils.clemcore_root(), "clemgame", "game_registry.json")
     if not os.path.isfile(_game_registry_path):
@@ -174,9 +198,10 @@ def load_game_registry(_game_registry_path: str = None, is_mandatory=True):
         for _game_entry in _game_listing:
             _game_spec: GameSpec = GameSpec.from_dict(_game_entry)
             game_registry.append(_game_spec)
+    return game_registry
 
 
-def select_game(game: Union[str, Dict, GameSpec]) -> List[GameSpec]:
+def select_game(game: Union[str, Dict, GameSpec], game_registry) -> List[GameSpec]:
     """Select a list of GameSpecs from the game registry by unifying game spec dict or game name.
     Args:
         game: String name of the game matching the 'game_name' value of the game registry entry to select, OR a
@@ -649,6 +674,7 @@ class GameMaster(GameRecorder):
 
 class GameScorer(GameResourceLocator):
     """Calculates scores based on interaction logs."""
+
     def __init__(self, name: str, experiment: Dict, game_instance: Dict):
         """
         Args:
@@ -786,6 +812,7 @@ class DialogueGameMaster(GameMaster):
     """Extended GameMaster, implementing turns as described in the clembench paper.
     Has most logging and gameplay procedures implemented, including convenient logging methods.
     """
+
     def __init__(self, name: str, path: str, experiment: dict, player_models: List[backends.Model]):
         """
         Args:

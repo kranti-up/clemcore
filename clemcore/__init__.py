@@ -41,19 +41,15 @@ stdout_logger = logging.getLogger("clemcore.run")
 backends.load_custom_model_registry()
 backends.load_model_registry()
 
-# load available games
-clemgame.load_custom_game_registry()
-clemgame.load_game_registry()
-
-
-def list_games():
+def list_games(context_path: str):
     """List all games specified in the game registries.
     Only loads those for which master.py can be found in the specified path.
     See game registry doc for more infos (TODO: add link)
     TODO: add filtering options to see only specific games
     """
     stdout_logger.info("Listing all available games")
-    for game in clemgame.game_registry:
+    game_registry = clemgame.load_game_registry_dynamic(context_path)
+    for game in game_registry:
         game_name = f'{game["game_name"]}:\n'
         preferred_width = 70
         wrapper = textwrap.TextWrapper(initial_indent="\t", width=preferred_width,
@@ -80,7 +76,7 @@ def run(game: Union[str, Dict, GameSpec], model_specs: List[backends.ModelSpec],
             model.set_gen_args(**gen_args)  # todo make this somehow available in generate method?
             player_models.append(model)
 
-        game_specs = clemgame.select_game(game)
+        game_specs = clemgame.select_game(game, game_registry)
         print("Matched game specs in registry:", " ".join([game_spec.game_name for game_spec in game_specs]))
         for game_spec in game_specs:
             game_benchmark = clemgame.load_game(game_spec, instances_name=instances_name)

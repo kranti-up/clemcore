@@ -69,7 +69,7 @@ def read_gen_args(args: argparse.Namespace):
 
 def cli(args: argparse.Namespace):
     if args.command_name == "ls":
-        clemcore.list_games()
+        clemcore.list_games(args.context)
     if args.command_name == "run":
         clemcore.run(args.game,
                      model_specs=read_model_specs(args.models),
@@ -101,9 +101,11 @@ def main():
     """
     parser = argparse.ArgumentParser()
     sub_parsers = parser.add_subparsers(dest="command_name")
-    sub_parsers.add_parser("ls")
+    list_parser = sub_parsers.add_parser("ls")
+    list_parser.add_argument("context", help="A path to a game directory or game registry file.")
 
     run_parser = sub_parsers.add_parser("run", formatter_class=argparse.RawTextHelpFormatter)
+    run_parser.add_argument("context", help="A path to a game directory or game registry file.")
     run_parser.add_argument("-m", "--models", type=str, nargs="*",
                             help="""Assumes model names supported by the implemented backends.
 
