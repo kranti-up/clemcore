@@ -1,0 +1,23 @@
+# Include the YAML logging configuration file
+include clemcore/utils/logging.yaml
+
+# Include the CSS file
+include clemcore/utils/chat-two-tracks.css
+
+# Include the model registry JSON file
+include clemcore/backends/model_registry.json
+
+# Include the README file (often important for PyPI)
+include README.md
+
+# If you have any other documentation files
+include docs/*.md
+
+# Include all Python files in the clemcore package (adjust based on your structure)
+recursive-include clemcore *.py
+
+# Exclude any test files, if applicable (to avoid including unnecessary test files)
+exclude tests/*
+
+# Optionally, include other files like LICENSE, requirements files, etc.
+include LICENSE
