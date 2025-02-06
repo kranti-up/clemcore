@@ -2,11 +2,12 @@
 import textwrap
 from typing import List, Dict, Union
 import os.path
-import logging
+
 import logging.config
 import yaml
 from datetime import datetime
 import json
+import importlib.resources as importlib_resources
 
 import clemcore.backends as backends
 import clemcore.clemgame as clemgame
@@ -25,14 +26,19 @@ BANNER = \
 
 print(BANNER)
 
-# Configure logging
-with open(os.path.join(file_utils.clemcore_root(), "utils", "logging.yaml")) as f:
-    conf = yaml.safe_load(f)
-    # adapt path to logging relative to project root
-    log_fn = conf["handlers"]["file_handler"]["filename"]
-    log_fn = os.path.join(file_utils.project_root(), log_fn)
-    conf["handlers"]["file_handler"]["filename"] = log_fn
-    logging.config.dictConfig(conf)
+
+def load_logging_config():
+    pkg_file_path = "utils/logging.yaml"
+    with importlib_resources.files(__package__).joinpath(pkg_file_path).open("r") as f:
+        return yaml.safe_load(f)
+
+
+try:
+    import logging
+
+    logging.config.dictConfig(load_logging_config())
+except Exception as e:
+    print(f"Failed to load logging config: {e}")
 
 logger = logging.getLogger(__name__)
 stdout_logger = logging.getLogger("clemcore.run")
@@ -48,7 +54,7 @@ def list_games(context_path: str):
     See game registry doc for more infos (TODO: add link)
     TODO: add filtering options to see only specific games
     """
-    stdout_logger.info("Listing all available games")
+    print("Listing all available games")
     game_registry = clemgame.load_game_registry_dynamic(context_path)
     if not game_registry:
         print("No clemgames found under context path:", context_path)
