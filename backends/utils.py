@@ -45,6 +45,11 @@ def ensure_alternating_roles(messages: List[Dict], cull_system_message: bool = T
                         f"{prev_message}\n"
                         f"{message}")
             logger.warning(warn_msg)
+
+            print(messages)
+            input()
+
+
             prev_message['content'] = join_content(prev_message, message)
             del _messages[msg_idx]
         else:
@@ -55,9 +60,9 @@ def ensure_alternating_roles(messages: List[Dict], cull_system_message: bool = T
 
 def ensure_messages_format(generate_response_fn):
     @wraps(generate_response_fn)
-    def wrapped_fn(self, messages):
+    def wrapped_fn(self, messages, respformat):
         _messages = ensure_alternating_roles(messages)
-        return generate_response_fn(self, _messages)
+        return generate_response_fn(self, _messages, respformat)
 
     return wrapped_fn
 

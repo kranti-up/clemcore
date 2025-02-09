@@ -105,25 +105,40 @@ class OpenAIModel(backends.Model):
                                                                temperature=1)
         else:
             if respformat:
+
+                use_format = []
+                for rformat in respformat:
+                    uformat = {"type": "function", "function": rformat}
+                    use_format.append(uformat)
+
                 api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
                                                             messages=prompt,
                                                             temperature=self.get_temperature(),
                                                             max_tokens=self.get_max_tokens(),
-                                                            response_format={
-                                                                    "type": "json_schema",
-                                                                    "json_schema": respformat
-                                                                }
+                                                            #functions=respformat,
+                                                            tools=use_format,
+                                                            #response_format={
+                                                            #        "type": "json_schema",
+                                                            #        "json_schema": respformat
+                                                            #    }
                                                             )
+                logger.info(f"1. api_response-> {api_response}")                
             else:
                 api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
                                                             messages=prompt,
                                                             temperature=self.get_temperature(),
                                                             max_tokens=self.get_max_tokens()
                                                             )                
+                logger.info(f"2. api_response-> {api_response}")
         message = api_response.choices[0].message
         if message.role != "assistant":  # safety check
             raise AttributeError("Response message role is " + message.role + " but should be 'assistant'")
-        response_text = message.content.strip()
-        response = json.loads(api_response.json())
+        response = json.loads(api_response.json())        
+
+        if message.content is not None:
+            response_text = message.content.strip()
+        else:
+            #response_text = message.function_call
+            response_text = message.tool_calls[0]
 
         return prompt, response, response_text

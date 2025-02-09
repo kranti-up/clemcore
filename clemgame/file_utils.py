@@ -3,7 +3,6 @@ import os
 import json
 import csv
 
-
 def project_root():
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -87,6 +86,14 @@ def store_game_results_file(data, file_name: str, dialogue_pair: str, game_name:
 def store_game_file(data, file_name: str, game_name: str, sub_dir: str = None, do_overwrite: bool = True) -> str:
     return store_file(data, file_name, game_dir(game_name), sub_dir, do_overwrite)
 
+def serialize(obj):
+    """Convert OpenAI tool call objects and other non-serializable objects into JSON-compatible format."""
+    if hasattr(obj, "to_dict"):  # If OpenAI object has a method to convert to dict
+        return obj.to_dict()
+    if hasattr(obj, "__dict__"):  # If it's a class instance, use its dictionary
+        return obj.__dict__
+    return str(obj)  # Fallback: convert to string
+
 
 def store_file(data, file_name: str, dir_path: str, sub_dir: str = None, do_overwrite: bool = True) -> str:
     """
@@ -110,7 +117,8 @@ def store_file(data, file_name: str, dir_path: str, sub_dir: str = None, do_over
 
     with open(fp, "w", encoding='utf-8') as f:
         if file_name.endswith(".json"):
-            json.dump(data, f, ensure_ascii=False)
-        else:
+            #json.dump(data, f, ensure_ascii=False)
+            json.dump(data, f, ensure_ascii=False, default=serialize)
+        else:          
             f.write(data)
     return fp

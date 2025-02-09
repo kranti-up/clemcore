@@ -9,7 +9,7 @@ import logging.config
 from types import SimpleNamespace
 from dataclasses import dataclass
 
-from typing import Dict, List, Tuple, Any, Type, Union
+from typing import Dict, List, Tuple, Any, Type, Union, Optional
 
 import yaml
 
@@ -165,7 +165,7 @@ class Model(abc.ABC):
         return self.get_name() == other.get_name()
 
     @abc.abstractmethod
-    def generate_response(self, messages: List[Dict]) -> Tuple[Any, Any, str]:
+    def generate_response(self, messages: List[Dict], respformat: Optional[Dict[str, Dict[str, Any]]]) -> Tuple[Any, Any, str]:
         """Put prompt in model-specific format and get its response.
 
         Args:
