@@ -16,7 +16,7 @@ DATA_PATH = 'games/todsystem/resources/data/en/multiwoz/data.json'
 DB_PATH = 'games/todsystem/resources/data/en/multiwoz/multiwoz.db'
 BOOK_DB_PATH = 'games/todsystem/dialogue_systems/xuetaldsys/results/multiwoz_book.db'
 
-OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY', "your-api-key")
 print(f'{OPENAI_API_KEY = }')
 
 HEADER_WIDTH = 50

@@ -61,7 +61,7 @@ class GenericOpenAIModel(backends.Model):
             api_response = self.client.chat.completions.create(model=self.model_spec.model_id, messages=prompt,
                                                             temperature=self.get_temperature(),
                                                             max_tokens=self.get_max_tokens())
-            logger.info(f"1. api_response-> {api_response}")
+            #logger.info(f"1. api_response-> {api_response}")
 
             if api_response is None:
                 logger.info("Received None from OpenAI API, retrying...")
@@ -103,7 +103,7 @@ class GenericOpenAIModel(backends.Model):
                                                             tools=use_format,
                                                             )
  
-            logger.info(f"2. api_response-> {api_response}")
+            #logger.info(f"2. api_response-> {api_response}")
             if api_response is None:
                 logger.info("Received None from OpenAI API, retrying...")
                 raise ValueError("API response was None")
