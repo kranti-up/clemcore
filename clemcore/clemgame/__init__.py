@@ -1132,6 +1132,48 @@ class GameBenchmark(GameResourceLocator):
         """
         raise NotImplementedError()
 
+    @staticmethod
+    def is_game_benchmark(obj):
+        """Check whether a class inherited from GameBenchmark.
+        Args:
+            obj: The object instance to check.
+        Returns:
+            True if the passed object is a subclass of GameBenchmark, False otherwise.
+        """
+        if inspect.isclass(obj) and issubclass(obj, GameBenchmark) and obj is not GameBenchmark:
+            return True
+        return False
+
+    @staticmethod
+    def load_from_spec(game_spec: GameSpec, do_setup: bool = True, instances_name: str = None) -> "GameBenchmark":
+        """Load a clemgame using a GameSpec.
+        Args:
+            game_spec: A GameSpec instance holding specific clemgame data.
+            do_setup: Determines if the clemgame's setup method will be executed upon loading.
+            instances_name: The name of the instances file to be used for the clemgame's setup if do_setup is True.
+        """
+        # append game directory to system path for loading game specific dependencies
+        sys.path.insert(0, game_spec.game_path)
+        # load game module from this master file
+        spec = importlib.util.spec_from_file_location(game_spec.game_name, game_spec.get_game_file())
+        game_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(game_module)
+
+        # extract game class from master.py (is_game checks inheritance from GameBenchmark)
+        game_subclasses = inspect.getmembers(game_module, predicate=GameBenchmark.is_game_benchmark)
+        if len(game_subclasses) == 0:
+            raise LookupError(f"There is no GameBenchmark defined in {game_module}. "
+                              f"Create such a class and try again.")
+        if len(game_subclasses) > 1:
+            raise LookupError(f"There is more than one Game defined in {game_module}.")
+        game_class_name, game_class = game_subclasses[0]
+        game_cls = game_class(game_spec)  # instantiate the specific game class
+
+        if do_setup:
+            game_cls.setup(instances_name)
+
+        return game_cls
+
 
 class GameInstanceGenerator(GameResourceLocator):
     """Create all game instances for a game benchmark.
@@ -1212,44 +1254,3 @@ class GameInstanceGenerator(GameResourceLocator):
         self.on_generate(**kwargs)
         self.store_file(self.instances, filename, sub_dir="in")
 
-
-def is_game(obj):
-    """Check whether a class inherited from GameBenchmark.
-    Args:
-        obj: The object instance to check.
-    Returns:
-        True if the passed object is a subclass of GameBenchmark, False otherwise.
-    """
-    if inspect.isclass(obj) and issubclass(obj, GameBenchmark) and obj is not GameBenchmark:
-        return True
-    return False
-
-
-def load_game(game_spec: GameSpec, do_setup: bool = True, instances_name: str = None) -> GameBenchmark:
-    """Load a clemgame using a GameSpec.
-    Args:
-        game_spec: A GameSpec instance holding specific clemgame data.
-        do_setup: Determines if the clemgame's setup method will be executed upon loading.
-        instances_name: The name of the instances file to be used for the clemgame's setup if do_setup is True.
-    """
-    # append game directory to system path for loading game specific dependencies
-    sys.path.insert(0, game_spec.game_path)
-    # load game module from this master file
-    spec = importlib.util.spec_from_file_location(game_spec["game_name"], game_spec.get_game_file())
-    game_module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(game_module)
-
-    # extract game class from master.py (is_game checks inheritance from GameBenchmark)
-    game_subclasses = inspect.getmembers(game_module, predicate=is_game)
-    if len(game_subclasses) == 0:
-        raise LookupError(f"There is no GameBenchmark defined in {game_module}. "
-                          f"Create such a class and try again.")
-    if len(game_subclasses) > 1:
-        raise LookupError(f"There is more than one Game defined in {game_module}.")
-    game_class_name, game_class = game_subclasses[0]
-    game_cls = game_class(game_spec)  # instantiate the specific game class
-
-    if do_setup:
-        game_cls.setup(instances_name)
-
-    return game_cls
