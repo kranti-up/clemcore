@@ -1,62 +1,130 @@
 import argparse
-import json
-from typing import List
+import textwrap
+import logging
+from datetime import datetime
+from typing import List, Dict, Union
 
-import clemcore
-from clemcore.backends import ModelSpec
+import clemcore.backends as backends
+from clemcore.clemgame import GameSpec
+import clemgame
 
-"""
-    Use good old argparse to run the commands.
-    
-    To list available games: 
-    $> python3 scripts/cli.py list games
-    
-    To list available backends: 
-    $> python3 scripts/cli.py list backends
-    
-    To run a specific game with a single player:
-    $> python3 scripts/cli.py run -g privateshared -m mock
-    
-    To run a specific game with a two players:
-    $> python3 scripts/cli.py run -g taboo -m mock mock
-    
-    If the game supports model expansion (using the single specified model for all players):
-    $> python3 scripts/cli.py run -g taboo -m mock
-    
-    To score all games:
-    $> python3 scripts/cli.py score
-    
-    To score a specific game:
-    $> python3 scripts/cli.py score -g privateshared
-    
-    To score all games:
-    $> python3 scripts/cli.py transcribe
-    
-    To score a specific game:
-    $> python3 scripts/cli.py transcribe -g privateshared
-"""
+logger = logging.getLogger(__name__)
+stdout_logger = logging.getLogger("clemcore.cli")
 
 
-def read_model_specs(model_strings: List[str]):
-    """Get ModelSpec instances for the passed list of models.
-    Takes both simple model names and (partially or fully specified) model specification data as JSON strings.
-    Args:
-        model_strings: List of string names of the models to return ModelSpec instances for. Model name strings
-            correspond to the 'model_name' key value of a model in the model registry. May also be partially or fully
-            specified model specification data as JSON strings.
-    Returns:
-        A list of ModelSpec instances for the passed list of models.
+def list_games(context_path: str):
+    """List all games specified in the game registries.
+    Only loads those for which master.py can be found in the specified path.
+    See game registry doc for more infos (TODO: add link)
+    TODO: add filtering options to see only specific games
     """
-    model_specs = []
-    for model_string in model_strings:
+    print("Listing all available games")
+    game_registry = clemgame.load_game_registry_dynamic(context_path)
+    if not game_registry:
+        print("No clemgames found under context path:", context_path)
+        print("Make sure that your clemgame directory have a clemgame.json")
+        print("or register them with 'clem register <your-game-directory>'.")
+        return
+    for game in game_registry:
+        game_name = f'{game["game_name"]}:\n'
+        preferred_width = 70
+        wrapper = textwrap.TextWrapper(initial_indent="\t", width=preferred_width,
+                                       subsequent_indent="\t")
+        print(game_name, wrapper.fill(game["description"]))
+
+
+def run(game: Union[str, Dict, GameSpec], model_specs: List[backends.ModelSpec], gen_args: Dict,
+        experiment_name: str = None, instances_name: str = None, results_dir: str = None):
+    """Run specific model/models with a specified clemgame.
+    Args:
+        game: Name of the game, matching the game's name in the game registry, OR GameSpec-like dict, OR GameSpec.
+        model_specs: A list of backends.ModelSpec instances for the player models to run the game with.
+        gen_args: Text generation parameters for the backend; output length and temperature are implemented for the
+            majority of model backends.
+        experiment_name: Name of the experiment to run. Corresponds to the experiment key in the instances JSON file.
+        instances_name: Name of the instances JSON file to use for this benchmark run.
+        results_dir: Path to the results directory in which to store the episode records.
+    """
+    try:
+        player_models = []
+        for model_spec in model_specs:
+            model = backends.get_model_for(model_spec)
+            model.set_gen_args(**gen_args)  # todo make this somehow available in generate method?
+            player_models.append(model)
+
+        game_specs = clemgame.select_game(game, game_registry)
+        print("Matched game specs in registry:", " ".join([game_spec.game_name for game_spec in game_specs]))
+        for game_spec in game_specs:
+            game_benchmark = clemgame.load_game(game_spec, instances_name=instances_name)
+            logger.info(
+                f'Running {game_spec["game_name"]} (models={player_models if player_models is not None else "see experiment configs"})')
+            stdout_logger.info(f"Running game {game_spec['game_name']}")
+            if experiment_name:  # leaving this as-is for now, needs discussion conclusions
+                logger.info("Only running experiment: %s", experiment_name)
+                game_benchmark.filter_experiment.append(experiment_name)
+            time_start = datetime.now()
+            game_benchmark.run(player_models=player_models, results_dir=results_dir)
+            time_end = datetime.now()
+            logger.info(f'Running {game_spec["game_name"]} took {str(time_end - time_start)}')
+
+    except Exception as e:
+        stdout_logger.exception(e)
+        logger.error(e, exc_info=True)
+
+
+def score(game: Union[str, Dict, GameSpec], experiment_name: str = None, results_dir: str = None):
+    """Calculate scores from a game benchmark run's records and store score files.
+    Args:
+        game: Name of the game, matching the game's name in the game registry, OR GameSpec-like dict, OR GameSpec.
+        experiment_name: Name of the experiment to score. Corresponds to the experiment directory in each player pair
+            subdirectory in the results directory.
+        results_dir: Path to the results directory in which the benchmark records are stored.
+    """
+    logger.info(f"Scoring game {game}")
+    stdout_logger.info(f"Scoring game {game}")
+
+    if experiment_name:
+        logger.info("Only scoring experiment: %s", experiment_name)
+    game_specs = clemgame.select_game(game)
+    for game_spec in game_specs:
         try:
-            model_string = model_string.replace("'", "\"")  # make this a proper json
-            model_dict = json.loads(model_string)
-            model_spec = ModelSpec.from_dict(model_dict)
-        except Exception as e:  # likely not a json
-            model_spec = ModelSpec.from_name(model_string)
-        model_specs.append(model_spec)
-    return model_specs
+            game = clemgame.load_game(game_spec, do_setup=False)
+            if experiment_name:
+                game.filter_experiment.append(experiment_name)
+            time_start = datetime.now()
+            game.compute_scores(results_dir)
+            time_end = datetime.now()
+            logger.info(f"Scoring {game.game_name} took {str(time_end - time_start)}")
+        except Exception as e:
+            stdout_logger.exception(e)
+            logger.error(e, exc_info=True)
+
+
+def transcripts(game: Union[str, Dict, GameSpec], experiment_name: str = None, results_dir: str = None):
+    """Create episode transcripts from a game benchmark run's records and store transcript files.
+    Args:
+        game: Name of the game, matching the game's name in the game registry, OR GameSpec-like dict, OR GameSpec.
+        experiment_name: Name of the experiment to score. Corresponds to the experiment directory in each player pair
+            subdirectory in the results directory.
+        results_dir: Path to the results directory in which the benchmark records are stored.
+    """
+    logger.info(f"Transcribing game {game}")
+    stdout_logger.info(f"Transcribing game {game}")
+    if experiment_name:
+        logger.info("Only transcribing experiment: %s", experiment_name)
+    game_specs = clemgame.select_game(game)
+    for game_spec in game_specs:
+        try:
+            game = clemgame.load_game(game_spec, do_setup=False)
+            if experiment_name:
+                game.filter_experiment.append(experiment_name)
+            time_start = datetime.now()
+            game.build_transcripts(results_dir)
+            time_end = datetime.now()
+            logger.info(f"Building transcripts for {game.game_name} took {str(time_end - time_start)}")
+        except Exception as e:
+            stdout_logger.exception(e)
+            logger.error(e, exc_info=True)
 
 
 def read_gen_args(args: argparse.Namespace):
@@ -73,22 +141,54 @@ def read_gen_args(args: argparse.Namespace):
 def cli(args: argparse.Namespace):
     if args.command_name == "list":
         if args.mode == "games":
-            clemcore.list_games(args.context)
+            list_games(args.context)
         elif args.mode == "backends":
             ...
         else:
             print(f"Cannot list {args.mode}. Choose an option documented at 'list -h'.")
     if args.command_name == "run":
-        clemcore.run(args.game,
-                     model_specs=read_model_specs(args.models),
-                     gen_args=read_gen_args(args),
-                     experiment_name=args.experiment_name,
-                     instances_name=args.instances_name,
-                     results_dir=args.results_dir)
+        run(args.game,
+            model_specs=backends.ModelSpec.from_strings(args.models),
+            gen_args=read_gen_args(args),
+            experiment_name=args.experiment_name,
+            instances_name=args.instances_name,
+            results_dir=args.results_dir)
     if args.command_name == "score":
-        clemcore.score(args.game, experiment_name=args.experiment_name, results_dir=args.results_dir)
+        score(args.game, experiment_name=args.experiment_name, results_dir=args.results_dir)
     if args.command_name == "transcribe":
-        clemcore.transcripts(args.game, experiment_name=args.experiment_name, results_dir=args.results_dir)
+        transcripts(args.game, experiment_name=args.experiment_name, results_dir=args.results_dir)
+
+
+"""
+    Use good old argparse to run the commands.
+
+    To list available games: 
+    $> python3 scripts/cli.py list games
+
+    To list available backends: 
+    $> python3 scripts/cli.py list backends
+
+    To run a specific game with a single player:
+    $> python3 scripts/cli.py run -g privateshared -m mock
+
+    To run a specific game with a two players:
+    $> python3 scripts/cli.py run -g taboo -m mock mock
+
+    If the game supports model expansion (using the single specified model for all players):
+    $> python3 scripts/cli.py run -g taboo -m mock
+
+    To score all games:
+    $> python3 scripts/cli.py score
+
+    To score a specific game:
+    $> python3 scripts/cli.py score -g privateshared
+
+    To score all games:
+    $> python3 scripts/cli.py transcribe
+
+    To score a specific game:
+    $> python3 scripts/cli.py transcribe -g privateshared
+"""
 
 
 def main():

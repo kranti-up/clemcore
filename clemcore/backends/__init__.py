@@ -91,6 +91,28 @@ class ModelSpec(SimpleNamespace):
         """
         return cls(**spec)
 
+    @classmethod
+    def from_strings(cls, model_strings: List[str]):
+        """Get ModelSpec instances for the passed list of models.
+        Takes both simple model names and (partially or fully specified) model specification data as JSON strings.
+        Args:
+            model_strings: List of string names of the models to return ModelSpec instances for. Model name strings
+                correspond to the 'model_name' key value of a model in the model registry. May also be partially or fully
+                specified model specification data as JSON strings.
+        Returns:
+            A list of ModelSpec instances for the passed list of models.
+        """
+        model_specs = []
+        for model_string in model_strings:
+            try:
+                model_string = model_string.replace("'", "\"")  # make this a proper json
+                model_dict = json.loads(model_string)
+                model_spec = ModelSpec.from_dict(model_dict)
+            except Exception as e:  # likely not a json
+                model_spec = ModelSpec.from_name(model_string)
+            model_specs.append(model_spec)
+        return model_specs
+
     def is_programmatic(self):
         """Check if this ModelSpec instance specifies a programmatic responder."""
         return self.model_name in ModelSpec.PROGRAMMATIC_SPECS
