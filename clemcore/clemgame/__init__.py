@@ -15,6 +15,7 @@ import clemcore.backends as backends
 import clemcore.utils.file_utils as file_utils
 import clemcore.utils.transcript_utils as transcript_utils
 import clemcore.clemgame.metrics as ms
+from clemcore.clemgame.registry import GameSpec
 
 logger = logging.getLogger(__name__)
 stdout_logger = logging.getLogger("clemcore.run")

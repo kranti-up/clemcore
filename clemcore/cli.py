@@ -5,8 +5,8 @@ from datetime import datetime
 from typing import List, Dict, Union
 
 import clemcore.backends as backends
-from clemcore.clemgame import GameSpec
-import clemgame
+import clemcore.clemgame as clemgame
+from clemcore.clemgame.registry import GameRegistry, GameSpec
 
 logger = logging.getLogger(__name__)
 stdout_logger = logging.getLogger("clemcore.cli")
@@ -19,7 +19,7 @@ def list_games(context_path: str):
     TODO: add filtering options to see only specific games
     """
     print("Listing all available games")
-    game_registry = clemgame.load_game_registry_dynamic(context_path)
+    game_registry = GameRegistry.load_from_directories_or_file(context_path)
     if not game_registry:
         print("No clemgames found under context path:", context_path)
         print("Make sure that your clemgame directory have a clemgame.json")
@@ -52,7 +52,7 @@ def run(game: Union[str, Dict, GameSpec], model_specs: List[backends.ModelSpec],
             model.set_gen_args(**gen_args)  # todo make this somehow available in generate method?
             player_models.append(model)
 
-        game_specs = clemgame.select_game(game, game_registry)
+        game_specs = clemgame.select_game(game)
         print("Matched game specs in registry:", " ".join([game_spec.game_name for game_spec in game_specs]))
         for game_spec in game_specs:
             game_benchmark = clemgame.load_game(game_spec, instances_name=instances_name)
