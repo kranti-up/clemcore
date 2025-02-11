@@ -55,7 +55,6 @@ def run(context_path: str, game_selector: Union[str, Dict, GameSpec], model_spec
 
         game_registry = GameRegistry.load_from_directories_or_file(context_path)
         game_specs = game_registry.get_game_specs_that_unify_with(game_selector)
-        print("Matched game specs in registry:", " ".join([game_spec.game_name for game_spec in game_specs]))
         for game_spec in game_specs:
             game_benchmark = GameBenchmark.load_from_spec(game_spec, instances_name=instances_name)
             logger.info(

@@ -237,8 +237,10 @@ class GameRegistry:
         elif type(game_selector) == GameSpec:
             game_is_gamespec = True
 
-        if game_is_gamespec:
-            matching_registered_games: list = list()
+        selected_game_specs = []
+        if game_selector == "all":
+            selected_game_specs = self._game_specs
+        elif game_is_gamespec:
             # iterate over game registry:
             for registered_game_spec in self._game_specs:
 
@@ -247,7 +249,7 @@ class GameRegistry:
                     for benchmark_version in game_selector.benchmark:
                         if benchmark_version in registered_game_spec.benchmark:
                             if registered_game_spec.game_file_exists():
-                                matching_registered_games.append(registered_game_spec)
+                                selected_game_specs.append(registered_game_spec)
 
                 else:
                     # get unifying entries:
@@ -256,25 +258,31 @@ class GameRegistry:
                         unifying_game_spec = game_selector.unify(registered_game_spec)
                         if unifying_game_spec.game_file_exists():
                             # print(f"Found unifying game registry entry: {unifying_game_spec}")
-                            matching_registered_games.append(unifying_game_spec)
+                            selected_game_specs.append(unifying_game_spec)
                     except ValueError:
                         continue
-
-            return matching_registered_games
-        elif game_selector == "all":
-            return self._game_specs
         else:
             # return first entry that matches game_name
             for registered_game_spec in self._game_specs:
                 if registered_game_spec["game_name"] == game_selector:
-                    if registered_game_spec.game_file_exists():
-                        return [registered_game_spec]
-                    else:
-                        raise ValueError(f"Game master file master.py not found in {registered_game_spec['game_path']}."
-                                         f"Update clemcore/clemgame/game_registry.json (or game_registry_custom.json) with the right path for {registered_game_spec}.")
+                    selected_game_specs = [registered_game_spec]
+                    break
+        if selected_game_specs:
+            if game_is_gamespec:
+                stdout_logger.info(f"Found '{len(selected_game_specs)}' game matching the game_selector="
+                                   f"{json.dumps(game_selector.__dict__, separators=(',', ':'), indent=None)}")
+            else:
+                stdout_logger.info(f"Found '{len(selected_game_specs)}' game matching the game_selector="
+                                   f"{json.dumps(game_selector, separators=(',', ':'), indent=None)}")
+            if len(selected_game_specs) == 1:
+                stdout_logger.info(json.dumps(selected_game_specs[0].__dict__, indent=2))
+            else:
+                for game_spec in selected_game_specs:
+                    stdout_logger.info(json.dumps(game_spec.__dict__, separators=(",", ":"), indent=None))
+        else:
             raise ValueError(f"No games found matching the given specification '{game_selector}'. "
                              "Make sure the game name matches the name in clemcore/clemgame/game_registry.json (or game_registry_custom.json)")
-
+        return selected_game_specs
         # extension to select subset of games
         # (postponed because it introduces more complexity
         # on things like how to specify specific episodes (which could, however be integrated into the game spec
