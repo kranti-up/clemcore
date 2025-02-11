@@ -1,12 +1,10 @@
 """ Main entry point """
 import textwrap
 from typing import List, Dict, Union
-import os.path
 
 import logging.config
 import yaml
 from datetime import datetime
-import json
 import importlib.resources as importlib_resources
 
 import clemcore.backends as backends

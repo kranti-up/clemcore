@@ -9,7 +9,10 @@ from clemcore.backends import ModelSpec
     Use good old argparse to run the commands.
     
     To list available games: 
-    $> python3 scripts/cli.py ls
+    $> python3 scripts/cli.py list games
+    
+    To list available backends: 
+    $> python3 scripts/cli.py list backends
     
     To run a specific game with a single player:
     $> python3 scripts/cli.py run -g privateshared -m mock
@@ -68,8 +71,13 @@ def read_gen_args(args: argparse.Namespace):
 
 
 def cli(args: argparse.Namespace):
-    if args.command_name == "ls":
-        clemcore.list_games(args.context)
+    if args.command_name == "list":
+        if args.mode == "games":
+            clemcore.list_games(args.context)
+        elif args.mode == "backends":
+            ...
+        else:
+            print(f"Cannot list {args.mode}. Choose an option documented at 'list -h'.")
     if args.command_name == "run":
         clemcore.run(args.game,
                      model_specs=read_model_specs(args.models),
@@ -101,8 +109,14 @@ def main():
     """
     parser = argparse.ArgumentParser()
     sub_parsers = parser.add_subparsers(dest="command_name")
-    list_parser = sub_parsers.add_parser("ls")
-    list_parser.add_argument("context", help="A path to a game directory or game registry file.")
+    list_parser = sub_parsers.add_parser("list")
+    list_parser.add_argument("mode", choices=["games", "backends"],
+                             default="games", nargs="?", type=str,
+                             help="Choose between games or backends to be listed. Default: games")
+    list_parser.add_argument("context", default=".", nargs="?", type=str,
+                             help="A path to a directory that contains a clemgame or game registry file. "
+                                  "Can also be called directly from within a clemgame directory with '.'. "
+                                  "Default: . (dot).")
 
     run_parser = sub_parsers.add_parser("run", formatter_class=argparse.RawTextHelpFormatter)
     run_parser.add_argument("context", help="A path to a game directory or game registry file.")
