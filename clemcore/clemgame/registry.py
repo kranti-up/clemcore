@@ -24,10 +24,6 @@ class GameSpec(SimpleNamespace):
                 raise KeyError(f"No game name specified in entry {kwargs}")
             if "game_path" not in self:
                 raise KeyError(f"No game path specified in {kwargs}")
-        # make game_path absolute
-        if hasattr(self, 'game_path'):
-            if not os.path.isabs(self.game_path):
-                self.game_path = os.path.join(file_utils.project_root(), self.game_path)
 
     def __repr__(self):
         """Returns string representation of this GameSpec."""
@@ -55,6 +51,12 @@ class GameSpec(SimpleNamespace):
             True if the GameSpec instance contains an attribute with the passed string name, False otherwise.
         """
         return hasattr(self, attribute)
+
+    def to_string(self):
+        return json.dumps(self.__dict__, separators=(",", ":"), indent=None)
+
+    def to_pretty_string(self):
+        return json.dumps(self.__dict__, indent=2)
 
     @classmethod
     def from_directory(cls, dir_path: str):
@@ -270,15 +272,15 @@ class GameRegistry:
         if selected_game_specs:
             if game_is_gamespec:
                 stdout_logger.info(f"Found '{len(selected_game_specs)}' game matching the game_selector="
-                                   f"{json.dumps(game_selector.__dict__, separators=(',', ':'), indent=None)}")
+                                   f"{game_selector.to_string()}")
             else:
                 stdout_logger.info(f"Found '{len(selected_game_specs)}' game matching the game_selector="
                                    f"{json.dumps(game_selector, separators=(',', ':'), indent=None)}")
             if len(selected_game_specs) == 1:
-                stdout_logger.info(json.dumps(selected_game_specs[0].__dict__, indent=2))
+                stdout_logger.info(selected_game_specs[0].to_pretty_string())
             else:
                 for game_spec in selected_game_specs:
-                    stdout_logger.info(json.dumps(game_spec.__dict__, separators=(",", ":"), indent=None))
+                    stdout_logger.info(game_selector.to_string())
         else:
             raise ValueError(f"No games found matching the given specification '{game_selector}'. "
                              "Make sure the game name matches the name in clemcore/clemgame/game_registry.json (or game_registry_custom.json)")

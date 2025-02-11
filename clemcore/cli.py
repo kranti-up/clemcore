@@ -1,4 +1,5 @@
 import argparse
+import json
 import textwrap
 import logging
 from datetime import datetime
@@ -12,7 +13,7 @@ logger = logging.getLogger(__name__)
 stdout_logger = logging.getLogger("clemcore.cli")
 
 
-def list_games(context_path: str):
+def list_games(context_path: str, verbose: bool):
     """List all games specified in the game registries.
     Only loads those for which master.py can be found in the specified path.
     See game registry doc for more infos (TODO: add link)
@@ -25,12 +26,18 @@ def list_games(context_path: str):
         print("Make sure that your clemgame directory have a clemgame.json")
         print("or register them with 'clem register <your-game-directory>'.")
         return
-    for game in game_registry:
-        game_name = f'{game["game_name"]}:\n'
+    for game_spec in game_registry:
+        game_name = f'{game_spec["game_name"]}:\n'
         preferred_width = 70
         wrapper = textwrap.TextWrapper(initial_indent="\t", width=preferred_width,
                                        subsequent_indent="\t")
-        print(game_name, wrapper.fill(game["description"]))
+        if verbose:
+            print(game_name,
+                  wrapper.fill(game_spec["description"]),"\n",
+                  wrapper.fill("GameSpec: " + game_spec.to_string()),
+            )
+        else:
+            print(game_name, wrapper.fill(game_spec["description"]))
 
 
 def run(context_path: str, game_selector: Union[str, Dict, GameSpec], model_specs: List[backends.ModelSpec],
@@ -150,7 +157,7 @@ def read_gen_args(args: argparse.Namespace):
 def cli(args: argparse.Namespace):
     if args.command_name == "list":
         if args.mode == "games":
-            list_games(args.context)
+            list_games(args.context, args.verbose)
         elif args.mode == "backends":
             ...
         else:
@@ -226,6 +233,7 @@ def main():
                              help="A path to a directory that contains a clemgame or game registry file. "
                                   "Can also be called directly from within a clemgame directory with '.'. "
                                   "Default: . (dot).")
+    list_parser.add_argument("-v", "--verbose", action="store_true")
 
     run_parser = sub_parsers.add_parser("run", formatter_class=argparse.RawTextHelpFormatter)
     run_parser.add_argument("context", default=".", nargs="?", type=str,
