@@ -544,8 +544,8 @@ class FuncAgent:
                 #print('Function parsing error:')
                 #print(f'function_call: {msg.function_call}')
                 #print(check_msg)
-                result, details = check_msg
-                logger.info(f"After Function parsing error result: {result}, details = {details}")
+                result = check_msg
+                logger.info(f"After Function parsing error result: {result}")
 
             #print('Result: ' + CYAN_COLOR + f'{result}' + RESET_COLOR)
             logger.info(f"Result = {result}")
@@ -612,7 +612,9 @@ class FuncAgent:
                 args = function_call['parameters']
             else:
                 args = function_call['arguments']
-            args = json.dumps(args)
+
+            if not isinstance(args, str):
+                args = json.dumps(args)
 
         logger.info(f"name: {name}, args: {args}")
 
@@ -621,7 +623,12 @@ class FuncAgent:
 
         # Parase: (\\'): "{\n  \"sql\": \"SELECT area, address FROM hotel WHERE name = 'rosa\\'s bed and breakfast'\"\n}"
         args = re.sub(r'''("sql": ".*WHERE.*name = '.*)\\('.*'")''', r'\1\2', args)
-        args = json.loads(args)
+        try:
+            args = json.loads(args)
+        except json.JSONDecodeError as e:
+            return False, f'Failed to parse the function arguments: {args}.', None, None
+
+
         if 'sql' in args:
             args['sql'] = re.sub(r"name = '(.*'.*)'", r'name = "\1"', args['sql'])
 
@@ -635,6 +642,7 @@ class FuncAgent:
             return False,  f'The required parameters {args_str} are missing.', None, None
         
         return True, 'succeed', name, args
+
     
 
     def get_booking_data(self):
