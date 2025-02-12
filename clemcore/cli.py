@@ -1,5 +1,4 @@
 import argparse
-import json
 import textwrap
 import logging
 from datetime import datetime
@@ -33,7 +32,7 @@ def list_games(context_path: str, verbose: bool):
                                        subsequent_indent="\t")
         if verbose:
             print(game_name,
-                  wrapper.fill(game_spec["description"]),"\n",
+                  wrapper.fill(game_spec["description"]), "\n",
                   wrapper.fill("GameSpec: " + game_spec.to_string()),
             )
         else:

@@ -1,6 +1,8 @@
 import abc
 import collections
 import copy
+import csv
+import json
 import os.path
 import sys
 from datetime import datetime
@@ -12,7 +14,6 @@ import inspect
 import logging
 
 import clemcore.backends as backends
-import clemcore.utils.file_utils as file_utils
 import clemcore.utils.transcript_utils as transcript_utils
 import clemcore.clemgame.metrics as ms
 from clemcore.clemgame.registry import GameSpec
@@ -104,7 +105,6 @@ class Player(abc.ABC):
         """
         raise NotImplementedError()
 
-
 class GameResourceLocator(abc.ABC):
     """
     Provides access to game specific resources and results (based on game path and results directory)
@@ -122,21 +122,27 @@ class GameResourceLocator(abc.ABC):
         """
 
         Args:
-            game_name: name of the game (optional, because not needed for GameInstanceGenerator)
-            ga,e_path: path to the game (optional, because not needed for GameScorer)
+            name: name of the game (optional, because not needed for GameInstanceGenerator)
+            path: path to the game (optional, because not needed for GameScorer)
         """
         self.game_name = name  # for building results structure
         self.game_path = path  # for accessing game resources
         self.logger = logging.getLogger(self.__class__.__module__)
 
-    # def file_path(self, file_name: str) -> str:
-    #     """
-    #     TODO: seems to be never used, check if removing breaks anything
-    #     The absolute path to a game file. Sometimes we only need the path to a file, but not to load it.
-    #     :param file_name: can be a sub-path
-    #     :return: the absolute path to the file in the game directory
-    #     """
-    #     return file_utils.file_path(file_name, self.game_name)
+    def __load_game_file(self, file_name: str, file_ending: str = None) -> str:
+        """Load a file from a clemgame. Assumes the file to be an utf8-encoded (text) file.
+        Args:
+            file_name: Name of the file.
+            file_ending: The file type suffix of the file.
+        Returns:
+            The file content as returned by open->read().
+        """
+        if file_ending and not file_name.endswith(file_ending):
+            file_name = file_name + file_ending
+        fp = os.path.join(self.game_path, file_name)
+        with open(fp, encoding='utf8') as f:
+            data = f.read()
+        return data
 
     def load_instances(self, instances_name):
         """Construct instances path and return json object of the instance file.
@@ -148,7 +154,7 @@ class GameResourceLocator(abc.ABC):
         """
         if instances_name is None:
             instances_name = "instances"
-        return file_utils.load_json(f"in/{instances_name}", self.game_path)
+        return self.load_json(f"in/{instances_name}")
 
     def load_template(self, file_name: str) -> str:
         """Load a .template file from the game directory.
@@ -157,7 +163,7 @@ class GameResourceLocator(abc.ABC):
         Returns:
             The template file content as string.
         """
-        return file_utils.load_file(file_name, self.game_path, file_ending=".template")
+        return self.__load_game_file(file_name, file_ending=".template")
 
     def load_json(self, file_name: str) -> Dict:
         """Load a .json file from your game directory.
@@ -166,10 +172,11 @@ class GameResourceLocator(abc.ABC):
         Returns:
             The JSON file content as dict.
         """
-        return file_utils.load_json(file_name, self.game_path)
+        data = self.__load_game_file(file_name, file_ending=".json")
+        return json.loads(data)
 
     def load_results_json(self, file_name: str, results_dir: str, dialogue_pair: str) -> Dict:
-        """Load a .json file from your game results directory.
+        """Load a .json file from the results directory for this game.
         Args:
             file_name: The name of the JSON file. Can have subdirectories e.g. "sub/my_file".
             results_dir: The string path to the results directory.
@@ -178,16 +185,36 @@ class GameResourceLocator(abc.ABC):
         Returns:
             The JSON file content as dict.
         """
-        return file_utils.load_results_json(file_name, results_dir, dialogue_pair, self.game_name)
+        """
+        todo: this is a bit delicate: we need to duplicate the code from self.load_json, 
+        b.c. either we provide for all load_json cases the path from outside e.g. self.load_json(self.game_path)
+        or we move this method outside GameResourceLocator, because the results is not necessarily a game file;
+        considering this, we actually could also make the results live in the games (but this not yet done)
+        """
+        file_ending = ".json"
+        if not file_name.endswith(file_ending):
+            file_name = file_name + file_ending
+        fp = os.path.join(results_dir, dialogue_pair, self.game_name, file_name)
+        with open(fp, encoding='utf8') as f:
+            data = f.read()
+        data = json.loads(data)
+        return data
 
-    def load_csv(self, file_name: str) -> Dict:
+    def load_csv(self, file_name: str) -> List:
         """Load a .csv file from your game directory.
         Args:
             file_name: The name of the CSV file. Can have subdirectories e.g. "sub/my_file".
         Returns:
-            The CSV file content as dict.
+            A list version of the CSV file content.
         """
-        return file_utils.load_csv(file_name, self.game_path)
+        # iso8859_2 was required for opening nytcrosswords.csv for clues in wordle
+        rows = []
+        fp = os.path.join(self.game_path, file_name)
+        with open(fp, encoding='iso8859_2') as csv_file:
+            data = csv.reader(csv_file, delimiter=',')
+            for row in data:
+                rows.append(row)
+        return rows
 
     def load_file(self, file_name: str, file_ending: str = None) -> str:
         """Load an arbitrary file from your game directory.
@@ -197,7 +224,37 @@ class GameResourceLocator(abc.ABC):
         Returns:
             The file content as string.
         """
-        return file_utils.load_file(file_name, self.game_path, file_ending=file_ending)
+        return self.__load_game_file(file_name, file_ending=file_ending)
+
+    def __store_file(self, data, file_name: str, dir_path: str, sub_dir: str = None, do_overwrite: bool = True) -> str:
+        """Store a file.
+        Base function to handle relative clembench directory paths.
+        Args:
+            data: Content to store in the file.
+            file_name: Name of the file to store.
+            dir_path: Path to the directory to store the file to.
+            sub_dir: Optional subdirectories to store the file in.
+            do_overwrite: Determines if existing file should be overwritten. Default: True
+        Returns:
+            The path to the stored file.
+        """
+        if sub_dir:
+            dir_path = os.path.join(dir_path, sub_dir)
+
+        if not os.path.exists(dir_path):
+            os.makedirs(dir_path)
+
+        fp = os.path.join(dir_path, file_name)
+        if not do_overwrite:
+            if os.path.exists(fp):
+                raise FileExistsError(fp)
+
+        with open(fp, "w", encoding='utf-8') as f:
+            if file_name.endswith(".json"):
+                json.dump(data, f, ensure_ascii=False)
+            else:
+                f.write(data)
+        return fp
 
     def store_file(self, data, file_name: str, sub_dir: str = None):
         """Store a file in your game directory.
@@ -207,10 +264,11 @@ class GameResourceLocator(abc.ABC):
             sub_dir: The subdirectory to store the file in. Automatically created when given; otherwise an error will
                 be thrown.
         """
-        fp = file_utils.store_file(data, file_name, self.game_path, sub_dir=sub_dir)
+        fp = self.__store_file(data, file_name, self.game_path, sub_dir=sub_dir)
         self.logger.info("Game file stored to %s", fp)
 
-    def store_results_file(self, data, file_name: str, dialogue_pair: str, sub_dir: str = None, root_dir: str = None):
+    def store_results_file(self, data, file_name: str, dialogue_pair: str,
+                           sub_dir: str = None, results_dir: str = None):
         """Store a results file in your game results' directory. The top-level directory is 'results'.
         Args:
             data: The data to store in the file.
@@ -219,11 +277,12 @@ class GameResourceLocator(abc.ABC):
                 directory file structure by classes/methods that use this method.
             sub_dir: The subdirectory to store the results file in. Automatically created when given; otherwise an
                 error will be thrown.
-            root_dir: An (alternative) results directory structure given as a relative or absolute path.
+            results_dir: An (alternative) results directory structure given as a relative or absolute path.
         """
-        game_results_path = file_utils.game_results_dir(root_dir, dialogue_pair, self.game_name)
-        fp = file_utils.store_file(data, file_name, game_results_path, sub_dir)
-
+        if results_dir is None:
+            results_dir = "results"  # default to a results directory in current terminal workspace
+        game_results_path = os.path.join(results_dir, dialogue_pair, self.game_name)
+        fp = self.__store_file(data, file_name, game_results_path, sub_dir)
         self.logger.info(f"Results file stored to {fp}")
 
 
@@ -874,11 +933,11 @@ class GameBenchmark(GameResourceLocator):
         Args:
             results_dir: Path to the results directory.
         """
-        results_root = file_utils.results_root(results_dir)
+        results_root = results_dir
         dialogue_partners = [model_dir for model_dir in os.listdir(results_root)
                              if os.path.isdir(os.path.join(results_root, model_dir))]
         for dialogue_pair in dialogue_partners:
-            game_result_path = file_utils.game_results_dir(results_root, dialogue_pair, self.game_name)
+            game_result_path = os.path.join(results_root, dialogue_pair, self.game_name)
             if not os.path.exists(game_result_path) or not os.path.isdir(game_result_path):
                 stdout_logger.info("No results directory found at: " + game_result_path)
                 continue
@@ -932,11 +991,11 @@ class GameBenchmark(GameResourceLocator):
         Args:
             results_dir: Path to the results directory.
         """
-        results_root = file_utils.results_root(results_dir)
+        results_root = results_dir
         dialogue_partners = [model_dir for model_dir in os.listdir(results_root)
                              if os.path.isdir(os.path.join(results_root, model_dir))]
         for dialogue_pair in dialogue_partners:
-            game_result_path = file_utils.game_results_dir(results_root, dialogue_pair, self.game_name)
+            game_result_path = os.path.join(results_root, dialogue_pair, self.game_name)
             if not os.path.exists(game_result_path) or not os.path.isdir(game_result_path):
                 stdout_logger.info("No results directory found at: " + game_result_path)
                 continue
@@ -1004,7 +1063,7 @@ class GameBenchmark(GameResourceLocator):
             player_models: A list of backends.Model instances to run the game with.
             results_dir: Path to the results directory.
         """
-        results_root = file_utils.results_root(results_dir)
+        results_root = results_dir
         experiments: List = self.instances["experiments"]
         if not experiments:
             self.logger.warning(f"{self.game_name}: No experiments for %s", self.game_name)
