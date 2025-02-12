@@ -294,17 +294,21 @@ class Interact:
         return response
     
     def extract_word_if_valid(self, domain_value):
-        # If input contains a comma or period followed by a non-whitespace character, it's invalid
-        if re.search(r"[,.]\s*\S+", domain_value):
-            return None  # Invalid input
+        # Trim leading/trailing spaces
+        domain_value = domain_value.strip()
+
+        # Check if the input consists of only a single word followed by a comma or period (with optional space after)
+        match = re.match(r"^(\S+)[,.]\s*$", domain_value)  # Matches "word," or "word. " etc.
         
-        # Extract the word before the first comma or period, if present
-        match = re.match(r"^(.+?)[,.]", domain_value)
         if match:
-            return match.group(1).strip().lower()  # Return the extracted word (trimmed)
-        
-        # If it's a single word (no punctuation), return it as is
-        return domain_value.strip().lower() if domain_value.strip() else None  # Ensure it's not just empty spaces    
+            return match.group(1).lower()  # Return word in lowercase
+
+        # Check if it's a single word without punctuation (only one word with no commas or periods)
+        if re.match(r"^\S+$", domain_value):
+            return domain_value.lower()  # Convert to lowercase and return
+
+        # If there are multiple words, return the input as is (no processing)
+        return domain_value  # Keep the original format
 
     def run(self, user_input, current_turn):
         """
