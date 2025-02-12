@@ -1,0 +1,204 @@
+[
+  {
+    "game_name": "cloudgame",
+    "game_path": "../clemgames/cloudgame",
+    "description": "A simple game in which a player has to decide whether they see clouds or not and a second player has to judge this response.",
+    "main_game": "cloudgame",
+    "players": "two",
+    "image": "single",
+    "languages": ["en"],
+    "benchmark": []
+  },
+  {
+    "game_name": "hellogame",
+    "game_path": "../clemgames/hellogame",
+    "description": "Hello game between a greeter and a greeted players",
+    "main_game": "hellogame",
+    "players": "one",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": []
+  },
+  {
+    "game_name": "taboo",
+    "game_path": "../clemgames/taboo",
+    "description": "Taboo game between two agents where one has to describe a word for the other to guess.",
+    "main_game": "taboo",
+    "players": "two",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["0.9", "1.0", "1.5", "2.0"]
+  },
+    {
+    "game_name": "referencegame",
+    "game_path": "../clemgames/referencegame",
+    "description": "Reference Game between two agents where one has to describe one of three grids and the other has to guess which one it is.",
+    "main_game": "referencegame",
+    "players": "two",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["0.9", "1.0", "1.5", "2.0"]
+  },
+  {
+    "game_name": "imagegame",
+    "game_path": "../clemgames/imagegame",
+    "description": "Image Game simulation to generate referring expressions and fill a grid accordingly",
+    "main_game": "imagegame",
+    "players": "two",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["0.9", "1.0", "1.5", "2.0"]
+  },
+  {
+    "game_name": "privateshared",
+    "game_path": "../clemgames/privateshared",
+    "description": "Questioner and answerer in scorekeeping game.",
+    "main_game": "privateshared",
+    "players": "two",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["0.9", "1.0", "1.5", "2.0"]
+  },
+    {
+    "game_name": "matchit_ascii",
+    "game_path": "../clemgames/matchit_ascii",
+    "description": "A simple game in which two players have to decide whether they see the same grid or not, an ascii version of the matchit game.",
+    "main_game": "matchit_ascii",
+    "players": "two",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+    {
+    "game_name": "codenames",
+    "game_path": "../clemgames/codenames",
+    "description": "Codenames game between a cluegiver and a guesser",
+    "main_game": "codenames",
+    "players": "two",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "multimodal_referencegame",
+    "game_path": "../clemgames/multimodal_referencegame",
+    "description": "Reference Game between two agents where one has to describe one of three images and the other has to guess which one it is.",
+    "main_game": "referencegame",
+    "players": "two",
+    "image": "multi",
+    "languages": ["en"],
+    "benchmark": ["1.6", "1.6.5", "2.0"]
+  },
+  {
+    "game_name": "matchit",
+    "game_path": "../clemgames/matchit",
+    "description": "A simple game in which two players have to decide whether they see the same image or not.",
+    "main_game": "matchit",
+    "players": "two",
+    "image": "single",
+    "languages": ["en"],
+    "benchmark": ["1.6", "1.6.5", "2.0"]
+  },
+  {
+    "game_name": "mm_mapworld",
+    "game_path": "../clemgames/mm_mapworld/mm_mapworld_main",
+    "description": "In this game an agent is placed on a graph and needs to navigate through it by reasoning about past steps taken",
+    "main_game": "mm_mapworld_main",
+    "players": "two",
+    "image": "single",
+    "languages": ["en"],
+    "benchmark": ["1.6", "1.6.5", "2.0"]
+  },
+  {
+    "game_name": "mm_mapworld_graphs",
+    "game_path": "../clemgames/mm_mapworld/mm_mapworld_graphs",
+    "description": "In this game an agent is placed on a graph and needs to navigate through it by reasoning about past steps taken",
+    "main_game": "mm_mapworld_main",
+    "players": "two",
+    "image": "single",
+    "languages": ["en"],
+    "benchmark": ["1.6", "1.6.5", "2.0"]
+  },
+  {
+    "game_name": "mm_mapworld_specificroom",
+    "game_path": "../clemgames/mm_mapworld/mm_mapworld_specificroom",
+    "description": "In this game an agent is placed on a graph and needs to navigate through it by reasoning about past steps taken",
+    "main_game": "mm_mapworld_main",
+    "players": "two",
+    "image": "single",
+    "languages": ["en"],
+    "benchmark": ["1.6", "1.6.5", "2.0"]
+  },
+  {
+    "game_name": "wordle",
+    "game_path": "../clemgames/wordle",
+    "description": "Wordle 5-letter word guessing game.",
+    "main_game": "wordle",
+    "players": "one",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "wordle_withclue",
+    "game_path": "../clemgames/wordle",
+    "description": "Wordle 5-letter word guessing game with clue giver.",
+    "main_game": "wordle",
+    "instances": "instances_withclue",
+    "players": "two",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "wordle_withcritic",
+    "game_path": "../clemgames/wordle",
+    "description": "Wordle 5-letter word guessing game with critic.",
+    "main_game": "wordle",
+    "instances": "instances_withcritic",
+    "players": "two",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "matchit_ascii",
+    "game_path": "../clemgames/matchit_ascii",
+    "description": "Matching grids of ASCII characters between two players.",
+    "main_game": "matchit_ascii",
+    "players": "two",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "textmapworld",
+    "game_path": "../clemgames/textmapworld/textmapworld_main",
+    "description": "Exhaustively exploring a map.",
+    "main_game": "textmapworld",
+    "players": "one",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "textmapworld_graphreasoning",
+    "game_path": "../clemgames/textmapworld/textmapworld_graphreasoning",
+    "description": "Exhaustively exploring a map with graph reasoning.",
+    "main_game": "textmapworld",
+    "players": "one",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  },
+  {
+    "game_name": "textmapworld_specificroom",
+    "game_path": "../clemgames/textmapworld/textmapworld_specificroom",
+    "description": "Exploring a map to find a specific room.",
+    "main_game": "textmapworld",
+    "players": "one",
+    "image": "none",
+    "languages": ["en"],
+    "benchmark": ["2.0"]
+  }
+]
