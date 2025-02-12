@@ -292,6 +292,19 @@ class Interact:
             if x in response:
                 response = response.replace(x, val)
         return response
+    
+    def extract_word_if_valid(self, domain_value):
+        # If input contains a comma or period followed by a non-whitespace character, it's invalid
+        if re.search(r"[,.]\s*\S+", domain_value):
+            return None  # Invalid input
+        
+        # Extract the word before the first comma or period, if present
+        match = re.match(r"^(.+?)[,.]", domain_value)
+        if match:
+            return match.group(1).strip().lower()  # Return the extracted word (trimmed)
+        
+        # If it's a single word (no punctuation), return it as is
+        return domain_value.strip().lower() if domain_value.strip() else None  # Ensure it's not just empty spaces    
 
     def run(self, user_input, current_turn):
         """
@@ -334,10 +347,11 @@ class Interact:
             f"Available domains: {available_domains} self.dataset = {self.dataset}"
         )
         if selected_domain not in available_domains:
-            raise ValueError(
-                f"Selected domain {selected_domain} not in available domains"
-            )
-            # selected_domain = "restaurant"#random.choice(available_domains)
+            selected_domain = self.extract_word_if_valid(selected_domain)
+            if selected_domain not in available_domains:
+                #base code
+                selected_domain = random.choice(available_domains)
+
         if self.dataset == "multiwoz":
             domain_definition = (
                 MW_ZERO_SHOT_DOMAIN_DEFINITIONS[selected_domain]

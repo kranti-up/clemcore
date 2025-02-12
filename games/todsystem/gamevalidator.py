@@ -38,7 +38,7 @@ class GameValidator:
 
         return infoslots, bookslots
     
-    def _processgenslots(gen_slots: dict) -> dict:
+    def _processgenslots(self, gen_slots: dict) -> dict:
         modgen_slots = {}
         for key, data in gen_slots.items():
             if key == "train":
