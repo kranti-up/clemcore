@@ -45,17 +45,19 @@ class TODSystemInstanceGenerator(GameInstanceGenerator):
 
 
         taskdialogs = file_utils.load_json(
-            f"resources/tasks/{LANGUAGE}/taskdata_dev.json", GAME_NAME
+            f"resources/tasks/{LANGUAGE}/subset_taskdata_test.json", GAME_NAME
         )
         config = file_utils.load_json(
             f"resources/config/{LANGUAGE}/taskconfig.json", GAME_NAME
         )
 
         tot_instances = 0
-        game_ids = random.sample(range(len(taskdialogs)), N_INSTANCES)        
+        #game_ids = random.sample(range(len(taskdialogs)), N_INSTANCES)
+        game_ids = range(len(taskdialogs))
         for tsystem in config["todsystems"]:
             experiment = self.add_experiment(tsystem)
             #for game_id in range(len(taskdialogs)):
+            num_instances = 0
             for game_id in game_ids:
                 if config["data_split"] != taskdialogs[game_id]["data_split"]:
                     continue
@@ -63,19 +65,25 @@ class TODSystemInstanceGenerator(GameInstanceGenerator):
                 if not any(topic in taskdialogs[game_id]["domains"] for topic in config["topics"]):
                     continue
 
+                if not any(dtype in taskdialogs[game_id]["dialogue_type"] for dtype in config["dialogue_type"]):
+                    continue
+
                 promptsdict = self._prepare_prompts(taskdialogs[game_id]["message"])
                 instance = self.add_game_instance(experiment, game_id)
                 instance["data"] = dict(taskdialogs[game_id])
+                instance["data"]["filename"] = taskdialogs[game_id]["filename"]
                 instance["data"]["db_path"] = f"games/todsystem/resources/data/{LANGUAGE}/multiwoz"#"games/todsystem/dialogue_systems/data/multiwoz"
                 instance["data"]["prompts"] = promptsdict
                 instance["data"]["tsystem"] = tsystem
+                instance["data"]["tasktype"] = taskdialogs[game_id]["tasktype"]
                 instance["data"]["statusmsg"] = config["statusmsg"]
                 instance["data"]["n_turns"] = config["n_turns"]
                 num_instances += 1
+ 
             tot_instances += num_instances
 
         print(
-            f"Generated instances for -{self.game_name} game - {len(config['todsystems']) * N_INSTANCES} instances."
+            f"Generated instances for -{self.game_name} game - {tot_instances} instances."
         )
 
     # an additional method, specific for our example

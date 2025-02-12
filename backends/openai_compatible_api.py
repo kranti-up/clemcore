@@ -133,11 +133,9 @@ class GenericOpenAIModel(backends.Model):
             if tool_calls := message.tool_calls:
                 response_text = tool_calls[0]
             else:
-                #print(f"No tool calls found. {message}")
                 response_text = message.content.strip()
 
-                match = re.match(r"<function=(\w+) ({.*})</function>", response_text)
-
+                match = re.match(r"<function=(\w+)(\{.*\})</function>", response_text)
                 if match:
                     function_name = match.group(1)  # Extract function name
                     function_args_json = match.group(2)  # Extract JSON string

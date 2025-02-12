@@ -519,13 +519,13 @@ class Interact:
             logger.error(f"Error in model prediction: {error}")
             response = ""
 
-        if self.dataset == "multiwoz":
-            logger.info(f"Delexicalising response")
-            response = delexicalise(response, self.delex_dic)
-            logger.info(f"Delexicalised response: {response}")
+        #if self.dataset == "multiwoz":
+            #logger.info(f"Delexicalising response")
+            #response = delexicalise(response, self.delex_dic)
+            #logger.info(f"Delexicalised response: {response}")
             # response = delexicaliseReferenceNumber(response)
 
-        logger.info(f"Response: {response}")
+        #logger.info(f"Response: {response}")
         # print(
         #    f"Lexicalized response: {self.lexicalize(database_results, selected_domain, response)}",
         #    flush=True,

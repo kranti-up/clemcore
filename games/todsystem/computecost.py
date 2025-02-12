@@ -37,6 +37,11 @@ API_PRICE = {
         'cached': 0.0,
         'output': 0.0003 / 1000,
     },
+    'meta-llama/llama-3.1-8b-instruct': {
+        'input': 0.00002 / 1000,
+        'cached': 0.0,
+        'output': 0.00005 / 1000,
+    },    
 }
 
 def calc_openai_cost(model, usage):
@@ -54,7 +59,7 @@ def calc_openai_cost(model, usage):
         cost = prompt_tokens * price['input'] + cached_tokens * price['cached'] + usage['completion_tokens'] * price['output']
     else:
         raise ValueError(f'{model = }')
-    return cost
+    return cost, {"prompt_tokens": prompt_tokens, "cached_tokens": cached_tokens, "completion_tokens": usage['completion_tokens']}
 
 
 def compute_cost(base_dir):
@@ -71,10 +76,15 @@ def compute_cost(base_dir):
                 results[game][model] = {}
             game_path = os.path.join(model_path, game)
             for exp in os.listdir(game_path):
+                exp_path = os.path.join(game_path, exp)
+                if not os.path.isdir(exp_path):
+                    continue
+
                 if exp not in results[game][model]:
                     results[game][model][exp] = 0.0
-                exp_path = os.path.join(game_path, exp)
+
                 episode_costs = []
+                episode_tokens = {}
                 for episode in os.listdir(exp_path):
                     if episode.endswith(".json"):
                         continue
@@ -88,25 +98,67 @@ def compute_cost(base_dir):
                             requests_data = json.load(f)
 
                         cost = 0.0
+                        numtokens = []
                         for request in requests_data:
                             if "raw_response_obj" not in request:
                                 print(f"Skipping {request} in {episode_path}")
                                 continue
-                            cost += calc_openai_cost(request["raw_response_obj"]['model'],
+                            cost_val, details = calc_openai_cost(request["raw_response_obj"]['model'],
                                                      request["raw_response_obj"]['usage'])
+                            cost += cost_val
+                            numtokens.append(details)
                             
                         episode_costs.append(cost)
-                results[game][model][exp] = {"total": round(sum(episode_costs), 2), "episodes": episode_costs}
+                        for nt in numtokens:
+                            for key, value in nt.items():
+                                if key not in episode_tokens:
+                                    episode_tokens[key] = 0
+                                episode_tokens[key] += value
+                results[game][model][exp] = {"total": round(sum(episode_costs), 2), "episodes": episode_costs,
+                                              "tokens": episode_tokens}
+                results[game][model][exp]["cost"] = round(sum(episode_costs), 2)
 
 
 
 
     for game in results:
         overall_cost = 0.0
+        overall_tokens_count = 0
         for model in results[game]:
             overall_cost += sum([exp["total"] for exp in results[game][model].values()])
             print(f"{game}--{model}-> Cost: {round(overall_cost, 2)}")
             results[game][model]["overall"] = round(overall_cost, 2)
+            overall_tokens = {}
+            for exp in results[game][model]:
+                if exp == "overall":
+                    continue
+                for key, value in results[game][model][exp]["tokens"].items():
+                    if key not in overall_tokens:
+                        overall_tokens[key] = 0
+                    overall_tokens[key] += value
+                results[game][model][exp]["total_tokens"] = overall_tokens.get("prompt_tokens", 0) + overall_tokens.get("cached_tokens", 0) + overall_tokens.get("completion_tokens", 0)
+
+            prompt_tokens = 0
+            cached_tokens = 0
+            completion_tokens = 0
+            for exp in results[game][model]:
+                if exp in ["overall", "overall_tokens"]:
+                    continue
+                prompt_tokens += results[game][model][exp]["tokens"].get("prompt_tokens", 0)
+                cached_tokens += results[game][model][exp]["tokens"].get("cached_tokens", 0)
+                completion_tokens += results[game][model][exp]["tokens"].get("completion_tokens", 0)
+            overall_tokens_count = prompt_tokens + cached_tokens + completion_tokens
+            prompt_tokens = round(prompt_tokens/1000000, 3)
+            cached_tokens = round(cached_tokens/1000000, 3)
+            completion_tokens = round(completion_tokens/1000000, 3)
+            results[game][model]["overall_tokens"] = {"prompt_tokens": f"{prompt_tokens}M",
+                                                        "cached_tokens": f"{cached_tokens}M",
+                                                        "completion_tokens": f"{completion_tokens}M",
+                                                        "total_tokens": f"{round(overall_tokens_count/1000000, 3)}M"}
+                                                     
+            print(f"{game}--{model}-> Tokens: {round(overall_tokens_count/1000000, 3)}M")
+
+
 
     with open(os.path.join(base_dir, "costs.json"), "w") as f:
         json.dump(results, f, indent=2)
@@ -114,7 +166,7 @@ def compute_cost(base_dir):
 
 
 if __name__ == '__main__':
-    compute_cost("/home/admin/Desktop/codebase/cocobots/clembenchfork_dm_code/clembench/todr1_11/")
+    compute_cost("/home/admin/Desktop/codebase/cocobots/clembenchfork_dm_code/clembench/test_res_single/")
 
 
 

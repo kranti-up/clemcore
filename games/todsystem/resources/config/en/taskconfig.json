@@ -1,8 +1,9 @@
 {
     "n_turns": 15,
-    "todsystems": ["hetal", "xuetal", "cetal"],
+    "todsystems": ["hetal", "xuetal"],
     "_todsystems": ["hetal", "xuetal", "cetal"],
-    "data_split": "dev",
+    "data_split": "test",
+    "dialogue_type": ["single"],
     "topics": ["restaurant", "hotel", "attraction", "taxi", "train"],
     "_topics": ["restaurant", "hotel", "attraction", "taxi", "train"],
     "statusmsg": {

@@ -26,7 +26,11 @@ def parse_state(state: str, default_domain: str = None) -> Dict[str, str]:
 
     state = str(state)
     # slotvals = re.findall("('[a-z]+': ?('(([a-z]| |[A-Z]|:|[0-9])+')|[A-Za-z0-9:]+))", state)
-    slotvals = re.findall("([a-z]+:('(([a-z]| |[A-Z]|:|[0-9])+')|[A-Za-z0-9:]+))", state)
+
+    # This is captuting the slot: "arriveBy" as "y" and "leaveAt" as "t" and 'modern european' as 'modern
+    #slotvals = re.findall("([a-z]+:('(([a-z]| |[A-Z]|:|[0-9])+')|[A-Za-z0-9:]+))", state)
+    #slotvals = re.findall(r"([A-Za-z]+:('([A-Za-z0-9 :]+')|[A-Za-z0-9:]+))", state)
+    slotvals = re.findall(r"([A-Za-z]+:('([^']+)'|[A-Za-z0-9 :]+))", state)
     out_state = {}
     """
     for sv in slotvals:

@@ -346,7 +346,7 @@ class E2E_InstrucTOD():
 
         with get_openai_callback() as cb:
             try:
-                dsys_logs.append({'role': 'user', 'content': f"Invoking Agent to query database: {answer}"})
+                dsys_logs.append({'role': 'user', 'content': f"Invoking Agent to prepare the query: {answer}"})
                 query_df = self.agents.run(f"If there are many fitting this criteria, pick a few to propose: {answer}") #Use fake intermediary belief state
             except Exception as e:
                 response = str(e)
@@ -365,7 +365,7 @@ class E2E_InstrucTOD():
         if query_df == "Agent stopped due to iteration limit or time limit.":
             query_df = "There is nothing that fits the criteria. Ask for more information."
 
-        dsys_logs.append({'role': 'assistant', 'content': f"DB Query Results: {query_df}"})
+        dsys_logs.append({'role': 'assistant', 'content': f"Query Results: {query_df}"})
         dialogue_context_rg = dialogue_context+ f"USER: {utterance}\nSYSTEM:"#self._parse_dialogue_history(mode="rg") + f"USER: {utterance}\nSYSTEM:"
 
         logger.info(f"dialogue_context_rg: {dialogue_context_rg}")
@@ -493,8 +493,8 @@ class E2E_InstrucTOD():
         with open(ontology_path, "r") as f:
             db_data = json.load(f)
         taxi_slots = ["departure", "destination", "arriveBy", "leaveAt", "type", "color"]
-        book_slots = {"restaurant":["start_time", "start_day", "people"],
-                    "hotel":["start_day", "people", "book_stay"],
+        book_slots = {"restaurant":["book time", "book day", "people"],
+                    "hotel":["book day", "people", "book stay"],
                     "train":["people"]}
 
         #dbs["taxi"] = {}
@@ -512,14 +512,9 @@ class E2E_InstrucTOD():
         for domain, slots in book_slots.items():
             for slot in slots:
                 if slot == "people":
-                    dbs[domain]["book-people"] = [value+" people" for value in db_data[f"{domain}-book_{slot}"]] + [value+" person" for value in db_data[f"{domain}-book_{slot}"]]
+                    dbs[domain]["book-people"] = [value+" people" for value in db_data[f"{domain}-book {slot}"]] + [value+" person" for value in db_data[f"{domain}-book {slot}"]]
                 else:
-                    if slot == "start_day":
-                        dbs[domain]["book-day"] = db_data[f"{domain}-{slot}"]#db_data[f"{domain}-book-{slot}"]
-                    elif slot == "start_time":
-                        dbs[domain]["book-time"] = db_data[f"{domain}-{slot}"]
-                    elif slot == "book_stay":
-                        dbs[domain]["book-stay"] = db_data[f"{domain}-{slot}"]
+                    dbs[domain][slot] = db_data[f"{domain}-{slot}"]
 
         for domain in domains:
             if domain == "train":
@@ -591,12 +586,12 @@ class LangChainLLMWrapper(LLM):
         logger.info(f"LangChainLLMWrapper _call messages={messages} current_turn={current_turn}")
 
         global dsys_logs
-        dsys_logs.append({'role': 'user', 'content': f"Agent Query: {messages}"})
+        dsys_logs.append({'role': 'user', 'content': f"Model Prompt:\n{messages}"})
 
         prompt = [{'role': 'user', 'content': messages}]
         prompt, raw_answer, answer = self.agent_llm(prompt, current_turn, None)
         dsys_logs.append({'role': 'assistant', 'content': {"prompt": prompt, "raw_answer": raw_answer,
-                                                           "answer": f"Response: {answer}"}})
+                                                           "answer": f"Model Response:\n{answer}"}})
         logger.info(f"LangChainLLMWrapper _call raw_answer={raw_answer} answer={answer}")
         return answer
 

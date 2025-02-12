@@ -38,6 +38,46 @@ class GameValidator:
 
         return infoslots, bookslots
     
+    def _processgenslots(gen_slots: dict) -> dict:
+        modgen_slots = {}
+        for key, data in gen_slots.items():
+            if key == "train":
+                if key not in modgen_slots:
+                    modgen_slots[key] = {}
+                for k, v in data.items():
+                    if k == "tickets":
+                        modgen_slots[key]["bookpeople"] = v
+                    else:
+                        modgen_slots[key][k] = v
+            elif key == "restaurant":
+                if key not in modgen_slots:
+                    modgen_slots[key] = {}
+
+                for k, v in data.items():
+                    if k == "people":
+                        modgen_slots[key]["bookpeople"] = v
+                    elif k == "time":
+                        modgen_slots[key]["booktime"] = v
+                    elif k == "day":
+                        modgen_slots[key]["bookday"] = v
+                    else:
+                        modgen_slots[key][k] = v
+            elif key == "hotel":
+                if key not in modgen_slots:
+                    modgen_slots[key] = {}
+
+                for k, v in data.items():
+                    if k == "people":
+                        modgen_slots[key]["bookpeople"] = v
+                    elif k == "stay":
+                        modgen_slots[key]["bookstay"] = v
+                    elif k == "day":
+                        modgen_slots[key]["bookday"] = v
+            else:
+                modgen_slots[key] = data
+
+        return modgen_slots    
+    
 
     def _compare_slots(self, gt_slots: dict, gen_slots: dict):
         gtcompslots = self._setto_lower(self.gt_slots_info)
@@ -80,11 +120,13 @@ class GameValidator:
             logger.error(f"self.gt_slots: {self.gt_slots_info} gen_slots: {gen_slots}")
             return False, list(self.gt_slots_info.keys())
         
-        status, misses = self._compare_slots(self.gt_slots_info, gen_slots)
+        modgen_slots = self._processgenslots(gen_slots)
+
+        status, misses = self._compare_slots(self.gt_slots_info, modgen_slots)
         if not status:
             return status, misses
         
-        status, misses = self._compare_slots(self.gt_slots_book, gen_slots)
+        status, misses = self._compare_slots(self.gt_slots_book, modgen_slots)
         if not status:
             return status, misses
         

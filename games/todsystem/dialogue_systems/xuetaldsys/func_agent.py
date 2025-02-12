@@ -134,6 +134,8 @@ def prepare_query_db_functions(domain, db_path):
             return str(e), domain, None
         records = cursor.fetchall()
 
+        logger.info(f"DB records: {records}")
+
         if len(records) == 0:
             #dsys_logs.append({'role': 'assistant', 'content': f"DB Query Result: No results found."})
             return 'No results found.', domain, None
@@ -142,16 +144,25 @@ def prepare_query_db_functions(domain, db_path):
         max_items = 5
         max_chars = 500
 
+        if domain == "restaurant":
+            column_names = [desc[0] for desc in cursor.description if desc[0] not in ["id", "postcode", "signature", "introduction", "phone"]]
+            column_values_ids = [0, 4, 6, 7, 9]
+        else:
+            column_names = [desc[0] for desc in cursor.description]
+            column_values_ids = []
+
+        
+
         result = []
         n_chars = 0
-        line = '| ' + ' | '.join(desc[0] for desc in cursor.description) + ' |'
+        line = '| ' + ' | '.join(column_names) + ' |'
         n_chars += len(line) + 1
         result.append(line)
-        line = '| ' + ' | '.join(['---'] * len(cursor.description)) + ' |'
+        line = '| ' + ' | '.join(['---'] * len(column_names)) + ' |'
         n_chars += len(line) + 1
         result.append(line)
         for i, record in enumerate(records, start=1):
-            line = '| ' + ' | '.join(str(v) for v in record) + ' |'
+            line = '| ' + ' | '.join(str(v) for index, v in enumerate(record) if index not in column_values_ids) + ' |'
             n_chars += len(line) + 1
             if n_chars <= max_chars and i <= max_items:
                 result.append(line)
@@ -160,9 +171,15 @@ def prepare_query_db_functions(domain, db_path):
                 result.append(f'\n{n_left} more records ...')
                 break
         result = '\n'.join(result)
+
+        pattern = r"(\w+)\s*(?:=|>=|<=|>|<)\s*'([^']*)'"
+
+        # Find all matches
+        details = dict(re.findall(pattern, sql))
+
         logger.info(f"Returning from query_db: result: {result} domain: {domain}, table: {table}, DB_at: {db_path}")
         #dsys_logs.append({'role': 'assistant', 'content': f"DB Query Result: {result}"})
-        return result, domain, None
+        return result, domain, details
 
 
     def get_table_info(domain, db_path):
@@ -219,7 +236,10 @@ def prepare_book_functions(domain, db_path):
 
             dsys_role = 'assistant' if dsys_logs[-1]['role'] == 'user' else 'user'
             dsys_logs.append({'role': dsys_role, 'content': f"Booking Status: {msg}"})
-            return msg, domain, info
+
+            if flag:
+                return msg, domain, info
+            return msg, domain, None
 
         name = 'book_restaurant'
         schema = {
@@ -260,7 +280,10 @@ def prepare_book_functions(domain, db_path):
 
             dsys_role = 'assistant' if dsys_logs[-1]['role'] == 'user' else 'user'
             dsys_logs.append({'role': dsys_role, 'content': f"Booking Status: {msg}"})
-            return msg, domain, info
+
+            if flag:
+                return msg, domain, info
+            return msg, domain, None
 
         name = 'book_hotel'
         schema = {
@@ -301,7 +324,9 @@ def prepare_book_functions(domain, db_path):
 
             dsys_role = 'assistant' if dsys_logs[-1]['role'] == 'user' else 'user'
             dsys_logs.append({'role': dsys_role, 'content': f"Booking Status: {msg}"})
-            return msg, domain, info
+            if flag:
+                return msg, domain, info
+            return msg, domain, None
 
         name = 'buy_train_tickets'
         schema = {
@@ -337,7 +362,9 @@ def prepare_book_functions(domain, db_path):
 
             dsys_role = 'assistant' if dsys_logs[-1]['role'] == 'user' else 'user'
             dsys_logs.append({'role': dsys_role, 'content': f"Booking Status: {msg}"})
-            return msg, domain, info
+            if flag:
+                return msg, domain, info
+            return msg, domain, None
 
         name = 'book_taxi'
         schema = {

@@ -78,17 +78,21 @@ class DMSystemMaster(GameMaster):
     def _setcommonsetup(self, data: Dict, game_id: int) -> None:
         self.game_id = game_id
         self.instancedata = data
+        self.dfilename = data["filename"]
         self.n_turns = data["n_turns"]
         self.goal = data["message"]
         self.domains = list(data["domains"].keys())
         self.tsystem = data["tsystem"]
+        self.tasktype = data["tasktype"]
         self.statusmsg = data["statusmsg"]
         self.db_path = data["db_path"]
 
         self.gamedata = None
         self.slots_gen = None
+        self.slots_gen_loss = None
         self.misses = None
         self.slots_gt = data["domains"]
+        self.gen_dialogue = []
 
         logger.info(f"User Goal: {self.goal}")
         logger.info(f"Ground Truth Slots: {self.slots_gt}")
@@ -144,19 +148,23 @@ class DMSystemMaster(GameMaster):
             if not self.success:
                 self.lose = True
                 #TODO: Extracting the generated slots from the dialogue system
-                self.slots_gen = self.dsystem.get_booking_data()
+                self.slots_gen_loss = self.dsystem.get_booking_data()
 
         self.gamedata = {
+            "filename": self.dfilename,
             "goal": self.goal,
             "domains": self.domains,
             "tsystem": self.tsystem,
+            "tasktype": self.tasktype,
             "dialogue_type": self.instancedata["dialogue_type"],
             "slots_gt": self.slots_gt,
             "slots_gen": self.slots_gen,
+            "slots_gen_loss": self.slots_gen_loss,
             "n_turns": self.n_turns,
             "play_turns": self.current_turn,
             "instancedomains": self.instancedata["domains"],
             "corpususer": self.instancedata["corpususer"],
+            "gendialogue": self.gen_dialogue,
         }
 
         # if self.complete_turns == self.n_turns:
@@ -262,6 +270,7 @@ class DMSystemMaster(GameMaster):
         # add A's reply to B's history
         logger.info(f"Appended Player A answer to PlayerB\n{response}")
         self._append_utterance(response, "b", "user")
+        self.gen_dialogue.append({"user": response})
         # also add the reply to the transcript
         action = {
             "type": "send message",
@@ -281,6 +290,7 @@ class DMSystemMaster(GameMaster):
         # add B's reply to A's history
         logger.info(f"Appended Player B answer to PlayerA\n{response}")
         self._append_utterance(response, "a", "user")
+        self.gen_dialogue[-1].update({"system": response})
         # also add the reply to the transcript
         action = {
             "type": "send message",

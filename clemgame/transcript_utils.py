@@ -70,7 +70,8 @@ TEX_BUBBLE_PARAMS = {
     "b-gm": ("1,0.85,0.72", "GM$\\langle$B", "& & &", "", 4, 0.6),
     "gm-a": ("0.9,0.9,0.9", "A$\\langle$GM", "& &", "&", 4, 0.6),
     "gm-b": ("0.9,0.9,0.9", "GM$\\rangle$B", "& &", "&", 4, 0.6),
-    "gm-gm": ("0.95,0.95,0.95", "GM$|$GM", "& & &", "& &", 2, 0.3)
+    "gm-gm": ("0.95,0.95,0.95", "GM$|$GM", "& & &", "& &", 2, 0.3),
+    "b-b": ("1,0.85,0.72", "B$|$B", "& & &", "& &", 4, 0.6)
 }
 
 TEX_TEMPLATE = Template('''
@@ -98,6 +99,8 @@ def _get_class_name(event):
         return "b-gm"
     if event['from'] == 'GM' and event['to'] == 'GM':
         return "gm-gm"
+    if event['from'] == 'Player 2' and event['to'] == 'Player 2':
+        return "b-b"
 
 
 def build_transcript(interactions: Dict, experiment_config: Dict, game_instance: Dict, dialogue_pair: str):

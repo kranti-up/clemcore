@@ -82,8 +82,10 @@ DOMAIN_BOOK_CLASS_MAP = {
 
 
 def check_db_exist(table, column, value, db_path):
+    logger.info(f"check_db_exist: {table}, {column}, {value}, {db_path}")
     conn = sqlite3.connect(db_path)
-    sql = f'SELECT {column} FROM {table} WHERE {column} = "{value}"'
+    sql = f'SELECT {column} FROM {table} WHERE LOWER({column}) = LOWER("{value}")'
+    logger.info(f"check_db_exist: sql command = {sql}")
     result = conn.execute(sql)
     if result.fetchone():
         return True
@@ -188,7 +190,7 @@ def make_booking_db(domain, info, db_path, book_db_path=BOOK_DB_PATH):  # TODO: 
         if not check_db_exist('restaurant', 'name', info['name'], db_path):
             return False, f'Booking failed. "{info["name"]}" is not found in the restaurant database. Please provide a valid restaurant name.'
     elif domain == 'hotel':
-        if not check_db_exist('hotel', 'name', info['name', db_path]):
+        if not check_db_exist('hotel', 'name', info['name'], db_path):
             return False, f'Booking failed. "{info["name"]}" is not found in the hotel database. Please provide a valid hotel name.'
     elif domain == 'train':
         if not check_db_exist('train', 'trainID', info['train id'], db_path):
