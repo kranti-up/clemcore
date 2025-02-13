@@ -189,7 +189,8 @@ class GameResourceLocator(abc.ABC):
         todo: this is a bit delicate: we need to duplicate the code from self.load_json, 
         b.c. either we provide for all load_json cases the path from outside e.g. self.load_json(self.game_path)
         or we move this method outside GameResourceLocator, because the results is not necessarily a game file;
-        considering this, we actually could also make the results live in the games (but this not yet done)
+        considering this, we actually could also make the results live in the games (but this not yet done).
+        Such a refactoring would indeed need more time and breaks things. 
         """
         file_ending = ".json"
         if not file_name.endswith(file_ending):
@@ -391,11 +392,11 @@ class GameRecorder(GameResourceLocator):
         self.store_results_file(self.interactions, "interactions.json",
                                 dialogue_pair_desc,
                                 sub_dir=game_record_dir,
-                                root_dir=results_root)
+                                results_dir=results_root)
         self.store_results_file(self.requests, "requests.json",
                                 dialogue_pair_desc,
                                 sub_dir=game_record_dir,
-                                root_dir=results_root)
+                                results_dir=results_root)
 
 
 class GameMaster(GameRecorder):
@@ -465,7 +466,7 @@ class GameScorer(GameResourceLocator):
         self.store_results_file(self.scores, "scores.json",
                                 dialogue_pair=dialogue_pair,
                                 sub_dir=game_record_dir,
-                                root_dir=results_root)
+                                results_dir=results_root)
 
     def log_turn_score(self, turn_idx, score_name, score_value):
         """Record a turn-level score for a single turn.
@@ -971,12 +972,12 @@ class GameBenchmark(GameResourceLocator):
                         self.store_results_file(transcript, "transcript.html",
                                                 dialogue_pair,
                                                 sub_dir=rel_episode_path,
-                                                root_dir=results_root)
+                                                results_dir=results_root)
                         transcript_tex = transcript_utils.build_tex(game_interactions)
                         self.store_results_file(transcript_tex, "transcript.tex",
                                                 dialogue_pair,
                                                 sub_dir=rel_episode_path,
-                                                root_dir=results_root)
+                                                results_dir=results_root)
                     except Exception:  # continue with other episodes if something goes wrong
                         self.logger.exception(f"{self.game_name}: Cannot transcribe {episode_dir} (but continue)")
                         error_count += 1
@@ -1133,7 +1134,7 @@ class GameBenchmark(GameResourceLocator):
                                         f"experiment_{experiment_name}.json",
                                         dialogue_pair_desc,
                                         sub_dir=experiment_record_dir,
-                                        root_dir=results_root)
+                                        results_dir=results_root)
 
                 error_count = 0
                 time_experiment_start = datetime.now()
@@ -1147,7 +1148,7 @@ class GameBenchmark(GameResourceLocator):
                                             f"instance.json",
                                             dialogue_pair_desc,
                                             sub_dir=episode_dir,
-                                            root_dir=results_root)
+                                            results_dir=results_root)
                     try:
                         game_master = self.create_game_master(experiment_config, dialogue_pair)
                         game_master.setup(**game_instance)
@@ -1167,7 +1168,7 @@ class GameBenchmark(GameResourceLocator):
                                         f"experiment_{experiment_name}.json",
                                         dialogue_pair_desc,
                                         sub_dir=experiment_record_dir,
-                                        root_dir=results_root)
+                                        results_dir=results_root)
 
     def create_game_master(self, experiment: Dict, player_models: List[backends.Model]) -> GameMaster:
         """Create a game-specific GameMaster subclass instance to run the game with.
