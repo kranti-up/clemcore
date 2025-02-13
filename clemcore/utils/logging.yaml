@@ -13,19 +13,15 @@ handlers:
     filename: clembench.log
     encoding: utf8
 loggers:
-  clemcore.run:
+  "clemcore.run":
     handlers: [ console ]
-  clemcore.cli:
+  "clemcore.cli":
     handlers: [ console ]
-  backends:
-    level: DEBUG
+  "clemcore.backends":
+    level: WARNING
     handlers: [ console ]
-  clemcore:
-    level: DEBUG
-  games:
-    level: INFO
-  games.wordle.master:
-    level: ERROR
+  "clemcore.clemgame":
+    level: WARNING
 root:
   level: INFO
   handlers: [ file_handler ]
