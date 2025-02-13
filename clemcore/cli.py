@@ -5,8 +5,7 @@ from datetime import datetime
 from typing import List, Dict, Union
 
 import clemcore.backends as backends
-from clemcore.clemgame import GameBenchmark
-from clemcore.clemgame.registry import GameRegistry, GameSpec
+from clemcore.clemgame import GameBenchmark, GameRegistry, GameSpec
 
 logger = logging.getLogger(__name__)
 stdout_logger = logging.getLogger("clemcore.cli")
