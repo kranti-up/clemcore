@@ -17,7 +17,7 @@ def list_backends(verbose: bool):
     print("Listing all supported backends (use -v option to see full file path)")
     backend_registry = BackendRegistry.from_packaged_and_cwd_files()
     if not backend_registry:
-        print("No backends found")
+        print("No registered backends found")
         return
     print(f"Found '{len(backend_registry)}' supported backends.")
     print("Make sure you have the requirements installed for these backends to function properly.")
@@ -30,14 +30,12 @@ def list_backends(verbose: bool):
             print(wrapper.fill("\nFull Path: " + backend_file["file_path"]))
 
 
-def list_models(context_path: str, verbose: bool):
+def list_models(verbose: bool):
     """List all models specified in the models registries."""
     print("Listing all available models by name (use -v option to see the whole specs)")
-    model_registry = ModelRegistry().register_dynamically_from(context_path)
+    model_registry = ModelRegistry.from_packaged_and_cwd_files()
     if not model_registry:
-        print("No models found under context path:", context_path)
-        print("Make sure that your clemgame directory have a clemgame.json")
-        print("or register them with 'clem register <your-game-directory>'.")
+        print("No registered models found")
         return
     print(f"Found '{len(model_registry)}' registered model specs:")
     wrapper = textwrap.TextWrapper(initial_indent="\t", width=70, subsequent_indent="\t")
@@ -92,7 +90,7 @@ def run(context_path: str, game_selector: Union[str, Dict, GameSpec], model_sele
         game_registry = GameRegistry.load_from_directories_or_file(context_path)
         game_specs = game_registry.get_game_specs_that_unify_with(game_selector)  # throws error when nothing unifies
         # check models are available
-        model_registry = ModelRegistry().register_dynamically_from(context_path)
+        model_registry = ModelRegistry.from_packaged_and_cwd_files()
         unified_model_specs = []
         for model_selector in model_selectors:
             unified_model_spec = model_registry.get_first_model_spec_that_unify_with(model_selector)
@@ -215,7 +213,7 @@ def cli(args: argparse.Namespace):
         if args.mode == "games":
             list_games(args.context, args.verbose)
         elif args.mode == "models":
-            list_models(args.context, args.verbose)
+            list_models(args.verbose)
         elif args.mode == "backends":
             list_backends(args.verbose)
         else:

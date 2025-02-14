@@ -142,50 +142,28 @@ class ModelRegistry:
     def __iter__(self):
         return iter(self._model_specs)
 
-    def register_dynamically_from(self, context_path: str) -> "ModelRegistry":
+    @classmethod
+    def from_packaged_and_cwd_files(cls) -> "ModelRegistry":
         """
-        Load ModelSpecs from the context path which can be a directory or file.
-        Then also always load ModelSpecs from clemcore package.
-        :param context_path: to use for lookup
+        Lookup model_registry.json in the following locations:
+        (1) Lookup in current working directory (relative to script execution)
+        (2) Lookup in the packaged clemcore backends module
+        Model specs found in the (1) are listed before (2) allowing to 'favor' the ones in (1).
         :return: model registry with model specs
         """
-        supress_fnf_error = False
-        if os.path.isdir(context_path):
-            context_path = os.path.join(context_path, "model_registry.json")
-            supress_fnf_error = True  # this case is optional anyways
-        if os.path.isfile(context_path):
-            try:
-                self.register_from_file(context_path, lookup_source=context_path)
-            except FileNotFoundError as e:
-                if not supress_fnf_error:
-                    module_logger.warning("Lookup failed at '%s' with exception: %s", context_path, e)
-            except Exception as e:
-                module_logger.warning("Lookup failed at '%s' with exception: %s", context_path, e)
+        registry = cls()
         try:
-            self.register_from_package("model_registry.json")
+            model_registry_path = os.path.join(os.getcwd(), "model_registry.json")
+            with open(model_registry_path, encoding='utf-8') as f:
+                registry.register_from_list(json.load(f), lookup_source=model_registry_path)
+        except Exception as e:
+            module_logger.debug("File lookup failed with exception: %s", e)
+        try:
+            with importlib_resources.files(__package__).joinpath("model_registry.json").open("r") as f:
+                registry.register_from_list(json.load(f), lookup_source="packaged")
         except Exception as e:
             module_logger.warning("Package lookup failed with exception: %s", e)
-        return self
-
-    def register_from_package(self, model_registry_path: str, lookup_source: str = "packaged"):
-        with importlib_resources.files(__package__).joinpath(model_registry_path).open("r") as f:
-            return self.register_from_list(json.load(f), lookup_source)
-
-    def register_from_file(self, model_registry_path: str, lookup_source: str = None) -> "ModelRegistry":
-        """Load the model registry from file.
-        Args:
-            model_registry_path: Path to the model registry file to be loaded.
-            lookup_source: annotate the source of the model specs. Default: None.
-        Raises:
-            FileNotFoundError: Will be raised if the model registry JSON file is not located at the passed
-                or default path (backends/model_registry.json).
-            ValueError: Will be raised if the model registry to be loaded contains faulty model entry.
-        """
-        if not os.path.isfile(model_registry_path):
-            raise FileNotFoundError(f"The file model registry at '{model_registry_path}' does not exist. "
-                                    f"Create model registry as a model_registry.json file and try again.")
-        with open(model_registry_path, encoding='utf-8') as f:
-            return self.register_from_list(json.load(f), lookup_source)
+        return registry
 
     def register_from_list(self, model_specs: List[Dict], lookup_source: str = None) -> "ModelRegistry":
         for model_spec_dict in model_specs:

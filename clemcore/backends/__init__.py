@@ -2,7 +2,6 @@ import abc
 import importlib
 import inspect
 import json
-import logging
 import os
 import importlib.resources as importlib_resources
 import importlib.util as importlib_util
@@ -121,7 +120,7 @@ class BackendRegistry:
         Lookup _api.py files in the following locations:
         (1) Lookup in current working directory (relative to script execution)
         (2) Lookup in the packaged clemcore backends module
-        Backends found in the (1) are favored over (2) allowing to 'overwrite' them.
+        Backends found in the (1) are favored over (2), that is listed before them to allow to 'overwrite' them.
         :return: backend registry with file path to backends to be dynamically loaded
         """
         backend_files = []
