@@ -59,10 +59,7 @@ class DMSystemMaster(GameMaster):
         self._setgamespecificsetup(data, game_id)
 
         # add initial prompts to each player's messages
-        if data["tsystem"] in ["modular_llm"]:
-            self.initiate(self.prompt_player_a, self.prompt_player_b)
-        else:
-            self.initiate(self.prompt_player_a, None)
+        self.initiate(self.prompt_player_a, None)
 
         # always log the details of the players in this format (see logdoc)
         self.log_players(
@@ -118,22 +115,13 @@ class DMSystemMaster(GameMaster):
         self.prompt_player_a = promptsdict["prompt_a"]
         self.turn_prompt_player_a = promptsdict["turn_prompt_a"]
 
-        if tsystem in ["modular_llm"]:
-            self.prompt_player_b = promptsdict["prompt_b"]
-            self.turn_prompt_player_b = promptsdict["turn_prompt_b"]
-            self.dbquery_prompt_player_b = promptsdict["dbquery_prompt_b"]
-            self.validbooking_prompt_player_b = promptsdict["validbooking_prompt_b"]
-
     def _setgamespecificsetup(self, data: Dict, game_id: int) -> None:
         # instantiate both players
 
         self._save_prompts(data["tsystem"], data["prompts"])
 
         self.player_a = LLMSpeaker(self.model_a, "A", self.goal, self.slots_gt)
-        if data["tsystem"] not in ["modular_llm"]:
-            self.player_b = LLMSpeaker(self.model_b, "B", None, None)
-        else:
-            raise ValueError("Player B is not implemented yet")
+        self.player_b = LLMSpeaker(self.model_b, "B", None, None)
 
         # instantiate the DB query builder
         self.dbquery = DBQueryBuilder(
@@ -152,8 +140,7 @@ class DMSystemMaster(GameMaster):
                            "resp_json_schema": self.json_schema,
                            "liberal_processing": data["liberal_processing"],
                            }
-        if data["tsystem"] not in ["modular_llm"]:
-            self.dsystem = get_dialogue_system(data["tsystem"], **dialogue_params)
+        self.dsystem = get_dialogue_system(data["tsystem"], **dialogue_params)
 
 
 
@@ -258,10 +245,7 @@ class DMSystemMaster(GameMaster):
         else:
             self.player_a.history.append({"role": "user", "content": prompt_player_a})
 
-        if self.instancedata["tsystem"] in ["modular_llm"]:
-            self.player_b.history.append({"role": "user", "content": prompt_player_b})
-        else:
-            self.player_b.history.append({"role": "user", "content": ""})
+        self.player_b.history.append({"role": "user", "content": ""})
 
         # also log the messages as events for the transcriptions
         action = {"type": "send message", "content": prompt_player_a}
@@ -458,21 +442,17 @@ class DMSystemMaster(GameMaster):
                 self.player_a.history.append({"role": role, "content": content})
         else:
             if role == "assistant":
-                if self.tsystem not in ["modular_llm"]:
-                    b_response = utterance
-
+                if isinstance(utterance, dict):
+                    b_response = json.dumps(utterance)
                 else:
-                    if isinstance(utterance, dict):
-                        b_response = json.dumps(utterance)
-                    else:
-                        b_response = utterance
+                    b_response = utterance
 
                 self.player_b.history.append({"role": role, "content": b_response})           
 
             else:
                 if len(self.player_b.history) == 1:
                     #TODO: check for cases, where player_b.history is empty
-                    if self.tsystem not in ["modular_llm", "modular_prog"]:
+                    if self.tsystem not in ["modular_prog"]:
                         self.player_b.history[-1]["content"] = utterance
                     else:
                         if self.tsystem in ["modular_prog"]:
@@ -492,18 +472,16 @@ class DMSystemMaster(GameMaster):
                             b_response = utterance
 
                         if role == "user":
-                            if self.tsystem in ["modular_llm"]:
-                                turn_prompt = self.turn_prompt_player_b
                             if self.tsystem in ["modular_prog"]:
                                 turn_prompt = "USER REQUEST:"    
-                            elif self.tsystem in ["monolithic_llm"]:
+                            elif self.tsystem in ["monolithic_llm", "modular_llm"]:
                                 turn_prompt = ""            
                         elif role == "db-query":
-                            if self.tsystem in ["monolithic_llm", "modular_prog"]:
+                            if self.tsystem in ["monolithic_llm", "modular_prog", "modular_llm"]:
                                 turn_prompt = "DATABASE RETRIEVAL RESULTS:"
 
                         elif role == "validate-booking":
-                            if self.tsystem in ["monolithic_llm", "modular_prog"]:
+                            if self.tsystem in ["monolithic_llm", "modular_prog", "modular_llm"]:
                                 turn_prompt = "BOOKING VALIDATION STATUS:"
 
                         b_message = turn_prompt + "\n\n" + b_response
@@ -518,7 +496,7 @@ class DMSystemMaster(GameMaster):
             f"_isvalidturn(): player: {player}, response: {response}, details = {details}"
         )
 
-        if response is None or (player == 'b' and self.tsystem in ["monolithic_llm", "modular_prog", "modular_prog"] and details is None):
+        if response is None or (player == 'b' and self.tsystem in ["monolithic_llm", "modular_prog", "modular_llm"] and details is None):
             self.aborted = True
             # log the abortion event
             action = {"type": "invalid format", "content": "game aborted due to an issue in parsing the response"}

@@ -38,7 +38,7 @@ class TODSystemInstanceGenerator(GameInstanceGenerator):
             )
             promptsdict[match_key] = self.create_prompt(goal, filedata, None)
 
-        if tsystem == "monolithic_llm":
+        if tsystem in ["monolithic_llm", "modular_llm"]:
             prompt_file_names = {
                 "initial_prompt_b": "prompt_b",
                 "turn_prompt_b": "turn_prompt_b",
@@ -51,7 +51,8 @@ class TODSystemInstanceGenerator(GameInstanceGenerator):
                     f"resources/initial_prompts/{LANGUAGE}/{tsystem}/{file_name}", GAME_NAME
                 )
                 promptsdict[match_key] = self.create_prompt(goal, filedata, None)
-        elif tsystem == "modular_prog":
+
+        if tsystem in ["modular_prog", "modular_llm"]:
             prompt_file_names = {
                 "initial_prompt_booking_formatter": "booking_formatter",
                 "initial_prompt_dbquery_formatter": "dbquery_formatter",
@@ -79,6 +80,18 @@ class TODSystemInstanceGenerator(GameInstanceGenerator):
                 else:
                 '''
                 promptsdict[match_key] = self.create_prompt(goal, filedata, None)
+
+
+            if tsystem == "modular_llm":
+                prompt_file_names = {
+                    "turn_subsystem_prompt_b": "turn_ss_prompt_b"
+                }
+
+                for file_name, match_key in prompt_file_names.items():
+                    filedata = file_utils.load_template(
+                        f"resources/initial_prompts/{LANGUAGE}/{tsystem}/{file_name}", GAME_NAME
+                    )
+                    promptsdict[match_key] = filedata#self.create_prompt(goal, filedata, None)
         return promptsdict
 
 
