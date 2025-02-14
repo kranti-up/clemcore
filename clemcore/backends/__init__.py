@@ -2,10 +2,11 @@ import abc
 import importlib
 import inspect
 import json
+import logging
 import os
 import importlib.resources as importlib_resources
+import importlib.util as importlib_util
 from typing import Dict, List
-import clemcore.utils.file_utils as file_utils
 from clemcore.backends.model_registry import ModelSpec, ModelRegistry, Model, HumanModel, CustomResponseModel
 
 __all_ = [
@@ -25,8 +26,7 @@ def load_credentials(backend, file_name="key.json") -> Dict:
     Returns:
         Dictionary with {backend: {api_key: key}}.
     """
-    # todo:
-    key_file = os.path.join(file_utils.project_root(), file_name)
+    key_file = os.path.join(os.getcwd(), file_name)
     with open(key_file) as f:
         creds = json.load(f)
     assert backend in creds, f"No '{backend}' in {file_name}. See README."
@@ -160,10 +160,15 @@ class BackendRegistry:
             return CustomResponseModelBackend()
 
         backend_file = self.get_first_file_matching(backend_selector)
+        module_name, _ = os.path.splitext(backend_file["file_name"])
         if backend_file["lookup_source"] == "packaged":
-            module = importlib.import_module(backend_file["file_name"], __package__)
+            # relative imports (sibling to __init__.py) require starting dot
+            module = importlib.import_module(f".{module_name}", __package__)
         else:
-            module = importlib.import_module(backend_file["file_path"])
+            module_path = backend_file["file_path"]
+            spec = importlib_util.spec_from_file_location(module_name, module_path)
+            module = importlib_util.module_from_spec(spec)
+            spec.loader.exec_module(module)
         backend_subclasses = inspect.getmembers(module, predicate=is_backend)
         if len(backend_subclasses) == 0:
             raise LookupError(f"There is no Backend defined in {module}. "

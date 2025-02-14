@@ -110,8 +110,7 @@ def run(context_path: str, game_selector: Union[str, Dict, GameSpec], model_sele
         # ready to rumble, do the heavy lifting only now, that is, loading the additional modules
         player_models = []
         for unified_model_spec in unified_model_specs:
-            logger.info(f"Attempt to load {unified_model_spec.model_name} model "
-                        f"using backend {unified_model_spec.backend}")
+            logger.info(f"Dynamically import backend {unified_model_spec.backend}")
             backend = backend_registry.get_backend_for(unified_model_spec.backend)
             model = backend.get_model_for(unified_model_spec)
             model.set_gen_args(**gen_args)  # todo make this somehow available in generate method?
