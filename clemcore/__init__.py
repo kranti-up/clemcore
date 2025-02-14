@@ -29,7 +29,3 @@ try:
     logging.config.dictConfig(load_logging_config())
 except Exception as e:
     print(f"Failed to load logging config: {e}")
-
-# look for custom user-defined models before loading the base registry
-backends.load_custom_model_registry()
-backends.load_model_registry()

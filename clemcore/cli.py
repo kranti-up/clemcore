@@ -5,10 +5,30 @@ from datetime import datetime
 from typing import List, Dict, Union
 
 import clemcore.backends as backends
+from clemcore.backends import ModelRegistry
 from clemcore.clemgame import GameBenchmark, GameRegistry, GameSpec
 
 logger = logging.getLogger(__name__)
 stdout_logger = logging.getLogger("clemcore.cli")
+
+
+def list_models(context_path: str, verbose: bool):
+    """List all models specified in the models registries."""
+    print("Listing all available models by name (use -v option to see the whole specs)")
+    model_registry = ModelRegistry().register_dynamically_from(context_path)
+    if not model_registry:
+        print("No models found under context path:", context_path)
+        print("Make sure that your clemgame directory have a clemgame.json")
+        print("or register them with 'clem register <your-game-directory>'.")
+        return
+    print(f"Found '{len(model_registry)}' registered model specs:")
+    wrapper = textwrap.TextWrapper(initial_indent="\t", width=70, subsequent_indent="\t")
+    for model_spec in model_registry:
+        print(f'{model_spec["model_name"]} '
+              f'-> {model_spec["backend"]} '
+              f'({model_spec["lookup_source"]})')
+        if verbose:
+            print(wrapper.fill("\nModelSpec: " + model_spec.to_string()))
 
 
 def list_games(context_path: str, verbose: bool):
@@ -24,16 +44,14 @@ def list_games(context_path: str, verbose: bool):
         print("Make sure that your clemgame directory have a clemgame.json")
         print("or register them with 'clem register <your-game-directory>'.")
         return
+    wrapper = textwrap.TextWrapper(initial_indent="\t", width=70, subsequent_indent="\t")
     for game_spec in game_registry:
         game_name = f'{game_spec["game_name"]}:\n'
-        preferred_width = 70
-        wrapper = textwrap.TextWrapper(initial_indent="\t", width=preferred_width,
-                                       subsequent_indent="\t")
         if verbose:
             print(game_name,
                   wrapper.fill(game_spec["description"]), "\n",
                   wrapper.fill("GameSpec: " + game_spec.to_string()),
-            )
+                  )
         else:
             print(game_name, wrapper.fill(game_spec["description"]))
 
@@ -156,6 +174,8 @@ def cli(args: argparse.Namespace):
     if args.command_name == "list":
         if args.mode == "games":
             list_games(args.context, args.verbose)
+        elif args.mode == "models":
+            list_models(args.context, args.verbose)
         elif args.mode == "backends":
             ...
         else:
@@ -224,9 +244,9 @@ def main():
     parser = argparse.ArgumentParser()
     sub_parsers = parser.add_subparsers(dest="command_name")
     list_parser = sub_parsers.add_parser("list")
-    list_parser.add_argument("mode", choices=["games", "backends"],
+    list_parser.add_argument("mode", choices=["games", "models", "backends"],
                              default="games", nargs="?", type=str,
-                             help="Choose between games or backends to be listed. Default: games")
+                             help="Choose to list available games, models or backends. Default: games")
     list_parser.add_argument("context", default=".", nargs="?", type=str,
                              help="A path to a directory that contains a clemgame or game registry file. "
                                   "Can also be called directly from within a clemgame directory with '.'. "

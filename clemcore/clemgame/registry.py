@@ -280,7 +280,7 @@ class GameRegistry:
                 stdout_logger.info(selected_game_specs[0].to_pretty_string())
             else:
                 for game_spec in selected_game_specs:
-                    stdout_logger.info(game_selector.to_string())
+                    stdout_logger.info(game_spec.to_string())
         else:
             raise ValueError(f"No games found matching the given specification '{game_selector}'. "
                              "Make sure the game name matches the name in clemcore/clemgame/game_registry.json (or game_registry_custom.json)")
