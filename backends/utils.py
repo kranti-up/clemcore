@@ -60,9 +60,9 @@ def ensure_alternating_roles(messages: List[Dict], cull_system_message: bool = T
 
 def ensure_messages_format(generate_response_fn):
     @wraps(generate_response_fn)
-    def wrapped_fn(self, messages, respformat):
+    def wrapped_fn(self, messages, respformat, json_schema):
         _messages = ensure_alternating_roles(messages)
-        return generate_response_fn(self, _messages, respformat)
+        return generate_response_fn(self, _messages, respformat, json_schema)
 
     return wrapped_fn
 

@@ -18,8 +18,9 @@ from games.todsystem.players import LLMSpeaker
 from games.todsystem.dialogue_systems.factory import get_dialogue_system
 #from games.todsystem.computemetrics import ComputeMetrics
 from games.todsystem.gamevalidator import GameValidator
-#from games.todsystem.dbquerybuilder import DBQueryBuilder
-#from games.todsystem.utils import cleanupanswer, generate_reference_number
+from games.todsystem.dbquerybuilder import DBQueryBuilder
+from games.todsystem.utils import cleanupanswer, generate_reference_number
+from games.todsystem.utils import processgtslots
 
 
 # use the framework logger to log events relevant at runtime;
@@ -58,7 +59,7 @@ class DMSystemMaster(GameMaster):
         self._setgamespecificsetup(data, game_id)
 
         # add initial prompts to each player's messages
-        if data["tsystem"] in ["dmsystem_monolithic_llm", "dmsystem_modular_llm", "dmsystem_modular_prog"]:
+        if data["tsystem"] in ["modular_llm"]:
             self.initiate(self.prompt_player_a, self.prompt_player_b)
         else:
             self.initiate(self.prompt_player_a, None)
@@ -86,12 +87,16 @@ class DMSystemMaster(GameMaster):
         self.tasktype = data["tasktype"]
         self.statusmsg = data["statusmsg"]
         self.db_path = data["db_path"]
+        self.domaindbkeys = data["domaindbkeys"]
+        self.json_schema = data["json_schema"]
 
         self.gamedata = None
         self.slots_gen = None
         self.slots_gen_loss = None
         self.misses = None
-        self.slots_gt = data["domains"]
+        self.slots_gt_raw = data["domains"]
+        self.slots_gt = processgtslots(self.slots_gt_raw)
+        self.booking_slots = data["book_keys"]
         self.gen_dialogue = []
 
         logger.info(f"User Goal: {self.goal}")
@@ -106,11 +111,14 @@ class DMSystemMaster(GameMaster):
         self.parsed_request_counts = [0] * (self.n_turns + 1)
         self.violated_request_counts = [0] * (self.n_turns + 1)
 
+    def _process_gt_slots(self, slots: Dict) -> Dict:
+        pass
+
     def _save_prompts(self, tsystem, promptsdict):
         self.prompt_player_a = promptsdict["prompt_a"]
         self.turn_prompt_player_a = promptsdict["turn_prompt_a"]
 
-        if tsystem in ["dmsystem_monolithic_llm", "dmsystem_modular_llm", "dmsystem_modular_prog"]:
+        if tsystem in ["modular_llm"]:
             self.prompt_player_b = promptsdict["prompt_b"]
             self.turn_prompt_player_b = promptsdict["turn_prompt_b"]
             self.dbquery_prompt_player_b = promptsdict["dbquery_prompt_b"]
@@ -122,16 +130,32 @@ class DMSystemMaster(GameMaster):
         self._save_prompts(data["tsystem"], data["prompts"])
 
         self.player_a = LLMSpeaker(self.model_a, "A", self.goal, self.slots_gt)
-        if data["tsystem"] not in ["dmsystem_monolithic_llm", "dmsystem_modular_llm", "dmsystem_modular_prog"]:
+        if data["tsystem"] not in ["modular_llm"]:
             self.player_b = LLMSpeaker(self.model_b, "B", None, None)
         else:
             raise ValueError("Player B is not implemented yet")
 
+        # instantiate the DB query builder
+        self.dbquery = DBQueryBuilder(
+            self.domains,
+            data["mwozschema"],
+            self.db_path,
+            {"nocolumnmatch": self.statusmsg["nocolumnmatch"], "novaluematch": self.statusmsg["novaluematch"],
+             "nodomainmatch": self.statusmsg["nodomainmatch"]},
+        )
+
         dialogue_params = {"model_name": self.model_b.model_spec["model_name"],
                            "model_spec": self.model_b,
                            "db_path": self.db_path,
-                           "dialogue_domains": self.domains,}
-        self.dsystem = get_dialogue_system(data["tsystem"], **dialogue_params)
+                           "dialogue_domains": self.domains,
+                           "prompts_dict": data["prompts"],
+                           "resp_json_schema": self.json_schema,
+                           "liberal_processing": data["liberal_processing"],
+                           }
+        if data["tsystem"] not in ["modular_llm"]:
+            self.dsystem = get_dialogue_system(data["tsystem"], **dialogue_params)
+
+
 
 
 
@@ -148,7 +172,8 @@ class DMSystemMaster(GameMaster):
             if not self.success:
                 self.lose = True
                 #TODO: Extracting the generated slots from the dialogue system
-                self.slots_gen_loss = self.dsystem.get_booking_data()
+                if self.tsystem not in ["monolithic_llm", "modular_llm", "modular_prog"]:
+                    self.slots_gen_loss = self.dsystem.get_booking_data()
 
         self.gamedata = {
             "filename": self.dfilename,
@@ -159,6 +184,7 @@ class DMSystemMaster(GameMaster):
             "dialogue_type": self.instancedata["dialogue_type"],
             "slots_gt": self.slots_gt,
             "slots_gen": self.slots_gen,
+            "slots_gt_raw": self.slots_gt_raw,
             "slots_gen_loss": self.slots_gen_loss,
             "n_turns": self.n_turns,
             "play_turns": self.current_turn,
@@ -204,7 +230,7 @@ class DMSystemMaster(GameMaster):
         elif self.aborted:
             action = {
                 "type": "info",
-                "content": "The game has been aborted due to an invalid response format.",
+                "content": "The game has been aborted due to an invalid input.",
             }
         else:
             action = {
@@ -232,10 +258,8 @@ class DMSystemMaster(GameMaster):
         else:
             self.player_a.history.append({"role": "user", "content": prompt_player_a})
 
-        if self.instancedata["tsystem"] in ["dmsystem_monolithic_llm", "dmsystem_modular_llm"]:
+        if self.instancedata["tsystem"] in ["modular_llm"]:
             self.player_b.history.append({"role": "user", "content": prompt_player_b})
-        elif self.instancedata["tsystem"] in ["dmsystem_modular_prog"]:
-            self.player_b.history.append({"role": "user", "content": "USER REQUEST:"})
         else:
             self.player_b.history.append({"role": "user", "content": ""})
 
@@ -258,7 +282,7 @@ class DMSystemMaster(GameMaster):
         """Perform a game turn, utterances by A and B (firstlast specific)."""
         #TODO: Where to add violated requests?
         # get player A's reply and add it to its history
-        status, response = self._triggerplayer("a")
+        status, response, _ = self._triggerplayer("a")
 
         if status is None:
             # stop game
@@ -279,24 +303,56 @@ class DMSystemMaster(GameMaster):
         self.log_event(from_="GM", to="Player 2", action=action)
 
         # now do the same for player B
-        status, response = self._triggerplayer("b")
+        status, response, details = self._triggerplayer("b")
         if status is None:
             # stop game
             return None
         
-        if self.lose or self.aborted:
-            return None        
-        
-        # add B's reply to A's history
-        logger.info(f"Appended Player B answer to PlayerA\n{response}")
-        self._append_utterance(response, "a", "user")
-        self.gen_dialogue[-1].update({"system": response})
-        # also add the reply to the transcript
-        action = {
-            "type": "send message",
-            "content": self.player_a.history[-1]["content"],
-        }
-        self.log_event(from_="GM", to="Player 1", action=action)
+        if self.tsystem not in ["monolithic_llm", "modular_llm", "modular_prog"]:
+            if self.lose or self.aborted:
+                return None
+            
+            # add B's reply to A's history
+            logger.info(f"Appended Player B answer to PlayerA\n{response}")
+            self._append_utterance(response, "a", "user")
+            self.gen_dialogue[-1].update({"system": response})
+            # also add the reply to the transcript
+            action = {
+                "type": "send message",
+                "content": self.player_a.history[-1]["content"],
+            }
+            self.log_event(from_="GM", to="Player 1", action=action)
+        else:
+            while True:
+                if response == "follow-up":
+                    self._handleplayerb_response(details)
+                    break
+
+                elif response == "db-query":
+                    # handle db query
+                    status, response, details = self._handle_dbquery(details)
+                    if status is None:
+                        # stop game
+                        self.aborted = True
+                        # log the abortion event
+                        action = {"type": "invalid format", "content": "game aborted due to an issue in dbquery input"}
+                        self.log_event(from_="GM", to="GM", action=action)
+                        # increase the counter of requests that violate form rules
+                        self.violated_request_counts[self.current_turn] += 1
+                        return None
+                    
+                elif response == "validate-booking":
+                    # handle booking
+                    status, response, details = self._handle_booking(details)
+                    if status is None:
+                        # stop game
+                        self.aborted = True
+                        # log the abortion event
+                        action = {"type": "invalid format", "content": "game aborted due to an issue in booking system input"}
+                        self.log_event(from_="GM", to="GM", action=action)
+                        # increase the counter of requests that violate form rules
+                        self.violated_request_counts[self.current_turn] += 1
+                        return None            
 
             
         self.complete_turns += 1
@@ -316,7 +372,7 @@ class DMSystemMaster(GameMaster):
                 self.player_a.history[-1]["content"] += "\n\n" + usergoal
             # make an API call (or get a programmatic response) from player a
             prompt, raw_answer, answer = self.player_a(
-                self.player_a.history, self.current_turn, None
+                self.player_a.history, self.current_turn, None, None
             )
             # add API call to the records
             action = {"type": "get message", "content": answer}
@@ -332,8 +388,6 @@ class DMSystemMaster(GameMaster):
         else:
             # make an API call (or get a programmatic response) from player b
             promptlogs, raw_answer, answer_utter = self.dsystem.process_user_input(self.player_b.history[-1]["content"], self.current_turn)
-            # add reply to its own memory
-            self._append_utterance(answer_utter, "b", "assistant")
 
             for turn in promptlogs:
                 if isinstance(turn["content"], str):
@@ -345,22 +399,33 @@ class DMSystemMaster(GameMaster):
                 else:
                     prompt = turn["content"]["prompt"]
                     raw_answer = turn["content"]["raw_answer"]
+                    #TODO: This answer is added to Player A, check if this is correct or should it be answer_utter?
+                    #May be in the last turn, both are equal -> But check the transcripts again
                     answer = turn["content"]["answer"]
                     action = {"type": "get message", "content": answer}
+                    if self.tsystem == "monolithic_llm":
+                        logto = "GM"
+                    else:
+                        logto = "Player 2"
                     self.log_event(
                         from_="Player 2",
-                        to="Player 2",
+                        to=logto,
                         action=action,
                         call=(copy.deepcopy(prompt), raw_answer),
                     )
+            answer = answer_utter
+            # add reply to its own memory
+            self._append_utterance(answer_utter, "b", "assistant")
+
             # add API call to the records
-            action = {"type": "get message", "content": answer_utter}
-            self.log_event(
-                from_="Player 2",
-                to="GM",
-                action=action,
-                #call=(copy.deepcopy(prompt), raw_answer),
-            )
+            if self.tsystem != "monolithic_llm":
+                action = {"type": "get message", "content": answer_utter}
+                self.log_event(
+                    from_="Player 2",
+                    to="GM",
+                    action=action,
+                    #call=(copy.deepcopy(prompt), raw_answer),
+                )
 
         # increase the number of API requests
         #TODO: For Modular DM, there are multiple calls to the sub-modules which are not counted here
@@ -393,33 +458,76 @@ class DMSystemMaster(GameMaster):
                 self.player_a.history.append({"role": role, "content": content})
         else:
             if role == "assistant":
-                self.player_b.history.append({"role": role, "content": utterance})
+                if self.tsystem not in ["modular_llm"]:
+                    b_response = utterance
+
+                else:
+                    if isinstance(utterance, dict):
+                        b_response = json.dumps(utterance)
+                    else:
+                        b_response = utterance
+
+                self.player_b.history.append({"role": role, "content": b_response})           
 
             else:
                 if len(self.player_b.history) == 1:
                     #TODO: check for cases, where player_b.history is empty
-                    self.player_b.history[-1]["content"] = utterance
-                else:
-                    self.player_b.history.append({"role": "user", "content": utterance})
+                    if self.tsystem not in ["modular_llm", "modular_prog"]:
+                        self.player_b.history[-1]["content"] = utterance
+                    else:
+                        if self.tsystem in ["modular_prog"]:
+                            self.player_b.history[-1]["content"] = f"USER REQUEST: {utterance}"
+                        else:
+                            self.player_b.history[-1]["content"] += "\n\n" + utterance
+                            self.player_b.history[-1]["content"] = self.player_b.history[-1]["content"].strip()
                     logger.info(f"Player B: {self.player_b.history[-1]}")
+                else:
+                    if self.tsystem not in ["monolithic_llm", "modular_llm", "modular_prog"]:
+                        self.player_b.history.append({"role": "user", "content": utterance})
+                        logger.info(f"Player B: {self.player_b.history[-1]}")
+                    else:
+                        if isinstance(utterance, dict):
+                            b_response = json.dumps(utterance)
+                        else:
+                            b_response = utterance
 
+                        if role == "user":
+                            if self.tsystem in ["modular_llm"]:
+                                turn_prompt = self.turn_prompt_player_b
+                            if self.tsystem in ["modular_prog"]:
+                                turn_prompt = "USER REQUEST:"    
+                            elif self.tsystem in ["monolithic_llm"]:
+                                turn_prompt = ""            
+                        elif role == "db-query":
+                            if self.tsystem in ["monolithic_llm", "modular_prog"]:
+                                turn_prompt = "DATABASE RETRIEVAL RESULTS:"
+
+                        elif role == "validate-booking":
+                            if self.tsystem in ["monolithic_llm", "modular_prog"]:
+                                turn_prompt = "BOOKING VALIDATION STATUS:"
+
+                        b_message = turn_prompt + "\n\n" + b_response
+                        self.player_b.history.append({"role": "user", "content": b_message.strip()})
+                        logger.info(f"Player B: {self.player_b.history[-1]}")
 
     def _isvalidturn(self, player: str, answer: str) -> bool:
         """Check if answer is valid and correct (firstlast specific)."""
         # parse answer
-        response = self.parse(player, answer)
+        response, details = self.parse(player, answer)
         logger.info(
-            f"_isvalidturn(): player: {player}, response: {response}"
+            f"_isvalidturn(): player: {player}, response: {response}, details = {details}"
         )
 
-        if response is None:
+        if response is None or (player == 'b' and self.tsystem in ["monolithic_llm", "modular_prog", "modular_prog"] and details is None):
             self.aborted = True
             # log the abortion event
             action = {"type": "invalid format", "content": "game aborted due to an issue in parsing the response"}
             self.log_event(from_="GM", to="GM", action=action)
             # increase the counter of requests that violate form rules
             self.violated_request_counts[self.current_turn] += 1
-            return False, response
+            return False, response, details
+        
+        
 
         # increase the counter of requests that conform to form rules
         self.parsed_request_counts[self.current_turn] += 1
@@ -427,7 +535,7 @@ class DMSystemMaster(GameMaster):
         action = {"type": "metadata", "content": "response confirms to rules"}
         self.log_event(from_="GM", to="GM", action=action)
 
-        return True, response
+        return True, response, details
 
     def _process_player_response(self, player: str, response: str) -> None:
         if player == "a":
@@ -440,9 +548,9 @@ class DMSystemMaster(GameMaster):
 
                 # Compare the slots of the ground truth and the generated slots
                 # This comparison is done in handle_booking() method
-                if self.tsystem not in ["dm_system_modular_llm", "dm_system_modular_prog", "dm_system_monolithic_llm"]:
+                if self.tsystem not in ["monolithic_llm", "modular_llm", "modular_prog"]:
                     self.slots_gen = self.dsystem.get_booking_data()
-                    logger.info(f"Generated slots in Player2: {self.slots_gen}")
+                logger.info(f"Generated slots in Player2: {self.slots_gen}")
 
                 status, missed_values = self.gamevalidator.run(self.slots_gen)
                 if status:
@@ -467,24 +575,271 @@ class DMSystemMaster(GameMaster):
         answer = self._get_utterance(player)
         # print(f"3. Player B answer\n{answer_b}")
         logger.info(f"Player-{player} answer\n{answer} {type(answer)}")
-        is_valid_turn, response = self._isvalidturn(player, answer)
+        is_valid_turn, response, details = self._isvalidturn(player, answer)
 
         logger.info(
-            f"Player-{player} is_valid_turn: {is_valid_turn}, response: {response}"
+            f"Player-{player} is_valid_turn: {is_valid_turn}, response: {response}, details: {details}"
         )
         if not is_valid_turn:
             # stop game
-            return None, response
+            return None, response, details
         
         self._process_player_response(player, response)
-        return True, response
+        return True, response, details
     
+
+    def _handleplayerb_response(self, details) -> None:
+        # add B's reply to A's history
+        if self.current_turn < self.n_turns:
+            logger.info(f"Appended Player B answer to PlayerA\n{details}")
+            self._append_utterance(details, "a", "user")
+            self.gen_dialogue[-1].update({"system": details})
+            # also add the reply to the transcript
+            action = {
+                "type": "send message",
+                "content": self.player_a.history[-1]["content"],
+            }
+            self.log_event(from_="GM", to="Player 1", action=action)
+
+    def _handle_dbquery(self, details) -> bool:
+        num_db_queries = 0
+        while True:
+            if num_db_queries >= self.n_turns or details is None:
+                # stop game
+                logger.info(f"DBQuery attempts exceeded {num_db_queries} or error in details: {details}")
+                return None, None, None
+
+            if "domain" not in details:
+                logger.error("Domain not found in the details")
+                return None, None, details
+
+            gen_domain = details["domain"].lower()
+            possible_domains = self.json_schema["schema"]["properties"]["details"]["oneOf"][1]["properties"]["domain"]["enum"]
+            if gen_domain not in possible_domains:
+                logger.error(f"Domain {gen_domain} not found in the possible domains")
+                #return None, None, details
+                message = f"Extracted domain: {gen_domain} not found in the available domains"
+
+            else:
+                logger.info(f"continuing with db query slots = {details} {type(details)}")
+                dbresult = self.dbquery.run(details)
+                message = f'{self.statusmsg[dbresult["status"]]} {self.statusmsg["dbfetch"]}\n'
+                if dbresult["status"] == "success":
+                    message += json.dumps(dbresult["data"])
+                else:
+                    availcolumns = self.statusmsg["availablecolumns"].replace(
+                        "$columns", ", ".join(self.domaindbkeys)
+                    )
+                    if not self.domaindbkeys:
+                        logger.error("Domain DB keys are empty")
+                    message += f'{dbresult["error"]}\n\n{availcolumns}'
+            
+            self._append_utterance(message, "b", "db-query")
+            # also add the reply to the transcript
+            action = {
+                "type": "send message",
+                "content": self.player_b.history[-1]["content"],
+            }
+            self.log_event(from_="GM", to="Player 2", action=action)            
+            status, response, details = self._triggerplayer("b")
+            logger.info(f"status is {status}, response: {response} details: {details}")
+            if status is None:
+                # stop game
+                num_db_queries = 0
+                return None, response, details
+            
+
+            #Recheck if follow-up and db-query to be handled separately: same in _handle_booking() API
+            
+            if response in ["follow-up", "validate-booking"]:
+                num_db_queries = 0
+                return status, response, details
+            else:
+                num_db_queries += 1
+                continue
+
+    def _savegenerateddata(self, gendomain, genslots, db_match_keys, only_book_keys):
+        if self.slots_gen is None:
+            self.slots_gen = {}
+
+        if gendomain not in self.slots_gen:
+            self.slots_gen[gendomain] = {}
+
+        for key, value in genslots.items():
+            if key in db_match_keys:
+                if "info" not in self.slots_gen[gendomain]:
+                    self.slots_gen[gendomain]["info"] = {}
+                self.slots_gen[gendomain]["info"].update({key: value})
+            elif key in only_book_keys:
+                if "book" not in self.slots_gen[gendomain]:
+                    self.slots_gen[gendomain]["book"] = {}
+                self.slots_gen[gendomain]["book"].update({key: value})
+            else:
+                if "reqt" not in self.slots_gen[gendomain]:
+                    self.slots_gen[gendomain]["reqt"] = {}
+                if key == "domain":
+                    continue
+                self.slots_gen[gendomain]["reqt"].update({key: value})
+
+
+    def _handle_booking(self, details) -> bool:
+        if not isinstance(details, dict):
+            return None, None, details
+
+        num_booking_attempts = 0
+        while True:
+            if num_booking_attempts >= self.n_turns or details is None:
+                # stop game
+                logger.info(f"Booking attempts exceeded {num_booking_attempts} or error in details: {details}")
+                num_booking_attempts = 0
+                return None, None, None
+
+            logger.info(f"received booking details: {details}, gt_slots: {self.booking_slots}")
+
+            if "domain" not in details:
+                logger.error("Domain not found in the details")
+                return None, None, details
+
+            gen_domain = details["domain"].lower()
+            possible_domains = self.json_schema["schema"]["properties"]["details"]["oneOf"][2]["properties"]["domain"]["enum"]
+            if gen_domain not in possible_domains or gen_domain not in self.booking_slots:
+                logger.error(f"Domain {gen_domain} not found in the possible domains")
+                #return None, None, details
+                message = f"Extracted domain: {gen_domain} not found in the available domains"
+
+            else:
+                booking_slots_gt = self.booking_slots[gen_domain]
+                booking_slots_gen = {k.lower(): str(v).lower() for k, v in details.items() if k != "domain" and v and not isinstance(v, (list, dict, tuple))}
+                logger.info(f"booking_slots_gt: {booking_slots_gt}, booking_slots_gen: {booking_slots_gen}")
+
+                missing_slots = [slot for slot in booking_slots_gt if slot not in booking_slots_gen]
+                message = ""
+
+                if missing_slots:
+                    logger.info(f"Missing slots: {missing_slots}")
+                    missing_slots_info = self.statusmsg["missing_slots"].replace("$slots", ", ".join(missing_slots))
+                    message = "Missed some slots: " + missing_slots_info + ". Please stick to the names/keys mentioned in the schema."
+
+                else:
+                    # Check if the values are valid
+                    logger.info(f"Checking if the values are valid")
+                    missing_values = []
+
+                    for slot in booking_slots_gt:
+                        slot_allowed_values = self.dbquery.get_valid_values(gen_domain, slot)
+                        if slot_allowed_values:
+                            if booking_slots_gen[slot] not in slot_allowed_values:
+                                missing_values.append(slot)
+
+                    if missing_values:
+                        logger.info(f"Missed some slot values: {missing_values}")
+                        invalid_value_info = self.statusmsg["invalid_value"].replace("$slot", ", ".join(missing_values))
+                        message = invalid_value_info
+
+                    else:
+                        #Check if the values are present in the DB
+                        db_match_slots = list(set(booking_slots_gen).intersection(set(self.domaindbkeys)))
+                        logger.info(f"Preparing DB Query for the DB Match db_match_slots = {db_match_slots}")
+
+                        if not db_match_slots:
+                            logger.error("No DB Match slots found in the booking information")
+                            invalid_value_info = self.statusmsg["missing_other_slots_booking"].replace("$slot", ", ".join(missing_values))
+                            message = invalid_value_info
+
+                        else:
+                            db_query_data = {"domain": gen_domain}
+                            for slot in db_match_slots:
+                                slot_allowed_values = self.dbquery.get_valid_values(gen_domain, slot)
+                                if slot_allowed_values:
+                                    if booking_slots_gen[slot] not in slot_allowed_values:
+                                        missing_values.append(slot)
+                                    else:
+                                        db_query_data.update({slot: booking_slots_gen[slot]})
+                                else:
+                                    db_query_data.update({slot: booking_slots_gen[slot]})
+
+                            if missing_values:
+                                logger.info(f"Mismatches in configuration allowed for the slot values: {missing_values}")
+                                invalid_value_info = self.statusmsg["invalid_value"].replace("$slot", ", ".join(missing_values))
+                                message = invalid_value_info
+
+                            else:
+                                #Make a DB Query and check if the value is present in the DB
+                                logger.info(f"Making DB Query with the data {db_query_data}")
+                                dbquery_result = self.dbquery.run(db_query_data)
+                                logger.info(f"DB Query Result: {dbquery_result}")
+                                if dbquery_result["status"] == "success":
+                                    #Fetch the booking reference number
+                                    bookrefnum = generate_reference_number()
+                                    refnumber = self.statusmsg['booking_reference'].replace("$refnum", bookrefnum)
+                                    message = f"{self.statusmsg['success']} {self.statusmsg['validatebooking']}\n{refnumber}"
+                                    self._savegenerateddata(gen_domain, details, self.domaindbkeys, list(booking_slots_gt.keys()))
+
+                                    # log the fact that the booking is completed
+                                    action = {"type": "parse", "content": f"booking completed"}
+                                    self.log_event(from_="GM", to="GM", action=action)
+                                else:
+                                    missing_values = list(db_query_data.keys())
+                                    invalid_value_info = self.statusmsg["invalid_value"].replace("$slot", ", ".join(missing_values))
+                                    message = invalid_value_info
+
+            if not message:
+                logger.error("Message is empty")
+                return None, None, details
+
+            logger.info(f"Booking Message: {message}")
+            self._append_utterance(message, "b", "validate-booking")
+            # also add the reply to the transcript
+            action = {
+                "type": "send message",
+                "content": self.player_b.history[-1]["content"],
+            }
+            self.log_event(from_="GM", to="Player 2", action=action)
+            status, response, details = self._triggerplayer("b")
+            logger.info(f"status is {status}, response: {response} details: {details}")
+            if status is None:
+                # stop game
+                num_booking_attempts = 0
+                return None, response, details
+
+            if response in ["follow-up", "db-query"]:
+                num_booking_attempts = 0
+                return status, response, details
+            else:
+                num_booking_attempts += 1
+                continue
+
+
 
     @staticmethod
     def parse(player: str, utterance: str) -> bool:
         """Check if utterance is valid and return first/last tokens (firstlast specific)."""
         #TODO: Any other logic required?
-        return utterance           
+        if player == "a":
+            return utterance, None
+        else:
+            try:
+                if isinstance(utterance, str):
+                    result = json.loads(utterance)
+
+                elif isinstance(utterance, dict):
+                    result = utterance
+
+                else:
+                    return None, None
+
+                if 'status' not in result or 'details' not in result:
+                    return None, None
+                
+                if result["status"] not in ["follow-up", "db-query", "validate-booking"]:
+                    return None, None
+
+                return result['status'], result['details']
+
+            except Exception as e:
+                result = utterance
+
+        return result, None
 
     def log_eval_assets(self) -> None:
         """Aux to log variables needed for scoring (firstlast specific)"""

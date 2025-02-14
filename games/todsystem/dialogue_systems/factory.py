@@ -2,6 +2,8 @@ from games.todsystem.dialogue_systems.basedsystem import DialogueSystem
 from games.todsystem.dialogue_systems.xuetaldsys.xuetaldsystem import XUETALDialogueSystem
 from games.todsystem.dialogue_systems.hetaldsys.hetaldsystem import HETALDialogueSystem
 from games.todsystem.dialogue_systems.cetaldsys.cetaldsystem import CETALDialogueSystem
+from games.todsystem.dialogue_systems.monolithicsys.monodsystem import MONODialogueSystem
+from games.todsystem.dialogue_systems.modprogdsys.modprogdsystem import MODULARPROGDialogueSystem
 
 def get_dialogue_system(system_name: str, **kwargs) -> DialogueSystem:
     """Returns an instance of the specified dialogue system."""
@@ -9,6 +11,8 @@ def get_dialogue_system(system_name: str, **kwargs) -> DialogueSystem:
         "xuetal": XUETALDialogueSystem,
         "hetal": HETALDialogueSystem,
         "cetal": CETALDialogueSystem,
+        "monolithic_llm": MONODialogueSystem,
+        "modular_prog": MODULARPROGDialogueSystem
     }
 
     if system_name in dialogue_systems:

@@ -37,7 +37,7 @@ class Player(abc.ABC):
     def get_description(self) -> str:
         return f"{self.__class__.__name__}, {self.model}"
 
-    def __call__(self, messages: List[Dict], turn_idx, respformat) -> Tuple[Any, Any, str]:
+    def __call__(self, messages: List[Dict], turn_idx, respformat, json_schema) -> Tuple[Any, Any, str]:
         call_start = datetime.now()
         prompt = messages
         response = dict()
@@ -46,7 +46,7 @@ class Player(abc.ABC):
         elif isinstance(self.model, HumanModel):
             response_text = self._terminal_response(messages, turn_idx)
         else:
-            prompt, response, response_text = self.model.generate_response(messages, respformat)
+            prompt, response, response_text = self.model.generate_response(messages, respformat, json_schema)
         call_duration = datetime.now() - call_start
         response["clem_player"] = {
             "call_start": str(call_start),

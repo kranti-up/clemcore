@@ -86,7 +86,7 @@ class OpenAIModel(backends.Model):
 
     @retry(tries=3, delay=0, logger=logger)
     @ensure_messages_format
-    def generate_response(self, messages: List[Dict], respformat=None) -> Tuple[str, Any, str]:
+    def generate_response(self, messages: List[Dict], respformat=None, json_schema=None) -> Tuple[str, Any, str]:
         """
         :param messages: for example
                 [
@@ -123,6 +123,26 @@ class OpenAIModel(backends.Model):
                                                             #    }
                                                             )
                 #logger.info(f"1. api_response-> {api_response}")                
+
+            elif json_schema:
+                use_json_schema = {}
+                if "name" not in json_schema:
+                    use_json_schema["name"] = "response_format_schema"
+                    use_json_schema["schema"] = json_schema
+                else:
+                    use_json_schema = json_schema
+
+                api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
+                                                            messages=prompt,
+                                                            temperature=self.get_temperature(),
+                                                            max_tokens=self.get_max_tokens(),
+                                                            #response_format={'type': 'json_object'},
+                                                            response_format={
+                                                                "type": "json_schema",
+                                                                "json_schema": use_json_schema
+                                                            }
+                                                            )
+
             else:
                 api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
                                                             messages=prompt,
