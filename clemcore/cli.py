@@ -5,11 +5,29 @@ from datetime import datetime
 from typing import List, Dict, Union
 
 import clemcore.backends as backends
-from clemcore.backends import ModelRegistry
+from clemcore.backends import ModelRegistry, BackendRegistry
 from clemcore.clemgame import GameBenchmark, GameRegistry, GameSpec
 
 logger = logging.getLogger(__name__)
 stdout_logger = logging.getLogger("clemcore.cli")
+
+
+def list_backends(verbose: bool):
+    """List all models specified in the models registries."""
+    print("Listing all supported backends (use -v option to see full file path)")
+    backend_registry = BackendRegistry.from_packaged_and_cwd_files()
+    if not backend_registry:
+        print("No backends found")
+        return
+    print(f"Found '{len(backend_registry)}' supported backends.")
+    print("Make sure you have the requirements installed for these backends to function properly.")
+    print("Then you can use models that specify one of the following backends:")
+    wrapper = textwrap.TextWrapper(initial_indent="\t", width=70, subsequent_indent="\t")
+    for backend_file in backend_registry:
+        print(f'{backend_file["backend"]} '
+              f'({backend_file["lookup_source"]})')
+        if verbose:
+            print(wrapper.fill("\nFull Path: " + backend_file["file_path"]))
 
 
 def list_models(context_path: str, verbose: bool):
@@ -56,13 +74,13 @@ def list_games(context_path: str, verbose: bool):
             print(game_name, wrapper.fill(game_spec["description"]))
 
 
-def run(context_path: str, game_selector: Union[str, Dict, GameSpec], model_specs: List[backends.ModelSpec],
+def run(context_path: str, game_selector: Union[str, Dict, GameSpec], model_selectors: List[backends.ModelSpec],
         gen_args: Dict, experiment_name: str = None, instances_name: str = None, results_dir: str = None):
     """Run specific model/models with a specified clemgame.
     Args:
         context_path: To look for clemgames.
         game_selector: Name of the game, matching the game's name in the game registry, OR GameSpec-like dict, OR GameSpec.
-        model_specs: A list of backends.ModelSpec instances for the player models to run the game with.
+        model_selectors: One or two selectors for the models that are supposed to play the games.
         gen_args: Text generation parameters for the backend; output length and temperature are implemented for the
             majority of model backends.
         experiment_name: Name of the experiment to run. Corresponds to the experiment key in the instances JSON file.
@@ -70,18 +88,41 @@ def run(context_path: str, game_selector: Union[str, Dict, GameSpec], model_spec
         results_dir: Path to the results directory in which to store the episode records.
     """
     try:
+        # check games first
+        game_registry = GameRegistry.load_from_directories_or_file(context_path)
+        game_specs = game_registry.get_game_specs_that_unify_with(game_selector)  # throws error when nothing unifies
+        # check models are available
+        model_registry = ModelRegistry().register_dynamically_from(context_path)
+        unified_model_specs = []
+        for model_selector in model_selectors:
+            unified_model_spec = model_registry.get_first_model_spec_that_unify_with(model_selector)
+            logger.info(f"Found registered model spec that unifies with {model_selector.to_string()} "
+                        f"-> {unified_model_spec}")
+            unified_model_specs.append(unified_model_spec)
+        # check backends are available
+        backend_registry = BackendRegistry.from_packaged_and_cwd_files()
+        for unified_model_spec in unified_model_specs:
+            backend_selector = unified_model_spec.backend
+            if not backend_registry.is_supported(backend_selector):
+                raise ValueError(f"Specified model backend '{backend_selector}' not found in backend registry.")
+            logger.info(f"Found registry entry for backend {backend_selector} "
+                        f"-> {backend_registry.get_first_file_matching(backend_selector)}")
+        # ready to rumble, do the heavy lifting only now, that is, loading the additional modules
         player_models = []
-        for model_spec in model_specs:
-            model = backends.get_model_for(model_spec)
+        for unified_model_spec in unified_model_specs:
+            logger.info(f"Attempt to load {unified_model_spec.model_name} model "
+                        f"using backend {unified_model_spec.backend}")
+            backend = backend_registry.get_backend_for(unified_model_spec.backend)
+            model = backend.get_model_for(unified_model_spec)
             model.set_gen_args(**gen_args)  # todo make this somehow available in generate method?
+            logger.info(f"Successfully loaded {unified_model_spec.model_name} model")
             player_models.append(model)
 
-        game_registry = GameRegistry.load_from_directories_or_file(context_path)
-        game_specs = game_registry.get_game_specs_that_unify_with(game_selector)
         for game_spec in game_specs:
             game_benchmark = GameBenchmark.load_from_spec(game_spec, instances_name=instances_name)
             logger.info(
-                f'Running {game_spec["game_name"]} (models={player_models if player_models is not None else "see experiment configs"})')
+                f'Running {game_spec["game_name"]} '
+                f'(models={player_models if player_models is not None else "see experiment configs"})')
             stdout_logger.info(f"Running game {game_spec['game_name']}")
             if experiment_name:  # leaving this as-is for now, needs discussion conclusions
                 logger.info("Only running experiment: %s", experiment_name)
@@ -177,12 +218,12 @@ def cli(args: argparse.Namespace):
         elif args.mode == "models":
             list_models(args.context, args.verbose)
         elif args.mode == "backends":
-            ...
+            list_backends(args.verbose)
         else:
             print(f"Cannot list {args.mode}. Choose an option documented at 'list -h'.")
     if args.command_name == "run":
         run(args.context, args.game,
-            model_specs=backends.ModelSpec.from_strings(args.models),
+            model_selectors=backends.ModelSpec.from_strings(args.models),
             gen_args=read_gen_args(args),
             experiment_name=args.experiment_name,
             instances_name=args.instances_name,

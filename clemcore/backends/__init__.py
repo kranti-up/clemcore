@@ -3,7 +3,8 @@ import importlib
 import inspect
 import json
 import os
-from typing import Dict
+import importlib.resources as importlib_resources
+from typing import Dict, List
 import clemcore.utils.file_utils as file_utils
 from clemcore.backends.model_registry import ModelSpec, ModelRegistry, Model, HumanModel, CustomResponseModel
 
@@ -58,55 +59,6 @@ class Backend(abc.ABC):
         return f"{self.__class__.__name__}"
 
 
-_backend_registry: Dict[str, Backend] = dict()  # we store references to the class constructor
-
-
-def _load_model_for(model_spec: ModelSpec) -> Model:
-    """Load a model backend class based on the passed ModelSpec.
-    Registers backend if it is not already registered.
-    Args:
-        model_spec: The ModelSpec specifying the model to load the backend class for.
-    Returns:
-        The Model subclass for the model specified in the passed ModelSpec.
-    """
-    backend_name = model_spec.backend
-    if backend_name not in _backend_registry:
-        _register_backend(backend_name)
-    backend_cls = _backend_registry[backend_name]
-    return backend_cls.get_model_for(model_spec)
-
-
-def _register_backend(backend_name: str):
-    """Dynamically loads the Backend in the file with name <backend_name>_api.py into the _backend_registry.
-    Raises an exception if no such file exists or the Backend class could not be found.
-    Args:
-        backend_name: The <backend_name> prefix of the <backend_name>_api.py file.
-    Returns:
-        The Backend subclass for the passed backend name.
-    Raises:
-        FileNotFoundError: Will be raised if no backend python file with the passed name can be found in the backends
-            directory.
-        LookupError: Will be raised if the backend python file with the passed name does not contain exactly one Backend
-            subclass.
-    """
-    backends_root = os.path.join(file_utils.clemcore_root(), "backends")
-    backend_module = f"{backend_name}_api"
-    backend_path = os.path.join(backends_root, f"{backend_module}.py")
-    if not os.path.isfile(backend_path):
-        raise FileNotFoundError(f"The file '{backend_path}' does not exist. "
-                                f"Create such a backend file or check the backend_name '{backend_name}'.")
-    module = importlib.import_module(f"backends.{backend_module}")
-    backend_subclasses = inspect.getmembers(module, predicate=is_backend)
-    if len(backend_subclasses) == 0:
-        raise LookupError(f"There is no Backend defined in {backend_module}. "
-                          f"Create such a class and try again or check the backend_name '{backend_name}'.")
-    if len(backend_subclasses) > 1:
-        raise LookupError(f"There is more than one Backend defined in {backend_module}.")
-    _, backend_cls = backend_subclasses[0]
-    _backend_registry[backend_name] = backend_cls()
-    return backend_cls
-
-
 def is_backend(obj):
     """Check if an object is a Backend child class (instance).
     Args:
@@ -117,6 +69,126 @@ def is_backend(obj):
     if inspect.isclass(obj) and issubclass(obj, Backend):
         return True
     return False
+
+
+def to_backend_name(file_name: str):
+    return file_name.replace("_api.py", "")
+
+
+def is_backend_file(file_name: str):
+    return file_name.endswith("_api.py")
+
+
+class BackendRegistry:
+
+    def __init__(self, backend_files: List):
+        self._backends_files = backend_files
+        # for now, special handling of mock and terminal inputs (should be rather integrated via backends)
+        self._backends_files.append({
+            "backend": "_player_human",
+            "file_name": "_internal",
+            "file_path": "_internal",
+            "lookup_source": "packaged"
+        })
+        self._backends_files.append({
+            "backend": "_player_programmed",
+            "file_name": "_internal",
+            "file_path": "_internal",
+            "lookup_source": "packaged"
+        })
+
+    def __len__(self):
+        return len(self._backends_files)
+
+    def __iter__(self):
+        return iter(self._backends_files)
+
+    def is_supported(self, backend_name: str):
+        for backend_file in self._backends_files:
+            if backend_file["backend"] == backend_name:
+                return True
+        return False
+
+    def get_first_file_matching(self, backend_selector: str):
+        for backend_file in self._backends_files:
+            if backend_file["backend"] == backend_selector:
+                return backend_file
+        raise ValueError(f"No registered backend file found for selector={backend_selector}")
+
+    @classmethod
+    def from_packaged_and_cwd_files(cls) -> "BackendRegistry":
+        """
+        Lookup _api.py files in the following locations:
+        (1) Lookup in current working directory (relative to script execution)
+        (2) Lookup in the packaged clemcore backends module
+        Backends found in the (1) are favored over (2) allowing to 'overwrite' them.
+        :return: backend registry with file path to backends to be dynamically loaded
+        """
+        backend_files = []
+        for file in os.listdir():
+            if is_backend_file(file):
+                backend_files.append({"backend": to_backend_name(file),
+                                      "file_name": file,
+                                      "file_path": os.path.join(os.getcwd(), file),
+                                      "lookup_source": "cwd"})
+        for file in importlib_resources.files(__package__).iterdir():  # __package__ already points to "backends"
+            if is_backend_file(file.name):
+                backend_files.append({"backend": to_backend_name(file.name),
+                                      "file_name": file.name,
+                                      "file_path": str(file),
+                                      "lookup_source": "packaged"})
+
+        return cls(backend_files)
+
+    def get_backend_for(self, backend_selector: str) -> Backend:
+        """Dynamically loads the Backend from the first file that matches the name <backend_selector>_api.py.
+        Raises an exception if no such file exists or the Backend class could not be found.
+        Args:
+            backend_selector: The <backend_selector> prefix of the <backend_selector>_api.py file.
+        Returns:
+            The Backend subclass for the passed backend name.
+        Raises:
+            FileNotFoundError: Will be raised if no backend python file with the passed name can be found in the backends
+                directory.
+            LookupError: Will be raised if the backend python file with the passed name does not contain exactly one Backend
+                subclass.
+        """
+        # for now, special handling of mock and terminal inputs (should be rather integrated via backends)
+        if backend_selector == "_player_human":
+            return HumanModelBackend()
+        if backend_selector == "_player_programmed":
+            return CustomResponseModelBackend()
+
+        backend_file = self.get_first_file_matching(backend_selector)
+        if backend_file["lookup_source"] == "packaged":
+            module = importlib.import_module(backend_file["file_name"], __package__)
+        else:
+            module = importlib.import_module(backend_file["file_path"])
+        backend_subclasses = inspect.getmembers(module, predicate=is_backend)
+        if len(backend_subclasses) == 0:
+            raise LookupError(f"There is no Backend defined in {module}. "
+                              f"Create such a class and try again or "
+                              f"check the backend selector '{backend_selector}'.")
+        if len(backend_subclasses) > 1:
+            raise LookupError(f"There is more than one Backend defined in {module}.")
+        _, backend_cls = backend_subclasses[0]
+        return backend_cls()
+
+
+class HumanModelBackend(Backend):
+
+    def get_model_for(self, model_spec: ModelSpec) -> Model:
+        if model_spec.is_human():
+            return HumanModel(model_spec)
+        raise ValueError(f"HumanModelBackend cannot get model for {model_spec.to_string()}")
+
+
+class CustomResponseModelBackend(Backend):
+
+    def get_model_for(self, model_spec: ModelSpec) -> Model:
+        if model_spec.is_programmatic():
+            return CustomResponseModel(model_spec)
+        raise ValueError(f"CustomResponseModelBackend cannot get model for {model_spec.to_string()}")
 
 
 class ContextExceededError(Exception):
