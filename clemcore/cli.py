@@ -47,19 +47,18 @@ def list_models(verbose: bool):
             print(wrapper.fill("\nModelSpec: " + model_spec.to_string()))
 
 
-def list_games(context_path: str, verbose: bool):
+def list_games(verbose: bool):
     """List all games specified in the game registries.
     Only loads those for which master.py can be found in the specified path.
     See game registry doc for more infos (TODO: add link)
     TODO: add filtering options to see only specific games
     """
-    print("Listing all available games")
-    game_registry = GameRegistry.load_from_directories_or_file(context_path)
+    print("Listing all available games (use -v option to see the whole specs)")
+    game_registry = GameRegistry.from_directories_and_cwd_files()
     if not game_registry:
-        print("No clemgames found under context path:", context_path)
-        print("Make sure that your clemgame directory have a clemgame.json")
-        print("or register them with 'clem register <your-game-directory>'.")
+        print("No clemgames found.")
         return
+    print(f"Found '{len(game_registry)}' game specs:")
     wrapper = textwrap.TextWrapper(initial_indent="\t", width=70, subsequent_indent="\t")
     for game_spec in game_registry:
         game_name = f'{game_spec["game_name"]}:\n'
@@ -72,11 +71,10 @@ def list_games(context_path: str, verbose: bool):
             print(game_name, wrapper.fill(game_spec["description"]))
 
 
-def run(context_path: str, game_selector: Union[str, Dict, GameSpec], model_selectors: List[backends.ModelSpec],
+def run(game_selector: Union[str, Dict, GameSpec], model_selectors: List[backends.ModelSpec],
         gen_args: Dict, experiment_name: str = None, instances_name: str = None, results_dir: str = None):
     """Run specific model/models with a specified clemgame.
     Args:
-        context_path: To look for clemgames.
         game_selector: Name of the game, matching the game's name in the game registry, OR GameSpec-like dict, OR GameSpec.
         model_selectors: One or two selectors for the models that are supposed to play the games.
         gen_args: Text generation parameters for the backend; output length and temperature are implemented for the
@@ -87,7 +85,7 @@ def run(context_path: str, game_selector: Union[str, Dict, GameSpec], model_sele
     """
     try:
         # check games first
-        game_registry = GameRegistry.load_from_directories_or_file(context_path)
+        game_registry = GameRegistry.from_directories_and_cwd_files()
         game_specs = game_registry.get_game_specs_that_unify_with(game_selector)  # throws error when nothing unifies
         # check models are available
         model_registry = ModelRegistry.from_packaged_and_cwd_files()
@@ -134,11 +132,9 @@ def run(context_path: str, game_selector: Union[str, Dict, GameSpec], model_sele
         logger.error(e, exc_info=True)
 
 
-def score(context_path: str, game_selector: Union[str, Dict, GameSpec],
-          experiment_name: str = None, results_dir: str = None):
+def score(game_selector: Union[str, Dict, GameSpec], experiment_name: str = None, results_dir: str = None):
     """Calculate scores from a game benchmark run's records and store score files.
     Args:
-        context_path: To look for clemgames.
         game_selector: Name of the game, matching the game's name in the game registry, OR GameSpec-like dict, OR GameSpec.
         experiment_name: Name of the experiment to score. Corresponds to the experiment directory in each player pair
             subdirectory in the results directory.
@@ -150,7 +146,7 @@ def score(context_path: str, game_selector: Union[str, Dict, GameSpec],
     if experiment_name:
         logger.info("Only scoring experiment: %s", experiment_name)
 
-    game_registry = GameRegistry.load_from_directories_or_file(context_path)
+    game_registry = GameRegistry.from_directories_and_cwd_files()
     game_specs = game_registry.get_game_specs_that_unify_with(game_selector)
     for game_spec in game_specs:
         try:
@@ -166,11 +162,9 @@ def score(context_path: str, game_selector: Union[str, Dict, GameSpec],
             logger.error(e, exc_info=True)
 
 
-def transcripts(context_path: str, game_selector: Union[str, Dict, GameSpec],
-                experiment_name: str = None, results_dir: str = None):
+def transcripts(game_selector: Union[str, Dict, GameSpec], experiment_name: str = None, results_dir: str = None):
     """Create episode transcripts from a game benchmark run's records and store transcript files.
     Args:
-        context_path: To look for clemgames.
         game_selector: Name of the game, matching the game's name in the game registry, OR GameSpec-like dict, OR GameSpec.
         experiment_name: Name of the experiment to score. Corresponds to the experiment directory in each player pair
             subdirectory in the results directory.
@@ -181,7 +175,7 @@ def transcripts(context_path: str, game_selector: Union[str, Dict, GameSpec],
     if experiment_name:
         logger.info("Only transcribing experiment: %s", experiment_name)
 
-    game_registry = GameRegistry.load_from_directories_or_file(context_path)
+    game_registry = GameRegistry.from_directories_and_cwd_files()
     game_specs = game_registry.get_game_specs_that_unify_with(game_selector)
     for game_spec in game_specs:
         try:
@@ -211,7 +205,7 @@ def read_gen_args(args: argparse.Namespace):
 def cli(args: argparse.Namespace):
     if args.command_name == "list":
         if args.mode == "games":
-            list_games(args.context, args.verbose)
+            list_games(args.verbose)
         elif args.mode == "models":
             list_models(args.verbose)
         elif args.mode == "backends":
@@ -219,16 +213,16 @@ def cli(args: argparse.Namespace):
         else:
             print(f"Cannot list {args.mode}. Choose an option documented at 'list -h'.")
     if args.command_name == "run":
-        run(args.context, args.game,
+        run( args.game,
             model_selectors=backends.ModelSpec.from_strings(args.models),
             gen_args=read_gen_args(args),
             experiment_name=args.experiment_name,
             instances_name=args.instances_name,
             results_dir=args.results_dir)
     if args.command_name == "score":
-        score(args.context, args.game, experiment_name=args.experiment_name, results_dir=args.results_dir)
+        score(args.game, experiment_name=args.experiment_name, results_dir=args.results_dir)
     if args.command_name == "transcribe":
-        transcripts(args.context, args.game, experiment_name=args.experiment_name, results_dir=args.results_dir)
+        transcripts(args.game, experiment_name=args.experiment_name, results_dir=args.results_dir)
 
 
 """
@@ -285,17 +279,9 @@ def main():
     list_parser.add_argument("mode", choices=["games", "models", "backends"],
                              default="games", nargs="?", type=str,
                              help="Choose to list available games, models or backends. Default: games")
-    list_parser.add_argument("context", default=".", nargs="?", type=str,
-                             help="A path to a directory that contains a clemgame or game registry file. "
-                                  "Can also be called directly from within a clemgame directory with '.'. "
-                                  "Default: . (dot).")
     list_parser.add_argument("-v", "--verbose", action="store_true")
 
     run_parser = sub_parsers.add_parser("run", formatter_class=argparse.RawTextHelpFormatter)
-    run_parser.add_argument("context", default=".", nargs="?", type=str,
-                            help="A path to a directory that contains a clemgame or game registry file. "
-                                 "Can also be called directly from within a clemgame directory with '.'. "
-                                 "Default: . (dot).")
     run_parser.add_argument("-m", "--models", type=str, nargs="*",
                             help="""Assumes model names supported by the implemented backends.
 
@@ -328,10 +314,6 @@ def main():
                                  "When not specified, then the results will be located in 'results'")
 
     score_parser = sub_parsers.add_parser("score")
-    score_parser.add_argument("context", default=".", nargs="?", type=str,
-                              help="A path to a directory that contains a clemgame or game registry file. "
-                                   "Can also be called directly from within a clemgame directory with '.'. "
-                                   "Default: . (dot).")
     score_parser.add_argument("-e", "--experiment_name", type=str,
                               help="Optional argument to only run a specific experiment")
     score_parser.add_argument("-g", "--game", type=str,
@@ -343,10 +325,6 @@ def main():
                                    "When not specified, then the results will be located in 'results'")
 
     transcribe_parser = sub_parsers.add_parser("transcribe")
-    transcribe_parser.add_argument("context", default=".", nargs="?", type=str,
-                                   help="A path to a directory that contains a clemgame or game registry file. "
-                                        "Can also be called directly from within a clemgame directory with '.'. "
-                                        "Default: . (dot).")
     transcribe_parser.add_argument("-e", "--experiment_name", type=str,
                                    help="Optional argument to only run a specific experiment")
     transcribe_parser.add_argument("-g", "--game", type=str,

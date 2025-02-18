@@ -132,7 +132,9 @@ class GameSpec(SimpleNamespace):
 
 class GameRegistry:
 
-    def __init__(self, game_specs: List[GameSpec]):
+    def __init__(self, game_specs: List[GameSpec] = None):
+        if game_specs is None:
+            game_specs = []
         self._game_specs = game_specs
 
     def __len__(self):
@@ -142,67 +144,65 @@ class GameRegistry:
         return iter(self._game_specs)
 
     @classmethod
-    def load_from_directories_or_file(cls, context_path: str):
-        if os.path.isfile(context_path):
-            return cls.load_from_file(context_path)
-        return cls.load_from_directories(context_path)
+    def from_directories_and_cwd_files(cls):
+        """
+        Lookup game specs in the following locations:
+        (1) Look for a (optional) game_registry.json in current working directory (relative to script execution)
+        (2) Look for sub-directories of the current working director that contain a clemgame.json (depth=2)
+        Model specs found in the (1) are listed before (2) allowing to 'favor' the ones in (1).
 
-    @classmethod
-    def load_from_directories(cls, context_path: str, max_depth=10):
+        Note:
+        Game specs defined via (1) require the 'game_path' attribute
+        while for game specs found via (2) this is set automatically.
+
+        :return: model registry with model specs
+        """
+        game_registry = cls()
+        try:
+            game_registry_path = os.path.join(os.getcwd(), "game_registry.json")
+            with open(game_registry_path, encoding='utf-8') as f:
+                game_registry.register_from_list(json.load(f), game_registry_path)
+        except Exception as e:
+            logger.debug("File lookup failed with exception: %s", e)
+        game_registry.register_from_directories(os.getcwd())
+        return game_registry
+
+    def register_from_list(self, game_specs: List[Dict], lookup_source: str = None) -> "GameRegistry":
+        for game_spec_dict in game_specs:
+            try:
+                if lookup_source and ("lookup_source" not in game_spec_dict):
+                    game_spec_dict["lookup_source"] = lookup_source
+                game_spec = GameSpec.from_dict(game_spec_dict)
+                self._game_specs.append(game_spec)
+            except Exception as e:
+                logger.warning("Game spec could not be loaded because: %s", e)
+        return self
+
+    def register_from_directories(self, context_path: str, max_depth=3):
+        game_candidates = collections.deque([(context_path, 0)])
+
         def add_subdirectories_as_candidates(dir_path):
             for current_file in os.listdir(dir_path):
                 file_path = os.path.join(current_directory, current_file)
-                if os.path.isdir(file_path) and not current_file.startswith("."):  # hidden dir
+                if os.path.isdir(file_path):
                     game_candidates.append((file_path, depth + 1))
 
-        game_specs = []
-        game_candidates = collections.deque([(context_path, 0)])
         while game_candidates:
             current_directory, depth = game_candidates.popleft()
             if depth > max_depth:
-                continue  # Early stopping to prevent infinite lookups
+                continue  # Early stopping to prevent long lookups
+            candidate_file_path = os.path.join(current_directory, "clemgame.json")
             try:
-                game_spec = GameSpec.from_directory(current_directory)
-                game_specs.append(game_spec)
+                if os.path.exists(candidate_file_path):
+                    game_spec = GameSpec.from_directory(current_directory)
+                    self._game_specs.append(game_spec)
+                    continue  # if clem module found, then do not look further
                 add_subdirectories_as_candidates(current_directory)
             except PermissionError:
                 continue  # ignore permissions errors
-            except FileNotFoundError:
-                if current_directory == ".":  # we expect that dot-dir is not necessarily a clemgame
-                    add_subdirectories_as_candidates(current_directory)
             except Exception as e:  # most likely a problem with the json file
-                stdout_logger.warning("Lookup failed at '%s' with exception: %s",
-                                      current_directory, e)
-        return cls(game_specs)
-
-    @classmethod
-    def load_from_file(cls, file_path: str = None, is_mandatory=True):
-        """Load the game registry.
-        Handled as module-level variable.
-        Args:
-            file_path: The path to the game registry JSON file. Optional: If not passed, default path is used.
-            is_mandatory: If True, a FileNotFoundError is raised if the game registry JSON file does not exist at the
-                path specified in _game_registry_path (or the default path, if nothing is passed to _game_registry_path).
-        Raises:
-            FileNotFoundError: If True is passed to is_mandatory, FileNotFoundError is raised if the game registry JSON file
-                does not exist at the path specified in _game_registry_path (or the default path, if nothing is passed to
-                _game_registry_path).
-        """
-        game_specs = []
-        if not file_path:
-            file_path = os.path.join(file_utils.clemcore_root(), "clemgame", "game_registry.json")
-        if not os.path.isfile(file_path):
-            if is_mandatory:
-                raise FileNotFoundError(f"The file game registry at '{file_path}' does not exist. "
-                                        f"Create game registry as a game_registry.json file and try again.")
-            else:
-                return  # do nothing
-        with open(file_path, encoding='utf-8') as gr:
-            _game_listing = json.load(gr)
-            for _game_entry in _game_listing:
-                _game_spec: GameSpec = GameSpec.from_dict(_game_entry)
-                game_specs.append(_game_spec)
-        return cls(game_specs)
+                stdout_logger.warning("Lookup failed at '%s' with exception: %s", candidate_file_path, e)
+        return self
 
     def get_game_specs_that_unify_with(self, game_selector: Union[str, Dict, GameSpec]) -> List[GameSpec]:
         """Select a list of GameSpecs from the game registry by unifying game spec dict or game name.
