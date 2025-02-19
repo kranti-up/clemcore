@@ -164,7 +164,7 @@ class GameRegistry:
                 game_registry.register_from_list(json.load(f), game_registry_path)
         except Exception as e:
             logger.debug("File lookup failed with exception: %s", e)
-        game_registry.register_from_directories(os.getcwd())
+        game_registry.register_from_directories(os.getcwd(), 0)
         return game_registry
 
     def register_from_list(self, game_specs: List[Dict], lookup_source: str = None) -> "GameRegistry":
@@ -175,34 +175,27 @@ class GameRegistry:
                 game_spec = GameSpec.from_dict(game_spec_dict)
                 self._game_specs.append(game_spec)
             except Exception as e:
-                logger.warning("Game spec could not be loaded because: %s", e)
+                stdout_logger.warning("Game spec could not be loaded because: %s", e)
         return self
 
-    def register_from_directories(self, context_path: str, max_depth=3):
-        game_candidates = collections.deque([(context_path, 0)])
-
-        def add_subdirectories_as_candidates(dir_path):
-            for current_file in os.listdir(dir_path):
+    def register_from_directories(self, current_directory: str, depth, max_depth=3):
+        # deep first search to keep order of sorted directory names
+        if depth > max_depth:
+            return
+        candidate_file_path = os.path.join(current_directory, "clemgame.json")
+        try:
+            if os.path.exists(candidate_file_path):
+                game_spec = GameSpec.from_directory(current_directory)
+                self._game_specs.append(game_spec)
+                return
+            for current_file in sorted(os.listdir(current_directory)):
                 file_path = os.path.join(current_directory, current_file)
-                if os.path.isdir(file_path):
-                    game_candidates.append((file_path, depth + 1))
-
-        while game_candidates:
-            current_directory, depth = game_candidates.popleft()
-            if depth > max_depth:
-                continue  # Early stopping to prevent long lookups
-            candidate_file_path = os.path.join(current_directory, "clemgame.json")
-            try:
-                if os.path.exists(candidate_file_path):
-                    game_spec = GameSpec.from_directory(current_directory)
-                    self._game_specs.append(game_spec)
-                    continue  # if clem module found, then do not look further
-                add_subdirectories_as_candidates(current_directory)
-            except PermissionError:
-                continue  # ignore permissions errors
-            except Exception as e:  # most likely a problem with the json file
-                stdout_logger.warning("Lookup failed at '%s' with exception: %s", candidate_file_path, e)
-        return self
+                if os.path.isdir(file_path) and not file_path.startswith("."):
+                    self.register_from_directories(file_path, depth + 1, max_depth)
+        except PermissionError:
+            pass  # ignore
+        except Exception as e:  # most likely a problem with the json file
+            stdout_logger.warning("Lookup failed at '%s' with exception: %s", candidate_file_path, e)
 
     def get_game_specs_that_unify_with(self, game_selector: Union[str, Dict, GameSpec]) -> List[GameSpec]:
         """Select a list of GameSpecs from the game registry by unifying game spec dict or game name.

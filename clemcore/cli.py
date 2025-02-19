@@ -213,7 +213,7 @@ def cli(args: argparse.Namespace):
         else:
             print(f"Cannot list {args.mode}. Choose an option documented at 'list -h'.")
     if args.command_name == "run":
-        run( args.game,
+        run(args.game,
             model_selectors=backends.ModelSpec.from_strings(args.models),
             gen_args=read_gen_args(args),
             experiment_name=args.experiment_name,
