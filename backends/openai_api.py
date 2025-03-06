@@ -104,8 +104,81 @@ class OpenAIModel(backends.Model):
                                                                messages=prompt,
                                                                temperature=1)
         else:
-            if respformat:
+            if json_schema:
+                api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
+                                                            messages=prompt,
+                                                            temperature=self.get_temperature(),
+                                                            max_tokens=self.get_max_tokens(),
+                                                            tools=[json_schema],
+                                                            tool_choice="auto"
+                                                            )
+                if (
+                    api_response is None
+                    or api_response.choices is None
+                    or len(api_response.choices) == 0
+                    or api_response.choices[0].message is None
+                    #or (api_response.choices[0].message.tool_calls is None and not api_response.choices[0].message.content)
+                ):
+                    raise ValueError(f"Invalid API response {api_response}")
 
+                #logger.info(f"1. api_response-> {api_response}")
+                message = api_response.choices[0].message
+
+                if message.role != "assistant":  # safety check
+                    raise AttributeError("Response message role is " + message.role + " but should be 'assistant'")
+
+                try:
+                    tool_calls = (
+                        api_response.choices[0].message.tool_calls
+                        if hasattr(api_response.choices[0].message, "tool_calls")
+                        else []
+                    )
+                    if tool_calls:
+                        function_call = (
+                            tool_calls[0].function
+                            if hasattr(tool_calls[0], "function")
+                            else None
+                        )
+
+                        if function_call:
+                            arguments = (
+                                function_call.arguments
+                                if hasattr(function_call, "arguments")
+                                else None
+                            )
+                            if arguments:
+                                response = json.loads(api_response.json())
+                                response_text = arguments  # tool_output_dict
+                    else:
+                        logger.error(
+                            f"No tool_calls inside response message: api_response = {api_response}"
+                        )
+                        response_text = message.content.strip()
+                        response = json.loads(api_response.json())
+
+                    '''
+                    if not tool_calls:
+                        raise ValueError("No tool_calls inside response message")
+                    
+                    function_call = tool_calls[0].function if hasattr(tool_calls[0], 'function') else None
+        
+                    
+                    if not function_call:
+                        raise ValueError("No function inside tool_calls")
+                    
+                    arguments = function_call.arguments if hasattr(function_call, 'arguments') else None
+                    
+                    if not arguments:
+                        raise ValueError("No arguments inside function call")
+                    
+                    #tool_output_dict = json.loads(arguments)  # Convert JSON string to Python dictionary
+                    response = json.loads(api_response.json()) 
+                    response_text = arguments#tool_output_dict
+                    '''
+                except (IndexError, KeyError, json.JSONDecodeError) as e:
+                    raise ValueError(f"Error while extracting tool output: {e}")
+                
+            elif respformat:
                 use_format = []
                 for rformat in respformat:
                     uformat = {"type": "function", "function": rformat}
@@ -122,26 +195,18 @@ class OpenAIModel(backends.Model):
                                                             #        "json_schema": respformat
                                                             #    }
                                                             )
-                #logger.info(f"1. api_response-> {api_response}")                
+                #logger.info(f"1. api_response-> {api_response}")                 
 
-            elif json_schema:
-                use_json_schema = {}
-                if "name" not in json_schema:
-                    use_json_schema["name"] = "response_format_schema"
-                    use_json_schema["schema"] = json_schema
+                message = api_response.choices[0].message
+                if message.role != "assistant":  # safety check
+                    raise AttributeError("Response message role is " + message.role + " but should be 'assistant'")
+                response = json.loads(api_response.json())        
+
+                if message.content is not None:
+                    response_text = message.content.strip()
                 else:
-                    use_json_schema = json_schema
-
-                api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
-                                                            messages=prompt,
-                                                            temperature=self.get_temperature(),
-                                                            max_tokens=self.get_max_tokens(),
-                                                            #response_format={'type': 'json_object'},
-                                                            response_format={
-                                                                "type": "json_schema",
-                                                                "json_schema": use_json_schema
-                                                            }
-                                                            )
+                    #response_text = message.function_call
+                    response_text = message.tool_calls[0]
 
             else:
                 api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
@@ -150,15 +215,11 @@ class OpenAIModel(backends.Model):
                                                             max_tokens=self.get_max_tokens()
                                                             )                
                 #logger.info(f"2. api_response-> {api_response}")
-        message = api_response.choices[0].message
-        if message.role != "assistant":  # safety check
-            raise AttributeError("Response message role is " + message.role + " but should be 'assistant'")
-        response = json.loads(api_response.json())        
+                message = api_response.choices[0].message
+                if message.role != "assistant":  # safety check
+                    raise AttributeError("Response message role is " + message.role + " but should be 'assistant'")
+                response = json.loads(api_response.json())        
 
-        if message.content is not None:
-            response_text = message.content.strip()
-        else:
-            #response_text = message.function_call
-            response_text = message.tool_calls[0]
+                response_text = message.content.strip()
 
         return prompt, response, response_text

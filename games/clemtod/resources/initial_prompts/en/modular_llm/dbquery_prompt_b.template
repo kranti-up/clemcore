@@ -1,0 +1,26 @@
+TASK:
+1. Review the previous state and new user input
+2. Update the conversation flow if necessary
+3. Identify missing or unclear information
+4. All responses must strictly adhere to the schema. Include all required fields
+
+RESPONSE FORMAT:
+1. For proceeding with the booking:
+{
+   "status": "validate-booking",
+   "details": {FILLED SLOTS}
+}
+
+2. For follow-up/acknowledgement (The FOLLOW-UP MESSAGE must be a concise string.):
+{
+   "status": "follow-up",
+   "details": FOLLOW-UP MESSAGE
+}
+
+3. For querying database:
+{
+   "status": "db-query",
+   "details": {FILLED SLOTS}
+}
+
+DATABASE RETRIEVAL RESULTS:
