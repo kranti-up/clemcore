@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, List
 from games.clemtod.dialogue_systems.basedsystem import DialogueSystem
 from games.clemtod.dialogue_systems.monolithicsys.monollm import MonoLLM
 from games.clemtod.dialogue_systems.monolithicsys.players import MonoLLMSpeaker
@@ -9,8 +9,8 @@ class MONODialogueSystem(DialogueSystem):
     def __init__(self, model_name, model_spec, prompts_dict, resp_json_schema, **kwargs):
         super().__init__(**kwargs)
 
-        monollm_player = MonoLLMSpeaker(model_spec, "monolithic_llm", "", {})
-        player_dict = {"monollm_player": monollm_player}
+        self.monollm_player = MonoLLMSpeaker(model_spec, "monolithic_llm", "", {})
+        player_dict = {"monollm_player": self.monollm_player}
 
         self.monollm = MonoLLM(model_name, prompts_dict, player_dict, resp_json_schema)
 
@@ -20,3 +20,7 @@ class MONODialogueSystem(DialogueSystem):
     def get_booking_data(self) -> Dict:
         """Returns generated slots."""
         return self.monollm.get_booking_data()
+
+
+    def get_player_prompt(self) -> List:
+        return self.monollm_player.history

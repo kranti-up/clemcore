@@ -5,8 +5,9 @@ TASK:
 2. Identify and extract relevant slots (e.g., name, area, time, date, type of cuisine, number of people, type of hotel) based on the task context.
 3. Focus on extracting the most concise and precise values for each slot, avoiding unnecessary descriptive phrases or additional words.
 4. Return the extracted slots in a structured format.
-5. Keep all data within slot_extraction as a flat structure (no nested sub-dictionaries).
-6. Return only the formatted data—do not add explanations, comments, or additional information.
+5. Keep all data within slot_extraction as a flat structure (no nested sub-dictionaries) and the response must be a valid JSON.
+7. Return only the formatted data—do not add explanations, comments, or additional information.
+
 
 
 RESPONSE FORMAT:

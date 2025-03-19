@@ -201,6 +201,7 @@ def cleanupanswer(prompt_answer: str) -> str:
         #return prompt_answer
     except Exception as error:
         logger.error(f"Error in cleanupanswer: {error}")
+        return error
     return prompt_answer
   
 

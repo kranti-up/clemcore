@@ -140,6 +140,7 @@ class DMSystemMaster(GameMaster):
             "prompts_dict": data["prompts"],
             "resp_json_schema": self.json_schema,
             "liberal_processing": data["liberal_processing"],
+            "booking_mandatory_keys": self.booking_mandatory_keys,
         }
         self.dsystem = get_dialogue_system(data["tsystem"], **dialogue_params)
 
@@ -277,6 +278,7 @@ class DMSystemMaster(GameMaster):
 
     def turn(self) -> None:
         """Perform a game turn, utterances by A and B (firstlast specific)."""
+        global DSYSTEM_ERROR_MESSAGE
         # TODO: Where to add violated requests?
         # get player A's reply and add it to its history
         status, response, _ = self._triggerplayer("a")
@@ -483,6 +485,7 @@ class DMSystemMaster(GameMaster):
     def _isvalidturn(self, player: str, answer: str) -> bool:
         """Check if answer is valid and correct (firstlast specific)."""
         # parse answer
+        global DSYSTEM_ERROR_MESSAGE
         response, details = self.parse(player, answer)
         logger.info(
             f"_isvalidturn(): player: {player}, response: {response}, details = {details}"
@@ -512,7 +515,8 @@ class DMSystemMaster(GameMaster):
 
     def _process_player_response(self, player: str, response: str) -> None:
         if player == "a":
-            if "done" in response.lower():
+            #if "done" in response.lower():
+            if response.lower().strip() in ["done", "done,", "done."]:
                 response = response.lower().strip()
                 # if response in ["done", "done,", "done."]:
                 # Being liberal in parsing the response
@@ -577,11 +581,12 @@ class DMSystemMaster(GameMaster):
             self.log_event(from_="GM", to="Player 1", action=action)
 
     def _handle_dbquery(self, details) -> bool:
+        global DSYSTEM_ERROR_MESSAGE
         num_db_queries = 0
         while num_db_queries < self.n_turns and details is not None:
             if "domain" not in details:
                 logger.error("Domain not found in the details")
-                DSYSTEM_ERROR_MESSAGE = "Domain key not found in the details"
+                DSYSTEM_ERROR_MESSAGE = "Domain is not found in the details."
                 message = f"Cannot trigger DB query as 'domain' key is not found in the response. Please stick to the names/keys mentioned in the schema."
             else:
                 logger.info(
@@ -605,7 +610,7 @@ class DMSystemMaster(GameMaster):
 
             if status is None:
                 DSYSTEM_ERROR_MESSAGE = (
-                    "DBQuery attempts exceeded the maximum number of attempts"
+                    "Failure in DB query."
                 )
                 return None, response, details
 
@@ -615,7 +620,7 @@ class DMSystemMaster(GameMaster):
             num_db_queries += 1
 
         DSYSTEM_ERROR_MESSAGE = (
-            "DBQuery attempts exceeded the maximum number of attempts"
+            "DBQuery attempts exceeded the maximum number of attempts."
         )
         return None, None, None
 
@@ -623,6 +628,7 @@ class DMSystemMaster(GameMaster):
         if not isinstance(details, dict):
             return None, None, details
 
+        global DSYSTEM_ERROR_MESSAGE
         num_booking_attempts = 0
 
         while num_booking_attempts < self.n_turns and details is not None:
@@ -654,7 +660,7 @@ class DMSystemMaster(GameMaster):
             status, response, details = self._triggerplayer("b")
             if status is None:
                 DSYSTEM_ERROR_MESSAGE = (
-                    "Booking attempts exceeded the maximum number of attempts"
+                    "Failure in booking."
                 )
                 return None, response, details
 
@@ -664,7 +670,7 @@ class DMSystemMaster(GameMaster):
             num_booking_attempts += 1
 
         DSYSTEM_ERROR_MESSAGE = (
-            "Booking attempts exceeded the maximum number of attempts"
+            "Booking attempts exceeded the maximum number of attempts."
         )
         return None, None, None
 

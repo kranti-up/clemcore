@@ -119,6 +119,10 @@ class ProcessFuncCallResp:
             except Exception as error:
                 logger.error(f"Error in _parse_response(json_loads):response: {response} error: {error}")
                 return None, f"Error in JSON loading the response, error: {error}"
+        
+        if not isinstance(response, dict):
+            logger.error(f"Invalid response type: {type(response)}, expected: dict")
+            return None, f"Invalid response type: {type(response)}, expected: dict"
 
         if "status" not in response or "details" not in response:
             logger.error(f"Missing status/details in response")
@@ -127,8 +131,23 @@ class ProcessFuncCallResp:
         status = response["status"]
         details = response["details"]
 
+        if not status or not details:
+            logger.error(f"No values for status/details in response")
+            return None, "No values for status/details in response"
+        
         if status == "follow-up":
+            if not isinstance(details, str):
+                logger.error(f"Invalid details type in response: {details}, {type(details)}. Expected str.")
+                return None, f"Invalid details type in response: {details}, {type(details)}. Expected str."
             return json.dumps({"status": status, "details": details}), None
+
+        elif status not in ["db-query", "validate-booking"]:
+            logger.error(f"Invalid status in response: {status}")
+            return None, f"Invalid status in response: {status}"
+        
+        if not isinstance(details, dict):
+            logger.error(f"Invalid details type in response: {details}, {type(details)}. Expected dict.")
+            return None, f"Invalid details type in response: {details}, {type(details)}. Expected dict."
 
 
         #details should have a key: domain
@@ -172,14 +191,10 @@ class ProcessFuncCallResp:
             qdata = ["info", "book"]
 
         logger.info(f"qdata: {qdata}, use_details: {use_details}")
-        if any(qd not in use_details for qd in qdata):
-            logger.error(f"Missing {qdata} data in the use_details: {use_details}")
-            return None, f"Missing {qdata} data in the response: {use_details}"
-
 
         result = {}
         for qd in qdata:
-            domain_data = use_details.get(qd, {})
+            domain_data = use_details#.get(qd, {})
 
             if not domain_data:
                 continue
@@ -195,8 +210,8 @@ class ProcessFuncCallResp:
                 # values are converted to lower in dbquerybuilder.py
                 valid_fields = {k.lower(): v for k, v in domain_data.items() if k.lower() in model_class.__annotations__ and v is not None}
                 if not valid_fields:
-                    logger.error(f"No relevant fields related to {qd_class}:{model_class} are fetched from the model response")
-                    return None, f"No relevant fields related to {qd_class}:{model_class} are fetched from the model response"
+                    logger.error(f"No relevant fields related to {qd_class} can be fetched from the model response")
+                    return None, f"No relevant fields related to {qd_class} can be fetched from the model response"
                 result.update(valid_fields)
                 logger.info(f"Valid fields: {valid_fields}")
             else:

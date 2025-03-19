@@ -16,5 +16,6 @@ INSTRUCTIONS:
 OUTPUT FORMAT:
 1. Interaction: Respond appropriately using only the dialogue system's response and the information under TASK.
 2. Task Completion: Reply with "DONE"
+3. Use 'DONE' only (without any prefix/suffix) to confirm task completion. Do not use it in any other context.
 
 Lets begin

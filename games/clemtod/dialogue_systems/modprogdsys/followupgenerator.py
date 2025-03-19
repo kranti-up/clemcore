@@ -21,15 +21,25 @@ class FollowupGenerator:
 
     def _prepare_response_json_schema(self):
         self.json_schema_prompt = {
-                            "type": "object",
-                            "properties": {
-                                "followup_generation": {
-                                    "type": "string",
-                                    "description": "A follow up response based on the input"
-                                }
-                            },
-                            "required": ["followup_generation"]
-                            }
+            "type": "function",
+            "function": {
+                "name": "generate_followup",
+                "description": "Generate a follow-up response based on the input",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "followup_generation": {
+                            "type": "string",
+                            "description": "A follow up response based on the input"
+                        }
+                    },
+                    "required": ["followup_generation"],
+                    "additionalProperties": False      
+                },
+                "strict": True         
+            }
+        }
+
     def _setup(self) -> None:
         # If the model_name is of type "LLM", then we need to instantiate the player
         # TODO: Implement for other model types ("Custom Model", "RASA", etc.)
@@ -48,12 +58,12 @@ class FollowupGenerator:
         else:
             self.player.history.append({"role": "user", "content": message})
         '''
-        prompt, raw_answer, answer = self.player(self.player.history, turn_idx, None, None)
-        logger.info(f"Follow-up generator raw response:\n{answer}")
-        answer =  cleanupanswer(answer)
+        prompt, raw_response, raw_answer = self.player(self.player.history, turn_idx, None, None)
+        logger.info(f"Follow-up generator raw response:\n{raw_answer}")
+        answer_cleaned =  cleanupanswer(raw_answer)
         #self.player.history.append({"role": "assistant", "content": json.dumps(answer)})
 
-        return prompt, raw_answer, answer
+        return prompt, raw_response, raw_answer, answer_cleaned
 
     def get_history(self):
         return self.player.history

@@ -97,6 +97,9 @@ class DBQueryBuilder:
             if value is None or value == "" or value == [] or value == {} or value == "donotcare":
                 continue
             if isinstance(value, dict) and 'operator' in value and 'value' in value:
+                if value['operator'] not in ['=', '>', '<', '>=', '<=']:
+                    logger.error(f"Invalid operator for the key:{key}, value = {value}")
+                    return {"status": "failure", "data": None, "error": self.errormsgs["invalidoperator"], "status_response": None}
                 operator = value['operator']
                 actual_value = str(value['value']).lower()
             else:

@@ -21,23 +21,277 @@ class BookingFormatter:
         self._setup()
 
     def _prepare_response_json_schema(self):
-        db_schema = self.base_json_schema["properties"]["details"]["oneOf"][1]
-        booking_schema = self.base_json_schema["properties"]["details"]["oneOf"][2]
-        self.json_schema_prep = {
-                                "type": "object",
-                                "properties": {
-                                    "booking_query": {
-                                        "type": "object",
-                                        "description": "A dictionary containing key-value pairs formatted from the input",
-                                        "anyOf": [
-                                            db_schema,
-                                            booking_schema,                                                            
-                                        ]
+
+        self.json_schema_prompt = {
+                                    "type": "function",
+                                    "function": {
+                                        "name": "prepare_bookinhquery",
+                                        "description": "Extract structured details for restaurant, hotel, or train-related queries.",
+                                        "parameters": {
+                                            "type": "object",
+                                            "properties": {
+                                                "booking_query": {
+                                                    "type": "object",
+                                                    "description": "A dictionary containing key-value pairs extracted from the input text",
+                                                    "oneOf": [
+                                                        {
+                                                            "properties": {
+                                                                "domain": { "const": "restaurant" },
+                                                                "restaurant": {
+                                                                    "type": "object",
+                                                                    "anyOf": [
+                                                                        {
+                                                                            "properties": {
+                                                                                "food": { "type": "string" }
+                                                                            },
+                                                                            "required": ["food"]
+                                                                        },     
+                                                                        {
+                                                                            "properties": {
+                                                                                "area": { "type": "string", "enum": ["centre", "north", "east", "west", "south"]  }
+                                                                            },
+                                                                            "required": ["area"]
+                                                                        },                                                                                     
+                                                                        {
+                                                                            "properties": {
+                                                                                "pricerange": { "type": "string",
+                                                                                        "enum": ["cheap", "moderate", "expensive"] }
+                                                                            },
+                                                                            "required": ["pricerange"]
+                                                                        },  
+                                                                        {
+                                                                            "properties": {
+                                                                                "name": { "type": "string"}
+                                                                            },
+                                                                            "required": ["name"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "people": { "type": "string", "enum": ["1", "2", "3", "4", "5", "6", "7", "8"]},                                                                                
+                                                                            },
+                                                                            "required": ["people"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "day": { "type": "string", "enum": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]},
+                                                                            },
+                                                                            "required": ["day"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "time": { "type": "string", "pattern": "^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$" },
+                                                                            },
+                                                                            "required": ["time"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "phone": { "type": "string"}
+                                                                            },
+                                                                            "required": ["phone"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "postcode": { "type": "string"}
+                                                                            },
+                                                                            "required": ["postcode"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "address": { "type": "string"}
+                                                                            },
+                                                                            "required": ["address"]
+                                                                        }                                                                                                                                                                                                                              
+                                                                    ]
+                                                                }                                            
+                                                            },
+                                                            "required": ["domain", "restaurant"],
+                                                            "additionalProperties": False
+                                                        },
+                                                        {
+                                                            "properties": {
+                                                                "domain": { "const": "hotel" },
+                                                                "hotel": {
+                                                                    "type": "object",
+                                                                    "anyOf": [
+                                                                        {
+                                                                            "properties": {
+                                                                                "area": { "type": "string", "enum": ["centre", "north", "east", "west", "south"] }
+                                                                            },
+                                                                            "required": ["area"]
+                                                                        },     
+                                                                        {
+                                                                            "properties": {
+                                                                                "pricerange": { "type": "string", "enum": ["cheap", "moderate", "expensive"] }
+                                                                            },
+                                                                            "required": ["pricerange"]
+                                                                        },    
+                                                                        {
+                                                                            "properties": {
+                                                                                "type": { "type": "string", "enum": ["hotel", "guesthouse"] }
+                                                                            },
+                                                                            "required": ["type"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "internet": { "type": "string", "enum": ["yes", "no"] }
+                                                                            },
+                                                                            "required": ["internet"]
+                                                                        }, 
+                                                                        {
+                                                                            "properties": {
+                                                                                "parking": { "type": "string", "enum": ["yes", "no"] }
+                                                                            },
+                                                                            "required": ["parking"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "name": { "type": "string"}
+                                                                            },
+                                                                            "required": ["name"]
+                                                                        }, 
+                                                                        {
+                                                                            "properties": {
+                                                                                "stars": {
+                                                                                    "type": "object",
+                                                                                    "properties": {
+                                                                                        "operator": { "type": "string", "enum": ["=", ">=", "<=", ">", "<"] },
+                                                                                        "value": { "type": "string", "enum": ["1", "2", "3", "4", "5"] }
+                                                                                    },
+                                                                                    "required": ["operator", "value"],
+                                                                                    "additionalProperties": False
+                                                                                }
+                                                                            },
+                                                                            "required": ["stars"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "people": { "type": "string", "enum": ["1", "2", "3", "4", "5", "6", "7", "8"]},                                                                                
+                                                                            },
+                                                                            "required": ["people"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "day": { "type": "string", "enum": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]},
+                                                                            },
+                                                                            "required": ["day"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "stay": { "type": "string", "enum": ["1", "2", "3", "4", "5", "6", "7", "8"]},                                                                                
+                                                                            },
+                                                                            "required": ["stay"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "phone": { "type": "string"}
+                                                                            },
+                                                                            "required": ["phone"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "postcode": { "type": "string"}
+                                                                            },
+                                                                            "required": ["postcode"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "address": { "type": "string"}
+                                                                            },
+                                                                            "required": ["address"]
+                                                                        }                                                                                                                                                         
+                                                                    ]
+                                                                }
+                                                            },
+                                                            "required": ["domain", "hotel"],
+                                                            "additionalProperties": False
+                                                        },
+                                                        {
+                                                            "properties": {
+                                                                "domain": { "const": "train" },
+                                                                "train": {
+                                                                    "type": "object",
+                                                                    "anyOf": [
+                                                                        {
+                                                                            "properties": {
+                                                                                "destination": { "type": "string" }
+                                                                            },
+                                                                            "required": ["destination"]
+                                                                        },     
+                                                                        {
+                                                                            "properties": {
+                                                                                "departure": { "type": "string" }
+                                                                            },
+                                                                            "required": ["departure"]
+                                                                        },                                                                                     
+                                                                        {
+                                                                            "properties": {
+                                                                                "day": { "type": "string",
+                                                                                        "enum": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"] }
+                                                                            },
+                                                                            "required": ["day"]
+                                                                        },  
+                                                                        {
+                                                                            "properties": {
+                                                                                "arriveby": {
+                                                                                    "type": "object",
+                                                                                    "properties": {
+                                                                                        "operator": { "type": "string", "enum": ["=", ">=", "<=", ">", "<"],
+                                                                                                    "description": "A comparison operator indicating the condition (e.g., '<=' means arriving by or before a time)."
+                                                                                        },
+                                                                                        "value": { "type": "string", "pattern": "^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$",
+                                                                                                "description": "A time string formatted as HH:MM (24-hour format)."
+                                                                                        }
+                                                                                    },
+                                                                                    "required": ["operator", "value"],
+                                                                                    "additionalProperties": False
+                                                                                }
+                                                                            },
+                                                                            "required": ["arriveby"]
+                                                                        },   
+                                                                        {
+                                                                            "properties": {
+                                                                                "leaveat": {
+                                                                                    "type": "object",
+                                                                                    "properties": {
+                                                                                        "operator": { "type": "string", "enum": ["=", ">=", "<=", ">", "<"],
+                                                                                                    "description": "A comparison operator indicating the condition (e.g., '<=' means departing by or before a time)."
+                                                                                        },
+                                                                                        "value": { "type": "string", "pattern": "^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$",
+                                                                                                "description": "A time string formatted as HH:MM (24-hour format)."
+                                                                                        }
+                                                                                    },
+                                                                                    "required": ["operator", "value"],
+                                                                                    "additionalProperties": False
+                                                                                }
+                                                                            },
+                                                                            "required": ["leaveat"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "people": { "type": "string", "enum": ["1", "2", "3", "4", "5", "6", "7", "8"]},                                                                                
+                                                                            },
+                                                                            "required": ["people"]
+                                                                        },
+                                                                        {
+                                                                            "properties": {
+                                                                                "trainid": { "type": "string"}
+                                                                            },
+                                                                            "required": ["trainid"]
+                                                                        }                                                                                                                                                            
+                                                                    ]
+                                                                }
+                                                            },
+                                                            "required": ["domain", "train"],
+                                                            "additionalProperties": False
+                                                        }
+                                                    ]                                                           
+                                                }
+                                            },
+                                            "required": ["booking_query"],
+                                            "additionalProperties": False
+                                        }
                                     }
-                                },
-                                "required": ["booking_query"]
-                            }           
-  
+                                }  
 
 
     def _setup(self) -> None:
@@ -52,9 +306,10 @@ class BookingFormatter:
         message = json.dumps(utterance) if isinstance(utterance, Dict) else utterance
         self.player.history[-1]["content"] += message
 
-        prompt, raw_answer, answer = self.player(self.player.history, turn_idx, None, self.json_schema_prompt)
-        logger.info(f"DBQuery Formatter raw response:\n{answer}")
-        return prompt, raw_answer, cleanupanswer(answer)
+        prompt, raw_response, raw_answer = self.player(self.player.history, turn_idx, None, self.json_schema_prompt)
+        logger.info(f"DBQuery Formatter raw response:\n{raw_answer}")
+        answer_cleaned =  cleanupanswer(raw_answer)
+        return prompt, raw_response, raw_answer, answer_cleaned
     
     def get_history(self):
         return self.player.history

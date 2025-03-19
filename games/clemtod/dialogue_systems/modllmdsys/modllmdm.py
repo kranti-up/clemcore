@@ -3,7 +3,6 @@ import copy
 from typing import Dict
 import json
 
-import clemgame
 from clemgame import get_logger
 from games.clemtod.utils import cleanupanswer
 from games.clemtod.dialogue_systems.modllmdsys.players import ModLLMSpeaker
@@ -12,36 +11,54 @@ from games.clemtod.dialogue_systems.modprogdsys.slotextractor import SlotExtract
 from games.clemtod.dialogue_systems.modprogdsys.followupgenerator import FollowupGenerator
 from games.clemtod.dialogue_systems.modprogdsys.dbqueryformatter import DBQueryFormatter
 from games.clemtod.dialogue_systems.modprogdsys.bookingformatter import BookingFormatter
+from games.clemtod.processfunccallresp import ProcessFuncCallResp
 
 logger = get_logger(__name__)
 
 
 class ModLLMDM:
-    def __init__(self, model_name, model_spec, prompts_dict, player_dict, resp_json_schema, liberal_processing) -> None:
+    def __init__(self, model_name, model_spec, prompts_dict, player_dict, resp_json_schema, liberal_processing, booking_mandatory_keys) -> None:
         self.model_name = model_name
-        self.respformat = resp_json_schema
+        self.model_spec = model_spec
+        self.prompts_dict = prompts_dict
+
+        self.liberal_processing = liberal_processing
+        self.booking_data = {}
+        self.slotdata = {}
+        self.promptlogs = []
+        self.dhistory = []
+        self.max_reprobe = 3
+        self.cur_reprobe = 0
+
+
+        self.respformat = resp_json_schema#["schema"]
+        self.booking_mandatory_keys = booking_mandatory_keys
 
         self.player_b = player_dict["modllm_player"]
         self.player_b.history.append({"role": "user", "content": prompts_dict["prompt_b"]})
         self.turn_ss_prompt_player_b = prompts_dict["turn_ss_prompt_b"]
         self.turn_prompt_player_b = prompts_dict["turn_prompt_b"]
-
-        self.liberal_processing = liberal_processing
-        self.prompts_dict = prompts_dict
-
-        self.intentdet = IntentDetector(model_name, model_spec, prompts_dict["intent_detection"])
-        self.slotext = SlotExtractor(model_name, model_spec, prompts_dict["slot_extraction"], self.respformat["schema"])
-        self.followupgen = FollowupGenerator(model_name, model_spec, prompts_dict["followup_generation"])
-        self.dbqueryformatter = DBQueryFormatter(model_name, model_spec, prompts_dict["dbquery_formatter"], self.respformat["schema"])
-        self.bookformatter = BookingFormatter(model_name, model_spec, prompts_dict["booking_formatter"], self.respformat["schema"])
+        self._create_subsystems(model_name, model_spec, prompts_dict)
 
         self.liberalcount = {"intent": 0, "slot": 0, "follow": 0, "aggregator": 0}
         self.subsystemnamemap = {"intent_detector": "intent", "slot_extractor": "slot", 
                                  "followup_generator": "follow",
                                  "dbquery_formatter": "dbquery", "booking_formatter": "booking"}
-        self.promptlogs = []
-        self.max_reprobe = 3
-        self.cur_reprobe = 0
+        self.processresp = ProcessFuncCallResp()
+
+    def _create_subsystems(self, model_name, model_spec, prompts_dict):
+        self.intentdet = IntentDetector(model_name, model_spec, prompts_dict["intent_detection"])
+        self.slotext = SlotExtractor(model_name, model_spec, prompts_dict["slot_extraction"], self.respformat)
+        self.followupgen = FollowupGenerator(
+            model_name, model_spec, prompts_dict["followup_generation"]
+        )
+        self.dbqueryformatter = DBQueryFormatter(
+            model_name, model_spec, prompts_dict["dbquery_formatter"], self.respformat
+        )
+        self.bookingformatter = BookingFormatter(
+            model_name, model_spec, prompts_dict["booking_formatter"], self.respformat
+        )
+
 
 
     def _append_utterance(self, subsystem: str, utterance: str, role: str) -> None:
@@ -97,12 +114,36 @@ class ModLLMDM:
                     return False, None
         return False, None
     
-    def _validate_subsystem_input(self, taskinput: Dict) -> Dict:
-        if taskinput is None:
-            return {}
-        elif all(isinstance(value, dict) for value in taskinput.values()):
-            return {}
+    def _validate_subsystem_input(self, sub_system: str, taskinput: Dict) -> Dict:
+        logger.info(f"Validating Subsystem Input: {sub_system}-> {taskinput} {type(taskinput)}")
+        if taskinput is None or isinstance(taskinput, str) or isinstance(taskinput, json.decoder.JSONDecodeError):
+            return None
         else:
+            if sub_system == "intent_detector":
+                if "intent_detection" in taskinput and "domain" in taskinput:
+                    return taskinput
+                else:
+                    return None
+            elif sub_system == "slot_extractor":
+                if "slot_extraction" in taskinput:
+                    return taskinput
+                else:
+                    return None
+            elif sub_system == "followup_generator":
+                if "followup_generation" in taskinput:
+                    return taskinput
+                else:
+                    return None
+            elif sub_system == "dbquery_formatter":
+                if "dbquery_format" in taskinput:
+                    return taskinput
+                else:
+                    return None
+            elif sub_system == "booking_formatter":
+                if "booking_query" in taskinput:
+                    return taskinput
+                else:
+                    return None
             return taskinput
         
 
@@ -134,14 +175,11 @@ class ModLLMDM:
                 self.player_b.history, current_turn, None, self.respformat
             )
             logger.info(f"Player B: Subsystem Flow response\n{answer}")
-
-            answer = cleanupanswer(answer)
-            self._append_utterance(None, answer, "assistant")
-
-            try:
-                result = json.loads(answer)
-            except Exception as e:
-                result = answer
+            self.promptlogs.append({"role": "assistant", "content": f"model response before processing: {answer}"})
+            result = cleanupanswer(answer)
+            self.promptlogs.append({'role': "modllm", 'content': {'prompt': prompt, 'raw_answer': raw_answer,
+                                                                    'answer': result}})
+            self._append_utterance(None, result, "assistant")
 
             if isinstance(result, dict):
                 next_subsystem = result.get("next_subsystem", None)
@@ -177,7 +215,7 @@ class ModLLMDM:
                         self.promptlogs.append({"role": "assistant", "content": errormsg})
                         return self.promptlogs, None, errormsg
 
-                usetaskinput = self._validate_subsystem_input(taskinput)
+                usetaskinput = self._validate_subsystem_input(next_subsystem, taskinput)
 
                 if usetaskinput is None:
                     errormsg = f"Invalid Subsystem({use_subsystem}) InputData {taskinput}. Cannot continue processing."
@@ -186,8 +224,8 @@ class ModLLMDM:
                     return self.promptlogs, None, errormsg
 
 
-                prompt, raw_answer, ss_answer = subsystem_handlers[use_subsystem](usetaskinput, current_turn)
-                self.promptlogs.append({"role": f"{use_subsystem}", 'content': {'prompt': prompt, 'raw_answer': raw_answer,
+                prompt, raw_response, raw_answer_ss, ss_answer = subsystem_handlers[use_subsystem](usetaskinput, current_turn)
+                self.promptlogs.append({"role": f"{use_subsystem}", 'content': {'prompt': prompt, 'raw_answer': raw_response,
                                                                     'answer': f"Sub-system({use_subsystem}) response: {ss_answer}"}})                
                 logger.info(f"{use_subsystem} response appending to Player B\n{ss_answer}")
                 self._append_utterance(use_subsystem, ss_answer, "user")
@@ -195,5 +233,12 @@ class ModLLMDM:
                 time.sleep(0.5)                   
             else:
                 # Return the LLM response to user
-                logger.info(f"Returning the LLM response to the user\n{answer}")
-                return self.promptlogs, raw_answer, answer      
+                logger.info(f"Returning the LLM response to the user\n{result}")
+                llm_response, error = self.processresp.run(result)
+                if error:
+                    self.promptlogs.append({"role": "assistant", "content": f"error while parsing the data: {error}"})
+
+                self.promptlogs.append({'role': "modllm", 'content': {'prompt': prompt, 'raw_answer': raw_answer,
+                                                                    'answer': llm_response}})
+
+                return self.promptlogs, raw_answer, llm_response      

@@ -18,15 +18,16 @@ Given the input data (domain, intent, extracted slots, database (DB) information
    a. Responses must be concise and to the point.
    b. Avoid unnecessary elaboration or an overly conversational tone.
    c. Do not generate or fabricate any information that is not explicitly present in the DB or provided input.
-   d. Do not generate any booking confirmations on your own.
-   e. If the input contains booking confirmation, share the same without any changes.
-   f. Keep all data within followup_generation as a flat structure (no nested sub-dictionaries).   
+   d. If too many records are available, the database system returns only the first five. If the required information is not available in the returned records, apply additional filters to narrow down the results.
+   e. Do not generate any booking confirmation (reference number) on your own.
+   f. If the input contains booking confirmation (reference number), share the same without any changes.
+   g. Keep all data within followup_generation as a flat structure (no nested sub-dictionaries) and the response must be a valid JSON.
 
 
 
 RESPONSE FORMAT:
 {
-    "followup_generation": GENERATED_RESPONSE
+    "followup_generation": "FOLLOW-UP MESSAGE"
 }
 
 INPUT:

@@ -6,7 +6,7 @@ from games.clemtod.dialogue_systems.modllmdsys.players import ModLLMSpeaker
 class MODULARLLMDialogueSystem(DialogueSystem):
     """A neural network-based dialogue system implementation."""
 
-    def __init__(self, model_name, model_spec, prompts_dict, resp_json_schema, liberal_processing, **kwargs):
+    def __init__(self, model_name, model_spec, prompts_dict, resp_json_schema, liberal_processing, booking_mandatory_keys, **kwargs):
         super().__init__(**kwargs)
 
         modllm_player = ModLLMSpeaker(model_spec, "modular_llm", "", {})
