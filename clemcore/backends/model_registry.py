@@ -327,7 +327,8 @@ class Model(abc.ABC):
         return self.get_name() == other.get_name()
 
     @abc.abstractmethod
-    def generate_response(self, messages: List[Dict]) -> Tuple[Any, Any, str]:
+    #def generate_response(self, messages: List[Dict]) -> Tuple[Any, Any, str]:
+    def generate_response(self, messages: List[Dict], tool_schema: List[Dict] = None, json_schema: Dict = None) -> Tuple[Any, Any, str]:
         """Put prompt in model-specific format and get its response.
 
         Args:

@@ -1,6 +1,7 @@
 import logging
 from typing import List, Dict, Tuple, Any
 from retry import retry
+import re
 
 import json
 import openai
@@ -111,7 +112,7 @@ class GenericOpenAIModel(backends.Model):
 
     @retry(tries=3, delay=90, logger=logger)
     @ensure_messages_format
-    def generate_response(self, messages: List[Dict]) -> Tuple[str, Any, str]:
+    def generate_response(self, messages: List[Dict], tool_schema=None, json_schema=None) -> Tuple[str, Any, str]:
         """Request a generated response from the OpenAI-compatible remote API.
         Args:
             messages: A message history. For example:
@@ -126,13 +127,79 @@ class GenericOpenAIModel(backends.Model):
         """
         prompt = self.encode_messages(messages)
 
-        api_response = self.client.chat.completions.create(model=self.model_spec.model_id, messages=prompt,
-                                                           temperature=self.get_temperature(),
-                                                           max_tokens=self.get_max_tokens())
-        message = api_response.choices[0].message
-        if message.role != "assistant":  # safety check
-            raise AttributeError("Response message role is " + message.role + " but should be 'assistant'")
-        response_text = message.content.strip()
-        response = json.loads(api_response.json())
+
+        if tool_schema is None and json_schema is None:
+            api_response = self.client.chat.completions.create(model=self.model_spec.model_id, messages=prompt,
+                                                            temperature=self.get_temperature(),
+                                                            max_tokens=self.get_max_tokens())
+            message = api_response.choices[0].message
+            if message.role != "assistant":  # safety check
+                raise AttributeError("Response message role is " + message.role + " but should be 'assistant'")
+            response_text = message.content.strip()
+            response = json.loads(api_response.json())
+
+        else:
+            if tool_schema:
+                if isinstance(tool_schema, Dict):
+                    tool_format = []
+                    for data in tool_schema:
+                        uformat = {"type": "function", "function": data}
+                        tool_format.append(uformat)
+
+                api_response = self.client.chat.completions.create(
+                    model=self.model_spec.model_id,
+                    messages=prompt,
+                    temperature=self.get_temperature(),
+                    max_tokens=self.get_max_tokens(),
+                    # response_format={'type': 'json_object'}
+                    tools=tool_format,
+                )
+
+                # logger.info(f"2. api_response-> {api_response}")
+                if api_response is None:
+                    logger.info("Received None from OpenAI API, retrying...")
+                    raise ValueError("API response was None")
+
+                message = api_response.choices[0].message
+                if message.role != "assistant":  # safety check
+                    raise AttributeError(
+                        "Response message role is "
+                        + message.role
+                        + " but should be 'assistant'"
+                    )
+                response_text = message.content.strip()
+                response = json.loads(api_response.json())                
+
+                if tool_calls := message.tool_calls:
+                    response_text = tool_calls[0]
+                else:
+                    response_text = message.content.strip()
+
+                    match = re.match(
+                        r"<function=(\w+)(\{.*\})</function>", response_text
+                    )
+                    if match:
+                        function_name = match.group(1)  # Extract function name
+                        function_args_json = match.group(2)  # Extract JSON string
+                        try:
+                            function_args = json.loads(
+                                function_args_json
+                            )  # Convert to Python dictionary
+                        except json.JSONDecodeError:
+                            function_args = None  # Handle JSON parsing errors
+
+                        response_text = {
+                            "name": function_name,
+                            "parameters": function_args,
+                        }
+
+                    else:
+                        try:
+                            response_text = json.loads(response_text)
+                        except Exception as e:
+                            response_text = response_text
+
+            else:
+                raise ValueError("JSON schema handling is not available in generate_response()!")
 
         return prompt, response, response_text

@@ -85,9 +85,9 @@ def ensure_messages_format(generate_response_fn):
         The generate_response method of a backend class with proper alternating message roles checking.
     """
     @wraps(generate_response_fn)
-    def wrapped_fn(self, messages):
+    def wrapped_fn(self, messages, tool_schema=None, json_schema=None):
         _messages = ensure_alternating_roles(messages)
-        return generate_response_fn(self, _messages)
+        return generate_response_fn(self, _messages, tool_schema, json_schema)
 
     return wrapped_fn
 

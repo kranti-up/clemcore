@@ -127,7 +127,7 @@ class OpenAIModel(backends.Model):
 
     @retry(tries=3, delay=0, logger=logger)
     @ensure_messages_format
-    def generate_response(self, messages: List[Dict]) -> Tuple[str, Any, str]:
+    def generate_response(self, messages: List[Dict], tool_schema=None, json_schema=None) -> Tuple[str, Any, str]:
         """Request a generated response from the OpenAI remote API.
         Args:
             messages: A message history. For example:
@@ -142,19 +142,55 @@ class OpenAIModel(backends.Model):
         """
         prompt = self.encode_messages(messages)
 
-        if 'reasoning_model' in self.model_spec.model_config:
-            api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
-                                                               messages=prompt,
-                                                               temperature=1)
+        if tool_schema is None and json_schema is None:
+            if 'reasoning_model' in self.model_spec.model_config:
+                api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
+                                                                messages=prompt,
+                                                                temperature=1)
+            else:
+                api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
+                                                            messages=prompt,
+                                                            temperature=self.get_temperature(),
+                                                            max_tokens=self.get_max_tokens())
+            message = api_response.choices[0].message
+            if message.role != "assistant":  # safety check
+                raise AttributeError("Response message role is " + message.role + " but should be 'assistant'")
+            response_text = message.content.strip()
+            response = json.loads(api_response.json())
+
         else:
-            api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
-                                                           messages=prompt,
-                                                           temperature=self.get_temperature(),
-                                                           max_tokens=self.get_max_tokens())
-        message = api_response.choices[0].message
-        if message.role != "assistant":  # safety check
-            raise AttributeError("Response message role is " + message.role + " but should be 'assistant'")
-        response_text = message.content.strip()
-        response = json.loads(api_response.json())
+            if tool_schema:
+                if isinstance(tool_schema, Dict):
+                    tool_format = []
+                    for data in tool_schema:
+                        uformat = {"type": "function", "function": data}
+                        tool_format.append(uformat)
+
+                api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
+                                                            messages=prompt,
+                                                            temperature=self.get_temperature(),
+                                                            max_tokens=self.get_max_tokens(),
+                                                            #functions=respformat,
+                                                            tools=tool_format,
+                                                            #response_format={
+                                                            #        "type": "json_schema",
+                                                            #        "json_schema": respformat
+                                                            #    }
+                                                            )
+                #logger.info(f"1. api_response-> {api_response}")
+
+                message = api_response.choices[0].message
+                if message.role != "assistant":  # safety check
+                    raise AttributeError("Response message role is " + message.role + " but should be 'assistant'")
+                response = json.loads(api_response.json())        
+
+                if message.content is not None:
+                    response_text = message.content.strip()
+                else:
+                    #response_text = message.function_call
+                    response_text = message.tool_calls[0]                
+
+            else:
+                raise ValueError("JSON schema handling is not available in generate_response()!")
 
         return prompt, response, response_text

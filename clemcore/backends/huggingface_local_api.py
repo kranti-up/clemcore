@@ -157,6 +157,7 @@ class HuggingfaceLocalModel(backends.Model):
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
 
     def generate_response(self, messages: List[Dict],
+                          tool_schema=None, json_schema=None,
                           return_full_text: bool = False,
                           log_messages: bool = False) -> Tuple[Any, Any, str]:
         """Generate a response with the loaded HuggingFace transformers model.
@@ -184,11 +185,27 @@ class HuggingfaceLocalModel(backends.Model):
             logger.info(f"Flattened messages: {current_messages}")
 
         # apply chat template & tokenize:
-        prompt_tokens = self.tokenizer.apply_chat_template(current_messages, add_generation_prompt=True,
+        if tool_schema:
+            prompt_tokens = self.tokenizer.apply_chat_template(current_messages, tools=tool_schema, return_dict=True,
+                                                           add_generation_prompt=True,
                                                            return_tensors="pt")
+
+            prompt_tokens_simple = self.tokenizer.apply_chat_template(current_messages, add_generation_prompt=True,
+                                                              return_tensors="pt")
+
+
+        else:
+            prompt_tokens = self.tokenizer.apply_chat_template(current_messages, add_generation_prompt=True,
+                                                              return_tensors="pt")
+
         prompt_tokens = prompt_tokens.to(self.device)
 
-        prompt_text = self.tokenizer.batch_decode(prompt_tokens)[0]
+        if tool_schema:
+            prompt_text = self.tokenizer.batch_decode(prompt_tokens_simple)[0]
+        else:
+            
+            prompt_text = self.tokenizer.batch_decode(prompt_tokens)[0]
+
         prompt = {"inputs": prompt_text, "max_new_tokens": self.get_max_tokens(),
                   "temperature": self.get_temperature(), "return_full_text": return_full_text}
 
@@ -208,19 +225,27 @@ class HuggingfaceLocalModel(backends.Model):
         if self.get_temperature() > 0.0:
             do_sample = True
 
+        prompt_kwargs = prompt_tokens if tool_schema else {"input_ids": prompt_tokens}
+
         if do_sample:
             model_output_ids = self.model.generate(
-                prompt_tokens,
+                #prompt_tokens,
+                **prompt_kwargs,
                 temperature=self.get_temperature(),
                 max_new_tokens=self.get_max_tokens(),
                 do_sample=do_sample
             )
         else:
             model_output_ids = self.model.generate(
-                prompt_tokens,
+                #prompt_tokens,
+                **prompt_kwargs,
                 max_new_tokens=self.get_max_tokens(),
                 do_sample=do_sample
             )
+
+        if tool_schema:
+            model_output_ids = [model_output_ids[0, prompt_tokens['input_ids'].shape[1]:]]
+
 
         model_output = self.tokenizer.batch_decode(model_output_ids)[0]
 
@@ -230,12 +255,21 @@ class HuggingfaceLocalModel(backends.Model):
         if not return_full_text:
             response_text = model_output.replace(prompt_text, '').strip()
 
+            if tool_schema:
+                response_text = response_text.replace("<tool_call>", '').replace("</tool_call>", '').strip()
+                response_text = response_text.replace("<tool_response>", '').replace("</tool_response>", '').strip()
+                response_text = response_text.replace("<|python_tag|>", '').strip()
+                response_text = response_text.replace("<|eom_id|>", '').strip()
+                response_text = response_text.replace("<|endoftext|>", '').strip()
+                response_text = response_text.replace("<|im_start|>", '').strip()
+
             if 'output_split_prefix' in self.model_spec.model_config:
                 response_text = model_output.rsplit(self.model_spec['model_config']['output_split_prefix'], maxsplit=1)[1]
 
             # remove eos token string:
             eos_to_cull = self.model_spec['model_config']['eos_to_cull']
-            response_text = re.sub(eos_to_cull, "", response_text)
+            response_text = re.sub(eos_to_cull, "", response_text)                
+
         else:
             response_text = model_output.strip()
 

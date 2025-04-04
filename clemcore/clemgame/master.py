@@ -36,7 +36,7 @@ class Player(abc.ABC):
         """
         return f"{self.__class__.__name__}, {self.model}"
 
-    def __call__(self, messages: List[Dict], turn_idx) -> Tuple[Any, Any, str]:
+    def __call__(self, messages: List[Dict], turn_idx, tool_schema, json_schema) -> Tuple[Any, Any, str]:
         """Get a response from this Player instance's model.
         Passes a messages list and turn index to the model, creates a response dict for record logging, including
         timestamps and call duration, and returns a Player response tuple.
@@ -56,7 +56,7 @@ class Player(abc.ABC):
         elif isinstance(self.model, backends.HumanModel):
             response_text = self._terminal_response(messages, turn_idx)
         else:
-            prompt, response, response_text = self.model.generate_response(messages)
+            prompt, response, response_text = self.model.generate_response(messages, tool_schema, json_schema)
         call_duration = datetime.now() - call_start
         response["clem_player"] = {
             "call_start": str(call_start),
