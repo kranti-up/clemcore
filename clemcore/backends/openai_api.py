@@ -126,7 +126,7 @@ class OpenAIModel(backends.Model):
         return encoded_messages
 
     @retry(tries=3, delay=0, logger=logger)
-    @ensure_messages_format
+    #@ensure_messages_format
     def generate_response(self, messages: List[Dict], tool_schema=None, json_schema=None) -> Tuple[str, Any, str]:
         """Request a generated response from the OpenAI remote API.
         Args:
@@ -140,7 +140,7 @@ class OpenAIModel(backends.Model):
         Returns:
             The generated response message returned by the OpenAI remote API.
         """
-        prompt = self.encode_messages(messages)
+        prompt = messages#self.encode_messages(messages)
 
         if tool_schema is None and json_schema is None:
             if 'reasoning_model' in self.model_spec.model_config:
@@ -165,6 +165,8 @@ class OpenAIModel(backends.Model):
                     for data in tool_schema:
                         uformat = {"type": "function", "function": data}
                         tool_format.append(uformat)
+                else:
+                    tool_format = tool_schema
 
                 api_response = self.client.chat.completions.create(model=self.model_spec.model_id,
                                                             messages=prompt,
@@ -178,17 +180,35 @@ class OpenAIModel(backends.Model):
                                                             #    }
                                                             )
                 #logger.info(f"1. api_response-> {api_response}")
+                if api_response is None:
+                    logger.info("Received None from OpenAI API, retrying...")
+                    raise ValueError("API response was None")
+
 
                 message = api_response.choices[0].message
                 if message.role != "assistant":  # safety check
                     raise AttributeError("Response message role is " + message.role + " but should be 'assistant'")
-                response = json.loads(api_response.json())        
+                #response = json.loads(api_response.json())
+                response = {"message_full": json.loads(api_response.json()), "tool_calls": message}
 
                 if message.content is not None:
                     response_text = message.content.strip()
-                else:
+                elif message.tool_calls:
                     #response_text = message.function_call
-                    response_text = message.tool_calls[0]                
+                    try:
+                        tool_response = []                        
+                        for tool_call in message.tool_calls:
+                            tool_data = tool_call#message.tool_calls[0]
+                            function_name = tool_data.function.name
+                            function_args = json.loads(tool_data.function.arguments)
+                            tool_id = tool_data.id
+
+                            #response_text = json.dumps({"name": function_name, "arguments": function_args, "id": tool_id})
+                            tool_response.append({"name": function_name, "arguments": function_args, "id": tool_id})
+                        response_text = json.dumps(tool_response)
+                    except Exception as e:
+                        logger.error(f"Error parsing tool call data {message} -> {e}")
+                        response_text = message.tool_calls
 
             else:
                 raise ValueError("JSON schema handling is not available in generate_response()!")

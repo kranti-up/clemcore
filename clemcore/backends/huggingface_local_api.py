@@ -4,6 +4,7 @@ Uses HF tokenizers instruct/chat templates for proper input format per model.
 import logging
 from typing import List, Dict, Tuple, Any, Union
 import torch
+import json
 import re
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig
 from jinja2 import TemplateError
@@ -187,8 +188,9 @@ class HuggingfaceLocalModel(backends.Model):
         # apply chat template & tokenize:
         if tool_schema:
             prompt_tokens = self.tokenizer.apply_chat_template(current_messages, tools=tool_schema, return_dict=True,
-                                                           add_generation_prompt=True,
-                                                           return_tensors="pt")
+                                                            add_generation_prompt=True,
+                                                            return_tensors="pt")
+
 
             prompt_tokens_simple = self.tokenizer.apply_chat_template(current_messages, add_generation_prompt=True,
                                                               return_tensors="pt")
@@ -249,22 +251,37 @@ class HuggingfaceLocalModel(backends.Model):
 
         model_output = self.tokenizer.batch_decode(model_output_ids)[0]
 
-        response = {'response': model_output}
+        #response = {'response': model_output}
+        response = {'message_full': model_output, 'tool_calls': None}
 
         # cull input context; equivalent to transformers.pipeline method:
         if not return_full_text:
             response_text = model_output.replace(prompt_text, '').strip()
 
             if tool_schema:
-                response_text = response_text.replace("<tool_call>", '').replace("</tool_call>", '').strip()
-                response_text = response_text.replace("<tool_response>", '').replace("</tool_response>", '').strip()
-                response_text = response_text.replace("<|python_tag|>", '').strip()
-                response_text = response_text.replace("<|eom_id|>", '').strip()
-                response_text = response_text.replace("<|endoftext|>", '').strip()
-                response_text = response_text.replace("<|im_start|>", '').strip()
+                try:
+                    matches = re.findall(r'<tool_call>(.*?)</tool_call>', response_text, re.DOTALL)
+                    tool_calls = [json.loads(match.strip()) for match in matches]
+                except json.JSONDecodeError as e:
+                    logger.error(f"Error decoding JSON from tool calls: {response_text}, {e}")
+                    tool_calls = None
+
+                #response_text = response_text.replace("<tool_call>", '').replace("</tool_call>", '').strip()
+                #response_text = response_text.replace("<tool_response>", '').replace("</tool_response>", '').strip()
+                #response_text = response_text.replace("<|python_tag|>", '').strip()
+                #response_text = response_text.replace("<|eom_id|>", '').strip()
+                #response_text = response_text.replace("<|endoftext|>", '').strip()
+                #response_text = response_text.replace("<|im_start|>", '').strip()
+                if tool_calls:
+                    response_text = json.dumps(tool_calls)
+                else:
+                    response_text = response_text.replace("<|python_tag|>", '').strip()
+                    response_text = response_text.replace("<|eom_id|>", '').strip()
+                    response_text = response_text.replace("<|endoftext|>", '').strip()
+                    response_text = response_text.replace("<|im_start|>", '').strip()
 
             if 'output_split_prefix' in self.model_spec.model_config:
-                response_text = model_output.rsplit(self.model_spec['model_config']['output_split_prefix'], maxsplit=1)[1]
+                response_text = response_text.rsplit(self.model_spec['model_config']['output_split_prefix'], maxsplit=1)[1]
 
             # remove eos token string:
             eos_to_cull = self.model_spec['model_config']['eos_to_cull']
@@ -274,7 +291,7 @@ class HuggingfaceLocalModel(backends.Model):
             response_text = model_output.strip()
 
         if log_messages:
-            logger.info(f"Response message: {response_text}")
+            logger.error(f"Response message: {response_text}")
 
         return prompt, response, response_text
 
