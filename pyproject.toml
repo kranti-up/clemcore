@@ -66,7 +66,7 @@ clem = "clemcore.cli:main"
 Homepage = "https://github.com/clp-research/clemcore"
 
 [tool.setuptools.package-data]
-clemcore = ["resources/**/*.json"]
+clemcore = ["resources/**/*"]
 
 [tool.setuptools]
 packages = ["clemcore"]

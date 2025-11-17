@@ -1,8 +1,8 @@
 # Include the YAML logging configuration file
 include clemcore/utils/logging.yaml
 
-# Include the CSS file
-include clemcore/utils/chat-two-tracks.css
+# Include resource files
+recursive-include clemcore/resources *
 
 # Include the model registry JSON file
 include clemcore/backends/model_registry.json
