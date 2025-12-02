@@ -5,7 +5,8 @@ import logging
 from typing import List, Dict, Tuple, Any, Union
 import torch
 import re
-from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig, PreTrainedTokenizerBase
+from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig, PreTrainedTokenizerBase, PreTrainedModel
+from transformers.generation.utils import GenerateOutput
 from peft import PeftModel
 from jinja2 import TemplateError
 
@@ -127,7 +128,7 @@ def load_config_and_tokenizer(model_spec: backends.ModelSpec) -> Tuple[PreTraine
     return tokenizer, auto_config, context_size
 
 
-def load_model(model_spec: backends.ModelSpec) -> Any:
+def load_model(model_spec: backends.ModelSpec) -> PreTrainedModel | PeftModel:
     """Load Huggingface model weights, into VRAM if available.
     Weights are distributed over all available GPUs for maximum speed - make sure to limit the available GPUs using
     environment variables if only a subset is to be used.
@@ -191,7 +192,7 @@ class HuggingfaceLocalModel(backends.BatchGenerativeModel):
         super().__init__(model_spec)
         # fail-fast
         self.tokenizer, self.config, self.context_size = load_config_and_tokenizer(model_spec)
-        self.model = load_model(model_spec)
+        self.model: PreTrainedModel = load_model(model_spec)
 
         # check if model's generation_config has pad_token_id set:
         if not self.model.generation_config.pad_token_id:
@@ -313,7 +314,8 @@ class HuggingfaceLocalModel(backends.BatchGenerativeModel):
             "temperature": None,  # avoid warning
             "top_p": None,  # avoid warning
             "max_new_tokens": self.max_tokens,
-            "attention_mask": attention_mask
+            "attention_mask": attention_mask,
+            "return_dict_in_generate": True,
         }
         if self.temperature > 0.0:
             gen_args["do_sample"] = True
@@ -324,11 +326,14 @@ class HuggingfaceLocalModel(backends.BatchGenerativeModel):
         if 'cot_output' in self.model_spec.model_config and self.model_spec.model_config['cot_output']:
             gen_args["max_new_tokens"] = self.context_size
 
-        # Generate outputs for the whole batch
-        model_output_ids = self.model.generate(prompt_token_ids, **gen_args)
+        # Put the model into evaluation mode e.g., disable dropout and configure batch norm etc.
+        self.model.eval()
+
+        # Generate outputs for the whole batch (Note: model.generate() is decorated with torch.no_grad() !)
+        generation_output: GenerateOutput = self.model.generate(prompt_token_ids, **gen_args)
 
         # Decode all outputs and prompts
-        model_outputs = self.tokenizer.batch_decode(model_output_ids)
+        model_outputs = self.tokenizer.batch_decode(generation_output.sequences)
         prompt_texts = self.tokenizer.batch_decode(prompt_token_ids)
 
         prompts, response_texts, responses = split_and_clean_batch_outputs(self,
