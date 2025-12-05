@@ -1,4 +1,5 @@
 import argparse
+import sys
 import textwrap
 import logging
 from datetime import datetime
@@ -152,6 +153,7 @@ def run(game_selector: Union[str, Dict, GameSpec],
     ])
 
     all_start = datetime.now()
+    errors = []
     for game_spec in game_specs:
         try:
             # configure instance file to be used
@@ -182,7 +184,10 @@ def run(game_selector: Union[str, Dict, GameSpec],
         except Exception as e:
             logger.exception(e)
             logger.error(e, exc_info=True)
+            errors.append(e)
     logger.info("Running all benchmarks took: %s", datetime.now() - all_start)
+    if errors:
+        sys.exit(1)
 
 
 def score(game_selector: Union[str, Dict, GameSpec], results_dir: str = None):
@@ -194,7 +199,7 @@ def score(game_selector: Union[str, Dict, GameSpec], results_dir: str = None):
         results_dir: Path to the results directory in which the benchmark records are stored.
     """
     logger.info(f"Scoring game {game_selector}")
-
+    errors = []
     game_registry = GameRegistry.from_directories_and_cwd_files()
     game_specs = game_registry.get_game_specs_that_unify_with(game_selector)
     for game_spec in game_specs:
@@ -205,6 +210,9 @@ def score(game_selector: Union[str, Dict, GameSpec], results_dir: str = None):
             logger.info(f"Scoring {game_benchmark.game_name} took: %s", datetime.now() - time_start)
         except Exception as e:
             logger.exception(e)
+            errors.append(e)
+    if errors:
+        sys.exit(1)
 
 
 def transcripts(game_selector: Union[str, Dict, GameSpec], results_dir: str = None):
