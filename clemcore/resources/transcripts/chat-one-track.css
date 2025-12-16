@@ -24,5 +24,11 @@
 }
 
 .msg::before {
-    left: 1rem;
+  left: 1rem;
+  content: attr(speaker);
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 100%;
+  color: #888;
+  white-space: nowrap;
 }
