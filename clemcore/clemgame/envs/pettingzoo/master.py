@@ -131,7 +131,7 @@ class GameMasterEnv(AECEnv):
         # after step current_player might have changed, so we reference it here already
         current_agent = self.get_current_agent()
         # step possibly transitions the current agent
-        done, info = self.game_master.step(action)
+        done, info = self.game_master.step(action, log_event=True)
         # for now we only have the case that all players end at the same time
         for agent_id in self.agents:
             self.terminations[agent_id] = done
@@ -152,7 +152,7 @@ class GameMasterEnv(AECEnv):
         `last()` calls this function.
         """
         player = self.player_by_agent_id[agent]
-        return self.game_master.get_context_for(player)
+        return self.game_master.get_context_for(player, log_event=True)
 
     def observation_space(self, agent: AgentID):
         """All agents share the same observation space.

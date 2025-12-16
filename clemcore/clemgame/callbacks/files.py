@@ -160,7 +160,10 @@ class InteractionsFileSaver(GameBenchmarkCallback):
                                                  game_id,  # meta info for transcribe
                                                  self.results_folder.models_dir,  # meta info for transcribe
                                                  self.player_models_infos)
+        for player in game_master.get_players():
+            game_recorder.log_player(player.name, player.game_role, player.model.name)
         game_master.register(game_recorder)
+
         _key = InteractionsFileSaver.to_key(game_name, experiment_name, game_id)
         self._recorders[_key] = game_recorder
 

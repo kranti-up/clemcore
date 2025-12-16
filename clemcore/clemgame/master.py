@@ -111,8 +111,6 @@ class DialogueGameMaster(GameMaster):
 
     def __setstate__(self, state):
         self.__dict__.update(state)
-        for player in self.players_by_names.values():  # sync game recorders (not copied in Player)
-            player.register_many(self._loggers)
 
     @property
     def game_state(self):
@@ -157,13 +155,11 @@ class DialogueGameMaster(GameMaster):
                             to directly react to the initial prompt. Alternatively, overwrite on_before_game() and
                             use set_context_for(player) to set the player context.
         """
-        player.register_many(self._loggers)  # player should record to the same interaction log
         player.name = f"Player {len(self.players_by_names) + 1}"
         if player.name in self.players_by_names:
             raise ValueError(f"Player names must be unique, "
                              f"but there is already a player registered with name '{player.name}'.")
         self.players_by_names[player.name] = player
-        self.log_player(player.name, player.game_role, player.model.name)
         if initial_prompt is not None:
             assert isinstance(initial_prompt, (str, dict)), \
                 f"The initial prompt must be a str or dict, but is {type(initial_prompt)}"
@@ -186,11 +182,7 @@ class DialogueGameMaster(GameMaster):
 
     @final
     def setup(self, **kwargs):
-        """Load resources and prepare everything to play the game.
-        Needs to log the players dictionary via self.log_players(players_dict).
-        Intended to be left as-is by inheriting classes. Implement game-specific setup functionality in the _on_setup
-        method.
-        Called by the game's GameBenchmark run method for each game instance.
+        """Load resources and prepare everything to play the game instance specified in kwargs.
         Args:
             kwargs: Keyword arguments used to set up the GameMaster instance. This is usually a game instance object
                 read from the game's instances.json.
@@ -250,7 +242,7 @@ class DialogueGameMaster(GameMaster):
         self.context_for_player[player.name] = context
 
     @final
-    def get_context_for(self, player) -> Dict:
+    def get_context_for(self, player, *, log_event: bool = False) -> Dict:
         assert player is not None, "Cannot get player context for 'None'"
         assert player.name in self.context_for_player, f"No context set for {player.name}"
         context = self.context_for_player[player.name]
@@ -262,6 +254,11 @@ class DialogueGameMaster(GameMaster):
             content = context["content"]
             initial_prompt_content = initial_prompt["content"]
             context = {**initial_prompt, **context, "content": "\n\n".join([initial_prompt_content, content])}
+        if log_event:
+            action = {'type': 'send message', 'content': context["content"], 'label': "context"}
+            if "image" in context:
+                action["image"] = context["image"]
+            self.log_event(from_='GM', to=player.name, action=action)
         return context
 
     @final
@@ -276,15 +273,19 @@ class DialogueGameMaster(GameMaster):
         return player, context
 
     @final
-    def step(self, response: str) -> Tuple[bool, Dict]:
+    def step(self, response: str, *, log_event: bool = False) -> Tuple[bool, Dict]:
         """
         Verifies the response and transitions the game by applying the current player's response for the turn.
 
         Args:
             response: The response (verbal action) of the current player.
+            log_event: Whether to log the player's response
         Returns:
             Bool determining if game is done, info about the processed game step
         """
+        if log_event:
+            self.log_event(from_=self.current_player.name, to="GM",
+                           action={'type': 'get message', 'content': response, 'label': "response"})
         try:
             parsed_response = self._parse_response(self.current_player, response)  # throws ParseError
             self._advance_game(self.current_player, parsed_response)  # throws GameError
