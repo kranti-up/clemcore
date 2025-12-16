@@ -27,6 +27,8 @@ def run(game_benchmark: GameBenchmark,
                 "experiment": experiment,
                 "game_instance": game_instance
             })
+            for model in player_models:
+                model.reset()  # this is mainly to notify slurk backends; other models are state-less anyway
             callbacks.on_game_start(game_env.game_master, game_instance)
             for agent_id in game_env.agent_iter():  # when there is no agent left, the episode is done
                 context, reward, termination, truncation, info = game_env.last(observe=True)

@@ -124,12 +124,7 @@ class SlurkModel(backends.Model):  # todo: make this HumanModel when HumanModel 
         self.sio = socketio.Client(logger=logger)
         self.sync_event = self.sio.eio.create_event()  # the vehicle to wait until user responds
 
-        """
-            TODO: For now we can only allow a single room and player.
-            What would it mean to start the benchmark once, but let multiple users accomplish it?
-            For this we would need a separate approach that starts an individual benchmark run
-            when a user connects.
-        """
+        # Note: Each player gets its own room because all communication must go through the game master
         self.room_id = room_id
         self.user_messages = list()  # we need an object to carry over the response between threads
 
@@ -157,7 +152,7 @@ class SlurkModel(backends.Model):  # todo: make this HumanModel when HumanModel 
         if messages:
             latest_response = messages[-1]["content"]
         self.sio.emit("text", {"message": latest_response, "room": self.room_id})
-        if not self.sync_event.wait(timeout=self.model_spec.response_timout):
+        if not self.sync_event.wait(timeout=self.model_spec.response_timeout):
             pass  # no user response
         self.sync_event.clear()
         user_response = self.user_messages[0]
@@ -166,7 +161,7 @@ class SlurkModel(backends.Model):  # todo: make this HumanModel when HumanModel 
 
     def wait_for_participant(self):
         # this works because: self.sio.on("status", check_and_unblock)
-        if not self.sync_event.wait(timeout=self.model_spec.join_timout):
+        if not self.sync_event.wait(timeout=self.model_spec.join_timeout):
             raise RuntimeError("no user joined the slurk room")
         self.sync_event.clear()
 

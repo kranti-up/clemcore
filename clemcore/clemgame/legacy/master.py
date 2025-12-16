@@ -220,8 +220,6 @@ class DialogueGameMaster(GameMaster):
             self._on_after_game()
             self.log_game_end(auto_count_logging=False)
             self.info["episode_score"] = self.compute_episode_score()
-            for player in self.get_players():
-                player.reset()
         elif self._start_next_round():  # prepare next round only when game has not ended yet
             self.__prepare_next_round()
 

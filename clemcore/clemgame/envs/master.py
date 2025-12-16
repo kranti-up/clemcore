@@ -275,9 +275,6 @@ class EnvGameMaster(GameMaster):
         self.log_key(METRIC_SUCCESS, success)
         self.log_key(METRIC_LOSE, lose)
 
-        for player in self.get_players():
-            player.reset()
-
     def _on_after_game(self):
         """Hook executed once after the episode ends."""
         pass
