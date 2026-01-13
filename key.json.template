@@ -6,10 +6,16 @@
   "anthropic": {
     "api_key": ""
   },
-  "huggingface": {
+  "mistral": {
     "api_key": ""
   },
   "cohere": {
+    "api_key": ""
+  },
+  "google": {
+    "api_key": ""
+  },
+  "huggingface": {
     "api_key": ""
   },
   "slurk": {
