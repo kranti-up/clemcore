@@ -1,60 +1,53 @@
-import hashlib
 from datetime import datetime
 from pathlib import Path
-from typing import List, Dict, TYPE_CHECKING
+from typing import Dict, TYPE_CHECKING, Any
 
 from clemcore import get_version
 
 if TYPE_CHECKING:  # to satisfy pycharm
     from clemcore.clemgame import GameMaster, GameBenchmark
 
-from clemcore.backends import Model
 from clemcore.clemgame.recorder import GameInteractionsRecorder
 from clemcore.clemgame.callbacks.base import GameBenchmarkCallback
 from clemcore.clemgame.resources import store_json, load_json
-
-
-def to_model_results_folder(player_models: List[Model]):
-    def to_descriptor(model: Model):
-        return f"{model.name}-t{model.temperature}"
-
-    model_descriptors = [to_descriptor(m) for m in player_models]
-    folder_name = "--".join(model_descriptors)
-    if len(player_models) <= 2:
-        return folder_name
-    _hash = hashlib.sha1(folder_name.encode()).hexdigest()[:8]
-    return f"group-{len(player_models)}p-{_hash}"
 
 
 # for pycharm: suppress could be static checks, because methods might be overwritten
 # noinspection PyMethodMayBeStatic
 class ResultsFolder:
     """
-        Represents the following structure:
-            - results_dir (root)
-                - model_folder_name
-                    - game_name
-                        - experiment_name
-                            - experiment.json
-                            - episode_id
-                                - instance.json
-                                - interaction.json
+    Instance-bound, single-pass results layout.
+
+    Default assumptions:
+        - Exactly one episode per instance
+        - episode_id == instance_id
+        - Each game instance has a single result location (repeated runs overwrite previous results)
+
+    Structure:
+        - results_dir (root)
+            - <run_dir>
+                - game_name
+                    - experiment_name
+                        - experiment.json
+                        - instance_<id>
+                            - instance.json
+                            - interaction.json
     """
 
-    def __init__(self, result_dir_path: Path, player_models: List[Model]):
+    def __init__(self, result_dir_path: Path, run_dir: str):
         self.results_dir_path: Path = result_dir_path
-        self.models_dir: str = to_model_results_folder(player_models)
+        self.run_dir: str = run_dir
 
     def to_results_dir_path(self) -> Path:
         return self.results_dir_path
 
-    def to_models_dir_path(self) -> Path:
-        return self.results_dir_path / self.models_dir
+    def to_run_dir_path(self) -> Path:
+        return self.results_dir_path / self.run_dir
 
     def to_experiment_dir_path(self, game_master: "GameMaster") -> Path:
         game_dir = self.to_game_dir(game_master)
         experiment_dir = self.to_experiment_dir(game_master.experiment)
-        return self.to_models_dir_path() / game_dir / experiment_dir
+        return self.to_run_dir_path() / game_dir / experiment_dir
 
     def to_instance_dir_path(self, game_master: "GameMaster", game_instance: Dict) -> Path:
         experiment_path = self.to_experiment_dir_path(game_master)
@@ -71,9 +64,80 @@ class ResultsFolder:
         return f"instance_{game_instance['game_id']:05d}"
 
 
+class EpisodeResultsFolder(ResultsFolder):
+    """
+    Episode-based results layout.
+
+    Allows iterating over the same game instance multiple times.
+    Each game run corresponds to a new episode directory, independent of the underlying instance identity.
+
+    Note:
+    This aligns with repeated exposure to an initial state, e.g., reinforcement learning or stochastic evaluation.
+    """
+
+    def __init__(self, result_dir_path: Path, run_dir: str):
+        super().__init__(result_dir_path, run_dir)
+        self.episode_id = 0  # reset per process; overwrites on rerun
+
+    def increment_episode_id(self):
+        self.episode_id += 1
+
+    def to_episode_dir(self) -> str:
+        return f"episode_{self.episode_id:05d}"
+
+    def to_instance_dir(self, game_instance: dict) -> str:
+        """
+        In episode-based layouts, the 'instance directory' corresponds
+        to an episode rather than a unique game instance.
+        """
+        return self.to_episode_dir()
+
+
+class EpisodeResultsFolderCallback(GameBenchmarkCallback):
+
+    def __init__(self, results_folder: EpisodeResultsFolder):
+        self.results_folder = results_folder
+
+    def on_game_start(self, game_master: "GameMaster", game_instance: dict):
+        # One game execution == one episode
+        self.results_folder.increment_episode_id()
+
+
+class EpochResultsFolder(ResultsFolder):
+    """
+    Epoch-based results layout.
+
+    Each benchmark run corresponds to a new epoch.
+    Within an epoch, each game instance is evaluated exactly once.
+
+    This aligns with dataset-style training loops, e.g., supervised learning.
+    """
+
+    def __init__(self, result_dir_path: Path, run_dir: str):
+        super().__init__(result_dir_path, run_dir)
+        self.epoch_id = 0  # reset per process; overwrites on rerun
+
+    def increment_epoch_id(self):
+        self.epoch_id += 1
+
+    def to_run_dir_path(self):
+        models_dir_path = super().to_run_dir_path() / f"epoch_{self.epoch_id:05d}"
+        return models_dir_path
+
+
+class EpochResultsFolderCallback(GameBenchmarkCallback):
+
+    def __init__(self, results_folder: EpochResultsFolder):
+        self.results_folder = results_folder
+
+    def on_benchmark_start(self, game_benchmark: "GameBenchmark"):
+        # assuming every benchmark run corresponds to an epoch
+        self.results_folder.increment_epoch_id()
+
+
 class RunFileSaver(GameBenchmarkCallback):
 
-    def __init__(self, results_folder: ResultsFolder, player_model_infos: Dict):
+    def __init__(self, results_folder: ResultsFolder, *, player_model_infos: Any = None):
         self.results_folder = results_folder
         self.game_info = None
         self.benchmark_start = None
@@ -83,7 +147,7 @@ class RunFileSaver(GameBenchmarkCallback):
                          player_models=player_model_infos,
                          games={})
 
-        model_dir_path = self.results_folder.to_models_dir_path()
+        model_dir_path = self.results_folder.to_run_dir_path()
         run_file_path = Path(model_dir_path / "run.json")
         if run_file_path.exists():
             self.data = load_json(str(run_file_path))  # keep already stored values
@@ -94,7 +158,7 @@ class RunFileSaver(GameBenchmarkCallback):
         self.benchmark_start = datetime.now()
         self.game_info = dict(game_path=game_benchmark.game_path, benchmark_start=self.benchmark_start.isoformat())
         self.data["games"][game_benchmark.game_name] = self.game_info
-        store_json(self.data, "run.json", self.results_folder.to_models_dir_path())  # overwrite
+        store_json(self.data, "run.json", self.results_folder.to_run_dir_path())  # overwrite
 
     def on_game_start(self, game_master: "GameMaster", game_instance: Dict):
         self.num_instances += 1  # the instance iterator is not necessarily yet initialized, so we count here
@@ -106,12 +170,13 @@ class RunFileSaver(GameBenchmarkCallback):
         self.game_info["duration"] = str(benchmark_duration)
         self.game_info["duration_seconds"] = benchmark_duration.total_seconds()
         self.game_info["num_instances"] = self.num_instances
-        store_json(self.data, "run.json", self.results_folder.to_models_dir_path())  # overwrite
+        store_json(self.data, "run.json", self.results_folder.to_run_dir_path())  # overwrite
         self.num_instances = 0
         self.game_info = None
 
 
 class InstanceFileSaver(GameBenchmarkCallback):
+
     def __init__(self, results_folder: ResultsFolder):
         self.results_folder = results_folder
 
@@ -122,7 +187,7 @@ class InstanceFileSaver(GameBenchmarkCallback):
 
 class ExperimentFileSaver(GameBenchmarkCallback):
 
-    def __init__(self, results_folder: ResultsFolder, player_model_infos: Dict):
+    def __init__(self, results_folder: ResultsFolder, *, player_model_infos: Any = None):
         self.results_folder = results_folder
         self.player_models_infos = player_model_infos
 
@@ -141,7 +206,7 @@ class ExperimentFileSaver(GameBenchmarkCallback):
 
 class InteractionsFileSaver(GameBenchmarkCallback):
 
-    def __init__(self, results_folder: ResultsFolder, player_model_infos: Dict):
+    def __init__(self, results_folder: ResultsFolder, *, player_model_infos: Any = None):
         self.results_folder = results_folder
         self.player_models_infos = player_model_infos
         self._recorders: Dict[str, GameInteractionsRecorder] = {}
@@ -158,7 +223,7 @@ class InteractionsFileSaver(GameBenchmarkCallback):
         game_recorder = GameInteractionsRecorder(game_name,
                                                  experiment_name,  # meta info for transcribe
                                                  game_id,  # meta info for transcribe
-                                                 self.results_folder.models_dir,  # meta info for transcribe
+                                                 self.results_folder.run_dir,  # meta info for transcribe
                                                  self.player_models_infos)
         for player in game_master.get_players():
             game_recorder.log_player(player.name, player.game_role, player.model.name)

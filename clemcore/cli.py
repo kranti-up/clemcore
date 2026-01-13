@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import List, Dict, Union, Callable, Optional, Any
 
 import clemcore.backends as backends
-from clemcore.backends import ModelRegistry, BackendRegistry, Model
+from clemcore.backends import ModelRegistry, BackendRegistry, Model, KeyRegistry
 from clemcore.clemgame import GameRegistry, GameSpec, InstanceFileSaver, ExperimentFileSaver, \
     InteractionsFileSaver, GameBenchmarkCallbackList, RunFileSaver, GameInstanceIterator, ResultsFolder, \
     GameBenchmark
@@ -22,24 +22,68 @@ from clemcore.clemgame.envs.openenv.server.app import create_clemv_app
 logger = logging.getLogger(__name__)  # by default also logged to console
 
 
-def list_backends(verbose: bool):
-    """List all models specified in the models registries."""
+def list_keys():
+    # load key registry, then go through detected backends and show if keys are present or not
+    key_registry = KeyRegistry.from_json()
+    print(f"Listing all registered keys in {key_registry.key_file_path}")
+    if not key_registry:
+        print("No registered keys found")
+        return
+    print(f"The following {len(key_registry)} backends are considered [ active ] if 'api_key' is present:")
+    for backend_name, key in key_registry.items():
+        # overwrite key_api values to mask the secret
+        status = " active " if key.has_api_key() else "inactive"
+        print(f'* [{status}] {backend_name}: {key.to_json()}')
+    print("")
+    print("A note on how to define your own keys manually:")
+    print("Create a 'key.json' in the current working directory and add {'backend_name': {'api_key':'value'}} entries.")
+    print("Alternatively use: clem register key -n <backend_name> -v <api_key=value>")
+
+
+def list_backends(verbose: bool = False):
+    """List all backends found within the package and the current working directory."""
     print("Listing all supported backends (use -v option to see full file path)")
     backend_registry = BackendRegistry.from_packaged_and_cwd_files()
     if not backend_registry:
         print("No registered backends found")
         return
     print(f"Found '{len(backend_registry)}' supported backends.")
-    print("Then you can use models that specify one of the following backends:")
-    wrapper = textwrap.TextWrapper(initial_indent="\t", width=70, subsequent_indent="\t")
+    key_registry = KeyRegistry.from_json()
+
+    registered_backends = []
+    unregistered_backends = []
     for backend_file in backend_registry:
-        print(f'{backend_file["backend"]} '
-              f'({backend_file["lookup_source"]})')
-        if verbose:
-            print(wrapper.fill("\nFull Path: " + backend_file["file_path"]))
+        backend_name = backend_file["backend"]
+        if backend_name in key_registry and not key_registry.get_key_for(backend_name).has_api_key():
+            unregistered_backends.append(backend_file)
+        else:
+            registered_backends.append(backend_file)
+
+    def print_backends(listing):
+        wrapper = textwrap.TextWrapper(initial_indent="\t", width=70, subsequent_indent="\t")
+        for backend_file in sorted(listing, key=lambda x: x["backend"]):
+            print(f'* {backend_file["backend"]} '
+                  f'({backend_file["lookup_source"]})')
+            if verbose:
+                print(wrapper.fill("\nFull Path: " + backend_file["file_path"]))
+
+    print()
+    if registered_backends:
+        print("[ active ] backends:")
+        print_backends(registered_backends)
+        print("-> If an active backend is not functional, consider adding a respective entry to the key registry.")
+        print()
+    if unregistered_backends:
+        print("[inactive] backends:")
+        print_backends(unregistered_backends)
+        print("-> To enable these, set the 'api_key' in the key registry.")
+        print()
+    print("A note on how to add your own backend:")
+    print("Create a 'custom_api.py' in the current working directory and implement a Backend class in that file.")
+    print("Then your custom backend will then be listed and usable as 'custom' backend.")
 
 
-def list_models(verbose: bool):
+def list_models(verbose: bool = False):
     """List all models specified in the models registries."""
     print("Listing all available models by name (use -v option to see the whole specs)")
     model_registry = ModelRegistry.from_packaged_and_cwd_files()
@@ -54,9 +98,14 @@ def list_models(verbose: bool):
               f'({model_spec["lookup_source"]})')
         if verbose:
             print(wrapper.fill("\nModelSpec: " + model_spec.to_string()))
+    print("")
+    print("A note on how to add a model entry manually:")
+    print("Create a 'model_registry.json' in the current working directory "
+          "and list {'model_name': <model_name>, 'backend': <backend_name>} entries.")
+    print("Alternatively use: clem register model -n <model_name> -v <backend=backend_name>")
 
 
-def list_games(game_selector: str, verbose: bool):
+def list_games(game_selector: str, verbose: bool = False):
     """List all games specified in the game registries.
     Only loads those for which master.py can be found in the specified path.
     See game registry doc for more infos (TODO: add link)
@@ -122,13 +171,14 @@ def run(game_selector: Union[str, Dict, GameSpec],
     player_models = backends.load_models(model_selectors, gen_args)
 
     # setup reusable callbacks here once
-    results_folder = ResultsFolder(results_dir_path, player_models)
+    # we name the run directory after the participating models
+    results_folder = ResultsFolder(results_dir_path, run_dir=Model.to_identifier(player_models))
     model_infos = Model.to_infos(player_models)
     callbacks = GameBenchmarkCallbackList([
         InstanceFileSaver(results_folder),
-        ExperimentFileSaver(results_folder, model_infos),
-        InteractionsFileSaver(results_folder, model_infos),
-        RunFileSaver(results_folder, model_infos)
+        ExperimentFileSaver(results_folder, player_model_infos=model_infos),
+        InteractionsFileSaver(results_folder, player_model_infos=model_infos),
+        RunFileSaver(results_folder, player_model_infos=model_infos)
     ])
 
     all_start = datetime.now()
@@ -214,20 +264,24 @@ def transcripts(game_selector: Union[str, Dict, GameSpec], results_dir: str = No
 
 def serve(game: str,
           learner_agent: str,
-          other_agents: Optional[Dict[str, str]] = None,
+          env_agents: Optional[Dict[str, str]] = None,
           gen_args: Optional[Dict[str, Any]] = None,
           split: Optional[str] = None,
           single_pass: bool = False,
           host: str = "0.0.0.0",
-          port: int = 5000):
+          port: int = 5000,
+          results_dir: Optional[str] = None,
+          run_id: Optional[str] = None):
     logger.info(f"Starting a clem environment server for the game: {game} on {host}:{port}")
     app = create_clemv_app(
         game_name=game,
         learner_agent=learner_agent,
-        other_agents=other_agents,
+        env_agents=env_agents,
         game_instance_split=split,
         single_pass=single_pass,
-        gen_args=gen_args
+        gen_args=gen_args,
+        results_dir=results_dir,
+        run_id=run_id
     )
     uvicorn.run(app, host=host, port=port)
 
@@ -252,13 +306,24 @@ def read_gen_args(args: argparse.Namespace):
 def cli(args: argparse.Namespace):
     if args.command_name == "list":
         if args.mode == "games":
-            list_games(args.selector, args.verbose)
+            list_games(args.selector, verbose=args.verbose)
         elif args.mode == "models":
-            list_models(args.verbose)
+            list_models(verbose=args.verbose)
         elif args.mode == "backends":
-            list_backends(args.verbose)
+            list_backends(verbose=args.verbose)
+        elif args.mode == "keys":
+            list_keys()
         else:
             print(f"Cannot list {args.mode}. Choose an option documented at 'list -h'.")
+    if args.command_name == "register":
+        if args.mode == "model":
+            registry = ModelRegistry.register(args.name, reset=args.reset, **args.values)
+            model_spec = registry.get_first_model_spec_that_unify_with(args.name)
+            print(f"Updated model registry at {registry.get_cwd_path()} successfully: {model_spec.to_string()}")
+        if args.mode == "key":
+            registry = KeyRegistry.register(args.name, reset=args.reset, force_cwd=args.cwd, **args.values)
+            key = registry.get_key_for(args.name)
+            print(f"Updated key registry at {registry.key_file_path} successfully: {key.to_json()}")
     if args.command_name == "run":
         start = datetime.now()
         try:
@@ -274,12 +339,14 @@ def cli(args: argparse.Namespace):
     if args.command_name == "serve":
         serve(args.game,
               learner_agent=args.learner_agent,
-              other_agents=args.env_agents,
+              env_agents=args.env_agents,
               gen_args=args.gen_args,
               split=args.split,
               single_pass=args.single_pass,
               host=args.host,
-              port=args.port)
+              port=args.port,
+              results_dir=args.results_dir,
+              run_id=args.run_id)
     if args.command_name == "score":
         score(args.game, results_dir=args.results_dir)
     if args.command_name == "transcribe":
@@ -293,11 +360,41 @@ def main():
     parser.add_argument('--version', action='version', version=f'%(prog)s {get_version()}')
     sub_parsers = parser.add_subparsers(dest="command_name")
     list_parser = sub_parsers.add_parser("list")
-    list_parser.add_argument("mode", choices=["games", "models", "backends"],
+    list_parser.add_argument("mode", choices=["games", "models", "backends", "keys"],
                              default="games", nargs="?", type=str,
                              help="Choose to list available games, models or backends. Default: games")
     list_parser.add_argument("-v", "--verbose", action="store_true")
     list_parser.add_argument("-s", "--selector", type=str, default="all")
+
+    register_parser = sub_parsers.add_parser(
+        "register",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        description="Update a model or key registry entry.",
+        epilog="""
+Update Behavior:
+  - By default, existing entries are UPDATED (merged). 
+    Only the keys provided in --value will be changed; 
+    unmentioned fields remain intact.
+  - If --reset is used, the entry is REPLACED. 
+    All existing data for that name is wiped, and only 
+    the new values provided are saved.
+    """
+    )
+
+    register_parser.add_argument("mode", choices=["model", "key"], type=str,
+                                 help="Choose which entry type to register.")
+    register_parser.add_argument("-n", "--name", type=str, required=True,
+                                 help="The name of the entry to be registered. "
+                                      "For 'model' entries, this is the model name, "
+                                      "and for 'key' entries it is the backend name.")
+    register_parser.add_argument("-v", "--values", required=True,
+                                 type=read_query_string,
+                                 help="Query string style values for the entry to be registered. "
+                                      "Example: 'api_key=abc,base_url=localhost'.")
+    register_parser.add_argument("-r", "--reset", action="store_true",
+                                 help="Reset existing entries with the same name. Otherwise entries are updated.")
+    register_parser.add_argument("--cwd", action="store_true",
+                                 help="Create files always in current working directory.")
 
     run_parser = sub_parsers.add_parser("run", formatter_class=argparse.RawTextHelpFormatter)
     run_parser.add_argument("-m", "--models", type=str, nargs="*",
@@ -367,7 +464,7 @@ def main():
                               type=str,
                               required=True,
                               help="A specific game name , or a GameSpec-like JSON string object.")
-    serve_parser.add_argument("-l", "--learner_agent",
+    serve_parser.add_argument("-l", "--learner-agent",
                               type=str,
                               default="player_0",
                               help="The player id which the learning agent is supposed to play."
@@ -396,6 +493,16 @@ def main():
                               type=int,
                               default=8000,
                               help="The port to bind the server to. Default: 8000")
+    serve_parser.add_argument("-r", "--results-dir",
+                              type=str,
+                              default="openenv-records",
+                              help="Directory to save episode interaction results. "
+                                   "Default: 'openenv-records'.")
+    serve_parser.add_argument("--run-id",
+                              type=str,
+                              help="Identifier for this run, used as subdirectory name in results-dir. "
+                                   "If not provided, derived from env-agent model names (e.g., 'gpt-4o-llama3'), "
+                                   "otherwise defaults to 'run'.")
     cli(parser.parse_args())
 
 

@@ -1,9 +1,10 @@
 import collections
 import logging
-from typing import Callable, Union, Literal, Dict, Any, SupportsFloat, Tuple
+from typing import Callable, Literal, Any, SupportsFloat, TypeAlias
 import gymnasium
 
 from clemcore.backends.model_registry import Model, CustomResponseModel, ModelSpec
+from clemcore.clemgame import GameBenchmarkCallbackList
 from clemcore.clemgame.registry import GameSpec
 from clemcore.clemgame.instances import GameInstanceIterator
 from clemcore.clemgame.benchmark import GameBenchmark
@@ -15,32 +16,26 @@ from pettingzoo.utils import BaseWrapper
 
 stdout_logger = logging.getLogger("clemcore.run")
 
+# Type alias for env agents: either a Model (to create a Player) or a Callable (to use directly as policy)
+EnvAgent: TypeAlias = Model | Callable[[ObsType], ActionType]
+
 
 class AECToGymWrapper(gymnasium.Env):
 
-    def __init__(self, env: AECEnv):
+    def __init__(self, env: "AgentControlWrapper"):
         self.env = env
-
-        # Get the learner agent (assumes exactly one)
         if hasattr(env, 'learner_agent'):
-            # Should be set by SinglePlayerWrapper
-            self.learner_agent = env.learner_agent
+            self.learner_agent = env.learner_agent  # Should be set by SinglePlayerWrapper
         elif hasattr(env, 'learner_agents') and len(env.learner_agents) == 1:
-            # Should be set by AgentControlWrapper
-            self.learner_agent = next(iter(env.learner_agents))
+            self.learner_agent = next(iter(env.learner_agents))  # Should be set by AgentControlWrapper
         else:
             raise ValueError(
                 "AECToGymWrapper requires an env with exactly one learner agent. "
                 "Wrap with SinglePlayerWrapper first."
             )
-
         # Set up Gym spaces from the learner's perspective
         self.observation_space = env.observation_space(self.learner_agent)
         self.action_space = env.action_space(self.learner_agent)
-
-        # Track current episode state
-        self._last_obs = None
-        self._cumulative_reward = 0.0
 
     def reset(
             self,
@@ -49,13 +44,10 @@ class AECToGymWrapper(gymnasium.Env):
             options: dict[str, Any] | None = None,
     ) -> tuple[ObsType, dict[str, Any]]:  # type: ignore
         """Reset environment and return learner's first observation."""
-        self._last_obs = None
-        self._cumulative_reward = 0.0
         # reset already steps through when AutoControlWrapper is used
         self.env.reset(seed, options)
         # reset stops at the learner's turn, so this is its first observation
         obs, reward, done, truncated, info = self.env.last()
-        self._last_obs = dict(obs=obs, reward=reward, done=done, truncated=truncated, info=info)
         return obs, info
 
     def step(
@@ -63,10 +55,14 @@ class AECToGymWrapper(gymnasium.Env):
     ) -> tuple[ObsType, SupportsFloat, bool, bool, dict[str, Any]]:
         """Execute learner's action, iterate through and return the next observation."""
         self.env.step(action)
-        # step stops at the learner's turn, so this is its next observation'
+        # The downstream call to self.env.step() stops at the learner's turn, so this is its next observation
         obs, reward, done, truncated, info = self.env.last()
-        self._last_obs = dict(obs=obs, reward=reward, done=done, truncated=truncated, info=info)
-        self._cumulative_reward += reward
+        if done or truncated:
+            # If the game ended, we remove the learner agent from the environment and continue playing till the end.
+            # The learner will not observe anything happening after this, so autoplay could also be stopped.
+            # However, proper game_end logging only happens when all agents have terminated.
+            # So, this is not the most efficient, but for now the cleanest way to handle this case.
+            self.env.step(None)
         return obs, reward, done, truncated, info
 
     def render(self):
@@ -78,13 +74,13 @@ class AECToGymWrapper(gymnasium.Env):
         self.env.close()
 
 
-def order_agent_mapping_by_agent_id(agent_mapping: Dict[AgentID, Any]):
+def order_agent_mapping_by_agent_id(agent_mapping: dict[AgentID, Any]):
     """Returns the given agent mappings sorted by agent id.
 
     For example, an order in keys like player_0, player_1, ...
     """
 
-    def agent_key(entry: Tuple[AgentID, Any]):
+    def agent_key(entry: tuple[AgentID, Any]):
         agent_id = entry[0]
         agent_number = agent_id.split('_')[1]
         return int(agent_number)
@@ -98,7 +94,7 @@ class AgentControlWrapper(BaseWrapper):
     Learner agents remain externally controlled, but other agents are stepped automatically internally.
 
     Specifically, agents marked as "learner" return control to the caller.
-    Other agents are automated with provided models or players.
+    Other agents are automated with provided models, players, or callable policies.
 
     Note: When there is no "learner" in the agent mapping,
     then the control will only be given back to the caller when the episode ended.
@@ -108,11 +104,16 @@ class AgentControlWrapper(BaseWrapper):
     def __init__(
             self,
             env: AECEnv,
-            agent_mapping: Dict[AgentID, Union[Literal["learner"], Model]]
+            agent_mapping: dict[AgentID, Literal["learner"] | EnvAgent]
     ):
         super().__init__(env)
         self.agent_mapping = order_agent_mapping_by_agent_id(agent_mapping)
         self.learner_agents = [agent_id for agent_id, agent in agent_mapping.items() if agent == "learner"]
+        # Store callable agents separately (these bypass the Player and are called directly)
+        self.callable_agents = {
+            agent_id: agent for agent_id, agent in agent_mapping.items()
+            if callable(agent) and not isinstance(agent, Model)
+        }
 
     def reset(self, seed: int | None = None, options: dict | None = None):
         options = options or {}
@@ -120,10 +121,12 @@ class AgentControlWrapper(BaseWrapper):
         if "player_models" not in options:
             player_models = []
             # assume an order in keys like player_0, player_1, ...
-            for agent in self.agent_mapping.values():
-                if agent == "learner":
+            for agent_id, agent in self.agent_mapping.items():
+                if agent == "learner":  # marker model for the learner (called outside the loop)
                     player_models.append(CustomResponseModel(ModelSpec(model_name="learner")))
-                else:
+                elif agent_id in self.callable_agents:  # marker model for callable agents (called directly)
+                    player_models.append(CustomResponseModel(ModelSpec(model_name="callable")))
+                else:  # other player models are backed by the passed models, e.g., loaded via load_model("gpt5")
                     player_models.append(agent)
             options["player_models"] = player_models
         super().reset(seed, options)
@@ -139,15 +142,22 @@ class AgentControlWrapper(BaseWrapper):
         """Automatically play automated agents until the next learner's turn."""
         for agent_id in self.env.agent_iter():
             if agent_id in self.learner_agents:
-                return
-            obs, reward, done, truncated, info = self.env.last()
-            if done or truncated:  # Episode ended before reaching the learner
-                return  # caller will observe done for learner b.c. env sets done for all players
-            # use the player from the game_env
-            # todo: add option to use a passed player here directly
-            player = self.unwrapped.player_by_agent_id[agent_id]
-            auto_action = player(obs)
+                return  # Let the caller invoke last(), e.g., to remove the agent when termination=True
+            observation, reward, termination, truncation, info = self.env.last()
+            if termination or truncation:
+                super().step(None)  # Remove terminated env agents
+                continue
+            env_agent = self.get_env_agent(agent_id)
+            auto_action = env_agent(observation)
             super().step(auto_action)
+        # Here the episode ended before the learner took control again, i.e., all agents have been removed
+
+    def get_env_agent(self, agent_id: AgentID):
+        # Return the env agent for the agent_id
+        # If a callable was provided, use it directly; otherwise use the Player from the game master
+        if agent_id in self.callable_agents:
+            return self.callable_agents[agent_id]
+        return self.unwrapped.player_by_agent_id[agent_id]
 
 
 class SinglePlayerWrapper(AgentControlWrapper):
@@ -161,15 +171,15 @@ class SinglePlayerWrapper(AgentControlWrapper):
             self,
             env: AECEnv,
             learner_agent: AgentID = "player_0",
-            other_agents: Dict[AgentID, Model] = None
+            env_agents: dict[AgentID, EnvAgent] = None
     ):
-        other_agents = other_agents or {}  # single-player game anyway
-        super().__init__(env, {learner_agent: "learner", **other_agents})
+        env_agents = env_agents or {}  # single-player game anyway
+        super().__init__(env, {learner_agent: "learner", **env_agents})
 
-        if "learner" in other_agents:
+        if "learner" in env_agents:
             raise ValueError(
                 f"SinglePlayerWrapper requires exactly 1 learner, "
-                f"but got other_agents={list(other_agents.keys())}"
+                f"but got env_agents={list(env_agents.keys())}"
             )
 
         self.learner_agent = learner_agent
@@ -180,12 +190,21 @@ class GameBenchmarkWrapper(BaseWrapper):
     A wrapper that loads a GameBenchmark from a GameSpec and passes it to the wrapped environment.
     """
 
-    def __init__(self, env_class: Callable[[GameBenchmark], AECEnv], game_spec: GameSpec, **env_kwargs):
+    def __init__(
+            self,
+            env_class: Callable[[GameBenchmark], AECEnv],
+            *,
+            game_spec: GameSpec,
+            **env_kwargs
+    ):
+        self.callbacks = env_kwargs.get("callbacks") or GameBenchmarkCallbackList()
         self.game_benchmark = GameBenchmark.load_from_spec(game_spec)
+        self.callbacks.on_benchmark_start(self.game_benchmark)
         super().__init__(env_class(self.game_benchmark, **env_kwargs))
 
     def close(self) -> None:
         super().close()
+        self.callbacks.on_benchmark_end(self.game_benchmark)
         self.game_benchmark.close()
 
 
