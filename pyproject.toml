@@ -72,3 +72,10 @@ clemcore = ["resources/**/*"]
 
 [tool.setuptools]
 packages = ["clemcore"]
+
+[tool.pytest.ini_options]
+markers = [
+    "api: tests that call external APIs (require keys, cost money)",
+    "integration: integration tests with known limitations",
+]
+addopts = "-m 'not api and not integration'"
