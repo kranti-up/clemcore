@@ -13,7 +13,10 @@ class Key(Mapping):
         self.__dict__.update(kwargs)
 
     def __getitem__(self, key):
-        return getattr(self, key)
+        try:
+            return getattr(self, key)
+        except AttributeError:
+            raise KeyError(key)
 
     def __iter__(self):
         return iter(self.__dict__)
