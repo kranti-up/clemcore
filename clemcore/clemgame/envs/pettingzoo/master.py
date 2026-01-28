@@ -152,8 +152,9 @@ class GameMasterEnv(AECEnv):
         player_models = (self.options.get("player_models", None)
                          or [CustomResponseModel()] * self.game_benchmark.game_spec.players)
         self.game_master: DialogueGameMaster = self.game_benchmark.create_game_master(self.experiment, player_models)
-        self.game_master.setup(**self.game_instance)
-        self.callbacks.on_game_start(self.game_master, self.game_instance)
+        self.game_master.setup(**self.game_instance)  # this sets up the players
+        self.callbacks.on_game_start(self.game_master, self.game_instance)  # this might attach loggers
+        self.game_master.before_game()  # a hook for logging or other game-specific logic
         # Only after setup() the players are set
         self.player_by_agent_id = {f"player_{idx}": player
                                    for idx, player in enumerate(self.game_master.get_players())}
@@ -206,7 +207,7 @@ class GameMasterEnv(AECEnv):
 
         # Update current rewards and info for the current agent (response_score is returned in legacy master)
         self._cumulative_rewards[current_agent] = 0
-        self.rewards[current_agent] = info.get("turn_score", info.get("response_score", 0.))
+        self.rewards[current_agent] = info.get("turn_score", info.get("response_score", 0.)) or 0.  # when None
         self.infos[current_agent] = info
 
         # Inform callbacks about the game step results
@@ -220,7 +221,7 @@ class GameMasterEnv(AECEnv):
             for agent_id in self.agents:
                 # Note: we do not handle truncations separately yet, e.g., running out of turns
                 self.terminations[agent_id] = True
-                self.rewards[agent_id] = info.get("episode_score", 0.)
+                self.rewards[agent_id] = info.get("episode_score", 0.) or 0.  # when None
             self.callbacks.on_game_end(self.game_master, self.game_instance)
 
         # Collect and reset the rewards for all agents

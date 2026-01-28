@@ -90,6 +90,10 @@ class GameMaster(EnvLike, GameEventSource):
         pass
 
     @abc.abstractmethod
+    def before_game(self):
+        pass
+
+    @abc.abstractmethod
     def is_done(self) -> bool:
         pass
 
@@ -210,6 +214,9 @@ class DialogueGameMaster(GameMaster):
         """
         self._on_setup(**kwargs)
         self._current_player = self.get_players()[self._current_player_idx]
+
+    @final
+    def before_game(self):
         self._on_before_game()
         self.started = True
         self._on_before_round()
@@ -380,7 +387,7 @@ class DialogueGameMaster(GameMaster):
         self.log_next_round()  # add record entry for player turns
         self._on_before_round()
 
-    def get_turn_feedback(self):
+    def get_turn_feedback(self) -> str | None:
         """Optional textual feedback to be fed back to model (for playpen RL).
         Returns:
             A verbal feedback about the player's response given the context
@@ -388,7 +395,7 @@ class DialogueGameMaster(GameMaster):
         return None
 
     @abc.abstractmethod
-    def compute_turn_score(self):
+    def compute_turn_score(self) -> float:
         """Score response based on last context (for playpen RL)
         Returns:
             The performance score for a player's response given its last context
@@ -396,7 +403,7 @@ class DialogueGameMaster(GameMaster):
         pass
 
     @abc.abstractmethod
-    def compute_episode_score(self):
+    def compute_episode_score(self) -> float:
         """
         Returns:
             The performance of the agent over the whole episode
