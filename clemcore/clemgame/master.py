@@ -15,21 +15,7 @@ from clemcore.clemgame.resources import GameResourceLocator
 module_logger = logging.getLogger(__name__)
 
 
-class EnvLike(abc.ABC):
-    """
-    An interface that allows to intervene between observing the state of a game (observe) and making progress (step).
-    """
-
-    @abc.abstractmethod
-    def observe(self) -> Tuple[Player, Dict]:
-        pass
-
-    @abc.abstractmethod
-    def step(self, response: str) -> Tuple[bool, Dict]:
-        pass
-
-
-class GameMaster(EnvLike, GameEventSource):
+class GameMaster(GameEventSource):
     """Base class to contain game-specific functionality."""
 
     def __init__(self, game_spec: GameSpec, experiment: Dict, player_models: List[backends.Model]):
@@ -82,8 +68,7 @@ class GameMaster(EnvLike, GameEventSource):
     @abc.abstractmethod
     def setup(self, **kwargs):
         """Load resources and prepare everything to play the game.
-        Needs to log the player infos via self.log_player().
-        Called by the game's GameBenchmark run method for each game instance.
+
         Args:
             kwargs: Keyword arguments used to set up the GameMaster instance.
         """
@@ -109,6 +94,19 @@ class GameMaster(EnvLike, GameEventSource):
         """
         pass
 
+    @abc.abstractmethod
+    def step(self, response: str) -> Tuple[bool, Dict]:
+        """Apply the player's response, advance the game state, and return (done, info).
+
+        Args:
+            response: The textual response (action) from the current player.
+
+        Returns:
+            Tuple of (done, info) where done indicates if the game has ended,
+            and info contains step metadata (e.g., turn_score, episode_score).
+        """
+        pass
+
 
 class DialogueGameMaster(GameMaster):
     """Extended GameMaster, implementing turns as described in the clembench paper.
@@ -128,8 +126,7 @@ class DialogueGameMaster(GameMaster):
         self.players_by_names: Dict[str, Player] = collections.OrderedDict()
         self.context_for_player: Dict[str, Dict] = dict()  # context entries look like {"role":"user", "content": ...}
         self.initial_prompt_for_player: Dict[str, Dict] = dict()
-        self.started = False
-        self.current_round: int = 0
+        self.current_round: int = -1
         self._current_player: Player = None
         self._current_player_idx: int = 0
         self.info = {}
@@ -218,7 +215,7 @@ class DialogueGameMaster(GameMaster):
     @final
     def before_game(self):
         self._on_before_game()
-        self.started = True
+        self.current_round += 1
         self._on_before_round()
 
     @abc.abstractmethod
@@ -288,17 +285,6 @@ class DialogueGameMaster(GameMaster):
             initial_prompt_content = initial_prompt["content"]
             context = {**initial_prompt, **context, "content": "\n\n".join([initial_prompt_content, content])}
         return context
-
-    @final
-    def observe(self) -> Tuple[Player, Dict]:
-        """
-        Observe the current player context.
-        Returns:
-            Current Player object, current player context
-        """
-        player = self.current_player
-        context = self.get_context_for(player)
-        return player, context
 
     @final
     def step(self, response: str) -> Tuple[bool, Dict]:
@@ -463,7 +449,7 @@ class DialogueGameMaster(GameMaster):
         return not self._does_game_proceed()
 
     def has_started(self) -> bool:
-        return self.started
+        return self.current_round >= 0
 
     def _on_game_error(self, error: GameError):
         """

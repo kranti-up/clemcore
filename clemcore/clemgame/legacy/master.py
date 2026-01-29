@@ -27,8 +27,7 @@ class DialogueGameMaster(GameMaster):
         self.players_by_names: Dict[str, Player] = collections.OrderedDict()
         self.context_for_player: Dict[str, Dict] = dict()  # context entries look like {"role":"user", "content": ...}
         self.initial_prompt_for_player: Dict[str, Dict] = dict()
-        self.started = False
-        self.current_round: int = 0
+        self.current_round: int = -1
         self._current_player: Player = None
         self._current_player_idx: int = 0
         self.info = {}
@@ -108,7 +107,7 @@ class DialogueGameMaster(GameMaster):
 
     def before_game(self):
         self._on_before_game()
-        self.started = True
+        self.current_round += 1
         self._on_before_round()
 
     @abc.abstractmethod
@@ -178,16 +177,6 @@ class DialogueGameMaster(GameMaster):
             initial_prompt_content = initial_prompt["content"]
             context = {**initial_prompt, **context, "content": "\n\n".join([initial_prompt_content, content])}
         return context
-
-    def observe(self) -> Tuple[Player, Dict]:
-        """
-        Observe the current player context.
-        Returns:
-            Current Player object, current player context
-        """
-        player = self.current_player
-        context = self.get_context_for(player)
-        return player, context
 
     def step(self, response: str) -> Tuple[bool, Dict]:
         """
@@ -365,7 +354,7 @@ class DialogueGameMaster(GameMaster):
         return not self._does_game_proceed()
 
     def has_started(self) -> bool:
-        return self.started
+        return self.current_round >= 0
 
     def _on_before_round(self):
         """Executed in the play loop before a new round of gameplay starts.
