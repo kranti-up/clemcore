@@ -124,11 +124,11 @@ class SlurkModel(backends.Model):  # todo: make this HumanModel when HumanModel 
 
     def __init__(self, user_id: int, user_token: str, room_id: int, model_spec: ModelSpec):
         super().__init__(model_spec)
-        self.join_timeout = self.model_spec.get("join_timeout")
+        self.join_timeout = self.model_spec["join_timeout"]
         if self.join_timeout is None:
             self.join_timeout = 300
             stdout_logger.warning(f"Missing join_timeout in ModelSpec. Using default value of {self.join_timeout}.")
-        self.response_timeout = self.model_spec.get("response_timeout")
+        self.response_timeout = self.model_spec["response_timeout"]
         if self.response_timeout is None:
             self.response_timeout = 300
             stdout_logger.warning(f"Missing response_timeout in ModelSpec. Using default value of {self.response_timeout}.")
